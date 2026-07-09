@@ -60,9 +60,6 @@ Read `data/queue.json`. For **every** item in its `items[]` array whose `status`
    - `generated_at`: the current UTC timestamp, ISO-8601.
    - `model`: the actual model you are running as, not a placeholder.
 
-A separate, deterministic step (not you) updates `data/ledger.json` and `data/queue.json` after
-you finish, promoting each item you wrote a card for from `"queued"` to `"drafted"`. You don't
-need to and must not touch those files yourself.
 5. If this item changes the standing state of a pillar (e.g. a new licence, a consultation
    closing, a rule taking effect), update the corresponding `content/pillar_states/<pillar_id>.json`
    to reflect the new `standing_summary`/`last_changed`/`open_items`. If it introduces an
@@ -70,6 +67,10 @@ need to and must not touch those files yourself.
    already in `content/glossary/`, add a plain-language glossary entry.
 6. If the source document uses jargon not yet defined, add it to the glossary rather than
    silently assuming the reader knows it.
+
+A separate, deterministic step (not you) updates `data/ledger.json` and `data/queue.json` after
+you finish, promoting each item you wrote a card for from `"queued"` to `"drafted"`. You don't
+need to and must not touch those files yourself.
 
 ## What you are not responsible for
 
