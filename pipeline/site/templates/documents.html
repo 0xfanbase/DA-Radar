@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Document Library &mdash; HK Digital Asset Radar{% endblock %}
+{% block content %}
+<h1 class="plate">Document Library</h1>
+<p>Every primary-source document the watcher has observed and classified as digital-asset relevant, indexed here regardless of whether it has been drafted into a Timeline card yet.</p>
+<input type="search" id="doc-search" placeholder="Search title, regulator, type, pillar&hellip;" aria-label="Search the document library">
+<table class="doc-table">
+  <thead>
+    <tr><th>Date</th><th>Title</th><th>Regulator</th><th>Type</th><th>Pillar</th></tr>
+  </thead>
+  <tbody id="doc-table-body">
+    {% for d in documents %}
+    <tr>
+      <td class="date">{{ d.published_at[:10] if d.published_at else "—" }}</td>
+      <td>{% if d.link %}<a href="{{ d.link }}">{{ d.title }}</a>{% else %}{{ d.title }}{% endif %}</td>
+      <td>{{ d.regulator }}</td>
+      <td>{{ d.type }}</td>
+      <td>{% for name in d.pillar_names %}<span class="pillar-tag">{{ name }}</span>{% endfor %}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="5">No documents on record yet.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "card1",
+  "published_date": "2026-01-05",
+  "regulator": "HKMA",
+  "pillar": ["stablecoins"],
+  "type": "licence",
+  "title": "Test verified card",
+  "summary": "Test summary text for a verified card.",
+  "why_it_matters": "Test why-it-matters text.",
+  "citations": [{"url": "https://example.invalid/source1", "quote": "test quote text"}],
+  "status": "verified",
+  "generated_at": "2026-01-05T00:00:00Z",
+  "model": "test-model"
+}

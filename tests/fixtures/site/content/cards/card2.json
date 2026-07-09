@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "card2",
+  "published_date": "2026-01-02",
+  "regulator": "SFC",
+  "pillar": ["exchanges_vatp"],
+  "type": "circular",
+  "title": "Test unverified card",
+  "summary": "Test summary text for an unverified card.",
+  "why_it_matters": "Test why-it-matters text.",
+  "citations": [{"url": "https://example.invalid/source2", "quote": "test quote two"}],
+  "status": "unverified",
+  "generated_at": "2026-01-02T00:00:00Z",
+  "model": "test-model"
+}

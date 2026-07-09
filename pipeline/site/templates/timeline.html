@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Timeline &mdash; HK Digital Asset Radar{% endblock %}
+{% block content %}
+<h1 class="plate">Timeline</h1>
+<p>Every summary card the analyst has drafted and the verifier has checked, most recent first.</p>
+{% for c in cards %}
+  {{ m.card(c) }}
+{% else %}
+<p>No cards published yet.</p>
+{% endfor %}
+{% endblock %}

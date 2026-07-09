@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "pillar": "stablecoins",
+  "status_seal": "in_force",
+  "regulator": "HKMA",
+  "instruments": ["Stablecoins Ordinance (Cap. 656)"],
+  "standing_summary": "Test standing summary for the stablecoins pillar.",
+  "last_changed": "2026-01-01",
+  "key_links": [{"label": "HKMA stablecoins page", "url": "https://example.invalid/stablecoins"}],
+  "open_items": ["Test open item."]
+}
