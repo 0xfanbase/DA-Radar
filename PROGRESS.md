@@ -5,7 +5,7 @@ along with `git log` — to know exactly where the project stands before doing a
 
 ## Phase status
 
-- **P1 — Chassis:** in progress
+- **P1 — Chassis: complete** (signed off by Fable PM checkpoint 2, 2026-07-09)
 - P2 — Analyst + verifier: not started
 - P3 — Seed backfill: not started
 - P4 — Frontend: not started
@@ -89,6 +89,28 @@ criteria can be considered met:
    sanitized (control-char strip + length cap) before entering the ledger.
 
 All directives incorporated into the design — see IMPROVEMENT_BACKLOG.md's "Decisions from Fable
-(PM) kickoff review" section for the specifics of each. Checkpoint 2 (post-pytest-green,
-post-live-verification) will report back against Fable's stated sign-off criteria before Phase 1
-is declared done.
+(PM) kickoff review" section for the specifics of each.
+
+### 2026-07-09 — Checkpoint 2: Phase 1 signed off
+
+Two independent Fable review passes (one continuing the kickoff agent with full context, one a
+fresh instance given a self-contained report — both a genuine second opinion) each independently
+re-executed the evidence rather than trusting the report: re-ran the full pytest suite, read the
+actual test bodies for the tests named at kickoff, ran the live watcher themselves and diffed
+sha256 of the output files, grepped `pipeline/` for banned jurisdiction strings, and verified the
+pinned GitHub Actions commit SHAs against the real upstream repos via `git ls-remote`. Both also
+hit the GitHub API directly and confirmed `list_workflows` returns zero registered workflows for
+this repo, corroborating that the missing green Actions run is a genuine "not on the default
+branch yet" platform constraint, not a shortcut.
+
+**Verdict from both: Phase 1 signed off, complete.**
+
+Directives logged for Phase 2 kickoff (non-blocking for Phase 1, carried into IMPROVEMENT_BACKLOG.md):
+1. Once this branch merges to `main`, trigger one real `workflow_dispatch` run of `watch.yml`
+   before trusting the daily cron — Phase 1 doesn't require it, but the workflow is not yet
+   *operationally* proven on GitHub's actual infrastructure.
+2. Resolve the two logged anonymity flags (LICENSE "Big Fan" copyright line, non-bot initial
+   commit) with the human owner before public launch — correctly left as owner decisions.
+3. Phase 2 must implement the CI path-allowlist gate (currently only documented in CLAUDE.md)
+   before any AI analyst/verifier job is wired in — first item on that phase's list, not an
+   afterthought.

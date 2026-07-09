@@ -163,7 +163,19 @@ began and required the following be pinned down (see PROGRESS.md for the full ch
 ## Follow-ups for later phases (not decisions, just noted so they aren't lost)
 
 - Phase 2 must add the actual CI path-allowlist gate (today it's a documented rule in CLAUDE.md,
-  not yet a machine-enforced check, since there are no AI jobs to restrict yet).
+  not yet a machine-enforced check, since there are no AI jobs to restrict yet). Per Fable PM
+  checkpoint 2, this should be the first thing built in Phase 2, before any analyst/verifier job
+  is wired in — not an afterthought.
 - `content/` directory (cards, pillar states, trajectory, glossary data) doesn't exist yet —
   correctly out of scope per the kickoff instruction, but noted so no one mistakes its absence
   for an oversight.
+- **Once this branch merges to `main`**, trigger one real `workflow_dispatch` run of `watch.yml`
+  before trusting the daily cron. GitHub does not register a workflow for `workflow_dispatch`
+  until its file exists on the default branch — confirmed directly (`list_workflows` on this repo
+  currently returns zero registered workflows; a `run_workflow` dispatch attempt 404s). Phase 1's
+  sign-off does not depend on this (the acceptance criterion was verified via direct CLI
+  invocation against live feeds, twice), but the workflow itself is not yet operationally proven
+  on GitHub's actual Actions infrastructure (dependency install, permissions in practice).
+- The two logged anonymity flags (LICENSE "Big Fan" copyright line, non-bot initial commit) should
+  be resolved with the human owner before public launch — deliberately left as owner decisions,
+  not made unilaterally during this build.
