@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "queue.json",
+  "title": "Queue",
+  "description": "Derived view of ledger.json: every item with status=='queued', deterministically ordered. Regenerated in full on every watcher run -- never accumulated or hand-edited. Not named in the original spec's schema list; added because it's core to the Phase 1 acceptance criterion.",
+  "type": "object",
+  "properties": {
+    "schema_version": { "const": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "item_hash": { "type": "string", "minLength": 1 },
+          "source_id": { "type": "string", "minLength": 1 },
+          "feed_id": { "type": "string", "minLength": 1 },
+          "title": { "type": "string" },
+          "link": { "type": ["string", "null"] },
+          "summary": { "type": "string" },
+          "published_at": { "type": ["string", "null"], "format": "date-time" },
+          "status": { "const": "queued" }
+        },
+        "required": [
+          "item_hash",
+          "source_id",
+          "feed_id",
+          "title",
+          "link",
+          "summary",
+          "published_at",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["schema_version", "generated_at", "items"],
+  "additionalProperties": false
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pillar_state.json",
+  "title": "Pillar state",
+  "description": "Current regulatory state for one of the jurisdiction's pillars. 'pillar', 'regulator', and 'status_seal' are free text governed by config/jurisdiction.json's pillars/regulators/seal_vocabulary -- deliberately never enumerated in this schema, since baking jurisdiction-specific values into a pipeline schema would violate the portability constraint. Not populated with real data until Phase 3.",
+  "type": "object",
+  "properties": {
+    "schema_version": { "const": 1 },
+    "pillar": { "type": "string", "minLength": 1 },
+    "status_seal": { "type": "string", "minLength": 1 },
+    "regulator": { "type": "string", "minLength": 1 },
+    "instruments": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "standing_summary": { "type": "string", "minLength": 1 },
+    "last_changed": { "type": "string", "format": "date" },
+    "key_links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri" }
+        },
+        "required": ["label", "url"],
+        "additionalProperties": false
+      }
+    },
+    "open_items": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    }
+  },
+  "required": [
+    "schema_version",
+    "pillar",
+    "status_seal",
+    "regulator",
+    "instruments",
+    "standing_summary",
+    "last_changed",
+    "key_links",
+    "open_items"
+  ],
+  "additionalProperties": false
+}
