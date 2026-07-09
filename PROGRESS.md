@@ -114,3 +114,26 @@ Directives logged for Phase 2 kickoff (non-blocking for Phase 1, carried into IM
 3. Phase 2 must implement the CI path-allowlist gate (currently only documented in CLAUDE.md)
    before any AI analyst/verifier job is wired in — first item on that phase's list, not an
    afterthought.
+
+### 2026-07-09 — PR #1 merged; watch.yml verified live on GitHub Actions
+
+`claude/hk-radar-phase-1-mzlnxx` merged into `main` (merge commit `02d5a40`). Branch restarted from
+the new `main` per standard post-merge handling. Immediately closed out directive 1 above:
+
+- `list_workflows` now shows `Watcher` registered (it wasn't, pre-merge).
+- Triggered a real `workflow_dispatch` run on `main` (run id `28991034262`).
+- **Result: `completed` / `success`, 21 seconds end-to-end.** All steps green: checkout, Python
+  3.12 setup, `pip install -e .`, run watcher, check-for-changes. Watcher log shows all 9 feeds
+  `OK ... new=0` (zero new items in the ~20 minutes since the last manual live run — the
+  idempotency guarantee holding in production, not just locally). "Commit ledger/queue updates"
+  and "Note next step" both show `conclusion: skipped`, exactly as designed, since
+  `steps.changes.outputs.changed` was `false`. No new commit landed on `main`, as expected.
+- Minor non-blocking note: the job log shows a GitHub-side deprecation warning that
+  `actions/checkout`/`actions/setup-python` target Node 20 internally and are being forced onto
+  Node 24 by the runner. This is GitHub's own forward-compat shim, not a failure — no action
+  needed now, but worth bumping the pinned SHAs next time either action cuts a Node-24-native
+  release.
+
+**Phase 1 is now both criterion-verified locally and operationally proven on real GitHub Actions
+infrastructure.** Proceeding to Phase 2 (analyst + verifier + CI path-allowlist gate) per the
+user's instruction to continue building.

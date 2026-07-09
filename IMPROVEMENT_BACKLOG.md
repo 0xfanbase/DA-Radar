@@ -169,13 +169,14 @@ began and required the following be pinned down (see PROGRESS.md for the full ch
 - `content/` directory (cards, pillar states, trajectory, glossary data) doesn't exist yet —
   correctly out of scope per the kickoff instruction, but noted so no one mistakes its absence
   for an oversight.
-- **Once this branch merges to `main`**, trigger one real `workflow_dispatch` run of `watch.yml`
-  before trusting the daily cron. GitHub does not register a workflow for `workflow_dispatch`
-  until its file exists on the default branch — confirmed directly (`list_workflows` on this repo
-  currently returns zero registered workflows; a `run_workflow` dispatch attempt 404s). Phase 1's
-  sign-off does not depend on this (the acceptance criterion was verified via direct CLI
-  invocation against live feeds, twice), but the workflow itself is not yet operationally proven
-  on GitHub's actual Actions infrastructure (dependency install, permissions in practice).
+- ~~Once this branch merges to `main`, trigger one real `workflow_dispatch` run of `watch.yml`~~
+  **Resolved 2026-07-09.** PR #1 merged; `list_workflows` immediately showed `Watcher` registered.
+  Triggered `workflow_dispatch` on `main` (run `28991034262`): completed/success in 21s, all 9
+  feeds `OK ... new=0` (idempotency held live, ~20 min after the manual run), commit step
+  correctly `skipped` (no diff). See PROGRESS.md's 2026-07-09 "PR #1 merged" entry. Non-blocking
+  note from the job log: GitHub is deprecating Node 20 for actions and force-runs our pinned
+  `actions/checkout`/`actions/setup-python` on Node 24 in the meantime (their own compat shim, not
+  a failure) — worth bumping the pins next time either action ships a Node-24-native release.
 - The two logged anonymity flags (LICENSE "Big Fan" copyright line, non-bot initial commit) should
   be resolved with the human owner before public launch — deliberately left as owner decisions,
   not made unilaterally during this build.
