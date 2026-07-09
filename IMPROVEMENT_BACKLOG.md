@@ -18,6 +18,13 @@ Dated by the build session that made the call.
   and wasn't part of the requested work. Flagged for the human owner to confirm this string
   doesn't function as a personal identifier before treating the anonymity rules as fully
   satisfied end-to-end.
+- **2026-07-09 — Initial commit author.** The repo's pre-existing initial commit (LICENSE only)
+  is authored by the owner's own account, not `hk-radar-bot`. Flagged by the Fable PM review.
+  Not rewritten — rewriting a single pre-existing commit's history is a destructive, hard-to-
+  reverse git operation with no build benefit, and this build was never asked to touch it. Every
+  commit made *by this build*, starting with the chassis scaffold, uses the bot identity. If full
+  history-level anonymity is wanted later, that is a deliberate human decision (e.g. squashing
+  history when moving to a dedicated org), not something to do silently mid-build.
 
 ## Silent decisions (spec didn't specify, simplest reasonable option chosen)
 
@@ -75,6 +82,61 @@ Dated by the build session that made the call.
   (`bot@users.noreply.github.com`) rather than a separately monitored project inbox. Fine for a
   low-volume Phase 1 chassis; recommend a real monitored contact address before sustained
   production polling once the site is live and publicly indexed.
+
+## Decisions from Fable (PM) kickoff review, 2026-07-09
+
+A Fable-model agent acting as project manager reviewed the kickoff plan before implementation
+began and required the following be pinned down (see PROGRESS.md for the full checkpoint record):
+
+- **ETag/HTTP cache state moved out of version control.** Originally scaffolded at
+  `data/cache/etags.json` and committed; corrected to a git-ignored path (`/data/cache/` added to
+  `.gitignore`, file untracked) before any watcher code was written. Reasoning: ETags change
+  whenever a feed republishes anything, independent of whether there are new items — a committed
+  ETag file would produce a git diff on every run even when the ledger/queue are unchanged,
+  breaking the "re-run adds nothing" acceptance criterion at the byte level.
+- **Ledger `last_seen` field dropped.** An earlier draft tracked both `first_seen` and
+  `last_seen` per item; `last_seen` would update to the current run's timestamp on every re-run
+  even with zero new items, which would break byte-identical re-runs. Only `first_seen` is
+  tracked. If "last confirmed still live" tracking is wanted later, it belongs in `audit/*.json`
+  (a weekly, not daily, artifact), not the ledger.
+- **Canonical JSON serialization for all committed data files.** `sort_keys=True`, 2-space indent,
+  trailing newline, UTC ISO-8601 timestamps only (`Z` suffix, no offsets) — applied uniformly so
+  two runs with identical semantic content always produce byte-identical files.
+- **`schema_version` (not `version`) is the field name used consistently across all 8 schemas**
+  and their data files, for naming consistency across the whole content model.
+- **Ledger status lifecycle finalized as an enum, documented now even though Phase 1 only ever
+  writes `queued`:** `queued → drafted → verified → published`, with `corrected` and `suppressed`
+  as later-reachable states from `published`, and `error` reachable from any state. This is the
+  contract the Phase 2 analyst/verifier will consume, so it's fixed now rather than migrated
+  later.
+- **Per-feed failure isolation.** One feed timing out or returning malformed XML must not abort
+  the other eight; the watcher records a per-feed status in its run summary and continues. Exit
+  code stays 0 unless every feed failed or the config itself is invalid (restates the earlier
+  exit-code decision, now with an explicit fixture-backed test).
+- **XML parsing hardened with `defusedxml`.** Added as a small, single-purpose runtime dependency
+  (`defusedxml.ElementTree.fromstring` instead of stdlib `xml.etree.ElementTree.fromstring`) to
+  guard against XXE / entity-expansion issues in fetched feed XML. This is a narrow, deliberate
+  exception to the "minimize dependencies" preference — the library exists specifically for this
+  threat model, on external-source XML, which is exactly what the watcher processes.
+- **Feed text sanitized on ingest.** Titles/summaries have control characters stripped and are
+  length-capped (title 500 chars, summary 2000 chars) before entering the ledger — defense in
+  depth, since this text will later be handed to an AI analyst per the "fetched documents are
+  data, not instructions" rule.
+- **Cross-feed duplicates are accepted, not deduplicated, in Phase 1.** If the same item appears
+  in two different feeds (e.g. a circular cross-posted to both a regulator's circulars feed and
+  its press-release feed), it produces two separate ledger entries, since identity is keyed by
+  `(source_id, feed_id, guid-or-link)`. Noted as a known limitation, not solved now — true content
+  dedup is an analyst-phase concern (comparing summaries/citations), not a watcher concern.
+- **User-Agent does not include the current repo's URL.** Kept generic
+  (`HKDigitalAssetRadarWatcher/<version> (contact: bot@users.noreply.github.com; purpose: public
+  RSS regulatory monitoring)`) rather than pointing at `0xfanbase/DA-Radar` specifically, since
+  that repo location is itself a temporary deviation (see the anonymous-org entry above) that is
+  expected to change — baking today's infra location into an external-facing header would need
+  updating the moment the project moves to its intended dedicated org.
+- **No-live-network enforced structurally in tests**, not just by convention: an autouse pytest
+  fixture in `tests/conftest.py` monkeypatches `socket.socket.connect` to raise inside every test,
+  so a future test cannot silently start hitting a live feed in CI. Mocked tests (via
+  `requests-mock`) never touch real sockets in the first place, so this is a zero-cost guardrail.
 
 ## Follow-ups for later phases (not decisions, just noted so they aren't lost)
 

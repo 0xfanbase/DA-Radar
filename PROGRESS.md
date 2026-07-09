@@ -34,5 +34,27 @@ the live watcher run and its idempotent re-run, and final sign-off.)*
 
 ## PM checkpoints (Fable)
 
-*(Recorded here as they happen: kickoff directives, checkpoint sign-offs, any corrective
-directives issued.)*
+### 2026-07-09 — Kickoff review: approved with directives
+
+Fable reviewed the scope, sequencing, and engineering plan before implementation began.
+**Verdict: approved for kickoff**, with directives treated as blocking before the acceptance
+criteria can be considered met:
+
+1. Byte-level idempotency: canonical JSON serialization, no per-run-mutated ledger fields
+   (dropped `last_seen`), ETag cache moved out of version control entirely.
+2. Jurisdiction portability enforced at the schema layer too, not just in pipeline code —
+   Freedonia test fixture must validate against the same schemas as HK.
+3. Ledger status lifecycle fixed now as a documented enum (`queued → drafted → verified →
+   published`, plus `corrected`/`suppressed`/`error`), even though Phase 1 only writes `queued`.
+4. Two anonymity findings logged (LICENSE copyright line, initial-commit author) — not fixed,
+   since both predate this build and touching either would be a separate, deliberate human call.
+5. Per-feed failure isolation, tested with a fixture — one bad feed must never abort a run.
+6. `requests` calls always pass an explicit timeout; static jurisdiction-agnosticism scan is a
+   pytest test (not a standalone script), case-insensitive, with domain-fragment bans; no-network
+   enforced structurally via an autouse fixture; XML parsing hardened with `defusedxml`; feed text
+   sanitized (control-char strip + length cap) before entering the ledger.
+
+All directives incorporated into the design — see IMPROVEMENT_BACKLOG.md's "Decisions from Fable
+(PM) kickoff review" section for the specifics of each. Checkpoint 2 (post-pytest-green,
+post-live-verification) will report back against Fable's stated sign-off criteria before Phase 1
+is declared done.
