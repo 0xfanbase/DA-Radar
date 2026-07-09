@@ -35,7 +35,7 @@ def _no_real_backoff_delay(monkeypatch):
     """Retry/backoff behavior itself is covered by tests/test_fetch.py --
     these integration tests only care about the outcome, so don't burn real
     wall-clock time on the retryable-failure test cases."""
-    monkeypatch.setattr("pipeline.watcher.fetch.time.sleep", lambda seconds: None)
+    monkeypatch.setattr("pipeline.http.time.sleep", lambda seconds: None)
 
 
 @pytest.fixture

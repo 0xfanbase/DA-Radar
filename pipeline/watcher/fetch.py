@@ -1,20 +1,17 @@
-"""HTTP fetching for the watcher: retry/backoff and ETag-conditional GET.
+"""HTTP fetching for the watcher: ETag-conditional GET on top of the shared
+retry/backoff core in pipeline/http.py.
 
-Every request carries an explicit timeout (requests has no default) and a
-descriptive User-Agent sourced from config/jurisdiction.json -- never
-hardcoded here, to keep this module jurisdiction-agnostic.
+The User-Agent is sourced from config/jurisdiction.json -- never hardcoded
+here, to keep this module jurisdiction-agnostic.
 """
 from __future__ import annotations
 
-import time
 from dataclasses import dataclass
 from typing import Optional
 
 import requests
 
-from pipeline.watcher.clock import utc_now_iso
-
-RETRYABLE_STATUS_CODES = {429, 500, 502, 503, 504}
+from pipeline.http import http_get_with_retry
 
 
 @dataclass
@@ -47,73 +44,27 @@ def fetch_feed(
     response short-circuits with status="not_modified" and no content, since
     the body is byte-identical to whatever was fetched last time.
     """
-    sess = session or requests.Session()
     headers = {"User-Agent": user_agent}
     if etag:
         headers["If-None-Match"] = etag
 
-    attempts = 0
-    last_error: Optional[str] = None
-
-    while attempts < max_retries:
-        attempts += 1
-        try:
-            response = sess.get(url, headers=headers, timeout=timeout)
-        except (requests.Timeout, requests.ConnectionError) as exc:
-            last_error = str(exc)
-            if attempts < max_retries:
-                time.sleep(backoff_base * (backoff_multiplier ** (attempts - 1)))
-            continue
-
-        if response.status_code == 304:
-            return FetchResult(
-                url=url,
-                status="not_modified",
-                content=None,
-                etag=etag,
-                fetched_at=utc_now_iso(),
-                http_status=304,
-                error=None,
-                attempts=attempts,
-            )
-
-        if response.status_code == 200:
-            return FetchResult(
-                url=url,
-                status="ok",
-                content=response.content,
-                etag=response.headers.get("ETag"),
-                fetched_at=utc_now_iso(),
-                http_status=200,
-                error=None,
-                attempts=attempts,
-            )
-
-        if response.status_code in RETRYABLE_STATUS_CODES:
-            last_error = f"HTTP {response.status_code}"
-            if attempts < max_retries:
-                time.sleep(backoff_base * (backoff_multiplier ** (attempts - 1)))
-            continue
-
-        # Terminal client error (e.g. 404) -- retrying won't help.
-        return FetchResult(
-            url=url,
-            status="error",
-            content=None,
-            etag=etag,
-            fetched_at=utc_now_iso(),
-            http_status=response.status_code,
-            error=f"HTTP {response.status_code}",
-            attempts=attempts,
-        )
+    result = http_get_with_retry(
+        url,
+        headers=headers,
+        timeout=timeout,
+        max_retries=max_retries,
+        backoff_base=backoff_base,
+        backoff_multiplier=backoff_multiplier,
+        session=session,
+    )
 
     return FetchResult(
-        url=url,
-        status="error",
-        content=None,
-        etag=etag,
-        fetched_at=utc_now_iso(),
-        http_status=None,
-        error=last_error or "unknown fetch error",
-        attempts=attempts,
+        url=result.url,
+        status=result.status,
+        content=result.content,
+        etag=result.headers.get("ETag") if result.status == "ok" else etag,
+        fetched_at=result.fetched_at,
+        http_status=result.http_status,
+        error=result.error,
+        attempts=result.attempts,
     )
