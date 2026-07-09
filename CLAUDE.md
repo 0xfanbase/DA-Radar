@@ -19,9 +19,9 @@ architecture constraints require an explicit, separate human-approved change.
 ```
 [watch.yml — daily 09:30 HKT, pure code, no AI]
   fetch feeds → normalize → diff vs data/ledger.json (seen-items) →
-  new items? → write data/queue.json → trigger analyze.yml
+  new items? → write data/queue.json → trigger analyze.yml (dormant, see below)
         │
-[analyze.yml — runs only when queue non-empty]  (not yet built — Phase 2)
+[analyze.yml — runs only when queue non-empty AND an AI credential exists]
   ANALYST pass: for each queued item →
     fetch full document → classify {pillar[], type} → extract dates →
     write card JSON: summary + "why it matters" + citations[]
@@ -30,7 +30,7 @@ architecture constraints require an explicit, separate human-approved change.
     every factual sentence must be supported by source text; unsupported →
     strip sentence or mark card status:"unverified"
         │
-[CI gate on the publish commit]  (not yet built — Phase 2)
+[CI gate on the publish commit]
   jsonschema validation of all changed files + PATH ALLOWLIST: AI jobs may only
   modify files under /content and /data — any diff touching workflows, pipeline
   code, or this file FAILS the build
@@ -45,9 +45,27 @@ architecture constraints require an explicit, separate human-approved change.
   PR-only, human-merge, capped-turns self-improvement loop
 ```
 
-**Current build state: Phase 1 (Chassis) only.** The watcher, ledger, schemas, and pytest suite
-exist. The analyst, verifier, CI path-allowlist gate, audit loop, improve loop, seed content, and
-frontend do not exist yet — see PROGRESS.md for exact status.
+**IMPORTANT — real deviation from the diagram above, owner-decided, not an oversight:**
+`.github/workflows/analyze.yml` exists, is fully built, and is **permanently dormant** in this
+deployment — no `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_API_KEY` secret will ever be provisioned
+(owner decision, logged in IMPROVEMENT_BACKLOG.md's "Architecture pivot" entry). It checks for
+either secret and skips cleanly if neither exists, rather than failing. **The actual ANALYST +
+VERIFIER mechanism in this deployment is a scheduled Claude Code Remote trigger**, not this
+workflow — see `docs/analyst-runbook.md` for the exact procedure a fired session follows
+(worktree-isolated analyst/verifier sub-agents for genuine fresh-context separation, the same
+deterministic gates run as real subprocess calls, same bot commit identity). This was an explicit
+choice put to the owner (not inferred): the alternative was leaving `analyze.yml` fully dormant,
+which stays public/auditable/portable on GitHub but never runs unattended without a secret. The
+owner chose the CCR trigger instead, accepting that it is invisible to anyone auditing this repo
+on GitHub and does not automatically port to a jurisdiction fork the way everything else in this
+repo does — a future clone must separately stand up its own CCR account/trigger for the same
+ongoing automation. If a future owner ever does add either secret to this repo, `analyze.yml`
+starts working exactly as diagrammed above, with no other change required.
+
+**Current build state: Phase 1 (Chassis) and Phase 2 (Analyst + verifier + CI gate) built.** Phase
+2 is deterministically complete and tested; live execution runs via the CCR trigger described
+above, not `analyze.yml`. Audit loop, improve loop, seed content, and frontend do not exist yet —
+see PROGRESS.md for exact status.
 
 ## Editorial hard rules (non-negotiable — apply from the first card written, in every later phase)
 
@@ -79,12 +97,15 @@ frontend do not exist yet — see PROGRESS.md for exact status.
    amended card with reason and date.
 7. **Licensing.** Code is MIT. Site content (once it exists) is CC BY 4.0.
 
-## Path allowlist (statement now, CI gate enforced starting Phase 2)
+## Path allowlist (enforced since Phase 2, `pipeline/ci/path_allowlist.py`)
 
 Automated AI jobs (the analyst and verifier) may only modify files under `/content` and `/data`.
 Any diff from an AI job that touches `/pipeline`, `/.github/workflows`, `/config`,
-`/pipeline/schemas`, or this file must fail CI. Phase 1 has no AI jobs yet, so there is nothing
-for the gate to restrict today — the rule is recorded here so it is never silently relaxed later.
+`/pipeline/schemas`, or this file must fail the gate. This is allowlist-based (fail unless every
+changed path is under an allowed prefix), not a denylist. Enforced identically regardless of which
+mechanism invoked the analyst/verifier — `analyze.yml` (dormant) or the CCR-triggered runbook
+(operative) both run the same real subprocess check before any commit; neither trusts the AI job's
+own tool permissions to have been sufficient on their own.
 
 ## Sources (watcher priority order)
 
@@ -139,8 +160,10 @@ runs the full pipeline against a fabricated second jurisdiction config and separ
 
 ## Quota / execution rules
 
-- Analyst and verifier jobs (Phase 2+) use a Sonnet-class model with capped turns
-  (`--max-turns 30` per the spec), and exit immediately if `data/queue.json` is empty — no run,
-  no cost.
+- Analyst and verifier passes use a Sonnet-class model with capped turns (`--max-turns 30` per the
+  spec, or the equivalent turn/effort cap when run via the CCR trigger's sub-agents), and exit
+  immediately if `data/queue.json` is empty — no run, no cost.
 - HK regulatory flow is low-volume (a few items/week); expect a handful of analyst runs per week
-  at capped turns once Phase 2 exists.
+  at capped turns.
+- The CCR trigger fires daily (offset after `watch.yml`'s schedule so the queue is current) and
+  checks the queue itself before doing any real work — most firings do nothing.

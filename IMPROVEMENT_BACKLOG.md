@@ -294,6 +294,64 @@ Key decisions arising from that review and from implementation itself:
   or secret is needed for this specific chaining step -- only the analyst/verifier jobs' actual AI
   calls need the separately-provisioned `CLAUDE_CODE_OAUTH_TOKEN`.
 
+## Architecture pivot: no GitHub AI secret, ever (owner decision), 2026-07-09
+
+The owner stated plainly, after Phase 2 shipped, that `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_API_KEY`
+will never be provisioned as a GitHub repo secret. This is not "not yet" -- it is a standing
+decision, and it makes `.github/workflows/analyze.yml` permanently unable to authenticate in this
+deployment (there is no engineering workaround for a missing credential; that is what a credential
+is for). Two separate problems needed separate fixes, per Fable PM review of the pivot:
+
+- **`analyze.yml` now fails closed, not loud.** `check-queue` gained a `credentials_available`
+  output (checks both possible secret names, empty string if neither is set); `analyst`/`verifier`
+  are gated on it and skip cleanly with a `::notice::` explaining why, instead of erroring on
+  missing auth every single day a new item is queued. The workflow is left in the repo,
+  fully documented as a **dormant, spec-literal fallback**: if a future owner ever does add either
+  secret, it starts working exactly as originally designed, with no other change required.
+- **Phase 3 (seed backfill) needed no automation fix at all.** It's an explicitly one-time/periodic
+  research-and-write job, not the steady-state loop, so it can be (and was) performed directly in
+  an interactive Claude Code session -- approved by Fable PM with four conditions, all followed:
+  (1) genuine fresh-context separation for the verifier role (a separate `Agent` sub-call that
+  receives only the drafted card file, never the analyst session's reasoning -- not the same
+  conversation switching hats and self-grading); (2) the deterministic gates
+  (`path_allowlist`/`validate_content`/`apply_verification_gate`) run as real subprocess
+  invocations against the actual working tree, not a judgment call about whether the output "looks
+  fine"; (3) commits still use the `hk-radar-bot` identity via env vars only, unchanged; (4) this
+  paragraph -- the mechanism is disclosed plainly, not left for someone to infer.
+- **Ongoing automation: the owner was asked, explicitly, not defaulted.** Fable PM flagged that
+  routing ongoing analysis through a Claude Code Remote scheduled trigger (since GitHub Actions
+  cannot invoke Claude without the secret the owner won't provide) is a real architectural
+  tradeoff, not a pure engineering substitution, and should not be inferred from "continue
+  building." Put to the owner as an explicit choice via `AskUserQuestion`:
+  - *Option A (dormant):* `analyze.yml` stays inert; the site's content only updates on a manual
+    run or if a secret is added later. Fully public/auditable on GitHub; a jurisdiction fork
+    inherits the mechanism for free like everything else in the repo.
+  - *Option B (CCR scheduled trigger):* a recurring job tied to the owner's Claude Code Remote
+    account (not the repo) wakes periodically and performs the analyst+verifier role itself. It
+    actually runs unattended, but lives entirely outside GitHub -- invisible to anyone auditing
+    this public repo, and a jurisdiction fork does not inherit it; a new owner would need to
+    separately discover and stand up their own CCR account/trigger. This is a bigger deviation
+    from the portability promise ("new config + new seed pass, not touching pipeline code") than
+    the anonymous-org deviation already logged above.
+
+  **The owner chose Option B.** Documented here as an explicit, informed choice, not a default --
+  see `docs/analyst-runbook.md` for the actual mechanism and PROGRESS.md for the setup record.
+- **Compensating for the lost tool-restriction layer.** Phase 2's `analyze.yml` security model was
+  two-layer: `claude_args`' `--disallowedTools`/scoped `Write` (structural), plus the deterministic
+  gate (post-hoc, non-bypassable). The `Agent` tool used for the CCR-triggered analyst/verifier
+  sub-calls has no equivalent fine-grained tool-restriction parameter -- none of the available
+  `subagent_type`s are scoped to "Read/WebFetch/Write(content/**) only, no Bash." Rather than treat
+  this as an acceptable silent regression to one layer, two mitigations replace the lost layer:
+  (a) both the analyst and verifier sub-agents run with `isolation: "worktree"` -- a disposable git
+  worktree, not the orchestrating session's real working directory -- so even a hostile
+  fetched-document prompt injection that tricks a sub-agent into a destructive action only damages
+  a throwaway checkout, never the actual branch; (b) the orchestrating session (not either
+  sub-agent) is the only thing that ever runs `git add`/`commit`/`push`, and it stages explicitly
+  (`content/`, `data/ledger.json`, `data/queue.json` -- never `-A`), so a stray file written
+  anywhere else by a sub-agent structurally cannot reach a commit regardless of what wrote it. The
+  deterministic gate remains the definitive, non-bypassable backstop either way -- unchanged from
+  Phase 2, since it was already designed to never trust an LLM's self-report in the first place.
+
 ## Follow-ups for later phases (not decisions, just noted so they aren't lost)
 
 - Phase 2 must add the actual CI path-allowlist gate (today it's a documented rule in CLAUDE.md,
