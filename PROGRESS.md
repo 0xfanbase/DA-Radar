@@ -239,3 +239,41 @@ named as pending the same secret-provisioning blocker as Phase 1's pre-merge gap
 directive is that the first real live run's output (both commits, the card file, both jobs'
 `display_report`) comes back for review before Phase 2 is called operationally closed, mirroring
 Phase 1's live `workflow_dispatch` run being the actual closing evidence, not just green tests.
+
+### 2026-07-09 — Owner confirms: no AI secret, ever; CCR scheduled trigger stood up instead
+
+The owner stated plainly that `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_API_KEY` will never be
+provisioned as a GitHub secret. Fable PM reviewed the pivot (see IMPROVEMENT_BACKLOG.md's
+"Architecture pivot" entry for the full reasoning) and required the ongoing-automation question be
+put to the owner explicitly rather than defaulted — done via `AskUserQuestion`, framed as: leave
+`analyze.yml` dormant (fully auditable on GitHub, portable to jurisdiction forks, but the loop
+doesn't actually run unattended) vs. a Claude Code Remote (CCR) scheduled trigger (actually runs
+unattended, but invisible to a GitHub-based repo audit and doesn't port to forks the way everything
+else does). **The owner chose the CCR trigger.**
+
+Built:
+- `.github/workflows/analyze.yml` updated with a real credential check (`check-queue` job) so it
+  skips cleanly, with a clear `::notice::`, instead of failing daily — left in the repo as a
+  documented, dormant, spec-literal fallback that activates automatically if a secret is ever added.
+- `docs/analyst-runbook.md`: the exact procedure a CCR-fired session follows in place of
+  `analyze.yml` — worktree-isolated analyst sub-agent, a genuinely *separate* worktree-isolated
+  verifier sub-agent (receives only the drafted card file, never the analyst's reasoning — the
+  same fresh-context separation Phase 2's `needs: analyst` job split enforced), the same
+  deterministic gates (`path_allowlist`, `validate_content`, `apply_verification_gate`) run as real
+  subprocess calls, same bot commit identity, dated `PROGRESS.md` logging every run.
+- A live CCR trigger, `trig_01Bk3Lz2FKf3pWRMFkqBcdDE` ("HK Radar — Analyst/Verifier daily run"),
+  cron `30 3 * * *` (03:30 UTC / 11:30 HKT — ~2 hours after `watch.yml`'s 09:30 HKT run, so the
+  queue is current), `create_new_session_on_fire: true` so each firing starts from a clean slate
+  rather than accumulating context across days. First scheduled run: 2026-07-10T03:31 UTC.
+
+**Compensating for the lost tool-restriction layer** (the `Agent` tool has no equivalent to
+`claude_args`' `--disallowedTools`/scoped `Write`): both sub-agents run with `isolation: "worktree"`
+so a hostile fetched-document prompt injection can only damage a disposable checkout, never the
+real branch; only the orchestrating session ever runs `git add`/`commit`/`push`, and it stages
+explicitly (never `-A`). The deterministic gate remains the definitive, non-bypassable backstop
+either way — unchanged from Phase 2, since it never trusted an LLM's self-report in the first
+place.
+
+Still unverified: the first actual CCR-triggered run hasn't fired yet (scheduled for tomorrow).
+Per Fable's standing directive, that first run's output — both commits, the actual card file, both
+sub-agents' behavior — needs review before this mechanism is considered proven, not just deployed.
