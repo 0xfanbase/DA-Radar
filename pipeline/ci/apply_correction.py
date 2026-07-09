@@ -43,10 +43,29 @@ def build_correction_record(
 
 def apply_correction_to_card(card: dict, correction: dict) -> dict:
     """Returns a NEW card dict (the input is never mutated): status set to
-    "corrected", correction_note set to the human-supplied explanation."""
+    "corrected", correction_note set to the human-supplied explanation,
+    and the correction's own supporting citations (if any) merged into
+    the card's citations[] -- de-duplicated by (url, quote), so a
+    correction's new citation actually becomes part of what the
+    deterministic verification gate re-checks afterward (see
+    .github/workflows/correction.yml), rather than being recorded in
+    data/corrections.json but never itself verified. Re-applying the
+    same correction is idempotent (no duplicate citation entries)."""
     new_card = dict(card)
     new_card["status"] = "corrected"
     new_card["correction_note"] = correction["correction_note"]
+
+    correction_citations = correction.get("citations", [])
+    if correction_citations:
+        merged = list(card.get("citations", []))
+        seen = {(c["url"], c["quote"]) for c in merged}
+        for citation in correction_citations:
+            key = (citation["url"], citation["quote"])
+            if key not in seen:
+                merged.append(citation)
+                seen.add(key)
+        new_card["citations"] = merged
+
     return new_card
 
 

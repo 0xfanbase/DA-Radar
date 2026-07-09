@@ -15,7 +15,7 @@ import json
 import os
 
 from pipeline.ci.path_allowlist import get_uncommitted_changed_paths
-from pipeline.verify.gate import enforce_verification_gate
+from pipeline.verify.gate import enforce_full_gate
 
 DEFAULT_FETCH_KWARGS = dict(timeout=15, max_retries=3, backoff_base=1.0, backoff_multiplier=2.0)
 DEFAULT_USER_AGENT = (
@@ -27,15 +27,20 @@ DEFAULT_USER_AGENT = (
 def apply_gate_to_file(path: str, *, user_agent: str, **fetch_kwargs) -> bool:
     """Re-checks and possibly rewrites one card file in place.
 
-    Returns True iff the file's status was changed (downgraded to
-    "unverified" by the gate).
+    Returns True iff the file changed -- either the status was
+    downgraded to "unverified" (citation or numeric-claim failure), or
+    the set of unsupported numeric claims changed while status stayed
+    the same. Compares the whole card, not just status, since
+    numeric_claims_unsupported can change independently of status only
+    in the direction "was unsupported, now traceable" -- which still
+    needs writing back so a stale finding doesn't linger in the file.
     """
     with open(path, "r", encoding="utf-8") as fh:
         card = json.load(fh)
 
-    gated = enforce_verification_gate(card, user_agent=user_agent, **fetch_kwargs)
+    gated = enforce_full_gate(card, user_agent=user_agent, **fetch_kwargs)
 
-    if gated["status"] != card.get("status"):
+    if gated != card:
         with open(path, "w", encoding="utf-8") as fh:
             json.dump(gated, fh, sort_keys=True, indent=2, ensure_ascii=False)
             fh.write("\n")
