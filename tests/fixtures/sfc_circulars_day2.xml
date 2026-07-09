@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>SFC Circulars</title>
+    <link>https://www.sfc.hk/en/RSS-Feeds/Circulars</link>
+    <description>SFC circulars</description>
+    <item>
+      <title>Updates on HKEX's third optional market rehearsal</title>
+      <link>https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC34</link>
+      <guid>26EC34</guid>
+      <pubDate>Tue, 23 Jun 2026 17:15:02 +0800</pubDate>
+      <description>Updates on the backbone network upgrade rehearsal.</description>
+    </item>
+    <item>
+      <title>Circular on listed structured funds</title>
+      <link>https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC33</link>
+      <guid>26EC33</guid>
+      <pubDate>Fri, 05 Jun 2026 17:36:00 +0800</pubDate>
+      <description>Circular regarding listed structured funds.</description>
+    </item>
+    <item>
+      <title>Enhanced cybersecurity measures for AI-enabled cyberattacks</title>
+      <link>https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC32</link>
+      <guid>26EC32</guid>
+      <pubDate>Tue, 02 Jun 2026 17:15:19 +0800</pubDate>
+      <description>Guidance on cybersecurity measures.</description>
+    </item>
+  </channel>
+</rss>

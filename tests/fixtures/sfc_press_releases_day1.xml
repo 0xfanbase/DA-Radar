@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>SFC Press Releases</title>
+    <link>https://www.sfc.hk/en/RSS-Feeds/Press-releases</link>
+    <description>SFC press releases</description>
+    <item>
+      <title>SFC concludes consultation on the investor identification regime</title>
+      <link>https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR97</link>
+      <guid>26PR97</guid>
+      <pubDate>Tue, 23 Jun 2026 17:01:09 +0800</pubDate>
+      <description>The SFC today concluded its consultation.</description>
+    </item>
+    <item>
+      <title>SFC and HKMA conclude joint consultation on Clearing Rules amendments</title>
+      <link>https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR83</link>
+      <guid>26PR83</guid>
+      <pubDate>Fri, 05 Jun 2026 16:51:59 +0800</pubDate>
+      <description>Joint consultation conclusions published.</description>
+    </item>
+    <item>
+      <title>FSTB and SFC conclude consultations on virtual asset advisory and management regimes</title>
+      <link>https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR75</link>
+      <guid>26PR75</guid>
+      <pubDate>Tue, 26 May 2026 18:25:21 +0800</pubDate>
+      <description>Consultation conclusions on advisory and management regimes.</description>
+    </item>
+  </channel>
+</rss>

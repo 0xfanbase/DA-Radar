@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>FFA Notices</title>
+    <link>https://ffa.freedonia.invalid/rss/notices.xml</link>
+    <description>Freedonia Financial Authority notices</description>
+    <item>
+      <title>FFA notice three</title>
+      <link>https://ffa.freedonia.invalid/notices/three</link>
+      <guid>ffa-3</guid>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Third Freedonia notice.</description>
+    </item>
+    <item>
+      <title>FFA notice one</title>
+      <link>https://ffa.freedonia.invalid/notices/one</link>
+      <guid>ffa-1</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <description>First Freedonia notice.</description>
+    </item>
+    <item>
+      <title>FFA notice two</title>
+      <link>https://ffa.freedonia.invalid/notices/two</link>
+      <guid>ffa-2</guid>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Second Freedonia notice.</description>
+    </item>
+  </channel>
+</rss>
