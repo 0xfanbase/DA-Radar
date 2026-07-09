@@ -1,0 +1,60 @@
+name: Audit
+
+# Weekly, pure code, no AI -- same category as watch.yml, per CLAUDE.md's
+# loop diagram. Four deterministic checks (link-rot, pillar staleness,
+# feed coverage/silence, verifier pass-rate trend): every one of them is
+# mechanically decidable, never a semantic judgment call. Writes
+# data/audit/latest.json (schema-governed, renders on the Method & Audit
+# page) and appends an IMPROVEMENT_BACKLOG.md entry -- but only on an
+# actionable finding, never for a routine clean week.
+
+on:
+  schedule:
+    - cron: "0 2 * * 1" # weekly, Monday 02:00 UTC (10:00 HKT)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audit-hk-radar
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Python
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -e .
+
+      - name: Run audit
+        run: python -m pipeline.audit.run --repo-root .
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if [ -z "$(git status --porcelain -- data/audit IMPROVEMENT_BACKLOG.md)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit audit results
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GIT_AUTHOR_NAME: hk-radar-bot
+          GIT_AUTHOR_EMAIL: bot@users.noreply.github.com
+          GIT_COMMITTER_NAME: hk-radar-bot
+          GIT_COMMITTER_EMAIL: bot@users.noreply.github.com
+        run: |
+          git add data/audit IMPROVEMENT_BACKLOG.md
+          git commit -m "audit: $(date -u +%Y-%m-%dT%H:%M:%SZ) weekly audit run"
+          git push

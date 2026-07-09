@@ -30,14 +30,25 @@
 </p>
 
 <h2>Latest audit</h2>
+<p>A weekly audit checks for four things, all mechanically: broken links among every citation and key link on the site, pillars whose standing summary hasn't changed in over 45 days, feeds that have gone quiet for over 30 days, and the trend in what fraction of published cards pass verification.</p>
 {% if audit_latest %}
-<p>{{ audit_latest }}</p>
+<p class="mono" style="font-size:0.8rem;color:#555;">Last run {{ audit_latest.generated_at }}</p>
+{% set actionable = audit_latest.events | rejectattr("event_type", "equalto", "verifier_pass_rate_snapshot") | list %}
+{% if actionable %}
+<ul>
+  {% for event in actionable %}
+  <li><strong>{{ event.event_type }}</strong>: {{ event.summary }}</li>
+  {% endfor %}
+</ul>
 {% else %}
-<p>The weekly audit loop (link-rot check, staleness check, ledger-vs-regulator-page coverage check) is a planned later phase and has not run yet.</p>
+<p>No findings from the most recent run &mdash; every link resolved, every pillar current, every feed active, and the verification pass rate held steady.</p>
+{% endif %}
+{% else %}
+<p>The audit loop exists (a weekly scheduled job) but has not run yet.</p>
 {% endif %}
 
 <h2>Corrections log</h2>
-<p>No corrections have been issued yet. When a published card is later found to need correction, it will be listed here with the date and reason.</p>
+<p>No corrections have been issued yet. When a published card is later found to need correction, it will be listed here with the date and reason. Corrections are always human-initiated and reviewed via pull request before publishing &mdash; this project deliberately does not let the audit loop (or anything else) auto-publish a correction on its own, since getting a correction itself wrong would be a more serious integrity failure than the original error.</p>
 
 <h2>Editorial rules</h2>
 <p>Primary sources only for facts. Quotes are capped at 15 words, one per source. Named entities (licensees, applicants, enforcement targets) are mentioned only as primary sources state them, with no commentary. No predictions beyond officially stated timelines.</p>

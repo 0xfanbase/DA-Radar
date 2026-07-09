@@ -125,6 +125,57 @@ def test_handles_missing_audit_data_gracefully(tmp_path):
     assert "has not run yet" in method_html
 
 
+def test_renders_real_audit_findings_when_present(tmp_path):
+    """A copy of the fixture root plus a real data/audit/latest.json --
+    confirms the Method page renders actual findings, not just the
+    "hasn't run yet" placeholder, and never shows the routine pass-rate
+    snapshot event as if it were itself a finding."""
+    import json
+    import shutil
+
+    repo_copy = tmp_path / "repo_with_audit"
+    shutil.copytree(FIXTURE_ROOT, repo_copy)
+    audit_dir = repo_copy / "data" / "audit"
+    audit_dir.mkdir(parents=True, exist_ok=True)
+    with open(audit_dir / "latest.json", "w", encoding="utf-8") as fh:
+        json.dump(
+            {
+                "schema_version": 1,
+                "generated_at": "2026-01-05T00:00:00Z",
+                "events": [
+                    {
+                        "schema_version": 1,
+                        "event_type": "link_rot",
+                        "timestamp": "2026-01-05T00:00:00Z",
+                        "actor": "audit.yml",
+                        "summary": "Broken link: https://example.invalid/dead (404)",
+                        "details": {},
+                        "related_ids": [],
+                    },
+                    {
+                        "schema_version": 1,
+                        "event_type": "verifier_pass_rate_snapshot",
+                        "timestamp": "2026-01-05T00:00:00Z",
+                        "actor": "audit.yml",
+                        "summary": "1/1 published cards verified (100.0%)",
+                        "details": {"pass_rate_pct": 100.0},
+                        "related_ids": [],
+                    },
+                ],
+            },
+            fh,
+        )
+
+    output_dir = tmp_path / "output_with_audit"
+    build_site(str(repo_copy), str(output_dir))
+    method_html = open(output_dir / "method.html", encoding="utf-8").read()
+
+    assert "2026-01-05T00:00:00Z" in method_html
+    assert "Broken link: https://example.invalid/dead" in method_html
+    # The routine snapshot must not appear as if it were a "finding".
+    assert "1/1 published cards verified" not in method_html
+
+
 def test_handles_empty_content_gracefully(tmp_path):
     """An entirely empty content tree (no cards, no trajectory entries, no
     documents, no glossary terms, no pillar states) must render placeholder
