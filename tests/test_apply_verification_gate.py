@@ -84,3 +84,22 @@ def test_main_with_no_changed_cards_is_a_noop(tmp_path):
     _init_repo(tmp_path)
     exit_code = main(["--repo-dir", str(tmp_path)])
     assert exit_code == 0
+
+
+def test_apply_gate_to_file_writes_numeric_claims_unsupported_field(tmp_path, requests_mock, fixture_bytes):
+    """apply_gate_to_file now calls enforce_full_gate, not just
+    enforce_verification_gate -- a numeric claim that doesn't trace to
+    the fetched source must get written to disk as
+    numeric_claims_unsupported, alongside the status downgrade."""
+    requests_mock.get(DOC_URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
+    card = _card(status="verified")
+    card["summary"] = "Capital requirements are set at HK$99 million."
+    path = tmp_path / "card.json"
+    path.write_text(json.dumps(card))
+
+    changed = apply_gate_to_file(str(path), user_agent=UA, **FETCH_KWARGS)
+
+    assert changed is True
+    on_disk = json.loads(path.read_text())
+    assert on_disk["status"] == "unverified"
+    assert on_disk["numeric_claims_unsupported"] == ["HK$99 million"]

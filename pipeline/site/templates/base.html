@@ -3,6 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    // Sets data-theme before first paint if the visitor previously chose
+    // an explicit theme (theme.js persists this) -- avoids a flash of
+    // the wrong theme. If nothing is stored, no attribute is set and the
+    // plain CSS prefers-color-scheme media query handles it instead.
+    try {
+      var storedTheme = localStorage.getItem("hkdar-theme");
+      if (storedTheme === "light" || storedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", storedTheme);
+      }
+    } catch (e) {
+      // Private-mode/blocked storage access -- fall through to the
+      // prefers-color-scheme media query, same as any other visitor.
+    }
+  </script>
   <title>{% block title %}HK Digital Asset Radar{% endblock %}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@700;800&family=Noto+Sans:wght@400;600&family=Spline+Sans+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -10,16 +25,27 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="site-title" href="{{ asset_prefix }}index.html">HK Digital Asset Radar</a>
-    <nav class="site-nav">
-      <a href="{{ asset_prefix }}index.html" {% if active_page == 'start_here' %}aria-current="page"{% endif %}>Start Here</a>
-      <a href="{{ asset_prefix }}state-board.html" {% if active_page == 'state_board' %}aria-current="page"{% endif %}>State Board</a>
-      <a href="{{ asset_prefix }}trajectory.html" {% if active_page == 'trajectory' %}aria-current="page"{% endif %}>Trajectory Board</a>
-      <a href="{{ asset_prefix }}timeline.html" {% if active_page == 'timeline' %}aria-current="page"{% endif %}>Timeline</a>
-      <a href="{{ asset_prefix }}documents.html" {% if active_page == 'documents' %}aria-current="page"{% endif %}>Document Library</a>
-      <a href="{{ asset_prefix }}glossary.html" {% if active_page == 'glossary' %}aria-current="page"{% endif %}>Glossary</a>
-      <a href="{{ asset_prefix }}method.html" {% if active_page == 'method' %}aria-current="page"{% endif %}>Method &amp; Audit</a>
-    </nav>
+    <div class="site-header-main">
+      <a class="site-title" href="{{ asset_prefix }}index.html">HK Digital Asset Radar</a>
+      <nav class="site-nav">
+        <a href="{{ asset_prefix }}index.html" {% if active_page == 'start_here' %}aria-current="page"{% endif %}>Start Here</a>
+        <a href="{{ asset_prefix }}state-board.html" {% if active_page == 'state_board' %}aria-current="page"{% endif %}>State Board</a>
+        <a href="{{ asset_prefix }}trajectory.html" {% if active_page == 'trajectory' %}aria-current="page"{% endif %}>Trajectory Board</a>
+        <a href="{{ asset_prefix }}timeline.html" {% if active_page == 'timeline' %}aria-current="page"{% endif %}>Timeline</a>
+        <a href="{{ asset_prefix }}documents.html" {% if active_page == 'documents' %}aria-current="page"{% endif %}>Document Library</a>
+        <a href="{{ asset_prefix }}glossary.html" {% if active_page == 'glossary' %}aria-current="page"{% endif %}>Glossary</a>
+        <a href="{{ asset_prefix }}method.html" {% if active_page == 'method' %}aria-current="page"{% endif %}>Method &amp; Audit</a>
+      </nav>
+    </div>
+    <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
   </header>
   <main>
     {% include "_disclaimer.html" %}
@@ -29,5 +55,7 @@
     <p>HK Digital Asset Radar &mdash; code MIT-licensed, content CC BY 4.0. An automated, self-learning regulatory-watch project.</p>
   </footer>
   <script src="{{ asset_prefix }}static/site.js"></script>
+  <script src="{{ asset_prefix }}static/theme.js"></script>
+  <script src="{{ asset_prefix }}static/timeline.js"></script>
 </body>
 </html>

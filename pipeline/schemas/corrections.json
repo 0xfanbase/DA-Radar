@@ -1,41 +1,44 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "corrections.json",
-  "title": "Correction",
-  "description": "One public correction record for a previously published card, for the future /corrections page. Original field design -- the spec names this file without defining its shape (see IMPROVEMENT_BACKLOG.md). Not populated with real data until a correction is actually needed.",
-  "type": "object",
-  "properties": {
-    "schema_version": { "const": 1 },
-    "id": { "type": "string", "minLength": 1 },
-    "card_id": { "type": "string", "minLength": 1 },
-    "corrected_at": { "type": "string", "format": "date-time" },
-    "correction_note": { "type": "string", "minLength": 1 },
-    "fields_changed": {
-      "type": "array",
-      "items": { "type": "string", "minLength": 1 },
-      "minItems": 1
-    },
-    "citations": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "url": { "type": "string", "format": "uri" },
-          "quote": { "type": "string", "maxLength": 200 }
-        },
-        "required": ["url", "quote"],
-        "additionalProperties": false
+  "title": "Corrections",
+  "description": "Public correction records for previously published cards, for the future /corrections page. Original field design -- the spec names this file without defining its shape (see IMPROVEMENT_BACKLOG.md). Top-level array, matching how pipeline/ci/apply_correction.py's append_correction_record actually writes data/corrections.json on disk (a real latent bug, found and fixed during the fact-check enhancement pass: this schema was originally typed as a single object, which would have failed validate_content's schema check the first time a real correction ever happened).",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "schema_version": { "const": 1 },
+      "id": { "type": "string", "minLength": 1 },
+      "card_id": { "type": "string", "minLength": 1 },
+      "corrected_at": { "type": "string", "format": "date-time" },
+      "correction_note": { "type": "string", "minLength": 1 },
+      "fields_changed": {
+        "type": "array",
+        "items": { "type": "string", "minLength": 1 },
+        "minItems": 1
+      },
+      "citations": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "url": { "type": "string", "format": "uri" },
+            "quote": { "type": "string", "maxLength": 200 }
+          },
+          "required": ["url", "quote"],
+          "additionalProperties": false
+        }
       }
-    }
-  },
-  "required": [
-    "schema_version",
-    "id",
-    "card_id",
-    "corrected_at",
-    "correction_note",
-    "fields_changed",
-    "citations"
-  ],
-  "additionalProperties": false
+    },
+    "required": [
+      "schema_version",
+      "id",
+      "card_id",
+      "corrected_at",
+      "correction_note",
+      "fields_changed",
+      "citations"
+    ],
+    "additionalProperties": false
+  }
 }

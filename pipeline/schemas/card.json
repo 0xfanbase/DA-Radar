@@ -60,7 +60,12 @@
     },
     "generated_at": { "type": "string", "format": "date-time" },
     "model": { "type": "string", "minLength": 1 },
-    "correction_note": { "type": "string" }
+    "correction_note": { "type": "string" },
+    "numeric_claims_unsupported": {
+      "type": "array",
+      "description": "Set by pipeline/verify/gate.py's enforce_full_gate when a numeric claim (amount/percentage/count) in summary/why_it_matters could not be traced to the card's own cited source text. Present only when non-empty.",
+      "items": { "type": "string" }
+    }
   },
   "required": [
     "schema_version",

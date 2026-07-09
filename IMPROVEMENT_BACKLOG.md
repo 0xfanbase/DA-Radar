@@ -892,3 +892,125 @@ analyst/verifier trigger must complete several real successful cycles, and one f
 of `docs/improve-runbook.md` must happen and be reported back, before either trigger's
 live-activation question is revisited. Full checkpoint text in PROGRESS.md's "PM checkpoints"
 section.
+
+## Visual redesign (light cream + dark mode + interactive timeline) and fact-check enhancement, 2026-07-09
+
+Owner-requested, out of the normal phase sequence: the live site's UI read as visually plain (near-
+white `#FAFAF7`, no dark mode, zero elevation, "Timeline" page was a flat card list with no actual
+timeline), plus an explicit ask to confirm — and if needed strengthen — the anti-misrepresentation
+logic. Owner's own condition attached: a Fable PM audit of UI/UX, every interactive control, and the
+fact-check/data-source methodology, work only reported as done once that audit passes.
+
+**Color tokens, independently verified twice.** Only `--paper` changed in light mode
+(`#FAFAF7` -> `#F2ECDD`, a genuine warm cream, not the "just less white" trap); `--ink`/`--seal-red`/
+`--harbour-teal`/`--amber` kept their existing light-mode hex values unchanged. New tokens added:
+`--surface-card`, `--ink-muted` (replaces every hardcoded `#555`), `--verified-green` (replaces
+hardcoded `#4a6a4a`), `--hairline`, `--shadow-elevation`, and a full dark-mode value for every one of
+the above. Every contrast figure (ink/seal-red/harbour-teal/verified-green against both the page
+background and the card surface, in both themes) was computed with real WCAG relative-luminance
+math and re-checked independently by a second pass before implementation — all clear >=4.5:1 where
+normal text requires it; `--amber` deliberately sits in the 3.0-4.5 band in both themes (border/
+background accent only, never text color — enforced by a dedicated regression test,
+`test_amber_as_text_color_fails_aa_and_is_therefore_not_used_as_text[_dark]`). One dark-mode
+candidate for `--seal-red` was rejected during design because it scored 4.404 against the dark card
+surface (just under AA) before the shipped value was chosen instead.
+
+**Theme switching: OS preference + explicit toggle, owner's own choice between the two options
+offered.** `prefers-color-scheme: dark` sets the automatic default; an explicit `#theme-toggle`
+button (persisted to `localStorage`) always wins via `[data-theme]` selector specificity, regardless
+of source order. A synchronous inline script is the first thing in `<head>`, before any stylesheet,
+so the stored choice applies before first paint — no flash of the wrong theme.
+
+**Interactive timeline, both placements the owner asked for.** A new `build_timeline_events()`
+merges cards and documents onto one real, ascending-sorted date axis; documents with no
+`published_at` are excluded rather than guessed at, since a timeline axis has no honest way to place
+an undated point. The Trajectory Board's loose `date_or_window` strings (`"2026"`, `"H1 2026"`) are
+deliberately kept in a visually separate "officially indicated" rail alongside the precise axis,
+never merged onto it — merging them would fabricate a precision the source data doesn't have. The
+same `timeline_ribbon()` macro renders capped (`limit=40`) as a homepage hero and uncapped at the top
+of the dedicated Timeline page. Built JS-optional throughout: every marker is a real `<a href>`
+(works with JS disabled), a `<details>` fallback lists the same events as plain text, and the hover/
+focus tooltip enhances rather than gates — the same information is reachable by keyboard focus alone.
+The categorical 7-color pillar palette (position in `config.pillars[]` is the primary identity
+channel, color reinforces it) was validated with the `dataviz` skill's own `validate_palette.js`
+against this project's real surface colors, not eyeballed: worst adjacent-pair separation 76.9 (light
+mode) / 70.4 (dark mode), all 7 slots >=3:1 contrast against both page and card surfaces in both
+themes.
+
+**Two real pre-existing bugs found and fixed while doing this, not just noted:**
+1. Hardcoded `#555`/`#fff`/`#4a6a4a` colors scattered across several templates' inline `style="..."`
+   attributes and `style.css` itself couldn't respond to a `[data-theme]` override by construction —
+   replaced with token-referencing classes (e.g. `.meta-line`). Generalized into a permanent
+   regression guard, `test_no_hardcoded_color_leaks_into_rendered_output`, rather than just fixed
+   once.
+2. `.trajectory-board`/`.trajectory-row` hardcoded `var(--ink)`/`var(--paper)` to get their
+   permanently-dark-board/light-text look — which would have silently *inverted* the instant those
+   two tokens became theme-reactive. Fixed with two new, genuinely theme-invariant tokens,
+   `--trajectory-surface`/`--trajectory-ink`, that never respond to `prefers-color-scheme` or
+   `[data-theme]` at all. (See below — this fix was real but incomplete; Fable's audit found the
+   remainder.)
+
+**Fact-check layer: what already existed, confirmed by full-file reads, not assumed.** The
+deterministic, non-bypassable citation-authenticity gate (`pipeline/verify/gate.py`'s
+`enforce_verification_gate`, live re-fetching every citation URL on every run) was already real and
+was left untouched. Confirmed gaps: nothing checked for cherry-picking/out-of-context quoting
+(inherently a semantic judgment, not something a deterministic check can do honestly), and nothing
+checked numeric claims (amounts/percentages) beyond citation-quote substring matching.
+
+- `verifier_prompt.md`/`analyst_prompt.md` gained explicit cherry-picking language: an accurate,
+  verbatim quote used in a way that omits an adjacent caveat the source itself makes must be
+  rewritten or dropped, not waved through because the substring technically matches. This stays a
+  prompt-level instruction on purpose — deliberately not oversold as a deterministic check, since
+  semantic misrepresentation genuinely cannot be caught by regex.
+- New `pipeline/verify/numeric_claims.py`: bounded, conservative regex extraction of currency
+  amounts/percentages/counts (deliberately not bare numbers or dates, to avoid false positives
+  against legitimate paraphrase), checked against the same already-fetched source text. Its own
+  docstring states plainly what it does *not* do — cannot and does not detect cherry-picking, spin,
+  or semantic misrepresentation — so the honesty-of-scope principle lives in the code, not just in
+  this log. Wired into a new `enforce_full_gate()` alongside (not replacing) the untouched
+  `enforce_verification_gate`.
+- Two more real, previously-undiscovered bugs in the corrections mechanism, found while wiring the
+  gate onto it: `pipeline/schemas/corrections.json` was typed as a single object while
+  `data/corrections.json` is actually written as an array (would have broken schema validation the
+  first time a real correction ever happened); and `apply_correction_to_card` never merged a
+  correction's own supplied citation into the card's `citations[]` at all, which would have made the
+  new gate-on-correction step check nothing. Both fixed; `correction.yml` now runs the full
+  verification gate on the correction's own citation before schema validation, and real corrections
+  data is now surfaced in a table on the Method page instead of a static placeholder sentence.
+
+Full suite: 303 tests passing at this point (up from 255 in the last logged entry above). Verified
+directly in a real headless browser (Playwright): both themes, the toggle persisting across reload
+and fresh navigation, the timeline's hover/keyboard/click-through/no-JS-fallback behavior, and all 7
+pages in both themes — 35/35 checks passing.
+
+### Fable PM audit finding, same day: trajectory board lost its identity in dark mode specifically
+
+Per the owner's own condition, this work was not reported as done until Fable's audit passed. Fable
+independently reproduced the test count, re-ran the Playwright script itself against a fresh build,
+and re-ran `validate_palette.js` itself against the live hex values — all matched. It also computed a
+contrast ratio nobody had checked: **`--trajectory-surface` (#132A43) against the dark-mode page
+background (#0F1E2E) is only 1.16:1** — both are near-black navy. The board's own border was set to
+`var(--trajectory-surface)`, i.e. the same color as its own background, which is a no-op border by
+construction; this had been invisible in light mode purely by accident, since the board's fill
+already contrasts 12.37:1 against the light page there. In dark mode, with no independent border
+color and almost no fill-vs-page contrast, the board — the site's signature "departures board"
+component, and the exact thing the theme-invariant-token fix above was built to preserve — nearly
+disappeared into the surrounding page.
+
+**Fix:** `.trajectory-board`'s border now uses `var(--amber)` instead of `var(--trajectory-surface)`,
+plus a `box-shadow: var(--shadow-elevation)` for additional depth. `--amber` is already validated and
+already reserved in this codebase for exactly this role (border/background accent, never text — see
+`.badge-unverified` above) and independently clears the WCAG 1.4.11 non-text/UI-boundary 3:1
+threshold against **both** page backgrounds in both themes (3.09 light / 3.62 dark) and against the
+board's own dark fill in both themes (4.01 light / 3.13 dark) — so the border reads as a real frame
+whether viewed from the page side or the board's own interior, in either theme. Confirmed visually
+(zoomed dark-mode screenshot of the board, and the full page) after the fix: the board now reads as a
+distinct, framed panel against the dark page, matching the light-mode look's intent. Locked in with a
+new regression test, `test_trajectory_board_border_has_real_contrast_against_both_page_backgrounds`,
+which asserts the actual bug (a same-color border scores under 3:1 against the dark page) as well as
+the fix. Full suite: 304 tests passing. Re-verified with Playwright: 35/35.
+
+**Process gap Fable also flagged, fixed by this section existing:** none of this work — the palette/
+CVD derivation, the two pre-existing CSS bugs, the fact-check gaps closed, or (until now) the
+trajectory-board finding — had a durable log entry here, only two commit messages. Every phase before
+this one got one; this is the corrected record.

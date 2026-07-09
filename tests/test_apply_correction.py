@@ -41,6 +41,57 @@ def test_apply_correction_to_card_sets_status_and_note_without_mutating_input():
     assert card["status"] == "verified"  # original untouched
 
 
+def test_apply_correction_to_card_merges_new_citation_into_card_citations():
+    card = {
+        "id": "card1",
+        "status": "verified",
+        "citations": [{"url": "https://example.invalid/original", "quote": "old quote"}],
+    }
+    correction = {
+        "correction_note": "Fixed a wrong figure.",
+        "citations": [{"url": "https://example.invalid/corrected", "quote": "the actual figure"}],
+    }
+
+    corrected = apply_correction_to_card(card, correction)
+
+    assert corrected["citations"] == [
+        {"url": "https://example.invalid/original", "quote": "old quote"},
+        {"url": "https://example.invalid/corrected", "quote": "the actual figure"},
+    ]
+    assert len(card["citations"]) == 1  # original untouched
+
+
+def test_apply_correction_to_card_citation_merge_is_idempotent():
+    """Re-applying the same correction (e.g. a re-run) must not duplicate
+    the citation entry."""
+    card = {
+        "id": "card1",
+        "status": "verified",
+        "citations": [{"url": "https://example.invalid/original", "quote": "old quote"}],
+    }
+    correction = {
+        "correction_note": "Fixed a wrong figure.",
+        "citations": [{"url": "https://example.invalid/corrected", "quote": "the actual figure"}],
+    }
+
+    once = apply_correction_to_card(card, correction)
+    twice = apply_correction_to_card(once, correction)
+
+    assert twice["citations"] == once["citations"]
+
+
+def test_apply_correction_to_card_with_no_citations_leaves_card_citations_untouched():
+    """A correction with no --citation supplied must not add a citations
+    key to a card that never had one (matches the existing no-citations
+    test scenario above)."""
+    card = {"id": "card1", "status": "verified"}
+    correction = {"correction_note": "Fixed a wrong figure."}
+
+    corrected = apply_correction_to_card(card, correction)
+
+    assert "citations" not in corrected
+
+
 def test_append_correction_record_to_empty_file(tmp_path):
     path = str(tmp_path / "corrections.json")
     correction = {"id": "corr-1"}
@@ -107,6 +158,10 @@ def test_main_end_to_end_updates_card_and_corrections_log(tmp_path):
         card = json.load(fh)
     assert card["status"] == "corrected"
     assert "capital requirement was wrong" in card["correction_note"]
+    # The correction's own new citation must actually land in the card's
+    # citations[] -- otherwise the deterministic verification gate that
+    # runs next in correction.yml would never see it at all.
+    assert {"url": "https://example.invalid/corrected", "quote": "the actual figure"} in card["citations"]
 
     corrections_path = tmp_path / "data" / "corrections.json"
     with open(corrections_path) as fh:
@@ -170,9 +225,10 @@ def test_main_produces_a_schema_valid_correction_record(tmp_path):
     schema_path = os.path.join(REPO_ROOT, "pipeline", "schemas", "corrections.json")
     with open(schema_path) as fh:
         schema = json.load(fh)
-    validator = Draft202012Validator(schema)
-    for correction in corrections:
-        validator.validate(correction)
+    # corrections.json is an array-typed schema (matching how
+    # append_correction_record actually writes the file to disk) --
+    # validate the whole list at once, not each element individually.
+    Draft202012Validator(schema).validate(corrections)
 
 
 def test_main_produces_a_schema_valid_corrected_card(tmp_path):

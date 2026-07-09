@@ -110,3 +110,37 @@ def test_validate_changed_paths_all_valid_passes(tmp_path):
     ok, results = validate_changed_paths(["content/cards/good.json"], repo_dir=str(tmp_path))
     assert ok is True
     assert len(results) == 1
+
+
+def test_real_array_shaped_corrections_file_validates(tmp_path):
+    """corrections.json is an array-typed schema (matching how
+    apply_correction.py's append_correction_record actually writes
+    data/corrections.json to disk) -- a real latent bug found and fixed
+    during the fact-check enhancement pass: the schema was originally
+    typed as a single object, which would have failed this exact check
+    the first time a real correction ever happened."""
+    corrections = [
+        {
+            "schema_version": 1,
+            "id": "corr-1",
+            "card_id": "card-1",
+            "corrected_at": "2026-02-01T00:00:00Z",
+            "correction_note": "Fixed a wrong figure.",
+            "fields_changed": ["summary"],
+            "citations": [{"url": "https://example.invalid/corrected", "quote": "the actual figure"}],
+        },
+        {
+            "schema_version": 1,
+            "id": "corr-2",
+            "card_id": "card-2",
+            "corrected_at": "2026-03-01T00:00:00Z",
+            "correction_note": "Fixed a date.",
+            "fields_changed": ["key_dates"],
+            "citations": [],
+        },
+    ]
+    _write(tmp_path, "data/corrections.json", corrections)
+    applicable, ok, error = validate_file("data/corrections.json", repo_dir=str(tmp_path))
+    assert applicable is True
+    assert ok is True
+    assert error is None

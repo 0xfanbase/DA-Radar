@@ -27,3 +27,13 @@ include = ["pipeline*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+# Real bug found via CI, not locally: tests/ has no __init__.py, and the
+# bare `pytest` console-script entry point (unlike `python -m pytest`,
+# which always puts cwd on sys.path) does not add the repo root to
+# sys.path on its own -- so `from tests.conftest import ...` failed with
+# ModuleNotFoundError under plain `pytest -q`, exactly what CI runs,
+# while every local `python -m pytest -q` run stayed green throughout
+# development and masked it completely. This makes the fix invocation-
+# independent (bare `pytest`, `python -m pytest`, any CI runner) rather
+# than special-casing one workflow's run command.
+pythonpath = ["."]

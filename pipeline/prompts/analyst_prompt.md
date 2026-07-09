@@ -33,7 +33,13 @@ requires.
    within 2026" is fine because a regulator said so; "likely to pass by Q3" is not, unless a
    regulator said that specific thing). **Named-entity rule:** mention licensees, applicants, or
    enforcement targets only exactly as the primary source states, with zero added commentary —
-   this applies even to well-known or bank-affiliated entities.
+   this applies even to well-known or bank-affiliated entities. **Quote in full context:** before
+   selecting a quote, read the paragraph around it — an accurate, verbatim quote can still mislead
+   if it omits an adjacent caveat, exception, or contrasting statement the source makes right next
+   to it. A separate verifier pass checks this adversarially, but do not rely on that pass to catch
+   a selective quote you could have avoided by reading the fuller context yourself. State numeric
+   claims (amounts, percentages, counts) exactly as the source states them, not rounded or
+   paraphrased — a deterministic check later re-traces these against the source text.
 
 ## Your task, step by step
 

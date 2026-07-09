@@ -68,6 +68,12 @@ class CitationCheckResult:
     quote: str
     authentic: bool
     error: Optional[str] = None
+    # The fetched source's extracted text, kept so a later, separate check
+    # (pipeline/verify/numeric_claims.py) can re-use this same fetch
+    # rather than re-fetching every citation a second time. Empty string
+    # on any fetch/extraction failure, never None, so callers can always
+    # safely join/concatenate it.
+    source_text: str = ""
 
 
 def check_citation(
@@ -98,7 +104,12 @@ def check_citation(
     if doc.status != "ok":
         return CitationCheckResult(url=url, quote=quote, authentic=False, error=doc.error)
 
-    return CitationCheckResult(url=url, quote=quote, authentic=quote_is_authentic(quote, doc.text))
+    return CitationCheckResult(
+        url=url,
+        quote=quote,
+        authentic=quote_is_authentic(quote, doc.text),
+        source_text=doc.text,
+    )
 
 
 def check_card_citations(card: dict, **fetch_kwargs) -> list:
