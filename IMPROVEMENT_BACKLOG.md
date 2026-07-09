@@ -614,6 +614,56 @@ this workflow no longer commits anything back to the repository. The dual-trigge
 reason. **Owner action still required, mechanism just changed:** Settings -> Pages -> Source:
 "GitHub Actions" (not "Deploy from a branch" as originally planned).
 
+## Phase 5 kickoff: scoping audit.yml, corrections, and improve.yml (Fable PM, 2026-07-09)
+
+Phase 5 per spec is "watch->analyze->verify->publish untouched for 14 days with correct output;
+audit + corrections + improve loop live," acceptance criterion "two consecutive real regulator
+publications flow to the site with zero human action." Brought this to Fable PM before building:
+the 14-day soak and "two consecutive real publications" parts of that criterion cannot be completed
+synchronously in any session, since they require elapsed real-world time and the CCR trigger firing
+on its own schedule (currently disabled pending this branch's merge). Fable's direction: treat that
+as an explicitly-tracked open item (same pattern as the CCR trigger's own unfired status), get the
+owner's merge/Pages/trigger-reenable punch list moving in parallel since that's the true long pole,
+build `audit.yml` and the corrections plumbing now under specific conditions, and bring a design note
+for `improve.yml` for review before writing any code (its blast radius -- potential write access to
+`/pipeline`, `/config`, `/.github/workflows`, the prompts themselves -- is categorically different
+from the other two, and deserves the same kickoff-style scrutiny Phase 1/2 got before implementation).
+
+## Corrections mechanism built (task from Phase 5 kickoff), 2026-07-09
+
+Built per Fable's explicit condition: **human-initiated and PR-reviewed by design, never
+autonomous.** `pipeline/ci/apply_correction.py` is pure, deterministic code with zero judgment of
+its own about what needs correcting or why -- every input (which card, what changed, the
+correction's own supporting citation) is supplied explicitly by a human, via CLI arguments locally
+or `.github/workflows/correction.yml`'s `workflow_dispatch` form inputs. Deliberately **not** wired
+to auto-trigger from `audit.yml`'s findings: a broken link or a stale pillar is a prompt for a human
+to look, not evidence that a specific claim on a specific card is actually wrong -- conflating "the
+audit noticed something" with "therefore auto-correct it" would be exactly the kind of unsupervised
+autonomy Fable's condition was meant to prevent.
+
+`correction.yml` never commits to `main` directly: it creates a branch, applies the correction (also
+re-running `path_allowlist` and `validate_content` as real subprocess gates, same as every other
+content-touching workflow in this project), commits under the `hk-radar-bot` identity, pushes the
+branch, and opens a PR via the pre-installed `gh` CLI -- a human must review and merge it. No new
+third-party GitHub Action was added for PR creation (e.g. `peter-evans/create-pull-request`); reused
+the runner's built-in `gh` CLI instead, consistent with this project's preference for pinned
+`actions/*` officials over third-party marketplace actions wherever avoidable.
+
+**Security note, applied deliberately:** `workflow_dispatch` input values are assigned to `env:`
+variables and referenced as `$CARD_ID`/`$CORRECTION_NOTE`/etc. in every `run:` step, never
+interpolated directly via `${{ github.event.inputs.* }}` inside a shell script body -- this follows
+GitHub's own guidance against script injection from untrusted input text. `workflow_dispatch` can
+only be triggered by a repo collaborator with write access, so the practical risk here is lower than
+for a PR-triggered workflow reacting to arbitrary external input, but the same safe-by-construction
+pattern costs nothing to apply and removes the question entirely rather than relying on who-can-
+trigger-this as the only safeguard.
+
+`card.json`'s existing (already-defined, previously-unused) optional `correction_note` field and the
+`"corrected"` status enum value are exactly what this wires into -- no schema change needed.
+`data/corrections.json`'s schema also already existed from Phase 1, unused until now. 8 new tests in
+`tests/test_apply_correction.py`, including schema-validation of both the correction record and the
+corrected card. 214 tests passing.
+
 ## Real Lighthouse accessibility audit against the literal P4 acceptance criterion (2026-07-09)
 
 Spec §10's Phase 4 acceptance criterion literally names "Lighthouse ≥90 a11y," not just a manual
@@ -694,3 +744,49 @@ slip between now and Phase 4 kickoff.
 - The two logged anonymity flags (LICENSE "Big Fan" copyright line, non-bot initial commit) should
   be resolved with the human owner before public launch — deliberately left as owner decisions,
   not made unilaterally during this build.
+
+## Live audit.yml run in the dev sandbox: real bug, discarded contaminated output (2026-07-09)
+
+Before committing `audit.yml`, ran `pipeline.audit.run` live against the real repo content as a
+final check beyond the 25-test fixture suite. It returned 50 events, 49 flagged actionable -- but
+47 of those "link_rot" findings were not genuine dead links, and the contaminated output (including
+an auto-appended backlog section this same run wrote to this file) was deleted rather than
+committed, for reasons recorded here rather than silently.
+
+Every one of the 47 failed with `SSLCertVerificationError: unable to get local issuer certificate`,
+and every single one was against one specific subdomain: `brdr.hkma.gov.hk` (HKMA's document-ledger
+host, used for circular/guideline PDF links). Diagnosed before trusting the numbers:
+
+- Reproduced independently outside the audit pipeline: `curl` and Python `requests` failed
+  identically and deterministically against *every* `brdr.hkma.gov.hk` URL tried, including ones
+  never mentioned in the findings list, even with the sandbox's own proxy CA bundle
+  (`/root/.ccr/ca-bundle.crt`) passed explicitly via `--cacert`.
+- Sibling HKMA hosts on the same domain (`www.hkma.gov.hk`) and SFC's site verified and fetched
+  cleanly over the same network path -- including a real, independently-reproducible `404` on
+  `https://www.hkma.gov.hk/eng/regulatory-resources/consultations/20250113-1/` (see below).
+- `openssl s_client`'s default trust store completed the TLS handshake to `brdr.hkma.gov.hk`
+  successfully through this sandbox's TLS-inspecting egress proxy (`verify return:1` at every
+  depth), while `curl`/`requests` failed even when pointed at that same proxy's own CA bundle.
+
+This sandbox's outbound HTTPS goes through a policy-enforcing egress proxy that re-terminates TLS
+and re-signs a fresh per-host certificate; one host verifying for one TLS client's trust path but
+not another's, while every other host on the same domain is unaffected, points at a sandbox-local
+proxy/cert-chain quirk specific to this dev container -- not evidence that ~47 real HKMA documents
+went dead simultaneously. `audit.yml`'s real execution environment is a normal GitHub Actions
+runner with direct internet egress and no intercepting proxy, so this should not reproduce there.
+
+**Decision:** discarded this run's `data/audit/latest.json` rather than commit it -- publishing
+"49 broken links, mostly HKMA circulars" to the public Method page on the strength of a sandbox
+TLS artifact would be exactly the kind of fabricated/misleading claim the editorial rules in
+CLAUDE.md exist to prevent, and worse than the honest "audit hasn't produced real data yet" state
+`method.html` already renders gracefully. The `audit.yml` code itself is not in question -- it is
+proven correct by the 25 fixture-based tests, which don't touch the network at all. The genuine,
+authoritative first run happens when `audit.yml` executes for real via its GitHub Actions cron,
+post-merge.
+
+**One finding in the 49 was real and independently reproducible, not a proxy artifact:** the plain
+HTTP 404 on `https://www.hkma.gov.hk/eng/regulatory-resources/consultations/20250113-1/` (this URL
+is not on `brdr.hkma.gov.hk` and returned a genuine 404, no SSL error, confirmed with a fresh `curl`
+run outside the audit pipeline). Flagged here as a known open item for a human to check against the
+regulator's current page structure -- not auto-corrected, consistent with the corrections
+mechanism's human-initiated-only design immediately below.
