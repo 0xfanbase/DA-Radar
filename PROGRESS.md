@@ -6,7 +6,9 @@ along with `git log` — to know exactly where the project stands before doing a
 ## Phase status
 
 - **P1 — Chassis: complete** (signed off by Fable PM checkpoint 2, 2026-07-09)
-- P2 — Analyst + verifier: not started
+- **P2 — Analyst + verifier: deterministically complete, live-LLM-unverified** (see 2026-07-09
+  entry below — designed and fully tested, but blocked on `CLAUDE_CODE_OAUTH_TOKEN` for an actual
+  live run, same shape as Phase 1's pre-merge blocker)
 - P3 — Seed backfill: not started
 - P4 — Frontend: not started
 - P5 — Full autonomy: not started
@@ -64,7 +66,69 @@ and the local (git-ignored) ETag cache confirms neither SFC nor HKMA returned an
 consistent with the live-smoke-test finding above. Both `data/ledger.json` (983 items) and
 `data/queue.json` (983 items, all `status: "queued"`) validate against their schemas.
 
-*(Further entries appended as Phase 2+ work lands.)*
+### 2026-07-09 — Phase 2 build complete (deterministically; live LLM run still blocked)
+
+Built in full, per Fable PM kickoff/checkpoint-A/checkpoint-B review (see "PM checkpoints" below):
+
+- `pipeline/http.py`: shared retry/backoff core, refactored out of the Phase 1 watcher so the new
+  document fetcher reuses it instead of duplicating.
+- `pipeline/ci/path_allowlist.py`: the CI path-allowlist gate. Allowlist-based (fail unless every
+  changed path is under `content/` or `data/`), not a denylist. Two integration points:
+  working-tree mode (`git status --porcelain` — the real pre-commit use case) and diff mode
+  (between two refs).
+- `pipeline/verify/docfetch.py`, `authenticity.py`, `gate.py`: the deterministic
+  citation-authenticity oracle and the non-bypassable pre-commit gate. The oracle only ever
+  answers "is this quote a genuine substring of this source" — never which sentence a citation
+  supports (that's the LLM verifier's job). The gate re-checks every citation itself and forces
+  `status: "unverified"` on any failure, never trusting a card's self-reported status.
+- `pipeline/watcher/ledger.py` extended with a real status-transition state machine (`queued ->
+  drafted -> verified -> published`, `corrected`/`suppressed` from `published`, `error` from
+  anywhere) — `InvalidStatusTransition` raised on illegal moves.
+- `pipeline/ci/queue_check.py`, `validate_content.py`, `apply_verification_gate.py`,
+  `promote_drafted.py`, `promote_verified.py`: the deterministic CI-job wiring — quota gate,
+  schema validation of changed content/data files, the gate applied to real card files on disk,
+  and the ledger-mutation scripts that the AI jobs never touch themselves.
+- `pipeline/prompts/analyst_prompt.md`, `verifier_prompt.md`: the actual instructions the two AI
+  jobs will run under, encoding CLAUDE.md's hard rules (data-not-instructions is rule 1 in both),
+  the card schema shape, and the `content/` path convention.
+- `.github/workflows/analyze.yml`: three jobs — `check-queue` (no AI, no cost when the queue is
+  empty), `analyst` (`claude-code-action`, drafts under `content/cards/`), `verifier` (`needs:
+  analyst`, a genuinely separate job/runner = fresh context, not a continued conversation).
+  `claude_args` identical for both, tightened during design to drop `/data` access entirely once
+  the promotion scripts took over every ledger mutation.
+- `.github/workflows/watch.yml`'s Phase 1 no-op placeholder replaced with a real
+  `repository_dispatch` POST using the job's own `GITHUB_TOKEN`.
+- 28 new tests (136 total), all fixture-based, no live network.
+
+**The one behavior every future session must know without digging for it** (Fable PM flagged
+that this needs proactive, prominent disclosure, not something found by reading a docstring):
+**a card whose only citation the deterministic gate finds fabricated still gets PUBLISHED** —
+its ledger item reaches `status: "published"`, meaning the pipeline ran to completion and the
+card is live on the site — but the card's own JSON carries `status: "unverified"`, which is the
+actual reader-facing signal, displayed as a visible badge per CLAUDE.md rule 1 ("every card must
+show ... verification status"). This is the spec's locked "fully auto-publish with disclaimers"
+decision working as intended, not a bug: the ledger tracks *pipeline stage* (did analyst+verifier
+finish), never *editorial confidence* — that lives entirely in the card's own `status` field.
+Locked in by `tests/test_analyze_pipeline_integration.py`, which chains the real deterministic
+functions end-to-end (`promote_drafted` -> simulated verifier pass -> `apply_verification_gate`
+-> `promote_verified`) and asserts this exact, easy-to-mistake-for-a-bug end state explicitly, so
+it can't be silently "fixed" without breaking a passing test first.
+
+**Two residual gaps, named plainly, not papered over (same shape as Phase 1's pre-merge gap):**
+1. No `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_API_KEY` secret exists yet, so no real analyst/verifier
+   LLM pass has ever run. Every deterministic gate is tested; whether a real Claude Code agent
+   actually resists a hostile fetched document the way the prompts instruct is fixture-unprovable
+   by construction — the gates are the backstop for when it doesn't, not proof that it won't.
+2. The `analyze.yml`/`watch.yml` chain (the `repository_dispatch` trigger firing, `fetch-depth: 2`
+   giving the verifier job `HEAD~1`, the AI job's environment) has never executed on GitHub's
+   actual infrastructure — YAML-validated and unit-tested piece by piece, not dry-run as a whole.
+
+Per Fable PM directive: the first real live run's output (both commits, the actual card file, and
+both jobs' `display_report` output) must be reviewed before Phase 2 is called operationally
+closed — mirroring how Phase 1's live `workflow_dispatch` run, not just green tests, was the
+actual closing evidence.
+
+*(Further entries appended as Phase 3+ work lands.)*
 
 ## PM checkpoints (Fable)
 
@@ -137,3 +201,41 @@ the new `main` per standard post-merge handling. Immediately closed out directiv
 **Phase 1 is now both criterion-verified locally and operationally proven on real GitHub Actions
 infrastructure.** Proceeding to Phase 2 (analyst + verifier + CI path-allowlist gate) per the
 user's instruction to continue building.
+
+### 2026-07-09 — Kickoff review: approved, split and sequencing adjusted
+
+Fable reviewed Phase 2 scope before implementation began. Approved, with the analyst/deterministic
+split sharpened: the deterministic module is a per-citation authenticity oracle ONLY (never judges
+which sentence a citation supports); the gate is the final, non-bypassable check before commit,
+never trusting a card's self-reported status. Directives: build the path-allowlist gate first,
+standalone, before any prompt-writing; enforce the AI jobs' tool restriction at two independent
+layers (their own `claude_args` plus a separate deterministic post-hoc check); the verifier must be
+a structurally separate job, fresh context, not a continued conversation; log the citation-vs-
+sentence interface decision explicitly. Full directive text and all resulting decisions are in
+IMPROVEMENT_BACKLOG.md's "Phase 2 kickoff and decisions" section.
+
+### 2026-07-09 — Checkpoint A: deterministic scaffolding verified
+
+Fable independently re-ran the full suite, read `path_allowlist.py`/`gate.py`/`authenticity.py`/
+`docfetch.py`/`ledger.py` directly, and confirmed every named test does what was claimed. Caught
+one factual error in the report (a claim that `claude-code-action@v1` has no `settings` input —
+false; the input exists, though the path-anchoring problem that ruled out a settings-*file*
+approach was and is real) — corrected in IMPROVEMENT_BACKLOG.md rather than left standing.
+Approved proceeding to `analyze.yml` + prompts.
+
+### 2026-07-09 — Checkpoint B: signed off, with one gap closed
+
+Fable independently re-ran the suite, read `analyze.yml`/`watch.yml` and both prompt files in
+full, and verified the `repository_dispatch`-exemption claim against GitHub's own docs. Found one
+real, non-blocking gap: `promote_verified.py` promotes a ledger item to `"published"` regardless of
+the card file's own (possibly gate-downgraded) `status` — a deliberate design, not a bug, but one
+that needed (a) proactive disclosure in the checkpoint report itself, not something found by
+reading a docstring, and (b) an explicit integration test locking in the exact end state, since a
+future contributor would very plausibly "fix" it as a bug otherwise. Both addressed: see the
+prominent callout in the Phase 2 build-complete log entry above, and
+`tests/test_analyze_pipeline_integration.py`. **Verdict: Phase 2 signed off as
+designed-and-deterministically-verified**, with the live-LLM-behavior and live-YAML-execution gaps
+named as pending the same secret-provisioning blocker as Phase 1's pre-merge gap — Fable's
+directive is that the first real live run's output (both commits, the card file, both jobs'
+`display_report`) comes back for review before Phase 2 is called operationally closed, mirroring
+Phase 1's live `workflow_dispatch` run being the actual closing evidence, not just green tests.
