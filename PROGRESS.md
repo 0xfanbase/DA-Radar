@@ -19,13 +19,46 @@ along with `git log` — to know exactly where the project stands before doing a
   workflow, real Lighthouse 100/100 on every page, browser-verified; see the 2026-07-09 "Phase 4
   (Frontend) build" entry below. Still open: GitHub Pages hosting itself isn't enabled yet -- owner
   action, not available to this session)
-- **P5 — Full autonomy: in progress.** `audit.yml` (link-rot, staleness, feed-silence, pass-rate
-  trend) and the corrections mechanism (human-initiated, PR-reviewed) are both built and pushed.
-  `improve.yml` design note sent to Fable PM for review, no implementation yet pending sign-off. The
-  literal P5 acceptance criterion -- 14-day soak, two consecutive real regulator publications with
-  zero human action -- cannot be completed synchronously in any session (it needs elapsed real-world
-  time and the CCR trigger firing on its own schedule, currently disabled pending this branch's
-  merge) and is tracked as an explicit open item, per Fable's Phase 5 kickoff direction.
+- **P5 — Full autonomy: deterministic build complete, per Fable PM's 2026-07-09 checkpoint.**
+  `audit.yml`, the corrections mechanism, and `improve.yml` (all four of Fable's required design
+  refinements incorporated and verified) are built, tested (255 tests passing), and pushed. No live
+  CCR trigger exists yet for `improve.yml` -- Fable confirmed this was the right call and set an
+  explicit sequencing precondition before it (or any further live-activation) is revisited: see
+  "Owner / next-step punch list" below. The literal P5 acceptance criterion -- 14-day soak, two
+  consecutive real regulator publications with zero human action -- cannot be completed
+  synchronously in any session and remains a tracked open item, per Fable's Phase 5 kickoff
+  direction. **Remaining P5 work is not more engineering** (Fable's own words) -- it's the owner
+  actions and sequenced live-proving steps below.
+
+## Owner / next-step punch list
+
+Consolidated here so nothing sits scattered across log entries. Nothing below is available to this
+session's tools -- every item needs the human owner (repo admin access) or real elapsed time.
+
+1. **Merge `claude/hk-radar-phase-1-mzlnxx` to `main`.**
+2. **Enable GitHub Pages:** Settings -> Pages -> Source: "GitHub Actions" (confirmed still 404 as
+   of the Phase 4 entry below).
+3. **Re-enable the analyst/verifier CCR trigger** (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`), disabled as a
+   precaution during this build -- see the "Bug found starting Phase 3" entry below for why it was
+   disabled and confirmation it's still disabled.
+4. **Set branch protection on `main`:** require a PR (no direct pushes), require `pr-check.yml`'s
+   status check to pass before merge. This is the real structural backstop behind every "PR-only,
+   human-merge" mechanism in this repo (`correction.yml`, `improve.yml`) -- the workflow scripts
+   themselves never push to `main` directly, but branch protection is what stops a compromised
+   script from doing so anyway. Not yet configured.
+5. **Sequenced live-proving steps, in this order (Fable PM directive, 2026-07-09) -- do not run
+   improve.yml's live trigger in parallel with the analyst/verifier's own unproven first runs:**
+   a. Steps 1-4 above.
+   b. Let the re-enabled analyst/verifier trigger complete a handful of real, observed, successful
+      cycles -- proving the CCR-session/worktree/isolation mechanism holds up against live reality,
+      not just fixtures.
+   c. Only then: one full **manual** dry run of `docs/improve-runbook.md` -- populate one real,
+      low-stakes item into `data/improve_queue.json`, run the procedure by hand (the same way
+      Phase 3's first analyst+verifier run was done manually before any trigger existed), and watch
+      an actual PR get opened and either merged or rejected. Report this back to Fable PM before
+      either trigger's live-activation question comes back up.
+6. Two logged anonymity flags (LICENSE "Big Fan" copyright line, non-bot initial commit) should be
+   resolved with the owner before public launch (see IMPROVEMENT_BACKLOG.md).
 
 ## Log
 
@@ -317,6 +350,25 @@ kickoff-style scrutiny Phase 1/2 got before any code is written, given its neces
 `/pipeline`, `/config`, and `.github/workflows` (the exact territory the path-allowlist gate exists
 to keep analyst/verifier out of).
 
+### 2026-07-09 — improve.yml built per Fable's four required refinements and verified
+
+Fable approved the design note's architecture with four required additions (see "PM checkpoints"
+below for the review itself). Built all four, then the mechanism: `pipeline/ci/improve_scope.py`
+(hard-deny gate, stated as a principle then enumerated -- every check/gate/constraint module, every
+schema, every workflow file, plus `promote_drafted.py` added proactively alongside its named
+sibling), `pipeline/ci/prompt_change_justification.py` (spotlights `pipeline/prompts/**` changes
+rather than locking them), `pipeline/ci/improve_queue.py` + an empty seed `data/improve_queue.json`
+(bounded, human-curated selection -- no fabricated backlog items), `.github/workflows/improve.yml`
+(dormant-but-complete, same no-AI-secret architecture pivot as `analyze.yml`), `docs/improve-runbook.md`
+(the CCR-triggered procedure, mirroring `docs/analyst-runbook.md`), and `.github/workflows/pr-check.yml`
+(the full test suite as a required-status-check candidate on any PR touching `/pipeline` or
+`/config`). 47 new tests, 255 total passing. Full detail in IMPROVEMENT_BACKLOG.md's "improve.yml
+built per Fable PM's four required refinements" entry.
+
+Deliberately did not stand up a live CCR trigger for this mechanism -- brought that question to
+Fable explicitly rather than deciding it unilaterally. See the checkpoint below for the verdict and
+the sequencing precondition, now the top item in "Owner / next-step punch list" above.
+
 ## PM checkpoints (Fable)
 
 ### 2026-07-09 — Kickoff review: approved with directives
@@ -464,3 +516,54 @@ place.
 Still unverified: the first actual CCR-triggered run hasn't fired yet (scheduled for tomorrow).
 Per Fable's standing directive, that first run's output — both commits, the actual card file, both
 sub-agents' behavior — needs review before this mechanism is considered proven, not just deployed.
+
+### 2026-07-09 — Phase 5 kickoff: audit.yml/corrections/improve.yml scoping directive
+
+Brought Phase 5 to Fable before building: the literal P5 acceptance criterion (14-day soak, two
+consecutive real publications) can't be completed synchronously in any session. Fable's direction:
+track that as an explicit open item (same pattern as the CCR trigger's unfired status), get the
+owner's merge/Pages/trigger-reenable punch list moving in parallel, build `audit.yml` and
+corrections now under specific conditions (human-initiated, PR-reviewed, never auto-triggered from
+audit findings), and bring a design note for `improve.yml` for review before writing any code, given
+its necessary write access to `/pipeline`, `/config`, and `.github/workflows`.
+
+### 2026-07-09 — improve.yml design note: approved with four required additions
+
+Reviewed the design note (file scope, structural PR-only enforcement, prompt-injection exposure via
+audit data) before any implementation. Verdict: core architecture approved --
+"defense doesn't depend on the model behaving, it depends on the gate" is exactly right. Four
+required additions before building: (1) state the hard-deny list as a principle ("nothing whose job
+is to check, gate, or constrain the pipeline's own output may be modified by the thing being
+improved"), not two example files, and enumerate every gate/schema/workflow from that principle;
+(2) `pipeline/prompts/*.md` should stay editable but needs a PR-body spotlight requirement, not a
+lock; (3) prefer a bounded, human-curated selection queue over open-ended discretion to survey the
+repo; (4) `improve_scope.py` needs the same real-scratch-git-repo test rigor `path_allowlist.py`
+got, including a named stress case (a diff touching `pipeline/verify/gate.py` must fail even though
+nominally under the allowed `pipeline/` root).
+
+### 2026-07-09 — improve.yml checkpoint: verified and signed off, live-activation sequenced
+
+Independently verified the built mechanism directly: pulled the branch, ran the suite (255/255),
+read `improve_scope.py`, `prompt_change_justification.py`, `improve_queue.py`,
+`data/improve_queue.json` (confirmed empty), `improve.yml`, and `pr-check.yml` in full, confirmed via
+`list_triggers` that no live CCR trigger exists for this mechanism. All four required additions
+verified as real and correctly implemented, not just described -- specifically confirmed the named
+stress test exists verbatim and correctly proves deny-wins-over-allow. The proactive addition of
+`promote_drafted.py` alongside its named sibling was called out as the correct catch. The three
+deliberate hard-deny exclusions (`docfetch.py`, `queue_check.py`, `seed_backfill.py`,
+`pipeline/audit/**`) have sound reasoning and no changes were requested.
+
+**Verdict on not standing up a live CCR trigger yet: confirmed as the right call**, with an explicit
+sequencing precondition for revisiting it (now recorded as item 5 in "Owner / next-step punch list"
+above): don't run `improve.yml`'s live trigger in parallel with the analyst/verifier trigger's own
+unproven first runs. Sequence strictly: (1) merge, Pages, trigger re-enable, branch protection; (2)
+let the re-enabled analyst/verifier trigger complete a handful of real, observed, successful cycles;
+(3) only then, one full manual dry run of `docs/improve-runbook.md` against one real, low-stakes
+queued item, reported back to Fable before either trigger's live-activation question comes back up.
+Reasoning given: every gate built so far in this project has caught at least one real bug the
+moment it was actually run against live reality rather than fixtures alone, and compounding two
+newly-live autonomous mechanisms at once would make any incident far harder to attribute.
+
+**Fable's summary verdict:** "Phase 5's deterministic build (audit, corrections, improve) is in
+good shape. The remaining work is the owner's punch list ... and the sequenced live-proving steps
+... -- not more engineering."

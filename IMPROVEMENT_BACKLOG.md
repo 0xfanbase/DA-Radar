@@ -881,6 +881,14 @@ reading of the spec's "cron, fortnightly," logged here per this project's standi
 silent decisions.
 
 47 new tests across `improve_scope`, `improve_queue`, and `prompt_change_justification`. 255 tests
-passing total. Not yet re-reviewed by Fable PM -- per Fable's own request, the actual
-`improve_scope.py` code and its tests go back for verification before this is considered done, the
-same way `path_allowlist.py` was reviewed.
+passing total.
+
+**Update: independently verified and signed off by Fable PM the same day** (pulled the branch, ran
+the suite, read every file named above in full, confirmed via `list_triggers` no live CCR trigger
+exists). All four required additions confirmed real and correctly implemented; no changes
+requested. Not standing up a live trigger yet was confirmed as the right call, with an explicit
+sequencing precondition recorded in PROGRESS.md's "Owner / next-step punch list": re-enabled
+analyst/verifier trigger must complete several real successful cycles, and one full manual dry run
+of `docs/improve-runbook.md` must happen and be reported back, before either trigger's
+live-activation question is revisited. Full checkpoint text in PROGRESS.md's "PM checkpoints"
+section.
