@@ -83,6 +83,28 @@ Dated by the build session that made the call.
   low-volume Phase 1 chassis; recommend a real monitored contact address before sustained
   production polling once the site is live and publicly indexed.
 
+## Findings from live smoke-testing against real feeds, 2026-07-09
+
+Before writing the pytest fixtures, `fetch.py`/`parse.py`/`hashing.py`/`ledger.py`/`queue.py`/
+`run.py` were smoke-tested directly against all 9 real live SFC+HKMA feeds (against a scratch
+directory, not the committed `data/` files). Two things surfaced that changed the design:
+
+- **Identity-key fallback changed from `guid -> link -> title` to `guid -> (link + title)`.**
+  HKMA's `hkma_legislative_council_issues` feed gives every `<item>` the *same* generic
+  landing-page `<link>` (no per-item URL) and no `<guid>` — only the title differs between items.
+  Falling back to `link` alone collapsed genuinely distinct items into one ledger entry. Combining
+  link+title fixed it, while still correctly collapsing HKMA's `hkma_circulars` feed's occasional
+  *literal* duplicate `<item>` (identical link and identical title, confirmed by inspection) down
+  to one ledger entry — that one is a real duplicate, not a false collision.
+- **Neither SFC nor HKMA serve `ETag` or `Last-Modified` on any of the 9 feeds** (confirmed by
+  inspecting response headers directly; SFC even sends `Cache-Control: no-cache, no-store`). The
+  watcher's conditional-GET support (`If-None-Match`) is implemented correctly and will engage
+  automatically the moment a source does send a validator (e.g. a future non-HK jurisdiction's
+  feed), but it is currently inert for both HK regulators — there is nothing further the client
+  side can do here; this is a server-side limitation, not a gap in the watcher. Not implementing
+  `If-Modified-Since`/`Last-Modified` support for now, since no known feed would exercise it
+  (revisit if a future source sends `Last-Modified`).
+
 ## Decisions from Fable (PM) kickoff review, 2026-07-09
 
 A Fable-model agent acting as project manager reviewed the kickoff plan before implementation
