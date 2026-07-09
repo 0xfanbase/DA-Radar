@@ -5,7 +5,12 @@ from __future__ import annotations
 
 import subprocess
 
-from pipeline.ci.path_allowlist import check_path_allowlist, get_diff_changed_paths, main
+from pipeline.ci.path_allowlist import (
+    check_path_allowlist,
+    get_diff_changed_paths,
+    get_uncommitted_changed_paths,
+    main,
+)
 
 
 def _init_repo(repo_dir):
@@ -166,12 +171,16 @@ def test_main_no_changes_at_all_passes(tmp_path):
     assert exit_code == 0
 
 
-def test_main_working_tree_mode_allows_bare_untracked_directory(tmp_path):
-    """Real bug found live: `git status --porcelain` reports an entirely new,
-    wholly-untracked directory as a single bare line (e.g. "content/"), not
-    one line per file inside it. _normalize() strips the trailing slash, so
-    "content/" becomes "content", which must still count as being under the
-    "content/" prefix rather than a violation."""
+def test_get_uncommitted_changed_paths_expands_bare_untracked_directory(tmp_path):
+    """Real bug found live: with git's default untracked-files mode,
+    `git status --porcelain` reports an entirely new, wholly-untracked
+    directory as a single bare line (e.g. "content/"), not one line per file
+    inside it. That broke more than the allowlist check -- validate_content's
+    per-file schema mapping has no schema for a bare "content" path, so it
+    would silently skip validating a brand-new content subdirectory
+    entirely. Fixed at the source via --untracked-files=all so every
+    downstream consumer of get_uncommitted_changed_paths always sees real
+    per-file paths."""
     repo = tmp_path
     _init_repo(repo)
     (repo / "data").mkdir()
@@ -179,16 +188,19 @@ def test_main_working_tree_mode_allows_bare_untracked_directory(tmp_path):
     _commit_all(repo, "base")
 
     # A brand-new, entirely untracked directory -- no files inside it are
-    # tracked yet, so `git status --porcelain` emits one bare "content/" line
+    # tracked yet, so git's default mode would emit one bare "content/" line
     # instead of per-file lines.
     (repo / "content").mkdir()
     (repo / "content" / "pillar_states").mkdir()
     (repo / "content" / "pillar_states" / "stablecoins.json").write_text("{}")
 
-    status = subprocess.run(
+    default_status = subprocess.run(
         ["git", "status", "--porcelain"], cwd=repo, capture_output=True, text=True, check=True
     ).stdout
-    assert status.strip() == "?? content/"
+    assert default_status.strip() == "?? content/"
+
+    changed = get_uncommitted_changed_paths(str(repo))
+    assert changed == ["content/pillar_states/stablecoins.json"]
 
     exit_code = main(["--mode", "working-tree", "--repo-dir", str(repo)])
     assert exit_code == 0

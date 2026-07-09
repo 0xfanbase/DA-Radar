@@ -25,26 +25,15 @@ def _normalize(path: str) -> str:
     return posixpath.normpath(path.replace("\\", "/")).lstrip("/")
 
 
-def _is_allowed(normalized: str, prefix: str) -> bool:
-    # `git status --porcelain` reports an entirely-untracked directory as a
-    # single bare line (e.g. "content/"), not one line per file inside it.
-    # _normalize() strips the trailing slash via posixpath.normpath, so
-    # "content/" becomes "content" -- which must still count as being
-    # "under" the "content/" prefix (it equals the prefix itself, minus
-    # its own trailing slash), not a violation. Confirmed by hitting this
-    # exact case live: a fresh, wholly-untracked content/ directory.
-    return normalized.startswith(prefix) or normalized == prefix.rstrip("/")
-
-
 def check_path_allowlist(
     changed_paths: list, *, allowed_prefixes: tuple = DEFAULT_ALLOWED_PREFIXES
 ) -> tuple:
     """Returns (ok, violations). ok is True iff every path in changed_paths
-    normalizes to somewhere under (or exactly at) one of allowed_prefixes."""
+    normalizes to somewhere under one of allowed_prefixes."""
     violations = [
         path
         for path in changed_paths
-        if not any(_is_allowed(_normalize(path), prefix) for prefix in allowed_prefixes)
+        if not any(_normalize(path).startswith(prefix) for prefix in allowed_prefixes)
     ]
     return (len(violations) == 0, violations)
 
@@ -52,9 +41,22 @@ def check_path_allowlist(
 def get_uncommitted_changed_paths(repo_dir: str = ".") -> list:
     """Paths changed in the working tree (staged, unstaged, or untracked),
     via `git status --porcelain` -- the pre-commit view of what an AI job
-    just wrote."""
+    just wrote.
+
+    Uses `--untracked-files=all` rather than git's default: the default
+    collapses an entirely-new, wholly-untracked directory into a single
+    bare line (e.g. "content/" instead of "content/pillar_states/x.json").
+    That bare-directory line breaks every path-based consumer downstream --
+    not just this allowlist check, but validate_content.py's per-file
+    schema mapping, which would silently skip validating any brand-new
+    content subdirectory entirely (no schema maps to a bare "content"
+    path, so it's treated as "not schema-governed" instead of "unvalidated
+    new file"). Listing real per-file paths is the actual fix; every
+    downstream consumer works correctly once it never sees a bare
+    directory line.
+    """
     result = subprocess.run(
-        ["git", "status", "--porcelain"],
+        ["git", "status", "--porcelain", "--untracked-files=all"],
         cwd=repo_dir,
         capture_output=True,
         text=True,
