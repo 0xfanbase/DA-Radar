@@ -49,6 +49,29 @@ def test_normalize_for_match_collapses_whitespace_and_casefolds():
     assert normalize_for_match("  Hello\n\tWorld  ") == "hello world"
 
 
+def test_normalize_for_match_treats_smart_and_straight_quotes_as_equal():
+    """Real bug found live: official regulator prose consistently uses
+    typographic (curly) quotes/apostrophes -- e.g. HKMA press releases --
+    while an analyst/verifier's own transcription just as consistently uses
+    plain ASCII ones. A quote can be entirely genuine and still fail
+    authenticity on this difference alone."""
+    assert normalize_for_match("stablecoin holders' requests") == normalize_for_match(
+        "stablecoin holders’ requests"
+    )
+    assert normalize_for_match('the "regime"') == normalize_for_match("the “regime”")
+
+
+def test_normalize_for_match_treats_en_and_em_dash_as_hyphen():
+    assert normalize_for_match("SFC-regulated") == normalize_for_match("SFC–regulated")
+    assert normalize_for_match("SFC-regulated") == normalize_for_match("SFC—regulated")
+
+
+def test_quote_is_authentic_despite_source_using_smart_apostrophe():
+    quote = "stablecoin holders' requests for redemption at par"
+    source = "processing stablecoin holders’ requests for redemption at par value."
+    assert quote_is_authentic(quote, source)
+
+
 def test_check_citation_authentic_against_real_source(requests_mock, fixture_bytes):
     requests_mock.get(URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
     result = check_citation(URL, "takes effect on 1 August 2026", **FETCH_KWARGS)

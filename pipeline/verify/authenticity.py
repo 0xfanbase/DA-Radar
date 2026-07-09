@@ -21,13 +21,39 @@ from pipeline.verify.docfetch import fetch_document
 
 _WHITESPACE_RE = re.compile(r"\s+")
 
+# Official regulator prose consistently uses typographic (curly) quotes
+# and apostrophes; an analyst/verifier transcribing a quote by hand (or an
+# LLM's own text generation) just as consistently uses the plain ASCII
+# equivalents. A quote that is otherwise perfectly genuine would otherwise
+# fail authenticity on this typographic difference alone -- found live via
+# the real verification gate rejecting an accurate quote of real regulator
+# prose containing "holders'" (source used "holders’", U+2019 right single
+# quotation mark). Mapped to ASCII before comparison, not before storage --
+# published cards keep whatever punctuation the analyst/verifier wrote.
+_PUNCTUATION_NORMALIZE = str.maketrans(
+    {
+        "‘": "'",  # left single quotation mark
+        "’": "'",  # right single quotation mark / apostrophe
+        "‚": "'",  # single low-9 quotation mark
+        "‛": "'",  # single high-reversed-9 quotation mark
+        "“": '"',  # left double quotation mark
+        "”": '"',  # right double quotation mark
+        "„": '"',  # double low-9 quotation mark
+        "‟": '"',  # double high-reversed-9 quotation mark
+        "–": "-",  # en dash
+        "—": "-",  # em dash
+    }
+)
+
 
 def normalize_for_match(text: str) -> str:
-    """Casefold + collapse whitespace, so a quote survives incidental
-    reflow/whitespace differences between the analyst's copy and a fresh
-    re-fetch, without being so lenient it accepts a materially different
-    claim."""
-    return _WHITESPACE_RE.sub(" ", text).strip().casefold()
+    """Casefold + collapse whitespace + normalize smart quotes/dashes to
+    their ASCII equivalents, so a quote survives incidental reflow,
+    whitespace, and typographic-punctuation differences between the
+    analyst's copy and a fresh re-fetch, without being so lenient it
+    accepts a materially different claim."""
+    normalized = text.translate(_PUNCTUATION_NORMALIZE)
+    return _WHITESPACE_RE.sub(" ", normalized).strip().casefold()
 
 
 def quote_is_authentic(quote: str, source_text: str) -> bool:
