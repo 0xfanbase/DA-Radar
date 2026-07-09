@@ -10,48 +10,54 @@ along with `git log` — to know exactly where the project stands before doing a
   2026-07-09 build-complete entry; the live-run gap closed the same day when the runbook's
   analyst+verifier+gate procedure ran for real on 5 headline cards via the docs/analyst-runbook.md
   mechanism -- see the "First real analyst+verifier pipeline run" entry below. The CCR scheduled
-  trigger itself, as opposed to the mechanism it runs, remains unfired as of this writing -- see
-  that entry's operational note)
+  trigger itself was re-enabled 2026-07-09 with the owner's explicit go-ahead; its first live fire
+  is due 2026-07-10T03:35 UTC and still needs to be observed before this mechanism counts as proven
+  end-to-end, not just deployed)
 - **P3 — Seed backfill: complete** (7 pillar states, 5 verified headline cards, trajectory.json,
   glossary v1, the ~40-item -- in practice 69-item -- Document Library, and the Start Here page;
   see the 2026-07-09 entries below)
-- **P4 — Frontend: complete** (static site generator, all 7 pages, GitHub Pages Actions deploy
-  workflow, real Lighthouse 100/100 on every page, browser-verified; see the 2026-07-09 "Phase 4
-  (Frontend) build" entry below. Still open: GitHub Pages hosting itself isn't enabled yet -- owner
-  action, not available to this session)
-- **P5 — Full autonomy: deterministic build complete, per Fable PM's 2026-07-09 checkpoint.**
-  `audit.yml`, the corrections mechanism, and `improve.yml` (all four of Fable's required design
-  refinements incorporated and verified) are built, tested (255 tests passing), and pushed. No live
-  CCR trigger exists yet for `improve.yml` -- Fable confirmed this was the right call and set an
-  explicit sequencing precondition before it (or any further live-activation) is revisited: see
-  "Owner / next-step punch list" below. The literal P5 acceptance criterion -- 14-day soak, two
-  consecutive real regulator publications with zero human action -- cannot be completed
-  synchronously in any session and remains a tracked open item, per Fable's Phase 5 kickoff
-  direction. **Remaining P5 work is not more engineering** (Fable's own words) -- it's the owner
-  actions and sequenced live-proving steps below.
+- **P4 — Frontend: complete, live.** Static site generator, all 7 pages, GitHub Pages Actions deploy
+  workflow, real Lighthouse 100/100 on every page, browser-verified (2026-07-09 "Phase 4 (Frontend)
+  build" entry below). GitHub Pages hosting confirmed live 2026-07-09:
+  `https://0xfanbase.github.io/DA-Radar/` serves the real generated site.
+- **P5 — Full autonomy: deterministic build complete, per Fable PM's 2026-07-09 checkpoint; branch
+  merged and analyst/verifier trigger re-enabled the same day.** `audit.yml`, the corrections
+  mechanism, and `improve.yml` (all four of Fable's required design refinements incorporated and
+  verified) are built, tested (255 tests passing), merged to `main` via PR #2, and live. No live CCR
+  trigger exists yet for `improve.yml` -- Fable confirmed this was the right call and set an explicit
+  sequencing precondition before it (or any further live-activation) is revisited: see "Owner /
+  next-step punch list" below. The literal P5 acceptance criterion -- 14-day soak, two consecutive
+  real regulator publications with zero human action -- cannot be completed synchronously in any
+  session and remains a tracked open item. **Remaining work is not more engineering** (Fable's own
+  words) -- it's owner branch-protection setup and observing the sequenced live-proving steps below.
 
 ## Owner / next-step punch list
 
-Consolidated here so nothing sits scattered across log entries. Nothing below is available to this
-session's tools -- every item needs the human owner (repo admin access) or real elapsed time.
+Consolidated here so nothing sits scattered across log entries.
 
-1. **Merge `claude/hk-radar-phase-1-mzlnxx` to `main`.**
-2. **Enable GitHub Pages:** Settings -> Pages -> Source: "GitHub Actions" (confirmed still 404 as
-   of the Phase 4 entry below).
-3. **Re-enable the analyst/verifier CCR trigger** (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`), disabled as a
-   precaution during this build -- see the "Bug found starting Phase 3" entry below for why it was
-   disabled and confirmation it's still disabled.
-4. **Set branch protection on `main`:** require a PR (no direct pushes), require `pr-check.yml`'s
-   status check to pass before merge. This is the real structural backstop behind every "PR-only,
-   human-merge" mechanism in this repo (`correction.yml`, `improve.yml`) -- the workflow scripts
-   themselves never push to `main` directly, but branch protection is what stops a compromised
-   script from doing so anyway. Not yet configured.
+1. ~~**Merge `claude/hk-radar-phase-1-mzlnxx` to `main`.**~~ **Done, 2026-07-09.** PR #2 (52 commits,
+   Phases 2-5) merged. `main` HEAD is now `499d317`.
+2. ~~**Enable GitHub Pages.**~~ **Confirmed done, 2026-07-09.** `https://0xfanbase.github.io/DA-Radar/`
+   returns HTTP 200 with the real generated site (disclaimer text confirmed present); `deploy.yml`'s
+   run on the merge commit completed successfully.
+3. ~~**Re-enable the analyst/verifier CCR trigger**~~ (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`). **Done,
+   2026-07-09**, with the owner's explicit go-ahead in this session (not done silently, given it's a
+   standing job that makes real unattended commits to `main`). `enabled: true`, next scheduled fire
+   2026-07-10T03:35 UTC. This is the first genuinely live firing of this mechanism -- per Fable's
+   standing directive, its output (commits, the actual card file, both sub-agents' behavior) needs
+   review before the mechanism is considered proven, not just re-armed.
+4. **Set branch protection on `main`** (still open, owner action -- no tool in this session can
+   configure repo branch-protection settings): require a PR (no direct pushes), require
+   `pr-check.yml`'s status check to pass before merge. This is the real structural backstop behind
+   every "PR-only, human-merge" mechanism in this repo (`correction.yml`, `improve.yml`) -- the
+   workflow scripts themselves never push to `main` directly, but branch protection is what stops a
+   compromised script from doing so anyway.
 5. **Sequenced live-proving steps, in this order (Fable PM directive, 2026-07-09) -- do not run
    improve.yml's live trigger in parallel with the analyst/verifier's own unproven first runs:**
-   a. Steps 1-4 above.
+   a. ~~Steps 1-3 above.~~ Done. Step 4 (branch protection) still open.
    b. Let the re-enabled analyst/verifier trigger complete a handful of real, observed, successful
       cycles -- proving the CCR-session/worktree/isolation mechanism holds up against live reality,
-      not just fixtures.
+      not just fixtures. **In progress as of 2026-07-09**; first fire due 2026-07-10T03:35 UTC.
    c. Only then: one full **manual** dry run of `docs/improve-runbook.md` -- populate one real,
       low-stakes item into `data/improve_queue.json`, run the procedure by hand (the same way
       Phase 3's first analyst+verifier run was done manually before any trigger existed), and watch
@@ -368,6 +374,31 @@ built per Fable PM's four required refinements" entry.
 Deliberately did not stand up a live CCR trigger for this mechanism -- brought that question to
 Fable explicitly rather than deciding it unilaterally. See the checkpoint below for the verdict and
 the sequencing precondition, now the top item in "Owner / next-step punch list" above.
+
+### 2026-07-09 — Branch merged (PR #2), Pages confirmed live, analyst/verifier trigger re-enabled
+
+No PR had ever been opened for the 52 commits spanning Phases 2-5 -- the owner flagged this
+directly ("I don't see a PR at the moment"). Checked: `main` was still exactly where PR #1 (Phase 1
+scaffold) had left it; the branch was cleanly 52 commits ahead with no divergence. Opened PR #2
+covering all of it; the owner merged it the same session.
+
+Verified directly post-merge, not assumed:
+- `main` HEAD is `499d317` (`git log origin/main`).
+- `deploy.yml`'s run on the merge commit completed successfully, and
+  `https://0xfanbase.github.io/DA-Radar/` returns HTTP 200 serving the real generated site (checked
+  for the actual disclaimer text, not just a 200 status) -- GitHub Pages hosting is live. This must
+  have been enabled by the owner independently at some point after the Phase 4 entry's "still 404"
+  note; not something this session did.
+- Re-enabled the analyst/verifier CCR trigger (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`) -- with the owner's
+  explicit go-ahead sought and given in this session first, since flipping on a standing job that
+  makes real unattended commits to `main` is exactly the kind of action that warrants asking rather
+  than assuming yesterday's Fable sign-off covers the literal switch-flip too. `enabled: true`,
+  first live fire due 2026-07-10T03:35 UTC. This is genuinely the first live firing of this
+  mechanism since it was created -- per Fable's standing directive, its actual output needs review
+  before it counts as proven, not just re-armed.
+
+Branch protection on `main` remains open -- no tool available in this session can configure repo
+branch-protection settings; still an owner action.
 
 ## PM checkpoints (Fable)
 
