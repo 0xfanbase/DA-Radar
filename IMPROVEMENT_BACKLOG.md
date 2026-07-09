@@ -254,12 +254,45 @@ Key decisions arising from that review and from implementation itself:
   layer 1 of 2 -- layer 2 is `pipeline/ci/path_allowlist.py` run as a separate plain-shell step
   in the same job, after the AI job, before any commit):
   ```
-  --max-turns 30 --disallowedTools "Bash" --allowedTools "Read" "WebFetch" "Write(content/**)" "Write(data/**)" "Edit(content/**)" "Edit(data/**)"
+  --max-turns 30 --disallowedTools "Bash" --allowedTools "Read" "WebFetch" "Write(content/**)" "Edit(content/**)"
   ```
   `Bash` is fully removed from context (bare tool name), not merely path-scoped, since the AI
   jobs have no legitimate reason to run shell commands at all. `Read`/`WebFetch` are unscoped
   (need to read/fetch source documents and existing content anywhere). `Write`/`Edit` are scoped
-  to `content/**` and `data/**` only.
+  to `content/**` only.
+  **Revised while designing `analyze.yml` itself (not a correction of an error reported at
+  checkpoint A, a further tightening discovered once the concrete pipeline was actually laid
+  out):** the original value at checkpoint A also allowed `Write(data/**)`/`Edit(data/**)`. Once
+  `pipeline/ci/promote_drafted.py` and `pipeline/ci/promote_verified.py` were written --
+  deterministic code that owns every `data/ledger.json`/`data/queue.json` mutation as a plain-shell
+  step after the AI job -- it became clear the AI jobs never legitimately need `/data` write
+  access at all. Removing it is a real reduction in the AI jobs' write surface, not just a
+  restatement: the analyst/verifier LLMs cannot touch the ledger even if a prompt injection tried
+  to convince them to, since the tool permission for that path no longer exists in their session.
+- **Two commits per analyze.yml run, not one** (analyst drafts and commits; verifier
+  independently checks out, corrects, and commits again) -- chosen over passing uncommitted state
+  between jobs via artifacts because (a) GitHub Actions jobs run on fresh runners with no shared
+  filesystem, so cross-job state requires either an artifact upload/download round-trip or a
+  commit; a commit is simpler and (b) it produces a transparent, auditable git history showing
+  the draft -> verified progression as real commits, which fits the "audited in public" goal
+  better than hiding the intermediate state in an artifact. A card briefly existing on `main` with
+  `status: "unverified"` between the two commits is not a content-integrity problem -- unverified
+  is a real, displayable, intentionally-supported status per the spec's "fully auto-publish with
+  disclaimers" decision, not a defect.
+- **The verifier has no Bash access, so it cannot run its own `git diff` to discover which card
+  file(s) the analyst just wrote.** A plain-shell step (`git diff --name-only HEAD~1 HEAD --
+  content/cards/`, requiring `fetch-depth: 2` so the parent commit is available) computes this
+  deterministically and the result is interpolated directly into the verifier's `prompt:` input.
+  The canonical instructions stay in the versioned `verifier_prompt.md` (which the verifier reads
+  itself via its unrestricted `Read` tool) rather than being duplicated inline in the workflow
+  YAML -- only the per-run dynamic scope (which file(s)) is injected.
+- **`watch.yml`'s Phase 1 no-op placeholder is now a real trigger**: on a non-empty diff, it POSTs
+  a `repository_dispatch` event (`event_type: queue-updated`) to the repo using the job's own
+  `GITHUB_TOKEN`, which `analyze.yml` listens for. `GITHUB_TOKEN`-triggered `repository_dispatch`
+  is exempted from GitHub's "don't recursively trigger workflow runs" restriction (that
+  restriction applies to push/PR-shaped events, not explicit dispatch calls), so no additional PAT
+  or secret is needed for this specific chaining step -- only the analyst/verifier jobs' actual AI
+  calls need the separately-provisioned `CLAUDE_CODE_OAUTH_TOKEN`.
 
 ## Follow-ups for later phases (not decisions, just noted so they aren't lost)
 
