@@ -234,6 +234,21 @@ Key decisions arising from that review and from implementation itself:
   (does an inline string anchor to cwd the same way `claude_args` patterns do?) for a layer that
   is not where the actual guarantee lives -- worth adding later if confirmed cheap, but not before
   the CI-gate-based enforcement that's already real and tested.
+- **The analyst always drafts a card with `status: "unverified"`, never `"verified"`.** The
+  analyst is the first pass, not an independent check on itself; only the verifier (a
+  structurally separate job, fresh context) may set `"verified"`, after its own adversarial
+  re-fetch. This keeps the honest default conservative: an unreviewed draft never claims
+  confidence it hasn't earned, even before the deterministic gate has a chance to run.
+- **"Verifier writes verification report" (spec §5) is satisfied via
+  `claude-code-action`'s own `display_report: true` input**, which surfaces the verifier's
+  reasoning in the GitHub Actions run's step summary. Simpler than inventing a new schema/file
+  for this, and the spec doesn't define a report format -- the existing Method & Audit page
+  (later phase) can link to or embed these run summaries rather than needing a parallel data
+  store.
+- **content/cards/, content/pillar_states/, content/glossary/ are the actual directories the
+  analyst/verifier prompts instruct writing to**, matching `pipeline/ci/validate_content.py`'s
+  path convention exactly -- both were designed together so the prompts and the schema-validation
+  gate never drift apart.
 
   **The exact `claude_args` value, identical for both the analyst and verifier jobs** (defense
   layer 1 of 2 -- layer 2 is `pipeline/ci/path_allowlist.py` run as a separate plain-shell step
