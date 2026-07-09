@@ -29,8 +29,42 @@ along with `git log` — to know exactly where the project stands before doing a
   `data/ledger.json` / `data/queue.json` (commit `chore: scaffold repo structure...`).
 - Wrote `CLAUDE.md` (this phase's governance doc, per spec §11) and this file.
 
-*(Further entries appended as each build stage lands — config, schemas, watcher modules, tests,
-the live watcher run and its idempotent re-run, and final sign-off.)*
+### 2026-07-09 — Phase 1 build complete
+
+- Applied all Fable PM kickoff directives (see "PM checkpoints" below and IMPROVEMENT_BACKLOG.md).
+- Built `config/jurisdiction.json` (HK: SFC ×3 feeds, HKMA ×6 feeds) and a fictitious
+  `tests/fixtures/second_jurisdiction.json` ("Freedonia") side by side, before any watcher code.
+- Implemented `pipeline/watcher/{clock,fetch,parse,hashing,jsonio,ledger,queue,run}.py` — stdlib +
+  `defusedxml` RSS 2.0 parsing, retry/backoff + ETag-aware fetch, sha256 identity hashing, a
+  derived (not accumulated) queue, canonical JSON serialization with write-if-changed.
+- Authored all 8 schemas (`card`, `pillar_state`, `trajectory`, `glossary`, `ledger`, `queue`,
+  `corrections`, `audit/event`) — all valid JSON Schema draft 2020-12.
+- Live smoke-testing against all 9 real feeds (scratch dir, before touching committed `data/`)
+  surfaced two real findings that changed the design — see IMPROVEMENT_BACKLOG.md's "Findings from
+  live smoke-testing" section: the identity-hash fallback (`guid -> link -> title` was insufficient
+  because one HKMA feed reuses a single generic `<link>` for every item; fixed to
+  `guid -> (link + title)`), and neither SFC nor HKMA send `ETag`/`Last-Modified` on any feed (our
+  conditional-GET support is correct but currently unexercised — a server-side fact, not a gap).
+- Wrote 61 pytest tests (fetch, parse, hashing, ledger, queue, integration, jurisdiction-
+  agnosticism, schemas) — all fixture-based, no live network in CI (an autouse fixture blocks real
+  sockets structurally). **61/61 passing.**
+- Added `.github/workflows/watch.yml` (daily cron 09:30 HKT + `workflow_dispatch`, bot-identity
+  commit, path-scoped `git add`, GitHub Actions pinned to verified commit SHAs via `git ls-remote`).
+
+**Live acceptance-criterion verification** ("watcher run produces a correct queue from live feeds;
+re-run adds nothing"):
+
+| Run | Timestamp (UTC) | Feeds ok | Items seen | Items new | ledger_changed | queue_changed |
+|---|---|---|---|---|---|---|
+| 1 | 2026-07-09T02:43:00Z | 9/9 | 984 | 983 | True | True |
+| 2 | 2026-07-09T02:43:29Z | 9/9 | 984 | 0 | False | False |
+
+Run 2 (29 seconds after run 1) touched zero files — `git status` after run 2 is completely empty,
+and the local (git-ignored) ETag cache confirms neither SFC nor HKMA returned an `ETag` to cache,
+consistent with the live-smoke-test finding above. Both `data/ledger.json` (983 items) and
+`data/queue.json` (983 items, all `status: "queued"`) validate against their schemas.
+
+*(Further entries appended as Phase 2+ work lands.)*
 
 ## PM checkpoints (Fable)
 
