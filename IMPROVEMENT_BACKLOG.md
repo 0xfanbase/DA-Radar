@@ -790,3 +790,97 @@ is not on `brdr.hkma.gov.hk` and returned a genuine 404, no SSL error, confirmed
 run outside the audit pipeline). Flagged here as a known open item for a human to check against the
 regulator's current page structure -- not auto-corrected, consistent with the corrections
 mechanism's human-initiated-only design immediately below.
+
+## improve.yml built per Fable PM's four required refinements, 2026-07-09
+
+Fable approved the design note's core architecture ("defense doesn't depend on the model behaving,
+it depends on the gate") with four required additions before implementation. Built all four, then
+the mechanism itself.
+
+**1. Hard-deny list stated as a principle, then enumerated from it.** Fable's exact framing:
+"nothing whose job is to check, gate, or constrain the pipeline's own output may be modified by the
+thing being improved." `pipeline/ci/improve_scope.py` enumerates from that principle, not from the
+two example files (`path_allowlist.py`, itself) that came up in the original design note:
+`pipeline/verify/gate.py`, `pipeline/verify/authenticity.py`, `pipeline/ci/validate_content.py`,
+`pipeline/ci/apply_verification_gate.py`, `pipeline/ci/promote_verified.py`,
+`pipeline/ci/apply_correction.py`, plus `pipeline/ci/path_allowlist.py` and
+`pipeline/ci/improve_scope.py` themselves, plus every file under `pipeline/schemas/` and every file
+under `.github/workflows/` (both denied by prefix, not individually, since an allowlist-of-
+exceptions would need updating every time a new workflow or schema is added -- the same fail-unsafe
+problem an allowlist avoids elsewhere in this project, just applied to a deny rule this time).
+
+**Added one file to the list Fable didn't name, applying the stated principle rather than copying
+the list verbatim:** `pipeline/ci/promote_drafted.py`. Fable named its sibling,
+`promote_verified.py`, as an example; `promote_drafted.py` performs the exact same category of
+trust-critical ledger-state mutation and would be an inconsistent gap if left editable.
+
+**Deliberately NOT hard-denied, a judgment call, not an oversight:** `pipeline/verify/docfetch.py`
+(a fetch/extract utility the gates call, not itself a check -- legitimate self-improvement
+territory, e.g. today's own sandbox investigation would motivate a real retry-on-transient-TLS-
+error improvement here) and `pipeline/ci/queue_check.py`/`pipeline/ci/seed_backfill.py` (a
+scheduling helper and a one-time historical seeding script, neither a correctness gate over
+AI-generated content). Locked in with an explicit test
+(`test_docfetch_is_deliberately_not_hard_denied`) so a future edit can't silently widen or narrow
+the list without a matching test update. `pipeline/audit/**` is likewise left editable -- it reports
+findings, it doesn't gate or grant trust to published content.
+
+**2. `pipeline/prompts/*.md` stays editable, but spotlighted, not locked.** Built
+`pipeline/ci/prompt_change_justification.py`: a real subprocess gate, not a review-etiquette norm --
+if the diff touches `pipeline/prompts/**`, the PR body must carry an explicit
+`Editorial-prompt justification:` line naming the specific CLAUDE.md rule the change relates to, or
+the gate fails before commit. The AI job writes its PR title/body to a scratch file
+(`.improve-pr-body.md`) that the orchestrating workflow reads and then deletes before it can ever
+become part of the proposed diff itself.
+
+**3. Bounded selection via a dedicated queue, not open-ended discretion.** Built
+`pipeline/schemas/improve_queue.json` + `pipeline/ci/improve_queue.py`
+(`load_queue`/`save_queue`/`pick_next_open_item`/`mark_item_picked`, same "deterministic code owns
+every mutation" pattern as `data/ledger.json`). The real, committed `data/improve_queue.json` ships
+**empty** -- manufacturing "candidate improvements" without a genuinely validated, independent
+reason would itself be a form of fabrication. improve.yml exits immediately, no run, when the queue
+has no `status: "open"` item, same zero-cost-when-empty principle as the analyst's
+`data/queue.json`. The queue is meant to be populated by a human (or a future producer) over time;
+this build does not decide what goes in it. The AI job is handed only the one picked item's `id`
+and `description` as task input -- it never reads the queue file itself, and has no `/data` write
+access at all to mark its own item picked; that transition is deterministic code the orchestrating
+workflow runs after a PR is opened, the same trust class as a ledger-status transition.
+
+**4. `improve_scope.py` tested with the same rigor `path_allowlist.py` got, both directions, plus
+the specific case Fable named.** `tests/test_improve_scope.py` mirrors `test_path_allowlist.py`'s
+structure exactly (pure-function cases, a real scratch-git-repo end-to-end case, `main()` CLI
+cases) and includes, verbatim, the case Fable said they'd verify:
+`test_fails_on_gate_file_even_though_nominally_under_the_allowed_pipeline_root` -- a diff touching
+`pipeline/verify/gate.py` fails even though it is nominally under the allowed `pipeline/` prefix,
+because the hard-deny check runs and wins regardless of the allow check.
+
+**Also built, agreed overdue independent of improve.yml:** `.github/workflows/pr-check.yml` -- runs
+the full test suite (including the jurisdiction-agnosticism scan) on any PR touching `/pipeline` or
+`/config`, human-authored or improve.yml's own. This is a required-status-check *candidate*; actual
+branch-protection enforcement (require this check to pass, require a PR, disallow direct pushes to
+`main`) is a GitHub admin setting outside this session's tools -- added to the owner punch-list
+alongside GitHub Pages enablement and the analyst/verifier CCR trigger re-enablement.
+
+**Architecture pivot applied identically to `improve.yml` as it already was to `analyze.yml`, found
+before it became a silent gap:** a literal `improve.yml` invoking `anthropics/claude-code-action@v1`
+needs the same `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_API_KEY` secret this deployment will never
+provision. Built `.github/workflows/improve.yml` as the same kind of complete, correct,
+spec-literal-but-dormant fallback `analyze.yml` already is (credential-checked, skips cleanly), and
+`docs/improve-runbook.md` as the CCR-triggered procedure a fired session would follow instead,
+mirroring `docs/analyst-runbook.md`.
+
+**Deliberately not done in this build: no live CCR trigger was created for `improve-runbook.md`,**
+unlike the analyst/verifier's `trig_01Bk3Lz2FKf3pWRMFkqBcdDE`. This mechanism's blast radius (write
+access to `/pipeline` and `/config`) earned it a kickoff-style design review before any code was
+written; standing up a live recurring trigger for it is a further, separate decision for the
+owner/Fable PM to make explicitly once the built mechanism itself has been reviewed, not something
+to bundle into the same build step that produced it.
+
+**Cron schedule note:** GitHub Actions cron cannot express a literal 14-day interval; approximated
+"fortnightly" with two fixed calendar dates a month apart (`0 4 1,15 * *`) -- simplest reasonable
+reading of the spec's "cron, fortnightly," logged here per this project's standing practice for
+silent decisions.
+
+47 new tests across `improve_scope`, `improve_queue`, and `prompt_change_justification`. 255 tests
+passing total. Not yet re-reviewed by Fable PM -- per Fable's own request, the actual
+`improve_scope.py` code and its tests go back for verification before this is considered done, the
+same way `path_allowlist.py` was reviewed.
