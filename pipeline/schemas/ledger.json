@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ledger.json",
+  "title": "Ledger",
+  "description": "The watcher's idempotency memory: every regulatory item ever seen, keyed by item_hash. 'status' tracks the item's lifecycle across all later phases; Phase 1 only ever writes 'queued'.",
+  "type": "object",
+  "properties": {
+    "schema_version": { "const": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "items": {
+      "type": "object",
+      "description": "Keyed by item_hash.",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "item_hash": { "type": "string", "minLength": 1 },
+          "source_id": { "type": "string", "minLength": 1 },
+          "feed_id": { "type": "string", "minLength": 1 },
+          "guid": { "type": ["string", "null"] },
+          "link": { "type": ["string", "null"] },
+          "title": { "type": "string" },
+          "summary": { "type": "string" },
+          "published_at": { "type": ["string", "null"], "format": "date-time" },
+          "raw_published": { "type": ["string", "null"] },
+          "content_hash": { "type": "string", "minLength": 1 },
+          "first_seen": { "type": "string", "format": "date-time" },
+          "status": {
+            "type": "string",
+            "enum": [
+              "queued",
+              "drafted",
+              "verified",
+              "published",
+              "corrected",
+              "suppressed",
+              "error"
+            ]
+          },
+          "card_id": { "type": ["string", "null"] }
+        },
+        "required": [
+          "item_hash",
+          "source_id",
+          "feed_id",
+          "guid",
+          "link",
+          "title",
+          "summary",
+          "published_at",
+          "raw_published",
+          "content_hash",
+          "first_seen",
+          "status",
+          "card_id"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["schema_version", "generated_at", "items"],
+  "additionalProperties": false
+}

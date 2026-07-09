@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>HKMA Guidelines</title>
+    <link>https://www.hkma.gov.hk/eng/other-information/rss/rss_guidelines.xml</link>
+    <description>HKMA guidelines</description>
+    <item>
+      <title>Guideline on specific consent to use banking names and descriptions</title>
+      <link>https://www.hkma.gov.hk/eng/regulatory-resources/regulatory-guides/guideline-banking-names/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0800</pubDate>
+      <description>Guideline text on banking names and descriptions.</description>
+    </item>
+    <item>
+      <title>Guideline on Minimum Criteria for Authorization</title>
+      <link>https://www.hkma.gov.hk/eng/regulatory-resources/regulatory-guides/guideline-min-criteria/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0800</pubDate>
+      <description>Minimum criteria for authorization guideline.</description>
+    </item>
+  </channel>
+</rss>

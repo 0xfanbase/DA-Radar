@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>HKMA Speeches</title>
+    <link>https://www.hkma.gov.hk/eng/other-information/rss/rss_speeches.xml</link>
+    <description>HKMA speeches</description>
+    <item>
+      <title>HKMA Chief Executive's response to media regarding new PBoC measures</title>
+      <link>https://www.hkma.gov.hk/eng/news-and-media/speeches/2026/07/20260707-1/</link>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 +0800</pubDate>
+      <description>Response to media questions.</description>
+    </item>
+    <item>
+      <title>Opening Remarks at HKMA-HKAB Seminar on Quantum Computing</title>
+      <link>https://www.hkma.gov.hk/eng/news-and-media/speeches/2026/07/20260706-1/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0800</pubDate>
+      <description>Opening remarks on quantum resilience.</description>
+    </item>
+  </channel>
+</rss>

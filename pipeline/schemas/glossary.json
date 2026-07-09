@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary.json",
+  "title": "Glossary term",
+  "description": "A living glossary entry, auto-extended when cards use undefined jargon. Not populated with real data until Phase 3.",
+  "type": "object",
+  "properties": {
+    "schema_version": { "const": 1 },
+    "term": { "type": "string", "minLength": 1 },
+    "plain_definition": { "type": "string", "minLength": 1 },
+    "formal_definition": { "type": "string" },
+    "related_terms": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "first_used_card_id": { "type": "string", "minLength": 1 }
+  },
+  "required": [
+    "schema_version",
+    "term",
+    "plain_definition",
+    "related_terms",
+    "first_used_card_id"
+  ],
+  "additionalProperties": false
+}

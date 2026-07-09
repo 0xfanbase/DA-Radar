@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>HKMA Press Releases</title>
+    <link>https://www.hkma.gov.hk/eng/other-information/rss/rss_press-release.xml</link>
+    <description>HKMA press releases</description>
+    <item>
+      <title>PBOC, HKMA and SFC's joint announcement on developing trading platform in Hong Kong</title>
+      <link>https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260707-8/</link>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 +0800</pubDate>
+      <description>Joint announcement text.</description>
+    </item>
+    <item>
+      <title>Scam alert related to banks</title>
+      <link>https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260707-7/</link>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 +0800</pubDate>
+      <description>Scam alert details.</description>
+    </item>
+  </channel>
+</rss>

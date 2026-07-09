@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>SFC Consultations and Conclusions</title>
+    <link>https://www.sfc.hk/en/RSS-Feeds/Consultations-and-Conclusions</link>
+    <description>SFC consultations and conclusions</description>
+    <item>
+      <title>SFC concludes consultation on the investor identification regime</title>
+      <link>https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR97</link>
+      <guid>26PR97</guid>
+      <pubDate>Tue, 23 Jun 2026 17:01:09 +0800</pubDate>
+      <description>Consultation conclusions on investor identification.</description>
+    </item>
+    <item>
+      <title>FSTB and SFC conclude consultations on virtual asset advisory and management regimes</title>
+      <link>https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR75</link>
+      <guid>26PR75</guid>
+      <pubDate>Tue, 26 May 2026 18:25:21 +0800</pubDate>
+      <description>Consultation conclusions on advisory and management regimes.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+
+# HTTP cache state (ETags) must never be committed — it changes whenever a feed
+# republishes anything unrelated to new items, which would break the "re-run
+# adds nothing" idempotency guarantee at the git-diff level.
+/data/cache/

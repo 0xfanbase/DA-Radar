@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "trajectory.json",
+  "title": "Trajectory events",
+  "description": "Upcoming, officially-announced regulatory events (the Trajectory Board). 'pillar' is free text governed by config/jurisdiction.json. Not populated with real data until Phase 3.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "schema_version": { "const": 1 },
+      "date_or_window": { "type": "string", "minLength": 1 },
+      "event": { "type": "string", "minLength": 1 },
+      "pillar": { "type": "string", "minLength": 1 },
+      "source_url": { "type": "string", "format": "uri" },
+      "confidence": { "type": "string", "enum": ["announced", "indicated"] }
+    },
+    "required": [
+      "schema_version",
+      "date_or_window",
+      "event",
+      "pillar",
+      "source_url",
+      "confidence"
+    ],
+    "additionalProperties": false
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card.json",
+  "title": "Card",
+  "description": "An AI-analyst-authored, AI-verifier-checked summary card for a single regulatory event or document. 'regulator' and 'pillar' values are free text governed by config/jurisdiction.json, never enumerated here, to keep this schema jurisdiction-portable. Not populated with real data until Phase 2/3.",
+  "type": "object",
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": { "type": "string", "minLength": 1 },
+    "published_date": { "type": "string", "format": "date" },
+    "regulator": { "type": "string", "minLength": 1 },
+    "pillar": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "consultation",
+        "conclusions",
+        "circular",
+        "ordinance",
+        "licence",
+        "enforcement",
+        "speech",
+        "guidance"
+      ]
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "why_it_matters": { "type": "string", "minLength": 1 },
+    "key_dates": {
+      "type": "object",
+      "description": "Plain ISO-8601 date strings; all fields optional.",
+      "properties": {
+        "deadline": { "type": "string", "format": "date" },
+        "effective": { "type": "string", "format": "date" },
+        "milestone": { "type": "string", "format": "date" }
+      },
+      "additionalProperties": false
+    },
+    "citations": {
+      "type": "array",
+      "description": "Each quote is editorially capped at <=15 words, one per source -- enforced by the verifier pass, not by this schema.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "quote": { "type": "string", "maxLength": 200 }
+        },
+        "required": ["url", "quote"],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": ["verified", "unverified", "corrected"]
+    },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "model": { "type": "string", "minLength": 1 },
+    "correction_note": { "type": "string" }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "published_date",
+    "regulator",
+    "pillar",
+    "type",
+    "title",
+    "summary",
+    "why_it_matters",
+    "citations",
+    "status",
+    "generated_at",
+    "model"
+  ],
+  "additionalProperties": false
+}
