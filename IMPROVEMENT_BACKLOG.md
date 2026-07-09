@@ -541,6 +541,16 @@ Full test suite: 165 passing (up from 151) -- new `tests/test_classify.py`,
 `tests/test_jurisdiction_agnostic.py` and `tests/test_run_integration.py` per Fable's directive that
 every new deterministic subsystem needs the same portability proof as the rest of the pipeline.
 
+**Known, explainable edge case (flagged at Fable PM's Phase 3 checkpoint, not a bug):** 2 of the 69
+real `document_library.json` entries carry `type: "unknown"`. Both are FSTB documents (Policy
+Statement 2.0 and the dealing/custodian consultation conclusions, seeded via
+`pipeline/ci/seed_backfill.py` -- see that section above), and `type_for_feed()` looks up a feed's
+`kind` from `config/jurisdiction.json`'s `regulators` list, which only wires SFC and HKMA today;
+FSTB is a named source in CLAUDE.md's source table but explicitly "not yet wired into the watcher
+(out of Phase 1 scope)." `"unknown"` is the honest, correct answer for a source the watcher doesn't
+actually poll -- not a misclassification. Resolves itself automatically whenever FSTB is wired into
+the watcher in a future phase; no action needed before then.
+
 **Follow-up bug found immediately after, by noticing an unexpected `git status` diff rather than
 assuming the commit was clean:** adding `main()`'s new `--document-library` CLI flag (defaulting to
 the real relative path `content/document_library.json`, matching how `--ledger`/`--queue` already
