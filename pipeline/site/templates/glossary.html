@@ -9,7 +9,7 @@
     <dt id="{{ g.term | lower | replace(' ', '-') }}">{{ g.term }}</dt>
     <dd>
       <p>{{ g.plain_definition }}</p>
-      {% if g.formal_definition %}<p class="mono" style="font-size:0.85rem;color:#555;">{{ g.formal_definition }}</p>{% endif %}
+      {% if g.formal_definition %}<p class="mono meta-line">{{ g.formal_definition }}</p>{% endif %}
       {% if g.related_terms %}<p style="font-size:0.85rem;">See also: {{ g.related_terms | join(", ") }}</p>{% endif %}
     </dd>
   </div>

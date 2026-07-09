@@ -20,7 +20,7 @@
       {% for item in p.open_items %}<li>{{ item }}</li>{% endfor %}
     </ul>
     {% endif %}
-    <p class="mono" style="font-size:0.75rem;color:#555;">Last changed {{ p.last_changed }}</p>
+    <p class="mono meta-line">Last changed {{ p.last_changed }}</p>
     <p>
       {% for link in p.key_links %}<a href="{{ link.url }}">{{ link.label }}</a><br>{% endfor %}
     </p>

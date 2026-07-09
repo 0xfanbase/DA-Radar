@@ -1,0 +1,37 @@
+{% macro timeline_ribbon(events, trajectory, id_suffix, limit=none) %}
+{% set shown = events[-limit:] if limit else events %}
+<section class="timeline-ribbon" data-timeline-root>
+  <div class="timeline-track" role="list" aria-label="Regulatory timeline, oldest to newest">
+    {% for e in shown %}
+    <a class="timeline-marker"
+       role="listitem"
+       href="{{ e.url }}"
+       data-pillar-slot="{{ e.pillar_color_slot }}"
+       data-date="{{ e.date }}"
+       data-source="{{ e.source }}">
+      <span class="timeline-dot" aria-hidden="true"></span>
+      <span class="timeline-marker-date">{{ e.date }}</span>
+      <span class="timeline-marker-label">{{ e.title }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% if trajectory %}
+  <div class="timeline-trajectory-rail" aria-label="Officially indicated upcoming events">
+    {% for t in trajectory %}
+    <a href="{{ t.source_url }}">{{ t.date_or_window }}: {{ t.event }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+  <div id="timeline-tooltip-{{ id_suffix }}" class="timeline-tooltip" role="tooltip" hidden></div>
+  <details class="timeline-fallback">
+    <summary>View as a list (no JavaScript needed)</summary>
+    <ul>
+      {% for e in shown %}
+      <li><span class="mono">{{ e.date }}</span> &mdash; <a href="{{ e.url }}">{{ e.title }}</a>{% if e.pillar_names %} ({{ e.pillar_names | join(", ") }}){% endif %}</li>
+      {% else %}
+      <li>No dated items yet.</li>
+      {% endfor %}
+    </ul>
+  </details>
+</section>
+{% endmacro %}

@@ -88,8 +88,11 @@ def test_verified_card_shows_verified_badge_not_unverified(tmp_path):
     timeline_html = open(os.path.join(str(tmp_path), "timeline.html"), encoding="utf-8").read()
     # card1 (verified) and card2 (unverified) both appear on the Timeline --
     # check the badge each one's own markup carries, not just presence
-    # somewhere on the page.
-    card1_start = timeline_html.index("Test verified card")
+    # somewhere on the page. The title also appears earlier in the page's
+    # timeline ribbon (a marker label and its non-JS fallback list entry),
+    # so find the LAST occurrence -- the actual <article class="card">
+    # block, which always renders after the ribbon in document order.
+    card1_start = timeline_html.rindex("Test verified card")
     card1_chunk = timeline_html[card1_start : card1_start + 1500]
     assert "badge-verified" in card1_chunk
     assert "badge-unverified" not in card1_chunk.split("card-meta")[1][:200]
@@ -98,7 +101,7 @@ def test_verified_card_shows_verified_badge_not_unverified(tmp_path):
 def test_unverified_card_shows_unverified_badge_with_text_label(tmp_path):
     build_site(FIXTURE_ROOT, str(tmp_path))
     timeline_html = open(os.path.join(str(tmp_path), "timeline.html"), encoding="utf-8").read()
-    card2_start = timeline_html.index("Test unverified card")
+    card2_start = timeline_html.rindex("Test unverified card")
     card2_chunk = timeline_html[card2_start : card2_start + 1500]
     assert "badge-unverified" in card2_chunk
     assert "Unverified" in card2_chunk
@@ -114,6 +117,50 @@ def test_timeline_cards_use_h2_not_h3_no_heading_level_skip(tmp_path):
     timeline_html = open(os.path.join(str(tmp_path), "timeline.html"), encoding="utf-8").read()
     assert "<h3>" not in timeline_html
     assert timeline_html.count("<h2>") >= 2  # one per fixture card
+
+
+def test_corrections_log_shows_empty_state_when_no_corrections_exist(tmp_path):
+    """Fixture data has no data/corrections.json -- the Method page must
+    say so honestly (a real sentence, not a stale hardcoded placeholder
+    that was never actually wired to real data)."""
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    method_html = open(os.path.join(str(tmp_path), "method.html"), encoding="utf-8").read()
+    assert "No corrections have been issued yet" in method_html
+
+
+def test_corrections_log_renders_real_corrections_when_present(tmp_path):
+    import json
+    import shutil
+
+    repo_copy = tmp_path / "repo_with_corrections"
+    shutil.copytree(FIXTURE_ROOT, repo_copy)
+    data_dir = repo_copy / "data"
+    data_dir.mkdir(parents=True, exist_ok=True)
+    with open(data_dir / "corrections.json", "w", encoding="utf-8") as fh:
+        json.dump(
+            [
+                {
+                    "schema_version": 1,
+                    "id": "corr-1",
+                    "card_id": "card1",
+                    "corrected_at": "2026-02-01T00:00:00Z",
+                    "correction_note": "The stated capital requirement was wrong.",
+                    "fields_changed": ["summary"],
+                    "citations": [],
+                }
+            ],
+            fh,
+        )
+
+    output_dir = tmp_path / "output_with_corrections"
+    build_site(str(repo_copy), str(output_dir))
+    method_html = open(output_dir / "method.html", encoding="utf-8").read()
+
+    assert "2026-02-01T00:00:00Z" in method_html
+    assert "The stated capital requirement was wrong." in method_html
+    # Joined to the real card's title, not just the bare card_id.
+    assert "Test verified card" in method_html.split("Corrections log")[1]
+    assert "No corrections have been issued yet" not in method_html
 
 
 def test_handles_missing_audit_data_gracefully(tmp_path):
@@ -226,11 +273,19 @@ def _contrast_ratio(hex_a, hex_b):
     return (l1 + 0.05) / (l2 + 0.05)
 
 
-PAPER = "#FAFAF7"
+PAPER = "#F2ECDD"
 INK = "#132A43"
 SEAL_RED = "#C8102E"
 HARBOUR_TEAL = "#1E6E6B"
 AMBER = "#B7791F"
+CARD_LIGHT = "#FBF8F1"
+
+PAPER_DARK = "#0F1E2E"
+INK_DARK = "#F0E7D3"
+SEAL_RED_DARK = "#F4626B"
+HARBOUR_TEAL_DARK = "#3FCDB8"
+AMBER_DARK = "#9A6B25"
+CARD_DARK = "#16283B"
 
 
 def test_body_text_meets_wcag_aa_contrast_on_paper():
@@ -276,3 +331,206 @@ def test_unverified_badge_label_text_is_ink_not_amber(tmp_path):
 
 def test_link_color_meets_wcag_aa_contrast_on_paper():
     assert _contrast_ratio(HARBOUR_TEAL, PAPER) >= 4.5
+
+
+# --- Dark mode: same four checks, mirrored against the dark palette. ---
+# Real, independently-derived hex values (not the light values re-tinted) --
+# see IMPROVEMENT_BACKLOG.md's redesign entry for the full derivation and
+# the dataviz skill's validate_palette.js invocations used to check them.
+
+
+def test_body_text_meets_wcag_aa_contrast_on_paper_dark():
+    assert _contrast_ratio(INK_DARK, PAPER_DARK) >= 4.5
+
+
+def test_seal_text_meets_wcag_aa_normal_text_contrast_on_paper_dark():
+    assert _contrast_ratio(SEAL_RED_DARK, PAPER_DARK) >= 4.5
+
+
+def test_amber_as_text_color_fails_aa_and_is_therefore_not_used_as_text_dark():
+    # Same locked-in non-text-only band as light mode, re-derived for dark.
+    assert _contrast_ratio(AMBER_DARK, PAPER_DARK) < 4.5
+    assert _contrast_ratio(AMBER_DARK, PAPER_DARK) >= 3.0
+
+
+def test_link_color_meets_wcag_aa_contrast_on_paper_dark():
+    assert _contrast_ratio(HARBOUR_TEAL_DARK, PAPER_DARK) >= 4.5
+
+
+# --- Card/pillar-card surface variants -- most badges and body text
+# actually render on --surface-card, not the bare page background, so
+# checking only against PAPER/PAPER_DARK would miss a real near-miss
+# (an earlier --seal-red-dark candidate scored 4.404 against the dark
+# card surface -- below AA -- while scoring fine against the page
+# background alone). ---
+
+
+def test_ink_meets_wcag_aa_contrast_on_card_surfaces():
+    assert _contrast_ratio(INK, CARD_LIGHT) >= 4.5
+    assert _contrast_ratio(INK_DARK, CARD_DARK) >= 4.5
+
+
+def test_seal_red_meets_wcag_aa_contrast_on_card_surfaces():
+    assert _contrast_ratio(SEAL_RED, CARD_LIGHT) >= 4.5
+    assert _contrast_ratio(SEAL_RED_DARK, CARD_DARK) >= 4.5
+
+
+def test_harbour_teal_meets_wcag_aa_contrast_on_card_surfaces():
+    assert _contrast_ratio(HARBOUR_TEAL, CARD_LIGHT) >= 4.5
+    assert _contrast_ratio(HARBOUR_TEAL_DARK, CARD_DARK) >= 4.5
+
+
+def test_amber_stays_in_non_text_band_on_card_surfaces():
+    assert 3.0 <= _contrast_ratio(AMBER, CARD_LIGHT) < 4.5
+    assert 3.0 <= _contrast_ratio(AMBER_DARK, CARD_DARK) < 4.5
+
+
+def _read_style_css():
+    css_path = os.path.join(REPO_ROOT, "pipeline", "site", "static", "style.css")
+    return open(css_path, encoding="utf-8").read()
+
+
+def test_style_css_defines_dark_mode_blocks():
+    css = _read_style_css()
+    assert "@media (prefers-color-scheme: dark)" in css
+    assert '[data-theme="light"]' in css
+    assert '[data-theme="dark"]' in css
+
+
+def test_trajectory_board_uses_theme_invariant_tokens_not_ink_or_paper():
+    """Regression lock for a real bug found during the dark-mode design:
+    .trajectory-board/.trajectory-row originally hardcoded var(--ink)/
+    var(--paper) to get "always-dark board, always-light text" -- which
+    would have INVERTED the moment --ink/--paper became theme-reactive.
+    Must use the dedicated theme-invariant tokens instead."""
+    css = _read_style_css()
+    board_start = css.index(".trajectory-board {")
+    board_chunk = css[board_start : board_start + 600]
+    assert "var(--trajectory-surface)" in board_chunk
+    assert "var(--trajectory-ink)" in board_chunk
+    assert "var(--ink)" not in board_chunk
+    assert "var(--paper)" not in board_chunk
+
+
+def test_no_hardcoded_color_leaks_into_rendered_output(tmp_path):
+    """Generalizes the specific #555/#fff/#4a6a4a inline-style bugs found
+    during the dark-mode design into a permanent guard: no rendered page
+    may hardcode a color that can't respond to a [data-theme] override."""
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    outputs = _read_all_outputs(tmp_path)
+    offenders = []
+    for path, html in outputs.items():
+        for bad in ("color:#555", "color: #555", "color:#fff", "color: #fff", "#4a6a4a"):
+            if bad in html:
+                offenders.append((path, bad))
+    assert offenders == [], f"hardcoded, non-token color(s) leaked into rendered output: {offenders}"
+
+
+def test_theme_toggle_button_renders_with_correct_attributes(tmp_path):
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    outputs = _read_all_outputs(tmp_path)
+    for path, html in outputs.items():
+        assert 'id="theme-toggle"' in html, f"theme toggle missing from {path}"
+        assert 'aria-pressed="false"' in html
+        assert 'aria-label="Toggle dark mode"' in html
+
+
+# --- Interactive timeline ribbon ---
+
+
+def test_timeline_ribbon_renders_on_both_start_here_and_timeline_pages(tmp_path):
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    outputs = _read_all_outputs(tmp_path)
+    assert "data-timeline-root" in outputs[os.path.join(str(tmp_path), "index.html")]
+    assert "data-timeline-root" in outputs[os.path.join(str(tmp_path), "timeline.html")]
+
+
+def test_timeline_markers_carry_pillar_slot_and_date():
+    from pipeline.site.data import build_timeline_events
+
+    cards = [
+        {
+            "published_date": "2026-01-05",
+            "title": "Card A",
+            "citations": [{"url": "https://example.invalid/a", "quote": "x"}],
+            "pillar": ["stablecoins"],
+            "pillar_names": ["Stablecoins"],
+            "regulator": "HKMA",
+            "status": "verified",
+        }
+    ]
+    events = build_timeline_events(cards, [], {"stablecoins": 0, "exchanges_vatp": 1})
+    assert events[0]["pillar_color_slot"] == 0
+    assert events[0]["date"] == "2026-01-05"
+
+
+def test_timeline_excludes_undated_documents():
+    from pipeline.site.data import build_timeline_events
+
+    documents = [
+        {
+            "title": "Undated doc",
+            "link": "https://example.invalid/undated",
+            "published_at": None,
+            "pillar": ["stablecoins"],
+            "pillar_names": ["Stablecoins"],
+            "regulator": "HKMA",
+        },
+        {
+            "title": "Dated doc",
+            "link": "https://example.invalid/dated",
+            "published_at": "2026-02-01T00:00:00Z",
+            "pillar": ["stablecoins"],
+            "pillar_names": ["Stablecoins"],
+            "regulator": "HKMA",
+        },
+    ]
+    events = build_timeline_events([], documents, {"stablecoins": 0})
+    titles = [e["title"] for e in events]
+    assert "Dated doc" in titles
+    assert "Undated doc" not in titles
+
+
+def test_timeline_events_sorted_ascending():
+    from pipeline.site.data import build_timeline_events
+
+    cards = [
+        {
+            "published_date": "2026-03-01",
+            "title": "Newer",
+            "citations": [{"url": "https://example.invalid/newer", "quote": "x"}],
+            "pillar": ["stablecoins"],
+            "pillar_names": [],
+            "regulator": "HKMA",
+            "status": "verified",
+        },
+        {
+            "published_date": "2026-01-01",
+            "title": "Older",
+            "citations": [{"url": "https://example.invalid/older", "quote": "x"}],
+            "pillar": ["stablecoins"],
+            "pillar_names": [],
+            "regulator": "HKMA",
+            "status": "verified",
+        },
+    ]
+    events = build_timeline_events(cards, [], {"stablecoins": 0})
+    assert [e["title"] for e in events] == ["Older", "Newer"]
+
+
+def test_homepage_timeline_is_capped_but_full_page_is_not():
+    import shutil
+    import tempfile
+
+    with tempfile.TemporaryDirectory() as tmp:
+        repo_copy = os.path.join(tmp, "repo")
+        shutil.copytree(FIXTURE_ROOT, repo_copy)
+        # Fixture ships 2 cards + 1 dated document = 3 events total, under
+        # the 40-item cap -- this test only needs to confirm the cap
+        # mechanism produces a smaller-or-equal count on the homepage
+        # than the uncapped Timeline page, never a larger one.
+        output_dir = os.path.join(tmp, "out")
+        build_site(repo_copy, output_dir)
+        index_html = open(os.path.join(output_dir, "index.html"), encoding="utf-8").read()
+        timeline_html = open(os.path.join(output_dir, "timeline.html"), encoding="utf-8").read()
+        assert index_html.count("data-pillar-slot") <= timeline_html.count("data-pillar-slot")
