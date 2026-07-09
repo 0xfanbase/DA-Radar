@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T07:03:10Z",
+  "generated_at": "2026-07-09T07:28:17Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -2381,7 +2381,7 @@
       "raw_published": "26 Jun 2025",
       "relevant": true,
       "source_id": "fstb",
-      "status": "drafted",
+      "status": "published",
       "summary": "Government issues Policy Statement 2.0, setting out the LEAP framework for digital-asset development.",
       "title": "Policy Statement 2.0 on the Development of Digital Assets in Hong Kong"
     },
@@ -3693,7 +3693,7 @@
       "raw_published": "01 Jun 2023",
       "relevant": true,
       "source_id": "sfc",
-      "status": "drafted",
+      "status": "published",
       "summary": "Dual SFO/AMLO licensing regime for centralised virtual asset trading platforms takes effect 1 June 2023.",
       "title": "Licensing regime for virtual asset trading platforms comes into effect"
     },
@@ -4909,7 +4909,7 @@
       "raw_published": "10 Apr 2026",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "HKMA grants the first two stablecoin issuer licences, to Anchorpoint Financial Limited and The Hongkong and Shanghai Banking Corporation Limited.",
       "title": "HKMA grants first licences under the Stablecoins Ordinance"
     },
@@ -8605,7 +8605,7 @@
       "raw_published": "24 Dec 2025",
       "relevant": true,
       "source_id": "fstb",
-      "status": "drafted",
+      "status": "published",
       "summary": "FSTB and SFC publish conclusions to their joint consultation on new licensing regimes for virtual asset dealing and custodian services.",
       "title": "Consultation conclusions: licensing regimes for virtual asset dealing and custodian services"
     },
@@ -15149,7 +15149,7 @@
       "raw_published": "06 Jan 2026",
       "relevant": true,
       "source_id": "sfc",
-      "status": "drafted",
+      "status": "published",
       "summary": "SFC reprimands and fines Saxo Capital Markets HK Limited HK$4 million over failures in distributing virtual asset funds to retail clients.",
       "title": "SFC reprimands and fines Saxo Capital Markets HK Limited"
     },

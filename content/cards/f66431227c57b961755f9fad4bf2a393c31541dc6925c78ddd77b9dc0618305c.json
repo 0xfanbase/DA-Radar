@@ -6,7 +6,7 @@
   "pillar": ["aml_cft_enforcement"],
   "type": "enforcement",
   "title": "SFC reprimands and fines Saxo Capital Markets HK Limited",
-  "summary": "The Securities and Futures Commission reprimanded and fined Saxo Capital Markets HK Limited (SCMHK) HK$4 million on 6 January 2026, over failures in distributing virtual asset products to retail clients between 1 November 2018 and 25 November 2022. The SFC found that SCMHK did not assess whether clients had knowledge of investing in virtual asset products, failed to give clients sufficient information and warnings, and failed to implement adequate and effective policies and controls governing the distribution of these products, among other shortcomings. SCMHK self-reported the misconduct to the SFC. The case forms part of the SFC's ongoing scrutiny of how licensed intermediaries distribute virtual-asset-linked products to retail investors, alongside its broader anti-money-laundering and investor-protection remit for the sector.",
+  "summary": "The Securities and Futures Commission reprimanded and fined Saxo Capital Markets HK Limited (SCMHK) HK$4 million on 6 January 2026, over failures in distributing virtual asset products to retail clients between 1 November 2018 and 25 November 2022. The SFC found that SCMHK did not assess whether clients had knowledge of investing in virtual asset products, failed to give clients sufficient information and warnings, and failed to implement adequate and effective policies and controls governing the distribution of these products, among other shortcomings. SCMHK self-reported the misconduct to the SFC.",
   "why_it_matters": "This shows the SFC actively enforcing investor-protection standards against firms that mis-sell virtual asset products to retail clients, not only licensing new virtual asset businesses.",
   "citations": [
     {
@@ -14,7 +14,7 @@
       "quote": "SCMHK did not assess whether the clients had knowledge of investing in VA Products"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-09T08:00:00Z",
   "model": "claude-sonnet-5"
 }
