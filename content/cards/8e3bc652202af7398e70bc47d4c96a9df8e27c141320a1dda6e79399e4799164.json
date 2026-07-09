@@ -15,7 +15,7 @@
   ],
   "generated_at": "2026-07-09T08:00:00Z",
   "id": "8e3bc652202af7398e70bc47d4c96a9df8e27c141320a1dda6e79399e4799164",
-  "model": "claude-sonnet-5",
+  "model": "Claude (Anthropic)",
   "pillar": [
     "dealing_custody_advisory"
   ],

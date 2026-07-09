@@ -26,7 +26,7 @@
   "key_dates": {
     "effective": "2026-04-10"
   },
-  "model": "claude-sonnet-5",
+  "model": "Claude (Anthropic)",
   "pillar": [
     "stablecoins"
   ],

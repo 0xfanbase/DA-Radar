@@ -58,7 +58,10 @@ Read `data/queue.json`. For **every** item in its `items[]` array whose `status`
      separate verifier job re-checks everything you wrote, adversarially, before anything is
      considered `"verified"`. Do not mark your own work verified.
    - `generated_at`: the current UTC timestamp, ISO-8601.
-   - `model`: the actual model you are running as, not a placeholder.
+   - `model`: a human-readable name for the model family you are running as (e.g. "Claude
+     (Anthropic)") -- not a placeholder, but also never the exact internal model-version
+     identifier string (no version numbers/dates/internal IDs). This field exists so a reader
+     knows an AI wrote the card, not to track which specific model build did.
 
 5. If this item changes the standing state of a pillar (e.g. a new licence, a consultation
    closing, a rule taking effect), update the corresponding `content/pillar_states/<pillar_id>.json`

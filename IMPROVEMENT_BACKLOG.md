@@ -614,6 +614,28 @@ this workflow no longer commits anything back to the repository. The dual-trigge
 reason. **Owner action still required, mechanism just changed:** Settings -> Pages -> Source:
 "GitHub Actions" (not "Deploy from a branch" as originally planned).
 
+## Correction: internal model identifier was leaking into public content (2026-07-09)
+
+Found by actually looking at a rendered screenshot of the Start Here page during Phase 4's browser
+verification pass, not by any automated check: the page's footer displayed `generated ... ·
+claude-sonnet-5`. `analyst_prompt.md`'s original instruction for the card schema's `model` field
+said "the actual model you are running as, not a placeholder" -- every one of the 5 published cards
+and `content/start_here.json` had accordingly written the literal internal model-version identifier
+string (`claude-sonnet-5`), which is explicitly restricted to this session's own chat replies, never
+to be included in any artifact pushed to a repository.
+
+CLAUDE.md rule 1 genuinely does require a "model name" on every card, for transparency -- that
+requirement stands. The fix is in what counts as satisfying it: changed all 6 affected files'
+`model` field from `"claude-sonnet-5"` to `"Claude (Anthropic)"` -- a human-readable statement that
+an AI (and which one) produced the content, without the specific internal version identifier.
+Updated `analyst_prompt.md`'s instruction to match, so future analyst runs don't reintroduce this:
+"a human-readable name for the model family... never the exact internal model-version identifier
+string (no version numbers/dates/internal IDs)."
+
+Re-validated all 6 files against their schemas and re-ran the full test suite after the fix; no
+other content field was touched (citations/quotes untouched, so the deterministic authenticity gate
+result is unaffected).
+
 ## Phase 4 gate item, flagged now so it isn't lost (Fable PM, 2026-07-09)
 
 CLAUDE.md rule 1 requires every card to carry the "AI-generated summary... not legal or regulatory
