@@ -6,11 +6,15 @@ along with `git log` — to know exactly where the project stands before doing a
 ## Phase status
 
 - **P1 — Chassis: complete** (signed off by Fable PM checkpoint 2, 2026-07-09)
-- **P2 — Analyst + verifier: deterministically complete, live-LLM-unverified** (see 2026-07-09
-  entry below — designed and fully tested, but blocked on `CLAUDE_CODE_OAUTH_TOKEN` for an actual
-  live run, same shape as Phase 1's pre-merge blocker)
-- **P3 — Seed backfill: in progress** (7 pillar states written; headline-card generation underway;
-  see 2026-07-09 entries below)
+- **P2 — Analyst + verifier: complete, live-run-proven** (deterministically complete per the
+  2026-07-09 build-complete entry; the live-run gap closed the same day when the runbook's
+  analyst+verifier+gate procedure ran for real on 5 headline cards via the docs/analyst-runbook.md
+  mechanism -- see the "First real analyst+verifier pipeline run" entry below. The CCR scheduled
+  trigger itself, as opposed to the mechanism it runs, remains unfired as of this writing -- see
+  that entry's operational note)
+- **P3 — Seed backfill: complete** (7 pillar states, 5 verified headline cards, trajectory.json,
+  glossary v1, the ~40-item -- in practice 69-item -- Document Library, and the Start Here page;
+  see the 2026-07-09 entries below)
 - P4 — Frontend: not started
 - P5 — Full autonomy: not started
 
@@ -195,7 +199,42 @@ End state: all 5 cards `status: "verified"`, all 5 ledger items `published`, gat
 passing before each commit. Committed in three parts (analyst draft, the authenticity-oracle fix,
 verifier corrections + promotion), all pushed to the feature branch.
 
-*(Further entries appended as Phase 3+ work lands.)*
+### 2026-07-09 — Phase 3 complete: seed backfill checkpoint
+
+All five remaining Phase 3 deliverables landed today: 5 verified headline cards (see above), 4
+real-source-verified `trajectory.json` entries, glossary v1 (11 terms total), the Document Library
+(`content/document_library.json`, `pipeline/watcher/classify.py` -- deterministic pillar/type
+tagging wired into every watcher run, 69 real relevant documents, all correctly pillar-tagged after
+iterating the keyword lists against live output), and the Start Here orientation page
+(`content/start_here.json`, ~780 words).
+
+Closing verification for this checkpoint, run fresh just now rather than trusted from earlier in
+the session: full pytest suite (166 passing), a full schema-validation sweep of every file currently
+under `content/` and `data/` against its schema (28 files, 0 failures -- not just the "changed files
+since last commit" check the CI gate itself uses), a fresh live re-run of the citation-authenticity
+gate against all 5 published cards (all citations still authentic, all still `status: "verified"`),
+and a clean `git status` (nothing uncommitted). `pipeline.ci.path_allowlist` and
+`pipeline.ci.validate_content` both report nothing to check against a clean tree, as expected.
+
+Two real bugs were found and fixed along the way by directly inspecting live output rather than
+trusting a first green result: the path-allowlist/validate_content bare-directory bug, the
+smart-quote/PDF-artifact authenticity-oracle bugs, the digital-asset relevance-filter gap (988 ->
+69 items), the `git diff --quiet` untracked-file blind spot in `watch.yml`'s planned commit-scope
+check, and a test-hygiene bug where two tests calling the watcher's `main()` without the new
+`--document-library` flag briefly overwrote the real document library during a routine `pytest`
+run. Full detail on every one of these is in IMPROVEMENT_BACKLOG.md, dated 2026-07-09.
+
+P2's live-LLM-run gap is also now closed: the analyst+verifier+gate mechanism ran for real (via the
+CCR runbook procedure, manually invoked rather than trigger-fired) on all 5 headline cards. The CCR
+scheduled trigger itself has still never fired (disabled pending this branch's merge to `main`) --
+that remains the one genuinely unproven piece of live automation, tracked separately from Phase 2/3
+content completeness.
+
+**Standing operational note, unresolved:** everything above lives on the feature branch
+(`claude/hk-radar-phase-1-mzlnxx`), not yet merged to `main`. The CCR trigger stays disabled until
+that merge happens; re-enabling it is a manual follow-up once the owner merges this branch.
+
+*(Further entries appended as Phase 4+ work lands.)*
 
 ## PM checkpoints (Fable)
 
