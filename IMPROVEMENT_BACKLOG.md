@@ -614,6 +614,33 @@ this workflow no longer commits anything back to the repository. The dual-trigge
 reason. **Owner action still required, mechanism just changed:** Settings -> Pages -> Source:
 "GitHub Actions" (not "Deploy from a branch" as originally planned).
 
+## Real Lighthouse accessibility audit against the literal P4 acceptance criterion (2026-07-09)
+
+Spec §10's Phase 4 acceptance criterion literally names "Lighthouse ≥90 a11y," not just a manual
+contrast check -- re-read the spec after Fable's Phase 4 sign-off and realized the WCAG contrast-
+ratio test built earlier only covers one narrow slice of what an actual Lighthouse accessibility
+audit checks. Ran the real tool: installed via `npx lighthouse` (network access permitted this;
+needed `CHROME_PATH` pointed at the pre-installed Playwright Chromium, since no system Chrome
+exists in this environment), served the real generated `_site/` locally, and ran a real audit
+against all 7 pages.
+
+First real run found a genuine, legitimate issue on the Timeline page: **98/100**, docked for
+"Heading elements are not in a sequentially-descending order" -- the shared card macro
+(`pipeline/site/templates/_macros.html`) used `<h3>` for every card title unconditionally, but
+Timeline's own page structure goes straight from its `<h1>` to the cards with no intervening `<h2>`,
+skipping a level. Fixed by making the heading macro parameterized (`heading_level="h2"` default),
+correct for Timeline's actual nesting depth; a future page that embeds a card one level deeper
+(e.g. a pillar page's "recent activity" section) can pass `heading_level="h3"` explicitly rather
+than the macro silently assuming one fixed depth everywhere.
+
+All 7 pages re-audited after the fix: **100/100 on every single page** (Start Here, State Board,
+Trajectory Board, Timeline, Document Library, Glossary, Method & Audit), well clear of the spec's
+≥90 threshold. This is a genuinely separate, more thorough check than the earlier WCAG
+contrast-ratio unit test -- that test only proves the palette's specific hex values behave
+correctly in isolation; this proves the actual rendered DOM structure of every real page passes an
+industry-standard automated accessibility audit, catching a real structural defect the narrower
+test could never have found.
+
 ## Correction: internal model identifier was leaking into public content (2026-07-09)
 
 Found by actually looking at a rendered screenshot of the Start Here page during Phase 4's browser

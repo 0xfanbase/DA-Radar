@@ -104,6 +104,18 @@ def test_unverified_card_shows_unverified_badge_with_text_label(tmp_path):
     assert "Unverified" in card2_chunk
 
 
+def test_timeline_cards_use_h2_not_h3_no_heading_level_skip(tmp_path):
+    """Real bug found live via an actual Lighthouse accessibility audit
+    (98/100, docked for non-sequential heading order): Timeline's own <h1>
+    has no intervening <h2> before the card list, so the shared card macro
+    must render card titles as <h2>, not <h3> -- skipping a heading level
+    is a real WCAG/Lighthouse violation, not just a style nit."""
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    timeline_html = open(os.path.join(str(tmp_path), "timeline.html"), encoding="utf-8").read()
+    assert "<h3>" not in timeline_html
+    assert timeline_html.count("<h2>") >= 2  # one per fixture card
+
+
 def test_handles_missing_audit_data_gracefully(tmp_path):
     """Fixture data has no data/audit/latest.json -- audit.yml doesn't
     exist yet (a later phase). The Method page must say so honestly, not

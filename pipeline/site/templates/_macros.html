@@ -2,9 +2,9 @@
 <span class="seal">{{ label }}</span>
 {% endmacro %}
 
-{% macro card(c) %}
+{% macro card(c, heading_level="h2") %}
 <article class="card">
-  <h3><a href="{{ c.citations[0].url }}">{{ c.title }}</a></h3>
+  <{{ heading_level }}><a href="{{ c.citations[0].url }}">{{ c.title }}</a></{{ heading_level }}>
   <p>
     {% for name in c.pillar_names %}<span class="pillar-tag">{{ name }}</span>{% endfor %}
   </p>
