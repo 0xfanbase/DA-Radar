@@ -9,7 +9,8 @@ along with `git log` — to know exactly where the project stands before doing a
 - **P2 — Analyst + verifier: deterministically complete, live-LLM-unverified** (see 2026-07-09
   entry below — designed and fully tested, but blocked on `CLAUDE_CODE_OAUTH_TOKEN` for an actual
   live run, same shape as Phase 1's pre-merge blocker)
-- P3 — Seed backfill: not started
+- **P3 — Seed backfill: in progress** (7 pillar states written; headline-card generation underway;
+  see 2026-07-09 entries below)
 - P4 — Frontend: not started
 - P5 — Full autonomy: not started
 
@@ -127,6 +128,38 @@ Per Fable PM directive: the first real live run's output (both commits, the actu
 both jobs' `display_report` output) must be reviewed before Phase 2 is called operationally
 closed — mirroring how Phase 1's live `workflow_dispatch` run, not just green tests, was the
 actual closing evidence.
+
+### 2026-07-09 — Phase 3 begins: 7 pillar states seeded, relevance-filter bug found and fixed
+
+Researched the current state of all 7 pillars (exchanges/VATP, stablecoins, dealing/custody/
+advisory/management, tokenization/RWA, funds/ETFs, banking/money, AML/CFT/enforcement) against
+live primary sources (SFC, HKMA, FSTB, LegCo, gov.hk), via 5 parallel research passes. Wrote
+`content/pillar_states/*.json` for all 7, validated against `pillar_state.json` and the real
+`validate_content`/`path_allowlist` gates, committed.
+
+While preparing to run the analyst+verifier pipeline on the spec's 5 headline events (VATP regime,
+stablecoins licences, dealing/custody consultations, Policy Statement 2.0, enforcement), found that
+`data/queue.json` held 988 items, not the "few per week" CLAUDE.md assumes — the Phase 1 watcher
+queues every SFC/HKMA feed item with no digital-asset relevance filter, and the live CCR trigger
+was due to fire against this exact queue within roughly a day. Built and shipped
+`pipeline/watcher/relevance.py` (deterministic keyword classification, jurisdiction-configurable via
+`config/jurisdiction.json`'s new `relevance_keywords`, fail-open on missing config) and wired it
+into `pipeline/watcher/run.py` and `derive_queue`. Ran it live against the real ledger: `data/
+queue.json` went from 988 to 69 genuinely relevant items. Full reasoning and the fixture-test
+correction this required in `tests/test_run_integration.py` are logged in IMPROVEMENT_BACKLOG.md.
+
+Also fixed a real bug in `pipeline/ci/path_allowlist.py`/`validate_content.py` (found by running
+the actual deterministic gates against the newly-created `content/pillar_states/` directory): a
+wholly-untracked new directory collapses to one bare `git status --porcelain` line by default,
+which broke `validate_content`'s per-file schema mapping silently (it reported "no schema-governed
+files changed" instead of validating anything). Fixed at the root — `get_uncommitted_changed_paths`
+now passes `--untracked-files=all`. Full detail in IMPROVEMENT_BACKLOG.md.
+
+Built `pipeline/ci/seed_backfill.py` (reuses the watcher's own `NormalizedItem -> diff_new_items ->
+upsert_items -> classify_relevance` path) and used it to add the 5 headline events as `queued`
+ledger items, ready for the analyst+verifier pipeline.
+
+Test suite: 148 passing (up from 137 at the last Phase 2 checkpoint).
 
 *(Further entries appended as Phase 3+ work lands.)*
 

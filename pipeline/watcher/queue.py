@@ -1,8 +1,9 @@
 """Derive data/queue.json from the ledger -- a pure, deterministic view.
 
 queue.json is regenerated in full on every run (all ledger items with
-status=="queued"), never accumulated -- so "re-run adds nothing" is true
-both logically and as a literal git diff.
+status=="queued" AND relevant != False, see pipeline/watcher/relevance.py),
+never accumulated -- so "re-run adds nothing" is true both logically and
+as a literal git diff.
 """
 from __future__ import annotations
 
@@ -12,7 +13,11 @@ SCHEMA_VERSION = 1
 
 
 def derive_queue(ledger: dict, run_ts: str) -> dict:
-    entries = [e for e in ledger.get("items", {}).values() if e.get("status") == "queued"]
+    entries = [
+        e
+        for e in ledger.get("items", {}).values()
+        if e.get("status") == "queued" and e.get("relevant", True)
+    ]
     entries.sort(key=lambda e: (e["first_seen"], e["item_hash"]))
 
     items = [

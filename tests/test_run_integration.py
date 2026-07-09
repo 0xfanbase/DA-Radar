@@ -78,7 +78,13 @@ def test_first_run_ingests_all_feeds(tmp_path, requests_mock, hk_config, fixture
 
     with open(queue_path) as fh:
         queue_doc = json.load(fh)
-    assert len(queue_doc["items"]) == 19
+    # The ledger records all 19 unique items seen (its full observational
+    # history), but the queue only carries the ones that match
+    # config/jurisdiction.json's relevance_keywords -- these mixed-topic
+    # fixtures deliberately include mostly non-digital-asset SFC/HKMA
+    # content (scam alerts, banking guidelines, a quantum-computing
+    # speech...), of which exactly 2 items are digital-asset relevant.
+    assert len(queue_doc["items"]) == 2
     assert all(item["status"] == "queued" for item in queue_doc["items"])
 
 
@@ -123,13 +129,17 @@ def test_third_run_picks_up_exactly_the_new_items(tmp_path, requests_mock, hk_co
     )
     summary3 = run(HK_JURISDICTION_PATH, ledger_path, queue_path, cache_path)
 
+    # Both day-2 items ("HKEX...market rehearsal", "HKICL alerts public of
+    # fraudulent website") are recorded in the ledger like anything else the
+    # watcher observes, but neither matches any relevance_keywords -- so the
+    # ledger changes while the derived queue, correctly, does not.
     assert summary3.items_new == 2
     assert summary3.ledger_changed is True
-    assert summary3.queue_changed is True
+    assert summary3.queue_changed is False
 
     with open(queue_path) as fh:
         queue_doc = json.load(fh)
-    assert len(queue_doc["items"]) == 21  # 19 + 2 new
+    assert len(queue_doc["items"]) == 2
 
 
 def test_one_feed_failure_does_not_abort_the_run(tmp_path, requests_mock, hk_config, fixture_bytes):

@@ -9,6 +9,24 @@
     "backoff_base_seconds": 1.0,
     "backoff_multiplier": 2.0
   },
+  "relevance_keywords": [
+    "virtual asset",
+    "virtual assets",
+    "vatp",
+    "stablecoin",
+    "stablecoins",
+    "digital asset",
+    "digital assets",
+    "crypto",
+    "tokenis",
+    "tokeniz",
+    "distributed ledger",
+    "blockchain",
+    "e-hkd",
+    "ensemble",
+    "web3",
+    "nft"
+  ],
   "pillars": [
     {"id": "exchanges_vatp", "name": "Exchanges (VATP)"},
     {"id": "stablecoins", "name": "Stablecoins"},

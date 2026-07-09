@@ -24,6 +24,7 @@ from pipeline.watcher.fetch import fetch_feed
 from pipeline.watcher.ledger import diff_new_items, load_ledger, save_ledger, upsert_items
 from pipeline.watcher.parse import FeedParseError, parse_rss
 from pipeline.watcher.queue import derive_queue, save_queue
+from pipeline.watcher.relevance import classify_relevance
 
 
 @dataclass
@@ -143,6 +144,8 @@ def run(
                         feed_id, source_id, url, ok=True, items_seen=len(items), items_new=len(new_items)
                     )
                 )
+
+    ledger, _classified = classify_relevance(ledger, config.get("relevance_keywords", []), run_ts)
 
     summary.ledger_changed = save_ledger(ledger_path, ledger)
     queue_doc = derive_queue(ledger, run_ts)

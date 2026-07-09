@@ -389,6 +389,62 @@ against passed), but only running the *other* real gate — per this project's o
 discipline of never trusting one green check when a second deterministic gate exists — surfaced
 that the real risk (silently unvalidated content) was still live.
 
+## Bug found starting Phase 3: no digital-asset relevance filter on the queue, 2026-07-09
+
+While preparing to run the real analyst+verifier pipeline on 5 headline events (Phase 3, task
+"generate headline cards"), reading the actual `data/queue.json` before handing it to an analyst
+sub-agent revealed it held **988 items**, not the "few items a week" CLAUDE.md's quota section
+assumes. Root cause: the Phase 1 watcher queues *every* item from SFC/HKMA's chosen feeds, and
+those feeds cover each regulator's full mandate (banking guidelines, generic enforcement, speeches
+on quantum computing, scam alerts...), not just digital-asset content. Neither the build spec nor
+CLAUDE.md's loop diagram ("new items? -> write data/queue.json") ever named a relevance-filtering
+step -- it was silently assumed away, and nobody had actually looked at a full live queue.json
+until now. Keyword-checking the real queue found only 69 of 988 items were genuinely digital-asset
+related.
+
+This was urgent, not just untidy: the CCR scheduled trigger (see the "Architecture pivot" entry
+above) is live and due to fire against this exact queue. Handing an analyst sub-agent an unfiltered
+988-item queue would have been wasteful at best and produced a nonsensical commit at worst.
+
+**Decision (spec silent, simplest option chosen):** added `pipeline/watcher/relevance.py` -- pure,
+deterministic, case-insensitive keyword matching, no AI or network call. Every watched item is
+still recorded in the ledger in full (nothing is silently dropped from the audit trail); a new
+optional ledger field, `relevant: bool`, is computed once per item against
+`config/jurisdiction.json`'s new `relevance_keywords` list, and `derive_queue` only includes items
+where `status == "queued" and relevant is not False` (so entries predating this field, which have
+no `relevant` key at all, still default to included -- true fail-open, never a silent full
+blackout). An empty/missing `relevance_keywords` list (e.g. a not-yet-configured jurisdiction) also
+fails open -- every item is treated as relevant rather than none. `pipeline/watcher/run.py` calls
+`classify_relevance` once per run, right after ingesting that run's new items, so this happens
+automatically going forward with zero extra step in `watch.yml` or the CCR runbook.
+
+Applied live: ran `python -m pipeline.watcher.relevance` once against the real
+`data/ledger.json`/`data/queue.json` as a one-off backfill (the function is naturally idempotent,
+so it's the same code path a live run uses, not a special migration script) -- classified all 988
+pre-existing items, `data/queue.json` shrank from 988 to 69. Verified the 5 headline items seeded
+for the Phase 3 headline-card task (see PROGRESS.md) all correctly classified `relevant: true`.
+
+Also built `pipeline/ci/seed_backfill.py` in the same pass -- a small reusable module (reusing the
+exact same `NormalizedItem -> diff_new_items -> upsert_items` path the live watcher uses, plus the
+same `classify_relevance` call) for adding known historical items to the ledger as `queued`, needed
+for this headline-card backfill and again for the planned ~40-item document library task.
+
+**Known limitation, logged rather than fixed now:** `classify_relevance` only classifies items that
+don't yet have a `relevant` field -- if `relevance_keywords` is edited later (a term added or
+removed), already-classified items are never automatically reclassified against the new list. A
+future deliberate reclassification would need to strip the `relevant` field first (or a dedicated
+`--force` flag, not yet built) before re-running. Acceptable for now since the keyword list is
+expected to be stable, not iterated on; worth revisiting if it turns out to need frequent tuning.
+
+Test fixture note: `tests/test_run_integration.py`'s 9 real SFC/HKMA feed fixtures happen to be a
+realistic relevance mix (2 of 19 unique items are genuinely digital-asset related) -- rather than
+padding every fixture item with a fake keyword to preserve the old "everything gets queued"
+assertion, the test's expected counts were corrected to match reality. This is a stronger test than
+before: it now proves the relevance filter behaves correctly against realistic, mixed-topic sample
+data, not just synthetic single-purpose fixtures (see the new `tests/test_relevance.py` for the
+isolated unit-level coverage, including a portability-specific case with a non-HK keyword
+vocabulary).
+
 ## Follow-ups for later phases (not decisions, just noted so they aren't lost)
 
 - Phase 2 must add the actual CI path-allowlist gate (today it's a documented rule in CLAUDE.md,

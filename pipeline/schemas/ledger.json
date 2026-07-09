@@ -24,6 +24,10 @@
           "raw_published": { "type": ["string", "null"] },
           "content_hash": { "type": "string", "minLength": 1 },
           "first_seen": { "type": "string", "format": "date-time" },
+          "relevant": {
+            "type": "boolean",
+            "description": "Deterministic keyword-match classification (pipeline/watcher/relevance.py) against config/jurisdiction.json's relevance_keywords, applied once per item. Absent on entries written before this field existed -- treated as true (relevant) by every consumer, since backfilling old entries is a one-time migration, not a schema requirement."
+          },
           "status": {
             "type": "string",
             "enum": [
