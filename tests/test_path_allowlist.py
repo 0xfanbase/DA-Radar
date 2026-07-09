@@ -164,3 +164,31 @@ def test_main_no_changes_at_all_passes(tmp_path):
 
     exit_code = main(["--mode", "working-tree", "--repo-dir", str(repo)])
     assert exit_code == 0
+
+
+def test_main_working_tree_mode_allows_bare_untracked_directory(tmp_path):
+    """Real bug found live: `git status --porcelain` reports an entirely new,
+    wholly-untracked directory as a single bare line (e.g. "content/"), not
+    one line per file inside it. _normalize() strips the trailing slash, so
+    "content/" becomes "content", which must still count as being under the
+    "content/" prefix rather than a violation."""
+    repo = tmp_path
+    _init_repo(repo)
+    (repo / "data").mkdir()
+    (repo / "data" / "ledger.json").write_text("{}")
+    _commit_all(repo, "base")
+
+    # A brand-new, entirely untracked directory -- no files inside it are
+    # tracked yet, so `git status --porcelain` emits one bare "content/" line
+    # instead of per-file lines.
+    (repo / "content").mkdir()
+    (repo / "content" / "pillar_states").mkdir()
+    (repo / "content" / "pillar_states" / "stablecoins.json").write_text("{}")
+
+    status = subprocess.run(
+        ["git", "status", "--porcelain"], cwd=repo, capture_output=True, text=True, check=True
+    ).stdout
+    assert status.strip() == "?? content/"
+
+    exit_code = main(["--mode", "working-tree", "--repo-dir", str(repo)])
+    assert exit_code == 0
