@@ -15,8 +15,17 @@ along with `git log` — to know exactly where the project stands before doing a
 - **P3 — Seed backfill: complete** (7 pillar states, 5 verified headline cards, trajectory.json,
   glossary v1, the ~40-item -- in practice 69-item -- Document Library, and the Start Here page;
   see the 2026-07-09 entries below)
-- P4 — Frontend: not started
-- P5 — Full autonomy: not started
+- **P4 — Frontend: complete** (static site generator, all 7 pages, GitHub Pages Actions deploy
+  workflow, real Lighthouse 100/100 on every page, browser-verified; see the 2026-07-09 "Phase 4
+  (Frontend) build" entry below. Still open: GitHub Pages hosting itself isn't enabled yet -- owner
+  action, not available to this session)
+- **P5 — Full autonomy: in progress.** `audit.yml` (link-rot, staleness, feed-silence, pass-rate
+  trend) and the corrections mechanism (human-initiated, PR-reviewed) are both built and pushed.
+  `improve.yml` design note sent to Fable PM for review, no implementation yet pending sign-off. The
+  literal P5 acceptance criterion -- 14-day soak, two consecutive real regulator publications with
+  zero human action -- cannot be completed synchronously in any session (it needs elapsed real-world
+  time and the CCR trigger firing on its own schedule, currently disabled pending this branch's
+  merge) and is tracked as an explicit open item, per Fable's Phase 5 kickoff direction.
 
 ## Log
 
@@ -278,6 +287,35 @@ Settings -> Pages -> Source: "GitHub Actions", not something available via this 
 branch -- the same situation `watch.yml` was in before its own Phase 1 merge).
 
 *(Further entries appended as Phase 4+ work lands.)*
+
+### 2026-07-09 — Phase 5 begins: audit.yml, corrections built; improve.yml design note sent for review
+
+Built `pipeline/audit/` (link-rot, pillar staleness at 45 days, feed silence at 30 days, verifier
+pass-rate trend vs. the previous `data/audit/latest.json` snapshot rather than a second unschema'd
+history file) and `.github/workflows/audit.yml` (weekly cron + `workflow_dispatch`, commits findings
+only when something changed). Method page now renders real findings or an honest "hasn't run yet"
+placeholder. Built the corrections mechanism (`pipeline/ci/apply_correction.py` +
+`.github/workflows/correction.yml`): human-initiated only (every input supplied explicitly by a
+person, never audit.yml's own findings), PR-only, never auto-merged. 25 + 8 new tests, 214 total.
+
+**Real bug found and fixed via live testing, disclosed rather than hidden:** ran `audit.yml` live
+against the real repo before committing. It reported 49 actionable findings, but 47 were SSL
+certificate errors against exactly one HKMA subdomain (`brdr.hkma.gov.hk`), while sibling HKMA/SFC
+hosts fetched cleanly over the same path -- including a real, independently-reproducible 404.
+Diagnosed with curl, `openssl s_client`, and Python `requests` (with and without this dev sandbox's
+proxy CA bundle) and traced it to this sandbox's TLS-inspecting egress proxy failing to validate
+that one host for some TLS clients but not others -- not genuine link rot, and not expected to
+reproduce on a real GitHub Actions runner (direct egress, no intercepting proxy). Discarded the
+contaminated run's output rather than commit it; publishing "49 broken HKMA links" to the public
+Method page on the strength of a sandbox artifact would itself violate CLAUDE.md's editorial rules.
+Full diagnostic writeup in IMPROVEMENT_BACKLOG.md's "Live audit.yml run in the dev sandbox" entry.
+The genuine 404 is logged there as an open item for a human to check, not auto-corrected.
+
+`improve.yml` design note sent to Fable PM for review (see "PM checkpoints" below) -- no
+implementation started, per Fable's explicit Phase 5 kickoff requirement that this get the same
+kickoff-style scrutiny Phase 1/2 got before any code is written, given its necessary write access to
+`/pipeline`, `/config`, and `.github/workflows` (the exact territory the path-allowlist gate exists
+to keep analyst/verifier out of).
 
 ## PM checkpoints (Fable)
 
