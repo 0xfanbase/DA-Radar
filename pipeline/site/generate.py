@@ -64,7 +64,13 @@ def build_site(repo_root: str, output_dir: str) -> list:
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="Build the HK Digital Asset Radar static site.")
     parser.add_argument("--repo-root", default=".")
-    parser.add_argument("--output-dir", default="docs")
+    # Deliberately NOT "docs/" -- that directory already holds
+    # docs/analyst-runbook.md (Phase 2's operational runbook, unrelated to
+    # this generated site). Also never committed to git: deploy.yml uploads
+    # this directory straight to GitHub Pages via the official Actions
+    # deployment (actions/upload-pages-artifact + actions/deploy-pages),
+    # so its name only matters within a single workflow run.
+    parser.add_argument("--output-dir", default="_site")
     args = parser.parse_args(argv)
 
     written = build_site(args.repo_root, args.output_dir)

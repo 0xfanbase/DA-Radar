@@ -1,8 +1,8 @@
 name: Deploy site
 
-# Rebuilds the static site (pipeline/site/generate.py) into docs/ whenever
-# content that feeds it changes, and commits the rendered output for
-# GitHub Pages to serve. Two separate trigger paths, deliberately:
+# Rebuilds the static site (pipeline/site/generate.py) and publishes it via
+# GitHub Pages' official Actions-based deployment (upload-pages-artifact +
+# deploy-pages) -- never committed to git. Two trigger paths, deliberately:
 #
 # 1. `push` to main touching content/data/site-generator paths -- catches
 #    the CCR-triggered analyst/verifier runbook's own commits (those push
@@ -15,8 +15,11 @@ name: Deploy site
 #    document_library.json-only update from watch.yml would never
 #    redeploy the site.
 #
-# This workflow's own commit likewise uses the default GITHUB_TOKEN, so it
-# does not re-trigger itself (or anything else) recursively.
+# Repository setting required once, by a human with admin access: Settings
+# -> Pages -> Source: "GitHub Actions" (not "Deploy from a branch" -- this
+# repo's docs/ directory already holds docs/analyst-runbook.md, unrelated
+# to this generated site, so a branch/docs-folder source was deliberately
+# avoided; see IMPROVEMENT_BACKLOG.md).
 
 on:
   push:
@@ -31,14 +34,16 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
-  group: deploy-hk-radar-site
+  group: pages
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -53,29 +58,23 @@ jobs:
         run: pip install -e .
 
       - name: Build site
-        run: python -m pipeline.site.generate --repo-root . --output-dir docs
+        run: python -m pipeline.site.generate --repo-root . --output-dir _site
 
-      - name: Check for site changes
-        id: changes
-        run: |
-          # git status --porcelain, not `git diff --quiet` -- docs/ is
-          # untracked on its very first build, and plain `git diff` only
-          # covers already-tracked files (the same blind spot found and
-          # fixed in watch.yml's own change-check earlier this project).
-          if [ -z "$(git status --porcelain -- docs)" ]; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
+      - name: Configure Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
 
-      - name: Commit rendered site
-        if: steps.changes.outputs.changed == 'true'
-        env:
-          GIT_AUTHOR_NAME: hk-radar-bot
-          GIT_AUTHOR_EMAIL: bot@users.noreply.github.com
-          GIT_COMMITTER_NAME: hk-radar-bot
-          GIT_COMMITTER_EMAIL: bot@users.noreply.github.com
-        run: |
-          git add docs/
-          git commit -m "site: $(date -u +%Y-%m-%dT%H:%M:%SZ) rebuild static site"
-          git push
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0

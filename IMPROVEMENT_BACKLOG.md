@@ -588,12 +588,31 @@ Fixed by giving `deploy.yml` two trigger paths: `on: push` (paths: `content/**`,
 `config/jurisdiction.json`, `pipeline/site/**`) for the CCR/manual case, plus
 `repository_dispatch: types: [site-rebuild-needed]`, explicitly fired by a new step in `watch.yml`
 right after its existing `queue-updated` dispatch to `analyze.yml` -- same pattern, different
-event type, same underlying reason. `deploy.yml`'s own commit (the rendered `docs/` output) also
-uses the default `GITHUB_TOKEN`, so it does not re-trigger itself or anything else recursively.
+event type, same underlying reason.
 
-Also reused the same `git status --porcelain` (not `git diff --quiet`) fix from the
-`document_library.json` bug for `deploy.yml`'s own change-check, since `docs/` is untracked on its
-first-ever build for the same reason.
+**Superseding revision, same day:** the first version of this workflow committed the rendered
+output to `docs/` (the common "deploy from branch, /docs folder" GitHub Pages convention) using the
+default `GITHUB_TOKEN`, matching every other generated-artifact commit in this project. Building the
+site for real (not just reading the YAML) immediately surfaced a real collision: `docs/` already
+holds `docs/analyst-runbook.md` (Phase 2's operational runbook), so the generated `index.html`,
+`static/`, etc. would land in the same directory as an unrelated operational document -- confirmed
+live by actually running the generator against `--output-dir docs` and seeing both side by side.
+Renaming the runbook instead would have required updating every reference to it, including the
+literal path already baked into the live CCR trigger's stored prompt text
+(`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`) -- a riskier, wider-blast-radius change than switching the site's
+own output location.
+
+Switched instead to GitHub's official Actions-based Pages deployment
+(`actions/upload-pages-artifact` + `actions/deploy-pages`, both pinned to verified commit SHAs via
+`git ls-remote`): the site builds into `_site/` (gitignored, an ordinary workflow-run artifact, never
+committed to git at all) and is uploaded directly to GitHub's Pages hosting infrastructure. This is
+also the more modern, currently-recommended approach generally, not just a workaround for the
+naming collision -- it avoids polluting git history with rendered HTML/CSS on every content change,
+and sidesteps the `GITHUB_TOKEN`-doesn't-trigger-`on:push` commit-recursion question entirely, since
+this workflow no longer commits anything back to the repository. The dual-trigger design (`on: push`
++ `repository_dispatch` from `watch.yml`) is unchanged and still necessary for the same underlying
+reason. **Owner action still required, mechanism just changed:** Settings -> Pages -> Source:
+"GitHub Actions" (not "Deploy from a branch" as originally planned).
 
 ## Phase 4 gate item, flagged now so it isn't lost (Fable PM, 2026-07-09)
 
