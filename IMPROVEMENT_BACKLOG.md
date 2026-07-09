@@ -361,6 +361,34 @@ is for). Two separate problems needed separate fixes, per Fable PM review of the
   definitive, non-bypassable backstop regardless -- unchanged from Phase 2, since it never trusted
   an LLM's self-report in the first place.
 
+## Bug found via live gate usage: bare untracked-directory lines, 2026-07-09
+
+While writing Phase 3's 7 `content/pillar_states/*.json` files (the first real content ever
+created under a wholly-new subdirectory), running the actual deterministic gate
+(`python -m pipeline.ci.path_allowlist --mode working-tree`) failed with `content/` reported as a
+violation. Root cause: `git status --porcelain`'s default untracked-files mode collapses an
+entirely-new, wholly-untracked directory into one bare line (`"content/"`) instead of one line per
+file inside it; `_normalize()` then strips the trailing slash, so `"content/"` becomes `"content"`,
+which fails a plain `.startswith("content/")` check.
+
+First fix (commit `7f5f3cb`) special-cased this in `check_path_allowlist` only. Before committing,
+re-ran the *other* real gate, `validate_content.py`, against the same still-uncommitted files and
+found a more serious version of the same root cause: `validate_content`'s per-file schema mapping
+has no entry for a bare `"content"` path, so it silently printed `"no schema-governed files
+changed"` and skipped validating all 7 files entirely — a silent false pass, not a loud failure.
+Both `path_allowlist.py` and `validate_content.py` (and `apply_verification_gate.py`) share one
+underlying function, `get_uncommitted_changed_paths`, so this wasn't three separate bugs to patch
+three times — it was one root cause with three blast points. Fixed properly (commit `81188aa`) by
+passing `--untracked-files=all` to the underlying `git status` call so every consumer always sees
+real per-file paths, and reverted the narrower first patch as unnecessary once the source data is
+correct. Confirmed live: `validate_content` went from silently reporting 0 files checked to
+correctly validating all 7 pillar-state files OK.
+
+Lesson logged because it nearly slipped through: the first fix "worked" (the one gate I'd tested
+against passed), but only running the *other* real gate — per this project's own standing
+discipline of never trusting one green check when a second deterministic gate exists — surfaced
+that the real risk (silently unvalidated content) was still live.
+
 ## Follow-ups for later phases (not decisions, just noted so they aren't lost)
 
 - Phase 2 must add the actual CI path-allowlist gate (today it's a documented rule in CLAUDE.md,
