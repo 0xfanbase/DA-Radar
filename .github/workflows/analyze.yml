@@ -1,3 +1,12 @@
+# Spec-literal analyst/verifier pipeline via anthropics/claude-code-action@v1.
+# DORMANT in this deployment: no CLAUDE_CODE_OAUTH_TOKEN/ANTHROPIC_API_KEY
+# secret is provisioned (a deliberate owner decision, not an oversight --
+# see IMPROVEMENT_BACKLOG.md). The check-queue job's credential check makes
+# the analyst/verifier jobs skip cleanly rather than fail. The operative
+# analyst/verifier mechanism in this deployment is a scheduled Claude Code
+# Remote session (see docs/analyst-runbook.md), not this workflow. If a
+# future owner adds either secret, this workflow starts working exactly as
+# the original spec describes, with no other change needed.
 name: Analyze
 
 on:
@@ -22,6 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       empty: ${{ steps.check.outputs.empty }}
+      credentials_available: ${{ steps.creds.outputs.available }}
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
@@ -40,9 +50,27 @@ jobs:
         id: check
         run: python -m pipeline.ci.queue_check --queue data/queue.json
 
+      # This deployment deliberately does not provision an AI credential
+      # here (see IMPROVEMENT_BACKLOG.md) -- the analyst/verifier jobs
+      # below must skip cleanly rather than fail noisily when neither
+      # secret exists, so this workflow stays dormant-but-harmless rather
+      # than a source of daily failure notifications.
+      - name: Check AI credentials
+        id: creds
+        env:
+          HAS_OAUTH: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          HAS_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "$HAS_OAUTH" ] || [ -n "$HAS_API_KEY" ]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::No CLAUDE_CODE_OAUTH_TOKEN or ANTHROPIC_API_KEY secret is configured. Skipping the analyst/verifier jobs -- this deployment intentionally has no such secret (see IMPROVEMENT_BACKLOG.md); the analyst/verifier role instead runs via a scheduled Claude Code Remote session. This workflow remains a dormant, spec-literal fallback that would activate automatically if a future owner adds one of the two secrets."
+          fi
+
   analyst:
     needs: check-queue
-    if: needs.check-queue.outputs.empty != 'true'
+    if: needs.check-queue.outputs.empty != 'true' && needs.check-queue.outputs.credentials_available == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
