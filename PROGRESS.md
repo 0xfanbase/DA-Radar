@@ -169,6 +169,32 @@ Disabled the trigger (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`) as a precaution until thi
 re-enable once merged, then it will correctly see the fixed pipeline and the (much smaller,
 relevance-filtered) real queue.
 
+### 2026-07-09 — First real analyst+verifier run: 5 headline cards drafted, verified, published
+
+Ran the full analyst+verifier+gate pipeline for real for the first time (previously only
+deterministically tested against fixtures). One `hk-radar-analyst` sub-agent drafted cards for all
+5 of the build spec's headline events (VATP dual-licence regime, first Stablecoins Ordinance
+licences, dealing/custodian consultation conclusions, Policy Statement 2.0, an SFC enforcement
+action against Saxo Capital Markets HK Limited), plus `trajectory.json`'s first entry and 6
+glossary terms. 5 separate, worktree-isolated `hk-radar-verifier` sub-agents (one per card, each
+given only the drafted card file, never the analyst's reasoning) then adversarially re-checked
+every citation. **All 5 verifier passes found and corrected at least one real problem** in the
+analyst's draft — see IMPROVEMENT_BACKLOG.md for the full list (a fabricated/spliced quote, a wrong
+statutory-basis description, unsupported date/comparative claims, and several claims needing
+better-sourced citations).
+
+Running the real deterministic gate afterward caught two further problems the LLM verifiers had
+missed — a smart-quote/straight-quote mismatch and a PDF-extraction whitespace artifact — both real
+bugs in `pipeline/verify/authenticity.py`, now fixed with regression tests (151 tests passing, up
+from 148). Also found and worked around a real infrastructure issue: spawning 5 worktree-isolated
+verifier sub-agents concurrently in one batch left 4 of the 5 worktrees pinned to a stale commit
+(hours old, predating the card files entirely) rather than the current branch tip — full detail and
+the recovery approach in IMPROVEMENT_BACKLOG.md.
+
+End state: all 5 cards `status: "verified"`, all 5 ledger items `published`, gates re-confirmed
+passing before each commit. Committed in three parts (analyst draft, the authenticity-oracle fix,
+verifier corrections + promotion), all pushed to the feature branch.
+
 *(Further entries appended as Phase 3+ work lands.)*
 
 ## PM checkpoints (Fable)

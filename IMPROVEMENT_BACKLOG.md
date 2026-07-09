@@ -445,6 +445,71 @@ data, not just synthetic single-purpose fixtures (see the new `tests/test_releva
 isolated unit-level coverage, including a portability-specific case with a non-HK keyword
 vocabulary).
 
+## First real analyst+verifier pipeline run: 5 headline cards, 2026-07-09
+
+Ran the full analyst+verifier+gate pipeline for real for the first time, on the build spec's 5
+seed-content headline events (VATP regime, stablecoins licences, dealing/custody consultation
+conclusions, Policy Statement 2.0, an SFC enforcement action). One `hk-radar-analyst` sub-agent
+drafted all 5 cards plus `trajectory.json`'s first entry and 6 glossary terms; 5 separate,
+worktree-isolated `hk-radar-verifier` sub-agents (one per card, each given only the drafted card
+file, never the analyst's reasoning) then adversarially re-checked them. Every single one of the 5
+verifier passes found and fixed at least one real problem: a fabricated/spliced quote (two distinct
+bullet headings stitched together with a semicolon), a wrong statutory-basis description (the draft
+said the AMLO licence applies "regardless of what a platform trades" -- the source actually ties the
+AMLO/SFO split to token classification), an unsupported commencement-date claim with no source
+support, an unsupported "for the first time" comparative claim, and (for the stablecoin-licences
+card) several factual claims that needed additional citations located and re-fetched to genuinely
+support them. This is exactly the fresh-context adversarial design paying for itself on the first
+live run, not merely passing tests against fixtures.
+
+**Real infrastructure bug found: concurrent `isolation: worktree` agent spawns can get a stale
+worktree.** Spawning all 5 verifier sub-agents in one batch (same message, 5 parallel `Agent` calls)
+resulted in 4 of the 5 worktrees being created pinned to `main`'s original Phase 1 merge commit
+(`02d5a40`) -- a commit from hours earlier, missing every Phase 2/3 change including the very card
+files and `pipeline/prompts/verifier_prompt.md` the sub-agents needed -- rather than the current
+feature branch tip. The 5th (spawned alone, earlier, as the analyst) correctly got the live branch
+tip. This looks like a race in the harness's worktree-creation path under concurrent load, not
+anything this build's own git state caused. One sub-agent, faced with its own worktree missing the
+target files entirely, correctly stopped and reported rather than fabricate a "verification" of a
+file it couldn't find -- exactly the right call, and worth noting as evidence the anti-fabrication
+instruction in `verifier_prompt.md`/`hk-radar-verifier.md` holds even under a genuinely confusing
+environment fault. The other 3 discovered (independently, each in its own run) that their `Read`
+tool was not actually confined to their own worktree -- it could see the shared main checkout too,
+even though `Edit`/`Write` were correctly sandboxed to the worktree -- and used that to read the
+real card + prompt from the shared checkout while writing their corrected output to their own
+worktree path. Recovered the one that stopped by resuming it with explicit absolute paths into the
+shared checkout, pointing out the same Read/Edit asymmetry its siblings had already found; it then
+completed the same adversarial check successfully. **Follow-up, not fixed now:** if `isolation:
+worktree` is used again for a batch of concurrent sub-agents, verify each resulting worktree's `git
+log` actually matches the intended branch tip before trusting its output -- don't assume concurrent
+spawns are independently reliable just because a single spawn was.
+
+**Real bugs found in the deterministic authenticity gate itself**, by running it for real against
+all 5 verifier-approved cards rather than stopping at the LLM verifier's own "verified" verdict (the
+entire point of the gate being non-bypassable): it downgraded 2 of the 5 cards despite both having
+just been marked `verified`. Investigated rather than assumed-correct:
+1. **Smart-quote/straight-quote mismatch.** The stablecoin-licences card's quote used a plain ASCII
+   apostrophe in `"holders' requests"`; the actual HKMA source page uses a typographic right single
+   quotation mark, `"holders’ requests"` (U+2019). The quote was completely genuine -- only the
+   punctuation character class differed. Fixed at the root: `normalize_for_match` in
+   `pipeline/verify/authenticity.py` now maps common smart quotes/apostrophes/dashes to their ASCII
+   equivalents before comparison (comparison-time only; stored card text is untouched). This will
+   recur constantly on real regulator prose, which consistently uses proper typographic punctuation,
+   so this is a durable fix, not a one-off patch.
+2. **PDF text-extraction whitespace artifact.** The consultation-conclusions card's PDF citation
+   quoted `"SFC-regulated"`; the pipeline's own PDF extraction of that exact document yields
+   `"SFC -regulated"` (an extra space before the hyphen, evidently introduced by the PDF's own
+   internal text layout/kerning, confirmed by directly re-running the deterministic fetcher and
+   inspecting the raw extracted text). This is a source-specific extraction quirk, not a general
+   punctuation-class problem, so fixed narrowly: corrected that one quote to match the actual
+   extracted text exactly, rather than loosening the general matcher to ignore all
+   whitespace-around-hyphen differences (too great a risk of masking a genuinely different quote
+   elsewhere). Logged here in case the same PDF-kerning artifact recurs on a future document from the
+   same source.
+
+Both fixes are covered by new regression tests in `tests/test_authenticity.py`. Full test suite: 151
+passing (up from 148).
+
 ## Follow-ups for later phases (not decisions, just noted so they aren't lost)
 
 - Phase 2 must add the actual CI path-allowlist gate (today it's a documented rule in CLAUDE.md,
