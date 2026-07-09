@@ -20,6 +20,7 @@ from typing import Optional
 import requests
 
 from pipeline.watcher.clock import utc_now_iso
+from pipeline.watcher.document_library import derive_document_library, save_document_library
 from pipeline.watcher.fetch import fetch_feed
 from pipeline.watcher.ledger import diff_new_items, load_ledger, save_ledger, upsert_items
 from pipeline.watcher.parse import FeedParseError, parse_rss
@@ -47,6 +48,7 @@ class RunSummary:
     items_new: int = 0
     ledger_changed: bool = False
     queue_changed: bool = False
+    document_library_changed: bool = False
     feed_results: list = field(default_factory=list)
 
 
@@ -78,6 +80,7 @@ def run(
     ledger_path: str,
     queue_path: str,
     cache_path: Optional[str] = None,
+    document_library_path: Optional[str] = None,
 ) -> RunSummary:
     config = load_jurisdiction(config_path)
     run_ts = utc_now_iso()
@@ -150,6 +153,13 @@ def run(
     summary.ledger_changed = save_ledger(ledger_path, ledger)
     queue_doc = derive_queue(ledger, run_ts)
     summary.queue_changed = save_queue(queue_path, queue_doc)
+
+    if document_library_path:
+        document_library_doc = derive_document_library(ledger, config, run_ts)
+        summary.document_library_changed = save_document_library(
+            document_library_path, document_library_doc
+        )
+
     _save_etag_cache(cache_path, etag_cache)
 
     return summary
@@ -161,12 +171,13 @@ def main(argv=None) -> int:
     parser.add_argument("--ledger", default="data/ledger.json")
     parser.add_argument("--queue", default="data/queue.json")
     parser.add_argument("--cache-dir", default="data/cache")
+    parser.add_argument("--document-library", default="content/document_library.json")
     args = parser.parse_args(argv)
 
     cache_path = os.path.join(args.cache_dir, "etags.json") if args.cache_dir else None
 
     try:
-        summary = run(args.config, args.ledger, args.queue, cache_path)
+        summary = run(args.config, args.ledger, args.queue, cache_path, args.document_library)
     except (OSError, json.JSONDecodeError, KeyError) as exc:
         print(f"watcher: invalid or missing config: {exc}", file=sys.stderr)
         return 1
@@ -175,7 +186,8 @@ def main(argv=None) -> int:
         f"feeds attempted={summary.feeds_attempted} ok={summary.feeds_ok} "
         f"failed={summary.feeds_failed} items_seen={summary.items_seen_total} "
         f"items_new={summary.items_new} ledger_changed={summary.ledger_changed} "
-        f"queue_changed={summary.queue_changed}"
+        f"queue_changed={summary.queue_changed} "
+        f"document_library_changed={summary.document_library_changed}"
     )
     for fr in summary.feed_results:
         status = "OK" if fr.ok else f"FAIL ({fr.error})"

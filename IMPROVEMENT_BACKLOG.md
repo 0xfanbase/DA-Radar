@@ -510,6 +510,37 @@ just been marked `verified`. Investigated rather than assumed-correct:
 Both fixes are covered by new regression tests in `tests/test_authenticity.py`. Full test suite: 151
 passing (up from 148).
 
+## Document Library (task #44) built, 2026-07-09 -- design approved by Fable PM
+
+Built per Fable's approved design (site structure item #5, distinct from item #4's analyst-authored
+Timeline cards): `pipeline/watcher/classify.py` (deterministic pillar tagging via
+`config/jurisdiction.json`'s new `pillar_keywords`, plus `type` derived from each feed's own
+existing `kind` field -- a separate vocabulary from `card.json`'s analyst-assigned type enum, since
+a raw watched document's feed category and an analyst's editorial judgment of a drafted card are
+different concepts and forcing one enum to cover both would misclassify press releases with no
+analyst verdict yet) and `pipeline/watcher/document_library.py` (derives
+`content/document_library.json` from the ledger's `relevant: true` items, same "derived view,
+regenerated in full, never accumulated" principle as `queue.py`). New schema:
+`pipeline/schemas/document_library.json`. Wired into `pipeline/watcher/run.py`'s normal run (not a
+standalone script), and into `watch.yml`'s commit step.
+
+**Bug found while wiring the commit-scope check, same category as the earlier bare-directory bug:**
+`watch.yml`'s existing `git diff --quiet -- data/ledger.json data/queue.json` check would have
+silently missed `content/document_library.json` on its very first run -- plain `git diff` (without
+`--cached`) only shows differences for already-tracked files; a brand-new untracked file produces no
+diff output at all, so the "did anything change" check would have reported `false` even though a
+genuinely new file existed, and it would never get committed. Confirmed live (`git status
+--porcelain` showed the untracked file; `git diff --quiet` returned success/no-diff for the exact
+same paths). Fixed by switching the check to `git status --porcelain`, which correctly covers both
+modified and untracked files -- this only mattered because `content/document_library.json` is
+committed by this same PR alongside the workflow change, so the gap never actually bit in practice,
+but would have for anyone reasoning about this workflow from a truly clean slate.
+
+Full test suite: 165 passing (up from 151) -- new `tests/test_classify.py`,
+`tests/test_document_library.py`, plus Freedonia-jurisdiction and real-HK-fixture coverage added to
+`tests/test_jurisdiction_agnostic.py` and `tests/test_run_integration.py` per Fable's directive that
+every new deterministic subsystem needs the same portability proof as the rest of the pipeline.
+
 ## Phase 4 gate item, flagged now so it isn't lost (Fable PM, 2026-07-09)
 
 CLAUDE.md rule 1 requires every card to carry the "AI-generated summary... not legal or regulatory

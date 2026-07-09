@@ -63,8 +63,9 @@ def test_first_run_ingests_all_feeds(tmp_path, requests_mock, hk_config, fixture
     ledger_path = str(tmp_path / "ledger.json")
     queue_path = str(tmp_path / "queue.json")
     cache_path = str(tmp_path / "cache" / "etags.json")
+    document_library_path = str(tmp_path / "document_library.json")
 
-    summary = run(HK_JURISDICTION_PATH, ledger_path, queue_path, cache_path)
+    summary = run(HK_JURISDICTION_PATH, ledger_path, queue_path, cache_path, document_library_path)
 
     assert summary.feeds_attempted == 9
     assert summary.feeds_ok == 9
@@ -86,6 +87,17 @@ def test_first_run_ingests_all_feeds(tmp_path, requests_mock, hk_config, fixture
     # speech...), of which exactly 2 items are digital-asset relevant.
     assert len(queue_doc["items"]) == 2
     assert all(item["status"] == "queued" for item in queue_doc["items"])
+
+    with open(document_library_path) as fh:
+        document_library_doc = json.load(fh)
+    # Document library tracks *relevant* items regardless of ledger status
+    # (unlike the queue, which only tracks status=="queued") -- same 2
+    # items here since none have been drafted/verified/published yet.
+    documents = document_library_doc["documents"]
+    assert len(documents) == 2
+    assert all("dealing_custody_advisory" in d["pillar"] for d in documents)
+    assert {d["type"] for d in documents} == {"press_releases", "consultations_and_conclusions"}
+    assert all(d["regulator"] == "SFC" for d in documents)
 
 
 def test_immediate_rerun_adds_nothing(tmp_path, requests_mock, hk_config, fixture_bytes):

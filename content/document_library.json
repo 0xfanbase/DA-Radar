@@ -1,0 +1,777 @@
+{
+  "documents": [
+    {
+      "item_hash": "002071c55b749742cb415f5db4caa0beea84c448fd0017cdfd23e9d86497fbb1",
+      "link": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2025/20250407e1.pdf",
+      "pillar": [
+        "banking_money",
+        "dealing_custody_advisory",
+        "exchanges_vatp"
+      ],
+      "published_at": "2025-04-06T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Provision of Staking Services for Virtual Assets from Custodial Services (PDF File, 131.0 KB)",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "0033e56be440a28e995c43c19ffb6b6d0bc9fa3fc3834ac7eeb95a572f531005",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-17-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)3 Part IIIc",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "0eb569c65235f908b3372e2ecaac7f5399b657d3a098c83c5c556ff6127a5692",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250319-2-EN",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2025-03-18T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Research Paper on Distributed Ledger Technology in the Financial Sector Annex: Distributed Ledger Technology in the Financial Sector - A Study on the Opportunities and Challenges",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "103b7829696239ecc37dad26304370a13cfbcbd2b387157db9521813efc4664c",
+      "link": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2025/20250319e1.pdf",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2025-03-18T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Research Paper on Distributed Ledger Technology in the Financial Sector (PDF File, 122.5 KB)",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "10f7a10281763fb27fdd513cd213e6c8436edcd5926915e8e3e85fe1b87ed0b2",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=25PR210",
+      "pillar": [
+        "banking_money",
+        "dealing_custody_advisory"
+      ],
+      "published_at": "2025-12-24T07:06:55Z",
+      "regulator": "SFC",
+      "title": "FSTB and SFC conclude consultations on virtual asset dealer and custodian regimes, further consult on two new regimes",
+      "type": "consultations_and_conclusions"
+    },
+    {
+      "item_hash": "127006774306d942e0fa816e0b624bb6ea52f3c2651092c311f7a0e2164a1e54",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250903-6-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-09-03T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Letter to HKAB: Cryptoassets standard and other miscellaneous amendments: consultation on revised completion instructions",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "12ad1f7361191e8c2cade0b9e7ca52bccfa805629c0d1f36bd1ae4e330313efc",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/speeches/2026/03/20260312-2/",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2026-03-11T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Opening Remarks at “Tokenisation: Banking the Future” by Carmen Chu, Executive Director (Banking Supervision), Hong Kong Monetary Authority",
+      "type": "speeches"
+    },
+    {
+      "item_hash": "139763378c24cef6d70ca8f509fd6ec8c1c5880eeb52aaa0355f5b68b3cfad1c",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-11-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates CIs: MA(BS)3 Part II Cls - Annex",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "1aa3c695532f834c0cf306105eb488cd524ac2069be6d34fd310f53bca5a308b",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC26",
+      "pillar": [
+        "exchanges_vatp",
+        "stablecoins"
+      ],
+      "published_at": "2026-05-27T11:11:46Z",
+      "regulator": "SFC",
+      "title": "Circular on provision of Relevant Stablecoin service by virtual asset trading platforms and licensed corporations",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "20df5027480c2f4fe06df0b45d73d7a611bf0621263b4bc51e587fff93ea0700",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-14-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3 Part IIIb",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "2472b287bd3b643b01a57bdf4e11cf82bbef45a3eb451abed4ab07b7a579c625",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-20-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3a Part I",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "26d95c5eb4ef062e24c24ff646490ccfa4e9a93891692fd7ecf5bbebd45c6cc1",
+      "link": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2024/20240723e1.pdf",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2024-07-22T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoasset disclosure requirements and standard amendments (PDF File, 189.2 KB)",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "27b37503a7ed8fe1c96a73245f626339008ce08d9cc51e968b7d1fdd441bb27e",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250711-1-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-07-10T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Gazettal of rules: cryptoassets standard and other updates",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "28e73715a7f2c472bf2718849c9005a4655b520c23a58bbf725236c6ffa13c92",
+      "link": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2024/20240416e1.pdf",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2024-04-15T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Risk management considerations related to the use of distributed ledger technology (PDF File, 230.0 KB)",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "2c99a3346a5ec739f75f8f8b16bc810df62eb35d269297fd5d0c05196a3d7ca9",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260610-5/",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2026-06-09T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "HKMA demonstrates potential of tokenisation to corporate treasury community",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "2f69c645e8ffb99342b710b2ba63f6f1991250966cfa045aa2db83f069e61c7c",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/10/20251028-4/",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-10-27T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "HKMA completes e-HKD Pilot Programme and outlines future direction of e-HKD",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "30c9e8e842f751f6ac2c0b8498a403413528e594ba2cea3765f5ec6deb0d9bae",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20251022-3-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-10-22T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoasset Standard: consultation on revised SPM module CA-G-1 “Overview of Capital Adequacy Regime for Locally Incorporated Authorized Institutions” Enclosure: Overview of Capital Adequacy Regime for Locally Incorporated Authorized Institutions (Consultation)",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "386290a754590e6eb6a2ad831e93757ea8a3a40dc50ecfbddd1d31ee835d8e0a",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20251127-1-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-11-26T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets Standard: SPM Modules, Code of Practice, Disclosure Templates and Tables, and Banking Returns",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "3cb77193bb9f36c6cb4e2b95627fa78751d449509de9fdc3469d2895408372d8",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR75",
+      "pillar": [
+        "dealing_custody_advisory"
+      ],
+      "published_at": "2026-05-26T10:25:21Z",
+      "regulator": "SFC",
+      "title": "FSTB and SFC conclude consultations on virtual asset advisory and management regimes",
+      "type": "consultations_and_conclusions"
+    },
+    {
+      "item_hash": "3fa3f7e5c9a8c60c1db58f5343ebcc261c5831227d9abd08f6836516114e6c5e",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250930-1-EN",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2025-09-29T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Supplemental joint circular on intermediaries’ virtual asset-related activities",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "4eb6caa6a5d11118379a6fdff8e6e2808f3eba24774e9a9c089db2072afa9a9c",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260605-3/",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2026-06-04T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "HKMA establishes Tokenised Bond Expert Group",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "558f3e9d61cd4c2d7c8a3e35a85de257355f1261155cfbd25d3c985828f24ef4",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-25-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)28",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "561c8876f39ba521fa5cb07ca6d8f3531458da96d18e740aa3c2ce3e5b866337",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20251218-2-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-12-18T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard: gazettal of revised SPM modules and code of practice",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "587a60fad63855e3398bb8b2183918f5c2b32550932ad780254715aae885ff4b",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/08/20250814-8/",
+      "pillar": [
+        "stablecoins"
+      ],
+      "published_at": "2025-08-13T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Joint Statement by the HKMA and the SFC on Stablecoin-related Market Movements",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "592df0331e40fd782a9cc6983be9e187e21e951ec1c95a02239dbf464a1e2ab8",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/11/20251113-3/",
+      "pillar": [
+        "banking_money",
+        "tokenization_rwa"
+      ],
+      "published_at": "2025-11-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "HKMA announces the new phase of Project Ensemble to support real-value transactions in tokenised deposits and digital assets",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "5b8be9cc1c0e00a3893e55c68f92fc93217e1b6ad8e6c95de77dae8609cf1b4b",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/07/20250729-4/",
+      "pillar": [
+        "stablecoins"
+      ],
+      "published_at": "2025-07-28T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Implementation of regulatory regime for stablecoin issuers",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "640e985d195a3900a87101ecd4a714840c61d619c869cc71673dbb79d81a87bc",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-6-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)1Fb",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "6a3df2ea39ba47009aa19271f937f08657701f21b965aa40996cd062681c8e57",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-8-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3 Part I",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "6a92aafff44208e043fefcb33e646a270ceeb90b852042684b91731e6d892cc5",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260527-4-EN",
+      "pillar": [
+        "stablecoins"
+      ],
+      "published_at": "2026-05-26T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Relevant Stablecoin-related Activities",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "709df5c06eb6654dd67aca359346660320c86f59ae526b22bac15b7eabdab877",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC32",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2026-06-02T09:15:19Z",
+      "regulator": "SFC",
+      "title": "Circular to licensed corporations, SFC-licensed virtual asset service providers and associated entities Enhanced cybersecurity measures to address evolving risks arising from artificial intelligence-enabled cyberattacks",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "75aecbaa6ec9dca70452ef85f47c0dc0431464e9e55810a76bf3dec2116f4682",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260527-2-EN",
+      "pillar": [
+        "exchanges_vatp",
+        "stablecoins"
+      ],
+      "published_at": "2026-05-26T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Virtual asset-related activities in relation to relevant stablecoins issued by licensed stablecoin issuers",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "79bd051568f016dbe899066150c81890c40e67dc5c63ee94529d8f5a1195e4c2",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260428-5/",
+      "pillar": [
+        "stablecoins"
+      ],
+      "published_at": "2026-04-27T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Beware of tokens purported to be associated with licensed stablecoin issuers",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "7bece82ea39173ee82f88a51414f079f447844140744c593d9882c40aee398ce",
+      "link": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2025/20250108e1.pdf",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2025-01-07T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Supervisory Incubator for Distributed Ledger Technology (DLT) (PDF File, 172.4 KB)",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "8a2158335f9311bef8ff14ab3fa297e980dae3162b033ad2b110dc11dd2a2459",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/03/20260302-3/",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2026-03-01T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Hong Kong Monetary Authority, Shanghai Data Bureau, and National Technology Innovation Center for Blockchain sign MoU to strengthen Shanghai-Hong Kong cooperation in digitised cargo trade and finance",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "8e0a0fbfada7dfef9bbbeff9fc95acd5186302255ce035d576bae0c3e6f82244",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250407-1-EN",
+      "pillar": [
+        "banking_money",
+        "dealing_custody_advisory",
+        "exchanges_vatp"
+      ],
+      "published_at": "2025-04-06T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Provision of Staking Services for Virtual Assets from Custodial Services",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "8e676f99730d92d43afe8a107c7a590d6d6190789dfba175cd1987e099384ebd",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260527-6-EN",
+      "pillar": [
+        "banking_money",
+        "dealing_custody_advisory"
+      ],
+      "published_at": "2026-05-26T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Updated Guidance on Provision of Custodial Services for Digital Assets",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "921587d4ef5146f49ec3428c8cc36504eceec03abfdfd769d65904fa96429ddb",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-7-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)1F",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "951a03f05d6836a0bb3307d553e8ae447ef4818e7fddf09fea9619d3465ac0e1",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250905-3-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-09-07T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Letter to HKAB: Cryptoassets standard: consultation on new and revised SPM modules and code of practice",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "999b63fe134895eca2b154328adf8fa91dcd3978bdf3469f1c584b80b62a9e6f",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-2-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Letter to HKAB: Cryptoassets standard and other miscellaneous amendments: consultation on return templates",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "99b3d4760af38787f9936b214e0f756839e096c82b485d07b18431b2e5fce396",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260410-4/",
+      "pillar": [
+        "stablecoins"
+      ],
+      "published_at": "2026-04-09T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Granting of stablecoin issuer licences",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "9d37591197d0f3de447c1aa17f1822105ad11a431c0248257aa7dc996b3b0c16",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-4-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)1E Part 1",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "a2632447b1e855c74978f4a2e19863fe2836330f7c35f5a53597b2002319938a",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-24-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates CIs: MA(BS)27 Cls",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "a5d16bbe311f19fffe45515e46f91cb112613b2f7fc8e2545c98f3544d7fd376",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260527-1-EN",
+      "pillar": [
+        "dealing_custody_advisory"
+      ],
+      "published_at": "2026-05-26T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Guidance on Offering of Financing for Virtual Asset Dealing, Shared Order Book, and Client Virtual Asset Withdrawals",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "a6bd179fc9a33ab383e6e3ff486086f75ae4e862d5d7cfbaf87a799ff2f47078",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-10-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates CIs: MA(BS)3 Part II Cls",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "ab155730c026602b4cc0c887117e870bdf46e9d4e0e5ae866fe7d7ae2d618859",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-12-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3 Part IIIa",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "b018309cf0dfcae4730fe36345bf339ae2693c3180309f7237a0031fc7acb8ce",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260603-1-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2026-06-02T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "SPM CRP-1: update on cryptoassets classification conditions",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "b0b0af3a11909bcc513418d9efa681766fa9e324d9a2618265bfa3aa28953a5a",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250319-1-EN",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2025-03-18T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Research Paper on Distributed Ledger Technology in the Financial Sector",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "b85937871803ecb426f709c121b47fc69d8b4e39d5bfcb0f661118257d720502",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-21-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)3a Part I",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "bac171de5ff9a06740e92c0908287d53cdeaae63062be4c564a518aaba55f578",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-15-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)3 Part IIIb",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "bc898c7aef92944c4216de9729b62418fad6eb0e5920fa76ab20c0bd4bad7874",
+      "link": "https://www.hkma.gov.hk/eng/regulatory-resources/consultations/20250113-1/",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-01-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "The HKMA issued a letter on 13 January 2025 to consult the banking industry on implementation of the prudential treatment of cryptoasset exposures held by authorized institutions.",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "c6372d78371878f101acb1e9dbf56a1ad6eef33f7e63a0e2c588c3b9337cee2d",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-5-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)1Fa",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "c8787445ada38c7d5c438713cf163c57fbb088deb9c0e1922512afb92aedd966",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-19-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)3 Part IIIf",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "cbecdf48bb7d14caa42af87847a03eae6bb30609033c3032ea4e5f5d1be5e01d",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-3-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)1E Part 1",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "d2061d6fa8210dc23119974c3e5d80aa8fe10528d45b8d76458bc82a7c0dbd38",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-16-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3 Part IIIc",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "d5db846d6be77d523a3bb7f11ffa55720e6a9bfb55799e1d02a34d25a377d170",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/speeches/2026/03/20260312-1/",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2026-03-11T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Welcoming Remarks at “Tokenisation: Banking the Future” by Nelson Chow, Executive Director (Financial Infrastructure), Hong Kong Monetary Authority",
+      "type": "speeches"
+    },
+    {
+      "item_hash": "d7c5a3c359273993c150649d147368fa64923f99a4f7f8512700b276beb18714",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-18-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3 Part IIIf",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "d7e91cf1a48d448a6fbb640b341144def0d06200891dd3358c6e8b2d91ba4e9b",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-23-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)26 Part I",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "d8926e7c94fd548a591881ac02809c24eebff940f5ec329b42d02dd21d1313fd",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC31",
+      "pillar": [
+        "funds_etfs"
+      ],
+      "published_at": "2026-05-27T09:00:00Z",
+      "regulator": "SFC",
+      "title": "Circular on SFC-authorised funds with exposure to virtual assets",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "de628119844584805abc55e0e9f1c2eace4aa74d66384f609289ca4544f0868d",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-9-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)3 Part I",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "e08258b94dab00c5f960eedcaa610fbd2a65cf1c9b7176c02becedfa05c28923",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250815-1-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-08-14T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Rules on cryptoassets standard and other updates",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "e34cfe6181a757cded797b3157f60e2e7f5a2f1ab912540fb09a9e6652a0c5f2",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-1-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Letter to DTCA: Cryptoassets standard and other miscellaneous amendments: consultation on return templates",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "eb009c1883b70d0b1423323129f1837090ffafbb78eda4f1c6cf22857d8e4e23",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260629-4/",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2026-06-28T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "FSTB and HKMA to further unlock potential of distributed ledger technology in Hong Kong's fixed income market",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "ec5bb18313705ead1413e07ac105022d56c105ab9d18f88234b1f752f1eb3b5c",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-22-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)26 Part I",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "ee533c18df0de5ddfb540463e777fa5a6566122ce57c683c71d024eea7a4cd87",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-13-EN",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2025-06-12T16:00:00Z",
+      "regulator": "HKMA",
+      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)3 Part IIIa",
+      "type": "consultations"
+    },
+    {
+      "item_hash": "27a1b68218a47eb6ece2072efeb0b80cc05eb1c914f6b7a4a826b4f52287c903",
+      "link": "https://www.info.gov.hk/gia/general/202506/26/P2025062600269.htm",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2025-06-26T00:00:00Z",
+      "regulator": "FSTB",
+      "title": "Policy Statement 2.0 on the Development of Digital Assets in Hong Kong",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "3e1fcbaf94f7cb24004161b6bea4436991d05efa01ae61f88de74d3bd2c407d2",
+      "link": "https://www.sfc.hk/en/Welcome-to-the-Fintech-Contact-Point/Virtual-assets/Virtual-asset-trading-platforms-operators",
+      "pillar": [
+        "aml_cft_enforcement",
+        "exchanges_vatp"
+      ],
+      "published_at": "2023-06-01T00:00:00Z",
+      "regulator": "SFC",
+      "title": "Licensing regime for virtual asset trading platforms comes into effect",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "544d29ba08c14f8b692356fc7f11a36eabbad05f23c2ed7ea47ad45f730a726e",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260410-4/",
+      "pillar": [
+        "stablecoins"
+      ],
+      "published_at": "2026-04-10T00:00:00Z",
+      "regulator": "HKMA",
+      "title": "HKMA grants first licences under the Stablecoins Ordinance",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "8e3bc652202af7398e70bc47d4c96a9df8e27c141320a1dda6e79399e4799164",
+      "link": "https://www.fstb.gov.hk/fsb/en/publication/consult/doc/VAdealing_consultation_conclusion_e.pdf",
+      "pillar": [
+        "banking_money",
+        "dealing_custody_advisory"
+      ],
+      "published_at": "2025-12-24T00:00:00Z",
+      "regulator": "FSTB",
+      "title": "Consultation conclusions: licensing regimes for virtual asset dealing and custodian services",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "f66431227c57b961755f9fad4bf2a393c31541dc6925c78ddd77b9dc0618305c",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR1",
+      "pillar": [
+        "aml_cft_enforcement",
+        "funds_etfs"
+      ],
+      "published_at": "2026-01-06T00:00:00Z",
+      "regulator": "SFC",
+      "title": "SFC reprimands and fines Saxo Capital Markets HK Limited",
+      "type": "press_releases"
+    }
+  ],
+  "generated_at": "2026-07-09T07:48:51Z",
+  "schema_version": 1
+}
