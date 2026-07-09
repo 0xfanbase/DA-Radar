@@ -26,12 +26,12 @@ def compute_content_hash(title: str, summary: str, published_at: Optional[str]) 
 
 def identity_key_for_item(item: "NormalizedItem") -> str:
     """Uses guid when present. Otherwise combines link + title, not link
-    alone -- confirmed necessary against a live feed (HKMA's legislative-
-    council-issues feed reuses one generic landing-page <link> for every
-    item, with only the title distinguishing them; see
-    IMPROVEMENT_BACKLOG.md). Two items with the same link AND the same
-    title are treated as one real duplicate (also observed live, in HKMA's
-    circulars feed, which occasionally lists one item twice)."""
+    alone -- confirmed necessary against a live regulator feed that reuses
+    one generic landing-page <link> for every item, with only the title
+    distinguishing them (see IMPROVEMENT_BACKLOG.md for which feed and
+    when). Two items with the same link AND the same title are treated as
+    one real duplicate (also observed live, in a different feed that
+    occasionally lists one item twice)."""
     if item.guid:
         return item.guid
     return f"{item.link or ''}\x1e{item.title or ''}"
