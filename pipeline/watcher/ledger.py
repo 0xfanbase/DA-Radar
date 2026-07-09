@@ -19,6 +19,25 @@ if TYPE_CHECKING:
 
 SCHEMA_VERSION = 1
 
+# Ledger status lifecycle (fixed in Phase 1, exercised starting Phase 2).
+# "error" is reachable from any state; "queued" is reachable from "error"
+# (a fixed item may be retried). All other transitions are one-directional
+# forward progress through the pipeline.
+_VALID_TRANSITIONS = {
+    "queued": {"drafted"},
+    "drafted": {"verified"},
+    "verified": {"published"},
+    "published": {"corrected", "suppressed"},
+    "corrected": {"suppressed"},
+    "suppressed": set(),
+    "error": {"queued"},
+}
+
+
+class InvalidStatusTransition(Exception):
+    """Raised when a ledger item's status would move somewhere the
+    lifecycle doesn't allow (see _VALID_TRANSITIONS)."""
+
 
 def load_ledger(path: str) -> dict:
     if not os.path.exists(path):
@@ -74,3 +93,58 @@ def upsert_items(ledger: dict, new_items: Iterable["NormalizedItem"], run_ts: st
 
 def save_ledger(path: str, ledger: dict) -> bool:
     return write_if_changed(path, ledger)
+
+
+def set_item_status(ledger: dict, item_hash: str, new_status: str, *, run_ts: str, card_id=None) -> dict:
+    """Return a NEW ledger dict with item_hash's status transitioned to
+    new_status (the input ledger is never mutated).
+
+    Raises InvalidStatusTransition if the move isn't legal from the item's
+    current status, except "error" is always reachable from anywhere.
+    Raises KeyError if item_hash isn't in the ledger.
+    """
+    items = ledger.get("items", {})
+    if item_hash not in items:
+        raise KeyError(f"unknown item_hash: {item_hash}")
+
+    entry = items[item_hash]
+    current_status = entry["status"]
+    allowed = new_status == "error" or new_status in _VALID_TRANSITIONS.get(current_status, set())
+    if not allowed:
+        raise InvalidStatusTransition(
+            f"cannot transition item {item_hash} from {current_status!r} to {new_status!r}"
+        )
+
+    new_entry = dict(entry)
+    new_entry["status"] = new_status
+    if card_id is not None:
+        new_entry["card_id"] = card_id
+
+    new_items = dict(items)
+    new_items[item_hash] = new_entry
+
+    return {"schema_version": SCHEMA_VERSION, "generated_at": run_ts, "items": new_items}
+
+
+def mark_drafted(ledger: dict, item_hash: str, card_id: str, run_ts: str) -> dict:
+    """The analyst has written a draft card for this item."""
+    return set_item_status(ledger, item_hash, "drafted", run_ts=run_ts, card_id=card_id)
+
+
+def mark_verified(ledger: dict, item_hash: str, run_ts: str) -> dict:
+    """The verifier pass + the non-bypassable gate have run. Note this
+    reflects pipeline STAGE, not editorial confidence -- the card itself
+    may carry status="unverified" (see pipeline/verify/gate.py) while the
+    ledger item is still "verified", meaning it's ready to publish with
+    that visible unverified badge, per the spec's fully-auto-publish
+    decision."""
+    return set_item_status(ledger, item_hash, "verified", run_ts=run_ts)
+
+
+def mark_published(ledger: dict, item_hash: str, run_ts: str) -> dict:
+    """The card has actually been committed under /content."""
+    return set_item_status(ledger, item_hash, "published", run_ts=run_ts)
+
+
+def mark_error(ledger: dict, item_hash: str, run_ts: str) -> dict:
+    return set_item_status(ledger, item_hash, "error", run_ts=run_ts)
