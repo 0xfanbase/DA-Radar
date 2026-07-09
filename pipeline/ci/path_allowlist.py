@@ -21,7 +21,9 @@ import sys
 DEFAULT_ALLOWED_PREFIXES = ("content/", "data/")
 
 
-def _normalize(path: str) -> str:
+def normalize_path(path: str) -> str:
+    """Shared by every CI gate that needs to compare a changed path against
+    prefix rules (see also pipeline/ci/improve_scope.py)."""
     return posixpath.normpath(path.replace("\\", "/")).lstrip("/")
 
 
@@ -33,7 +35,7 @@ def check_path_allowlist(
     violations = [
         path
         for path in changed_paths
-        if not any(_normalize(path).startswith(prefix) for prefix in allowed_prefixes)
+        if not any(normalize_path(path).startswith(prefix) for prefix in allowed_prefixes)
     ]
     return (len(violations) == 0, violations)
 
