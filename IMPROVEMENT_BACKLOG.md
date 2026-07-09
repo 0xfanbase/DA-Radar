@@ -208,21 +208,32 @@ Key decisions arising from that review and from implementation itself:
   scratch repo only (`git -c commit.gpgsign=false init` plus a local `git config commit.gpgsign
   false` scoped to that throwaway directory) -- this never touches the actual project repo's
   config, global or local, same category as setting a scratch repo's `user.name`/`user.email`.
-- **Tool restriction for the AI jobs is enforced entirely via `claude_args`, not a settings
-  file.** Two things ruled out a settings-file approach after checking rather than assuming: (1)
-  a settings file's `/path`-style permission patterns anchor to *that file's own directory*, not
-  the repository root -- a settings file at, say, `pipeline/prompts/ai_job_settings.json` would
-  resolve `Write(/content/**)` to `pipeline/prompts/content/**`, silently breaking the intended
-  scope; (2) `anthropics/claude-code-action@v1`'s documented inputs don't actually include a
-  `settings` input, so routing through one would have relied on unconfirmed behavior. Also
-  deliberately NOT writing a repo-root `.claude/settings.json` -- that file is auto-loaded by
-  every Claude Code session working on this project (including all future human/agent work in
-  Phases 3-5), and this restriction is meant to scope two specific automated CI jobs, not the
-  whole repo. Resolution: pass `--allowedTools`/`--disallowedTools` directly via each job's
-  `claude_args`, using patterns with no leading slash (`Write(content/**)`, not
-  `Write(/content/**)`) -- these are documented to anchor to the current working directory, which
-  is the repository root when the action runs, and this is the one behavior confirmed
-  unambiguous rather than inferred.
+- **Tool restriction for the AI jobs is enforced primarily via `claude_args`, not a settings
+  *file*.** A settings *file*'s `/path`-style permission patterns anchor to *that file's own
+  directory*, not the repository root -- a file at, say, `pipeline/prompts/ai_job_settings.json`
+  would resolve `Write(/content/**)` to `pipeline/prompts/content/**`, silently breaking the
+  intended scope. (**Correction, 2026-07-09, per Fable PM re-check of the raw `action.yml`:** an
+  earlier version of this entry claimed `claude-code-action@v1` has no `settings` input at all --
+  that was wrong, confirmed false by reading the action's actual source rather than a summary.
+  The input exists: `"Claude Code settings as JSON string or path to settings JSON file"`. The
+  path-anchoring problem is real and stands; the "input doesn't exist" reasoning was not, and is
+  struck from the rationale.) Also deliberately not writing a repo-root `.claude/settings.json`
+  -- that file is auto-loaded by every Claude Code session working on this project (including all
+  future human/agent work in Phases 3-5), and this restriction is meant to scope two specific
+  automated CI jobs, not the whole repo. Resolution: pass `--allowedTools`/`--disallowedTools`
+  directly via each job's `claude_args`, using patterns with no leading slash
+  (`Write(content/**)`, not `Write(/content/**)`) -- documented to anchor to the current working
+  directory, which is the repository root when the action runs, and the one behavior confirmed
+  unambiguous rather than inferred. The actual non-bypassable guarantee doesn't rest on this
+  layer anyway -- it rests on `pipeline/ci/path_allowlist.py` running as an independent, deterministic
+  post-hoc check regardless of what the AI job's own tool permissions claim to allow.
+  **Deferred, not done:** the `settings` input also accepts an inline JSON string (no file, so no
+  path-anchoring ambiguity), which could carry an explicit `permissions.deny` list for
+  `/pipeline`, `/.github`, `/config`, `CLAUDE.md` as extra defense-in-depth (deny beats allow).
+  Not added this round because it would rely on another not-yet-verified anchoring assumption
+  (does an inline string anchor to cwd the same way `claude_args` patterns do?) for a layer that
+  is not where the actual guarantee lives -- worth adding later if confirmed cheap, but not before
+  the CI-gate-based enforcement that's already real and tested.
 
   **The exact `claude_args` value, identical for both the analyst and verifier jobs** (defense
   layer 1 of 2 -- layer 2 is `pipeline/ci/path_allowlist.py` run as a separate plain-shell step
