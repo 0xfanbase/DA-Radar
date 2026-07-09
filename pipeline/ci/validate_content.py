@@ -30,6 +30,7 @@ _PREFIX_MAPPING = (
 _EXACT_MAPPING = {
     "content/trajectory.json": "trajectory.json",
     "content/document_library.json": "document_library.json",
+    "content/start_here.json": "start_here.json",
     "data/ledger.json": "ledger.json",
     "data/queue.json": "queue.json",
     "data/corrections.json": "corrections.json",

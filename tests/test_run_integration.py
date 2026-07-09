@@ -192,6 +192,8 @@ def test_all_feeds_failing_returns_nonzero_exit(tmp_path, requests_mock, hk_conf
             str(tmp_path / "queue.json"),
             "--cache-dir",
             str(tmp_path / "cache"),
+            "--document-library",
+            str(tmp_path / "document_library.json"),
         ]
     )
     assert exit_code == 1
@@ -212,6 +214,8 @@ def test_partial_failure_still_returns_success_exit_code(tmp_path, requests_mock
             str(tmp_path / "queue.json"),
             "--cache-dir",
             str(tmp_path / "cache"),
+            "--document-library",
+            str(tmp_path / "document_library.json"),
         ]
     )
     assert exit_code == 0

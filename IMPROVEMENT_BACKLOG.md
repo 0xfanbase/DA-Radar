@@ -541,6 +541,25 @@ Full test suite: 165 passing (up from 151) -- new `tests/test_classify.py`,
 `tests/test_jurisdiction_agnostic.py` and `tests/test_run_integration.py` per Fable's directive that
 every new deterministic subsystem needs the same portability proof as the rest of the pipeline.
 
+**Follow-up bug found immediately after, by noticing an unexpected `git status` diff rather than
+assuming the commit was clean:** adding `main()`'s new `--document-library` CLI flag (defaulting to
+the real relative path `content/document_library.json`, matching how `--ledger`/`--queue` already
+default) meant any test calling `main()` without explicitly overriding that flag would run the real
+watcher logic against the REAL repo's `content/document_library.json`, not a `tmp_path` fixture.
+Two tests in `tests/test_run_integration.py`
+(`test_all_feeds_failing_returns_nonzero_exit`, `test_partial_failure_still_returns_success_exit_code`)
+called `main()` directly with only `--ledger`/`--queue`/`--cache-dir` overridden -- pre-dating the
+new flag, so nobody had reason to add it. Concretely: running the full suite silently overwrote the
+real, 69-document `content/document_library.json` with a single-item file derived from
+`test_partial_failure_...`'s own broken-feed fixture state. Caught by noticing `content/
+document_library.json` in `git status` when I hadn't intentionally touched it, not by any test
+failure (both tests still legitimately passed -- the bug was a scope leak, not incorrect behavior
+in what was actually being tested). Fixed by adding `--document-library <tmp_path>` to both call
+sites, matching the pattern the other path flags already follow, and reconfirmed by regenerating
+the real file and re-running the full suite to prove it now survives untouched. Lesson: any new CLI
+flag with a real-path default needs an audit of every existing test that calls that CLI's `main()`
+directly, not just the tests written alongside the new flag.
+
 ## Phase 4 gate item, flagged now so it isn't lost (Fable PM, 2026-07-09)
 
 CLAUDE.md rule 1 requires every card to carry the "AI-generated summary... not legal or regulatory
