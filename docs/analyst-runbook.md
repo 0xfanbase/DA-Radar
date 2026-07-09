@@ -24,12 +24,15 @@ No per-item generation work happens on an empty queue — this is CLAUDE.md's "n
 rule, translated to this mechanism: a scheduled firing that finds nothing queued should do
 essentially nothing beyond this check.
 
-## Step 1 — Analyst pass (worktree-isolated sub-agent)
+## Step 1 — Analyst pass (restricted, worktree-isolated sub-agent)
 
-Spawn an `Agent` with `isolation: "worktree"`. Give it exactly two things: the full text of
-`pipeline/prompts/analyst_prompt.md`, and the current contents of `data/queue.json`. Nothing else
-— no context about this runbook, the CCR trigger, or how automation is wired here. This mirrors
-what `analyze.yml`'s `prompt:` input would contain if it ran.
+Spawn an `Agent` with `subagent_type: "hk-radar-analyst"` (defined in
+`.claude/agents/hk-radar-analyst.md` — tool access restricted to `Read, WebFetch, Write, Edit`,
+no Bash, plus `isolation: worktree`; this is the actual structural tool-restriction layer,
+equivalent to `analyze.yml`'s `claude_args`, not just the worktree blast-radius limiter). Give it
+the current contents of `data/queue.json` as its task input. Nothing else — no context about this
+runbook, the CCR trigger, or how automation is wired here; its own agent definition already points
+it at `pipeline/prompts/analyst_prompt.md` for its full brief.
 
 It works in its own disposable git worktree, entirely separate from your own working directory.
 When it reports back, **read the actual card file(s) it wrote from its worktree path** — do not
@@ -68,17 +71,20 @@ git commit -m "analyst: draft card(s) for queued item(s)"
 git push origin main
 ```
 
-## Step 5 — Verifier pass (a *separate*, worktree-isolated sub-agent — genuinely fresh context)
+## Step 5 — Verifier pass (a *separate*, restricted, worktree-isolated sub-agent — genuinely fresh context)
 
-For each card the analyst drafted, spawn a **new** `Agent`, again with `isolation: "worktree"`.
-Give it only:
-- The full text of `pipeline/prompts/verifier_prompt.md`
+For each card the analyst drafted, spawn a **new** `Agent` with
+`subagent_type: "hk-radar-verifier"` (defined in `.claude/agents/hk-radar-verifier.md` — same tool
+restriction as the analyst: `Read, WebFetch, Write, Edit`, no Bash, `isolation: worktree`). Give it
+only:
 - The card file's path and its exact JSON content
 
-Do not give it the analyst sub-agent's reasoning, transcript, or anything from Step 1 beyond the
-resulting file. This separation is what makes it a genuine adversarial check rather than the same
-context reviewing its own work — the entire point of Phase 2's "verifier must be a structurally
-separate job, fresh context" design, carried over to this mechanism exactly.
+Nothing else. Do not give it the analyst sub-agent's reasoning, transcript, or anything from
+Step 1 beyond the resulting file — its own agent definition already points it at
+`pipeline/prompts/verifier_prompt.md` for its full brief. This separation is what makes it a
+genuine adversarial check rather than the same context reviewing its own work — the entire point
+of Phase 2's "verifier must be a structurally separate job, fresh context" design, carried over to
+this mechanism exactly.
 
 Read the resulting (possibly corrected) card file from its worktree and copy it into your working
 directory, replacing the drafted version.

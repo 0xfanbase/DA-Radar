@@ -336,21 +336,30 @@ is for). Two separate problems needed separate fixes, per Fable PM review of the
 
   **The owner chose Option B.** Documented here as an explicit, informed choice, not a default --
   see `docs/analyst-runbook.md` for the actual mechanism and PROGRESS.md for the setup record.
-- **Compensating for the lost tool-restriction layer.** Phase 2's `analyze.yml` security model was
-  two-layer: `claude_args`' `--disallowedTools`/scoped `Write` (structural), plus the deterministic
-  gate (post-hoc, non-bypassable). The `Agent` tool used for the CCR-triggered analyst/verifier
-  sub-calls has no equivalent fine-grained tool-restriction parameter -- none of the available
-  `subagent_type`s are scoped to "Read/WebFetch/Write(content/**) only, no Bash." Rather than treat
-  this as an acceptable silent regression to one layer, two mitigations replace the lost layer:
-  (a) both the analyst and verifier sub-agents run with `isolation: "worktree"` -- a disposable git
-  worktree, not the orchestrating session's real working directory -- so even a hostile
-  fetched-document prompt injection that tricks a sub-agent into a destructive action only damages
-  a throwaway checkout, never the actual branch; (b) the orchestrating session (not either
-  sub-agent) is the only thing that ever runs `git add`/`commit`/`push`, and it stages explicitly
-  (`content/`, `data/ledger.json`, `data/queue.json` -- never `-A`), so a stray file written
-  anywhere else by a sub-agent structurally cannot reach a commit regardless of what wrote it. The
-  deterministic gate remains the definitive, non-bypassable backstop either way -- unchanged from
-  Phase 2, since it was already designed to never trust an LLM's self-report in the first place.
+- **Compensating for the lost tool-restriction layer -- initially mitigated, then actually closed.**
+  Phase 2's `analyze.yml` security model was two-layer: `claude_args`' `--disallowedTools`/scoped
+  `Write` (structural), plus the deterministic gate (post-hoc, non-bypassable). The first version
+  of the CCR runbook used a plain `Agent` call for both sub-agents, which has no fine-grained
+  tool-restriction parameter of its own -- Fable PM caught this exactly (no `.claude/agents/`
+  directory existed, so both sub-agents would have inherited full tool access, Bash included) and
+  flagged it as worth closing properly rather than resting on mitigation alone. Fixed the same
+  session: `.claude/agents/hk-radar-analyst.md` and `hk-radar-verifier.md` define real, named
+  subagent types with `tools: Read, WebFetch, Write, Edit` (no Bash) and `isolation: worktree` in
+  their frontmatter -- confirmed via direct research into Claude Code's actual subagent docs that
+  this is real structural enforcement (the runtime removes disallowed tools from what the subagent
+  can call at all), not a hint. `docs/analyst-runbook.md` now spawns both sub-agents via
+  `subagent_type: "hk-radar-analyst"`/`"hk-radar-verifier"` rather than a generic `Agent` call.
+  This restores genuine two-layer defense, matching Phase 2's model almost exactly (the one gap
+  remaining is that `tools:` frontmatter is tool-name-level only, not path-scoped like
+  `claude_args`' `Write(content/**)` syntax -- so path-level enforcement still rests on the
+  deterministic gate and the orchestrator's explicit `git add content/...` staging, same as
+  before). Two mitigations from the original (pre-fix) design remain as genuine additional
+  layers, not just historical color: (a) both sub-agents still run with `isolation: "worktree"` --
+  a disposable git worktree, not the orchestrating session's real working directory; (b) the
+  orchestrating session (not either sub-agent) is the only thing that ever runs
+  `git add`/`commit`/`push`, staged explicitly, never `-A`. The deterministic gate remains the
+  definitive, non-bypassable backstop regardless -- unchanged from Phase 2, since it never trusted
+  an LLM's self-report in the first place.
 
 ## Follow-ups for later phases (not decisions, just noted so they aren't lost)
 
