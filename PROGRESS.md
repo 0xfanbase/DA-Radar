@@ -234,6 +234,49 @@ content completeness.
 (`claude/hk-radar-phase-1-mzlnxx`), not yet merged to `main`. The CCR trigger stays disabled until
 that merge happens; re-enabling it is a manual follow-up once the owner merges this branch.
 
+### 2026-07-09 — Phase 4 (Frontend) build: static site generator, all 7 pages
+
+Built `pipeline/site/` -- a plain-Python, Jinja2-templated static site generator (no JS framework,
+no npm toolchain), rendering all 7 site structure pages (Start Here, State Board, Trajectory Board,
+Timeline, Document Library, Glossary, Method & Audit) from `content/*.json` and `data/*.json`. New
+`.github/workflows/deploy.yml` builds and publishes via GitHub's official Actions-based Pages
+deployment.
+
+Real problems found and fixed by actually running and looking at the output, not by trusting the
+plan:
+- **Directory collision:** the originally planned `docs/` output target already holds
+  `docs/analyst-runbook.md`. Switched to GitHub's Actions-based Pages deployment (`_site/`,
+  gitignored, never committed) instead of committing rendered HTML to a branch -- also sidesteps
+  the `GITHUB_TOKEN`-doesn't-trigger-`on:push` question entirely.
+- **Accessibility:** a real WCAG contrast-ratio test (not eyeballed) found the design spec's fixed
+  amber (#B7791F) only reaches ~3.48:1 on the paper background -- below the 4.5:1 normal-text
+  threshold. Fixed by using amber only as the unverified-badge border/background accent (where the
+  weaker 3:1 non-text threshold applies) and rendering the label text in ink instead.
+- **Misleading data:** the Method page's ledger status table originally counted all 988 observed
+  items rather than the 69 relevant ones (919 permanently-irrelevant items never leave "queued"
+  status) -- corrected to show both figures with an explanation.
+- **Serious: internal model identifier leaking publicly.** Caught by looking at an actual rendered
+  screenshot during browser verification: every card and the Start Here page displayed the literal
+  internal model-version identifier in their `model` field (restricted to this session's own chat
+  replies, never repository artifacts, per this session's own operating constraints). Fixed across
+  all 6 affected content files (`"Claude (Anthropic)"` instead) and updated `analyst_prompt.md` so
+  future analyst runs don't reintroduce it.
+
+Verification, in order: 179 tests passing (13 new for the site generator, including an automated
+grep for internal-identifier patterns with a positive-control test proving the check actually
+catches a planted identifier, and real WCAG contrast-ratio checks -- not just disclaimer-presence
+assertions); a real local browser check via Playwright against the actual generated `_site/` output
+-- all 7 pages screenshotted (desktop and a 375px mobile view), the client-side document-library
+search verified interactively (69 -> 8 rows filtering on "stablecoin"), and the Trajectory Board's
+flap-animation attribute confirmed applied on load.
+
+**Still open:** GitHub Pages hosting is not yet enabled for this repository (confirmed:
+`https://0xfanbase.github.io/DA-Radar/` returns 404) -- needs a human with repo admin access to set
+Settings -> Pages -> Source: "GitHub Actions", not something available via this session's tools.
+`deploy.yml` also cannot be live-dispatched for a real end-to-end run until this branch merges to
+`main` (GitHub's `workflow_dispatch` API only recognizes a workflow once it exists on the default
+branch -- the same situation `watch.yml` was in before its own Phase 1 merge).
+
 *(Further entries appended as Phase 4+ work lands.)*
 
 ## PM checkpoints (Fable)
