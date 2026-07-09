@@ -1,0 +1,81 @@
+name: Deploy site
+
+# Rebuilds the static site (pipeline/site/generate.py) into docs/ whenever
+# content that feeds it changes, and commits the rendered output for
+# GitHub Pages to serve. Two separate trigger paths, deliberately:
+#
+# 1. `push` to main touching content/data/site-generator paths -- catches
+#    the CCR-triggered analyst/verifier runbook's own commits (those push
+#    with real git credentials, not GITHUB_TOKEN) and any manual push.
+# 2. `repository_dispatch` fired explicitly by watch.yml -- watch.yml's own
+#    commit uses the default GITHUB_TOKEN, and GitHub does not trigger
+#    `on: push` workflows from a GITHUB_TOKEN-authored push (the same
+#    reason watch.yml already dispatches analyze.yml this way instead of
+#    relying on a push listener). Without this second path, a
+#    document_library.json-only update from watch.yml would never
+#    redeploy the site.
+#
+# This workflow's own commit likewise uses the default GITHUB_TOKEN, so it
+# does not re-trigger itself (or anything else) recursively.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/**"
+      - "data/**"
+      - "config/jurisdiction.json"
+      - "pipeline/site/**"
+  repository_dispatch:
+    types: [site-rebuild-needed]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-hk-radar-site
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Python
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -e .
+
+      - name: Build site
+        run: python -m pipeline.site.generate --repo-root . --output-dir docs
+
+      - name: Check for site changes
+        id: changes
+        run: |
+          # git status --porcelain, not `git diff --quiet` -- docs/ is
+          # untracked on its very first build, and plain `git diff` only
+          # covers already-tracked files (the same blind spot found and
+          # fixed in watch.yml's own change-check earlier this project).
+          if [ -z "$(git status --porcelain -- docs)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit rendered site
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GIT_AUTHOR_NAME: hk-radar-bot
+          GIT_AUTHOR_EMAIL: bot@users.noreply.github.com
+          GIT_COMMITTER_NAME: hk-radar-bot
+          GIT_COMMITTER_EMAIL: bot@users.noreply.github.com
+        run: |
+          git add docs/
+          git commit -m "site: $(date -u +%Y-%m-%dT%H:%M:%SZ) rebuild static site"
+          git push

@@ -570,6 +570,31 @@ the real file and re-running the full suite to prove it now survives untouched. 
 flag with a real-path default needs an audit of every existing test that calls that CLI's `main()`
 directly, not just the tests written alongside the new flag.
 
+## Deploy workflow: why it needs two trigger paths, not one (2026-07-09)
+
+Per Fable PM's explicit deployment constraint: whatever rebuilds and commits the static site must
+push using the workflow's own `GITHUB_TOKEN`, never a personal access token, because GitHub does
+not trigger `on: push` workflows from a `GITHUB_TOKEN`-authored push (the exact mechanism this
+project already relies on for `watch.yml`'s `repository_dispatch` call to `analyze.yml`, verified
+against GitHub's own docs back in Phase 2). Working through what this means for `deploy.yml`
+specifically: if it were a plain `on: push`-triggered workflow, it would correctly fire from the
+CCR-triggered analyst/verifier runbook's commits (those push with real git credentials, not
+`GITHUB_TOKEN`) and from any manual push -- but it would **never** fire from `watch.yml`'s own
+commit, since that push uses the default `GITHUB_TOKEN` precisely to avoid other unwanted
+recursive triggers. A `document_library.json`-only update from a routine watcher run would
+silently never redeploy.
+
+Fixed by giving `deploy.yml` two trigger paths: `on: push` (paths: `content/**`, `data/**`,
+`config/jurisdiction.json`, `pipeline/site/**`) for the CCR/manual case, plus
+`repository_dispatch: types: [site-rebuild-needed]`, explicitly fired by a new step in `watch.yml`
+right after its existing `queue-updated` dispatch to `analyze.yml` -- same pattern, different
+event type, same underlying reason. `deploy.yml`'s own commit (the rendered `docs/` output) also
+uses the default `GITHUB_TOKEN`, so it does not re-trigger itself or anything else recursively.
+
+Also reused the same `git status --porcelain` (not `git diff --quiet`) fix from the
+`document_library.json` bug for `deploy.yml`'s own change-check, since `docs/` is untracked on its
+first-ever build for the same reason.
+
 ## Phase 4 gate item, flagged now so it isn't lost (Fable PM, 2026-07-09)
 
 CLAUDE.md rule 1 requires every card to carry the "AI-generated summary... not legal or regulatory
