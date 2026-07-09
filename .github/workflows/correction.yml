@@ -1,0 +1,102 @@
+name: Apply correction
+
+# Deliberately workflow_dispatch-only, PR-only, human-merge -- a
+# correction is a public statement that a past claim was wrong, and
+# getting a correction itself wrong is a worse integrity failure than the
+# original error. Nothing in this repo (audit.yml's findings included)
+# auto-triggers this workflow; a human decides a correction is needed and
+# supplies its content explicitly, every time. See IMPROVEMENT_BACKLOG.md.
+#
+# Inputs are assigned to env vars below, never interpolated directly into
+# `run:` script bodies via ${{ }} -- GitHub's own guidance against script
+# injection from untrusted workflow_dispatch input text.
+
+on:
+  workflow_dispatch:
+    inputs:
+      card_id:
+        description: "Card id to correct (content/cards/<card_id>.json)"
+        required: true
+      correction_note:
+        description: "Public explanation of what was wrong and what changed"
+        required: true
+      fields_changed:
+        description: "Comma-separated card field names that changed"
+        required: true
+      citation_url:
+        description: "Optional: a supporting citation URL for the correction"
+        required: false
+      citation_quote:
+        description: "Optional: supporting citation quote (<=15 words), required if citation_url is set"
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  apply-correction:
+    runs-on: ubuntu-latest
+    env:
+      CARD_ID: ${{ github.event.inputs.card_id }}
+      CORRECTION_NOTE: ${{ github.event.inputs.correction_note }}
+      FIELDS_CHANGED: ${{ github.event.inputs.fields_changed }}
+      CITATION_URL: ${{ github.event.inputs.citation_url }}
+      CITATION_QUOTE: ${{ github.event.inputs.citation_quote }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Python
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -e .
+
+      - name: Create correction branch
+        run: |
+          BRANCH="correction/${CARD_ID}-$(date -u +%Y%m%d%H%M%S)"
+          echo "BRANCH=$BRANCH" >> "$GITHUB_ENV"
+          git checkout -b "$BRANCH"
+
+      - name: Apply correction
+        run: |
+          set -- --card-id "$CARD_ID" \
+                 --correction-id "correction-${{ github.run_id }}" \
+                 --corrected-at "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+                 --correction-note "$CORRECTION_NOTE" \
+                 --fields-changed "$FIELDS_CHANGED"
+          if [ -n "$CITATION_URL" ]; then
+            set -- "$@" --citation "${CITATION_URL}|${CITATION_QUOTE}"
+          fi
+          python -m pipeline.ci.apply_correction "$@"
+
+      - name: Run deterministic gates
+        run: |
+          python -m pipeline.ci.path_allowlist --mode working-tree
+          python -m pipeline.ci.validate_content
+
+      - name: Commit correction
+        env:
+          GIT_AUTHOR_NAME: hk-radar-bot
+          GIT_AUTHOR_EMAIL: bot@users.noreply.github.com
+          GIT_COMMITTER_NAME: hk-radar-bot
+          GIT_COMMITTER_EMAIL: bot@users.noreply.github.com
+        run: |
+          git add content/cards data/corrections.json
+          git commit -m "correction: ${CARD_ID}"
+          git push -u origin "$BRANCH"
+
+      - name: Open pull request (human review and merge required)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr create \
+            --title "Correction: ${CARD_ID}" \
+            --body "${CORRECTION_NOTE}
+
+          Triggered manually via workflow_dispatch by @${{ github.actor }}. Never auto-merged -- requires human review." \
+            --base main \
+            --head "$BRANCH"
