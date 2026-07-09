@@ -160,6 +160,81 @@ began and required the following be pinned down (see PROGRESS.md for the full ch
   so a future test cannot silently start hitting a live feed in CI. Mocked tests (via
   `requests-mock`) never touch real sockets in the first place, so this is a zero-cost guardrail.
 
+## Phase 2 kickoff and decisions, 2026-07-09
+
+Fable PM reviewed Phase 2 scope (analyst + verifier + CI path-allowlist gate) before
+implementation began, the same way it reviewed Phase 1. Full directive text is in PROGRESS.md.
+Key decisions arising from that review and from implementation itself:
+
+- **Citation-vs-sentence interface, resolved per Fable directive.** The deterministic module
+  (`pipeline/verify/authenticity.py`) is a per-citation authenticity oracle ONLY: given
+  `{url, quote}`, it re-fetches the source and checks the quote is a genuine (normalized)
+  substring. It has no concept of which sentence in a card's `summary`/`why_it_matters` a
+  citation is meant to support -- that is a semantic judgment only the LLM verifier pass can make
+  (proposing which sentence to strip or rewrite). The deterministic module's role is narrower but
+  final: `pipeline/verify/gate.py` re-checks every citation remaining in whatever the LLM
+  produced, immediately before commit, and forces `status: "unverified"` on any failure --
+  regardless of what the LLM's own output claims about its verification status. This is
+  literally "never trust self-reported verification," implemented as code, not policy.
+- **`data/queue.json`'s Phase 1 idempotency guarantee is confirmed to extend automatically to
+  the new ledger states.** `derive_queue` already filters on `status == "queued"` (Phase 1
+  design); once an item moves to `drafted`/`verified`/`published`, it structurally cannot
+  reappear in the queue, and a watcher re-run's `upsert_items` already refuses to touch an
+  already-known `item_hash` regardless of its current status. No queue.py changes were needed --
+  confirmed by an explicit regression test (`test_watcher_rerun_never_resets_or_requeues_a_drafted_item`)
+  rather than just asserted.
+- **Ledger status lifecycle enforced as a validated state machine**, not just an unconstrained
+  string field: `queued -> drafted -> verified -> published`, with `corrected`/`suppressed`
+  reachable from `published`, and `error` reachable from any state (with `queued` reachable from
+  `error`, for retries). Illegal transitions (e.g. `queued` straight to `published`) raise
+  `InvalidStatusTransition` rather than silently corrupting the ledger.
+- **`pypdf` added as a narrow, single-purpose dependency** for PDF text extraction, matching the
+  `defusedxml` precedent from Phase 1 -- justified because the spec explicitly requires
+  "HTML/PDF-to-text" extraction (§5) and pypdf is a focused, actively-maintained library for
+  exactly this, not a general-purpose kitchen-sink dependency. HTML extraction uses stdlib
+  `html.parser` (no extra dependency), consistent with Phase 1's dependency-minimalism stance.
+- **Environment note (not a code decision):** this sandbox's system-installed `cryptography`
+  package (used transitively by `pypdf`'s optional encrypted-PDF support) failed to import with a
+  Rust-level panic due to a missing `cffi`/`_cffi_backend` module. Fixed by `pip install cffi`.
+  Not a repo-code issue -- flagged here in case a fresh environment hits the same failure; the fix
+  is an environment dependency, not a pinned requirement change.
+- **Test isolation fix (not a repo git-config change):** `tests/test_path_allowlist.py` creates
+  real scratch git repos to test `get_diff_changed_paths` end-to-end. This dev sandbox has a
+  global `commit.gpgsign=true` wired to a custom SSH-signing helper that round-trips to an MCP
+  server, which occasionally timed out and made a test's `git commit` fail non-deterministically
+  (`fatal: failed to write commit object`). A clean CI runner (e.g. GitHub Actions) has no such
+  signing setup, so this was local-only flakiness, not a CI risk -- but it was still worth fixing
+  properly rather than ignoring. Fix: the test helper now disables signing inside each disposable
+  scratch repo only (`git -c commit.gpgsign=false init` plus a local `git config commit.gpgsign
+  false` scoped to that throwaway directory) -- this never touches the actual project repo's
+  config, global or local, same category as setting a scratch repo's `user.name`/`user.email`.
+- **Tool restriction for the AI jobs is enforced entirely via `claude_args`, not a settings
+  file.** Two things ruled out a settings-file approach after checking rather than assuming: (1)
+  a settings file's `/path`-style permission patterns anchor to *that file's own directory*, not
+  the repository root -- a settings file at, say, `pipeline/prompts/ai_job_settings.json` would
+  resolve `Write(/content/**)` to `pipeline/prompts/content/**`, silently breaking the intended
+  scope; (2) `anthropics/claude-code-action@v1`'s documented inputs don't actually include a
+  `settings` input, so routing through one would have relied on unconfirmed behavior. Also
+  deliberately NOT writing a repo-root `.claude/settings.json` -- that file is auto-loaded by
+  every Claude Code session working on this project (including all future human/agent work in
+  Phases 3-5), and this restriction is meant to scope two specific automated CI jobs, not the
+  whole repo. Resolution: pass `--allowedTools`/`--disallowedTools` directly via each job's
+  `claude_args`, using patterns with no leading slash (`Write(content/**)`, not
+  `Write(/content/**)`) -- these are documented to anchor to the current working directory, which
+  is the repository root when the action runs, and this is the one behavior confirmed
+  unambiguous rather than inferred.
+
+  **The exact `claude_args` value, identical for both the analyst and verifier jobs** (defense
+  layer 1 of 2 -- layer 2 is `pipeline/ci/path_allowlist.py` run as a separate plain-shell step
+  in the same job, after the AI job, before any commit):
+  ```
+  --max-turns 30 --disallowedTools "Bash" --allowedTools "Read" "WebFetch" "Write(content/**)" "Write(data/**)" "Edit(content/**)" "Edit(data/**)"
+  ```
+  `Bash` is fully removed from context (bare tool name), not merely path-scoped, since the AI
+  jobs have no legitimate reason to run shell commands at all. `Read`/`WebFetch` are unscoped
+  (need to read/fetch source documents and existing content anywhere). `Write`/`Edit` are scoped
+  to `content/**` and `data/**` only.
+
 ## Follow-ups for later phases (not decisions, just noted so they aren't lost)
 
 - Phase 2 must add the actual CI path-allowlist gate (today it's a documented rule in CLAUDE.md,

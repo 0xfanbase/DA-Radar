@@ -9,9 +9,13 @@ from pipeline.ci.path_allowlist import check_path_allowlist, get_diff_changed_pa
 
 
 def _init_repo(repo_dir):
-    subprocess.run(["git", "init", "-q"], cwd=repo_dir, check=True)
+    # -c commit.gpgsign=false is a one-off per-invocation override (never
+    # touches any config file) so these disposable scratch repos don't
+    # inherit the host's ambient commit-signing setup, if any.
+    subprocess.run(["git", "-c", "commit.gpgsign=false", "init", "-q"], cwd=repo_dir, check=True)
     subprocess.run(["git", "config", "user.email", "test@example.invalid"], cwd=repo_dir, check=True)
     subprocess.run(["git", "config", "user.name", "test"], cwd=repo_dir, check=True)
+    subprocess.run(["git", "config", "commit.gpgsign", "false"], cwd=repo_dir, check=True)
 
 
 def _commit_all(repo_dir, message):
