@@ -412,6 +412,34 @@ def test_trajectory_board_uses_theme_invariant_tokens_not_ink_or_paper():
     assert "var(--paper)" not in board_chunk
 
 
+def test_trajectory_board_border_has_real_contrast_against_both_page_backgrounds():
+    """Real finding from Fable PM's audit, not caught by the theme-invariant-
+    tokens test above: the board's border originally reused
+    var(--trajectory-surface) -- the same color as its own background --
+    which is a no-op border by construction. That was invisible in light
+    mode purely by accident (the fill itself already contrasts 12.37:1
+    against the light page), but --trajectory-surface (#132A43) scores
+    only 1.16:1 against the dark-mode page background (#0F1E2E) -- both
+    near-black navy -- so the whole board nearly vanished into the page
+    in dark mode. Fixed to use var(--amber), which independently clears
+    the WCAG 1.4.11 non-text/UI-boundary 3:1 threshold against both page
+    backgrounds AND against the board's own dark fill, in both themes."""
+    css = _read_style_css()
+    board_start = css.index(".trajectory-board {")
+    board_chunk = css[board_start : board_start + 200]
+    assert "border: 2px solid var(--amber)" in board_chunk
+    assert "var(--trajectory-surface)" not in css[board_start : board_start + 40]  # not the border
+
+    assert _contrast_ratio(AMBER, PAPER) >= 3.0
+    assert _contrast_ratio(AMBER_DARK, PAPER_DARK) >= 3.0
+    assert _contrast_ratio(AMBER, INK) >= 3.0  # AMBER vs the board's own (theme-invariant) fill, light-mode token value
+    assert _contrast_ratio(AMBER_DARK, INK) >= 3.0  # dark-mode amber vs the same theme-invariant fill
+
+    # Lock in the actual bug: the pre-fix same-color "border" scored well
+    # below the 3:1 UI-boundary minimum against the dark-mode page.
+    assert _contrast_ratio(INK, PAPER_DARK) < 3.0
+
+
 def test_no_hardcoded_color_leaks_into_rendered_output(tmp_path):
     """Generalizes the specific #555/#fff/#4a6a4a inline-style bugs found
     during the dark-mode design into a permanent guard: no rendered page

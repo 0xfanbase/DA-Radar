@@ -443,10 +443,24 @@ hr.hairline {
    --ink/--paper: those two flip meaning between light and dark mode,
    which would invert this board's always-dark-board/always-light-text
    look into its opposite the moment dark mode shipped. This board reads
-   identically in both site themes, by design. */
+   identically in both site themes, by design.
+
+   The border deliberately uses the *themed* --amber token, not
+   --trajectory-surface: --trajectory-surface (#132A43) sits at only
+   1.16:1 contrast against the dark-mode page background (#0F1E2E) --
+   both are near-black navy, so a same-color border was invisible and
+   the whole board nearly vanished into the page in dark mode (caught by
+   Fable PM audit, confirmed by direct contrast-ratio computation, not
+   eyeballed). --amber clears the WCAG 1.4.11 non-text/UI-boundary 3:1
+   threshold against BOTH page backgrounds in both themes (3.09 light /
+   3.62 dark) and against the board's own dark fill (4.01 light / 3.13
+   dark), so it reads as a real frame from either side, in either theme
+   -- the same border/background-only role amber already plays for
+   .badge-unverified above. */
 .trajectory-board {
-  border: 1px solid var(--trajectory-surface);
+  border: 2px solid var(--amber);
   background: var(--trajectory-surface);
+  box-shadow: var(--shadow-elevation);
 }
 
 .trajectory-row {
