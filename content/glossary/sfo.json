@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "term": "SFO",
+  "plain_definition": "Short for the Securities and Futures Ordinance, Hong Kong's core law governing securities, futures, and licensed financial intermediaries -- including the numbered licence categories, such as Type 1 (dealing in securities), that Hong Kong's new virtual asset regimes are modelled on.",
+  "formal_definition": "Securities and Futures Ordinance (Cap. 571), which sets out Hong Kong's regulated-activity licensing framework administered by the Securities and Futures Commission.",
+  "related_terms": ["SFC", "AMLO", "regulated activity"],
+  "first_used_card_id": "3e1fcbaf94f7cb24004161b6bea4436991d05efa01ae61f88de74d3bd2c407d2"
+}

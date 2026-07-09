@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-01-05T00:00:00Z",
+  "items": {
+    "card1": {
+      "item_hash": "card1",
+      "source_id": "hkma",
+      "feed_id": "hkma_press_release",
+      "guid": null,
+      "link": "https://example.invalid/source1",
+      "title": "Test verified card",
+      "summary": "",
+      "published_at": "2026-01-05T00:00:00Z",
+      "raw_published": null,
+      "content_hash": "h1",
+      "first_seen": "2026-01-05T00:00:00Z",
+      "status": "published",
+      "card_id": "card1",
+      "relevant": true
+    },
+    "card2": {
+      "item_hash": "card2",
+      "source_id": "sfc",
+      "feed_id": "sfc_circulars",
+      "guid": null,
+      "link": "https://example.invalid/source2",
+      "title": "Test unverified card",
+      "summary": "",
+      "published_at": "2026-01-02T00:00:00Z",
+      "raw_published": null,
+      "content_hash": "h2",
+      "first_seen": "2026-01-02T00:00:00Z",
+      "status": "published",
+      "card_id": "card2",
+      "relevant": true
+    },
+    "irrelevant1": {
+      "item_hash": "irrelevant1",
+      "source_id": "sfc",
+      "feed_id": "sfc_press_releases",
+      "guid": null,
+      "link": null,
+      "title": "Unrelated item",
+      "summary": "",
+      "published_at": null,
+      "raw_published": null,
+      "content_hash": "h3",
+      "first_seen": "2026-01-01T00:00:00Z",
+      "status": "queued",
+      "card_id": null,
+      "relevant": false
+    }
+  }
+}

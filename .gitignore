@@ -10,3 +10,8 @@ venv/
 # republishes anything unrelated to new items, which would break the "re-run
 # adds nothing" idempotency guarantee at the git-diff level.
 /data/cache/
+
+# Static site build output (pipeline/site/generate.py). Never committed --
+# deploy.yml uploads it straight to GitHub Pages as a build artifact within
+# a single workflow run, so it has no reason to live in git history.
+/_site/

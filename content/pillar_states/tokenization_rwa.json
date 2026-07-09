@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "pillar": "tokenization_rwa",
+  "status_seal": "in_force",
+  "regulator": "HKMA and SFC",
+  "instruments": [
+    "Policy Statement 2.0 on the Development of Digital Assets in Hong Kong (the \"LEAP\" framework)",
+    "SFC Circular 26EC22"
+  ],
+  "standing_summary": "Policy Statement 2.0, issued 26 June 2025, set out a government-wide \"LEAP\" framework (Legal streamlining, Expanding tokenised products, Advancing use cases, People and partnership development) for digital-asset development. Tokenization activity has since moved from pilots to routine, real-value issuance: the HKSAR Government priced its third digital green bond in November 2025 (equivalent to roughly HK$10 billion across four currencies), the first bond reported to settle in both e-CNY and e-HKD tokenised central bank money. HKMA's Project Ensemble progressed to \"EnsembleTX,\" a real-value pilot phase launched 13 November 2025 focused on tokenised-deposit settlement of tokenised money-market-fund transactions. On 20 April 2026, the SFC issued Circular 26EC22 formally permitting tokenisation of SFC-authorised investment products, including primary dealing and 24/7 secondary trading on licensed virtual asset trading platforms.",
+  "last_changed": "2026-04-20",
+  "key_links": [
+    {
+      "label": "Government press release: Policy Statement 2.0 / LEAP framework (26 Jun 2025)",
+      "url": "https://www.info.gov.hk/gia/general/202506/26/P2025062600269.htm"
+    },
+    {
+      "label": "HKMA press release: Project Ensemble new phase, EnsembleTX (13 Nov 2025)",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/11/20251113-3/"
+    },
+    {
+      "label": "HKMA press release: third digital/tokenised green bond offering (11 Nov 2025)",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/11/20251111-6/"
+    },
+    {
+      "label": "SFC Circular 26EC22: tokenisation of SFC-authorised investment products (20 Apr 2026)",
+      "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC22"
+    }
+  ],
+  "open_items": [
+    "The EnsembleTX pilot is stated to run throughout 2026; its outputs and any expansion have not yet concluded.",
+    "The comprehensive legal review for real-world-asset tokenisation flagged in Policy Statement 2.0 has no discrete published output found yet.",
+    "Migration from interim RTGS settlement to 24/7 tokenised central-bank-money settlement under Project Ensemble is described as a future step, not yet completed."
+  ]
+}

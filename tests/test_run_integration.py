@@ -35,7 +35,7 @@ def _no_real_backoff_delay(monkeypatch):
     """Retry/backoff behavior itself is covered by tests/test_fetch.py --
     these integration tests only care about the outcome, so don't burn real
     wall-clock time on the retryable-failure test cases."""
-    monkeypatch.setattr("pipeline.watcher.fetch.time.sleep", lambda seconds: None)
+    monkeypatch.setattr("pipeline.http.time.sleep", lambda seconds: None)
 
 
 @pytest.fixture
@@ -63,8 +63,9 @@ def test_first_run_ingests_all_feeds(tmp_path, requests_mock, hk_config, fixture
     ledger_path = str(tmp_path / "ledger.json")
     queue_path = str(tmp_path / "queue.json")
     cache_path = str(tmp_path / "cache" / "etags.json")
+    document_library_path = str(tmp_path / "document_library.json")
 
-    summary = run(HK_JURISDICTION_PATH, ledger_path, queue_path, cache_path)
+    summary = run(HK_JURISDICTION_PATH, ledger_path, queue_path, cache_path, document_library_path)
 
     assert summary.feeds_attempted == 9
     assert summary.feeds_ok == 9
@@ -78,8 +79,25 @@ def test_first_run_ingests_all_feeds(tmp_path, requests_mock, hk_config, fixture
 
     with open(queue_path) as fh:
         queue_doc = json.load(fh)
-    assert len(queue_doc["items"]) == 19
+    # The ledger records all 19 unique items seen (its full observational
+    # history), but the queue only carries the ones that match
+    # config/jurisdiction.json's relevance_keywords -- these mixed-topic
+    # fixtures deliberately include mostly non-digital-asset SFC/HKMA
+    # content (scam alerts, banking guidelines, a quantum-computing
+    # speech...), of which exactly 2 items are digital-asset relevant.
+    assert len(queue_doc["items"]) == 2
     assert all(item["status"] == "queued" for item in queue_doc["items"])
+
+    with open(document_library_path) as fh:
+        document_library_doc = json.load(fh)
+    # Document library tracks *relevant* items regardless of ledger status
+    # (unlike the queue, which only tracks status=="queued") -- same 2
+    # items here since none have been drafted/verified/published yet.
+    documents = document_library_doc["documents"]
+    assert len(documents) == 2
+    assert all("dealing_custody_advisory" in d["pillar"] for d in documents)
+    assert {d["type"] for d in documents} == {"press_releases", "consultations_and_conclusions"}
+    assert all(d["regulator"] == "SFC" for d in documents)
 
 
 def test_immediate_rerun_adds_nothing(tmp_path, requests_mock, hk_config, fixture_bytes):
@@ -123,13 +141,17 @@ def test_third_run_picks_up_exactly_the_new_items(tmp_path, requests_mock, hk_co
     )
     summary3 = run(HK_JURISDICTION_PATH, ledger_path, queue_path, cache_path)
 
+    # Both day-2 items ("HKEX...market rehearsal", "HKICL alerts public of
+    # fraudulent website") are recorded in the ledger like anything else the
+    # watcher observes, but neither matches any relevance_keywords -- so the
+    # ledger changes while the derived queue, correctly, does not.
     assert summary3.items_new == 2
     assert summary3.ledger_changed is True
-    assert summary3.queue_changed is True
+    assert summary3.queue_changed is False
 
     with open(queue_path) as fh:
         queue_doc = json.load(fh)
-    assert len(queue_doc["items"]) == 21  # 19 + 2 new
+    assert len(queue_doc["items"]) == 2
 
 
 def test_one_feed_failure_does_not_abort_the_run(tmp_path, requests_mock, hk_config, fixture_bytes):
@@ -170,6 +192,8 @@ def test_all_feeds_failing_returns_nonzero_exit(tmp_path, requests_mock, hk_conf
             str(tmp_path / "queue.json"),
             "--cache-dir",
             str(tmp_path / "cache"),
+            "--document-library",
+            str(tmp_path / "document_library.json"),
         ]
     )
     assert exit_code == 1
@@ -190,6 +214,8 @@ def test_partial_failure_still_returns_success_exit_code(tmp_path, requests_mock
             str(tmp_path / "queue.json"),
             "--cache-dir",
             str(tmp_path / "cache"),
+            "--document-library",
+            str(tmp_path / "document_library.json"),
         ]
     )
     assert exit_code == 0

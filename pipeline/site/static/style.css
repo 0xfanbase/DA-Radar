@@ -1,0 +1,384 @@
+/* HK Digital Asset Radar -- "chart room" design system.
+   Palette, typography, and seal/flap components per the build spec's
+   design section: harbour chart room / official gazette, light-first. */
+
+:root {
+  --paper: #FAFAF7;
+  --ink: #132A43;
+  --hairline: #D9D9D0;
+  --seal-red: #C8102E;
+  --harbour-teal: #1E6E6B;
+  --amber: #B7791F;
+
+  --font-display: "Schibsted Grotesk", "Arial Narrow", sans-serif;
+  --font-body: "Noto Sans", sans-serif;
+  --font-mono: "Spline Sans Mono", ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--harbour-teal);
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--harbour-teal);
+  outline-offset: 2px;
+}
+
+.plate {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.mono, time, .date {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--hairline);
+  padding: 1.25rem 1.5rem;
+}
+
+.site-header .site-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--ink);
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  border-bottom-color: var(--harbour-teal);
+}
+
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.disclaimer {
+  background: #fff;
+  border: 1px solid var(--hairline);
+  border-left: 4px solid var(--amber);
+  padding: 0.85rem 1rem;
+  font-size: 0.85rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.site-footer {
+  border-top: 1px solid var(--hairline);
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  color: #555;
+  text-align: center;
+}
+
+hr.hairline {
+  border: none;
+  border-top: 1px solid var(--hairline);
+  margin: 2rem 0;
+}
+
+/* Chop-style status seal: bordered square, slight rotation, ink texture. */
+.seal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8.5rem;
+  padding: 0.4rem 0.6rem;
+  border: 3px solid var(--seal-red);
+  color: var(--seal-red);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  transform: rotate(-2deg);
+  background:
+    radial-gradient(circle at 30% 30%, rgba(200, 16, 46, 0.06), transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(200, 16, 46, 0.05), transparent 55%);
+  position: relative;
+}
+
+/* Verification-status badge -- deliberately NOT seal red (that color is
+   reserved for pillar status seals only, per the design spec). Text label
+   carries the meaning, not color alone -- and the label text itself is
+   ink-on-paper (contrast ratio ~13:1), not amber-on-paper (~3.5:1, which
+   clears WCAG's 3:1 non-text/UI-boundary threshold for the border but
+   falls short of the 4.5:1 normal-text threshold if used as the text
+   color itself -- confirmed by an actual contrast-ratio test, not
+   eyeballed). Amber is used only for the border/background accent, where
+   the weaker 3:1 threshold correctly applies. */
+.badge-unverified {
+  display: inline-block;
+  border: 2px solid var(--amber);
+  background: rgba(183, 121, 31, 0.12);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.badge-verified {
+  display: inline-block;
+  color: #4a6a4a;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.2rem 0;
+}
+
+/* Card component -- shared by Timeline, pillar "recent activity," search. */
+.card {
+  border: 1px solid var(--hairline);
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  background: #fff;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.card .card-meta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: #555;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--hairline);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.card .why-it-matters {
+  font-style: italic;
+  border-left: 3px solid var(--harbour-teal);
+  padding-left: 0.75rem;
+  margin: 0.75rem 0;
+}
+
+.card .citations {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.card .citations li {
+  margin-bottom: 0.35rem;
+}
+
+.pillar-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  padding: 0.1rem 0.4rem;
+  margin-right: 0.3rem;
+}
+
+/* Pillar board grid */
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.pillar-card {
+  border: 1px solid var(--hairline);
+  background: #fff;
+  padding: 1.25rem;
+}
+
+.pillar-card .pillar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.pillar-card .instruments {
+  font-size: 0.8rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.pillar-card .open-items {
+  font-size: 0.85rem;
+}
+
+/* Trajectory board -- split-flap departures-board styling. */
+.trajectory-board {
+  border: 1px solid var(--ink);
+  background: var(--ink);
+}
+
+.trajectory-row {
+  display: grid;
+  grid-template-columns: 8rem 1fr 10rem;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--paper);
+  align-items: baseline;
+}
+
+.trajectory-row:last-child {
+  border-bottom: none;
+}
+
+.trajectory-row .flap {
+  display: inline-block;
+}
+
+.trajectory-row .date-window {
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+.trajectory-row .event {
+  font-family: var(--font-body);
+}
+
+.trajectory-row .confidence-indicated::after {
+  content: " (indicated)";
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .trajectory-row[data-flap="true"] .flap {
+    animation: flap-in 0.4s ease-out;
+  }
+}
+
+@keyframes flap-in {
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+/* Document library table */
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.doc-table th,
+.doc-table td {
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--hairline);
+  vertical-align: top;
+}
+
+.doc-table th {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+#doc-search {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--hairline);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Glossary */
+.glossary-term {
+  margin-bottom: 1.5rem;
+}
+
+.glossary-term dt {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.glossary-term dd {
+  margin-left: 0;
+}
+
+/* Start Here prose */
+.prose p {
+  margin: 0 0 1rem 0;
+}
+
+.prose h2 {
+  margin-top: 2rem;
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 1rem;
+  }
+  .trajectory-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+  .doc-table {
+    font-size: 0.8rem;
+  }
+}

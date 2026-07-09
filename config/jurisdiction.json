@@ -9,6 +9,24 @@
     "backoff_base_seconds": 1.0,
     "backoff_multiplier": 2.0
   },
+  "relevance_keywords": [
+    "virtual asset",
+    "virtual assets",
+    "vatp",
+    "stablecoin",
+    "stablecoins",
+    "digital asset",
+    "digital assets",
+    "crypto",
+    "tokenis",
+    "tokeniz",
+    "distributed ledger",
+    "blockchain",
+    "e-hkd",
+    "ensemble",
+    "web3",
+    "nft"
+  ],
   "pillars": [
     {"id": "exchanges_vatp", "name": "Exchanges (VATP)"},
     {"id": "stablecoins", "name": "Stablecoins"},
@@ -18,6 +36,30 @@
     {"id": "banking_money", "name": "Banking & Money"},
     {"id": "aml_cft_enforcement", "name": "AML/CFT & Enforcement"}
   ],
+  "pillar_keywords": {
+    "exchanges_vatp": [
+      "virtual asset trading platform", "vatp", "trading platform", "aspire roadmap", "staking",
+      "virtual asset-related", "virtual asset service provider"
+    ],
+    "stablecoins": ["stablecoin", "stablecoins ordinance"],
+    "dealing_custody_advisory": [
+      "custod", "virtual asset dealing", "virtual asset advisory", "virtual asset management",
+      "dealing in virtual assets", "va dealer", "va advisory", "va management"
+    ],
+    "tokenization_rwa": [
+      "tokenis", "tokeniz", "project ensemble", "ensembletx", "ensemble", "real-world asset",
+      "digital green bond", "policy statement 2.0", "leap framework", "distributed ledger", "blockchain"
+    ],
+    "funds_etfs": ["etf", "exchange-traded fund", "unit trust", "ut code", "fund"],
+    "banking_money": [
+      "e-hkd", "central bank digital currency", "cbdc", "tokenised deposit", "tokenized deposit",
+      "cryptoasset", "custod"
+    ],
+    "aml_cft_enforcement": [
+      "money laundering", "counter-terrorist financing", "aml", "cft", "travel rule", "alert list",
+      "enforcement", "reprimand", "disciplinary"
+    ]
+  },
   "seal_vocabulary": [
     {"id": "in_force", "label": "In force"},
     {"id": "consultation_open", "label": "Consultation open"},

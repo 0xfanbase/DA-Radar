@@ -40,7 +40,7 @@ def test_304_short_circuits_with_no_content(requests_mock):
 
 def test_timeout_retries_then_succeeds(requests_mock, monkeypatch):
     sleeps = []
-    monkeypatch.setattr("pipeline.watcher.fetch.time.sleep", lambda s: sleeps.append(s))
+    monkeypatch.setattr("pipeline.http.time.sleep", lambda s: sleeps.append(s))
     requests_mock.get(
         URL,
         [
@@ -59,7 +59,7 @@ def test_timeout_retries_then_succeeds(requests_mock, monkeypatch):
 
 def test_5xx_retries_with_backoff_then_fails(requests_mock, monkeypatch):
     sleeps = []
-    monkeypatch.setattr("pipeline.watcher.fetch.time.sleep", lambda s: sleeps.append(s))
+    monkeypatch.setattr("pipeline.http.time.sleep", lambda s: sleeps.append(s))
     requests_mock.get(URL, status_code=503)
     result = fetch_feed(
         URL, user_agent=UA, timeout=5, max_retries=3, backoff_base=1.0, backoff_multiplier=2.0
@@ -71,7 +71,7 @@ def test_5xx_retries_with_backoff_then_fails(requests_mock, monkeypatch):
 
 def test_terminal_4xx_does_not_retry(requests_mock, monkeypatch):
     sleeps = []
-    monkeypatch.setattr("pipeline.watcher.fetch.time.sleep", lambda s: sleeps.append(s))
+    monkeypatch.setattr("pipeline.http.time.sleep", lambda s: sleeps.append(s))
     requests_mock.get(URL, status_code=404)
     result = fetch_feed(
         URL, user_agent=UA, timeout=5, max_retries=3, backoff_base=1.0, backoff_multiplier=2.0
@@ -84,7 +84,7 @@ def test_terminal_4xx_does_not_retry(requests_mock, monkeypatch):
 
 def test_429_is_retried(requests_mock, monkeypatch):
     sleeps = []
-    monkeypatch.setattr("pipeline.watcher.fetch.time.sleep", lambda s: sleeps.append(s))
+    monkeypatch.setattr("pipeline.http.time.sleep", lambda s: sleeps.append(s))
     requests_mock.get(
         URL,
         [

@@ -1,0 +1,10 @@
+[
+  {
+    "schema_version": 1,
+    "date_or_window": "2026-06",
+    "event": "Test upcoming event",
+    "pillar": "stablecoins",
+    "source_url": "https://example.invalid/trajectory-source",
+    "confidence": "announced"
+  }
+]

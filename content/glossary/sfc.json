@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "term": "SFC",
+  "plain_definition": "Short for the Securities and Futures Commission, Hong Kong's main regulator for securities, futures, and virtual asset trading platforms -- broadly the equivalent of a securities regulator in other markets, but also the lead licensor for Hong Kong's virtual asset trading platforms and (jointly with other bodies) its planned virtual asset dealing, custodian, advisory, and management regimes.",
+  "formal_definition": "The Securities and Futures Commission, a statutory body established under the Securities and Futures Ordinance (Cap. 571) to regulate Hong Kong's securities and futures markets, including virtual asset trading platforms licensed under the dual SFO/AMLO regime.",
+  "related_terms": ["SFO", "AMLO", "VATP", "HKMA"],
+  "first_used_card_id": "3e1fcbaf94f7cb24004161b6bea4436991d05efa01ae61f88de74d3bd2c407d2"
+}

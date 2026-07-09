@@ -1,0 +1,201 @@
+# Spec-literal fortnightly self-improvement loop via anthropics/claude-code-action@v1.
+# DORMANT in this deployment, for the same reason analyze.yml is: no
+# CLAUDE_CODE_OAUTH_TOKEN/ANTHROPIC_API_KEY secret is provisioned (owner
+# decision -- see IMPROVEMENT_BACKLOG.md's "Architecture pivot" entry). The
+# check-queue job's credential check makes the improve job skip cleanly
+# rather than fail. The operative mechanism in this deployment, if and when
+# one is stood up, is a scheduled Claude Code Remote session following
+# docs/improve-runbook.md -- see that file and IMPROVEMENT_BACKLOG.md's
+# improve.yml design-note entry for why standing up that live trigger is
+# left as an explicit separate decision, not bundled into this build. If a
+# future owner adds either secret, this workflow starts working exactly as
+# designed, with no other change needed.
+#
+# Unlike analyze.yml (which commits published content straight to main),
+# this workflow NEVER commits its proposed change to main directly -- it
+# always lands as a PR, reviewed and merged by a human. Only the queue's
+# own bookkeeping (marking the picked item) is a direct, deterministic
+# commit, the same class of trusted mutation as a ledger-status transition
+# elsewhere in this project, never the AI job's own proposed diff.
+name: Improve
+
+on:
+  # Approximates "fortnightly" with two fixed calendar dates a month apart
+  # rather than a literal 14-day interval cron can't express directly --
+  # simplest reasonable reading of the spec's "cron, fortnightly" (logged
+  # in IMPROVEMENT_BACKLOG.md).
+  schedule:
+    - cron: "0 4 1,15 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: improve-hk-radar
+  cancel-in-progress: false
+
+env:
+  CLAUDE_ARGS: >-
+    --max-turns 30 --disallowedTools "Bash" "WebFetch"
+    --allowedTools "Read" "Write(pipeline/**)" "Write(config/**)" "Edit(pipeline/**)" "Edit(config/**)"
+
+jobs:
+  check-queue:
+    runs-on: ubuntu-latest
+    outputs:
+      empty: ${{ steps.check.outputs.empty }}
+      item_id: ${{ steps.check.outputs.item_id }}
+      item_description: ${{ steps.check.outputs.item_description }}
+      credentials_available: ${{ steps.creds.outputs.available }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Python
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -e .
+
+      # Same "no run, no cost" quota rule as the analyst's data/queue.json,
+      # applied to this loop's own bounded, human-curated candidate list.
+      - name: Check improve queue
+        id: check
+        run: python -m pipeline.ci.improve_queue --queue data/improve_queue.json
+
+      - name: Check AI credentials
+        id: creds
+        env:
+          HAS_OAUTH: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          HAS_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "$HAS_OAUTH" ] || [ -n "$HAS_API_KEY" ]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::No CLAUDE_CODE_OAUTH_TOKEN or ANTHROPIC_API_KEY secret is configured. Skipping the improve job -- this deployment intentionally has no such secret (see IMPROVEMENT_BACKLOG.md). This workflow remains a dormant, spec-literal fallback."
+          fi
+
+  improve:
+    needs: check-queue
+    if: needs.check-queue.outputs.empty != 'true' && needs.check-queue.outputs.credentials_available == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Run improve
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            Read pipeline/prompts/improve_prompt.md in full and follow its instructions exactly.
+
+            Your one picked item for this run:
+              id: ${{ needs.check-queue.outputs.item_id }}
+              description: ${{ needs.check-queue.outputs.item_description }}
+
+            Write your proposed PR title as the first line, then a blank line, then the PR body,
+            to a file at the repository root named .improve-pr-body.md (this file is scratch --
+            it will be read and removed before anything is committed, and is not itself part of
+            your proposed change).
+          claude_args: ${{ env.CLAUDE_ARGS }}
+          display_report: true
+
+      - name: Set up Python
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -e .
+
+      # The scratch PR-body file is never part of the proposed diff --
+      # copy its content out of the working tree, then remove it, before
+      # any scope/gate check runs.
+      - name: Extract PR body, remove scratch file
+        id: pr_body
+        run: |
+          if [ -f .improve-pr-body.md ]; then
+            cp .improve-pr-body.md "$RUNNER_TEMP/pr-body.md"
+            rm .improve-pr-body.md
+          else
+            : > "$RUNNER_TEMP/pr-body.md"
+          fi
+          echo "path=$RUNNER_TEMP/pr-body.md" >> "$GITHUB_OUTPUT"
+
+      # Layer 2 of 2 (layer 1 is the AI job's own restricted claude_args):
+      # deterministic, non-bypassable checks that never trust what the AI
+      # job's own tool permissions claim to have enforced.
+      - name: Improve-scope gate (hard-deny list, never trusted to the AI job's tool grants alone)
+        run: python -m pipeline.ci.improve_scope --mode working-tree
+
+      - name: Editorial-prompt-change justification gate
+        run: python -m pipeline.ci.prompt_change_justification --mode working-tree --pr-body-file "${{ steps.pr_body.outputs.path }}"
+
+      # Unlike analyze.yml, this diff touches actual pipeline code -- the
+      # full suite (including the jurisdiction-agnosticism scan) is the
+      # real regression backstop, not just schema validation.
+      - name: Full test suite
+        run: pytest -q
+
+      - name: Create branch, commit, push (never main directly)
+        id: branch
+        env:
+          GIT_AUTHOR_NAME: hk-radar-bot
+          GIT_AUTHOR_EMAIL: bot@users.noreply.github.com
+          GIT_COMMITTER_NAME: hk-radar-bot
+          GIT_COMMITTER_EMAIL: bot@users.noreply.github.com
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes proposed -- nothing to open a PR for."
+            echo "opened=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          BRANCH="improve/${{ needs.check-queue.outputs.item_id }}-$(date -u +%Y%m%d%H%M%S)"
+          git checkout -b "$BRANCH"
+          git add pipeline/ config/
+          git commit -m "improve: ${{ needs.check-queue.outputs.item_id }}"
+          git push -u origin "$BRANCH"
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+          echo "opened=true" >> "$GITHUB_OUTPUT"
+
+      - name: Open pull request (human review and merge required)
+        if: steps.branch.outputs.opened == 'true'
+        id: pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="$(head -n 1 "${{ steps.pr_body.outputs.path }}")"
+          BODY="$(tail -n +2 "${{ steps.pr_body.outputs.path }}")"
+          if [ -z "$TITLE" ]; then
+            TITLE="improve: ${{ needs.check-queue.outputs.item_id }}"
+          fi
+          URL="$(gh pr create \
+            --title "$TITLE" \
+            --body "$BODY
+
+          Triggered by the fortnightly improve.yml run. Never auto-merged -- requires human review." \
+            --base main \
+            --head "${{ steps.branch.outputs.branch }}")"
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+
+      # Deterministic bookkeeping, direct to main -- same trust class as a
+      # ledger-status transition, never the AI job's own proposed diff.
+      - name: Mark the queue item picked
+        if: steps.branch.outputs.opened == 'true'
+        env:
+          GIT_AUTHOR_NAME: hk-radar-bot
+          GIT_AUTHOR_EMAIL: bot@users.noreply.github.com
+          GIT_COMMITTER_NAME: hk-radar-bot
+          GIT_COMMITTER_EMAIL: bot@users.noreply.github.com
+        run: |
+          git checkout main
+          python -m pipeline.ci.improve_queue --mark-picked "${{ needs.check-queue.outputs.item_id }}" --pr-url "${{ steps.pr.outputs.url }}"
+          git add data/improve_queue.json
+          git commit -m "improve: mark ${{ needs.check-queue.outputs.item_id }} picked (${{ steps.pr.outputs.url }})"
+          git push origin main

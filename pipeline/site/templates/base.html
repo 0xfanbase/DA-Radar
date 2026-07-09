@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}HK Digital Asset Radar{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@700;800&family=Noto+Sans:wght@400;600&family=Spline+Sans+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ asset_prefix }}static/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="{{ asset_prefix }}index.html">HK Digital Asset Radar</a>
+    <nav class="site-nav">
+      <a href="{{ asset_prefix }}index.html" {% if active_page == 'start_here' %}aria-current="page"{% endif %}>Start Here</a>
+      <a href="{{ asset_prefix }}state-board.html" {% if active_page == 'state_board' %}aria-current="page"{% endif %}>State Board</a>
+      <a href="{{ asset_prefix }}trajectory.html" {% if active_page == 'trajectory' %}aria-current="page"{% endif %}>Trajectory Board</a>
+      <a href="{{ asset_prefix }}timeline.html" {% if active_page == 'timeline' %}aria-current="page"{% endif %}>Timeline</a>
+      <a href="{{ asset_prefix }}documents.html" {% if active_page == 'documents' %}aria-current="page"{% endif %}>Document Library</a>
+      <a href="{{ asset_prefix }}glossary.html" {% if active_page == 'glossary' %}aria-current="page"{% endif %}>Glossary</a>
+      <a href="{{ asset_prefix }}method.html" {% if active_page == 'method' %}aria-current="page"{% endif %}>Method &amp; Audit</a>
+    </nav>
+  </header>
+  <main>
+    {% include "_disclaimer.html" %}
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer">
+    <p>HK Digital Asset Radar &mdash; code MIT-licensed, content CC BY 4.0. An automated, self-learning regulatory-watch project.</p>
+  </footer>
+  <script src="{{ asset_prefix }}static/site.js"></script>
+</body>
+</html>

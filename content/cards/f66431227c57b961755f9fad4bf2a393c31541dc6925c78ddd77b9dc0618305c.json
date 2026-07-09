@@ -1,0 +1,22 @@
+{
+  "citations": [
+    {
+      "quote": "SCMHK did not assess whether the clients had knowledge of investing in VA Products",
+      "url": "https://apps.sfc.hk/edistributionWeb/api/news/list-content?refNo=26PR1&lang=EN"
+    }
+  ],
+  "generated_at": "2026-07-09T08:00:00Z",
+  "id": "f66431227c57b961755f9fad4bf2a393c31541dc6925c78ddd77b9dc0618305c",
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "aml_cft_enforcement"
+  ],
+  "published_date": "2026-01-06",
+  "regulator": "SFC",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "The Securities and Futures Commission reprimanded and fined Saxo Capital Markets HK Limited (SCMHK) HK$4 million on 6 January 2026, over failures in distributing virtual asset products to retail clients between 1 November 2018 and 25 November 2022. The SFC found that SCMHK did not assess whether clients had knowledge of investing in virtual asset products, failed to give clients sufficient information and warnings, and failed to implement adequate and effective policies and controls governing the distribution of these products, among other shortcomings. SCMHK self-reported the misconduct to the SFC.",
+  "title": "SFC reprimands and fines Saxo Capital Markets HK Limited",
+  "type": "enforcement",
+  "why_it_matters": "This shows the SFC actively enforcing investor-protection standards against firms that mis-sell virtual asset products to retail clients, not only licensing new virtual asset businesses."
+}

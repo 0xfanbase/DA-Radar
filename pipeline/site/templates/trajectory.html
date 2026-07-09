@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Trajectory Board &mdash; HK Digital Asset Radar{% endblock %}
+{% block content %}
+<h1 class="plate">The Trajectory Board</h1>
+<p>Officially announced upcoming events &mdash; consultation deadlines, licence batches, bill milestones, effective dates. Only items a regulator has stated publicly; nothing speculative.</p>
+<div class="trajectory-board" role="table" aria-label="Upcoming regulatory events">
+  <div class="trajectory-row" role="row" style="font-size:0.7rem;opacity:0.7;">
+    <span role="columnheader">Date / window</span>
+    <span role="columnheader">Event</span>
+    <span role="columnheader">Pillar &middot; source</span>
+  </div>
+  {% for t in trajectory %}
+  <div class="trajectory-row" role="row">
+    <span class="flap date-window" role="cell">{{ t.date_or_window }}</span>
+    <span class="flap event {% if t.confidence == 'indicated' %}confidence-indicated{% endif %}" role="cell">{{ t.event }}</span>
+    <span class="flap" role="cell">{{ t.pillar_name }} &middot; <a href="{{ t.source_url }}" style="color:inherit;">source</a></span>
+  </div>
+  {% else %}
+  <div class="trajectory-row" role="row"><span role="cell">No officially announced upcoming events on record yet.</span></div>
+  {% endfor %}
+</div>
+{% endblock %}

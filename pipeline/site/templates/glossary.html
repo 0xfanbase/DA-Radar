@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Glossary &mdash; HK Digital Asset Radar{% endblock %}
+{% block content %}
+<h1 class="plate">Glossary</h1>
+<p>Plain-language definitions for terms used throughout this site, extended automatically whenever a card introduces new jargon.</p>
+<dl>
+  {% for g in glossary_terms %}
+  <div class="glossary-term">
+    <dt id="{{ g.term | lower | replace(' ', '-') }}">{{ g.term }}</dt>
+    <dd>
+      <p>{{ g.plain_definition }}</p>
+      {% if g.formal_definition %}<p class="mono" style="font-size:0.85rem;color:#555;">{{ g.formal_definition }}</p>{% endif %}
+      {% if g.related_terms %}<p style="font-size:0.85rem;">See also: {{ g.related_terms | join(", ") }}</p>{% endif %}
+    </dd>
+  </div>
+  {% else %}
+  <p>No glossary terms defined yet.</p>
+  {% endfor %}
+</dl>
+{% endblock %}

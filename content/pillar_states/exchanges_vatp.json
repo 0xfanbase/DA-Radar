@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "pillar": "exchanges_vatp",
+  "status_seal": "in_force",
+  "regulator": "SFC",
+  "instruments": [
+    "Anti-Money Laundering and Counter-Terrorist Financing Ordinance (Cap. 615)",
+    "Securities and Futures Ordinance (Cap. 571)"
+  ],
+  "standing_summary": "The dual licence arrangement for virtual asset trading platforms (VATPs) -- a Securities and Futures Ordinance licence for platforms trading at least one security token, and an Anti-Money Laundering and Counter-Terrorist Financing Ordinance licence for all centralised VA exchanges -- has been in force since 1 June 2023. As of the SFC's most recently updated public list, 13 platforms are licensed. The SFC's ASPIRe roadmap, published 19 February 2025, continues to drive expansion: staking by licensed platforms has been permitted since 7 April 2025, and a 27 May 2026 circular set out how VATPs may offer HKMA-licensed stablecoins for trading.",
+  "last_changed": "2026-05-27",
+  "key_links": [
+    {
+      "label": "SFC: Virtual asset trading platform operators (legal basis)",
+      "url": "https://www.sfc.hk/en/Welcome-to-the-Fintech-Contact-Point/Virtual-assets/Virtual-asset-trading-platforms-operators"
+    },
+    {
+      "label": "SFC: List of licensed virtual asset trading platforms",
+      "url": "https://www.sfc.hk/en/Welcome-to-the-Fintech-Contact-Point/Virtual-assets/Virtual-asset-trading-platforms-operators/Lists-of-virtual-asset-trading-platforms"
+    },
+    {
+      "label": "SFC press release: ASPIRe roadmap (19 Feb 2025)",
+      "url": "https://apps.sfc.hk/edistributionWeb/api/news/list-content?refNo=25PR20&lang=EN"
+    },
+    {
+      "label": "SFC circular: staking guidance for VATPs (7 Apr 2025)",
+      "url": "https://apps.sfc.hk/edistributionWeb/api/news/list-content?refNo=25PR47&lang=EN"
+    },
+    {
+      "label": "SFC circular 26EC26: stablecoin services by VATPs (27 May 2026)",
+      "url": "https://apps.sfc.hk/edistributionWeb/api/circular/list-content/circular/doc?refNo=26EC26&lang=EN"
+    }
+  ],
+  "open_items": [
+    "Further ASPIRe workstream initiatives are ongoing and not all have concluded.",
+    "Additional platform licensing continues incrementally (e.g. licences granted February and May 2026).",
+    "The separate virtual asset dealer, custodian, advisory, and management licensing regimes (a related but distinct pillar) remain at bill-pending stage, not yet in force."
+  ]
+}

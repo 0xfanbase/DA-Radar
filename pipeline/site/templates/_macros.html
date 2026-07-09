@@ -1,0 +1,32 @@
+{% macro seal(status_seal, label) %}
+<span class="seal">{{ label }}</span>
+{% endmacro %}
+
+{% macro card(c, heading_level="h2") %}
+<article class="card">
+  <{{ heading_level }}><a href="{{ c.citations[0].url }}">{{ c.title }}</a></{{ heading_level }}>
+  <p>
+    {% for name in c.pillar_names %}<span class="pillar-tag">{{ name }}</span>{% endfor %}
+  </p>
+  <p>{{ c.summary }}</p>
+  <p class="why-it-matters">{{ c.why_it_matters }}</p>
+  <ul class="citations">
+    {% for citation in c.citations %}
+    <li><a href="{{ citation.url }}">{{ citation.url }}</a> &mdash; &ldquo;{{ citation.quote }}&rdquo;</li>
+    {% endfor %}
+  </ul>
+  <div class="card-meta">
+    <span class="date">{{ c.published_date }}</span>
+    <span>{{ c.regulator }}</span>
+    <span>{{ c.type }}</span>
+    {% if c.status == "verified" %}
+      <span class="badge-verified">&#10003; Verified</span>
+    {% elif c.status == "corrected" %}
+      <span class="badge-verified">&#10003; Corrected</span>
+    {% else %}
+      <span class="badge-unverified">Unverified &mdash; citations could not be confirmed against source</span>
+    {% endif %}
+    <span>generated {{ c.generated_at }} &middot; {{ c.model }}</span>
+  </div>
+</article>
+{% endmacro %}

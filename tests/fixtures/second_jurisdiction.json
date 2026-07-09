@@ -13,6 +13,10 @@
     {"id": "freedonia_pillar_one", "name": "Freedonia Pillar One"},
     {"id": "freedonia_pillar_two", "name": "Freedonia Pillar Two"}
   ],
+  "pillar_keywords": {
+    "freedonia_pillar_one": ["first freedonia"],
+    "freedonia_pillar_two": ["second freedonia"]
+  },
   "seal_vocabulary": [
     {"id": "in_force", "label": "In force"},
     {"id": "proposed", "label": "Proposed"}

@@ -1,0 +1,36 @@
+# Required-status-check gate for any PR touching pipeline code or config --
+# agreed overdue independent of improve.yml (Fable PM Phase 5 review): a PR
+# from improve.yml (or a human) that changes /pipeline or /config should
+# never merge without the full test suite (including the jurisdiction-
+# agnosticism scan, which is just another pytest file) passing for real.
+# This workflow only reports a status; branch protection requiring it to
+# pass before merge is a repo admin setting, not something this workflow
+# can configure itself -- see IMPROVEMENT_BACKLOG.md's owner punch-list.
+name: PR check
+
+on:
+  pull_request:
+    paths:
+      - "pipeline/**"
+      - "config/**"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Python
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -e .
+
+      - name: Run full test suite
+        run: pytest -q

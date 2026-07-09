@@ -1,0 +1,41 @@
+{
+  "citations": [
+    {
+      "quote": "intend to complete the necessary preparation work and launch business in the coming few months",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260410-4/"
+    },
+    {
+      "quote": "regulatory regime for stablecoin issuers under the Stablecoins Ordinance on 1 August 2025",
+      "url": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/stablecoin-issuers/"
+    },
+    {
+      "quote": "As of today, no licence has been issued by the HKMA.",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/07/20250729-4/"
+    },
+    {
+      "quote": "maintaining a robust stabilisation mechanism, and processing stablecoin holders' requests for redemption at par",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/05/20250521-3/"
+    },
+    {
+      "quote": "a register of persons who hold a licence granted under section 15(1)",
+      "url": "https://www.hkma.gov.hk/eng/regulatory-resources/registers/register-of-licensed-stablecoin-issuers/"
+    }
+  ],
+  "generated_at": "2026-07-09T08:00:00Z",
+  "id": "544d29ba08c14f8b692356fc7f11a36eabbad05f23c2ed7ea47ad45f730a726e",
+  "key_dates": {
+    "effective": "2026-04-10"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "stablecoins"
+  ],
+  "published_date": "2026-04-10",
+  "regulator": "HKMA",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "On 10 April 2026 the Hong Kong Monetary Authority granted the first two licences under the Stablecoins Ordinance, to Anchorpoint Financial Limited and The Hongkong and Shanghai Banking Corporation Limited, for issuing stablecoins in Hong Kong. The licences took effect the same day. According to their business plans, both licensees intend to complete remaining preparation work and launch business within the coming few months, though neither has stated a specific launch date. The Stablecoins Ordinance, whose regulatory regime took effect on 1 August 2025, makes issuing a fiat-referenced stablecoin in Hong Kong, or one pegged to the Hong Kong dollar, a regulated activity requiring a licence; licensees must also segregate client assets, maintain a stabilisation mechanism enabling redemption at par, and meet other regulatory requirements set by the HKMA.",
+  "title": "HKMA grants first licences under the Stablecoins Ordinance",
+  "type": "licence",
+  "why_it_matters": "No licence had previously been issued under the Stablecoins Ordinance regime, so these are the first companies ever licensed to issue a Hong Kong-regulated stablecoin -- the point where the new stablecoin regime moves from law on paper toward an operating market."
+}

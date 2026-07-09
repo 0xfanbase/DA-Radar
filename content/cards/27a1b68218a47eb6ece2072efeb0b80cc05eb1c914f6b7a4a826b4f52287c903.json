@@ -1,0 +1,24 @@
+{
+  "citations": [
+    {
+      "quote": "Policy Statement 2.0 on the Development of Digital Assets in Hong Kong",
+      "url": "https://www.info.gov.hk/gia/general/202506/26/P2025062600269.htm"
+    }
+  ],
+  "generated_at": "2026-07-09T08:00:00Z",
+  "id": "27a1b68218a47eb6ece2072efeb0b80cc05eb1c914f6b7a4a826b4f52287c903",
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "tokenization_rwa",
+    "dealing_custody_advisory",
+    "stablecoins"
+  ],
+  "published_date": "2025-06-26",
+  "regulator": "FSTB",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "On 26 June 2025 the Hong Kong Government issued Policy Statement 2.0 on the Development of Digital Assets in Hong Kong, building on an initial policy statement from October 2022. It introduces the LEAP framework across four themes: Legal and regulatory streamlining (including new licensing regimes for digital asset dealing and custodian service providers, led by the SFC, and a legal review of tokenised real-world assets); Expanding the suite of tokenised products (covering government bonds and other asset classes); Advancing use cases and cross-sectoral collaboration (including the stablecoin issuer licensing regime and industry funding support); and People and partnership development (talent and academia-industry programmes).",
+  "title": "Policy Statement 2.0 on the Development of Digital Assets in Hong Kong",
+  "type": "guidance",
+  "why_it_matters": "This is the Hong Kong Government's overarching roadmap tying together its separate digital-asset licensing, tokenisation, and stablecoin workstreams under a single named framework."
+}

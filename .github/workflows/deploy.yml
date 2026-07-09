@@ -1,0 +1,80 @@
+name: Deploy site
+
+# Rebuilds the static site (pipeline/site/generate.py) and publishes it via
+# GitHub Pages' official Actions-based deployment (upload-pages-artifact +
+# deploy-pages) -- never committed to git. Two trigger paths, deliberately:
+#
+# 1. `push` to main touching content/data/site-generator paths -- catches
+#    the CCR-triggered analyst/verifier runbook's own commits (those push
+#    with real git credentials, not GITHUB_TOKEN) and any manual push.
+# 2. `repository_dispatch` fired explicitly by watch.yml -- watch.yml's own
+#    commit uses the default GITHUB_TOKEN, and GitHub does not trigger
+#    `on: push` workflows from a GITHUB_TOKEN-authored push (the same
+#    reason watch.yml already dispatches analyze.yml this way instead of
+#    relying on a push listener). Without this second path, a
+#    document_library.json-only update from watch.yml would never
+#    redeploy the site.
+#
+# Repository setting required once, by a human with admin access: Settings
+# -> Pages -> Source: "GitHub Actions" (not "Deploy from a branch" -- this
+# repo's docs/ directory already holds docs/analyst-runbook.md, unrelated
+# to this generated site, so a branch/docs-folder source was deliberately
+# avoided; see IMPROVEMENT_BACKLOG.md).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/**"
+      - "data/**"
+      - "config/jurisdiction.json"
+      - "pipeline/site/**"
+  repository_dispatch:
+    types: [site-rebuild-needed]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Python
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -e .
+
+      - name: Build site
+        run: python -m pipeline.site.generate --repo-root . --output-dir _site
+
+      - name: Configure Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0

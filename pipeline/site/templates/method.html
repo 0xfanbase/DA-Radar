@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Method &amp; Audit &mdash; HK Digital Asset Radar{% endblock %}
+{% block content %}
+<h1 class="plate">Method &amp; Audit</h1>
+
+<h2>How this site works</h2>
+<p>A daily watcher polls official SFC and HKMA RSS feeds for new publications, filters them for digital-asset relevance, and queues the relevant ones. An ANALYST pass drafts a summary card for each queued item with cited sources. A separate VERIFIER pass, in a fresh context with no access to the analyst's reasoning, re-fetches every citation and checks it against the source text, stripping or flagging anything unsupported. A deterministic, non-bypassable gate then re-checks every citation itself before anything is published &mdash; it never trusts either pass's self-report.</p>
+
+<h2>Watcher &amp; ledger status</h2>
+<p>{{ ledger_item_count }} items observed to date across all polled feeds; {{ relevant_item_count }} judged digital-asset relevant. The table below counts only the relevant ones, since an item found not relevant stays at "queued" in the ledger forever without ever proceeding further &mdash; counting it alongside genuinely pending items would overstate the backlog.</p>
+<table class="doc-table">
+  <thead><tr><th>Status (relevant items only)</th><th>Count</th></tr></thead>
+  <tbody>
+    {% for status, count in status_counts.items() %}
+    <tr><td>{{ status }}</td><td class="mono">{{ count }}</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h2>Verification pass rate</h2>
+{% set verified_count = status_counts.get("published", 0) %}
+{% set verified_cards = cards | selectattr("status", "equalto", "verified") | list | length %}
+{% set total_cards = cards | length %}
+<p>
+  {% if total_cards > 0 %}
+  {{ verified_cards }} of {{ total_cards }} published cards currently carry <span class="badge-verified">verified</span> status; the rest carry <span class="badge-unverified">unverified</span> and are shown with that label wherever they appear.
+  {% else %}
+  No cards published yet.
+  {% endif %}
+</p>
+
+<h2>Latest audit</h2>
+<p>A weekly audit checks for four things, all mechanically: broken links among every citation and key link on the site, pillars whose standing summary hasn't changed in over 45 days, feeds that have gone quiet for over 30 days, and the trend in what fraction of published cards pass verification.</p>
+{% if audit_latest %}
+<p class="mono" style="font-size:0.8rem;color:#555;">Last run {{ audit_latest.generated_at }}</p>
+{% set actionable = audit_latest.events | rejectattr("event_type", "equalto", "verifier_pass_rate_snapshot") | list %}
+{% if actionable %}
+<ul>
+  {% for event in actionable %}
+  <li><strong>{{ event.event_type }}</strong>: {{ event.summary }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No findings from the most recent run &mdash; every link resolved, every pillar current, every feed active, and the verification pass rate held steady.</p>
+{% endif %}
+{% else %}
+<p>The audit loop exists (a weekly scheduled job) but has not run yet.</p>
+{% endif %}
+
+<h2>Corrections log</h2>
+<p>No corrections have been issued yet. When a published card is later found to need correction, it will be listed here with the date and reason. Corrections are always human-initiated and reviewed via pull request before publishing &mdash; this project deliberately does not let the audit loop (or anything else) auto-publish a correction on its own, since getting a correction itself wrong would be a more serious integrity failure than the original error.</p>
+
+<h2>Editorial rules</h2>
+<p>Primary sources only for facts. Quotes are capped at 15 words, one per source. Named entities (licensees, applicants, enforcement targets) are mentioned only as primary sources state them, with no commentary. No predictions beyond officially stated timelines.</p>
+{% endblock %}

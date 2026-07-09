@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "document_library.json",
+  "title": "Document library",
+  "description": "Every primary document the watcher has seen and classified as relevant (site structure item #5): title, date, regulator, type, pillar tags, deep link. A derived, public-safe view of data/ledger.json -- regenerated in full on every watcher run, never accumulated. 'type' is the feed's own 'kind' from config/jurisdiction.json (e.g. press_releases, circulars, speeches) -- a separate vocabulary from card.json's analyst-assigned type enum, since a raw watched document's feed category and an analyst's editorial classification of a drafted card are different concepts. 'regulator' and 'pillar' values are free text governed by config/jurisdiction.json, never enumerated here, to keep this schema jurisdiction-portable.",
+  "type": "object",
+  "properties": {
+    "schema_version": { "const": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "item_hash": { "type": "string", "minLength": 1 },
+          "title": { "type": "string" },
+          "link": { "type": ["string", "null"] },
+          "published_at": { "type": ["string", "null"], "format": "date-time" },
+          "regulator": { "type": "string", "minLength": 1 },
+          "type": { "type": "string", "minLength": 1 },
+          "pillar": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 }
+          }
+        },
+        "required": ["item_hash", "title", "link", "published_at", "regulator", "type", "pillar"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["schema_version", "generated_at", "documents"],
+  "additionalProperties": false
+}

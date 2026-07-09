@@ -28,8 +28,9 @@ def test_freedonia_config_runs_through_the_real_pipeline(tmp_path, requests_mock
     ledger_path = str(tmp_path / "ledger.json")
     queue_path = str(tmp_path / "queue.json")
     cache_path = str(tmp_path / "cache" / "etags.json")
+    document_library_path = str(tmp_path / "document_library.json")
 
-    summary = run(FREEDONIA_JURISDICTION_PATH, ledger_path, queue_path, cache_path)
+    summary = run(FREEDONIA_JURISDICTION_PATH, ledger_path, queue_path, cache_path, document_library_path)
 
     assert summary.feeds_ok == 1
     assert summary.items_new == 2
@@ -39,11 +40,25 @@ def test_freedonia_config_runs_through_the_real_pipeline(tmp_path, requests_mock
     assert len(queue_doc["items"]) == 2
     assert {i["source_id"] for i in queue_doc["items"]} == {"ffa"}
 
+    # The document library is jurisdiction-portable too: Freedonia's own
+    # pillar_keywords (not Hong Kong's) drive its pillar tagging, and its
+    # feed "kind" (not any HK-specific type vocabulary) drives its type.
+    with open(document_library_path) as fh:
+        document_library_doc = json.load(fh)
+    documents_by_hash = {d["item_hash"]: d for d in document_library_doc["documents"]}
+    assert len(documents_by_hash) == 2
+    for doc in documents_by_hash.values():
+        assert doc["regulator"] == "FFA"
+        assert doc["type"] == "press_releases"
+    pillars_seen = {tuple(d["pillar"]) for d in documents_by_hash.values()}
+    assert pillars_seen == {("freedonia_pillar_one",), ("freedonia_pillar_two",)}
+
     # Re-run is idempotent for this jurisdiction too.
     requests_mock.get(feed["url"], content=fixture_bytes("freedonia_feed_day1.xml"))
-    summary2 = run(FREEDONIA_JURISDICTION_PATH, ledger_path, queue_path, cache_path)
+    summary2 = run(FREEDONIA_JURISDICTION_PATH, ledger_path, queue_path, cache_path, document_library_path)
     assert summary2.items_new == 0
     assert summary2.ledger_changed is False
+    assert summary2.document_library_changed is False
 
 
 def test_freedonia_output_validates_against_the_same_schemas(tmp_path, requests_mock, fixture_bytes):
@@ -56,18 +71,29 @@ def test_freedonia_output_validates_against_the_same_schemas(tmp_path, requests_
 
     ledger_path = str(tmp_path / "ledger.json")
     queue_path = str(tmp_path / "queue.json")
-    run(FREEDONIA_JURISDICTION_PATH, ledger_path, queue_path, str(tmp_path / "cache" / "etags.json"))
+    document_library_path = str(tmp_path / "document_library.json")
+    run(
+        FREEDONIA_JURISDICTION_PATH,
+        ledger_path,
+        queue_path,
+        str(tmp_path / "cache" / "etags.json"),
+        document_library_path,
+    )
 
     schemas_dir = os.path.join(REPO_ROOT, "pipeline", "schemas")
     with open(os.path.join(schemas_dir, "ledger.json")) as fh:
         ledger_schema = json.load(fh)
     with open(os.path.join(schemas_dir, "queue.json")) as fh:
         queue_schema = json.load(fh)
+    with open(os.path.join(schemas_dir, "document_library.json")) as fh:
+        document_library_schema = json.load(fh)
 
     with open(ledger_path) as fh:
         Draft202012Validator(ledger_schema).validate(json.load(fh))
     with open(queue_path) as fh:
         Draft202012Validator(queue_schema).validate(json.load(fh))
+    with open(document_library_path) as fh:
+        Draft202012Validator(document_library_schema).validate(json.load(fh))
 
 
 def test_pipeline_source_contains_no_hardcoded_jurisdiction_strings():

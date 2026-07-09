@@ -33,18 +33,29 @@ jobs:
             --config config/jurisdiction.json \
             --ledger data/ledger.json \
             --queue data/queue.json \
-            --cache-dir data/cache
+            --cache-dir data/cache \
+            --document-library content/document_library.json
 
-      - name: Check for ledger/queue changes
+      - name: Check for ledger/queue/document-library changes
         id: changes
         run: |
-          if git diff --quiet -- data/ledger.json data/queue.json; then
+          # git status --porcelain, not `git diff --quiet` -- content/document_library.json
+          # is untracked on its very first run, and plain `git diff` only covers
+          # already-tracked files, so it would silently miss a brand-new file.
+          if [ -z "$(git status --porcelain -- data/ledger.json data/queue.json content/document_library.json)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Commit ledger/queue updates
+      # This is the first (and only) place watch.yml's own commit touches
+      # /content, alongside its usual /data files: content/document_library.json
+      # is pure deterministic code output (pipeline/watcher/document_library.py),
+      # not an AI job's work. The path-allowlist gate exists to restrict what
+      # the *analyst/verifier* may touch -- it never applied to the watcher's
+      # own deterministic code, which has always been free to write anywhere
+      # under /content or /data.
+      - name: Commit ledger/queue/document-library updates
         if: steps.changes.outputs.changed == 'true'
         env:
           GIT_AUTHOR_NAME: hk-radar-bot
@@ -52,12 +63,36 @@ jobs:
           GIT_COMMITTER_NAME: hk-radar-bot
           GIT_COMMITTER_EMAIL: bot@users.noreply.github.com
         run: |
-          git add data/ledger.json data/queue.json
-          git commit -m "watch: $(date -u +%Y-%m-%dT%H:%M:%SZ) update ledger/queue"
+          git add data/ledger.json data/queue.json content/document_library.json
+          git commit -m "watch: $(date -u +%Y-%m-%dT%H:%M:%SZ) update ledger/queue/document-library"
           git push
 
-      - name: Note next step
+      - name: Trigger analyze.yml
         if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "New items queued in data/queue.json."
-          echo "analyze.yml does not exist yet (Phase 2) -- no-op for now."
+          curl -sS -f -X POST \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/dispatches" \
+            -d '{"event_type":"queue-updated"}'
+          echo "Dispatched queue-updated to analyze.yml."
+
+      # Separate dispatch, separate event_type: this commit's own push used
+      # the default GITHUB_TOKEN, which GitHub does not let trigger an
+      # `on: push` workflow (the same reason the step above uses dispatch
+      # rather than a push listener for analyze.yml) -- without this,
+      # deploy.yml would never rebuild the site from a document_library.json
+      # update alone.
+      - name: Trigger deploy.yml
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -sS -f -X POST \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/dispatches" \
+            -d '{"event_type":"site-rebuild-needed"}'
+          echo "Dispatched site-rebuild-needed to deploy.yml."
