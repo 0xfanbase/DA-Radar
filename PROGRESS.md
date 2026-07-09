@@ -161,6 +161,14 @@ ledger items, ready for the analyst+verifier pipeline.
 
 Test suite: 148 passing (up from 137 at the last Phase 2 checkpoint).
 
+**Operational note:** all of the above (7 pillar states, the relevance-filter fix, the 5 seeded
+headline events) lives on the feature branch (`claude/hk-radar-phase-1-mzlnxx`), not yet merged to
+`main`. The CCR analyst/verifier trigger operates against `main` (`git pull origin main`), so it
+would have fired tomorrow (2026-07-10T03:31 UTC) against the *old*, unfiltered, pre-fix state.
+Disabled the trigger (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`) as a precaution until this branch merges --
+re-enable once merged, then it will correctly see the fixed pipeline and the (much smaller,
+relevance-filtered) real queue.
+
 *(Further entries appended as Phase 3+ work lands.)*
 
 ## PM checkpoints (Fable)
