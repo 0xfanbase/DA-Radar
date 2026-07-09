@@ -510,6 +510,17 @@ just been marked `verified`. Investigated rather than assumed-correct:
 Both fixes are covered by new regression tests in `tests/test_authenticity.py`. Full test suite: 151
 passing (up from 148).
 
+## Phase 4 gate item, flagged now so it isn't lost (Fable PM, 2026-07-09)
+
+CLAUDE.md rule 1 requires every card to carry the "AI-generated summary... not legal or regulatory
+advice... always verify against the linked primary source" disclaimer, plus a visible generation
+timestamp, model name, and verification status. It is correctly absent from `card.json`'s schema
+and from every generated card today -- there is no frontend yet, and duplicating that boilerplate
+into every JSON record would be the wrong place for it (it's a rendering concern, not a data
+concern). **Explicit Phase 4 requirement, not optional:** no frontend page may render a card,
+pillar state, or trajectory entry without this disclaimer appearing alongside it. Do not let this
+slip between now and Phase 4 kickoff.
+
 ## Follow-ups for later phases (not decisions, just noted so they aren't lost)
 
 - Phase 2 must add the actual CI path-allowlist gate (today it's a documented rule in CLAUDE.md,
