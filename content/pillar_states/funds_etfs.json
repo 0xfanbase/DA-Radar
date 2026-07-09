@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "pillar": "funds_etfs",
+  "status_seal": "in_force",
+  "regulator": "SFC",
+  "instruments": [
+    "SFC Circular 26EC31 (SFC-authorised funds with virtual asset exposure)",
+    "Code on Unit Trusts and Mutual Funds (UT Code)"
+  ],
+  "standing_summary": "Spot virtual asset ETFs have traded on HKEX since 30 April 2024, when Harvest Global, ChinaAMC, and a Bosera/HashKey Capital consortium launched Asia's first spot bitcoin and ether ETFs. A spot Solana ETF from ChinaAMC began trading around 27 October 2025. The SFC's governing circular for SFC-authorised funds with virtual asset exposure was updated on 27 May 2026 (Circular 26EC31, superseding the original December 2023 framework), and on 20 April 2026 the SFC introduced a new framework allowing 24/7 secondary trading of tokenised SFC-authorised investment products on licensed virtual asset trading platforms, with an initial focus on tokenised money-market funds. Separately, the standing UT Code is under a broader modernisation consultation (22 October 2025 to 21 January 2026) not specific to virtual assets.",
+  "last_changed": "2026-05-27",
+  "key_links": [
+    {
+      "label": "SFC Circular 26EC31: SFC-authorised funds with exposure to virtual assets (27 May 2026)",
+      "url": "https://apps.sfc.hk/edistributionWeb/api/circular/list-content/circular/doc?refNo=26EC31&lang=EN"
+    },
+    {
+      "label": "SFC press release 26PR59: secondary trading of tokenised investment products (20 Apr 2026)",
+      "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/other-news/doc?refNo=26PR59"
+    },
+    {
+      "label": "SFC Circular 23EC65: original VA fund exposure framework (22 Dec 2023)",
+      "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=23EC65"
+    },
+    {
+      "label": "SFC: Codes and guidelines (UT Code)",
+      "url": "https://www.sfc.hk/en/Rules-and-standards/Codes-and-guidelines/Codes"
+    }
+  ],
+  "open_items": [
+    "Conclusions to the UT Code modernisation consultation (closed 21 Jan 2026) had not been located as published at the time of this research.",
+    "Whether the tokenised-fund secondary-trading pilot expands beyond money-market funds is not yet confirmed.",
+    "No evidence was found of additional spot virtual asset ETFs beyond bitcoin, ether, and Solana."
+  ]
+}

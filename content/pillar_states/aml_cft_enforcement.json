@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "pillar": "aml_cft_enforcement",
+  "status_seal": "in_force",
+  "regulator": "SFC and HKMA",
+  "instruments": [
+    "Anti-Money Laundering and Counter-Terrorist Financing Ordinance (Cap. 615)"
+  ],
+  "standing_summary": "Virtual asset service providers -- SFC-licensed virtual asset trading platforms and HKMA-licensed stablecoin issuers -- are subject to Anti-Money Laundering and Counter-Terrorist Financing Ordinance customer due diligence and record-keeping duties, plus a \"travel rule\" requiring originator and beneficiary information to accompany virtual asset transfers, with immediate submission required since 1 January 2024. The SFC maintains a rolling public Alert List of suspicious or unlicensed virtual asset trading platforms and has issued dedicated warnings, including against iSCAT (10 January 2025). HKMA has issued warnings tied to its stablecoin regime, including a 28 April 2026 warning about fraudulent tokens impersonating its two licensed issuers. In the disciplinary space, the SFC reprimanded and fined Saxo Capital Markets HK Limited HK$4 million on 6 January 2026 for failures in distributing virtual asset funds to retail clients between November 2018 and November 2022.",
+  "last_changed": "2026-06-22",
+  "key_links": [
+    {
+      "label": "SFC: Alert List of suspicious virtual asset trading platforms",
+      "url": "https://www.sfc.hk/en/alert-list/suspicious-virtual-asset-trading-platforms"
+    },
+    {
+      "label": "SFC press release: warning against unlicensed platform iSCAT (10 Jan 2025)",
+      "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=25PR3"
+    },
+    {
+      "label": "SFC press release: Saxo Capital Markets HK reprimanded and fined (6 Jan 2026)",
+      "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR1"
+    },
+    {
+      "label": "HKMA press release: beware of tokens purported to be associated with licensed stablecoin issuers (28 Apr 2026)",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260428-5/"
+    },
+    {
+      "label": "SFC: AML/CFT rules and standards overview",
+      "url": "https://www.sfc.hk/en/Rules-and-standards/Anti-money-laundering-and-counter-financing-of-terrorism"
+    }
+  ],
+  "open_items": [
+    "The SFC's Alert List continues to add unlicensed-platform entries on a rolling basis.",
+    "The precise transfer-value threshold and record-retention period for the travel rule could not be independently confirmed against primary-source guideline text during this research and should be re-verified directly.",
+    "The four new AMLO-based licensing regimes for VA dealing, custody, advisory, and management (see that pillar) will extend AML/CFT coverage once enacted, but are not yet in force."
+  ]
+}
