@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T06:26:01Z",
+  "generated_at": "2026-07-09T07:03:10Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -2370,7 +2370,7 @@
       "title": "IRRBB: consultation on revised SPM IR-1 Enclosure 1 : SPM module IR-1 Interest Rate Risk in the Banking Book"
     },
     "27a1b68218a47eb6ece2072efeb0b80cc05eb1c914f6b7a4a826b4f52287c903": {
-      "card_id": null,
+      "card_id": "27a1b68218a47eb6ece2072efeb0b80cc05eb1c914f6b7a4a826b4f52287c903",
       "content_hash": "845a510bb896db4695ffae953b67db8b7548a74e00237996e072f4370a2df39d",
       "feed_id": "fstb_press_releases",
       "first_seen": "2026-07-09T06:18:13Z",
@@ -2381,7 +2381,7 @@
       "raw_published": "26 Jun 2025",
       "relevant": true,
       "source_id": "fstb",
-      "status": "queued",
+      "status": "drafted",
       "summary": "Government issues Policy Statement 2.0, setting out the LEAP framework for digital-asset development.",
       "title": "Policy Statement 2.0 on the Development of Digital Assets in Hong Kong"
     },
@@ -3682,7 +3682,7 @@
       "title": "Circular Issued by the Securities and Futures Commission on Deficiencies and Substandard Conduct Noted in the Management of Private Funds and Discretionary Accounts (PDF File, 142.8 KB)"
     },
     "3e1fcbaf94f7cb24004161b6bea4436991d05efa01ae61f88de74d3bd2c407d2": {
-      "card_id": null,
+      "card_id": "3e1fcbaf94f7cb24004161b6bea4436991d05efa01ae61f88de74d3bd2c407d2",
       "content_hash": "e044b286ac34a197dc1488d84a4c94c91ffec5e5d41c77793261af0b340e8088",
       "feed_id": "sfc_circulars",
       "first_seen": "2026-07-09T06:18:13Z",
@@ -3693,7 +3693,7 @@
       "raw_published": "01 Jun 2023",
       "relevant": true,
       "source_id": "sfc",
-      "status": "queued",
+      "status": "drafted",
       "summary": "Dual SFO/AMLO licensing regime for centralised virtual asset trading platforms takes effect 1 June 2023.",
       "title": "Licensing regime for virtual asset trading platforms comes into effect"
     },
@@ -4898,7 +4898,7 @@
       "title": "Scam alert related to banks"
     },
     "544d29ba08c14f8b692356fc7f11a36eabbad05f23c2ed7ea47ad45f730a726e": {
-      "card_id": null,
+      "card_id": "544d29ba08c14f8b692356fc7f11a36eabbad05f23c2ed7ea47ad45f730a726e",
       "content_hash": "e9fb7bcef3c3f4b06d696e53046cc921b96d591639cc0776369f8b6bb014041e",
       "feed_id": "hkma_press_release",
       "first_seen": "2026-07-09T06:18:13Z",
@@ -4909,7 +4909,7 @@
       "raw_published": "10 Apr 2026",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "HKMA grants the first two stablecoin issuer licences, to Anchorpoint Financial Limited and The Hongkong and Shanghai Banking Corporation Limited.",
       "title": "HKMA grants first licences under the Stablecoins Ordinance"
     },
@@ -8594,7 +8594,7 @@
       "title": "Provision of Staking Services for Virtual Assets from Custodial Services"
     },
     "8e3bc652202af7398e70bc47d4c96a9df8e27c141320a1dda6e79399e4799164": {
-      "card_id": null,
+      "card_id": "8e3bc652202af7398e70bc47d4c96a9df8e27c141320a1dda6e79399e4799164",
       "content_hash": "0967cf0c49bd88c5c0d247fa26b438cae0af3b16a138d28070ff7af5bfaeb455",
       "feed_id": "fstb_consultations",
       "first_seen": "2026-07-09T06:18:13Z",
@@ -8605,7 +8605,7 @@
       "raw_published": "24 Dec 2025",
       "relevant": true,
       "source_id": "fstb",
-      "status": "queued",
+      "status": "drafted",
       "summary": "FSTB and SFC publish conclusions to their joint consultation on new licensing regimes for virtual asset dealing and custodian services.",
       "title": "Consultation conclusions: licensing regimes for virtual asset dealing and custodian services"
     },
@@ -15138,7 +15138,7 @@
       "title": "Tentative Issuance Schedule for HKSAR Institutional Government Bonds under Infrastructure Bond Programme and Government Sustainable Bond Programme"
     },
     "f66431227c57b961755f9fad4bf2a393c31541dc6925c78ddd77b9dc0618305c": {
-      "card_id": null,
+      "card_id": "f66431227c57b961755f9fad4bf2a393c31541dc6925c78ddd77b9dc0618305c",
       "content_hash": "9f00ea284455e41f5f9ba1e37274f4f4dee5f9cbe1c130e1e752c3a747cc4171",
       "feed_id": "sfc_press_releases",
       "first_seen": "2026-07-09T06:18:13Z",
@@ -15149,7 +15149,7 @@
       "raw_published": "06 Jan 2026",
       "relevant": true,
       "source_id": "sfc",
-      "status": "queued",
+      "status": "drafted",
       "summary": "SFC reprimands and fines Saxo Capital Markets HK Limited HK$4 million over failures in distributing virtual asset funds to retail clients.",
       "title": "SFC reprimands and fines Saxo Capital Markets HK Limited"
     },

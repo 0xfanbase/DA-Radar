@@ -1,0 +1,10 @@
+[
+  {
+    "schema_version": 1,
+    "date_or_window": "2026",
+    "event": "Target introduction of a bill to the Legislative Council to establish AMLO-based licensing regimes for virtual asset dealing, custodian, advisory, and management services",
+    "pillar": "dealing_custody_advisory",
+    "source_url": "https://www.fstb.gov.hk/fsb/en/publication/consult/doc/VAdealing_consultation_conclusion_e.pdf",
+    "confidence": "indicated"
+  }
+]

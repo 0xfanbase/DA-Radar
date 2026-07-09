@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "8e3bc652202af7398e70bc47d4c96a9df8e27c141320a1dda6e79399e4799164",
+  "published_date": "2025-12-24",
+  "regulator": "FSTB and SFC",
+  "pillar": ["dealing_custody_advisory"],
+  "type": "conclusions",
+  "title": "Consultation conclusions: licensing regimes for virtual asset dealing and custodian services",
+  "summary": "The Financial Services and the Treasury Bureau and the Securities and Futures Commission published conclusions to their joint consultation (27 June to 29 August 2025, 101 submissions) on a licensing regime for virtual asset dealing services, alongside separate conclusions on virtual asset custodian services published the same day. Licensed dealers will face baseline financial requirements modelled on existing Type 1 (dealing in securities) licensees, and must generally custody client virtual assets only with SFC-regulated virtual asset custodians; virtual asset issuers already licensed by the HKMA for stablecoin activity are exempt. No deeming or transitional arrangement will be provided, so firms must comply in full from the regime's eventual commencement date, and regulators are urging early pre-application engagement. The same paper opened a further consultation, closing 23 January 2026, on new licensing regimes for virtual asset advisory and management service providers, modelled on existing Type 4 and Type 9 activities.",
+  "why_it_matters": "This sets the detailed terms for two new, mandatory licensing regimes that will bring virtual asset dealing and custody businesses under direct Hong Kong regulation for the first time, with no grace period once the rules take effect.",
+  "key_dates": {
+    "deadline": "2026-01-23"
+  },
+  "citations": [
+    {
+      "url": "https://www.fstb.gov.hk/fsb/en/publication/consult/doc/VAdealing_consultation_conclusion_e.pdf",
+      "quote": "VA dealers custody client VAs with SFC-regulated VA custodian service providers"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-09T08:00:00Z",
+  "model": "claude-sonnet-5"
+}

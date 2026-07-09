@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T06:26:01Z",
+  "generated_at": "2026-07-09T07:03:10Z",
   "items": [
     {
       "feed_id": "hkma_circulars",
@@ -640,56 +640,6 @@
       "status": "queued",
       "summary": "",
       "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)3 Part IIIa"
-    },
-    {
-      "feed_id": "fstb_press_releases",
-      "item_hash": "27a1b68218a47eb6ece2072efeb0b80cc05eb1c914f6b7a4a826b4f52287c903",
-      "link": "https://www.info.gov.hk/gia/general/202506/26/P2025062600269.htm",
-      "published_at": "2025-06-26T00:00:00Z",
-      "source_id": "fstb",
-      "status": "queued",
-      "summary": "Government issues Policy Statement 2.0, setting out the LEAP framework for digital-asset development.",
-      "title": "Policy Statement 2.0 on the Development of Digital Assets in Hong Kong"
-    },
-    {
-      "feed_id": "sfc_circulars",
-      "item_hash": "3e1fcbaf94f7cb24004161b6bea4436991d05efa01ae61f88de74d3bd2c407d2",
-      "link": "https://www.sfc.hk/en/Welcome-to-the-Fintech-Contact-Point/Virtual-assets/Virtual-asset-trading-platforms-operators",
-      "published_at": "2023-06-01T00:00:00Z",
-      "source_id": "sfc",
-      "status": "queued",
-      "summary": "Dual SFO/AMLO licensing regime for centralised virtual asset trading platforms takes effect 1 June 2023.",
-      "title": "Licensing regime for virtual asset trading platforms comes into effect"
-    },
-    {
-      "feed_id": "hkma_press_release",
-      "item_hash": "544d29ba08c14f8b692356fc7f11a36eabbad05f23c2ed7ea47ad45f730a726e",
-      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260410-4/",
-      "published_at": "2026-04-10T00:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "HKMA grants the first two stablecoin issuer licences, to Anchorpoint Financial Limited and The Hongkong and Shanghai Banking Corporation Limited.",
-      "title": "HKMA grants first licences under the Stablecoins Ordinance"
-    },
-    {
-      "feed_id": "fstb_consultations",
-      "item_hash": "8e3bc652202af7398e70bc47d4c96a9df8e27c141320a1dda6e79399e4799164",
-      "link": "https://www.fstb.gov.hk/fsb/en/publication/consult/doc/VAdealing_consultation_conclusion_e.pdf",
-      "published_at": "2025-12-24T00:00:00Z",
-      "source_id": "fstb",
-      "status": "queued",
-      "summary": "FSTB and SFC publish conclusions to their joint consultation on new licensing regimes for virtual asset dealing and custodian services.",
-      "title": "Consultation conclusions: licensing regimes for virtual asset dealing and custodian services"
-    },
-    {
-      "feed_id": "sfc_press_releases",
-      "item_hash": "f66431227c57b961755f9fad4bf2a393c31541dc6925c78ddd77b9dc0618305c",
-      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR1",
-      "published_at": "2026-01-06T00:00:00Z",
-      "source_id": "sfc",
-      "status": "queued",
-      "summary": "SFC reprimands and fines Saxo Capital Markets HK Limited HK$4 million over failures in distributing virtual asset funds to retail clients.",
-      "title": "SFC reprimands and fines Saxo Capital Markets HK Limited"
     }
   ],
   "schema_version": 1
