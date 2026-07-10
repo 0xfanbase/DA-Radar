@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T07:28:17Z",
+  "generated_at": "2026-07-10T05:29:36Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -3504,6 +3504,22 @@
       "status": "queued",
       "summary": "",
       "title": "Scam alert related to banks"
+    },
+    "39499a09b0b4ba86f89ce85f2f6b171e1368560d9b30a2026a688bae15e677d2": {
+      "card_id": null,
+      "content_hash": "360383db93169853a79683e2fc0d0b55599be99941126ac5dbad7e207fc0b945",
+      "feed_id": "sfc_press_releases",
+      "first_seen": "2026-07-10T05:29:36Z",
+      "guid": "26PR101",
+      "item_hash": "39499a09b0b4ba86f89ce85f2f6b171e1368560d9b30a2026a688bae15e677d2",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR101",
+      "published_at": "2026-07-09T09:19:59Z",
+      "raw_published": "Thu, 09 Jul 2026 17:19:59 +0800",
+      "relevant": true,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "SFC mandates phishing-resistant authentication methods for internet brokers and VATPs to protect client accounts"
     },
     "398076032d9b2d67fe804eadec871d8350b6c41c7ce99abb0cbfe8a8e36628b9": {
       "card_id": null,
@@ -7744,6 +7760,22 @@
       "status": "queued",
       "summary": "",
       "title": "Treatment of Deposits under Money Safe"
+    },
+    "8272757695e6293ebad597bce8c0c59caf20b12c0796a37bad13a24377b0a565": {
+      "card_id": null,
+      "content_hash": "bc5478f9ac154de1c2764f279a4e1cc24187b8eded29d9dff17855ef8ffa667d",
+      "feed_id": "sfc_circulars",
+      "first_seen": "2026-07-10T05:29:36Z",
+      "guid": "26EC35",
+      "item_hash": "8272757695e6293ebad597bce8c0c59caf20b12c0796a37bad13a24377b0a565",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC35",
+      "published_at": "2026-07-09T08:48:34Z",
+      "raw_published": "Thu, 09 Jul 2026 16:48:34 +0800",
+      "relevant": true,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "Circular to licensed corporations and SFC-licensed virtual asset service providers Implementing (i) robust authentication methods to reduce and mitigate hacking risks from phishing attacks and (ii) adequate monitoring and surveillance measures to identify suspicious activities"
     },
     "82890933112b3d28d268df36a11944eed66548ca974f7b48491852195f18d117": {
       "card_id": null,
@@ -12433,6 +12465,22 @@
       "summary": "",
       "title": "HKMA announces total quota allocated for the RMB Business Facility and list of participating banks from Phase 2 onwards"
     },
+    "c9915298e5aac90bfa5341b0c7f7f41694d6005fd4df653ce5a092215f47b6c2": {
+      "card_id": null,
+      "content_hash": "34730ba3aaa52193289946cdd5492ec64cc322dbc221d8a275ff37fc3c23d0fd",
+      "feed_id": "sfc_circulars",
+      "first_seen": "2026-07-10T05:29:36Z",
+      "guid": "26EC40",
+      "item_hash": "c9915298e5aac90bfa5341b0c7f7f41694d6005fd4df653ce5a092215f47b6c2",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC40",
+      "published_at": "2026-07-10T04:31:33Z",
+      "raw_published": "Fri, 10 Jul 2026 12:31:33 +0800",
+      "relevant": true,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Cybersecurity Webinar"
+    },
     "c9be62e6d437158547cdd2cbf9c5a08dd8beaf8c3296a0edf3311a9ac4235299": {
       "card_id": null,
       "content_hash": "7b41028f819060604c5273caaaea5e2e145b926e7cae30c05e439d9ed6573ea9",
@@ -13291,6 +13339,22 @@
       "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/05/20260505-3/",
       "published_at": "2026-05-04T16:00:00Z",
       "raw_published": "Tue, 05 May 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Scam alert related to banks"
+    },
+    "dac54f37d6fb69b5157705bca811f7cd3ffe8e21042c1bf4f11252e399af1125": {
+      "card_id": null,
+      "content_hash": "dc1efdaecd3b0b4eeb8fb4191a78f821768912aa7035ec805acc02ffe5082c1e",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-10T05:29:36Z",
+      "guid": null,
+      "item_hash": "dac54f37d6fb69b5157705bca811f7cd3ffe8e21042c1bf4f11252e399af1125",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260709-3/",
+      "published_at": "2026-07-08T16:00:00Z",
+      "raw_published": "Thu, 09 Jul 2026 00:00:00 +0800",
       "relevant": false,
       "source_id": "hkma",
       "status": "queued",

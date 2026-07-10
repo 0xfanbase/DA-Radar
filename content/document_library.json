@@ -770,8 +770,41 @@
       "regulator": "SFC",
       "title": "SFC reprimands and fines Saxo Capital Markets HK Limited",
       "type": "press_releases"
+    },
+    {
+      "item_hash": "39499a09b0b4ba86f89ce85f2f6b171e1368560d9b30a2026a688bae15e677d2",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR101",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2026-07-09T09:19:59Z",
+      "regulator": "SFC",
+      "title": "SFC mandates phishing-resistant authentication methods for internet brokers and VATPs to protect client accounts",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "8272757695e6293ebad597bce8c0c59caf20b12c0796a37bad13a24377b0a565",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC35",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2026-07-09T08:48:34Z",
+      "regulator": "SFC",
+      "title": "Circular to licensed corporations and SFC-licensed virtual asset service providers Implementing (i) robust authentication methods to reduce and mitigate hacking risks from phishing attacks and (ii) adequate monitoring and surveillance measures to identify suspicious activities",
+      "type": "circulars"
+    },
+    {
+      "item_hash": "c9915298e5aac90bfa5341b0c7f7f41694d6005fd4df653ce5a092215f47b6c2",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC40",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2026-07-10T04:31:33Z",
+      "regulator": "SFC",
+      "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Cybersecurity Webinar",
+      "type": "circulars"
     }
   ],
-  "generated_at": "2026-07-09T07:52:57Z",
+  "generated_at": "2026-07-10T05:29:36Z",
   "schema_version": 1
 }
