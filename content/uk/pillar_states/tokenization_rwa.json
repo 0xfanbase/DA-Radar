@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "pillar": "tokenization_rwa",
+  "status_seal": "in_force",
+  "regulator": "FCA, Bank of England and HM Treasury",
+  "instruments": [
+    "Financial Services and Markets Act 2023 (Digital Securities Sandbox) Regulations 2023 (SI 2023/1398)",
+    "Financial Services and Markets Act 2023 (Digital Securities Sandbox) (Amendment) Regulations 2025 (SI 2025/93)",
+    "FCA/Bank of England joint Call for Input: The future of tokenisation -- a joint vision from the authorities for UK wholesale markets (18 May 2026)"
+  ],
+  "standing_summary": "Tokenisation of securities is the one area of UK digital-asset regulation that is genuinely in force today, running on statutory powers wholly separate from the not-yet-effective FSMA 2000 (Cryptoassets) Regulations 2026. The Digital Securities Sandbox (DSS) was created by the Financial Services and Markets Act 2023 (Digital Securities Sandbox) Regulations 2023 (SI 2023/1398), made under HM Treasury's FMI-sandbox powers in FSMA 2023, in force since 8 January 2024 and amended by SI 2025/93 (laid 30 January 2025, covering money-laundering-regulation interaction and other technical points); per the instrument's own regulation 13, the sandbox regulations cease to have effect on 8 January 2029, and the Bank and FCA must report on its operation by 10 January 2028. The DSS lets firms test operating a trading venue or performing central-securities-depository functions (notary, settlement, maintenance) for digital securities on distributed, programmable ledgers, progressing through four gates from initial testing (Gate 1) to live business under limits (Gate 2), scaling (Gate 3), and a possible permanent regime (Gate 4). In a joint statement on 18 May 2026, the Bank and the FCA said they continue to work with '16 firms on the live issuance and settlement of tokenised assets' through the DSS -- language repeated verbatim in both regulators' own press releases that day. The Bank's own public DSS Dashboard, however, lists 15 named sandbox entrants (approved between 12 December 2024 and 4 December 2025), all shown as having passed only Gate 1, with the dashboard's own explanatory text stating that a Gate 1 entrant 'does not have permission to undertake any live activity' until approved at Gate 2 -- an apparent tension between the regulators' narrative description and their own published entrant data that this pillar state flags rather than resolves (see open items). The same 18 May 2026 joint statement published a Call for Input, 'The future of tokenisation -- a joint vision from the authorities for UK wholesale markets,' seeking industry views (deadline 3 July 2026) on scaling tokenisation of bonds, equities and fund units, alongside a Bank commitment to launch a live synchronisation service targeted for 2028, work on enabling tokenised assets as collateral, and consultation on extending RTGS/CHAPS settlement hours toward near-24/7 operation; the authorities said the responses would inform a joint FCA/Bank roadmap, with a feedback statement targeted for summer 2026 -- not yet published as of this pillar state's generation date. Separately, HM Treasury is running its own tokenisation pilot: on 12 February 2026 HM Treasury announced that HSBC, using its Orion digital-assets platform, had been selected -- following an Invitation to Tender published in October 2025 -- as platform provider for the pilot issuance of a Digital Gilt Instrument (DIGIT), a short-dated, digitally native gilt to be issued on a platform operating within the DSS and kept independent of the government's main debt-management programme; Ashurst LLP was named as legal adviser. No issuance date for DIGIT had been announced in the source fetched.",
+  "last_changed": "2026-05-18",
+  "key_links": [
+    {
+      "label": "legislation.gov.uk: FSMA 2023 (Digital Securities Sandbox) Regulations 2023 (SI 2023/1398, in force 8 Jan 2024)",
+      "url": "https://www.legislation.gov.uk/uksi/2023/1398/made"
+    },
+    {
+      "label": "legislation.gov.uk: FSMA 2023 (Digital Securities Sandbox) (Amendment) Regulations 2025 (SI 2025/93)",
+      "url": "https://www.legislation.gov.uk/uksi/2025/93/contents/made"
+    },
+    {
+      "label": "FCA: Digital Securities Sandbox (DSS) overview",
+      "url": "https://www.fca.org.uk/firms/innovation/digital-securities-sandbox"
+    },
+    {
+      "label": "Bank of England: Digital Securities Sandbox (DSS) overview",
+      "url": "https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox"
+    },
+    {
+      "label": "Bank of England: Digital Securities Sandbox Dashboard (entrant list)",
+      "url": "https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox/digital-securities-sandbox-dashboard"
+    },
+    {
+      "label": "FCA/Bank of England: Call for Input -- the future of tokenisation, joint vision for UK wholesale markets (18 May 2026)",
+      "url": "https://www.fca.org.uk/publications/calls-input/future-tokenisation-joint-vision-authorities-uk-wholesale-markets"
+    },
+    {
+      "label": "Bank of England news: FCA and BoE set out shared vision for tokenisation in UK wholesale markets (18 May 2026)",
+      "url": "https://www.bankofengland.co.uk/news/2026/may/fca-and-boe-set-out-shared-vision-for-tokenisation-in-uk-wholesale-markets"
+    },
+    {
+      "label": "FCA press release: FCA and Bank of England set out shared vision for tokenisation in UK wholesale markets (18 May 2026)",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-and-bank-england-set-out-shared-vision-tokenisation-uk-wholesale-markets"
+    },
+    {
+      "label": "gov.uk / HM Treasury: update on the procurement for Digital Gilt Instrument (DIGIT) pilot -- HSBC Orion selected (12 Feb 2026)",
+      "url": "https://www.gov.uk/government/news/update-on-the-procurement-for-digital-gilt-instrument-digit-pilot"
+    }
+  ],
+  "open_items": [
+    "There is an unresolved tension between the regulators' 18 May 2026 statement that 16 firms are engaged 'on the live issuance and settlement of tokenised assets' and the Bank of England's own DSS Dashboard, fetched during this research, which lists 15 named entrants all still at Gate 1 with no firm shown as approved for live activity at Gate 2 or beyond; this should be re-checked directly against the dashboard (which updates on a rolling basis) before repeating either the firm count or 'live' characterisation as current fact.",
+    "The Call for Input's response deadline (3 July 2026) has passed as of this pillar state's generation date; the authorities targeted a feedback statement for 'summer 2026' with no fixed date, and none had been published in the sources fetched.",
+    "The FCA's own DSS overview page states the sandbox is operational 'until December 2028,' while the sandbox regulations themselves (SI 2023/1398, regulation 13) set cessation at 8 January 2029; this pillar state follows the statutory text as authoritative and flags the discrepancy rather than silently picking one.",
+    "The Call for Input also referenced PRA 'Dear CEO' letters on prudential treatment of tokenised assets and a fund-tokenisation policy statement; PRA prudential material belongs to the Banking & Money pillar and fund tokenisation may belong to Funds & ETFs -- neither is detailed here to avoid duplication, and should be independently sourced in those pillars.",
+    "No issuance date, size, or maturity has been announced for the DIGIT pilot in the primary source fetched (12 Feb 2026 gov.uk update); this should be revisited once HM Treasury publishes further pilot details."
+  ],
+  "generated_at": "2026-07-11T17:00:49Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

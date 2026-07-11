@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "pillar": "dealing_custody_advisory",
+  "status_seal": "proposed",
+  "regulator": "FCA",
+  "instruments": [
+    "Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102)",
+    "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017",
+    "FCA Policy Statement PS26/11: Crypto Regime -- Regulated Cryptoasset Activities",
+    "FCA Policy Statement PS26/12: Crypto Regime -- A Prudential Regime for Cryptoasset Firms",
+    "Financial Services and Markets Act 2000 (Financial Promotion) (Amendment) Order 2023"
+  ],
+  "standing_summary": "The Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102), made by HM Treasury on 4 February 2026, creates the new FCA-regulated activities that anchor this pillar: safeguarding of qualifying cryptoassets and 'relevant specified investment cryptoassets' (including arranging for another person to safeguard them); dealing in qualifying cryptoassets as principal; dealing in qualifying cryptoassets as agent; arranging (bringing about) deals in qualifying cryptoassets, or making arrangements with a view to such transactions; and qualifying cryptoasset staking. Per the instrument's Explanatory Memorandum, full commencement -- the point at which carrying on these activities without authorisation becomes a contravention -- is 25 October 2027, matching the trading-platform activity covered in the Exchanges (VATP) pillar. The FCA published final conduct rules for all four activities on 30 June 2026 in PS26/11 (Crypto Regime: Regulated Cryptoasset Activities): for safeguarding, targeted exceptions to trust requirements, a technology-agnostic approach to private-key management, a settlement-float limit raised to 2%, and a new CASS 17 cryptoasset-custody chapter of the Handbook; for dealing and arranging, principal dealers are removed from pre-trade transparency requirements and best execution is framed around 'effective overarching arrangements' rather than transaction-by-transaction checks; for staking, firms may take client consent covering ongoing auto-staking of current and future holdings (subject to annual notification) and the FCA clarified record-keeping expectations for liquid-staking models. Prudential requirements for firms carrying on these activities were finalised the same day in PS26/12 (A Prudential Regime for Cryptoasset Firms), which places them in new COREPRU (core) and CRYPTOPRU (cryptoasset-specific) Handbook sourcebooks under a K-factor capital regime. The FCA's authorisation gateway is scheduled to open 30 September 2026 and close 28 February 2027, with a savings provision allowing firms that apply within that window to keep operating pending determination. Notably, the SI does not create a new 'advising on qualifying cryptoassets' regulated activity: per the FCA's own overview of the regime, the existing advising-on-specified-investments and managing-investments activities were not extended to qualifying cryptoassets, so advisory services on (non-security) cryptoassets stay outside the FCA's perimeter both today and after 25 October 2027 -- unless the asset advised on is itself an already-regulated specified investment (a 'relevant specified investment cryptoasset', e.g. a tokenised share or bond), in which case the pre-existing advising and custody regime already applies today, independently of this SI. None of the four new activities named above is in force today. The only cryptoasset-specific obligation currently applying to firms dealing in, arranging deals in, or safeguarding qualifying cryptoassets is registration as a 'custodian wallet provider' or 'cryptoasset exchange provider' under Regulations 8L, 9 and 14A of the Money Laundering Regulations 2017, supervised by the FCA since January 2020, plus the financial promotions regime for qualifying cryptoassets (in force since 8 October 2023, FG23-3) where the firm communicates promotions to UK consumers.",
+  "last_changed": "2026-06-30",
+  "key_links": [
+    {
+      "label": "legislation.gov.uk: The Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102)",
+      "url": "https://www.legislation.gov.uk/uksi/2026/102/contents/made"
+    },
+    {
+      "label": "legislation.gov.uk: Explanatory Memorandum to SI 2026/102 (commencement, 25 Oct 2027)",
+      "url": "https://www.legislation.gov.uk/uksi/2026/102/pdfs/uksiem_20260102_en_001.pdf"
+    },
+    {
+      "label": "FCA: PS26/11 Crypto Regime -- Regulated Cryptoasset Activities (30 Jun 2026)",
+      "url": "https://www.fca.org.uk/publication/policy/ps26-11.pdf"
+    },
+    {
+      "label": "FCA: PS26/12 A Prudential Regime for Cryptoasset Firms (30 Jun 2026)",
+      "url": "https://www.fca.org.uk/publication/policy/ps26-12.pdf"
+    },
+    {
+      "label": "FCA: Cryptoasset regulated activities -- FSMA and the FCA Handbook (overview, incl. safeguarding/dealing/arranging/staking)",
+      "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation/fsma-handbook"
+    },
+    {
+      "label": "FCA press release: FCA sets landmark crypto rules to cement the UK's place as a global hub (30 Jun 2026)",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-sets-landmark-crypto-rules-cement-uks-place-global-hub"
+    },
+    {
+      "label": "FCA: who needs to register under the Money Laundering Regulations (custodian wallet providers, current regime)",
+      "url": "https://www.fca.org.uk/firms/cryptoassets-aml-ctf-regime/cryptoassets-who-needs-register"
+    },
+    {
+      "label": "FCA: FG23-3 Finalised guidance on cryptoasset financial promotions (in force since 8 Oct 2023)",
+      "url": "https://www.fca.org.uk/publication/finalised-guidance/fg23-3.pdf"
+    }
+  ],
+  "open_items": [
+    "The related qualifying cryptoasset trading platform (QCATP) activity, and its PS26/11/PS26/13 conduct and Handbook-application rules, are covered in the Exchanges (VATP) pillar, not here, to avoid duplicating the same 4 Feb 2026 SI and 30 Jun 2026 policy statements across two pillars.",
+    "This pillar's name includes 'Advisory', but the FCA has not created a new 'advising on qualifying cryptoassets' regulated activity under SI 2026/102 -- non-security cryptoasset advice stays outside the FCA's perimeter even after 25 October 2027, per the FCA's own FSMA/Handbook overview page. This distinction was corroborated on that HTML page but not independently checked against the SI's own schedule text.",
+    "The PS26/11 and PS26/12 PDFs could not be parsed directly during this research (both returned corrupted/fragmented text on fetch); the safeguarding, dealing/arranging, staking and prudential detail above is corroborated via the FCA's own HTML overview page and via secondary legal-commentary summaries of the policy statements, and should be re-confirmed against the full policy-statement text directly.",
+    "The FCA's MLR registration/rejection statistics for custodian wallet providers and exchange providers belong to the AML/CFT & Enforcement pillar and are not duplicated here.",
+    "Whether firms already registered as custodian wallet providers under the MLR 2017 will receive any transitional or deemed status toward the new safeguarding/dealing/arranging/staking authorisations from 30 September 2026 was not confirmed by a primary source found during this research."
+  ],
+  "generated_at": "2026-07-11T17:00:02Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

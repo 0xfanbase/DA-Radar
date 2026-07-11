@@ -1,0 +1,21 @@
+{
+  "first_used_card_id": "89027aca00488f2b404db08b468eb197985e9c1f6e4d9292382e08cd26d19ac0",
+  "formal_definition": "A stablecoin issued in the UK as the regulated activity created by the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102), regulated by the FCA under Policy Statement PS26/10 (Crypto Regime: Stablecoin issuance, 30 June 2026): issuers must hold a fully backing pool of low-risk, liquid assets on statutory trust for holders, segregated from the issuer's own assets and reconciled daily, complete redemption requests by the end of the next business day, and hold minimum own funds of the higher of GBP 350,000, three months' operating costs, or a 1% K-factor charge on coins in issuance. As with the other new cryptoasset activities, the general prohibition on issuing one without FCA authorisation does not commence until 25 October 2027; the FCA's authorisation gateway is expected to open 30 September 2026 and close 28 February 2027.",
+  "generated_at": "2026-07-11T17:30:00Z",
+  "id": "qualifying-stablecoin",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "The type of stablecoin the FCA will license under the UK's 2026 cryptoasset Regulations -- distinct from a 'systemic stablecoin', which falls to the Bank of England instead. An issuer must back every qualifying stablecoin in circulation with low-risk, liquid assets held on trust for holders, redeem on request by the end of the next business day, and hold a minimum amount of its own capital under FCA rules.",
+  "related_terms": [
+    "stablecoin",
+    "systemic-stablecoin",
+    "fca",
+    "qualifying-cryptoasset",
+    "fsma"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "Qualifying stablecoin"
+}

@@ -1,0 +1,21 @@
+{
+  "first_used_card_id": "89027aca00488f2b404db08b468eb197985e9c1f6e4d9292382e08cd26d19ac0",
+  "formal_definition": "The Financial Conduct Authority, the UK's conduct regulator operating under the Financial Services and Markets Act 2000, and the regulator responsible for the UK's new cryptoasset regime under the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102) -- covering qualifying cryptoasset trading platforms, dealing, safeguarding, arranging deals, staking, and qualifying-stablecoin issuance -- as well as the pre-existing Money Laundering Regulations 2017 cryptoasset-business registration regime and the financial promotions regime for qualifying cryptoassets. The FCA operates the Digital Securities Sandbox jointly with the Bank of England.",
+  "generated_at": "2026-07-11T17:30:00Z",
+  "id": "fca",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "Short for the Financial Conduct Authority, the UK's main conduct-of-business regulator for financial services -- broadly the equivalent of Hong Kong's SFC. It licenses and supervises firms operating cryptoasset trading platforms, dealing, safeguarding, arranging deals in, or staking qualifying cryptoassets, and issuing qualifying stablecoins, once the UK's 2026 cryptoasset Regulations come fully into force; today it also supervises the existing Money Laundering Regulations 2017 registration regime and the financial-promotions rules for cryptoassets.",
+  "related_terms": [
+    "boe",
+    "hm-treasury",
+    "fsma",
+    "catp",
+    "qualifying-stablecoin"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "FCA (Financial Conduct Authority)"
+}

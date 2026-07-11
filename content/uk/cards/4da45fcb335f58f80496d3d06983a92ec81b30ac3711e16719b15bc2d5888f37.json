@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "4da45fcb335f58f80496d3d06983a92ec81b30ac3711e16719b15bc2d5888f37",
+  "jurisdiction_id": "uk",
+  "published_date": "2026-06-05",
+  "regulator": "FCA",
+  "pillar": [
+    "funds_etfs"
+  ],
+  "type": "consultation",
+  "title": "FCA consults on allowing UK retail funds up to 10% exposure to crypto ETNs",
+  "summary": "In June 2026, the FCA published Chapter 5 of Quarterly Consultation Paper No. 52 (CP26/17), proposing to let UK UCITS schemes and non-UCITS retail schemes (NURS) hold cryptoasset exchange traded notes (cETNs) directly, capped at 10% of scheme property. The FCA is separately seeking views on whether to prevent long-term asset funds and NURS acting as funds of alternative investment funds from holding cETNs at all. Qualified investor schemes, sold only to professional and sophisticated investors, face no proposed cap. The move follows the FCA's earlier decision, effective 8 October 2025, letting retail investors buy cETNs listed on a UK exchange directly for the first time; authorised funds remain barred from holding cETNs until this consultation's proposals, if adopted, take effect. The consultation also covers fund managers' due-diligence and disclosure duties, and this chapter closes 13 July 2026; no rule has been made.",
+  "why_it_matters": "This is the FCA's first proposal to let ordinary UK retail investment funds, not just individual investors buying products directly, hold crypto-linked exposure -- potentially giving savers indirect cryptoasset exposure through funds they may already hold, subject to a cap that is only proposed and not yet in force.",
+  "key_dates": {
+    "deadline": "2026-07-13"
+  },
+  "citations": [
+    {
+      "url": "https://www.fca.org.uk/publication/consultation/cp26-17.pdf",
+      "quote": "propose to limit exposure within UCITS schemes and NURS to 10% of the value"
+    },
+    {
+      "url": "https://www.fca.org.uk/news/press-releases/fca-opens-retail-access-crypto-etns",
+      "quote": "The change will come into force on 8 October 2025."
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-11T18:20:00Z",
+  "model": "Claude (Anthropic)"
+}

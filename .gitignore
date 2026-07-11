@@ -8,8 +8,11 @@ venv/
 
 # HTTP cache state (ETags) must never be committed — it changes whenever a feed
 # republishes anything unrelated to new items, which would break the "re-run
-# adds nothing" idempotency guarantee at the git-diff level.
+# adds nothing" idempotency guarantee at the git-diff level. Since the P6
+# registry-model pivot this lives per jurisdiction (data/{jid}/cache/), not
+# just at the repo-root path the pattern originally covered.
 /data/cache/
+/data/*/cache/
 
 # Static site build output (pipeline/site/generate.py). Never committed --
 # deploy.yml uploads it straight to GitHub Pages as a build artifact within

@@ -38,13 +38,13 @@
     {
       "id": "uk",
       "name": "United Kingdom",
-      "config": null,
+      "config": "config/jurisdictions/uk.json",
       "status": {
-        "watcher": "planned",
+        "watcher": "live",
         "analyst_verifier": "planned",
-        "seeded": false
+        "seeded": true
       },
-      "coverage_notes": "Planned. Watcher sources and config file to be written in its build phase."
+      "coverage_notes": "Live RSS/Atom watcher (FCA + Bank of England + HM Treasury feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
     },
     {
       "id": "sg",

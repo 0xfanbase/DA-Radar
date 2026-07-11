@@ -1,0 +1,21 @@
+{
+  "first_used_card_id": "89027aca00488f2b404db08b468eb197985e9c1f6e4d9292382e08cd26d19ac0",
+  "formal_definition": "The requirement, under Regulations 8L, 9 and 14A of the Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 (MLRs), for a cryptoasset exchange provider or custodian wallet provider carrying on business in the UK to register with the FCA for anti-money-laundering and counter-terrorist-financing supervision purposes; the FCA has supervised this regime since 10 January 2020. This regime is legally distinct from, and runs on a separate statutory track to, the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102): the FCA states MLR-registered firms must keep complying with the existing MLR regime 'until the new FSMA regime starts' on 25 October 2027, and that MLR registration 'does not guarantee authorisation under FSMA'. From 30 September 2026, firms may submit combined MLR-registration and FSMA-authorisation applications for a single fee (set at the higher of the two applicable fees), but the two are assessed and determined separately, and a refused MLR application does not preclude later FSMA authorisation.",
+  "generated_at": "2026-07-11T17:30:00Z",
+  "id": "cryptoasset-registration-mlr",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "The AML/CTF registration regime that already applies to UK crypto businesses today -- separate from, and legally distinct from, the FCA's new 2026 licensing regime for trading platforms, dealing, stablecoin issuance and the rest, which does not take full legal effect until 25 October 2027. A firm registered under this older regime is not automatically authorised under the new one, and the FCA has been explicit that the two are assessed independently even when applied for together.",
+  "related_terms": [
+    "fca",
+    "fsma",
+    "catp",
+    "qualifying-cryptoasset",
+    "amlo"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "Cryptoasset business registration (MLR 2017)"
+}

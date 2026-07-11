@@ -1,0 +1,41 @@
+{
+  "citations": [
+    {
+      "quote": "oversight of crypto will continue to be limited to financial promotions and anti-money laundering controls",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-sets-landmark-crypto-rules-cement-uks-place-global-hub"
+    },
+    {
+      "quote": "The full scope of regulated activities under the regime will expand from 25 October 2027",
+      "url": "https://www.fca.org.uk/publications/policy-statements/cryptoasset-regime"
+    },
+    {
+      "quote": "the application period will open on 30 September 2026",
+      "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation/how-gateway-will-operate"
+    },
+    {
+      "quote": "2026 No. 102",
+      "url": "https://www.legislation.gov.uk/uksi/2026/102/made"
+    }
+  ],
+  "generated_at": "2026-07-11T17:30:00Z",
+  "id": "89027aca00488f2b404db08b468eb197985e9c1f6e4d9292382e08cd26d19ac0",
+  "jurisdiction_id": "uk",
+  "key_dates": {
+    "effective": "2027-10-25",
+    "milestone": "2026-09-30"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "exchanges_vatp",
+    "stablecoins",
+    "dealing_custody_advisory"
+  ],
+  "published_date": "2026-06-30",
+  "regulator": "FCA",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "On 30 June 2026 the FCA published five final policy statements (PS26/9-PS26/13) completing its rulebook for the UK's new cryptoasset regime, created by the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (2026 No. 102). Together they finalise conduct, market-abuse, prudential and Handbook-application rules for firms operating a qualifying cryptoasset trading platform (QCATP), dealing in or safeguarding qualifying cryptoassets, staking, and issuing a qualifying stablecoin backed by segregated reserve assets. The rules are finalised, but the regime itself is not yet in force: the FCA states the new mandatory regime commences on 25 October 2027, and until then its oversight of crypto remains limited to financial promotions standards and anti-money-laundering supervision under the Money Laundering Regulations 2017. The authorisation gateway is expected to open on 30 September 2026.",
+  "title": "FCA sets landmark crypto rules to cement the UK's place as a global hub",
+  "type": "conclusions",
+  "why_it_matters": "This is the FCA's completed rulebook for how UK crypto exchanges, custodians, dealers and stablecoin issuers will eventually need to be licensed -- but none of it is enforceable yet. Until the regime commences on 25 October 2027, the FCA's only live powers over UK crypto firms are financial promotions standards and anti-money-laundering registration, not this new licensing framework."
+}

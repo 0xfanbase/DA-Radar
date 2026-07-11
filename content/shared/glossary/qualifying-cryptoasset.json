@@ -1,0 +1,20 @@
+{
+  "first_used_card_id": "89027aca00488f2b404db08b468eb197985e9c1f6e4d9292382e08cd26d19ac0",
+  "formal_definition": "The category of cryptoasset brought within the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102)'s new regulated activities (operating a trading platform, dealing, safeguarding, arranging deals, staking, and -- for the 'qualifying stablecoin' subset -- issuance). The Regulations define the boundary of the term, and the FCA's own guidance distinguishes it from a 'relevant specified investment cryptoasset' (an asset, such as a tokenised share or bond, already regulated as a specified investment under other parts of the FSMA framework). The precise statutory definition text was not independently re-confirmed against the SI's own schedule during this research and should be checked directly before being quoted verbatim.",
+  "generated_at": "2026-07-11T17:30:00Z",
+  "id": "qualifying-cryptoasset",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "The UK's 2026 Regulations don't regulate every cryptocurrency or token -- only ones that meet the statutory definition of a 'qualifying cryptoasset'. It's the perimeter test that decides which activities (running a trading platform, dealing, safeguarding, arranging deals, staking, or issuing a qualifying stablecoin) actually need FCA authorisation once the regime is fully in force, on 25 October 2027.",
+  "related_terms": [
+    "catp",
+    "qualifying-stablecoin",
+    "fsma",
+    "cryptoasset-registration-mlr"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "Qualifying cryptoasset"
+}

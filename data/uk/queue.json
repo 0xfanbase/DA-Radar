@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-07-11T18:34:49Z",
+  "items": [
+    {
+      "feed_id": "boe_pra_publications",
+      "item_hash": "07af03cf06a4c3d457c1ae7ce7d149a02d8b8562338e3588f2e813c38e7323f7",
+      "link": "https://www.bankofengland.co.uk/prudential-regulation/letter/2026/innovations-in-the-use-of-deposits-emoney-and-regulated-stablecoins",
+      "published_at": "2026-05-18T08:00:00Z",
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "Letter to Chief Executive Officers of all banks and designated investment firms.",
+      "title": "Letter from David Bailey, Charlotte Gerken and Rebecca Jackson on reaffirming the PRA's position and clarifying expectations on innovations in the use of deposits, e-money and stablecoins"
+    },
+    {
+      "feed_id": "boe_pra_publications",
+      "item_hash": "c96db0f72765f17fd216dcb3b23c901be93c4f6c3ae3812370b5d5a28f1c4075",
+      "link": "https://www.bankofengland.co.uk/prudential-regulation/letter/2026/tokenised-assets-stablecoins-and-other-cryptoasset-exposures",
+      "published_at": "2026-05-18T08:00:00Z",
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "Letter to Chief Executive Officers of all banks and designated investment firms.",
+      "title": "Letter from David Bailey, Charlotte Gerken and Rebecca Jackson on the prudential treatment of tokenised assets, stablecoins, and other cryptoasset exposures"
+    },
+    {
+      "feed_id": "fca_news",
+      "item_hash": "cc6093a7b6b893511f35bda7f4e9eafff25a7b50d07a4c18f0c7f3c6ab73eebc",
+      "link": "https://www.fca.org.uk/news/statements/fca-and-bank-england-set-out-approach-joint-regulation-systemic-stablecoin-issuers",
+      "published_at": null,
+      "source_id": "fca",
+      "status": "queued",
+      "summary": "The Bank of England and the FCA have published a joint approach setting out how they and where relevant other authorities will work together to regulate systemic stablecoin issuers in the UK.It explains how responsibilities will be split between the authorities, and how UK stablecoin issuers may move from FCA supervision to joint regulation once recognised as systemic by HM Treasury.The approach aims to provide clarity and predictability for firms as the market develops.Read the paper",
+      "title": "FCA and the Bank of England set out approach to joint regulation of systemic stablecoin issuers"
+    }
+  ],
+  "jurisdiction_id": "uk",
+  "schema_version": 1
+}

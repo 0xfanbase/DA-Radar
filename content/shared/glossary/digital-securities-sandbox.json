@@ -1,0 +1,20 @@
+{
+  "first_used_card_id": "0bac7436bc81fc99de846abab44b2bccd5062100baf62cdda5143a0424012d05",
+  "formal_definition": "The Digital Securities Sandbox (DSS), created by the Financial Services and Markets Act 2023 (Digital Securities Sandbox) Regulations 2023 (SI 2023/1398), in force since 8 January 2024 and amended by SI 2025/93; it lets firms test operating a trading venue or performing central-securities-depository functions for digital securities on distributed, programmable ledgers, progressing through four gates from initial testing (Gate 1) to live business under limits (Gate 2), scaling (Gate 3), and a possible permanent regime (Gate 4). Per the instrument's regulation 13, the sandbox regulations cease to have effect on 8 January 2029, and the Bank of England and FCA must report on its operation by 10 January 2028.",
+  "generated_at": "2026-07-11T17:15:00Z",
+  "id": "digital-securities-sandbox",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "A joint Bank of England/FCA testing ground that lets firms run a trading venue or perform central-securities-depository functions for tokenised (digital) securities under temporary, eased rules, progressing through stages ('gates') from initial testing toward a possible permanent regime. Unlike most of the UK's cryptoasset rules, the sandbox is already in force today, running on its own separate statutory powers rather than waiting on the 2026 cryptoasset Regulations.",
+  "related_terms": [
+    "tokenisation",
+    "digit",
+    "fca",
+    "boe"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "Digital Securities Sandbox (DSS)"
+}

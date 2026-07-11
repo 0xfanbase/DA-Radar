@@ -1,0 +1,20 @@
+{
+  "first_used_card_id": "db361da4e0d4ce24e6039e760ce7105d0910b296ed50ea75c8cf9fcbf6d53e4c",
+  "formal_definition": "A sterling-denominated stablecoin that HM Treasury recognises as systemic to UK payments (assessed by transaction volumes and values, substitutability, interconnectedness, and any use by the Bank of England itself), and which the Bank of England then regulates as a systemic payment system under Part 5 of the Banking Act 2009, rather than the FCA regulating it as a qualifying-stablecoin issuer. The Bank published a policy statement and draft Code of Practice on 22 June 2026 proposing a temporary GBP 40 billion per-issuer issuance guardrail and a backing composition of up to 70% short-term UK government debt with the remainder in Bank of England deposits, with a 'Systemic-at-Launch' route for issuers Treasury expects to be systemic from the outset (who must still obtain FCA authorisation before operating). Consultation on the draft Code closes 22 September 2026; no stablecoin had been designated systemic as of the Bank's publication.",
+  "generated_at": "2026-07-11T17:15:00Z",
+  "id": "systemic-stablecoin",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "If a stablecoin becomes big or interconnected enough that its failure could threaten UK payments, HM Treasury can recognise it as 'systemic' -- and responsibility for regulating it then shifts from the FCA to the Bank of England, which treats it more like a payment system than an FCA-authorised firm. No stablecoin has been designated systemic yet.",
+  "related_terms": [
+    "qualifying-stablecoin",
+    "stablecoin",
+    "boe",
+    "hm-treasury"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "Systemic stablecoin"
+}

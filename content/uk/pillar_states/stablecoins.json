@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "pillar": "stablecoins",
+  "status_seal": "proposed",
+  "regulator": "FCA",
+  "instruments": [
+    "Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102)",
+    "FCA Policy Statement PS26/10: Crypto Regime -- Stablecoin issuance",
+    "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017",
+    "Banking Act 2009, Part 5 (systemic payment systems) -- Bank of England draft Code of Practice for sterling-denominated systemic stablecoins"
+  ],
+  "standing_summary": "UK stablecoin regulation is two-tier and neither tier is in force yet. Tier one: issuing a 'qualifying stablecoin' in the UK becomes a new FCA-regulated activity under the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102), made by HM Treasury on 4 February 2026; per the instrument's own commencement provisions, only the FCA's early rule-making and authorisation-preparation powers apply now, and the general prohibition -- the point at which issuing without authorisation becomes unlawful -- does not begin until 25 October 2027. On 30 June 2026 the FCA published final rules for this activity in PS26/10: an issuer must hold a backing pool of low-risk, liquid assets on statutory trust for stablecoin holders, segregated from its own assets and reconciled daily, valued at all times at least equal to the reference value of coins in issue; redemption requests must be completed by the end of the next business day; and minimum own funds must be the higher of £350,000, three months' operating costs, or a 1% 'K-factor' charge on the value of coins in issuance (reduced from a 2% figure proposed at consultation). The FCA's authorisation gateway is expected to open 30 September 2026 and close 28 February 2027, with a savings provision for in-window applicants pending determination. Tier two applies only to a stablecoin HM Treasury recognises as systemic to UK payments: the Bank of England, not the FCA, becomes the prudential regulator, exercising powers under Part 5 of the Banking Act 2009. On 22 June 2026 the Bank published a policy statement and draft Code of Practice for sterling-denominated systemic stablecoins (joined by a Bank/FCA paper on 30 June 2026 setting out their joint approach), proposing a temporary per-issuer issuance guardrail of £40 billion, a backing composition of up to 70% short-term UK government debt (residual maturity up to six months) with the remainder in Bank of England deposits, and a 'Systemic-at-Launch' route for issuers Treasury expects to be systemic from the outset -- who must still obtain FCA authorisation before operating. The Bank/FCA paper describes transition as managed rather than automatic: as an FCA-authorised issuer approaches systemic scale the Bank engages on its business model and risk profile, and once HM Treasury recognises it as systemic (assessed by transaction volumes and values, substitutability, interconnectedness, and any use by the Bank itself) the Bank may use its power of direction to waive or modify requirements for a transitional period. Consultation on the draft Code of Practice closes 22 September 2026, with the Bank targeting a finalised Code by end-2026; no stablecoin has yet been designated systemic. None of this is in force today. A firm wishing to issue a stablecoin in the UK now falls, per the FCA's own guidance on the current perimeter, under the general Money Laundering Regulations 2017 cryptoasset-business registration regime (in force since January 2020) and the financial promotions regime for qualifying cryptoassets (in force since 8 October 2023); existing MLR registration does not convert into or guarantee the new FSMA authorisation.",
+  "last_changed": "2026-06-30",
+  "key_links": [
+    {
+      "label": "legislation.gov.uk: The Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102, made 4 Feb 2026)",
+      "url": "https://www.legislation.gov.uk/uksi/2026/102/made"
+    },
+    {
+      "label": "FCA: PS26/10 Crypto Regime -- Stablecoin issuance (30 Jun 2026)",
+      "url": "https://www.fca.org.uk/publication/policy/ps26-10.pdf"
+    },
+    {
+      "label": "FCA: Overview of our cryptoassets regime policy statements (PS26/9-PS26/13)",
+      "url": "https://www.fca.org.uk/publications/policy-statements/cryptoasset-regime"
+    },
+    {
+      "label": "FCA press release: FCA sets landmark crypto rules to cement the UK's place as a global hub (30 Jun 2026)",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-sets-landmark-crypto-rules-cement-uks-place-global-hub"
+    },
+    {
+      "label": "Bank of England: policy statement and draft Code of Practice on sterling-denominated systemic stablecoins (22 Jun 2026)",
+      "url": "https://www.bankofengland.co.uk/paper/2026/ps/sterling-denominated-systemic-stablecoin"
+    },
+    {
+      "label": "Bank of England news: Bank launches policy statement and draft rules on regulating systemic stablecoins (22 Jun 2026)",
+      "url": "https://www.bankofengland.co.uk/news/2026/june/boe-launches-policy-statement-and-draft-rules-on-regulating-systemic-stablecoins"
+    },
+    {
+      "label": "Bank of England / FCA: approach to joint regulation of systemic stablecoin issuers (30 Jun 2026)",
+      "url": "https://www.bankofengland.co.uk/paper/2026/boe-and-fcas-approach-to-joint-regulation-of-systemic-stablecoin-issuers"
+    },
+    {
+      "label": "FCA: Cryptoasset firms -- registration under the MLRs ahead of the new FSMA regime (current perimeter)",
+      "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation/registration-under-mlrs-ahead-new-fsma-regime"
+    }
+  ],
+  "open_items": [
+    "The precise percentage composition of the PS26/10 backing pool (e.g. the minimum share required in on-demand deposits versus other permitted assets) is described inconsistently across secondary legal commentary sourced from the PS26/10 PDF, which this research could not machine-extract directly; the qualitative requirements above (full backing on statutory trust, daily reconciliation, next-business-day redemption, the £350,000/3-months-opex/1%-K-factor capital floor) are corroborated across multiple independent secondary summaries of the primary document, but the exact reserve-composition percentages should be re-confirmed directly against the PS26/10 PDF text before being cited as a precise figure.",
+    "No stablecoin had been recognised as systemic by HM Treasury as of the Bank of England's 22/30 June 2026 publications; the systemic tier therefore has no live subject yet.",
+    "The Bank of England's Code of Practice for systemic stablecoins is still in draft; consultation closes 22 September 2026 and the Bank has stated only an intention, not a guarantee, to finalise by end-2026.",
+    "How a UK stablecoin issuer's activities map onto today's MLR 2017 'cryptoasset exchange provider' / 'custodian wallet provider' categories is stated at the level of the FCA's own perimeter guidance; this pillar state does not independently verify individual firms' registration status.",
+    "PRA/Bank of England prudential treatment of banks' own cryptoasset exposures (the Basel cryptoasset standard) is a separate strand covered in the Banking & Money pillar, not here."
+  ],
+  "generated_at": "2026-07-11T16:59:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

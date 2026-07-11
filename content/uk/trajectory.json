@@ -1,0 +1,79 @@
+[
+  {
+    "schema_version": 1,
+    "date_or_window": "25 October 2027",
+    "event": "Full commencement of the new FSMA-regulated activity of operating a qualifying cryptoasset trading platform (QCATP), under the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102)",
+    "pillar": "exchanges_vatp",
+    "source_url": "https://www.legislation.gov.uk/uksi/2026/102/regulation/1/made",
+    "confidence": "announced",
+    "generated_at": "2026-07-11T17:10:42Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "25 October 2027",
+    "event": "Full commencement of the new FSMA-regulated activities of dealing in qualifying cryptoassets, safeguarding (custody) of qualifying cryptoassets, and qualifying cryptoasset staking, under the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102)",
+    "pillar": "dealing_custody_advisory",
+    "source_url": "https://www.legislation.gov.uk/uksi/2026/102/regulation/1/made",
+    "confidence": "announced",
+    "generated_at": "2026-07-11T17:10:42Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "25 October 2027",
+    "event": "Full commencement of the new FSMA-regulated activity of issuing a qualifying stablecoin, under the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102)",
+    "pillar": "stablecoins",
+    "source_url": "https://www.legislation.gov.uk/uksi/2026/102/regulation/1/made",
+    "confidence": "announced",
+    "generated_at": "2026-07-11T17:10:42Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "end of 2026",
+    "event": "Bank of England's target to finalise its Code of Practice for sterling-denominated systemic stablecoins, subject to feedback on the accompanying policy statement and draft rules due by 22 September 2026",
+    "pillar": "stablecoins",
+    "source_url": "https://www.bankofengland.co.uk/news/2026/june/boe-launches-policy-statement-and-draft-rules-on-regulating-systemic-stablecoins",
+    "confidence": "indicated",
+    "generated_at": "2026-07-11T17:10:42Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "30 September 2026 to 28 February 2027",
+    "event": "FCA-expected window for the authorisation application period (gateway) for firms wishing to carry on the new cryptoasset regulated activities ahead of the regime's 25 October 2027 commencement",
+    "pillar": "dealing_custody_advisory",
+    "source_url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation/how-gateway-will-operate",
+    "confidence": "indicated",
+    "generated_at": "2026-07-11T17:10:42Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "8 January 2029",
+    "event": "Statutory cessation date of the Financial Services and Markets Act 2023 (Digital Securities Sandbox) Regulations 2023 (SI 2023/1398), the sunset date for the Digital Securities Sandbox absent further legislation",
+    "pillar": "tokenization_rwa",
+    "source_url": "https://www.legislation.gov.uk/uksi/2023/1398/regulation/13/made",
+    "confidence": "announced",
+    "generated_at": "2026-07-11T17:10:42Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "13 July 2026",
+    "event": "Closing date for responses to Chapter 5 of Quarterly Consultation No 52 (CP26/17), the FCA's proposal to allow UCITS schemes and non-UCITS retail schemes (NURS) to hold up to 10% of scheme property in cryptoasset-backed exchange traded notes (cETNs)",
+    "pillar": "funds_etfs",
+    "source_url": "https://www.fca.org.uk/publication/consultation/cp26-17.pdf",
+    "confidence": "announced",
+    "generated_at": "2026-07-11T17:10:42Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  }
+]

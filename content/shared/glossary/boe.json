@@ -1,0 +1,20 @@
+{
+  "first_used_card_id": "0bac7436bc81fc99de846abab44b2bccd5062100baf62cdda5143a0424012d05",
+  "formal_definition": "The Bank of England, the UK's central bank, whose Prudential Regulation Authority (PRA) sets prudential rules for banks' own cryptoasset and tokenised-asset exposures (including via Dear CEO letters to bank and designated investment firm CEOs), and which regulates systemic sterling-denominated stablecoins under Part 5 of the Banking Act 2009 once HM Treasury recognises them as systemic; the Bank operates the Digital Securities Sandbox jointly with the FCA under the Financial Services and Markets Act 2023 (Digital Securities Sandbox) Regulations 2023 (SI 2023/1398).",
+  "generated_at": "2026-07-11T17:15:00Z",
+  "id": "boe",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "Short for the Bank of England, the UK's central bank -- broadly the equivalent of Hong Kong's HKMA. Within the Bank, the Prudential Regulation Authority (PRA) supervises banks' own prudential exposure to cryptoassets and tokenised assets, in the same way the HKMA glossary entry covers the HKMA's own functions as a single body. The Bank (not the FCA) also becomes the regulator of any stablecoin recognised by HM Treasury as systemic to UK payments, and runs the Digital Securities Sandbox jointly with the FCA.",
+  "related_terms": [
+    "fca",
+    "systemic-stablecoin",
+    "digital-securities-sandbox",
+    "hm-treasury"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "Bank of England (incl. PRA)"
+}

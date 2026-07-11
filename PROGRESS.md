@@ -34,6 +34,18 @@ along with `git log` — to know exactly where the project stands before doing a
   the one-jurisdiction-per-deployment fork model to a registry model (one deployment, many
   jurisdictions) -- see the 2026-07-11 "P6" entry below for full detail. Site output is
   byte-equivalent (still HK-only) by design; P7 (new IA, tabs, rebrand) is next.
+- **P7 — New IA and frontend rebuild: complete.** Sticky two-row header, Current State/Timeline
+  merge, condensed 5-link nav, glossary jurisdiction filter chips with real `#term-{id}`
+  crosslinks, config-driven Method coverage table -- see the 2026-07-11 "P7" entry below.
+- **P8 — Watcher mechanism expansion: complete.** Feed mechanisms generalized beyond RSS to atom,
+  html_diff, sitemap_diff, json_api, all converging on one `NormalizedItem` contract; three-way
+  feed-health event classification (`feed_structure_error`/`feed_fetch_failure`/`feed_silence`) --
+  see the 2026-07-11 "P8" entry below.
+- **P9 — UK onboarding (first new jurisdiction): complete.** Full seed depth (7 pillar states, 6
+  verified headline cards, trajectory, 12 glossary terms, document library, orientation page), real
+  live watcher wiring (`status.watcher: "live"`, `status.seeded: true`), CCR routine prepared but
+  deliberately not activated (`status.analyst_verifier: "planned"`) -- see the 2026-07-11 "P9" entry
+  below for the nine real gaps the final-check surfaced and how each was closed.
 
 ## Owner / next-step punch list
 
@@ -849,6 +861,130 @@ atom/feed-health test independently re-run and confirmed passing; `tests/
 test_jurisdiction_agnostic.py` re-confirmed green over the four new mechanism modules (no hardcoded
 selector, URL, or jurisdiction string -- verified by direct grep, not just trusting the scan); a
 fresh `pipeline.site.generate` run confirmed the (unrelated) site build still works unchanged.
+
+### 2026-07-11 — P9: UK onboarding (first new jurisdiction) + consolidated CCR routine
+
+The proof that the P6-P8 registry-model architecture actually holds for a jurisdiction beyond HK.
+Fable directed the same director-spec -> research -> cards -> gates -> wiring -> final-check
+pattern as P6-P8, grounded in the earlier live-verified UK recon (real FCA/Bank of England/HM
+Treasury feed URLs, a worked 7-pillar mapping, 6 headline-event candidates). `config/jurisdictions/
+uk.json` registers 4 regulators -- FCA, Bank of England (PRA folded in, matching how it actually
+publishes), HM Treasury, and a zero-feed `legislation_gov_uk` citation-only entry (the
+`legislation.gov.uk` National Archives domain, added the same way HK registers its zero-feed
+Gazette/LegCo/FSTB entries) -- 11 parallel research passes seeded all 7 pillar states, `trajectory.
+json` (7 entries), 12 new shared-glossary terms, and a 6-document library, all independently
+citation-checked. The core finding threaded through every UK pillar: the Financial Services and
+Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102) was made 4 Feb 2026 and its final
+implementing rules (FCA policy statements PS26/9-PS26/13, Bank of England's systemic-stablecoin
+Code of Practice) were finalised 22-30 Jun 2026, but the regime itself does not take legal effect
+until 25 October 2027 -- every card and pillar state states this plainly rather than implying the
+new perimeter is live.
+
+**The workflow's own final-check again caught real gaps, several more substantial than P6-P8's --
+all closed directly by the orchestrating session before this counted as done, none papered over:**
+
+1. One of six planned card drafts failed outright mid-run (`[draft:FCA publishes final policy
+   statement pac] failed: Prompt is too long`) -- the workflow's own per-stage prompt constructor
+   passed too much accumulated context into that one draft call. Re-drafted directly via a fresh,
+   lean, self-contained `Agent` call (not a re-run of the whole workflow) against the same real
+   queued ledger item; independently re-verified afterward like every other card.
+2. `content/uk/orientation.json` was never written at all -- `pipeline.site.generate` treats it as
+   mandatory per-jurisdiction seed content and crashed outright (`SiteDataError`) rather than
+   degrading gracefully, meaning the UK site could not build at all and the only artifact on disk
+   was a stale "coming soon" placeholder. Written directly by the orchestrating session (795 words,
+   same who-regulates-what / already-in-force / coming-next structure as HK's, grounded in the
+   now-verified pillar states -- the orientation schema requires no citations of its own, being
+   free prose, but every claim in it traces to already-fact-checked pillar-state content).
+3. `config/jurisdictions/uk.json`'s `official_domains` never included `legislation.gov.uk` --
+   which forced two cards citing primary UK legislation (`FSMA 2000 (Cryptoassets) Regulations
+   2026`, `Bank of England`'s statutory basis) to `unverified` by the deterministic gate's
+   fail-closed domain check, even though their citations were independently confirmed genuine.
+   Fixed by registering `legislation.gov.uk` as its own zero-feed regulator entry rather than
+   folding it into an existing regulator's domain list, matching the HK Gazette convention; caught
+   a second-order bug from this fix's first attempt (id `"legislation"` collided with the plain
+   English word already used in `pipeline/site/data.py`'s seal-vocabulary prose, tripping
+   `test_jurisdiction_agnostic.py`'s generated banned-literals scan) and renamed the id to
+   `legislation_gov_uk`.
+4. **The five originally-drafted cards' filenames/ids never matched any real ledger `item_hash`**,
+   because the workflow drafted cards from headline-event research before the live watcher had
+   ever run, so `promote_drafted`/`promote_verified` (which key strictly off `content/uk/cards/
+   <item_hash>.json` existing) found zero matches -- by the ledger's own record, UK had never
+   produced a single card, even though five real ones existed on disk. Reconciled by hand,
+   evidence-based, not fabricated: for the 2 events the live watcher's real first run genuinely
+   discovered (the tokenisation Call for Input, the BoE stablecoin policy statement), matched by
+   citation URL and exact publish date and renamed the card files to those real `item_hash`es. For
+   the 3 events that had already rolled off the live feeds' retention window (Oct 2025 and Feb 2026
+   items, 5-9 months old by the time the watcher first ran in Jul 2026), used
+   `pipeline.ci.seed_backfill` -- the exact tool this project already built for pre-watcher
+   historical seeding -- with descriptors built from each card's own already-cited primary URLs and
+   dates, then renamed those card files to the resulting real hashes too. All six `content/uk/
+   cards/*.json` ids now equal their governing ledger `item_hash`, exactly mirroring how HK's own
+   5 published ledger items work.
+5. Two cards (the SI card, the BoE stablecoin card) were sitting at gate-forced `status:
+   "unverified"` purely from finding #3 above, not from any real content problem -- confirmed by
+   independently re-running a full adversarial verifier pass against each (fresh context, real
+   re-fetch of every citation) after the domain fix, rather than hand-flipping their status. One
+   verifier pass also independently re-examined the BoE card's previously-flagged "Recognition
+   order: DSA service provider" quote (worried it read like a paraphrase of two separate clauses)
+   by re-fetching the actual Schedule 6 text three separate ways -- confirmed it is a genuine
+   verbatim section heading, not a fabrication, while separately catching and fixing an unrelated
+   misattribution (the summary had conflated three separate FCA policy statements' distinct scopes
+   into one). The sixth (newly re-drafted) card's own verifier pass separately caught and fixed an
+   unsupported "(SI 2026/102)" parenthetical, replacing it with an added fourth citation to
+   `legislation.gov.uk` and the primary source's own exact citation format ("2026 No. 102"). Two of
+   three verifier sub-agents hit a genuine worktree infrastructure issue (isolated at a stale,
+   pre-P6 commit with no `content/uk/` tree and an incompatible `card.json` schema) and could not
+   write their completed verdict back themselves -- their adversarial analysis was read in full and
+   applied directly by the orchestrating session rather than discarded or re-run from scratch, since
+   the analysis itself (independent re-fetches, no edits needed beyond the status field) was
+   already sound.
+6. A shared glossary content generalization (broadening `stablecoin.json`'s formal definition from
+   HK-only to cross-jurisdiction) had been marked `status: "corrected"` -- the wrong status for a
+   scope expansion rather than a retraction of a wrong claim (`data/corrections.json` does not even
+   exist yet anywhere in this repo; `status: "corrected"` is meant for CLAUDE.md rule 6's public
+   retraction workflow). Reset to `"unverified"`, matching a freshly-written entry's normal status.
+7. Six `first_used_card_id` glossary fields were left as literal `"PENDING-no-uk-card-yet"`
+   placeholders from the mid-run card-draft failure (finding #1) -- one batch of 6 was fixed by the
+   re-draft agent itself; a second, previously-unnoticed batch of 5 (`digit`, `boe`,
+   `digital-securities-sandbox`, `systemic-stablecoin`, `hm-treasury`) was found by an explicit
+   repo-wide grep and fixed directly, each pointed at whichever real card's `published_date` is
+   chronologically earliest among the cards that actually use that term.
+8. `content/uk/trajectory.json`'s 7 entries all carried `model: "claude-sonnet-5"` -- an internal
+   model-version identifier, banned by `validate_content` per the 2026-07-09 correction in
+   IMPROVEMENT_BACKLOG.md -- rather than the required human-readable `"Claude (Anthropic)"`. Fixed
+   directly across all 7 entries.
+9. `.gitignore`'s ETag-cache exclusion (`/data/cache/`) was still anchored to the pre-P6 flat path
+   and silently stopped covering the P6 registry-model's real per-jurisdiction path
+   (`data/{jid}/cache/`), which would have let `data/uk/cache/etags.json` get committed -- the exact
+   idempotency-breaking outcome the original comment explains the exclusion exists to prevent.
+   Generalized to `/data/*/cache/`, same "operative layer left stale by a structural migration"
+   lesson already logged from P6.
+
+After all nine fixes: all 6 UK cards genuinely `"verified"` end to end (real deterministic gate
+re-run against all six after every fix, zero downgrades); `promote_drafted`/`promote_verified` ran
+for real and promoted exactly 6 ledger items to `published` with matching `card_id` (137 items
+remain genuinely `queued`, including 3 real relevant items the live watcher found that were never
+part of this seed batch -- correctly left for a future run, not fabricated as processed);
+`pipeline.site.generate` produces real `_site/uk/index.html` and `_site/uk/timeline.html` content
+(verified by direct grep for the absence of "coming soon" and the presence of the real orientation
+text); `config/site.json`'s `uk` entry now reads `status.watcher: "live"`, `status.seeded: true`,
+`status.analyst_verifier: "planned"` (deliberately left planned -- flipping it live is a separate,
+explicit owner decision per `docs/analyst-runbook.md`'s own rewritten Step 0, not inferred from a
+successful seed pass); `.github/workflows/watch.yml`'s matrix is now `[hk, uk]`; `docs/
+analyst-runbook.md`'s Step 0 is rewritten into a real per-jurisdiction registry loop (4
+cards/jurisdiction, 10 cards/firing caps) that explicitly refuses to process any jurisdiction not
+marked `analyst_verifier: "live"`, regardless of queue size.
+
+**Verification, run fresh by the orchestrating session, after all nine fixes above:** full pytest
+suite 439/439 passing; `pipeline.ci.validate_content` 31/31 files OK; `pipeline.ci.
+apply_verification_gate --jurisdiction uk` re-run clean (zero downgrades) as the final check before
+promotion; a full `pipeline.site.generate` rebuild from a clean `_site/` directory succeeded and was
+spot-checked; `tests/test_jurisdiction_agnostic.py` green including the newly-registered UK
+regulator ids and domains. Not yet done, logged honestly rather than overclaimed: `uk`'s
+`analyst_verifier` stays `"planned"` (no live CCR trigger touches UK yet -- that is a deliberate,
+separate owner decision, not an oversight); the P9 workflow's background sub-agent worktrees
+(`.claude/worktrees/agent-*`) and their local git branches were manually cleaned up after extracting
+their real output, since neither is itself part of the repo's tracked history.
 
 ## PM checkpoints (Fable)
 

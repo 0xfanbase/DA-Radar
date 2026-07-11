@@ -1,0 +1,78 @@
+{
+  "documents": [
+    {
+      "item_hash": "07af03cf06a4c3d457c1ae7ce7d149a02d8b8562338e3588f2e813c38e7323f7",
+      "link": "https://www.bankofengland.co.uk/prudential-regulation/letter/2026/innovations-in-the-use-of-deposits-emoney-and-regulated-stablecoins",
+      "pillar": [
+        "stablecoins"
+      ],
+      "published_at": "2026-05-18T08:00:00Z",
+      "regulator": "Bank of England",
+      "title": "Letter from David Bailey, Charlotte Gerken and Rebecca Jackson on reaffirming the PRA's position and clarifying expectations on innovations in the use of deposits, e-money and stablecoins",
+      "type": "prudential_regulation_publications"
+    },
+    {
+      "item_hash": "0bac7436bc81fc99de846abab44b2bccd5062100baf62cdda5143a0424012d05",
+      "link": "https://www.bankofengland.co.uk/news/2026/may/fca-and-boe-set-out-shared-vision-for-tokenisation-in-uk-wholesale-markets",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2026-05-18T08:06:58Z",
+      "regulator": "Bank of England",
+      "title": "FCA and Bank of England set out shared vision for tokenisation in UK wholesale markets",
+      "type": "news"
+    },
+    {
+      "item_hash": "89027aca00488f2b404db08b468eb197985e9c1f6e4d9292382e08cd26d19ac0",
+      "link": "https://www.fca.org.uk/news/press-releases/fca-sets-landmark-crypto-rules-cement-uks-place-global-hub",
+      "pillar": [
+        "aml_cft_enforcement",
+        "dealing_custody_advisory",
+        "exchanges_vatp",
+        "stablecoins"
+      ],
+      "published_at": null,
+      "regulator": "FCA",
+      "title": "FCA sets landmark crypto rules to cement the UK’s place as a global hub",
+      "type": "news"
+    },
+    {
+      "item_hash": "c96db0f72765f17fd216dcb3b23c901be93c4f6c3ae3812370b5d5a28f1c4075",
+      "link": "https://www.bankofengland.co.uk/prudential-regulation/letter/2026/tokenised-assets-stablecoins-and-other-cryptoasset-exposures",
+      "pillar": [
+        "banking_money",
+        "stablecoins",
+        "tokenization_rwa"
+      ],
+      "published_at": "2026-05-18T08:00:00Z",
+      "regulator": "Bank of England",
+      "title": "Letter from David Bailey, Charlotte Gerken and Rebecca Jackson on the prudential treatment of tokenised assets, stablecoins, and other cryptoasset exposures",
+      "type": "prudential_regulation_publications"
+    },
+    {
+      "item_hash": "cc6093a7b6b893511f35bda7f4e9eafff25a7b50d07a4c18f0c7f3c6ab73eebc",
+      "link": "https://www.fca.org.uk/news/statements/fca-and-bank-england-set-out-approach-joint-regulation-systemic-stablecoin-issuers",
+      "pillar": [
+        "stablecoins"
+      ],
+      "published_at": null,
+      "regulator": "FCA",
+      "title": "FCA and the Bank of England set out approach to joint regulation of systemic stablecoin issuers",
+      "type": "news"
+    },
+    {
+      "item_hash": "db361da4e0d4ce24e6039e760ce7105d0910b296ed50ea75c8cf9fcbf6d53e4c",
+      "link": "https://www.bankofengland.co.uk/news/2026/june/boe-launches-policy-statement-and-draft-rules-on-regulating-systemic-stablecoins",
+      "pillar": [
+        "stablecoins"
+      ],
+      "published_at": "2026-06-22T07:30:00Z",
+      "regulator": "Bank of England",
+      "title": "Bank of England launches policy statement and draft rules on regulating systemic stablecoins",
+      "type": "news"
+    }
+  ],
+  "generated_at": "2026-07-11T17:59:17Z",
+  "jurisdiction_id": "uk",
+  "schema_version": 1
+}

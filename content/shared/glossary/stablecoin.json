@@ -1,16 +1,18 @@
 {
   "first_used_card_id": "544d29ba08c14f8b692356fc7f11a36eabbad05f23c2ed7ea47ad45f730a726e",
-  "formal_definition": "Under Hong Kong's Stablecoins Ordinance (Cap. 656), a fiat-referenced stablecoin whose value is pegged to one or more official currencies; issuing one in or pegged to the Hong Kong dollar requires a licence from the Hong Kong Monetary Authority.",
-  "generated_at": "2026-07-09T07:03:38Z",
+  "formal_definition": "A fiat-referenced token whose value is pegged to one or more official currencies; a genuinely regime-independent concept regulated differently in each jurisdiction covered by this radar. In Hong Kong, a fiat-referenced stablecoin issued in or pegged to the Hong Kong dollar requires a licence from the Hong Kong Monetary Authority under the Stablecoins Ordinance (Cap. 656). In the UK, issuing a 'qualifying stablecoin' is a distinct FCA-regulated activity under the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102) and FCA Policy Statement PS26/10, while a sterling stablecoin HM Treasury recognises as systemic to UK payments instead falls to the Bank of England as a 'systemic stablecoin' under Part 5 of the Banking Act 2009. This entry generalises a formal_definition that, before the UK's registry entry went live, was written purely in Hong Kong Stablecoins Ordinance terms; jurisdiction-specific mechanics belong in each jurisdiction's own 'qualifying-stablecoin' / 'systemic-stablecoin' style entries, not here.",
+  "generated_at": "2026-07-11T17:15:00Z",
   "id": "stablecoin",
   "jurisdictions": [
     "global"
   ],
-  "model": "not recorded (pre-provenance content)",
-  "plain_definition": "A type of cryptocurrency designed to hold a stable value, usually by being backed by reserve assets (such as cash or government bonds) and pegged to a reference currency such as the US or Hong Kong dollar, rather than floating freely in price like bitcoin.",
+  "model": "Claude (Anthropic)",
+  "plain_definition": "A type of cryptocurrency designed to hold a stable value, usually by being backed by reserve assets (such as cash or government bonds) and pegged to a reference currency such as the US dollar, the Hong Kong dollar, or the pound sterling, rather than floating freely in price like bitcoin.",
   "related_terms": [
     "stablecoins-ordinance",
-    "hkma"
+    "hkma",
+    "qualifying-stablecoin",
+    "systemic-stablecoin"
   ],
   "schema_version": 2,
   "status": "unverified",

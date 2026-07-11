@@ -1,0 +1,37 @@
+{
+  "citations": [
+    {
+      "quote": "come into force on 25th October 2027",
+      "url": "https://www.legislation.gov.uk/uksi/2026/102/regulation/1/made"
+    },
+    {
+      "quote": "The operation of a qualifying cryptoasset trading platform is a specified kind of activity",
+      "url": "https://www.legislation.gov.uk/uksi/2026/102/made"
+    },
+    {
+      "quote": "Firm and proportionate rules will come into force from 2027",
+      "url": "https://www.gov.uk/government/news/new-crypto-rules-to-unlock-growth-and-protect-customers"
+    }
+  ],
+  "generated_at": "2026-07-11T09:00:00Z",
+  "id": "3925ab57c62df4d68515f3cd8610e139c6e38f87c942c38b2238eed5565d62b1",
+  "jurisdiction_id": "uk",
+  "key_dates": {
+    "effective": "2027-10-25",
+    "milestone": "2026-02-04"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "exchanges_vatp",
+    "dealing_custody_advisory",
+    "stablecoins"
+  ],
+  "published_date": "2026-02-04",
+  "regulator": "HM Treasury",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "HM Treasury made the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102) on 4 February 2026. Part 3 of the instrument inserts a new chapter into the Regulated Activities Order 2001, adding activities that will require Financial Conduct Authority authorisation: operating a qualifying cryptoasset trading platform, safeguarding qualifying cryptoassets, dealing as principal, dealing as agent, arranging deals in qualifying cryptoassets, qualifying cryptoasset staking, and issuing a qualifying stablecoin. Separately, Part 2 of the instrument creates a designated activities regime, not itself requiring FCA authorisation, covering offers of qualifying cryptoassets to the public and market abuse in qualifying cryptoassets; these will instead be subject to FCA designated activity rules, with public offers additionally subject to a statutory prohibition unless an exception applies. The regulations themselves fix 25 October 2027 as the day these activities come into force. From 21 days after making, the FCA may begin preparatory work such as making rules and processing applications, but no cryptoasset business needs authorisation for these activities until that October 2027 commencement date arrives.",
+  "title": "Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 made, creating new FCA-regulated cryptoasset activities from 25 October 2027",
+  "type": "ordinance",
+  "why_it_matters": "This is the legislation that will bring UK cryptoasset trading platforms, custodians, dealers, arrangers, staking providers and stablecoin issuers into Financial Conduct Authority authorisation for the first time, while separately bringing public offers of qualifying cryptoassets and cryptoasset market abuse under a designated activities regime that does not itself require FCA authorisation. The regulations themselves fix 25 October 2027 as the date these activities become regulated, so this instrument being made does not by itself change any cryptoasset business's regulatory position before that date."
+}

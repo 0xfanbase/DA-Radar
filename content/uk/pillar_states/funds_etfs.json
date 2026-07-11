@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "pillar": "funds_etfs",
+  "status_seal": "in_force",
+  "regulator": "FCA",
+  "instruments": [
+    "FCA Policy Statement PS20/10: Prohibiting the sale to retail clients of investment products that reference cryptoassets (in force 6 Jan 2021)",
+    "FCA Consultation Paper CP25/16: Quarterly Consultation Paper No. 48 (proposal to lift the retail ETN ban)",
+    "FCA Handbook Notice 132 (August 2025) -- rule instrument giving effect to retail cETN access",
+    "FCA Consultation Paper CP26/17: Quarterly Consultation Paper No. 52 (proposed COLL amendment for UCITS/NURS cETN exposure)",
+    "FCA Collective Investment Schemes sourcebook (COLL) -- subject of the proposed 10% cETN limit"
+  ],
+  "standing_summary": "Funds and ETFs is FCA territory and, unusually among the UK pillars in this radar, already has a fully in-force 2025 change rather than a pending 2026 Regulations item. The FCA's original ban on retail access to cryptoasset-referencing investment products took effect 6 January 2021 under PS20/10, prohibiting the sale, marketing and distribution to retail clients of both derivatives (CFDs, options and futures) referencing unregulated transferable cryptoassets and cryptoasset exchange traded notes (cETNs); retail consumers who already held such products could keep, but not add to, their positions. The FCA proposed partially reversing this in CP25/16 (Quarterly Consultation Paper No. 48, comments due June-July 2025) and confirmed via its 6 June 2025 press release an intention to reopen retail access specifically to cETNs -- not to derivatives. The rule change was made in Handbook Notice 132 (August 2025) and took effect 8 October 2025: retail consumers can now buy cETNs, but only when the product is admitted to the FCA's Official List and to trading on a UK Recognised Investment Exchange, with FCA-approved prospectus, and only from firms with appropriate permissions that have notified their FCA supervisory contact. The FCA classified cETNs as Restricted Mass Market Investments (RMMIs), so the financial-promotion rules for that category apply in full: risk warnings, a ban on inappropriate investment incentives, robust appropriateness assessments, and Consumer Duty obligations (fair value, target-market identification) on firms offering them; investors have no Financial Services Compensation Scheme or Financial Ombudsman Service recourse. The FCA's retail derivatives ban (CFDs, options, futures referencing unregulated transferable cryptoassets) was expressly retained and remains in force unchanged -- 8 October 2025 lifted the ETN leg of PS20/10 only. Separately, on 5 June 2026 the FCA published CP26/17 (Quarterly Consultation Paper No. 52), proposing to amend the Collective Investment Schemes sourcebook (COLL) so that UCITS and certain non-UCITS retail schemes (NURS) may hold cETNs directly, capped at 10% of scheme property, citing cETNs' 'speculative nature'; qualified investor schemes would face no such cap. This is a consultation, not a rule -- it closes 13 July 2026 and no COLL amendment has been made. Direct fund-level holding of cETNs by UCITS/NURS remains outside current rules until (and unless) CP26/17 is finalised.",
+  "last_changed": "2025-10-08",
+  "key_links": [
+    {
+      "label": "FCA: PS20/10 -- Prohibiting the sale to retail clients of investment products that reference cryptoassets",
+      "url": "https://www.fca.org.uk/publications/policy-statements/ps20-10-prohibiting-sale-retail-clients-investment-products-reference-cryptoassets"
+    },
+    {
+      "label": "FCA press release: FCA bans the sale of crypto-derivatives to retail consumers (6 Jan 2021)",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-bans-sale-crypto-derivatives-retail-consumers"
+    },
+    {
+      "label": "FCA: CP25/16 Quarterly consultation paper No. 48 (proposal to lift cETN retail ban)",
+      "url": "https://www.fca.org.uk/publications/consultation-papers/cp25-16-quarterly-consultation-paper-no-48"
+    },
+    {
+      "label": "FCA press release: FCA to lift ban on crypto ETNs to support UK growth and competitiveness (6 Jun 2025)",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-lift-ban-crypto-exchange-traded-notes"
+    },
+    {
+      "label": "FCA Handbook Notice No. 132 (August 2025)",
+      "url": "https://www.fca.org.uk/publication/handbook/handbook-notice-132.pdf"
+    },
+    {
+      "label": "FCA press release: FCA opens retail access to crypto ETNs (8 Oct 2025)",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-opens-retail-access-crypto-etns"
+    },
+    {
+      "label": "FCA: Information for firms looking to offer crypto exchange traded notes",
+      "url": "https://www.fca.org.uk/news/statements/information-firms-offer-crypto-exchange-traded-notes"
+    },
+    {
+      "label": "FCA: CP26/17 Quarterly consultation paper No. 52 (5 Jun 2026, incl. UCITS/NURS cETN proposal)",
+      "url": "https://www.fca.org.uk/publications/consultation-papers/cp26-17-quarterly-consultation-paper-no-52"
+    }
+  ],
+  "open_items": [
+    "CP26/17's full PDF text (the chapter setting out the exact proposed COLL rule wording, and any qualified-investor-scheme carve-out drafting) could not be machine-extracted during this research (the FCA's PDF returned encoded/fragmented text on fetch); the 10% figure and QIS treatment above are corroborated via the FCA's own consultation-paper landing page plus multiple independent secondary summaries, but the precise COLL rule text should be re-confirmed directly against the PDF before being treated as final drafting.",
+    "CP26/17 closes 13 July 2026 for the chapters covering this proposal; no policy statement or made COLL rule had been published as of this research, so whether, and in what form, the 10% cETN limit is adopted is not yet known.",
+    "Handbook Notice 132's own PDF text (the specific COBS/PROD rule instrument implementing the 8 October 2025 change) also could not be machine-extracted; the RMMI classification, RIE-listing condition, and no-FSCS/no-FOS treatment above are corroborated across the FCA's own press release and statement pages rather than the instrument text itself.",
+    "This pillar state does not cover HKEX-style spot virtual-asset ETFs, since the UK has no equivalent spot-crypto-ETF listing regime; UK retail exposure to spot cryptoassets is currently only available via cETNs (debt securities tracking crypto performance), not direct-holding exchange-traded funds.",
+    "Whether any UCITS or NURS scheme has indicated an intention to add cETN exposure ahead of a possible CP26/17 rule change was not confirmed by a primary source found during this research."
+  ],
+  "generated_at": "2026-07-11T17:02:48Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}
