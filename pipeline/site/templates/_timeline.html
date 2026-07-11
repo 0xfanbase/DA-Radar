@@ -1,5 +1,6 @@
 {% macro timeline_ribbon(events, trajectory, id_suffix, limit=none) %}
 {% set shown = events[-limit:] if limit else events %}
+<a class="skip-timeline-link" href="#timeline-ribbon-end-{{ id_suffix }}">Skip timeline ribbon</a>
 <section class="timeline-ribbon" data-timeline-root>
   <div class="timeline-track" role="list" aria-label="Regulatory timeline, oldest to newest">
     {% for e in shown %}
@@ -8,7 +9,8 @@
        href="{{ e.url }}"
        data-pillar-slot="{{ e.pillar_color_slot }}"
        data-date="{{ e.date }}"
-       data-source="{{ e.source }}">
+       data-source="{{ e.source }}"
+       {% if e.status %}data-status="{{ e.status }}"{% endif %}>
       <span class="timeline-dot" aria-hidden="true"></span>
       <span class="timeline-marker-date">{{ e.date }}</span>
       <span class="timeline-marker-label">{{ e.title }}</span>
@@ -27,11 +29,13 @@
     <summary>View as a list (no JavaScript needed)</summary>
     <ul>
       {% for e in shown %}
-      <li><span class="mono">{{ e.date }}</span> &mdash; <a href="{{ e.url }}">{{ e.title }}</a>{% if e.pillar_names %} ({{ e.pillar_names | join(", ") }}){% endif %}</li>
+      <li><span class="mono">{{ e.date }}</span> &mdash; <a href="{{ e.url }}">{{ e.title }}</a>{% if e.pillar_names %} ({{ e.pillar_names | join(", ") }}){% endif %}{% if e.status and e.status not in ["verified", "corrected"] %} <span class="badge-unverified">Unverified</span>{% endif %}</li>
       {% else %}
       <li>No dated items yet.</li>
       {% endfor %}
     </ul>
   </details>
 </section>
+<p class="meta-line timeline-caption">Only dated items appear on this timeline. Undated documents are listed in the <a href="documents.html">Document Library</a>.</p>
+<span id="timeline-ribbon-end-{{ id_suffix }}" tabindex="-1"></span>
 {% endmacro %}

@@ -5,7 +5,10 @@
     "event": "Target introduction of a bill to the Legislative Council to establish AMLO-based licensing regimes for virtual asset dealing, custodian, advisory, and management services",
     "pillar": "dealing_custody_advisory",
     "source_url": "https://www.fstb.gov.hk/fsb/en/publication/consult/doc/VAdealing_consultation_conclusion_e.pdf",
-    "confidence": "indicated"
+    "confidence": "indicated",
+    "generated_at": "2026-07-09T07:03:38Z",
+    "model": "not recorded (pre-provenance content)",
+    "status": "unverified"
   },
   {
     "schema_version": 1,
@@ -13,7 +16,10 @@
     "event": "EnsembleTX pilot phase (tokenised-deposit settlement of tokenised money-market-fund transactions under Project Ensemble) operates throughout the year",
     "pillar": "tokenization_rwa",
     "source_url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/11/20251113-3/",
-    "confidence": "announced"
+    "confidence": "announced",
+    "generated_at": "2026-07-09T07:03:38Z",
+    "model": "not recorded (pre-provenance content)",
+    "status": "unverified"
   },
   {
     "schema_version": 1,
@@ -21,7 +27,10 @@
     "event": "HKMA's further preparatory work following the e-HKD Pilot Programme, ahead of any decision on a possible future retail e-HKD, targeted for completion",
     "pillar": "banking_money",
     "source_url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/10/20251028-4/",
-    "confidence": "announced"
+    "confidence": "announced",
+    "generated_at": "2026-07-09T07:03:38Z",
+    "model": "not recorded (pre-provenance content)",
+    "status": "unverified"
   },
   {
     "schema_version": 1,
@@ -29,6 +38,9 @@
     "event": "The two newly-licensed stablecoin issuers (Anchorpoint Financial Limited and HSBC) intend to complete preparation and launch business, per their own business plans",
     "pillar": "stablecoins",
     "source_url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260410-4/",
-    "confidence": "indicated"
+    "confidence": "indicated",
+    "generated_at": "2026-07-09T07:03:38Z",
+    "model": "not recorded (pre-provenance content)",
+    "status": "unverified"
   }
 ]

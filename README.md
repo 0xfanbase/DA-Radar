@@ -14,9 +14,9 @@ portable; other jurisdictions may follow.
 
 ## Status
 
-Currently in **Phase 1 (Chassis)**: the regulatory-feed watcher, ledger, and data schemas. No
-AI-generated content, seed content, or public site exists yet. See `PROGRESS.md` for exact
-status and `CLAUDE.md` for the project's governing rules and architecture.
+The site is live at **https://0xfanbase.github.io/DA-Radar/**. See `PROGRESS.md` for the current
+phase table and exact build status, and `CLAUDE.md` for the project's governing rules and
+architecture.
 
 ## License
 

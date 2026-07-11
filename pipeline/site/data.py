@@ -12,6 +12,19 @@ import json
 import os
 
 
+class SiteDataError(Exception):
+    """Raised when content that a full build always expects to exist --
+    content/start_here.json, content/trajectory.json, or a
+    content/pillar_states/*.json file for every pillar in
+    config/jurisdiction.json -- is missing or empty. Post-Phase-3 seed
+    content guarantees all of these are present, so a missing one is a
+    build error to fail loudly on, not a legitimate pre-seed state to
+    degrade gracefully around. Also raised when a status_seal or pillar id
+    referenced in content has no matching entry in config/jurisdiction.json
+    -- rendering the raw internal id to the public site is a worse failure
+    mode than refusing to build."""
+
+
 def _load_json(path: str, default=None):
     if not os.path.exists(path):
         return default
@@ -23,11 +36,19 @@ def _load_json_glob(pattern: str) -> list:
     return [_load_json(path) for path in sorted(glob.glob(pattern))]
 
 
+def _load_json_glob_with_paths(pattern: str) -> list:
+    return [(path, _load_json(path)) for path in sorted(glob.glob(pattern))]
+
+
 def build_timeline_events(cards: list, documents: list, pillar_index: dict) -> list:
     """Merges cards and documents into one ascending-sorted (oldest first,
     left-to-right reading) list of {date, title, url, pillar_names,
     pillar_color_slot, source, status} dicts for the interactive
     timeline ribbon.
+
+    pillar_color_slot is -1 (never 0, a real pillar's slot) for an item
+    with no pillar classification -- 0 would fabricate membership in
+    whichever pillar happens to be configured first.
 
     Documents with no published_at are excluded -- a timeline axis has no
     honest way to place an undated point; they still appear, dated or
@@ -40,8 +61,15 @@ def build_timeline_events(cards: list, documents: list, pillar_index: dict) -> l
     """
     events = []
     for card in cards:
+        if not card.get("citations"):
+            raise SiteDataError(
+                f"content/cards/{card.get('id', '<unknown id>')}.json has an empty or "
+                "missing citations array -- every published card must cite at least one "
+                "primary source; a card with none must fail the build loudly, not crash "
+                "it with an unhandled IndexError or render silently uncited."
+            )
         pillars = card.get("pillar") or []
-        slot = pillar_index.get(pillars[0], 0) if pillars else 0
+        slot = pillar_index.get(pillars[0], -1) if pillars else -1
         events.append(
             {
                 "date": card["published_date"],
@@ -58,7 +86,7 @@ def build_timeline_events(cards: list, documents: list, pillar_index: dict) -> l
         if not published_at:
             continue
         pillars = doc.get("pillar") or []
-        slot = pillar_index.get(pillars[0], 0) if pillars else 0
+        slot = pillar_index.get(pillars[0], -1) if pillars else -1
         events.append(
             {
                 "date": published_at[:10],
@@ -83,35 +111,77 @@ def load_site_data(repo_root: str) -> dict:
     # categorical color-by-pillar treatment jurisdiction-portable.
     pillar_index = {p["id"]: i for i, p in enumerate(config.get("pillars", []))}
 
-    pillar_states = _load_json_glob(os.path.join(repo_root, "content", "pillar_states", "*.json"))
-    cards = _load_json_glob(os.path.join(repo_root, "content", "cards", "*.json"))
-    glossary_terms = _load_json_glob(os.path.join(repo_root, "content", "glossary", "*.json"))
-    trajectory = _load_json(os.path.join(repo_root, "content", "trajectory.json"), [])
-    document_library = _load_json(
-        os.path.join(repo_root, "content", "document_library.json"), {"documents": []}
+    pillar_state_paths = _load_json_glob_with_paths(
+        os.path.join(repo_root, "content", "pillar_states", "*.json")
     )
-    start_here = _load_json(os.path.join(repo_root, "content", "start_here.json"))
+    pillar_states = [data for _, data in pillar_state_paths]
+    card_paths = _load_json_glob_with_paths(os.path.join(repo_root, "content", "cards", "*.json"))
+    cards = [data for _, data in card_paths]
+    card_source_by_id = {data["id"]: path for path, data in card_paths if data}
+    glossary_terms = _load_json_glob(os.path.join(repo_root, "content", "glossary", "*.json"))
+    trajectory_path = os.path.join(repo_root, "content", "trajectory.json")
+    trajectory = _load_json(trajectory_path, [])
+    document_library_path = os.path.join(repo_root, "content", "document_library.json")
+    document_library = _load_json(document_library_path, {"documents": []})
+    start_here_path = os.path.join(repo_root, "content", "start_here.json")
+    start_here = _load_json(start_here_path)
     ledger = _load_json(os.path.join(repo_root, "data", "ledger.json"), {"items": {}})
     audit_latest = _load_json(os.path.join(repo_root, "data", "audit", "latest.json"))
     corrections = _load_json(os.path.join(repo_root, "data", "corrections.json"), [])
 
+    if not start_here:
+        raise SiteDataError(
+            f"{start_here_path} is missing or empty -- content/start_here.json is "
+            "always-expected seed content post-Phase-3; a build cannot proceed without it."
+        )
+    if not os.path.exists(trajectory_path):
+        raise SiteDataError(
+            f"{trajectory_path} is missing -- content/trajectory.json is always-expected "
+            "seed content post-Phase-3 (an empty array is a legitimate value, a missing "
+            "file is not); a build cannot proceed without it."
+        )
+
     # Pillar order follows config/jurisdiction.json, not filesystem glob order.
     pillar_states_by_id = {p["pillar"]: p for p in pillar_states if p}
-    ordered_pillar_states = [
-        pillar_states_by_id[p["id"]] for p in config.get("pillars", []) if p["id"] in pillar_states_by_id
-    ]
+    pillar_state_path_by_id = {data["pillar"]: path for path, data in pillar_state_paths if data}
+    configured_pillar_ids = [p["id"] for p in config.get("pillars", [])]
+    missing_pillar_ids = [pid for pid in configured_pillar_ids if pid not in pillar_states_by_id]
+    if missing_pillar_ids:
+        raise SiteDataError(
+            "content/pillar_states/ is missing a state file for pillar id(s): "
+            f"{', '.join(missing_pillar_ids)} -- every pillar in config/jurisdiction.json "
+            "must have a corresponding content/pillar_states/*.json post-Phase-3."
+        )
+    ordered_pillar_states = [pillar_states_by_id[pid] for pid in configured_pillar_ids]
     for state in ordered_pillar_states:
         state["pillar_name"] = pillar_names.get(state["pillar"], state["pillar"])
-        state["status_label"] = seal_labels.get(state["status_seal"], state["status_seal"])
+        if state["status_seal"] not in seal_labels:
+            raise SiteDataError(
+                f"unmapped status_seal id {state['status_seal']!r} in "
+                f"{pillar_state_path_by_id[state['pillar']]} -- add it to seal_vocabulary "
+                "in config/jurisdiction.json or fix the pillar state file."
+            )
+        state["status_label"] = seal_labels[state["status_seal"]]
 
     cards = [c for c in cards if c]
     for card in cards:
-        card["pillar_names"] = [pillar_names.get(p, p) for p in card.get("pillar", [])]
+        unmapped = [p for p in card.get("pillar", []) if p not in pillar_names]
+        if unmapped:
+            raise SiteDataError(
+                f"unmapped pillar id(s) {unmapped} in {card_source_by_id[card['id']]} -- "
+                "add them to pillars in config/jurisdiction.json or fix the card file."
+            )
+        card["pillar_names"] = [pillar_names[p] for p in card.get("pillar", [])]
     cards.sort(key=lambda c: c["published_date"], reverse=True)
 
     trajectory = sorted(trajectory or [], key=lambda t: t["date_or_window"])
     for entry in trajectory:
-        entry["pillar_name"] = pillar_names.get(entry["pillar"], entry["pillar"])
+        if entry["pillar"] not in pillar_names:
+            raise SiteDataError(
+                f"unmapped pillar id {entry['pillar']!r} in {trajectory_path} -- add it to "
+                "pillars in config/jurisdiction.json or fix the trajectory entry."
+            )
+        entry["pillar_name"] = pillar_names[entry["pillar"]]
 
     glossary_terms = sorted((g for g in glossary_terms if g), key=lambda g: g["term"].lower())
 
@@ -121,18 +191,29 @@ def load_site_data(repo_root: str) -> dict:
         reverse=True,
     )
     for doc in documents:
-        doc["pillar_names"] = [pillar_names.get(p, p) for p in doc.get("pillar", [])]
+        unmapped = [p for p in doc.get("pillar", []) if p not in pillar_names]
+        if unmapped:
+            raise SiteDataError(
+                f"unmapped pillar id(s) {unmapped} in {document_library_path} -- add them to "
+                "pillars in config/jurisdiction.json or fix the document entry."
+            )
+        doc["pillar_names"] = [pillar_names[p] for p in doc.get("pillar", [])]
 
     timeline_events = build_timeline_events(cards, documents, pillar_index)
 
     # Join each correction to its card for a readable title/link on the
-    # Method page -- falls back to the bare card_id (never crashes) if no
+    # Method page -- falls back to a reader-appropriate placeholder (never
+    # crashes, and never renders the raw 64-char card_id hash -- this page's
+    # entire purpose is making corrections legible, CLAUDE.md rule 6) if no
     # matching card is found, e.g. a card that was later removed.
     cards_by_id = {c["id"]: c for c in cards}
     corrections = sorted((corrections or []), key=lambda r: r["corrected_at"], reverse=True)
     for record in corrections:
         matching_card = cards_by_id.get(record["card_id"])
-        record["card_title"] = matching_card["title"] if matching_card else record["card_id"]
+        if matching_card:
+            record["card_title"] = matching_card["title"]
+        else:
+            record["card_title"] = f"Card {record['card_id'][:8]}… (no longer published)"
 
     ledger_items = list(ledger.get("items", {}).values())
     relevant_items = [i for i in ledger_items if i.get("relevant", True)]

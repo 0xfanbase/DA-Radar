@@ -37,10 +37,14 @@ Consolidated here so nothing sits scattered across log entries.
 
 1. ~~**Merge `claude/hk-radar-phase-1-mzlnxx` to `main`.**~~ **Done, 2026-07-09.** PR #2 (52 commits,
    Phases 2-5) merged. `main` HEAD is now `499d317`.
-2. ~~**Enable GitHub Pages.**~~ **Confirmed done, 2026-07-09.** `https://0xfanbase.github.io/DA-Radar/`
-   returns HTTP 200 with the real generated site (disclaimer text confirmed present); `deploy.yml`'s
-   run on the merge commit completed successfully.
-3. ~~**Re-enable the analyst/verifier CCR trigger**~~ (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`). **Done,
+2. ~~**Enable GitHub Pages.**~~ **Confirmed done, 2026-07-09** -- **later found to be a false positive,
+   corrected 2026-07-11.** The disclaimer-text check that supposedly confirmed the real site was live
+   was fooled by boilerplate text `README.md` happens to share verbatim with the real disclaimer;
+   Pages Source was actually still "Deploy from a branch" the whole time, silently serving GitHub's
+   Jekyll auto-render of `README.md` instead of `deploy.yml`'s Actions-based artifact. See the
+   2026-07-11 Log entry below for the full finding and fix. Genuinely fixed now: Source is confirmed
+   "GitHub Actions" and all 7 pages + static assets verified live with real content.
+3. ~~**Re-enable the analyst/verifier CCR trigger**~~. **Done,
    2026-07-09**, with the owner's explicit go-ahead in this session (not done silently, given it's a
    standing job that makes real unattended commits to `main`). `enabled: true`, next scheduled fire
    2026-07-10T03:35 UTC. This is the first genuinely live firing of this mechanism -- per Fable's
@@ -63,8 +67,14 @@ Consolidated here so nothing sits scattered across log entries.
       Phase 3's first analyst+verifier run was done manually before any trigger existed), and watch
       an actual PR get opened and either merged or rejected. Report this back to Fable PM before
       either trigger's live-activation question comes back up.
-6. Two logged anonymity flags (LICENSE "Big Fan" copyright line, non-bot initial commit) should be
-   resolved with the owner before public launch (see IMPROVEMENT_BACKLOG.md).
+6. Two logged anonymity flags remain owner decisions before public launch (see
+   IMPROVEMENT_BACKLOG.md's deviations entries): the LICENSE "Big Fan" copyright line, and non-bot
+   commits — which are structural and recurring, not just the initial commit: every PR merged
+   through GitHub's UI records the merging account (currently the owner's real account) as the
+   merge commit's identity, and `correction.yml`/`improve.yml` are PR-only/human-merge by design,
+   so this recurs on every future merge. Bot identity is guaranteed only for commits the pipeline
+   and build sessions themselves create; closing the gap requires a bot-credentialed merge path
+   (GitHub App/PAT merging as `hk-radar-bot`), which this environment does not have.
 
 ## Log
 
@@ -217,7 +227,7 @@ Test suite: 148 passing (up from 137 at the last Phase 2 checkpoint).
 headline events) lives on the feature branch (`claude/hk-radar-phase-1-mzlnxx`), not yet merged to
 `main`. The CCR analyst/verifier trigger operates against `main` (`git pull origin main`), so it
 would have fired tomorrow (2026-07-10T03:31 UTC) against the *old*, unfiltered, pre-fix state.
-Disabled the trigger (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`) as a precaution until this branch merges --
+Disabled the analyst/verifier CCR trigger as a precaution until this branch merges --
 re-enable once merged, then it will correctly see the fixed pipeline and the (much smaller,
 relevance-filtered) real queue.
 
@@ -389,7 +399,7 @@ Verified directly post-merge, not assumed:
   for the actual disclaimer text, not just a 200 status) -- GitHub Pages hosting is live. This must
   have been enabled by the owner independently at some point after the Phase 4 entry's "still 404"
   note; not something this session did.
-- Re-enabled the analyst/verifier CCR trigger (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`) -- with the owner's
+- Re-enabled the analyst/verifier CCR trigger -- with the owner's
   explicit go-ahead sought and given in this session first, since flipping on a standing job that
   makes real unattended commits to `main` is exactly the kind of action that warrants asking rather
   than assuming yesterday's Fable sign-off covers the literal switch-flip too. `enabled: true`,
@@ -399,6 +409,230 @@ Verified directly post-merge, not assumed:
 
 Branch protection on `main` remains open -- no tool available in this session can configure repo
 branch-protection settings; still an owner action.
+
+### 2026-07-11 — Real bug found: GitHub Pages was serving the Jekyll README fallback, not the site
+
+The owner reported `https://0xfanbase.github.io/DA-Radar/state-board.html` 404ing (screenshot of a
+genuine GitHub Pages 404 page). Investigated rather than assumed a caching blip:
+
+- `deploy.yml` itself was innocent: its latest run (2026-07-11T04:37 UTC, `repository_dispatch`)
+  completed green end to end. The "Build site" step's own log showed `site: wrote 7 page(s) to _site`,
+  listing `state-board.html` explicitly; the archived tar for `upload-pages-artifact` listed all 7
+  pages plus `static/`; `deploy-pages` reported `Reported success!` against
+  `https://0xfanbase.github.io/DA-Radar/`.
+- Live fetch told a different story: only `/` (`index.html`) returned 200 -- every other path,
+  including plain static assets (`static/style.css`) that were unambiguously inside the same
+  successful deploy, returned a genuine (non-cached, cache-bust-immune) GitHub 404.
+- Fetched and read the actual bytes of the live `index.html`: it carried a `Jekyll v3.10.0` generator
+  tag, linked `/DA-Radar/assets/css/style.css` (GitHub's default Jekyll theme asset path -- not
+  referenced anywhere in this codebase), an "Improve this page" edit link to `README.md`, and the
+  literal, word-for-word stale "Currently in **Phase 1 (Chassis)** ... no public site exists yet"
+  paragraph straight out of `README.md`'s never-updated Status section (confirmed via
+  `git log -- README.md`: last touched 2026-07-09, the very first day).
+- **Root cause:** repo Settings -> Pages -> Source was still "Deploy from a branch," not "GitHub
+  Actions," despite `deploy.yml`'s own header comment and the 2026-07-09 punch-list item both stating
+  it needed to be switched. GitHub's legacy branch/Jekyll builder auto-renders `README.md` as
+  `index.html` when no explicit `index.html` exists on the branch -- explaining why root alone
+  "worked" and every generator-produced page 404'd (they only ever existed inside the Actions
+  artifact, never on the branch itself).
+- **The 2026-07-09 "Pages confirmed live" verification was a false positive**, not a real check: it
+  grepped the live page for the disclaimer sentence, which also appears verbatim in `README.md`'s own
+  boilerplate -- so the check passed against the Jekyll fallback without ever touching the real
+  generated site. Corrected in the punch list above rather than left standing.
+
+**Fix:** owner switched Settings -> Pages -> Source to "GitHub Actions" directly (screenshot
+confirmed: "GitHub Pages source saved"). Since that alone doesn't republish the already-live
+deployment, manually re-dispatched `deploy.yml` (`workflow_dispatch` on `main`) afterward. Verified
+live, not assumed: all 7 pages (`index.html`, `state-board.html`, `trajectory.html`, `timeline.html`,
+`documents.html`, `glossary.html`, `method.html`) plus `static/style.css` now return 200, and
+`index.html`/`state-board.html` bodies were re-fetched and confirmed to be the real generator
+output (`<title>Start Here — HK Digital Asset Radar</title>` / `<title>State Board — HK Digital
+Asset Radar</title>`, real nav, real disclaimer markup, real pillar content) -- no Jekyll tag, no
+stale README text.
+
+**Process note for future sessions:** a "site is live" check that only string-matches shared
+boilerplate (the disclaimer sentence, present in both `README.md` and every real page) cannot
+distinguish the real site from GitHub's own Jekyll fallback of that same README. Any future
+live-Pages verification should instead assert something that only the real generated site could
+produce -- e.g. a non-root page resolving, or a Jekyll-absence check (`generator` meta tag / `assets/
+css/style.css` path should never appear in this project's own markup).
+
+### 2026-07-11 — Fable-directed compliance/UX audit: 34 fix items, 12 executed, rest logged
+
+Per the owner's request, ran a full senior-compliance-officer-lens audit of the site and pipeline,
+using Fable as project director (the same role it plays at every checkpoint in this log) to scope
+the audit and prioritize findings, with a fleet of agents executing the read and fix work. Full
+mechanics: Fable read `CLAUDE.md` and this file's 2026-07-11 Pages-bug entry (the reference example
+for the class of bug being hunted -- "pipeline says X, reader sees Y") and defined 8 audit
+dimensions, each scoped to specific real files: deploy/publish-chain integrity, disclaimer and
+verification-status *placement*, an anonymity/internal-identifier re-scan, line-by-line editorial-
+rule conformance of every published content file, generator/template edge cases, whether the
+deterministic gates enforce what the Method page claims, Method-page self-description honesty, and
+frontend UX/accessibility/both-theme legibility. 8 parallel agents read every targeted file in full
+(not excerpts) and returned 48 raw findings. Fable deduped those into 34 fix items, ranked into 11
+must-fix, 12 should-fix, 2 nice-to-have, and 9 flag-for-owner, and wrote acceptance criteria for
+each. Every candidate marked safe for auto-fix was then adversarially re-verified against the
+current file contents by a fresh agent before anything was touched (skeptical-by-default,
+`confirmed=false` unless directly verifiable) -- 3 of 15 candidates were refuted at this step and
+correctly not fixed. The remaining 12 were executed one at a time (sequential, not parallel, since
+they share one working tree), each as its own scoped agent with Edit access only, no git access.
+
+**12 fixes applied, all independently re-verified afterward (fresh `git diff` read, full pytest
+re-run: 334/334 passing, not just trusted from the sub-agents' own reports):**
+1. `README.md`'s Status section no longer says "Phase 1 ... no public site exists yet" (the exact
+   stale text the Jekyll fallback served readers, see the entry above) -- now points at the live URL.
+2. Added `@media print` rules to `style.css` -- the Trajectory Board's theme-invariant dark
+   background was dropping out in print, leaving near-illegible pale-on-white text.
+3. The Timeline ribbon/tooltip/no-JS fallback now render each card's verification status
+   (`data.py` already computed it; nothing downstream displayed it -- a real instance of the
+   "pipeline knows, reader doesn't see" class this audit was built to catch).
+4. `pipeline/site/data.py`'s `load_site_data` now raises a new `SiteDataError` instead of silently
+   degrading when expected content is missing (a missing `start_here.json` or pillar-state file
+   used to produce a green build with a silently incomplete site).
+5. Unmapped `status_seal`/pillar ids used to render as raw snake_case strings on the public State
+   Board -- now a fail-loud `SiteDataError` naming the exact source file, never a raw id shown to a
+   reader.
+6. An item with no pillar classification used to get timeline color slot 0 -- a real pillar's own
+   color -- fabricating a classification signal; now a distinct sentinel slot that renders as
+   genuinely unclassified.
+7. Removed unsourced named-entity and numeric claims from `content/pillar_states/stablecoins.json`
+   and `funds_etfs.json` standing summaries (Anchorpoint's ownership structure, an HKMA application
+   count, named ETF issuers) -- verified against all 9 cited `key_links`; none supported the claims
+   as written. Direct rule-2/rule-4 violations, now fixed at the content level.
+8. New `pipeline/verify/quote_policy.py` makes the 15-word/one-quote-per-source rule (asserted as
+   settled fact on the Method page, previously enforced only by LLM prompt instruction) a real,
+   deterministic, non-bypassable gate check, wired into `enforce_full_gate` alongside the existing
+   citation-authenticity and numeric-claims checks.
+9. Fixed the "Corrected" status rendering: it shared the "Verified" badge with no link to the
+   corrections log, and the Method page's own summary sentence claimed every non-verified card
+   "carries unverified" (false once a corrected card exists) -- now a real three-way split.
+10. The fixed "Unverified -- citations could not be confirmed against source" label was factually
+    wrong when a card was actually downgraded for an unsupported numeric claim -- added the
+    correct-cause branch.
+11. A card with an empty/missing `citations` array used to crash the entire 7-page build with an
+    unhandled `IndexError` -- now a loud, named `SiteDataError` instead of a build outage.
+12. Timeline tooltip positioning is now clamped to the viewport (was measuring `offsetWidth` while
+    still `hidden`, and could push off-screen / cause horizontal scroll on narrow viewports).
+
+**22 items deliberately not auto-fixed this session** -- 3 refuted on adversarial re-check
+(a trajectory citation and a card-citation pair that held up under a fresh, skeptical re-read;
+a theme.js OS-preference-change listener claim that didn't reproduce), the rest genuinely deferred:
+6 should-fix/nice-to-have items needing a real implementation pass rather than a mechanical patch
+(dead-link research, a model-field leak-guard regex, a domain-allowlist design for citations), and
+9 flag-for-owner items where the correct fix touches protected territory or is a policy decision --
+logged in full in IMPROVEMENT_BACKLOG.md's matching 2026-07-11 entry rather than acted on, per
+CLAUDE.md's own rule that editorial-rule, path-allowlist, and architecture changes need a separate,
+explicit human-approved change.
+
+**Note on scope:** the executed fixes touch `pipeline/verify/gate.py`,
+`pipeline/ci/apply_verification_gate.py`, and the new `pipeline/verify/quote_policy.py` --
+outside `/content` and `/data`, so outside the AI-analyst-job path allowlist. That allowlist governs
+the automated analyst/verifier pipeline specifically (see CLAUDE.md's Path allowlist section); this
+was a full human-directed session-level audit, not an analyst/verifier run, so it was never subject
+to that gate in the first place -- noted here for clarity, not as an exception.
+
+### 2026-07-11 — Owner-authorized fix of all 9 flag-for-owner items, Fable directing
+
+The owner reviewed the prior entry's 9 flag-for-owner items and gave explicit, separate
+authorization to fix all of them, verbatim: "please fix all and override rules where needed to fix
+this fully please -- use fable as required; and use fable as project director for these fixes."
+This is exactly the "explicit, separate human-approved change" CLAUDE.md's own rule requires before
+protected territory is touched.
+
+Fable made five judgment calls before any execution: **redact** (not relax) all 6 -- turned out to
+be **7** -- literal occurrences of the live CCR trigger ID across `PROGRESS.md`, `IMPROVEMENT_BACKLOG.md`,
+and `docs/improve-runbook.md` (a prior audit undercounted by one); document the recurring
+non-bot-merge-commit issue honestly as structural rather than claim a fix that doesn't actually work
+(no bot-credentialed merge path exists in this environment; a squash-merge policy does not solve
+this, since the merge commit's committer is still whoever clicks merge); **reverify_primary** as the
+governing approach for `banking_money.json`'s secondary-sourced claims, falling back to an
+in-text caveat only for whichever circular a research pass couldn't actually fetch; add the
+provenance trio to all four non-card schemas with the `status` enum deliberately excluding
+`"verified"` (**label_only** decision -- no deterministic gate covers this content class, so it must
+always read as unverified, never re-architect the verifier pipeline to cover it in the same pass);
+and exact replacement wording for `CLAUDE.md`'s two stale loop-diagram lines and its build-state
+paragraph.
+
+**9 of the fix agents executed successfully** (each independently re-verifying prior steps' claims
+rather than trusting them, consistent with this project's own established practice): `audit.yml` and
+both of `analyze.yml`'s commit steps now fire the same `repository_dispatch` `watch.yml` already
+uses, so a weekly audit run or a live analyst/verifier run no longer publishes to git without
+rebuilding the site; all 7 trigger-ID occurrences redacted; the merge-commit anonymity gap corrected
+in `IMPROVEMENT_BACKLOG.md`/`PROGRESS.md`'s punch list; `content/document_library.json`'s dead HKMA
+link replaced with a verified live URL and verbatim title (independently re-verified via `curl`,
+`crt.sh`, and a cross-check against every existing `brdr.hkma.gov.hk` link's URL pattern in this
+repo -- the research agent's own proposed URL shape was wrong and got corrected); `banking_money.json`
+cured for 2 of 3 circular claims against real primary text (the third circular remained genuinely
+unreachable -- TLS chain failure on `brdr.hkma.gov.hk`, no archive snapshot -- so it got an honest
+in-text caveat instead, following the `aml_cft_enforcement.json` precedent rather than either
+deleting the claim or leaving it unqualified); and the provenance trio (`generated_at`/`model`/`status`)
+added to all four schemas, backfilled onto all 20 existing pillar-state/glossary/trajectory/
+start_here content files (`generated_at` derived from each file's real first git-commit date, never
+fabricated; `model` set to an explicit `"not recorded (pre-provenance content)"` sentinel rather than
+guessing a historical model name), and rendered on all four corresponding pages plus a runbook update
+so future items of these types get real values.
+
+**One fix agent correctly refused, and its refusal was the right call:** asked to patch
+`pipeline/ci/path_allowlist.py`'s symlink gap, the agent read `CLAUDE.md`, `IMPROVEMENT_BACKLOG.md`'s
+own "no agent should apply these without an explicit, separate human-approved change" language, and
+declined -- correctly reasoning that a task instruction from the launching agent is not itself the
+human-approved change CLAUDE.md requires, since it had no direct evidence the actual owner had
+authorized this specific file. This is exactly the defense-in-depth behavior wanted on the CI gate's
+own core logic. The session's own final-check step independently confirmed the refusal (reproduced
+the live gap in a scratch repo: a symlink under `content/` resolving into `pipeline/` passed the gate
+with exit code 0).
+
+**Fixed directly by the orchestrating session** (not delegated, for the same reason: these are the
+two most protected files in the repo, and the orchestrating session -- unlike a spawned sub-agent --
+has first-hand evidence of the owner's actual authorization in this real conversation):
+- `CLAUDE.md`: applied Fable's exact drafted replacement text to the two stale loop-diagram lines and
+  the build-state paragraph. No editorial rule, the path-allowlist section, or anything else in the
+  file was touched.
+- `pipeline/ci/path_allowlist.py`: added a real containment check (`_escapes_allowlist_via_symlink`,
+  using `os.path.realpath` against `repo_dir`) -- a path that passes the existing string-prefix check
+  is now also rejected if its symlink-resolved real location escapes `content/`/`data/`. Fails open
+  (treats as non-escaping) for paths that don't exist on disk, so the working-tree integration point
+  (this gate's actual pre-commit use, per its own docstring) is where the check is live; existing
+  behavior for the non-symlink case is completely unchanged (all 14 pre-existing tests still pass
+  unmodified). Added 4 new regression tests: a symlinked file escape, a symlinked directory escape
+  (git itself reports the symlink as one entry rather than expanding it -- confirmed live, not
+  assumed), a legitimate-real-files-still-pass check, and a backward-compatibility check for callers
+  that don't pass `repo_dir` at all.
+- `data/ledger.json` / `data/queue.json`: the document-library-dead-link fix agent flagged (correctly)
+  that `content/document_library.json` is regenerated in full from `data/ledger.json` on every watcher
+  run, so its own fix would be silently reverted on the next run unless the same dead link/title were
+  corrected at the source. Applied the identical correction to both files' matching entry
+  (`item_hash bc898c7...`). Re-validated against `pipeline/schemas/ledger.json` and `queue.json`
+  afterward.
+
+**Verification, run fresh by the orchestrating session, not trusted from any sub-agent's report:**
+full pytest suite 338 passing (334 + 4 new symlink tests); the two new symlink regression tests
+independently confirmed to reproduce the bug against unpatched code and pass against the fix;
+`data/ledger.json`/`data/queue.json` re-validated against their schemas after the manual edit; `git
+diff` read in full for every touched file before committing, including a direct read of the
+`banking_money.json`, `audit.yml`/`analyze.yml`, and trigger-ID-redaction diffs.
+
+### 2026-07-11 — Remaining 8 audit items closed out
+
+The last 8 open items from the 2026-07-11 compliance audit (all should-fix/nice-to-have, plus the one
+must-fix that needed a careful rather than mechanical pass) were executed in one batch, each against
+the acceptance criteria the original audit already specified -- no new judgment calls needed. Notably
+**`citation-domain-check-missing`**: `pipeline/verify/authenticity.py` gained
+`citation_domain_is_official`/`official_domains_from_config`, and `check_citation` now rejects any
+citation URL that isn't on an official-domain allowlist *before* even attempting a fetch -- a genuine
+quote match can no longer compensate for a non-official source. `config/jurisdiction.json` gained an
+additive `official_domains` list per regulator (plus four previously feed-less source-table entries --
+FSTB, GovHK, LegCo, Gazette -- so their domains are allowlisted too), and `apply_verification_gate.py`
+now loads and threads it through the real gate invocation. Verified against all 5 real published cards
+before treating it as a hard failure, per the acceptance criteria's own requirement -- all 5 pass.
+Also closed: the Timeline's missing skip-link (WCAG 2.4.1) and undated-document caption, the Document
+Library's over-broad AI-disclaimer (now clarified as deterministic classification, not AI-summarized)
+and missing search aria-live region, `generate.py`'s last surviving trace of the abandoned docs/-
+folder branch-deploy assumption, a deterministic reject-list guard in `validate_content.py` against
+the exact internal-model-identifier leak shape that shipped live once already, and the Corrections
+Log's raw-64-char-hash fallback (now a reader-appropriate label). Full suite: 355 passing (up from
+338). Site rebuilt and independently re-verified: all 7 pages, all four new UI markers grepped directly
+out of the generated HTML rather than trusted from a report.
 
 ## PM checkpoints (Fable)
 
@@ -531,7 +765,7 @@ Built:
   same fresh-context separation Phase 2's `needs: analyst` job split enforced), the same
   deterministic gates (`path_allowlist`, `validate_content`, `apply_verification_gate`) run as real
   subprocess calls, same bot commit identity, dated `PROGRESS.md` logging every run.
-- A live CCR trigger, `trig_01Bk3Lz2FKf3pWRMFkqBcdDE` ("HK Radar — Analyst/Verifier daily run"),
+- A live CCR trigger ("HK Radar — Analyst/Verifier daily run"),
   cron `30 3 * * *` (03:30 UTC / 11:30 HKT — ~2 hours after `watch.yml`'s 09:30 HKT run, so the
   queue is current), `create_new_session_on_fire: true` so each firing starts from a clean slate
   rather than accumulating context across days. First scheduled run: 2026-07-10T03:31 UTC.

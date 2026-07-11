@@ -25,6 +25,24 @@ Dated by the build session that made the call.
   commit made *by this build*, starting with the chassis scaffold, uses the bot identity. If full
   history-level anonymity is wanted later, that is a deliberate human decision (e.g. squashing
   history when moving to a dedicated org), not something to do silently mid-build.
+- **2026-07-11 — Recurring non-bot PR-merge commits (editorial rule 5) — structural, not
+  contained.** `git log` on `main` contains 5 commits carrying the owner's real GitHub identity:
+  the pre-existing initial commit (logged above) plus the merge commits of PRs #1–#4. This
+  supersedes the earlier framing of the non-bot-commit issue as a single, contained,
+  initial-commit matter — that framing was inaccurate and is corrected here. The cause is
+  structural: GitHub records whichever account clicks "Merge" as the merge commit's identity, and
+  `correction.yml`/`improve.yml` are PR-only/human-merge *by design*, so every future human merge
+  adds another such commit. A squash-merge policy does not fix this — the squash commit's
+  committer is still the merging account. The only real fix is a bot-credentialed merge path (a
+  GitHub App or PAT acting as `hk-radar-bot` calling the merge API, or a dedicated bot machine
+  account doing the merging in a neutrally-named org); no such credential exists in this
+  environment, so no technical fix is applied now. Accepted, disclosed tradeoff: rule 5's
+  bot-identity guarantee covers every commit *created by the pipeline and build sessions* (which
+  remains true — see the log above) and demonstrably does not extend to GitHub-generated merge
+  commits, which will keep carrying the merging account's identity for as long as the owner merges
+  PRs from their own account. Recommended future infrastructure item (owner decision, explicitly
+  not done in this session): stand up a bot-credentialed merge path before public launch if full
+  commit-graph anonymity is wanted.
 
 ## Silent decisions (spec didn't specify, simplest reasonable option chosen)
 
@@ -598,9 +616,8 @@ holds `docs/analyst-runbook.md` (Phase 2's operational runbook), so the generate
 `static/`, etc. would land in the same directory as an unrelated operational document -- confirmed
 live by actually running the generator against `--output-dir docs` and seeing both side by side.
 Renaming the runbook instead would have required updating every reference to it, including the
-literal path already baked into the live CCR trigger's stored prompt text
-(`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`) -- a riskier, wider-blast-radius change than switching the site's
-own output location.
+literal path already baked into the live CCR trigger's stored prompt text -- a riskier,
+wider-blast-radius change than switching the site's own output location.
 
 Switched instead to GitHub's official Actions-based Pages deployment
 (`actions/upload-pages-artifact` + `actions/deploy-pages`, both pinned to verified commit SHAs via
@@ -869,7 +886,7 @@ spec-literal-but-dormant fallback `analyze.yml` already is (credential-checked, 
 mirroring `docs/analyst-runbook.md`.
 
 **Deliberately not done in this build: no live CCR trigger was created for `improve-runbook.md`,**
-unlike the analyst/verifier's `trig_01Bk3Lz2FKf3pWRMFkqBcdDE`. This mechanism's blast radius (write
+unlike the analyst/verifier's CCR trigger. This mechanism's blast radius (write
 access to `/pipeline` and `/config`) earned it a kickoff-style design review before any code was
 written; standing up a live recurring trigger for it is a further, separate decision for the
 owner/Fable PM to make explicitly once the built mechanism itself has been reviewed, not something
@@ -1014,3 +1031,207 @@ the fix. Full suite: 304 tests passing. Re-verified with Playwright: 35/35.
 CVD derivation, the two pre-existing CSS bugs, the fact-check gaps closed, or (until now) the
 trajectory-board finding — had a durable log entry here, only two commit messages. Every phase before
 this one got one; this is the corrected record.
+
+### 2026-07-11 — GitHub Pages was silently serving the Jekyll README fallback, not the real site
+
+Full finding and fix are logged in `PROGRESS.md`'s 2026-07-11 Log entry (not duplicated here in
+full to avoid drift between the two files). Backlog-relevant angle: this is a second instance of the
+same shape of mistake `PROGRESS.md`'s Phase 1/2/3 entries already flag repeatedly in this project —
+**trusting a first green/200 result instead of inspecting the actual output.** The 2026-07-09
+"Pages confirmed live" check technically executed (an HTTP 200, a disclaimer-text grep hit) but never
+actually distinguished the real generated site from GitHub's own Jekyll fallback of `README.md`,
+because both legitimately contain the same disclaimer sentence. The check was not wrong on its own
+terms; it was checking the wrong thing.
+
+**Standing lesson for any future "is X actually live" verification in this project:** prefer an
+assertion that only the real artifact could satisfy (a page that doesn't exist anywhere else, an
+absence check for a marker the fallback *would* produce) over a substring match on content that might
+legitimately appear in more than one place. Everywhere else in this project's own history (the
+path-allowlist bare-directory bug, the smart-quote/PDF-artifact authenticity bugs, the relevance-
+filter gap, the trajectory-board contrast bug above) the fix was the same pattern: read the actual
+rendered/served output byte-for-byte rather than trusting that a check passing means the thing it's
+supposed to guard against didn't happen.
+
+### 2026-07-11 — Fable-directed compliance/UX audit: full findings, deferred and owner-flagged items
+
+Mechanics and the 12 executed fixes are logged in `PROGRESS.md`'s matching 2026-07-11 entry. This
+entry is the durable record of everything that survived triage but was **not** applied this session,
+so none of it gets lost the way ungoverned findings tend to. 22 of 34 fix items were not executed: 3
+were refuted by a fresh, skeptical re-read of the actual current files (correctly not fixed -- a
+citation-URL/quote pair and a trajectory-source claim that held up, and a theme.js
+OS-preference-listener claim that didn't reproduce), 2 must-fix items need a real implementation pass
+rather than a mechanical patch, 6 should-fix/nice-to-have items likewise, and 9 are flag-for-owner:
+items where the correct fix touches protected territory (`CLAUDE.md` itself, `pipeline/schemas/**`,
+`.github/workflows/**`, `pipeline/ci/path_allowlist.py`'s core deny logic) or is a genuine policy
+judgment call, per CLAUDE.md's own rule that those require "an explicit, separate human-approved
+change." Full detail on each (files, description, acceptance criteria) lives in the audit
+workflow's own transcript; the summary below is enough for the owner to decide next steps without
+digging for it.
+
+**Needs a real implementation pass (not owner-gated, just not mechanical enough for a same-session
+auto-fix):**
+1. `document-library-dead-link` -- one Document Library entry links to a 404'd HKMA URL with a
+   paraphrase-style title unlike its 68 siblings; needs the current live URL located before fixing.
+2. `timeline-skip-link` -- up to 77 individually-focusable timeline markers with no skip-link,
+   a real WCAG 2.4.1 gap.
+3. `generate-docstring-stale` -- `generate.py`'s module docstring still describes the abandoned
+   `docs/`-folder branch-deploy model its own code no longer uses -- the last surviving trace of
+   the exact assumption that caused the 2026-07-11 Pages outage.
+4. `model-field-leak-guard` -- no deterministic guard exists against the internal-model-identifier
+   leak recurring in a card's `model` field (the 2026-07-09 fix was prompt-text only, the same
+   enforcement class that caused the leak); needs a carefully-designed reject-list regex in
+   `validate_content.py`, not a blanket pattern that could false-positive a legitimate display name.
+5. `documents-page-disclaimer-clarification` -- the Document Library carries the identical
+   AI-generated-summary disclaimer over rows that are deterministic watcher output, which is
+   over-warning that risks banner-blindness on the pages where the disclaimer genuinely matters.
+6. `corrections-log-hash-fallback` -- if a corrected card is ever removed, the Corrections Log
+   (the one page whose entire purpose is rule 6) falls back to rendering a bare 64-character sha256
+   hash as the card title.
+7. `banking-money-secondary-source-basis` -- `content/pillar_states/banking_money.json`'s own
+   `open_items` admits its HKMA-circular claims rest solely on secondary legal commentary because
+   the primary circulars couldn't be fetched during research -- needs either a real primary-source
+   re-verification pass or an explicit in-text caveat, the same pattern `aml_cft_enforcement.json`
+   already uses for its own unconfirmed figure.
+8. `citation-domain-check-missing` -- the citation-authenticity gate checks that a quote is genuine
+   but never that the URL is an official regulator domain, so a law-firm blog with an accurate quote
+   passes cleanly; rule 2 (primary sources only) is enforced by prompt instruction alone today.
+
+**Nice-to-have, not urgent:**
+9. `timeline-undated-docs-caption` -- nothing on-page explains that undated documents are excluded
+   from the Timeline ribbon (invisible today since every current document has a date; will produce a
+   silent count mismatch the first time it doesn't).
+10. `doc-search-aria-live` -- the Document Library's live search gives screen-reader users no
+    feedback on filter results.
+
+**Flag-for-owner (protected territory or a policy decision -- report-only, no agent should apply
+these without an explicit, separate human-approved change):**
+11. `provenance-trio-non-card-content` -- pillar summaries, glossary definitions, trajectory
+    entries, and Start Here are all AI-analyst-authored but render with no generation timestamp,
+    model, or verification-status trio, and their schemas (`pillar_state.json`, `glossary.json`,
+    `trajectory.json`, `start_here.json`) have no fields to hold them -- only cards currently pass
+    through the verifier at all. Needs an owner decision on two questions: approve the schema
+    extensions, and decide whether non-card content should be verifier-gated or explicitly labeled
+    "Not independently verified."
+12. `workflow-dispatch-missing` -- `audit.yml` and `analyze.yml` push to `main` with `GITHUB_TOKEN`
+    but, unlike `watch.yml`, never fire the `repository_dispatch` that actually triggers
+    `deploy.yml` -- live consequence: Method & Audit page findings go stale indefinitely after every
+    weekly audit run. Also falsifies CLAUDE.md's own claim that `analyze.yml` "starts working
+    exactly as diagrammed... with no other change required" if a secret is ever added -- today it
+    would silently break at the publish step on first activation.
+13. `deploy-post-verification-missing` -- `deploy.yml` has no post-deploy check that the live site
+    is actually the real generator output (exactly the gap that let the Jekyll-fallback bug persist
+    for two days across multiple all-green deploy runs) and never re-runs `validate_content.py`/
+    `path_allowlist.py` before `generate.py`, trusting `main` unconditionally.
+14. `claude-md-stale-build-state` -- `CLAUDE.md`'s own loop diagram and "Current build state"
+    paragraph still say the audit loop is "not yet built," though Phase 5 shipped it on 2026-07-09.
+    The project's governing self-description being stale about a shipped phase is a real
+    trust-undermining finding, but `CLAUDE.md` is read-only to every AI agent in this repo without
+    exception -- only a human may edit it, even for a pure factual-staleness fix.
+15. `recurring-non-bot-merge-commits` -- `git log` shows 5 non-bot-identity commits, not the 1 the
+    backlog previously disclosed: beyond the logged initial commit, four PR-merge commits are
+    authored under the owner's real GitHub handle. Because `correction.yml`/`improve.yml` are
+    PR-only/human-merge by design, this recurs on every future merge, contradicting rule 5's
+    anonymity guarantee and this file's own prior "single, contained, already-fixed"
+    characterization of the issue -- corrected here rather than left standing. Three legitimate
+    resolution paths exist (squash-merge policy, a bot-credentialed merge via the GitHub API, or an
+    accepted-tradeoff note); the choice is the owner's.
+16. `trigger-id-disclosure` -- `docs/analyst-runbook.md` states verbatim that internal trigger/
+    session IDs "don't belong in commit messages or PROGRESS.md entries," yet the live CCR trigger
+    ID is spelled out 6 times across `PROGRESS.md`/`IMPROVEMENT_BACKLOG.md` (including this file).
+    Not a credential leak, but a verified contradiction between written policy and actual practice.
+    Two legitimate resolutions: relax the runbook rule to match practice, or redact the six literal
+    occurrences to match the rule -- owner's call.
+17. `footer-license-scoping` -- the site footer's blanket "content CC BY 4.0" claim doesn't scope
+    out HK-Government-copyright quoted excerpts; a downstream re-user could misread it as licensing
+    quoted regulator text under CC BY when it remains Government copyright used under
+    quotation/attribution. Rewording a public licensing claim is reserved to the owner (rule 7).
+18. `google-fonts-third-party` -- `fonts.googleapis.com` is the site's only third-party runtime
+    call; every page view sends visitor IP/user-agent to a Google domain. Not a bug (fallback font
+    stacks mean a blocked request only degrades typography), but a real privacy-posture choice,
+    increasingly relevant ahead of any EU/UK jurisdiction fork -- keep as-is or self-host, owner's
+    call.
+19. `path-allowlist-symlink-gap` -- verified by direct test: `pipeline/ci/path_allowlist.py`
+    evaluates changed-path *strings*, not resolved targets, so a symlink placed under `content/`
+    pointing into `pipeline/` passes the gate's prefix check without being resolved. Mitigated today
+    only by the analyst/verifier sub-agents' own no-Bash tool grants -- the gate itself does not
+    structurally deliver the "inspects the actual working tree" guarantee CLAUDE.md and the Method
+    page both describe it as providing. `path_allowlist.py`'s core allow/deny logic is explicitly
+    protected territory, so even this genuine gate bug must be escalated rather than patched by an
+    agent under any framing.
+
+### 2026-07-11 — Trigger-ID disclosure (backlog item 16) resolved: redact, rule kept as-is
+
+Fable PM decision on item 16 above: **redact**, not relax the runbook rule. Of the two legitimate
+resolutions item 16 named, redaction was chosen for three reasons. (1) `docs/analyst-runbook.md`'s
+existing rationale (around line 143-148) is sound and worth keeping unqualified: the trigger ID is
+not a secret -- the CCR-trigger automation mechanism itself is openly documented in `CLAUDE.md` and
+this file, which is the real transparency commitment -- but the literal ID is meaningless
+operational noise to any repo reader, the same as a terminal PID in a commit message. Relaxing the
+rule to carve out an exception for this one ID would complicate an otherwise clean rule and
+normalize policy/practice drift, which is the exact failure mode this item flagged in the first
+place. (2) Nothing operational is lost: only one live CCR trigger exists in this deployment, so "the
+analyst/verifier CCR trigger" is fully unambiguous in every remaining occurrence, and any future
+session that genuinely needs the literal ID retrieves it via `list_triggers` rather than reading it
+off a public markdown file. (3) The ID is an account-internal identifier in a public repo;
+publishing it serves no reader and marginally aids fingerprinting of the operator's CCR account,
+which cuts against editorial rule 5's anonymity posture even though it is not a credential.
+
+**What changed:** all 7 literal occurrences of the trigger ID (`PROGRESS.md` x4, this file x2,
+`docs/improve-runbook.md` x1 -- one more than item 16's original count of 6, found on a fresh grep
+before applying the fix) were replaced with generic phrasing ("the analyst/verifier CCR trigger" or,
+where the sentence already used that phrase, the parenthetical ID was simply dropped). The
+human-readable trigger *name* ("HK Radar — Analyst/Verifier daily run") was left in place at
+`PROGRESS.md` -- it's descriptive, not an identifier, and disclosing it carries none of the above
+concerns. `docs/analyst-runbook.md`'s rule itself was left untouched, since the fix is bringing
+practice into line with the existing rule, not changing the rule. Git history was **not** rewritten
+to scrub past occurrences of the ID from prior commits -- it is not a credential, and history
+rewriting is exactly the destructive operation this project already declined once, for the initial
+commit's author identity (see the "Deviations from spec" section above).
+
+### 2026-07-11 — Generation-provenance fields added to non-card content types (Fable-directed);
+historical backfill rule for pre-provenance content
+
+Fable project director-authorized schema/pipeline change, this build session: `generated_at`,
+`model`, and `status` -- the same provenance trio `card.json` already carries -- were added to
+`pipeline/schemas/pillar_state.json`, `pipeline/schemas/glossary.json`,
+`pipeline/schemas/trajectory.json` (per-item, since trajectory entries are authored at different
+times), and `pipeline/schemas/start_here.json` (which already had `generated_at`/`model`; only
+`status` was new there). All are required, all `additionalProperties: false` shapes updated
+accordingly. The `status` enum for these four types is deliberately `["unverified", "corrected"]`
+-- **not** `["unverified", "corrected", "verified"]` like `card.json` -- because no deterministic
+verifier gate covers pillar states, the glossary, the trajectory board, or Start Here; claiming
+"verified" for this content class is made structurally impossible until a future phase makes an
+explicit, reviewable schema change to extend the verifier gate to these shapes. That extension is
+a named follow-up for `improve.yml`'s queue, not done now: `gate.py`/`authenticity.py`/
+`numeric_claims.py` are all card-shaped (per-sentence `citations[]`), while pillar summaries and
+Start Here use `key_links` and glossary terms often carry no citations field at all -- routing
+these through the existing gate is a real design task, out of scope for this change.
+
+**Historical backfill, applied to every pre-existing file under `content/pillar_states/*.json`,
+`content/glossary/*.json`, and each entry of `content/trajectory.json`:** `generated_at` was set
+to that file's real first-commit author date, retrieved via
+`git log --follow --format=%aI -- <file> | tail -1` (normalized from git's `+00:00` offset to a
+`Z` suffix; all were already UTC). **This is a proxy, not a logged generation timestamp** -- these
+files were authored and committed the same day they were generated (2026-07-09), so the proxy is
+tight for this backfill, but a future reader must not mistake `generated_at` on pre-provenance
+content for anything more precise than "this file's first commit to the repo." `model` was set to
+the literal sentinel string `"not recorded (pre-provenance content)"` on every backfilled field --
+deliberately *not* backfilled as `"Claude (Anthropic)"` or any other specific model name, because
+no per-file model was logged at generation time and asserting one now would itself be exactly the
+kind of unsourced claim this project's own editorial rules exist to prevent. `status` was set to
+`"unverified"` on every backfilled item, which is factually true regardless of proxy quality: none
+of this content class has ever passed a verifier gate. `content/start_here.json` was the one
+exception to the backfill: its `generated_at` (`2026-07-09T08:00:00Z`) and `model`
+(`"Claude (Anthropic)"`) were already recorded at authoring time and were left as-is; it only
+gained the new `status: "unverified"` field.
+
+The sentinel model string is legal *only* for this one-time pre-provenance backfill. Every future
+analyst write/update to these four content types must populate `generated_at` with the real
+generation timestamp and `model` with the real public-safe model family string, exactly as cards
+already do -- `docs/analyst-runbook.md` needs a corresponding update to state this explicitly,
+tracked as a separate, immediate follow-up to this entry (not yet applied as of this commit).
+Site-generator template rendering of the new provenance line (timestamp, model, and a plain "Not
+independently verified" label for `status: "unverified"`) on pillar, glossary, trajectory, and
+Start Here pages is also a separate, immediate follow-up, not yet applied as of this commit --
+until it lands, editorial rule 1's "every page and every card" provenance-display requirement is
+satisfied in the underlying data but not yet in the rendered site for these four content types.

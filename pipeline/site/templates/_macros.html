@@ -22,7 +22,9 @@
     {% if c.status == "verified" %}
       <span class="badge-verified">&#10003; Verified</span>
     {% elif c.status == "corrected" %}
-      <span class="badge-verified">&#10003; Corrected</span>
+      <a class="badge-corrected" href="method.html#corrections-log">Corrected &mdash; see corrections log</a>
+    {% elif c.numeric_claims_unsupported %}
+      <span class="badge-unverified">Unverified &mdash; a stated figure could not be confirmed against the cited source</span>
     {% else %}
       <span class="badge-unverified">Unverified &mdash; citations could not be confirmed against source</span>
     {% endif %}

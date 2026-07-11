@@ -38,6 +38,32 @@ It works in its own disposable git worktree, entirely separate from your own wor
 When it reports back, **read the actual card file(s) it wrote from its worktree path** — do not
 take its self-report of what it did at face value.
 
+### Provenance fields on pillar states, glossary, trajectory, and Start Here
+
+`content/pillar_states/*.json`, `content/glossary/*.json`, each entry of
+`content/trajectory.json`, and `content/start_here.json` all carry the same `generated_at` /
+`model` / `status` provenance trio `content/cards/*.json` already carries — see
+`pipeline/prompts/analyst_prompt.md`'s per-field instructions for how the analyst populates them
+on a card (step 4's bullets on `status`/`generated_at`/`model`); the same discipline applies
+identically to these four content types whenever the analyst writes or updates one, not only to
+cards. Concretely, for **every** pillar-state update, **every** new/edited glossary term, **every**
+new trajectory entry, and **every** Start Here regeneration:
+
+- `generated_at`: the real current UTC timestamp, ISO-8601 — never copied forward from an older
+  version of the same file.
+- `model`: the same human-readable model-family name used on the card (e.g. "Claude (Anthropic)")
+  — never the exact internal model-version identifier, and never the sentinel string
+  `"not recorded (pre-provenance content)"`. That sentinel is a one-time historical-backfill marker
+  for content written before this trio existed (see IMPROVEMENT_BACKLOG.md's 2026-07-11 entry) and
+  must never be written by a live analyst run.
+- `status`: always write `"unverified"` on a fresh write or edit — the same first-pass discipline
+  as a card's `status`. **Unlike a card, this enum is `["unverified", "corrected"]` only** —
+  there is no `"verified"` value for these four types, on this run or any future one, because no
+  deterministic verifier gate covers pillar states, the glossary, the trajectory board, or Start
+  Here (Step 6's gates below are card-shaped only — `citations[]`-based). Never write `"verified"`
+  for a pillar state, glossary term, trajectory entry, or Start Here, no matter how confident this
+  pass is in the content.
+
 ## Step 2 — Copy the draft into your own working directory
 
 Copy only the new/changed files under `content/cards/`, `content/pillar_states/`,

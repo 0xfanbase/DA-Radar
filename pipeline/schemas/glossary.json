@@ -13,14 +13,20 @@
       "type": "array",
       "items": { "type": "string", "minLength": 1 }
     },
-    "first_used_card_id": { "type": "string", "minLength": 1 }
+    "first_used_card_id": { "type": "string", "minLength": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "model": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "enum": ["unverified", "corrected"] }
   },
   "required": [
     "schema_version",
     "term",
     "plain_definition",
     "related_terms",
-    "first_used_card_id"
+    "first_used_card_id",
+    "generated_at",
+    "model",
+    "status"
   ],
   "additionalProperties": false
 }

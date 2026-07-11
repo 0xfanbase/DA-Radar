@@ -494,12 +494,12 @@
     {
       "feed_id": "hkma_consultations",
       "item_hash": "bc898c7aef92944c4216de9729b62418fad6eb0e5920fa76ab20c0bd4bad7874",
-      "link": "https://www.hkma.gov.hk/eng/regulatory-resources/consultations/20250113-1/",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250128-2-EN",
       "published_at": "2025-01-12T16:00:00Z",
       "source_id": "hkma",
       "status": "queued",
       "summary": "",
-      "title": "The HKMA issued a letter on 13 January 2025 to consult the banking industry on implementation of the prudential treatment of cryptoasset exposures held by authorized institutions."
+      "title": "Letter to HKAB: Soft consultation: prudential treatment of cryptoasset exposures"
     },
     {
       "feed_id": "hkma_consultations",

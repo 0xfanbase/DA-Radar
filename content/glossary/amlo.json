@@ -3,6 +3,12 @@
   "term": "AMLO",
   "plain_definition": "Short for the Anti-Money Laundering and Counter-Terrorist Financing Ordinance, Hong Kong's main law requiring regulated businesses -- including virtual asset exchanges, and soon virtual asset dealers, custodians, advisers, and managers -- to verify customers' identities and guard against money laundering and terrorist financing.",
   "formal_definition": "Anti-Money Laundering and Counter-Terrorist Financing Ordinance (Cap. 615), the statute under which Hong Kong's virtual asset trading platform licensing regime, and its planned virtual asset dealing, custodian, advisory, and management licensing regimes, are established.",
-  "related_terms": ["VATP", "SFO"],
-  "first_used_card_id": "3e1fcbaf94f7cb24004161b6bea4436991d05efa01ae61f88de74d3bd2c407d2"
+  "related_terms": [
+    "VATP",
+    "SFO"
+  ],
+  "first_used_card_id": "3e1fcbaf94f7cb24004161b6bea4436991d05efa01ae61f88de74d3bd2c407d2",
+  "generated_at": "2026-07-09T07:03:38Z",
+  "model": "not recorded (pre-provenance content)",
+  "status": "unverified"
 }

@@ -5,6 +5,8 @@ from __future__ import annotations
 
 import subprocess
 
+import os
+
 from pipeline.ci.path_allowlist import (
     check_path_allowlist,
     get_diff_changed_paths,
@@ -204,3 +206,91 @@ def test_get_uncommitted_changed_paths_expands_bare_untracked_directory(tmp_path
 
     exit_code = main(["--mode", "working-tree", "--repo-dir", str(repo)])
     assert exit_code == 0
+
+
+def test_symlink_under_content_resolving_into_pipeline_is_rejected(tmp_path):
+    """Real gap found live during the 2026-07-11 compliance audit: a symlink
+    placed under content/ that resolves to a file under pipeline/ used to
+    pass check_path_allowlist's pure string-prefix check, since the check
+    never looked at the filesystem. A prompt-injected AI job with Write
+    access to content/ (but no Bash, so no direct edit to pipeline/) could
+    still stage such a symlink -- os.symlink is a plain filesystem write, not
+    a shell command."""
+    repo = tmp_path
+    _init_repo(repo)
+    (repo / "content").mkdir()
+    (repo / "pipeline").mkdir()
+    (repo / "pipeline" / "secret.py").write_text("# real pipeline code")
+    _commit_all(repo, "base")
+
+    os.symlink(
+        os.path.join("..", "pipeline", "secret.py"),
+        repo / "content" / "evil_link.py",
+    )
+
+    changed = get_uncommitted_changed_paths(str(repo))
+    assert changed == ["content/evil_link.py"]
+
+    ok, violations = check_path_allowlist(changed, repo_dir=str(repo))
+    assert ok is False
+    assert violations == ["content/evil_link.py"]
+
+    exit_code = main(["--mode", "working-tree", "--repo-dir", str(repo)])
+    assert exit_code == 1
+
+
+def test_symlinked_directory_under_content_is_rejected(tmp_path):
+    """Same gap, one level up: a symlinked *directory* under content/ whose
+    real target is outside the allowlist. git itself reports the symlink as
+    a single untracked entry (it does not follow the symlink to list files
+    inside it), so the gate only ever needs to resolve that one reported
+    path -- which _escapes_allowlist_via_symlink does via os.path.realpath."""
+    repo = tmp_path
+    _init_repo(repo)
+    (repo / "content").mkdir()
+    (repo / "escape_target").mkdir()
+    (repo / "escape_target" / "payload.json").write_text("{}")
+    _commit_all(repo, "base")
+
+    os.symlink(
+        os.path.join("..", "escape_target"),
+        repo / "content" / "linked_dir",
+    )
+
+    changed = get_uncommitted_changed_paths(str(repo))
+    assert changed == ["content/linked_dir"]
+
+    ok, violations = check_path_allowlist(changed, repo_dir=str(repo))
+    assert ok is False
+    assert violations == ["content/linked_dir"]
+
+
+def test_legitimate_real_files_still_pass_with_repo_dir_set(tmp_path):
+    """The new filesystem-resolution check must not false-positive on
+    ordinary, non-symlinked content/data files -- confirms the fix is
+    additive, not a regression on the common case."""
+    repo = tmp_path
+    _init_repo(repo)
+    (repo / "content").mkdir()
+    (repo / "data").mkdir()
+    (repo / "content" / "a.json").write_text("{}")
+    (repo / "data" / "ledger.json").write_text("{}")
+    _commit_all(repo, "base")
+
+    (repo / "content" / "b.json").write_text("{}")
+
+    changed = get_uncommitted_changed_paths(str(repo))
+    ok, violations = check_path_allowlist(changed, repo_dir=str(repo))
+    assert ok is True
+    assert violations == []
+
+
+def test_check_path_allowlist_without_repo_dir_still_works_as_pure_function():
+    """Backward compatibility: existing callers that pass plain path strings
+    with no real filesystem behind them (repo_dir defaults to ".") must
+    behave exactly as before the symlink fix -- the filesystem check
+    fail-opens (treats as "not escaping") for a path that doesn't exist on
+    disk relative to the current working directory."""
+    ok, violations = check_path_allowlist(["content/cards/foo.json", "data/ledger.json"])
+    assert ok is True
+    assert violations == []

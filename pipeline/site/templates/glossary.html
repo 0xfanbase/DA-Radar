@@ -11,6 +11,14 @@
       <p>{{ g.plain_definition }}</p>
       {% if g.formal_definition %}<p class="mono meta-line">{{ g.formal_definition }}</p>{% endif %}
       {% if g.related_terms %}<p style="font-size:0.85rem;">See also: {{ g.related_terms | join(", ") }}</p>{% endif %}
+      <div class="card-meta">
+        {% if g.status == "corrected" %}
+        <a class="badge-corrected" href="method.html#corrections-log">Corrected &mdash; see corrections log</a>
+        {% else %}
+        <span class="badge-unverified">Not independently verified</span>
+        {% endif %}
+        <span>generated {{ g.generated_at }} &middot; {{ g.model }}</span>
+      </div>
     </dd>
   </div>
   {% else %}

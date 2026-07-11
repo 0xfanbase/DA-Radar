@@ -3,5 +3,6 @@
   "generated_at": "2026-07-09T08:00:00Z",
   "last_changed": "2026-07-09",
   "model": "Claude (Anthropic)",
-  "schema_version": 1
+  "schema_version": 1,
+  "status": "unverified"
 }

@@ -7,7 +7,7 @@
     "SFC Circular 26EC31 (SFC-authorised funds with virtual asset exposure)",
     "Code on Unit Trusts and Mutual Funds (UT Code)"
   ],
-  "standing_summary": "Spot virtual asset ETFs have traded on HKEX since 30 April 2024, when Harvest Global, ChinaAMC, and a Bosera/HashKey Capital consortium launched Asia's first spot bitcoin and ether ETFs. A spot Solana ETF from ChinaAMC began trading around 27 October 2025. The SFC's governing circular for SFC-authorised funds with virtual asset exposure was updated on 27 May 2026 (Circular 26EC31, superseding the original December 2023 framework), and on 20 April 2026 the SFC introduced a new framework allowing 24/7 secondary trading of tokenised SFC-authorised investment products on licensed virtual asset trading platforms, with an initial focus on tokenised money-market funds. Separately, the standing UT Code is under a broader modernisation consultation (22 October 2025 to 21 January 2026) not specific to virtual assets.",
+  "standing_summary": "Spot virtual asset ETFs (bitcoin and ether) have traded on HKEX since 30 April 2024, when Asia's first such products launched. A spot Solana ETF began trading around 27 October 2025. The SFC's governing circular for SFC-authorised funds with virtual asset exposure was updated on 27 May 2026 (Circular 26EC31, superseding the original December 2023 framework), and on 20 April 2026 the SFC introduced a new framework allowing 24/7 secondary trading of tokenised SFC-authorised investment products on licensed virtual asset trading platforms, with an initial focus on tokenised money-market funds. Separately, the standing UT Code is under a broader modernisation consultation (22 October 2025 to 21 January 2026) not specific to virtual assets.",
   "last_changed": "2026-05-27",
   "key_links": [
     {
@@ -31,5 +31,8 @@
     "Conclusions to the UT Code modernisation consultation (closed 21 Jan 2026) had not been located as published at the time of this research.",
     "Whether the tokenised-fund secondary-trading pilot expands beyond money-market funds is not yet confirmed.",
     "No evidence was found of additional spot virtual asset ETFs beyond bitcoin, ether, and Solana."
-  ]
+  ],
+  "generated_at": "2026-07-09T06:14:16Z",
+  "model": "not recorded (pre-provenance content)",
+  "status": "unverified"
 }

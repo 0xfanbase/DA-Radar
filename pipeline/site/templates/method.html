@@ -18,12 +18,13 @@
 </table>
 
 <h2>Verification pass rate</h2>
-{% set verified_count = status_counts.get("published", 0) %}
 {% set verified_cards = cards | selectattr("status", "equalto", "verified") | list | length %}
+{% set corrected_cards = cards | selectattr("status", "equalto", "corrected") | list | length %}
+{% set unverified_cards = cards | selectattr("status", "equalto", "unverified") | list | length %}
 {% set total_cards = cards | length %}
 <p>
   {% if total_cards > 0 %}
-  {{ verified_cards }} of {{ total_cards }} published cards currently carry <span class="badge-verified">verified</span> status; the rest carry <span class="badge-unverified">unverified</span> and are shown with that label wherever they appear.
+  Of {{ total_cards }} published cards, {{ verified_cards }} currently carry <span class="badge-verified">verified</span> status, {{ corrected_cards }} carry <span class="badge-corrected">corrected</span> status (see the <a href="method.html#corrections-log">corrections log</a> below), and {{ unverified_cards }} carry <span class="badge-unverified">unverified</span> status.
   {% else %}
   No cards published yet.
   {% endif %}
@@ -47,7 +48,7 @@
 <p>The audit loop exists (a weekly scheduled job) but has not run yet.</p>
 {% endif %}
 
-<h2>Corrections log</h2>
+<h2 id="corrections-log">Corrections log</h2>
 <p>Corrections are always human-initiated and reviewed via pull request before publishing &mdash; this project deliberately does not let the audit loop (or anything else) auto-publish a correction on its own, since getting a correction itself wrong would be a more serious integrity failure than the original error. Every correction's own new citation is re-checked by the same deterministic verification gate as any other card change before the pull request can merge.</p>
 {% if corrections %}
 <table class="doc-table">

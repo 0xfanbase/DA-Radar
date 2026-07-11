@@ -3,6 +3,12 @@
   "term": "Regulated activity (SFC licence types)",
   "plain_definition": "Hong Kong's Securities and Futures Commission licenses different kinds of financial business under numbered categories called regulated activities -- for example, Type 1 covers dealing in securities, Type 4 covers advising on securities, Type 7 covers automated trading services, and Type 9 covers asset management. Hong Kong's new virtual asset licensing regimes largely reuse these same numbered categories and their existing requirements as a template.",
   "formal_definition": "A regulated activity listed in Schedule 5 of the Securities and Futures Ordinance (Cap. 571), each requiring its own SFC licence or registration.",
-  "related_terms": ["SFO", "SFC"],
-  "first_used_card_id": "3e1fcbaf94f7cb24004161b6bea4436991d05efa01ae61f88de74d3bd2c407d2"
+  "related_terms": [
+    "SFO",
+    "SFC"
+  ],
+  "first_used_card_id": "3e1fcbaf94f7cb24004161b6bea4436991d05efa01ae61f88de74d3bd2c407d2",
+  "generated_at": "2026-07-09T07:03:38Z",
+  "model": "not recorded (pre-provenance content)",
+  "status": "unverified"
 }

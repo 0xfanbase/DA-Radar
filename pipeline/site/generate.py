@@ -1,6 +1,7 @@
 """Static site generator -- renders content/*.json and data/*.json into
-static HTML under an output directory (docs/ by default, matching a
-common GitHub Pages "deploy from branch, /docs folder" source setting).
+static HTML under an output directory (_site/ by default), uploaded to
+GitHub Pages via the Actions-based deployment (actions/upload-pages-artifact
++ actions/deploy-pages). This output directory is never committed to git.
 
 No JS framework, no npm build toolchain: Jinja2 templates + plain CSS/JS,
 consistent with the rest of this pipeline's plain-Python, fully-testable

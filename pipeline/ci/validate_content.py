@@ -15,11 +15,86 @@ import argparse
 import json
 import os
 import posixpath
+import re
 import sys
 
 from jsonschema import Draft202012Validator
 
 _SCHEMAS_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "schemas")
+
+# Guards against the 2026-07-09 correction recurring: an internal Claude
+# model-version identifier (e.g. "claude-sonnet-5") was written into the
+# `model` field of 5 cards + start_here.json and published live. The fix
+# at the time was prompt-text-only (analyst_prompt.md wording) -- the same
+# enforcement class that let the leak happen in the first place, since a
+# prompt instruction is not a gate. This is the deterministic backstop:
+# every schema-governed content file's `model` field (wherever the schema
+# defines one -- card.json, glossary.json, pillar_state.json,
+# start_here.json, trajectory.json's per-item `model`) is checked against
+# reject patterns for internal-identifier *shapes*, not a denylist of
+# specific strings, so it also catches future model names we haven't seen.
+#
+# Deliberately narrow, per IMPROVEMENT_BACKLOG.md's own warning against "a
+# blanket pattern that could false-positive a legitimate display name":
+# human-readable names ("Claude (Anthropic)", "GPT-4 (OpenAI)", "not
+# recorded (pre-provenance content)") use capitalization, spaces, and/or
+# parentheses, none of which these patterns match.
+_INTERNAL_MODEL_ID_PATTERNS = (
+    # Lowercase-hyphenated "claude-<family>-<tier>" tokens, with or without
+    # a trailing dated version suffix -- e.g. "claude-sonnet-5",
+    # "claude-opus-4-1", "claude-opus-4-5-20251101",
+    # "claude-3-7-sonnet-20250219", "claude-haiku-4-5-20251001".
+    re.compile(r"^claude[-_][a-z0-9][a-z0-9.\-]*$"),
+    # A bare dated version suffix on its own, or trailing on any
+    # lowercase-hyphenated token regardless of family word -- an 8-digit
+    # YYYYMMDD is not a human-readable name under any circumstance.
+    re.compile(r"(?:^|-)\d{8}$"),
+    # Bare version numbers with no descriptive name at all -- e.g. "4.5",
+    # "4-1", "v5", "5.2.1" -- conveys no human-readable information and is
+    # the shape of an internal version tag, not a display name.
+    re.compile(r"^v?\d+(?:[.\-]\d+)*$"),
+)
+
+
+def _internal_model_id_reason(value: str) -> str | None:
+    """Returns a human-readable reason if `value` has the shape of an
+    internal model-version identifier, or None if it looks like an
+    acceptable human-readable display name."""
+    if not isinstance(value, str):
+        return None
+    candidate = value.strip()
+    if not candidate:
+        return None
+    for pattern in _INTERNAL_MODEL_ID_PATTERNS:
+        if pattern.match(candidate):
+            return (
+                f"model field {value!r} looks like an internal model-version "
+                "identifier, not a human-readable display name (e.g. "
+                '"Claude (Anthropic)") -- see the 2026-07-09 correction in '
+                "IMPROVEMENT_BACKLOG.md"
+            )
+    return None
+
+
+def _model_field_values(data):
+    """Yields every `model` field value present in a parsed content file,
+    handling both single-object content types (card/glossary/pillar_state/
+    start_here) and trajectory.json's array-of-objects shape."""
+    records = data if isinstance(data, list) else [data]
+    for record in records:
+        if isinstance(record, dict) and "model" in record:
+            yield record["model"]
+
+
+def check_model_field_leak(data) -> str | None:
+    """Returns an error message if any `model` field in `data` has the
+    shape of an internal model-version identifier, else None."""
+    for value in _model_field_values(data):
+        reason = _internal_model_id_reason(value)
+        if reason is not None:
+            return reason
+    return None
+
 
 _PREFIX_MAPPING = (
     ("content/cards/", "card.json"),
@@ -76,6 +151,11 @@ def validate_file(changed_path: str, *, repo_dir: str = ".") -> tuple:
     if errors:
         message = "; ".join(f"{list(e.path)}: {e.message}" for e in errors[:5])
         return (True, False, message)
+
+    leak_reason = check_model_field_leak(data)
+    if leak_reason is not None:
+        return (True, False, f"{changed_path}: {leak_reason}")
+
     return (True, True, None)
 
 

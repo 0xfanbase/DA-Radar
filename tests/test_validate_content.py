@@ -112,6 +112,34 @@ def test_validate_changed_paths_all_valid_passes(tmp_path):
     assert len(results) == 1
 
 
+def test_card_with_internal_model_identifier_is_rejected(tmp_path):
+    """The 2026-07-09 correction: an internal Claude model-version
+    identifier (e.g. "claude-sonnet-5") must never pass validation in a
+    card's `model` field, even though card.json's schema only requires
+    `minLength: 1` and has no opinion on the string's shape."""
+    leaked = dict(VALID_CARD, model="claude-sonnet-5")
+    _write(tmp_path, "content/cards/card-1.json", leaked)
+    applicable, ok, error = validate_file("content/cards/card-1.json", repo_dir=str(tmp_path))
+    assert applicable is True
+    assert ok is False
+    assert error is not None
+    assert "content/cards/card-1.json" in error
+    assert "claude-sonnet-5" in error
+
+
+def test_card_with_human_readable_model_name_is_accepted(tmp_path):
+    """The accepted replacement from the same correction: a human-readable
+    model family name must still pass, since editorial rule 1 requires the
+    model be disclosed -- this check must reject the identifier *shape*,
+    not the presence of a model name at all."""
+    ok_card = dict(VALID_CARD, model="Claude (Anthropic)")
+    _write(tmp_path, "content/cards/card-1.json", ok_card)
+    applicable, ok, error = validate_file("content/cards/card-1.json", repo_dir=str(tmp_path))
+    assert applicable is True
+    assert ok is True
+    assert error is None
+
+
 def test_real_array_shaped_corrections_file_validates(tmp_path):
     """corrections.json is an array-typed schema (matching how
     apply_correction.py's append_correction_record actually writes

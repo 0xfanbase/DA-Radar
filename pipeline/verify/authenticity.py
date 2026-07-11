@@ -14,6 +14,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from typing import Optional
+from urllib.parse import urlparse
 
 import requests
 
@@ -62,6 +63,49 @@ def quote_is_authentic(quote: str, source_text: str) -> bool:
     return normalize_for_match(quote) in normalize_for_match(source_text)
 
 
+def _hostname(url: str) -> Optional[str]:
+    try:
+        return urlparse(url).hostname
+    except ValueError:
+        return None
+
+
+def citation_domain_is_official(url: str, official_domains: list) -> bool:
+    """True iff url's hostname exactly matches one of official_domains, or
+    is a genuine subdomain of one (e.g. "press.www.example.gov" is a
+    subdomain of "www.example.gov"; "www.example.gov.evil.example" is NOT
+    -- a naive prefix/substring match would wrongly accept an
+    attacker-controlled domain that merely contains an official hostname
+    as text).
+
+    official_domains is always caller-supplied, derived from
+    config/jurisdiction.json (see official_domains_from_config below) --
+    this module hardcodes no domain of its own, so a domain check is only
+    ever as jurisdiction-specific as the list a caller passes in.
+    """
+    host = _hostname(url)
+    if not host:
+        return False
+    host = host.casefold()
+    for domain in official_domains:
+        domain = domain.casefold()
+        if host == domain or host.endswith("." + domain):
+            return True
+    return False
+
+
+def official_domains_from_config(config: dict) -> list:
+    """Flattens every regulator's official_domains list (config/jurisdiction.json)
+    into one list, for callers that want "any official domain for this
+    jurisdiction" rather than a single regulator's own list. A regulator
+    entry with no official_domains field contributes nothing -- additive,
+    never required, so existing config shapes keep working."""
+    domains = []
+    for regulator in config.get("regulators", []):
+        domains.extend(regulator.get("official_domains", []))
+    return domains
+
+
 @dataclass
 class CitationCheckResult:
     url: str
@@ -80,6 +124,7 @@ def check_citation(
     url: str,
     quote: str,
     *,
+    official_domains: list,
     user_agent: str,
     timeout: float,
     max_retries: int,
@@ -91,7 +136,23 @@ def check_citation(
 
     A fetch or extraction failure counts as NOT authentic -- fail closed,
     since an uncheckable citation cannot be treated as verified.
+
+    A citation whose URL is not on the caller-supplied official-domain
+    allowlist (official_domains -- always derived from
+    config/jurisdiction.json, never hardcoded here) is ALSO a hard
+    failure, and is rejected before any fetch is even attempted: a quote
+    can be a genuine substring of a non-official page and still not
+    satisfy "primary sources only for facts" (CLAUDE.md rule 2), so a
+    passing quote-match can never compensate for a failing domain check.
     """
+    if not citation_domain_is_official(url, official_domains):
+        return CitationCheckResult(
+            url=url,
+            quote=quote,
+            authentic=False,
+            error=f"citation URL is not on the official-domain allowlist: {url}",
+        )
+
     doc = fetch_document(
         url,
         user_agent=user_agent,

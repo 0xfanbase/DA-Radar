@@ -14,7 +14,9 @@
     {% endif %}
   {% endfor %}
 </div>
-<p class="mono meta-line">Last changed {{ start_here.last_changed }} &middot; generated {{ start_here.generated_at }} &middot; {{ start_here.model }}</p>
+<p class="mono meta-line">Last changed {{ start_here.last_changed }} &middot; generated {{ start_here.generated_at }} &middot; {{ start_here.model }} &middot;
+  {% if start_here.status == "corrected" %}<a class="badge-corrected" href="method.html#corrections-log">Corrected &mdash; see corrections log</a>{% else %}<span class="badge-unverified">Not independently verified</span>{% endif %}
+</p>
 {% else %}
 <p>Orientation page not yet generated.</p>
 {% endif %}

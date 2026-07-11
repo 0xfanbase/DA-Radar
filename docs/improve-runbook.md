@@ -7,7 +7,7 @@ deployment had a `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_API_KEY` secret — it del
 "Architecture pivot" entry, which applies identically here).
 
 **No live CCR trigger for this runbook has been stood up yet, unlike the analyst/verifier's
-`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`.** This is a deliberate, separate decision (see
+CCR trigger.** This is a deliberate, separate decision (see
 IMPROVEMENT_BACKLOG.md's improve.yml design-note entry): this mechanism's blast radius (write
 access to `/pipeline` and `/config`, the territory the path-allowlist gate exists to keep the
 analyst and verifier out of) earned it its own kickoff-style review before implementation, and

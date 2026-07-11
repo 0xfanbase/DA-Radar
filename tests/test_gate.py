@@ -11,7 +11,14 @@ from __future__ import annotations
 from pipeline.verify.gate import enforce_full_gate, enforce_verification_gate
 
 URL = "https://example.invalid/doc"
-FETCH_KWARGS = dict(user_agent="TestAgent/0.1", timeout=5, max_retries=3, backoff_base=0.01, backoff_multiplier=2.0)
+FETCH_KWARGS = dict(
+    user_agent="TestAgent/0.1",
+    timeout=5,
+    max_retries=3,
+    backoff_base=0.01,
+    backoff_multiplier=2.0,
+    official_domains=["example.invalid"],
+)
 
 
 def _draft_card(status="verified", quote="takes effect on 1 August 2026"):
@@ -61,6 +68,20 @@ def test_gate_does_not_mutate_the_input_card(requests_mock, fixture_bytes):
     enforce_verification_gate(card, **FETCH_KWARGS)
 
     assert card["status"] == "verified"  # original untouched
+
+
+def test_gate_forces_unverified_on_non_official_domain_even_with_genuine_quote(requests_mock, fixture_bytes):
+    """A citation URL outside the caller-supplied official-domain
+    allowlist forces unverified, even though the quote is otherwise a
+    genuine match against that (non-official) page."""
+    requests_mock.get(URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
+    card = _draft_card(status="verified")
+
+    kwargs = dict(FETCH_KWARGS)
+    kwargs["official_domains"] = ["www.official.invalid"]
+    gated = enforce_verification_gate(card, **kwargs)
+
+    assert gated["status"] == "unverified"
 
 
 def test_gate_forces_unverified_on_zero_citations():
@@ -164,3 +185,79 @@ def test_full_gate_does_not_mutate_the_input_card(requests_mock, fixture_bytes):
 
     assert card["status"] == "verified"
     assert "numeric_claims_unsupported" not in card
+
+
+# --- enforce_full_gate: 15-word/one-per-source quote policy ---
+
+
+def test_full_gate_downgrades_on_over_limit_quote(requests_mock, fixture_bytes):
+    requests_mock.get(URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
+    long_quote = " ".join(f"word{i}" for i in range(16))
+    card = {
+        "id": "card-1",
+        "status": "verified",
+        "summary": "",
+        "why_it_matters": "",
+        "citations": [{"url": URL, "quote": long_quote}],
+    }
+
+    gated = enforce_full_gate(card, **FETCH_KWARGS)
+
+    assert gated["status"] == "unverified"
+
+
+def test_full_gate_passes_on_exactly_fifteen_word_quote(requests_mock, fixture_bytes):
+    requests_mock.get(URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
+    fifteen_word_quote = (
+        "published conclusions to its consultation. The regime takes effect on 1 August 2026 for all"
+    )
+    assert len(fifteen_word_quote.split()) == 15
+    card = {
+        "id": "card-1",
+        "status": "verified",
+        "summary": "",
+        "why_it_matters": "",
+        "citations": [{"url": URL, "quote": fifteen_word_quote}],
+    }
+
+    gated = enforce_full_gate(card, **FETCH_KWARGS)
+
+    assert gated["status"] == "verified"
+
+
+def test_full_gate_downgrades_on_duplicate_citation_url(requests_mock, fixture_bytes):
+    requests_mock.get(URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
+    card = {
+        "id": "card-1",
+        "status": "verified",
+        "summary": "",
+        "why_it_matters": "",
+        "citations": [
+            {"url": URL, "quote": "takes effect on 1 August 2026"},
+            {"url": URL, "quote": "takes effect on 1 August 2026"},
+        ],
+    }
+
+    gated = enforce_full_gate(card, **FETCH_KWARGS)
+
+    assert gated["status"] == "unverified"
+
+
+def test_full_gate_passes_on_distinct_citation_urls(requests_mock, fixture_bytes):
+    other_url = "https://example.invalid/other-doc"
+    requests_mock.get(URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
+    requests_mock.get(other_url, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
+    card = {
+        "id": "card-1",
+        "status": "verified",
+        "summary": "",
+        "why_it_matters": "",
+        "citations": [
+            {"url": URL, "quote": "takes effect on 1 August 2026"},
+            {"url": other_url, "quote": "takes effect on 1 August 2026"},
+        ],
+    }
+
+    gated = enforce_full_gate(card, **FETCH_KWARGS)
+
+    assert gated["status"] == "verified"
