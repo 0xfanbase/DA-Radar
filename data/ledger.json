@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T05:29:36Z",
+  "generated_at": "2026-07-11T04:37:37Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -1296,6 +1296,22 @@
       "status": "queued",
       "summary": "",
       "title": "Tender results of 2-year RMB HKSAR Institutional Government Bonds"
+    },
+    "1394616433966427ca2d9baa32b182892eb5fd3e5c06e8a340cdd48a151419a1": {
+      "card_id": null,
+      "content_hash": "d49bbb8e69141a2a75cd5a41410764ed067d08350e30e6ba321d46ef5c3da102",
+      "feed_id": "sfc_press_releases",
+      "first_seen": "2026-07-11T04:37:37Z",
+      "guid": "26PR109",
+      "item_hash": "1394616433966427ca2d9baa32b182892eb5fd3e5c06e8a340cdd48a151419a1",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR109",
+      "published_at": "2026-07-10T09:24:24Z",
+      "raw_published": "Fri, 10 Jul 2026 17:24:24 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "SFC and CSRC hold high-level enforcement cooperation meeting"
     },
     "139763378c24cef6d70ca8f509fd6ec8c1c5880eeb52aaa0355f5b68b3cfad1c": {
       "card_id": null,
@@ -4289,6 +4305,22 @@
       "summary": "",
       "title": "Scam alert related to banks"
     },
+    "490b59c38a480f8ceded66a8eca1fbf48f00c87fda4ea3d202a44e792980bb91": {
+      "card_id": null,
+      "content_hash": "c4941652520fcea77895d078c50e56f06b7fa526a92c313af8205e79d170eebd",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-11T04:37:37Z",
+      "guid": null,
+      "item_hash": "490b59c38a480f8ceded66a8eca1fbf48f00c87fda4ea3d202a44e792980bb91",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260710-6/",
+      "published_at": "2026-07-09T16:00:00Z",
+      "raw_published": "Fri, 10 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Website Alert – fraudulent websites related to Octopus Cards Limited"
+    },
     "496a76ab2303cf4ee18e46d8ddf663730f604df70280f60b63b540a8cf33905d": {
       "card_id": null,
       "content_hash": "a5897b17d2ce621920f2df97cc695a6c11fe0366018ee570c09987e213056c58",
@@ -4555,6 +4587,22 @@
       "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260427-3/",
       "published_at": "2026-04-26T16:00:00Z",
       "raw_published": "Mon, 27 Apr 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Scam alert related to banks"
+    },
+    "4de07a8777ea2eb37ee881538942d1a60ce19ffdf3c1d5a171558d31e8ba364d": {
+      "card_id": null,
+      "content_hash": "881a28ccabe2fd0fbf4596832992e3e63a0c8047c47ab1b04779578f1ad3e088",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-11T04:37:37Z",
+      "guid": null,
+      "item_hash": "4de07a8777ea2eb37ee881538942d1a60ce19ffdf3c1d5a171558d31e8ba364d",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260710-3/",
+      "published_at": "2026-07-09T16:00:00Z",
+      "raw_published": "Fri, 10 Jul 2026 00:00:00 +0800",
       "relevant": false,
       "source_id": "hkma",
       "status": "queued",
@@ -5696,6 +5744,22 @@
       "status": "queued",
       "summary": "",
       "title": "Retail banks fully launch Money Safe"
+    },
+    "60e063a1cc870d77d12f4edcaf7a0191c1d0e9b7d780dc79a007aa1d1acdc868": {
+      "card_id": null,
+      "content_hash": "cc18a4889a8628490bdae5c6872cb2ba780f1e7a7b099c16fcc4cff4105425d8",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-11T04:37:37Z",
+      "guid": null,
+      "item_hash": "60e063a1cc870d77d12f4edcaf7a0191c1d0e9b7d780dc79a007aa1d1acdc868",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260710-5/",
+      "published_at": "2026-07-09T16:00:00Z",
+      "raw_published": "Fri, 10 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "HKICL alerts public of fraudulent website"
     },
     "60e71669577f90a564fa17791864f97e8da98d625d07fc945aa2ff84d4f608d8": {
       "card_id": null,
@@ -8000,6 +8064,22 @@
       "status": "queued",
       "summary": "",
       "title": "Sustainable Finance Action Agenda (PDF File, 195.7 KB)"
+    },
+    "8581ccb5d5095a01008c43a81f1e61b3de32587778ae5049f9752d867628e6bc": {
+      "card_id": null,
+      "content_hash": "6eccb5bbafc0aa3f1ea856e8167b3be432ebcef6533861c03978219237d0a956",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-11T04:37:37Z",
+      "guid": null,
+      "item_hash": "8581ccb5d5095a01008c43a81f1e61b3de32587778ae5049f9752d867628e6bc",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260710-4/",
+      "published_at": "2026-07-09T16:00:00Z",
+      "raw_published": "Fri, 10 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Hong Kong Deposit Protection Board Annual Report 2025-2026"
     },
     "85b474aa35aa4f069da531ba0fe094883d90cd0ed014a4ae9b8783cddb89a119": {
       "card_id": null,
