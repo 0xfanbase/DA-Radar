@@ -2,11 +2,12 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "card.json",
   "title": "Card",
-  "description": "An AI-analyst-authored, AI-verifier-checked summary card for a single regulatory event or document. 'regulator' and 'pillar' values are free text governed by config/jurisdiction.json, never enumerated here, to keep this schema jurisdiction-portable. Not populated with real data until Phase 2/3.",
+  "description": "An AI-analyst-authored, AI-verifier-checked summary card for a single regulatory event or document. 'regulator' and 'pillar' values are free text governed by the owning jurisdiction's config/jurisdictions/{id}.json and config/site.json, never enumerated here, to keep this schema jurisdiction-portable. Lives at content/{jurisdiction_id}/cards/*.json since the registry-model pivot; 'jurisdiction_id' must match the file's own directory and config/site.json's jurisdictions[].id. Not populated with real data until Phase 2/3.",
   "type": "object",
   "properties": {
     "schema_version": { "const": 1 },
     "id": { "type": "string", "minLength": 1 },
+    "jurisdiction_id": { "type": "string", "minLength": 1 },
     "published_date": { "type": "string", "format": "date" },
     "regulator": { "type": "string", "minLength": 1 },
     "pillar": {
@@ -70,6 +71,7 @@
   "required": [
     "schema_version",
     "id",
+    "jurisdiction_id",
     "published_date",
     "regulator",
     "pillar",

@@ -30,6 +30,10 @@ along with `git log` — to know exactly where the project stands before doing a
   real regulator publications with zero human action -- cannot be completed synchronously in any
   session and remains a tracked open item. **Remaining work is not more engineering** (Fable's own
   words) -- it's owner branch-protection setup and observing the sequenced live-proving steps below.
+- **P6 — Multi-jurisdiction chassis refactor: complete.** Owner-approved architecture pivot from
+  the one-jurisdiction-per-deployment fork model to a registry model (one deployment, many
+  jurisdictions) -- see the 2026-07-11 "P6" entry below for full detail. Site output is
+  byte-equivalent (still HK-only) by design; P7 (new IA, tabs, rebrand) is next.
 
 ## Owner / next-step punch list
 
@@ -633,6 +637,105 @@ the exact internal-model-identifier leak shape that shipped live once already, a
 Log's raw-64-char-hash fallback (now a reader-appropriate label). Full suite: 355 passing (up from
 338). Site rebuilt and independently re-verified: all 7 pages, all four new UI markers grepped directly
 out of the generated HTML rather than trusted from a report.
+
+### 2026-07-11 — P6: multi-jurisdiction chassis refactor (registry model)
+
+The owner asked for the project to expand from HK-only to 8 jurisdictions (HK, US, EU, UK,
+Singapore, UAE, Switzerland, Japan) under one deployment, renamed **Global Digital Asset Radar**.
+Before any implementation, ran a Fable-directed planning pass: 7 parallel recon agents did real,
+live-fetch-verified research on every new jurisdiction's regulators and feed availability (the
+same discipline this project's own Phase 1 kickoff used for SFC/HKMA), and Fable synthesized a
+full phased roadmap (P6-P15) plus flagged genuine hard problems rather than glossing over them --
+most notably that Singapore's MAS has no feed and serves fake "Maintenance" pages to any client
+that isn't browser-realistic, a real tension with this project's own honest-client fetch
+discipline. Four blocking decisions were put to the owner before P6 started (all approved): the
+CLAUDE.md rewrite from the fork model to the registry model; renaming the bot identity and
+localStorage key to jurisdiction-neutral names; generalizing editorial rule 2's HK-specific source
+list; and Singapore shipping as a "manual-assisted" watcher (not browser-UA impersonation) when
+its phase (P14) arrives.
+
+**P6 itself is the architecture pivot only -- deliberately no visible site change.** Fable directed
+a sequential migration (config/content/data migration -> pipeline entrypoint `--jurisdiction`
+selectors -> site-generator restructure -> watch.yml matrix conversion -> jurisdiction-agnostic
+test upgrade -> identity rename), each step building on the last:
+
+- `config/jurisdiction.json` -> `config/site.json` (new: site name, 8-entry jurisdiction registry,
+  unified 7-pillar taxonomy, base seal vocabulary incl. a new `no_dedicated_regime` seal, fetch
+  defaults) + `config/jurisdictions/hk.json` (regulators, feeds, keywords -- hk is the only
+  registry entry with `status.watcher`/`status.analyst_verifier` = `"live"`; the other 7 are
+  `"planned"` with no config file yet).
+- `content/{cards,pillar_states,trajectory.json,document_library.json}` -> `content/hk/...`;
+  `content/start_here.json` -> `content/hk/orientation.json`; `content/glossary/` ->
+  `content/shared/glossary/` (now a genuinely shared pool -- each of the 11 terms gained a stable
+  `id` and a `jurisdictions` tag, and `related_terms` changed from display strings to id
+  references, laying the groundwork for real glossary crosslinks in P7).
+- `data/{ledger,queue}.json` -> `data/hk/...` (each gained a `jurisdiction_id` field);
+  `data/corrections.json`/`data/improve_queue.json` stay global by design.
+- Six schemas bumped to require jurisdiction/id fields (`glossary` v2, `document_library`, `card`,
+  `ledger`, `queue`, `corrections`); two new schemas (`site.json`, `orientation.json`).
+- `pipeline/watcher/run.py` and every `pipeline/ci/*` entrypoint that touches per-jurisdiction
+  files gained a `--jurisdiction <id>` selector resolving conventional paths, with explicit path
+  flags still available and overriding.
+- `pipeline/site/data.py` split into `load_global_data()` + `load_jurisdiction_data()`, with a
+  thin `load_site_data()` wrapper (explicitly marked as temporary scaffolding) so `generate.py` and
+  every template stayed untouched in this phase -- the site still renders the identical 7 HK pages.
+- `watch.yml` converted to a registry-driven matrix (`jurisdiction: [hk]` today; adding a
+  jurisdiction later is one matrix-array entry, not a workflow restructure), with a documented,
+  deliberately-deferred limitation (multi-matrix-job output aggregation) rather than
+  over-engineered now for a matrix of one.
+- `tests/test_jurisdiction_agnostic.py` upgraded: the banned-literal list is now generated from
+  the config files themselves (not hand-maintained), a second fabricated jurisdiction ("Sylvania")
+  joins the existing "Freedonia" fixture so the test proves multi-jurisdiction isolation rather
+  than single-config substitution, and `pipeline/site/templates/`/`static/*.js` entered the scan
+  scope for the first time.
+- Bot identity renamed `hk-radar-bot` -> `da-radar-bot` (env-var-set, never `git config`, per rule
+  5 unchanged); theme localStorage key `hkdar-theme` -> `gdar-theme`.
+
+**A skeptical final-check step caught real gaps the migration itself missed, and they were fixed
+before this landed, not glossed over:** the workflow's own verification agent found that
+`docs/analyst-runbook.md` and `pipeline/prompts/{analyst,verifier}_prompt.md` -- the actual,
+currently-operative instructions the live CCR trigger follows, since `analyze.yml` stays dormant
+-- were left referencing the old flat paths (`data/queue.json`, `content/cards/`, etc.), meaning a
+real trigger firing after this landed would have followed broken instructions. It also found a
+live functional bug in `correction.yml` (`git add content/cards` -- a now-empty leftover
+directory -- would have silently dropped the corrected card from its own commit), stale paths in
+the dormant `analyze.yml` that would have falsified CLAUDE.md's explicit promise that it "starts
+working exactly as diagrammed... with no other change required," and a stale `config/jurisdiction.
+json` path filter in `deploy.yml`. All fixed directly by the orchestrating session afterward (not
+delegated -- these are the operative-automation and CI-trigger layer, warranting the same direct
+care as CLAUDE.md itself): the runbook and both prompt files updated to the new paths and made
+jurisdiction-aware in their wording; `correction.yml` gained a `jurisdiction` input threaded
+through its `apply_correction`/`apply_verification_gate` calls and its commit's `git add` path;
+`analyze.yml`'s queue-check/promote/commit/diff-scoping steps repointed at `data/hk/`/
+`content/hk/`; `deploy.yml`'s path filter updated to `config/site.json`/`config/jurisdictions/**`;
+three empty leftover directories removed. Also brought the watcher/audit/gate `User-Agent` contact
+strings and README.md (still describing "HK Digital Asset Radar... Hong Kong is the pilot
+jurisdiction" -- the same staleness pattern as the 2026-07-11 GitHub Pages/Jekyll incident) in line
+with the rebrand, since leaving them stale would have repeated that exact mistake.
+
+**CLAUDE.md rewrite applied directly by the orchestrating session** (not delegated -- consistent
+with every other CLAUDE.md edit this session), using Fable's exact drafted replacement text:
+the title, Purpose section, the self-learning-loop diagram's watch.yml/analyze.yml lines, one
+sentence appended to the CCR-deviation paragraph, editorial rule 2's source-list parenthetical,
+rule 5's bot identity, the Path allowlist section (one sentence appended), the Sources section, the
+Jurisdiction portability section (full rewrite -- fork model to registry model, the core change),
+one bullet appended to Schema and test conventions, and the Quota/execution rules section. Left
+deliberately untouched: rule 3's "HK Government works are under copyright" phrasing, which the
+original plan flagged as a candidate one-word generalization but the owner's explicit approvals
+this round covered only rule 2 and the bot-identity naming -- not raised for this round, so not
+touched; still technically true for HK, just incomplete once other jurisdictions' government works
+are also covered. Flagged here rather than decided unilaterally.
+
+**Verification, run fresh by the orchestrating session after every fix, not trusted from the
+workflow's own reports:** full pytest suite 363 passing (up from 355); `tests/
+test_jurisdiction_agnostic.py` specifically re-run (10/10, including the new two-fabricated-
+jurisdiction and templates/static-scan tests); a full site rebuild confirmed byte-equivalent in
+substance (same 7 pages, real HK pillar content grepped directly out of the generated HTML, not
+assumed); `config/site.json` and `config/jurisdictions/hk.json` re-validated against their new
+schemas with real `jsonschema.validate()` calls; every workflow YAML file re-parsed after each
+edit; a full `grep` sweep for every remaining `hk-radar-bot`/old-contact-email occurrence,
+confirming the only survivors are historical log entries in `PROGRESS.md`/`IMPROVEMENT_BACKLOG.md`
+describing what was true at the time, correctly left untouched.
 
 ## PM checkpoints (Fable)
 

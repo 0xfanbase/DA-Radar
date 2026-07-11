@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "jurisdiction_id": "hk",
+  "jurisdiction_name": "Hong Kong",
+  "user_agent": "GlobalDigitalAssetRadarWatcher/0.1 (contact: da-radar-bot@users.noreply.github.com; purpose: public RSS regulatory monitoring)",
+  "fetch": {
+    "timeout_seconds": 15,
+    "max_retries": 3,
+    "backoff_base_seconds": 1.0,
+    "backoff_multiplier": 2.0
+  },
+  "relevance_keywords": [
+    "virtual asset",
+    "virtual assets",
+    "vatp",
+    "stablecoin",
+    "stablecoins",
+    "digital asset",
+    "digital assets",
+    "crypto",
+    "tokenis",
+    "tokeniz",
+    "distributed ledger",
+    "blockchain",
+    "e-hkd",
+    "ensemble",
+    "web3",
+    "nft"
+  ],
+  "pillar_keywords": {
+    "exchanges_vatp": [
+      "virtual asset trading platform",
+      "vatp",
+      "trading platform",
+      "aspire roadmap",
+      "staking",
+      "virtual asset-related",
+      "virtual asset service provider"
+    ],
+    "stablecoins": [
+      "stablecoin",
+      "stablecoins ordinance"
+    ],
+    "dealing_custody_advisory": [
+      "custod",
+      "virtual asset dealing",
+      "virtual asset advisory",
+      "virtual asset management",
+      "dealing in virtual assets",
+      "va dealer",
+      "va advisory",
+      "va management"
+    ],
+    "tokenization_rwa": [
+      "tokenis",
+      "tokeniz",
+      "project ensemble",
+      "ensembletx",
+      "ensemble",
+      "real-world asset",
+      "digital green bond",
+      "policy statement 2.0",
+      "leap framework",
+      "distributed ledger",
+      "blockchain"
+    ],
+    "funds_etfs": [
+      "etf",
+      "exchange-traded fund",
+      "unit trust",
+      "ut code",
+      "fund"
+    ],
+    "banking_money": [
+      "e-hkd",
+      "central bank digital currency",
+      "cbdc",
+      "tokenised deposit",
+      "tokenized deposit",
+      "cryptoasset",
+      "custod"
+    ],
+    "aml_cft_enforcement": [
+      "money laundering",
+      "counter-terrorist financing",
+      "aml",
+      "cft",
+      "travel rule",
+      "alert list",
+      "enforcement",
+      "reprimand",
+      "disciplinary"
+    ]
+  },
+  "seal_vocabulary": [
+    {
+      "id": "in_force",
+      "label": "In force"
+    },
+    {
+      "id": "consultation_open",
+      "label": "Consultation open"
+    },
+    {
+      "id": "bill_pending",
+      "label": "Bill pending"
+    },
+    {
+      "id": "proposed",
+      "label": "Proposed"
+    }
+  ],
+  "regulators": [
+    {
+      "id": "sfc",
+      "name": "Securities and Futures Commission",
+      "short_name": "SFC",
+      "homepage": "https://www.sfc.hk",
+      "official_domains": [
+        "www.sfc.hk",
+        "apps.sfc.hk"
+      ],
+      "feeds": [
+        {
+          "id": "sfc_press_releases",
+          "kind": "press_releases",
+          "url": "https://www.sfc.hk/en/RSS-Feeds/Press-releases"
+        },
+        {
+          "id": "sfc_circulars",
+          "kind": "circulars",
+          "url": "https://www.sfc.hk/en/RSS-Feeds/Circulars"
+        },
+        {
+          "id": "sfc_consultations",
+          "kind": "consultations_and_conclusions",
+          "url": "https://www.sfc.hk/en/RSS-Feeds/Consultations-and-Conclusions"
+        }
+      ]
+    },
+    {
+      "id": "hkma",
+      "name": "Hong Kong Monetary Authority",
+      "short_name": "HKMA",
+      "homepage": "https://www.hkma.gov.hk",
+      "official_domains": [
+        "www.hkma.gov.hk"
+      ],
+      "feeds": [
+        {
+          "id": "hkma_press_release",
+          "kind": "press_releases",
+          "url": "https://www.hkma.gov.hk/eng/other-information/rss/rss_press-release.xml"
+        },
+        {
+          "id": "hkma_circulars",
+          "kind": "circulars",
+          "url": "https://www.hkma.gov.hk/eng/other-information/rss/rss_circulars.xml"
+        },
+        {
+          "id": "hkma_speeches",
+          "kind": "speeches",
+          "url": "https://www.hkma.gov.hk/eng/other-information/rss/rss_speeches.xml"
+        },
+        {
+          "id": "hkma_guidelines",
+          "kind": "guidelines",
+          "url": "https://www.hkma.gov.hk/eng/other-information/rss/rss_guidelines.xml"
+        },
+        {
+          "id": "hkma_legislative_council_issues",
+          "kind": "legco_issues",
+          "url": "https://www.hkma.gov.hk/eng/other-information/rss/rss_legislative-council-issues.xml"
+        },
+        {
+          "id": "hkma_consultations",
+          "kind": "consultations",
+          "url": "https://www.hkma.gov.hk/eng/other-information/rss/rss_consultations.xml"
+        }
+      ]
+    },
+    {
+      "id": "fstb",
+      "name": "Financial Services and the Treasury Bureau",
+      "short_name": "FSTB",
+      "homepage": "https://www.fstb.gov.hk",
+      "official_domains": [
+        "www.fstb.gov.hk"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "govhk",
+      "name": "Government of Hong Kong Special Administrative Region",
+      "short_name": "GovHK",
+      "homepage": "https://www.news.gov.hk",
+      "official_domains": [
+        "www.news.gov.hk",
+        "www.info.gov.hk"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "legco",
+      "name": "Legislative Council",
+      "short_name": "LegCo",
+      "homepage": "https://www.legco.gov.hk",
+      "official_domains": [
+        "www.legco.gov.hk"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "gazette",
+      "name": "Hong Kong e-Gazette",
+      "short_name": "Gazette",
+      "homepage": "https://www.gld.gov.hk",
+      "official_domains": [
+        "www.gld.gov.hk"
+      ],
+      "feeds": []
+    }
+  ]
+}

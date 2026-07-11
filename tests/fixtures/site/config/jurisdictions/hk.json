@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "jurisdiction_id": "hk",
+  "jurisdiction_name": "Hong Kong",
+  "user_agent": "TestWatcher/0.1 (contact: test@example.invalid; purpose: test fixture)",
+  "fetch": {
+    "timeout_seconds": 15,
+    "max_retries": 3,
+    "backoff_base_seconds": 1.0,
+    "backoff_multiplier": 2.0
+  },
+  "relevance_keywords": ["test"],
+  "pillar_keywords": {},
+  "seal_vocabulary": [
+    {"id": "in_force", "label": "In force"},
+    {"id": "bill_pending", "label": "Bill pending"}
+  ],
+  "regulators": [
+    {
+      "id": "hkma",
+      "name": "Hong Kong Monetary Authority",
+      "short_name": "HKMA",
+      "homepage": "https://example.invalid",
+      "official_domains": ["example.invalid"],
+      "feeds": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "pillar": "test_pillar_beta",
+  "status_seal": "proposed",
+  "regulator": "FFA",
+  "instruments": ["Freedonia Beta Instrument"],
+  "standing_summary": "Freedonia-specific standing summary for pillar beta.",
+  "last_changed": "2026-01-01",
+  "key_links": [{"label": "FFA Beta page", "url": "https://ffa.freedonia.invalid/beta"}],
+  "open_items": ["Freedonia open item beta."]
+}

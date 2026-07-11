@@ -23,7 +23,15 @@ def queue_is_empty(queue_path: str) -> bool:
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="Report whether the analyst queue is empty.")
-    parser.add_argument("--queue", default="data/queue.json")
+    parser.add_argument(
+        "--jurisdiction",
+        default=None,
+        help=(
+            "Jurisdiction id (e.g. 'hk'). Resolves --queue to its conventional path; "
+            "--queue passed explicitly still overrides its --jurisdiction-derived default."
+        ),
+    )
+    parser.add_argument("--queue", default=None)
     parser.add_argument(
         "--github-output",
         default=os.environ.get("GITHUB_OUTPUT"),
@@ -31,7 +39,10 @@ def main(argv=None) -> int:
     )
     args = parser.parse_args(argv)
 
-    empty = queue_is_empty(args.queue)
+    jid = args.jurisdiction
+    queue_path = args.queue or (f"data/{jid}/queue.json" if jid else "data/queue.json")
+
+    empty = queue_is_empty(queue_path)
     print(f"queue_check: {'empty -- nothing to analyze' if empty else 'has items -- proceeding'}")
 
     if args.github_output:

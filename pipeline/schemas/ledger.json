@@ -2,10 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "ledger.json",
   "title": "Ledger",
-  "description": "The watcher's idempotency memory: every regulatory item ever seen, keyed by item_hash. 'status' tracks the item's lifecycle across all later phases; Phase 1 only ever writes 'queued'.",
+  "description": "The watcher's idempotency memory: every regulatory item ever seen, keyed by item_hash. 'status' tracks the item's lifecycle across all later phases; Phase 1 only ever writes 'queued'. Lives at data/{jurisdiction_id}/ledger.json since the registry-model pivot; 'jurisdiction_id' names which jurisdiction this ledger belongs to and must match the file's own directory and config/site.json's jurisdictions[].id.",
   "type": "object",
   "properties": {
     "schema_version": { "const": 1 },
+    "jurisdiction_id": { "type": "string", "minLength": 1 },
     "generated_at": { "type": "string", "format": "date-time" },
     "items": {
       "type": "object",
@@ -61,6 +62,6 @@
       }
     }
   },
-  "required": ["schema_version", "generated_at", "items"],
+  "required": ["schema_version", "jurisdiction_id", "generated_at", "items"],
   "additionalProperties": false
 }

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "site_name": "Global Digital Asset Radar",
+  "jurisdictions": [
+    {
+      "id": "hk",
+      "name": "Hong Kong",
+      "config": "config/jurisdictions/hk.json",
+      "status": {
+        "watcher": "live",
+        "analyst_verifier": "live",
+        "seeded": true
+      },
+      "coverage_notes": "Founding jurisdiction. Live RSS watcher (SFC + HKMA feeds), live analyst/verifier via the scheduled CCR trigger, fully seeded."
+    },
+    {
+      "id": "us",
+      "name": "United States",
+      "config": null,
+      "status": {
+        "watcher": "planned",
+        "analyst_verifier": "planned",
+        "seeded": false
+      },
+      "coverage_notes": "Planned. Multi-regulator landscape; watcher sources and config file to be written in its build phase."
+    },
+    {
+      "id": "eu",
+      "name": "European Union",
+      "config": null,
+      "status": {
+        "watcher": "planned",
+        "analyst_verifier": "planned",
+        "seeded": false
+      },
+      "coverage_notes": "Planned. Union-level coverage; member-state regulators out of initial scope. Config file to be written in its build phase."
+    },
+    {
+      "id": "uk",
+      "name": "United Kingdom",
+      "config": null,
+      "status": {
+        "watcher": "planned",
+        "analyst_verifier": "planned",
+        "seeded": false
+      },
+      "coverage_notes": "Planned. Watcher sources and config file to be written in its build phase."
+    },
+    {
+      "id": "sg",
+      "name": "Singapore",
+      "config": null,
+      "status": {
+        "watcher": "planned",
+        "analyst_verifier": "planned",
+        "seeded": false
+      },
+      "coverage_notes": "Planned. Ships as a manual-assisted watcher (no browser-UA impersonation), per owner decision."
+    },
+    {
+      "id": "uae",
+      "name": "United Arab Emirates",
+      "config": null,
+      "status": {
+        "watcher": "planned",
+        "analyst_verifier": "planned",
+        "seeded": false
+      },
+      "coverage_notes": "Planned. Federal vs free-zone regulator scope to be settled in its build phase."
+    },
+    {
+      "id": "ch",
+      "name": "Switzerland",
+      "config": null,
+      "status": {
+        "watcher": "planned",
+        "analyst_verifier": "planned",
+        "seeded": false
+      },
+      "coverage_notes": "Planned. Watcher sources and config file to be written in its build phase."
+    },
+    {
+      "id": "jp",
+      "name": "Japan",
+      "config": null,
+      "status": {
+        "watcher": "planned",
+        "analyst_verifier": "planned",
+        "seeded": false
+      },
+      "coverage_notes": "Planned. Watcher sources and config file to be written in its build phase."
+    }
+  ],
+  "pillars": [
+    {"id": "exchanges_vatp", "name": "Exchanges (VATP)"},
+    {"id": "stablecoins", "name": "Stablecoins"},
+    {"id": "dealing_custody_advisory", "name": "Dealing, Custody, Advisory & Management"},
+    {"id": "tokenization_rwa", "name": "Tokenization & RWA"},
+    {"id": "funds_etfs", "name": "Funds & ETFs"},
+    {"id": "banking_money", "name": "Banking & Money"},
+    {"id": "aml_cft_enforcement", "name": "AML/CFT & Enforcement"}
+  ],
+  "seal_vocabulary": {
+    "in_force": "In force",
+    "consultation_open": "Consultation open",
+    "bill_pending": "Bill pending",
+    "proposed": "Proposed",
+    "no_dedicated_regime": "No dedicated regime"
+  },
+  "fetch_defaults": {
+    "timeout_seconds": 15,
+    "max_retries": 3,
+    "backoff_base_seconds": 1.0,
+    "backoff_multiplier": 2.0
+  }
+}

@@ -15,6 +15,26 @@ concurrency:
 jobs:
   watch:
     runs-on: ubuntu-latest
+    strategy:
+      # One matrix entry per *live* jurisdiction in config/site.json (status.watcher
+      # == "live" and a config/jurisdictions/{id}.json file exists). The other 7
+      # jurisdictions there are status.watcher == "planned" with no config file yet
+      # -- adding one for real is: write config/jurisdictions/{id}.json, then add
+      # its id here. No other part of this job needs to change.
+      matrix:
+        jurisdiction: [hk]
+      fail-fast: false
+    # NOTE: with more than one matrix entry, GitHub Actions resolves a job-level
+    # output written by multiple matrix jobs to whichever job happens to finish
+    # last (documented platform behavior, not a bug here) -- so once a second
+    # jurisdiction goes live, `changed` below stops meaning "any jurisdiction
+    # changed" and starts meaning "whichever matrix job finished last changed".
+    # That's a latent accuracy gap to revisit when jurisdiction #2 goes live
+    # (e.g. per-job artifact + aggregation step), not a reason to restructure
+    # this workflow now: it still fires at most one deploy dispatch per run
+    # either way, which is the property that matters today.
+    outputs:
+      changed: ${{ steps.changes.outputs.changed }}
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
@@ -29,42 +49,39 @@ jobs:
 
       - name: Run watcher
         run: |
-          python -m pipeline.watcher.run \
-            --config config/jurisdiction.json \
-            --ledger data/ledger.json \
-            --queue data/queue.json \
-            --cache-dir data/cache \
-            --document-library content/document_library.json
+          python -m pipeline.watcher.run --jurisdiction ${{ matrix.jurisdiction }}
 
       - name: Check for ledger/queue/document-library changes
         id: changes
         run: |
-          # git status --porcelain, not `git diff --quiet` -- content/document_library.json
+          # git status --porcelain, not `git diff --quiet` -- content/{jid}/document_library.json
           # is untracked on its very first run, and plain `git diff` only covers
           # already-tracked files, so it would silently miss a brand-new file.
-          if [ -z "$(git status --porcelain -- data/ledger.json data/queue.json content/document_library.json)" ]; then
+          if [ -z "$(git status --porcelain -- data/${{ matrix.jurisdiction }}/ledger.json data/${{ matrix.jurisdiction }}/queue.json content/${{ matrix.jurisdiction }}/document_library.json)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
       # This is the first (and only) place watch.yml's own commit touches
-      # /content, alongside its usual /data files: content/document_library.json
+      # /content, alongside its usual /data files: content/{jid}/document_library.json
       # is pure deterministic code output (pipeline/watcher/document_library.py),
       # not an AI job's work. The path-allowlist gate exists to restrict what
       # the *analyst/verifier* may touch -- it never applied to the watcher's
       # own deterministic code, which has always been free to write anywhere
-      # under /content or /data.
+      # under /content or /data. Only this jurisdiction's own paths are staged
+      # here -- never a blanket `git add` -- so one matrix job's commit can never
+      # sweep up another jurisdiction's concurrently-modified working tree.
       - name: Commit ledger/queue/document-library updates
         if: steps.changes.outputs.changed == 'true'
         env:
-          GIT_AUTHOR_NAME: hk-radar-bot
-          GIT_AUTHOR_EMAIL: bot@users.noreply.github.com
-          GIT_COMMITTER_NAME: hk-radar-bot
-          GIT_COMMITTER_EMAIL: bot@users.noreply.github.com
+          GIT_AUTHOR_NAME: da-radar-bot
+          GIT_AUTHOR_EMAIL: da-radar-bot@users.noreply.github.com
+          GIT_COMMITTER_NAME: da-radar-bot
+          GIT_COMMITTER_EMAIL: da-radar-bot@users.noreply.github.com
         run: |
-          git add data/ledger.json data/queue.json content/document_library.json
-          git commit -m "watch: $(date -u +%Y-%m-%dT%H:%M:%SZ) update ledger/queue/document-library"
+          git add data/${{ matrix.jurisdiction }}/ledger.json data/${{ matrix.jurisdiction }}/queue.json content/${{ matrix.jurisdiction }}/document_library.json
+          git commit -m "watch(${{ matrix.jurisdiction }}): $(date -u +%Y-%m-%dT%H:%M:%SZ) update ledger/queue/document-library"
           git push
 
       - name: Trigger analyze.yml
@@ -79,14 +96,27 @@ jobs:
             -d '{"event_type":"queue-updated"}'
           echo "Dispatched queue-updated to analyze.yml."
 
-      # Separate dispatch, separate event_type: this commit's own push used
-      # the default GITHUB_TOKEN, which GitHub does not let trigger an
+  # Separate job (not a per-matrix-job step) gated on `needs: watch`: the whole
+  # matrix must finish before deploy.yml is asked to rebuild, and this fires the
+  # dispatch exactly once per workflow run -- not once per matrix job, which
+  # would mean N redundant dispatches once more jurisdictions go live. Gating on
+  # needs.watch.outputs.changed (rather than just needs.watch.result) preserves
+  # the pre-matrix behavior exactly: no dispatch when the watcher found nothing
+  # new. `if: always()` so one jurisdiction's watcher failure doesn't skip this
+  # job outright -- it's still gated on `changed`, so a failed run with no
+  # changes correctly dispatches nothing.
+  trigger-deploy:
+    needs: watch
+    if: always() && needs.watch.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      # Separate dispatch, separate event_type: the watch job's own commit push
+      # used the default GITHUB_TOKEN, which GitHub does not let trigger an
       # `on: push` workflow (the same reason the step above uses dispatch
       # rather than a push listener for analyze.yml) -- without this,
       # deploy.yml would never rebuild the site from a document_library.json
       # update alone.
       - name: Trigger deploy.yml
-        if: steps.changes.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

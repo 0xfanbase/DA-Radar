@@ -37,17 +37,31 @@ def main(argv=None) -> int:
     parser = argparse.ArgumentParser(
         description="Promote ledger items to 'drafted' once a card file exists for them."
     )
-    parser.add_argument("--ledger", default="data/ledger.json")
-    parser.add_argument("--queue", default="data/queue.json")
-    parser.add_argument("--cards-dir", default="content/cards")
+    parser.add_argument(
+        "--jurisdiction",
+        default=None,
+        help=(
+            "Jurisdiction id (e.g. 'hk'). Resolves --ledger, --queue, and --cards-dir "
+            "to their conventional paths; any of those flags passed explicitly still "
+            "overrides its --jurisdiction-derived default."
+        ),
+    )
+    parser.add_argument("--ledger", default=None)
+    parser.add_argument("--queue", default=None)
+    parser.add_argument("--cards-dir", default=None)
     args = parser.parse_args(argv)
 
-    run_ts = utc_now_iso()
-    ledger = load_ledger(args.ledger)
-    ledger, promoted = promote_drafted_items(ledger, cards_dir=args.cards_dir, run_ts=run_ts)
+    jid = args.jurisdiction
+    ledger_path = args.ledger or (f"data/{jid}/ledger.json" if jid else "data/ledger.json")
+    queue_path = args.queue or (f"data/{jid}/queue.json" if jid else "data/queue.json")
+    cards_dir = args.cards_dir or (f"content/{jid}/cards" if jid else "content/cards")
 
-    save_ledger(args.ledger, ledger)
-    save_queue(args.queue, derive_queue(ledger, run_ts))
+    run_ts = utc_now_iso()
+    ledger = load_ledger(ledger_path)
+    ledger, promoted = promote_drafted_items(ledger, cards_dir=cards_dir, run_ts=run_ts)
+
+    save_ledger(ledger_path, ledger)
+    save_queue(queue_path, derive_queue(ledger, run_ts))
 
     print(f"promote_drafted: {len(promoted)} item(s) promoted to drafted.")
     for item_hash in promoted:

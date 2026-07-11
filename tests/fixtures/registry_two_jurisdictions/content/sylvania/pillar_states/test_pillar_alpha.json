@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "pillar": "test_pillar_alpha",
+  "status_seal": "proposed",
+  "regulator": "SFA",
+  "instruments": ["Sylvania Alpha Instrument"],
+  "standing_summary": "Sylvania-specific standing summary for pillar alpha.",
+  "last_changed": "2026-01-02",
+  "key_links": [{"label": "SFA Alpha page", "url": "https://sfa.sylvania.invalid/alpha"}],
+  "open_items": ["Sylvania open item alpha."]
+}

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% import "_timeline.html" as t %}
-{% block title %}Start Here &mdash; HK Digital Asset Radar{% endblock %}
+{% block title %}Start Here &mdash; {{ site_name }}{% endblock %}
 {% block content %}
 <h1 class="plate">Start Here</h1>
 {{ t.timeline_ribbon(timeline_events, trajectory, "hero", limit=40) }}

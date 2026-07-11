@@ -1,12 +1,27 @@
 """Watcher orchestrator + CLI entrypoint.
 
-    python -m pipeline.watcher.run --config config/jurisdiction.json \\
-        --ledger data/ledger.json --queue data/queue.json --cache-dir data/cache
+    python -m pipeline.watcher.run --jurisdiction hk
+
+    -- or, spelling out the conventional paths --jurisdiction resolves --
+
+    python -m pipeline.watcher.run --config config/jurisdictions/hk.json \\
+        --ledger data/hk/ledger.json --queue data/hk/queue.json \\
+        --cache-dir data/hk/cache --document-library content/hk/document_library.json
 
 Every regulator/feed/User-Agent string is read from the jurisdiction config
 -- nothing in this module hardcodes a jurisdiction-specific value. One
 feed's failure (timeout, malformed XML) never aborts the run for the
 others; failures are recorded in the run summary.
+
+--jurisdiction is purely a convenience for resolving the conventional
+per-jurisdiction paths below; it is never required, and any explicit path
+flag (--config, --ledger, --queue, --cache-dir, --document-library) always
+overrides the corresponding --jurisdiction-derived default. Passing
+neither --jurisdiction nor an explicit flag falls back to this module's
+own long-standing bare defaults, unchanged from before the registry-model
+pivot -- they no longer point at real content on disk post-pivot, but
+removing them would be a breaking change for any caller (test or script)
+that relies on argparse's own defaults rather than passing paths.
 """
 from __future__ import annotations
 
@@ -84,7 +99,12 @@ def run(
 ) -> RunSummary:
     config = load_jurisdiction(config_path)
     run_ts = utc_now_iso()
-    ledger = load_ledger(ledger_path)
+    ledger = load_ledger(ledger_path, jurisdiction_id=config.get("jurisdiction_id"))
+    # An existing ledger file always keeps its own on-disk jurisdiction_id
+    # (load_ledger's contract above); this only fills in the field for a
+    # pre-registry-pivot ledger that predates it, so a ledger written by an
+    # old run still round-trips through save_ledger as schema-valid.
+    ledger.setdefault("jurisdiction_id", config.get("jurisdiction_id"))
     etag_cache = _load_etag_cache(cache_path)
 
     summary = RunSummary()
@@ -167,17 +187,36 @@ def run(
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="HK Digital Asset Radar watcher")
-    parser.add_argument("--config", default="config/jurisdiction.json")
-    parser.add_argument("--ledger", default="data/ledger.json")
-    parser.add_argument("--queue", default="data/queue.json")
-    parser.add_argument("--cache-dir", default="data/cache")
-    parser.add_argument("--document-library", default="content/document_library.json")
+    parser.add_argument(
+        "--jurisdiction",
+        default=None,
+        help=(
+            "Jurisdiction id (e.g. 'hk'). Resolves --config, --ledger, --queue, "
+            "--cache-dir, and --document-library to their conventional paths under "
+            "config/jurisdictions/, data/<id>/, and content/<id>/ -- any of those "
+            "flags passed explicitly still overrides its --jurisdiction-derived default."
+        ),
+    )
+    parser.add_argument("--config", default=None)
+    parser.add_argument("--ledger", default=None)
+    parser.add_argument("--queue", default=None)
+    parser.add_argument("--cache-dir", default=None)
+    parser.add_argument("--document-library", default=None)
     args = parser.parse_args(argv)
 
-    cache_path = os.path.join(args.cache_dir, "etags.json") if args.cache_dir else None
+    jid = args.jurisdiction
+    config_path = args.config or (f"config/jurisdictions/{jid}.json" if jid else "config/jurisdiction.json")
+    ledger_path = args.ledger or (f"data/{jid}/ledger.json" if jid else "data/ledger.json")
+    queue_path = args.queue or (f"data/{jid}/queue.json" if jid else "data/queue.json")
+    cache_dir = args.cache_dir or (f"data/{jid}/cache" if jid else "data/cache")
+    document_library_path = args.document_library or (
+        f"content/{jid}/document_library.json" if jid else "content/document_library.json"
+    )
+
+    cache_path = os.path.join(cache_dir, "etags.json") if cache_dir else None
 
     try:
-        summary = run(args.config, args.ledger, args.queue, cache_path, args.document_library)
+        summary = run(config_path, ledger_path, queue_path, cache_path, document_library_path)
     except (OSError, json.JSONDecodeError, KeyError) as exc:
         print(f"watcher: invalid or missing config: {exc}", file=sys.stderr)
         return 1

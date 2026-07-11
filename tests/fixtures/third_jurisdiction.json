@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "jurisdiction_id": "sylvania",
+  "jurisdiction_name": "Sylvania",
+  "user_agent": "TestJurisdictionWatcher/0.1 (contact: test@example.invalid; purpose: pipeline portability test)",
+  "fetch": {
+    "timeout_seconds": 5,
+    "max_retries": 2,
+    "backoff_base_seconds": 0.01,
+    "backoff_multiplier": 2.0
+  },
+  "pillars": [
+    {"id": "sylvania_pillar_one", "name": "Sylvania Pillar One"},
+    {"id": "sylvania_pillar_two", "name": "Sylvania Pillar Two"}
+  ],
+  "pillar_keywords": {
+    "sylvania_pillar_one": ["first sylvania"],
+    "sylvania_pillar_two": ["second sylvania"]
+  },
+  "seal_vocabulary": [
+    {"id": "in_force", "label": "In force"},
+    {"id": "proposed", "label": "Proposed"}
+  ],
+  "regulators": [
+    {
+      "id": "sfa",
+      "name": "Sylvania Financial Authority",
+      "short_name": "SFA",
+      "homepage": "https://sfa.sylvania.invalid",
+      "feeds": [
+        {
+          "id": "sfa_bulletins",
+          "kind": "press_releases",
+          "url": "https://sfa.sylvania.invalid/rss/bulletins.xml"
+        }
+      ]
+    }
+  ]
+}

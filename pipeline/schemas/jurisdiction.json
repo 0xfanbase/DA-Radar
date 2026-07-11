@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "jurisdiction.json",
+  "title": "Jurisdiction config",
+  "description": "A single jurisdiction's watcher/analyst configuration (config/jurisdictions/{id}.json), registered from config/site.json's jurisdictions[].config. All jurisdiction-specific knowledge (regulator list, feed URLs, User-Agent string, keyword vocabularies) lives here per the portability constraint; pipeline code under /pipeline must never hardcode any of it. 'pillars' deliberately does NOT appear in this schema -- the shared pillar taxonomy moved to the site-wide config/site.json (see site.json schema) since pillars are shared across jurisdictions, not jurisdiction-specific; 'pillar_keywords' stays here because keyword-to-pillar mapping is jurisdiction-specific (a jurisdiction's own regulatory vocabulary). 'pillar' and 'regulator' values elsewhere in the pipeline (card.json, pillar_state.json, document_library.json) are free text governed jointly by this file's regulators[] and config/site.json's pillars[], deliberately never enumerated in those schemas, to keep them jurisdiction-portable.",
+  "type": "object",
+  "properties": {
+    "schema_version": { "const": 1 },
+    "jurisdiction_id": { "type": "string", "minLength": 1 },
+    "jurisdiction_name": { "type": "string", "minLength": 1 },
+    "user_agent": { "type": "string", "minLength": 1 },
+    "fetch": {
+      "type": "object",
+      "properties": {
+        "timeout_seconds": { "type": "number", "exclusiveMinimum": 0 },
+        "max_retries": { "type": "integer", "minimum": 0 },
+        "backoff_base_seconds": { "type": "number", "exclusiveMinimum": 0 },
+        "backoff_multiplier": { "type": "number", "exclusiveMinimum": 0 }
+      },
+      "required": ["timeout_seconds", "max_retries", "backoff_base_seconds", "backoff_multiplier"],
+      "additionalProperties": false
+    },
+    "relevance_keywords": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "pillar_keywords": {
+      "description": "Keyword match against this jurisdiction's own pillar vocabulary. Keys are free text, expected to correspond to pillar ids in config/site.json's pillars[], but not enumerated here to avoid duplicating the shared taxonomy inside a per-jurisdiction schema.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "type": "string", "minLength": 1 }
+      }
+    },
+    "seal_vocabulary": {
+      "description": "Jurisdiction-local seal vocabulary. Kept alongside config/site.json's shared seal_vocabulary for jurisdictions whose regime needs a seal id/label not covered by the shared set.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "label": { "type": "string", "minLength": 1 }
+        },
+        "required": ["id", "label"],
+        "additionalProperties": false
+      }
+    },
+    "regulators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "short_name": { "type": "string", "minLength": 1 },
+          "homepage": { "type": "string", "format": "uri" },
+          "official_domains": {
+            "description": "Domains treated as authentic primary sources for this regulator; enforced by pipeline/verify/authenticity.py.",
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "feeds": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "string", "minLength": 1 },
+                "kind": { "type": "string", "minLength": 1 },
+                "url": { "type": "string", "format": "uri" }
+              },
+              "required": ["id", "kind", "url"],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": ["id", "name", "short_name", "homepage", "official_domains", "feeds"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "jurisdiction_id",
+    "jurisdiction_name",
+    "user_agent",
+    "fetch",
+    "relevance_keywords",
+    "pillar_keywords",
+    "regulators"
+  ],
+  "additionalProperties": false
+}

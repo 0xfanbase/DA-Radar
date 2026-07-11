@@ -1,0 +1,18 @@
+{
+  "first_used_card_id": "544d29ba08c14f8b692356fc7f11a36eabbad05f23c2ed7ea47ad45f730a726e",
+  "formal_definition": "Under Hong Kong's Stablecoins Ordinance (Cap. 656), a fiat-referenced stablecoin whose value is pegged to one or more official currencies; issuing one in or pegged to the Hong Kong dollar requires a licence from the Hong Kong Monetary Authority.",
+  "generated_at": "2026-07-09T07:03:38Z",
+  "id": "stablecoin",
+  "jurisdictions": [
+    "global"
+  ],
+  "model": "not recorded (pre-provenance content)",
+  "plain_definition": "A type of cryptocurrency designed to hold a stable value, usually by being backed by reserve assets (such as cash or government bonds) and pegged to a reference currency such as the US or Hong Kong dollar, rather than floating freely in price like bitcoin.",
+  "related_terms": [
+    "stablecoins-ordinance",
+    "hkma"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "Stablecoin"
+}

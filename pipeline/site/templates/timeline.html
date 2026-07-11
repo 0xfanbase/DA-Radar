@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% import "_macros.html" as m %}
 {% import "_timeline.html" as t %}
-{% block title %}Timeline &mdash; HK Digital Asset Radar{% endblock %}
+{% block title %}Timeline &mdash; {{ site_name }}{% endblock %}
 {% block content %}
 <h1 class="plate">Timeline</h1>
 {{ t.timeline_ribbon(timeline_events, trajectory, "full") }}

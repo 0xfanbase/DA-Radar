@@ -109,7 +109,7 @@ def test_all_published_cards_pass_quote_policy():
     already published under content/cards/ must still pass. If this
     ever fails, stop and report -- do not silently downgrade published
     content to make the check pass."""
-    card_paths = sorted(glob.glob(os.path.join(REPO_ROOT, "content", "cards", "*.json")))
+    card_paths = sorted(glob.glob(os.path.join(REPO_ROOT, "content", "hk", "cards", "*.json")))
     assert card_paths, "expected at least one published card fixture"
     for path in card_paths:
         with open(path, "r", encoding="utf-8") as fh:

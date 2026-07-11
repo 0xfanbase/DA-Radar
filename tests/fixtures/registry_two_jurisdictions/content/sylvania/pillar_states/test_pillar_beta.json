@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "pillar": "test_pillar_beta",
+  "status_seal": "in_force",
+  "regulator": "SFA",
+  "instruments": ["Sylvania Beta Instrument"],
+  "standing_summary": "Sylvania-specific standing summary for pillar beta.",
+  "last_changed": "2026-01-02",
+  "key_links": [{"label": "SFA Beta page", "url": "https://sfa.sylvania.invalid/beta"}],
+  "open_items": ["Sylvania open item beta."]
+}

@@ -33,6 +33,7 @@ def test_ledger_schema_accepts_valid_and_rejects_invalid_instance():
 
     valid = {
         "schema_version": 1,
+        "jurisdiction_id": "hk",
         "generated_at": "2026-01-01T00:00:00Z",
         "items": {
             "abc": {
@@ -66,6 +67,7 @@ def test_queue_schema_accepts_valid_and_rejects_invalid_instance():
 
     valid = {
         "schema_version": 1,
+        "jurisdiction_id": "hk",
         "generated_at": "2026-01-01T00:00:00Z",
         "items": [
             {
@@ -95,6 +97,7 @@ def test_card_schema_accepts_valid_and_rejects_missing_citation():
     valid = {
         "schema_version": 1,
         "id": "card-1",
+        "jurisdiction_id": "hk",
         "published_date": "2026-01-01",
         "regulator": "Example Regulator",
         "pillar": ["example_pillar"],

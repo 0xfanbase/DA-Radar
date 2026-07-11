@@ -1,0 +1,19 @@
+{
+  "first_used_card_id": "3e1fcbaf94f7cb24004161b6bea4436991d05efa01ae61f88de74d3bd2c407d2",
+  "formal_definition": "A platform operator providing services for the sale or purchase of virtual assets, regulated in Hong Kong under a dual regime combining the Securities and Futures Ordinance (Cap. 571) and the Anti-Money Laundering and Counter-Terrorist Financing Ordinance (Cap. 615).",
+  "generated_at": "2026-07-09T07:03:38Z",
+  "id": "vatp",
+  "jurisdictions": [
+    "hk"
+  ],
+  "model": "not recorded (pre-provenance content)",
+  "plain_definition": "A centralised exchange where people can buy, sell, or trade cryptocurrencies and other virtual assets -- broadly the crypto-industry equivalent of a stock exchange, but privately operated. Platforms serving Hong Kong investors must be licensed by the Securities and Futures Commission.",
+  "related_terms": [
+    "sfo",
+    "amlo",
+    "virtual-asset"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "VATP (Virtual Asset Trading Platform)"
+}

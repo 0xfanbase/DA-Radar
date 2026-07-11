@@ -28,11 +28,19 @@ SCHEMA_VERSION = 1
 
 
 def build_correction_record(
-    *, correction_id: str, card_id: str, corrected_at: str, correction_note: str, fields_changed: list, citations: list
+    *,
+    correction_id: str,
+    card_id: str,
+    corrected_at: str,
+    correction_note: str,
+    fields_changed: list,
+    citations: list,
+    jurisdiction: str = "hk",
 ) -> dict:
     return {
         "schema_version": SCHEMA_VERSION,
         "id": correction_id,
+        "jurisdiction": jurisdiction,
         "card_id": card_id,
         "corrected_at": corrected_at,
         "correction_note": correction_note,
@@ -85,6 +93,16 @@ def main(argv=None) -> int:
         description="Apply a human-supplied correction to a previously published card."
     )
     parser.add_argument("--repo-root", default=".")
+    parser.add_argument(
+        "--jurisdiction",
+        default="hk",
+        help=(
+            "Jurisdiction id (e.g. 'hk') owning the card being corrected -- resolves "
+            "the card's conventional path (content/<jurisdiction>/cards/<card-id>.json) "
+            "and is recorded on the correction record itself, since data/corrections.json "
+            "stays a single global file with each record carrying its own jurisdiction."
+        ),
+    )
     parser.add_argument("--card-id", required=True)
     parser.add_argument("--correction-id", required=True)
     parser.add_argument("--corrected-at", required=True, help="ISO-8601 UTC timestamp.")
@@ -99,7 +117,9 @@ def main(argv=None) -> int:
     )
     args = parser.parse_args(argv)
 
-    card_glob = glob.glob(os.path.join(args.repo_root, "content", "cards", f"{args.card_id}.json"))
+    card_glob = glob.glob(
+        os.path.join(args.repo_root, "content", args.jurisdiction, "cards", f"{args.card_id}.json")
+    )
     if not card_glob:
         print(f"apply_correction: no card found for id {args.card_id!r}", file=sys.stderr)
         return 1
@@ -120,6 +140,7 @@ def main(argv=None) -> int:
         correction_note=args.correction_note,
         fields_changed=[f.strip() for f in args.fields_changed.split(",") if f.strip()],
         citations=citations,
+        jurisdiction=args.jurisdiction,
     )
 
     corrected_card = apply_correction_to_card(card, correction)

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-01-05T00:00:00Z",
+  "items": {
+    "freedonia-card1": {
+      "item_hash": "freedonia-card1",
+      "source_id": "ffa",
+      "feed_id": "ffa_notices",
+      "guid": "ffa-1",
+      "link": "https://ffa.freedonia.invalid/notices/one",
+      "title": "Freedonia Financial Authority issues first notice",
+      "summary": "",
+      "published_at": "2026-01-05T00:00:00Z",
+      "raw_published": null,
+      "content_hash": "fh1",
+      "first_seen": "2026-01-05T00:00:00Z",
+      "status": "published",
+      "card_id": "freedonia-card1",
+      "relevant": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "freedonia-card1",
+  "published_date": "2026-01-05",
+  "regulator": "FFA",
+  "pillar": ["test_pillar_alpha"],
+  "type": "circular",
+  "title": "Freedonia Financial Authority issues first notice",
+  "summary": "Test summary text unique to Freedonia.",
+  "why_it_matters": "Test why-it-matters text unique to Freedonia.",
+  "citations": [{"url": "https://ffa.freedonia.invalid/notices/one", "quote": "first freedonia notice"}],
+  "status": "verified",
+  "generated_at": "2026-01-05T00:00:00Z",
+  "model": "test-model"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "pillar": "test_pillar_alpha",
+  "status_seal": "in_force",
+  "regulator": "FFA",
+  "instruments": ["Freedonia Alpha Instrument"],
+  "standing_summary": "Freedonia-specific standing summary for pillar alpha.",
+  "last_changed": "2026-01-01",
+  "key_links": [{"label": "FFA Alpha page", "url": "https://ffa.freedonia.invalid/alpha"}],
+  "open_items": ["Freedonia open item alpha."]
+}

@@ -1,0 +1,18 @@
+{
+  "first_used_card_id": "544d29ba08c14f8b692356fc7f11a36eabbad05f23c2ed7ea47ad45f730a726e",
+  "formal_definition": "The Hong Kong Monetary Authority, the jurisdiction's monetary authority and licensing regulator for stablecoin issuers under the Stablecoins Ordinance (Cap. 656), and supervisor of Authorized Institutions' digital-asset activities.",
+  "generated_at": "2026-07-09T07:32:45Z",
+  "id": "hkma",
+  "jurisdictions": [
+    "hk"
+  ],
+  "model": "not recorded (pre-provenance content)",
+  "plain_definition": "Short for the Hong Kong Monetary Authority, Hong Kong's central-banking-style regulator. It licenses stablecoin issuers under the Stablecoins Ordinance, supervises banks' digital-asset custody and distribution activities, and runs Hong Kong's tokenisation and digital-currency pilots such as Project Ensemble and e-HKD+.",
+  "related_terms": [
+    "stablecoin",
+    "sfc"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "HKMA"
+}

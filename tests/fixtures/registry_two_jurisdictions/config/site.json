@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "site_name": "Test Registry Two-Jurisdiction Fixture",
+  "jurisdictions": [
+    {
+      "id": "freedonia",
+      "name": "Freedonia",
+      "config": "config/jurisdictions/freedonia.json",
+      "status": {"watcher": "live", "analyst_verifier": "live", "seeded": true},
+      "coverage_notes": "Fabricated jurisdiction #1 for cross-jurisdiction isolation testing."
+    },
+    {
+      "id": "sylvania",
+      "name": "Sylvania",
+      "config": "config/jurisdictions/sylvania.json",
+      "status": {"watcher": "live", "analyst_verifier": "live", "seeded": true},
+      "coverage_notes": "Fabricated jurisdiction #2 for cross-jurisdiction isolation testing."
+    }
+  ],
+  "pillars": [
+    {"id": "test_pillar_alpha", "name": "Test Pillar Alpha"},
+    {"id": "test_pillar_beta", "name": "Test Pillar Beta"}
+  ],
+  "seal_vocabulary": {
+    "in_force": "In force",
+    "proposed": "Proposed"
+  },
+  "fetch_defaults": {
+    "timeout_seconds": 5,
+    "max_retries": 2,
+    "backoff_base_seconds": 0.01,
+    "backoff_multiplier": 2.0
+  }
+}

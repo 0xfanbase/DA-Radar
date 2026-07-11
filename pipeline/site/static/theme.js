@@ -6,7 +6,7 @@
 // the inline script in base.html's <head>, before this file even loads,
 // to avoid a flash of the wrong theme.
 (function () {
-  var STORAGE_KEY = "hkdar-theme";
+  var STORAGE_KEY = "gdar-theme";
   var toggle = document.getElementById("theme-toggle");
   if (!toggle) {
     return;

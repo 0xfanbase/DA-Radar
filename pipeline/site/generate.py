@@ -32,9 +32,14 @@ PAGES = [
 ]
 
 
-def build_site(repo_root: str, output_dir: str) -> list:
+def build_site(repo_root: str, output_dir: str, jurisdiction: str = "hk") -> list:
     """Renders every page into output_dir. Returns the list of output
-    file paths written, for callers that want to inspect or test them."""
+    file paths written, for callers that want to inspect or test them.
+
+    `jurisdiction` is passed straight through to load_site_data()'s
+    temporary single-jurisdiction scaffolding (see pipeline/site/data.py);
+    real multi-jurisdiction rendering is deferred to the next phase, not
+    this one."""
     env = Environment(
         loader=FileSystemLoader(TEMPLATES_DIR),
         autoescape=select_autoescape(["html"]),
@@ -42,7 +47,7 @@ def build_site(repo_root: str, output_dir: str) -> list:
         lstrip_blocks=True,
     )
 
-    site_data = load_site_data(repo_root)
+    site_data = load_site_data(repo_root, jurisdiction)
 
     os.makedirs(output_dir, exist_ok=True)
     static_out = os.path.join(output_dir, "static")

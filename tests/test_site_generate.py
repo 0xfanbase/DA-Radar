@@ -120,7 +120,7 @@ def test_unverified_card_from_numeric_claim_failure_shows_cause_specific_label(t
 
     repo_copy = tmp_path / "repo_numeric_claim_failure"
     shutil.copytree(FIXTURE_ROOT, repo_copy)
-    card_path = repo_copy / "content" / "cards" / "card2.json"
+    card_path = repo_copy / "content" / "hk" / "cards" / "card2.json"
     card = json.loads(card_path.read_text(encoding="utf-8"))
     card["numeric_claims_unsupported"] = ["HK$50 million"]
     card_path.write_text(json.dumps(card), encoding="utf-8")
@@ -176,7 +176,7 @@ def test_method_page_reports_three_way_verification_split_with_mixed_cards(tmp_p
         "generated_at": "2026-01-08T00:00:00Z",
         "model": "test-model",
     }
-    with open(repo_copy / "content" / "cards" / "card3.json", "w", encoding="utf-8") as fh:
+    with open(repo_copy / "content" / "hk" / "cards" / "card3.json", "w", encoding="utf-8") as fh:
         json.dump(corrected_card, fh)
 
     output_dir = tmp_path / "output_mixed_status"
@@ -354,16 +354,16 @@ def test_handles_empty_content_gracefully(tmp_path):
     array is valid seed content, not a missing file)."""
     empty_root = tmp_path / "empty_repo"
     (empty_root / "config").mkdir(parents=True)
-    (empty_root / "content" / "cards").mkdir(parents=True)
-    (empty_root / "content" / "pillar_states").mkdir(parents=True)
-    (empty_root / "content" / "glossary").mkdir(parents=True)
-    (empty_root / "data").mkdir(parents=True)
+    (empty_root / "content" / "hk" / "cards").mkdir(parents=True)
+    (empty_root / "content" / "hk" / "pillar_states").mkdir(parents=True)
+    (empty_root / "content" / "shared" / "glossary").mkdir(parents=True)
+    (empty_root / "data" / "hk").mkdir(parents=True)
 
     import json
 
-    with open(empty_root / "config" / "jurisdiction.json", "w") as fh:
-        json.dump({"schema_version": 1, "pillars": [], "seal_vocabulary": [], "regulators": []}, fh)
-    with open(empty_root / "content" / "start_here.json", "w") as fh:
+    with open(empty_root / "config" / "site.json", "w") as fh:
+        json.dump({"schema_version": 1, "pillars": [], "seal_vocabulary": {}}, fh)
+    with open(empty_root / "content" / "hk" / "orientation.json", "w") as fh:
         json.dump(
             {
                 "schema_version": 1,
@@ -374,7 +374,7 @@ def test_handles_empty_content_gracefully(tmp_path):
             },
             fh,
         )
-    with open(empty_root / "content" / "trajectory.json", "w") as fh:
+    with open(empty_root / "content" / "hk" / "trajectory.json", "w") as fh:
         json.dump([], fh)
 
     output_dir = tmp_path / "empty_output"
@@ -406,7 +406,7 @@ def test_raises_when_pillar_state_missing(tmp_path):
 
     repo_copy = tmp_path / "repo_missing_pillar_state"
     shutil.copytree(FIXTURE_ROOT, repo_copy)
-    os.remove(repo_copy / "content" / "pillar_states" / "exchanges_vatp.json")
+    os.remove(repo_copy / "content" / "hk" / "pillar_states" / "exchanges_vatp.json")
 
     try:
         load_site_data(str(repo_copy))
@@ -426,18 +426,18 @@ def test_raises_when_start_here_missing(tmp_path):
 
     repo_copy = tmp_path / "repo_missing_start_here"
     shutil.copytree(FIXTURE_ROOT, repo_copy)
-    os.remove(repo_copy / "content" / "start_here.json")
+    os.remove(repo_copy / "content" / "hk" / "orientation.json")
 
     try:
         load_site_data(str(repo_copy))
-        assert False, "expected SiteDataError for a missing start_here.json"
+        assert False, "expected SiteDataError for a missing orientation.json"
     except SiteDataError as exc:
-        assert "start_here.json" in str(exc)
+        assert "orientation.json" in str(exc)
 
 
 def test_raises_when_status_seal_unmapped(tmp_path):
     """Regression test for a Fable audit finding: a status_seal id with no
-    seal_vocabulary entry in config/jurisdiction.json used to render as a
+    seal_vocabulary entry in config/site.json used to render as a
     raw internal id (e.g. <span class="seal">enforcement_action_pending
     </span>) right next to real seals on the State Board. load_site_data
     must fail loudly instead, naming the offending id and the pillar state
@@ -450,7 +450,7 @@ def test_raises_when_status_seal_unmapped(tmp_path):
 
     repo_copy = tmp_path / "repo_unmapped_seal"
     shutil.copytree(FIXTURE_ROOT, repo_copy)
-    state_path = repo_copy / "content" / "pillar_states" / "stablecoins.json"
+    state_path = repo_copy / "content" / "hk" / "pillar_states" / "stablecoins.json"
     state = json.loads(state_path.read_text(encoding="utf-8"))
     state["status_seal"] = "enforcement_action_pending"
     state_path.write_text(json.dumps(state), encoding="utf-8")
@@ -473,7 +473,7 @@ def test_raises_when_status_seal_unmapped(tmp_path):
 
 def test_raises_when_card_pillar_id_unmapped(tmp_path):
     """Companion finding: a pillar id on a card with no entry in
-    config/jurisdiction.json's pillars used to render as a raw internal id
+    config/site.json's pillars used to render as a raw internal id
     (e.g. <span class="pillar-tag">aml_enforcement_typo</span>) on the
     Timeline. load_site_data must fail loudly instead, naming the
     offending id and the card file it came from -- and build_site must
@@ -486,7 +486,7 @@ def test_raises_when_card_pillar_id_unmapped(tmp_path):
 
     repo_copy = tmp_path / "repo_unmapped_pillar"
     shutil.copytree(FIXTURE_ROOT, repo_copy)
-    card_path = repo_copy / "content" / "cards" / "card1.json"
+    card_path = repo_copy / "content" / "hk" / "cards" / "card1.json"
     card = json.loads(card_path.read_text(encoding="utf-8"))
     card["pillar"] = ["aml_enforcement_typo"]
     card_path.write_text(json.dumps(card), encoding="utf-8")
@@ -521,7 +521,7 @@ def test_raises_when_card_citations_empty(tmp_path):
 
     repo_copy = tmp_path / "repo_empty_citations"
     shutil.copytree(FIXTURE_ROOT, repo_copy)
-    card_path = repo_copy / "content" / "cards" / "card1.json"
+    card_path = repo_copy / "content" / "hk" / "cards" / "card1.json"
     card = json.loads(card_path.read_text(encoding="utf-8"))
     card["citations"] = []
     card_path.write_text(json.dumps(card), encoding="utf-8")
@@ -833,7 +833,7 @@ def test_timeline_marker_for_unclassified_card_renders_sentinel_not_pillar_zero(
 
     repo_copy = tmp_path / "repo_unclassified_pillar"
     shutil.copytree(FIXTURE_ROOT, repo_copy)
-    card_path = repo_copy / "content" / "cards" / "card1.json"
+    card_path = repo_copy / "content" / "hk" / "cards" / "card1.json"
     card = json.loads(card_path.read_text(encoding="utf-8"))
     card["pillar"] = []
     card_path.write_text(json.dumps(card), encoding="utf-8")

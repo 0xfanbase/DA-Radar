@@ -36,16 +36,29 @@ def main(argv=None) -> int:
     parser = argparse.ArgumentParser(
         description="Promote 'drafted' ledger items to 'verified' then 'published'."
     )
-    parser.add_argument("--ledger", default="data/ledger.json")
-    parser.add_argument("--queue", default="data/queue.json")
+    parser.add_argument(
+        "--jurisdiction",
+        default=None,
+        help=(
+            "Jurisdiction id (e.g. 'hk'). Resolves --ledger and --queue to their "
+            "conventional paths; either flag passed explicitly still overrides its "
+            "--jurisdiction-derived default."
+        ),
+    )
+    parser.add_argument("--ledger", default=None)
+    parser.add_argument("--queue", default=None)
     args = parser.parse_args(argv)
 
+    jid = args.jurisdiction
+    ledger_path = args.ledger or (f"data/{jid}/ledger.json" if jid else "data/ledger.json")
+    queue_path = args.queue or (f"data/{jid}/queue.json" if jid else "data/queue.json")
+
     run_ts = utc_now_iso()
-    ledger = load_ledger(args.ledger)
+    ledger = load_ledger(ledger_path)
     ledger, promoted = promote_verified_items(ledger, run_ts)
 
-    save_ledger(args.ledger, ledger)
-    save_queue(args.queue, derive_queue(ledger, run_ts))
+    save_ledger(ledger_path, ledger)
+    save_queue(queue_path, derive_queue(ledger, run_ts))
 
     print(f"promote_verified: {len(promoted)} item(s) promoted to published.")
     for item_hash in promoted:

@@ -1,0 +1,31 @@
+{
+  "citations": [
+    {
+      "quote": "VA dealers custody client VAs with SFC -regulated VA custodian service providers",
+      "url": "https://www.fstb.gov.hk/fsb/en/publication/consult/doc/VAdealing_consultation_conclusion_e.pdf"
+    },
+    {
+      "quote": "FSTB and SFC conclude consultations on virtual asset dealer and custodian regimes",
+      "url": "https://www.sfc.hk/en/RSS-Feeds/Consultations-and-Conclusions"
+    },
+    {
+      "quote": "Regulate Virtual Asset Advisory Service Providers and Virtual Asset Management Service Providers",
+      "url": "https://www.sfc.hk/en/Welcome-to-the-Fintech-Contact-Point/Virtual-assets/Other-useful-materials"
+    }
+  ],
+  "generated_at": "2026-07-09T08:00:00Z",
+  "id": "8e3bc652202af7398e70bc47d4c96a9df8e27c141320a1dda6e79399e4799164",
+  "jurisdiction_id": "hk",
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "dealing_custody_advisory"
+  ],
+  "published_date": "2025-12-24",
+  "regulator": "FSTB and SFC",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "The Financial Services and the Treasury Bureau and the Securities and Futures Commission published conclusions to their joint public consultation on a licensing regime for virtual asset dealing services, alongside separate conclusions on virtual asset custodian services published the same day. Licensed dealers must generally custody client virtual assets only with SFC-regulated virtual asset custodian service providers. The same day, FSTB and SFC opened a further consultation on new licensing regimes for virtual asset advisory service providers and virtual asset management service providers.",
+  "title": "Consultation conclusions: licensing regimes for virtual asset dealing and custodian services",
+  "type": "conclusions",
+  "why_it_matters": "This sets the terms for two new, mandatory licensing regimes that will bring virtual asset dealing and custody businesses under direct Hong Kong regulation for the first time."
+}

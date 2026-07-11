@@ -9,6 +9,7 @@ from pipeline.ci.validate_content import validate_changed_paths, validate_file
 VALID_CARD = {
     "schema_version": 1,
     "id": "card-1",
+    "jurisdiction_id": "hk",
     "published_date": "2026-01-01",
     "regulator": "Example Regulator",
     "pillar": ["example_pillar"],
@@ -31,8 +32,8 @@ def _write(repo_dir, rel_path, data):
 
 
 def test_valid_card_passes(tmp_path):
-    _write(tmp_path, "content/cards/card-1.json", VALID_CARD)
-    applicable, ok, error = validate_file("content/cards/card-1.json", repo_dir=str(tmp_path))
+    _write(tmp_path, "content/hk/cards/card-1.json", VALID_CARD)
+    applicable, ok, error = validate_file("content/hk/cards/card-1.json", repo_dir=str(tmp_path))
     assert applicable is True
     assert ok is True
     assert error is None
@@ -41,8 +42,8 @@ def test_valid_card_passes(tmp_path):
 def test_invalid_card_fails(tmp_path):
     bad = dict(VALID_CARD)
     del bad["citations"]
-    _write(tmp_path, "content/cards/card-1.json", bad)
-    applicable, ok, error = validate_file("content/cards/card-1.json", repo_dir=str(tmp_path))
+    _write(tmp_path, "content/hk/cards/card-1.json", bad)
+    applicable, ok, error = validate_file("content/hk/cards/card-1.json", repo_dir=str(tmp_path))
     assert applicable is True
     assert ok is False
     assert error is not None
@@ -56,8 +57,12 @@ def test_path_with_no_applicable_schema_is_not_applicable():
 
 
 def test_ledger_and_queue_paths_are_schema_governed(tmp_path):
-    _write(tmp_path, "data/ledger.json", {"schema_version": 1, "generated_at": "x", "items": {}})
-    applicable, ok, error = validate_file("data/ledger.json", repo_dir=str(tmp_path))
+    _write(
+        tmp_path,
+        "data/hk/ledger.json",
+        {"schema_version": 1, "jurisdiction_id": "hk", "generated_at": "x", "items": {}},
+    )
+    applicable, ok, error = validate_file("data/hk/ledger.json", repo_dir=str(tmp_path))
     assert applicable is True
     assert ok is True
 
@@ -82,23 +87,23 @@ def test_audit_event_path_is_schema_governed(tmp_path):
 
 
 def test_malformed_json_reports_error_not_crash(tmp_path):
-    full = tmp_path / "content" / "cards"
+    full = tmp_path / "content" / "hk" / "cards"
     full.mkdir(parents=True)
     (full / "broken.json").write_text("{not valid json")
-    applicable, ok, error = validate_file("content/cards/broken.json", repo_dir=str(tmp_path))
+    applicable, ok, error = validate_file("content/hk/cards/broken.json", repo_dir=str(tmp_path))
     assert applicable is True
     assert ok is False
     assert error is not None
 
 
 def test_validate_changed_paths_aggregates_and_skips_non_governed_files(tmp_path):
-    _write(tmp_path, "content/cards/good.json", VALID_CARD)
+    _write(tmp_path, "content/hk/cards/good.json", VALID_CARD)
     bad = dict(VALID_CARD, id="card-2")
     del bad["status"]
-    _write(tmp_path, "content/cards/bad.json", bad)
+    _write(tmp_path, "content/hk/cards/bad.json", bad)
 
     ok, results = validate_changed_paths(
-        ["content/cards/good.json", "content/cards/bad.json", "pipeline/watcher/run.py"],
+        ["content/hk/cards/good.json", "content/hk/cards/bad.json", "pipeline/watcher/run.py"],
         repo_dir=str(tmp_path),
     )
     assert ok is False
@@ -106,8 +111,8 @@ def test_validate_changed_paths_aggregates_and_skips_non_governed_files(tmp_path
 
 
 def test_validate_changed_paths_all_valid_passes(tmp_path):
-    _write(tmp_path, "content/cards/good.json", VALID_CARD)
-    ok, results = validate_changed_paths(["content/cards/good.json"], repo_dir=str(tmp_path))
+    _write(tmp_path, "content/hk/cards/good.json", VALID_CARD)
+    ok, results = validate_changed_paths(["content/hk/cards/good.json"], repo_dir=str(tmp_path))
     assert ok is True
     assert len(results) == 1
 
@@ -118,12 +123,12 @@ def test_card_with_internal_model_identifier_is_rejected(tmp_path):
     card's `model` field, even though card.json's schema only requires
     `minLength: 1` and has no opinion on the string's shape."""
     leaked = dict(VALID_CARD, model="claude-sonnet-5")
-    _write(tmp_path, "content/cards/card-1.json", leaked)
-    applicable, ok, error = validate_file("content/cards/card-1.json", repo_dir=str(tmp_path))
+    _write(tmp_path, "content/hk/cards/card-1.json", leaked)
+    applicable, ok, error = validate_file("content/hk/cards/card-1.json", repo_dir=str(tmp_path))
     assert applicable is True
     assert ok is False
     assert error is not None
-    assert "content/cards/card-1.json" in error
+    assert "content/hk/cards/card-1.json" in error
     assert "claude-sonnet-5" in error
 
 
@@ -133,8 +138,8 @@ def test_card_with_human_readable_model_name_is_accepted(tmp_path):
     model be disclosed -- this check must reject the identifier *shape*,
     not the presence of a model name at all."""
     ok_card = dict(VALID_CARD, model="Claude (Anthropic)")
-    _write(tmp_path, "content/cards/card-1.json", ok_card)
-    applicable, ok, error = validate_file("content/cards/card-1.json", repo_dir=str(tmp_path))
+    _write(tmp_path, "content/hk/cards/card-1.json", ok_card)
+    applicable, ok, error = validate_file("content/hk/cards/card-1.json", repo_dir=str(tmp_path))
     assert applicable is True
     assert ok is True
     assert error is None
@@ -151,6 +156,7 @@ def test_real_array_shaped_corrections_file_validates(tmp_path):
         {
             "schema_version": 1,
             "id": "corr-1",
+            "jurisdiction": "hk",
             "card_id": "card-1",
             "corrected_at": "2026-02-01T00:00:00Z",
             "correction_note": "Fixed a wrong figure.",
@@ -160,6 +166,7 @@ def test_real_array_shaped_corrections_file_validates(tmp_path):
         {
             "schema_version": 1,
             "id": "corr-2",
+            "jurisdiction": "hk",
             "card_id": "card-2",
             "corrected_at": "2026-03-01T00:00:00Z",
             "correction_note": "Fixed a date.",

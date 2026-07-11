@@ -9,7 +9,7 @@
     // the wrong theme. If nothing is stored, no attribute is set and the
     // plain CSS prefers-color-scheme media query handles it instead.
     try {
-      var storedTheme = localStorage.getItem("hkdar-theme");
+      var storedTheme = localStorage.getItem("gdar-theme");
       if (storedTheme === "light" || storedTheme === "dark") {
         document.documentElement.setAttribute("data-theme", storedTheme);
       }
@@ -18,7 +18,7 @@
       // prefers-color-scheme media query, same as any other visitor.
     }
   </script>
-  <title>{% block title %}HK Digital Asset Radar{% endblock %}</title>
+  <title>{% block title %}{{ site_name }}{% endblock %}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@700;800&family=Noto+Sans:wght@400;600&family=Spline+Sans+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ asset_prefix }}static/style.css">
@@ -26,7 +26,7 @@
 <body>
   <header class="site-header">
     <div class="site-header-main">
-      <a class="site-title" href="{{ asset_prefix }}index.html">HK Digital Asset Radar</a>
+      <a class="site-title" href="{{ asset_prefix }}index.html">{{ site_name }}</a>
       <nav class="site-nav">
         <a href="{{ asset_prefix }}index.html" {% if active_page == 'start_here' %}aria-current="page"{% endif %}>Start Here</a>
         <a href="{{ asset_prefix }}state-board.html" {% if active_page == 'state_board' %}aria-current="page"{% endif %}>State Board</a>
@@ -52,7 +52,7 @@
     {% block content %}{% endblock %}
   </main>
   <footer class="site-footer">
-    <p>HK Digital Asset Radar &mdash; code MIT-licensed, content CC BY 4.0. An automated, self-learning regulatory-watch project.</p>
+    <p>{{ site_name }} &mdash; code MIT-licensed, content CC BY 4.0. An automated, self-learning regulatory-watch project.</p>
   </footer>
   <script src="{{ asset_prefix }}static/site.js"></script>
   <script src="{{ asset_prefix }}static/theme.js"></script>

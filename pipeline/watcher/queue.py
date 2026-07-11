@@ -1,9 +1,11 @@
-"""Derive data/queue.json from the ledger -- a pure, deterministic view.
+"""Derive data/{jurisdiction_id}/queue.json from the ledger -- a pure,
+deterministic view.
 
 queue.json is regenerated in full on every run (all ledger items with
 status=="queued" AND relevant != False, see pipeline/watcher/relevance.py),
 never accumulated -- so "re-run adds nothing" is true both logically and
-as a literal git diff.
+as a literal git diff. Carries the ledger's own "jurisdiction_id" forward
+(required by pipeline/schemas/queue.json since the registry-model pivot).
 """
 from __future__ import annotations
 
@@ -33,7 +35,12 @@ def derive_queue(ledger: dict, run_ts: str) -> dict:
         }
         for e in entries
     ]
-    return {"schema_version": SCHEMA_VERSION, "generated_at": run_ts, "items": items}
+    return {
+        "schema_version": SCHEMA_VERSION,
+        "jurisdiction_id": ledger.get("jurisdiction_id"),
+        "generated_at": run_ts,
+        "items": items,
+    }
 
 
 def save_queue(path: str, queue_doc: dict) -> bool:

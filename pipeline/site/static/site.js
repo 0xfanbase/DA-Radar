@@ -1,4 +1,4 @@
-// HK Digital Asset Radar -- minimal vanilla JS, no framework.
+// Global Digital Asset Radar -- minimal vanilla JS, no framework.
 // Two jobs: (1) trigger the split-flap entrance animation on the
 // Trajectory Board (CSS handles prefers-reduced-motion itself -- this
 // script only ever adds a data attribute, never checks the media query

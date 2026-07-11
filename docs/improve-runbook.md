@@ -31,8 +31,8 @@ color.
 ## Step 0 — Check the improve queue
 
 Read `data/improve_queue.json`. If it has no item with `status == "open"`, log "queue empty,
-nothing to do" and **stop here** — same "no run, no cost" rule as the analyst's `data/queue.json`,
-applied to this loop's own bounded, human-curated candidate list. Pick the oldest open item (by
+nothing to do" and **stop here** — same "no run, no cost" rule as the analyst's per-jurisdiction
+queue file, applied to this loop's own bounded, human-curated candidate list. Pick the oldest open item (by
 `opened_at`, ties broken by `id`) — never more than one, and never by your own discretion about
 what else in the repo might be worth improving.
 
@@ -86,8 +86,8 @@ report, not "fix the gate" or "loosen the check."
 BRANCH="improve/<item-id>-$(date -u +%Y%m%d%H%M%S)"
 git checkout -b "$BRANCH"
 git add pipeline/ config/
-GIT_AUTHOR_NAME="hk-radar-bot" GIT_AUTHOR_EMAIL="bot@users.noreply.github.com" \
-GIT_COMMITTER_NAME="hk-radar-bot" GIT_COMMITTER_EMAIL="bot@users.noreply.github.com" \
+GIT_AUTHOR_NAME="da-radar-bot" GIT_AUTHOR_EMAIL="da-radar-bot@users.noreply.github.com" \
+GIT_COMMITTER_NAME="da-radar-bot" GIT_COMMITTER_EMAIL="da-radar-bot@users.noreply.github.com" \
 git commit -m "improve: <item-id>"
 git push -u origin "$BRANCH"
 ```
@@ -107,8 +107,8 @@ Back on `main` (not the PR branch):
 git checkout main
 python -m pipeline.ci.improve_queue --mark-picked "<item-id>" --pr-url "<pr-url-from-step-5>"
 git add data/improve_queue.json
-GIT_AUTHOR_NAME="hk-radar-bot" GIT_AUTHOR_EMAIL="bot@users.noreply.github.com" \
-GIT_COMMITTER_NAME="hk-radar-bot" GIT_COMMITTER_EMAIL="bot@users.noreply.github.com" \
+GIT_AUTHOR_NAME="da-radar-bot" GIT_AUTHOR_EMAIL="da-radar-bot@users.noreply.github.com" \
+GIT_COMMITTER_NAME="da-radar-bot" GIT_COMMITTER_EMAIL="da-radar-bot@users.noreply.github.com" \
 git commit -m "improve: mark <item-id> picked (<pr-url>)"
 git push origin main
 ```

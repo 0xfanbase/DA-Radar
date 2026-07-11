@@ -55,25 +55,40 @@ def main(argv=None) -> int:
     parser.add_argument(
         "--descriptors", required=True, help="Path to a JSON file: a list of item descriptors."
     )
-    parser.add_argument("--ledger", default="data/ledger.json")
-    parser.add_argument("--queue", default="data/queue.json")
-    parser.add_argument("--config", default="config/jurisdiction.json")
+    parser.add_argument(
+        "--jurisdiction",
+        default=None,
+        help=(
+            "Jurisdiction id (e.g. 'hk'). Resolves --ledger, --queue, and --config to "
+            "their conventional paths; any of those flags passed explicitly still "
+            "overrides its --jurisdiction-derived default."
+        ),
+    )
+    parser.add_argument("--ledger", default=None)
+    parser.add_argument("--queue", default=None)
+    parser.add_argument("--config", default=None)
     args = parser.parse_args(argv)
+
+    jid = args.jurisdiction
+    ledger_path = args.ledger or (f"data/{jid}/ledger.json" if jid else "data/ledger.json")
+    queue_path = args.queue or (f"data/{jid}/queue.json" if jid else "data/queue.json")
+    config_path = args.config or (f"config/jurisdictions/{jid}.json" if jid else "config/jurisdiction.json")
 
     with open(args.descriptors, "r", encoding="utf-8") as fh:
         descriptors = json.load(fh)
-    with open(args.config, "r", encoding="utf-8") as fh:
+    with open(config_path, "r", encoding="utf-8") as fh:
         jurisdiction_config = json.load(fh)
 
     run_ts = utc_now_iso()
-    ledger = load_ledger(args.ledger)
+    ledger = load_ledger(ledger_path, jurisdiction_id=jurisdiction_config.get("jurisdiction_id"))
+    ledger.setdefault("jurisdiction_id", jurisdiction_config.get("jurisdiction_id"))
     ledger, added = seed_items_from_descriptors(ledger, descriptors, run_ts)
     ledger, _classified = classify_relevance(
         ledger, jurisdiction_config.get("relevance_keywords", []), run_ts
     )
 
-    save_ledger(args.ledger, ledger)
-    save_queue(args.queue, derive_queue(ledger, run_ts))
+    save_ledger(ledger_path, ledger)
+    save_queue(queue_path, derive_queue(ledger, run_ts))
 
     print(f"seed_backfill: {len(added)} new item(s) added as queued.")
     for item_hash in added:

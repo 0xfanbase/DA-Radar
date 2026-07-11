@@ -27,7 +27,8 @@ on:
     paths:
       - "content/**"
       - "data/**"
-      - "config/jurisdiction.json"
+      - "config/site.json"
+      - "config/jurisdictions/**"
       - "pipeline/site/**"
   repository_dispatch:
     types: [site-rebuild-needed]

@@ -2,10 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "queue.json",
   "title": "Queue",
-  "description": "Derived view of ledger.json: every item with status=='queued', deterministically ordered. Regenerated in full on every watcher run -- never accumulated or hand-edited. Not named in the original spec's schema list; added because it's core to the Phase 1 acceptance criterion.",
+  "description": "Derived view of ledger.json: every item with status=='queued', deterministically ordered. Regenerated in full on every watcher run -- never accumulated or hand-edited. Not named in the original spec's schema list; added because it's core to the Phase 1 acceptance criterion. Lives at data/{jurisdiction_id}/queue.json since the registry-model pivot; 'jurisdiction_id' names which jurisdiction this queue belongs to and must match the file's own directory and config/site.json's jurisdictions[].id.",
   "type": "object",
   "properties": {
     "schema_version": { "const": 1 },
+    "jurisdiction_id": { "type": "string", "minLength": 1 },
     "generated_at": { "type": "string", "format": "date-time" },
     "items": {
       "type": "array",
@@ -35,6 +36,6 @@
       }
     }
   },
-  "required": ["schema_version", "generated_at", "items"],
+  "required": ["schema_version", "jurisdiction_id", "generated_at", "items"],
   "additionalProperties": false
 }
