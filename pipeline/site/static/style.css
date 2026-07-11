@@ -353,6 +353,31 @@ hr.hairline {
   padding: 0.2rem 0;
 }
 
+/* Distinct from .badge-verified -- a corrected card is not the same claim
+   as a verified one, and the label links through to the corrections log
+   (rule 6 discoverability) so it needs its own affordance, not just its
+   own color. Reuses the amber token in the same border/background-only
+   role as .badge-unverified (never as text -- see the contrast-ratio
+   tests in tests/test_site_generate.py). */
+.badge-corrected {
+  display: inline-block;
+  border: 2px solid var(--amber);
+  background: rgba(183, 121, 31, 0.12);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.badge-corrected:hover,
+.badge-corrected:focus-visible {
+  text-decoration: underline;
+}
+
 /* Card component -- shared by Timeline, pillar "recent activity," search. */
 .card {
   border: 1px solid var(--hairline);
@@ -638,6 +663,21 @@ hr.hairline {
 .timeline-marker[data-pillar-slot="5"] { --marker-color: var(--pillar-color-5); }
 .timeline-marker[data-pillar-slot="6"] { --marker-color: var(--pillar-color-6); }
 
+/* Sentinel slot for an item with no pillar classification (see
+   build_timeline_events in pipeline/site/data.py) -- deliberately reuses
+   --ink-muted, not any --pillar-color-N token, so "unclassified" can
+   never be mistaken for a real pillar's color. */
+.timeline-marker[data-pillar-slot="-1"] { --marker-color: var(--ink-muted); }
+
+/* Non-verified card marker variant -- reuses the same amber token as
+   .badge-unverified elsewhere on the site, as a ring around the dot so
+   the pillar-color fill (the marker's primary identity channel) stays
+   intact. Document markers never carry data-status, so this never
+   applies to them. */
+.timeline-marker[data-status]:not([data-status="verified"]):not([data-status="corrected"]) .timeline-dot {
+  box-shadow: 0 0 0 2px var(--amber);
+}
+
 .timeline-marker-date {
   font-family: var(--font-mono);
   font-size: 0.65rem;
@@ -657,7 +697,7 @@ hr.hairline {
 .timeline-tooltip {
   position: absolute;
   z-index: 10;
-  max-width: 18rem;
+  max-width: min(18rem, calc(100vw - 2rem));
   background: var(--ink);
   color: var(--paper);
   font-size: 0.8rem;
@@ -668,6 +708,16 @@ hr.hairline {
 
 .timeline-tooltip[hidden] {
   display: none;
+}
+
+.timeline-tooltip-status {
+  margin-top: 0.35rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid var(--amber);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .timeline-trajectory-rail {
@@ -707,5 +757,32 @@ hr.hairline {
   .site-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media print {
+  :root {
+    color-scheme: light !important;
+    --paper: #F2ECDD !important;
+    --surface-card: #FBF8F1 !important;
+    --ink: #132A43 !important;
+    --ink-muted: #5A5245 !important;
+    --hairline: #DCD2BE !important;
+    --seal-red: #C8102E !important;
+    --harbour-teal: #1E6E6B !important;
+    --amber: #B7791F !important;
+    --verified-green: #4a6a4a !important;
+    --trajectory-surface: #FBF8F1 !important;
+    --trajectory-ink: #132A43 !important;
+  }
+
+  .trajectory-board {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .timeline-fallback > :not(summary) {
+    display: block !important;
+    content-visibility: visible !important;
   }
 }

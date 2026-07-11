@@ -8,7 +8,8 @@
        href="{{ e.url }}"
        data-pillar-slot="{{ e.pillar_color_slot }}"
        data-date="{{ e.date }}"
-       data-source="{{ e.source }}">
+       data-source="{{ e.source }}"
+       {% if e.status %}data-status="{{ e.status }}"{% endif %}>
       <span class="timeline-dot" aria-hidden="true"></span>
       <span class="timeline-marker-date">{{ e.date }}</span>
       <span class="timeline-marker-label">{{ e.title }}</span>
@@ -27,7 +28,7 @@
     <summary>View as a list (no JavaScript needed)</summary>
     <ul>
       {% for e in shown %}
-      <li><span class="mono">{{ e.date }}</span> &mdash; <a href="{{ e.url }}">{{ e.title }}</a>{% if e.pillar_names %} ({{ e.pillar_names | join(", ") }}){% endif %}</li>
+      <li><span class="mono">{{ e.date }}</span> &mdash; <a href="{{ e.url }}">{{ e.title }}</a>{% if e.pillar_names %} ({{ e.pillar_names | join(", ") }}){% endif %}{% if e.status and e.status not in ["verified", "corrected"] %} <span class="badge-unverified">Unverified</span>{% endif %}</li>
       {% else %}
       <li>No dated items yet.</li>
       {% endfor %}

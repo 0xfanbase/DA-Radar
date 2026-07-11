@@ -451,6 +451,80 @@ live-Pages verification should instead assert something that only the real gener
 produce -- e.g. a non-root page resolving, or a Jekyll-absence check (`generator` meta tag / `assets/
 css/style.css` path should never appear in this project's own markup).
 
+### 2026-07-11 — Fable-directed compliance/UX audit: 34 fix items, 12 executed, rest logged
+
+Per the owner's request, ran a full senior-compliance-officer-lens audit of the site and pipeline,
+using Fable as project director (the same role it plays at every checkpoint in this log) to scope
+the audit and prioritize findings, with a fleet of agents executing the read and fix work. Full
+mechanics: Fable read `CLAUDE.md` and this file's 2026-07-11 Pages-bug entry (the reference example
+for the class of bug being hunted -- "pipeline says X, reader sees Y") and defined 8 audit
+dimensions, each scoped to specific real files: deploy/publish-chain integrity, disclaimer and
+verification-status *placement*, an anonymity/internal-identifier re-scan, line-by-line editorial-
+rule conformance of every published content file, generator/template edge cases, whether the
+deterministic gates enforce what the Method page claims, Method-page self-description honesty, and
+frontend UX/accessibility/both-theme legibility. 8 parallel agents read every targeted file in full
+(not excerpts) and returned 48 raw findings. Fable deduped those into 34 fix items, ranked into 11
+must-fix, 12 should-fix, 2 nice-to-have, and 9 flag-for-owner, and wrote acceptance criteria for
+each. Every candidate marked safe for auto-fix was then adversarially re-verified against the
+current file contents by a fresh agent before anything was touched (skeptical-by-default,
+`confirmed=false` unless directly verifiable) -- 3 of 15 candidates were refuted at this step and
+correctly not fixed. The remaining 12 were executed one at a time (sequential, not parallel, since
+they share one working tree), each as its own scoped agent with Edit access only, no git access.
+
+**12 fixes applied, all independently re-verified afterward (fresh `git diff` read, full pytest
+re-run: 334/334 passing, not just trusted from the sub-agents' own reports):**
+1. `README.md`'s Status section no longer says "Phase 1 ... no public site exists yet" (the exact
+   stale text the Jekyll fallback served readers, see the entry above) -- now points at the live URL.
+2. Added `@media print` rules to `style.css` -- the Trajectory Board's theme-invariant dark
+   background was dropping out in print, leaving near-illegible pale-on-white text.
+3. The Timeline ribbon/tooltip/no-JS fallback now render each card's verification status
+   (`data.py` already computed it; nothing downstream displayed it -- a real instance of the
+   "pipeline knows, reader doesn't see" class this audit was built to catch).
+4. `pipeline/site/data.py`'s `load_site_data` now raises a new `SiteDataError` instead of silently
+   degrading when expected content is missing (a missing `start_here.json` or pillar-state file
+   used to produce a green build with a silently incomplete site).
+5. Unmapped `status_seal`/pillar ids used to render as raw snake_case strings on the public State
+   Board -- now a fail-loud `SiteDataError` naming the exact source file, never a raw id shown to a
+   reader.
+6. An item with no pillar classification used to get timeline color slot 0 -- a real pillar's own
+   color -- fabricating a classification signal; now a distinct sentinel slot that renders as
+   genuinely unclassified.
+7. Removed unsourced named-entity and numeric claims from `content/pillar_states/stablecoins.json`
+   and `funds_etfs.json` standing summaries (Anchorpoint's ownership structure, an HKMA application
+   count, named ETF issuers) -- verified against all 9 cited `key_links`; none supported the claims
+   as written. Direct rule-2/rule-4 violations, now fixed at the content level.
+8. New `pipeline/verify/quote_policy.py` makes the 15-word/one-quote-per-source rule (asserted as
+   settled fact on the Method page, previously enforced only by LLM prompt instruction) a real,
+   deterministic, non-bypassable gate check, wired into `enforce_full_gate` alongside the existing
+   citation-authenticity and numeric-claims checks.
+9. Fixed the "Corrected" status rendering: it shared the "Verified" badge with no link to the
+   corrections log, and the Method page's own summary sentence claimed every non-verified card
+   "carries unverified" (false once a corrected card exists) -- now a real three-way split.
+10. The fixed "Unverified -- citations could not be confirmed against source" label was factually
+    wrong when a card was actually downgraded for an unsupported numeric claim -- added the
+    correct-cause branch.
+11. A card with an empty/missing `citations` array used to crash the entire 7-page build with an
+    unhandled `IndexError` -- now a loud, named `SiteDataError` instead of a build outage.
+12. Timeline tooltip positioning is now clamped to the viewport (was measuring `offsetWidth` while
+    still `hidden`, and could push off-screen / cause horizontal scroll on narrow viewports).
+
+**22 items deliberately not auto-fixed this session** -- 3 refuted on adversarial re-check
+(a trajectory citation and a card-citation pair that held up under a fresh, skeptical re-read;
+a theme.js OS-preference-change listener claim that didn't reproduce), the rest genuinely deferred:
+6 should-fix/nice-to-have items needing a real implementation pass rather than a mechanical patch
+(dead-link research, a model-field leak-guard regex, a domain-allowlist design for citations), and
+9 flag-for-owner items where the correct fix touches protected territory or is a policy decision --
+logged in full in IMPROVEMENT_BACKLOG.md's matching 2026-07-11 entry rather than acted on, per
+CLAUDE.md's own rule that editorial-rule, path-allowlist, and architecture changes need a separate,
+explicit human-approved change.
+
+**Note on scope:** the executed fixes touch `pipeline/verify/gate.py`,
+`pipeline/ci/apply_verification_gate.py`, and the new `pipeline/verify/quote_policy.py` --
+outside `/content` and `/data`, so outside the AI-analyst-job path allowlist. That allowlist governs
+the automated analyst/verifier pipeline specifically (see CLAUDE.md's Path allowlist section); this
+was a full human-directed session-level audit, not an analyst/verifier run, so it was never subject
+to that gate in the first place -- noted here for clarity, not as an exception.
+
 ## PM checkpoints (Fable)
 
 ### 2026-07-09 — Kickoff review: approved with directives

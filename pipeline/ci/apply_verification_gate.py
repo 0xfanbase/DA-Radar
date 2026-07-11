@@ -4,9 +4,10 @@ the file-based pipeline, not just in-memory dicts.
 
 Run as the final step of the verifier job in analyze.yml, after the
 verifier LLM pass and before any commit: re-checks every citation in
-every changed card file for real (live re-fetch), and rewrites the file
-if the gate downgrades its status. This is what makes "never trust the
-LLM's self-report" real for files on disk.
+every changed card file for real (live re-fetch), enforces the
+15-word/one-per-source quote policy (pipeline/verify/quote_policy.py),
+and rewrites the file if the gate downgrades its status. This is what
+makes "never trust the LLM's self-report" real for files on disk.
 """
 from __future__ import annotations
 

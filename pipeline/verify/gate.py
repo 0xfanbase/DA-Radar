@@ -13,6 +13,7 @@ import copy
 
 from pipeline.verify.authenticity import check_card_citations
 from pipeline.verify.numeric_claims import check_card_numeric_claims
+from pipeline.verify.quote_policy import check_card_quote_policy
 
 
 def enforce_verification_gate(card: dict, **fetch_kwargs) -> dict:
@@ -41,18 +42,26 @@ def enforce_verification_gate(card: dict, **fetch_kwargs) -> dict:
 def enforce_full_gate(card: dict, **fetch_kwargs) -> dict:
     """Returns a NEW card dict (the input is never mutated).
 
-    Extends enforce_verification_gate with a second, independent check:
-    every numeric claim (amounts, percentages, counts) in the card's
-    summary/why_it_matters must also trace to the combined text of its
-    own already-fetched citation sources (pipeline/verify/numeric_claims.py).
-    Reuses the SAME fetch check_card_citations already performed --
-    CitationCheckResult.source_text -- rather than fetching every URL a
-    second time.
+    Extends enforce_verification_gate with two further, independent
+    checks:
 
-    Status is forced to "unverified" if EITHER the citation-authenticity
-    check or the numeric-claims check fails, extending (never replacing)
-    the zero-tolerance philosophy above. A numeric-claims failure also
-    records which claims didn't trace, in the optional
+    1. Every numeric claim (amounts, percentages, counts) in the card's
+       summary/why_it_matters must also trace to the combined text of
+       its own already-fetched citation sources
+       (pipeline/verify/numeric_claims.py). Reuses the SAME fetch
+       check_card_citations already performed --
+       CitationCheckResult.source_text -- rather than fetching every URL
+       a second time.
+    2. Every citation quote must obey the 15-word/one-per-source editorial
+       policy (pipeline/verify/quote_policy.py) -- no quote over 15
+       whitespace-split words, no source URL cited more than once in the
+       same card. Pure text analysis of the card's own citations array,
+       so it needs no fetch.
+
+    Status is forced to "unverified" if ANY of the citation-authenticity,
+    numeric-claims, or quote-policy checks fail, extending (never
+    replacing) the zero-tolerance philosophy above. A numeric-claims
+    failure also records which claims didn't trace, in the optional
     numeric_claims_unsupported field -- present only when non-empty, so
     a clean card produces no extra diff noise. A card with zero numeric
     claims at all is a legitimate, purely qualitative card and is never
@@ -61,13 +70,14 @@ def enforce_full_gate(card: dict, **fetch_kwargs) -> dict:
     citation_results = check_card_citations(card, **fetch_kwargs)
     source_texts = [r.source_text for r in citation_results]
     numeric_results = check_card_numeric_claims(card, source_texts)
+    quote_policy = check_card_quote_policy(card)
 
     gated_card = copy.deepcopy(card)
 
     citations_ok = bool(citation_results) and all(r.authentic for r in citation_results)
     unsupported_claims = [r.claim for r in numeric_results if not r.traceable]
 
-    if not citations_ok or unsupported_claims:
+    if not citations_ok or unsupported_claims or not quote_policy.ok:
         gated_card["status"] = "unverified"
 
     if unsupported_claims:

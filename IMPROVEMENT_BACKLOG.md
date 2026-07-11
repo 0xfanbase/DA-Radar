@@ -1034,3 +1034,110 @@ path-allowlist bare-directory bug, the smart-quote/PDF-artifact authenticity bug
 filter gap, the trajectory-board contrast bug above) the fix was the same pattern: read the actual
 rendered/served output byte-for-byte rather than trusting that a check passing means the thing it's
 supposed to guard against didn't happen.
+
+### 2026-07-11 — Fable-directed compliance/UX audit: full findings, deferred and owner-flagged items
+
+Mechanics and the 12 executed fixes are logged in `PROGRESS.md`'s matching 2026-07-11 entry. This
+entry is the durable record of everything that survived triage but was **not** applied this session,
+so none of it gets lost the way ungoverned findings tend to. 22 of 34 fix items were not executed: 3
+were refuted by a fresh, skeptical re-read of the actual current files (correctly not fixed -- a
+citation-URL/quote pair and a trajectory-source claim that held up, and a theme.js
+OS-preference-listener claim that didn't reproduce), 2 must-fix items need a real implementation pass
+rather than a mechanical patch, 6 should-fix/nice-to-have items likewise, and 9 are flag-for-owner:
+items where the correct fix touches protected territory (`CLAUDE.md` itself, `pipeline/schemas/**`,
+`.github/workflows/**`, `pipeline/ci/path_allowlist.py`'s core deny logic) or is a genuine policy
+judgment call, per CLAUDE.md's own rule that those require "an explicit, separate human-approved
+change." Full detail on each (files, description, acceptance criteria) lives in the audit
+workflow's own transcript; the summary below is enough for the owner to decide next steps without
+digging for it.
+
+**Needs a real implementation pass (not owner-gated, just not mechanical enough for a same-session
+auto-fix):**
+1. `document-library-dead-link` -- one Document Library entry links to a 404'd HKMA URL with a
+   paraphrase-style title unlike its 68 siblings; needs the current live URL located before fixing.
+2. `timeline-skip-link` -- up to 77 individually-focusable timeline markers with no skip-link,
+   a real WCAG 2.4.1 gap.
+3. `generate-docstring-stale` -- `generate.py`'s module docstring still describes the abandoned
+   `docs/`-folder branch-deploy model its own code no longer uses -- the last surviving trace of
+   the exact assumption that caused the 2026-07-11 Pages outage.
+4. `model-field-leak-guard` -- no deterministic guard exists against the internal-model-identifier
+   leak recurring in a card's `model` field (the 2026-07-09 fix was prompt-text only, the same
+   enforcement class that caused the leak); needs a carefully-designed reject-list regex in
+   `validate_content.py`, not a blanket pattern that could false-positive a legitimate display name.
+5. `documents-page-disclaimer-clarification` -- the Document Library carries the identical
+   AI-generated-summary disclaimer over rows that are deterministic watcher output, which is
+   over-warning that risks banner-blindness on the pages where the disclaimer genuinely matters.
+6. `corrections-log-hash-fallback` -- if a corrected card is ever removed, the Corrections Log
+   (the one page whose entire purpose is rule 6) falls back to rendering a bare 64-character sha256
+   hash as the card title.
+7. `banking-money-secondary-source-basis` -- `content/pillar_states/banking_money.json`'s own
+   `open_items` admits its HKMA-circular claims rest solely on secondary legal commentary because
+   the primary circulars couldn't be fetched during research -- needs either a real primary-source
+   re-verification pass or an explicit in-text caveat, the same pattern `aml_cft_enforcement.json`
+   already uses for its own unconfirmed figure.
+8. `citation-domain-check-missing` -- the citation-authenticity gate checks that a quote is genuine
+   but never that the URL is an official regulator domain, so a law-firm blog with an accurate quote
+   passes cleanly; rule 2 (primary sources only) is enforced by prompt instruction alone today.
+
+**Nice-to-have, not urgent:**
+9. `timeline-undated-docs-caption` -- nothing on-page explains that undated documents are excluded
+   from the Timeline ribbon (invisible today since every current document has a date; will produce a
+   silent count mismatch the first time it doesn't).
+10. `doc-search-aria-live` -- the Document Library's live search gives screen-reader users no
+    feedback on filter results.
+
+**Flag-for-owner (protected territory or a policy decision -- report-only, no agent should apply
+these without an explicit, separate human-approved change):**
+11. `provenance-trio-non-card-content` -- pillar summaries, glossary definitions, trajectory
+    entries, and Start Here are all AI-analyst-authored but render with no generation timestamp,
+    model, or verification-status trio, and their schemas (`pillar_state.json`, `glossary.json`,
+    `trajectory.json`, `start_here.json`) have no fields to hold them -- only cards currently pass
+    through the verifier at all. Needs an owner decision on two questions: approve the schema
+    extensions, and decide whether non-card content should be verifier-gated or explicitly labeled
+    "Not independently verified."
+12. `workflow-dispatch-missing` -- `audit.yml` and `analyze.yml` push to `main` with `GITHUB_TOKEN`
+    but, unlike `watch.yml`, never fire the `repository_dispatch` that actually triggers
+    `deploy.yml` -- live consequence: Method & Audit page findings go stale indefinitely after every
+    weekly audit run. Also falsifies CLAUDE.md's own claim that `analyze.yml` "starts working
+    exactly as diagrammed... with no other change required" if a secret is ever added -- today it
+    would silently break at the publish step on first activation.
+13. `deploy-post-verification-missing` -- `deploy.yml` has no post-deploy check that the live site
+    is actually the real generator output (exactly the gap that let the Jekyll-fallback bug persist
+    for two days across multiple all-green deploy runs) and never re-runs `validate_content.py`/
+    `path_allowlist.py` before `generate.py`, trusting `main` unconditionally.
+14. `claude-md-stale-build-state` -- `CLAUDE.md`'s own loop diagram and "Current build state"
+    paragraph still say the audit loop is "not yet built," though Phase 5 shipped it on 2026-07-09.
+    The project's governing self-description being stale about a shipped phase is a real
+    trust-undermining finding, but `CLAUDE.md` is read-only to every AI agent in this repo without
+    exception -- only a human may edit it, even for a pure factual-staleness fix.
+15. `recurring-non-bot-merge-commits` -- `git log` shows 5 non-bot-identity commits, not the 1 the
+    backlog previously disclosed: beyond the logged initial commit, four PR-merge commits are
+    authored under the owner's real GitHub handle. Because `correction.yml`/`improve.yml` are
+    PR-only/human-merge by design, this recurs on every future merge, contradicting rule 5's
+    anonymity guarantee and this file's own prior "single, contained, already-fixed"
+    characterization of the issue -- corrected here rather than left standing. Three legitimate
+    resolution paths exist (squash-merge policy, a bot-credentialed merge via the GitHub API, or an
+    accepted-tradeoff note); the choice is the owner's.
+16. `trigger-id-disclosure` -- `docs/analyst-runbook.md` states verbatim that internal trigger/
+    session IDs "don't belong in commit messages or PROGRESS.md entries," yet the live CCR trigger
+    ID is spelled out 6 times across `PROGRESS.md`/`IMPROVEMENT_BACKLOG.md` (including this file).
+    Not a credential leak, but a verified contradiction between written policy and actual practice.
+    Two legitimate resolutions: relax the runbook rule to match practice, or redact the six literal
+    occurrences to match the rule -- owner's call.
+17. `footer-license-scoping` -- the site footer's blanket "content CC BY 4.0" claim doesn't scope
+    out HK-Government-copyright quoted excerpts; a downstream re-user could misread it as licensing
+    quoted regulator text under CC BY when it remains Government copyright used under
+    quotation/attribution. Rewording a public licensing claim is reserved to the owner (rule 7).
+18. `google-fonts-third-party` -- `fonts.googleapis.com` is the site's only third-party runtime
+    call; every page view sends visitor IP/user-agent to a Google domain. Not a bug (fallback font
+    stacks mean a blocked request only degrades typography), but a real privacy-posture choice,
+    increasingly relevant ahead of any EU/UK jurisdiction fork -- keep as-is or self-host, owner's
+    call.
+19. `path-allowlist-symlink-gap` -- verified by direct test: `pipeline/ci/path_allowlist.py`
+    evaluates changed-path *strings*, not resolved targets, so a symlink placed under `content/`
+    pointing into `pipeline/` passes the gate's prefix check without being resolved. Mitigated today
+    only by the analyst/verifier sub-agents' own no-Bash tool grants -- the gate itself does not
+    structurally deliver the "inspects the actual working tree" guarantee CLAUDE.md and the Method
+    page both describe it as providing. `path_allowlist.py`'s core allow/deny logic is explicitly
+    protected territory, so even this genuine gate bug must be escalated rather than patched by an
+    agent under any framing.

@@ -86,6 +86,34 @@ def test_main_with_no_changed_cards_is_a_noop(tmp_path):
     assert exit_code == 0
 
 
+def test_apply_gate_to_file_downgrades_over_limit_quote(tmp_path, requests_mock, fixture_bytes):
+    requests_mock.get(DOC_URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
+    long_quote = " ".join(f"word{i}" for i in range(16))
+    path = tmp_path / "card.json"
+    path.write_text(json.dumps(_card(status="verified", quote=long_quote)))
+
+    changed = apply_gate_to_file(str(path), user_agent=UA, **FETCH_KWARGS)
+
+    assert changed is True
+    assert json.loads(path.read_text())["status"] == "unverified"
+
+
+def test_apply_gate_to_file_downgrades_duplicate_citation_urls(tmp_path, requests_mock, fixture_bytes):
+    requests_mock.get(DOC_URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
+    card = _card(status="verified")
+    card["citations"] = [
+        {"url": DOC_URL, "quote": "takes effect on 1 August 2026"},
+        {"url": DOC_URL, "quote": "takes effect on 1 August 2026"},
+    ]
+    path = tmp_path / "card.json"
+    path.write_text(json.dumps(card))
+
+    changed = apply_gate_to_file(str(path), user_agent=UA, **FETCH_KWARGS)
+
+    assert changed is True
+    assert json.loads(path.read_text())["status"] == "unverified"
+
+
 def test_apply_gate_to_file_writes_numeric_claims_unsupported_field(tmp_path, requests_mock, fixture_bytes):
     """apply_gate_to_file now calls enforce_full_gate, not just
     enforce_verification_gate -- a numeric claim that doesn't trace to

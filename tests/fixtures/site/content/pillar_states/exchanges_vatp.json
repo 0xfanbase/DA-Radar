@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "pillar": "exchanges_vatp",
+  "status_seal": "bill_pending",
+  "regulator": "HKMA",
+  "instruments": ["Test VATP instrument"],
+  "standing_summary": "Test standing summary for the exchanges pillar.",
+  "last_changed": "2026-01-01",
+  "key_links": [{"label": "HKMA VATP page", "url": "https://example.invalid/vatp"}],
+  "open_items": ["Test open item."]
+}

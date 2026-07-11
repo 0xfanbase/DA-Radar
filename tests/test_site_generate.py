@@ -107,6 +107,35 @@ def test_unverified_card_shows_unverified_badge_with_text_label(tmp_path):
     assert "Unverified" in card2_chunk
 
 
+def test_unverified_card_from_numeric_claim_failure_shows_cause_specific_label(tmp_path):
+    """Fable audit fix: enforce_full_gate downgrades a card to "unverified"
+    for two independent reasons -- citation authenticity failure OR an
+    unsupported numeric claim (recorded in the card's own
+    numeric_claims_unsupported field) -- but the badge used to always show
+    the citations-specific wording regardless of cause, which is false for
+    a card whose citations are fully authentic and whose only problem is an
+    untraceable figure."""
+    import json
+    import shutil
+
+    repo_copy = tmp_path / "repo_numeric_claim_failure"
+    shutil.copytree(FIXTURE_ROOT, repo_copy)
+    card_path = repo_copy / "content" / "cards" / "card2.json"
+    card = json.loads(card_path.read_text(encoding="utf-8"))
+    card["numeric_claims_unsupported"] = ["HK$50 million"]
+    card_path.write_text(json.dumps(card), encoding="utf-8")
+
+    output_dir = tmp_path / "output_numeric_claim_failure"
+    build_site(str(repo_copy), str(output_dir))
+    timeline_html = open(output_dir / "timeline.html", encoding="utf-8").read()
+
+    card2_start = timeline_html.rindex("Test unverified card")
+    card2_chunk = timeline_html[card2_start : card2_start + 1500]
+    assert "badge-unverified" in card2_chunk
+    assert "a stated figure could not be confirmed against the cited source" in card2_chunk
+    assert "citations could not be confirmed against source" not in card2_chunk
+
+
 def test_timeline_cards_use_h2_not_h3_no_heading_level_skip(tmp_path):
     """Real bug found live via an actual Lighthouse accessibility audit
     (98/100, docked for non-sequential heading order): Timeline's own <h1>
@@ -117,6 +146,58 @@ def test_timeline_cards_use_h2_not_h3_no_heading_level_skip(tmp_path):
     timeline_html = open(os.path.join(str(tmp_path), "timeline.html"), encoding="utf-8").read()
     assert "<h3>" not in timeline_html
     assert timeline_html.count("<h2>") >= 2  # one per fixture card
+
+
+def test_method_page_reports_three_way_verification_split_with_mixed_cards(tmp_path):
+    """Fable audit fix: 'corrected' was previously unhandled on the Method
+    page -- a dead verified_count variable (computed from a ledger status,
+    always 0) sat above a sentence claiming 'the rest carry unverified',
+    which becomes false the moment any card is corrected. Confirms the
+    sentence reports all three real counts, and that the Corrected badge
+    itself links through to the corrections log (rule 6 discoverability),
+    distinct from the Verified badge's markup."""
+    import json
+    import shutil
+
+    repo_copy = tmp_path / "repo_mixed_status"
+    shutil.copytree(FIXTURE_ROOT, repo_copy)
+    corrected_card = {
+        "schema_version": 1,
+        "id": "card3",
+        "published_date": "2026-01-08",
+        "regulator": "SFC",
+        "pillar": ["stablecoins"],
+        "type": "circular",
+        "title": "Test corrected card",
+        "summary": "Test summary text for a corrected card.",
+        "why_it_matters": "Test why-it-matters text.",
+        "citations": [{"url": "https://example.invalid/source3", "quote": "test quote three"}],
+        "status": "corrected",
+        "generated_at": "2026-01-08T00:00:00Z",
+        "model": "test-model",
+    }
+    with open(repo_copy / "content" / "cards" / "card3.json", "w", encoding="utf-8") as fh:
+        json.dump(corrected_card, fh)
+
+    output_dir = tmp_path / "output_mixed_status"
+    build_site(str(repo_copy), str(output_dir))
+    method_html = open(output_dir / "method.html", encoding="utf-8").read()
+
+    assert (
+        'Of 3 published cards, 1 currently carry <span class="badge-verified">verified</span> '
+        'status, 1 carry <span class="badge-corrected">corrected</span> status'
+        in method_html
+    )
+    assert (
+        'and 1 carry <span class="badge-unverified">unverified</span> status.' in method_html
+    )
+    assert 'id="corrections-log"' in method_html
+
+    timeline_html = open(output_dir / "timeline.html", encoding="utf-8").read()
+    card3_start = timeline_html.rindex("Test corrected card")
+    card3_chunk = timeline_html[card3_start : card3_start + 1500]
+    assert '<a class="badge-corrected" href="method.html#corrections-log">' in card3_chunk
+    assert "badge-verified" not in card3_chunk.split("card-meta")[1][:300]
 
 
 def test_corrections_log_shows_empty_state_when_no_corrections_exist(tmp_path):
@@ -226,7 +307,12 @@ def test_renders_real_audit_findings_when_present(tmp_path):
 def test_handles_empty_content_gracefully(tmp_path):
     """An entirely empty content tree (no cards, no trajectory entries, no
     documents, no glossary terms, no pillar states) must render placeholder
-    empty-state text everywhere, never throw."""
+    empty-state text everywhere, never throw. start_here.json and
+    content/trajectory.json are always-expected seed files in their own
+    right (see test_raises_when_start_here_missing /
+    test_raises_when_pillar_state_missing) so this fixture still supplies
+    them -- trajectory.json legitimately holds zero entries here (an empty
+    array is valid seed content, not a missing file)."""
     empty_root = tmp_path / "empty_repo"
     (empty_root / "config").mkdir(parents=True)
     (empty_root / "content" / "cards").mkdir(parents=True)
@@ -238,6 +324,19 @@ def test_handles_empty_content_gracefully(tmp_path):
 
     with open(empty_root / "config" / "jurisdiction.json", "w") as fh:
         json.dump({"schema_version": 1, "pillars": [], "seal_vocabulary": [], "regulators": []}, fh)
+    with open(empty_root / "content" / "start_here.json", "w") as fh:
+        json.dump(
+            {
+                "schema_version": 1,
+                "body": "Test intro paragraph.",
+                "last_changed": "2026-01-01",
+                "generated_at": "2026-01-01T00:00:00Z",
+                "model": "test-model",
+            },
+            fh,
+        )
+    with open(empty_root / "content" / "trajectory.json", "w") as fh:
+        json.dump([], fh)
 
     output_dir = tmp_path / "empty_output"
     written = build_site(str(empty_root), str(output_dir))
@@ -254,6 +353,154 @@ def test_handles_empty_content_gracefully(tmp_path):
 
     glossary_html = open(output_dir / "glossary.html", encoding="utf-8").read()
     assert "No glossary terms defined yet" in glossary_html
+
+
+def test_raises_when_pillar_state_missing(tmp_path):
+    """Regression test for the incident this fixes: deleting one pillar's
+    content/pillar_states/*.json file used to silently render 6 of 7
+    pillar headings with no warning and no failing test. Post-Phase-3, a
+    missing pillar state is a build error -- load_site_data must raise and
+    name the missing pillar id, not degrade gracefully."""
+    import shutil
+
+    from pipeline.site.data import SiteDataError, load_site_data
+
+    repo_copy = tmp_path / "repo_missing_pillar_state"
+    shutil.copytree(FIXTURE_ROOT, repo_copy)
+    os.remove(repo_copy / "content" / "pillar_states" / "exchanges_vatp.json")
+
+    try:
+        load_site_data(str(repo_copy))
+        assert False, "expected SiteDataError for a missing pillar_states file"
+    except SiteDataError as exc:
+        assert "exchanges_vatp" in str(exc)
+
+
+def test_raises_when_start_here_missing(tmp_path):
+    """Regression test: a missing content/start_here.json used to degrade
+    to a silently placeholder-only orientation page ({% if start_here %}).
+    Post-Phase-3, that file is always-expected seed content -- a missing
+    file must fail the build loudly instead."""
+    import shutil
+
+    from pipeline.site.data import SiteDataError, load_site_data
+
+    repo_copy = tmp_path / "repo_missing_start_here"
+    shutil.copytree(FIXTURE_ROOT, repo_copy)
+    os.remove(repo_copy / "content" / "start_here.json")
+
+    try:
+        load_site_data(str(repo_copy))
+        assert False, "expected SiteDataError for a missing start_here.json"
+    except SiteDataError as exc:
+        assert "start_here.json" in str(exc)
+
+
+def test_raises_when_status_seal_unmapped(tmp_path):
+    """Regression test for a Fable audit finding: a status_seal id with no
+    seal_vocabulary entry in config/jurisdiction.json used to render as a
+    raw internal id (e.g. <span class="seal">enforcement_action_pending
+    </span>) right next to real seals on the State Board. load_site_data
+    must fail loudly instead, naming the offending id and the pillar state
+    file it came from -- and build_site must never produce output HTML in
+    that state, so the raw id can never leak into a rendered page."""
+    import json
+    import shutil
+
+    from pipeline.site.data import SiteDataError, load_site_data
+
+    repo_copy = tmp_path / "repo_unmapped_seal"
+    shutil.copytree(FIXTURE_ROOT, repo_copy)
+    state_path = repo_copy / "content" / "pillar_states" / "stablecoins.json"
+    state = json.loads(state_path.read_text(encoding="utf-8"))
+    state["status_seal"] = "enforcement_action_pending"
+    state_path.write_text(json.dumps(state), encoding="utf-8")
+
+    try:
+        load_site_data(str(repo_copy))
+        assert False, "expected SiteDataError for an unmapped status_seal id"
+    except SiteDataError as exc:
+        assert "enforcement_action_pending" in str(exc)
+        assert "stablecoins.json" in str(exc)
+
+    output_dir = tmp_path / "output_unmapped_seal"
+    try:
+        build_site(str(repo_copy), str(output_dir))
+        assert False, "expected build_site to fail, not render, on an unmapped status_seal"
+    except SiteDataError:
+        pass
+    assert not os.path.exists(output_dir), "build_site must not write output on a failed build"
+
+
+def test_raises_when_card_pillar_id_unmapped(tmp_path):
+    """Companion finding: a pillar id on a card with no entry in
+    config/jurisdiction.json's pillars used to render as a raw internal id
+    (e.g. <span class="pillar-tag">aml_enforcement_typo</span>) on the
+    Timeline. load_site_data must fail loudly instead, naming the
+    offending id and the card file it came from -- and build_site must
+    never produce output HTML in that state, so the raw id can never leak
+    into a rendered page."""
+    import json
+    import shutil
+
+    from pipeline.site.data import SiteDataError, load_site_data
+
+    repo_copy = tmp_path / "repo_unmapped_pillar"
+    shutil.copytree(FIXTURE_ROOT, repo_copy)
+    card_path = repo_copy / "content" / "cards" / "card1.json"
+    card = json.loads(card_path.read_text(encoding="utf-8"))
+    card["pillar"] = ["aml_enforcement_typo"]
+    card_path.write_text(json.dumps(card), encoding="utf-8")
+
+    try:
+        load_site_data(str(repo_copy))
+        assert False, "expected SiteDataError for an unmapped card pillar id"
+    except SiteDataError as exc:
+        assert "aml_enforcement_typo" in str(exc)
+        assert "card1.json" in str(exc)
+
+    output_dir = tmp_path / "output_unmapped_pillar"
+    try:
+        build_site(str(repo_copy), str(output_dir))
+        assert False, "expected build_site to fail, not render, on an unmapped card pillar id"
+    except SiteDataError:
+        pass
+    assert not os.path.exists(output_dir), "build_site must not write output on a failed build"
+
+
+def test_raises_when_card_citations_empty(tmp_path):
+    """Regression test for the incident this fixes: build_timeline_events
+    unconditionally indexed card["citations"][0], so a card with an empty
+    or missing citations array raised an unhandled IndexError and froze
+    publishing (the previously-deployed site just stops updating, with no
+    notification). load_site_data must instead raise SiteDataError,
+    naming the offending card file, before any page renders."""
+    import json
+    import shutil
+
+    from pipeline.site.data import SiteDataError, load_site_data
+
+    repo_copy = tmp_path / "repo_empty_citations"
+    shutil.copytree(FIXTURE_ROOT, repo_copy)
+    card_path = repo_copy / "content" / "cards" / "card1.json"
+    card = json.loads(card_path.read_text(encoding="utf-8"))
+    card["citations"] = []
+    card_path.write_text(json.dumps(card), encoding="utf-8")
+
+    try:
+        load_site_data(str(repo_copy))
+        assert False, "expected SiteDataError for a card with empty citations"
+    except SiteDataError as exc:
+        assert "card1.json" in str(exc)
+        assert "citations" in str(exc)
+
+    output_dir = tmp_path / "output_empty_citations"
+    try:
+        build_site(str(repo_copy), str(output_dir))
+        assert False, "expected build_site to fail, not render, on a card with empty citations"
+    except SiteDataError:
+        pass
+    assert not os.path.exists(output_dir), "build_site must not write output on a failed build"
 
 
 def _srgb_to_linear(channel):
@@ -492,6 +739,89 @@ def test_timeline_markers_carry_pillar_slot_and_date():
     assert events[0]["date"] == "2026-01-05"
 
 
+def test_timeline_events_assign_sentinel_slot_for_empty_pillar_card():
+    """Regression test for a Fable audit finding: a card with no pillar
+    classification used to get pillar_index.get(pillars[0], 0) if pillars
+    else 0 -- i.e. slot 0, the FIRST configured pillar's real color --
+    fabricating a classification signal that was never actually made. An
+    empty pillar list must get a distinct sentinel slot instead."""
+    from pipeline.site.data import build_timeline_events
+
+    cards = [
+        {
+            "published_date": "2026-01-05",
+            "title": "Unclassified card",
+            "citations": [{"url": "https://example.invalid/unclassified", "quote": "x"}],
+            "pillar": [],
+            "pillar_names": [],
+            "regulator": "HKMA",
+            "status": "verified",
+        }
+    ]
+    events = build_timeline_events(cards, [], {"stablecoins": 0, "exchanges_vatp": 1})
+    assert events[0]["pillar_color_slot"] == -1
+    assert events[0]["pillar_color_slot"] != 0
+
+
+def test_timeline_events_assign_sentinel_slot_for_empty_pillar_document():
+    """Same fabricated-classification bug, document call site."""
+    from pipeline.site.data import build_timeline_events
+
+    documents = [
+        {
+            "title": "Unclassified document",
+            "link": "https://example.invalid/unclassified-doc",
+            "published_at": "2026-02-01T00:00:00Z",
+            "pillar": [],
+            "pillar_names": [],
+            "regulator": "HKMA",
+        }
+    ]
+    events = build_timeline_events([], documents, {"stablecoins": 0, "exchanges_vatp": 1})
+    assert events[0]["pillar_color_slot"] == -1
+    assert events[0]["pillar_color_slot"] != 0
+
+
+def test_timeline_marker_for_unclassified_card_renders_sentinel_not_pillar_zero(tmp_path):
+    """Full-build regression test: card1 (real pillar "stablecoins", real
+    slot 0 in the fixture config) stripped of its pillar classification
+    must render data-pillar-slot="-1" on the Timeline, never
+    data-pillar-slot="0" -- the two views of the same data (JS ribbon
+    marker vs. no-JS fallback list) must agree that the item is
+    unclassified, not silently disagree with each other."""
+    import json
+    import shutil
+
+    repo_copy = tmp_path / "repo_unclassified_pillar"
+    shutil.copytree(FIXTURE_ROOT, repo_copy)
+    card_path = repo_copy / "content" / "cards" / "card1.json"
+    card = json.loads(card_path.read_text(encoding="utf-8"))
+    card["pillar"] = []
+    card_path.write_text(json.dumps(card), encoding="utf-8")
+
+    output_dir = tmp_path / "output_unclassified_pillar"
+    build_site(str(repo_copy), str(output_dir))
+    timeline_html = open(output_dir / "timeline.html", encoding="utf-8").read()
+
+    marker_start = timeline_html.index("Test verified card")
+    marker_chunk = timeline_html[max(0, marker_start - 500) : marker_start]
+    assert 'data-pillar-slot="-1"' in marker_chunk
+    assert 'data-pillar-slot="0"' not in marker_chunk
+
+
+def test_style_css_renders_unclassified_slot_as_neutral_not_any_pillar_color():
+    """The sentinel slot's CSS rule must carry the "unclassified" styling
+    hook (the data-pillar-slot="-1" selector) and must not map to any of
+    the 7 real --pillar-color-N tokens -- otherwise the marker would still
+    visually read as a real pillar's color."""
+    css = _read_style_css()
+    assert '.timeline-marker[data-pillar-slot="-1"]' in css
+    rule_start = css.index('.timeline-marker[data-pillar-slot="-1"]')
+    rule_chunk = css[rule_start : rule_start + 200]
+    for n in range(7):
+        assert f"var(--pillar-color-{n})" not in rule_chunk
+
+
 def test_timeline_excludes_undated_documents():
     from pipeline.site.data import build_timeline_events
 
@@ -562,3 +892,42 @@ def test_homepage_timeline_is_capped_but_full_page_is_not():
         index_html = open(os.path.join(output_dir, "index.html"), encoding="utf-8").read()
         timeline_html = open(os.path.join(output_dir, "timeline.html"), encoding="utf-8").read()
         assert index_html.count("data-pillar-slot") <= timeline_html.count("data-pillar-slot")
+
+
+def test_timeline_ribbon_marker_and_fallback_carry_unverified_status(tmp_path):
+    """card2 in the fixture (status "unverified") is the only card event --
+    its ribbon <a class="timeline-marker"> must carry data-status, and its
+    no-JS fallback <li> must show the same conditional "Unverified" label.
+    Both checks look at the FIRST two occurrences of the title (the ribbon
+    marker, then the fallback list entry) -- the third, later occurrence is
+    the full <article class="card">, already covered by
+    test_unverified_card_shows_unverified_badge_with_text_label above."""
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    timeline_html = open(os.path.join(str(tmp_path), "timeline.html"), encoding="utf-8").read()
+
+    marker_start = timeline_html.index("Test unverified card")
+    marker_chunk = timeline_html[max(0, marker_start - 500) : marker_start]
+    assert 'data-status="unverified"' in marker_chunk
+
+    fallback_start = timeline_html.index("Test unverified card", marker_start + 1)
+    fallback_end = timeline_html.index("</li>", fallback_start)
+    fallback_chunk = timeline_html[fallback_start:fallback_end]
+    assert "badge-unverified" in fallback_chunk
+    assert "Unverified" in fallback_chunk
+
+
+def test_timeline_document_marker_and_fallback_have_no_status_badge(tmp_path):
+    """doc1 in the fixture is a document event (status is always None for
+    documents) -- neither its ribbon marker nor its fallback <li> should
+    carry any status attribute or badge, unlike card events."""
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    timeline_html = open(os.path.join(str(tmp_path), "timeline.html"), encoding="utf-8").read()
+
+    marker_start = timeline_html.index("Test document title")
+    marker_chunk = timeline_html[max(0, marker_start - 500) : marker_start]
+    assert "data-status" not in marker_chunk
+
+    fallback_start = timeline_html.index("Test document title", marker_start + 1)
+    fallback_end = timeline_html.index("</li>", fallback_start)
+    fallback_chunk = timeline_html[fallback_start:fallback_end]
+    assert "badge-unverified" not in fallback_chunk

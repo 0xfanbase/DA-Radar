@@ -22,6 +22,7 @@
       var label = marker.querySelector(".timeline-marker-label");
       var date = marker.getAttribute("data-date") || "";
       var source = marker.getAttribute("data-source") || "";
+      var status = marker.getAttribute("data-status") || "";
       var title = label ? label.textContent : "";
 
       // Built with textContent only, never innerHTML -- card/document
@@ -34,12 +35,20 @@
       if (source) {
         tooltip.appendChild(document.createTextNode(" (" + source + ")"));
       }
+      if (status && status !== "verified" && status !== "corrected") {
+        var statusEl = document.createElement("div");
+        statusEl.className = "timeline-tooltip-status";
+        statusEl.textContent = status.charAt(0).toUpperCase() + status.slice(1);
+        tooltip.appendChild(statusEl);
+      }
 
+      tooltip.hidden = false;
       var rect = marker.getBoundingClientRect();
       var ribbonRect = ribbon.getBoundingClientRect();
-      tooltip.style.left = rect.left - ribbonRect.left + "px";
+      var left = rect.left - ribbonRect.left;
+      var maxLeft = ribbonRect.width - tooltip.offsetWidth;
+      tooltip.style.left = Math.max(0, Math.min(left, maxLeft)) + "px";
       tooltip.style.top = rect.bottom - ribbonRect.top + 4 + "px";
-      tooltip.hidden = false;
     }
 
     function hideTooltip() {
