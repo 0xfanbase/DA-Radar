@@ -37,9 +37,13 @@ Consolidated here so nothing sits scattered across log entries.
 
 1. ~~**Merge `claude/hk-radar-phase-1-mzlnxx` to `main`.**~~ **Done, 2026-07-09.** PR #2 (52 commits,
    Phases 2-5) merged. `main` HEAD is now `499d317`.
-2. ~~**Enable GitHub Pages.**~~ **Confirmed done, 2026-07-09.** `https://0xfanbase.github.io/DA-Radar/`
-   returns HTTP 200 with the real generated site (disclaimer text confirmed present); `deploy.yml`'s
-   run on the merge commit completed successfully.
+2. ~~**Enable GitHub Pages.**~~ **Confirmed done, 2026-07-09** -- **later found to be a false positive,
+   corrected 2026-07-11.** The disclaimer-text check that supposedly confirmed the real site was live
+   was fooled by boilerplate text `README.md` happens to share verbatim with the real disclaimer;
+   Pages Source was actually still "Deploy from a branch" the whole time, silently serving GitHub's
+   Jekyll auto-render of `README.md` instead of `deploy.yml`'s Actions-based artifact. See the
+   2026-07-11 Log entry below for the full finding and fix. Genuinely fixed now: Source is confirmed
+   "GitHub Actions" and all 7 pages + static assets verified live with real content.
 3. ~~**Re-enable the analyst/verifier CCR trigger**~~ (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`). **Done,
    2026-07-09**, with the owner's explicit go-ahead in this session (not done silently, given it's a
    standing job that makes real unattended commits to `main`). `enabled: true`, next scheduled fire
@@ -399,6 +403,53 @@ Verified directly post-merge, not assumed:
 
 Branch protection on `main` remains open -- no tool available in this session can configure repo
 branch-protection settings; still an owner action.
+
+### 2026-07-11 — Real bug found: GitHub Pages was serving the Jekyll README fallback, not the site
+
+The owner reported `https://0xfanbase.github.io/DA-Radar/state-board.html` 404ing (screenshot of a
+genuine GitHub Pages 404 page). Investigated rather than assumed a caching blip:
+
+- `deploy.yml` itself was innocent: its latest run (2026-07-11T04:37 UTC, `repository_dispatch`)
+  completed green end to end. The "Build site" step's own log showed `site: wrote 7 page(s) to _site`,
+  listing `state-board.html` explicitly; the archived tar for `upload-pages-artifact` listed all 7
+  pages plus `static/`; `deploy-pages` reported `Reported success!` against
+  `https://0xfanbase.github.io/DA-Radar/`.
+- Live fetch told a different story: only `/` (`index.html`) returned 200 -- every other path,
+  including plain static assets (`static/style.css`) that were unambiguously inside the same
+  successful deploy, returned a genuine (non-cached, cache-bust-immune) GitHub 404.
+- Fetched and read the actual bytes of the live `index.html`: it carried a `Jekyll v3.10.0` generator
+  tag, linked `/DA-Radar/assets/css/style.css` (GitHub's default Jekyll theme asset path -- not
+  referenced anywhere in this codebase), an "Improve this page" edit link to `README.md`, and the
+  literal, word-for-word stale "Currently in **Phase 1 (Chassis)** ... no public site exists yet"
+  paragraph straight out of `README.md`'s never-updated Status section (confirmed via
+  `git log -- README.md`: last touched 2026-07-09, the very first day).
+- **Root cause:** repo Settings -> Pages -> Source was still "Deploy from a branch," not "GitHub
+  Actions," despite `deploy.yml`'s own header comment and the 2026-07-09 punch-list item both stating
+  it needed to be switched. GitHub's legacy branch/Jekyll builder auto-renders `README.md` as
+  `index.html` when no explicit `index.html` exists on the branch -- explaining why root alone
+  "worked" and every generator-produced page 404'd (they only ever existed inside the Actions
+  artifact, never on the branch itself).
+- **The 2026-07-09 "Pages confirmed live" verification was a false positive**, not a real check: it
+  grepped the live page for the disclaimer sentence, which also appears verbatim in `README.md`'s own
+  boilerplate -- so the check passed against the Jekyll fallback without ever touching the real
+  generated site. Corrected in the punch list above rather than left standing.
+
+**Fix:** owner switched Settings -> Pages -> Source to "GitHub Actions" directly (screenshot
+confirmed: "GitHub Pages source saved"). Since that alone doesn't republish the already-live
+deployment, manually re-dispatched `deploy.yml` (`workflow_dispatch` on `main`) afterward. Verified
+live, not assumed: all 7 pages (`index.html`, `state-board.html`, `trajectory.html`, `timeline.html`,
+`documents.html`, `glossary.html`, `method.html`) plus `static/style.css` now return 200, and
+`index.html`/`state-board.html` bodies were re-fetched and confirmed to be the real generator
+output (`<title>Start Here — HK Digital Asset Radar</title>` / `<title>State Board — HK Digital
+Asset Radar</title>`, real nav, real disclaimer markup, real pillar content) -- no Jekyll tag, no
+stale README text.
+
+**Process note for future sessions:** a "site is live" check that only string-matches shared
+boilerplate (the disclaimer sentence, present in both `README.md` and every real page) cannot
+distinguish the real site from GitHub's own Jekyll fallback of that same README. Any future
+live-Pages verification should instead assert something that only the real generated site could
+produce -- e.g. a non-root page resolving, or a Jekyll-absence check (`generator` meta tag / `assets/
+css/style.css` path should never appear in this project's own markup).
 
 ## PM checkpoints (Fable)
 

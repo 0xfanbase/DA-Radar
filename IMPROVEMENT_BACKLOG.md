@@ -1014,3 +1014,23 @@ the fix. Full suite: 304 tests passing. Re-verified with Playwright: 35/35.
 CVD derivation, the two pre-existing CSS bugs, the fact-check gaps closed, or (until now) the
 trajectory-board finding — had a durable log entry here, only two commit messages. Every phase before
 this one got one; this is the corrected record.
+
+### 2026-07-11 — GitHub Pages was silently serving the Jekyll README fallback, not the real site
+
+Full finding and fix are logged in `PROGRESS.md`'s 2026-07-11 Log entry (not duplicated here in
+full to avoid drift between the two files). Backlog-relevant angle: this is a second instance of the
+same shape of mistake `PROGRESS.md`'s Phase 1/2/3 entries already flag repeatedly in this project —
+**trusting a first green/200 result instead of inspecting the actual output.** The 2026-07-09
+"Pages confirmed live" check technically executed (an HTTP 200, a disclaimer-text grep hit) but never
+actually distinguished the real generated site from GitHub's own Jekyll fallback of `README.md`,
+because both legitimately contain the same disclaimer sentence. The check was not wrong on its own
+terms; it was checking the wrong thing.
+
+**Standing lesson for any future "is X actually live" verification in this project:** prefer an
+assertion that only the real artifact could satisfy (a page that doesn't exist anywhere else, an
+absence check for a marker the fallback *would* produce) over a substring match on content that might
+legitimately appear in more than one place. Everywhere else in this project's own history (the
+path-allowlist bare-directory bug, the smart-quote/PDF-artifact authenticity bugs, the relevance-
+filter gap, the trajectory-board contrast bug above) the fix was the same pattern: read the actual
+rendered/served output byte-for-byte rather than trusting that a check passing means the thing it's
+supposed to guard against didn't happen.
