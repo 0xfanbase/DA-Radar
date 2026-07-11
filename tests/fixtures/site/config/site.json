@@ -12,6 +12,17 @@
         "seeded": true
       },
       "coverage_notes": "Test fixture jurisdiction."
+    },
+    {
+      "id": "sg",
+      "name": "Singapore",
+      "config": null,
+      "status": {
+        "watcher": "planned",
+        "analyst_verifier": "planned",
+        "seeded": false
+      },
+      "coverage_notes": "Test fixture jurisdiction, not yet seeded."
     }
   ],
   "pillars": [

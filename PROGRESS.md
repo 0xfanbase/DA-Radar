@@ -737,6 +737,72 @@ edit; a full `grep` sweep for every remaining `hk-radar-bot`/old-contact-email o
 confirming the only survivors are historical log entries in `PROGRESS.md`/`IMPROVEMENT_BACKLOG.md`
 describing what was true at the time, correctly left untouched.
 
+### 2026-07-11 — P7: new IA and frontend rebuild
+
+Owner authorized continuing the build autonomously ("carry on until done... use Fable as project
+director... leave questions if any at the end"). Fable directed P7 -- the visible frontend rebuild
+on top of P6's registry-model foundation -- via a director-spec-then-sequential-migration workflow
+matching P6's own pattern: exact page copy, orientation-panel content, seal legend, coming-soon
+copy, the Timeline/Trajectory merge design, and the window-sort-key parsing rules were all specified
+by Fable before any template code was written.
+
+**Site restructured from 7 flat pages to the planned 5-page-type IA:** `pipeline/site/generate.py`
+now renders a global landing page (`_site/index.html` -- an 8-jurisdiction grid, HK marked live, the
+other 7 marked "Coming soon" with real per-jurisdiction `coverage_notes` from `config/site.json`,
+not identical boilerplate) plus per-jurisdiction Current State and Timeline pages for every registry
+entry (`_site/{jid}/index.html`, `_site/{jid}/timeline.html` -- HK renders full real content, the
+other 7 render a genuine, honest "coverage planned" page, never a 404 or empty file). Document
+Library, Glossary, and Method & Audit stay as shared, root-level pages. `pipeline/site/templates/
+{start_here,state_board,trajectory}.html` deleted; `landing.html`, `current_state.html`,
+`coming_soon.html` added.
+
+**Timeline absorbs the Trajectory Board**, per the plan's exact three-band design:
+`pipeline/site/data.py` gained `window_sort_key()` -- a pure function parsing a trajectory entry's
+free-text `date_or_window` (exact date, year-month, quarter, half-year, bare year) into a sortable
+key anchored to the window's *start*, with a deliberate, documented non-guessing fallback for
+genuinely unparseable strings ("mid-2026", "TBC") that sorts last rather than risk a wrong
+chronological guess -- the same "an honest 'unparsed' beats a wrong guess" principle this project's
+citation-authenticity gate already applies to facts. The merged `hk/timeline.html` renders the
+existing precise ribbon unchanged, a new "Ahead" rail showing trajectory entries as pills with their
+*verbatim* window text (confirmed in the final-check: real qualitative windows like "H1 2026" and
+"mid-2026" render as-is, never coerced into a fabricated exact date), and the existing by-pillar
+board view below. The standalone Trajectory Board page and template are gone; `trajectory.json`
+itself is untouched as the data source.
+
+**Glossary and Document Library became genuinely shared, filterable pages:** jurisdiction filter
+chips with real, build-time-computed counts (verified by hand-count in the final-check: 8 HK-tagged
++ 3 global-tagged = 11 for the "Hong Kong" chip, matching exactly); "See also" changed from unlinked
+display text to real `#term-{id}` anchor links, with the anchor scheme itself changed from the old
+term-text-derived id (which could collide across jurisdictions or break on punctuation) to the
+stable, collision-proof `id` field P6's migration already added. The final-check independently
+verified at least one crosslink's target anchor genuinely exists elsewhere in the same file, not
+just that the link text looked right.
+
+**Method & Audit's coverage table is real and config-driven, not hand-written:** 8 rows, one per
+`config/site.json` registry entry, cross-checked cell-by-cell against the config in the final-check
+and confirmed to match verbatim, including jurisdiction-specific gap notes (Singapore's manual-
+assisted-watcher decision, UAE's federal-vs-free-zone ambiguity, EU's member-state-NCA exclusion).
+
+**One real bug found by the final-check and fixed directly by the orchestrating session:**
+`base.html`'s jurisdiction-tab markup rendered `aria-current="page"aria-disabled="true"` with no
+separating space (invalid HTML5, though browsers parse it leniently) whenever a visitor viewed an
+unseeded jurisdiction's own tab -- a Jinja `trim_blocks`/`lstrip_blocks` side effect of two adjacent
+`{% if %}` blocks on separate template lines. Fixed with an explicit literal space inside the first
+conditional's own output so it survives block-trimming regardless of which branch renders; rebuilt
+and grepped the actual output to confirm the fix, not just the template diff.
+
+**Known, disclosed content gap, not a P7 regression:** three glossary "See also" references
+(`Policy statement 2.0`, `Stablecoins ordinance`, `Virtual asset`) point at terms that don't exist
+as their own glossary entries yet -- pre-existing gaps from Phase 3's original glossary v1, now
+visible because P7 made "See also" a real link-or-plain-text choice instead of always-plain-text.
+Degrades gracefully (unlinked text, never a dead anchor); left as a content backlog item, not a
+frontend bug.
+
+**Verification, run fresh by the orchestrating session, not trusted from the workflow's own
+report:** full pytest suite 375 passing (up from 363); the aria-attribute fix specifically rebuilt
+and grepped out of the real generated HTML; `tests/test_jurisdiction_agnostic.py` re-confirmed
+green (the templates/static scan included).
+
 ## PM checkpoints (Fable)
 
 ### 2026-07-09 — Kickoff review: approved with directives

@@ -11,7 +11,7 @@ import math
 import os
 import re
 
-from pipeline.site.generate import build_site
+from pipeline.site.generate import REDIRECT_STUBS, build_site
 from tests.conftest import REPO_ROOT
 
 FIXTURE_ROOT = os.path.join(REPO_ROOT, "tests", "fixtures", "site")
@@ -34,26 +34,99 @@ LEAKED_IDENTIFIER_PATTERNS = [
     r"\bccr\b",
 ]
 
+# tests/fixtures/site/config/site.json registers exactly two jurisdictions:
+# "hk" (seeded=true, live content) and "sg" (seeded=false, coming-soon
+# placeholder) -- see that fixture file. Every test below that needs to
+# reason about the full output set is derived from this, not a separate
+# hand-maintained count, so it stays correct if the fixture registry ever
+# grows.
+FIXTURE_SEEDED_JURISDICTION_IDS = ["hk"]
+FIXTURE_UNSEEDED_JURISDICTION_IDS = ["sg"]
+
 
 def _read_all_outputs(output_dir):
+    """Every *.html file anywhere under output_dir, recursively -- P7's
+    output tree nests per-jurisdiction pages under <jid>/, unlike the flat
+    pre-P7 layout this helper originally only needed to glob one level
+    deep."""
     return {
         path: open(path, encoding="utf-8").read()
-        for path in sorted(glob.glob(os.path.join(output_dir, "*.html")))
+        for path in sorted(glob.glob(os.path.join(output_dir, "**", "*.html"), recursive=True))
     }
 
 
-def test_build_site_renders_all_7_pages(tmp_path):
+def _content_pages(output_dir):
+    """Same as _read_all_outputs, minus the legacy redirect stubs (see
+    REDIRECT_STUBS in pipeline/site/generate.py) -- those are minimal,
+    intentionally content-free meta-refresh pages, not real site pages, so
+    checks like "every page carries the disclaimer" or "every page has the
+    theme toggle" must not expect them to look like one."""
+    outputs = _read_all_outputs(output_dir)
+    stub_paths = {os.path.join(str(output_dir), old_path) for old_path, _ in REDIRECT_STUBS}
+    return {path: html for path, html in outputs.items() if path not in stub_paths}
+
+
+def test_build_site_renders_expected_pages_for_the_fixture_registry(tmp_path):
+    """1 global landing page + (Current State, Timeline) per registry
+    entry regardless of seeded status + 3 shared pages + 3 legacy redirect
+    stubs, for the fixture's 2-jurisdiction registry (see
+    FIXTURE_SEEDED_JURISDICTION_IDS / FIXTURE_UNSEEDED_JURISDICTION_IDS)."""
     written = build_site(FIXTURE_ROOT, str(tmp_path))
-    assert len(written) == 7
+    total_jurisdictions = len(FIXTURE_SEEDED_JURISDICTION_IDS) + len(FIXTURE_UNSEEDED_JURISDICTION_IDS)
+    expected = 1 + (2 * total_jurisdictions) + 3 + len(REDIRECT_STUBS)
+    assert len(written) == expected
     for path in written:
         assert os.path.exists(path)
         assert os.path.getsize(path) > 0
 
 
+def test_build_site_renders_live_current_state_and_timeline_for_seeded_jurisdictions(tmp_path):
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    for jid in FIXTURE_SEEDED_JURISDICTION_IDS:
+        current_state_html = open(os.path.join(str(tmp_path), jid, "index.html"), encoding="utf-8").read()
+        timeline_html = open(os.path.join(str(tmp_path), jid, "timeline.html"), encoding="utf-8").read()
+        assert "Current State" in current_state_html
+        assert "Coming soon" not in current_state_html
+        assert "Coming soon" not in timeline_html
+
+
+def test_build_site_renders_coming_soon_placeholder_for_unseeded_jurisdictions(tmp_path):
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    for jid in FIXTURE_UNSEEDED_JURISDICTION_IDS:
+        current_state_html = open(os.path.join(str(tmp_path), jid, "index.html"), encoding="utf-8").read()
+        timeline_html = open(os.path.join(str(tmp_path), jid, "timeline.html"), encoding="utf-8").read()
+        assert "Coming soon" in current_state_html
+        assert "Coming soon" in timeline_html
+        assert os.path.getsize(os.path.join(str(tmp_path), jid, "index.html")) > 0
+        assert os.path.getsize(os.path.join(str(tmp_path), jid, "timeline.html")) > 0
+
+
+def test_build_site_renders_global_landing_page_with_every_registry_entry(tmp_path):
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    index_html = open(os.path.join(str(tmp_path), "index.html"), encoding="utf-8").read()
+    for jid in FIXTURE_SEEDED_JURISDICTION_IDS + FIXTURE_UNSEEDED_JURISDICTION_IDS:
+        assert f'href="{jid}/index.html"' in index_html
+
+
+def test_legacy_redirect_stubs_are_real_html_with_meta_refresh_and_visible_link(tmp_path):
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    for old_path, new_path in REDIRECT_STUBS:
+        stub_path = os.path.join(str(tmp_path), old_path)
+        assert os.path.exists(stub_path)
+        html = open(stub_path, encoding="utf-8").read()
+        assert os.path.getsize(stub_path) > 0
+        assert f'<meta http-equiv="refresh" content="0; url={new_path}">' in html
+        # A visible, real link -- not just a meta refresh -- for crawlers,
+        # no-JS clients, and clients that don't honor meta refresh.
+        assert f'<a href="{new_path}">' in html
+        assert "<script" not in html  # plain-HTML-first ethos, no JS redirect
+
+
 def test_disclaimer_present_on_every_rendered_page(tmp_path):
     build_site(FIXTURE_ROOT, str(tmp_path))
-    outputs = _read_all_outputs(tmp_path)
-    assert len(outputs) == 7
+    outputs = _content_pages(tmp_path)
+    # landing + (current_state, timeline) per jurisdiction (hk, sg) + 3 shared.
+    assert len(outputs) == 1 + (2 * 2) + 3
     for path, html in outputs.items():
         assert REQUIRED_DISCLAIMER in html, f"disclaimer missing from {path}"
 
@@ -85,7 +158,7 @@ def test_id_leak_check_actually_catches_a_planted_identifier(tmp_path):
 
 def test_verified_card_shows_verified_badge_not_unverified(tmp_path):
     build_site(FIXTURE_ROOT, str(tmp_path))
-    timeline_html = open(os.path.join(str(tmp_path), "timeline.html"), encoding="utf-8").read()
+    timeline_html = open(os.path.join(str(tmp_path), "hk", "timeline.html"), encoding="utf-8").read()
     # card1 (verified) and card2 (unverified) both appear on the Timeline --
     # check the badge each one's own markup carries, not just presence
     # somewhere on the page. The title also appears earlier in the page's
@@ -100,7 +173,7 @@ def test_verified_card_shows_verified_badge_not_unverified(tmp_path):
 
 def test_unverified_card_shows_unverified_badge_with_text_label(tmp_path):
     build_site(FIXTURE_ROOT, str(tmp_path))
-    timeline_html = open(os.path.join(str(tmp_path), "timeline.html"), encoding="utf-8").read()
+    timeline_html = open(os.path.join(str(tmp_path), "hk", "timeline.html"), encoding="utf-8").read()
     card2_start = timeline_html.rindex("Test unverified card")
     card2_chunk = timeline_html[card2_start : card2_start + 1500]
     assert "badge-unverified" in card2_chunk
@@ -127,7 +200,7 @@ def test_unverified_card_from_numeric_claim_failure_shows_cause_specific_label(t
 
     output_dir = tmp_path / "output_numeric_claim_failure"
     build_site(str(repo_copy), str(output_dir))
-    timeline_html = open(output_dir / "timeline.html", encoding="utf-8").read()
+    timeline_html = open(output_dir / "hk" / "timeline.html", encoding="utf-8").read()
 
     card2_start = timeline_html.rindex("Test unverified card")
     card2_chunk = timeline_html[card2_start : card2_start + 1500]
@@ -143,7 +216,7 @@ def test_timeline_cards_use_h2_not_h3_no_heading_level_skip(tmp_path):
     must render card titles as <h2>, not <h3> -- skipping a heading level
     is a real WCAG/Lighthouse violation, not just a style nit."""
     build_site(FIXTURE_ROOT, str(tmp_path))
-    timeline_html = open(os.path.join(str(tmp_path), "timeline.html"), encoding="utf-8").read()
+    timeline_html = open(os.path.join(str(tmp_path), "hk", "timeline.html"), encoding="utf-8").read()
     assert "<h3>" not in timeline_html
     assert timeline_html.count("<h2>") >= 2  # one per fixture card
 
@@ -193,10 +266,10 @@ def test_method_page_reports_three_way_verification_split_with_mixed_cards(tmp_p
     )
     assert 'id="corrections-log"' in method_html
 
-    timeline_html = open(output_dir / "timeline.html", encoding="utf-8").read()
+    timeline_html = open(output_dir / "hk" / "timeline.html", encoding="utf-8").read()
     card3_start = timeline_html.rindex("Test corrected card")
     card3_chunk = timeline_html[card3_start : card3_start + 1500]
-    assert '<a class="badge-corrected" href="method.html#corrections-log">' in card3_chunk
+    assert '<a class="badge-corrected" href="../method.html#corrections-log">' in card3_chunk
     assert "badge-verified" not in card3_chunk.split("card-meta")[1][:300]
 
 
@@ -223,6 +296,7 @@ def test_corrections_log_renders_real_corrections_when_present(tmp_path):
                 {
                     "schema_version": 1,
                     "id": "corr-1",
+                    "jurisdiction": "hk",
                     "card_id": "card1",
                     "corrected_at": "2026-02-01T00:00:00Z",
                     "correction_note": "The stated capital requirement was wrong.",
@@ -264,6 +338,7 @@ def test_corrections_log_shows_reader_appropriate_label_for_unmatched_card(tmp_p
                 {
                     "schema_version": 1,
                     "id": "corr-orphan",
+                    "jurisdiction": "hk",
                     "card_id": orphan_hash,
                     "corrected_at": "2026-03-01T00:00:00Z",
                     "correction_note": "This card was later withdrawn.",
@@ -362,7 +437,23 @@ def test_handles_empty_content_gracefully(tmp_path):
     import json
 
     with open(empty_root / "config" / "site.json", "w") as fh:
-        json.dump({"schema_version": 1, "pillars": [], "seal_vocabulary": {}}, fh)
+        json.dump(
+            {
+                "schema_version": 1,
+                "jurisdictions": [
+                    {
+                        "id": "hk",
+                        "name": "Hong Kong",
+                        "config": None,
+                        "status": {"watcher": "live", "analyst_verifier": "live", "seeded": True},
+                        "coverage_notes": "Test fixture jurisdiction.",
+                    }
+                ],
+                "pillars": [],
+                "seal_vocabulary": {},
+            },
+            fh,
+        )
     with open(empty_root / "content" / "hk" / "orientation.json", "w") as fh:
         json.dump(
             {
@@ -379,13 +470,18 @@ def test_handles_empty_content_gracefully(tmp_path):
 
     output_dir = tmp_path / "empty_output"
     written = build_site(str(empty_root), str(output_dir))
-    assert len(written) == 7
+    # landing(1) + hk current_state + hk timeline(2) + 3 shared + 3 redirects.
+    assert len(written) == 9
 
-    timeline_html = open(output_dir / "timeline.html", encoding="utf-8").read()
+    timeline_html = open(output_dir / "hk" / "timeline.html", encoding="utf-8").read()
     assert "No cards published yet" in timeline_html
 
-    trajectory_html = open(output_dir / "trajectory.html", encoding="utf-8").read()
-    assert "No officially announced upcoming events" in trajectory_html
+    # trajectory.html is now a legacy redirect stub (see REDIRECT_STUBS),
+    # not a rendered page with its own empty-state text -- the merged
+    # 3-band Timeline page that will show trajectory content again is a
+    # later step (see pipeline/site/templates/timeline.html's docstring).
+    trajectory_stub_html = open(output_dir / "trajectory.html", encoding="utf-8").read()
+    assert 'url=hk/timeline.html' in trajectory_stub_html
 
     documents_html = open(output_dir / "documents.html", encoding="utf-8").read()
     assert "No documents on record yet" in documents_html
@@ -394,42 +490,54 @@ def test_handles_empty_content_gracefully(tmp_path):
     assert "No glossary terms defined yet" in glossary_html
 
 
+def _load_hk_jurisdiction_data(repo_root: str) -> dict:
+    """Test helper standing in for the old single-call load_site_data() --
+    P7 replaced that scaffolding with generate.py walking the registry
+    itself, so a test that wants to exercise load_jurisdiction_data()'s
+    own validation now composes the same two real calls build_site() makes
+    for a seeded jurisdiction."""
+    from pipeline.site.data import load_global_data, load_jurisdiction_data
+
+    global_data = load_global_data(repo_root)
+    return load_jurisdiction_data(repo_root, "hk", global_data)
+
+
 def test_raises_when_pillar_state_missing(tmp_path):
     """Regression test for the incident this fixes: deleting one pillar's
     content/pillar_states/*.json file used to silently render 6 of 7
     pillar headings with no warning and no failing test. Post-Phase-3, a
-    missing pillar state is a build error -- load_site_data must raise and
-    name the missing pillar id, not degrade gracefully."""
+    missing pillar state is a build error -- load_jurisdiction_data must
+    raise and name the missing pillar id, not degrade gracefully."""
     import shutil
 
-    from pipeline.site.data import SiteDataError, load_site_data
+    from pipeline.site.data import SiteDataError
 
     repo_copy = tmp_path / "repo_missing_pillar_state"
     shutil.copytree(FIXTURE_ROOT, repo_copy)
     os.remove(repo_copy / "content" / "hk" / "pillar_states" / "exchanges_vatp.json")
 
     try:
-        load_site_data(str(repo_copy))
+        _load_hk_jurisdiction_data(str(repo_copy))
         assert False, "expected SiteDataError for a missing pillar_states file"
     except SiteDataError as exc:
         assert "exchanges_vatp" in str(exc)
 
 
 def test_raises_when_start_here_missing(tmp_path):
-    """Regression test: a missing content/start_here.json used to degrade
-    to a silently placeholder-only orientation page ({% if start_here %}).
-    Post-Phase-3, that file is always-expected seed content -- a missing
-    file must fail the build loudly instead."""
+    """Regression test: a missing content/<jurisdiction>/orientation.json
+    used to degrade to a silently placeholder-only orientation page. Post-
+    Phase-3, that file is always-expected seed content -- a missing file
+    must fail the build loudly instead."""
     import shutil
 
-    from pipeline.site.data import SiteDataError, load_site_data
+    from pipeline.site.data import SiteDataError
 
     repo_copy = tmp_path / "repo_missing_start_here"
     shutil.copytree(FIXTURE_ROOT, repo_copy)
     os.remove(repo_copy / "content" / "hk" / "orientation.json")
 
     try:
-        load_site_data(str(repo_copy))
+        _load_hk_jurisdiction_data(str(repo_copy))
         assert False, "expected SiteDataError for a missing orientation.json"
     except SiteDataError as exc:
         assert "orientation.json" in str(exc)
@@ -439,14 +547,14 @@ def test_raises_when_status_seal_unmapped(tmp_path):
     """Regression test for a Fable audit finding: a status_seal id with no
     seal_vocabulary entry in config/site.json used to render as a
     raw internal id (e.g. <span class="seal">enforcement_action_pending
-    </span>) right next to real seals on the State Board. load_site_data
+    </span>) right next to real seals on the State Board. load_jurisdiction_data
     must fail loudly instead, naming the offending id and the pillar state
     file it came from -- and build_site must never produce output HTML in
     that state, so the raw id can never leak into a rendered page."""
     import json
     import shutil
 
-    from pipeline.site.data import SiteDataError, load_site_data
+    from pipeline.site.data import SiteDataError
 
     repo_copy = tmp_path / "repo_unmapped_seal"
     shutil.copytree(FIXTURE_ROOT, repo_copy)
@@ -456,7 +564,7 @@ def test_raises_when_status_seal_unmapped(tmp_path):
     state_path.write_text(json.dumps(state), encoding="utf-8")
 
     try:
-        load_site_data(str(repo_copy))
+        _load_hk_jurisdiction_data(str(repo_copy))
         assert False, "expected SiteDataError for an unmapped status_seal id"
     except SiteDataError as exc:
         assert "enforcement_action_pending" in str(exc)
@@ -475,14 +583,14 @@ def test_raises_when_card_pillar_id_unmapped(tmp_path):
     """Companion finding: a pillar id on a card with no entry in
     config/site.json's pillars used to render as a raw internal id
     (e.g. <span class="pillar-tag">aml_enforcement_typo</span>) on the
-    Timeline. load_site_data must fail loudly instead, naming the
+    Timeline. load_jurisdiction_data must fail loudly instead, naming the
     offending id and the card file it came from -- and build_site must
     never produce output HTML in that state, so the raw id can never leak
     into a rendered page."""
     import json
     import shutil
 
-    from pipeline.site.data import SiteDataError, load_site_data
+    from pipeline.site.data import SiteDataError
 
     repo_copy = tmp_path / "repo_unmapped_pillar"
     shutil.copytree(FIXTURE_ROOT, repo_copy)
@@ -492,7 +600,7 @@ def test_raises_when_card_pillar_id_unmapped(tmp_path):
     card_path.write_text(json.dumps(card), encoding="utf-8")
 
     try:
-        load_site_data(str(repo_copy))
+        _load_hk_jurisdiction_data(str(repo_copy))
         assert False, "expected SiteDataError for an unmapped card pillar id"
     except SiteDataError as exc:
         assert "aml_enforcement_typo" in str(exc)
@@ -512,12 +620,12 @@ def test_raises_when_card_citations_empty(tmp_path):
     unconditionally indexed card["citations"][0], so a card with an empty
     or missing citations array raised an unhandled IndexError and froze
     publishing (the previously-deployed site just stops updating, with no
-    notification). load_site_data must instead raise SiteDataError,
+    notification). load_jurisdiction_data must instead raise SiteDataError,
     naming the offending card file, before any page renders."""
     import json
     import shutil
 
-    from pipeline.site.data import SiteDataError, load_site_data
+    from pipeline.site.data import SiteDataError
 
     repo_copy = tmp_path / "repo_empty_citations"
     shutil.copytree(FIXTURE_ROOT, repo_copy)
@@ -527,7 +635,7 @@ def test_raises_when_card_citations_empty(tmp_path):
     card_path.write_text(json.dumps(card), encoding="utf-8")
 
     try:
-        load_site_data(str(repo_copy))
+        _load_hk_jurisdiction_data(str(repo_copy))
         assert False, "expected SiteDataError for a card with empty citations"
     except SiteDataError as exc:
         assert "card1.json" in str(exc)
@@ -742,7 +850,7 @@ def test_no_hardcoded_color_leaks_into_rendered_output(tmp_path):
 
 def test_theme_toggle_button_renders_with_correct_attributes(tmp_path):
     build_site(FIXTURE_ROOT, str(tmp_path))
-    outputs = _read_all_outputs(tmp_path)
+    outputs = _content_pages(tmp_path)
     for path, html in outputs.items():
         assert 'id="theme-toggle"' in html, f"theme toggle missing from {path}"
         assert 'aria-pressed="false"' in html
@@ -752,11 +860,11 @@ def test_theme_toggle_button_renders_with_correct_attributes(tmp_path):
 # --- Interactive timeline ribbon ---
 
 
-def test_timeline_ribbon_renders_on_both_start_here_and_timeline_pages(tmp_path):
+def test_timeline_ribbon_renders_on_both_current_state_and_timeline_pages(tmp_path):
     build_site(FIXTURE_ROOT, str(tmp_path))
     outputs = _read_all_outputs(tmp_path)
-    assert "data-timeline-root" in outputs[os.path.join(str(tmp_path), "index.html")]
-    assert "data-timeline-root" in outputs[os.path.join(str(tmp_path), "timeline.html")]
+    assert "data-timeline-root" in outputs[os.path.join(str(tmp_path), "hk", "index.html")]
+    assert "data-timeline-root" in outputs[os.path.join(str(tmp_path), "hk", "timeline.html")]
 
 
 def test_timeline_markers_carry_pillar_slot_and_date():
@@ -840,7 +948,7 @@ def test_timeline_marker_for_unclassified_card_renders_sentinel_not_pillar_zero(
 
     output_dir = tmp_path / "output_unclassified_pillar"
     build_site(str(repo_copy), str(output_dir))
-    timeline_html = open(output_dir / "timeline.html", encoding="utf-8").read()
+    timeline_html = open(output_dir / "hk" / "timeline.html", encoding="utf-8").read()
 
     marker_start = timeline_html.index("Test verified card")
     marker_chunk = timeline_html[max(0, marker_start - 500) : marker_start]
@@ -915,7 +1023,7 @@ def test_timeline_events_sorted_ascending():
     assert [e["title"] for e in events] == ["Older", "Newer"]
 
 
-def test_homepage_timeline_is_capped_but_full_page_is_not():
+def test_current_state_timeline_is_capped_but_full_timeline_page_is_not():
     import shutil
     import tempfile
 
@@ -924,13 +1032,14 @@ def test_homepage_timeline_is_capped_but_full_page_is_not():
         shutil.copytree(FIXTURE_ROOT, repo_copy)
         # Fixture ships 2 cards + 1 dated document = 3 events total, under
         # the 40-item cap -- this test only needs to confirm the cap
-        # mechanism produces a smaller-or-equal count on the homepage
-        # than the uncapped Timeline page, never a larger one.
+        # mechanism produces a smaller-or-equal count on the Current State
+        # page's hero ribbon than the uncapped Timeline page, never a
+        # larger one.
         output_dir = os.path.join(tmp, "out")
         build_site(repo_copy, output_dir)
-        index_html = open(os.path.join(output_dir, "index.html"), encoding="utf-8").read()
-        timeline_html = open(os.path.join(output_dir, "timeline.html"), encoding="utf-8").read()
-        assert index_html.count("data-pillar-slot") <= timeline_html.count("data-pillar-slot")
+        current_state_html = open(os.path.join(output_dir, "hk", "index.html"), encoding="utf-8").read()
+        timeline_html = open(os.path.join(output_dir, "hk", "timeline.html"), encoding="utf-8").read()
+        assert current_state_html.count("data-pillar-slot") <= timeline_html.count("data-pillar-slot")
 
 
 def test_timeline_ribbon_marker_and_fallback_carry_unverified_status(tmp_path):
@@ -942,7 +1051,7 @@ def test_timeline_ribbon_marker_and_fallback_carry_unverified_status(tmp_path):
     the full <article class="card">, already covered by
     test_unverified_card_shows_unverified_badge_with_text_label above."""
     build_site(FIXTURE_ROOT, str(tmp_path))
-    timeline_html = open(os.path.join(str(tmp_path), "timeline.html"), encoding="utf-8").read()
+    timeline_html = open(os.path.join(str(tmp_path), "hk", "timeline.html"), encoding="utf-8").read()
 
     marker_start = timeline_html.index("Test unverified card")
     marker_chunk = timeline_html[max(0, marker_start - 500) : marker_start]
@@ -960,7 +1069,7 @@ def test_timeline_document_marker_and_fallback_have_no_status_badge(tmp_path):
     documents) -- neither its ribbon marker nor its fallback <li> should
     carry any status attribute or badge, unlike card events."""
     build_site(FIXTURE_ROOT, str(tmp_path))
-    timeline_html = open(os.path.join(str(tmp_path), "timeline.html"), encoding="utf-8").read()
+    timeline_html = open(os.path.join(str(tmp_path), "hk", "timeline.html"), encoding="utf-8").read()
 
     marker_start = timeline_html.index("Test document title")
     marker_chunk = timeline_html[max(0, marker_start - 500) : marker_start]
@@ -970,3 +1079,82 @@ def test_timeline_document_marker_and_fallback_have_no_status_badge(tmp_path):
     fallback_end = timeline_html.index("</li>", fallback_start)
     fallback_chunk = timeline_html[fallback_start:fallback_end]
     assert "badge-unverified" not in fallback_chunk
+
+
+# --- window_sort_key -- trajectory's date_or_window sort key ---
+
+
+def test_window_sort_key_orders_exact_dates_chronologically():
+    from pipeline.site.data import window_sort_key
+
+    keys = sorted(["2026-03-01", "2026-01-15", "2025-12-31"], key=window_sort_key)
+    assert keys == ["2025-12-31", "2026-01-15", "2026-03-01"]
+
+
+def test_window_sort_key_orders_year_month():
+    from pipeline.site.data import window_sort_key
+
+    keys = sorted(["2026-11", "2026-02", "2025-06"], key=window_sort_key)
+    assert keys == ["2025-06", "2026-02", "2026-11"]
+
+
+def test_window_sort_key_orders_quarters_both_word_orders():
+    from pipeline.site.data import window_sort_key
+
+    keys = sorted(["Q4 2026", "Q1 2026", "2026 Q2"], key=window_sort_key)
+    assert keys == ["Q1 2026", "2026 Q2", "Q4 2026"]
+
+
+def test_window_sort_key_orders_halves_both_word_orders():
+    from pipeline.site.data import window_sort_key
+
+    keys = sorted(["H2 2026", "2026 H1"], key=window_sort_key)
+    assert keys == ["2026 H1", "H2 2026"]
+
+
+def test_window_sort_key_orders_bare_years():
+    from pipeline.site.data import window_sort_key
+
+    keys = sorted(["2027", "2025", "2026"], key=window_sort_key)
+    assert keys == ["2025", "2026", "2027"]
+
+
+def test_window_sort_key_interleaves_mixed_precision_by_start_of_window():
+    """A quarter/half/year all anchor to the FIRST day of their window, so
+    e.g. an exact date early in a quarter still sorts before that same
+    quarter's own coarser entry, and different granularities interleave
+    into one sensible order rather than forming separate un-comparable
+    bands."""
+    from pipeline.site.data import window_sort_key
+
+    items = ["2026", "H1 2026", "Q1 2026", "2026-02-01", "2026-01"]
+    keys = sorted(items, key=window_sort_key)
+    # 2026-01 (Jan 1) == Q1 2026 (Jan 1) == H1 2026 (Jan 1) == 2026 (Jan 1)
+    # for sort purposes (stable sort keeps their relative input order), all
+    # of which sort before 2026-02-01 (Feb 1).
+    assert keys.index("2026-02-01") == len(items) - 1
+
+
+def test_window_sort_key_unparseable_fallback_sorts_after_all_parseable_entries():
+    """"mid-2026" and "TBC" match none of the recognized formats -- the
+    deliberate fallback case (see window_sort_key's docstring): never
+    guessed at, always sorted after every parseable entry, alphabetically
+    among themselves."""
+    from pipeline.site.data import window_sort_key
+
+    items = ["2026", "TBC", "mid-2026", "2025-01-01"]
+    keys = sorted(items, key=window_sort_key)
+    # Unparseable entries ("TBC", "mid-2026") both sort after every
+    # parseable entry, and alphabetically (case-insensitively) among
+    # themselves: "mid-2026" before "TBC" ('m' < 't').
+    assert keys == ["2025-01-01", "2026", "mid-2026", "TBC"]
+
+
+def test_window_sort_key_is_pure_and_never_raises_on_arbitrary_input():
+    from pipeline.site.data import window_sort_key
+
+    for value in ("", "not a date at all", "2026-13-40", "  2026  ", None):
+        key = window_sort_key(value)  # must not raise
+        assert isinstance(key, tuple)
+    # Purity: same input always produces the identical key.
+    assert window_sort_key("2026-05-01") == window_sort_key("2026-05-01")

@@ -4,10 +4,59 @@
 <h1 class="plate">Method &amp; Audit</h1>
 
 <h2>How this site works</h2>
-<p>A daily watcher polls official SFC and HKMA RSS feeds for new publications, filters them for digital-asset relevance, and queues the relevant ones. An ANALYST pass drafts a summary card for each queued item with cited sources. A separate VERIFIER pass, in a fresh context with no access to the analyst's reasoning, re-fetches every citation and checks it against the source text, stripping or flagging anything unsupported. A deterministic, non-bypassable gate then re-checks every citation itself before anything is published &mdash; it never trusts either pass's self-report.</p>
+<p>For each jurisdiction in the registry below, a daily watcher polls that jurisdiction's own official regulator feeds for new publications, filters them for digital-asset relevance, and queues the relevant ones. An ANALYST pass drafts a summary card for each queued item with cited sources. A separate VERIFIER pass, in a fresh context with no access to the analyst's reasoning, re-fetches every citation and checks it against the source text, stripping or flagging anything unsupported. A deterministic, non-bypassable gate then re-checks every citation itself before anything is published &mdash; it never trusts either pass's self-report. The same watcher/analyst/verifier/gate pipeline code runs unchanged for every jurisdiction; only each jurisdiction's own config file (regulator list, feed URLs, pillar keywords) differs.</p>
+
+<h2>A unified pillar taxonomy, applied honestly</h2>
+<p>Every jurisdiction on this site is described using the same set of regulatory pillars, rather than each jurisdiction inventing its own categories &mdash; that consistency is what makes cross-jurisdiction comparison on this site possible at all. This taxonomy was originally drawn up around Hong Kong's own regime, the founding jurisdiction, and is meant to generalize, not to quietly assume every other jurisdiction's regulatory structure maps onto it perfectly. Where a jurisdiction genuinely has no dedicated regulatory regime for a given pillar, its pillar card says exactly that (the "No dedicated regime" seal) rather than being left off the board or filled in with a guess. If a future jurisdiction's regime turns out not to fit this taxonomy at all, that is treated as a reason to revisit the taxonomy, not to force-fit the jurisdiction.</p>
+
+<h2>Coverage by jurisdiction</h2>
+<p>What is watched, how, and since when, for every jurisdiction in the registry &mdash; generated directly from each jurisdiction's own config file and its watcher's own ledger, not hand-maintained prose.</p>
+<div class="table-scroll">
+<table class="doc-table">
+  <thead>
+    <tr><th>Jurisdiction</th><th>Regulators watched &amp; mechanism</th><th>Watcher / analyst status</th><th>Known coverage gaps</th></tr>
+  </thead>
+  <tbody>
+    {% for row in coverage_rows %}
+    <tr>
+      <td>
+        {{ row.name }}
+        {% if row.seeded %}<br><span class="badge-verified">Live</span>{% else %}<br><span class="badge-unverified">Coming soon</span>{% endif %}
+      </td>
+      <td>
+        {% if row.regulators %}
+        <ul>
+          {% for r in row.regulators %}
+          <li>{{ r.label }} &mdash; {{ r.feed_count }} RSS feed{{ "s" if r.feed_count != 1 else "" }}{% if r.kinds %} ({{ r.kinds | join(", ") }}){% endif %}</li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <span class="mono meta-line">Not yet configured.</span>
+        {% endif %}
+      </td>
+      <td class="mono">
+        Watcher: {{ row.watcher_status }}<br>
+        Analyst/Verifier: {{ row.analyst_status }}<br>
+        {% if row.live_since %}Live since {{ row.live_since }}{% else %}Not yet live{% endif %}
+      </td>
+      <td>
+        {% if row.coverage_gaps %}
+        <ul>
+          {% for gap in row.coverage_gaps %}<li>{{ gap }}</li>{% endfor %}
+        </ul>
+        {% else %}
+        <span class="mono meta-line">None known.</span>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
 
 <h2>Watcher &amp; ledger status</h2>
-<p>{{ ledger_item_count }} items observed to date across all polled feeds; {{ relevant_item_count }} judged digital-asset relevant. The table below counts only the relevant ones, since an item found not relevant stays at "queued" in the ledger forever without ever proceeding further &mdash; counting it alongside genuinely pending items would overstate the backlog.</p>
+<p>{{ ledger_item_count }} items observed to date across every jurisdiction's polled feeds; {{ relevant_item_count }} judged digital-asset relevant. The table below counts only the relevant ones, since an item found not relevant stays at "queued" in the ledger forever without ever proceeding further &mdash; counting it alongside genuinely pending items would overstate the backlog.</p>
+<div class="table-scroll">
 <table class="doc-table">
   <thead><tr><th>Status (relevant items only)</th><th>Count</th></tr></thead>
   <tbody>
@@ -16,6 +65,7 @@
     {% endfor %}
   </tbody>
 </table>
+</div>
 
 <h2>Verification pass rate</h2>
 {% set verified_cards = cards | selectattr("status", "equalto", "verified") | list | length %}
@@ -31,7 +81,7 @@
 </p>
 
 <h2>Latest audit</h2>
-<p>A weekly audit checks for four things, all mechanically: broken links among every citation and key link on the site, pillars whose standing summary hasn't changed in over 45 days, feeds that have gone quiet for over 30 days, and the trend in what fraction of published cards pass verification.</p>
+<p>A weekly audit checks for four things, all mechanically: broken links among every citation and key link on the site, pillars whose standing summary hasn't changed in over 45 days, feeds that have gone quiet for over 30 days, and the trend in what fraction of published cards pass verification. The audit loop is not yet jurisdiction-scoped &mdash; it runs once, across the whole site.</p>
 {% if audit_latest %}
 <p class="mono meta-line">Last run {{ audit_latest.generated_at }}</p>
 {% set actionable = audit_latest.events | rejectattr("event_type", "equalto", "verifier_pass_rate_snapshot") | list %}
@@ -51,12 +101,14 @@
 <h2 id="corrections-log">Corrections log</h2>
 <p>Corrections are always human-initiated and reviewed via pull request before publishing &mdash; this project deliberately does not let the audit loop (or anything else) auto-publish a correction on its own, since getting a correction itself wrong would be a more serious integrity failure than the original error. Every correction's own new citation is re-checked by the same deterministic verification gate as any other card change before the pull request can merge.</p>
 {% if corrections %}
+<div class="table-scroll">
 <table class="doc-table">
-  <thead><tr><th>Date</th><th>Card</th><th>What changed</th><th>Why</th></tr></thead>
+  <thead><tr><th>Date</th><th>Jurisdiction</th><th>Card</th><th>What changed</th><th>Why</th></tr></thead>
   <tbody>
     {% for r in corrections %}
     <tr>
       <td class="mono">{{ r.corrected_at }}</td>
+      <td>{{ r.jurisdiction_name }}</td>
       <td>{{ r.card_title }}</td>
       <td>{{ r.fields_changed | join(", ") }}</td>
       <td>{{ r.correction_note }}</td>
@@ -64,10 +116,11 @@
     {% endfor %}
   </tbody>
 </table>
+</div>
 {% else %}
 <p>No corrections have been issued yet. When a published card is later found to need correction, it will be listed here with the date and reason.</p>
 {% endif %}
 
 <h2>Editorial rules</h2>
-<p>Primary sources only for facts. Quotes are capped at 15 words, one per source. Named entities (licensees, applicants, enforcement targets) are mentioned only as primary sources state them, with no commentary. No predictions beyond officially stated timelines.</p>
+<p>Primary sources only for facts. Quotes are capped at 15 words, one per source. Named entities (licensees, applicants, enforcement targets) are mentioned only as primary sources state them, with no commentary. No predictions beyond officially stated timelines. These rules apply identically in every jurisdiction on this site.</p>
 {% endblock %}

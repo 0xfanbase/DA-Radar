@@ -24,28 +24,83 @@
   <link rel="stylesheet" href="{{ asset_prefix }}static/style.css">
 </head>
 <body>
+  {#
+    Sticky two-row header (P7). Both rows live inside this ONE <header>
+    element so a future CSS pass can put `position: sticky; top: 0;` on
+    `.site-header` itself and have both rows travel together -- that CSS
+    rule is a later step, not this one; this template only needs to give
+    it the right markup to attach to.
+
+    Row 1 (.site-header-row1) renders on every page: site title (links to
+    the global landing page, "{{ asset_prefix }}index.html" -- note this is
+    NOT a jurisdiction path even from a jurisdiction-scoped page, since
+    asset_prefix is "../" there), the 5-link nav, and the theme toggle.
+
+    The nav's "Current State"/"Timeline" links need a jurisdiction to point
+    at even on pages with no jurisdiction context of their own (the global
+    landing page, Document Library, Glossary, Method & Audit): they fall
+    back to `default_jurisdiction_id` (generate.py: the first SEEDED entry
+    in config/site.json's registry order) rather than going dead or
+    pointing at a coming-soon page from a plain nav click.
+
+    Row 2 (.site-header-row2, the jurisdiction tab strip) renders ONLY on
+    Current State and Timeline pages (active_page in
+    ["current_state", "timeline"] -- true for the live per-jurisdiction
+    templates AND for coming_soon.html, since an unseeded jurisdiction's
+    coming-soon page IS that jurisdiction's Current State/Timeline page,
+    just with placeholder content) -- never on the landing page or the
+    three site-wide shared pages, which have no single jurisdiction to
+    tab within. One tab per config/site.json registry entry, registry
+    order (hk first). Every tab is a real, working <a> to that same
+    jurisdiction's same page type -- an unseeded jurisdiction's tab links
+    to its real coming-soon page, never a dead link or a non-link -- with
+    `aria-current="page"` on whichever tab matches the jurisdiction
+    actually being viewed, and both a CSS class and `aria-disabled="true"`
+    (not `disabled`, which isn't valid on <a>, and not omitted `href`,
+    which would make it a non-link) marking an unseeded jurisdiction's tab
+    as soft-disabled per the "never hidden, never a dead link" principle.
+  #}
   <header class="site-header">
-    <div class="site-header-main">
-      <a class="site-title" href="{{ asset_prefix }}index.html">{{ site_name }}</a>
-      <nav class="site-nav">
-        <a href="{{ asset_prefix }}index.html" {% if active_page == 'start_here' %}aria-current="page"{% endif %}>Start Here</a>
-        <a href="{{ asset_prefix }}state-board.html" {% if active_page == 'state_board' %}aria-current="page"{% endif %}>State Board</a>
-        <a href="{{ asset_prefix }}trajectory.html" {% if active_page == 'trajectory' %}aria-current="page"{% endif %}>Trajectory Board</a>
-        <a href="{{ asset_prefix }}timeline.html" {% if active_page == 'timeline' %}aria-current="page"{% endif %}>Timeline</a>
-        <a href="{{ asset_prefix }}documents.html" {% if active_page == 'documents' %}aria-current="page"{% endif %}>Document Library</a>
-        <a href="{{ asset_prefix }}glossary.html" {% if active_page == 'glossary' %}aria-current="page"{% endif %}>Glossary</a>
-        <a href="{{ asset_prefix }}method.html" {% if active_page == 'method' %}aria-current="page"{% endif %}>Method &amp; Audit</a>
-      </nav>
+    <div class="site-header-row1">
+      <div class="site-header-main">
+        <a class="site-title" href="{{ asset_prefix }}index.html">{{ site_name }}</a>
+        <nav class="site-nav" aria-label="Primary">
+          {% if jurisdiction_id %}
+          <a href="index.html" {% if active_page == 'current_state' %}aria-current="page"{% endif %}>Current State</a>
+          <a href="timeline.html" {% if active_page == 'timeline' %}aria-current="page"{% endif %}>Timeline</a>
+          {% else %}
+          <a href="{{ asset_prefix }}{{ default_jurisdiction_id }}/index.html" {% if active_page == 'current_state' %}aria-current="page"{% endif %}>Current State</a>
+          <a href="{{ asset_prefix }}{{ default_jurisdiction_id }}/timeline.html" {% if active_page == 'timeline' %}aria-current="page"{% endif %}>Timeline</a>
+          {% endif %}
+          <a href="{{ asset_prefix }}documents.html" {% if active_page == 'documents' %}aria-current="page"{% endif %}>Document Library</a>
+          <a href="{{ asset_prefix }}glossary.html" {% if active_page == 'glossary' %}aria-current="page"{% endif %}>Glossary</a>
+          <a href="{{ asset_prefix }}method.html" {% if active_page == 'method' %}aria-current="page"{% endif %}>Method &amp; Audit</a>
+        </nav>
+      </div>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
     </div>
-    <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">
-      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <circle cx="12" cy="12" r="4"></circle>
-        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
-      </svg>
-      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-      </svg>
-    </button>
+    {% if jurisdiction_id and active_page in ['current_state', 'timeline'] %}
+    {% set tab_page = 'index.html' if active_page == 'current_state' else 'timeline.html' %}
+    <div class="site-header-row2 jurisdiction-tabs" role="navigation" aria-label="Jurisdictions">
+      {% for j in jurisdictions %}
+      {% set seeded = j.status.seeded %}
+      <a
+        class="jurisdiction-tab{% if not seeded %} jurisdiction-tab-disabled{% endif %}"
+        href="{{ asset_prefix }}{{ j.id }}/{{ tab_page }}"
+        {% if j.id == jurisdiction_id %}aria-current="page" {% endif %}
+        {% if not seeded %}aria-disabled="true"{% endif %}
+      >{{ j.name }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
   </header>
   <main>
     {% include "_disclaimer.html" %}

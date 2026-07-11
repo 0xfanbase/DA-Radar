@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}{{ jurisdiction_name }} &mdash; Coming soon &mdash; {{ site_name }}{% endblock %}
+{% block content %}
+<h1 class="plate">{{ jurisdiction_name }}</h1>
+<p><span class="badge-unverified">Coming soon</span></p>
+<p>{{ coverage_notes }}</p>
+<p>This jurisdiction does not yet have a live watcher or seeded content, so there is nothing to summarize here yet. Check back later, or see the jurisdictions already live from the <a href="{{ asset_prefix }}index.html">jurisdiction overview</a>.</p>
+{% endblock %}
