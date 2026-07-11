@@ -11,7 +11,14 @@ from __future__ import annotations
 from pipeline.verify.gate import enforce_full_gate, enforce_verification_gate
 
 URL = "https://example.invalid/doc"
-FETCH_KWARGS = dict(user_agent="TestAgent/0.1", timeout=5, max_retries=3, backoff_base=0.01, backoff_multiplier=2.0)
+FETCH_KWARGS = dict(
+    user_agent="TestAgent/0.1",
+    timeout=5,
+    max_retries=3,
+    backoff_base=0.01,
+    backoff_multiplier=2.0,
+    official_domains=["example.invalid"],
+)
 
 
 def _draft_card(status="verified", quote="takes effect on 1 August 2026"):
@@ -61,6 +68,20 @@ def test_gate_does_not_mutate_the_input_card(requests_mock, fixture_bytes):
     enforce_verification_gate(card, **FETCH_KWARGS)
 
     assert card["status"] == "verified"  # original untouched
+
+
+def test_gate_forces_unverified_on_non_official_domain_even_with_genuine_quote(requests_mock, fixture_bytes):
+    """A citation URL outside the caller-supplied official-domain
+    allowlist forces unverified, even though the quote is otherwise a
+    genuine match against that (non-official) page."""
+    requests_mock.get(URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
+    card = _draft_card(status="verified")
+
+    kwargs = dict(FETCH_KWARGS)
+    kwargs["official_domains"] = ["www.official.invalid"]
+    gated = enforce_verification_gate(card, **kwargs)
+
+    assert gated["status"] == "unverified"
 
 
 def test_gate_forces_unverified_on_zero_citations():

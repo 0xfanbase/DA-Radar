@@ -244,6 +244,45 @@ def test_corrections_log_renders_real_corrections_when_present(tmp_path):
     assert "No corrections have been issued yet" not in method_html
 
 
+def test_corrections_log_shows_reader_appropriate_label_for_unmatched_card(tmp_path):
+    """When a correction's card_id matches no published card (e.g. the card
+    was later removed), the Corrections Log must not leak the raw 64-char
+    card_id hash to readers -- the entire purpose of this page is making
+    corrections legible (CLAUDE.md rule 6). It must instead render a
+    reader-appropriate label built from a short prefix of the hash."""
+    import json
+    import shutil
+
+    repo_copy = tmp_path / "repo_with_orphan_correction"
+    shutil.copytree(FIXTURE_ROOT, repo_copy)
+    data_dir = repo_copy / "data"
+    data_dir.mkdir(parents=True, exist_ok=True)
+    orphan_hash = "a" * 64
+    with open(data_dir / "corrections.json", "w", encoding="utf-8") as fh:
+        json.dump(
+            [
+                {
+                    "schema_version": 1,
+                    "id": "corr-orphan",
+                    "card_id": orphan_hash,
+                    "corrected_at": "2026-03-01T00:00:00Z",
+                    "correction_note": "This card was later withdrawn.",
+                    "fields_changed": ["summary"],
+                    "citations": [],
+                }
+            ],
+            fh,
+        )
+
+    output_dir = tmp_path / "output_with_orphan_correction"
+    build_site(str(repo_copy), str(output_dir))
+    method_html = open(output_dir / "method.html", encoding="utf-8").read()
+
+    assert orphan_hash not in method_html
+    assert "Card aaaaaaaa… (no longer published)" in method_html
+    assert "This card was later withdrawn." in method_html
+
+
 def test_handles_missing_audit_data_gracefully(tmp_path):
     """Fixture data has no data/audit/latest.json -- audit.yml doesn't
     exist yet (a later phase). The Method page must say so honestly, not

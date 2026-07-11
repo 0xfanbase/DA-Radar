@@ -1,5 +1,6 @@
 {% macro timeline_ribbon(events, trajectory, id_suffix, limit=none) %}
 {% set shown = events[-limit:] if limit else events %}
+<a class="skip-timeline-link" href="#timeline-ribbon-end-{{ id_suffix }}">Skip timeline ribbon</a>
 <section class="timeline-ribbon" data-timeline-root>
   <div class="timeline-track" role="list" aria-label="Regulatory timeline, oldest to newest">
     {% for e in shown %}
@@ -35,4 +36,6 @@
     </ul>
   </details>
 </section>
+<p class="meta-line timeline-caption">Only dated items appear on this timeline. Undated documents are listed in the <a href="documents.html">Document Library</a>.</p>
+<span id="timeline-ribbon-end-{{ id_suffix }}" tabindex="-1"></span>
 {% endmacro %}

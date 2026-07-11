@@ -612,6 +612,28 @@ independently confirmed to reproduce the bug against unpatched code and pass aga
 diff` read in full for every touched file before committing, including a direct read of the
 `banking_money.json`, `audit.yml`/`analyze.yml`, and trigger-ID-redaction diffs.
 
+### 2026-07-11 — Remaining 8 audit items closed out
+
+The last 8 open items from the 2026-07-11 compliance audit (all should-fix/nice-to-have, plus the one
+must-fix that needed a careful rather than mechanical pass) were executed in one batch, each against
+the acceptance criteria the original audit already specified -- no new judgment calls needed. Notably
+**`citation-domain-check-missing`**: `pipeline/verify/authenticity.py` gained
+`citation_domain_is_official`/`official_domains_from_config`, and `check_citation` now rejects any
+citation URL that isn't on an official-domain allowlist *before* even attempting a fetch -- a genuine
+quote match can no longer compensate for a non-official source. `config/jurisdiction.json` gained an
+additive `official_domains` list per regulator (plus four previously feed-less source-table entries --
+FSTB, GovHK, LegCo, Gazette -- so their domains are allowlisted too), and `apply_verification_gate.py`
+now loads and threads it through the real gate invocation. Verified against all 5 real published cards
+before treating it as a hard failure, per the acceptance criteria's own requirement -- all 5 pass.
+Also closed: the Timeline's missing skip-link (WCAG 2.4.1) and undated-document caption, the Document
+Library's over-broad AI-disclaimer (now clarified as deterministic classification, not AI-summarized)
+and missing search aria-live region, `generate.py`'s last surviving trace of the abandoned docs/-
+folder branch-deploy assumption, a deterministic reject-list guard in `validate_content.py` against
+the exact internal-model-identifier leak shape that shipped live once already, and the Corrections
+Log's raw-64-char-hash fallback (now a reader-appropriate label). Full suite: 355 passing (up from
+338). Site rebuilt and independently re-verified: all 7 pages, all four new UI markers grepped directly
+out of the generated HTML rather than trusted from a report.
+
 ## PM checkpoints (Fable)
 
 ### 2026-07-09 — Kickoff review: approved with directives

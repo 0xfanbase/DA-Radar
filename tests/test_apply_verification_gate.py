@@ -8,7 +8,9 @@ import subprocess
 from pipeline.ci.apply_verification_gate import apply_gate_to_file, main
 
 UA = "TestAgent/0.1"
-FETCH_KWARGS = dict(timeout=5, max_retries=3, backoff_base=0.01, backoff_multiplier=2.0)
+FETCH_KWARGS = dict(
+    timeout=5, max_retries=3, backoff_base=0.01, backoff_multiplier=2.0, official_domains=["example.invalid"]
+)
 DOC_URL = "https://example.invalid/doc"
 
 
@@ -84,6 +86,47 @@ def test_main_with_no_changed_cards_is_a_noop(tmp_path):
     _init_repo(tmp_path)
     exit_code = main(["--repo-dir", str(tmp_path)])
     assert exit_code == 0
+
+
+def test_main_downgrades_card_whose_citation_domain_is_missing_from_config(tmp_path, requests_mock, fixture_bytes):
+    """main() derives official_domains from <repo-dir>/config/jurisdiction.json
+    itself -- a citation to a domain absent from that config is a hard
+    failure at the real CI entrypoint, not just in the in-memory gate."""
+    _init_repo(tmp_path)
+    (tmp_path / "content" / "cards").mkdir(parents=True)
+    (tmp_path / "config").mkdir()
+    (tmp_path / "config" / "jurisdiction.json").write_text(
+        json.dumps({"regulators": [{"id": "x", "official_domains": ["www.official.invalid"]}]})
+    )
+    _commit_all(tmp_path, "base")
+
+    requests_mock.get(DOC_URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
+    card_path = tmp_path / "content" / "cards" / "card-1.json"
+    card_path.write_text(json.dumps(_card(status="verified")))
+
+    exit_code = main(["--repo-dir", str(tmp_path), "--user-agent", UA])
+
+    assert exit_code == 0
+    assert json.loads(card_path.read_text())["status"] == "unverified"
+
+
+def test_main_leaves_card_verified_when_citation_domain_is_in_config(tmp_path, requests_mock, fixture_bytes):
+    _init_repo(tmp_path)
+    (tmp_path / "content" / "cards").mkdir(parents=True)
+    (tmp_path / "config").mkdir()
+    (tmp_path / "config" / "jurisdiction.json").write_text(
+        json.dumps({"regulators": [{"id": "x", "official_domains": ["example.invalid"]}]})
+    )
+    _commit_all(tmp_path, "base")
+
+    requests_mock.get(DOC_URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
+    card_path = tmp_path / "content" / "cards" / "card-1.json"
+    card_path.write_text(json.dumps(_card(status="verified")))
+
+    exit_code = main(["--repo-dir", str(tmp_path), "--user-agent", UA])
+
+    assert exit_code == 0
+    assert json.loads(card_path.read_text())["status"] == "verified"
 
 
 def test_apply_gate_to_file_downgrades_over_limit_quote(tmp_path, requests_mock, fixture_bytes):

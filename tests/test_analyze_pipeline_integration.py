@@ -24,7 +24,9 @@ from pipeline.watcher.ledger import upsert_items
 from pipeline.watcher.parse import NormalizedItem
 
 UA = "TestAgent/0.1"
-FETCH_KWARGS = dict(timeout=5, max_retries=3, backoff_base=0.01, backoff_multiplier=2.0)
+FETCH_KWARGS = dict(
+    timeout=5, max_retries=3, backoff_base=0.01, backoff_multiplier=2.0, official_domains=["example.invalid"]
+)
 DOC_URL = "https://example.invalid/doc"
 
 

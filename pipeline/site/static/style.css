@@ -633,6 +633,40 @@ hr.hairline {
   margin-bottom: 1.5rem;
 }
 
+/* Skip link for the timeline ribbon (WCAG 2.4.1 bypass block) -- the
+   ribbon can render dozens of individually-focusable event markers, so a
+   keyboard-only reader needs a way past them. Off-screen (not
+   display:none, which would pull it out of the tab order entirely)
+   until it receives keyboard focus, matching the a:focus-visible outline
+   treatment already used site-wide. One skip link per timeline_ribbon()
+   include, targeting the id_suffix-qualified anchor immediately after
+   that include's <section>, so Start Here's "hero" ribbon and the
+   Timeline page's "full" ribbon never collide. */
+.skip-timeline-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-timeline-link:focus-visible {
+  position: static;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  margin-bottom: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  background: var(--surface-card);
+  border: 1px solid var(--hairline);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
 .timeline-track {
   display: flex;
   gap: 0.25rem;

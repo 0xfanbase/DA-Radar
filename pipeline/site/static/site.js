@@ -15,11 +15,20 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
   var rows = document.querySelectorAll("#doc-table-body tr");
+  var status = document.getElementById("doc-search-status");
   searchBox.addEventListener("input", function () {
     var query = searchBox.value.trim().toLowerCase();
+    var shown = 0;
     rows.forEach(function (row) {
       var haystack = row.textContent.toLowerCase();
-      row.style.display = haystack.indexOf(query) === -1 ? "none" : "";
+      var matches = haystack.indexOf(query) !== -1;
+      row.style.display = matches ? "" : "none";
+      if (matches) {
+        shown += 1;
+      }
     });
+    if (status) {
+      status.textContent = shown + " of " + rows.length + " documents shown";
+    }
   });
 });

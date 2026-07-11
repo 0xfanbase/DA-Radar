@@ -16,7 +16,9 @@ import json
 import os
 
 from pipeline.ci.path_allowlist import get_uncommitted_changed_paths
+from pipeline.verify.authenticity import official_domains_from_config
 from pipeline.verify.gate import enforce_full_gate
+from pipeline.watcher.run import load_jurisdiction
 
 DEFAULT_FETCH_KWARGS = dict(timeout=15, max_retries=3, backoff_base=1.0, backoff_multiplier=2.0)
 DEFAULT_USER_AGENT = (
@@ -25,7 +27,19 @@ DEFAULT_USER_AGENT = (
 )
 
 
-def apply_gate_to_file(path: str, *, user_agent: str, **fetch_kwargs) -> bool:
+def _load_official_domains(config_path: str) -> list:
+    """Derives the official-domain allowlist from the jurisdiction config.
+
+    A missing config file fails closed (empty allowlist -- every citation
+    is then rejected by the domain check) rather than raising, so a
+    caller that hasn't wired a config path yet gets a safe default, not a
+    crash."""
+    if not os.path.isfile(config_path):
+        return []
+    return official_domains_from_config(load_jurisdiction(config_path))
+
+
+def apply_gate_to_file(path: str, *, user_agent: str, official_domains: list, **fetch_kwargs) -> bool:
     """Re-checks and possibly rewrites one card file in place.
 
     Returns True iff the file changed -- either the status was
@@ -39,7 +53,7 @@ def apply_gate_to_file(path: str, *, user_agent: str, **fetch_kwargs) -> bool:
     with open(path, "r", encoding="utf-8") as fh:
         card = json.load(fh)
 
-    gated = enforce_full_gate(card, user_agent=user_agent, **fetch_kwargs)
+    gated = enforce_full_gate(card, user_agent=user_agent, official_domains=official_domains, **fetch_kwargs)
 
     if gated != card:
         with open(path, "w", encoding="utf-8") as fh:
@@ -55,6 +69,11 @@ def main(argv=None) -> int:
     )
     parser.add_argument("--repo-dir", default=".")
     parser.add_argument("--user-agent", default=DEFAULT_USER_AGENT)
+    parser.add_argument(
+        "--config-path",
+        default=None,
+        help="Path to the jurisdiction config. Defaults to <repo-dir>/config/jurisdiction.json.",
+    )
     args = parser.parse_args(argv)
 
     changed = get_uncommitted_changed_paths(args.repo_dir)
@@ -64,9 +83,14 @@ def main(argv=None) -> int:
         print("apply_verification_gate: no changed card files.")
         return 0
 
+    config_path = args.config_path or os.path.join(args.repo_dir, "config", "jurisdiction.json")
+    official_domains = _load_official_domains(config_path)
+
     for rel_path in card_paths:
         full_path = os.path.join(args.repo_dir, rel_path)
-        downgraded = apply_gate_to_file(full_path, user_agent=args.user_agent, **DEFAULT_FETCH_KWARGS)
+        downgraded = apply_gate_to_file(
+            full_path, user_agent=args.user_agent, official_domains=official_domains, **DEFAULT_FETCH_KWARGS
+        )
         note = "downgraded to unverified" if downgraded else "citations OK"
         print(f"  [{rel_path}] {note}")
 

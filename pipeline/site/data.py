@@ -202,13 +202,18 @@ def load_site_data(repo_root: str) -> dict:
     timeline_events = build_timeline_events(cards, documents, pillar_index)
 
     # Join each correction to its card for a readable title/link on the
-    # Method page -- falls back to the bare card_id (never crashes) if no
+    # Method page -- falls back to a reader-appropriate placeholder (never
+    # crashes, and never renders the raw 64-char card_id hash -- this page's
+    # entire purpose is making corrections legible, CLAUDE.md rule 6) if no
     # matching card is found, e.g. a card that was later removed.
     cards_by_id = {c["id"]: c for c in cards}
     corrections = sorted((corrections or []), key=lambda r: r["corrected_at"], reverse=True)
     for record in corrections:
         matching_card = cards_by_id.get(record["card_id"])
-        record["card_title"] = matching_card["title"] if matching_card else record["card_id"]
+        if matching_card:
+            record["card_title"] = matching_card["title"]
+        else:
+            record["card_title"] = f"Card {record['card_id'][:8]}… (no longer published)"
 
     ledger_items = list(ledger.get("items", {}).values())
     relevant_items = [i for i in ledger_items if i.get("relevant", True)]

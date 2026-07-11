@@ -4,13 +4,23 @@ from __future__ import annotations
 from pipeline.verify.authenticity import (
     check_card_citations,
     check_citation,
+    citation_domain_is_official,
     normalize_for_match,
+    official_domains_from_config,
     quote_is_authentic,
 )
 
 URL = "https://example.invalid/doc"
 UA = "TestAgent/0.1"
-FETCH_KWARGS = dict(user_agent=UA, timeout=5, max_retries=3, backoff_base=0.01, backoff_multiplier=2.0)
+OFFICIAL_DOMAINS = ["example.invalid"]
+FETCH_KWARGS = dict(
+    user_agent=UA,
+    timeout=5,
+    max_retries=3,
+    backoff_base=0.01,
+    backoff_multiplier=2.0,
+    official_domains=OFFICIAL_DOMAINS,
+)
 
 
 def test_quote_is_authentic_exact_substring():
@@ -108,3 +118,84 @@ def test_check_card_citations_checks_each_one(requests_mock, fixture_bytes):
     assert len(results) == 2
     assert results[0].authentic is True
     assert results[1].authentic is False
+
+
+# --- citation_domain_is_official / official_domains_from_config ---
+
+
+def test_citation_domain_is_official_exact_match():
+    assert citation_domain_is_official("https://www.example.gov/page", ["www.example.gov"])
+
+
+def test_citation_domain_is_official_rejects_non_official_domain():
+    assert not citation_domain_is_official("https://www.evil.example/page", ["www.example.gov"])
+
+
+def test_citation_domain_is_official_is_case_insensitive():
+    assert citation_domain_is_official("https://WWW.EXAMPLE.GOV/page", ["www.example.gov"])
+
+
+def test_citation_domain_is_official_accepts_genuine_subdomain():
+    """A subdomain of a listed official domain is official too -- e.g. a
+    deep-link host under a regulator's own domain."""
+    assert citation_domain_is_official("https://press.www.example.gov/page", ["www.example.gov"])
+
+
+def test_citation_domain_is_official_rejects_lookalike_domain():
+    """The literal attack this guards against: an attacker-controlled
+    domain that merely contains an official hostname as a text prefix
+    must NOT be accepted as a genuine subdomain of it."""
+    assert not citation_domain_is_official("https://www.example.gov.evil.example/page", ["www.example.gov"])
+    assert not citation_domain_is_official("https://notwww.example.gov/page", ["www.example.gov"])
+
+
+def test_citation_domain_is_official_distinguishes_sibling_subdomains():
+    """Acceptance-criteria case: apps.example.gov and www.example.gov are
+    different hosts -- only the ones explicitly listed are official."""
+    domains = ["www.example.gov", "apps.example.gov"]
+    assert citation_domain_is_official("https://www.example.gov/page", domains)
+    assert citation_domain_is_official("https://apps.example.gov/api", domains)
+    assert not citation_domain_is_official("https://mail.example.gov/page", domains)
+
+
+def test_citation_domain_is_official_false_for_malformed_url():
+    assert not citation_domain_is_official("not-a-url", ["www.example.gov"])
+
+
+def test_official_domains_from_config_flattens_all_regulators():
+    config = {
+        "regulators": [
+            {"id": "a", "official_domains": ["a.example.gov"]},
+            {"id": "b", "official_domains": ["b.example.gov", "api.b.example.gov"]},
+            {"id": "c"},  # no official_domains field -- contributes nothing
+        ]
+    }
+    assert official_domains_from_config(config) == ["a.example.gov", "b.example.gov", "api.b.example.gov"]
+
+
+def test_official_domains_from_config_empty_when_no_regulators():
+    assert official_domains_from_config({}) == []
+
+
+def test_check_citation_fails_closed_on_non_official_domain_without_fetching(requests_mock):
+    """A citation to a non-official domain is a hard failure -- and is
+    rejected before any fetch is attempted, so requests_mock is never
+    given a matcher for it; an unexpected fetch attempt would raise."""
+    kwargs = dict(FETCH_KWARGS)
+    kwargs["official_domains"] = ["www.official.invalid"]
+    result = check_citation(URL, "takes effect on 1 August 2026", **kwargs)
+    assert result.authentic is False
+    assert result.error is not None
+    assert "official-domain" in result.error
+
+
+def test_check_card_citations_rejects_non_official_domain_even_with_genuine_quote(requests_mock, fixture_bytes):
+    requests_mock.get(URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
+    card = {"citations": [{"url": URL, "quote": "takes effect on 1 August 2026"}]}
+
+    kwargs = dict(FETCH_KWARGS)
+    kwargs["official_domains"] = ["www.official.invalid"]
+    results = check_card_citations(card, **kwargs)
+
+    assert len(results) == 1
+    assert results[0].authentic is False
