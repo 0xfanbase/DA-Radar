@@ -392,7 +392,14 @@ hr.hairline {
   font-size: 1.1rem;
 }
 
-.card .card-meta {
+/* Not scoped to .card -- reused as-is (same class, same look) for the
+   generation-provenance line on pillar cards (.pillar-card, State Board),
+   glossary definitions, and Start Here, all of which sit on the same
+   --surface-card/--paper backgrounds .badge-unverified/.badge-corrected
+   are already contrast-tested against. Trajectory Board is the one
+   exception -- its fixed dark surface needs its own treatment, see
+   .trajectory-provenance below, never this class. */
+.card-meta {
   font-family: var(--font-mono);
   font-size: 0.78rem;
   color: var(--ink-muted);
@@ -519,6 +526,23 @@ hr.hairline {
   content: " (indicated)";
   font-size: 0.75rem;
   opacity: 0.7;
+}
+
+/* Per-entry generation-provenance line. Deliberately full-opacity,
+   inheriting .trajectory-row's own color: var(--trajectory-ink) rather
+   than the .badge-unverified/.badge-corrected treatment used elsewhere
+   on the site -- those badges hardcode color: var(--ink), which is the
+   same near-black navy as this board's own fixed dark fill in light
+   mode and would render invisible here (the same reason the board's
+   border can't use --trajectory-surface either; see the comment above
+   .trajectory-board). Status honesty for this content class matters too
+   much to risk on an untested color pairing, so this stays plain themed
+   text, just set smaller to read as secondary to the event itself. */
+.trajectory-row .trajectory-provenance {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  margin-top: 0.3rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {

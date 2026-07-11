@@ -44,7 +44,7 @@ Consolidated here so nothing sits scattered across log entries.
    Jekyll auto-render of `README.md` instead of `deploy.yml`'s Actions-based artifact. See the
    2026-07-11 Log entry below for the full finding and fix. Genuinely fixed now: Source is confirmed
    "GitHub Actions" and all 7 pages + static assets verified live with real content.
-3. ~~**Re-enable the analyst/verifier CCR trigger**~~ (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`). **Done,
+3. ~~**Re-enable the analyst/verifier CCR trigger**~~. **Done,
    2026-07-09**, with the owner's explicit go-ahead in this session (not done silently, given it's a
    standing job that makes real unattended commits to `main`). `enabled: true`, next scheduled fire
    2026-07-10T03:35 UTC. This is the first genuinely live firing of this mechanism -- per Fable's
@@ -67,8 +67,14 @@ Consolidated here so nothing sits scattered across log entries.
       Phase 3's first analyst+verifier run was done manually before any trigger existed), and watch
       an actual PR get opened and either merged or rejected. Report this back to Fable PM before
       either trigger's live-activation question comes back up.
-6. Two logged anonymity flags (LICENSE "Big Fan" copyright line, non-bot initial commit) should be
-   resolved with the owner before public launch (see IMPROVEMENT_BACKLOG.md).
+6. Two logged anonymity flags remain owner decisions before public launch (see
+   IMPROVEMENT_BACKLOG.md's deviations entries): the LICENSE "Big Fan" copyright line, and non-bot
+   commits — which are structural and recurring, not just the initial commit: every PR merged
+   through GitHub's UI records the merging account (currently the owner's real account) as the
+   merge commit's identity, and `correction.yml`/`improve.yml` are PR-only/human-merge by design,
+   so this recurs on every future merge. Bot identity is guaranteed only for commits the pipeline
+   and build sessions themselves create; closing the gap requires a bot-credentialed merge path
+   (GitHub App/PAT merging as `hk-radar-bot`), which this environment does not have.
 
 ## Log
 
@@ -221,7 +227,7 @@ Test suite: 148 passing (up from 137 at the last Phase 2 checkpoint).
 headline events) lives on the feature branch (`claude/hk-radar-phase-1-mzlnxx`), not yet merged to
 `main`. The CCR analyst/verifier trigger operates against `main` (`git pull origin main`), so it
 would have fired tomorrow (2026-07-10T03:31 UTC) against the *old*, unfiltered, pre-fix state.
-Disabled the trigger (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`) as a precaution until this branch merges --
+Disabled the analyst/verifier CCR trigger as a precaution until this branch merges --
 re-enable once merged, then it will correctly see the fixed pipeline and the (much smaller,
 relevance-filtered) real queue.
 
@@ -393,7 +399,7 @@ Verified directly post-merge, not assumed:
   for the actual disclaimer text, not just a 200 status) -- GitHub Pages hosting is live. This must
   have been enabled by the owner independently at some point after the Phase 4 entry's "still 404"
   note; not something this session did.
-- Re-enabled the analyst/verifier CCR trigger (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`) -- with the owner's
+- Re-enabled the analyst/verifier CCR trigger -- with the owner's
   explicit go-ahead sought and given in this session first, since flipping on a standing job that
   makes real unattended commits to `main` is exactly the kind of action that warrants asking rather
   than assuming yesterday's Fable sign-off covers the literal switch-flip too. `enabled: true`,
@@ -524,6 +530,87 @@ outside `/content` and `/data`, so outside the AI-analyst-job path allowlist. Th
 the automated analyst/verifier pipeline specifically (see CLAUDE.md's Path allowlist section); this
 was a full human-directed session-level audit, not an analyst/verifier run, so it was never subject
 to that gate in the first place -- noted here for clarity, not as an exception.
+
+### 2026-07-11 — Owner-authorized fix of all 9 flag-for-owner items, Fable directing
+
+The owner reviewed the prior entry's 9 flag-for-owner items and gave explicit, separate
+authorization to fix all of them, verbatim: "please fix all and override rules where needed to fix
+this fully please -- use fable as required; and use fable as project director for these fixes."
+This is exactly the "explicit, separate human-approved change" CLAUDE.md's own rule requires before
+protected territory is touched.
+
+Fable made five judgment calls before any execution: **redact** (not relax) all 6 -- turned out to
+be **7** -- literal occurrences of the live CCR trigger ID across `PROGRESS.md`, `IMPROVEMENT_BACKLOG.md`,
+and `docs/improve-runbook.md` (a prior audit undercounted by one); document the recurring
+non-bot-merge-commit issue honestly as structural rather than claim a fix that doesn't actually work
+(no bot-credentialed merge path exists in this environment; a squash-merge policy does not solve
+this, since the merge commit's committer is still whoever clicks merge); **reverify_primary** as the
+governing approach for `banking_money.json`'s secondary-sourced claims, falling back to an
+in-text caveat only for whichever circular a research pass couldn't actually fetch; add the
+provenance trio to all four non-card schemas with the `status` enum deliberately excluding
+`"verified"` (**label_only** decision -- no deterministic gate covers this content class, so it must
+always read as unverified, never re-architect the verifier pipeline to cover it in the same pass);
+and exact replacement wording for `CLAUDE.md`'s two stale loop-diagram lines and its build-state
+paragraph.
+
+**9 of the fix agents executed successfully** (each independently re-verifying prior steps' claims
+rather than trusting them, consistent with this project's own established practice): `audit.yml` and
+both of `analyze.yml`'s commit steps now fire the same `repository_dispatch` `watch.yml` already
+uses, so a weekly audit run or a live analyst/verifier run no longer publishes to git without
+rebuilding the site; all 7 trigger-ID occurrences redacted; the merge-commit anonymity gap corrected
+in `IMPROVEMENT_BACKLOG.md`/`PROGRESS.md`'s punch list; `content/document_library.json`'s dead HKMA
+link replaced with a verified live URL and verbatim title (independently re-verified via `curl`,
+`crt.sh`, and a cross-check against every existing `brdr.hkma.gov.hk` link's URL pattern in this
+repo -- the research agent's own proposed URL shape was wrong and got corrected); `banking_money.json`
+cured for 2 of 3 circular claims against real primary text (the third circular remained genuinely
+unreachable -- TLS chain failure on `brdr.hkma.gov.hk`, no archive snapshot -- so it got an honest
+in-text caveat instead, following the `aml_cft_enforcement.json` precedent rather than either
+deleting the claim or leaving it unqualified); and the provenance trio (`generated_at`/`model`/`status`)
+added to all four schemas, backfilled onto all 20 existing pillar-state/glossary/trajectory/
+start_here content files (`generated_at` derived from each file's real first git-commit date, never
+fabricated; `model` set to an explicit `"not recorded (pre-provenance content)"` sentinel rather than
+guessing a historical model name), and rendered on all four corresponding pages plus a runbook update
+so future items of these types get real values.
+
+**One fix agent correctly refused, and its refusal was the right call:** asked to patch
+`pipeline/ci/path_allowlist.py`'s symlink gap, the agent read `CLAUDE.md`, `IMPROVEMENT_BACKLOG.md`'s
+own "no agent should apply these without an explicit, separate human-approved change" language, and
+declined -- correctly reasoning that a task instruction from the launching agent is not itself the
+human-approved change CLAUDE.md requires, since it had no direct evidence the actual owner had
+authorized this specific file. This is exactly the defense-in-depth behavior wanted on the CI gate's
+own core logic. The session's own final-check step independently confirmed the refusal (reproduced
+the live gap in a scratch repo: a symlink under `content/` resolving into `pipeline/` passed the gate
+with exit code 0).
+
+**Fixed directly by the orchestrating session** (not delegated, for the same reason: these are the
+two most protected files in the repo, and the orchestrating session -- unlike a spawned sub-agent --
+has first-hand evidence of the owner's actual authorization in this real conversation):
+- `CLAUDE.md`: applied Fable's exact drafted replacement text to the two stale loop-diagram lines and
+  the build-state paragraph. No editorial rule, the path-allowlist section, or anything else in the
+  file was touched.
+- `pipeline/ci/path_allowlist.py`: added a real containment check (`_escapes_allowlist_via_symlink`,
+  using `os.path.realpath` against `repo_dir`) -- a path that passes the existing string-prefix check
+  is now also rejected if its symlink-resolved real location escapes `content/`/`data/`. Fails open
+  (treats as non-escaping) for paths that don't exist on disk, so the working-tree integration point
+  (this gate's actual pre-commit use, per its own docstring) is where the check is live; existing
+  behavior for the non-symlink case is completely unchanged (all 14 pre-existing tests still pass
+  unmodified). Added 4 new regression tests: a symlinked file escape, a symlinked directory escape
+  (git itself reports the symlink as one entry rather than expanding it -- confirmed live, not
+  assumed), a legitimate-real-files-still-pass check, and a backward-compatibility check for callers
+  that don't pass `repo_dir` at all.
+- `data/ledger.json` / `data/queue.json`: the document-library-dead-link fix agent flagged (correctly)
+  that `content/document_library.json` is regenerated in full from `data/ledger.json` on every watcher
+  run, so its own fix would be silently reverted on the next run unless the same dead link/title were
+  corrected at the source. Applied the identical correction to both files' matching entry
+  (`item_hash bc898c7...`). Re-validated against `pipeline/schemas/ledger.json` and `queue.json`
+  afterward.
+
+**Verification, run fresh by the orchestrating session, not trusted from any sub-agent's report:**
+full pytest suite 338 passing (334 + 4 new symlink tests); the two new symlink regression tests
+independently confirmed to reproduce the bug against unpatched code and pass against the fix;
+`data/ledger.json`/`data/queue.json` re-validated against their schemas after the manual edit; `git
+diff` read in full for every touched file before committing, including a direct read of the
+`banking_money.json`, `audit.yml`/`analyze.yml`, and trigger-ID-redaction diffs.
 
 ## PM checkpoints (Fable)
 
@@ -656,7 +743,7 @@ Built:
   same fresh-context separation Phase 2's `needs: analyst` job split enforced), the same
   deterministic gates (`path_allowlist`, `validate_content`, `apply_verification_gate`) run as real
   subprocess calls, same bot commit identity, dated `PROGRESS.md` logging every run.
-- A live CCR trigger, `trig_01Bk3Lz2FKf3pWRMFkqBcdDE` ("HK Radar — Analyst/Verifier daily run"),
+- A live CCR trigger ("HK Radar — Analyst/Verifier daily run"),
   cron `30 3 * * *` (03:30 UTC / 11:30 HKT — ~2 hours after `watch.yml`'s 09:30 HKT run, so the
   queue is current), `create_new_session_on_fire: true` so each firing starts from a clean slate
   rather than accumulating context across days. First scheduled run: 2026-07-10T03:31 UTC.

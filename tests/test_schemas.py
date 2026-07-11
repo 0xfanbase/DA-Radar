@@ -129,5 +129,8 @@ def test_pillar_state_schema_accepts_valid_instance():
         "last_changed": "2026-01-01",
         "key_links": [{"label": "Example", "url": "https://example.invalid"}],
         "open_items": [],
+        "generated_at": "2026-01-01T00:00:00Z",
+        "model": "test-model",
+        "status": "unverified",
     }
     Draft202012Validator(schema).validate(valid)

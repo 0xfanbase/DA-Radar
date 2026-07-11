@@ -21,6 +21,14 @@
     </ul>
     {% endif %}
     <p class="mono meta-line">Last changed {{ p.last_changed }}</p>
+    <div class="card-meta">
+      {% if p.status == "corrected" %}
+      <a class="badge-corrected" href="method.html#corrections-log">Corrected &mdash; see corrections log</a>
+      {% else %}
+      <span class="badge-unverified">Not independently verified</span>
+      {% endif %}
+      <span>generated {{ p.generated_at }} &middot; {{ p.model }}</span>
+    </div>
     <p>
       {% for link in p.key_links %}<a href="{{ link.url }}">{{ link.label }}</a><br>{% endfor %}
     </p>

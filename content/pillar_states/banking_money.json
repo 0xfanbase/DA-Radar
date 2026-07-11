@@ -6,9 +6,21 @@
   "instruments": [
     "HKMA guidance to Authorized Institutions on digital-asset custody and distribution"
   ],
-  "standing_summary": "HKMA's core guidance to Authorized Institutions on digital-asset activity dates to 20 February 2024 (custody of digital assets, and sale/distribution of tokenised products), with updated custody guidance reissued 27 May 2026 expanding cyber-security, cold-wallet, and governance requirements, and an April 2025 circular permitting Authorized Institutions to offer staking services. On the retail digital-money side, HKMA completed Phase 2 of the e-HKD Pilot Programme on 28 October 2025 and stated that the immediate priority for e-HKD lies beyond retail use cases, redirecting near-term focus to wholesale payments and tokenisation-ecosystem support (branded e-HKD+). Tokenised deposits are being advanced operationally through Project Ensemble/EnsembleTX (see the Tokenization & RWA pillar) rather than through standalone tokenised-deposit guidance.",
-  "last_changed": "2026-05-27",
+  "standing_summary": "HKMA's core guidance to Authorized Institutions on digital-asset activity dates to 20 February 2024, issued as two same-day circulars -- one on custody of digital assets, the other on sale and distribution of tokenised products -- both requiring affected Authorized Institutions to notify HKMA and confirm they meet the expected standards within six months of the circular date. An April 2025 circular sets conduct and disclosure standards for Authorized Institutions providing staking services from custodial holdings (covering internal controls, fee/risk disclosure including slashing and hacking risk, and blockchain-protocol/third-party due diligence), conditional on discussing the arrangement with HKMA in advance; it sets standards for staking services rather than granting general permission to offer them. HKMA reissued updated custody guidance on 27 May 2026; secondary legal commentary describes this as expanding cyber-security, cold-wallet, and governance requirements, but that description is corroborated only by secondary sources -- the primary circular text could not be fetched during this research (HKMA's document repository, brdr.hkma.gov.hk, was unreachable) and should be verified directly before being relied on. On the retail digital-money side, HKMA completed Phase 2 of the e-HKD Pilot Programme on 28 October 2025 and stated that the immediate priority for e-HKD lies beyond retail use cases, redirecting near-term focus to wholesale payments and tokenisation-ecosystem support (branded e-HKD+). Tokenised deposits are being advanced operationally through Project Ensemble/EnsembleTX (see the Tokenization & RWA pillar) rather than through standalone tokenised-deposit guidance.",
+  "last_changed": "2026-07-11",
   "key_links": [
+    {
+      "label": "HKMA circular: Provision of Custodial Services for Digital Assets (20 Feb 2024)",
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/20240220-11-EN"
+    },
+    {
+      "label": "HKMA circular: Sale and Distribution of Tokenised Products (20 Feb 2024)",
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/20240220-10-EN"
+    },
+    {
+      "label": "HKMA circular: Provision of Staking Services for Virtual Assets from Custodial Services (7 Apr 2025)",
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/20250407-1-EN"
+    },
     {
       "label": "HKMA press release: e-HKD Pilot Programme completion and future direction (28 Oct 2025)",
       "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/10/20251028-4/"
@@ -25,6 +37,9 @@
   "open_items": [
     "HKMA indicated further preparatory work toward a possible future retail e-HKD would continue into H1 2026; no published outcome of that work was found yet.",
     "No standalone HKMA guidance on tokenised deposits exists yet; the topic is currently being handled through the Project Ensemble pilot rather than a codified circular.",
-    "Several underlying HKMA circulars referenced in secondary sources (the original February 2024 custody circular, the April 2025 staking circular, and the May 2026 updated custody guidance) are hosted on HKMA's banking-sector document repository, which could not be fetched directly during this research; their contents above are corroborated by secondary legal-commentary sources and should be re-confirmed directly when that repository is reachable."
-  ]
+    "The 27 May 2026 updated custody guidance circular is hosted on HKMA's banking-sector document repository (brdr.hkma.gov.hk), which was unreachable during this research (TLS certificate-chain failure to the live site; no Wayback Machine snapshot yet archived, likely due to the document's recency); its content above is corroborated only by secondary legal-commentary sources and should be re-confirmed directly against the primary text when the repository is reachable or an archived copy appears."
+  ],
+  "generated_at": "2026-07-09T06:14:16Z",
+  "model": "not recorded (pre-provenance content)",
+  "status": "unverified"
 }

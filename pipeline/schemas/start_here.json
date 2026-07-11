@@ -9,8 +9,9 @@
     "body": { "type": "string", "minLength": 1 },
     "last_changed": { "type": "string", "format": "date" },
     "generated_at": { "type": "string", "format": "date-time" },
-    "model": { "type": "string", "minLength": 1 }
+    "model": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "enum": ["unverified", "corrected"] }
   },
-  "required": ["schema_version", "body", "last_changed", "generated_at", "model"],
+  "required": ["schema_version", "body", "last_changed", "generated_at", "model", "status"],
   "additionalProperties": false
 }

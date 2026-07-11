@@ -37,11 +37,11 @@ architecture constraints require an explicit, separate human-approved change.
         │
   auto-commit to main → GitHub Pages redeploys
         │
-[audit.yml — weekly]  (not yet built — later phase)
+[audit.yml — weekly]  (built in Phase 5 — no genuine scheduled Actions run has produced a real data/audit/latest.json yet)
   link-rot check, staleness check, ledger-vs-regulator-page coverage check,
   verifier pass-rate trend → findings auto-append IMPROVEMENT_BACKLOG.md
         │
-[improve.yml — cron, fortnightly]  (not yet built — later phase)
+[improve.yml — cron, fortnightly]  (built in Phase 5 — deliberately no live trigger yet; sequenced behind proven analyst/verifier runs, see PROGRESS.md)
   PR-only, human-merge, capped-turns self-improvement loop
 ```
 
@@ -62,10 +62,14 @@ repo does — a future clone must separately stand up its own CCR account/trigge
 ongoing automation. If a future owner ever does add either secret to this repo, `analyze.yml`
 starts working exactly as diagrammed above, with no other change required.
 
-**Current build state: Phase 1 (Chassis) and Phase 2 (Analyst + verifier + CI gate) built.** Phase
-2 is deterministically complete and tested; live execution runs via the CCR trigger described
-above, not `analyze.yml`. Audit loop, improve loop, seed content, and frontend do not exist yet —
-see PROGRESS.md for exact status.
+**Current build state: Phases 1–5 built.** Chassis (P1), analyst + verifier + CI gate (P2), seed
+content (P3), and frontend (P4 — live on GitHub Pages) are complete; live analyst/verifier
+execution runs via the CCR trigger described above, not `analyze.yml`. Phase 5's autonomy loops
+(audit, corrections, improve) are built, tested, and merged, with two honest caveats: `audit.yml`
+has not yet produced a real `data/audit/latest.json` via a genuine scheduled Actions run, and
+`improve.yml` deliberately has no live CCR trigger yet (sequenced behind proven analyst/verifier
+cycles, per PM directive). The 14-day zero-touch soak criterion remains open — see PROGRESS.md
+for exact status.
 
 ## Editorial hard rules (non-negotiable — apply from the first card written, in every later phase)
 

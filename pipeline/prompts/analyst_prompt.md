@@ -76,6 +76,17 @@ Read `data/queue.json`. For **every** item in its `items[]` array whose `status`
    already in `content/glossary/`, add a plain-language glossary entry.
 6. If the source document uses jargon not yet defined, add it to the glossary rather than
    silently assuming the reader knows it.
+7. Every one of these three content types — the pillar state file, the trajectory entry, the
+   glossary entry — carries the same `generated_at`/`model`/`status` provenance trio a card does
+   (conform exactly to `pipeline/schemas/pillar_state.json`, `pipeline/schemas/trajectory.json`,
+   and `pipeline/schemas/glossary.json`). Populate all three with real values on every write or
+   edit, exactly as you do for a card's own `generated_at`/`model`/`status` above:
+   - `generated_at`: the current UTC timestamp, ISO-8601.
+   - `model`: the same human-readable model-family name you used on the card.
+   - `status`: always write `"unverified"` — you are the first pass here too. Note this enum is
+     `["unverified", "corrected"]` only for these three types (no `"verified"` value exists, since
+     no verifier gate covers this content class yet) — never write `"verified"`, regardless of how
+     confident you are.
 
 A separate, deterministic step (not you) updates `data/ledger.json` and `data/queue.json` after
 you finish, promoting each item you wrote a card for from `"queued"` to `"drafted"`. You don't

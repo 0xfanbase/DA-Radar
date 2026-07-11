@@ -13,7 +13,12 @@
   <div class="trajectory-row" role="row">
     <span class="flap date-window" role="cell">{{ t.date_or_window }}</span>
     <span class="flap event {% if t.confidence == 'indicated' %}confidence-indicated{% endif %}" role="cell">{{ t.event }}</span>
-    <span class="flap" role="cell">{{ t.pillar_name }} &middot; <a href="{{ t.source_url }}" style="color:inherit;">source</a></span>
+    <span class="flap" role="cell">
+      {{ t.pillar_name }} &middot; <a href="{{ t.source_url }}" style="color:inherit;">source</a>
+      <span class="trajectory-provenance">generated {{ t.generated_at }} &middot; {{ t.model }} &middot;
+        {% if t.status == "corrected" %}<a href="method.html#corrections-log" style="color:inherit;">Corrected &mdash; see corrections log</a>{% else %}Not independently verified{% endif %}
+      </span>
+    </span>
   </div>
   {% else %}
   <div class="trajectory-row" role="row"><span role="cell">No officially announced upcoming events on record yet.</span></div>

@@ -3,6 +3,11 @@
   "term": "Tokenisation",
   "plain_definition": "Representing ownership of a real-world asset -- such as a government bond, a fund, or a bank deposit -- as a digital token on a blockchain-style ledger, so that it can be transferred, settled, or traded the way virtual assets are, rather than through traditional paper-based or centralised-registry processes. Hong Kong's Policy Statement 2.0 names expanding tokenised products, and reviewing the legal treatment of tokenised real-world assets (RWA), as core planks of its digital-asset strategy.",
   "formal_definition": "The process of issuing a digital token that represents rights to an underlying real-world asset (RWA); referenced in Policy Statement 2.0 on the Development of Digital Assets in Hong Kong as a strategic priority pursued through initiatives such as Project Ensemble and tokenised government bond issuances.",
-  "related_terms": ["LEAP framework"],
-  "first_used_card_id": "27a1b68218a47eb6ece2072efeb0b80cc05eb1c914f6b7a4a826b4f52287c903"
+  "related_terms": [
+    "LEAP framework"
+  ],
+  "first_used_card_id": "27a1b68218a47eb6ece2072efeb0b80cc05eb1c914f6b7a4a826b4f52287c903",
+  "generated_at": "2026-07-09T07:32:45Z",
+  "model": "not recorded (pre-provenance content)",
+  "status": "unverified"
 }

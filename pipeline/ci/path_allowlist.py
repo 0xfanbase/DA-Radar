@@ -14,6 +14,7 @@ inspects the actual working tree (or an actual git diff) itself.
 from __future__ import annotations
 
 import argparse
+import os
 import posixpath
 import subprocess
 import sys
@@ -27,15 +28,48 @@ def normalize_path(path: str) -> str:
     return posixpath.normpath(path.replace("\\", "/")).lstrip("/")
 
 
+def _escapes_allowlist_via_symlink(path: str, repo_dir: str, allowed_prefixes: tuple) -> bool:
+    """A path can pass the string-prefix check above yet still point outside
+    content/ or data/ if it -- or any directory component of it -- is a
+    symlink. os.path.realpath() resolves every symlink in the chain; if the
+    resolved, repo-relative path no longer starts with an allowed prefix (or
+    escapes the repo root entirely), the change is a real allowlist
+    violation the string check alone cannot see.
+
+    Deliberately fail-open (returns False, i.e. "does not escape") for a
+    path that doesn't exist on disk under repo_dir -- e.g. a path from a
+    historical `git diff` that isn't present in the current working tree, or
+    a plain unit-test call with no real repo_dir at all. Working-tree mode
+    (this gate's actual pre-commit integration point, per this module's own
+    docstring) always has the real files on disk, so the check is live
+    exactly where it matters.
+    """
+    repo_real = os.path.realpath(repo_dir)
+    target_real = os.path.realpath(os.path.join(repo_dir, path))
+    if not os.path.exists(target_real):
+        return False
+    rel = os.path.relpath(target_real, repo_real)
+    if rel.startswith(os.pardir):
+        return True
+    normalized = normalize_path(rel)
+    return not any(normalized.startswith(prefix) for prefix in allowed_prefixes)
+
+
 def check_path_allowlist(
-    changed_paths: list, *, allowed_prefixes: tuple = DEFAULT_ALLOWED_PREFIXES
+    changed_paths: list,
+    *,
+    allowed_prefixes: tuple = DEFAULT_ALLOWED_PREFIXES,
+    repo_dir: str = ".",
 ) -> tuple:
     """Returns (ok, violations). ok is True iff every path in changed_paths
-    normalizes to somewhere under one of allowed_prefixes."""
+    normalizes to somewhere under one of allowed_prefixes AND -- for any
+    path that actually exists under repo_dir -- its symlink-resolved real
+    location does too (see _escapes_allowlist_via_symlink)."""
     violations = [
         path
         for path in changed_paths
         if not any(normalize_path(path).startswith(prefix) for prefix in allowed_prefixes)
+        or _escapes_allowlist_via_symlink(path, repo_dir, allowed_prefixes)
     ]
     return (len(violations) == 0, violations)
 
@@ -109,7 +143,7 @@ def main(argv=None) -> int:
         print("path_allowlist: no changed files -- nothing to check.")
         return 0
 
-    ok, violations = check_path_allowlist(changed)
+    ok, violations = check_path_allowlist(changed, repo_dir=args.repo_dir)
     if ok:
         print(f"path_allowlist: OK -- {len(changed)} changed file(s), all under content/ or data/.")
         return 0
