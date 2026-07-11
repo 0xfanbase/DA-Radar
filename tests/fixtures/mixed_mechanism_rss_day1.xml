@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>TFA Notices</title>
+    <link>https://tfa.testland.invalid/rss/notices.xml</link>
+    <description>Testland Financial Authority notices</description>
+    <item>
+      <title>TFA notice one</title>
+      <link>https://tfa.testland.invalid/notices/one</link>
+      <guid>tfa-rss-1</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <description>First Testland RSS notice.</description>
+    </item>
+    <item>
+      <title>TFA notice two</title>
+      <link>https://tfa.testland.invalid/notices/two</link>
+      <guid>tfa-rss-2</guid>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Second Testland RSS notice.</description>
+    </item>
+  </channel>
+</rss>

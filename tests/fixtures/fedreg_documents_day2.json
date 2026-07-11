@@ -1,0 +1,86 @@
+{
+  "count": 6,
+  "description": "Documents matching \"digital asset\" OR stablecoin OR \"virtual currency\", newest first.",
+  "total_pages": 1,
+  "next_page_url": null,
+  "results": [
+    {
+      "document_number": "2026-01130",
+      "title": "Digital Asset Trading Platform Registration Standards",
+      "abstract": "The Commission is adopting registration standards for digital asset trading platforms operating in interstate commerce.",
+      "type": "Rule",
+      "html_url": "https://www.federalregister.gov/documents/2026/01/22/2026-01130/digital-asset-trading-platform-registration-standards",
+      "pdf_url": "https://www.federalregister.gov/documents/2026/01/22/2026-01130.pdf",
+      "publication_date": "2026-01-22",
+      "agencies": [
+        { "name": "Securities and Exchange Commission", "raw_name": "Securities and Exchange Commission", "id": 44 }
+      ],
+      "excerpts": "...<b>digital asset</b> trading platform..."
+    },
+    {
+      "document_number": "2026-01120",
+      "title": "Stablecoin Issuer Capital Adequacy Guidance",
+      "abstract": "This notice provides guidance on capital adequacy expectations for permitted stablecoin issuers.",
+      "type": "Notice",
+      "html_url": "https://www.federalregister.gov/documents/2026/01/20/2026-01120/stablecoin-issuer-capital-adequacy-guidance",
+      "pdf_url": "https://www.federalregister.gov/documents/2026/01/20/2026-01120.pdf",
+      "publication_date": "2026-01-20",
+      "agencies": [
+        { "name": "Comptroller of the Currency", "raw_name": "Comptroller of the Currency Office", "id": 132 }
+      ],
+      "excerpts": "...<b>stablecoin</b> issuer capital adequacy..."
+    },
+    {
+      "document_number": "2026-01001",
+      "title": "Digital Asset Custody Requirements for National Banks",
+      "abstract": "The Office of the Comptroller of the Currency is issuing a final rule establishing digital asset custody requirements for national banks and Federal savings associations.",
+      "type": "Rule",
+      "html_url": "https://www.federalregister.gov/documents/2026/01/05/2026-01001/digital-asset-custody-requirements-for-national-banks",
+      "pdf_url": "https://www.federalregister.gov/documents/2026/01/05/2026-01001.pdf",
+      "publication_date": "2026-01-05",
+      "agencies": [
+        { "name": "Comptroller of the Currency", "raw_name": "Comptroller of the Currency Office", "id": 132 }
+      ],
+      "excerpts": "...establishing <b>digital asset</b> custody requirements..."
+    },
+    {
+      "document_number": "2026-01050",
+      "title": "Stablecoin Reserve Composition; Proposed Rule",
+      "abstract": null,
+      "type": "Proposed Rule",
+      "html_url": "https://www.federalregister.gov/documents/2026/01/08/2026-01050/stablecoin-reserve-composition-proposed-rule",
+      "pdf_url": "https://www.federalregister.gov/documents/2026/01/08/2026-01050.pdf",
+      "publication_date": "2026-01-08",
+      "agencies": [
+        { "name": "Federal Reserve System", "raw_name": "Federal Reserve System", "id": 90 }
+      ],
+      "excerpts": null
+    },
+    {
+      "document_number": "2026-01077",
+      "title": "Virtual Currency Kiosk Recordkeeping; Notice",
+      "abstract": "FinCEN announces recordkeeping guidance for virtual currency kiosk operators.",
+      "type": "Notice",
+      "html_url": null,
+      "pdf_url": "https://www.federalregister.gov/documents/2026/01/09/2026-01077.pdf",
+      "publication_date": "2026-01-09",
+      "agencies": [
+        { "name": "Financial Crimes Enforcement Network", "raw_name": "Financial Crimes Enforcement Network", "id": 200 }
+      ],
+      "excerpts": "...<b>virtual currency</b> kiosk..."
+    },
+    {
+      "document_number": "2026-01090",
+      "title": "Digital Asset Sandbox Pilot Program Extension",
+      "abstract": "This notice extends the digital asset sandbox pilot program through the end of the fiscal year.",
+      "type": "Notice",
+      "html_url": "https://www.federalregister.gov/documents/2026/01/10/2026-01090/digital-asset-sandbox-pilot-program-extension",
+      "pdf_url": "https://www.federalregister.gov/documents/2026/01/10/2026-01090.pdf",
+      "publication_date": "2026-01-10",
+      "agencies": [
+        { "name": "Commodity Futures Trading Commission", "raw_name": "Commodity Futures Trading Commission", "id": 220 }
+      ],
+      "excerpts": "...<b>digital asset</b> sandbox..."
+    }
+  ]
+}

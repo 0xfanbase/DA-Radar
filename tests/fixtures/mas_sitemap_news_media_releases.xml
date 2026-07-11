@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.mas.gov.sg/news/media-releases/2026/item-01</loc>
+    <lastmod>2026-01-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mas.gov.sg/news/media-releases/2026/item-02</loc>
+    <lastmod>2026-01-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mas.gov.sg/news/media-releases/2026/item-03</loc>
+    <lastmod>2026-01-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mas.gov.sg/news/media-releases/2026/item-04</loc>
+    <lastmod>2026-02-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mas.gov.sg/news/media-releases/2026/item-05</loc>
+    <lastmod>2026-02-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mas.gov.sg/news/media-releases/2026/item-06</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mas.gov.sg/news/media-releases/2026/item-07</loc>
+    <lastmod>2026-03-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mas.gov.sg/news/media-releases/2026/item-08</loc>
+    <lastmod>2026-04-01</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mas.gov.sg/news/media-releases/2026/item-09</loc>
+    <lastmod>2026-04-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mas.gov.sg/news/media-releases/2026/item-10</loc>
+    <lastmod>2026-05-04</lastmod>
+  </url>
+  <url>
+    <!-- Not under news/media-releases or news/speeches, must be excluded by url_pattern. -->
+    <loc>https://www.mas.gov.sg/news/announcements/routine-notice</loc>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+  <url>
+    <!-- Unrelated corporate page accidentally swept into this sitemap file. -->
+    <loc>https://www.mas.gov.sg/who-we-are/history</loc>
+    <lastmod>2025-11-01</lastmod>
+  </url>
+</urlset>

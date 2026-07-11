@@ -41,8 +41,17 @@ DEFAULT_USER_AGENT = (
 
 # event_types that represent an actionable problem worth logging to
 # IMPROVEMENT_BACKLOG.md -- verifier_pass_rate_snapshot is a routine metric
-# point, not itself a finding, so it is excluded here.
-ACTIONABLE_EVENT_TYPES = {"link_rot", "staleness", "feed_silence", "verifier_pass_rate_regression"}
+# point, not itself a finding, so it is excluded here. feed_structure_error
+# and feed_fetch_failure (P8) are pipeline/audit/feed_health.py's two new
+# watch_status.json-driven signals, alongside the original feed_silence.
+ACTIONABLE_EVENT_TYPES = {
+    "link_rot",
+    "staleness",
+    "feed_silence",
+    "feed_structure_error",
+    "feed_fetch_failure",
+    "verifier_pass_rate_regression",
+}
 
 
 def _load_json(path: str, default=None):
@@ -108,6 +117,13 @@ def run_audit(
     trajectory = _load_json(os.path.join(content_root, "trajectory.json"), [])
     document_library = _load_json(os.path.join(content_root, "document_library.json"), {"documents": []})
     ledger = _load_json(os.path.join(data_root, "ledger.json"), {"items": {}})
+    # P8: watch_status.json is the per-feed health substrate pipeline/
+    # watcher/run.py writes each watcher run (see pipeline/audit/
+    # feed_health.py's docstring). Absent for any pre-P8 ledger/repo tree
+    # (a fresh watcher run hasn't produced one yet, or this is an older
+    # fixture) -- check_feed_coverage's watch_status=None path preserves
+    # the original feed_silence-only behavior exactly in that case.
+    watch_status = _load_json(os.path.join(data_root, "watch_status.json"))
 
     events = []
     events += check_link_rot(
@@ -119,7 +135,7 @@ def run_audit(
         **fetch_kwargs,
     )
     events += check_staleness(pillar_states, today=today)
-    events += check_feed_coverage(ledger, today=today)
+    events += check_feed_coverage(ledger, today=today, watch_status=watch_status)
 
     snapshot = compute_pass_rate_snapshot(cards)
     previous_pct = _previous_pass_rate_pct(previous_latest)

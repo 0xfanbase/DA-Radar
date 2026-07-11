@@ -803,6 +803,53 @@ report:** full pytest suite 375 passing (up from 363); the aria-attribute fix sp
 and grepped out of the real generated HTML; `tests/test_jurisdiction_agnostic.py` re-confirmed
 green (the templates/static scan included).
 
+### 2026-07-11 — P8: watcher mechanism expansion (atom, html_diff, sitemap_diff, json_api)
+
+Fable directed P8 the same way as P6/P7: a director spec (exact `NormalizedItem` contract, exact
+config field design per mechanism -- with real worked examples drawn from the earlier jurisdiction
+recon, e.g. a FinCEN-shaped `html_diff` entry, a MAS-shaped `sitemap_diff` entry, a Federal-Register-
+shaped `json_api` entry, an HM-Treasury-shaped `atom` entry -- then sequential implementation).
+`pipeline/watcher/run.py`'s previously RSS-only per-feed loop now dispatches on each feed config
+entry's `mechanism` field (default `"rss"`, so all 9 of `hk.json`'s existing feeds are unaffected)
+to one of five modules under the new `pipeline/watcher/mechanisms/` package, all converging on the
+same `NormalizedItem` shape so hashing/ledger/queue/relevance/classify/document_library needed zero
+changes downstream. Real engineering care in the contract itself: `html_diff`/`sitemap_diff` items
+(no stable guid on a listing page) get identity via a canonicalized absolute URL rather than the
+existing guid→link+title fallback, specifically to avoid spawning a duplicate ledger entry every
+time a CMS page's title gets touched up post-publication; a new `needs_enrichment` flag marks
+sitemap-diff items (which have no title/date at all) so the analyst knows to fetch-and-derive rather
+than receive a fabricated placeholder -- the same "an honest gap beats a wrong guess" principle
+`window_sort_key` (P7) and the citation-authenticity gate already apply elsewhere in this project.
+
+New `data/{jid}/watch_status.json` substrate (new schema) means a feed whose selector/pattern/path
+breaks entirely -- never contributing a single ledger item -- is no longer invisible to
+`pipeline/audit/feed_health.py`: it now emits three mutually exclusive event types
+(`feed_structure_error`, `feed_fetch_failure`, `feed_silence`), each independently gated on its own
+minimum-days threshold so a single transient blip doesn't page anyone.
+
+**The workflow's own final-check caught two real test-coverage gaps rather than accepting a passing
+suite as sufficient, and both were closed directly by the orchestrating session before this counted
+as done:** the atom mechanism had no dedicated day1/day2 diff-detection test at all (unlike the
+other three mechanisms, which each prove "detects only the new items, not zero, not all" against
+the real ledger machinery) -- added `tests/test_atom.py` plus an `hmt_day2.atom` fixture (2 new
+entries appended to the existing HM Treasury fixture), confirming exactly 2 new items detected, not
+4, not 0, plus idempotency on a third run. And `feed_health.py`'s `feed_fetch_failure` event type
+had zero test coverage anywhere (only `feed_structure_error` was exercised, and only indirectly, via
+an end-to-end integration test) -- added 8 new unit tests directly against `check_feed_coverage`
+covering `fetch_error` and `parse_error` statuses, the mutual-exclusivity guarantee in both
+directions, the `fetch_failure_min_days` threshold's exact boundary, the deliberately-unclassified
+`config_error` case, and a healthy-new-feed-with-no-item-yet case.
+
+Also fixed in the same pass: `pipeline/watcher/fetch.py`'s docstring still referenced the deleted
+pre-P6 `config/jurisdiction.json` path.
+
+**Verification, run fresh by the orchestrating session:** full pytest suite 439 passing (up from
+375) -- the 429 the workflow itself reported plus 10 more from closing the two gaps above; every new
+atom/feed-health test independently re-run and confirmed passing; `tests/
+test_jurisdiction_agnostic.py` re-confirmed green over the four new mechanism modules (no hardcoded
+selector, URL, or jurisdiction string -- verified by direct grep, not just trusting the scan); a
+fresh `pipeline.site.generate` run confirmed the (unrelated) site build still works unchanged.
+
 ## PM checkpoints (Fable)
 
 ### 2026-07-09 — Kickoff review: approved with directives
