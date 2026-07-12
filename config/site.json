@@ -27,13 +27,13 @@
     {
       "id": "eu",
       "name": "European Union",
-      "config": null,
+      "config": "config/jurisdictions/eu.json",
       "status": {
-        "watcher": "planned",
+        "watcher": "live",
         "analyst_verifier": "planned",
-        "seeded": false
+        "seeded": true
       },
-      "coverage_notes": "Planned. Union-level coverage; member-state regulators out of initial scope. Config file to be written in its build phase."
+      "coverage_notes": "Live RSS watcher (European Commission + ESMA + EBA + ECB + AMLA feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
     },
     {
       "id": "uk",

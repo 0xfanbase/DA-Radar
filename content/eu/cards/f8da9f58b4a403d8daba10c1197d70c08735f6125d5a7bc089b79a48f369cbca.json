@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "f8da9f58b4a403d8daba10c1197d70c08735f6125d5a7bc089b79a48f369cbca",
+  "jurisdiction_id": "eu",
+  "published_date": "2024-12-30",
+  "regulator": "European Commission",
+  "pillar": [
+    "exchanges_vatp",
+    "dealing_custody_advisory"
+  ],
+  "type": "ordinance",
+  "title": "MiCA becomes fully applicable: crypto-asset service provider authorisation and market abuse rules take effect across the EU",
+  "summary": "Regulation (EU) 2023/1114 (MiCA) reached full application on 30 December 2024. Under Article 149(2), the remaining parts of MiCA -- Title V's authorisation and operating-conditions regime for crypto-asset service providers (CASPs) and Title VI's market-abuse regime for crypto-assets -- became applicable across the EU that day, alongside the asset-referenced and e-money token rules already applicable since 30 June 2024. Authorisation of individual CASPs is carried out by each member state's own national competent authority (NCA), not at EU level; one NCA's authorisation then passports EU-wide. Article 143(3) lets a CASP already lawfully providing services before 30 December 2024 continue until 1 July 2026 or its MiCA decision, whichever is sooner -- a window member states may shorten. ESMA's 17 December 2024 statement confirms these transitional periods vary by member state and apply only to services provided there.",
+  "why_it_matters": "This is the milestone that turned MiCA from a partly-applicable law into the EU's complete crypto-asset regime: any firm providing exchange, custody, dealing, advisory or similar crypto-asset services in the EU now needs a CASP authorisation from a national regulator, and crypto-asset trading is subject to EU market-abuse rules for the first time. Newcomers should note this radar tracks the EU-level Regulation itself, not the 27 member states' individual CASP licensing decisions, which sit with each national competent authority.",
+  "key_dates": {
+    "effective": "2024-12-30",
+    "milestone": "2026-07-01"
+  },
+  "citations": [
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/LSU/?uri=CELEX:32023R1114",
+      "quote": "It will apply from 30 December 2024"
+    },
+    {
+      "url": "https://www.esma.europa.eu/sites/default/files/2024-12/ESMA75-453128700-1396_Statement_on_MiCA_transitional_measures.pdf",
+      "quote": "may continue to do so until 1 July 2026"
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R1114",
+      "quote": "Titles III and IV shall apply from 30 June 2024"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T10:00:00Z",
+  "model": "Claude (Anthropic)"
+}

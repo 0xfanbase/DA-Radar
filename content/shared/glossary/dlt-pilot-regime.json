@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "dlt-pilot-regime",
+  "term": "DLT Pilot Regime",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "A separate, narrower EU Regulation from MiCA -- Regulation (EU) 2022/858, in application since 23 March 2023 -- that lets market infrastructures obtain a specific permission to operate a DLT multilateral trading facility, a DLT settlement system, or a combined DLT trading-and-settlement system, trading and settling tokenised shares, bonds and fund units that remain MiFID financial instruments and so sit outside MiCA's scope, under temporary exemptions from parts of the EU's ordinary trading and settlement rules. Individual authorisations are granted by national competent authorities, and uptake has been genuinely low -- only three infrastructures were authorised EU-wide as of ESMA's most recent published review. A European Commission proposal to make the regime permanent and widen its limits was tabled in December 2025 but is not yet adopted.",
+  "formal_definition": "Regulation (EU) 2022/858 of the European Parliament and of the Council of 30 May 2022 on a pilot regime for market infrastructures based on distributed ledger technology. EUR-Lex's rendering of the Regulation's Recital 6 describes it as establishing 'a pilot regime for market infrastructures based on distributed ledger technology'. Applicable since 23 March 2023.",
+  "related_terms": [
+    "mica",
+    "tokenisation",
+    "esma",
+    "ec"
+  ],
+  "first_used_card_id": "f8da9f58b4a403d8daba10c1197d70c08735f6125d5a7bc089b79a48f369cbca",
+  "generated_at": "2026-07-11T20:11:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

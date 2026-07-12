@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "amla",
+  "term": "AMLA (Anti-Money Laundering Authority)",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "The EU's new dedicated anti-money-laundering authority, established by Regulation (EU) 2024/1620 and seated in Frankfurt am Main. AMLA became operational on 1 July 2025, but its own direct supervisory powers over a first cohort of roughly 40 high-risk, cross-border obliged entities -- expected to include some crypto-asset service providers meeting cross-border and materiality thresholds -- do not begin until 1 January 2028; the selection process runs through 2027. Until then, day-to-day AML/CFT supervision of individual CASPs remains a national competent authority function. AMLA has said it expects licensing authorities to ensure CASPs have effective AML/CFT systems from day one of authorisation, describing the crypto-asset sector as facing significant money-laundering and terrorist-financing risk.",
+  "formal_definition": "Regulation (EU) 2024/1620 of the European Parliament and of the Council of 31 May 2024 establishing the Authority for Anti-Money Laundering and Countering the Financing of Terrorism. AMLA's own 'About AMLA' page describes its role as helping to 'coordinate national authorities to ensure the correct and consistent application of EU rules'. AMLA became operational on 1 July 2025; direct supervision of a first cohort of obliged entities begins 1 January 2028.",
+  "related_terms": [
+    "eba",
+    "esma",
+    "nca",
+    "travel-rule"
+  ],
+  "first_used_card_id": "103d85c38a37c2a8bf5ab493dd1d1af7a714781f3cd1d7fb3504f45423f8adce",
+  "generated_at": "2026-07-11T20:06:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

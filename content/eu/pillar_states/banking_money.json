@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "pillar": "banking_money",
+  "status_seal": "in_force",
+  "regulator": "ECB and EBA",
+  "instruments": [
+    "Regulation (EU) 2024/1623 of the European Parliament and of the Council of 31 May 2024 amending Regulation (EU) No 575/2013 (CRR3), Article 501d -- transitional prudential treatment of institutions' crypto-asset exposures, applicable since 9 July 2024 (the date CRR3 itself entered into force, twenty days after its 19 June 2024 Official Journal publication)",
+    "EBA Final Report -- draft Regulatory Technical Standards on the calculation and aggregation of crypto exposure values under CRR3 Article 501d(5) (EBA/RTS/2025/04, 5 August 2025) -- submitted to the European Commission for endorsement as a Delegated Regulation; this research could not confirm Official Journal publication as of the generation date",
+    "EBA Report on Tokenised Deposits (12 December 2024) -- EBA analysis of the boundary between bank-issued tokenised deposits and e-money tokens (EMTs) issued under MiCA Title IV",
+    "European Commission, Proposal for a Regulation of the European Parliament and of the Council on the establishment of the digital euro, COM(2023) 369 final (28 June 2023) -- part of the 'single currency package'; still a legislative proposal, not in force",
+    "Council of the EU general approach on the digital euro package (17-19 December 2025) and European Parliament ECON Committee vote / plenary decision to enter interinstitutional negotiations (23 June 2026 / 9 July 2026) -- procedural legislative markers cited as context only, not binding instruments",
+    "ECB Executive Board member Piero Cipollone, speech 'The digital transformation of money, payments and finance' (Generali Executive Series, 2 July 2026) -- source for Pontes and Appia, the Eurosystem's tokenised central bank money initiatives for wholesale markets, and for the digital euro pilot timeline; a speech expressing ECB policy and project status, not a legal instrument"
+  ],
+  "standing_summary": "This pillar covers three distinct EU-level strands, none of which involves the day-to-day supervision of an individual bank or issuer -- that remains with national competent authorities (NCAs) or, for banks directly supervised under the Single Supervisory Mechanism, the ECB acting in its banking-supervision capacity, both out of scope for this pillar's purposes. Strand one, the only strand of the three that is genuinely in force today, is the prudential treatment of banks' own crypto-asset exposures. CRR3 (Regulation (EU) 2024/1623), which entered into force on 9 July 2024, inserted Article 501d into the Capital Requirements Regulation as a transitional regime pending a dedicated implementation of the Basel Committee's cryptoasset standard: tokenised traditional assets, including e-money tokens compliant with MiCA and asset-referenced tokens referencing traditional assets, receive prudential treatment comparable to their underlying traditional assets, while exposures to other crypto-assets -- including unbacked crypto-assets such as Bitcoin -- are assigned a 1 250% risk weight (CRR3 recital 59; EUR-Lex, Regulation (EU) 2024/1623). Article 501d(5) mandated the EBA to specify the technical elements institutions need to calculate and aggregate those exposure values; the EBA consulted in January 2025 and published its final draft Regulatory Technical Standards on 5 August 2025 (EBA/RTS/2025/04), covering credit risk, counterparty credit risk, market risk and credit valuation adjustment risk. Those draft RTS are with the European Commission for endorsement as a Delegated Regulation; this research found no confirmed Official Journal publication as of the generation date, so the RTS's precise calculation methodology is not yet binding law -- Article 501d's own transitional treatment, not the RTS, is what is currently in force. Strand two is the boundary between e-money tokens and ordinary bank money. On 12 December 2024 the EBA published a Report on Tokenised Deposits concluding that recording a deposit claim on a distributed ledger rather than a traditional ledger 'does not per se alter the fundamental nature of the claim' -- tokenised deposits remain deposits, governed by banking and deposit-guarantee law, and are legally and regulatorily distinct from e-money tokens issued under MiCA Title IV, even though both can look similar to an end user. The report is a non-binding EBA analysis intended to promote supervisory convergence, not a rule, and the EBA noted it had identified very few live tokenised-deposit implementations at the time. The ECB has separately engaged with this boundary at the level of public commentary rather than binding instrument: in an 8 May 2026 speech ('Stablecoins and the future of money: separating functions from instruments'), President Christine Lagarde argued that tokenised commercial-bank deposits, not euro-denominated stablecoins, are the more compatible private settlement instrument with the two-tier monetary system, provided central bank money (via Eurosystem infrastructure projects such as Pontes) remains the settlement anchor; this is a policy view expressed in a speech, not a legal instrument, and is reported here as such. Strand three is the digital euro. The European Commission's 28 June 2023 proposal (COM(2023) 369), part of a three-file 'single currency package' with a companion legal-tender proposal, remains a proposal: it has not been adopted. The Council of the EU adopted its negotiating position (general approach) on 17-19 December 2025; the European Parliament's ECON Committee adopted its position 43-14-1 on 23 June 2026, and Parliament's plenary formally voted on 9 July 2026 (416-169-22) to open interinstitutional trilogue negotiations with the Council, with a first negotiating round expected shortly after under the Irish Council Presidency. No agreed text or entry-into-force date exists yet; colegislators are targeting political agreement by end-2026. In parallel, the ECB's own preparation is a project-management decision rather than a legal act: the ECB's Governing Council decided in October 2025 to move to the project's next phase, working with euro-area national central banks on preparations for a possible issuance, and the ECB has stated it aims to be ready for a potential first issuance during 2029 -- explicitly conditional on the enabling EU legislation being adopted in the course of 2026, which has not yet happened. In a 2 July 2026 speech, ECB Executive Board member Piero Cipollone described the project as being in a 'current phase' running since November 2025, and said a 12-month digital euro pilot is planned to start in the second half of 2027; the ECB has stated that preparing for the pilot does not pre-empt any decision to issue the digital euro. Strand four, distinct from the digital euro, is the ECB's work on tokenised central bank money for wholesale markets, introduced in the same 2 July 2026 speech under the names Pontes and Appia. Pontes is described as a service bridging DLT platforms to the Eurosystem's TARGET Services so that DLT-based transactions can be settled in central bank money, with a launch stated for September 2026 followed by further enhancements. Appia is described as a longer-term, public-private-partnership initiative covering analysis, standardisation and design of a tokenised wholesale ecosystem, with its vision to be documented in an 'Appia Blueprint' in 2028. Both are presented in the speech as the Eurosystem's policy response to what the speech calls a 'taxonomy of the digital settlement asset landscape' -- distinguishing public settlement assets (central bank money for retail and wholesale digital transactions) from private settlement assets (tokenised deposits and stablecoins) -- with central bank money framed as the risk-free settlement anchor. This research has only this single ECB speech as its source for Pontes and Appia and has not independently corroborated their description against dedicated ECB webpages for either initiative.",
+  "key_links": [
+    {
+      "label": "EUR-Lex: Regulation (EU) 2024/1623 (CRR3) -- consolidated text, including Article 501d",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1623"
+    },
+    {
+      "label": "EBA: Consultation Paper on draft RTS on crypto exposures under Article 501d(5) CRR3 (8 January 2025)",
+      "url": "https://www.eba.europa.eu/sites/default/files/2025-01/66666648-ea91-473c-ae2d-4405c1918b1a/CP%20on%20draft%20RTS%20on%20crypto%20exposures%20Article%20501d5.pdf"
+    },
+    {
+      "label": "EBA: Final Report -- draft RTS on the calculation and aggregation of crypto exposure values under Article 501d(5) CRR3 (EBA/RTS/2025/04, 5 August 2025)",
+      "url": "https://www.eba.europa.eu/sites/default/files/2025-08/616d6b06-cdcf-4246-a7cc-2173dfd32fa6/Draft%20RTS%20on%20crypto%20asset%20exposures%20Article%20501d-5.pdf"
+    },
+    {
+      "label": "EBA press release: EBA publishes draft technical standards on the prudential treatment of crypto asset exposures under the CRR",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-draft-technical-standards-prudential-treatment-crypto-asset-exposures-under-capital"
+    },
+    {
+      "label": "EBA press release: EBA assesses potential benefits and challenges of tokenised deposits (12 December 2024)",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-assesses-potential-benefits-and-challenges-tokenised-deposits"
+    },
+    {
+      "label": "European Commission: Proposal for a Regulation on the establishment of the digital euro, COM(2023) 369 final (28 June 2023)",
+      "url": "https://finance.ec.europa.eu/publications/digital-euro-legislative-proposals_en"
+    },
+    {
+      "label": "Council of the EU: Single currency -- Council agrees position on the digital euro and on strengthening the role of cash (press release, 19 December 2025)",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/12/19/single-currency-council-agrees-position-on-the-digital-euro-and-on-strengthening-the-role-of-cash/"
+    },
+    {
+      "label": "European Parliament: Digital euro -- MEPs ready to start negotiations (press release, 9 July 2026)",
+      "url": "https://europarl.europa.eu/news/en/press-room/20260708IPR46377/digital-euro-meps-ready-to-start-negotiations"
+    },
+    {
+      "label": "European Parliament: Legislative Train Schedule -- Digital euro file",
+      "url": "https://www.europarl.europa.eu/legislative-train/theme-an-economy-that-works-for-people/file-digital-euro"
+    },
+    {
+      "label": "ECB: The digital pound -- digital euro programme overview and project-phase status",
+      "url": "https://www.ecb.europa.eu/euro/digital_euro/html/index.en.html"
+    },
+    {
+      "label": "ECB: Speech by President Christine Lagarde, 'Stablecoins and the future of money: separating functions from instruments' (8 May 2026)",
+      "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260508~dd909fbed1.en.html"
+    },
+    {
+      "label": "ECB: Speech by Executive Board member Piero Cipollone, 'The digital transformation of money, payments and finance' (Generali Executive Series, 2 July 2026) -- source for Pontes, Appia and the digital euro pilot timeline",
+      "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260702_1~c58dcd8150.en.pdf"
+    }
+  ],
+  "open_items": [
+    "This pillar covers the EU-level framework only. Direct ECB banking supervision of individual significant banks under the Single Supervisory Mechanism, and NCA supervision of less-significant institutions, are out of scope; this pillar state does not track any individual bank's application of Article 501d or the tokenised-deposits report.",
+    "The EBA's final draft RTS on crypto exposure values (EBA/RTS/2025/04, 5 August 2025) had not been confirmed by this research as adopted by the European Commission or published in the Official Journal as of the generation date; Article 501d's own transitional treatment (1 250% risk weight for non-qualifying crypto-asset exposures; comparable treatment to underlying assets for qualifying tokenised traditional assets and MiCA-compliant tokens) is what is currently binding, not the draft RTS's more granular methodology.",
+    "The digital euro remains a proposal (COM(2023) 369, 28 June 2023), not adopted law. As of 9 July 2026 the Council and Parliament have each adopted negotiating positions and Parliament has voted to enter trilogue negotiations; no agreed text, entry-into-force date, or launch date exists. The ECB's own 'aim' for first issuance during 2029 is explicitly conditional on legislation being adopted in the course of 2026, which had not occurred as of this research.",
+    "The EBA's Report on Tokenised Deposits (12 December 2024) is a non-binding analytical report intended to promote supervisory convergence on classification, not a rule; it is not a dedicated tokenised-deposit rulebook, and this research found no EU-level instrument that creates one.",
+    "ECB President Christine Lagarde's 8 May 2026 speech on stablecoins, tokenised deposits and central-bank money is cited as an expression of ECB policy thinking, not as a binding instrument; readers should not treat it as EU law or as an EBA/ECB supervisory rule.",
+    "Watcher-coverage note (not a substantive finding): this research confirmed the ECB publishes a genuine, currently-live RSS feed for press releases, speeches and interviews at https://www.ecb.europa.eu/rss/press.xml (most recent item observed dated 9 July 2026), resolving the open question of whether the EU jurisdiction's future ECB watcher should use rss or html_diff -- rss is viable and should be preferred when this jurisdiction's watcher is built.",
+    "Significant-ART/EMT designation status (which EBA entity directly supervises which issuer) is tracked in the Stablecoins pillar, not here; this research did not re-verify current designations for this pillar.",
+    "Pontes and Appia (the Eurosystem's tokenised central bank money initiatives for wholesale markets, and the digital euro pilot's second-half-2027 start date) are sourced solely from a single ECB Executive Board member's 2 July 2026 speech slides; this research has not independently corroborated their description, scope or stated dates against dedicated ECB webpages for Pontes or Appia, and both remain project-management/policy statements rather than binding instruments."
+  ],
+  "last_changed": "2026-07-02",
+  "generated_at": "2026-07-12T15:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

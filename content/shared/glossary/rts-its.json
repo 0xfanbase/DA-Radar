@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "rts-its",
+  "term": "RTS/ITS (Regulatory & Implementing Technical Standards)",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "Two related types of detailed EU rulebook instrument used throughout MiCA and other EU financial-services law. A Regulatory Technical Standard (RTS) or Implementing Technical Standard (ITS) is drafted by ESMA or EBA under a specific mandate in a Regulation such as MiCA, then submitted to the European Commission, which can endorse it (with limited scope to amend) as a binding EU legal act -- a Commission Delegated Regulation (for an RTS) or a Commission Implementing Regulation (for an ITS). Until the Commission has adopted, and the Official Journal has published, the resulting Regulation, an RTS or ITS is only a finalised draft and is not yet binding law -- a distinction that matters for several MiCA-related technical standards still awaiting Commission endorsement. This instrument type is specific to the EU's own multi-level rulemaking architecture and does not have a direct Hong Kong or UK equivalent.",
+  "formal_definition": "The RTS/ITS procedure is set out in the Regulations establishing ESMA and EBA (Regulation (EU) No 1095/2010, Articles 10-15; Regulation (EU) No 1093/2010, Articles 10-15): the relevant European Supervisory Authority submits a draft RTS or ITS to the European Commission, which may endorse it, in whole, in part, or with amendments, as a delegated or implementing Regulation.",
+  "related_terms": [
+    "esma",
+    "eba",
+    "ec",
+    "mica"
+  ],
+  "first_used_card_id": "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b",
+  "generated_at": "2026-07-11T20:12:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "significant-art-emt",
+  "term": "Significant ART/EMT",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "The MiCA classification that moves supervision of a large asset-referenced token (ART) or e-money token (EMT) up from the issuer's home national competent authority to the European Banking Authority. An ART or EMT is classified 'significant' where it meets at least three of the quantitative and qualitative criteria -- holder count, market capitalisation, transaction volume, and cross-border/interconnectedness indicators -- set out in a European Commission delegated regulation. Once classified significant, EBA takes over direct supervision of a significant ART outright, and shares 'dual supervision' of a significant EMT issued by an e-money institution with the issuer's home NCA, chairing a supervisory college in each case. This research could not confirm, from a primary EBA or ESMA source, that any ART or EMT had actually been classified significant as of the most recent EU-level pillar-state research in this radar.",
+  "formal_definition": "MiCA Article 43 (asset-referenced tokens) and Article 56 (e-money tokens) set the significance criteria, detailed by Commission Delegated Regulation (EU) 2024/1506 of 22 February 2024. EBA Decision EBA/DC/558 of 22 October 2024 sets the procedure and timelines for classification and the transfer of supervisory powers, under which EBA supervises a significant ART directly and jointly supervises a significant EMT with the issuer's home NCA.",
+  "related_terms": [
+    "asset-referenced-token",
+    "e-money-token",
+    "eba",
+    "nca"
+  ],
+  "first_used_card_id": "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b",
+  "generated_at": "2026-07-12T05:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

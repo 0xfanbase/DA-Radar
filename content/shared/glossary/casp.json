@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "casp",
+  "term": "CASP (Crypto-Asset Service Provider)",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "Short for crypto-asset service provider -- the MiCA licence category for a firm providing one or more of the crypto-asset services MiCA lists, such as operating a trading platform, custody and administration, exchange of crypto-assets for funds or other crypto-assets, execution of orders, placing of crypto-assets, reception and transmission of orders, advice on crypto-assets, portfolio management, or transfer services. A CASP is authorised by one EU member state's national competent authority (NCA) under MiCA Title V, and that single authorisation then 'passports' so the firm can provide the same services across the whole EU. The regime has applied since 30 December 2024. A CASP licence plays a broadly similar role to Hong Kong's VATP licence or the UK's qualifying-cryptoasset-activity permissions, but with an EU-wide passport that a single-jurisdiction licence does not carry.",
+  "formal_definition": "MiCA Article 3(1)(15) defines a crypto-asset service provider as a legal person or other undertaking whose occupation or business is the 'provision of one or more crypto-asset services to clients on a professional basis'. Article 3(1)(16) enumerates the crypto-asset services, including providing custody and administration of crypto-assets on behalf of clients and operation of a trading platform for crypto-assets. Authorisation and operating conditions are set out in Title V (Articles 59-84), applicable since 30 December 2024.",
+  "related_terms": [
+    "mica",
+    "nca",
+    "esma",
+    "crypto-asset-white-paper"
+  ],
+  "first_used_card_id": "f8da9f58b4a403d8daba10c1197d70c08735f6125d5a7bc089b79a48f369cbca",
+  "generated_at": "2026-07-12T10:00:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

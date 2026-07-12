@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "crypto-asset-white-paper",
+  "term": "Crypto-asset white paper",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "The mandatory disclosure document MiCA requires before most crypto-assets (including asset-referenced tokens and e-money tokens) are offered to the public or admitted to trading in the EU -- setting out required information about the issuer, the project, the offer's terms, the rights attached to the token, the underlying technology, and the risks involved. For an asset-referenced token it must be approved by a national competent authority before publication; for most other crypto-assets it need only be notified to the relevant NCA. It plays a similar disclosure role to a securities prospectus, but is specific to MiCA's own crypto-asset categories.",
+  "formal_definition": "MiCA's own EUR-Lex summary states that issuers must 'publish a crypto-asset White Paper and any marketing communication on their website'; the detailed content requirements sit in MiCA Articles 6-15 (general crypto-assets) and the equivalent Title III/IV provisions for asset-referenced and e-money tokens (Regulation (EU) 2023/1114, OJ L 150, 9.6.2023).",
+  "related_terms": [
+    "mica",
+    "casp",
+    "asset-referenced-token",
+    "e-money-token",
+    "nca"
+  ],
+  "first_used_card_id": "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b",
+  "generated_at": "2026-07-11T20:04:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,30 @@
+{
+  "citations": [
+    {
+      "quote": "the Authority should have its seat in Frankfurt am Main, Germany",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1620/oj"
+    },
+    {
+      "quote": "AMLA starts operations, and consults on some implementing rules.",
+      "url": "https://www.amla.europa.eu/about-amla_en"
+    }
+  ],
+  "generated_at": "2026-07-12T12:00:00Z",
+  "id": "103d85c38a37c2a8bf5ab493dd1d1af7a714781f3cd1d7fb3504f45423f8adce",
+  "jurisdiction_id": "eu",
+  "key_dates": {
+    "effective": "2025-07-01"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "aml_cft_enforcement"
+  ],
+  "published_date": "2025-07-01",
+  "regulator": "AMLA",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "Regulation (EU) 2024/1620, which established the Authority for Anti-Money Laundering and Countering the Financing of Terrorism (AMLA), entered into force on 26 June 2024 and applies generally from 1 July 2025. Some provisions -- including those enabling early governance steps such as the appointment of AMLA's Chair and Executive Board members, which both took place before general application -- applied earlier, and a further set of provisions applies from 31 December 2025. The Regulation fixes AMLA's seat in Frankfurt am Main, Germany, and AMLA's own published timeline states its operations began in summer 2025. AMLA's tasks include coordinating and overseeing national AML/CFT supervisors across the financial and non-financial sectors, supporting EU Financial Intelligence Units, and eventually directly supervising a cohort of selected high-risk obliged entities -- a category that can include crypto-asset service providers. That direct-supervision phase does not start until AMLA completes its first selection process; until then, national competent authorities retain day-to-day supervision of essentially all obliged entities.",
+  "title": "AMLA, the EU Anti-Money Laundering Authority, begins operations in Frankfurt",
+  "type": "ordinance",
+  "why_it_matters": "AMLA is the EU's new central authority for anti-money-laundering supervision, and its 1 July 2025 start of operations begins the build-out of a Union-level supervisory system that will eventually take over direct oversight of a small number of high-risk obliged entities -- potentially including some crypto-asset service providers -- though for now those firms continue to be supervised by their national regulators."
+}

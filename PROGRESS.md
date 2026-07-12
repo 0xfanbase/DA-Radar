@@ -46,6 +46,12 @@ along with `git log` — to know exactly where the project stands before doing a
   live watcher wiring (`status.watcher: "live"`, `status.seeded: true`), CCR routine prepared but
   deliberately not activated (`status.analyst_verifier: "planned"`) -- see the 2026-07-11 "P9" entry
   below for the nine real gaps the final-check surfaced and how each was closed.
+- **P10 — EU onboarding (third jurisdiction, watcher-first ordering): complete.** Full seed depth (7
+  pillar states, 5 verified cards, 12-entry trajectory, 17 glossary terms, document library,
+  orientation page), MiCA-aware "already in force since 2024" framing, explicit EU-level-only scope
+  discipline, real live watcher wiring -- see the 2026-07-11/12 "P10" entry below for how the
+  watcher-before-cards phase reorder closed P9's worst gap structurally, plus the two real defects
+  (5 glossary placeholders, one fabricated quote) still found and fixed.
 
 ## Owner / next-step punch list
 
@@ -985,6 +991,90 @@ regulator ids and domains. Not yet done, logged honestly rather than overclaimed
 separate owner decision, not an oversight); the P9 workflow's background sub-agent worktrees
 (`.claude/worktrees/agent-*`) and their local git branches were manually cleaned up after extracting
 their real output, since neither is itself part of the repo's tracked history.
+
+### 2026-07-11/12 — P10: EU onboarding (third jurisdiction, watcher-first ordering)
+
+Directed the same way as P6-P9, but with the phase order deliberately restructured based on P9's own
+logged gaps: this time the real live watcher run and `pipeline.ci.seed_backfill` (for anchor events
+predating any feed's retention window) ran *before* card drafting, not after -- so every card could be
+filed directly against a real `data/eu/ledger.json` `item_hash` from the start, rather than needing the
+reconciliation pass P9 required. `config/jurisdictions/eu.json` registers 6 regulators: European
+Commission, ESMA, EBA, ECB, AMLA (all with live feeds, re-verified with the project's own fetch
+discipline), plus a zero-feed `eur_lex` citation-only entry (EUR-Lex/Official Journal) -- deliberately
+named to avoid P9's own `"legislation"`-collides-with-plain-English-prose mistake (confirmed by grep:
+zero hits for `eur_lex` anywhere in `pipeline/` outside its own config entry). Content seeded: 7 pillar
+states, 5 independently verified cards, a 12-entry trajectory, 17 new shared-glossary terms (16 EU-
+tagged, one -- `travel-rule` -- correctly scoped `["global"]` since the concept is genuinely cross-
+jurisdictional), a 2-document library, and an orientation page. The core framing threaded through every
+pillar, explicit everywhere it matters: **MiCA (Regulation (EU) 2023/1114) is already fully in force**
+(Titles III/IV -- asset-referenced tokens and e-money tokens -- applicable since 30 June 2024; the
+remainder, including CASP authorisation and market-abuse rules, since 30 December 2024) -- the opposite
+narrative shape from UK's not-yet-effective regime, and every pillar state and card distinguishes
+"already in force under MiCA itself" from "an ESMA/EBA technical standard still being finalised" from
+"genuinely proposed." A second explicit scope discipline runs throughout: this jurisdiction covers the
+EU-level framework only (the Regulations/Directives themselves, Commission delegated/implementing acts,
+ESMA/EBA technical standards, AMLA) -- actual CASP authorisation and day-to-day supervision is done by
+27 member states' own national competent authorities and is out of scope, stated plainly in
+`content/eu/orientation.json` and flagged in `open_items` wherever a pillar state's silence on it could
+otherwise mislead.
+
+**A background research sub-agent stalled for roughly 8.5 hours mid-run on an unanswered `WebSearch`
+permission prompt** (confirmed by inspecting the workflow's own journal and the stalled agent's raw
+transcript: a `WebSearch` tool call at 19:23:48 UTC got "User rejected tool use" followed by "[Request
+interrupted by user for tool use]," after which the agent sat idle -- not a slow live-fetch, a genuine
+dead end it could not resolve on its own) -- caught only because the owner asked "is this stuck or
+moving along?" partway through, prompting a direct read of the journal/transcript rather than trusting
+elapsed time alone. Its actual deliverable, `content/eu/document_library.json`, had already been written
+and schema-validated before the stall, so nothing was lost; `Workflow(..., resumeFromRunId: ...)` replayed
+the other 11 completed research agents from cache instantly and only the stalled one re-ran, completing
+cleanly the second time.
+
+**The workflow's own final-check, explicitly instructed to check each of P9's nine logged gaps
+individually rather than give a general pass/fail, confirmed 7 of 9 avoided by the reordered phase
+sequence and instructions, one only partially applicable, and one genuine repeat -- closed directly by
+the orchestrating session, same standard as every prior phase:**
+1. 5 shared-glossary files (`crypto-asset-white-paper`, `dlt-pilot-regime`, `ec`, `rts-its`,
+   `travel-rule`) still carried the literal placeholder `first_used_card_id: "PENDING-no-eu-card-yet"` --
+   the exact P9 defect pattern recurring. None of the 5 terms turned out to be textually present in any
+   of the 5 real EU cards (confirmed by direct grep, not assumed), so each was assigned to whichever real
+   card is its genuine closest topical anchor, following the same non-literal-match convention this
+   project's own oldest, pre-provenance HK glossary entries already establish (e.g. `vatp.json`'s
+   `first_used_card_id` points at a card that doesn't contain the literal string "VATP" either) --
+   confirmed via `grep -rn first_used_card_id pipeline/site/` that this field has zero downstream
+   rendering impact, so the fix is a data-integrity correction, not a live-site behavior change.
+2. The final-check's own independent citation re-verification (4 cards checked, exceeding the required
+   3) found a genuinely fabricated quote the drafting/verifying agents had both missed: the AMLA card's
+   second citation read "Summer 2025: AMLA starts operations, and consults on some implementing rules." --
+   but the real source page renders "Summer 2025" and "AMLA starts operations..." as two adjacent,
+   separately-rendered timeline-table cells with no colon anywhere joining them; the colon was invented.
+   Confirmed independently by a direct `curl` + HTML-strip + exact-substring test before touching the
+   file. Fixed by dropping the fabricated "Summer 2025:" prefix, leaving a quote that is a genuine
+   contiguous substring of the source. A fresh, independent verifier pass (not a self-certification of
+   this fix) then re-checked the entire card from scratch and, in the same pass, caught and fixed a
+   *second*, previously-unflagged problem: an unverifiable claim about the exact number of governance
+   articles taking early effect, which could not be independently re-derived from the regulation's text
+   after repeated fetch attempts -- rewritten to state only what could be confirmed. Status flipped to
+   `"verified"` by that fresh pass, then reconfirmed by a real `apply_verification_gate --jurisdiction eu`
+   re-run (zero downgrades across all 5 cards).
+
+The restructured watcher-before-cards ordering worked as intended: `data/eu/ledger.json` shows exactly 5
+`"published"` items with `card_id` set, 1:1 with the 5 real card files, with **zero** manual reconciliation
+needed this time (`promote_drafted`/`promote_verified --jurisdiction eu` both report 0 newly promoted when
+re-run after this session's fixes, confirming the workflow's own gate run had already linked everything
+correctly the first time) -- a direct structural fix of P9's worst gap, not just a smaller instance of it.
+`config/site.json`'s `eu` entry now reads `status.watcher: "live"`, `status.seeded: true`,
+`status.analyst_verifier: "planned"` (same deliberate non-activation as UK); `.github/workflows/watch.yml`'s
+matrix is `[hk, uk, eu]`. `docs/analyst-runbook.md` and both prompt files were correctly left untouched --
+confirmed by `git status --porcelain` showing neither -- since P9 already made Step 0 a real registry loop
+that needs no jurisdiction-specific edit to extend.
+
+**Verification, run fresh by the orchestrating session, after both fixes above:** full pytest suite
+439/439 passing; `pipeline.ci.validate_content` 35/35 files OK; `apply_verification_gate --jurisdiction eu`
+re-run clean, all 5 cards `"verified"`, zero downgrades; a full `pipeline.site.generate` rebuild from a
+clean `_site/` succeeded, `_site/eu/index.html` confirmed to show real EU content (zero "coming soon"
+hits, real ESMA/MiCA/EBA/AMLA/European Commission mentions); repo-wide `grep -rl PENDING
+content/shared/glossary/` confirmed clean. Not yet done, logged honestly: `eu`'s `analyst_verifier` stays
+`"planned"`, same deliberate non-activation pattern as `hk`/`uk`.
 
 ## PM checkpoints (Fable)
 

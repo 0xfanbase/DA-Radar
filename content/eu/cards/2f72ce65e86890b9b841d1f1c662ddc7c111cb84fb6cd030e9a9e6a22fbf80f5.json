@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "2f72ce65e86890b9b841d1f1c662ddc7c111cb84fb6cd030e9a9e6a22fbf80f5",
+  "jurisdiction_id": "eu",
+  "published_date": "2026-07-02",
+  "regulator": "European Central Bank (ECB)",
+  "pillar": [
+    "banking_money",
+    "stablecoins",
+    "tokenization_rwa"
+  ],
+  "type": "speech",
+  "title": "Piero Cipollone: The digital transformation of money, payments and finance",
+  "summary": "On 2 July 2026, ECB Executive Board member Piero Cipollone presented 'The digital transformation of money, payments and finance' to the Generali Executive Series. The slides set out a 'taxonomy of the digital settlement asset landscape,' dividing settlement assets into public forms -- central bank money for retail and wholesale digital transactions -- and private forms -- tokenised deposits and stablecoins. On the digital euro, Cipollone described the project's current phase (since November 2025), a planned 12-month pilot starting in the second half of 2027, and a possible first issuance during 2029, contingent on EU co-legislators adopting the digital euro Regulation, not yet done. For wholesale markets, the ECB's Pontes service, linking DLT platforms to TARGET Services for settlement in central bank money, is due to launch in September 2026; a longer-term 'Appia' blueprint is targeted for 2028.",
+  "why_it_matters": "This speech gives a newcomer the ECB's own framework for the EU's digital-money landscape, positioning the digital euro and its own settlement infrastructure (Pontes, Appia) as the public-sector counterpart to privately issued options like stablecoins and tokenised bank deposits. It also confirms concrete near-term dates -- a Pontes launch in September 2026 and a digital euro pilot from the second half of 2027 -- though full digital euro issuance still depends on EU lawmakers adopting legislation that has not yet passed.",
+  "citations": [
+    {
+      "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260702_1~c58dcd8150.en.pdf",
+      "quote": "Central bank money as the risk-free settlement anchor alongside private settlement assets"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T15:30:00Z",
+  "model": "Claude (Anthropic)"
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "pillar": "aml_cft_enforcement",
+  "status_seal": "in_force",
+  "regulator": "AMLA and EBA",
+  "instruments": [
+    "Regulation (EU) 2023/1113 of the European Parliament and of the Council of 31 May 2023 on information accompanying transfers of funds and certain crypto-assets and amending Directive (EU) 2015/849 (recast Transfer of Funds Regulation, 'travel rule') -- applicable since 30 December 2024",
+    "EBA Guidelines on information requirements in relation to transfers of funds and certain crypto-assets transfers under Regulation (EU) 2023/1113 ('Travel Rule Guidelines') -- published 4 July 2024, applicable since 30 December 2024",
+    "Regulation (EU) 2024/1624 of the European Parliament and of the Council of 31 May 2024 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing (Anti-Money Laundering Regulation, AMLR) -- applies from 10 July 2027",
+    "Directive (EU) 2024/1640 of the European Parliament and of the Council of 31 May 2024 on the mechanisms to be put in place by Member States for the prevention of the use of the financial system for money laundering or terrorist financing (AMLD6) -- staggered transposition, main deadline 10 July 2027",
+    "Regulation (EU) 2024/1620 of the European Parliament and of the Council of 31 May 2024 establishing the Authority for Anti-Money Laundering and Countering the Financing of Terrorism (AMLA) -- AMLA operational since 1 July 2025; direct supervision of selected obliged entities from 1 January 2028"
+  ],
+  "standing_summary": "This pillar tracks the EU-level AML/CFT rulebook applicable to crypto-asset service providers (CASPs) and the build-out of AMLA, the EU's new dedicated authority; it does not track enforcement against any named firm -- freezing funds, imposing penalties, revoking a registration or licence -- which remains an act of the 27 member states' national competent authorities (NCAs) and financial intelligence units (FIUs) under national procedure and is out of scope of this EU-level pillar. Two distinct time-tracks coexist. Already in force: Regulation (EU) 2023/1113 of 31 May 2023, the recast Transfer of Funds Regulation, extended the 'travel rule' -- the requirement that originator and beneficiary information travel with a transfer -- from traditional fund transfers to crypto-asset transfers, with CASPs' obligations applicable from 30 December 2024, the same date MiCA's own CASP-authorisation regime took effect; the Regulation also amended Directive (EU) 2015/849 to bring CASPs regulated under MiCA within the definition of 'financial institution' for AML purposes, removing the separate registration route those firms previously used. The EBA's implementing Guidelines on information requirements in relation to transfers of funds and certain crypto-assets transfers under Regulation (EU) 2023/1113 -- addressed to payment service providers, intermediary PSPs, CASPs and intermediary CASPs, and specifying how each should detect missing or incomplete originator/beneficiary information and what to do when it is missing -- were published 4 July 2024 and applied from the same 30 December 2024 date. Both instruments are accordingly live and binding today, not proposals. Forward pipeline, adopted but not yet in force for CASPs: the 2024 AML package recast the rest of the framework. Regulation (EU) 2024/1624 (AMLR), adopted the same day as the rest of the package (31 May 2024), is a single, directly-applicable rulebook that brings MiCA-authorised CASPs fully into scope as 'obliged entities' -- subject to customer due diligence, beneficial-ownership and internal-control obligations -- but it applies only from 10 July 2027, not today. Directive (EU) 2024/1640 (AMLD6) governs member states' AML supervisory architecture, FIU powers and beneficial-ownership registers; as a directive it requires national transposition rather than applying directly, on a staggered timetable (Article 74 by 10 July 2025; Articles 11, 12, 13 and 15 by 10 July 2026; the bulk of the directive, including the national-supervisor mechanisms most relevant to CASPs, by 10 July 2027; Article 18's registry-access provisions by 10 July 2029) -- meaning its substantive content is exercised by NCAs and FIUs under national law once transposed, and this EU-level pillar notes only the framework's existence and timetable, not any member state's implementation. The third strand is institutional. Regulation (EU) 2024/1620 of 31 May 2024 established AMLA, seated in Frankfurt am Main; AMLA took up its powers and responsibilities on 1 July 2025 and has stated, in the crypto-specific context, that it expects licensing authorities to ensure CASPs have 'effective AML/CFT systems in place from day one of their authorisation,' describing the crypto-asset sector as facing 'significant money laundering and terrorist financing (ML/TF) risks due to their technological features, cross-border operations, and anonymity-enhancing capabilities' and as an immediate supervisory-convergence priority. AMLA's own direct supervisory powers -- taking over supervision of a first cohort of roughly 40 high-risk, cross-border obliged entities expected to be drawn from credit institutions, other financial institutions and CASPs meeting cross-border and materiality thresholds -- do not begin until 1 January 2028. The selection exercise runs through 2027: AMLA published a standardised reporting template and interpretative note for national supervisors, held a public webinar on the template on 10 June 2026, set a national-supervisor data-collection deadline of 15 August 2026, and expects a provisional list of eligible obliged entities by end-September 2026, ahead of the formal 2027 selection cycle. Until AMLA's direct supervision begins -- and for every obliged entity not selected into that first cohort thereafter -- day-to-day AML/CFT supervision of individual CASPs remains an NCA function, out of scope here. In short: the crypto travel rule is live today under Regulation (EU) 2023/1113 and the EBA's implementing guidelines; the single AML rulebook (AMLR) and AMLA's direct supervisory mandate over crypto firms are real, adopted law with fixed future dates (10 July 2027 and 1 January 2028 respectively), not proposals -- but neither is yet in effect, and AMLA itself, though operational since mid-2025, is still in an institution-building and preparatory phase rather than exercising direct supervisory power over any CASP today.",
+  "last_changed": "2026-06-10",
+  "key_links": [
+    {
+      "label": "EUR-Lex: Regulation (EU) 2023/1113 -- information accompanying transfers of funds and certain crypto-assets (recast Transfer of Funds Regulation)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1113/oj/eng"
+    },
+    {
+      "label": "EBA: Guidelines on information requirements in relation to transfers of funds and certain crypto-assets transfers under Regulation (EU) 2023/1113",
+      "url": "https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/anti-money-laundering-and-countering-financing-terrorism/guidelines-information-requirements-relation-transfers-funds-and-certain-crypto-assets-transfers"
+    },
+    {
+      "label": "EUR-Lex: Regulation (EU) 2024/1624 -- Anti-Money Laundering Regulation (AMLR)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng"
+    },
+    {
+      "label": "EUR-Lex: Directive (EU) 2024/1640 -- AML/CFT mechanisms to be put in place by Member States (AMLD6)",
+      "url": "https://eur-lex.europa.eu/eli/dir/2024/1640/oj/eng"
+    },
+    {
+      "label": "EUR-Lex: Regulation (EU) 2024/1620 -- establishing the Authority for Anti-Money Laundering and Countering the Financing of Terrorism (AMLA)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1620/oj/eng"
+    },
+    {
+      "label": "AMLA: About AMLA -- mandate, seat and direct-supervision role",
+      "url": "https://www.amla.europa.eu/about-amla_en"
+    },
+    {
+      "label": "AMLA: 'AMLA expects high standards against financial crime in crypto sector' (15 July 2025)",
+      "url": "https://www.amla.europa.eu/news-media/news-articles/amla-expects-high-standards-against-financial-crime-crypto-sector_en"
+    },
+    {
+      "label": "AMLA: 'AMLA takes next step toward 2027 selection of entities for direct supervision'",
+      "url": "https://www.amla.europa.eu/amla-takes-next-step-toward-2027-selection-entities-direct-supervision_en"
+    },
+    {
+      "label": "AMLA: Explainer -- Towards AMLA's Direct Supervision (PDF)",
+      "url": "https://www.amla.europa.eu/document/download/5aa923cc-eece-4cff-a9dd-4f687e88962b_en?filename=Explainer+-+Direct+Supervision+by+AMLA.pdf"
+    }
+  ],
+  "open_items": [
+    "This pillar covers the EU-level framework only. Actual CASP authorisation is tracked in the Exchanges/VATP and Dealing, Custody, Advisory & Management pillars, not here; day-to-day AML/CFT supervision of individual CASPs (whether by an NCA today, or by AMLA directly from 1 January 2028 for a selected cohort) and any enforcement action against a named firm are out of scope of this EU-level pillar.",
+    "The precise composition of AMLA's first ~40-entity direct-supervision cohort, and how many (if any) will be CASPs, will not be known until the formal 2027 selection cycle concludes; this research found only the eligibility criteria and process timetable (webinar 10 June 2026, national-supervisor data collection by 15 August 2026, provisional eligible-entity list expected end-September 2026), not a confirmed list of entities.",
+    "Directive (EU) 2024/1640 (AMLD6) requires national transposition; this pillar state does not track any individual member state's transposing legislation, FIU powers, or beneficial-ownership register as implemented -- only the EU-level directive's existence and the transposition timetable set out above.",
+    "This research did not identify any AMLA or EBA enforcement or supervisory-convergence measure specifically naming a crypto-asset service provider; AMLA's public statements on the crypto sector to date (e.g. its 15 July 2025 news article) describe supervisory expectations and risk priorities in general terms, not case-specific findings.",
+    "The EBA authored the Travel Rule Guidelines in 2024 before AMLA became operational (1 July 2025); this pillar state has not verified whether ongoing stewardship of those Guidelines, or future AML/CFT technical standards touching CASPs, has formally transferred from the EBA to AMLA, or is being exercised jointly -- both bodies are cited in the regulator field pending clarification.",
+    "The Financial Action Task Force (FATF) 'travel rule' standard that Regulation (EU) 2023/1113 implements is referenced in the Regulation's own recitals as context; FATF is not an EU body and is not itself a source tracked by this radar."
+  ],
+  "generated_at": "2026-07-11T19:08:35Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

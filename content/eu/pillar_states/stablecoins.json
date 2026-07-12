@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "pillar": "stablecoins",
+  "status_seal": "in_force",
+  "regulator": "EBA and ESMA",
+  "instruments": [
+    "Regulation (EU) 2023/1114 (Markets in Crypto-Assets Regulation, MiCA), Titles III (asset-referenced tokens) and IV (e-money tokens)",
+    "Commission Delegated Regulation (EU) 2024/1506 of 22 February 2024 (criteria for classifying asset-referenced tokens and e-money tokens as significant)",
+    "EBA Decision EBA/DC/558 (22 October 2024) on the procedure for the significance assessment of ARTs/EMTs and the transfer of supervisory powers under MiCAR",
+    "EBA final Regulatory Technical Standards and Guidelines under MiCA Titles III/IV (reserve-of-assets liquidity management, own funds and stress testing, conflicts of interest, governance, redemption and recovery plans)"
+  ],
+  "standing_summary": "This pillar covers only the EU-level layer of the stablecoin regime -- the Regulation itself, European Commission delegated acts, and EBA/ESMA technical standards, guidelines and coordination. Authorisation of individual asset-referenced token (ART) and e-money token (EMT) issuers, and day-to-day supervision of non-significant issuers, are acts of the 27 member-state national competent authorities (NCAs) and are out of scope; this pillar state does not track individual issuer authorisations. Subject to that scope limit, MiCA Titles III and IV are the earliest-applied, and now longest-operating, part of MiCA: they have applied since 30 June 2024, six months ahead of the rest of the Regulation (30 December 2024), per the Regulation's own staggered application provisions (Regulation (EU) 2023/1114, OJ L 150, 9.6.2023). Title III requires an entity offering an ART to the public or seeking its admission to trading to be authorised by an NCA and to publish an NCA-approved crypto-asset white paper, and imposes ongoing reserve-of-assets, redemption-at-market-value, and own-funds requirements on the issuer. Title IV confines EMT issuance to authorised credit institutions and electronic money institutions, requires redemption at par on demand, and (Article 54) requires the issuer to invest funds received in exchange for EMTs so that a floor of the reserve is held as deposits with EU credit institutions, with the remainder in secure, highly liquid low-risk instruments denominated in the referenced currency. Both Titles are fleshed out by a suite of EBA final RTS, ITS and Guidelines -- covering the minimum contents of liquidity management policies, highly liquid reserve instruments, own-funds adjustment and stress testing, conflicts-of-interest policies and governance arrangements for ART issuers, redemption plans, recovery plans, and (jointly with ESMA) suitability assessment of shareholders and management-body members -- all listed on EBA's asset-referenced-and-e-money-tokens hub page as adopted and published. An ART or EMT is classified 'significant' where at least three of the quantitative and qualitative criteria set out in Commission Delegated Regulation (EU) 2024/1506 are met (holder count, market capitalisation, transaction volume, cross-border/interconnectedness indicators); EBA Decision EBA/DC/558 of 22 October 2024 sets the procedure and timelines for that classification and for transferring supervision -- EBA takes over direct supervision of significant ARTs outright, and shares 'dual supervision' of significant EMTs issued by e-money institutions with the issuer's home NCA, chairing a supervisory college for each. This research could not confirm from a primary EBA or ESMA source whether any ART or EMT has actually been classified significant as of this writing; that live status is flagged in open items rather than asserted. The most recent concrete EU-level activity is procedural rather than a new substantive rule: on 26 June 2026 EBA opened a consultation on a draft methodology for calculating fines against issuers of significant ARTs/EMTs (or their management bodies) under MiCA Articles 130-134, with a public hearing on 16 July 2026 and comments due 28 September 2026 -- itself confirming that EBA's fining power under MiCA applies only to issuers it directly or jointly supervises as significant, not to the general population of EU stablecoin issuers. ESMA separately maintains an interim, CSV-based EU-wide register of ART and EMT issuers reported by NCAs (legal basis: MiCA Articles 109-110), updated weekly, pending its planned integration into ESMA's permanent IT systems around mid-2026; that register, not this pillar state, is the authoritative current list of authorised issuers.",
+  "last_changed": "2026-06-26",
+  "key_links": [
+    {
+      "label": "EUR-Lex: Regulation (EU) 2023/1114 (MiCA) -- consolidated text",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1114"
+    },
+    {
+      "label": "EUR-Lex: summary of Regulation (EU) 2023/1114 (application dates, structure)",
+      "url": "https://eur-lex.europa.eu/EN/legal-content/summary/european-crypto-assets-regulation-mica.html"
+    },
+    {
+      "label": "EUR-Lex: Commission Delegated Regulation (EU) 2024/1506 of 22 February 2024 (significance criteria)",
+      "url": "https://eur-lex.europa.eu/eli/reg_del/2024/1506/oj/eng"
+    },
+    {
+      "label": "EBA: Decision EBA/DC/558 on the procedure for significance assessment under MiCAR (22 Oct 2024, PDF)",
+      "url": "https://www.eba.europa.eu/sites/default/files/2024-10/6151cec3-ebd2-4e8e-a0e0-3ea9f8bd5c99/EBA%20DC%20558_Decision%20on%20procedure%20for%20significance%20assessment%20MiCAR.pdf"
+    },
+    {
+      "label": "EBA press release: EBA clarifies the procedure for classification of ARTs/EMTs as significant and transfer of supervisory powers (22 Oct 2024)",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-clarifies-procedure-classification-asset-referenced-tokens-and-e-money-tokens-significant-and"
+    },
+    {
+      "label": "EBA: Asset-referenced and e-money tokens (MiCA) -- hub page for finalised RTS/ITS/Guidelines",
+      "url": "https://www.eba.europa.eu/regulation-and-policy/asset-referenced-and-e-money-tokens-mica"
+    },
+    {
+      "label": "EBA: EBA's supervisory role under MiCA (significant ART/EMT direct and dual supervision)",
+      "url": "https://www.eba.europa.eu/activities/direct-supervision-and-oversight/ebas-supervisory-role-under-mica"
+    },
+    {
+      "label": "EBA press release: EBA consults on draft methodology for setting fines under MiCA (26 Jun 2026)",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/european-banking-authority-consults-draft-methodology-setting-fines-under-markets-crypto-assets"
+    },
+    {
+      "label": "ESMA: Markets in Crypto-Assets Regulation (MiCA) -- role, register and technical standards",
+      "url": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica"
+    }
+  ],
+  "open_items": [
+    "This research could not confirm from a primary EBA or ESMA source whether any ART or EMT has yet been classified 'significant' under Article 56/Delegated Regulation (EU) 2024/1506; secondary commentary reports none had been so classified as of early 2026, but that is not independently verified here and should be re-checked against EBA's supervisory-role page or ESMA's register before being treated as current fact.",
+    "The precise reserve-investment split in MiCA Article 54 (the floor share of EMT-backing funds that must sit as bank deposits, and the higher floor applicable once an EMT is significant) is corroborated across multiple independent secondary legal summaries but this research could not machine-extract the article's exact operative text directly from EUR-Lex's HTML rendering (the full Regulation is too large to extract in one pass); the qualitative requirement -- a bank-deposit floor plus the remainder in secure, highly liquid, low-risk instruments in the referenced currency -- is corroborated, but exact percentages should be re-confirmed directly against Article 54's text before being cited as precise figures.",
+    "Actual authorisation of individual ART/EMT issuers, and day-to-day supervision of non-significant issuers, are acts of the 27 member-state NCAs, not EU-level bodies; this pillar state does not track or list individual issuers or authorisation decisions -- ESMA's interim register (linked above) is the primary source for that.",
+    "ESMA's interim MiCA register is explicitly transitional (CSV-based, weekly updates) pending integration into ESMA's permanent IT systems around mid-2026; this research did not independently query the register's current issuer counts.",
+    "EBA's draft fines methodology (consultation opened 26 June 2026, comments due 28 September 2026) is not yet finalised and has not yet been applied to any issuer.",
+    "The EU-level digital-euro and tokenised-deposit/EMT boundary work by the ECB and EBA is covered in the Banking & Money pillar, not here."
+  ],
+  "generated_at": "2026-07-11T18:58:23Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

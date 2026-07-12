@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "id": "eba",
+  "term": "EBA (European Banking Authority)",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "The EU's banking regulator, and the lead EU-level body for MiCA's stablecoin provisions -- asset-referenced tokens (Title III) and e-money tokens (Title IV) -- as well as the crypto travel-rule guidelines implementing the recast Transfer of Funds Regulation, and technical standards on banks' own prudential treatment of crypto-asset exposures under the Capital Requirements Regulation. EBA takes over direct supervision of an ART or EMT classified 'significant', and shares supervision of a significant EMT with the issuer's home national competent authority. EBA does not itself authorise or supervise ordinary (non-significant) stablecoin issuers -- that remains an NCA function. It plays a broadly similar EU-level standard-setting role for banking and stablecoin matters to how the HKMA regulates stablecoin issuers in Hong Kong, but EBA sits above, rather than in place of, the 27 national regulators.",
+  "formal_definition": "The European Banking Authority, established under Regulation (EU) No 1093/2010 (the EBA Regulation), is the EU-level authority for MiCA Titles III and IV technical standards and guidelines, for the significance classification and direct/dual supervision of significant ARTs and EMTs, and for the EBA Guidelines on information requirements under Regulation (EU) 2023/1113 (the crypto travel rule).",
+  "related_terms": [
+    "esma",
+    "amla",
+    "asset-referenced-token",
+    "e-money-token",
+    "significant-art-emt",
+    "mica"
+  ],
+  "first_used_card_id": "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b",
+  "generated_at": "2026-07-12T05:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "id": "asset-referenced-token",
+  "term": "Asset-referenced token (ART)",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "A category of stablecoin-like crypto-asset under MiCA Title III that tries to hold a stable value by referencing more than one thing -- for example a basket of currencies, commodities, or other crypto-assets -- rather than a single official currency (which is instead an e-money token). Offering an ART to the public in the EU, or seeking its admission to trading, requires authorisation by a national competent authority and an NCA-approved crypto-asset white paper, plus ongoing reserve-of-assets, redemption-at-market-value, and own-funds requirements on the issuer. Title III has applied since 30 June 2024, six months ahead of the rest of MiCA. This is the EU's own regime-specific instrument in the same space as this glossary's general 'stablecoin' entry -- broadly the EU counterpart to what Hong Kong's Stablecoins Ordinance and the UK's qualifying-stablecoin regime cover for their own currencies.",
+  "formal_definition": "MiCA's own EUR-Lex summary describes asset-referenced tokens as 'crypto-assets that stabilise their value in relation to other assets or a basket of assets'; the formal definition sits in MiCA Article 3(1)(6). Title III (Articles 16-47) sets authorisation, white-paper, reserve-of-assets, redemption and own-funds requirements for ART issuers, applicable since 30 June 2024 (Regulation (EU) 2023/1114, OJ L 150, 9.6.2023).",
+  "related_terms": [
+    "mica",
+    "e-money-token",
+    "stablecoin",
+    "significant-art-emt",
+    "eba",
+    "crypto-asset-white-paper"
+  ],
+  "first_used_card_id": "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b",
+  "generated_at": "2026-07-12T05:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

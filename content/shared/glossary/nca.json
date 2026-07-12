@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "nca",
+  "term": "NCA (National Competent Authority)",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "The member-state-level regulator that actually authorises and supervises an individual crypto-asset service provider (CASP) or asset-referenced/e-money token issuer under MiCA -- for example, a country's own securities regulator or central bank. MiCA, the DLT Pilot Regime, and the crypto travel rule are all EU-level Regulations that set the rulebook, but the actual licensing decision, day-to-day supervision, and any enforcement action against a named firm are acts of the relevant NCA under its own national administrative procedure, not of ESMA, EBA, or the European Commission. Once one member state's NCA authorises a CASP, that authorisation passports across the whole EU. This is a genuine scope limitation for this radar: because this jurisdiction's coverage is EU-level only, individual NCA authorisation decisions, national supervisory practice, and enforcement against named firms are out of scope of the cards and pillar states this project publishes for the EU -- the radar tracks the Regulation itself, Commission delegated/implementing acts, and ESMA/EBA/AMLA technical standards and guidelines, not any of the 27 member states' own regulators' case-by-case decisions.",
+  "formal_definition": "MiCA (Regulation (EU) 2023/1114) requires each member state to designate one or more national competent authorities responsible for authorising and supervising crypto-asset service providers under Title V and asset-referenced/e-money token issuers under Titles III-IV; NCA identity and structure vary by member state and are not tracked individually by this EU-level-only jurisdiction.",
+  "related_terms": [
+    "mica",
+    "casp",
+    "esma",
+    "eba",
+    "asset-referenced-token"
+  ],
+  "first_used_card_id": "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b",
+  "generated_at": "2026-07-12T05:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

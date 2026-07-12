@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "pillar": "exchanges_vatp",
+  "status_seal": "in_force",
+  "regulator": "ESMA",
+  "instruments": [
+    "Regulation (EU) 2023/1114 of the European Parliament and of the Council of 31 May 2023 on markets in crypto-assets (MiCA) -- Title V (authorisation and operating conditions of crypto-asset service providers, including operation of a trading platform for crypto-assets) and Title VI (market abuse involving crypto-assets, Articles 86-92)",
+    "Commission Delegated Regulation (EU) 2025/416 of 29 November 2024 supplementing MiCA with regulatory technical standards specifying the content and format of order book records for crypto-asset service providers operating a trading platform for crypto-assets (MiCA Article 76(16))",
+    "ESMA Final Report on draft regulatory technical standards specifying arrangements, systems and procedures to prevent and detect market abuse, the suspicious transaction and order report (STOR) template, and cross-border coordination procedures under MiCA Article 92(2) (ESMA75-453128700-1278, 17 December 2024, submitted to the European Commission for adoption)",
+    "ESMA Guidelines on supervisory practices for competent authorities to prevent and detect market abuse under MiCA (ESMA75-453128700-1039, published 9 July 2025)",
+    "ESMA Guidelines on reverse solicitation under MiCA (ESMA35-1872330276-1899, 17 December 2024)"
+  ],
+  "standing_summary": "MiCA Title V's crypto-asset service provider (CASP) authorisation regime -- which covers, among the enumerated crypto-asset services, operation of a trading platform for crypto-assets -- has applied across the Union since 30 December 2024 under Regulation (EU) 2023/1114's own application-date provisions (the earlier-applying asset-referenced-token and e-money-token regimes in Titles III/IV are a separate pillar). Authorisation granted by any one member state's national competent authority (NCA) passports a CASP to provide the same services throughout the EU; the individual authorisation decisions, day-to-day supervision of authorised platforms, and any enforcement action against a named platform are all NCA acts taken under national administrative procedure and are out of scope of this EU-level pillar. What is EU-level and already in force: (1) ESMA's central register of authorised CASPs and of entities providing crypto-asset services without authorisation, which Articles 109-110 MiCA required ESMA to stand up by 30 December 2024 and which ESMA publishes as an interim, weekly-updated set of CSV files pending integration into its permanent IT systems; (2) Commission Delegated Regulation (EU) 2025/416 of 29 November 2024, a finalised RTS under Article 76(16) MiCA specifying the content and machine-readable (JSON, ISO 20022-aligned) format of the order-book records that trading-platform CASPs must keep, in force twenty days after its 14 March 2025 Official Journal publication; and (3) Title VI's market-abuse regime for crypto-assets (insider dealing, unlawful disclosure of inside information, and market manipulation, Articles 86-92 MiCA), applicable since 30 December 2024 alongside the rest of Title V. At EU level, Title VI is implemented by ESMA's draft RTS specifying the arrangements, systems and procedures that persons professionally arranging or executing crypto-asset transactions (including trading-platform CASPs) must have in place to detect and report suspected market abuse, plus a standardised suspicious transaction and order report (STOR) template and cross-border coordination procedures between NCAs (Final Report ESMA75-453128700-1278 of 17 December 2024, submitted to the European Commission for adoption under Article 92(2)), and by ESMA's Guidelines on supervisory practices to prevent and detect market abuse under MiCA (ESMA75-453128700-1039, published 9 July 2025 and directed at NCA supervisory practice rather than firm conduct directly). A related Title V strand bearing on access to EU trading platforms from outside the Union is ESMA's Guidelines on reverse solicitation under MiCA (ESMA35-1872330276-1899, 17 December 2024), confirming that the exemption allowing a third-country firm to serve an EU client only at that client's own exclusive initiative must be read narrowly. MiCA's transitional regime -- under which CASPs already operating under national law before 30 December 2024 could keep trading pending an authorisation decision -- reached its outer 18-month limit on 1 July 2026; ESMA's 23 June 2026 public statement (ESMA75-113276571-1710, building on its 17 April 2026 statement) set out wind-down expectations for CASPs that remained unauthorised at that date, underlining that MiCA's client-asset and other protections do not extend to unauthorised providers and that ESMA and NCAs are coordinating on cross-border wind-downs.",
+  "last_changed": "2026-07-01",
+  "key_links": [
+    {
+      "label": "EUR-Lex: Regulation (EU) 2023/1114 (MiCA), consolidated text",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj/eng"
+    },
+    {
+      "label": "ESMA: Markets in Crypto-Assets Regulation (MiCA) -- activities, register and technical standards overview",
+      "url": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica"
+    },
+    {
+      "label": "EUR-Lex: Commission Delegated Regulation (EU) 2025/416 -- RTS on order book records for trading-platform CASPs",
+      "url": "https://eur-lex.europa.eu/eli/reg_del/2025/416/oj/eng"
+    },
+    {
+      "label": "ESMA: Final Report -- draft RTS on detection and prevention of market abuse under MiCA Article 92(2) (17 Dec 2024)",
+      "url": "https://www.esma.europa.eu/sites/default/files/2024-12/ESMA75-453128700-1278_Final_Report_STOR_MiCA_Article_92_2_.pdf"
+    },
+    {
+      "label": "ESMA: Guidelines on supervisory practices to prevent and detect market abuse under MiCA (9 Jul 2025)",
+      "url": "https://www.esma.europa.eu/sites/default/files/2025-07/ESMA75-453128700-1039_Guidelines_on_supervisory_practices_to_prevent_and_detect_market_abuse__MiCA_.pdf"
+    },
+    {
+      "label": "ESMA: Final Report -- Guidelines on reverse solicitation under MiCA (17 Dec 2024)",
+      "url": "https://www.esma.europa.eu/sites/default/files/2024-12/ESMA35-1872330276-1899_-_Final_report_on_GLs_on_reverse_solicitation_under_MiCA.pdf"
+    },
+    {
+      "label": "ESMA: Public Statement -- unauthorised CASPs must wind down orderly as MiCA transitional period ends (23 Jun 2026)",
+      "url": "https://www.esma.europa.eu/sites/default/files/2026-06/ESMA75-113276571-1710_Public_Statement_MiCA_transitional_period_ends.pdf"
+    },
+    {
+      "label": "ESMA: Statement on the end of transitional periods under MiCA (17 Apr 2026)",
+      "url": "https://www.esma.europa.eu/sites/default/files/2026-04/ESMA75-113276571-1679_Statement_on_the_end_of_transitional_periods_under_MiCA.pdf"
+    }
+  ],
+  "open_items": [
+    "The other Title V crypto-asset services -- custody and administration, exchange of crypto-assets for funds/other crypto-assets, execution and reception/transmission of orders, advice, and portfolio management -- are covered in the Dealing, Custody, Advisory & Management pillar, not here; only operation of a trading platform and the Title VI market-abuse regime are scoped to this pillar.",
+    "Individual CASP authorisation decisions, day-to-day supervision of authorised trading platforms, and enforcement action against any named platform are acts of the 27 member-state national competent authorities under national administrative procedure and are out of scope of this EU-level pillar.",
+    "The current headline count of ESMA-registered authorised CASPs was not verified against a dated primary ESMA source at the time of writing and is therefore omitted from the summary; consult ESMA's live interim MiCA register (linked above, updated weekly) for the current figure rather than third-party trackers.",
+    "The Article 92(2) market-abuse RTS (Final Report ESMA75-453128700-1278) is cited as ESMA's finalised draft submitted to the European Commission; this pillar state was not able to confirm a published Official Journal reference number for the resulting Commission Delegated Regulation as of the generation date, and the Final Report itself is cited as the primary source for its content.",
+    "The Transfer of Funds Regulation travel-rule extension to crypto-asset transfers, the 2024 AML package, and AMLA's institutional build-out are tracked in the AML/CFT & Enforcement pillar, not here.",
+    "This pillar covers the EU-level framework only, per the jurisdiction-wide scope note: Regulations and Directives, European Commission delegated/implementing acts, and ESMA technical standards, guidelines and register/coordination activity. It does not track national implementing measures or NCA supervisory practice beyond what ESMA guidelines require of NCAs."
+  ],
+  "generated_at": "2026-07-11T18:54:09Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

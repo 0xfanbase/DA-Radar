@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "id": "digital-euro",
+  "term": "Digital euro",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "A proposed central bank digital currency (CBDC) for the euro area -- a digital form of central-bank money, issued by the European Central Bank and intended to be available to everyone in the euro area, alongside physical cash. It is not yet law: the European Commission proposed the enabling Regulation on 28 June 2023 (COM(2023) 369), the Council of the EU adopted its negotiating position in December 2025, and the European Parliament voted in July 2026 to open trilogue negotiations with the Council -- but no agreed legislative text, entry-into-force date, or issuance date exists yet. In parallel, and independent of that legislation, the ECB has been running its own project-preparation phase since October 2025 and has stated it aims to be ready for a potential first issuance during 2029, explicitly conditional on the enabling EU legislation being adopted in the course of 2026.",
+  "formal_definition": "European Commission, Proposal for a Regulation of the European Parliament and of the Council on the establishment of the digital euro, COM(2023) 369 final (28 June 2023) -- not yet adopted. The ECB's own description of the project: the digital euro 'would be a digital form of cash, issued by the central bank'.",
+  "related_terms": [
+    "ec"
+  ],
+  "first_used_card_id": "2f72ce65e86890b9b841d1f1c662ddc7c111cb84fb6cd030e9a9e6a22fbf80f5",
+  "generated_at": "2026-07-12T15:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

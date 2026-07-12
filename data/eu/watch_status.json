@@ -1,0 +1,49 @@
+{
+  "feeds": {
+    "amla_news": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "amla",
+      "status": "ok",
+      "status_since": "2026-07-12T04:07:10Z"
+    },
+    "eba_news": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "eba",
+      "status": "ok",
+      "status_since": "2026-07-12T04:07:10Z"
+    },
+    "ec_presscorner": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "ec",
+      "status": "ok",
+      "status_since": "2026-07-12T04:07:10Z"
+    },
+    "ecb_banking_supervision_press": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "ecb",
+      "status": "ok",
+      "status_since": "2026-07-12T04:07:10Z"
+    },
+    "ecb_press": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "ecb",
+      "status": "ok",
+      "status_since": "2026-07-12T04:07:10Z"
+    },
+    "esma_news": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "esma",
+      "status": "ok",
+      "status_since": "2026-07-12T04:07:10Z"
+    }
+  },
+  "generated_at": "2026-07-12T04:07:10Z",
+  "jurisdiction_id": "eu",
+  "schema_version": 1
+}
