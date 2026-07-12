@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "pillar": "dealing_custody_advisory",
+  "status_seal": "no_dedicated_regime",
+  "regulator": "FINMA (Swiss Financial Market Supervisory Authority)",
+  "instruments": [
+    "Federal Act on Financial Services (Financial Services Act, FinSA/FIDLEG), SR 950.1 -- conduct-of-business rules for anyone providing financial services in Switzerland, applied to dealing and advisory activity in crypto assets that qualify as financial instruments",
+    "Federal Act on Financial Institutions (Financial Institutions Act, FinIA/FINIG), SR 954.1 -- licensing of portfolio managers, trustees, securities firms and other financial institutions, applied without a crypto-specific licence category",
+    "Federal Act on Banks and Savings Banks (Banking Act, BankA/BankG), SR 952.0, in particular Art. 1b (the 'fintech licence') and the DLT Act's amendments on custody of crypto-based assets",
+    "Federal Act on Debt Enforcement and Bankruptcy (SchKG/LP), SR 281.1, as amended by the DLT Act -- segregation of crypto-based assets from a custodian's bankruptcy estate",
+    "FINMA: Guidelines for enquiries regarding the regulatory framework for initial coin offerings (ICOs) (16 February 2018) -- payment token / utility token / asset token classification",
+    "FINMA Guidance 08/2023 on staking of cryptoassets (20 December 2023)",
+    "FINMA Guidance 01/2026 on the custody of cryptobased assets (12 January 2026)"
+  ],
+  "standing_summary": "This pillar is the cleanest illustration in this jurisdiction of Switzerland's 'amend and apply existing law' pattern: there is no dedicated Swiss statute for crypto dealing, custody or advisory services, and FINMA and the legislator have instead extended the existing, technology-neutral financial-market framework -- the Financial Services Act (FinSA), the Financial Institutions Act (FinIA) and the Banking Act -- to crypto activity, principally through the DLT Act's amendments and a layer of FINMA supervisory guidance rather than through new primary legislation. Classification is the entry point: FINMA's 16 February 2018 ICO guidelines sort tokens into payment tokens ('synonymous with cryptocurrencies and have no further functions or links to other development projects'), utility tokens ('intended to provide digital access to an application or service') and asset tokens (tokens that 'represent assets such as participations in real physical underlyings, companies, or earnings streams, or an entitlement to dividends or interest payments'); FINMA treats asset tokens as securities, which pulls their dealing, custody and advisory treatment into existing Swiss securities law -- FinSA's conduct rules and FinIA's licensing regime -- rather than into any crypto-specific statute. Dealing and advisory: under FinSA (in force since 1 January 2020), anyone providing financial services in Switzerland -- including dealing in and advising on crypto assets that are financial instruments -- is subject to FinSA's conduct-of-business rules (client segmentation, information and appropriateness/suitability duties, organisational requirements) regardless of whether the provider also holds a FINMA licence. Under FinIA (also in force since 1 January 2020), portfolio managers and trustees who manage or hold assets -- including crypto assets -- on a discretionary basis for clients on a commercial basis require a FINMA licence and ongoing supervision by a FINMA-authorised supervisory organisation (SO); securities firms dealing in asset tokens for their own account or for clients require a FinIA securities-firm licence. Neither FinSA nor FinIA contains a crypto-specific licence category or carve-out: crypto asset dealing and advisory business is licensed and conducted, or exempted, under exactly the same categories and thresholds that apply to any other financial instrument. Custody -- the Banking Act and the DLT Act: outside a securities-firm or portfolio-manager/trustee licence, taking crypto assets into custody for clients can itself trigger Banking Act licensing if the arrangement amounts to deposit-taking. The Banking Act's Art. 1b 'fintech licence' (in force since 1 January 2019) is the lighter-touch authorisation route most relevant to non-bank custody and dealing businesses: it permits acceptance of public deposits (including, per FINMA and secondary legal commentary, crypto-based assets held for clients) up to CHF 100 million, on condition the deposits are not invested and no interest is paid, and carries lower capital and organisational requirements than a full banking licence; client assets held under a fintech licence are, per FINMA's own licensing materials, 'neither privileged nor protected by deposit protection' in the event of the licensee's bankruptcy in the way ordinary bank deposits are, which is precisely why the DLT Act's separate bankruptcy-segregation provisions (below) matter for crypto custody specifically. This fintech licence is the same Art. 1b authorisation that the Federal Council's pending FinIA-amendment consultation (tracked in the Stablecoins pillar for this jurisdiction) proposes to abolish and replace; as of this writing that proposal remains at the consultation stage and Art. 1b remains the current, in-force licence. Separately from licensing, the DLT Act -- in force in two stages, 1 February and 1 August 2021 -- inserted bankruptcy-segregation provisions into the Banking Act and the Debt Enforcement and Bankruptcy Act (SchKG) specifically for 'crypto-based assets' held in custody, corroborated across multiple independent legal-commentary sources as Art. 16 para. 1bis and Art. 37d of the Banking Act (SR 952.0) together with Art. 242a of the SchKG (SR 281.1): where a custodian holds crypto-based assets separately for each client (individually or as a clearly identifiable share of a collective holding) and is contractually obligated to keep them available to the client at all times, those assets are excluded from the custodian's bankruptcy estate and must be returned to the client rather than falling into the general pool of creditor claims -- a bankruptcy-proof custody framework built by amendment, not by a standalone custody statute. FINMA's most recent and most direct statement of its custody expectations is Guidance 01/2026, published 12 January 2026, in which FINMA states it 'explains how it assesses the risks associated with the custody of cryptobased assets' across custody by a Swiss bank, individual portfolio management, management of collective assets under CISA, and structured products or crypto ETPs offered under FinSA. The guidance identifies technology-specific DLT risks, operational and cyber risks, private-key management risks, and counterparty risk where custody is delegated to third parties, stating that 'expertise and a robust technical infrastructure are needed to mitigate these risks,' and that delegation to a foreign custodian is acceptable only where that custodian is subject to equivalent prudential supervision and foreign law provides comparable bankruptcy protection; FINMA states that responsibility for custody remains with the authorised Swiss institution even where custody is outsourced to third parties. Guidance 01/2026 does not create a new licence or statute -- it is FINMA's published supervisory interpretation of how the existing Banking Act, FinIA, CISA and FinSA frameworks apply to the specific risks of holding crypto-based assets, addressed to institutions already licensed under one of those existing frameworks. Staking sits inside the same custody analysis. FINMA Guidance 08/2023 (20 December 2023) sets out that where a service provider holds each client's staked assets on individually attributable addresses ('direct staking' on a per-client basis), no Banking Act licence is required, but where clients' staked assets are pooled on common addresses, the provider is engaged in collective custody of crypto-based assets and can require a Banking Act licence; the guidance also states that staked assets held for clients can, subject to conditions including appropriate risk-mitigating measures and customer risk disclosure, be treated off-balance-sheet and outside capital-adequacy requirements, and that staked assets should be capable of segregation from a bankrupt custodian's estate and returned to custody-account customers on the same bankruptcy-segregation logic as other crypto-based custody assets. Taken together, the operative law for this pillar is FinSA and FinIA (technology-neutral securities-firm, portfolio-manager and trustee licensing and conduct rules, applied to crypto without amendment) plus the Banking Act as amended by the DLT Act (custody licensing via the Art. 1b fintech route and bankruptcy segregation via Art. 16/37d BankG and Art. 242a SchKG), with FINMA's 2018 ICO guidelines, Guidance 08/2023 and Guidance 01/2026 forming the operative supervisory-guidance layer on top of that amended statutory base -- not a dedicated crypto-custody, dealing or advisory statute.",
+  "last_changed": "2026-01-12",
+  "key_links": [
+    {
+      "label": "FINMA: FINMA publishes ICO guidelines (press release, 16 February 2018)",
+      "url": "https://www.finma.ch/en/news/2018/02/20180216-mm-ico-wegleitung/"
+    },
+    {
+      "label": "FINMA: Guidelines for enquiries regarding the regulatory framework for initial coin offerings (ICOs) (PDF, primary document)",
+      "url": "https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/1bewilligung/fintech/wegleitung-ico.pdf"
+    },
+    {
+      "label": "FINMA: FINMA publishes guidance on staking services (press release, Guidance 08/2023, 20 December 2023)",
+      "url": "https://www.finma.ch/en/news/2023/12/20231220-meldung-am-staking/"
+    },
+    {
+      "label": "FINMA Guidance 08/2023 on staking of cryptoassets (PDF, primary document)",
+      "url": "https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/4dokumentation/finma-aufsichtsmitteilungen/20231220-finma-aufsichtsmitteilung-08-2023.pdf"
+    },
+    {
+      "label": "FINMA: FINMA publishes guidance on risks associated with the custody of cryptobased assets (press release, Guidance 01/2026, 12 January 2026)",
+      "url": "https://www.finma.ch/en/news/2026/01/20260112-mm-am-01-26/"
+    },
+    {
+      "label": "FINMA Guidance 01/2026 on the custody of cryptobased assets (PDF, primary document)",
+      "url": "https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/4dokumentation/finma-aufsichtsmitteilungen/20260112-finma-aufsichtsmitteilung-01-2026.pdf"
+    },
+    {
+      "label": "FINMA: Portfolio managers and trustees -- FinIA licensing requirements",
+      "url": "https://www.finma.ch/en/authorisation/portfolio-managers-and-trustees/"
+    },
+    {
+      "label": "FINMA: Fintech licence (Art. 1b Banking Act)",
+      "url": "https://www.finma.ch/en/authorisation/fintech/fintech-bewilligung/"
+    },
+    {
+      "label": "Fedlex: Federal Act on Financial Services (FinSA), SR 950.1",
+      "url": "https://www.fedlex.admin.ch/eli/cc/2019/758/en"
+    },
+    {
+      "label": "Fedlex: Federal Act on Financial Institutions (FinIA), SR 954.1",
+      "url": "https://www.fedlex.admin.ch/eli/cc/2018/801/en"
+    },
+    {
+      "label": "Fedlex: Federal Act on Banks and Savings Banks (Banking Act), SR 952.0",
+      "url": "https://www.fedlex.admin.ch/eli/cc/51/117_121_129/en"
+    },
+    {
+      "label": "Fedlex: Federal Act on Debt Enforcement and Bankruptcy (SchKG), SR 281.1",
+      "url": "https://www.fedlex.admin.ch/eli/cc/11/529_488_529/en"
+    }
+  ],
+  "open_items": [
+    "The exact statutory text of Art. 16 para. 1bis and Art. 37d of the Banking Act (SR 952.0) and Art. 242a of the SchKG (SR 281.1) -- the DLT Act's bankruptcy-segregation provisions for crypto-based assets -- could not be machine-extracted from fedlex.admin.ch in this research pass, since fedlex.admin.ch serves its consolidated legislative text via a JavaScript-rendered interface that returned only a language-selection shell on direct fetch. The article numbers and their operative content (individually attributable custody plus a standing obligation to keep assets available to the client) are corroborated across multiple independent legal-commentary sources (MLL Legal, IFLR, PwC Switzerland) rather than quoted verbatim from the primary statutory text, and should be re-confirmed against the fedlex.admin.ch consolidated text linked above before being treated as exhaustive or as precise legislative wording.",
+    "The Banking Act Art. 1b fintech licence's CHF 100 million public-deposit cap and its treatment of crypto-based assets specifically as eligible 'deposits' for this purpose are stated here based on FINMA's own fintech-licence authorisation page and corroborating secondary legal commentary; this pillar does not independently re-verify the precise statutory definition of 'public deposits' as applied to crypto-based assets against the primary Banking Ordinance text.",
+    "The Federal Council's pending FinIA-amendment consultation (opened 22 October 2025, closed 6 February 2026), which proposes to replace the Art. 1b fintech licence with 'payment instrument institution' and 'crypto-institution' licence categories, is tracked in full in the Stablecoins pillar for this jurisdiction and is referenced here only to note that Art. 1b remains the current, in-force licence as of this writing; this pillar does not restate the consultation's status or timeline in detail to avoid duplicating citations across pillars.",
+    "FINMA Guidance 01/2026's full text -- including its detailed treatment of custody within individual portfolio management, collective asset management under CISA, and structured products/crypto ETPs under FinSA -- was corroborated via FINMA's own press release and multiple law-firm summaries of the guidance; the underlying PDF's complete text was not independently re-parsed line by line in this research pass, so any provision not summarized in the press release should be re-confirmed directly against the linked PDF before being cited as exhaustive.",
+    "FINMA Guidance 08/2023's precise conditions for treating staked client assets off-balance-sheet (the specific risk-mitigating measures and disclosure content required) are stated here at the level of detail corroborated by FINMA's press release and secondary legal-alert summaries; the guidance PDF's complete conditions were not independently re-parsed line by line and should be re-confirmed against the linked PDF before being treated as exhaustive.",
+    "This pillar covers dealing, custody and advisory activity in crypto assets under FinSA, FinIA and the Banking Act/DLT Act only. Licensing and operation of DLT trading facilities and other financial-market-infrastructure venues is tracked in the Exchanges (VATP) pillar; AMLA/AMLO-FINMA duties applicable to dealing and custody intermediaries (including the travel-rule and unhosted-wallet threshold) are tracked in the AML/CFT & Enforcement pillar; and native ledger-based (register) uncertificated securities under the amended Code of Obligations are tracked in the Tokenization & RWA pillar, to avoid duplicating citations across pillars."
+  ],
+  "generated_at": "2026-07-12T07:45:17Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

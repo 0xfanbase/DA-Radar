@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "cf95e52fa13da650ceed71f6f2546ad2a9924924fbe9e4e1156d11cd5a299b1f",
+  "jurisdiction_id": "ch",
+  "published_date": "2018-02-16",
+  "regulator": "FINMA (Swiss Financial Market Supervisory Authority)",
+  "pillar": [
+    "dealing_custody_advisory"
+  ],
+  "type": "guidance",
+  "title": "FINMA publishes ICO guidelines",
+  "summary": "On 16 February 2018, FINMA published guidelines on how Switzerland's existing financial-market laws apply to initial coin offerings (ICOs), stating that at the time there was no ICO-specific regulation, case law, or legal doctrine, so it instead applies existing law based on a token's economic function and purpose. The guidelines classify tokens into three categories: payment tokens, synonymous with cryptocurrencies and having no further function; utility tokens, intended to provide digital access to an application or service; and asset tokens, representing claims such as participations in physical assets, companies, or earnings streams, which FINMA treats as securities. FINMA notes tokens can take hybrid forms combining more than one category. Where a token is intended to function as a means of payment and is already transferable, FINMA states it will require compliance with anti-money-laundering regulations.",
+  "why_it_matters": "This is the framework FINMA established for deciding which of Switzerland's existing securities, banking, or anti-money-laundering laws applies to a given crypto token based on its economic function, rather than issuing a dedicated crypto-specific statute.",
+  "citations": [
+    {
+      "url": "https://www.finma.ch/en/news/2018/02/20180216-mm-ico-wegleitung/",
+      "quote": "FINMA will focus on the economic function and purpose of the tokens"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T20:15:00Z",
+  "model": "Claude (Anthropic)"
+}

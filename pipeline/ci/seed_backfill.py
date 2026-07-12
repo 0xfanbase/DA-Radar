@@ -6,6 +6,14 @@ the live watcher uses (pipeline/watcher/ledger.py), so a backfilled item is
 indistinguishable from a live-observed one once queued -- same idempotency
 guarantee (re-running with the same descriptors adds nothing), same
 lifecycle, same downstream analyst/verifier handling.
+
+Also regenerates content/{jurisdiction_id}/document_library.json, the same
+way pipeline/watcher/run.py does after a live poll -- both routes add
+"relevant" ledger items, so both must keep the document library (a pure,
+regenerated-in-full derivation of the ledger) in sync. Missing this was a
+real gap found during a live onboarding: a jurisdiction's document_library.json
+was found stuck at the single item present after the live watcher's first
+run, silently missing several more items a later seed_backfill call added.
 """
 from __future__ import annotations
 
@@ -13,6 +21,7 @@ import argparse
 import json
 
 from pipeline.watcher.clock import utc_now_iso
+from pipeline.watcher.document_library import derive_document_library, save_document_library
 from pipeline.watcher.ledger import diff_new_items, load_ledger, save_ledger, upsert_items
 from pipeline.watcher.parse import NormalizedItem
 from pipeline.watcher.queue import derive_queue, save_queue
@@ -67,12 +76,16 @@ def main(argv=None) -> int:
     parser.add_argument("--ledger", default=None)
     parser.add_argument("--queue", default=None)
     parser.add_argument("--config", default=None)
+    parser.add_argument("--document-library", default=None)
     args = parser.parse_args(argv)
 
     jid = args.jurisdiction
     ledger_path = args.ledger or (f"data/{jid}/ledger.json" if jid else "data/ledger.json")
     queue_path = args.queue or (f"data/{jid}/queue.json" if jid else "data/queue.json")
     config_path = args.config or (f"config/jurisdictions/{jid}.json" if jid else "config/jurisdiction.json")
+    document_library_path = args.document_library or (
+        f"content/{jid}/document_library.json" if jid else "content/document_library.json"
+    )
 
     with open(args.descriptors, "r", encoding="utf-8") as fh:
         descriptors = json.load(fh)
@@ -89,6 +102,7 @@ def main(argv=None) -> int:
 
     save_ledger(ledger_path, ledger)
     save_queue(queue_path, derive_queue(ledger, run_ts))
+    save_document_library(document_library_path, derive_document_library(ledger, jurisdiction_config, run_ts))
 
     print(f"seed_backfill: {len(added)} new item(s) added as queued.")
     for item_hash in added:

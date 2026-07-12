@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "7acf2075c6b479c6293219ac686a938b7876a280de607030e1d78869f32e175d",
+  "jurisdiction_id": "ch",
+  "published_date": "2023-12-20",
+  "regulator": "FINMA (Swiss Financial Market Supervisory Authority)",
+  "pillar": [
+    "dealing_custody_advisory"
+  ],
+  "type": "guidance",
+  "title": "FINMA publishes guidance on staking services",
+  "summary": "On 20 December 2023, FINMA published Guidance 08/2023 on staking services offered by supervised institutions. Pending further clarification of asset-segregation questions in legislation or case law, and provided institutions meet FINMA's conditions on customer instructions, unambiguous asset allocation, risk disclosure, and operational risk mitigation, FINMA's current assessment is that staked cryptoassets should be segregated from a bankrupt custodian's estate and returned to custody-account customers -- extending to staking the bankruptcy-segregation protection Swiss law already gives other crypto-based custody assets under the DLT Act's 2021 amendments to existing banking and bankruptcy statutes, rather than a dedicated staking law. The guidance flags three risk categories institutions must address: technical risk, including slashing for validator misconduct; counterparty risk from unclear bankruptcy treatment, greater still when custody or staking is delegated to institutions outside Switzerland; and market risk, where lock-up or exit periods can delay returning staked assets during unstaking.",
+  "why_it_matters": "FINMA's Guidance 08/2023 is a dedicated statement on staking-specific bankruptcy risk: it signals that staked crypto assets can be shielded from a custodian's insolvency much like other custodied crypto assets under Swiss law, while warning that delegating staking to an institution abroad meaningfully increases legal uncertainty for anyone relying on that arrangement.",
+  "citations": [
+    {
+      "url": "https://www.finma.ch/en/news/2023/12/20231220-meldung-am-staking/",
+      "quote": "the staked cryptoassets are to be segregated from a bankrupt estate and returned to custody"
+    },
+    {
+      "url": "https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/4dokumentation/finma-aufsichtsmitteilungen/20231220-finma-aufsichtsmitteilung-08-2023.pdf?sc_lang=en&hash=C3A637EC142F1A521AD1F88FCC4124F2",
+      "quote": "The DLT Act entered fully into force with effect from 1 August 2021."
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T20:45:00Z",
+  "model": "Claude (Anthropic)"
+}

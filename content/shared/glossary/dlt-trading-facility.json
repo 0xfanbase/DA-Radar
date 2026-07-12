@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "dlt-trading-facility",
+  "term": "DLT trading facility",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "A licence category for operating a trading venue for tokenised ('DLT') securities under Swiss financial-market-infrastructure law, created by the DLT Act and in force since 1 August 2021. Unlike a traditional stock exchange licence, a single DLT trading facility licence can bundle trading with custody, clearing and settlement of DLT securities -- including, where the licensee chooses, direct access for private (retail) participants -- without separate authorisations. FINMA licensed the first DLT trading facility, BX Digital AG, on 18 March 2025 (binding from 14 May 2025); Switzerland's other major tokenised-securities venue, SIX Digital Exchange, was instead authorised the traditional way, as an ordinary stock exchange and central securities depository, when it launched in September 2021.",
+  "formal_definition": "Financial Market Infrastructure Act (FMIA/FinfraG, SR 958.1), Chapter 4a, Art. 73a et seq., inserted by the DLT Act with effect from 1 August 2021. A DLT trading facility is a facility for the multilateral trading of DLT securities that also satisfies at least one further condition under Art. 73c FMIA: admitting private participants directly (Art. 73c para. 1(e)), centrally custodying DLT securities under uniform rules, or clearing and settling DLT-security transactions under uniform rules. FINMA's 18 March 2025 press release states 'FINMA has licensed the first DLT trading facility to date,' naming BX Digital AG (Zurich), authorised as a 'small DLT trading facility' for post-trading (custody/settlement) activity, with retail access not opened as of FINMA's current authorised-infrastructure list. FINMA's 10 September 2021 press release states that SDX Trading AG and SIX Digital Exchange AG were instead granted stock-exchange and central-securities-depository approvals that 'took the traditional route ... as per the FMIA,' not the DLT-trading-facility category.",
+  "related_terms": [
+    "dlt-act",
+    "sdx",
+    "ledger-based-security",
+    "finma",
+    "vatp"
+  ],
+  "first_used_card_id": "cf95e52fa13da650ceed71f6f2546ad2a9924924fbe9e4e1156d11cd5a299b1f",
+  "generated_at": "2026-07-12T20:02:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

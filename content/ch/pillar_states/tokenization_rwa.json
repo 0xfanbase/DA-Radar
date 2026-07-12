@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "pillar": "tokenization_rwa",
+  "status_seal": "in_force",
+  "regulator": "FINMA",
+  "instruments": [
+    "Federal Act on the Adaptation of Federal Law to Developments in Distributed Ledger Technology (the 'DLT Act'), adopted by the Federal Assembly 25 September 2020 -- in force in two stages: civil-law provisions (Code of Obligations, Federal Act on Intermediated Securities, Federal Act on Private International Law) 1 February 2021; remainder, including the FMIA 'DLT trading facility' licence, 1 August 2021 (AS 2021 33 and AS 2021 33, 399; BBl 2020 233)",
+    "Swiss Code of Obligations (Obligationenrecht; SR 220), Art. 973d-973i (ledger-based securities / 'Registerwertrechte'), inserted by the DLT Act, in force since 1 February 2021",
+    "Federal Act on Intermediated Securities (FISA / Bucheffektengesetz, BEG; SR 957.1), Art. 4 para. 2 as amended by the DLT Act (DLT trading facilities recognised as custodians in relation to immobilised ledger-based securities under CO Art. 973d-973i), in force since 1 February 2021",
+    "Federal Act on Private International Law (PILA / IPRG; SR 291), Art. 145a, inserted by the DLT Act, in force since 1 February 2021",
+    "Financial Market Infrastructure Act (FMIA / Finanzmarktinfrastrukturgesetz, FinfraG; SR 958.1), Chapter 4a, Art. 73a-73d ('DLT-Handelssystem' / DLT trading facility licence), inserted by the DLT Act, in force since 1 August 2021",
+    "Federal Council / State Secretariat for International Finance (SIF), media release 'Federal Council brings DLT Act fully into force and issues ordinance' (18 June 2021)",
+    "FINMA press release, 'FINMA issues first-ever approval for a stock exchange and a central securities depository for the trading of tokens' (10 September 2021) -- SDX Trading AG and SIX Digital Exchange AG",
+    "FINMA press release, 'FINMA licenses first DLT trading facility' (18 March 2025; authorisation legally binding 14 May 2025) -- BX Digital AG",
+    "FINMA, List of authorised and recognised financial market infrastructures (including trading venues) and foreign participants (PDF, consulted live during this research, footer-dated 12 July 2026)",
+    "SIX Group media release, 'SIX Receives FINMA Approval to Merge Digital CSD into SIX SIS AG and to Provide Crypto Custody Through the Consolidated CSD' (5 May 2026) -- not itself a FINMA statement, cited as the operator's own account, flagged as such"
+  ],
+  "standing_summary": "Switzerland has no dedicated tokenization or real-world-asset statute. This pillar's law is amended existing law -- the Code of Obligations, the Federal Act on Intermediated Securities (FISA), the Federal Act on Private International Law (PILA) and the Financial Market Infrastructure Act (FMIA) -- amended by a single omnibus statute, the Federal Act on the Adaptation of Federal Law to Developments in Distributed Ledger Technology (the 'DLT Act'), adopted by the Federal Assembly on 25 September 2020. The DLT Act's entry into force was staged in two precise steps, which this pillar states exactly because the sequencing is substantively load-bearing: the civil-law provisions -- the amendments to the Code of Obligations, FISA and PILA -- took effect on 1 February 2021, while the remainder, including the new DLT trading facility licence inside FMIA, took effect on 1 August 2021. Fedlex's own consolidated-text footnotes cite the first stage as 'in Kraft seit 1. Febr. 2021 (AS 2021 33; BBl 2020 233)' and the second as 'in Kraft seit 1. Aug. 2021 (AS 2021 33, 399; BBl 2020 233)' (German-language primary text, quoted verbatim, not translated here). The Federal Council/SIF's own 18 June 2021 media release, titled 'Federal Council brings DLT Act fully into force and issues ordinance,' announced the second-stage commencement together with the implementing ordinance; SIF's DLT/blockchain overview page separately describes the earlier date as when 'the parts of the DLT bill that enable ledger-based securities to be introduced' took effect. The civil-law core is Article 973d of the Code of Obligations, inserted by the DLT Act and in force since 1 February 2021: a ledger-based security ('Registerwertrecht') is a right that, under an agreement between the parties, is entered in a securities ledger meeting statutory requirements and can only be asserted and transferred via that ledger; the ledger itself must give creditors -- not the debtor -- power of disposal over their rights by technical means, and protect its own integrity against unauthorised modification, among other requirements. The fedlex consolidated German text of Art. 973d para. 2 no. 1 reads: 'Es vermittelt den Gläubigern, nicht aber dem Schuldner, mittels technischer Verfahren die Verfügungsmacht über ihre Rechte.' This creates native on-chain securities with full civil-law effect -- no sandbox, licence or regulatory pre-clearance is needed to issue one -- and Art. 973e-973i CO go on to set out the debtor's obligations, good-faith-acquisition protection and transfer mechanics. The same Federal Act amended FISA's (Bucheffektengesetz, SR 957.1) list of permitted custodians ('Verwahrungsstellen') in Art. 4, extending it to cover DLT trading facilities licensed under FMIA Art. 73a-73f specifically for holding immobilised ledger-based securities as custodian; the fedlex consolidated text reads: 'DLT-Handelssysteme nach den Artikeln 73a-73f des Finanzmarktinfrastrukturgesetzes vom 19. Juni 2015 ... in Bezug auf immobilisierte Registerwertrechte nach den Artikeln 973d-973i des Obligationenrechts,' in force since 1 February 2021 -- so ledger-based securities can also be intermediated as book-entry securities through a regulated custodian. The DLT Act separately inserted Art. 145a into PILA (SR 291), a conflict-of-laws rule addressing which law governs a claim represented by a title; the fedlex consolidated text reads: 'Ob eine Forderung durch einen Titel in Papier- oder gleichwertiger Form vertreten und mittels dieses Titels übertragen wird, bestimmt das darin bezeichnete Recht,' also in force since 1 February 2021. None of these three civil-law amendments required a FINMA licence, an ordinance-level implementing rule, or a sandbox to take effect, which is the structural point this pillar states plainly: the strongest part of Switzerland's digital-asset framework is existing civil law that simply began applying to a new register technology. The one licence-bearing innovation for market infrastructure sits inside FMIA rather than a standalone statute: Chapter 4a (Art. 73a et seq., in force 1 August 2021) creates the 'DLT trading facility' category, defined as a commercially operated facility for the multilateral trading of DLT securities that also satisfies at least one of three further conditions -- admitting private participants under Art. 73c para. 1(e) (i.e. retail access), centrally custodying DLT securities under uniform rules, or clearing and settling DLT-security transactions under uniform rules -- so that a single licence can bundle integrated trading, settlement and custody, including for retail participants, without separate authorisations. This pillar's worked example, verified live rather than assumed, is SIX Digital Exchange: on 10 September 2021 FINMA granted its first-ever approvals for a stock exchange (SDX Trading AG) and a central securities depository (SIX Digital Exchange AG) to trade and settle tokenised securities -- but, as FINMA's own press release states, these licences 'took the traditional route, namely approval to act as a stock exchange and central securities depository as per the FMIA,' explicitly not the new DLT-trading-facility category created by the same Act. The DLT-trading-facility category itself went unused for over three and a half years: FINMA's 18 March 2025 press release states 'FINMA has licensed the first DLT trading facility to date,' naming BX Digital AG (Zurich); the authorisation became legally binding on 14 May 2025. FINMA's own current public list of authorised financial market infrastructures, consulted live during this research (footer-dated 12 July 2026), confirms BX Digital AG remains the sole licensed DLT trading facility, authorised for post-trading (custody/settlement) activity as a 'small' DLT trading facility, with the private-participant (retail) column unchecked -- so while the category permits retail access as one of its three qualifying conditions, no current licensee has actually opened one to retail participants. That same current FINMA list no longer shows SDX Trading AG or SIX Digital Exchange AG as separately licensed entities; it lists SIX Swiss Exchange AG as the authorised stock exchange and SIX SIS AG (Olten) as the sole authorised central depository. SIX Group's own 5 May 2026 announcement -- not itself a FINMA statement, and flagged as such -- states SIX received FINMA approval 'to merge its digital CSD SIX Digital Exchange AG into SIX SIS AG' and separately received FINMA approval 'to provide crypto custody services through its licensed Central Securities Depository,' following an earlier SDX announcement that, from 1 June 2025, secondary trading of SDX-issued digital bonds consolidated onto SIX Swiss Exchange. The full licensing mechanics of that consolidation are the primary subject of the Exchanges (VATP) pillar and are not restated here; for this pillar, the operating proof that ledger-based securities function as genuine on-chain instruments remains SDX/SIX's record of tokenised-bond issuance, custody and settlement under FINMA-authorised infrastructure continuously since 2021, now continued through the consolidated SIX Swiss Exchange / SIX SIS structure.",
+  "last_changed": "2026-05-05",
+  "key_links": [
+    {
+      "label": "Fedlex: Swiss Code of Obligations (SR 220), consolidated text incl. Art. 973d-973i (German)",
+      "url": "https://www.fedlex.admin.ch/eli/cc/27/317_321_377/de"
+    },
+    {
+      "label": "Fedlex: Federal Act on Intermediated Securities / Bucheffektengesetz (SR 957.1), consolidated text (German)",
+      "url": "https://www.fedlex.admin.ch/eli/cc/2009/450/de"
+    },
+    {
+      "label": "Fedlex: Federal Act on Private International Law / IPRG (SR 291), consolidated text incl. Art. 145a (German)",
+      "url": "https://www.fedlex.admin.ch/eli/cc/1988/1776_1776_1776/de"
+    },
+    {
+      "label": "Fedlex: Financial Market Infrastructure Act / FinfraG (SR 958.1), consolidated text incl. Chapter 4a (German)",
+      "url": "https://www.fedlex.admin.ch/eli/cc/2015/853/de"
+    },
+    {
+      "label": "Federal Council / SIF: Federal Council brings DLT Act fully into force and issues ordinance (18 Jun 2021)",
+      "url": "https://www.admin.ch/gov/en/start/documentation/media-releases.msg-id-84035.html"
+    },
+    {
+      "label": "SIF: DLT / blockchain / tokenisation overview",
+      "url": "https://www.sif.admin.ch/en/dlt-blockchain-en"
+    },
+    {
+      "label": "FINMA: FINMA issues first-ever approval for a stock exchange and a central securities depository for the trading of tokens (10 Sep 2021)",
+      "url": "https://www.finma.ch/en/news/2021/09/finma-issues-first-ever-approval-for-a-stock-exchange-and-a-central-securities-depository-for-the-trading-of-tokens/"
+    },
+    {
+      "label": "FINMA: FINMA licenses first DLT trading facility (18 Mar 2025)",
+      "url": "https://www.finma.ch/en/news/2025/03/20250318-mm-dlt-handelssystem/"
+    },
+    {
+      "label": "FINMA: Licensing as a DLT trading facility (authorisation guidance)",
+      "url": "https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/"
+    },
+    {
+      "label": "FINMA: List of authorised and recognised financial market infrastructures (including trading venues) and foreign participants (PDF, current)",
+      "url": "https://www.finma.ch/en/~/media/finma/dokumente/bewilligungstraeger/pdf/bourses.pdf?la=en&hash=B4458A7F3743AB81DFC8841AF64764C2"
+    },
+    {
+      "label": "SIX Group: SIX Receives FINMA Approval to Merge Digital CSD into SIX SIS AG and to Provide Crypto Custody Through the Consolidated CSD (5 May 2026)",
+      "url": "https://www.six-group.com/en/newsroom/media-releases/2026/20260505-custody-consolidation.html"
+    },
+    {
+      "label": "SDX: SDX announces the consolidation of trading for digital assets into SIX Swiss Exchange",
+      "url": "https://www.sdx.com/news/sdx-announces-the-consolidation-of-trading-for-digital-assets-into-six-swiss-exchange/"
+    }
+  ],
+  "open_items": [
+    "Fedlex (fedlex.admin.ch) serves its statutory texts as a JavaScript single-page application; a direct fetch of the interactive fedlex.admin.ch pages for the Code of Obligations, FISA/BEG, PILA/IPRG and FMIA returned only a no-script warning shell. The German-language statutory text quoted in this pillar (CO Art. 973d, FISA Art. 4, PILA Art. 145a, FMIA Art. 73a) was retrieved instead from fedlex's own underlying dated static-HTML mirror (files hosted at fedlex.data.admin.ch, consolidated-text versions dated at or immediately after the relevant entry-into-force date), not paraphrased from a secondary source. The key_links above point to the canonical interactive fedlex.admin.ch page for each act, which is the correct long-term citation even though it could not itself be fetched directly.",
+    "No official English translation of Code of Obligations Art. 973d-973i, FISA Art. 4, or PILA Art. 145a was located. Per instruction, this pillar quotes only the German-language primary text verbatim, notes it as German, and describes its substance in the site's own words without producing its own English translation of any quoted phrase.",
+    "FINMA's official list of authorised DLT trading facilities (the bourses.pdf list, consulted live during this research, footer-dated 12.07.2026) is explicitly scoped to 'kleine DLT-Handelssysteme' (small DLT trading facilities) providing services under FMIA Art. 73a para. 1(b) or (c); this research found no evidence of a non-'small' or differently-scoped DLT trading facility licensee existing, but notes the list's scoping for completeness.",
+    "The mechanism and exact FINMA record by which SDX Trading AG and SIX Digital Exchange AG ceased to appear as separately authorised entities on FINMA's current list was not found in a dedicated FINMA press release located during this research; what is stated as fact here (that FINMA's own current list no longer shows either entity separately) rests directly on that FINMA list. The narrative of how that came about is SIX Group's own 5 May 2026 announcement, flagged here as the operator's account rather than a FINMA statement. Full trading-venue licensing mechanics and the current authorised-entity list are the primary subject of the Exchanges (VATP) pillar and are not fully restated here.",
+    "The custody dimension of FINMA's crypto-custody approval for the consolidated SIX SIS AG CSD, and FINMA Guidance 01/2026 (12 January 2026) on custody of crypto-based assets, are tracked in the Dealing, Custody, Advisory & Management pillar, not duplicated here.",
+    "This pillar does not address tokenized-fund or crypto-ETP products under Swiss collective-investment or exchange-traded-product rules; that is tracked separately in the Funds & ETFs pillar.",
+    "The Swiss National Bank's Project Helvetia wholesale CBDC pilot, which has settled tokenised bonds on SDX/SIX infrastructure, belongs to the Banking & Money pillar and is not covered here."
+  ],
+  "generated_at": "2026-07-12T07:51:32Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

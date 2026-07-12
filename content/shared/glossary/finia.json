@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "finia",
+  "term": "FinIA (Financial Institutions Act)",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "A technology-neutral Swiss statute, in force since 1 January 2020, licensing portfolio managers, trustees, securities firms and other financial institutions. FinIA contains no crypto-specific licence category: portfolio managers and trustees who manage or hold crypto assets on a discretionary, commercial basis for clients need a FinIA licence and supervision by a FINMA-authorised supervisory organisation, and securities firms dealing in FINMA-classified asset tokens need a FinIA securities-firm licence, on the same terms as for any other financial instrument. FinIA is also the statute a pending Federal Council proposal (consultation closed 6 February 2026, not yet enacted) would amend to insert two new licence categories, 'payment instrument institutions' and 'crypto-institutions', replacing the Banking Act's art. 1b fintech licence.",
+  "formal_definition": "Federal Act on Financial Institutions (Financial Institutions Act, FinIA/FINIG), SR 954.1, in force since 1 January 2020.",
+  "related_terms": [
+    "finsa",
+    "payment-instrument-institution",
+    "crypto-institution",
+    "fintech-licence",
+    "asset-token"
+  ],
+  "first_used_card_id": "7acf2075c6b479c6293219ac686a938b7876a280de607030e1d78869f32e175d",
+  "generated_at": "2026-07-12T20:11:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

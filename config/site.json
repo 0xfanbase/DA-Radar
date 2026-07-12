@@ -71,13 +71,13 @@
     {
       "id": "ch",
       "name": "Switzerland",
-      "config": null,
+      "config": "config/jurisdictions/ch.json",
       "status": {
-        "watcher": "planned",
+        "watcher": "live",
         "analyst_verifier": "planned",
-        "seeded": false
+        "seeded": true
       },
-      "coverage_notes": "Planned. Watcher sources and config file to be written in its build phase."
+      "coverage_notes": "Live RSS watcher (FINMA feed), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
     },
     {
       "id": "jp",

@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "utility-token",
+  "term": "Utility token",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "One of three token categories FINMA set out in its February 2018 ICO guidelines. A utility token is 'intended to provide digital access to an application or service' -- functioning like a voucher or access key to a specific platform, rather than as money or an investment. FINMA treats a utility token as falling outside securities law only if its sole purpose is to confer digital access rights to an application or service and it can actually be used that way at the point of issue; where a utility token instead functions wholly or partly as an investment, FINMA treats it as a security.",
+  "formal_definition": "FINMA, Guidelines for enquiries regarding the regulatory framework for initial coin offerings (ICOs) (16 February 2018): utility tokens 'are tokens which are intended to provide digital access to an application or service.'",
+  "related_terms": [
+    "payment-token",
+    "asset-token",
+    "security-token",
+    "finma"
+  ],
+  "first_used_card_id": "cf95e52fa13da650ceed71f6f2546ad2a9924924fbe9e4e1156d11cd5a299b1f",
+  "generated_at": "2026-07-12T20:05:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

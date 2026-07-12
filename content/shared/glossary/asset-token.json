@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "id": "asset-token",
+  "term": "Asset token",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "One of three token categories FINMA set out in its February 2018 ICO guidelines. Asset tokens 'represent assets such as participations in real physical underlyings, companies, or earnings streams, or an entitlement to dividends or interest payments' -- economically similar to shares, bonds or derivatives. FINMA treats asset tokens as securities, which pulls their dealing, custody and advisory treatment into Switzerland's existing securities-law framework -- the Financial Services Act's conduct rules and the Financial Institutions Act's licensing regime -- rather than into any crypto-specific statute. A ledger-based security created under the Code of Obligations is a related but distinct concept: an asset token is a FINMA classification describing a token's economic function, while a ledger-based security is the specific civil-law form the DLT Act created for holding and transferring such a right natively on a ledger.",
+  "formal_definition": "FINMA, Guidelines for enquiries regarding the regulatory framework for initial coin offerings (ICOs) (16 February 2018): asset tokens 'represent assets such as participations in real physical underlyings, companies, or earnings streams, or an entitlement to dividends or interest payments. In terms of their economic function, therefore, these tokens are analogous to equities, bonds or derivatives.' FINMA's guidelines state such tokens are treated as securities under Swiss law.",
+  "related_terms": [
+    "payment-token",
+    "utility-token",
+    "security-token",
+    "ledger-based-security",
+    "finsa",
+    "finia"
+  ],
+  "first_used_card_id": "cf95e52fa13da650ceed71f6f2546ad2a9924924fbe9e4e1156d11cd5a299b1f",
+  "generated_at": "2026-07-12T20:06:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

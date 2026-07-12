@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "finsa",
+  "term": "FinSA (Financial Services Act)",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "A technology-neutral Swiss statute, in force since 1 January 2020, setting conduct-of-business rules -- client segmentation, information and appropriateness/suitability duties, and organisational requirements -- for anyone providing financial services in Switzerland. FinSA contains no crypto-specific carve-out or licence category: dealing in and advising on crypto assets that qualify as financial instruments (such as FINMA-classified asset tokens) is subject to exactly the same conduct rules that apply to any other financial instrument, regardless of whether the provider also holds a FINMA licence.",
+  "formal_definition": "Federal Act on Financial Services (Financial Services Act, FinSA/FIDLEG), SR 950.1, in force since 1 January 2020.",
+  "related_terms": [
+    "finia",
+    "asset-token",
+    "finma",
+    "fintech-licence"
+  ],
+  "first_used_card_id": "cf95e52fa13da650ceed71f6f2546ad2a9924924fbe9e4e1156d11cd5a299b1f",
+  "generated_at": "2026-07-12T20:10:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

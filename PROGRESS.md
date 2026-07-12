@@ -60,6 +60,13 @@ along with `git log` — to know exactly where the project stands before doing a
   entry below for the four real citation defects the final-check surfaced (a quote fabrication, a
   missing domain registration, two bot-blocked false-negative URLs) and a materially inverted timing
   claim an independent verifier pass caught along the way.
+- **P12a — Switzerland onboarding (fifth jurisdiction, no omnibus crypto statute): complete.** Full seed
+  depth (7 pillar states, 5 verified cards, 4-entry trajectory, 15 glossary terms, orientation page),
+  FINMA registered plus 4 zero-feed citation entries (Fedlex, SIF, SNB, SIX Exchange Regulation),
+  explicit "amend existing law, never a new statute" structural framing, real live watcher wiring -- see
+  the 2026-07-12 "P12a" entry below for a real cross-jurisdiction pipeline gap the final-check surfaced
+  (`seed_backfill.py` never regenerated the document library the way the live watcher does) and how it
+  was fixed at the source, plus a latent official-domain gap caught before any card actually hit it.
 
 ## Owner / next-step punch list
 
@@ -1171,6 +1178,78 @@ hits outside attributed quotes; `tests/test_jurisdiction_agnostic.py` 10/10 gree
 with this onboarding, a standalone compliance-officer-facing dashboard artifact synthesizing verified
 HK/UK/EU (and, once merged, US) content with primary-source citation links -- sourced only from cards
 carrying `status: "verified"`, none drafted or unverified content included.
+
+### 2026-07-12 — P12a: Switzerland onboarding (fifth jurisdiction, no omnibus crypto statute at all)
+
+The first jurisdiction with genuinely no dedicated crypto statute of any kind -- not even a not-yet-
+effective one like UK's SI 2026/102. FINMA regulates digital assets entirely by applying and amending
+existing, technology-neutral financial law (the Banking Act, FinIA, FinSA, AMLA), with the one dedicated
+legislative package -- the "DLT Act" -- itself not a standalone crypto code but a bundle of amendments to
+roughly ten existing federal statutes, most notably creating the "DLT trading facility" licence category
+inside the existing Financial Market Infrastructure Act. `content/ch/orientation.json` states this "amend
+and apply existing law, never legislate a new statute" fact as the throughline of every pillar board.
+`config/jurisdictions/ch.json` registers FINMA (live RSS feed) plus a zero-feed `fedlex` citation entry
+for the Confederation's official law-publication platform. Content seeded: 7 pillar states, 5 independently
+verified cards, a 4-entry trajectory, 15 new glossary terms, and an orientation page. This workflow ran
+clean end to end with zero background-agent stalls (unlike P10), completing in one pass.
+
+**A real, direct catch during the Director Spec phase, worth logging on its own: the director's own
+initial prompt-time research contained a factual error** (a single "1 February 2021" commencement date for
+the DLT Act) that the Director Spec agent's own live re-verification caught and corrected before it ever
+reached a card -- the DLT Act's commencement was actually staged in two tranches (ledger-based-securities
+provisions in force 1 Feb 2021; the Act's remainder, including the DLT trading facility licence category,
+fully in force 1 Aug 2021) -- and the spec explicitly flagged this correction and the exact two-stage
+framing for every downstream research/drafting agent to use. A second precision catch in the same phase:
+FINMA's own official English name for the instrument is "Federal Act on the Adaptation of Federal Law to
+Developments in Distributed **Electronic Register** Technology," not "Distributed **Ledger**
+Technology" as most secondary sources render it -- flagged as a quote-verbatim trap before any drafting
+began.
+
+**The final-check found two real gaps -- one a genuinely new defect class, one a direct instance of a
+now-familiar pattern -- both closed directly by the orchestrating session:**
+1. **`content/ch/document_library.json` had gone stale mid-onboarding, and the root cause was a real
+   pipeline gap, not a content mistake:** the file held only 1 of the 5 relevant/published ledger items.
+   `pipeline/watcher/document_library.py`'s `derive_document_library()` is a pure, regenerate-in-full
+   function that `pipeline/watcher/run.py` (the live watcher) always calls after every poll -- but
+   `pipeline/ci/seed_backfill.py` never did, so backfilled items silently never made it into the document
+   library even though they correctly landed in the ledger and got real cards. This would recur for every
+   future jurisdiction's backfill step, not just this one. **Fixed at the source**: added a
+   `--document-library` flag to `seed_backfill.py` and wired in the same `derive_document_library`/
+   `save_document_library` call `run.py` already makes, plus a new regression test
+   (`test_main_regenerates_document_library_from_the_full_ledger`) that seeds in two separate calls and
+   confirms both items survive in the regenerated file, not just the most recent one. CH's own
+   `document_library.json` was then regenerated for real (not hand-edited) using the fixed code path
+   directly against the live `data/ch/ledger.json` -- 5 of 5 documents now present.
+2. **A latent, not-yet-triggered instance of P9's/P11's official-domain gap:** `config/jurisdictions/ch.json`
+   registered only FINMA and Fedlex, but the seeded pillar states and trajectory already cited four more
+   official bodies as primary sources -- the Swiss National Bank (`snb.ch`), the State Secretariat for
+   International Finance (`sif.admin.ch`) and the Federal Council's own site (`admin.ch`), and SIX Exchange
+   Regulation AG (`ser-ag.com`/`six-group.com`/`sdx.com`, the FINMA-recognised self-regulatory body for
+   exchange/listing rules) -- none registered anywhere. This hadn't yet gate-failed a card only because none
+   of the 5 seeded cards happened to cite these domains, but it was a live violation of CLAUDE.md rule 2's
+   letter and would have hit the exact same failure mode UK's `legislation.gov.uk` and US's
+   `uscode.house.gov` gaps did the moment any future card cited one. Fixed by registering three new
+   zero-feed regulator entries (`sif`, `snb`, `six_exchange_regulation`), each id explicitly grepped against
+   `pipeline/` and confirmed collision-free before use. Also added `fedlex.data.admin.ch` (the Confederation's
+   actual filestore-PDF subdomain for statute text, distinct from the JS-rendered `fedlex.admin.ch` HTML
+   pages a plain fetcher can't read) to the existing `fedlex` entry, per the Director Spec's own live-verified
+   finding that the ELI HTML pages 200 but serve only a "JavaScript required" notice to non-browser fetchers
+   -- the same false-negative class as P11's federalregister.gov landing pages, caught proactively this time
+   rather than discovered after a card got wrongly downgraded.
+
+`config/site.json`'s `ch` entry now reads `status.watcher: "live"`, `status.seeded: true`,
+`status.analyst_verifier: "planned"`; `.github/workflows/watch.yml`'s matrix is `[hk, uk, eu, us, ch]`.
+`docs/analyst-runbook.md` and both prompt files were correctly left untouched again.
+
+**Verification, run fresh by the orchestrating session, after both fixes above:** full pytest suite
+440/440 passing (439 + 1 new `seed_backfill` regression test); `pipeline.ci.validate_content` clean;
+`apply_verification_gate --jurisdiction ch` re-run clean after the domain additions, all 5 cards still
+`"verified"`, zero downgrades; `promote_drafted`/`promote_verified --jurisdiction ch` both report 0 newly
+promoted on re-run (already correctly linked); a full `pipeline.site.generate` rebuild succeeded,
+`_site/ch/index.html` confirmed to show real Swiss content, zero "coming soon" hits; repo-wide
+`grep -rl PENDING content/shared/glossary/` and `grep -rl claude-sonnet content/ch/ data/ch/` both
+confirmed clean; `content/ch/document_library.json` independently re-confirmed at 5/5 documents after
+regeneration. P12b (Japan onboarding) is next, using the same proven watcher-first template.
 
 ## PM checkpoints (Fable)
 

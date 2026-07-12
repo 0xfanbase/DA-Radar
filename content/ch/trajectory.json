@@ -1,0 +1,46 @@
+[
+  {
+    "schema_version": 1,
+    "date_or_window": "Consultation opened 22 October 2025 and closed 6 February 2026. No official date has been announced for the Federal Council's dispatch (Botschaft) to Parliament; the officially published consultation materials describe the dispatch as the next step but state no timetable for it",
+    "event": "Federal Council consultation on an amendment to the Financial Institutions Act (FinIA) that would abolish the Banking Act's fintech licence and create two new FinIA licence categories: 'payment instrument institutions,' which may issue value-stable crypto-based means of payment (a defined category of stablecoin) subject to 100% same-currency backing, on-demand redemption and segregation of client funds, with the existing CHF 100 million limit on taking client deposits removed; and 'crypto-institutions,' offering a broader range of crypto services under licensing criteria modelled on, but less extensive than, the securities-firm framework. This entry records only the officially stated consultation window; no officially stated date exists for the Federal Council's dispatch to Parliament or for entry into force, and none is asserted here",
+    "pillar": "stablecoins",
+    "source_url": "https://www.admin.ch/en/newnsb/x4TMWQ1SWofNoFx7XyHhY",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T08:04:31Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "Legal basis (amended AEOI Act and AEOI Ordinance, incorporating the OECD's Crypto-Asset Reporting Framework/CARF) in force from 1 January 2026, per the Federal Council's decision of 26 November 2025; but that same decision states the crypto-asset provisions 'shall not apply in 2026' and that CARF 'will not be implemented on 1 January 2026 as planned, but in 2027 at the earliest'",
+    "event": "Federal Council decision (26 November 2025) approving amendments to the Ordinance on the International Automatic Exchange of Information in Tax Matters (AEOI Ordinance) to incorporate the OECD's Crypto-Asset Reporting Framework (CARF) and the updated Common Reporting Standard (CRS 2.0). Although the amended AEOI Act and Ordinance -- including the crypto-asset provisions -- were due to come into force on 1 January 2026, the Federal Council's own decision states the crypto-asset provisions will not apply in 2026 because parliamentary committee review of the list of CARF partner jurisdictions was suspended; the Federal Council states CARF implementation, and the first exchange of crypto-asset data, will now occur in 2027 at the earliest. No more specific 2027 date is officially stated",
+    "pillar": "aml_cft_enforcement",
+    "source_url": "https://www.sif.admin.ch/en/newnsb/oAaJyRFS1lqJ7PN3sLJTP",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T08:04:31Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "1 October 2026 (Federal Council decision on entry into force taken 12 June 2026)",
+    "event": "Entry into force of the revised Anti-Money Laundering Act (AMLA), including new due-diligence duties for advisers and other persons providing services in connection with legal entities, together with the new Federal Act on the Transparency of Legal Entities and the Identification of Beneficial Owners (creating a non-public, federal transparency register of beneficial owners accessible to designated authorities and, for KYC/due-diligence purposes, to financial intermediaries and advisers subject to AMLA). Parliament had approved both acts on 26 September 2025 and the referendum period passed without a challenge being lodged. The Federal Council states 1 October 2026 was chosen to give affected parties sufficient implementation time and so that Switzerland's measures can be evaluated at the next FATF country review in 2027-2028; the 1 October 2026 date also starts the transition periods for registering affected legal entities in the transparency register. Provisions concerning state notaries (Amtsnotare) are excluded from this timeline to allow cantons to adjust their own legislation",
+    "pillar": "aml_cft_enforcement",
+    "source_url": "https://www.admin.ch/en/newnsb/x3sKLxCJ6S3dQJtfvy0Tb",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T08:04:31Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "'At least until June 2028'; the SNB states any extension beyond that would be communicated in a timely manner",
+    "event": "SNB's Project Helvetia, the Swiss National Bank's ongoing pilot on the settlement of tokenised assets in central bank money, is stated on the SNB's own project page to run 'until at least June 2028.' The pilot combines two approaches: 'Integrated Settlement,' in which the SNB issues wholesale CBDC (wCBDC) directly on the regulated SIX Digital Exchange (SDX) platform for settling tokenised-asset transactions, and 'Synchronised Settlement,' exploring an RTGS link coordinating the DLT-based BX Digital trading platform with the SIC payment system for settlement in traditional central bank money. The SNB states the pilot's scope is to be gradually expanded, with additional financial institutions able to join and wCBDC made available for a broader range of financial-market transactions, but that participation in the pilot 'does not... constitute a commitment on the SNB's part to introduce wCBDC on a permanent basis'; any such decision remains at the SNB's sole discretion",
+    "pillar": "banking_money",
+    "source_url": "https://www.snb.ch/en/the-snb/mandates-goals/payment-transactions/projekt_helvetia",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T08:04:31Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  }
+]

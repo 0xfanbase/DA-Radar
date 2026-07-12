@@ -1,0 +1,14 @@
+{
+  "feeds": {
+    "finma_news": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "finma",
+      "status": "ok",
+      "status_since": "2026-07-12T08:21:35Z"
+    }
+  },
+  "generated_at": "2026-07-12T08:21:35Z",
+  "jurisdiction_id": "ch",
+  "schema_version": 1
+}

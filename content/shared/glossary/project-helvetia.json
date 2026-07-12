@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "id": "project-helvetia",
+  "term": "Project Helvetia",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "The Swiss National Bank's ongoing pilot on settling tokenised-asset transactions in central bank money, combining two approaches: 'Integrated Settlement', in which the SNB issues wholesale central bank digital currency (wCBDC) directly on the regulated SIX Digital Exchange platform, and 'Synchronised Settlement', exploring a real-time-gross-settlement link coordinating a DLT-based trading platform with the SNB's SIC payment system for settlement in traditional central bank money. Per the SNB's project page as most recently consulted, the pilot's stated horizon is 'at least until June 2028'; an earlier SNB press release of 30 June 2025 had extended and expanded the pilot to run 'until at least mid-2027'. Both state the same caveat: participation 'does not ... constitute a commitment on the SNB's part to introduce wCBDC on a permanent basis', with any such decision remaining at the SNB's sole discretion. The SNB separately states it currently sees no clear advantage in issuing a retail digital franc for the general public, distinguishing that from its more exploratory wholesale-CBDC stance.",
+  "formal_definition": "Swiss National Bank, Project Helvetia project page (snb.ch/en/the-snb/mandates-goals/payment-transactions/projekt_helvetia). SNB press release, 'Swiss National Bank extends and expands Project Helvetia' (30 June 2025), states the pilot was extended for a further year -- 'until at least mid-2027' as of that release -- and expanded to include an RTGS-link settlement approach alongside the existing SDX-based wholesale CBDC issuance, and that the extension 'does not constitute a commitment on the part of the SNB to introduce wholesale CBDC on a permanent basis.'",
+  "related_terms": [
+    "sdx",
+    "finma"
+  ],
+  "first_used_card_id": "cf95e52fa13da650ceed71f6f2546ad2a9924924fbe9e4e1156d11cd5a299b1f",
+  "generated_at": "2026-07-12T20:13:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

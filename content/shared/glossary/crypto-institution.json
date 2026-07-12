@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "crypto-institution",
+  "term": "Crypto-institution (proposed)",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "A proposed new Swiss licence category for firms offering crypto-asset services other than stablecoin issuance -- such as custody and trading -- put out for public consultation by the Federal Council via the Federal Department of Finance from 22 October 2025 to 6 February 2026, alongside the related 'payment instrument institution' category. This is a consultation-stage proposal only -- it is not law, has not been enacted, and no dispatch (Botschaft) to the Federal Assembly had been confirmed as adopted as of this writing. The draft would insert the category into the Financial Institutions Act (FinIA), with licensing criteria the consultation materials describe as modelled on, but lighter than, those for securities firms, and would -- together with the proposed payment instrument institution category -- replace the current Banking Act art. 1b fintech licence.",
+  "formal_definition": "Federal Council / Federal Department of Finance (FDF), consultation draft amending the Federal Act on Financial Institutions (FinIA/FINIG), consultation opened 22 October 2025 and closed 6 February 2026. No primary source located during this research confirms enactment, a dispatch to the Federal Assembly, or an entry-into-force date, and none is asserted here.",
+  "related_terms": [
+    "payment-instrument-institution",
+    "fintech-licence",
+    "asset-token",
+    "finia"
+  ],
+  "first_used_card_id": "7acf2075c6b479c6293219ac686a938b7876a280de607030e1d78869f32e175d",
+  "generated_at": "2026-07-12T20:09:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}
