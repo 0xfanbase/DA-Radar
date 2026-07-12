@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "id": "caesp",
+  "term": "CAESP (Crypto Asset Exchange Service Provider / 暗号資産交換業者)",
+  "jurisdictions": [
+    "jp"
+  ],
+  "plain_definition": "Japan's licence category for a crypto-asset exchange -- broadly the equivalent of Hong Kong's VATP licence. A firm that buys or sells crypto-assets, exchanges one crypto-asset for another, brokers either activity, or manages crypto-assets on behalf of users, on a business basis, must first register with the Prime Minister (in practice, the Financial Services Agency). Only a registered CAESP -- or a comparably licensed foreign crypto-asset exchange operator -- may lawfully conduct crypto-asset exchange business in Japan.",
+  "formal_definition": "Payment Services Act (資金決済に関する法律, Act No. 59 of 2009), Chapter 3-3 (第三章の三 暗号資産), inserted by Act No. 62 of 2016 (implementing Cabinet Office Ordinances finalised 24 March 2017; regime effective 1 April 2017). Art. 2(15) defines 'crypto-asset exchange business' (暗号資産交換業) as conducting, on a business basis, any of: buying/selling crypto-assets or exchanging them for other crypto-assets; brokering, intermediating, or acting as agent for that activity; managing users' money in connection with either; or managing crypto-assets for another person. Art. 2(16) defines 'crypto-asset exchange service provider' (暗号資産交換業者) as a person registered under Art. 63-2, which itself prohibits conducting crypto-asset exchange business without that registration. Custody-only business was brought within the registration perimeter, and crypto-asset derivatives dealing moved out of the PSA into FIEA Type I business, by Act No. 28 of 2019, effective 1 May 2020. All confirmed by direct fetch of the current consolidated PSA text via the e-Gov Law API this session (law_id 421AC0000000059).",
+  "related_terms": [
+    "psa",
+    "crypto-asset-jp",
+    "jvcea",
+    "fsa",
+    "aptcp",
+    "vatp"
+  ],
+  "first_used_card_id": "c651de6c21486d89f2ce0a03f4174bcf51e9af2bb5995247584efd97ea0e76a3",
+  "generated_at": "2026-07-12T22:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "aptcp",
+  "term": "APTCP (Act on Prevention of Transfer of Criminal Proceeds / 犯罪収益移転防止法)",
+  "jurisdictions": [
+    "jp"
+  ],
+  "plain_definition": "Japan's core anti-money-laundering and counter-terrorist-financing statute -- broadly the equivalent of Hong Kong's AMLO -- setting customer-identification, record-keeping, and suspicious-transaction-reporting duties for a closed list of 'specified business operators.' Crypto-asset exchange service providers and electronic payment instrument service providers were added to that list by later amendments, and a 2022-23 amendment round inserted Japan's crypto travel-rule obligations: a separate notification duty for electronic-payment-instrument transfers and for crypto-asset transfers, both taking effect 1 June 2023.",
+  "formal_definition": "犯罪による収益の移転防止に関する法律 (Act No. 22 of 2007, 平成十九年法律第二十二号) -- confirmed by direct fetch of the current consolidated text via the e-Gov Law API this session (law_id 419AC0000000022); this Act has no official English translation on japaneselawtranslation.go.jp. Art. 2(2) lists 'specified business operators' (特定事業者), including, per this session's live fetch, item 31 (fund-transfer service providers), item 31-2 (electronic payment instrument service providers, cross-referencing Payment Services Act (PSA) Art. 2(12)), and item 32 (crypto-asset exchange operators, cross-referencing PSA Art. 2(16)). Crypto-asset exchange operators (then 'virtual currency exchange operators') were added effective 1 October 2016 by Act No. 62 of 2016; electronic payment instrument service providers were added effective 1 June 2023 by Act No. 61 of 2022. Art. 10-3 (the electronic-payment-instrument transfer-notification / travel-rule obligation) was inserted by Act No. 61 of 2022; Art. 10-5 (the crypto-asset transfer-notification / travel-rule obligation) was inserted by a legally separate act, Act No. 97 of 2022 (令和4年12月9日法律第97号, Japan's FATF Fourth Round Mutual Evaluation response act) -- both provisions took effect together, 1 June 2023, by a Cabinet Order promulgated 23 May 2023.",
+  "related_terms": [
+    "fsa",
+    "psa",
+    "caesp",
+    "electronic-payment-instrument",
+    "travel-rule"
+  ],
+  "first_used_card_id": "c651de6c21486d89f2ce0a03f4174bcf51e9af2bb5995247584efd97ea0e76a3",
+  "generated_at": "2026-07-12T10:46:25Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

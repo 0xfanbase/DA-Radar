@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "9c1b813ca60aa7abd4f01f4c1ff1d43d81328f7bd36fba3f1e8e1cdcf026ffd7",
+  "jurisdiction_id": "jp",
+  "published_date": "2023-05-26",
+  "regulator": "FSA (Financial Services Agency)",
+  "pillar": [
+    "stablecoins"
+  ],
+  "type": "ordinance",
+  "title": "Amended Payment Services Act enters into force: stablecoins regulated as electronic payment instruments (電子決済手段)",
+  "summary": "On 26 May 2023, Japan's Financial Services Agency (FSA) published the results of its public consultation on the cabinet order and Cabinet Office ordinance drafts implementing the Reiwa 4 amendment to the Payment Services Act and related laws (令和４年資金決済法等改正), under which stablecoin-type instruments are regulated as a new category called \"electronic payment instruments\" (電子決済手段) inside Japan's existing payments statute rather than through standalone crypto legislation. FSA received 205 comments from 48 individuals and organizations across three public comment periods held between October 2022 and March 2023. The implementing cabinet order was approved by Cabinet on 23 May 2023 and promulgated on 26 May 2023, and -- together with the related Cabinet Office ordinances and public notices -- entered into force on 1 June 2023.",
+  "why_it_matters": "This is the moment Japan's dedicated legal category for stablecoins, \"electronic payment instruments,\" actually became live law, created by amending the existing Payment Services Act rather than through standalone crypto legislation.",
+  "key_dates": {
+    "effective": "2023-06-01",
+    "milestone": "2023-05-23"
+  },
+  "citations": [
+    {
+      "url": "https://www.fsa.go.jp/news/r4/sonota/20230526/20230526.html",
+      "quote": "本日公布されており、令和５年６月１日（木曜）から施行されます"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T22:20:00Z",
+  "model": "Claude (Anthropic)"
+}

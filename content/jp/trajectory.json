@@ -1,0 +1,79 @@
+[
+  {
+    "schema_version": 1,
+    "date_or_window": "Bill submitted to the 221st ordinary Diet session on 10 April 2026; passed the House of Representatives (Committee on Financial Affairs, 10 June 2026; plenary, 11 June 2026); received by the House of Councillors the same day and referred to its Committee on Financial Affairs on 15 June 2026. As of the House of Councillors' own live bill-status page (fetched 12 July 2026), no vote date, passage result, or promulgation date is recorded for the House of Councillors stage -- the bill remains pending there",
+    "event": "The Cabinet-sponsored 'Bill to Partially Amend the Financial Instruments and Exchange Act and the Payment Services Act' (金融商品取引法及び資金決済に関する法律の一部を改正する法律案), which would migrate crypto-asset trading regulation from the Payment Services Act to the Financial Instruments and Exchange Act (FIEA) -- reclassifying crypto-assets as a financial product distinct from securities, and renaming 'crypto-asset exchange business' as 'crypto-asset trading business' -- and would create, for the first time, issuer/exchange information-disclosure duties, an insider-trading regime, and other unfair-trading-practice rules for crypto-assets. The bill follows the Financial System Council's Working Group on the Cryptoasset System, whose report was published 10 December 2025. The Financial Services Agency's own Diet-bills page lists this bill under bills it has submitted without an enactment (成立) date, distinguishing it from another bill submitted the same Diet session that the same page already marks as enacted",
+    "pillar": "exchanges_vatp",
+    "source_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/gian/221/meisai/m221080221057.htm",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T10:01:35Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "Officially stated only as a window relative to promulgation, not a fixed calendar date: FSA's own Diet explanatory material for the bill states the crypto-asset regulatory overhaul (item 1 of the bill) takes effect within one year of the law's promulgation ('公布から1年以内'), once and if the bill is enacted and promulgated. Because the bill has not yet been enacted (see the companion trajectory entry on its Diet status), no promulgation date exists yet and therefore no fixed commencement date can be stated here",
+    "event": "FSA's April 2026 Diet explanatory material (説明資料) for the FIEA/Payment Services Act amendment bill sets out a commencement-date (施行期日) chart for each of the bill's four subject areas. Of these, the crypto-asset regulatory overhaul (migration from the Payment Services Act to FIEA, the new information-disclosure duties, and the new unfair-trading-practice rules) is timed to take effect within one year of promulgation, on a date to be fixed later by Cabinet Order; by contrast the bill's sustainability-disclosure provisions and most of its unfair-trading-practice-regime provisions are timed to a fixed date, 1 April 2027 (令和9年4月1日), its startup-financing provisions to 20 days after promulgation, and its criminal-investigation-procedure digitalisation provisions to 1 October 2027 (令和9年10月1日)",
+    "pillar": "exchanges_vatp",
+    "source_url": "https://www.fsa.go.jp/common/diet/221/02/03.pdf",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T10:01:35Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "31 March 2026 -- enacted and promulgated the same day, per the Ministry of Finance's own published account of the FY2026 tax reform",
+    "event": "The 'Act to Partially Amend the Income Tax Act and Other Acts' (所得税法等の一部を改正する法律), which carries the FY2026 (令和8年度) national tax reform package including the crypto-asset separate-taxation provisions described in a companion trajectory entry, was enacted and promulgated on 31 March 2026. This Act's crypto-specific separate-taxation provisions do not themselves take effect on this date; their application is instead tied to the future enforcement date of the separate FIEA/Payment Services Act amendment bill, which remains pending in the Diet (see companion entries)",
+    "pillar": "exchanges_vatp",
+    "source_url": "https://www.mof.go.jp/public_relations/finance/202604/202604c.html",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T10:01:35Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "No fixed calendar date is officially stated. The Cabinet-decided FY2026 Tax Reform Outline (令和8年度税制改正の大綱, decided 26 December 2025) states the separate-taxation and related third-party-reporting provisions apply only 'from 1 January of the year following the year in which the enforcement date of the [FIEA] amendment Act falls' (金融商品取引法の改正法の施行の日の属する年の翌年の1月1日; the Outline labels this the '適用開始日', application-start date) -- a formula pegged to the still-undetermined FIEA/Payment Services Act bill's own future enforcement date, not a fixed date. Because that bill remains pending in the Diet (see companion entries) with no promulgation date yet, no application-start date can yet be fixed; the '2028' figure that recurs in secondary commentary is one illustrative reading of the formula (if FIEA enforcement were to fall in 2027) but is not itself an officially stated date, and is not asserted here",
+    "event": "Under the Cabinet-decided FY2026 Tax Reform Outline, gains on disposals of 'specified crypto-assets' (crypto-assets registered with a Financial Instruments and Exchange Act-registered crypto-asset trading business operator) made to such an operator would be taxed separately from other income at a combined national-plus-local rate of 20% (20.315% including the reconstruction surtax), replacing the current comprehensive-income (総合課税) treatment, under which crypto gains are taxed at marginal rates reaching roughly 55%; a three-year carry-forward for losses against future specified-crypto-asset gains is also introduced. The Outline expressly conditions both the rate change and the related annual reporting duty (imposed on crypto-asset trading business operators) on enactment and entry into force of the separate FIEA/Payment Services Act amendment bill described in companion trajectory entries",
+    "pillar": "exchanges_vatp",
+    "source_url": "https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/20251226taikou.pdf",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T10:01:35Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "Implementing Cabinet Orders and Cabinet Office Ordinances decided by Cabinet on 19 May 2026 and promulgated 22 May 2026; the amendment Act's own entry-into-force date (and that of these implementing orders) is 1 June 2026, per FSA's own notice, which states the Act's supplementary provisions set its effective date as a date specified by Cabinet Order not exceeding one year from the Act's promulgation date (13 June 2025), and that this date was fixed as 1 June 2026 -- with a parenthetical note that some provisions had already taken effect earlier, on the promulgation date itself ('一部公布日施行'). FSA's notice does not identify any provision of the Act commencing later than 1 June 2026",
+    "event": "The 'Act to Partially Amend the Payment Services Act' (Act No. 66 of 2025, promulgated 13 June 2025) enters into force on 1 June 2026, together with its implementing Cabinet Orders, Cabinet Office Ordinances, and public notices. Among the provisions taking effect on this date: rules letting the FSA order electronic-payment-instrument (stablecoin) exchange operators and crypto-asset exchange operators to hold a defined scope of assets domestically; rules on the reserve assets backing 'specified trust beneficial interests' (the trust-based stablecoin structure), including permitted investment in certain government bonds and early-redeemable time deposits, with limits on portfolio composition; and rules establishing the newly created 'electronic-payment-instrument/crypto-asset service intermediary business', the registration and conduct regime through which intermediaries -- including for overseas-issued stablecoins -- may operate. FSA's notice does not identify any specific follow-on registration or approval deadline beyond this general 1 June 2026 effective date",
+    "pillar": "stablecoins",
+    "source_url": "https://www.fsa.go.jp/news/r7/sonota/20260522/20260522.html",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T10:01:35Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "No date exists for any CBDC issuance decision; the Bank of Japan's own progress report, published 10 June 2026, is explicit that none has been made. The same report states the CBDC Forum's seven working groups will be reorganised into three discussion groups from Japan's fiscal year 2026 (i.e. from 1 April 2026), and that further technical study of core ledger-management-system design questions will continue, without giving any date for that study's conclusion or for any future decision",
+    "event": "The Bank of Japan's Payment and Settlement Systems Department published its June 2026 progress report on the central bank digital currency 'Pilot Programme' (ongoing since April 2023). The report's closing section states plainly that whether Japan will issue a CBDC has not been decided at this point ('わが国でCBDCを発行するかどうかは、現時点では決定しておらず'), and that this is a matter to be decided through future public debate; the Bank states it will continue technical study -- particularly of inter-ledger consistency for the core ledger-management system -- and continue Forum discussions with private-sector participants to inform that debate. No target date for an issuance decision, or for any further pilot milestone, is stated anywhere in the report",
+    "pillar": "banking_money",
+    "source_url": "https://www.boj.or.jp/paym/digital/dig260610c.pdf",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T10:01:35Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "Rules adopted/partially amended 29 June 2026 (Monday); entered into force 1 July 2026 (Wednesday), per JVCEA's own results notice",
+    "event": "Following a public comment period (3-15 June 2026) on proposed rules and guidelines to ensure 'system governance' at crypto-asset exchange businesses, the Japan Virtual and Crypto assets Exchange Association (JVCEA) adopted revised or newly-established self-regulatory rules and guidelines on System Risk Management (システムリスク管理), Emergency Response (緊急時対応), and Information Security Management (情報の安全管理) for crypto-asset exchange businesses, together with a minor accompanying amendment to its Rules on the Management of User Assets (暗号資産交換業に係る利用者財産の管理等に関する規則). JVCEA's notice states the comments received led only to minor drafting corrections and additions to the System Risk Management rule and minor corrections to the other two, with no substantive changes",
+    "pillar": "dealing_custody_advisory",
+    "source_url": "https://jvcea.or.jp/information/pc/20260701-002/",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T10:01:35Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  }
+]

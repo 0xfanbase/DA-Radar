@@ -67,6 +67,13 @@ along with `git log` — to know exactly where the project stands before doing a
   the 2026-07-12 "P12a" entry below for a real cross-jurisdiction pipeline gap the final-check surfaced
   (`seed_backfill.py` never regenerated the document library the way the live watcher does) and how it
   was fixed at the source, plus a latent official-domain gap caught before any card actually hit it.
+- **P12b — Japan onboarding (sixth jurisdiction): complete, first fully clean final-check.** Full seed
+  depth (7 pillar states, 5 verified cards, 7-entry trajectory, 11 glossary terms, 13-document library,
+  orientation page), FSA and JVCEA registered plus 4 zero-feed citation entries (proactively including
+  the Bank of Japan, learning P12a's own lesson), one of the earliest dedicated national stablecoin
+  frameworks anywhere (2022 PSA amendment, in force since 1 June 2023, already iterated by a 2025
+  amendment), Japanese-language source-quoting discipline held throughout -- see the 2026-07-12 "P12b"
+  entry below. Zero defects found by the final-check; no fix-then-commit cycle needed.
 
 ## Owner / next-step punch list
 
@@ -1250,6 +1257,56 @@ promoted on re-run (already correctly linked); a full `pipeline.site.generate` r
 `grep -rl PENDING content/shared/glossary/` and `grep -rl claude-sonnet content/ch/ data/ch/` both
 confirmed clean; `content/ch/document_library.json` independently re-confirmed at 5/5 documents after
 regeneration. P12b (Japan onboarding) is next, using the same proven watcher-first template.
+
+### 2026-07-12 — P12b: Japan onboarding (sixth jurisdiction, clean on the first pass)
+
+The first onboarding whose final-check found **zero defects** -- no fix-then-commit cycle needed, a real
+signal that the accumulated P9-P12a lessons are now genuinely baked into the workflow template rather than
+each phase re-discovering them. Japan regulates via amendments to two pre-existing statutes -- the Payment
+Services Act (PSA, crypto exchange registration since 1 April 2017, hardened after the 2018 Coincheck
+incident) and the Financial Instruments and Exchange Act (FIEA, security tokens and crypto derivatives) --
+the same "amend existing law" structural pattern P12a established for Switzerland, though with more
+statute-specific mechanics than Switzerland's technology-neutral approach. `content/jp/orientation.json`
+states this explicitly, drawing the comparison to Switzerland by name. Japan's marquee feature is one of
+the earliest dedicated national stablecoin frameworks anywhere: a 2022 PSA amendment (in force 1 June
+2023) defines stablecoins as "electronic payment instruments," restricting issuance to banks, registered
+fund-transfer providers, and trust companies -- already being iterated by a further 2025 amendment (in
+force 1 June 2026) relaxing reserve-asset rules. `config/jurisdictions/jp.json` registers FSA and JVCEA
+(both live feeds) plus four zero-feed citation entries (`japanese_law_translation`, `e_gov`, `boj`, `mof`)
+-- all four ids explicitly grepped against `pipeline/` and confirmed collision-free before use, and `boj`
+registered proactively (not reactively, after P12a's own lesson about latent domain gaps) since the
+banking pillar was known in advance to cite the Bank of Japan. Content seeded: 7 pillar states, 5
+independently verified cards, a 7-entry trajectory, 11 new glossary terms, and a 13-document library.
+
+**Multi-language discipline held**: several cards and pillar states cite Japanese-language FSA/JVCEA pages
+directly, quoting the original Japanese text verbatim (never self-translated) and noting the source
+language plainly, exactly as the workflow's own instructions required -- the final-check's independent
+re-fetch of all 6 card citations found every quote genuine, no dropped-marker or spliced-punctuation
+fabrication (the exact defect class that survived to final-check in both P10 and P11).
+
+**The final-check also confirmed, on a second real jurisdiction, that P12a's `seed_backfill.py` fix
+actually works**: `content/jp/document_library.json` holds exactly 13 documents, precisely matching the 13
+`relevant: true` items in `data/jp/ledger.json` (5 published + 8 still-queued) -- no manual regeneration
+needed this time, unlike Switzerland's onboarding, because the fix now runs automatically inside
+`seed_backfill` itself.
+
+`config/site.json`'s `jp` entry now reads `status.watcher: "live"`, `status.seeded: true`,
+`status.analyst_verifier: "planned"`; `.github/workflows/watch.yml`'s matrix is
+`[hk, uk, eu, us, ch, jp]`. `docs/analyst-runbook.md`, both prompt files, and everything under `/pipeline`
+were correctly left untouched -- this run needed no source fix, only the same content build every prior
+phase has done.
+
+**Verification, run fresh by the orchestrating session** (the final-check itself did extensive independent
+re-fetching, but every prior phase's "trust nothing, re-derive" standard still applies to its own report):
+full pytest suite 440/440 passing (no regression, no new pipeline code needed); `pipeline.ci.
+validate_content` clean (28 files); `apply_verification_gate --jurisdiction jp` re-run clean, all 5 cards
+still `"verified"`, zero downgrades; `promote_drafted`/`promote_verified --jurisdiction jp` both report 0
+newly promoted (already correctly linked); `content/jp/document_library.json` independently re-counted at
+13/13 against the live ledger; a full `pipeline.site.generate` rebuild succeeded, `_site/jp/index.html`
+confirmed to show real Japanese content, zero "coming soon" hits; repo-wide `grep -rl PENDING
+content/shared/glossary/` confirmed clean.
+
+**Six jurisdictions now live: hk, uk, eu, us, ch, jp.** P13 (UAE onboarding) is next.
 
 ## PM checkpoints (Fable)
 

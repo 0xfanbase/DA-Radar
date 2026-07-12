@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "40efe78597663a3d4d3915012b540c0e06fd8066d5b01d93b1e5445b10b41d40",
+  "jurisdiction_id": "jp",
+  "published_date": "2026-06-30",
+  "regulator": "JVCEA (Japan Virtual and Crypto assets Exchange Association / 一般社団法人日本暗号資産等取引業協会)",
+  "pillar": [
+    "exchanges_vatp",
+    "dealing_custody_advisory"
+  ],
+  "type": "conclusions",
+  "title": "定款・規則の制定及び改正に関する意見公募手続きの結果について",
+  "summary": "On 30 June 2026, JVCEA -- an association certified as a self-regulatory organisation under Japan's Payment Services Act and Financial Instruments and Exchange Act -- published the results of a public comment procedure on proposed enactments and amendments to its own articles of incorporation and internal rules. The comment window ran from 26 May to 11 June 2026, drawing 16 comments from three companies. JVCEA states the affected rules and guidelines were enacted or partially amended on 15 June 2026 and took effect on 30 June 2026, following that day's ordinary general meeting of members. The notice itself does not identify which specific articles or rules were changed or describe their content, instead directing readers to a separate linked page for the comment summary and JVCEA's own views on each comment.",
+  "why_it_matters": "JVCEA is certified as a self-regulatory organisation under Japan's Payment Services Act and Financial Instruments and Exchange Act, so amendments to its own articles of incorporation and internal rules matter for the compliance environment its member firms operate in, even though -- as here -- this notice does not specify which particular provisions changed.",
+  "key_dates": {
+    "deadline": "2026-06-11",
+    "effective": "2026-06-30",
+    "milestone": "2026-06-15"
+  },
+  "citations": [
+    {
+      "url": "https://jvcea.or.jp/information/pc/20260630-002/",
+      "quote": "2026年6月15日（火）に制定・一部改正され、2026年6月30日（火）定時社員総会後に施行されます"
+    },
+    {
+      "url": "https://jvcea.or.jp/about/",
+      "quote": "資金決済法に基づく「認定資金決済事業者協会」と金融商品取引法に基づく「認定金融商品取引業協会」を兼ねております"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T23:30:00Z",
+  "model": "Claude (Anthropic)"
+}

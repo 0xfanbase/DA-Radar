@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "specified-trust-beneficial-interest",
+  "term": "Specified trust beneficial interest (特定信託受益権)",
+  "jurisdictions": [
+    "jp"
+  ],
+  "plain_definition": "Japan's trust-type stablecoin category, and one of the four statutory forms an 'electronic payment instrument' can take. It is a beneficial interest in a monetary trust, tokenized so it can be transferred electronically, where the trustee must keep a required minimum share of the money it holds in bank deposits and may invest the remainder only in government bonds and similarly safe, ordinance-specified instruments. A 2025 amendment relaxed those backing-asset rules, from 1 June 2026, by permitting reserve management via designated Japanese government bonds and early-withdrawal-permitted time deposits, subject to a composition-ratio ceiling and principal-protection conditions set at ordinance level.",
+  "formal_definition": "Payment Services Act (資金決済に関する法律, Act No. 59 of 2009), Art. 2(9) -- confirmed by direct fetch of the current consolidated text via the e-Gov Law API this session (law_id 421AC0000000059) -- defines 'specified trust beneficial interest' (特定信託受益権) as a monetary trust beneficial interest, displayed as electronically transferable property value, where: the proportion of the total money received under the trust contract that the trustee manages as bank deposits meets an ordinance-specified minimum ratio; the remaining money is invested only by holding ordinance-specified government bonds or other ordinance-specified bonds (including book-entry transfer bonds under the Act on Book-Entry Transfer of Corporate Bonds, Shares, etc.); and other ordinance-specified requirements are met. It is item 3 of the four items comprising 'electronic payment instrument' under Art. 2(5). The backing-asset ratio and instrument rules were relaxed by 資金決済に関する法律の一部を改正する法律 (令和7年法律第66号, Act No. 66 of 2025), promulgated 13 June 2025, implementing ordinances promulgated 22 May 2026, effective 1 June 2026 -- per FSA's own summary, permitting reserve management via designated Japanese government bonds and early-withdrawal-permitted time deposits, subject to a composition-ratio ceiling and principal-protection conditions. The exact numeric ceiling reported in secondary commentary (approximately 50% of issuance amount) could not be independently machine-extracted from the underlying FSA ordinance PDF this session and is not asserted here as verified fact.",
+  "related_terms": [
+    "electronic-payment-instrument",
+    "psa",
+    "stablecoin",
+    "fsa"
+  ],
+  "first_used_card_id": "9c1b813ca60aa7abd4f01f4c1ff1d43d81328f7bd36fba3f1e8e1cdcf026ffd7",
+  "generated_at": "2026-07-12T10:46:25Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

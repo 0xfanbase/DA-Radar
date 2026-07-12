@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "1a3f20eb4e845d8353b6d40e6d699417e8da92253d3b681be3f0b6766514f5d0",
+  "jurisdiction_id": "jp",
+  "published_date": "2026-06-30",
+  "regulator": "JVCEA (Japan Virtual and Crypto assets Exchange Association / 一般社団法人日本暗号資産等取引業協会)",
+  "pillar": [
+    "exchanges_vatp"
+  ],
+  "type": "conclusions",
+  "title": "「新規暗号資産の販売に関する規則」等の一部改正（案）に関する意見公募手続きの結果について",
+  "summary": "On 30 June 2026, JVCEA published (in Japanese) the results of a public comment procedure on a proposed partial amendment to its 'Rules Regarding Sales of New Crypto Assets' (新規暗号資産の販売に関する規則) and related self-regulatory rules and guidelines. The comment window ran from 29 May to 17 June 2026. JVCEA states that it received no comments from the general public. Separately, member firms submitted their own comments, and JVCEA's responses to those comments were shared internally with the full membership rather than published here; the notice also links to a separate 'No. 022' detail page covering the substance of the proposed amendment, which this card does not examine.",
+  "why_it_matters": "JVCEA's 'Rules Regarding Sales of New Crypto Assets' govern which newly issued crypto-assets its member exchanges may sell, so amendments to them can change what Japanese crypto exchanges must do before listing a new token. This particular notice, however, only confirms that the public comment period closed with no comments from the general public -- it does not itself describe what the amendment changes.",
+  "key_dates": {
+    "deadline": "2026-06-17"
+  },
+  "citations": [
+    {
+      "url": "https://jvcea.or.jp/information/pc/20260629-001/",
+      "quote": "その結果、一般の方からのご意見はございませんでした。"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T23:30:00Z",
+  "model": "Claude (Anthropic)"
+}

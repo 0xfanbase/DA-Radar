@@ -1,0 +1,28 @@
+{
+  "feeds": {
+    "fsa_news_en": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "fsa",
+      "status": "ok",
+      "status_since": "2026-07-12T10:15:24Z"
+    },
+    "fsa_news_ja": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "fsa",
+      "status": "ok",
+      "status_since": "2026-07-12T10:15:24Z"
+    },
+    "jvcea_news": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "jvcea",
+      "status": "ok",
+      "status_since": "2026-07-12T10:15:24Z"
+    }
+  },
+  "generated_at": "2026-07-12T10:15:24Z",
+  "jurisdiction_id": "jp",
+  "schema_version": 1
+}

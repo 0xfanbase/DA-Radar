@@ -82,13 +82,13 @@
     {
       "id": "jp",
       "name": "Japan",
-      "config": null,
+      "config": "config/jurisdictions/jp.json",
       "status": {
-        "watcher": "planned",
+        "watcher": "live",
         "analyst_verifier": "planned",
-        "seeded": false
+        "seeded": true
       },
-      "coverage_notes": "Planned. Watcher sources and config file to be written in its build phase."
+      "coverage_notes": "Live RSS watcher (FSA English + Japanese news feeds, JVCEA feed), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
     }
   ],
   "pillars": [

@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "crypto-asset-service-intermediary",
+  "term": "Crypto-asset service intermediary (電子決済手段・暗号資産サービス仲介業)",
+  "jurisdictions": [
+    "jp"
+  ],
+  "plain_definition": "A new, lighter Japanese registration tier, created by a 2025 Payment Services Act amendment and in force from 1 June 2026, for a firm that brokers electronic payment instrument (stablecoin) or crypto-asset transactions on behalf of a licensed principal operator -- an already-registered electronic payment instrument exchange operator or crypto-asset exchange service provider -- without itself taking custody of user assets. Because it never holds client funds or crypto-assets directly, it is registered separately from, and under lighter requirements than, the CAESP or EPI-exchange-operator licences held by the principal operators it acts for.",
+  "formal_definition": "Payment Services Act (資金決済に関する法律, Act No. 59 of 2009), Chapter 3-4 (第三章の四 電子決済手段・暗号資産サービス仲介業), inserted by 資金決済に関する法律の一部を改正する法律 (令和7年法律第66号, Act No. 66 of 2025), promulgated 13 June 2025, with implementing Cabinet Orders and ministerial ordinances promulgated 22 May 2026 following a Cabinet decision of 19 May 2026, effective 1 June 2026. Art. 2(18) defines 'electronic payment instrument / crypto-asset service intermediary business' (電子決済手段・暗号資産サービス仲介業) as conducting, on a business basis, either: (1) 'electronic payment instrument intermediation' (電子決済手段仲介行為) -- a non-registered-operator brokering the sale/exchange of electronic payment instruments on behalf of a registered electronic payment instrument exchange operator; or (2) 'crypto-asset intermediation' (暗号資産仲介行為) -- a non-CAESP brokering the sale/exchange of crypto-assets on behalf of a registered CAESP. Art. 2(19) defines the operator itself as a person registered under Art. 63-22-2, which (Chapter 3-4, Section 1) provides that a person so registered may conduct the intermediary business notwithstanding the separate registration requirements of Art. 62-3 and Art. 63-2. All confirmed by direct fetch of the current consolidated PSA text via the e-Gov Law API this session (law_id 421AC0000000059), which reflects the Act as amended through the 2025 revision.",
+  "related_terms": [
+    "psa",
+    "caesp",
+    "electronic-payment-instrument",
+    "fsa",
+    "aptcp"
+  ],
+  "first_used_card_id": "9c1b813ca60aa7abd4f01f4c1ff1d43d81328f7bd36fba3f1e8e1cdcf026ffd7",
+  "generated_at": "2026-07-12T10:46:25Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

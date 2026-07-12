@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "pillar": "exchanges_vatp",
+  "status_seal": "in_force",
+  "regulator": "FSA (Financial Services Agency) / JVCEA (Japan Virtual and Crypto assets Exchange Association)",
+  "instruments": [
+    "Payment Services Act (資金決済に関する法律, Act No. 59 of 2009), Chapter 3-3 (第三章の三 暗号資産) -- Art. 2(15) defines 'crypto-asset exchange business' (暗号資産交換業) and Art. 63-2 requires registration ('内閣総理大臣の登録を受けた法人でなければ、暗号資産交換業を行ってはならない' -- only a Prime-Minister-registered entity may conduct crypto-asset exchange business); text confirmed live via the e-Gov Law API, https://laws.e-gov.go.jp/api/2/law_data/421AC0000000059",
+    "Act No. 62 of 2016 (平成28年法律第62号), 'Act on Partial Amendment to the Banking Act, etc. in Response to Environmental Changes such as the Development of Information and Communication Technology' -- passed the House of Councillors 25 May 2016; inserted the PSA's crypto-asset (then 'virtual currency') exchange-business registration chapter; implementing Cabinet Office Ordinances were finalised 24 March 2017 and the registration regime took effect 1 April 2017 -- the founding registration date for this pillar",
+    "Act No. 28 of 2019 (令和元年法律第28号), '情報通信技術の進展に伴う金融取引の多様化に対応するための資金決済に関する法律等の一部を改正する法律' (Act Partially Amending the Payment Services Act etc. in Response to the Diversification of Financial Transactions Accompanying Advances in Information and Communications Technology) -- the post-Coincheck (January 2018) hardening amendment; took effect 1 May 2020 by Cabinet Order No. 141 of 3 April 2020; renamed 'virtual currency' to 'crypto assets' (暗号資産), brought crypto-asset custody-only business inside the PSA registration perimeter, and moved crypto-asset derivatives dealing into the Financial Instruments and Exchange Act (FIEA) as Type I financial instruments business",
+    "Cabinet Office Ordinance on Crypto-Asset Exchange Service Providers (暗号資産交換業者に関する内閣府令, Cabinet Office Ordinance No. 7 of 2017) -- Art. 27(2) sets the segregated-management ceiling for user crypto-assets held outside 'cold wallet or equivalent' methods at 5% of the JPY-equivalent value of the crypto-assets an operator manages for users (confirmed by direct text fetch via the e-Gov Law API, https://laws.e-gov.go.jp/api/2/law_data/429M60000002007) -- i.e. the operator-level rule is a 5% hot-wallet ceiling (commonly described in industry commentary as a '95% cold storage' rule), set by Cabinet Office Ordinance rather than JVCEA self-regulatory rule; the ordinance's Art. 1(2)(7) defines '履行保証暗号資産' (performance-guarantee crypto assets, held by the operator against the hot-wallet portion) by cross-reference to PSA Art. 63-11-2(1) rather than defining it directly",
+    "JVCEA (一般社団法人日本暗号資産等取引業協会) self-regulatory rules (定款・諸規則), including rules on new crypto-asset listings, new-token sales, and advertising -- binding on JVCEA's registered-operator members; JVCEA's own 'about' page (jvcea.or.jp/about/) states verbatim that the association holds both the PSA-based '認定資金決済事業者協会' (certified funds-settlement business association) status and, under FIEA, '認定金融商品取引業協会' (certified financial instruments business association) status ('「認定資金決済事業者協会」と金融商品取引法に基づく「認定金融商品取引業協会」を兼ねております') -- the FIEA-side certification, covering crypto-asset derivatives trading business, was announced by JVCEA effective 1 May 2020, the same date the 2019 PSA/FIEA amendment package took effect",
+    "Bill for Partial Amendment of the Financial Instruments and Exchange Act and the Payment Services Act (金融商品取引法及び資金決済に関する法律の一部を改正する法律), submitted to the 221st ordinary Diet session 10 April 2026 (confirmed on FSA's own bill-tracking page, fsa.go.jp/common/diet/index.html, which lists it verbatim as '（令和８年４月10日提出）') -- passed the House of Representatives 11 June 2026; pending in the House of Councillors as of this card's generation date (12 July 2026); not yet law and cited here as pending legislation only",
+    "JVCEA self-regulatory rules and guidelines on System Risk Management (システムリスク管理), Emergency Response (緊急時対応), and Information Security Management (情報の安全管理) for crypto-asset exchange businesses -- following a public comment procedure (3-15 June 2026) in which JVCEA received comments from 2 organizations, JVCEA made partial revisions/additions to the System Risk Management rules and guidelines and minor corrections to the other two; enacted/partially amended 29 June 2026, in force 1 July 2026, per JVCEA's own results notice (jvcea.or.jp/information/pc/20260701-002/), fetched directly this session"
+  ],
+  "standing_summary": "Japan regulates crypto-asset trading venues by amending two existing statutes -- the Payment Services Act (PSA) and the Financial Instruments and Exchange Act (FIEA) -- not through a single dedicated crypto-exchange law, and that amendment-based structure is itself a defining feature of this pillar. The founding layer is the PSA's crypto-asset exchange service provider (暗号資産交換業者, CAESP) registration regime: Act No. 62 of 2016 inserted a new PSA chapter (第三章の三 暗号資産) requiring registration with the Prime Minister (in practice, the FSA) to conduct 'crypto-asset exchange business' as defined in PSA Art. 2(15) -- buying/selling crypto-assets, exchanging them for other crypto-assets, intermediation/brokerage/agency for either, or managing users' crypto-assets in connection with those activities -- and PSA Art. 63-2 makes registration mandatory; this text was confirmed live via the e-Gov Law API (law_id 421AC0000000059). Implementing Cabinet Office Ordinances were finalised 24 March 2017 and the regime took effect 1 April 2017, following the 2014 Mt. Gox collapse. The regime was hardened after the January 2018 Coincheck incident by Act No. 28 of 2019 (令和元年法律第28号), which took effect 1 May 2020 by Cabinet Order No. 141 of 3 April 2020: it renamed 'virtual currency' to 'crypto assets' (暗号資産) throughout the PSA, extended the registration perimeter to custody-only business (holding users' crypto-assets without also running exchange services), and moved crypto-asset derivatives dealing out of the PSA and into FIEA as Type I financial instruments business -- the derivatives dimension is tracked in the Dealing, Custody, Advisory & Management pillar, not duplicated here. On custody mechanics that bear directly on exchange operators: the Cabinet Office Ordinance on Crypto-Asset Exchange Service Providers (Cabinet Office Ordinance No. 7 of 2017), fetched and confirmed directly via the e-Gov Law API (law_id 429M60000002007), sets in Art. 27(2) a 5%-of-JPY-value ceiling on the portion of user crypto-assets an operator may hold outside cold-wallet-or-equivalent management -- the rule is set by Cabinet Office Ordinance, not JVCEA self-regulation, resolving the exact legal source the brief for this pillar flagged as needing verification. The Japan Virtual and Crypto assets Exchange Association (JVCEA) is the FSA-recognised self-regulatory organisation for this pillar; its own 'about' page states verbatim that it holds both PSA-based '認定資金決済事業者協会' (certified funds-settlement business association) status and, since 1 May 2020 -- the same commencement date as the 2019 PSA/FIEA amendment package -- FIEA-based '認定金融商品取引業協会' (certified financial instruments business association) status covering crypto-asset derivatives trading business, confirming the dual certification described in this pillar's brief. JVCEA sets binding member rules on new coin listings, new-token sales, and advertising, layered on top of the statutory registration regime; the FSA's own guide materials describe the combined ordinance-plus-JVCEA-rule framework as broadly comparable in stringency to the regime applied to ordinary FIEA financial instruments business operators. The live edge of this pillar is a pending, not yet enacted, bill: the 'Bill for Partial Amendment of the Financial Instruments and Exchange Act and the Payment Services Act' (金融商品取引法及び資金決済に関する法律の一部を改正する法律), confirmed on FSA's own bill-tracking page as submitted to the 221st ordinary Diet session on 10 April 2026. It passed the House of Representatives on 11 June 2026 and, as of this card's generation date, remains pending in the House of Councillors -- it is not law. As officially described (per the bill's own submission materials on the FSA site and corroborated by contemporaneous secondary legal commentary, used here only to describe process, not to assert enactment), the bill would migrate crypto-asset business regulation from the PSA into FIEA, inserting crypto-asset provisions throughout FIEA's existing business-conduct, disclosure, and unfair-trading frameworks, including a newly created crypto-asset insider-trading prohibition and an administrative surcharge regime -- described here as pending legislation only, with no assumption about final enactment date or content, since Diet deliberation can still amend or fail to pass it. Separately, JVCEA's 1 July 2026 notice on the results of its public-comment process on rules and guidelines for 'system governance' assurance in crypto-asset exchange business (暗号資産交換業に係るシステムガバナンスの確保に係る規則・ガイドライン) has now been independently fetched and analyzed: following a 3-15 June 2026 comment period in which 2 organizations submitted comments, JVCEA made partial revisions/additions to its System Risk Management (システムリスク管理) rules and guidelines and minor corrections to its Emergency Response (緊急時対応) and Information Security Management (情報の安全管理) rules and guidelines; all were enacted or partially amended 29 June 2026 and took effect 1 July 2026.",
+  "last_changed": "2026-07-01",
+  "key_links": [
+    {
+      "label": "e-Gov Law API: Payment Services Act (資金決済に関する法律, Act No. 59 of 2009) -- full text, JSON",
+      "url": "https://laws.e-gov.go.jp/api/2/law_data/421AC0000000059"
+    },
+    {
+      "label": "e-Gov Law API: Cabinet Office Ordinance on Crypto-Asset Exchange Service Providers (暗号資産交換業者に関する内閣府令, Cabinet Office Ordinance No. 7 of 2017) -- full text, JSON",
+      "url": "https://laws.e-gov.go.jp/api/2/law_data/429M60000002007"
+    },
+    {
+      "label": "Japanese Law Translation (Ministry of Justice): Payment Services Act, English courtesy translation",
+      "url": "https://www.japaneselawtranslation.go.jp/en/laws/view/3078"
+    },
+    {
+      "label": "FSA: Bills submitted to the Diet (国会提出法案等) -- lists the pending FIEA/PSA amendment bill, submitted 10 April 2026",
+      "url": "https://www.fsa.go.jp/common/diet/index.html"
+    },
+    {
+      "label": "FSA: crypto-asset business overview page (暗号資産に関連する事業を行うみなさまへ)",
+      "url": "https://www.fsa.go.jp/policy/virtual_currency/index_2.html"
+    },
+    {
+      "label": "JVCEA: about / certification status (協会概要)",
+      "url": "https://jvcea.or.jp/about/"
+    },
+    {
+      "label": "JVCEA: articles of incorporation and self-regulatory rules (定款・諸規則)",
+      "url": "https://jvcea.or.jp/about/rule/"
+    },
+    {
+      "label": "JVCEA: official news/notice RSS feed",
+      "url": "https://jvcea.or.jp/feed/"
+    },
+    {
+      "label": "JVCEA: results of public comment on system governance rules/guidelines for crypto-asset exchange business (1 July 2026)",
+      "url": "https://jvcea.or.jp/information/pc/20260701-002/"
+    },
+    {
+      "label": "FSA: official English-language RSS news feed",
+      "url": "https://www.fsa.go.jp/fsaEnNewsList_rss2.xml"
+    },
+    {
+      "label": "FSA: official Japanese-language 'all news' RSS feed",
+      "url": "https://www.fsa.go.jp/fsaNewsListAll_rss2.xml"
+    }
+  ],
+  "open_items": [
+    "The crypto-asset derivatives leverage cap (widely reported in secondary legal commentary as 2x, keyed to the Cabinet Office Ordinance on Financial Instruments Business, etc. (金融商品取引業等に関する内閣府令, Heisei 19 Cabinet Office Ordinance No. 54), Art. 117(1)(47)-(50) and paras. 41-42) was corroborated only through secondary legal-commentary sources this session, not through a direct fetch of the ordinance's own text -- flagged rather than stated as independently primary-verified. It also belongs substantively to the Dealing, Custody, Advisory & Management pillar (derivatives dealing is FIEA Type I business), not this one, and is noted here only because JVCEA's FIEA-side certification (described above) covers crypto-asset derivatives trading business.",
+    "The pending 'Bill for Partial Amendment of the Financial Instruments and Exchange Act and the Payment Services Act' (submitted 10 April 2026, passed the House of Representatives 11 June 2026) had not passed the House of Councillors as of this card's generation date (12 July 2026). Its status must be re-verified at the time this card is next read or updated -- it may since have been enacted, amended, or failed to pass.",
+    "Trust-type stablecoin intermediary business and the electronic payment instrument regime created/amended by the 2025 PSA amendment (令和7年法律第66号, in force 1 June 2026) are tracked in the Stablecoins pillar, not here, even though the same JVCEA and FSA regulator/citation entries apply across both pillars.",
+    "This card registers two zero-feed citation entries used for primary-source fact-checking in this pillar -- 'e_gov' (laws.e-gov.go.jp / elaws.e-gov.go.jp: the ordinary HTML law pages are a JS single-page application that serves only an ~800-byte shell to non-browser fetchers, so all citations above use the JSON/XML API forms instead, e.g. https://laws.e-gov.go.jp/api/2/law_data/{law_id}) and 'japanese_law_translation' (japaneselawtranslation.go.jp, a Ministry of Justice portal whose own Terms of Use state that only the original Japanese texts have legal effect and that its translations, including the Payment Services Act translation cited above, are unofficial courtesy translations for reference only) -- both confirmed independently fetchable this session."
+  ],
+  "generated_at": "2026-07-12T23:10:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

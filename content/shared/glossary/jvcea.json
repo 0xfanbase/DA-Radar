@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "id": "jvcea",
+  "term": "JVCEA (Japan Virtual and Crypto assets Exchange Association / 日本暗号資産等取引業協会)",
+  "jurisdictions": [
+    "jp"
+  ],
+  "plain_definition": "Japan's FSA-certified self-regulatory organisation (SRO) for the crypto-asset and stablecoin industry -- broadly the equivalent of a certified trade association with binding rule-making power over its registered-operator members. JVCEA holds a dual certification: under the Payment Services Act, as a certified funds-settlement business association covering crypto-asset exchange business, electronic payment instrument exchange business, and fund-transfer business; and, since 1 May 2020, under the Financial Instruments and Exchange Act, as a certified financial instruments business association covering crypto-asset derivatives trading business. It sets binding member rules on new-token listings, new-token sales, advertising, and system governance, layered on top of the FSA's statutory registration regime.",
+  "formal_definition": "JVCEA's own 'about' page (jvcea.or.jp/about/) states verbatim that it holds both '認定資金決済事業者協会' (certified funds-settlement business association) status under the Payment Services Act and, under the Financial Instruments and Exchange Act, '認定金融商品取引業協会' (certified financial instruments business association) status -- independently corroborated against FSA's own published list of certified funds-settlement business associations (fsa.go.jp/koueki/koueki10f.html), which lists JVCEA's PSA-side certification as covering crypto-asset exchange business, electronic payment instrument exchange business, and funds-transfer business. The FIEA-side certification, covering crypto-asset derivatives trading business, took effect 1 May 2020, the same commencement date as the PSA/FIEA amendment package (Act No. 28 of 2019) that moved crypto-asset derivatives dealing into FIEA. JVCEA's own published rule categories (jvcea.or.jp), fetched this session, span 暗号資産交換業 (crypto-asset exchange business), 暗号資産デリバティブ取引業 (crypto-asset derivatives trading business), 電子決済手段等取引業 (electronic payment instrument exchange business), 資金移動業 (fund-transfer business), and, added for the 2025 PSA amendment's new intermediary category (in force 1 June 2026), 暗号資産仲介行為 and 電子決済仲介行為.",
+  "related_terms": [
+    "caesp",
+    "psa",
+    "fiea",
+    "fsa",
+    "crypto-asset-service-intermediary",
+    "electronic-payment-instrument"
+  ],
+  "first_used_card_id": "f6c1df724bcda3c0d6ded48b0728ba9d14ce72ab60067cb9150ae2abe089ba17",
+  "generated_at": "2026-07-12T21:20:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "id": "psa",
+  "term": "PSA (Payment Services Act / 資金決済に関する法律)",
+  "jurisdictions": [
+    "jp"
+  ],
+  "plain_definition": "Japan's foundational payments statute and, since a series of amendments beginning in 2016, the primary law regulating crypto-asset exchanges and digital-money-type stablecoins in Japan. Rather than passing a dedicated crypto-asset law or a dedicated stablecoin law, Japan has repeatedly amended this single 2009 Act -- most recently in 2022 (creating the 'electronic payment instrument' stablecoin regime) and 2025 (creating a lighter intermediary-business registration tier, in force 1 June 2026) -- to bring each new category of digital-asset business inside its existing registration framework.",
+  "formal_definition": "資金決済に関する法律, Act No. 59 of 2009 (平成二十一年法律第五十九号), promulgated 24 June 2009 -- confirmed by direct fetch of the Act's current consolidated text via the e-Gov Law API this session (law_id 421AC0000000059). Chapter 3-3 (第三章の三 暗号資産), inserted by Act No. 62 of 2016, defines 'crypto-asset' (Art. 2(14)), 'crypto-asset exchange business' (Art. 2(15)), and 'crypto-asset exchange service provider' (Art. 2(16), a person registered under Art. 63-2). Chapter 3-2 (第三章の二 電子決済手段等), inserted by Act No. 61 of 2022, defines 'electronic payment instrument' (Art. 2(5)) and 'specified trust beneficial interest' (Art. 2(9)), and requires registration under Art. 62-3 to conduct electronic payment instrument exchange business. Chapter 3-4 (第三章の四 電子決済手段・暗号資産サービス仲介業), inserted by 資金決済に関する法律の一部を改正する法律 (令和7年法律第66号, Act No. 66 of 2025, promulgated 13 June 2025, effective 1 June 2026), defines the electronic payment instrument / crypto-asset service intermediary business (Art. 2(18)-(19)) and its registration requirement (Art. 63-22-2) -- all confirmed in the same live fetch, which reflects the Act as amended through the 2025 revision.",
+  "related_terms": [
+    "caesp",
+    "electronic-payment-instrument",
+    "specified-trust-beneficial-interest",
+    "crypto-asset-service-intermediary",
+    "crypto-asset-jp",
+    "fsa",
+    "jvcea",
+    "fiea",
+    "aptcp"
+  ],
+  "first_used_card_id": "9c1b813ca60aa7abd4f01f4c1ff1d43d81328f7bd36fba3f1e8e1cdcf026ffd7",
+  "generated_at": "2026-07-12T21:25:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

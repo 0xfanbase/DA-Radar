@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "id": "fsa",
+  "term": "FSA (Financial Services Agency / 金融庁)",
+  "jurisdictions": [
+    "jp"
+  ],
+  "plain_definition": "Japan's integrated financial regulator -- broadly the equivalent of Hong Kong's SFC and HKMA combined -- responsible for registering and supervising banks, securities firms, insurers, crypto-asset exchange service providers, and electronic payment instrument (stablecoin) exchange operators. The FSA has no separate crypto-asset statute of its own; instead it administers the crypto-asset and stablecoin provisions Japan has added, over a series of amendments since 2016, to the existing Payment Services Act and Financial Instruments and Exchange Act, and recognises the self-regulatory rulebooks of bodies such as JVCEA that sit on top of its registration regime.",
+  "formal_definition": "The Financial Services Agency (金融庁) is Japan's integrated financial regulator. It is the registration and supervisory authority for crypto-asset exchange service providers under Payment Services Act (PSA) Art. 63-2, for electronic payment instrument exchange business operators under PSA Art. 62-3, and, from 1 June 2026, for electronic payment instrument / crypto-asset service intermediary business operators under PSA Art. 63-22-2 (registration is formally by the Prime Minister, administered in practice by the FSA); it also supervises crypto-asset exchange service providers and electronic payment instrument service providers as 'specified business operators' under the Act on Prevention of Transfer of Criminal Proceeds. The FSA maintains official English- and Japanese-language RSS news feeds (fsa.go.jp/fsaEnNewsList_rss2.xml and fsa.go.jp/fsaNewsListAll_rss2.xml) and publishes the current lists of associations it has certified under the PSA and FIEA, including JVCEA -- all confirmed by direct fetch this session.",
+  "related_terms": [
+    "caesp",
+    "psa",
+    "fiea",
+    "jvcea",
+    "aptcp",
+    "electronic-payment-instrument"
+  ],
+  "first_used_card_id": "9c1b813ca60aa7abd4f01f4c1ff1d43d81328f7bd36fba3f1e8e1cdcf026ffd7",
+  "generated_at": "2026-07-12T21:35:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "f6c1df724bcda3c0d6ded48b0728ba9d14ce72ab60067cb9150ae2abe089ba17",
+  "jurisdiction_id": "jp",
+  "published_date": "2026-07-01",
+  "regulator": "JVCEA (Japan Virtual and Crypto assets Exchange Association / 一般社団法人日本暗号資産等取引業協会)",
+  "pillar": [
+    "exchanges_vatp",
+    "dealing_custody_advisory"
+  ],
+  "type": "conclusions",
+  "title": "暗号資産交換業に係るシステムガバナンスの確保に係る規則・ガイドラインの制定等に関する意見公募手続きの結果等について",
+  "summary": "On 1 July 2026, JVCEA published the results of a public comment procedure, held 3-15 June 2026, on draft self-regulatory rules and guidelines to ensure system governance at crypto-asset exchange businesses. 2 organizations submitted comments. In response, JVCEA made partial revisions and additions to its System Risk Management rules and guidelines, and minor corrections to its separate Emergency Response and Information Security Management rules and guidelines. Separately, during this process JVCEA identified deficiencies in its existing Rules on the Management of User Assets for crypto-asset exchange business and amended that rule alongside the others. All of these rules and guidelines -- newly established and amended -- were enacted or partially amended on 29 June 2026 and entered into force on 1 July 2026.",
+  "why_it_matters": "This finalizes revisions to JVCEA's self-regulatory rules and guidelines on system governance -- covering system risk management, emergency response, and information security -- for crypto-asset exchange businesses, plus a related correction to its rule on managing user assets, tightening the operational-resilience and system-security standards in this area.",
+  "key_dates": {
+    "effective": "2026-07-01",
+    "milestone": "2026-06-29"
+  },
+  "citations": [
+    {
+      "url": "https://jvcea.or.jp/information/pc/20260701-002/",
+      "quote": "2026年6月29日（月）に制定・一部改正され、2026年7月1日（水）に施行されます"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T23:05:00Z",
+  "model": "Claude (Anthropic)"
+}
