@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "pillar": "stablecoins",
+  "status_seal": "proposed",
+  "regulator": "OCC, Federal Reserve, FDIC, NCUA and Treasury (FinCEN/OFAC)",
+  "instruments": [
+    "Guiding and Establishing National Innovation for U.S. Stablecoins Act (GENIUS Act), Public Law 119-27, 119th Congress (enacted 18 July 2025)",
+    "OCC: notice of proposed rulemaking implementing the GENIUS Act for OCC-jurisdiction issuers (proposed 12 CFR Part 15), announced in OCC Bulletin 2026-3 (25 Feb 2026), published in the Federal Register 2 March 2026 (Doc. 2026-04089), comment period closed 1 May 2026",
+    "OCC: proposed Bank Secrecy Act/sanctions-compliance and supervision-and-enforcement standards for OCC-supervised permitted payment stablecoin issuers, OCC Bulletin 2026-28 (22 June 2026)",
+    "FDIC: proposed approval requirements for issuance of payment stablecoins by subsidiaries of FDIC-supervised insured depository institutions, published in the Federal Register 19 December 2025 (Doc. 2025-23510)",
+    "FDIC: proposed GENIUS Act requirements and standards (12 CFR Part 350, Subparts A and B) for FDIC-supervised permitted payment stablecoin issuers and insured depository institutions, published in the Federal Register 10 April 2026 (Doc. 2026-06974), comment period closed 9 June 2026",
+    "FDIC: proposed Bank Secrecy Act and sanctions-compliance standards for FDIC-supervised permitted payment stablecoin issuers, published in the Federal Register 5 June 2026 (Doc. 2026-11342)",
+    "NCUA: proposed rule on permitted payment stablecoin issuer license applications (Feb 2026), comment period closed 13 April 2026",
+    "NCUA: proposed operational and risk-management standards for NCUA-licensed permitted payment stablecoin issuers, published in the Federal Register 18 May 2026 (Doc. 2026-09915), comment period scheduled to close 17 July 2026",
+    "Treasury: proposed broad-based principles for determining whether a State-level regulatory regime is \"substantially similar\" to the federal framework (proposed 31 CFR Part 1521), published in the Federal Register 3 April 2026 (Doc. 2026-06489), comment period closed 2 June 2026 as proposed (extension requested by industry commenters; this research could not confirm whether Treasury granted it)",
+    "FinCEN and OFAC (Treasury): joint proposed rule on Permitted Payment Stablecoin Issuer Anti-Money Laundering/Countering the Financing of Terrorism Program and Sanctions Compliance Program requirements, published in the Federal Register 10 April 2026 (Doc. 2026-06963), comment period closed 9 June 2026",
+    "FinCEN, OCC, Federal Reserve, FDIC and NCUA: joint proposed rule on customer identification program requirements for permitted payment stablecoin issuers, Federal Reserve Board press release and request for comment 18 June 2026, comment period scheduled to close approximately 21 August 2026",
+    "SEC and CFTC: Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets, Release Nos. 33-11412; 34-105020 (17 March 2026, effective 23 March 2026) -- addresses the securities-law treatment of GENIUS Act payment stablecoins",
+    "SEC Division of Corporation Finance, Statement on Stablecoins (4 April 2025) -- staff statement on \"Covered Stablecoins\""
+  ],
+  "standing_summary": "The GENIUS Act (Public Law 119-27), enacted 18 July 2025, is the first federal statute establishing a permitted-issuer framework for payment stablecoins; it is the anchor instrument for this pillar, and the state-of-play distinction that matters everywhere in this summary is between the enacted statute, the not-yet-effective regime the statute creates, and the in-progress rulemaking that will fill in that regime's operational detail. The Act prohibits any person from issuing a payment stablecoin in the United States other than as a \"permitted payment stablecoin issuer\" (PPSI), and creates three PPSI pathways: a subsidiary of an insured depository institution, a nonbank entity federally licensed by the OCC (a \"Federal qualified payment stablecoin issuer\"), or a nonbank entity operating under a state regime that Treasury has certified as \"substantially similar\" to the federal framework (a \"State qualified payment stablecoin issuer\", available only to issuers with no more than $10 billion in outstanding stablecoins on a consolidated basis). Primary federal supervision of a PPSI that is a bank subsidiary tracks that bank's own federal banking regulator -- the OCC for national-bank and federal-savings-association subsidiaries, the Federal Reserve for state-member-bank subsidiaries, the FDIC for state-nonmember-bank subsidiaries, and the NCUA for federally-insured-credit-union subsidiaries -- while the OCC is additionally the primary regulator for Federal qualified (nonbank) issuers, uninsured national banks, federal branches of foreign banks, and registered foreign payment stablecoin issuers; this allocation is corroborated across multiple agencies' own rulemaking materials but this research could not machine-extract the Act's exact defining section text from govinfo.gov's PDF rendering, so the section-by-section citations below should be treated as the Act's substance, re-confirmed against secondary legal summaries, rather than independently verified primary-text extraction (flagged further in open items). On statutory facts that are well corroborated: the Act requires every PPSI to maintain identifiable reserves backing outstanding stablecoins on at least a 1:1 basis, limited to enumerated low-risk liquid assets (U.S. currency, Federal Reserve deposits, insured-institution demand deposits, short-term Treasury instruments, certain repurchase agreements, and money-market funds holding only those assets, including tokenized forms of the same); prohibits pledging, rehypothecating, or reusing those reserves outside enumerated purposes; requires monthly public disclosure of reserve composition together with a monthly CEO and CFO certification as to the accuracy of that disclosure, and periodic examination by a registered public accounting firm; and prohibits a PPSI from paying the holder of a payment stablecoin \"any form of interest or yield ... in connection with the holding, use, or retention\" of the stablecoin. The Act also bars digital asset service providers (exchanges and custodians) from continuing to offer or sell a stablecoin not issued by a PPSI beginning three years after enactment (July 2028), and gives Treasury a process to designate a non-compliant foreign issuer, after which digital asset service providers must stop facilitating secondary-market trading of that issuer's stablecoin in the United States. A state-qualified regime's certification runs through an interagency Stablecoin Certification Review Committee that, per multiple corroborating secondary sources, is chaired by the Secretary of the Treasury with the Chair of the Federal Reserve Board and the Chair of the FDIC as the other members, acting by a two-thirds vote; this research could not independently confirm the Committee's exact statutory voting/quorum mechanics against primary text and flags that in open items. Critically, none of this substantive regime is in force yet: the Act's own effective date is the earlier of 18 months after enactment (18 January 2027) or 120 days after the primary Federal payment stablecoin regulators issue final implementing regulations, and Section 13 of the Act separately requires those regulators, Treasury, and state payment stablecoin regulators to issue implementing regulations within one year of enactment (by 18 July 2026). As of this writing, that one-year rulemaking deadline has not yet arrived, and no agency covered by this pillar has published a final rule: the OCC, FDIC, NCUA, Treasury, FinCEN and OFAC have each published one or more notices of proposed rulemaking since December 2025, with major comment periods (OCC 1 May 2026; FDIC 9 June 2026 across two proposals; Treasury 2 June 2026 as proposed, extension requested; FinCEN/OFAC 9 June 2026; NCUA 13 April 2026 on applications) already closed, an NCUA proposal on PPSI operational standards with a comment period not scheduled to close until 17 July 2026 -- the day before the statutory rulemaking deadline itself -- and a further interagency (FinCEN, OCC, Federal Reserve, FDIC, NCUA) proposed rule on customer identification program requirements opened for comment on 18 June 2026 with a comment period not scheduled to close until approximately 21 August 2026, i.e. after the Act's own one-year rulemaking deadline. This research located confirmed agency-specific GENIUS Act proposed rules from the OCC, FDIC, and NCUA, and a joint Treasury/FinCEN/OFAC proposal, but as of the most recent sources located, had not confirmed that the Federal Reserve had separately published its own agency-specific prudential or licensing proposed rule for state-member-bank PPSI subsidiaries (as distinct from its participation in the joint interagency customer-identification-program proposal); this is flagged as an open item rather than asserted as a gap, since it could not be verified live at the moment of writing whether that changed. This pillar accordingly cannot state, and does not predict, whether any final rule will issue by 18 July 2026 or what the Act's practical effective date will turn out to be; it records only the rulemaking stage each proposal has reached as of this writing. Separately, the SEC and CFTC's joint interpretation of 17 March 2026 (Release Nos. 33-11412; 34-105020, discussed in full in the Exchanges (VATP) pillar) places \"stablecoins\" as one of five categories in its crypto-asset taxonomy and states that a payment stablecoin issued by a GENIUS Act permitted payment stablecoin issuer is excluded from the definition of \"security\"; that interpretation also states it extends to \"Covered Stablecoins\" as defined in the SEC Division of Corporation Finance's earlier Statement on Stablecoins of 4 April 2025 (a staff statement, not Commission action, addressing USD-pegged, 1:1-redeemable, reserve-backed stablecoins not marketed as investments), while expressly reserving that other stablecoin arrangements could still meet the definition of a security depending on the facts. This pillar covers only the federal level: the existence of the State qualified payment stablecoin issuer pathway is described here at the level of the federal certification mechanics (Treasury's substantially-similar-regime NPRM and the Stablecoin Certification Review Committee), but the content of individual state stablecoin or money-transmission regimes is out of scope.",
+  "last_changed": "2026-06-22",
+  "key_links": [
+    {
+      "label": "GovInfo: Public Law 119-27 (GENIUS Act), full text and details",
+      "url": "https://www.govinfo.gov/app/details/PLAW-119publ27"
+    },
+    {
+      "label": "Congress.gov: S.1582, GENIUS Act, 119th Congress -- bill text (Public Law version)",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1582/text"
+    },
+    {
+      "label": "OCC Bulletin 2026-3: GENIUS Act Regulations, Notice of Proposed Rulemaking",
+      "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-3.html"
+    },
+    {
+      "label": "Federal Register: Implementing the GENIUS Act for Entities Subject to the Jurisdiction of the OCC (proposed rule, 2 Mar 2026)",
+      "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04089/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the"
+    },
+    {
+      "label": "OCC Bulletin 2026-28: GENIUS Act AML/CFT and Sanctions Compliance, Notice of Proposed Rulemaking",
+      "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-28.html"
+    },
+    {
+      "label": "Federal Register: Approval Requirements for Issuance of Payment Stablecoins by Subsidiaries of FDIC-Supervised Insured Depository Institutions (proposed rule, 19 Dec 2025)",
+      "url": "https://www.federalregister.gov/documents/2025/12/19/2025-23510/approval-requirements-for-issuance-of-payment-stablecoins-by-subsidiaries-of-fdic-supervised-insured"
+    },
+    {
+      "label": "Federal Register: GENIUS Act Requirements and Standards for FDIC-Supervised Permitted Payment Stablecoin Issuers and Insured Depository Institutions (proposed rule, 10 Apr 2026)",
+      "url": "https://www.federalregister.gov/documents/2026/04/10/2026-06974/genius-act-requirements-and-standards-for-fdic-supervised-permitted-payment-stablecoin-issuers-and"
+    },
+    {
+      "label": "FDIC: FDIC Approves Proposal to Implement GENIUS Act Requirements and Standards (press release)",
+      "url": "https://www.fdic.gov/news/press-releases/2026/fdic-approves-proposal-implement-genius-act-requirements-and-standards"
+    },
+    {
+      "label": "Federal Register: Bank Secrecy Act and Sanctions Compliance Standards for FDIC-Supervised Permitted Payment Stablecoin Issuers (proposed rule, 5 Jun 2026)",
+      "url": "https://www.federalregister.gov/documents/2026/06/05/2026-11342/bank-secrecy-act-and-sanctions-compliance-standards-for-fdic-supervised-permitted-payment-stablecoin"
+    },
+    {
+      "label": "NCUA: NCUA Proposes Rule for Permitted Payment Stablecoin Issuer Applications (press release)",
+      "url": "https://ncua.gov/newsroom/press-release/2026/ncua-proposes-rule-permitted-payment-stablecoin-issuer-applications"
+    },
+    {
+      "label": "Federal Register: Implementing the GENIUS Act for Entities Subject to the Jurisdiction of the NCUA (proposed rule, 18 May 2026)",
+      "url": "https://www.federalregister.gov/documents/2026/05/18/2026-09915/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the"
+    },
+    {
+      "label": "Treasury: Treasury Seeks Public Comment on GENIUS Act NPRM Concerning State-Level Regulatory Regimes (press release)",
+      "url": "https://home.treasury.gov/news/press-releases/sb0428"
+    },
+    {
+      "label": "Federal Register: GENIUS Act Broad-Based Principles for Determining Whether a State-Level Regulatory Regime Is Substantially Similar to the Federal Regulatory Framework (proposed rule, 3 Apr 2026)",
+      "url": "https://www.federalregister.gov/documents/2026/04/03/2026-06489/genius-act-broad-based-principles-for-determining-whether-a-state-level-regulatory-regime-is"
+    },
+    {
+      "label": "Treasury: Treasury Proposes Rule to Implement the GENIUS Act's Requirements to Counter Illicit Finance (press release, FinCEN/OFAC)",
+      "url": "https://home.treasury.gov/news/press-releases/sb0435"
+    },
+    {
+      "label": "Federal Register: Permitted Payment Stablecoin Issuer Anti-Money Laundering/Countering the Financing of Terrorism Program and Sanctions Compliance Program Requirements (proposed rule, 10 Apr 2026)",
+      "url": "https://www.federalregister.gov/documents/2026/04/10/2026-06963/permitted-payment-stablecoin-issuer-anti-money-launderingcountering-the-financing-of-terrorism"
+    },
+    {
+      "label": "Federal Reserve Board: Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program (press release, 18 Jun 2026)",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260618a.htm"
+    },
+    {
+      "label": "FinCEN: FinCEN, Agencies Propose Rule to Implement GENIUS Act Customer Identification Program Requirement (press release)",
+      "url": "https://www.fincen.gov/news/news-releases/fincen-agencies-propose-rule-implement-genius-act-customer-identification"
+    },
+    {
+      "label": "SEC: Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets, Release Nos. 33-11412; 34-105020 (rule release page)",
+      "url": "https://www.sec.gov/rule-release/33-11412"
+    },
+    {
+      "label": "SEC: Statement on Stablecoins, Division of Corporation Finance (4 Apr 2025)",
+      "url": "https://www.sec.gov/newsroom/speeches-statements/statement-stablecoins-040425"
+    }
+  ],
+  "open_items": [
+    "This research could not machine-extract the GENIUS Act's exact section-by-section statutory text directly from govinfo.gov's PDF/HTML renderings (encoded content streams on one attempt; a separate HTML extraction attempt produced internally inconsistent section numbers on a second pass and was not relied upon). The substantive facts in this pillar state (PPSI pathways, 1:1 reserve requirement, permitted reserve assets, monthly attestation and CEO/CFO certification, the interest/yield prohibition, the three-year digital-asset-service-provider transition, the one-year rulemaking deadline, and the 18-month/120-day effective-date rule) are each corroborated across multiple independent secondary legal-analysis sources describing the Act, but exact section numbers should be re-confirmed directly against govinfo.gov's PLAW-119publ27 or COMPS-18221 text before being cited as precise statutory citations.",
+    "The Stablecoin Certification Review Committee's membership (Treasury Secretary as chair, Federal Reserve Board Chair and FDIC Chair as members) and its two-thirds voting threshold are corroborated across secondary sources but were not independently verified against the Act's primary text in this research pass.",
+    "As of the most recent sources located for this research, the Federal Reserve had joined the 18 June 2026 interagency customer-identification-program proposed rule but had not been confirmed to have separately published its own agency-specific GENIUS Act prudential or licensing proposed rule for state-member-bank PPSI subsidiaries, unlike the OCC, FDIC, and NCUA, each of which issued its own such proposal; this could not be verified live as current at the moment of writing and should be re-checked against federalreserve.gov before being treated as still accurate.",
+    "None of the OCC, FDIC, NCUA, Treasury, FinCEN, or OFAC proposed rules described here had been finalized as of this writing. The Act's own Section 13 deadline for primary regulators to issue implementing regulations is 18 July 2026, six days after this pillar state's generation date; this pillar state records the proposed-rule stage each proposal had reached as of its generation date and makes no prediction about whether, or in what form, any final rule will issue by that date.",
+    "Treasury's proposed rule on 'substantially similar' state-level regulatory regimes had a stated comment deadline of 2 June 2026; industry commenters (the American Bankers Association and 52 state bankers associations) requested an extension tied to the OCC's final rule, and this research could not confirm whether Treasury granted that extension.",
+    "H.R. 3633 (the Digital Asset Market Clarity Act), which would allocate spot-market jurisdiction between the SEC and CFTC and is separately tracked in the Exchanges (VATP) pillar, does not itself amend or supersede the GENIUS Act's stablecoin framework; it is not enacted as of this writing and is not treated here as current law.",
+    "State-level stablecoin and money-transmission regimes -- including the substantive content of any individual state's 'substantially similar' certified regime -- are real and, for state-qualified issuers, operationally central, but are out of scope of this federal-level-only pillar; only the federal certification mechanics (Treasury's NPRM and the Stablecoin Certification Review Committee) are described.",
+    "Federal Reserve monetary-policy and payment-system analysis of stablecoins (e.g. its March 2026 FEDS Notes piece on payment stablecoins and cross-border payments) and any CBDC-related policy statements are tracked in the Banking & Money pillar, not duplicated here."
+  ],
+  "generated_at": "2026-07-12T05:39:32Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

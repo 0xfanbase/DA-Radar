@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "ofac",
+  "term": "OFAC (Office of Foreign Assets Control)",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "A bureau of the US Department of the Treasury that administers and enforces US economic and trade sanctions programs, including blocking the property of, and prohibiting transactions with, persons and entities it designates (its Specially Designated Nationals, or SDN, list). Businesses within OFAC's jurisdiction, including many digital-asset businesses, must screen counterparties and transactions against OFAC's sanctions lists and block, freeze, or reject prohibited transactions.",
+  "formal_definition": "A bureau of the US Department of the Treasury administering sanctions programs under authorities including the International Emergency Economic Powers Act (50 U.S.C. 1701 et seq.) and specific executive orders; regulations codified at 31 CFR Chapter V. Recent sanctions actions are published at ofac.treasury.gov/recent-actions.",
+  "related_terms": [
+    "fincen",
+    "bank-secrecy-act",
+    "sanctions-compliance-program"
+  ],
+  "first_used_card_id": "4054404aa69919c454c0e48b99ba5da2ed6fa55477fd4d788fa40d9b8863aa43",
+  "generated_at": "2026-07-12T19:20:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

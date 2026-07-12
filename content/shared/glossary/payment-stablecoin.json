@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "payment-stablecoin",
+  "term": "Payment stablecoin",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "The GENIUS Act's own defined term for the specific category of stablecoin it regulates: a digital asset that is, or is designed to be, used as a means of payment or settlement, whose issuer is obligated to convert, redeem, or repurchase it for a fixed amount of monetary value and represents (or creates the reasonable expectation) that it will maintain a stable value relative to that fixed amount. The definition expressly excludes national currencies, bank deposits, and instruments that are 'securities' under the federal securities laws. It is narrower than the site's cross-jurisdictional 'stablecoin' entry: every payment stablecoin is a stablecoin in the general sense used elsewhere on this site, but not every fiat-referenced token meets this specific statutory definition, and under the Act only a 'permitted payment stablecoin issuer' may lawfully issue one.",
+  "formal_definition": "GENIUS Act (Public Law 119-27) section 2(22) (12 U.S.C. 5901(22)) defines 'payment stablecoin' as a digital asset that is, or is designed to be, used as a means of payment or settlement, and whose issuer is obligated to convert, redeem, or repurchase it for a fixed amount of monetary value and represents that it will maintain a stable value relative to that amount. The definition excludes: a national currency; a deposit as defined in section 3 of the Federal Deposit Insurance Act (12 U.S.C. 1813); and a security as defined under the Securities Act of 1933, the Securities Exchange Act of 1934, or the Investment Company Act of 1940 (subject to a carve-out in section 2(22)(B)(iii) and section 17 of the Act for instruments issued by a permitted payment stablecoin issuer).",
+  "related_terms": [
+    "stablecoin",
+    "genius-act",
+    "permitted-payment-stablecoin-issuer"
+  ],
+  "first_used_card_id": "f0aa81db42234c8d2f05bc6b3435a0e46a5c14e9cb48dbe5a3bf1e99cefda60d",
+  "generated_at": "2026-07-12T18:01:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "federal-reserve",
+  "term": "Federal Reserve (Board of Governors of the Federal Reserve System)",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "The United States' central bank, and -- defined in the GENIUS Act as 'the Board' -- one of the agencies that can be a 'primary Federal payment stablecoin regulator': the appropriate Federal banking agency (which for a state member bank or the subsidiary of a bank holding company is the Federal Reserve) supervises payment-stablecoin issuance by subsidiaries of insured depository institutions under the Act. The Federal Reserve separately publishes banking, consumer, and regulatory policy press releases covering its supervisory positions on banks' digital-asset activities.",
+  "formal_definition": "GENIUS Act (Public Law 119-27) section 2(3) (12 U.S.C. 5901(3)) defines 'Board' as the Board of Governors of the Federal Reserve System; section 2(25) defines 'primary Federal payment stablecoin regulator' to include, for a subsidiary of an insured depository institution other than an insured credit union, that institution's 'appropriate Federal banking agency.' Established by the Federal Reserve Act of 1913. Press releases: federalreserve.gov/feeds/press_bcreg.xml (per this radar's watcher configuration).",
+  "related_terms": [
+    "genius-act",
+    "permitted-payment-stablecoin-issuer",
+    "occ"
+  ],
+  "first_used_card_id": "e6752d0de17e2f969890b37a499049c13837fe58b77d795f636a5f73699104ae",
+  "generated_at": "2026-07-12T19:00:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

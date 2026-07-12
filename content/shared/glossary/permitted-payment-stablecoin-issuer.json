@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "permitted-payment-stablecoin-issuer",
+  "term": "Permitted payment stablecoin issuer",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "Under the GENIUS Act, the only three categories of entity that may lawfully issue a 'payment stablecoin' in the United States: (1) a subsidiary of an insured depository institution approved to issue payment stablecoins; (2) a 'Federal qualified payment stablecoin issuer' -- broadly, a nonbank entity, or an uninsured national bank, approved by the Office of the Comptroller of the Currency; or (3) a 'State qualified payment stablecoin issuer' approved by a state payment-stablecoin regulator (generally available only to issuers below a statutory size threshold, above which Federal regulation applies). Issuing a payment stablecoin in the US outside one of these three categories is not permitted under the Act.",
+  "formal_definition": "GENIUS Act (Public Law 119-27) section 2(23) (12 U.S.C. 5901(23)) defines 'permitted payment stablecoin issuer' as a person formed in the United States that is (A) a subsidiary of an insured depository institution approved to issue payment stablecoins under section 5 of the Act; (B) a 'Federal qualified payment stablecoin issuer' as defined in section 2(11); or (C) a 'State qualified payment stablecoin issuer' as defined in section 2(31).",
+  "related_terms": [
+    "genius-act",
+    "payment-stablecoin",
+    "occ",
+    "federal-reserve"
+  ],
+  "first_used_card_id": "f0aa81db42234c8d2f05bc6b3435a0e46a5c14e9cb48dbe5a3bf1e99cefda60d",
+  "generated_at": "2026-07-12T18:02:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,7 +1,7 @@
 {
   "first_used_card_id": "544d29ba08c14f8b692356fc7f11a36eabbad05f23c2ed7ea47ad45f730a726e",
-  "formal_definition": "A fiat-referenced token whose value is pegged to one or more official currencies; a genuinely regime-independent concept regulated differently in each jurisdiction covered by this radar. In Hong Kong, a fiat-referenced stablecoin issued in or pegged to the Hong Kong dollar requires a licence from the Hong Kong Monetary Authority under the Stablecoins Ordinance (Cap. 656). In the UK, issuing a 'qualifying stablecoin' is a distinct FCA-regulated activity under the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102) and FCA Policy Statement PS26/10, while a sterling stablecoin HM Treasury recognises as systemic to UK payments instead falls to the Bank of England as a 'systemic stablecoin' under Part 5 of the Banking Act 2009. In the EU, MiCA does not use the word 'stablecoin' as a legal term at all; it instead splits the concept into two Title III/IV categories -- an 'asset-referenced token' (referencing more than one asset or currency) and an 'e-money token' (referencing a single official currency) -- each with its own authorisation, reserve, and redemption regime, applicable since 30 June 2024. This entry generalises a formal_definition that, before the UK's registry entry went live, was written purely in Hong Kong Stablecoins Ordinance terms; jurisdiction-specific mechanics belong in each jurisdiction's own 'qualifying-stablecoin' / 'systemic-stablecoin' / 'asset-referenced-token' / 'e-money-token' style entries, not here.",
-  "generated_at": "2026-07-11T20:15:00Z",
+  "formal_definition": "A fiat-referenced token whose value is pegged to one or more official currencies; a genuinely regime-independent concept regulated differently in each jurisdiction covered by this radar. In Hong Kong, a fiat-referenced stablecoin issued in or pegged to the Hong Kong dollar requires a licence from the Hong Kong Monetary Authority under the Stablecoins Ordinance (Cap. 656). In the UK, issuing a 'qualifying stablecoin' is a distinct FCA-regulated activity under the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102) and FCA Policy Statement PS26/10, while a sterling stablecoin HM Treasury recognises as systemic to UK payments instead falls to the Bank of England as a 'systemic stablecoin' under Part 5 of the Banking Act 2009. In the EU, MiCA does not use the word 'stablecoin' as a legal term at all; it instead splits the concept into two Title III/IV categories -- an 'asset-referenced token' (referencing more than one asset or currency) and an 'e-money token' (referencing a single official currency) -- each with its own authorisation, reserve, and redemption regime, applicable since 30 June 2024. In the United States, the GENIUS Act (Public Law 119-27, enacted 18 July 2025) regulates a narrower statutorily-defined subset it calls a 'payment stablecoin' -- a digital asset designed for use as a means of payment or settlement whose issuer is obligated to redeem it for a fixed monetary value -- which only a 'permitted payment stablecoin issuer' (a bank subsidiary, or a Federal- or State-qualified issuer approved by the OCC or a state regulator respectively) may lawfully issue. This entry generalises a formal_definition that, before the UK's registry entry went live, was written purely in Hong Kong Stablecoins Ordinance terms; jurisdiction-specific mechanics belong in each jurisdiction's own 'qualifying-stablecoin' / 'systemic-stablecoin' / 'asset-referenced-token' / 'e-money-token' / 'payment-stablecoin' style entries, not here.",
+  "generated_at": "2026-07-12T18:14:00Z",
   "id": "stablecoin",
   "jurisdictions": [
     "global"
@@ -14,7 +14,9 @@
     "qualifying-stablecoin",
     "systemic-stablecoin",
     "asset-referenced-token",
-    "e-money-token"
+    "e-money-token",
+    "payment-stablecoin",
+    "genius-act"
   ],
   "schema_version": 2,
   "status": "unverified",

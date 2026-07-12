@@ -52,6 +52,14 @@ along with `git log` — to know exactly where the project stands before doing a
   discipline, real live watcher wiring -- see the 2026-07-11/12 "P10" entry below for how the
   watcher-before-cards phase reorder closed P9's worst gap structurally, plus the two real defects
   (5 glossary placeholders, one fabricated quote) still found and fixed.
+- **P11 — US onboarding (fourth jurisdiction, no single federal regulator): complete.** Full seed depth
+  (7 pillar states, 5 verified cards, 7-entry trajectory, 17 glossary terms, 45-document library,
+  orientation page), 6 federal regulators registered (SEC, CFTC, FinCEN, OCC, Federal Reserve, plus a
+  zero-feed GovInfo/Congress.gov/U.S. Code citation entry), elevated neutrality discipline given how
+  contested US digital-asset policy genuinely is, real live watcher wiring -- see the 2026-07-12 "P11"
+  entry below for the four real citation defects the final-check surfaced (a quote fabrication, a
+  missing domain registration, two bot-blocked false-negative URLs) and a materially inverted timing
+  claim an independent verifier pass caught along the way.
 
 ## Owner / next-step punch list
 
@@ -1075,6 +1083,94 @@ clean `_site/` succeeded, `_site/eu/index.html` confirmed to show real EU conten
 hits, real ESMA/MiCA/EBA/AMLA/European Commission mentions); repo-wide `grep -rl PENDING
 content/shared/glossary/` confirmed clean. Not yet done, logged honestly: `eu`'s `analyst_verifier` stays
 `"planned"`, same deliberate non-activation pattern as `hk`/`uk`.
+
+### 2026-07-12 — P11: US onboarding (fourth jurisdiction, no single federal regulator)
+
+The most institutionally fragmented jurisdiction yet, directed with the same watcher-first ordering P10
+introduced, plus an explicitly elevated neutrality discipline given how genuinely contested US digital-
+asset policy is. `config/jurisdictions/us.json` registers 6 regulators -- SEC, CFTC, FinCEN (with
+OFAC/Treasury domains folded in, matching how it actually publishes), OCC, the Federal Reserve, and a
+zero-feed `govinfo` citation entry covering govinfo.gov/congress.gov -- with real mechanism diversity
+(rss for most, html_diff for FinCEN's own news page, json_api for a Federal Register digital-asset search
+feed). Content seeded: 7 pillar states, 5 independently verified cards, a 7-entry trajectory, 17 new
+glossary terms, a 45-document library, and an orientation page. The defining structural fact threaded
+through every pillar: the US has no single federal digital-asset regulator -- the SEC/CFTC/FinCEN/OCC/Fed
+split is itself the citable structure, described neutrally (each agency's own stated position, side by
+side, with two explicit self-neutralizing statements in `orientation.json` and
+`dealing_custody_advisory.json` that this radar presents "what the agencies themselves published, not a
+resolved dispute or a win for either side") -- plus an explicit federal-level-only scope limitation
+(state regimes, e.g. NY DFS, out of scope, same discipline EU applied to member-state NCAs). The GENIUS
+Act (Public Law 119-27, enacted 18 July 2025) is the anchor: the first US federal permitted-issuer
+framework for payment stablecoins, seeded via `seed_backfill` since it long predates any live feed's
+retention window.
+
+**The final-check, explicitly instructed to check every one of P9's and P10's logged gaps individually,
+found this run had *not yet been through a close-out pass* (no P11 PROGRESS.md entry existed at check
+time) and surfaced real, live, unresolved problems in 4 of 5 cards -- closed directly by the orchestrating
+session, none papered over, each independently re-confirmed by a fresh adversarial verifier pass rather
+than self-certified:**
+1. **A genuine quote fabrication**, the same class of defect P10 caught: the GENIUS Act card's
+   govinfo.gov citation read "...shall maintain identifiable reserves backing the outstanding payment"
+   but the real statute reads "...shall-- (A) maintain identifiable reserves backing the outstanding
+   payment stablecoins of the permitted payment stablecoin issuer..." -- the "-- (A)" subsection marker
+   had been silently dropped and the quote cut off mid-clause. Fixed to a genuine 14-word contiguous
+   substring.
+2. **A missing official-domain registration**, the same class as P9's `legislation.gov.uk` gap and P10's
+   near-miss: `uscode.house.gov` (three of the same card's four citations, all independently confirmed
+   genuine on re-fetch) was not registered in any regulator's `official_domains`, gate-forcing three
+   authentic citations to `unverified` on domain grounds alone. Fixed by adding it to the existing
+   zero-feed `govinfo` entry (the US Code is Office of the Law Revision Counsel's own official
+   publication, the same "official federal legal text" role `govinfo`/`congress.gov` already serve --
+   no new regulator entry needed, unlike UK/EU's dedicated legislation portals).
+3. **Two false-negative citations from a bot-check interstitial, not a content problem**: two cards cited
+   federalregister.gov "landing page" URLs that 302-redirect to `unblock.federalregister.gov` for
+   automated fetchers; the genuine full text sits at a different, directly-fetchable URL form
+   (`/documents/full_text/html/...`, discoverable via the Federal Register's own JSON API's
+   `body_html_url` field). Both citations' quotes were independently confirmed genuine once fetched from
+   the correct URL form -- fixed by correcting the URL, not the quote.
+4. **An unreliable citation, removed rather than guessed at**: a card's second citation went directly to
+   a sec.gov page that is currently rate-limiting automated fetchers (HTTP 403), and independent
+   `WebFetch` probes returned inconsistent results on the exact punctuation of a label/value pair on the
+   page ("SEC Issue Date" / "March 17, 2026" as either one joined sentence or two separately-rendered
+   elements) -- genuinely unverifiable with confidence, not confirmed as fabricated either. Removed per
+   `verifier_prompt.md`'s own explicit option (drop a citation whose claim can't be confirmed), since the
+   fact it supported (the release's file number and issue date) was independently confirmable from the
+   card's other, already-cited, reliably-fetchable Federal Register document.
+
+**A fresh, independent verifier pass on each of the 4 affected cards did real adversarial work, not
+rubber-stamping -- and caught real problems beyond the four above, on its own:** a weak/truncated US Code
+quote strengthened to a fuller genuine substring; a wrong attribution corrected ("Treasury-certified
+state regime" rewritten to the statute's actual mechanism, an interagency Stablecoin Certification Review
+Committee chaired by Treasury with the Fed and FDIC as members); an unsupported "no final rule had been
+published as of this writing" clause removed from one card; a **materially inverted timing claim** caught
+and fixed in another -- the card originally said customer identity must be verified "before opening an
+account," but the actual proposed rule requires verification "within a reasonable period of time *after*
+the account is opened," the near-opposite. One verifier's own attempted fix was itself caught and
+corrected by the orchestrating session before merging: it changed a card's `published_date` from 17 March
+2026 to 23 March 2026, reasoning the earlier date was unsupported -- but its `WebFetch`-based re-fetch had
+been truncated before reaching the cited document's own signature block, which reads "Dated: March 17,
+2026" (confirmed directly via a full raw fetch, appearing three times in the source) -- 23 March is
+genuinely the document's Federal Register *effective* date, not its issuance date, and both are real,
+distinct, and correctly stated once the summary's wording was fixed to hold both precisely.
+
+`config/site.json`'s `us` entry now reads `status.watcher: "live"`, `status.seeded: true`,
+`status.analyst_verifier: "planned"` (same deliberate non-activation as `uk`/`eu`);
+`.github/workflows/watch.yml`'s matrix is `[hk, uk, eu, us]`. `docs/analyst-runbook.md` and both prompt
+files were correctly left untouched again.
+
+**Verification, run fresh by the orchestrating session, after all fixes above:** full pytest suite
+439/439 passing; `pipeline.ci.validate_content` 35/35 files OK; `apply_verification_gate --jurisdiction us`
+re-run clean, all 5 cards `"verified"`, zero downgrades; `promote_drafted`/`promote_verified --jurisdiction
+us` both report 0 newly promoted on re-run (already correctly linked by the workflow's own watcher-first
+run -- P9's worst gap stayed fixed a second jurisdiction running); a full `pipeline.site.generate` rebuild
+succeeded, `_site/us/index.html` confirmed to show real US content, zero "coming soon" hits; repo-wide
+`grep -rl PENDING content/shared/glossary/` and `grep -rl claude-sonnet content/us/ data/us/
+content/shared/glossary/` both confirmed clean; an explicit neutrality grep (landmark/controversial/
+overdue/crackdown/industry-friendly) across every US card, pillar state, and orientation.json found zero
+hits outside attributed quotes; `tests/test_jurisdiction_agnostic.py` 10/10 green. Also built, in parallel
+with this onboarding, a standalone compliance-officer-facing dashboard artifact synthesizing verified
+HK/UK/EU (and, once merged, US) content with primary-source citation links -- sourced only from cards
+carrying `status: "verified"`, none drafted or unverified content included.
 
 ## PM checkpoints (Fable)
 

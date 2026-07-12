@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "pillar": "aml_cft_enforcement",
+  "status_seal": "in_force",
+  "regulator": "FinCEN, OFAC, SEC and CFTC",
+  "instruments": [
+    "Bank Secrecy Act (31 U.S.C. 5311 et seq.) and FinCEN's implementing regulations for money services businesses (31 CFR Chapter X), including money-transmitter registration (31 CFR 1022.380) and the Recordkeeping and Travel Rule requirements (31 CFR 1010.410(e)-(f))",
+    "FinCEN Guidance FIN-2013-G001, \"Application of FinCEN's Regulations to Persons Administering, Exchanging, or Using Virtual Currencies\" (18 March 2013)",
+    "FinCEN Guidance FIN-2019-G001, \"Application of FinCEN's Regulations to Certain Business Models Involving Convertible Virtual Currencies\" (9 May 2019)",
+    "FinCEN and Federal Reserve Board, proposed rule on \"Threshold for the Requirement to Collect, Retain, and Transmit Information on Funds Transfers and Transmittals of Funds That Begin or End Outside the United States, and Clarification of the Requirement to Collect, Retain, and Transmit Information on Transactions Involving Convertible Virtual Currencies\" (Federal Register, 27 October 2020, Doc. 2020-23756; Docket FINCEN-2020-0020) -- not finalized",
+    "FinCEN and OFAC, joint proposed rule, \"Permitted Payment Stablecoin Issuer Anti-Money Laundering/Countering the Financing of Terrorism Program and Sanctions Compliance Program Requirements,\" published in the Federal Register 10 April 2026 (Doc. 2026-06963), comment period closed 9 June 2026 -- the GENIUS Act illicit-finance rulemaking",
+    "Executive Order 13224 (Blocking Property and Prohibiting Transactions With Persons Who Commit, Threaten to Commit, or Support Terrorism) and Executive Order 13902 (Imposing Sanctions With Respect to Additional Sectors of Iran) -- authorities OFAC has invoked in recent digital-asset-related designations",
+    "Securities Act of 1933 and Securities Exchange Act of 1934, general antifraud and registration provisions -- the SEC's authority for crypto-asset enforcement actions",
+    "Commodity Exchange Act, Section 6c (7 U.S.C. 13a-1) and related antifraud/registration provisions -- the CFTC's authority for crypto-derivatives-related enforcement actions",
+    "FinCEN and Paxful, Inc./Paxful USA, Inc. Consent Order (9 December 2025) -- Bank Secrecy Act civil money penalty"
+  ],
+  "standing_summary": "This pillar tracks two distinct federal functions that are administratively separate but analytically linked: (1) the Bank Secrecy Act/anti-money-laundering compliance regime that FinCEN and OFAC administer for crypto businesses, and (2) enforcement -- filings, settlements, and dismissals -- by FinCEN, OFAC, the SEC, and the CFTC against named parties, described here strictly as each agency's own releases and court filings state them, with dismissals/settlements of earlier actions and newly filed actions presented identically neutrally. On the compliance side: FinCEN treats crypto businesses as money services businesses (MSBs) -- specifically money transmitters -- under the Bank Secrecy Act, subject to registration (31 CFR 1022.380), an anti-money-laundering program, and suspicious activity reporting, unless a limitation or exemption applies. FinCEN's operative interpretive guidance on this point sits in two documents, both still published on FinCEN's guidance page without an express rescission notice located in this research: FIN-2013-G001 (18 March 2013), which defines \"users,\" \"exchangers,\" and \"administrators\" of virtual currency and states that exchangers and administrators are money transmitters unless an exemption applies (users are not), and FIN-2019-G001 (9 May 2019), which FinCEN describes as consolidating prior guidance and interpretive rulings and applying them to common convertible-virtual-currency (CVC) business models (peer-to-peer exchangers, hosted and unhosted wallet providers, kiosks, payment processors, and anonymity-enhancing services); this pillar treats both as currently operative pending clarification of their precise relationship, flagged further in open items. FIN-2019-G001 also states that CVC transmittals are \"funds transfers\" for purposes of the Recordkeeping and Travel Rule regulations at 31 CFR 1010.410(e)-(f) -- the \"travel rule\" -- meaning money transmitters (including CVC money transmitters) must collect and transmit originator and beneficiary information for transfers at or above the regulation's $3,000 threshold; that threshold has applied to CVC since the 2019 clarification and remains in force today. A separate FinCEN/Federal Reserve Board proposed rule, published in the Federal Register on 27 October 2020, would lower the threshold to $250 specifically for funds transfers and transmittals that begin or end outside the United States, and would explicitly extend the recordkeeping requirement's terms to cover CVC and digital assets with legal tender status; this research located no final rule, formal withdrawal, or other update to that 2020 proposal and treats it as still pending, to be reverified live. Layered on top of this general BSA/travel-rule framework is the GENIUS Act's illicit-finance rulemaking, discussed at length in the Stablecoins pillar and cross-referenced rather than duplicated here: FinCEN and OFAC jointly published a proposed rule in the Federal Register on 10 April 2026 (Doc. 2026-06963) that would require permitted payment stablecoin issuers to maintain AML/CFT programs (customer due diligence, transaction monitoring, suspicious activity reporting) and sanctions-compliance programs, including technical capabilities to block, freeze, and reject transactions and to comply with lawful orders; the comment period closed 9 June 2026 and, as of this writing, no final rule has issued. On the enforcement side, this pillar covers actions by all four agencies as their own primary sources state them, with zero added commentary on named parties. FinCEN: on 9 December 2025, FinCEN entered a consent order assessing a $3.5 million civil money penalty against Paxful, Inc. and Paxful USA, Inc., a CVC peer-to-peer trading platform, for willful violations of the Bank Secrecy Act -- failure to maintain its MSB registration (it registered in 2015 but did not re-register until September 2019), failure to implement an effective AML program, and failure to file timely and complete suspicious activity reports -- with FinCEN's release stating Paxful facilitated more than $500 million in suspicious activity involving Iran, North Korea, Venezuela, and the seized Backpage.com website, in an action coordinated with the Department of Justice. OFAC: Treasury's Office of Foreign Assets Control has continued to designate digital-asset-related persons and addresses under existing sanctions authorities; as one documented example, on 2 June 2026 OFAC designated four Iranian digital-asset exchanges -- Nobitex, Wallex, Bitpin, and Ramzinex -- and four associated individuals under Executive Orders 13224 and 13902, with Treasury's press release stating Nobitex alone processed over half of all Iranian digital-asset inflows in 2025 and that the exchanges facilitated transactions linked to the Islamic Revolutionary Guard Corps and enabled the Central Bank of Iran to acquire stablecoins; this research verified this one action against Treasury's own release and does not claim it as a complete log of all 2025-2026 OFAC digital-asset designations (flagged in open items). SEC: the agency's own materials describe both the resolution of earlier actions and the filing of new ones without characterizing either direction. On resolutions: on 5 March 2026, the SEC filed a proposed final judgment resolving SEC v. Rainberry, Inc., Justin Sun, Tron Foundation Limited, and BitTorrent Foundation Ltd. (S.D.N.Y., No. 1:23-cv-02433), under which Rainberry would be permanently enjoined from violating Securities Act Section 17(a)(3) and pay a $10 million civil penalty, while all remaining claims against Rainberry and all claims against Sun, Tron Foundation, and BitTorrent Foundation would be dismissed with prejudice; this settlement followed a series of dismissals the SEC's own releases describe as beginning in February 2025, including SEC v. Coinbase, Inc. (27 Feb 2025), SEC v. Cumberland DRW LLC and SEC v. Consensys Software Inc. (27 Mar 2025), SEC v. Payward, Inc. (27 Mar 2025), SEC v. Dragonchain, Inc. (30 Apr 2025), SEC v. Balina (2 May 2025), and SEC v. Binance Holdings Limited (29 May 2025). On new filings: on 17 April 2026, the SEC charged Donald G. Basile, GIBF GP, Inc., and Monsoon Blockchain Corporation (E.D.N.Y., No. 1:26-cv-02293) with defrauding investors in a $16 million offering of \"Simple Agreements for Future Tokens\" by falsely representing the token as \"insured\" and \"asset-backed\"; and on 29 May 2026, the SEC charged Nathan Fuller (S.D. Tex., No. 4:26-cv-04237) with operating a $12.3 million crypto trading scheme through Privvy Investments, LLC, alleging he misrepresented the use of \"proprietary AI-based trading bots\" and made Ponzi-like payments to investors. The SEC's Crypto Task Force, led by Commissioner Hester M. Peirce since its formation on 21 January 2025, states on its own webpage that its mandate includes ensuring \"enforcement resources are deployed judiciously\" alongside its policy work on regulatory clarity; this pillar reports that as the Task Force's own stated position rather than as this pillar's characterization of SEC enforcement policy. CFTC: on 27 May 2026, the CFTC and Gemini Trust Company LLC jointly moved to vacate the prospective provisions of a January 2025 consent order (from a case the CFTC originally filed in June 2022) under which Gemini had paid a $5 million civil penalty; the CFTC's own press release states the agency concluded \"the complaint should not have been filed -- and would not have been under current enforcement standards,\" citing reliance on a whistleblower account it now views as lacking credibility and questions about the evidentiary record, while the $5 million penalty already paid is not being returned. Separately, on 3 June 2026 the CFTC rescinded a decades-old policy against accepting settlements where a respondent continues to deny the complaint's allegations; the CFTC's release frames this as a general, agency-wide settlement-practice change rather than a crypto-specific one, and it is noted here only for context to the Gemini matter. This pillar covers the federal level only: state-level AML/CFT enforcement, including by state attorneys general and the New York State Department of Financial Services, is out of scope, stated explicitly because its omission could otherwise mislead about the full enforcement landscape a crypto business faces.",
+  "last_changed": "2026-07-12",
+  "key_links": [
+    {
+      "label": "FinCEN: Guidance FIN-2013-G001, Application of FinCEN's Regulations to Persons Administering, Exchanging, or Using Virtual Currencies (18 Mar 2013)",
+      "url": "https://www.fincen.gov/resources/statutes-regulations/guidance/application-fincens-regulations-persons-administering"
+    },
+    {
+      "label": "FinCEN: Guidance FIN-2019-G001, Application of FinCEN's Regulations to Certain Business Models Involving Convertible Virtual Currencies (9 May 2019)",
+      "url": "https://www.fincen.gov/resources/statutes-regulations/guidance/application-fincens-regulations-certain-business-models"
+    },
+    {
+      "label": "Federal Register: Threshold for the Requirement to Collect, Retain, and Transmit Information on Funds Transfers... and Clarification... Involving Convertible Virtual Currencies (proposed rule, 27 Oct 2020)",
+      "url": "https://www.federalregister.gov/documents/2020/10/27/2020-23756/threshold-for-the-requirement-to-collect-retain-and-transmit-information-on-funds-transfers-and"
+    },
+    {
+      "label": "FinCEN: Fact Sheet -- Proposed Rule to Implement the GENIUS Act's Anti-Money Laundering/Countering the Financing of Terrorism and Sanctions Compliance Program Requirements (PDF)",
+      "url": "https://www.fincen.gov/system/files/2026-04/FactSheet-PPSI-program-NPRM.pdf"
+    },
+    {
+      "label": "Federal Register: Permitted Payment Stablecoin Issuer Anti-Money Laundering/Countering the Financing of Terrorism Program and Sanctions Compliance Program Requirements (proposed rule, 10 Apr 2026)",
+      "url": "https://www.federalregister.gov/documents/2026/04/10/2026-06963/permitted-payment-stablecoin-issuer-anti-money-launderingcountering-the-financing-of-terrorism"
+    },
+    {
+      "label": "FinCEN: FinCEN Assesses $3.5 Million Penalty Against Paxful for Facilitating Suspicious Activity Involving Illicit Actors (press release, 9 Dec 2025)",
+      "url": "https://www.fincen.gov/news/news-releases/fincen-assesses-35-million-penalty-against-paxful-facilitating-suspicious"
+    },
+    {
+      "label": "FinCEN: Enforcement Actions (landing page)",
+      "url": "https://www.fincen.gov/news/enforcement-actions"
+    },
+    {
+      "label": "U.S. Department of the Treasury: Economic Fury Targets Iran's Largest Digital Asset Exchange for Terror Finance and Sanctions Evasion (press release, 2 Jun 2026)",
+      "url": "https://home.treasury.gov/news/press-releases/sb0519"
+    },
+    {
+      "label": "OFAC: Recent Actions (sanctions-actions landing page)",
+      "url": "https://ofac.treasury.gov/recent-actions"
+    },
+    {
+      "label": "SEC: Litigation Release LR-26496 -- Justin Sun, Tron Foundation Limited, BitTorrent Foundation Ltd., Rainberry, Inc., and DeAndre Cortez Way (5 Mar 2026)",
+      "url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26496"
+    },
+    {
+      "label": "SEC: Litigation Release LR-26530 -- Donald G. Basile, GIBF GP, Inc., and Monsoon Blockchain Corporation (17 Apr 2026)",
+      "url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26530"
+    },
+    {
+      "label": "SEC: Litigation Release LR-26558 -- Nathan Fuller (29 May 2026)",
+      "url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26558"
+    },
+    {
+      "label": "SEC: Crypto Task Force (webpage)",
+      "url": "https://www.sec.gov/securities-topics/crypto-task-force"
+    },
+    {
+      "label": "CFTC: CFTC Joins Gemini Trust Company LLC in Motion for Relief from Judgment (press release 9236-26, 27 May 2026)",
+      "url": "https://www.cftc.gov/PressRoom/PressReleases/9236-26"
+    },
+    {
+      "label": "CFTC: CFTC Rescinds Policy Regarding Denials of Settlements in Enforcement Actions (press release 9247-26, 3 Jun 2026)",
+      "url": "https://www.cftc.gov/PressRoom/PressReleases/9247-26"
+    }
+  ],
+  "open_items": [
+    "State-level AML/CFT enforcement -- including actions by state attorneys general and the New York State Department of Financial Services -- is real and, for many crypto businesses, operationally significant, but is out of scope of this federal-level-only pillar; this is stated explicitly because silent omission could otherwise mislead about the full enforcement landscape.",
+    "This research located both FIN-2013-G001 and FIN-2019-G001 as currently published, unrescinded FinCEN guidance, and treats both as concurrently operative; it did not find an explicit FinCEN statement rescinding or superseding the 2013 guidance, only FinCEN's own description of the 2019 guidance as consolidating prior interpretive material. This relationship should be reverified directly against FinCEN's guidance page before being treated as settled.",
+    "The FinCEN/Federal Reserve Board proposed rule to lower the cross-border travel-rule threshold to $250 (Federal Register, 27 October 2020) appears, from this research, never to have been finalized or formally withdrawn; no update since 2020 was located. This should be reverified live, since a multi-year-stalled proposed rule is easy to miss a quiet finalization or withdrawal of.",
+    "The GENIUS Act illicit-finance NPRM (FinCEN/OFAC joint proposed rule, comment period closed 9 June 2026) had not been finalized as of this writing; the Act's own Section 13 deadline for implementing regulations (18 July 2026) is discussed in full in the Stablecoins pillar and not duplicated here.",
+    "The OFAC digital-asset designation cited here (Nobitex, Wallex, Bitpin, Ramzinex and associated individuals, 2 June 2026) was independently verified against Treasury's own press release, but this pillar does not attempt a comprehensive log of all OFAC digital-asset-related designations in 2025-2026; OFAC's SDN list changes frequently, and this pillar is not continuously updated against it.",
+    "The SEC and CFTC enforcement examples described here (the Tron/Rainberry settlement, the Basile and Fuller filings, and the Gemini consent-order vacatur) are illustrative examples drawn from a wider set of 2025-2026 activity, not an exhaustive log; they were selected and described here strictly as each agency's own litigation releases and press releases state them, with dismissals/settlements and new filings presented identically neutrally and with no implication of an overall enforcement 'trend' in either direction.",
+    "Money-laundering and sanctions-evasion typologies specific to stablecoins (e.g., DPRK cyber-theft laundering, sanctions-evasion networks) are referenced in FinCEN's own GENIUS Act NPRM materials as motivating that rulemaking; this pillar notes their existence as FinCEN's own stated rationale but does not independently verify or elaborate on the underlying typology claims."
+  ],
+  "generated_at": "2026-07-12T05:53:19Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

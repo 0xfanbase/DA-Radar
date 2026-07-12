@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "project-crypto",
+  "term": "Project Crypto",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "An SEC initiative to update the Commission's rules for crypto assets and on-chain markets, launched via Chairman remarks in mid-2025 and continuing as an active program into 2026. Per the SEC's own materials, it centers on developing a token taxonomy anchored in the Howey investment-contract analysis, providing clearer lines between crypto-asset categories, and enabling capital formation through tailored exemptions, while the SEC states it supports Congressional efforts to codify a comprehensive crypto market-structure framework rather than treating its own rulemaking as a substitute for one. Since a January 2026 joint SEC-CFTC harmonization event, the SEC's own newsroom has also described Project Crypto workstreams being pursued jointly with the CFTC. Because initiative names, scope, and leadership can change, this entry is limited to what the SEC's own current published materials describe.",
+  "formal_definition": "SEC.gov, 'The SEC Launches Project Crypto' (sec.gov/about/sec-launches-project-crypto) and related SEC Chairman remarks, including 'The SEC's Approach to Digital Assets: Inside Project Crypto' (sec.gov/newsroom/speeches-statements/atkins-111225-secs-approach-digital-assets-inside-project-crypto); see also SEC.gov, 'Opening Remarks at Joint SEC-CFTC Harmonization Event -- Project Crypto' (sec.gov/newsroom/speeches-statements/atkins-remarks-joint-sec-cftc-harmonization-event-project-crypto-012926).",
+  "related_terms": [
+    "sec",
+    "cftc",
+    "digital-commodity",
+    "digital-asset-security",
+    "howey-test"
+  ],
+  "first_used_card_id": "240ff989bb42b6a98147ecb79d85127444fa58f1deb659d3fa92d82d6c750a43",
+  "generated_at": "2026-07-12T18:13:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

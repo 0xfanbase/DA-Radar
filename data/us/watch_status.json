@@ -1,0 +1,49 @@
+{
+  "feeds": {
+    "cftc_press_releases": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "cftc",
+      "status": "ok",
+      "status_since": "2026-07-12T06:11:01Z"
+    },
+    "fedreg_digital_assets": {
+      "last_error": null,
+      "mechanism": "json_api",
+      "source_id": "federal_register",
+      "status": "ok",
+      "status_since": "2026-07-12T06:11:01Z"
+    },
+    "fincen_press_releases": {
+      "last_error": null,
+      "mechanism": "html_diff",
+      "source_id": "fincen",
+      "status": "ok",
+      "status_since": "2026-07-12T06:11:01Z"
+    },
+    "frb_bcreg_press_releases": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "federal_reserve",
+      "status": "ok",
+      "status_since": "2026-07-12T06:11:01Z"
+    },
+    "occ_news": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "occ",
+      "status": "ok",
+      "status_since": "2026-07-12T06:11:01Z"
+    },
+    "sec_press_releases": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "sec",
+      "status": "ok",
+      "status_since": "2026-07-12T06:11:01Z"
+    }
+  },
+  "generated_at": "2026-07-12T06:11:01Z",
+  "jurisdiction_id": "us",
+  "schema_version": 1
+}

@@ -22,7 +22,7 @@ jobs:
       # -- adding one for real is: write config/jurisdictions/{id}.json, then add
       # its id here. No other part of this job needs to change.
       matrix:
-        jurisdiction: [hk, uk, eu]
+        jurisdiction: [hk, uk, eu, us]
       fail-fast: false
     # NOTE: with more than one matrix entry, GitHub Actions resolves a job-level
     # output written by multiple matrix jobs to whichever job happens to finish

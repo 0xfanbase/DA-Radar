@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "jurisdiction_id": "us",
+  "jurisdiction_name": "United States",
+  "user_agent": "GlobalDigitalAssetRadarWatcher/0.1 (contact: da-radar-bot@users.noreply.github.com; purpose: public RSS regulatory monitoring)",
+  "fetch": {
+    "timeout_seconds": 15,
+    "max_retries": 3,
+    "backoff_base_seconds": 1.0,
+    "backoff_multiplier": 2.0
+  },
+  "relevance_keywords": [
+    "crypto",
+    "crypto asset",
+    "crypto-asset",
+    "cryptocurrency",
+    "digital asset",
+    "digital assets",
+    "virtual currency",
+    "virtual currencies",
+    "virtual asset",
+    "stablecoin",
+    "stablecoins",
+    "payment stablecoin",
+    "genius act",
+    "clarity act",
+    "digital commodity",
+    "digital commodities",
+    "digital asset security",
+    "digital asset securities",
+    "money services business",
+    "convertible virtual currency",
+    "bank secrecy act",
+    "travel rule",
+    "tokeniz",
+    "tokenis",
+    "distributed ledger",
+    "blockchain",
+    "bitcoin",
+    "exchange-traded product",
+    "spot crypto",
+    "custody of crypto",
+    "crypto custody",
+    "central bank digital currency",
+    "cbdc",
+    "defi",
+    "decentralized finance",
+    "decentralised finance",
+    "web3",
+    "nft",
+    "howey"
+  ],
+  "pillar_keywords": {
+    "exchanges_vatp": [
+      "trading platform",
+      "national securities exchange",
+      "alternative trading system",
+      "designated contract market",
+      "swap execution facility",
+      "spot crypto",
+      "spot market",
+      "market structure",
+      "clarity act",
+      "listing",
+      "market integrity",
+      "exchange"
+    ],
+    "stablecoins": [
+      "stablecoin",
+      "payment stablecoin",
+      "genius act",
+      "permitted payment stablecoin issuer",
+      "reserve",
+      "attestation",
+      "redemption",
+      "issuer",
+      "interest prohibition"
+    ],
+    "dealing_custody_advisory": [
+      "custod",
+      "safekeeping",
+      "broker-dealer",
+      "broker dealer",
+      "investment adviser",
+      "transfer agent",
+      "futures commission merchant",
+      "dealer"
+    ],
+    "tokenization_rwa": [
+      "tokeniz",
+      "tokenis",
+      "tokenized securities",
+      "tokenised securities",
+      "security token",
+      "digital asset security",
+      "distributed ledger",
+      "blockchain",
+      "on-chain",
+      "onchain"
+    ],
+    "funds_etfs": [
+      "exchange-traded product",
+      "exchange-traded fund",
+      "etf",
+      "etp",
+      "trust shares",
+      "commodity-based trust",
+      "generic listing",
+      "listing standards",
+      "investment company",
+      "fund",
+      "19b-4"
+    ],
+    "banking_money": [
+      "national bank",
+      "bank holding company",
+      "state member bank",
+      "master account",
+      "charter",
+      "trust bank",
+      "tokenized deposit",
+      "tokenised deposit",
+      "payment system",
+      "central bank digital currency",
+      "cbdc",
+      "prudential",
+      "capital requirement"
+    ],
+    "aml_cft_enforcement": [
+      "money laundering",
+      "aml",
+      "cft",
+      "bank secrecy act",
+      "bsa",
+      "money services business",
+      "msb",
+      "travel rule",
+      "sanction",
+      "ofac",
+      "enforcement",
+      "suspicious activity",
+      "illicit finance",
+      "fincen"
+    ]
+  },
+  "regulators": [
+    {
+      "id": "sec",
+      "name": "Securities and Exchange Commission",
+      "short_name": "SEC",
+      "homepage": "https://www.sec.gov/newsroom/press-releases",
+      "official_domains": [
+        "www.sec.gov"
+      ],
+      "feeds": [
+        {
+          "id": "sec_press_releases",
+          "kind": "press_releases",
+          "url": "https://www.sec.gov/news/pressreleases.rss",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "cftc",
+      "name": "Commodity Futures Trading Commission",
+      "short_name": "CFTC",
+      "homepage": "https://www.cftc.gov/PressRoom/PressReleases",
+      "official_domains": [
+        "www.cftc.gov"
+      ],
+      "feeds": [
+        {
+          "id": "cftc_press_releases",
+          "kind": "press_releases",
+          "url": "https://www.cftc.gov/RSS/RSSGP/rssgp.xml",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "fincen",
+      "name": "Financial Crimes Enforcement Network",
+      "short_name": "FinCEN",
+      "homepage": "https://www.fincen.gov/news/press-releases",
+      "official_domains": [
+        "www.fincen.gov",
+        "fincen.gov",
+        "home.treasury.gov",
+        "ofac.treasury.gov"
+      ],
+      "feeds": [
+        {
+          "id": "fincen_press_releases",
+          "kind": "press_releases",
+          "url": "https://www.fincen.gov/news/press-releases",
+          "mechanism": "html_diff",
+          "html_diff": {
+            "item_selector": "div.fincen-news-article",
+            "link_selector": ".fincen-news-article__title a",
+            "title_selector": ".fincen-news-article__title a",
+            "summary_selector": ".fincen-news-article__body",
+            "date_selector": ".fincen-news-article__meta time",
+            "date_format": "%m/%d/%Y",
+            "base_url": "https://www.fincen.gov/news/press-releases"
+          }
+        }
+      ]
+    },
+    {
+      "id": "occ",
+      "name": "Office of the Comptroller of the Currency",
+      "short_name": "OCC",
+      "homepage": "https://www.occ.gov/news-events/index-news-events.html",
+      "official_domains": [
+        "www.occ.gov",
+        "occ.treas.gov"
+      ],
+      "feeds": [
+        {
+          "id": "occ_news",
+          "kind": "news_releases",
+          "url": "https://www.occ.gov/rss/occ_news.xml",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "federal_reserve",
+      "name": "Board of Governors of the Federal Reserve System",
+      "short_name": "Federal Reserve",
+      "homepage": "https://www.federalreserve.gov/newsevents/pressreleases.htm",
+      "official_domains": [
+        "www.federalreserve.gov"
+      ],
+      "feeds": [
+        {
+          "id": "frb_bcreg_press_releases",
+          "kind": "banking_consumer_regulatory_policy_press_releases",
+          "url": "https://www.federalreserve.gov/feeds/press_bcreg.xml",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "federal_register",
+      "name": "Federal Register (Office of the Federal Register, National Archives and Records Administration)",
+      "short_name": "Federal Register",
+      "homepage": "https://www.federalregister.gov",
+      "official_domains": [
+        "www.federalregister.gov",
+        "federalregister.gov"
+      ],
+      "feeds": [
+        {
+          "id": "fedreg_digital_assets",
+          "kind": "register_documents",
+          "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=%22digital+asset%22+OR+stablecoin+OR+%22virtual+currency%22&order=newest&per_page=50",
+          "mechanism": "json_api",
+          "json_api": {
+            "items_path": "results",
+            "fields": {
+              "id": "document_number",
+              "title": "title",
+              "link": "html_url",
+              "summary": "abstract",
+              "published": "publication_date"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "govinfo",
+      "name": "GovInfo / Congress.gov / U.S. Code (U.S. Government Publishing Office; Library of Congress; Office of the Law Revision Counsel)",
+      "short_name": "GovInfo",
+      "homepage": "https://www.govinfo.gov",
+      "official_domains": [
+        "www.govinfo.gov",
+        "govinfo.gov",
+        "congress.gov",
+        "www.congress.gov",
+        "uscode.house.gov"
+      ],
+      "feeds": []
+    }
+  ]
+}

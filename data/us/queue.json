@@ -1,0 +1,427 @@
+{
+  "generated_at": "2026-07-12T06:45:30Z",
+  "items": [
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "023ed5b02ccc066ffac3316c4e67f956802652e0187dd9bfcf3de2d0b3bc7a97",
+      "link": "https://www.federalregister.gov/documents/2024/12/30/2024-30496/gross-proceeds-reporting-by-brokers-that-regularly-provide-services-effectuating-digital-asset-sales",
+      "published_at": "2024-12-30T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "This document contains final regulations regarding information reporting by brokers that regularly provide services effectuating certain digital asset sales and exchanges. The final regulations require these brokers to file information returns and furnish payee statements reporting gross proceeds on dispositions of digital assets effected for customers in certain sale or exchange transactions.",
+      "title": "Gross Proceeds Reporting by Brokers That Regularly Provide Services Effectuating Digital Asset Sales"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "0fc58aa001676ecea0c9ae30afd1d8a1bae6981ad6f102287e4859aca69fdf5b",
+      "link": "https://www.federalregister.gov/documents/2022/06/01/2022-11676/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-a-proposed-rule-change-to",
+      "published_at": "2022-06-01T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fincen_press_releases",
+      "item_hash": "18b380d7168fde0a1b6089558fae30dc7907e6f4628e5b684bfaaf8032d2ca43",
+      "link": "https://www.fincen.gov/news/news-releases/fincen-announces-recipients-its-11th-law-enforcement-awards-program",
+      "published_at": "2026-06-22T00:00:00Z",
+      "source_id": "fincen",
+      "status": "queued",
+      "summary": "WASHINGTON—Last week, the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) recognized seven cases during its Law Enforcement Awards Program for effectively using Bank Secrecy Act (BSA) data to support criminal prosecutions and…",
+      "title": "FinCEN Announces Recipients of Its 11th Law Enforcement Awards Program"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "18e009a1e65e145d956d100eb6c8598a94cc79c3851c3278a4462c4a609d69bf",
+      "link": "https://www.federalregister.gov/documents/2021/11/18/2021-25129/self-regulatory-organizations-cboe-bzx-exchange-inc-order-disapproving-a-proposed-rule-change-to",
+      "published_at": "2021-11-18T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the VanEck Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "19cc761821a5364080d2ed2dc8b895badd825b26632d4bd13c5896f4d2be358a",
+      "link": "https://www.federalregister.gov/documents/2021/09/09/2021-19420/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-of-a-proposed-rule-change",
+      "published_at": "2021-09-09T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of a Proposed Rule Change, as Modified by Amendment No. 1, To List and Trade Shares of the Valkyrie XBTO Bitcoin Futures Fund Under Nasdaq Rule 5711(g)"
+    },
+    {
+      "feed_id": "fincen_press_releases",
+      "item_hash": "19e3dd55833e892bd028cf302e52c748fd94ddc7ee6093b16be905056d1ed792",
+      "link": "https://www.fincen.gov/news/news-releases/fincen-agencies-propose-rule-implement-genius-act-customer-identification",
+      "published_at": "2026-06-18T00:00:00Z",
+      "source_id": "fincen",
+      "status": "queued",
+      "summary": "WASHINGTON—Today, the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN), together with the Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, and the National…",
+      "title": "FinCEN, Agencies Propose Rule to Implement GENIUS Act Customer Identification Program Requirement"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "20e400bc8610bfa502d57420d63d246e6e905e64a1960a1ce262ac9556ec0e82",
+      "link": "https://www.federalregister.gov/documents/2024/07/02/2024-14516/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-of-proposed-rule-change",
+      "published_at": "2024-07-02T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of Proposed Rule Change To List and Trade Shares of the Hashdex Nasdaq Crypto Index US ETF Under Nasdaq Rule 5711(d)"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "2d715e79b95cf9ef06e3ff7d7cf01f03fd2b26064e9245dd9d4bd5304a820962",
+      "link": "https://www.federalregister.gov/documents/2024/01/12/2024-00506/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-amendment-no-3-to-a-proposed",
+      "published_at": "2024-01-12T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of Amendment No. 3 to a Proposed Rule Change To List and Trade Shares of the Fidelity Wise Origin Bitcoin Fund Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "3abc52fa56221eedc5541f4cb57b15a5b937612639ab4155eaaea77243f50898",
+      "link": "https://www.federalregister.gov/documents/2021/12/07/2021-26442/self-regulatory-organizations-cboe-bzx-exchange-inc-order-disapproving-a-proposed-rule-change-to",
+      "published_at": "2021-12-07T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the WisdomTree Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "3c5fffede26511487e7f1d28067b982dc2cb7ea8c27c8d0d5874d0113686017a",
+      "link": "https://www.federalregister.gov/documents/2021/12/27/2021-27824/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-amendment-no-1-to-a-proposed",
+      "published_at": "2021-12-27T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of Amendment No. 1 to a Proposed Rule Change To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "40546c12c27916a1b3f5d02f41734cc460312427794fa92d14364c68bda8356c",
+      "link": "https://www.federalregister.gov/documents/2021/12/29/2021-28255/self-regulatory-organizations-cboe-bzx-exchange-inc-order-disapproving-a-proposed-rule-change-to",
+      "published_at": "2021-12-29T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the Kryptoin Bitcoin ETF Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "4e4ff927e7cc70298ce5de47433faa86c75be501b1d87f8acfd7e702f154c634",
+      "link": "https://www.federalregister.gov/documents/2024/01/12/2024-00503/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-amendment-no-2-to-a-proposed",
+      "published_at": "2024-01-12T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of Amendment No. 2 to a Proposed Rule Change To List and Trade Shares of the VanEck Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "5a3b6b46b18b829df33d10fd30b8b1451871d79905d88d5f607b212b7f64cf82",
+      "link": "https://www.federalregister.gov/documents/2022/06/02/2022-11819/self-regulatory-organizations-nyse-arca-inc-order-disapproving-a-proposed-rule-change-to-list-and",
+      "published_at": "2022-06-02T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the One River Carbon Neutral Bitcoin Trust Under NYSE Arca Rule 8.201-E (Commodity-Based Trust Shares)"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "618978ee9f544db3a8769011dd4414434f57b2ac1a0b0de0e52c94479f8025eb",
+      "link": "https://www.federalregister.gov/documents/2024/11/04/2024-25529/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-of-proposed-rule-change-to-adopt-new",
+      "published_at": "2024-11-04T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Proposed Rule Change To Adopt New NYSE Arca Rule 8.800-E To Provide for the Listing and Trading of Commodity- and Digital Asset-Based Investment Interests and To List and Trade Shares of the Grayscale Digital Large Cap Fund LLC"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "6651d0db6db66d61c579f28bd1a1a2fb765c9353039b49f9fe3d305401eebc9e",
+      "link": "https://www.federalregister.gov/documents/2021/05/27/2021-11172/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-of-proposed-rule-change-to-list-and",
+      "published_at": "2021-05-27T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Proposed Rule Change To List and Trade Shares of the First Trust SkyBridge Bitcoin ETF Trust Under NYSE Arca Rule 8.201-E"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "7080aeab107968c1398bb3bd2874a74a42eed154ee810a522e1aca1c7d63e569",
+      "link": "https://www.federalregister.gov/documents/2022/03/16/2022-05499/self-regulatory-organizations-nyse-arca-inc-order-disapproving-a-proposed-rule-change-to-list-and",
+      "published_at": "2022-03-16T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the NYDIG Bitcoin ETF Under NYSE Arca Rule 8.201-E (Commodity-Based Trust Shares)"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "76bee6dc51a1b13f1863d9b517ee929d81240491cf09a6cdb6b95aee720a6b5a",
+      "link": "https://www.federalregister.gov/documents/2025/07/10/2025-12809/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-of-proposed-rule-change-to-list-and",
+      "published_at": "2025-07-10T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Proposed Rule Change To List and Trade Shares of the Truth Social Bitcoin and Ethereum ETF, B.T. Under NYSE Arca Rule 8.201-E (Commodity-Based Trust Shares)"
+    },
+    {
+      "feed_id": "cftc_press_releases",
+      "item_hash": "77c717af1a1984ad1cd1e5cee7fce13fba2cd6fb68c318dd9f9f5907909f80d5",
+      "link": "https://www.cftc.gov/PressRoom/PressReleases/9258-26",
+      "published_at": "2026-06-18T19:59:43Z",
+      "source_id": "cftc",
+      "status": "queued",
+      "summary": "",
+      "title": "CFTC, SEC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "7b5fe399719466c0e9a3cbcc429367a81b9ec1dba9818eadc226787a23f8b78c",
+      "link": "https://www.federalregister.gov/documents/2025/08/18/2025-15697/request-for-comment-on-innovative-methods-to-detect-illicit-activity-involving-digital-assets",
+      "published_at": "2025-08-18T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "The U.S. Department of the Treasury invites interested members of the public to provide input on the use of innovative or novel methods, techniques, or strategies to detect and mitigate illicit finance risks involving digital assets. This notice fulfills a requirement of the Guiding and Establishing National Innovation for U.S. Stablecoins Act (GENIUS Act) and supports the Administration's policy of supporting the responsible growth and use of digital assets, as outlined in the January 23, 2025, Executive Order 14178 on \"Strengthening American Leadership in Digital Financial Technology.\"",
+      "title": "Request for Comment on Innovative Methods To Detect Illicit Activity Involving Digital Assets"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "7c9440e819c99cf0c7c65f181895bab113179fbcb36e91ccdba47eb13a171c00",
+      "link": "https://www.federalregister.gov/documents/2025/03/07/2025-03662/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-of-proposed-rule-change",
+      "published_at": "2025-03-07T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of Proposed Rule Change, as Modified by Amendment No. 1, To Adopt Nasdaq Rule 5712 To Provide for the Listing and Trading of Commodity- and Digital Asset-Based Investment Interests and To List and Trade Shares of the Hashdex Nasdaq Crypto Index US ETF Under Proposed Nasdaq Rule 5712"
+    },
+    {
+      "feed_id": "fincen_press_releases",
+      "item_hash": "9a853765e05dad3bcdc49958f383d09baf5eb2134b7c70b6a1471c11eb638756",
+      "link": "https://www.fincen.gov/news/news-releases/fincen-assesses-historic-80-million-penalty-against-canaccord-genuity-llc",
+      "published_at": "2026-03-06T00:00:00Z",
+      "source_id": "fincen",
+      "status": "queued",
+      "summary": "WASHINGTON—Today, the Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) assessed an $80,000,000civil money penaltyagainst Canaccord Genuity LLC (Canaccord) for willful…",
+      "title": "FinCEN Assesses Historic $80 Million Penalty Against Canaccord Genuity LLC for Securities Fraud-Related Bank Secrecy Act Violations"
+    },
+    {
+      "feed_id": "sec_press_releases",
+      "item_hash": "a0068cffbfcfaa6674e615e9c94ee2c56eb090eaebc63c64fa5768c463000cf3",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-57-sec-cftc-seek-public-comment-further-clarify-harmonize-derivatives-product-definitions",
+      "published_at": "2026-06-18T18:42:47Z",
+      "source_id": "sec",
+      "status": "queued",
+      "summary": "The Securities and Exchange Commission and the Commodity Futures Trading Commission today issued a joint request for public comment on potential opportunities to further update, clarify, and harmonize certain derivatives product definitions and…",
+      "title": "SEC, CFTC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "a14dfbd2deb12aec2b0d52f18db982d2ec1eff69baec245a3cf0149129c204c1",
+      "link": "https://www.federalregister.gov/documents/2021/06/01/2021-11402/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-a-proposed-rule-change-to",
+      "published_at": "2021-06-01T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the Wise Origin Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "aab6af1ec4c46465b777ffa55889de9928773443e10b6170572dc1562e9a74ae",
+      "link": "https://www.federalregister.gov/documents/2022/02/14/2022-03019/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-a-proposed-rule-change-to",
+      "published_at": "2022-02-14T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the WisdomTree Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fincen_press_releases",
+      "item_hash": "aec433ce3ad1e3e7aa39bb90cc3b385c37fc3731cc3a2451eb3ca04220c42a6a",
+      "link": "https://www.fincen.gov/news/news-releases/treasury-proposes-rule-implement-genius-acts-requirements-counter-illicit",
+      "published_at": "2026-04-08T00:00:00Z",
+      "source_id": "fincen",
+      "status": "queued",
+      "summary": "Today, the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) and the Office of Foreign Assets Control issued a joint proposed rule to implement provisions of the Guiding and Establishing National Innovation for U.S. Stablecoins Act (GENIUS Act). The proposed…",
+      "title": "Treasury Proposes Rule to Implement the GENIUS Act’s Requirements to Counter Illicit Finance"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "b2a82161389197cf8587969ddb98bdd07b39f790c3ea153624f417e1ad8dec42",
+      "link": "https://www.federalregister.gov/documents/2021/08/23/2021-17965/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-a-proposed-rule-change-to",
+      "published_at": "2021-08-23T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the Global X Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "b93b05e15dc656d7393e5a3a674978b589200c072f159a0d119b67e81ede8d3e",
+      "link": "https://www.federalregister.gov/documents/2021/08/06/2021-16788/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-a-proposed-rule-change-to",
+      "published_at": "2021-08-06T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "bc9c8bd88fa59ae753af7dcf52fcd2696dc69904b0ad58d33b7b29c29a4a5b72",
+      "link": "https://www.federalregister.gov/documents/2022/07/13/2022-14884/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-a-proposed-rule-change-to",
+      "published_at": "2022-07-13T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the VanEck Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "c309a712a0986a12ede79a3cfcdf5a5625dbb48c54318b2dbdf0b7567030e4d0",
+      "link": "https://www.federalregister.gov/documents/2022/04/06/2022-07193/self-regulatory-organizations-cboe-bzx-exchange-inc-order-disapproving-a-proposed-rule-change-as",
+      "published_at": "2022-04-06T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change, as Modified by Amendment No. 1, To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "frb_bcreg_press_releases",
+      "item_hash": "d27ef327018d57da56d71c5e97873e2d60edf0a8e35c9cd92c4920c0575d2d36",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260618a.htm",
+      "published_at": "2026-06-18T13:00:00Z",
+      "source_id": "federal_reserve",
+      "status": "queued",
+      "summary": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
+      "title": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "d391431ec6edcc6afe628106abccc0ebe3ce4f792f493a88712e00a800fb8bce",
+      "link": "https://www.federalregister.gov/documents/2023/01/31/2023-01983/self-regulatory-organizations-cboe-bzx-exchange-inc-order-disapproving-a-proposed-rule-change-to",
+      "published_at": "2023-01-31T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change to List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "d64c4c0d882b7eecb193df8c9a3864e27b7cabb24c5a8968555f8bca348ab82d",
+      "link": "https://www.federalregister.gov/documents/2024/01/12/2024-00498/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-of-amendment-no-1-to-a-proposed-rule",
+      "published_at": "2024-01-12T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Amendment No. 1 to a Proposed Rule Change To List and Trade Shares of the Hashdex Bitcoin ETF Under NYSE Arca Rule 8.500-E (Trust Units)"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "e64aa247b8d8c2d78ae62cbf1ea3067f731e08d05e263d58d6e35e0694a633e2",
+      "link": "https://www.federalregister.gov/documents/2023/07/19/2023-15267/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-a-proposed-rule-change-as",
+      "published_at": "2023-07-19T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change, as Modified by Amendment No. 2, To List and Trade Shares of the Wise Origin Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "e745b1b27fe1e30a40ce1808e83a417b6f8242c1ac297d216ae048011cba7f1b",
+      "link": "https://www.federalregister.gov/documents/2024/07/09/2024-14004/gross-proceeds-and-basis-reporting-by-brokers-and-determination-of-amount-realized-and-basis-for",
+      "published_at": "2024-07-09T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "This document contains final regulations regarding information reporting and the determination of amount realized and basis for certain digital asset sales and exchanges. The final regulations require brokers to file information returns and furnish payee statements reporting gross proceeds and adjusted basis on dispositions of digital assets effected for customers in certain sale or exchange transactions. These final regulations also require real estate reporting persons to file information returns and furnish payee statements with respect to real estate purchasers who use digital assets to acquire real estate.",
+      "title": "Gross Proceeds and Basis Reporting by Brokers and Determination of Amount Realized and Basis for Digital Asset Transactions"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "ea13f5dc2675af1a7dd502faa427a5f85403591d8b625566dd0874b05abbab78",
+      "link": "https://www.federalregister.gov/documents/2022/07/06/2022-14310/self-regulatory-organizations-nyse-arca-inc-order-disapproving-a-proposed-rule-change-as-modified-by",
+      "published_at": "2022-07-06T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Order Disapproving a Proposed Rule Change, as Modified by Amendment No. 1, to List and Trade Shares of Grayscale Bitcoin Trust Under NYSE Arca Rule 8.201-E (Commodity-Based Trust Shares)"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "f3f9307bd5dbf0123de49cf94c419ff1c421f08a97b2817db1cecaf253625a49",
+      "link": "https://www.federalregister.gov/documents/2024/12/10/2024-27836/defining-larger-participants-of-a-market-for-general-use-digital-consumer-payment-applications",
+      "published_at": "2024-12-10T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "The Consumer Financial Protection Bureau (CFPB) issues this rule to define larger participants of a market for general-use digital consumer payment applications. Larger participants of this market will be subject to the CFPB's supervisory authority under the Consumer Financial Protection Act (CFPA). A nonbank covered person qualifies as a larger participant if it facilitates an annual covered consumer payment transaction volume of at least 50 million transactions as defined in the rule, and it is not a small business concern.",
+      "title": "Defining Larger Participants of a Market for General-Use Digital Consumer Payment Applications"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "f95d1ca98bab146ab2c7501a0f39484f0c38e6334ffd2f2cee83bb655d372551",
+      "link": "https://www.federalregister.gov/documents/2024/10/04/2024-22903/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-of-amendment-no-1-and",
+      "published_at": "2024-10-04T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of Amendment No. 1 and Order Instituting Proceedings To Determine Whether To Approve or Disapprove a Proposed Rule Change, as Modified by Amendment No. 1, To List and Trade Shares of the Hashdex Nasdaq Crypto Index US ETF Under Nasdaq Rule 5711(d)"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "fa9970817770c954848da807d8c63cff55489b580fa27ae20227b97cd2e6ea76",
+      "link": "https://www.federalregister.gov/documents/2021/04/15/2021-07675/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-a-proposed-rule-change-to",
+      "published_at": "2021-04-15T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change to List and Trade Shares of the WisdomTree Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "fb51e0e0744e927ba0799893668b7086775d83f86a8a299edbf30ff82c5ed94c",
+      "link": "https://www.federalregister.gov/documents/2023/08/29/2023-17565/gross-proceeds-and-basis-reporting-by-brokers-and-determination-of-amount-realized-and-basis-for",
+      "published_at": "2023-08-29T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "This document contains proposed regulations regarding information reporting, the determination of amount realized and basis, and backup withholding, for certain digital asset sales and exchanges. Based on existing authority as well as changes to the applicable tax law made by the Infrastructure Investment and Jobs Act, these proposed regulations would require brokers, including digital asset trading platforms, digital asset payment processors, and certain digital asset hosted wallets, to file information returns, and furnish payee statements, on dispositions of digital assets effected for customers in certain sale or exchange transactions. These proposed regulations would also require real estate reporting persons, who are treated as brokers with respect to reportable real estate transactions, to include on filed information returns and furnished payee statements the fair market value of digital asset consideration received by real estate sellers in reportable real estate transactions. Additionally, these real estate reporting persons would also be required to file information returns and furnish payee statements with respect to real estate purchasers who use digital assets to acquire real estate in these transactions.",
+      "title": "Gross Proceeds and Basis Reporting by Brokers and Determination of Amount Realized and Basis for Digital Asset Transactions"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "fc106774d2c666dd713f1f77cd4eb8fdfa68c2a697fde7a666526df116c21c69",
+      "link": "https://www.federalregister.gov/documents/2023/07/19/2023-15271/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-a-proposed-rule-change-as",
+      "published_at": "2023-07-19T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change, As Modified by Amendment No. 1, To List and Trade Shares of the VanEck Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "ff51f3a93bcbae7a1ed7349a0b2ca48463573bfb198b3e11a7ddb7a926b16f35",
+      "link": "https://www.federalregister.gov/documents/2021/08/11/2021-17078/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-of-a-proposed-rule-change-to-list-and",
+      "published_at": "2021-08-11T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of Teucrium Bitcoin Futures Fund Under NYSE Arca Rule 8.200-E"
+    },
+    {
+      "feed_id": "fedreg_digital_assets",
+      "item_hash": "ff570f6a5e6fd6f680907771e4f67eb876a680fb27face9245db42af78ba917e",
+      "link": "https://www.federalregister.gov/documents/2021/04/28/2021-08855/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-a-proposed-rule-change-to",
+      "published_at": "2021-04-28T00:00:00Z",
+      "source_id": "federal_register",
+      "status": "queued",
+      "summary": "",
+      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the Kryptoin Bitcoin ETF Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    }
+  ],
+  "jurisdiction_id": "us",
+  "schema_version": 1
+}

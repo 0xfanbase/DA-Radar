@@ -16,13 +16,13 @@
     {
       "id": "us",
       "name": "United States",
-      "config": null,
+      "config": "config/jurisdictions/us.json",
       "status": {
-        "watcher": "planned",
+        "watcher": "live",
         "analyst_verifier": "planned",
-        "seeded": false
+        "seeded": true
       },
-      "coverage_notes": "Planned. Multi-regulator landscape; watcher sources and config file to be written in its build phase."
+      "coverage_notes": "Live RSS/HTML-diff/JSON-API watcher (SEC + CFTC + FinCEN + OCC + Federal Reserve + Federal Register feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
     },
     {
       "id": "eu",

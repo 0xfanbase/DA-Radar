@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "sec",
+  "term": "SEC (Securities and Exchange Commission)",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "The US federal agency responsible for administering the federal securities laws -- registration and disclosure by issuers, and licensing and supervision of broker-dealers, investment advisers, transfer agents, and national securities exchanges. A crypto asset that meets the definition of a 'security' (for example, under the Howey test, as a 'digital asset security') falls within SEC jurisdiction. Since March 2026 the SEC has jointly issued, with the CFTC, an interpretation setting out a taxonomy for classifying crypto assets, and leads 'Project Crypto,' its initiative to update SEC rules for crypto assets and on-chain markets, which the SEC and CFTC have since pursued jointly on some workstreams.",
+  "formal_definition": "Established under the Securities Exchange Act of 1934. Press releases: sec.gov/news/pressreleases.rss (per this radar's watcher configuration). SEC Release Nos. 33-11412; 34-105020, 'Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets,' issued jointly with the CFTC and effective March 23, 2026.",
+  "related_terms": [
+    "cftc",
+    "digital-asset-security",
+    "digital-commodity",
+    "howey-test",
+    "project-crypto"
+  ],
+  "first_used_card_id": "240ff989bb42b6a98147ecb79d85127444fa58f1deb659d3fa92d82d6c750a43",
+  "generated_at": "2026-07-12T18:08:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

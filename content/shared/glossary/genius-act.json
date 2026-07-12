@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "genius-act",
+  "term": "GENIUS Act",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "The federal statute that created the United States' first dedicated legal framework for 'payment stablecoins.' Enacted 18 July 2025 as Public Law 119-27, it establishes a licensing regime under which only a 'permitted payment stablecoin issuer' -- a bank subsidiary approved under the Act, a 'Federal qualified payment stablecoin issuer' approved by the Office of the Comptroller of the Currency, or a 'State qualified payment stablecoin issuer' approved by a state regulator -- may lawfully issue a payment stablecoin in the United States, subject to reserve, redemption, disclosure, and examination requirements.",
+  "formal_definition": "Public Law 119-27, 139 Stat. 419 (approved July 18, 2025). Section 1 (12 U.S.C. 5901 note) sets the statute's short title as the Guiding and Establishing National Innovation for U.S. Stablecoins Act, or GENIUS Act. Section 2 (12 U.S.C. 5901) contains the Act's operative definitions, including 'payment stablecoin' (section 2(22)) and 'permitted payment stablecoin issuer' (section 2(23)).",
+  "related_terms": [
+    "payment-stablecoin",
+    "permitted-payment-stablecoin-issuer",
+    "stablecoin",
+    "occ",
+    "federal-reserve"
+  ],
+  "first_used_card_id": "f0aa81db42234c8d2f05bc6b3435a0e46a5c14e9cb48dbe5a3bf1e99cefda60d",
+  "generated_at": "2026-07-12T18:00:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

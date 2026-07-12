@@ -1,0 +1,38 @@
+{
+  "citations": [
+    {
+      "quote": "maintain identifiable reserves backing the outstanding payment stablecoins of the permitted payment stablecoin issuer",
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
+    },
+    {
+      "quote": "the date that is 18 months after the date of enactment of this Act",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title12-section5901&num=0&edition=prelim"
+    },
+    {
+      "quote": "each primary Federal payment stablecoin regulator, the Secretary of the Treasury, and each State",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title12-section5913&num=0&edition=prelim"
+    },
+    {
+      "quote": "shall pay the holder of any payment stablecoin any form of interest or yield",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title12-section5903&num=0&edition=prelim"
+    }
+  ],
+  "generated_at": "2026-07-12T19:45:00Z",
+  "id": "f0aa81db42234c8d2f05bc6b3435a0e46a5c14e9cb48dbe5a3bf1e99cefda60d",
+  "jurisdiction_id": "us",
+  "key_dates": {
+    "deadline": "2026-07-18"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "stablecoins"
+  ],
+  "published_date": "2025-07-18",
+  "regulator": "U.S. Congress",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "The Guiding and Establishing National Innovation for U.S. Stablecoins Act (GENIUS Act) was enacted as Public Law 119-27 on July 18, 2025. It creates the United States' first federal permitted-issuer framework for payment stablecoins: only a 'permitted payment stablecoin issuer' -- a subsidiary of an insured depository institution, an OCC-approved Federal qualified issuer, or a State qualified issuer operating under a state regulatory regime certified by an interagency Stablecoin Certification Review Committee (chaired by the Secretary of the Treasury, with the Federal Reserve and FDIC as members) -- may lawfully issue one. Issuers must back outstanding stablecoins with identifiable reserves on at least a 1-to-1 basis in enumerated liquid assets, publish monthly reserve reports with CEO/CFO certification, and may not pay holders interest or yield. The Act itself takes effect on the earlier of 18 months after enactment or 120 days after regulators finalize implementing rules; the primary Federal payment stablecoin regulators, the Secretary of the Treasury, and State regulators face a one-year statutory deadline (July 18, 2026) to promulgate implementing regulations through notice-and-comment rulemaking.",
+  "title": "Guiding and Establishing National Innovation for U.S. Stablecoins Act (GENIUS Act) enacted as Public Law 119-27",
+  "type": "ordinance",
+  "why_it_matters": "The GENIUS Act is the first US federal statute to create a licensed, reserve-backed framework for who may issue a dollar-pegged 'payment stablecoin,' a token type that previously had no dedicated federal regulatory regime. Its substantive requirements do not take effect immediately: the Act's own effective-date formula ties them to the earlier of a fixed date 18 months after enactment or 120 days after regulators finalize implementing rules, and those regulators have a one-year statutory deadline (July 18, 2026) to promulgate the rules needed to carry out the Act."
+}

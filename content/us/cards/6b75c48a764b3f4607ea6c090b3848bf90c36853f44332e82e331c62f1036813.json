@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "6b75c48a764b3f4607ea6c090b3848bf90c36853f44332e82e331c62f1036813",
+  "jurisdiction_id": "us",
+  "published_date": "2026-03-05",
+  "regulator": "FDIC, Federal Reserve, and OCC",
+  "pillar": [
+    "tokenization_rwa",
+    "banking_money"
+  ],
+  "type": "guidance",
+  "title": "Agencies clarify the capital treatment of tokenized securities",
+  "summary": "On 5 March 2026, the Federal Deposit Insurance Corporation, the Federal Reserve, and the Office of the Comptroller of the Currency jointly issued guidance, together with an accompanying set of Frequently Asked Questions, on how bank regulatory capital rules apply to tokenized securities. The agencies define an eligible tokenized security as one that, under applicable law, confers legal rights identical to those of its non-tokenized form, and state that such a security should generally receive the same capital treatment as its non-tokenized equivalent. The guidance describes the capital rule as technology neutral, meaning the technology used to issue or transact in a security does not by itself change its capital treatment, including for financial-collateral recognition. The FAQ document states that banking organizations holding tokenized securities must apply sound risk-management practices.",
+  "why_it_matters": "For banking organizations that hold or are considering holding tokenized securities, this guidance states that an eligible tokenized security -- one that, under applicable law, confers legal rights identical to its non-tokenized form -- should generally receive the same capital treatment under the capital rule as that non-tokenized form, and that the capital rule is technology neutral, meaning the technology used to issue or transact in a security does not by itself determine its capital treatment.",
+  "citations": [
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260305a.htm",
+      "quote": "should generally receive the same capital treatment as the non-tokenized form"
+    },
+    {
+      "url": "https://www.federalreserve.gov/supervisionreg/capital-treatment-of-tokenized-securities-faqs.htm",
+      "quote": "confer legal rights identical to those of the non-tokenized form of the security"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T20:30:00Z",
+  "model": "Claude (Anthropic)"
+}

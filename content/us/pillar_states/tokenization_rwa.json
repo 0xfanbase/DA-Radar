@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "pillar": "tokenization_rwa",
+  "status_seal": "no_dedicated_regime",
+  "regulator": "SEC and OCC",
+  "instruments": [
+    "SEC Divisions of Corporation Finance, Investment Management, and Trading and Markets, Statement on Tokenized Securities (28 January 2026)",
+    "SEC Commissioner Hester M. Peirce, \"Enchanting, but Not Magical: A Statement on the Tokenization of Securities\" (9 July 2025)",
+    "Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets, Release Nos. 33-11412; 34-105020 (SEC interpretation with accompanying CFTC guidance, issued 17 March 2026, effective 23 March 2026)",
+    "SEC Chairman Paul S. Atkins, Keynote Remarks at The Economic Club of Washington, D.C. (21 April 2026)",
+    "SEC Fall 2026 Unified Agenda of Regulatory and Deregulatory Actions, RIN 3235-AN38 \"Crypto Assets,\" Proposed Rule Stage, published 7 July 2026",
+    "Securities Exchange Act Section 3(a)(25) (15 U.S.C. 78c(a)(25)), the transfer agent definition, as applied to crypto asset securities and distributed ledger technology via SEC Division of Trading and Markets FAQ guidance (Frequently Asked Questions Relating to Crypto Asset Activities and Distributed Ledger Technology, first issued 15 May 2025, updated 19 February 2026)",
+    "OCC Interpretive Letter #1174 (4 January 2021, national bank/federal savings association authority to use independent node verification networks and stablecoins for payment activities)",
+    "OCC Interpretive Letter #1183 (7 March 2025, reaffirming Interpretive Letters #1170, #1172, and #1174)",
+    "OCC Interpretive Letter #1186 (18 November 2025, national bank authority to hold crypto assets as principal to pay blockchain network fees and to test crypto-asset platforms)"
+  ],
+  "standing_summary": "Tokenization of real-world assets at the U.S. federal level is not governed by a dedicated tokenization or DLT statute; it is owned in practice by the SEC applying the existing federal securities laws to tokenized securities, with OCC interpretive guidance addressing national banks' use of the underlying technology, and this absence of a purpose-built regime -- not a unified framework -- is the structural fact for this pillar. The SEC's operative position is that format does not change legal character: on 28 January 2026, the SEC's Divisions of Corporation Finance, Investment Management, and Trading and Markets issued a joint Statement on Tokenized Securities stating that 'the format in which a security is issued or the methods by which holders are recorded does not affect application of the federal securities laws,' and defining a 'tokenized security' as 'a financial instrument enumerated in the definition of \"security\" under the federal securities laws that is formatted as or represented by a crypto asset, where the record of ownership is maintained in whole or in part on or through one or more crypto networks.' The statement distinguishes securities tokenized by or on behalf of their issuers from securities tokenized by unaffiliated third parties, and describes how an issuer or its agent may integrate DLT into the 'master securityholder file' such that a transfer of the crypto asset on the crypto network results in a transfer of the security on that file -- the transfer-agent and DLT-infrastructure question the SEC's Division of Trading and Markets FAQ guidance addresses separately, stating that a registered transfer agent may use distributed ledger technology as its official master securityholder file provided it otherwise complies with the transfer agent rules under Exchange Act Sections 17A(a)(1) and 17(b) (this transfer-agent framework is tracked in full in the Dealing, Custody, Advisory & Management pillar and cross-referenced here rather than re-quoted). The January 2026 statement built on earlier remarks by Commissioner Hester M. Peirce, whose 9 July 2025 statement -- titled 'Enchanting, but Not Magical: A Statement on the Tokenization of Securities' -- stated plainly that 'Tokenized securities are still securities,' that 'Tokenization may facilitate capital formation and enhance investors' ability to use their assets as collateral,' and that the Commission stands 'ready to work with market participants to craft appropriate exemptions and modernize rules' where warranted, inviting market participants to meet with the Commission and staff on tokenization structures. The 17 March 2026 joint SEC interpretation with accompanying CFTC guidance (Release Nos. 33-11412; 34-105020, effective 23 March 2026) is also primary material for this pillar: its five-category taxonomy (digital commodities, digital collectibles, digital tools, stablecoins, and digital securities) supplies the classification a given tokenized instrument falls into, with 'digital securities' remaining subject to the federal securities laws; the taxonomy's full mechanics, and the CFTC's statement that it will administer the CEA consistent with the SEC's interpretation, are tracked in the Exchanges (VATP) pillar and not re-quoted here. On exemptive and innovation-facilitation work specifically, SEC Chairman Paul S. Atkins stated in a 21 April 2026 speech at the Economic Club of Washington, D.C. that the Commission was 'on the cusp of releasing what I call an \"innovation exemption,\" which will provide market participants with a cabined framework to begin facilitating the trading of tokenized securities on-chain in a compliant fashion as the Commission works toward long-term rules of the road,' framed as part of the SEC's Project Crypto initiative; as of this writing no Commission exemptive order, proposed rule text, or further primary SEC statement formally issuing that innovation exemption has been located, and this pillar does not assume one has taken effect (see open items). Separately, on the SEC's 2026 rulemaking agenda, the Unified Agenda published 7 July 2026 lists RIN 3235-AN38, 'Crypto Assets,' at the Proposed Rule Stage, with an abstract stating the Division 'is considering recommending that the Commission propose rules relating to the offer and sale of crypto assets, potentially to include certain exemptions and safe harbors,' at 'Economically Significant' priority with a target Notice of Proposed Rulemaking date of July 2026; no proposed rule text has been published as of this writing, and this item is distinct from RIN 3235-AN48 and RIN 3235-AN49, which are tracked in the Dealing, Custody, Advisory & Management and Exchanges (VATP) pillars respectively. On the OCC side, national banks' use of distributed ledger technology and stablecoin-adjacent activities are addressed through a chain of interpretive letters: Interpretive Letter #1174 (4 January 2021) first confirmed that national banks and federal savings associations may serve as a node on an independent node verification network (INVN) -- a category the letter describes as encompassing distributed ledgers such as blockchain -- and may provide stablecoin exchange services and issue stablecoins to carry out permissible payment activities; Interpretive Letter #1183 (7 March 2025) reaffirmed Interpretive Letter #1174 (alongside #1170 and #1172) while rescinding the supervisory non-objection process that a since-superseded 2021 letter had imposed, so the underlying INVN and stablecoin-payment permissions of #1174 remain the operative OCC position without that additional pre-clearance step; and Interpretive Letter #1186 (18 November 2025) confirmed that a national bank may, as an activity incidental to the business of banking, hold crypto assets as principal 'necessary to pay network fees' (so-called blockchain 'gas' fees) associated with otherwise-permissible activities and may hold crypto assets as principal 'necessary for testing otherwise permissible crypto-asset-related platforms,' in both cases subject to conducting the activity 'in a safe and sound manner and in compliance with applicable law.' Broader OCC custody-specific letters (#1170, #1184) are tracked primarily in the Dealing, Custody, Advisory & Management pillar and are not re-quoted here. Finally, and stated plainly rather than left to be inferred: the United States has no cross-agency DLT pilot regime equivalent to the European Union's DLT Pilot Regime (Regulation (EU) 2022/858) -- a dedicated, time-limited joint sandbox granting market infrastructures specific permissions to operate DLT trading and settlement systems under exemptions from parts of existing market-infrastructure law. No comparable joint SEC-CFTC (or single-agency) legislative sandbox or pilot-regime instrument for DLT market infrastructure was identified in this research; U.S. tokenization activity instead proceeds under the existing securities-law framework as interpreted in SEC staff statements and the March 2026 joint interpretation, plus agency-specific interpretive and (prospectively) exemptive relief such as the OCC letters and the SEC's stated but not-yet-formally-issued innovation exemption. This pillar covers the federal level only.",
+  "last_changed": "2026-07-07",
+  "key_links": [
+    {
+      "label": "SEC: Statement on Tokenized Securities (Divisions of Corporation Finance, Investment Management, and Trading and Markets, 28 Jan 2026)",
+      "url": "https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities"
+    },
+    {
+      "label": "SEC: Commissioner Hester M. Peirce, \"Enchanting, but Not Magical: A Statement on the Tokenization of Securities\" (9 Jul 2025)",
+      "url": "https://www.sec.gov/newsroom/speeches-statements/peirce-statement-tokenized-securities-070925"
+    },
+    {
+      "label": "SEC: Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets, Release Nos. 33-11412; 34-105020 (rule release page)",
+      "url": "https://www.sec.gov/rule-release/33-11412"
+    },
+    {
+      "label": "SEC: Release Nos. 33-11412; 34-105020, conformed to Federal Register version (full PDF)",
+      "url": "https://www.sec.gov/files/rules/interp/2026/33-11412.pdf"
+    },
+    {
+      "label": "SEC: Chairman Paul S. Atkins, Keynote Remarks at The Economic Club of Washington, D.C. (21 Apr 2026)",
+      "url": "https://www.sec.gov/newsroom/speeches-statements/atkins-keynote-remarks-economic-club-washington-042126"
+    },
+    {
+      "label": "reginfo.gov: Unified Agenda entry for RIN 3235-AN38, \"Crypto Assets\" (Proposed Rule Stage)",
+      "url": "https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=3235-AN38"
+    },
+    {
+      "label": "SEC: Division of Trading and Markets -- Frequently Asked Questions Relating to Crypto Asset Activities and Distributed Ledger Technology (15 May 2025, updated 19 Feb 2026)",
+      "url": "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-relating-crypto-asset-activities-distributed-ledger-technology"
+    },
+    {
+      "label": "OCC: Interpretive Letter #1174 news release (4 Jan 2021, PDF)",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2021/nr-occ-2021-2a.pdf"
+    },
+    {
+      "label": "OCC: OCC Clarifies Bank Authority to Engage in Certain Cryptocurrency Activities -- Interpretive Letter #1183 (news release NR-OCC-2025-16, 7 Mar 2025)",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-16.html"
+    },
+    {
+      "label": "OCC: Interpretive Letter #1183 (7 Mar 2025, full text PDF)",
+      "url": "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2025/int1183.pdf"
+    },
+    {
+      "label": "OCC: OCC Confirms Bank Authority to Hold Certain Crypto-Assets as Principal for Purposes of Paying Crypto-Asset Network Fees -- Interpretive Letter #1186 (news release NR-OCC-2025-108, 18 Nov 2025)",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-108.html"
+    },
+    {
+      "label": "OCC: Interpretive Letter #1186 (18 Nov 2025, full text PDF)",
+      "url": "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2025/int1186.pdf"
+    }
+  ],
+  "open_items": [
+    "SEC Chairman Atkins' 21 April 2026 speech states the Commission was 'on the cusp of releasing' an 'innovation exemption' for on-chain trading of tokenized securities, described as a time- and scope-limited framework pending longer-term rulemaking. As of this writing, no Commission exemptive order, adopting release, or proposed rule text formally issuing that innovation exemption was located on sec.gov; secondary reporting not independently verified against a primary SEC source describes the framework as delayed past its originally anticipated mid-May 2026 release, with no confirmed new timeline. This pillar records only the primary-sourced 21 April 2026 statement of intent and does not describe an innovation exemption as in effect.",
+    "RIN 3235-AN38 ('Crypto Assets') is at the Proposed Rule Stage only as of the 7 July 2026 Unified Agenda publication; no proposed rule text, comment period, or final rule exists yet, and the stated July 2026 NPRM target date is the agency's own plan, not a commitment this pillar state predicts will be met. Its relationship to the 'innovation exemption' described in Chairman Atkins' speech (whether the eventual AN38 rulemaking is the vehicle for that exemption, or a separate track) was not confirmed from a primary source and is not asserted here.",
+    "OCC Interpretive Letters #1174 and #1186 were substantially corroborated via the OCC's own HTML news-release pages and, for #1186, cross-checked against multiple secondary legal-alert summaries of the official text, because direct fetch of the full primary PDF text returned corrupted or unparseable output for both during this research (the same limitation noted for other OCC interpretive letters in the Dealing, Custody, Advisory & Management pillar); the letter numbers, dates, and operative content described here were consistent across the OCC's own release pages and the secondary summaries checked.",
+    "The full five-category taxonomy from Release Nos. 33-11412; 34-105020 (digital commodities, digital collectibles, digital tools, stablecoins, digital securities), and the CFTC's role in that joint release, are tracked in the Exchanges (VATP) pillar and are not restated in full here to avoid duplicating citations across pillars; only the 'digital securities' classification point is drawn on for this pillar.",
+    "The transfer-agent/DLT master-securityholder-file framework (Exchange Act Section 3(a)(25) and the SEC Division of Trading and Markets FAQ guidance) and broader broker-dealer custody treatment of crypto asset securities are tracked in full in the Dealing, Custody, Advisory & Management pillar and are cross-referenced, not duplicated, here.",
+    "This research did not identify any joint SEC-CFTC, or single-agency, cross-agency DLT pilot regime, sandbox, or comparable legislative instrument for DLT market infrastructure at the U.S. federal level equivalent to the EU's Regulation (EU) 2022/858 DLT Pilot Regime. This absence is stated as a scope fact based on the sources reviewed in this research, not as a claim that no such proposal has ever been introduced in Congress or by either agency; none was found to be current law or a pending rule as of this writing.",
+    "This pillar covers the federal level only. State-level tokenization-adjacent regimes (e.g., state securities/blue-sky treatment of tokenized instruments, state money-transmitter licensing as applied to tokenization platforms) are out of scope and are not addressed here."
+  ],
+  "generated_at": "2026-07-12T05:42:39Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

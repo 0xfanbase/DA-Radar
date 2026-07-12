@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "fincen",
+  "term": "FinCEN (Financial Crimes Enforcement Network)",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "A bureau of the US Department of the Treasury responsible for administering the Bank Secrecy Act -- the registration, anti-money-laundering-program, recordkeeping, and reporting regime that applies to banks and other 'money services businesses,' including businesses that administer or exchange convertible virtual currency. FinCEN issues guidance interpreting how BSA obligations, including the cross-border funds-transfer 'travel rule,' apply to virtual-currency and digital-asset activities.",
+  "formal_definition": "A bureau of the US Department of the Treasury administering the Bank Secrecy Act regulations codified at 31 CFR Chapter X. Press releases: fincen.gov/news/press-releases (per this radar's watcher configuration).",
+  "related_terms": [
+    "bank-secrecy-act",
+    "money-services-business",
+    "travel-rule"
+  ],
+  "first_used_card_id": "e6752d0de17e2f969890b37a499049c13837fe58b77d795f636a5f73699104ae",
+  "generated_at": "2026-07-12T19:00:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}
