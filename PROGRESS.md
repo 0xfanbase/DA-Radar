@@ -130,14 +130,23 @@ Consolidated here so nothing sits scattered across log entries.
 5. **Sequenced live-proving steps, in this order (Fable PM directive, 2026-07-09) -- do not run
    improve.yml's live trigger in parallel with the analyst/verifier's own unproven first runs:**
    a. ~~Steps 1-3 above.~~ Done. Step 4 (branch protection) still open.
-   b. Let the re-enabled analyst/verifier trigger complete a handful of real, observed, successful
-      cycles -- proving the CCR-session/worktree/isolation mechanism holds up against live reality,
-      not just fixtures. **In progress as of 2026-07-09**; first fire due 2026-07-10T03:35 UTC.
-   c. Only then: one full **manual** dry run of `docs/improve-runbook.md` -- populate one real,
-      low-stakes item into `data/improve_queue.json`, run the procedure by hand (the same way
-      Phase 3's first analyst+verifier run was done manually before any trigger existed), and watch
-      an actual PR get opened and either merged or rejected. Report this back to Fable PM before
-      either trigger's live-activation question comes back up.
+   b. ~~Let the re-enabled analyst/verifier trigger complete a handful of real, observed, successful
+      cycles.~~ **Confirmed live and firing nightly as of this entry (2026-07-13)**: the "HK Radar —
+      Analyst/Verifier daily run" CCR trigger (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`, cron `30 22 * * *`,
+      `enabled: true`) shows a real `last_fired_at` of 2026-07-12T22:35Z, confirmed via
+      `list_triggers` at P15 time -- it has been firing on schedule since re-enabling. This session
+      did not independently audit every individual firing's commit history for this entry (that is a
+      genuine remaining verification step, not assumed clean), but the mechanism itself is
+      demonstrably live and unattended, not merely armed.
+   c. **Still open.** One full **manual** dry run of `docs/improve-runbook.md` -- `data/improve_queue.json`
+      is confirmed still empty (`{"schema_version": 1, "items": []}`) as of this entry, meaning this
+      step has not yet happened. `improve.yml` has real, unreviewed write-access implications
+      (`/pipeline`, `/config`, `.github/workflows` are all in its potential blast radius, gated only by
+      `improve_scope.py`'s allow/deny logic), and Fable's own directive was to report the dry run's
+      result back before either trigger's live-activation question comes back up -- this session
+      judged that populating a real queue item and running that dry run is itself a decision the owner
+      should be looped in on before it happens, not something to do unilaterally while unattended, so
+      it was deliberately left for explicit owner/PM sign-off rather than run here.
 6. Two logged anonymity flags remain owner decisions before public launch (see
    IMPROVEMENT_BACKLOG.md's deviations entries): the LICENSE "Big Fan" copyright line, and non-bot
    commits — which are structural and recurring, not just the initial commit: every PR merged
@@ -146,6 +155,24 @@ Consolidated here so nothing sits scattered across log entries.
    so this recurs on every future merge. Bot identity is guaranteed only for commits the pipeline
    and build sessions themselves create; closing the gap requires a bot-credentialed merge path
    (GitHub App/PAT merging as `hk-radar-bot`), which this environment does not have.
+7. **`audit.yml` has still never produced a real `data/audit/latest.json`** -- confirmed at P15 time:
+   `data/audit/` does not exist anywhere in the repo. No scheduled Actions run of `audit.yml` has
+   fired for real yet (it's weekly, and no owner action has triggered a manual run either). This is
+   a genuine gap in the "self-learning loop" diagram's audit stage, separate from and in addition to
+   the improve.yml dry-run gap above.
+8. **P6-P14's registry-model rebuild added seven more jurisdictions (uk, eu, us, ch, jp, uae, sg) on
+   top of the original hk-only build, but `status.analyst_verifier` deliberately stays `"planned"`
+   for all seven of them** -- an explicit, repeatedly-logged owner-decision framing throughout P9-P14
+   (never an oversight): the live CCR trigger currently services only Hong Kong. Extending it to any
+   second jurisdiction is a distinct, not-yet-made owner decision, separate from this build's own
+   completeness -- every non-HK jurisdiction's content pipeline (watcher, seed, cards, gates) is fully
+   built and proven per-phase, but none of them has a live, recurring, unattended analyst/verifier
+   cycle of its own yet.
+9. **The literal P15 acceptance criterion -- a 14-day zero-touch soak with two consecutive real
+   publications -- cannot be completed synchronously in any single session**, exactly as flagged when
+   this constraint was first named back at Phase 5's kickoff (see that entry above). The HK trigger has
+   been live and firing since 2026-07-09; the actual 14-day clock needs to run in the background across
+   real calendar time and be checked back on, not simulated here.
 
 ## Log
 
@@ -1550,6 +1577,72 @@ fix was extracted, reviewed, and applied to the shared checkout.
 next -- see the Owner / next-step punch list above and the open-questions summary that will accompany the
 final PR for what genuinely cannot be completed synchronously in any session (the 14-day zero-touch soak,
 live CCR trigger activation for any jurisdiction beyond HK).
+
+### 2026-07-13 — P15: full-autonomy soak + final PR (what's actually completable synchronously)
+
+The registry-model rebuild (P6-P14) is now complete: eight jurisdictions live (hk, uk, eu, us, ch, jp,
+uae, sg), each with a full 7-pillar-state set, seeded and verified cards, a trajectory, jurisdiction-tagged
+glossary terms, a document library, and an orientation page, wired into `config/site.json` and (for the
+seven with a genuine live watcher mechanism) `.github/workflows/watch.yml`'s matrix. This entry runs a
+final, independent, whole-repo health check before naming what P15's own criteria still leave open.
+
+**Verification, run fresh, across the entire repo (not scoped to any one jurisdiction):**
+- `pytest -q`: 440/440 passing.
+- Every jurisdiction's `content/{jid}/pillar_states/` directory independently re-counted at exactly 7
+  files: hk, uk, eu, us, ch, jp, uae, sg all confirmed.
+- A full, from-scratch `pipeline.site.generate` run (`_site/` removed and rebuilt) completed without
+  error; every one of the eight jurisdictions' `index.html` independently grepped for "coming soon" --
+  zero hits across all eight.
+- `tests/test_jurisdiction_agnostic.py`: 10/10 green.
+- Method page's coverage table independently confirmed to list all eight jurisdiction names.
+- `git status --porcelain` and `git worktree list`: both fully clean -- no uncommitted changes, no
+  leftover scratch worktrees from any fix cycle.
+- `docs/analyst-runbook.md` re-read in full and confirmed it does NOT need updating for the new
+  jurisdictions: it already iterates `config/site.json`'s registry generically, keyed on
+  `status.analyst_verifier == "live"` (currently still only `hk`), not on any hardcoded jurisdiction id --
+  the file's own text already anticipates this ("If a second jurisdiction's `status.analyst_verifier` is
+  ever flipped to `"live"`, generalizing `hk-radar-analyst`... is a real follow-up code change at that
+  time -- out of scope [until then]"). No change needed until a second jurisdiction's analyst/verifier is
+  actually activated.
+
+**What P15's own named criteria require, checked directly rather than assumed:**
+- The HK analyst/verifier CCR trigger (`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`) is confirmed **live and firing
+  nightly** via `list_triggers` -- real `last_fired_at` of 2026-07-12T22:35Z, `enabled: true`, cron
+  `30 22 * * *`. This has been running unattended since 2026-07-09.
+- `data/improve_queue.json` confirmed still empty (`{"schema_version": 1, "items": []}`) -- the manual
+  dry-run of `docs/improve-runbook.md`, sequenced by Fable's own 2026-07-09 directive as a precondition
+  for `improve.yml`'s live activation, has not happened.
+- `data/audit/` confirmed to not exist anywhere in the repo -- `audit.yml` has never produced a real
+  output via a genuine scheduled Actions run.
+- The literal 14-day zero-touch soak criterion cannot be simulated or shortcut in a single session; it
+  requires real calendar time to elapse with the trigger running unattended, then a check-back.
+
+**What this session did NOT do, and why, rather than silently deciding either way:** did not populate
+`data/improve_queue.json` and run the manual dry-run itself -- `improve.yml`'s blast radius genuinely
+includes `/pipeline`, `/config`, and `.github/workflows`, and Fable's own sequencing directive was to
+report that dry run's result back to PM review before the live-activation question comes back up, which
+this session read as "loop the owner in before this specific step," not "proceed autonomously." Did not
+attempt to configure branch protection on `main` (no tool available in this session can change GitHub
+repository settings, unchanged from every earlier phase's own note on this). Did not open a pull request
+from this branch -- creating a PR was not explicitly requested this session, and per this project's own
+standing instruction on that action, it is withheld absent an explicit ask; the branch
+(`claude/error-investigation-802phh`) is fully pushed, tests green, and ready whenever a PR is wanted.
+
+**Open questions for the owner, compiled here as the standing instruction to "leave questions... before PR
+merge" asked for, rather than scattered across the log:**
+1. Should this session (or a future one) open the PR now? The branch is complete, tested, and pushed;
+   nothing else in the P6-P15 roadmap remains buildable without owner input.
+2. When should the manual `improve.yml` dry run happen, and does the owner want to pick the first
+   low-stakes queue item themselves, or authorize an agent to pick one?
+3. Branch protection on `main` -- an owner-only GitHub settings action, still unset.
+4. When, if ever, should a second jurisdiction's `status.analyst_verifier` move from `"planned"` to
+   `"live"`, extending the CCR trigger's daily unattended commit access beyond Hong Kong? This is a
+   distinct decision from this build's own completeness -- every jurisdiction's content pipeline is fully
+   built and proven, but none beyond HK has ever run its analyst/verifier step live.
+5. The two anonymity flags (LICENSE copyright line; non-bot GitHub-UI merge-commit identity) remain
+   logged, unresolved owner decisions from Phase 1, unchanged by anything in P6-P15.
+6. The 14-day soak itself: does the owner want this session (or a scheduled Routine) to check back
+   periodically and report once 14 days of real, unattended, successful HK trigger firings have elapsed?
 
 ## PM checkpoints (Fable)
 
