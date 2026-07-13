@@ -505,6 +505,25 @@ def load_jurisdiction_data(repo_root: str, jurisdiction_id: str, global_data: di
 
     orientation_split = split_orientation_body(orientation.get("body", ""))
 
+    # The single most-recent generated_at across every AI-touched content
+    # type in this jurisdiction (pillar states, orientation, cards,
+    # trajectory) -- ISO-8601 UTC timestamps sort correctly as plain
+    # strings, so max() needs no date parsing. Shown prominently on Current
+    # State/Timeline (not buried in each pillar/card's own small-print
+    # provenance line) so a reader never has to hunt for "how current is
+    # this" -- exactly the confusion CLAUDE.md's provenance rule exists to
+    # prevent, made visible at a glance rather than only per-item. None
+    # only if a jurisdiction genuinely has zero generated_at anywhere,
+    # which orientation.json's own required-field status makes impossible
+    # in practice post-Phase-3.
+    all_generated_at = (
+        [p.get("generated_at") for p in ordered_pillar_states]
+        + [orientation.get("generated_at")]
+        + [c.get("generated_at") for c in cards]
+        + [t.get("generated_at") for t in trajectory]
+    )
+    content_last_updated = max((g for g in all_generated_at if g), default=None)
+
     return {
         "config": config,
         "pillar_states": ordered_pillar_states,
@@ -519,6 +538,7 @@ def load_jurisdiction_data(repo_root: str, jurisdiction_id: str, global_data: di
         "ledger_item_count": len(ledger_items),
         "relevant_item_count": len(relevant_items),
         "watcher_live_since": watcher_live_since,
+        "content_last_updated": content_last_updated,
     }
 
 

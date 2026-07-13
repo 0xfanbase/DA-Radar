@@ -108,6 +108,39 @@ def test_build_site_renders_global_landing_page_with_every_registry_entry(tmp_pa
         assert f'href="{jid}/index.html"' in index_html
 
 
+def test_build_site_shows_page_generated_timestamp_in_footer_on_every_page(tmp_path):
+    """build_generated_at (pipeline.watcher.clock.utc_now_iso(), computed
+    once per build_site() call) must reach every rendered page's footer --
+    a compliance reader should never be able to load a page with no visible
+    signal of when this specific HTML was produced, regardless of page type
+    (landing, per-jurisdiction, coming-soon, or a shared page)."""
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    outputs = _content_pages(tmp_path)
+    for path, html in outputs.items():
+        assert "Page generated " in html, f"build timestamp missing from {path}"
+
+
+def test_content_last_updated_is_max_generated_at_across_content_types(tmp_path):
+    """content_last_updated must be the single most-recent generated_at
+    across pillar states, orientation, cards, AND trajectory -- not just
+    one content type -- so it genuinely reflects "the newest AI-touched
+    fact anywhere on this jurisdiction's page," not an arbitrary subset.
+    The fixture's most recent generated_at is card1.json's
+    2026-01-05T00:00:00Z (orientation and the other card are both earlier;
+    this fixture's pillar states and trajectory entries carry no
+    generated_at at all, exercising the missing-field case too)."""
+    jdata = _load_hk_jurisdiction_data(FIXTURE_ROOT)
+    assert jdata["content_last_updated"] == "2026-01-05T00:00:00Z"
+
+
+def test_current_state_and_timeline_pages_show_content_last_updated(tmp_path):
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    current_state_html = open(os.path.join(str(tmp_path), "hk", "index.html"), encoding="utf-8").read()
+    timeline_html = open(os.path.join(str(tmp_path), "hk", "timeline.html"), encoding="utf-8").read()
+    assert "Data on this page last updated 2026-01-05T00:00:00Z" in current_state_html
+    assert "Data on this page last updated 2026-01-05T00:00:00Z" in timeline_html
+
+
 def test_legacy_redirect_stubs_are_real_html_with_meta_refresh_and_visible_link(tmp_path):
     build_site(FIXTURE_ROOT, str(tmp_path))
     for old_path, new_path in REDIRECT_STUBS:

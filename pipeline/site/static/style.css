@@ -172,6 +172,20 @@ h1, h2, h3 {
   color: var(--ink-muted);
 }
 
+/* Page-level "how current is this" line, directly under the H1 on Current
+   State/Timeline -- deliberately more visible than the small-print
+   per-item .meta-line provenance already on every card/pillar (a reader
+   should never have to hunt through individual cards to answer "is this
+   page current"), but still an information line, not an alert -- reuses
+   --harbour-teal (already this site's calm, informational accent, e.g.
+   the seal legend) rather than introducing a new color. */
+.freshness-line {
+  font-size: 0.85rem;
+  color: var(--harbour-teal);
+  margin-top: 0.3rem;
+  margin-bottom: 1.2rem;
+}
+
 /* Two-row header (P7): both rows travel together as one sticky unit.
    Opaque --paper background is set explicitly here (rather than relying
    on <body>'s own background showing through) because a sticky element
