@@ -265,6 +265,36 @@ def test_symlinked_directory_under_content_is_rejected(tmp_path):
     assert violations == ["content/linked_dir"]
 
 
+def test_hard_link_under_content_to_pipeline_file_is_rejected(tmp_path):
+    """Real gap found live during the 2026-07-13 compliance audit's own
+    adversarial re-check of the symlink fix: os.path.islink never returns
+    True for a hard link (it's an ordinary directory entry sharing an
+    inode, not a link object), and os.path.realpath returns a hard-linked
+    path unchanged since there is no separate target to resolve. Without
+    an explicit st_nlink check, a hard link planted under content/ pointing
+    at the same inode as a file under pipeline/ passed every prior check,
+    and an in-place edit through the content/ path silently mutated the
+    pipeline/ file's on-disk bytes."""
+    repo = tmp_path
+    _init_repo(repo)
+    (repo / "content").mkdir()
+    (repo / "pipeline").mkdir()
+    (repo / "pipeline" / "secret.py").write_text("# real pipeline code\n")
+    _commit_all(repo, "base")
+
+    os.link(repo / "pipeline" / "secret.py", repo / "content" / "evil_hardlink.py")
+
+    changed = get_uncommitted_changed_paths(str(repo))
+    assert changed == ["content/evil_hardlink.py"]
+
+    ok, violations = check_path_allowlist(changed, repo_dir=str(repo))
+    assert ok is False
+    assert violations == ["content/evil_hardlink.py"]
+
+    exit_code = main(["--mode", "working-tree", "--repo-dir", str(repo)])
+    assert exit_code == 1
+
+
 def test_dangling_symlink_under_content_is_rejected(tmp_path):
     """Real gap found live during the 2026-07-13 compliance audit, narrower
     than (and not covered by) the 2026-07-11 fix above: those tests cover a
