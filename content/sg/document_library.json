@@ -1,0 +1,234 @@
+{
+  "documents": [
+    {
+      "item_hash": "1b2543e797715d3fc813df21410a3b1343ae6c4ba5e76a52325859bff8d32143",
+      "link": "https://www.mas.gov.sg/investor-alert-list",
+      "pillar": [
+        "aml_cft_enforcement",
+        "exchanges_vatp"
+      ],
+      "published_at": "2021-09-02T00:00:00Z",
+      "regulator": "MAS",
+      "title": "MAS places Binance.com on the Investor Alert List",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "1ca79f1f82222ee2b57b467c666ef9ef874784f810f7bafdbd99f36003ce00b6",
+      "link": "https://www.parliament.gov.sg/docs/default-source/default-document-library/payment-services-bill-48-2018.pdf",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2019-01-14T00:00:00Z",
+      "regulator": "MAS",
+      "title": "Payment Services Bill passed by Parliament, creating the licensing regime for digital payment token services",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "2739e1d68059e259b4078e82d60466797ca4d2af5185fe0cd3c67d192e69a56a",
+      "link": "https://www.mas.gov.sg/news/media-releases/2024/mas-expands-scope-of-regulated-payment-services",
+      "pillar": [
+        "dealing_custody_advisory",
+        "exchanges_vatp"
+      ],
+      "published_at": "2024-04-02T00:00:00Z",
+      "regulator": "MAS",
+      "title": "Expanded Payment Services Act scope takes effect: DPT custody, non-possession transfers, and user-protection requirements",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "2e31d682a8599af8632f8f4b735d3b9b8bc3ea6d9554acbd01752b823c32d2c3",
+      "link": "https://www.mas.gov.sg/news/media-releases/2020/payment-services-act-comes-into-force",
+      "pillar": [
+        "banking_money",
+        "exchanges_vatp"
+      ],
+      "published_at": "2020-01-28T00:00:00Z",
+      "regulator": "MAS",
+      "title": "Payment Services Act comes into force, bringing digital payment token services under MAS licensing",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "3f7fc794e399e2b8012ad931de8e3487ec8667fe1b88ef86992f203f3cd7d65f",
+      "link": "https://www.mas.gov.sg/news/media-releases/2022/mas-partners-the-industry-to-pilot-use-cases-in-digital-assets",
+      "pillar": [
+        "funds_etfs",
+        "tokenization_rwa"
+      ],
+      "published_at": "2022-05-31T00:00:00Z",
+      "regulator": "MAS",
+      "title": "MAS launches Project Guardian, an industry pilot programme for asset tokenisation and institutional DeFi",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "4b6643f2a61401cf33f8acfe4af02ca283ce842f74402a8b856cd5e84911602d",
+      "link": "https://www.mas.gov.sg/news/media-releases/2022/first-industry-pilot-for-digital-asset-and-decentralised-finance-goes-live",
+      "pillar": [
+        "banking_money",
+        "tokenization_rwa"
+      ],
+      "published_at": "2022-11-02T00:00:00Z",
+      "regulator": "MAS",
+      "title": "First Project Guardian industry pilot goes live: tokenised bond and FX transactions executed on a public blockchain",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "68c91854b6e55f2e5647ef091733ccb9fb73016e4113609c73a4f42756c8dfc8",
+      "link": "https://www.parliament.gov.sg/docs/default-source/default-document-library/financial-services-and-markets-bill-4-2022.pdf",
+      "pillar": [
+        "aml_cft_enforcement",
+        "exchanges_vatp"
+      ],
+      "published_at": "2022-04-05T00:00:00Z",
+      "regulator": "MAS",
+      "title": "Financial Services and Markets Act 2022 passed, creating an omnibus framework including licensing for digital token service providers",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "6bb36293c49574c5144fc7b4a3270877e6a43ac04edaad8582b62accab79bcec",
+      "link": "https://www.mas.gov.sg/news/media-releases/2023/mas-partners-financial-industry-to-expand-asset-tokenisation-initiatives",
+      "pillar": [
+        "funds_etfs",
+        "tokenization_rwa"
+      ],
+      "published_at": "2023-11-15T00:00:00Z",
+      "regulator": "MAS",
+      "title": "Project Guardian expands with a funds workstream: pilots for tokenised fund settlement and asset tokenisation initiatives",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "750c8b8da8448ca9634a9a7bc286121a662437fd8355ab3a380f56444f4e6d2b",
+      "link": "https://www.mas.gov.sg/news/media-releases/2022/mas-proposes-measures-to-reduce-risks-to-consumers-from-cryptocurrency-trading-and-enhance-standards-of-stablecoin-related-activities",
+      "pillar": [
+        "exchanges_vatp",
+        "stablecoins"
+      ],
+      "published_at": "2022-10-26T00:00:00Z",
+      "regulator": "MAS",
+      "title": "MAS consults on regulatory measures for digital payment token services and a regulatory approach for stablecoin-related activities",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "78a92f0dc2a6352deb0c150d1d7534e8b1fb39149c47ac1396d4e1578931ad4c",
+      "link": "https://www.mas.gov.sg/news/media-releases/2023/mas-publishes-investor-protection-measures-for-digital-payment-token-services",
+      "pillar": [
+        "dealing_custody_advisory",
+        "exchanges_vatp"
+      ],
+      "published_at": "2023-07-03T00:00:00Z",
+      "regulator": "MAS",
+      "title": "MAS publishes investor protection measures for DPT services: customer asset segregation and custody requirements",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "bf5827473aae5e331532f5a2251fbee16bd047fdce36faf3e7fe16e5ba9fa6df",
+      "link": "https://www.mas.gov.sg/news/media-releases/2023/mas-lays-foundation-for-safe-and-innovative-use-of-digital-money-in-singapore",
+      "pillar": [
+        "banking_money",
+        "stablecoins",
+        "tokenization_rwa"
+      ],
+      "published_at": "2023-11-16T00:00:00Z",
+      "regulator": "MAS",
+      "title": "MAS lays foundation for digital money in Singapore: Orchid Blueprint published and first live wholesale CBDC issuance planned",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "cfa8aecb7f75535a11ebac9e4e1ddda5734853d9d6eed628e90a722f205e8a52",
+      "link": "https://www.mas.gov.sg/news/media-releases/2025/mas-clarifies-regulatory-regime-for-digital-token-service-providers",
+      "pillar": [
+        "aml_cft_enforcement",
+        "exchanges_vatp"
+      ],
+      "published_at": "2025-06-06T00:00:00Z",
+      "regulator": "MAS",
+      "title": "MAS clarifies regulatory regime for digital token service providers ahead of 30 June 2025 commencement under the FSM Act",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "d365f27cc9f0094e1f7a65f35cd03c979f2992f639fe5867674b094fa190fb62",
+      "link": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/specific-business-sectors/digital-payment-tokens",
+      "pillar": [
+        "banking_money",
+        "exchanges_vatp"
+      ],
+      "published_at": "2019-11-19T00:00:00Z",
+      "regulator": "IRAS",
+      "title": "IRAS e-Tax Guide: GST treatment of digital payment tokens - supplies of DPTs exempted from GST from 1 January 2020",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "dd95e183670f7300cfa2d4917c88e7e017555870f57cfe3f98707bb7fc38c686",
+      "link": "https://www.mas.gov.sg/news/media-releases/2024/mas-announces-plans-to-support-commercialisation-of-asset-tokenisation",
+      "pillar": [
+        "funds_etfs",
+        "tokenization_rwa"
+      ],
+      "published_at": "2024-11-04T00:00:00Z",
+      "regulator": "MAS",
+      "title": "MAS announces plans to support commercialisation of asset tokenisation: Guardian Fixed Income and Funds Frameworks published",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "e0a2c95f4d90f8ad05037f48612b110860a9fc2f0acdf299d551e0da9d185246",
+      "link": "https://www.mas.gov.sg/news/media-releases/2023/mas-finalises-stablecoin-regulatory-framework",
+      "pillar": [
+        "stablecoins"
+      ],
+      "published_at": "2023-08-15T00:00:00Z",
+      "regulator": "MAS",
+      "title": "MAS finalises its stablecoin regulatory framework for single-currency stablecoins",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "e2ba1b258469fe3c30661f87cc0b69c7d44c48b32f873ca818dd6fa265441e7d",
+      "link": "https://www.mas.gov.sg/news/media-releases/2023/mas-strengthens-regulatory-measures-for-digital-payment-token-services",
+      "pillar": [
+        "dealing_custody_advisory",
+        "exchanges_vatp"
+      ],
+      "published_at": "2023-11-23T00:00:00Z",
+      "regulator": "MAS",
+      "title": "MAS finalises business conduct and consumer access measures for digital payment token service providers",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "e3c0beb24655faa8b58656ab4c8122fe14d80ece9b43903052737dc1a21052b7",
+      "link": "https://www.mas.gov.sg/news/media-releases/2022/mas-issues-guidelines-to-discourage-cryptocurrency-trading-by-general-public",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2022-01-17T00:00:00Z",
+      "regulator": "MAS",
+      "title": "MAS issues Guidelines on Provision of Digital Payment Token Services to the Public (PS-G02), restricting DPT advertising to the general public",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "ec7ba132559df7ad113308ad4fab0006854a5cbbef708203c4e8f533f421e947",
+      "link": "https://www.mas.gov.sg/news/speeches/2021/payment-services-amendment-bill",
+      "pillar": [
+        "aml_cft_enforcement",
+        "dealing_custody_advisory",
+        "exchanges_vatp"
+      ],
+      "published_at": "2021-01-04T00:00:00Z",
+      "regulator": "MAS",
+      "title": "Payment Services (Amendment) Act 2021 passed, expanding the digital payment token service definition to align with FATF standards",
+      "type": "unknown"
+    },
+    {
+      "item_hash": "f5bc81ddf325938f80890af82904bac4ae4b48358bdf7aa5a07033a129cd0aa6",
+      "link": "https://www.mas.gov.sg/regulation/notices/psn02-aml-cft-notice---digital-payment-token-service",
+      "pillar": [
+        "aml_cft_enforcement",
+        "exchanges_vatp"
+      ],
+      "published_at": "2019-12-05T00:00:00Z",
+      "regulator": "MAS",
+      "title": "MAS issues Notice PSN02 on prevention of money laundering and countering the financing of terrorism for digital payment token services",
+      "type": "unknown"
+    }
+  ],
+  "generated_at": "2026-07-13T04:34:07Z",
+  "jurisdiction_id": "sg",
+  "schema_version": 1
+}

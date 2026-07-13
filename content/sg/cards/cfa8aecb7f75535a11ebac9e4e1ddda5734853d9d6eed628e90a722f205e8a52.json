@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "cfa8aecb7f75535a11ebac9e4e1ddda5734853d9d6eed628e90a722f205e8a52",
+  "jurisdiction_id": "sg",
+  "published_date": "2025-06-06",
+  "regulator": "MAS (Monetary Authority of Singapore)",
+  "pillar": [
+    "dealing_custody_advisory",
+    "aml_cft_enforcement"
+  ],
+  "type": "guidance",
+  "title": "MAS clarifies regulatory regime for digital token service providers ahead of 30 June 2025 commencement under the FSM Act",
+  "summary": "On 6 June 2025, the Monetary Authority of Singapore (MAS) clarified the scope of its Digital Token Service Provider (DTSP) licensing regime under the Financial Services and Markets Act 2022, which comes into effect from 30 June 2025. From that date, DTSPs providing services solely to customers outside Singapore in digital payment tokens or tokens of capital markets products must hold a licence, but MAS said it has set the bar high and will generally not issue one, citing higher money-laundering risk in such business models and its inability to effectively supervise activity substantively conducted outside Singapore; without a licence, such providers must cease that regulated activity. Providers already serving Singapore customers remain subject to existing regulation under the Payment Services Act, Securities and Futures Act or Financial Advisers Act, with no change to what they can do.",
+  "why_it_matters": "For a newcomer to Singapore's crypto rules, this confirms that MAS treats DTSPs serving only customers outside Singapore as a licence category it will almost never grant, meaning existing providers of that kind had to wind down that activity when the regime took effect on 30 June 2025.",
+  "key_dates": {
+    "effective": "2025-06-30",
+    "milestone": "2025-05-30"
+  },
+  "citations": [
+    {
+      "url": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release%20-%20Clarification%20Statement%20on%20DTSP%20Regulatory%20Regime.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20250606-1/attachment/MAS+Media+Release+-+Clarification+Statement+on+DTSP+Regulatory+Regime.pdf",
+      "quote": "MAS has set the bar high for licensing and will generally not issue a licence."
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T10:30:00Z",
+  "model": "Claude (Anthropic)"
+}

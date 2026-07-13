@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "sanctions-compliance-program",
+  "term": "Sanctions compliance program",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "An internal compliance framework a business maintains to identify, prevent, and report transactions that would violate US economic sanctions -- typically including screening counterparties and transactions against sanctions lists, and the technical capability to block, freeze, or reject a transaction that would breach a sanctions rule. Under the GENIUS Act, a permitted payment stablecoin issuer must maintain an effective sanctions compliance program, with the program's required elements set out in OFAC's implementing rules.",
+  "formal_definition": "The GENIUS Act (Public Law 119-27) directs that a permitted payment stablecoin issuer maintain an effective sanctions compliance program. OFAC's implementing proposal (Federal Register Doc. 2026-06963, published 10 April 2026) would add a new part to 31 CFR Chapter V setting the program's required elements, including technical capability to block, freeze, or reject transactions and to comply with lawful orders to seize, freeze, burn, or prevent transfer of stablecoins.",
+  "related_terms": [
+    "ofac",
+    "genius-act",
+    "permitted-payment-stablecoin-issuer",
+    "bank-secrecy-act"
+  ],
+  "first_used_card_id": "4054404aa69919c454c0e48b99ba5da2ed6fa55477fd4d788fa40d9b8863aa43",
+  "generated_at": "2026-07-12T19:20:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

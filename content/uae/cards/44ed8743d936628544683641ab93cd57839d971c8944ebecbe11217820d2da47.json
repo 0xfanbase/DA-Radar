@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "44ed8743d936628544683641ab93cd57839d971c8944ebecbe11217820d2da47",
+  "jurisdiction_id": "uae",
+  "published_date": "2023-02-07",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "exchanges_vatp",
+    "dealing_custody_advisory"
+  ],
+  "type": "ordinance",
+  "title": "Dubai's VARA issues specialised regulations for Virtual Assets",
+  "summary": "On 7 February 2023, VARA -- the Virtual Assets Regulatory Authority, which regulates virtual asset activity across the Emirate of Dubai, including its free zones, but excluding the Dubai International Financial Centre (DIFC) -- issued its Virtual Assets and Related Activities Regulations 2023, establishing Dubai's Virtual Asset (VA) Framework. The framework licenses seven VA activities -- advisory, broker-dealer, custodial, exchange, lending-borrowing, payments and remittances, and VA management and investment services -- plus token issuance, and mandates AML standards VARA describes as gold-standard. VARA's announcement says existing MVP Operational, Provisional and Preparatory licence-holders, legacy virtual-asset businesses, and new entrants will be routed toward full FMP licensing, and that firms offering virtual-asset services in Dubai before this publication must register with VARA and become fully compliant, with non-compliance subject to regulatory action.",
+  "why_it_matters": "VARA is the regulator that licenses and supervises virtual-asset businesses operating in Dubai outside the DIFC free zone, and this framework is what first set out which crypto-related activities -- from exchanges to custody to token issuance -- require a VARA licence there.",
+  "key_dates": {
+    "milestone": "2023-02-07"
+  },
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/dubais-vara-issues-specialised-regulations-for-virtual-assets/",
+      "quote": "will be required to register with VARA and become fully compliant with the final rules"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T15:20:00Z",
+  "model": "Claude (Anthropic)"
+}

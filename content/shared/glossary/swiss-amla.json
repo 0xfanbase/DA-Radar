@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "swiss-amla",
+  "term": "Swiss Anti-Money Laundering Act (AMLA)",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "Switzerland's core anti-money-laundering statute, in force since 1997 and applied by FINMA to crypto-asset business without a dedicated crypto-AML law: FINMA states 'Switzerland has always applied the Anti-Money Laundering Act to blockchain service providers.' Under AMLA, virtual-asset businesses count as financial intermediaries and must either join a FINMA-recognised self-regulatory organisation or hold a licence bringing them under FINMA's direct AML supervision -- there is no separate virtual-asset-service-provider licence. Detailed travel-rule and identification-threshold duties sit in FINMA's implementing ordinance (AMLO-FINMA) rather than in the Act itself. A partial revision extending AMLA's scope to certain advisers (real-estate transactions and the formation/structuring of legal entities), adopted by the Federal Assembly on 26 September 2025 alongside a new beneficial-ownership transparency register, is due to enter into force on 1 October 2026. Note for readers: this is Switzerland's national statute, not the European Union's Anti-Money Laundering Authority, a separate EU supervisory body that happens to share the same acronym -- see this site's 'amla' glossary entry, tagged EU, for that institution.",
+  "formal_definition": "Federal Act of 10 October 1997 on Combating Money Laundering and Terrorist Financing in the Financial Sector (Anti-Money Laundering Act, AMLA/GwG), SR 955.0. FINMA's own guidance states Switzerland 'has always applied the Anti-Money Laundering Act to blockchain service providers.' The partial revision extending AMLA's scope to certain advisers, and the accompanying Federal Act on the Transparency of Legal Entities and the Identification of Beneficial Owners, were both adopted by the Federal Assembly on 26 September 2025 (Federal Gazette, BBl 2025 2900) and are due to enter into force on 1 October 2026, per the State Secretariat for International Finance. This entry covers the Swiss statute only; the European Union's Authority for Anti-Money Laundering and Countering the Financing of Terrorism -- also abbreviated AMLA, established by Regulation (EU) 2024/1620 and operational since 1 July 2025 -- is a distinct EU institution and is covered separately by this site's 'amla' glossary entry (jurisdiction: eu).",
+  "related_terms": [
+    "amla",
+    "finma",
+    "payment-token",
+    "payment-instrument-institution"
+  ],
+  "first_used_card_id": "2c74eac574b6247db912df38014ce404c39624a0a6a1a9831e8b2ce0264b73e7",
+  "generated_at": "2026-07-12T21:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "116d56ae70248c454ea6be730b47b730e99b5c5471b2a9a0245377d2497a44ee",
+  "jurisdiction_id": "uae",
+  "published_date": "2023-05-01",
+  "regulator": "VARA (Virtual Assets Regulatory Authority -- Emirate of Dubai, including its free zones, excluding the DIFC)",
+  "pillar": ["dealing_custody_advisory"],
+  "type": "licence",
+  "title": "BitOasis becomes the first Broker-Dealer to secure MVP Operational Licence from Dubai's Virtual Asset Regulatory Authority",
+  "summary": "VARA, the Virtual Assets Regulatory Authority that licenses and supervises virtual-asset activity in the Emirate of Dubai (including its free zones, but excluding the DIFC), announced that BitOasis has secured an MVP Operational Licence, completing the final step of VARA's MVP licensing process. The licence lets BitOasis provide virtual-asset broker-dealer services to qualified retail and institutional investors from its Dubai headquarters under VARA's regulatory regime. It follows a Provisional Approval VARA granted BitOasis in March 2022, within a month of VARA's own formation. VARA's announcement states BitOasis is the first virtual-asset broker-dealer to receive an MVP Operational Licence under its framework. BitOasis, founded in Dubai in 2015, had earlier become, in 2021, the first crypto platform registered with the UAE's Financial Intelligence Unit.",
+  "why_it_matters": "VARA is Dubai's dedicated virtual-asset regulator, covering the Emirate of Dubai's mainland and free zones but excluding the DIFC, and this licence shows how its phased 'MVP' route moves a firm from a provisional approval to a full, activity-specific operating licence. It matters as a concrete marker of that licensing process working in practice, with BitOasis becoming, per VARA's own announcement, the first firm to reach a full operational licence in the broker-dealer activity category.",
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/bitoasis-becomes-the-first-broker-dealer-to-secure-mvp-operational-licence-from-dubais-virtual-asset-regulatory-authority/",
+      "quote": "the first virtual asset broker-dealer to have received an MVP Operational Licence"
+    },
+    {
+      "url": "https://www.vara.ae/en/about-vara/",
+      "quote": "including Special Development Zones and Free Zones but excluding the Dubai International Financial Centre"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T14:30:00Z",
+  "model": "Claude (Anthropic)"
+}

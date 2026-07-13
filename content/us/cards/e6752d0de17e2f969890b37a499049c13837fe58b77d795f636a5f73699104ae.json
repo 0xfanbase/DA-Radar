@@ -1,0 +1,27 @@
+{
+  "citations": [
+    {
+      "quote": "treat permitted payment stablecoin issuers as financial institutions under the Bank Secrecy Act",
+      "url": "https://www.federalregister.gov/documents/full_text/html/2026/06/22/2026-12460.html"
+    }
+  ],
+  "generated_at": "2026-07-12T19:00:00Z",
+  "id": "e6752d0de17e2f969890b37a499049c13837fe58b77d795f636a5f73699104ae",
+  "jurisdiction_id": "us",
+  "key_dates": {
+    "deadline": "2026-08-21"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "stablecoins",
+    "aml_cft_enforcement"
+  ],
+  "published_date": "2026-06-22",
+  "regulator": "Financial Crimes Enforcement Network (FinCEN), Office of the Comptroller of the Currency (OCC), Board of Governors of the Federal Reserve System (Board), Federal Deposit Insurance Corporation (FDIC), and National Credit Union Administration (NCUA)",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "On 22 June 2026, the Financial Crimes Enforcement Network (FinCEN), together with the Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, and the National Credit Union Administration, jointly published a proposed rule implementing part of the GENIUS Act, which directs that permitted payment stablecoin issuers (PPSIs) be treated as financial institutions under the Bank Secrecy Act. The proposal would require PPSIs to maintain a written customer identification program, including risk-based procedures to verify a customer's identity within a reasonable period after an account is opened and to check customers against government lists of known or suspected terrorists. This is a proposed rule only, not yet final or effective; the agencies state compliance would begin 12 months after any final rule issues. Comments are due by 21 August 2026. It is separate from another rulemaking, issued by FinCEN, proposing to apply Bank Secrecy Act obligations to PPSIs.",
+  "title": "Permitted Payment Stablecoin Issuer Customer Identification Program",
+  "type": "consultation",
+  "why_it_matters": "This is one of several rules U.S. regulators are writing to implement the GENIUS Act, the federal law creating a licensed-issuer framework for payment stablecoins; it would apply customer-identification obligations to issuers that the agencies describe as comparable to existing requirements for banks and broker-dealers. It is still a proposal open for public comment, not a rule anyone must yet follow."
+}

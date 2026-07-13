@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "dd95e183670f7300cfa2d4917c88e7e017555870f57cfe3f98707bb7fc38c686",
+  "jurisdiction_id": "sg",
+  "published_date": "2024-11-04",
+  "regulator": "MAS (Monetary Authority of Singapore)",
+  "pillar": [
+    "tokenization_rwa",
+    "funds_etfs",
+    "banking_money"
+  ],
+  "type": "guidance",
+  "title": "MAS announces plans to support commercialisation of asset tokenisation: Guardian Fixed Income and Funds Frameworks published",
+  "summary": "On 4 November 2024, Singapore's Monetary Authority (MAS) set out plans to move asset tokenisation in financial services from pilot to commercial use. Citi, HSBC, Schroders, Standard Chartered and UOB formed the Guardian Wholesale Network, an industry group intended to scale their respective tokenisation trials into a shared, multi-member network. Global Layer One, MAS's initiative for shared tokenised-asset market infrastructure, gained new participants Euroclear and HSBC, continuing its focus on cross-border interoperability and compliance standards. MAS also published two industry-developed frameworks from Project Guardian: the Guardian Fixed Income Framework, covering bond tokenisation standards, and the Guardian Funds Framework, covering tokenised fund practices. Separately, MAS made SGD Testnet, a wholesale central bank digital currency settlement facility, available to DBS, OCBC, Standard Chartered and UOB for further settlement testing.",
+  "why_it_matters": "This announcement is MAS's clearest step yet toward turning Project Guardian's tokenisation pilots into real commercial infrastructure, giving banks and asset managers shared industry frameworks and market infrastructure to build tokenised bond and fund products on, rather than one-off trials.",
+  "citations": [
+    {
+      "url": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release_MAS%20Announces%20Plans%20to%20Support%20Commercialisation%20of%20Asset%20Tokenisation.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20241104-2/attachment/MAS%20Media%20Release_MAS%20Announces%20Plans%20to%20Support%20Commercialisation%20of%20Asset%20Tokenisation.pdf",
+      "quote": "The Monetary Authority of Singapore (MAS) today announced plans to advance tokenisation in financial services."
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T20:05:00Z",
+  "model": "Claude (Anthropic)"
+}

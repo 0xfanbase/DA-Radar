@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "id": "dpt-service",
+  "term": "DPT service (Digital Payment Token service)",
+  "jurisdictions": [
+    "sg"
+  ],
+  "plain_definition": "The licensable activity under the Payment Services Act 2019 -- providing a service involving digital payment tokens (DPTs). Originally covering dealing in and exchanging DPTs, its scope was expanded in two stages: the Payment Services (Amendment) Act 2021 (in force from 4 April 2024) added DPT custody and DPT transmission/exchange facilitation, including where the provider never takes possession of the DPTs or moneys involved; MAS's related safeguarding-of-customer-assets regulations (segregating customer assets into a trust account) followed six months later, from 4 October 2024. A provider of DPT service must hold a Major Payment Institution or Standard Payment Institution licence issued by MAS under the PS Act.",
+  "formal_definition": "Payment Services (Amendment) Bill (Bill No. 41/2020, read first time 2 November 2020) -- confirmed by direct fetch of the genuine PDF from parliament.gov.sg -- states its purpose includes 'to widen the definition of \"digital payment token service\"' to align with FATF's revised standards on virtual asset service providers; clause 7 of the Bill amends the PS Act's First Schedule, Part 3 to add token-transmission-facilitation and token-safeguarding (custody) services to the definition. The 4 April 2024 commencement and 4 October 2024 safeguarding-regulation effective date are confirmed by direct fetch of MAS's own media release, 'MAS Expands Scope of Regulated Payment Services; Introduces User Protection Requirements for Digital Payment Token Service Providers' (2 April 2024), retrieved as a genuine PDF via the Singapore Government's press-release repository (sgpc.gov.sg) since www.mas.gov.sg served an identical bot-blocked page on every path tried, including this exact document's own -/media/ URL.",
+  "related_terms": [
+    "digital-payment-token",
+    "payment-services-act-sg",
+    "mas",
+    "dtsp",
+    "vasp",
+    "travel-rule"
+  ],
+  "first_used_card_id": "1ca79f1f82222ee2b57b467c666ef9ef874784f810f7bafdbd99f36003ce00b6",
+  "generated_at": "2026-07-13T18:14:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "ec",
+  "term": "European Commission",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "The EU's executive body, which proposes EU legislation (such as the digital euro proposal), adopts delegated and implementing acts that flesh out the detail of regulations like MiCA (for example, the criteria for classifying an asset-referenced or e-money token as 'significant'), and endorses regulatory and implementing technical standards (RTS/ITS) drafted by ESMA and EBA before they become binding law. The Commission does not itself authorise or supervise firms -- that is a national competent authority (or, for significant stablecoins, EBA) function. It plays a broadly similar policy-and-rulemaking role to how the UK's HM Treasury makes secondary legislation such as the Cryptoassets Regulations, though the Commission's delegated and implementing acts operate within the EU's own legislative procedure rather than as a single government department's statutory instrument.",
+  "formal_definition": "Under the Treaty on the Functioning of the European Union, the European Commission has the sole right to propose EU legislation and the power to adopt delegated acts (Article 290 TFEU) and implementing acts (Article 291 TFEU); under MiCA and the Regulations establishing ESMA and EBA, it endorses draft regulatory and implementing technical standards before they take effect, and it proposed the digital euro Regulation, COM(2023) 369 final of 28 June 2023, not yet adopted as of this writing.",
+  "related_terms": [
+    "esma",
+    "eba",
+    "mica",
+    "rts-its",
+    "digital-euro"
+  ],
+  "first_used_card_id": "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b",
+  "generated_at": "2026-07-11T20:09:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -68,12 +68,12 @@ def test_apply_gate_to_file_downgrades_fabricated_card(tmp_path, requests_mock, 
 
 def test_main_processes_only_uncommitted_card_files(tmp_path, requests_mock, fixture_bytes):
     _init_repo(tmp_path)
-    (tmp_path / "content" / "cards").mkdir(parents=True)
-    (tmp_path / "content" / "cards" / "README.txt").write_text("not a card")
+    (tmp_path / "content" / "hk" / "cards").mkdir(parents=True)
+    (tmp_path / "content" / "hk" / "cards" / "README.txt").write_text("not a card")
     _commit_all(tmp_path, "base")
 
     requests_mock.get(DOC_URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
-    card_path = tmp_path / "content" / "cards" / "card-1.json"
+    card_path = tmp_path / "content" / "hk" / "cards" / "card-1.json"
     card_path.write_text(json.dumps(_card(status="verified", quote="licence revoked with immediate effect")))
 
     exit_code = main(["--repo-dir", str(tmp_path), "--user-agent", UA])
@@ -93,7 +93,7 @@ def test_main_downgrades_card_whose_citation_domain_is_missing_from_config(tmp_p
     itself -- a citation to a domain absent from that config is a hard
     failure at the real CI entrypoint, not just in the in-memory gate."""
     _init_repo(tmp_path)
-    (tmp_path / "content" / "cards").mkdir(parents=True)
+    (tmp_path / "content" / "hk" / "cards").mkdir(parents=True)
     (tmp_path / "config").mkdir()
     (tmp_path / "config" / "jurisdiction.json").write_text(
         json.dumps({"regulators": [{"id": "x", "official_domains": ["www.official.invalid"]}]})
@@ -101,7 +101,7 @@ def test_main_downgrades_card_whose_citation_domain_is_missing_from_config(tmp_p
     _commit_all(tmp_path, "base")
 
     requests_mock.get(DOC_URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
-    card_path = tmp_path / "content" / "cards" / "card-1.json"
+    card_path = tmp_path / "content" / "hk" / "cards" / "card-1.json"
     card_path.write_text(json.dumps(_card(status="verified")))
 
     exit_code = main(["--repo-dir", str(tmp_path), "--user-agent", UA])
@@ -112,7 +112,7 @@ def test_main_downgrades_card_whose_citation_domain_is_missing_from_config(tmp_p
 
 def test_main_leaves_card_verified_when_citation_domain_is_in_config(tmp_path, requests_mock, fixture_bytes):
     _init_repo(tmp_path)
-    (tmp_path / "content" / "cards").mkdir(parents=True)
+    (tmp_path / "content" / "hk" / "cards").mkdir(parents=True)
     (tmp_path / "config").mkdir()
     (tmp_path / "config" / "jurisdiction.json").write_text(
         json.dumps({"regulators": [{"id": "x", "official_domains": ["example.invalid"]}]})
@@ -120,7 +120,7 @@ def test_main_leaves_card_verified_when_citation_domain_is_in_config(tmp_path, r
     _commit_all(tmp_path, "base")
 
     requests_mock.get(DOC_URL, content=fixture_bytes("sample_document.html"), headers={"Content-Type": "text/html"})
-    card_path = tmp_path / "content" / "cards" / "card-1.json"
+    card_path = tmp_path / "content" / "hk" / "cards" / "card-1.json"
     card_path.write_text(json.dumps(_card(status="verified")))
 
     exit_code = main(["--repo-dir", str(tmp_path), "--user-agent", UA])

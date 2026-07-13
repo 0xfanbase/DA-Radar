@@ -1,0 +1,19 @@
+{
+  "first_used_card_id": "0bac7436bc81fc99de846abab44b2bccd5062100baf62cdda5143a0424012d05",
+  "formal_definition": "The Digital Gilt Instrument (DIGIT), a short-dated, digitally native UK government gilt HM Treasury is piloting on a platform operating within the Digital Securities Sandbox, kept independent of the government's main debt-management programme. On 12 February 2026 HM Treasury announced HSBC, using its Orion digital-assets platform, as the selected platform provider following an Invitation to Tender published in October 2025, with Ashurst LLP named as legal adviser; no issuance date had been announced as of that update.",
+  "generated_at": "2026-07-11T17:15:00Z",
+  "id": "digit",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "HM Treasury's pilot to issue a UK government bond (gilt) natively as a digital token rather than through the normal paper-based/registry process, using the Digital Securities Sandbox as the legal environment. It is a standalone pilot, kept separate from the government's main debt-management programme, not a change to how ordinary gilts are issued.",
+  "related_terms": [
+    "digital-securities-sandbox",
+    "tokenisation",
+    "hm-treasury"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "DIGIT (Digital Gilt Instrument)"
+}

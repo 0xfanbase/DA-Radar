@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "id": "cbuae",
+  "term": "CBUAE (Central Bank of the UAE)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "The UAE's federal central bank and prudential/monetary regulator, distinct from the four market-conduct and licensing regulators (VARA, CMA, DFSA, FSRA). For digital assets, the CBUAE is the sole regulator of dirham- and foreign-currency-denominated 'payment tokens' (the UAE's stablecoin category) and runs the Digital Dirham central bank digital currency (CBDC) programme; some of its rules, such as the UAE Virtual Assets Travel Rule, are drafted to reach across all five regulatory slices, including inside the DIFC and ADGM.",
+  "formal_definition": "The CBUAE is currently governed by Federal Decree-Law No. (6) of 2025 Regarding the Central Bank, Regulation of Financial Institutions and Activities, and Insurance Business (issued 8 September 2025, published 15 September 2025, effective the day after publication), which repeals and replaces the CBUAE's former founding statute, Decretal Federal Law No. (14) of 2018 Regarding the Central Bank & Organization of Financial Institutions and Activities (as amended in 2020, 2021 and 2022) -- so, exactly as with the SCA/CMA succession, any document citing 'Decretal Federal Law No. 14 of 2018' as the operative Central Bank Law describes a statute that has since been superseded; Article 185 of the 2025 law repeals conflicting provisions, and Article 184 sets a one-year transitional period for in-scope persons to reconcile their status with the new regime. Under this framework, the CBUAE issued the Payment Token Services Regulation (Circular No. C 2/2024, in force from 31 August 2024, confirmed by direct fetch of the live CBUAE Rulebook), which licenses Dirham Payment Token Issuers, Payment Token Custodians and Transferors, and Payment Token Conversion Providers, and separately registers Foreign Payment Token Issuers (see the payment-token-uae entry) -- expressly excluding the Financial Free Zones (DIFC and ADGM) from its core licensing perimeter. Separately, the CBUAE launched its Digital Dirham CBDC Strategy on 23 March 2023 (confirmed by direct fetch of the CBUAE's own press-release PDF), completing Phase I (March 2023-June 2024) with the first cross-border CBDC payment on the mBridge platform, and has since (per the CBUAE's own 19 November 2025 press release) executed a first cross-border CBDC payment with China via the 'Jisr' platform.",
+  "related_terms": [
+    "payment-token-uae",
+    "vara",
+    "cma",
+    "dfsa",
+    "fsra",
+    "stablecoin",
+    "financial-free-zone"
+  ],
+  "first_used_card_id": "fcc9e79a8df7a86cfc66deff67cdaa4dee1ede0531f9e3d5472f78d1a788b95e",
+  "generated_at": "2026-07-13T09:35:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

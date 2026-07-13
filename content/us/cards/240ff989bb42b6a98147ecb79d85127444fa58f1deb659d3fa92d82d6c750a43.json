@@ -1,0 +1,29 @@
+{
+  "citations": [
+    {
+      "quote": "issues herein an interpretation regarding the application of the Federal securities laws",
+      "url": "https://www.federalregister.gov/documents/full_text/html/2026/03/23/2026-05635.html"
+    }
+  ],
+  "generated_at": "2026-07-12T19:45:00Z",
+  "id": "240ff989bb42b6a98147ecb79d85127444fa58f1deb659d3fa92d82d6c750a43",
+  "jurisdiction_id": "us",
+  "key_dates": {
+    "effective": "2026-03-23"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "exchanges_vatp",
+    "tokenization_rwa",
+    "stablecoins",
+    "dealing_custody_advisory"
+  ],
+  "published_date": "2026-03-17",
+  "regulator": "SEC and CFTC",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "The Securities and Exchange Commission, with the Commodity Futures Trading Commission providing accompanying guidance, issued an interpretation on how the federal securities laws apply to crypto assets and related transactions (Release Nos. 33-11412; 34-105020), dated 17 March 2026, published in the Federal Register (91 FR 13714) with an effective date of 23 March 2026. It sets out a five-category taxonomy -- Digital Commodities, Digital Collectibles, Digital Tools, Stablecoins, and Digital Securities -- built on the existing Howey investment-contract test rather than new statutory definitions, and applies that same analysis to Protocol Mining, Protocol Staking, wrapped tokens, and airdrops. A digital commodity is not itself a security, while a non-security crypto asset can still become subject to an investment contract depending on how it is offered.",
+  "title": "SEC interpretation and CFTC guidance: Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets (Release Nos. 33-11412; 34-105020; File No. S7-2026-09)",
+  "type": "guidance",
+  "why_it_matters": "For anyone dealing in crypto assets under US federal law, this is the SEC's current framework -- with CFTC input -- for working out which of five categories, and potentially whose regulatory rules, a given crypto asset or activity (including staking, mining, and airdrops) falls into."
+}

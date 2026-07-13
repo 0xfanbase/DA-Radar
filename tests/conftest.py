@@ -14,8 +14,9 @@ import pytest
 
 FIXTURES_DIR = os.path.join(os.path.dirname(__file__), "fixtures")
 REPO_ROOT = os.path.dirname(os.path.dirname(__file__))
-HK_JURISDICTION_PATH = os.path.join(REPO_ROOT, "config", "jurisdiction.json")
+HK_JURISDICTION_PATH = os.path.join(REPO_ROOT, "config", "jurisdictions", "hk.json")
 FREEDONIA_JURISDICTION_PATH = os.path.join(FIXTURES_DIR, "second_jurisdiction.json")
+SYLVANIA_JURISDICTION_PATH = os.path.join(FIXTURES_DIR, "third_jurisdiction.json")
 
 
 @pytest.fixture(autouse=True)

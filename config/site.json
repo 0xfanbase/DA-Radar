@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "site_name": "Global Digital Asset Radar",
+  "jurisdictions": [
+    {
+      "id": "hk",
+      "name": "Hong Kong",
+      "config": "config/jurisdictions/hk.json",
+      "status": {
+        "watcher": "live",
+        "analyst_verifier": "live",
+        "seeded": true
+      },
+      "coverage_notes": "Founding jurisdiction. Live RSS watcher (SFC + HKMA feeds), live analyst/verifier via the scheduled CCR trigger, fully seeded."
+    },
+    {
+      "id": "us",
+      "name": "United States",
+      "config": "config/jurisdictions/us.json",
+      "status": {
+        "watcher": "live",
+        "analyst_verifier": "planned",
+        "seeded": true
+      },
+      "coverage_notes": "Live RSS/HTML-diff/JSON-API watcher (SEC + CFTC + FinCEN + OCC + Federal Reserve + Federal Register feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
+    },
+    {
+      "id": "eu",
+      "name": "European Union",
+      "config": "config/jurisdictions/eu.json",
+      "status": {
+        "watcher": "live",
+        "analyst_verifier": "planned",
+        "seeded": true
+      },
+      "coverage_notes": "Live RSS watcher (European Commission + ESMA + EBA + ECB + AMLA feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
+    },
+    {
+      "id": "uk",
+      "name": "United Kingdom",
+      "config": "config/jurisdictions/uk.json",
+      "status": {
+        "watcher": "live",
+        "analyst_verifier": "planned",
+        "seeded": true
+      },
+      "coverage_notes": "Live RSS/Atom watcher (FCA + Bank of England + HM Treasury feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
+    },
+    {
+      "id": "sg",
+      "name": "Singapore",
+      "config": "config/jurisdictions/sg.json",
+      "status": {
+        "watcher": "dormant",
+        "analyst_verifier": "planned",
+        "seeded": true
+      },
+      "coverage_notes": "Manual-assisted watcher, by design, not oversight: MAS (mas.gov.sg) and Singapore Statutes Online block non-browser clients outright, and this project chose honest, descriptive-User-Agent fetching over impersonating a browser to get past that block. So no automated feed polls MAS on a daily cron -- mechanism status is 'dormant' (exists in principle, not currently polling), distinct from 'planned' (nothing built yet), because real content is here. Coverage instead comes from periodic manual seed_backfill review: a human or a one-off fetch supplies specific document URLs (from MAS's Singapore Press Centre PDF mirror, IRAS, and the Parliament of Singapore, all of which are honestly fetchable) for the analyst to cite, rather than a live daily poll."
+    },
+    {
+      "id": "uae",
+      "name": "United Arab Emirates",
+      "config": "config/jurisdictions/uae.json",
+      "status": {
+        "watcher": "live",
+        "analyst_verifier": "planned",
+        "seeded": true
+      },
+      "coverage_notes": "Live RSS/HTML-diff/sitemap-diff watcher (VARA + SCA/CMA + DFSA + FSRA (ADGM) feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
+    },
+    {
+      "id": "ch",
+      "name": "Switzerland",
+      "config": "config/jurisdictions/ch.json",
+      "status": {
+        "watcher": "live",
+        "analyst_verifier": "planned",
+        "seeded": true
+      },
+      "coverage_notes": "Live RSS watcher (FINMA feed), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
+    },
+    {
+      "id": "jp",
+      "name": "Japan",
+      "config": "config/jurisdictions/jp.json",
+      "status": {
+        "watcher": "live",
+        "analyst_verifier": "planned",
+        "seeded": true
+      },
+      "coverage_notes": "Live RSS watcher (FSA English + Japanese news feeds, JVCEA feed), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
+    }
+  ],
+  "pillars": [
+    {"id": "exchanges_vatp", "name": "Exchanges (VATP)"},
+    {"id": "stablecoins", "name": "Stablecoins"},
+    {"id": "dealing_custody_advisory", "name": "Dealing, Custody, Advisory & Management"},
+    {"id": "tokenization_rwa", "name": "Tokenization & RWA"},
+    {"id": "funds_etfs", "name": "Funds & ETFs"},
+    {"id": "banking_money", "name": "Banking & Money"},
+    {"id": "aml_cft_enforcement", "name": "AML/CFT & Enforcement"}
+  ],
+  "seal_vocabulary": {
+    "in_force": "In force",
+    "consultation_open": "Consultation open",
+    "bill_pending": "Bill pending",
+    "proposed": "Proposed",
+    "no_dedicated_regime": "No dedicated regime"
+  },
+  "fetch_defaults": {
+    "timeout_seconds": 15,
+    "max_retries": 3,
+    "backoff_base_seconds": 1.0,
+    "backoff_multiplier": 2.0
+  }
+}

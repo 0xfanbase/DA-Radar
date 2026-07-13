@@ -1,29 +1,72 @@
-{% macro timeline_ribbon(events, trajectory, id_suffix, limit=none) %}
+{% macro timeline_ribbon(events, trajectory, id_suffix, limit=none, asset_prefix="") %}
 {% set shown = events[-limit:] if limit else events %}
 <a class="skip-timeline-link" href="#timeline-ribbon-end-{{ id_suffix }}">Skip timeline ribbon</a>
 <section class="timeline-ribbon" data-timeline-root>
-  <div class="timeline-track" role="list" aria-label="Regulatory timeline, oldest to newest">
-    {% for e in shown %}
-    <a class="timeline-marker"
-       role="listitem"
-       href="{{ e.url }}"
-       data-pillar-slot="{{ e.pillar_color_slot }}"
-       data-date="{{ e.date }}"
-       data-source="{{ e.source }}"
-       {% if e.status %}data-status="{{ e.status }}"{% endif %}>
-      <span class="timeline-dot" aria-hidden="true"></span>
-      <span class="timeline-marker-date">{{ e.date }}</span>
-      <span class="timeline-marker-label">{{ e.title }}</span>
-    </a>
-    {% endfor %}
+  <div class="timeline-bands">
+    {# Band 1 -- the precise ribbon. Unchanged in substance from the
+       pre-P7 single-band version: dated cards + documents only, oldest
+       to newest, pillar-slot coloring, tooltip, no-JS fallback list
+       below, skip-link above. Wrapped in its own div only so Band 2 (the
+       Ahead rail) can sit beside it in .timeline-bands' flex row -- no
+       existing class, id, or attribute inside this div changed. #}
+    <div class="timeline-precise-band">
+      <div class="timeline-track" role="list" aria-label="Regulatory timeline, oldest to newest">
+        {% for e in shown %}
+        <a class="timeline-marker"
+           role="listitem"
+           href="{{ e.url }}"
+           data-pillar-slot="{{ e.pillar_color_slot }}"
+           data-date="{{ e.date }}"
+           data-source="{{ e.source }}"
+           {% if e.status %}data-status="{{ e.status }}"{% endif %}>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <span class="timeline-marker-date">{{ e.date }}</span>
+          <span class="timeline-marker-label">{{ e.title }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% if trajectory %}
+    {#
+      Band 2 -- the "Ahead" rail. Trajectory entries as pills positioned
+      to the right of Band 1's implicit "today" marker (the precise
+      ribbon only ever plots past, dated events -- see
+      build_timeline_events's own docstring in pipeline/site/data.py --
+      so its right edge already IS "today"; the marker below just makes
+      that boundary visible rather than leaving it implicit).
+
+      Ordered by window_sort_key (already applied once, in
+      pipeline/site/data.py's load_jurisdiction_data, to the `trajectory`
+      list itself -- this loop only ever iterates in the order it
+      receives, never re-sorts or re-positions) -- deliberately NEVER
+      placed at a fabricated position on Band 1's precise date axis: a
+      pill carries no `data-date`, sits in its own flex-wrap track, not
+      timeline-track's axis, and has no dot -- a distinct mark class from
+      a ribbon marker by design, not by omission.
+    #}
+    <div class="timeline-ahead-band">
+      <div class="today-marker" aria-hidden="true">
+        <span class="today-marker-dot"></span>
+        <span class="today-marker-label">Today</span>
+      </div>
+      <div class="ahead-track" role="list" aria-label="Ahead: officially indicated upcoming events">
+        {% for t in trajectory %}
+        <a class="ahead-pill"
+           role="listitem"
+           href="{{ t.source_url }}"
+           data-pillar-slot="{{ t.pillar_color_slot }}"
+           data-confidence="{{ t.confidence }}"
+           data-pillar-name="{{ t.pillar_name }}"
+           data-source="{{ t.source_url }}">
+          <span class="ahead-pill-window mono">{{ t.date_or_window }}</span>
+          <span class="ahead-pill-event">{{ t.event }}</span>
+          <span class="ahead-pill-confidence">{{ "Announced" if t.confidence == "announced" else "Indicated" }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
   </div>
-  {% if trajectory %}
-  <div class="timeline-trajectory-rail" aria-label="Officially indicated upcoming events">
-    {% for t in trajectory %}
-    <a href="{{ t.source_url }}">{{ t.date_or_window }}: {{ t.event }}</a>
-    {% endfor %}
-  </div>
-  {% endif %}
   <div id="timeline-tooltip-{{ id_suffix }}" class="timeline-tooltip" role="tooltip" hidden></div>
   <details class="timeline-fallback">
     <summary>View as a list (no JavaScript needed)</summary>
@@ -36,6 +79,6 @@
     </ul>
   </details>
 </section>
-<p class="meta-line timeline-caption">Only dated items appear on this timeline. Undated documents are listed in the <a href="documents.html">Document Library</a>.</p>
+<p class="meta-line timeline-caption">Only dated items appear on this timeline. Undated documents are listed in the <a href="{{ asset_prefix }}documents.html">Document Library</a>.</p>
 <span id="timeline-ribbon-end-{{ id_suffix }}" tabindex="-1"></span>
 {% endmacro %}

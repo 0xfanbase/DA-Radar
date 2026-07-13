@@ -50,10 +50,10 @@ jobs:
       - name: Commit audit results
         if: steps.changes.outputs.changed == 'true'
         env:
-          GIT_AUTHOR_NAME: hk-radar-bot
-          GIT_AUTHOR_EMAIL: bot@users.noreply.github.com
-          GIT_COMMITTER_NAME: hk-radar-bot
-          GIT_COMMITTER_EMAIL: bot@users.noreply.github.com
+          GIT_AUTHOR_NAME: da-radar-bot
+          GIT_AUTHOR_EMAIL: da-radar-bot@users.noreply.github.com
+          GIT_COMMITTER_NAME: da-radar-bot
+          GIT_COMMITTER_EMAIL: da-radar-bot@users.noreply.github.com
         run: |
           git add data/audit IMPROVEMENT_BACKLOG.md
           git commit -m "audit: $(date -u +%Y-%m-%dT%H:%M:%SZ) weekly audit run"

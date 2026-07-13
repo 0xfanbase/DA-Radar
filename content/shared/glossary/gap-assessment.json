@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "id": "gap-assessment",
+  "term": "GAP Assessment",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "A structured review a regulated firm runs against its own policies, procedures, systems and controls to find where they fall short of a new or changed rule, so it can build and execute a remediation plan to close those shortfalls -- often on a clause-by-clause basis against the new legal text, with fixed deadlines for reporting the assessment, fixing the gaps, and closing out any that remain.",
+  "formal_definition": "In VARA's (Virtual Assets Regulatory Authority) 24 November 2025 circular to all Virtual Asset Service Providers (VASPs) it licenses in the Emirate of Dubai, a GAP Assessment is defined by the mandatory action it requires: 'Perform a comprehensive GAP assessment of your current AML/CFT/CPF Policies, Procedures, Systems & Controls against the 2025 AML Decree-Law (including relevant chapters on preventive measures, supervisory oversight, and penalties).' The circular sets sequential deadlines built around that assessment: a completed, clause-by-clause GAP Assessment Report and board-approved Remediation Plan due within 60 calendar days; priority remedial fixes and staff/role-based/senior-management training within 90 days; and closure of remaining gaps with a signed-off completion plan within 120 days, all supported by mandatory recordkeeping of the underlying working papers.",
+  "related_terms": [
+    "vasp",
+    "vara"
+  ],
+  "first_used_card_id": "f1ea9c335b51b312412101745e77f859f57ab6f3db5e03c28ddb64f106aaeb0c",
+  "generated_at": "2026-07-13T16:10:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

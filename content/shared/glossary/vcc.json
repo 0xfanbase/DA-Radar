@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "id": "vcc",
+  "term": "VCC (Variable Capital Company)",
+  "jurisdictions": [
+    "sg"
+  ],
+  "plain_definition": "A corporate structure created specifically for investment funds domiciled in Singapore, allowing an umbrella VCC to house multiple sub-funds with segregated assets and liabilities under one legal entity, and permitting the constantly changing share capital that open-ended funds need as investors subscribe and redeem. It is the standard fund vehicle asset managers use to set up funds in Singapore. In November 2023, MAS launched a funds workstream within Project Guardian, working with the Accounting and Corporate Regulatory Authority (ACRA) -- Singapore's companies registrar -- to assess natively issuing VCC fund shares on digital asset networks, rather than tokenising an already-issued fund after the fact.",
+  "formal_definition": "MAS media release, 'MAS Partners Financial Industry to Expand Asset Tokenisation Initiatives' (15 November 2023) -- fetched as a genuine PDF via the Singapore Government's press-release repository (sgpc.gov.sg), since www.mas.gov.sg served an identical bot-blocked page on every path tried, including this exact document's own URL -- describes Franklin Templeton 'exploring the issuance of a tokenised money market fund through a Variable Capital Company (VCC) structure' and states MAS is launching a funds workstream within Project Guardian focused on 'the native issuance of Variable Capital Company (VCC) funds on digital asset networks', working with the Accounting and Corporate Regulatory Authority (ACRA) 'to better assess the opportunities and risks of adopting digitally native VCC fund shares'. This entry has not independently fetched the Variable Capital Companies Act 2018 itself, so no detail of the VCC's statutory structure beyond what MAS's own release states is asserted here.",
+  "related_terms": [
+    "project-guardian",
+    "mas"
+  ],
+  "first_used_card_id": "6bb36293c49574c5144fc7b4a3270877e6a43ac04edaad8582b62accab79bcec",
+  "generated_at": "2026-07-13T21:05:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

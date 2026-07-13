@@ -1,0 +1,23 @@
+{
+  "citations": [
+    {
+      "quote": "return the par value of SCS to holders within five business days",
+      "url": "https://www.sgpc.gov.sg/api/file/getfile/Media%20Release_MAS%20Finalises%20Stablecoin%20Regulatory%20Framework.pdf?path=%2Fsgpcmedia%2Fmedia_releases%2Fmas%2Fpress_release%2FP-20230815-2%2Fattachment%2FMedia+Release_MAS+Finalises+Stablecoin+Regulatory+Framework.pdf"
+    }
+  ],
+  "generated_at": "2026-07-13T20:45:00Z",
+  "id": "e0a2c95f4d90f8ad05037f48612b110860a9fc2f0acdf299d551e0da9d185246",
+  "jurisdiction_id": "sg",
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "stablecoins"
+  ],
+  "published_date": "2023-08-15",
+  "regulator": "MAS (Monetary Authority of Singapore)",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "On 15 August 2023, the Monetary Authority of Singapore (MAS) announced the finalised design of a dedicated regulatory framework for single-currency stablecoins (SCS) pegged to the Singapore Dollar or any G10 currency and issued in Singapore, incorporating feedback from an October 2022 public consultation. Issuers must meet requirements covering value stability of reserve assets (composition, valuation, custody, and audit), minimum base capital and liquid assets, redemption of par value to holders within five business days of a request, and disclosure of the stabilising mechanism, holder rights, and reserve-audit results. Only issuers meeting every requirement may apply to have their stablecoin recognised and labelled an \"MAS-regulated stablecoin\"; misrepresenting a token as MAS-regulated can draw financial penalties or imprisonment and placement on MAS's Investor Alert List.",
+  "title": "MAS finalises its stablecoin regulatory framework for single-currency stablecoins",
+  "type": "conclusions",
+  "why_it_matters": "This is the moment MAS set out the exact requirements an issuer must meet before its token can be recognised as an official \"MAS-regulated stablecoin\" -- covering reserve backing, capital, fast redemption and disclosure. The label matters because it gives users a way to tell a MAS-vetted stablecoin apart from any token that simply calls itself one, with real penalties for anyone who misrepresents that status."
+}

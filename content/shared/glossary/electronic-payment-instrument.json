@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "id": "electronic-payment-instrument",
+  "term": "Electronic payment instrument (EPI / 電子決済手段)",
+  "jurisdictions": [
+    "jp"
+  ],
+  "plain_definition": "Japan's digital-money-type stablecoin category, created by a 2022 amendment to the Payment Services Act that took effect 1 June 2023. An electronic payment instrument is currency-denominated value, redeemable or usable at par against unspecified persons and electronically transferable, or a right to such value held through a trust (a 'specified trust beneficial interest'). Because the definition requires redemption at par of currency-denominated value, issuance is in effect restricted to banks, registered fund-transfer service providers, and trust companies -- entities already permitted to take deposits, conduct fund-transfer business, or act as trustee. Exchanging or intermediating EPIs on a business basis requires its own registration, separate from a crypto-asset exchange licence.",
+  "formal_definition": "Payment Services Act (資金決済に関する法律, Act No. 59 of 2009), Chapter 3-2 (第三章の二 電子決済手段等), inserted by Act No. 61 of 2022 (令和4年法律第61号; passed the Diet 3 June 2022; promulgated 10 June 2022; implementing Cabinet Orders/Cabinet Office Ordinances finalised 26 May 2023; effective 1 June 2023). Art. 2(5) defines 'electronic payment instrument' (電子決済手段) in four items: (1) currency-denominated property value, redeemable/usable at par against unspecified persons for goods, services, or purchase and sale, and electronically transferable; (2) property value exchangeable for item (1); (3) a 'specified trust beneficial interest' (特定信託受益権, defined at Art. 2(9)); and (4) a category the Cabinet Office may designate by ordinance. Art. 62-3 requires registration to conduct 'electronic payment instrument exchange business' (電子決済手段等取引業). All confirmed by direct fetch of the current consolidated PSA text via the e-Gov Law API this session (law_id 421AC0000000059).",
+  "related_terms": [
+    "specified-trust-beneficial-interest",
+    "psa",
+    "stablecoin",
+    "fsa",
+    "jvcea",
+    "crypto-asset-service-intermediary",
+    "payment-stablecoin",
+    "e-money-token",
+    "qualifying-stablecoin"
+  ],
+  "first_used_card_id": "9c1b813ca60aa7abd4f01f4c1ff1d43d81328f7bd36fba3f1e8e1cdcf026ffd7",
+  "generated_at": "2026-07-12T21:10:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

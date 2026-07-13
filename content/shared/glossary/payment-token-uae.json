@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "payment-token-uae",
+  "term": "Payment Token (UAE / CBUAE)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "The CBUAE's licensing category for a fiat-backed stablecoin, split into a 'Dirham Payment Token' (AED-denominated) and a 'Foreign Payment Token' (denominated in any other currency). This is a different concept from the identically-named but unrelated Swiss FINMA 'payment token' category (see the payment-token entry, which is a Swiss ICO-guidance classification for a bitcoin-like means-of-payment cryptocurrency, not a stablecoin licence) -- the shared name is coincidental, not a cross-jurisdiction concept, so the two entries are kept separate rather than merged.",
+  "formal_definition": "CBUAE Payment Token Services Regulation (Circular No. C 2/2024), in force from 31 August 2024, confirmed by direct fetch of the live CBUAE Rulebook. Article (5) requires a Licence to act as a Dirham Payment Token Issuer, a Payment Token Custodian and Transferor, or a Payment Token Conversion Provider. Article (9) instead provides for Foreign Payment Token Issuer Registration, open to persons not incorporated and located in the UAE -- expressly including persons in a Financial Free Zone, since the Regulation treats a Financial-Free-Zone-incorporated person as 'outside of the UAE' for its purposes, so DIFC- and ADGM-incorporated issuers use the Article (9) registration route rather than an Article (5) licence. Article (2) prohibits, within 'the UAE' (a term the Regulation itself defines, for the purposes of this Article, to exclude the Financial Free Zones), both unlicensed Payment Token Services and the issuance of, or provision of services relating to, Algorithmic Stablecoins or Privacy Tokens -- a prohibition the Article states applies even to a person separately licensed or regulated by the SCA/CMA or a Local Licensing Authority such as VARA. Article (12) confines Dirham Payment Tokens to AED denomination and Foreign Payment Tokens to foreign-currency denomination, and bars interest or time-based benefits to holders. On the banking side, Article (2)8 bars a Bank from acting as a Payment Token Issuer directly (only via a separately licensed subsidiary or affiliate), while Article (8)2 lets a Bank or Exchange House apply for Non-Objection Registration to perform Dirham Payment Token Conversion. Article (40) set a one-calendar-year Transition Period running from the Regulation's commencement (to 31 August 2025), extendable at the Central Bank's discretion.",
+  "related_terms": [
+    "cbuae",
+    "stablecoin",
+    "payment-token",
+    "financial-free-zone",
+    "vara"
+  ],
+  "first_used_card_id": "fcc9e79a8df7a86cfc66deff67cdaa4dee1ede0531f9e3d5472f78d1a788b95e",
+  "generated_at": "2026-07-13T16:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

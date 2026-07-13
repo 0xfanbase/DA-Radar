@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "3ef14934fee81db749600f0ffd673037790cfc86b658efc6430d7de50ba7bf8b",
+  "jurisdiction_id": "uae",
+  "published_date": "2026-03-04",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "aml_cft_enforcement"
+  ],
+  "type": "circular",
+  "title": "Implementation of the UAE Anti-Money Laundering, Counter-Terrorism Financing and Proliferation Financing Requirements Applicable to VASPs",
+  "summary": "On 4 March 2026, Dubai's Virtual Assets Regulatory Authority (VARA) -- which licenses and supervises virtual asset activity across Dubai's mainland and free zones, excluding the Dubai International Financial Centre (DIFC) -- issued a circular to all Virtual Asset Service Providers (VASPs) it licenses, notifying them of Cabinet Resolution No. (134) of 2025, the Executive Regulations to federal Decree-Law No. (10) of 2025 on anti-money laundering, counter-terrorism financing and proliferation financing, effective since 14 December 2025. The circular sets out VARA's supervisory expectations for VASPs' alignment with the Executive Regulations: an expanded risk-based framework covering proliferation-financing risk, customer due diligence thresholds, enhanced due diligence for higher-risk cases, virtual asset transfer and Travel Rule compliance, targeted financial sanctions controls, suspicious transaction reporting to the UAE's Financial Intelligence Unit, and record-keeping. VARA states it will assess implementation during 2026.",
+  "why_it_matters": "VARA is the authority that licenses and supervises Virtual Asset Service Providers (VASPs) operating in Dubai outside the DIFC free zone. This circular is VARA's formal notice that an enhanced federal anti-money-laundering and counter-terrorism-financing framework -- now also explicitly covering proliferation-financing risk -- already applies to those firms and will be actively checked through supervisory reviews during 2026.",
+  "key_dates": {
+    "effective": "2025-12-14"
+  },
+  "citations": [
+    {
+      "url": "https://media.umbraco.io/dwtc/v3gfyica/circular-to-vasps-implementation-of-uae-anti-amlcft-pf-fv-1.pdf",
+      "quote": "Compliance with this circular is mandatory."
+    },
+    {
+      "url": "https://www.vara.ae/en/",
+      "quote": "except within the jurisdiction of Dubai International Financial Centre (DIFC)"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T15:45:00Z",
+  "model": "Claude (Anthropic)"
+}

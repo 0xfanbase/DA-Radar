@@ -96,18 +96,32 @@ def check_model_field_leak(data) -> str | None:
     return None
 
 
-_PREFIX_MAPPING = (
-    ("content/cards/", "card.json"),
-    ("content/pillar_states/", "pillar_state.json"),
-    ("content/glossary/", "glossary.json"),
+# Registry-model pivot: cards and pillar_states live under a per-jurisdiction
+# directory (content/<jurisdiction_id>/cards/, content/<jurisdiction_id>/
+# pillar_states/), while glossary is shared across jurisdictions (content/
+# shared/glossary/) since a term may be referenced by more than one
+# jurisdiction's cards. "[^/]+" stands in for the jurisdiction id -- this
+# module holds no jurisdiction id of its own, matching any of them.
+_PREFIX_PATTERNS = (
+    (re.compile(r"^content/[^/]+/cards/[^/]+\.json$"), "card.json"),
+    (re.compile(r"^content/[^/]+/pillar_states/[^/]+\.json$"), "pillar_state.json"),
+    (re.compile(r"^content/shared/glossary/[^/]+\.json$"), "glossary.json"),
 )
 
+# Per-jurisdiction single files (content/<jurisdiction_id>/trajectory.json
+# etc.) and data/<jurisdiction_id>/{ledger,queue}.json.
+_EXACT_PATTERNS = (
+    (re.compile(r"^content/[^/]+/trajectory\.json$"), "trajectory.json"),
+    (re.compile(r"^content/[^/]+/document_library\.json$"), "document_library.json"),
+    (re.compile(r"^content/[^/]+/orientation\.json$"), "orientation.json"),
+    (re.compile(r"^data/[^/]+/ledger\.json$"), "ledger.json"),
+    (re.compile(r"^data/[^/]+/queue\.json$"), "queue.json"),
+)
+
+# Files that stay at a single global path (not per-jurisdiction) since the
+# registry-model pivot -- data/corrections.json's own records each carry
+# their own "jurisdiction" field instead (see pipeline/schemas/corrections.json).
 _EXACT_MAPPING = {
-    "content/trajectory.json": "trajectory.json",
-    "content/document_library.json": "document_library.json",
-    "content/start_here.json": "start_here.json",
-    "data/ledger.json": "ledger.json",
-    "data/queue.json": "queue.json",
     "data/corrections.json": "corrections.json",
 }
 
@@ -117,8 +131,12 @@ def _schema_path_for(changed_path: str):
     or None if no schema governs this path."""
     normalized = posixpath.normpath(changed_path.replace("\\", "/")).lstrip("/")
 
-    for prefix, schema_name in _PREFIX_MAPPING:
-        if normalized.startswith(prefix) and normalized.endswith(".json"):
+    for pattern, schema_name in _PREFIX_PATTERNS:
+        if pattern.match(normalized):
+            return os.path.join(_SCHEMAS_DIR, schema_name)
+
+    for pattern, schema_name in _EXACT_PATTERNS:
+        if pattern.match(normalized):
             return os.path.join(_SCHEMAS_DIR, schema_name)
 
     if normalized in _EXACT_MAPPING:

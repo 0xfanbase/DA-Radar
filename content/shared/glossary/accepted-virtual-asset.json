@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "accepted-virtual-asset",
+  "term": "Accepted Virtual Asset (AVA)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "The FSRA/ADGM gateway concept: an ADGM-licensed firm may only trade, deal in, custody, advise on, or manage a given virtual asset once that specific token has become an 'Accepted Virtual Asset.' Since a 10 June 2025 rule change, that gateway is the firm's own documented self-assessment against FSRA-set criteria, with mandatory public notification -- replacing the earlier system of case-by-case FSRA pre-approval.",
+  "formal_definition": "FSRA's Conduct of Business Rulebook (COBS) restricts ADGM Regulated Activity involving a virtual asset to Accepted Virtual Assets -- the only category of token an ADGM Authorised Person may use for exchange, dealing, custody, advisory or investment-management regulated activity. Originally, becoming an Accepted Virtual Asset required the FSRA's own case-by-case approval, under the original Crypto Asset Regulatory Framework launched 25 June 2018 (confirmed by direct fetch of adgm.com's own announcement, adgm.com/media/announcements/adgm-launches-crypto-asset-regulatory-framework). Following Consultation Paper No. 11 of 2024, the FSRA's amendments to its Digital Asset Regulatory Framework -- in force 10 June 2025, confirmed by direct fetch of adgm.com's own announcement, adgm.com/media/announcements/adgm-fsra-implements-amendments-to-its-digital-asset-regulatory-framework -- replaced that pre-approval process with a notification-based process resting on the Authorised Person's own self-assessment against FSRA-defined criteria, coupled with a requirement that each firm maintain and publish a list of the Accepted Virtual Assets it uses. The same amendments formally prohibit privacy tokens and algorithmic stablecoins from ever qualifying as Accepted Virtual Assets, or otherwise being used in ADGM-regulated financial services. A related but distinct FSRA category, the Accepted Fiat-Referenced Token (Conduct of Business Rulebook Chapter 17.2A), performs the equivalent gateway function specifically for ADGM stablecoins (Fiat-Referenced Tokens, governed by COBS Chapter 19A).",
+  "related_terms": [
+    "fsra",
+    "adgm",
+    "stablecoin",
+    "crypto-token-dfsa"
+  ],
+  "first_used_card_id": "8fbfe47983051d4aeed9c08ccfa27f173667e26ad4c1ff71f4ae9e287c7dbefc",
+  "generated_at": "2026-07-13T16:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

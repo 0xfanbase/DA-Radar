@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "pillar": "banking_money",
+  "status_seal": "in_force",
+  "regulator": "Bank of England",
+  "instruments": [
+    "PRA Dear CEO letter: Prudential treatment of tokenised assets, stablecoins, and other cryptoasset exposures (18 May 2026, superseding the PRA's 2022 Dear CEO letter)",
+    "PRA Rulebook, Market Risk (CRR) Part -- 100% capital requirement for unbacked cryptoasset exposures",
+    "PRA Dear CEO letter: Reaffirming the PRA's position and clarifying expectations on innovations in the use of deposits, e-money and stablecoins (18 May 2026, superseding the PRA's 2023 Dear CEO letter)",
+    "Bank of England policy statement and draft Code of Practice for sterling-denominated systemic stablecoins (22 June 2026) -- Banking Act 2009, Part 5",
+    "Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102) -- cited as context only; not itself a banking_money instrument"
+  ],
+  "standing_summary": "This pillar covers two distinct Bank of England strands, neither of which is the FCA's cryptoasset-firm regime covered elsewhere. Strand one is the PRA's prudential treatment of banks' own cryptoasset exposures. On 18 May 2026 the PRA's Executive Directors for UK Deposit Takers, Prudential Policy, and Authorisations issued a Dear CEO letter to all bank and designated investment firm CEOs superseding its 2022 letter. It confirms that existing PRA rules -- the Fundamental Rules, Pillar 1, ICAAP/Pillar 2, and the market risk framework's 100% capital requirement for unbacked cryptoassets -- remain in force and apply today; this is the one part of the UK crypto perimeter this research found to be a live, binding prudential rule rather than a future one. The letter states that the Basel Committee on Banking Supervision (BCBS) has published an international standard for cryptoasset exposures and has since launched an expedited review of targeted elements of it, on a timeline BCBS has not confirmed publicly; the PRA says it will consult on a proposed UK implementation framework only after that BCBS review completes, 'in 2028 at the earliest' -- explicitly later than the FCA's parallel cryptoasset-firm regime (see Dealing, Custody, Advisory & Management and Exchanges (VATP) pillars). In the meantime the letter allows firms discretion to apply a more risk-sensitive treatment to some cryptoasset exposures by reference to the BCBS standard's classification conditions, and states that tokenised traditional assets (including instruments issued through the Bank/FCA Digital Securities Sandbox and HM Treasury's Digital Gilt Issuance Pilot) should generally receive the same prudential treatment as their non-tokenised equivalents where legal rights and risks are comparable ('same risk, same regulatory outcome'). A companion Dear CEO letter issued the same day, superseding the PRA's 2023 letter, covers deposit-takers' own money-like products: it reaffirms that deposit-takers may innovate within deposit-taking entities (including issuing tokenised deposits -- deposit claims on programmable ledgers, including transferable-liability structures -- which remain deposits for FSCS depositor-protection purposes), but that any e-money or stablecoin issuance to retail customers must come from a separate, insolvency-remote, distinctly-branded, non-deposit-taking entity so that its failure cannot contagion the deposit-taking group, a requirement the letter compares to the US GENIUS Act's issuer-separation model; wholesale-only stablecoin use cases get a more proportionate supervisory approach, and the Bank is working to expand the Digital Securities Sandbox's eligible settlement assets to include stablecoins as an environment for such proposals. Strand two is the Bank of England's systemic-stablecoin regime, which doubles as this pillar's money anchor alongside the FCA's issuance regime covered in the Stablecoins pillar: on 22 June 2026 the Bank published a policy statement and draft Code of Practice under Part 5 of the Banking Act 2009 for stablecoins HM Treasury recognises as systemic to UK payments, proposing a temporary £40 billion per-issuer issuance guardrail and a backing composition of up to 70% short-term UK government debt with the remainder in Bank of England deposits; consultation on the draft Code closes 22 September 2026 and the Bank has stated an intention, not a guarantee, to finalise it by end-2026. No stablecoin has yet been designated systemic. Alongside this, the Bank continues design-phase work on a retail digital pound: as of its 4 March 2026 progress update, the Digital Pound Lab's second phase (applications open to 31 March 2026, running to July 2026) is underway, and the Bank and HM Treasury expect to publish a completed design blueprint and assessment and to state a joint decision on next steps later in 2026 -- the Bank is explicit that no decision to introduce a digital pound has been made, and that any future introduction would require a further public consultation and primary legislation passed by Parliament before launch.",
+  "last_changed": "2026-06-22",
+  "key_links": [
+    {
+      "label": "Bank of England (PRA): Dear CEO letter -- prudential treatment of tokenised assets, stablecoins, and other cryptoasset exposures (18 May 2026)",
+      "url": "https://www.bankofengland.co.uk/prudential-regulation/letter/2026/tokenised-assets-stablecoins-and-other-cryptoasset-exposures"
+    },
+    {
+      "label": "Bank of England (PRA): full letter PDF -- prudential treatment of cryptoasset exposures (18 May 2026)",
+      "url": "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/letter/2026/tokenised-assets-stablecoins-and-other-cryptoasset-exposures.pdf"
+    },
+    {
+      "label": "Bank of England (PRA): Dear CEO letter -- innovations in the use of deposits, e-money and regulated stablecoins (18 May 2026)",
+      "url": "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/letter/2026/innovations-in-the-use-of-deposits-emoney-and-regulated-stablecoins.pdf"
+    },
+    {
+      "label": "Bank of England news: Bank launches policy statement and draft rules on regulating systemic stablecoins (22 Jun 2026)",
+      "url": "https://www.bankofengland.co.uk/news/2026/june/boe-launches-policy-statement-and-draft-rules-on-regulating-systemic-stablecoins"
+    },
+    {
+      "label": "Bank of England: policy statement and draft Code of Practice on sterling-denominated systemic stablecoins (22 Jun 2026)",
+      "url": "https://www.bankofengland.co.uk/paper/2026/ps/sterling-denominated-systemic-stablecoin"
+    },
+    {
+      "label": "Bank of England: Progress update -- Digital Pound Design Phase (4 Mar 2026)",
+      "url": "https://www.bankofengland.co.uk/the-digital-pound/progress-update-digital-pound-design-phase"
+    },
+    {
+      "label": "Bank of England: The digital pound (programme overview)",
+      "url": "https://www.bankofengland.co.uk/the-digital-pound"
+    }
+  ],
+  "open_items": [
+    "No PRA consultation or formal rulemaking on implementing the BCBS cryptoasset-exposure standard exists yet: the 18 May 2026 letter is interim supervisory guidance clarifying how existing PRA rules already apply, not a new binding instrument, and the PRA states it expects to consult on a proposed framework only 'in 2028 at the earliest', after a BCBS targeted review whose own timeline has not been confirmed publicly. Treat the current position as existing-rules-plus-interim-letter, not a dedicated new regime.",
+    "The Bank of England's Code of Practice for systemic stablecoins is still in draft; consultation closes 22 September 2026 and the Bank has stated only an intention, not a guarantee, to finalise it by end-2026. No stablecoin has yet been recognised as systemic by HM Treasury, so this tier has no live subject.",
+    "The FCA's parallel PS26/10 stablecoin-issuance regime and PS26/12 prudential regime for FCA-authorised cryptoasset firms are covered in the Stablecoins and Dealing, Custody, Advisory & Management pillars respectively; they are FCA-authorised-firm regimes, not the PRA's bank-exposure regime, and are not duplicated here.",
+    "No decision has been made on whether to introduce a digital pound; the Bank and HM Treasury have stated they expect to publish a completed blueprint/assessment and a joint decision on next steps later in 2026, but any actual introduction would additionally require a further public consultation and primary legislation -- none of which has been published or introduced as of this research.",
+    "This research did not find a standalone Bank of England instrument on tokenised deposits beyond the 18 May 2026 Dear CEO letter's treatment of them as deposits for FSCS purposes; no dedicated tokenised-deposit rulebook part exists yet."
+  ],
+  "generated_at": "2026-07-11T17:04:36Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

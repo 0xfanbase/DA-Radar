@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "5835ecf7ceb7cf5ac0cb27fffbacc2699cefd4021d8d5ffdf6b21694d12e8f65",
+  "jurisdiction_id": "uae",
+  "published_date": "2023-08-10",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "exchanges_vatp",
+    "aml_cft_enforcement"
+  ],
+  "type": "circular",
+  "title": "VARA and DET Join Forces to Establish Best-in-class Market Assurance Standards for Virtual Assets",
+  "summary": "On 10 August 2023, VARA -- which regulates virtual asset activity across Dubai's mainland and free zones, excluding the Dubai International Financial Centre (DIFC) -- and Dubai's Department of Economy and Tourism (DET) announced they had signed a Memorandum of Understanding establishing a joint framework for market oversight of the virtual assets sector across the Emirate of Dubai. Under the MoU, DET will incorporate VARA's licensing activities into its own system, conduct on-site inspections, and support VARA's enforcement actions, including suspensions or revocations for firms found non-compliant with VARA's rules. VARA will gain access to DET's E-Permit system for approvals related to virtual-asset events. The two bodies also agreed to coordinate consumer-protection campaigns, publish joint penalty notices and advisories, and share data under agreed data-sharing protocols.",
+  "why_it_matters": "VARA is the authority that licenses and supervises virtual asset businesses operating in Dubai outside the DIFC free zone, and this MoU sets out how it will work with DET -- Dubai's licensing and consumer-protection authority -- on registration, inspections, and enforcement for that sector.",
+  "key_dates": {
+    "milestone": "2023-08-10"
+  },
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/vara-and-det-join-forces-to-establish-best-in-class-market-assurance-standards-for-virtual-assets/",
+      "quote": "deliver effective and synchronised VA market assurance across the Emirate of Dubai"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T16:05:00Z",
+  "model": "Claude (Anthropic)"
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "071e458c6d0601176331507307aba4c9da13c95796039fba94ef9151a1fe22ea",
+  "jurisdiction_id": "uae",
+  "published_date": "2023-11-07",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "exchanges_vatp",
+    "aml_cft_enforcement"
+  ],
+  "type": "circular",
+  "title": "Final deadline extension for Virtual Asset Service Providers to file for VARA registration or license to operate from or service Dubai",
+  "summary": "On 7 November 2023, Dubai's Virtual Assets Regulatory Authority (VARA) -- which licenses and supervises virtual asset activity across Dubai's mainland and free zones, excluding the Dubai International Financial Centre (DIFC) -- announced a final filing deadline for Virtual Asset Service Providers (VASPs) and legacy businesses conducting virtual asset activities that had not yet obtained VARA registration or a licence. The notice states that more than 1,000 legacy firms had already filed applications since VARA's founding under Law No. 4 of 2022 and the issuance of its regulations in February 2023. Firms still lagging in their application process were told they had until 17 November 2023 to complete filing, after which VARA said enforcement mechanisms against firms operating without the required registration or licence would begin to apply by default.",
+  "why_it_matters": "VARA is the sole authority regulating virtual asset activity across Dubai's mainland and free zones, excluding the DIFC, and this notice marked the cutoff after which firms still operating there without VARA registration or a licence became subject to enforcement action.",
+  "key_dates": {
+    "deadline": "2023-11-17"
+  },
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/final-deadline-extension-for-virtual-asset-service-providers-to-file-for-vara-registration-or-license-to-operate-from-or-service-dubai/",
+      "quote": "have until 17th November 2023 before enforcement mechanisms are due to be triggered by default"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T14:20:00Z",
+  "model": "Claude (Anthropic)"
+}

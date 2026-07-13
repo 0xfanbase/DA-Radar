@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "ec7ba132559df7ad113308ad4fab0006854a5cbbef708203c4e8f533f421e947",
+  "jurisdiction_id": "sg",
+  "published_date": "2020-11-02",
+  "regulator": "MAS (Monetary Authority of Singapore)",
+  "pillar": [
+    "exchanges_vatp",
+    "aml_cft_enforcement"
+  ],
+  "type": "ordinance",
+  "title": "Payment Services (Amendment) Bill introduced, proposing to widen the digital payment token service definition to align with FATF standards",
+  "summary": "The Payment Services (Amendment) Bill (Bill No. 41/2020) was read a first time in Singapore's Parliament on 2 November 2020. Clause 1 of the Bill states that, once in force, it is to be cited as the Payment Services (Amendment) Act 2021. The Bill would widen the Payment Services Act 2019's definition of \"digital payment token service\" to cover activities the Financial Action Task Force (FATF) treats as virtual asset service provider functions, adding new categories covering accepting or arranging the transmission of digital payment tokens between digital payment token accounts, inducing a person to enter into an agreement to buy or sell digital payment tokens, and safeguarding digital payment tokens or digital payment token instruments where the service provider has control over them. The Bill's Explanatory Statement frames this as implementing FATF's revised anti-money-laundering and terrorism-financing standards. Under Clause 1, these provisions would not take effect immediately on enactment; they come into operation only on a date the Minister appoints by notification in the Gazette.",
+  "why_it_matters": "Once in force, this amendment would extend Singapore's payment-services licensing regime with new custody and transfer-facilitation categories for digital payment tokens, aligning Singapore's rules with the international FATF standard for virtual asset service providers.",
+  "key_dates": {
+    "milestone": "2020-11-02"
+  },
+  "citations": [
+    {
+      "url": "https://www.parliament.gov.sg/docs/default-source/default-document-library/payment-services-(amendment)-bill-41-2020.pdf",
+      "quote": "to widen the definition of \"digital payment token service"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T20:15:00Z",
+  "model": "Claude (Anthropic)"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "7dc3002786d2df57c5a629eff5e38910ff60c908543190714b2f1a4e30f092cd",
+  "jurisdiction_id": "ch",
+  "published_date": "2019-09-11",
+  "regulator": "FINMA (Swiss Financial Market Supervisory Authority)",
+  "pillar": [
+    "stablecoins"
+  ],
+  "type": "guidance",
+  "title": "FINMA publishes 'stable coin' guidelines",
+  "summary": "On 11 September 2019, FINMA published a supplement to its ICO guidelines addressing so-called 'stable coins' -- tokens designed to minimise price fluctuation by being backed with assets such as fiat currencies, commodities, real estate or securities. FINMA describes its approach as principle-based and technology-neutral, assessing each stable coin by its economic function and purpose ('substance over form') and applying 'same risks, same rules' to the specific features of each project; depending on backing and holder rights, anti-money-laundering, securities-trading, banking, fund-management or financial-infrastructure law can all be relevant. The guidance also confirms FINMA received a request from the Geneva-based Libra Association to assess its planned Libra project, indicating it would require a payment system licence under the Financial Market Infrastructure Act, with anti-money-laundering duties applying across the ecosystem.",
+  "why_it_matters": "FINMA here moves from general 'stable coin' classification principles to an indicative ruling on a single, named project (Libra) with a planned international scope, showing that it addresses such projects under existing Swiss law -- financial market infrastructure, anti-money-laundering, banking and securities rules -- rather than a bespoke stablecoin statute, applying its 'same risks, same rules' principle to the specific facts of the project.",
+  "citations": [
+    {
+      "url": "https://www.finma.ch/en/news/2019/09/20190911-mm-stable-coins/",
+      "quote": "the focus is on the economic function and the purpose of a token"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T22:00:00Z",
+  "model": "Claude (Anthropic)"
+}

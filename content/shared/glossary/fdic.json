@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "fdic",
+  "term": "FDIC (Federal Deposit Insurance Corporation)",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "An independent US federal agency that insures deposits at FDIC-insured banks and savings associations and supervises certain state-chartered banks that are not members of the Federal Reserve System. The FDIC also participates jointly with the Federal Reserve and the Office of the Comptroller of the Currency in bank capital and supervisory guidance covering digital-asset activities -- for example, joint interagency guidance clarifying how existing capital rules apply to tokenized securities.",
+  "formal_definition": "Established by the Banking Act of 1933; deposit-insurance and supervisory authority codified at 12 U.S.C. Chapter 16 (the Federal Deposit Insurance Act). Under 12 U.S.C. 1813(q), the FDIC is the 'appropriate Federal banking agency' for FDIC-insured state banks that are not members of the Federal Reserve System.",
+  "related_terms": [
+    "genius-act",
+    "federal-reserve",
+    "occ",
+    "permitted-payment-stablecoin-issuer"
+  ],
+  "first_used_card_id": "6b75c48a764b3f4607ea6c090b3848bf90c36853f44332e82e331c62f1036813",
+  "generated_at": "2026-07-12T20:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

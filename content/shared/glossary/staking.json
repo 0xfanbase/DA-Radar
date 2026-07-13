@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "id": "staking",
+  "term": "Staking",
+  "jurisdictions": [
+    "global"
+  ],
+  "plain_definition": "Locking up cryptoassets to help validate transactions and secure a proof-of-stake blockchain, typically in exchange for rewards. A staking service provider may perform this on a client's behalf -- holding each client's staked assets separately ('direct' staking) or pooling several clients' assets together -- and may delegate the actual validating role to a separate institution, including one located in another country. Because staked assets are usually held by, or committed through, a third party rather than kept directly in a client's own wallet, staking raises custody-style questions: what happens to a client's staked assets if the service provider becomes insolvent, and what happens if the underlying network penalises ('slashes') a validator for misconduct.",
+  "formal_definition": "No single cross-jurisdiction legal definition exists; regulators generally treat staking as a form of custody or delegated-custody activity for the purposes of existing financial-market law rather than as a defined statutory term in its own right. See each jurisdiction's own regulator guidance (e.g. FINMA Guidance 08/2023 for Switzerland) for how that jurisdiction currently treats staking under its existing custody, banking, or securities framework.",
+  "related_terms": [
+    "finma",
+    "dlt-act"
+  ],
+  "first_used_card_id": "7acf2075c6b479c6293219ac686a938b7876a280de607030e1d78869f32e175d",
+  "generated_at": "2026-07-12T20:45:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "id": "mica",
+  "term": "MiCA (Markets in Crypto-Assets Regulation)",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "Short for the Markets in Crypto-Assets Regulation, Regulation (EU) 2023/1114 of 31 May 2023 -- the EU's central law for crypto-assets. It covers issuers of crypto-assets not already regulated by other EU financial-services law (including stablecoin-like tokens) and firms providing crypto-asset services (crypto-asset service providers, or CASPs), such as running a trading platform or offering custody. MiCA applied in two stages: the stablecoin-focused Titles III and IV (asset-referenced tokens and e-money tokens) from 30 June 2024, and the rest of the Regulation -- including CASP authorisation under Title V and the market-abuse regime under Title VI -- from 30 December 2024.",
+  "formal_definition": "Regulation (EU) 2023/1114 of the European Parliament and of the Council of 31 May 2023 on markets in crypto-assets (OJ L 150, 9.6.2023). EUR-Lex's own summary of the Regulation describes it as covering issuers of crypto-assets that 'have so far not been regulated by other EU financial services acts', and providers of services relating to such crypto-assets (crypto-asset service providers). Titles III and IV applied from 30 June 2024; the remainder of the Regulation applied from 30 December 2024.",
+  "related_terms": [
+    "casp",
+    "asset-referenced-token",
+    "e-money-token",
+    "crypto-asset-white-paper",
+    "esma",
+    "eba",
+    "nca"
+  ],
+  "first_used_card_id": "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b",
+  "generated_at": "2026-07-12T05:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

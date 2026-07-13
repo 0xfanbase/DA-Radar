@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "sylvania-card1",
+  "published_date": "2026-01-06",
+  "regulator": "SFA",
+  "pillar": ["test_pillar_beta"],
+  "type": "circular",
+  "title": "Sylvania Financial Authority issues first bulletin",
+  "summary": "Test summary text unique to Sylvania.",
+  "why_it_matters": "Test why-it-matters text unique to Sylvania.",
+  "citations": [{"url": "https://sfa.sylvania.invalid/bulletins/one", "quote": "first sylvania bulletin"}],
+  "status": "unverified",
+  "generated_at": "2026-01-06T00:00:00Z",
+  "model": "test-model"
+}

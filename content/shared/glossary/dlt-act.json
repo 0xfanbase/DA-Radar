@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "dlt-act",
+  "term": "DLT Act (Distributed Electronic Register Technology Act)",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "The Swiss federal statute that adapted several existing laws to distributed ledger technology rather than creating a standalone crypto law. Adopted by the Federal Assembly on 25 September 2020, it entered into force in two stages: civil-law amendments enabling 'ledger-based securities' (the Code of Obligations, the Federal Act on Intermediated Securities, and the Federal Act on Private International Law) took effect on 1 February 2021, and market-infrastructure amendments -- chiefly the new 'DLT trading facility' licence inserted into the Financial Market Infrastructure Act -- took effect on 1 August 2021.",
+  "formal_definition": "Admin.ch's own English-language rendering of the statute's German title (Bundesgesetz zur Anpassung des Bundesrechts an Entwicklungen der Technik verteilter elektronischer Register) is the 'Federal Act on the Adaptation of Federal Law to Developments in Distributed Electronic Register Technology'; FINMA, the State Secretariat for International Finance (SIF) and most secondary commentary instead render the same title using the internationally familiar term 'Distributed Ledger Technology', and both renderings are commonly shortened to the 'DLT Act'. Fedlex's consolidated-text footnotes date the civil-law provisions' entry into force as 1 February 2021 (AS 2021 33; BBl 2020 233) and the remainder, including FMIA Chapter 4a, as 1 August 2021 (AS 2021 33, 399; BBl 2020 233); the Federal Council/SIF's media release of 18 June 2021, 'Federal Council brings DLT Act fully into force and issues ordinance,' announced the second stage together with the implementing ordinance.",
+  "related_terms": [
+    "ledger-based-security",
+    "dlt-trading-facility",
+    "finma",
+    "tokenisation"
+  ],
+  "first_used_card_id": "7acf2075c6b479c6293219ac686a938b7876a280de607030e1d78869f32e175d",
+  "generated_at": "2026-07-12T20:01:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

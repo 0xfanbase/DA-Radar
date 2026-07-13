@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>News Room</title></head>
+<body>
+<!-- Exercises urljoin canonicalization, not just literal string
+     concatenation: a root-relative href, a path-relative href with no
+     leading slash, and an absolute href with an upper-case host, a
+     default explicit port, and a fragment that must be stripped while
+     the query string survives untouched. -->
+<div class="view-news-room">
+  <div class="views-row">
+    <span class="date-display-single">01/15/2026</span>
+    <a href="/news/news-releases/item-root-relative">Root Relative Item</a>
+  </div>
+  <div class="views-row">
+    <span class="date-display-single">01/10/2026</span>
+    <a href="news-releases/item-path-relative">Path Relative Item</a>
+  </div>
+  <div class="views-row">
+    <span class="date-display-single">01/05/2026</span>
+    <a href="HTTPS://WWW.FINCEN.GOV:443/news/news-releases/item-absolute?ref=1#section-2">Absolute Item With Case And Port And Fragment</a>
+  </div>
+</div>
+</body>
+</html>

@@ -14,6 +14,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 
 from pipeline.ci.path_allowlist import get_uncommitted_changed_paths
 from pipeline.verify.authenticity import official_domains_from_config
@@ -22,9 +23,15 @@ from pipeline.watcher.run import load_jurisdiction
 
 DEFAULT_FETCH_KWARGS = dict(timeout=15, max_retries=3, backoff_base=1.0, backoff_multiplier=2.0)
 DEFAULT_USER_AGENT = (
-    "HKDigitalAssetRadarVerifier/0.1 "
-    "(contact: bot@users.noreply.github.com; purpose: citation re-verification)"
+    "GlobalDigitalAssetRadarVerifier/0.1 "
+    "(contact: da-radar-bot@users.noreply.github.com; purpose: citation re-verification)"
 )
+
+# Matches content/<jurisdiction_id>/cards/<id>.json for any jurisdiction id
+# (registry-model pivot) -- deliberately not scoped to a single jurisdiction
+# here, since a changed-paths list from one CI run can in principle span
+# more than one jurisdiction's cards.
+_CARD_PATH_RE = re.compile(r"^content/[^/]+/cards/[^/]+\.json$")
 
 
 def _load_official_domains(config_path: str) -> list:
@@ -70,20 +77,37 @@ def main(argv=None) -> int:
     parser.add_argument("--repo-dir", default=".")
     parser.add_argument("--user-agent", default=DEFAULT_USER_AGENT)
     parser.add_argument(
+        "--jurisdiction",
+        default=None,
+        help=(
+            "Jurisdiction id (e.g. 'hk'). Resolves --config-path to its conventional "
+            "path; --config-path passed explicitly still overrides that default."
+        ),
+    )
+    parser.add_argument(
         "--config-path",
         default=None,
-        help="Path to the jurisdiction config. Defaults to <repo-dir>/config/jurisdiction.json.",
+        help=(
+            "Path to the jurisdiction config. Defaults to "
+            "<repo-dir>/config/jurisdictions/<jurisdiction>.json when --jurisdiction "
+            "is given, else <repo-dir>/config/jurisdiction.json."
+        ),
     )
     args = parser.parse_args(argv)
 
     changed = get_uncommitted_changed_paths(args.repo_dir)
-    card_paths = [p for p in changed if p.startswith("content/cards/") and p.endswith(".json")]
+    card_paths = [p for p in changed if _CARD_PATH_RE.match(p)]
 
     if not card_paths:
         print("apply_verification_gate: no changed card files.")
         return 0
 
-    config_path = args.config_path or os.path.join(args.repo_dir, "config", "jurisdiction.json")
+    if args.config_path:
+        config_path = args.config_path
+    elif args.jurisdiction:
+        config_path = os.path.join(args.repo_dir, "config", "jurisdictions", f"{args.jurisdiction}.json")
+    else:
+        config_path = os.path.join(args.repo_dir, "config", "jurisdiction.json")
     official_domains = _load_official_domains(config_path)
 
     for rel_path in card_paths:

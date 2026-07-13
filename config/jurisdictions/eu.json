@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "jurisdiction_id": "eu",
+  "jurisdiction_name": "European Union",
+  "user_agent": "GlobalDigitalAssetRadarWatcher/0.1 (contact: da-radar-bot@users.noreply.github.com; purpose: public RSS regulatory monitoring)",
+  "fetch": {
+    "timeout_seconds": 15,
+    "max_retries": 3,
+    "backoff_base_seconds": 1.0,
+    "backoff_multiplier": 2.0
+  },
+  "relevance_keywords": [
+    "crypto",
+    "crypto-asset",
+    "crypto-assets",
+    "cryptoasset",
+    "digital asset",
+    "digital assets",
+    "mica",
+    "markets in crypto-assets",
+    "casp",
+    "crypto-asset service provider",
+    "stablecoin",
+    "stablecoins",
+    "asset-referenced token",
+    "e-money token",
+    "crypto-asset white paper",
+    "tokenis",
+    "tokeniz",
+    "distributed ledger",
+    "blockchain",
+    "dlt pilot",
+    "dlt market infrastructure",
+    "digital euro",
+    "central bank digital currency",
+    "cbdc",
+    "travel rule",
+    "virtual asset",
+    "virtual currencies",
+    "web3",
+    "nft",
+    "defi",
+    "decentralised finance",
+    "decentralized finance"
+  ],
+  "pillar_keywords": {
+    "exchanges_vatp": [
+      "crypto-asset service provider",
+      "casp",
+      "trading platform",
+      "operation of a trading platform",
+      "market abuse",
+      "insider dealing",
+      "market manipulation",
+      "casp register",
+      "passport"
+    ],
+    "stablecoins": [
+      "stablecoin",
+      "asset-referenced token",
+      "e-money token",
+      "significant asset-referenced",
+      "significant e-money",
+      "reserve of assets",
+      "redemption",
+      "issuer"
+    ],
+    "dealing_custody_advisory": [
+      "custod",
+      "safekeeping",
+      "execution of orders",
+      "reception and transmission",
+      "advice on crypto",
+      "portfolio management",
+      "exchange of crypto"
+    ],
+    "tokenization_rwa": [
+      "tokenis",
+      "tokeniz",
+      "dlt pilot",
+      "dlt market infrastructure",
+      "distributed ledger",
+      "blockchain",
+      "security token",
+      "tokenised securities",
+      "tokenized securities"
+    ],
+    "funds_etfs": [
+      "ucits",
+      "eligible assets",
+      "alternative investment fund",
+      "aifmd",
+      "etf",
+      "exchange-traded",
+      "etn",
+      "etp",
+      "fund"
+    ],
+    "banking_money": [
+      "digital euro",
+      "central bank digital currency",
+      "cbdc",
+      "tokenised deposit",
+      "tokenized deposit",
+      "prudential",
+      "own funds",
+      "crr",
+      "basel",
+      "credit institution",
+      "e-money institution"
+    ],
+    "aml_cft_enforcement": [
+      "money laundering",
+      "aml",
+      "cft",
+      "terrorist financing",
+      "travel rule",
+      "transfer of funds",
+      "amla",
+      "obliged entit",
+      "sanction",
+      "enforcement",
+      "supervis"
+    ]
+  },
+  "regulators": [
+    {
+      "id": "ec",
+      "name": "European Commission",
+      "short_name": "European Commission",
+      "homepage": "https://ec.europa.eu/commission/presscorner/",
+      "official_domains": [
+        "ec.europa.eu"
+      ],
+      "feeds": [
+        {
+          "id": "ec_presscorner",
+          "kind": "press_releases",
+          "url": "https://ec.europa.eu/commission/presscorner/api/rss",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "esma",
+      "name": "European Securities and Markets Authority",
+      "short_name": "ESMA",
+      "homepage": "https://www.esma.europa.eu",
+      "official_domains": [
+        "www.esma.europa.eu"
+      ],
+      "feeds": [
+        {
+          "id": "esma_news",
+          "kind": "news",
+          "url": "https://www.esma.europa.eu/rss.xml",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "eba",
+      "name": "European Banking Authority",
+      "short_name": "EBA",
+      "homepage": "https://www.eba.europa.eu",
+      "official_domains": [
+        "www.eba.europa.eu"
+      ],
+      "feeds": [
+        {
+          "id": "eba_news",
+          "kind": "news",
+          "url": "https://www.eba.europa.eu/news-press/news/rss.xml",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "ecb",
+      "name": "European Central Bank",
+      "short_name": "ECB",
+      "homepage": "https://www.ecb.europa.eu",
+      "official_domains": [
+        "www.ecb.europa.eu",
+        "www.bankingsupervision.europa.eu"
+      ],
+      "feeds": [
+        {
+          "id": "ecb_press",
+          "kind": "press_releases",
+          "url": "https://www.ecb.europa.eu/rss/press.html",
+          "mechanism": "rss"
+        },
+        {
+          "id": "ecb_banking_supervision_press",
+          "kind": "banking_supervision_press",
+          "url": "https://www.bankingsupervision.europa.eu/rss/press.html",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "amla",
+      "name": "Authority for Anti-Money Laundering and Countering the Financing of Terrorism",
+      "short_name": "AMLA",
+      "homepage": "https://www.amla.europa.eu",
+      "official_domains": [
+        "www.amla.europa.eu"
+      ],
+      "feeds": [
+        {
+          "id": "amla_news",
+          "kind": "news",
+          "url": "https://www.amla.europa.eu/node/2/rss_en",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "eur_lex",
+      "name": "EUR-Lex (Official Journal of the European Union / EU law)",
+      "short_name": "EUR-Lex",
+      "homepage": "https://eur-lex.europa.eu",
+      "official_domains": [
+        "eur-lex.europa.eu"
+      ],
+      "feeds": []
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "id": "crypto-asset-jp",
+  "term": "Crypto-asset (暗号資産)",
+  "jurisdictions": [
+    "jp"
+  ],
+  "plain_definition": "Japan's statutory term for what most jurisdictions call a cryptocurrency or virtual asset -- for example bitcoin or ether. The Payment Services Act defines it as an electronically recorded item of property value that can be used to pay unspecified persons for goods or services, or freely bought and sold, and is not denominated in a currency. The definition deliberately carves out Japanese and foreign currency, currency-denominated assets (such as bank deposits), Japan's separate 'electronic payment instrument' stablecoin category, and any right already caught by a specific Financial Instruments and Exchange Act registration provision aimed at tokenized deemed-securities. Which of these three parallel definitions an asset falls into -- crypto-asset, electronic payment instrument, or FIEA security/ERTR -- determines which of Japan's licensing regimes applies to it.",
+  "formal_definition": "Payment Services Act (資金決済に関する法律, Act No. 59 of 2009, promulgated 24 June 2009), Art. 2(14) -- confirmed by direct fetch of the current consolidated text via the e-Gov Law API this session (law_id 421AC0000000059) -- defines 'crypto-asset' (暗号資産) in two items: (1) an item of property value, recorded electronically, usable to pay unspecified persons for the price of goods, rental, or services, and purchasable from or sellable to unspecified persons, excluding Japanese currency, foreign currency, currency-denominated assets, and electronic payment instruments (other than those that are themselves currency-denominated assets); and (2) any item of property value electronically transferable and exchangeable with item (1). The paragraph's proviso excludes anything representing a right specified in FIEA Art. 29-2(1)(8) -- a cross-reference, confirmed by the same session's live fetch of FIEA (law_id 323AC0000000025), to FIEA's Type I Financial Instruments Business registration-application item covering certain Art. 2(2) deemed-securities rights whose recording or transfer method is ordinance-specified, i.e. the boundary with FIEA-regulated tokenized deemed securities (ERTRs). Art. 2(15) defines 'crypto-asset exchange business' and Art. 2(16) defines 'crypto-asset exchange service provider' as a person registered under Art. 63-2 -- both confirmed in the same live fetch.",
+  "related_terms": [
+    "caesp",
+    "psa",
+    "electronic-payment-instrument",
+    "ertr",
+    "fiea",
+    "security-token",
+    "stablecoin"
+  ],
+  "first_used_card_id": "f6c1df724bcda3c0d6ded48b0728ba9d14ce72ab60067cb9150ae2abe089ba17",
+  "generated_at": "2026-07-12T10:46:25Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

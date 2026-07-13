@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "occ",
+  "term": "OCC (Office of the Comptroller of the Currency)",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "An independent bureau of the US Department of the Treasury that charters, regulates, and supervises national banks, federal savings associations, and federal branches of foreign banks. Under the GENIUS Act, the OCC -- defined in the Act as 'the Comptroller' -- is the approving authority for nonbank 'Federal qualified payment stablecoin issuers' and for uninsured national banks chartered to issue payment stablecoins, making it one of the primary federal regulators of payment-stablecoin issuance in the United States.",
+  "formal_definition": "GENIUS Act (Public Law 119-27) section 2(4) (12 U.S.C. 5901(4)) defines 'Comptroller' as the Office of the Comptroller of the Currency; section 2(11) defines 'Federal qualified payment stablecoin issuer' to include a nonbank entity approved by the Comptroller, pursuant to section 5 of the Act, to issue payment stablecoins, and an uninsured national bank chartered by the Comptroller for that purpose. Press releases: occ.gov/rss/occ_news.xml (per this radar's watcher configuration).",
+  "related_terms": [
+    "genius-act",
+    "permitted-payment-stablecoin-issuer",
+    "federal-reserve"
+  ],
+  "first_used_card_id": "f0aa81db42234c8d2f05bc6b3435a0e46a5c14e9cb48dbe5a3bf1e99cefda60d",
+  "generated_at": "2026-07-12T18:11:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "2c74eac574b6247db912df38014ce404c39624a0a6a1a9831e8b2ce0264b73e7",
+  "jurisdiction_id": "ch",
+  "published_date": "2024-07-26",
+  "regulator": "FINMA (Swiss Financial Market Supervisory Authority)",
+  "pillar": [
+    "stablecoins",
+    "banking_money",
+    "aml_cft_enforcement"
+  ],
+  "type": "guidance",
+  "title": "FINMA publishes guidance on stablecoins",
+  "summary": "On 26 July 2024, FINMA published Guidance 06/2024 on stablecoins, following up on its September 2019 supplement to the ICO guidelines, in which it had already commented on stablecoin projects. The guidance addresses financial-market-law aspects of stablecoin projects and their impact on FINMA-supervised institutions. It notes that various Swiss stablecoin issuers use default guarantees from banks rather than taking deposits themselves, meaning they 'often do not require a licence from FINMA under banking law' -- a structure FINMA says creates risks for both stablecoin holders and the guaranteeing banks. FINMA therefore sets out its minimum requirements for such default guarantees, intended to protect depositors, which it says also apply to stablecoin arrangements. FINMA further flags heightened money-laundering, terrorist-financing and sanctions-circumvention risks associated with stablecoin projects, which in turn pose reputational risks for the Swiss financial centre as a whole.",
+  "why_it_matters": "This guidance explains why a common structure in Switzerland -- a bank providing a default guarantee to holders instead of the issuer taking deposits itself -- lets stablecoin issuers often avoid needing a FINMA banking licence, while creating risks for both the holders and the guaranteeing banks. It also flags that stablecoin projects raise heightened money-laundering, terrorist-financing and sanctions-circumvention risks, which FINMA says pose reputational risks for the Swiss financial centre as a whole.",
+  "citations": [
+    {
+      "url": "https://www.finma.ch/en/news/2024/07/20240726-m-am-06-24-stablecoins/",
+      "quote": "often do not require a licence from FINMA under banking law"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T21:30:00Z",
+  "model": "Claude (Anthropic)"
+}

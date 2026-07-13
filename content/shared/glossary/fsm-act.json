@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "fsm-act",
+  "term": "FSM Act (Financial Services and Markets Act 2022)",
+  "jurisdictions": [
+    "sg"
+  ],
+  "plain_definition": "Singapore's omnibus financial-services statute, administered by MAS, consolidating and standardising powers (licensing, supervision, enforcement) that previously sat across MAS's separate sectoral Acts. For digital assets, its most significant addition is Part 9, in force from 30 June 2025, which creates the Digital Token Service Provider (DTSP) licensing regime -- see the dtsp entry -- for token-related services performed from Singapore but provided solely to customers located outside Singapore, distinct from the domestic DPT-service licensing that remains under the Payment Services Act 2019.",
+  "formal_definition": "Financial Services and Markets Act 2022, Parliament of Singapore. This entry could not directly fetch the Act's own consolidated Part 9 text -- Singapore Statutes Online (sso.agc.gov.sg) returned a live-verified HTTP 403 CloudFront block on every path tried on the date of drafting (2026-07-13). MAS's own media release, 'MAS Clarifies Regulatory Regime for Digital Token Service Providers' (6 June 2025, fetched as a genuine PDF via the Singapore Government's press-release repository, sgpc.gov.sg, since www.mas.gov.sg served an identical bot-blocked page on every path tried), cites its own Annex to source the Act's 'digital token'/'digital token service'/'digital token service provider' definitions to FSM Act section 136(1) and the licensing requirement to section 137, and states verbatim that 'digital tokens comprise digital payment tokens and digital representation of capital markets products' -- the release's own summary of how Part 9 sits alongside the PS Act, SFA and FAA rather than replacing them.",
+  "related_terms": [
+    "dtsp",
+    "payment-services-act-sg",
+    "mas",
+    "digital-payment-token"
+  ],
+  "first_used_card_id": "68c91854b6e55f2e5647ef091733ccb9fb73016e4113609c73a4f42756c8dfc8",
+  "generated_at": "2026-07-13T18:17:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

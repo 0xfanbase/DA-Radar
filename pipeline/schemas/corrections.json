@@ -2,13 +2,14 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "corrections.json",
   "title": "Corrections",
-  "description": "Public correction records for previously published cards, for the future /corrections page. Original field design -- the spec names this file without defining its shape (see IMPROVEMENT_BACKLOG.md). Top-level array, matching how pipeline/ci/apply_correction.py's append_correction_record actually writes data/corrections.json on disk (a real latent bug, found and fixed during the fact-check enhancement pass: this schema was originally typed as a single object, which would have failed validate_content's schema check the first time a real correction ever happened).",
+  "description": "Public correction records for previously published cards, for the future /corrections page. Original field design -- the spec names this file without defining its shape (see IMPROVEMENT_BACKLOG.md). Top-level array, matching how pipeline/ci/apply_correction.py's append_correction_record actually writes data/corrections.json on disk (a real latent bug, found and fixed during the fact-check enhancement pass: this schema was originally typed as a single object, which would have failed validate_content's schema check the first time a real correction ever happened). data/corrections.json itself stays at a single global path (not per-jurisdiction) since the registry-model pivot; each record instead carries its own 'jurisdiction' field naming which jurisdiction's card it corrects.",
   "type": "array",
   "items": {
     "type": "object",
     "properties": {
       "schema_version": { "const": 1 },
       "id": { "type": "string", "minLength": 1 },
+      "jurisdiction": { "type": "string", "minLength": 1 },
       "card_id": { "type": "string", "minLength": 1 },
       "corrected_at": { "type": "string", "format": "date-time" },
       "correction_note": { "type": "string", "minLength": 1 },
@@ -33,6 +34,7 @@
     "required": [
       "schema_version",
       "id",
+      "jurisdiction",
       "card_id",
       "corrected_at",
       "correction_note",

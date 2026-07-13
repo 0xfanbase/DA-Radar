@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "6bb36293c49574c5144fc7b4a3270877e6a43ac04edaad8582b62accab79bcec",
+  "jurisdiction_id": "sg",
+  "published_date": "2023-11-15",
+  "regulator": "MAS (Monetary Authority of Singapore)",
+  "pillar": [
+    "tokenization_rwa",
+    "funds_etfs"
+  ],
+  "type": "guidance",
+  "title": "Project Guardian expands with a new funds workstream and five additional asset-tokenisation pilots",
+  "summary": "On 15 November 2023, the Monetary Authority of Singapore (MAS) announced it is working with the financial industry to expand asset tokenisation under Project Guardian. Its 17-institution industry group launched five new pilots, including Franklin Templeton's exploration of issuing a tokenised money market fund through a Variable Capital Company (VCC) structure that uses digital asset networks to record fund shares. Responding to interest from the funds industry, MAS is launching a dedicated funds workstream within Project Guardian to explore native issuance of VCC funds on digital asset networks, addressing tax, policy and legal considerations, and will work with the Accounting and Corporate Regulatory Authority (ACRA) to assess the opportunities and risks of digitally native VCC fund shares. MAS also announced Global Layer One, a shared digital-infrastructure initiative for tokenised assets developed with international policymakers and financial institutions.",
+  "why_it_matters": "MAS's new funds workstream and Franklin Templeton's pilot both point toward native, on-chain issuance of Variable Capital Company fund shares, and MAS's plan to work with the Accounting and Corporate Regulatory Authority (ACRA) shows the initiative extending beyond MAS alone.",
+  "key_dates": {
+    "milestone": "2023-11-15"
+  },
+  "citations": [
+    {
+      "url": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release_MAS%20Partners%20Financial%20Industry%20to%20Expand%20Asset%20Tokenisation%20Initiatives.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20231115-2/attachment/MAS%20Media%20Release_MAS%20Partners%20Financial%20Industry%20to%20Expand%20Asset%20Tokenisation%20Initiatives.pdf",
+      "quote": "MAS is launching a new funds workstream within the Project Guardian industry group"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T21:05:00Z",
+  "model": "Claude (Anthropic)"
+}

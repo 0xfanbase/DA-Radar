@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "id": "fsra",
+  "term": "FSRA (Financial Services Regulatory Authority)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "Abu Dhabi Global Market's (ADGM's) financial regulator -- the Abu Dhabi equivalent of Dubai's DFSA. FSRA licenses and supervises financial services, including virtual-asset activity, only within ADGM's own free-zone territory.",
+  "formal_definition": "FSRA is ADGM's financial services regulator, established under Abu Dhabi Law No. (4) of 2013 Concerning Abu Dhabi Global Market (ADGM's founding legislation, as amended by Abu Dhabi Law No. (12) of 2020), read together with Federal Decree No. (15) of 2013 Establishment of Financial Free Zone in the Emirate of Abu Dhabi -- the federal instrument designating ADGM a Financial Free Zone under Federal Law No. (8) of 2004 (see financial-free-zone). FSRA is not domained separately from ADGM: its news and regulatory notices are published on adgm.com itself rather than a dedicated fsra.ae or similarly named site. FSRA launched the Gulf region's first dedicated crypto-asset regulatory framework on 25 June 2018 (confirmed by direct fetch of adgm.com's own announcement, adgm.com/media/announcements/adgm-launches-crypto-asset-regulatory-framework), covering spot crypto-asset exchanges, custodians and other intermediaries operating in ADGM, and addressing money-laundering/financial-crime, consumer-protection, technology-governance, custody and exchange-operation risk. The framework was substantially amended in force 10 June 2025 (following Consultation Paper No. 11 of 2024, also confirmed by direct fetch of adgm.com), most significantly replacing FSRA's own pre-approval of eligible tokens with firm-led self-assessment (see the accepted-virtual-asset entry).",
+  "related_terms": [
+    "adgm",
+    "accepted-virtual-asset",
+    "casp",
+    "vatp",
+    "dfsa",
+    "financial-free-zone"
+  ],
+  "first_used_card_id": "8fbfe47983051d4aeed9c08ccfa27f173667e26ad4c1ff71f4ae9e287c7dbefc",
+  "generated_at": "2026-07-13T09:20:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

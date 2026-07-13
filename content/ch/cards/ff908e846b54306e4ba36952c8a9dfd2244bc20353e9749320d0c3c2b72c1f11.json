@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "ff908e846b54306e4ba36952c8a9dfd2244bc20353e9749320d0c3c2b72c1f11",
+  "jurisdiction_id": "ch",
+  "published_date": "2026-01-12",
+  "regulator": "FINMA (Swiss Financial Market Supervisory Authority)",
+  "pillar": [
+    "dealing_custody_advisory"
+  ],
+  "type": "guidance",
+  "title": "FINMA publishes guidance on risks associated with the custody of cryptobased assets",
+  "summary": "On 12 January 2026, FINMA published Guidance 01/2026, explaining how it assesses the risks institutions face when taking cryptobased assets such as Bitcoin or Ether into custody. FINMA notes growing customer demand to trade, invest in and safely store cryptocurrencies, and says supervised institutions have expanded their offerings accordingly. The guidance highlights risks specific to distributed-ledger technology, stressing that safekeeping such assets requires specialist expertise and robust technical infrastructure. Custody abroad raises added legal complexity, particularly if a foreign custodian becomes insolvent; FINMA states customers' cryptobased assets must not form part of a custodian's bankruptcy assets. Where custody is delegated to third-party providers, FINMA says responsibility remains with the authorised institution itself.",
+  "why_it_matters": "This guidance sets out FINMA's expectations for how supervised institutions must keep customers' cryptobased assets safe, including when custody is delegated to a third-party provider or held abroad. This matters because a weak custody arrangement could leave a customer's crypto assets exposed if a foreign custodian becomes insolvent -- which is why FINMA states these assets must not form part of the custodian's bankruptcy assets.",
+  "citations": [
+    {
+      "url": "https://www.finma.ch/en/news/2026/01/20260112-mm-am-01-26/",
+      "quote": "explains how it assesses the risks associated with the custody of cryptobased assets"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T20:30:00Z",
+  "model": "Claude (Anthropic)"
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "cftc",
+  "term": "CFTC (Commodity Futures Trading Commission)",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "The US federal agency responsible for regulating commodity futures, options, and swaps markets, including designated contract markets on which futures referencing crypto assets such as Bitcoin and Ether already trade. A crypto asset classified as a 'digital commodity' falls within the CFTC's existing regulatory ambit for derivatives on that asset, though the CFTC's direct jurisdiction over spot (cash) markets in digital commodities depends on further legislation -- such as the CLARITY Act -- that had not been enacted as of this entry's drafting date. In March 2026 the CFTC jointly provided guidance alongside the SEC's interpretation on classifying crypto assets, and has since coordinated with the SEC on 'Project Crypto' harmonization efforts.",
+  "formal_definition": "Established as an independent agency by the Commodity Futures Trading Commission Act of 1974, which amended the Commodity Exchange Act. Press releases: cftc.gov/RSS/RSSGP/rssgp.xml (per this radar's watcher configuration). SEC Release Nos. 33-11412; 34-105020 (CFTC RIN 3038-AF67) states the CFTC 'provides herein guidance relating to that interpretation' issued by the SEC, effective March 23, 2026.",
+  "related_terms": [
+    "sec",
+    "digital-commodity",
+    "project-crypto"
+  ],
+  "first_used_card_id": "240ff989bb42b6a98147ecb79d85127444fa58f1deb659d3fa92d82d6c750a43",
+  "generated_at": "2026-07-12T18:09:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

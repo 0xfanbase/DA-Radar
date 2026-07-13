@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "csa",
+  "term": "CSA (Common Supervisory Action)",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "A coordinated exercise in which ESMA and the national competent authorities (NCAs) of EU member states jointly examine a specific supervisory theme across a sample of regulated firms during the same period, using a shared methodology so results are comparable across countries. A CSA does not itself create new legal obligations for firms -- it is a supervisory-convergence tool: NCAs carry out the actual examinations of firms under their own national authorisation, and their findings are pooled into a consolidated report for ESMA's Board of Supervisors. ESMA's CSA on crypto-asset service providers (CASPs), announced 8 July 2026, focuses on the digital operational resilience of CASPs' custody activities, running from the second half of 2026 to the first half of 2027.",
+  "formal_definition": "A supervisory-convergence tool used by ESMA under its Regulation (EU) No 1095/2010 mandate, through which ESMA coordinates a common examination programme that national competent authorities carry out, on a risk-based sample of supervised firms, against a shared set of criteria, with results consolidated into a report to ESMA's Board of Supervisors.",
+  "related_terms": [
+    "esma",
+    "nca",
+    "casp"
+  ],
+  "first_used_card_id": "4abcb472a38aa1f04ec85d986e59eb7ac560dbf82ab622a910bc18c7d85548bc",
+  "generated_at": "2026-07-12T15:00:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

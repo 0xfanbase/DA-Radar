@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "eee68c3f111477e7a00019c085821d1c0357e7dfdd9cdbba16c0faeaec8bbf51",
+  "jurisdiction_id": "uae",
+  "published_date": "2023-03-20",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "exchanges_vatp",
+    "dealing_custody_advisory"
+  ],
+  "type": "licence",
+  "title": "Crypto.com Secures MVP Preparatory License from Dubai's Virtual Assets Regulatory Authority",
+  "summary": "On 20 March 2023, VARA -- the Virtual Assets Regulatory Authority, which licenses and supervises virtual asset activity in the Emirate of Dubai outside the Dubai International Financial Centre (DIFC) free zone -- confirmed that Crypto.com had received an MVP Preparatory License. VARA describes the license's preparatory stage as letting an approved licensee complete the pre-conditions required before undertaking full MVP market operations under the VARA regime, rather than authorising it to operate immediately. VARA states its review covered Crypto.com's key personnel, governance procedures, AML/CFT capabilities, and KYC/UBO policies. Once licensed to operate, VARA says Crypto.com will be able to extend its regulated activities to crypto exchange services (spot and derivatives), brokerage, margin/leverage trading, and OTC settlement offerings for institutional investors. The license followed an earlier provisional approval VARA granted Crypto.com in June 2022.",
+  "why_it_matters": "VARA is the authority that licenses and supervises crypto exchanges, brokers, and other virtual-asset businesses operating in Dubai outside the DIFC free zone, and an MVP Preparatory License like this one is a required staging step under its licensing framework before an approved firm can actually begin operating those services in the market.",
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/crypto-com-secures-mvp-preparatory-license-from-dubais-virtual-assets-regulatory-authority/",
+      "quote": "confirmed today that it has received its MVP Preparatory License"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T15:20:00Z",
+  "model": "Claude (Anthropic)"
+}

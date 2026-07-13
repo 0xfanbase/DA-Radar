@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b",
+  "jurisdiction_id": "eu",
+  "published_date": "2024-06-30",
+  "regulator": "European Banking Authority (EBA)",
+  "pillar": [
+    "stablecoins"
+  ],
+  "type": "ordinance",
+  "title": "MiCA Titles III and IV (asset-referenced tokens and e-money tokens) become applicable across the EU",
+  "summary": "Titles III and IV of the EU's Markets in Crypto-Assets Regulation (MiCA), covering asset-referenced tokens (ARTs) and e-money tokens (EMTs), became applicable across the European Union on 30 June 2024 -- six months ahead of the Regulation's general application date of 30 December 2024. From that date, only an authorised credit institution or electronic money institution may issue an e-money token, while an asset-referenced token may be offered to the public, or admitted to trading, only by its authorised issuer or, with that issuer's written consent, by another person. Issuers of tokens classified 'significant' are supervised directly by the European Banking Authority (EBA); national competent authorities supervise the rest. On 5 July 2024 the EBA published a statement drawing issuers', consumers' and other stakeholders' attention to the new requirements and setting its supervisory priorities for 2024/2025.",
+  "why_it_matters": "This is the point at which the EU's stablecoin-specific rules actually started operating, months before the rest of its crypto-asset regime took effect. Anyone holding or dealing in an EU-regulated asset-referenced or e-money token has been subject to real authorisation, reserve, and redemption requirements since mid-2024, not a future promise.",
+  "key_dates": {
+    "effective": "2024-06-30",
+    "milestone": "2024-07-05"
+  },
+  "citations": [
+    {
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj",
+      "quote": "Titles III and IV shall apply from 30 June 2024."
+    },
+    {
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-brings-application-micar-attention-issuers-consumers-and-other-relevant-stakeholders-and",
+      "quote": "shares with the competent authorities a single set of supervisory priorities for implementation in 2024/2025"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T05:30:00Z",
+  "model": "Claude (Anthropic)"
+}

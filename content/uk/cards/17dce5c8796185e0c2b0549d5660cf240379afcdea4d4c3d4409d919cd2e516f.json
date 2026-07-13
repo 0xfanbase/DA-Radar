@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "17dce5c8796185e0c2b0549d5660cf240379afcdea4d4c3d4409d919cd2e516f",
+  "jurisdiction_id": "uk",
+  "published_date": "2025-10-08",
+  "regulator": "FCA",
+  "pillar": [
+    "funds_etfs"
+  ],
+  "type": "conclusions",
+  "title": "FCA lifts retail ban on cryptoasset Exchange Traded Notes",
+  "summary": "On 8 October 2025 the Financial Conduct Authority lifted its ban on offering crypto exchange-traded notes (cETNs) to UK retail investors, a change first proposed in June 2025 and confirmed in an August 2025 press release. Retail consumers can now access cETNs, but only if the notes are listed on the FCA's Official List and admitted to trading on a UK Recognised Investment Exchange; firms must apply standard financial promotion rules, Consumer Duty obligations, and appropriateness/risk-warning requirements, and these products carry no Financial Services Compensation Scheme protection. The FCA classifies cETNs as Restricted Mass Market Investments. This change uses the FCA's existing powers, separate from the UK's future dedicated cryptoasset regime, which is not yet in force. The FCA's ban on retail access to cryptoasset derivatives remains unchanged.",
+  "why_it_matters": "This reopens a mainstream, exchange-listed route for UK retail investors to gain regulated access to crypto exchange-traded notes for the first time since the FCA's previous ban, while its separate ban on retail access to cryptoasset derivatives remains unchanged.",
+  "key_dates": {
+    "effective": "2025-10-08",
+    "milestone": "2025-08-01"
+  },
+  "citations": [
+    {
+      "url": "https://www.fca.org.uk/news/press-releases/fca-opens-retail-access-crypto-etns",
+      "quote": "The FCA's ban on retail access to cryptoasset derivatives will remain in place."
+    },
+    {
+      "url": "https://www.fca.org.uk/news/statements/information-firms-offer-crypto-exchange-traded-notes",
+      "quote": "These products are categorised as Restricted Mass Market Investments (RMMIs)."
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-11T12:00:00Z",
+  "model": "Claude (Anthropic)"
+}

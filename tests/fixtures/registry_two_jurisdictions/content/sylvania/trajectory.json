@@ -1,0 +1,10 @@
+[
+  {
+    "schema_version": 1,
+    "date_or_window": "2026-07",
+    "event": "Sylvania-specific upcoming event",
+    "pillar": "test_pillar_beta",
+    "source_url": "https://sfa.sylvania.invalid/trajectory-source",
+    "confidence": "announced"
+  }
+]

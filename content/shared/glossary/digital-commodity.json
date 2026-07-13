@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "digital-commodity",
+  "term": "Digital commodity",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "One of five categories in the crypto-asset taxonomy set out by the SEC and CFTC's March 2026 joint interpretation: a crypto asset that is intrinsically linked to, and derives its value from, the programmatic operation of a 'functional' crypto system and from supply-and-demand dynamics, rather than from an expectation of profit based on the managerial efforts of others -- and which, for that reason, is not itself a security. The interpretation names a non-exhaustive set of examples it considers to meet this description as of its release date, including Bitcoin (BTC) and Ether (ETH), while stressing that classification depends on a crypto asset's own facts and circumstances and can change over time. This is a non-legislative interpretive taxonomy, not a statutory term: the CLARITY Act (Digital Asset Market Clarity Act, H.R. 3633), which would establish a comparable statutory 'digital commodity' category and CFTC spot-market jurisdiction over it, had passed the House and been reported by the Senate Banking Committee but had not been enacted into law as of this entry's drafting date.",
+  "formal_definition": "SEC Release Nos. 33-11412; 34-105020 (CFTC RIN 3038-AF67), 'Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets,' effective March 23, 2026, section III.A: a digital commodity is a crypto asset that is intrinsically linked to and derives its value from the programmatic operation of a crypto system that is 'functional,' as well as supply and demand dynamics, rather than from the expectation of profits from the essential managerial efforts of others; a digital commodity does not have intrinsic economic properties or rights such as generating a passive yield or conveying rights to future income, profits, or assets of a business enterprise or other entity, promisor, or obligor.",
+  "related_terms": [
+    "digital-asset-security",
+    "sec",
+    "cftc",
+    "howey-test"
+  ],
+  "first_used_card_id": "240ff989bb42b6a98147ecb79d85127444fa58f1deb659d3fa92d82d6c750a43",
+  "generated_at": "2026-07-12T18:03:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

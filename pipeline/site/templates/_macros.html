@@ -2,7 +2,7 @@
 <span class="seal">{{ label }}</span>
 {% endmacro %}
 
-{% macro card(c, heading_level="h2") %}
+{% macro card(c, heading_level="h2", asset_prefix="") %}
 <article class="card">
   <{{ heading_level }}><a href="{{ c.citations[0].url }}">{{ c.title }}</a></{{ heading_level }}>
   <p>
@@ -22,7 +22,7 @@
     {% if c.status == "verified" %}
       <span class="badge-verified">&#10003; Verified</span>
     {% elif c.status == "corrected" %}
-      <a class="badge-corrected" href="method.html#corrections-log">Corrected &mdash; see corrections log</a>
+      <a class="badge-corrected" href="{{ asset_prefix }}method.html#corrections-log">Corrected &mdash; see corrections log</a>
     {% elif c.numeric_claims_unsupported %}
       <span class="badge-unverified">Unverified &mdash; a stated figure could not be confirmed against the cited source</span>
     {% else %}

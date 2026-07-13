@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "id": "det",
+  "term": "DET (Dubai Department of Economy and Tourism)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "Dubai's general economic licensing and consumer-protection department -- not a dedicated virtual-asset regulator itself, but a body VARA works with on shared administrative functions such as business licensing, inspections, enforcement support, and consumer complaints for virtual asset businesses operating in Dubai.",
+  "formal_definition": "DET is the Dubai Government department responsible for commercial licensing, business registration, and consumer protection (via its Dubai Corporation for Consumer Protection & Fair Trade unit) across the Emirate of Dubai. Under a Memorandum of Understanding announced by VARA on 10 August 2023, DET incorporated VARA's virtual-asset licensing activities into its own licensing system, undertakes on-site inspections and enforcement support (including suspensions or revocations) on VARA's behalf, and gave VARA access to its E-Permit system for approvals related to virtual-asset events; the two bodies also agreed to coordinate consumer-protection campaigns and jointly publish penalty notices and advisories.",
+  "related_terms": [
+    "vara",
+    "vasp"
+  ],
+  "first_used_card_id": "5835ecf7ceb7cf5ac0cb27fffbacc2699cefd4021d8d5ffdf6b21694d12e8f65",
+  "generated_at": "2026-07-13T16:05:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

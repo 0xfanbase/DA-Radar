@@ -1,0 +1,32 @@
+{
+  "citations": [
+    {
+      "quote": "will be regulated jointly by the Bank and the FCA, once recognised by HM Treasury",
+      "url": "https://www.bankofengland.co.uk/paper/2026/ps/sterling-denominated-systemic-stablecoin"
+    },
+    {
+      "quote": "supplemented by a joint publication with the Bank of England",
+      "url": "https://www.fca.org.uk/publications/policy-statements/cryptoasset-regime"
+    },
+    {
+      "quote": "Recognition order: DSA service provider",
+      "url": "https://www.legislation.gov.uk/ukpga/2023/29/schedule/6"
+    }
+  ],
+  "generated_at": "2026-07-11T10:15:00Z",
+  "id": "db361da4e0d4ce24e6039e760ce7105d0910b296ed50ea75c8cf9fcbf6d53e4c",
+  "jurisdiction_id": "uk",
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "stablecoins",
+    "banking_money"
+  ],
+  "published_date": "2026-06-22",
+  "regulator": "Bank of England",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "On 22 June 2026 the Bank of England published a policy statement, 'Sterling-denominated systemic stablecoins,' plus a consultation on an accompanying draft Code of Practice implementing it. This follows the Bank's November 2025 consultation and sets out a two-tier UK framework: the FCA regulates UK-issued qualifying stablecoins generally under a package of policy statements it published on 30 June 2026, including PS26/10 on stablecoin issuance, while sterling-denominated stablecoins recognised by HM Treasury as systemic are jointly regulated by the Bank and FCA. The Bank narrows its earlier proposed restrictions to a 'temporary issuance guardrail' on each systemic stablecoin's aggregate issuance, and intends to finalise the Code of Practice by end-2026. The Bank's powers derive from Banking Act 2009 provisions inserted by the Financial Services and Markets Act 2023.",
+  "title": "Bank of England publishes policy statement and draft Code of Practice for systemic sterling-denominated stablecoins",
+  "type": "conclusions",
+  "why_it_matters": "The Bank of England, rather than the FCA which oversees qualifying stablecoins generally, is the regulator for stablecoins recognised by HM Treasury as systemic to UK payments, jointly with the FCA, and plans to finalise the accompanying Code of Practice by end-2026."
+}

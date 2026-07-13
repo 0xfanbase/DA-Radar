@@ -1,0 +1,67 @@
+{
+  "documents": [
+    {
+      "item_hash": "ff908e846b54306e4ba36952c8a9dfd2244bc20353e9749320d0c3c2b72c1f11",
+      "link": "https://www.finma.ch/en/news/2026/01/20260112-mm-am-01-26/",
+      "pillar": [
+        "dealing_custody_advisory"
+      ],
+      "published_at": "2026-01-12T08:59:00Z",
+      "regulator": "FINMA",
+      "title": "FINMA publishes guidance on risks associated with the custody of cryptobased assets",
+      "type": "news"
+    },
+    {
+      "item_hash": "cf95e52fa13da650ceed71f6f2546ad2a9924924fbe9e4e1156d11cd5a299b1f",
+      "link": "https://www.finma.ch/en/news/2018/02/20180216-mm-ico-wegleitung/",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2018-02-16T00:00:00Z",
+      "regulator": "FINMA",
+      "title": "FINMA publishes ICO guidelines",
+      "type": "news"
+    },
+    {
+      "item_hash": "2c74eac574b6247db912df38014ce404c39624a0a6a1a9831e8b2ce0264b73e7",
+      "link": "https://www.finma.ch/en/news/2024/07/20240726-m-am-06-24-stablecoins/",
+      "pillar": [
+        "aml_cft_enforcement",
+        "banking_money",
+        "stablecoins"
+      ],
+      "published_at": "2024-07-26T00:00:00Z",
+      "regulator": "FINMA",
+      "title": "FINMA publishes guidance on stablecoins",
+      "type": "news"
+    },
+    {
+      "item_hash": "7acf2075c6b479c6293219ac686a938b7876a280de607030e1d78869f32e175d",
+      "link": "https://www.finma.ch/en/news/2023/12/20231220-meldung-am-staking/",
+      "pillar": [
+        "banking_money",
+        "dealing_custody_advisory"
+      ],
+      "published_at": "2023-12-20T00:00:00Z",
+      "regulator": "FINMA",
+      "title": "FINMA publishes guidance on staking services",
+      "type": "news"
+    },
+    {
+      "item_hash": "7dc3002786d2df57c5a629eff5e38910ff60c908543190714b2f1a4e30f092cd",
+      "link": "https://www.finma.ch/en/news/2019/09/20190911-mm-stable-coins/",
+      "pillar": [
+        "banking_money",
+        "funds_etfs",
+        "stablecoins"
+      ],
+      "published_at": "2019-09-11T00:00:00Z",
+      "regulator": "FINMA",
+      "title": "FINMA publishes 'stable coin' guidelines",
+      "type": "news"
+    }
+  ],
+  "generated_at": "2026-07-12T09:04:30Z",
+  "jurisdiction_id": "ch",
+  "schema_version": 1
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "schema_version": 1,
+    "date_or_window": "The earlier of 18 January 2027 (18 months after enactment) or 120 days after the primary Federal payment stablecoin regulators issue any final regulations implementing the Act -- no such final regulations had issued as of this writing, so only the statutory formula, not a fixed calendar date under the second branch, can be stated",
+    "event": "Statutory effective date of the GENIUS Act itself: 'This Act, and the amendments made by this Act, shall take effect on the earlier of (1) the date that is 18 months after the date of enactment of this Act; or (2) the date that is 120 days after the date on which the primary Federal payment stablecoin regulators issue any final regulations implementing this Act' (Public Law 119-27, Section 20, 12 U.S.C. 5901 note). The Act was approved 18 July 2025, making the first branch 18 January 2027. As of this writing, no primary Federal payment stablecoin regulator (the OCC, Federal Reserve, FDIC, or NCUA) had published a final rule implementing the Act in the Federal Register -- each had published only a proposed rule -- so the second branch has not yet resolved to a fixed calendar date",
+    "pillar": "stablecoins",
+    "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T05:57:33Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "18 July 2026 (one year after enactment)",
+    "event": "Statutory deadline under the GENIUS Act's rulemaking provision: 'Not later than 1 year after the date of enactment of this Act, each primary Federal payment stablecoin regulator, the Secretary of the Treasury, and each State payment stablecoin regulator shall promulgate regulations to carry out this Act through appropriate notice and comment rulemaking' (Public Law 119-27, Section 13(a), 12 U.S.C. 5913). As of this writing, no primary Federal regulator had published a final implementing rule; each had published a proposed rule: the OCC (Federal Register Doc. 2026-04089, published 2 March 2026, comment period closed 1 May 2026), the FDIC (Federal Register Doc. 2026-06974, published 10 April 2026, comment period closed 9 June 2026), the NCUA (Federal Register Doc. 2026-09915, published 18 May 2026, comment period closed 17 July 2026), and Treasury on the separate question of certifying state-level regimes as 'substantially similar' to the federal framework (Federal Register Doc. 2026-06489, published 3 April 2026, comment period closed 2 June 2026); FinCEN and OFAC jointly proposed Bank Secrecy Act and sanctions-compliance standards for permitted payment stablecoin issuers (Federal Register Doc. 2026-06963, published 10 April 2026, comment period closed 9 June 2026). This entry records the statutory deadline and each agency's own published proposed-rule and comment-period dates; it does not predict whether, or in what form, any final rule will issue by 18 July 2026",
+    "pillar": "stablecoins",
+    "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T05:57:33Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "18 July 2028 (3 years after enactment)",
+    "event": "Statutory prohibition under the GENIUS Act: except as provided in the Act's limited-safe-harbor and foreign-reciprocal-arrangement provisions, 'beginning on the date that is 3 years after the date of enactment of this Act, it shall be unlawful for a digital asset service provider to offer or sell a payment stablecoin to a person in the United States, unless the payment stablecoin is issued by a permitted payment stablecoin issuer' (Public Law 119-27, Section 3(b)(1), 12 U.S.C. 5902). The Act was approved 18 July 2025",
+    "pillar": "stablecoins",
+    "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T05:57:33Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "July 2026 (agenda target date for a Notice of Proposed Rulemaking; entered in the Unified Agenda's own timetable field as '07/00/2026', without a specific day)",
+    "event": "SEC Unified Agenda of Regulatory and Deregulatory Actions entry for RIN 3235-AN49, 'Crypto Market Structure Amendments,' at the Proposed Rule Stage as of the Unified Agenda published 7 July 2026, with a Notice of Proposed Rulemaking listed as the next action and an 'economically significant' priority designation; the entry's own abstract describes the SEC as considering amendments to Exchange Act rules governing crypto asset trading on alternative trading systems and national securities exchanges. As of this writing no proposed rule text had been published; the July 2026 date is the agenda's own stated target for its next action, not a filing or a commitment this entry predicts will be met",
+    "pillar": "exchanges_vatp",
+    "source_url": "https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=3235-AN49",
+    "confidence": "indicated",
+    "generated_at": "2026-07-12T05:57:33Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "July 2026 (agenda target date for a Notice of Proposed Rulemaking; entered in the Unified Agenda's own timetable field as '07/00/2026', without a specific day)",
+    "event": "SEC Unified Agenda of Regulatory and Deregulatory Actions entry for RIN 3235-AN38, 'Crypto Assets,' at the Proposed Rule Stage as of the Unified Agenda published 7 July 2026, with a Notice of Proposed Rulemaking listed as the next action; the entry addresses the offer and sale of crypto assets, including possible registration exemptions or safe harbors. As of this writing no proposed rule text had been published; the July 2026 date is the agenda's own stated target for its next action, not a filing or a commitment this entry predicts will be met",
+    "pillar": "tokenization_rwa",
+    "source_url": "https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=3235-AN38",
+    "confidence": "indicated",
+    "generated_at": "2026-07-12T05:57:33Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "July 2026 (agenda target date for a Notice of Proposed Rulemaking; entered in the Unified Agenda's own timetable field as '07/00/2026', without a specific day)",
+    "event": "SEC Unified Agenda of Regulatory and Deregulatory Actions entry for RIN 3235-AN48, 'Amendments to Broker-Dealer Financial Responsibility and Recordkeeping and Reporting Rules Regarding Crypto Assets,' at the Proposed Rule Stage as of the Unified Agenda published 7 July 2026, with a Notice of Proposed Rulemaking listed as the next action; the entry addresses broker-dealer net capital, customer protection, and recordkeeping rules as applied to crypto assets. As of this writing no proposed rule text had been published; the July 2026 date is the agenda's own stated target for its next action, not a filing or a commitment this entry predicts will be met",
+    "pillar": "dealing_custody_advisory",
+    "source_url": "https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=3235-AN48",
+    "confidence": "indicated",
+    "generated_at": "2026-07-12T05:57:33Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "21 August 2026",
+    "event": "Deadline for public comments on the joint FinCEN/OCC/Federal Reserve/FDIC/NCUA proposed rule that would require permitted payment stablecoin issuers to maintain a customer identification program under the Bank Secrecy Act, implementing part of the GENIUS Act; published in the Federal Register 22 June 2026 (Doc. 2026-12460). The agencies state that, if finalized, the rule would take effect 12 months after any final rule issues",
+    "pillar": "stablecoins",
+    "source_url": "https://www.federalregister.gov/documents/2026/06/22/2026-12460/permitted-payment-stablecoin-issuer-customer-identification-program",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T19:00:00Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "jurisdiction_id": "freedonia",
+  "jurisdiction_name": "Freedonia",
+  "user_agent": "TestJurisdictionWatcher/0.1 (contact: test@example.invalid; purpose: pipeline portability test)",
+  "fetch": {
+    "timeout_seconds": 5,
+    "max_retries": 2,
+    "backoff_base_seconds": 0.01,
+    "backoff_multiplier": 2.0
+  },
+  "pillars": [
+    {"id": "freedonia_pillar_one", "name": "Freedonia Pillar One"},
+    {"id": "freedonia_pillar_two", "name": "Freedonia Pillar Two"}
+  ],
+  "pillar_keywords": {
+    "freedonia_pillar_one": ["first freedonia"],
+    "freedonia_pillar_two": ["second freedonia"]
+  },
+  "seal_vocabulary": [
+    {"id": "in_force", "label": "In force"},
+    {"id": "proposed", "label": "Proposed"}
+  ],
+  "regulators": [
+    {
+      "id": "ffa",
+      "name": "Freedonia Financial Authority",
+      "short_name": "FFA",
+      "homepage": "https://ffa.freedonia.invalid",
+      "feeds": [
+        {
+          "id": "ffa_notices",
+          "kind": "press_releases",
+          "url": "https://ffa.freedonia.invalid/rss/notices.xml"
+        }
+      ]
+    }
+  ]
+}

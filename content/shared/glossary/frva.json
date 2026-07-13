@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "frva",
+  "term": "FRVA (Fiat-Referenced Virtual Asset)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "VARA's category, under Dubai's Virtual Asset Issuance Rulebook, for a token designed to hold a stable value by referencing one or more official currencies -- the Dubai equivalent of what other jurisdictions call a fiat-backed stablecoin. An FRVA referencing the UAE Dirham falls outside VARA's own regulatory scope and instead sits exclusively with the Central Bank of the UAE.",
+  "formal_definition": "VARA's Virtual Asset (VA) Issuance Rulebook contemplates Asset Reference Token (ART) issuance generally, with a dedicated annex, the Fiat-Referenced Virtual Assets Issuance Rules (FRVA Rules), setting FRVA-specific requirements. VARA states that an issuer requires either Registration with VARA pre-approval or a Full-fledged Regulated VARA Licence prior to issuance. VARA has separately clarified that an FRVA designed to maintain a stable value in relation to the UAE Dirham is designated to be under the exclusive purview of the UAE's Central Bank, not VARA.",
+  "related_terms": [
+    "vara",
+    "stablecoin",
+    "art",
+    "cbuae"
+  ],
+  "first_used_card_id": "fcc9e79a8df7a86cfc66deff67cdaa4dee1ede0531f9e3d5472f78d1a788b95e",
+  "generated_at": "2026-07-13T16:10:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

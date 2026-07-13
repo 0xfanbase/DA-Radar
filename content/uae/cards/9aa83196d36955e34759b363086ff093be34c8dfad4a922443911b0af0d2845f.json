@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "9aa83196d36955e34759b363086ff093be34c8dfad4a922443911b0af0d2845f",
+  "jurisdiction_id": "uae",
+  "published_date": "2023-08-24",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "dealing_custody_advisory"
+  ],
+  "type": "guidance",
+  "title": "VARA Releases Staking from Custody Services Rules",
+  "summary": "VARA (the Virtual Assets Regulatory Authority), which regulates virtual asset activity in the Emirate of Dubai outside the Dubai International Financial Centre (DIFC), published a revised Custody Services Rulebook on 24 August 2023 permitting virtual asset custodians to add staking to their service offering. Under the update, a Virtual Asset Service Provider (VASP) already licensed for Custody Services may, subject to obtaining specific additional approval from VARA, provide staking services to its customers from the same licensed legal entity, without needing to obtain a separate VA Management and Investment Services licence. VARA states that additional licensing and supervision fees apply once this extra approval is granted. The change narrows the licensing burden for custodians that also want to offer staking, while VARA's approval remains required for the added activity.",
+  "why_it_matters": "This is a concrete example of VARA letting a single Dubai custody licence expand to cover an adjacent activity -- staking -- rather than forcing the custodian to obtain and maintain an entirely separate licence, which matters to anyone assessing how much extra licensing burden staking services carry under Dubai's virtual-asset regime.",
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/vara-releases-staking-from-custody-services-rules/",
+      "quote": "VARA has published a revised Custody Services Rulebook, permitting Staking from Custody Services"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T15:20:00Z",
+  "model": "Claude (Anthropic)"
+}

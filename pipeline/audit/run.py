@@ -36,13 +36,22 @@ from pipeline.watcher.jsonio import write_if_changed
 SCHEMA_VERSION = 1
 DEFAULT_FETCH_KWARGS = dict(timeout=15, max_retries=3, backoff_base=1.0, backoff_multiplier=2.0)
 DEFAULT_USER_AGENT = (
-    "HKDigitalAssetRadarAuditor/0.1 (contact: bot@users.noreply.github.com; purpose: link-rot/staleness audit)"
+    "GlobalDigitalAssetRadarAuditor/0.1 (contact: da-radar-bot@users.noreply.github.com; purpose: link-rot/staleness audit)"
 )
 
 # event_types that represent an actionable problem worth logging to
 # IMPROVEMENT_BACKLOG.md -- verifier_pass_rate_snapshot is a routine metric
-# point, not itself a finding, so it is excluded here.
-ACTIONABLE_EVENT_TYPES = {"link_rot", "staleness", "feed_silence", "verifier_pass_rate_regression"}
+# point, not itself a finding, so it is excluded here. feed_structure_error
+# and feed_fetch_failure (P8) are pipeline/audit/feed_health.py's two new
+# watch_status.json-driven signals, alongside the original feed_silence.
+ACTIONABLE_EVENT_TYPES = {
+    "link_rot",
+    "staleness",
+    "feed_silence",
+    "feed_structure_error",
+    "feed_fetch_failure",
+    "verifier_pass_rate_regression",
+}
 
 
 def _load_json(path: str, default=None):
@@ -78,22 +87,43 @@ def _previous_pass_rate_pct(previous_latest: dict):
 
 
 def run_audit(
-    repo_root: str, *, run_ts: str, previous_latest: dict = None, user_agent: str = DEFAULT_USER_AGENT, **fetch_kwargs
+    repo_root: str,
+    *,
+    run_ts: str,
+    jurisdiction: str | None = None,
+    previous_latest: dict = None,
+    user_agent: str = DEFAULT_USER_AGENT,
+    **fetch_kwargs,
 ) -> list:
     """Runs all four checks against real repo content. Returns the full
-    list of finalized (schema-shaped) events for this run."""
+    list of finalized (schema-shaped) events for this run.
+
+    jurisdiction, when given, scopes the content/data read to
+    content/<jurisdiction>/... and data/<jurisdiction>/ledger.json (the
+    registry-model pivot's per-jurisdiction layout). Omitting it preserves
+    this module's original flat content/*, data/ledger.json paths --
+    wiring this up to walk every jurisdiction in config/site.json is
+    deliberately deferred to a later step, same as pipeline/site/data.py."""
     fetch_kwargs = fetch_kwargs or DEFAULT_FETCH_KWARGS
     today = datetime.fromisoformat(run_ts.replace("Z", "+00:00")).date()
 
-    cards = [c for c in _load_json_glob(os.path.join(repo_root, "content", "cards", "*.json")) if c]
-    pillar_states = [
-        p for p in _load_json_glob(os.path.join(repo_root, "content", "pillar_states", "*.json")) if p
-    ]
-    trajectory = _load_json(os.path.join(repo_root, "content", "trajectory.json"), [])
-    document_library = _load_json(
-        os.path.join(repo_root, "content", "document_library.json"), {"documents": []}
+    content_root = os.path.join(repo_root, "content", jurisdiction) if jurisdiction else os.path.join(
+        repo_root, "content"
     )
-    ledger = _load_json(os.path.join(repo_root, "data", "ledger.json"), {"items": {}})
+    data_root = os.path.join(repo_root, "data", jurisdiction) if jurisdiction else os.path.join(repo_root, "data")
+
+    cards = [c for c in _load_json_glob(os.path.join(content_root, "cards", "*.json")) if c]
+    pillar_states = [p for p in _load_json_glob(os.path.join(content_root, "pillar_states", "*.json")) if p]
+    trajectory = _load_json(os.path.join(content_root, "trajectory.json"), [])
+    document_library = _load_json(os.path.join(content_root, "document_library.json"), {"documents": []})
+    ledger = _load_json(os.path.join(data_root, "ledger.json"), {"items": {}})
+    # P8: watch_status.json is the per-feed health substrate pipeline/
+    # watcher/run.py writes each watcher run (see pipeline/audit/
+    # feed_health.py's docstring). Absent for any pre-P8 ledger/repo tree
+    # (a fresh watcher run hasn't produced one yet, or this is an older
+    # fixture) -- check_feed_coverage's watch_status=None path preserves
+    # the original feed_silence-only behavior exactly in that case.
+    watch_status = _load_json(os.path.join(data_root, "watch_status.json"))
 
     events = []
     events += check_link_rot(
@@ -105,7 +135,7 @@ def run_audit(
         **fetch_kwargs,
     )
     events += check_staleness(pillar_states, today=today)
-    events += check_feed_coverage(ledger, today=today)
+    events += check_feed_coverage(ledger, today=today, watch_status=watch_status)
 
     snapshot = compute_pass_rate_snapshot(cards)
     previous_pct = _previous_pass_rate_pct(previous_latest)
@@ -128,13 +158,28 @@ def _append_backlog_entry(backlog_path: str, actionable_events: list, *, run_ts:
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="Run the weekly HK Digital Asset Radar audit.")
     parser.add_argument("--repo-root", default=".")
+    parser.add_argument(
+        "--jurisdiction",
+        default=None,
+        help=(
+            "Jurisdiction id (e.g. 'hk'). Scopes the content/data read to "
+            "content/<id>/... and data/<id>/ledger.json; omitting it preserves the "
+            "original flat content/*, data/ledger.json paths."
+        ),
+    )
     args = parser.parse_args(argv)
 
     run_ts = utc_now_iso()
+    # data/audit/latest.json and IMPROVEMENT_BACKLOG.md stay single, global
+    # files regardless of --jurisdiction -- pipeline/schemas/audit/event.json
+    # carries no jurisdiction_id field, matching CLAUDE.md's own accounting
+    # of the audit loop as not yet a fully-built, jurisdiction-aware phase.
     latest_path = os.path.join(args.repo_root, "data", "audit", "latest.json")
     previous_latest = _load_json(latest_path)
 
-    events = run_audit(args.repo_root, run_ts=run_ts, previous_latest=previous_latest)
+    events = run_audit(
+        args.repo_root, run_ts=run_ts, jurisdiction=args.jurisdiction, previous_latest=previous_latest
+    )
 
     write_if_changed(latest_path, {"schema_version": SCHEMA_VERSION, "generated_at": run_ts, "events": events})
 

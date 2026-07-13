@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "no-objection-certificate",
+  "term": "NOC (No Objection Certificate)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "A confirmation VARA issues for one specific virtual-asset activity, VA Proprietary Trading, stating that a firm may carry out that activity without holding a full VA Licence -- provided the firm has still registered with VARA.",
+  "formal_definition": "Per VARA's circular 'Virtual Assets Licensing Activities Issuance from February in the Emirate of Dubai [excluding DIFC]', VA Proprietary Trading is an activity that must be registered and be granted a No Objection Certificate from VARA to confirm that the activity may be undertaken without a VA Licence -- distinguishing it from the eight other virtual-asset activities listed in VARA's Full Market Product Regulatory Framework, each of which requires a full commercial VA Licence.",
+  "related_terms": [
+    "vara",
+    "full-market-product",
+    "vasp"
+  ],
+  "first_used_card_id": "f1383bade298bbad84a8068f43b572c57cdce7aafa142cffeab5eb098eabc521",
+  "generated_at": "2026-07-13T10:35:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

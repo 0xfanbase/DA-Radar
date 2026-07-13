@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "jurisdiction_id": "testland",
+  "jurisdiction_name": "Testland",
+  "user_agent": "TestJurisdictionWatcher/0.1 (contact: test@example.invalid; purpose: P8 mixed-mechanism dispatch test)",
+  "fetch": {
+    "timeout_seconds": 5,
+    "max_retries": 2,
+    "backoff_base_seconds": 0.01,
+    "backoff_multiplier": 2.0
+  },
+  "pillars": [
+    {"id": "testland_pillar_one", "name": "Testland Pillar One"}
+  ],
+  "pillar_keywords": {
+    "testland_pillar_one": ["testland"]
+  },
+  "regulators": [
+    {
+      "id": "tfa",
+      "name": "Testland Financial Authority",
+      "short_name": "TFA",
+      "homepage": "https://tfa.testland.invalid",
+      "official_domains": ["tfa.testland.invalid"],
+      "feeds": [
+        {
+          "id": "tfa_notices",
+          "kind": "press_releases",
+          "url": "https://tfa.testland.invalid/rss/notices.xml"
+        },
+        {
+          "id": "tfa_listing",
+          "kind": "press_releases",
+          "mechanism": "html_diff",
+          "url": "https://tfa.testland.invalid/news",
+          "html_diff": {
+            "item_selector": "div.listing-row",
+            "link_selector": "a.headline",
+            "title_selector": "a.headline",
+            "date_selector": "span.pub-date",
+            "date_format": "%Y-%m-%d",
+            "base_url": "https://tfa.testland.invalid"
+          }
+        }
+      ]
+    }
+  ]
+}

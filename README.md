@@ -1,16 +1,17 @@
-# HK Digital Asset Radar
+# Global Digital Asset Radar
 
-A free, public, self-learning dashboard of the Hong Kong digital-asset regulatory landscape —
-current state, trajectory, key documents, and cited AI summary cards. A watcher tracks official
-regulator publications, an AI analyst drafts cited summary cards, an AI verifier fact-checks them
-against source text, and the site publishes automatically. The editorial process is auditable in
-public.
+A free, public, self-learning dashboard of the digital-asset regulatory landscape across multiple
+jurisdictions — current state, trajectory, key documents, and cited AI summary cards. A watcher
+tracks official regulator publications, an AI analyst drafts cited summary cards, an AI verifier
+fact-checks them against source text, and the site publishes automatically. The editorial process
+is auditable in public.
 
 **This project provides information, not legal or regulatory advice.** Every AI-generated
 summary links back to its primary source and should be independently verified.
 
-Hong Kong is the pilot jurisdiction. The pipeline architecture is built to be jurisdiction-
-portable; other jurisdictions may follow.
+Hong Kong is the founding jurisdiction. The architecture is a registry model: one deployment
+serves every configured jurisdiction, with the United States, European Union, United Kingdom,
+Singapore, UAE, Switzerland, and Japan registered to go live in phased order.
 
 ## Status
 
@@ -25,4 +26,4 @@ under CC BY 4.0.
 
 ## Contact
 
-bot@users.noreply.github.com
+da-radar-bot@users.noreply.github.com

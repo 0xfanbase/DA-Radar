@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "a0e8486ace1f192b15627c043db18e42af4d1ce7632c964299582ede170307cf",
+  "jurisdiction_id": "uae",
+  "published_date": "2022-11-24",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "dealing_custody_advisory"
+  ],
+  "type": "licence",
+  "title": "Hex Trust receives MVP Licence from Dubai's Virtual Assets Regulatory Authority",
+  "summary": "On 24 November 2022, VARA -- the Virtual Assets Regulatory Authority, which regulates virtual assets across Dubai's free zones and mainland outside the Dubai International Financial Centre (DIFC) -- announced that Hex Trust had received an MVP Licence. The licence lets Hex Trust provide virtual-asset custodial services, broker-dealer services and staking services to institutional clients and sophisticated investors within VARA's virtual asset service provider (VASP) framework. The announcement followed a provisional licence VARA had granted Hex Trust in June 2022, when the firm opened a Dubai office as its Middle East and North Africa regional headquarters.",
+  "why_it_matters": "VARA is the primary licensing gatekeeper for virtual-asset firms operating in Dubai outside the DIFC, so an MVP Licence marks the point at which a firm can actually begin offering regulated services like custody, brokerage and staking there, rather than merely holding an earlier-stage preparatory approval.",
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/hex-trust-receives-mvp-licence-from-dubais-virtual-assets-regulatory-authority/",
+      "quote": "the sole authority regulating virtual assets across Dubai's free zones and mainland"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T17:00:00Z",
+  "model": "Claude (Anthropic)"
+}

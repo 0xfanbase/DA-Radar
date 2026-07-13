@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-01-02T00:00:00Z",
+  "documents": [
+    {
+      "item_hash": "sylvania-doc1",
+      "title": "Sylvania document title",
+      "link": "https://sfa.sylvania.invalid/doc1",
+      "published_at": "2026-01-02T00:00:00Z",
+      "regulator": "SFA",
+      "type": "press_releases",
+      "pillar": ["test_pillar_beta"]
+    }
+  ]
+}

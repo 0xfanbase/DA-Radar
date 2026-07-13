@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "572ddeffeaebc19dd51914dc09a0b8845a04724f1fa214bf71e15eab91c958da",
+  "jurisdiction_id": "uae",
+  "published_date": "2023-02-17",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "exchanges_vatp",
+    "dealing_custody_advisory"
+  ],
+  "type": "licence",
+  "title": "GCEX Receives MVP Preparatory Licence from Dubai's Virtual Assets Regulatory Authority",
+  "summary": "On 17 February 2023, VARA (the Virtual Assets Regulatory Authority, which regulates virtual assets across Dubai's free zones and mainland, excluding the Dubai International Financial Centre) announced that GCEX MENA -- part of the GCEX Group and named in the announcement as its Digital Prime Brokerage -- had received an MVP Preparatory Licence, following the provisional licence VARA had issued it in April 2022. GCEX MENA opened its Dubai office in July 2022. As a Virtual Asset Service Provider, the licence means GCEX MENA can now undertake the required steps to be ready to start market operations in Dubai. GCEX MENA's Managing Director said the firm was separately finalising the last steps to receive a Full Market Product licence, and VARA's Chief Executive Officer, Henson Orser, said VARA was pleased to have GCEX as part of the preparatory phase of the VARA MVP Programme.",
+  "why_it_matters": "VARA is the Dubai authority that regulates virtual-asset businesses across the emirate's free zones and mainland, excluding the Dubai International Financial Centre, and this MVP Preparatory Licence marks an early stage in VARA's staged licensing pathway -- authorising preparatory steps toward market operations, short of the Full Market Product licence GCEX MENA said it was still working toward.",
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/gcex-receives-mvp-preparatory-licence-from-dubais-virtual-assets-regulatory-authority/",
+      "quote": "the required steps to be ready to start market operations in the Emirate of Dubai"
+    },
+    {
+      "url": "https://www.vara.ae/en/",
+      "quote": "across Dubai's free zones and mainland, except within the jurisdiction of Dubai International Financial Centre"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T15:30:00Z",
+  "model": "Claude (Anthropic)"
+}

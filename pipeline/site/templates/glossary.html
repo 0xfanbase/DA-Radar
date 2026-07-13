@@ -1,16 +1,56 @@
 {% extends "base.html" %}
-{% block title %}Glossary &mdash; HK Digital Asset Radar{% endblock %}
+{% block title %}Glossary &mdash; {{ site_name }}{% endblock %}
 {% block content %}
 <h1 class="plate">Glossary</h1>
-<p>Plain-language definitions for terms used throughout this site, extended automatically whenever a card introduces new jargon.</p>
+<p>Plain-language definitions for terms used throughout this site, extended automatically whenever a card introduces new jargon. Shared across every jurisdiction: a term may be tagged to one jurisdiction, more than one, or "global" for a regime-independent concept that applies everywhere.</p>
+
+{#
+  Jurisdiction filter-chip row (P7 plan): "All" plus one chip per real
+  jurisdiction id that actually has at least one term tagged to it (see
+  build_glossary_jurisdiction_chips() in pipeline/site/data.py) -- counts
+  are real, computed at build time from the actual term set, and a
+  jurisdiction with zero tagged terms simply gets no chip. Selecting a
+  specific jurisdiction's chip implicitly also shows every "global"-tagged
+  term (both here and in that same chip's own count) -- see site.js's
+  filter implementation.
+
+  Pure display-side filtering: every .glossary-term element stays in the
+  DOM at all times, carrying its own data-jurisdictions attribute (space-
+  separated real jurisdiction ids, from the term's own "jurisdictions"
+  array) that site.js reads to decide what to hide -- so a no-JS visitor
+  simply sees every term, unfiltered, all the time (the small per-entry
+  jurisdiction badge on each term, rendered below regardless of JS, is
+  the no-JS-safe way to still see which jurisdiction(s) a term applies
+  to). Chip state persists via the "gdar-jurisdiction-filter" localStorage
+  key, shared with the Document Library's chip filter (see site.js).
+#}
+{% if glossary_jurisdiction_chips | length > 1 %}
+<div class="filter-chip-row" id="glossary-jurisdiction-filter" role="group" aria-label="Filter by jurisdiction">
+  {% for chip in glossary_jurisdiction_chips %}
+  <button type="button" class="filter-chip" data-jurisdiction="{{ chip.id }}" aria-pressed="{{ 'true' if chip.id == 'all' else 'false' }}">{{ chip.name }} <span class="filter-chip-count">{{ chip.count }}</span></button>
+  {% endfor %}
+</div>
+{% endif %}
+
 <dl>
   {% for g in glossary_terms %}
-  <div class="glossary-term">
-    <dt id="{{ g.term | lower | replace(' ', '-') }}">{{ g.term }}</dt>
+  <div class="glossary-term" data-jurisdictions="{{ g.jurisdictions | join(' ') }}">
+    <dt id="term-{{ g.id }}">{{ g.term }}
+      {% for jid in g.jurisdictions %}
+      <span class="jurisdiction-badge">{{ jurisdiction_names.get(jid, jid) if jid != "global" else "Global" }}</span>
+      {% endfor %}
+    </dt>
     <dd>
       <p>{{ g.plain_definition }}</p>
       {% if g.formal_definition %}<p class="mono meta-line">{{ g.formal_definition }}</p>{% endif %}
-      {% if g.related_terms %}<p style="font-size:0.85rem;">See also: {{ g.related_terms | join(", ") }}</p>{% endif %}
+      {% if g.related_terms %}
+      <p style="font-size:0.85rem;">See also:
+        {% for rid in g.related_terms %}
+        {%- set related = glossary_terms_by_id.get(rid) -%}
+        {% if related %}<a href="#term-{{ related.id }}">{{ related.term }}</a>{% else %}{{ rid | replace("-", " ") | capitalize }}{% endif %}{% if not loop.last %}, {% endif %}
+        {% endfor %}
+      </p>
+      {% endif %}
       <div class="card-meta">
         {% if g.status == "corrected" %}
         <a class="badge-corrected" href="method.html#corrections-log">Corrected &mdash; see corrections log</a>

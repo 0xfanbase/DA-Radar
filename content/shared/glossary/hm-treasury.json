@@ -1,0 +1,20 @@
+{
+  "first_used_card_id": "3925ab57c62df4d68515f3cd8610e139c6e38f87c942c38b2238eed5565d62b1",
+  "formal_definition": "HM Treasury, the UK government department that made the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102) on 4 February 2026 under its FSMA order-making powers, that assesses and recognises stablecoins as systemic to UK payments for the purposes of Bank of England regulation under Part 5 of the Banking Act 2009, and that is running the pilot issuance of a Digital Gilt Instrument (DIGIT).",
+  "generated_at": "2026-07-11T17:15:00Z",
+  "id": "hm-treasury",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "Short for HM Treasury, the UK government department responsible for financial-services policy -- broadly the equivalent of Hong Kong's FSTB. It made the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 as a statutory instrument, decides whether a stablecoin is systemic enough to be regulated by the Bank of England rather than the FCA, and is running its own Digital Gilt Instrument (DIGIT) pilot.",
+  "related_terms": [
+    "fca",
+    "boe",
+    "fsma",
+    "digit"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "HM Treasury"
+}

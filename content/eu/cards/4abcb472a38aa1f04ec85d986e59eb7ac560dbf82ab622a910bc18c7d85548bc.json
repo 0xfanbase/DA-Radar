@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "4abcb472a38aa1f04ec85d986e59eb7ac560dbf82ab622a910bc18c7d85548bc",
+  "jurisdiction_id": "eu",
+  "published_date": "2026-07-08",
+  "regulator": "European Securities and Markets Authority (ESMA)",
+  "pillar": [
+    "dealing_custody_advisory"
+  ],
+  "type": "circular",
+  "title": "ESMA launches Common Supervisory Action on CASPs' digital operational resilience for custody",
+  "summary": "On 8 July 2026 ESMA announced a Common Supervisory Action (CSA) on the digital operational resilience of crypto-asset service providers (CASPs) for custody. National competent authorities will assess, on a risk-based sample of authorised CASPs, how mature their digital operational resilience frameworks are for custody activities -- covering governance, key and storage management, transaction controls, incident detection and response, smart contract risks, and third-party dependencies inherent to distributed ledger technology. The exercise runs from the second half of 2026 to the first half of 2027, and ESMA says it responds to risk-based supervisory priorities that flag both digital operational resilience and CASPs as key risk areas. A consolidated report goes to ESMA's Board of Supervisors after the exercise ends.",
+  "why_it_matters": "This is not a new rule -- it is supervisory follow-through on MiCA's already-in-force CASP custody regime, which has applied across the EU since 30 December 2024. For a newcomer, the key point is that national regulators will now jointly test, on a coordinated timetable, how well authorised custody providers actually manage digital-security risks, rather than each acting alone.",
+  "key_dates": {
+    "milestone": "2026-07-08"
+  },
+  "citations": [
+    {
+      "url": "https://www.esma.europa.eu/press-news/esma-news/esma-launches-common-supervisory-action-casps-digital-operational-resilience",
+      "quote": "will assess the maturity of CASPs' digital operational resilience frameworks in relation to custody activities"
+    },
+    {
+      "url": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica",
+      "quote": "applicable laws before 30 December 2024 to continue to do so"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T15:00:00Z",
+  "model": "Claude (Anthropic)"
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "investor-alert-list",
+  "term": "Investor Alert List (IAL)",
+  "jurisdictions": [
+    "sg"
+  ],
+  "plain_definition": "A list MAS publishes and maintains of persons who may be wrongly perceived as licensed, authorised, or regulated by MAS, or as having made an offer of a fund, investment or document that is registered with or recognised by MAS when it is not. Its purpose is early public warning: dealing with a person on the list means a consumer does not have the protections that apply under laws MAS administers. In the digital-asset context, MAS's announced single-currency stablecoin (SCS) framework would use placement on the Investor Alert List as one consequence of falsely claiming a token is 'MAS-regulated' (see the mas-regulated-stablecoin entry).",
+  "formal_definition": "MAS media release, 'MAS Finalises Stablecoin Regulatory Framework' (15 August 2023) -- confirmed by direct fetch of the genuine PDF via the Singapore Government's press-release repository (sgpc.gov.sg) -- references Investor Alert List placement as a consequence of misrepresenting a token as MAS-regulated. This entry could not directly fetch MAS's own Investor Alert List page (mas.gov.sg/investor-alert-list): it returned MAS's now-familiar bot-blocked 'service ... currently unavailable' page on a live attempt made while drafting this entry (2026-07-13). The general description of the list's scope and purpose given in plain_definition therefore rests on search-engine-indexed summaries of MAS's own page content, not on this project's own direct reading of that page's text, and should be independently re-verified once mas.gov.sg is reachable.",
+  "related_terms": [
+    "mas-regulated-stablecoin",
+    "single-currency-stablecoin",
+    "mas"
+  ],
+  "first_used_card_id": "1b2543e797715d3fc813df21410a3b1343ae6c4ba5e76a52325859bff8d32143",
+  "generated_at": "2026-07-13T18:29:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

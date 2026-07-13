@@ -1,0 +1,35 @@
+{
+  "feeds": {
+    "boe_news": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "boe",
+      "status": "ok",
+      "status_since": "2026-07-11T17:59:17Z"
+    },
+    "boe_pra_publications": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "boe",
+      "status": "ok",
+      "status_since": "2026-07-11T17:59:17Z"
+    },
+    "fca_news": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "fca",
+      "status": "ok",
+      "status_since": "2026-07-11T17:59:17Z"
+    },
+    "hmt_activity": {
+      "last_error": null,
+      "mechanism": "atom",
+      "source_id": "hmt",
+      "status": "ok",
+      "status_since": "2026-07-11T17:59:17Z"
+    }
+  },
+  "generated_at": "2026-07-11T17:59:17Z",
+  "jurisdiction_id": "uk",
+  "schema_version": 1
+}

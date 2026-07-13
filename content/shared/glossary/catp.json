@@ -1,0 +1,21 @@
+{
+  "first_used_card_id": "89027aca00488f2b404db08b468eb197985e9c1f6e4d9292382e08cd26d19ac0",
+  "formal_definition": "Operating a 'qualifying cryptoasset trading platform' (QCATP), a new regulated activity created by the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102), made by HM Treasury on 4 February 2026; conduct rules were finalised by the FCA in Policy Statement PS26/11 (Crypto Regime: Regulated Cryptoasset Activities) and Handbook-application rules in PS26/13, both published 30 June 2026, but per the instrument's own Explanatory Memorandum the general prohibition on operating one without authorisation does not commence until 25 October 2027.",
+  "generated_at": "2026-07-11T17:30:00Z",
+  "id": "catp",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "The UK's new term for a licensed cryptocurrency exchange -- a platform where people can buy, sell, or trade qualifying cryptoassets. Running one becomes a new FCA-regulated activity under the UK's 2026 cryptoasset Regulations, similar in spirit to Hong Kong's VATP regime but built on the UK's existing FSMA licensing architecture rather than a dedicated ordinance. The FCA published its conduct rules for these platforms on 30 June 2026, but firms will not need to be authorised to operate one until the regime's general prohibition takes effect on 25 October 2027.",
+  "related_terms": [
+    "qualifying-cryptoasset",
+    "fsma",
+    "fca",
+    "cryptoasset-registration-mlr",
+    "vatp"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "Qualifying Cryptoasset Trading Platform (QCATP)"
+}

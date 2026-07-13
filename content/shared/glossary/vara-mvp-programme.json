@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "id": "vara-mvp-programme",
+  "term": "MVP Programme (VARA)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "VARA's phased route to a full licence for a specific Virtual Asset Activity (such as broker-dealer, exchange, or custody services), applicable in the Emirate of Dubai (including its free zones, but excluding the DIFC). A firm first receives a Provisional Approval that lets it keep operating in Dubai while VARA reviews it, then -- once VARA is satisfied -- an MVP Operational Licence authorising it to provide that specific activity to clients under VARA's regulatory regime.",
+  "formal_definition": "VARA's own 1 May 2023 announcement of BitOasis's licence (vara.ae) describes the MVP Operational Licence as 'completing the final step in the MVP process' and states it 'follows the Provisional Approval issued by VARA to BitOasis in March 2022, within a month from VARA's formation, under which the company was permitted to continue to operate its platform from Dubai whilst completing VARA's rigorous licensing process.' VARA's CEO, quoted in the same announcement, refers to onboarding firms during 'the MVP Programme phase.' This entry records only the two MVP-track stages (Provisional Approval, then MVP Operational Licence) confirmed by that announcement; it does not assert any further or later stage VARA's licensing framework may include, which has not been independently confirmed by this radar.",
+  "related_terms": [
+    "vara",
+    "vasp"
+  ],
+  "first_used_card_id": "116d56ae70248c454ea6be730b47b730e99b5c5471b2a9a0245377d2497a44ee",
+  "generated_at": "2026-07-13T14:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

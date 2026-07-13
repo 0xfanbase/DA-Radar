@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-01-06T00:00:00Z",
+  "items": {
+    "sylvania-card1": {
+      "item_hash": "sylvania-card1",
+      "source_id": "sfa",
+      "feed_id": "sfa_bulletins",
+      "guid": "sfa-1",
+      "link": "https://sfa.sylvania.invalid/bulletins/one",
+      "title": "Sylvania Financial Authority issues first bulletin",
+      "summary": "",
+      "published_at": "2026-01-06T00:00:00Z",
+      "raw_published": null,
+      "content_hash": "sh1",
+      "first_seen": "2026-01-06T00:00:00Z",
+      "status": "published",
+      "card_id": "sylvania-card1",
+      "relevant": true
+    }
+  }
+}

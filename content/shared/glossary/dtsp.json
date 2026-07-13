@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "dtsp",
+  "term": "DTSP (Digital Token Service Provider)",
+  "jurisdictions": [
+    "sg"
+  ],
+  "plain_definition": "The Financial Services and Markets Act 2022's Part 9 licensing category, in force from 30 June 2025, for a person operating from a place of business in Singapore (or a Singapore-incorporated company operating from anywhere) who provides digital-token dealing, custody, exchange-facilitation or transmission services solely to customers located outside Singapore. This is a narrow, deliberately hard-to-license category: MAS states it will generally not issue a licence for this activity, citing elevated money-laundering risk and its own limited ability to supervise conduct occurring entirely outside Singapore. A DTSP under the FSM Act is a materially different thing from a 'DPT service provider' under the Payment Services Act 2019 (see the dpt-service entry): a DPT service provider serves customers in or connected to Singapore under the PS Act's domestic licensing regime, while a DTSP under the FSM Act exists specifically to capture providers whose substantive digital-token business is conducted for customers outside Singapore and who would otherwise fall outside any Singapore licensing net at all -- providers already licensed for their Singapore-facing business under the PS Act, SFA or FAA are not additionally treated as DTSPs for that same business.",
+  "formal_definition": "Financial Services and Markets Act 2022, Part 9, sections 136(1) (definitions) and 137 (licensing requirement), per MAS's own citation. MAS media release, 'MAS Clarifies Regulatory Regime for Digital Token Service Providers' (6 June 2025) -- confirmed by direct fetch of the genuine PDF via the Singapore Government's press-release repository (sgpc.gov.sg), since www.mas.gov.sg served an identical bot-blocked page on every path tried -- states MAS 'will generally not issue a licence' for this category, framing the money-laundering risk of business models substantively conducted outside Singapore, and its own limited supervisory reach over such persons, as its stated reason.",
+  "related_terms": [
+    "fsm-act",
+    "dpt-service",
+    "mas",
+    "vasp",
+    "travel-rule"
+  ],
+  "first_used_card_id": "68c91854b6e55f2e5647ef091733ccb9fb73016e4113609c73a4f42756c8dfc8",
+  "generated_at": "2026-07-13T18:20:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

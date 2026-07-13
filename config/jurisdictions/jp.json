@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "jurisdiction_id": "jp",
+  "jurisdiction_name": "Japan",
+  "user_agent": "GlobalDigitalAssetRadarWatcher/0.1 (contact: da-radar-bot@users.noreply.github.com; purpose: public RSS regulatory monitoring)",
+  "fetch": {
+    "timeout_seconds": 15,
+    "max_retries": 3,
+    "backoff_base_seconds": 1.0,
+    "backoff_multiplier": 2.0
+  },
+  "relevance_keywords": [
+    "crypto",
+    "crypto asset",
+    "crypto-asset",
+    "cryptoasset",
+    "cryptocurrency",
+    "virtual currency",
+    "virtual asset",
+    "digital asset",
+    "digital assets",
+    "stablecoin",
+    "stablecoins",
+    "stable coin",
+    "electronic payment instrument",
+    "crypto asset exchange",
+    "exchange service provider",
+    "electronically recorded transferable right",
+    "security token",
+    "token",
+    "tokeniz",
+    "tokenis",
+    "blockchain",
+    "distributed ledger",
+    "dlt",
+    "bitcoin",
+    "ether",
+    "staking",
+    "crypto custody",
+    "wallet",
+    "web3",
+    "nft",
+    "defi",
+    "decentralized finance",
+    "decentralised finance",
+    "central bank digital currency",
+    "cbdc",
+    "digital yen",
+    "travel rule",
+    "virtual asset service provider",
+    "暗号資産",
+    "仮想通貨",
+    "ステーブルコイン",
+    "電子決済手段",
+    "資金決済",
+    "電子記録移転権利",
+    "セキュリティトークン",
+    "デジタル証券",
+    "トークン",
+    "ブロックチェーン",
+    "分散型台帳",
+    "分散型金融",
+    "ステーキング",
+    "カストディ",
+    "ウォレット",
+    "中央銀行デジタル通貨",
+    "デジタル円",
+    "トラベルルール",
+    "ビットコイン",
+    "イーサリアム",
+    "ＮＦＴ",
+    "Ｗｅｂ３"
+  ],
+  "pillar_keywords": {
+    "exchanges_vatp": [
+      "暗号資産交換業",
+      "交換業者",
+      "取扱銘柄",
+      "上場",
+      "取引所",
+      "インサイダー",
+      "不公正取引",
+      "金融商品取引業",
+      "crypto asset exchange",
+      "exchange service provider",
+      "trading platform",
+      "listing",
+      "market conduct",
+      "insider"
+    ],
+    "stablecoins": [
+      "ステーブルコイン",
+      "電子決済手段",
+      "特定信託受益権",
+      "資金移動業",
+      "発行者",
+      "償還",
+      "裏付け資産",
+      "準備資産",
+      "stablecoin",
+      "stable coin",
+      "electronic payment instrument",
+      "issuer",
+      "redemption",
+      "reserve",
+      "backing",
+      "fund transfer service"
+    ],
+    "dealing_custody_advisory": [
+      "カストディ",
+      "管理業",
+      "分別管理",
+      "コールドウォレット",
+      "ウォレット",
+      "仲介業",
+      "デリバティブ",
+      "証拠金",
+      "ステーキング",
+      "custody",
+      "safekeeping",
+      "segregation",
+      "cold wallet",
+      "wallet",
+      "intermediary",
+      "broker",
+      "derivative",
+      "margin",
+      "staking"
+    ],
+    "tokenization_rwa": [
+      "電子記録移転権利",
+      "セキュリティトークン",
+      "デジタル証券",
+      "トークン化",
+      "デジタル社債",
+      "tokeniz",
+      "tokenis",
+      "security token",
+      "digital securities",
+      "digital bond",
+      "security token offering",
+      "on-chain",
+      "onchain"
+    ],
+    "funds_etfs": [
+      "投資信託",
+      "上場投資信託",
+      "ファンド",
+      "投資運用",
+      "投資法人",
+      "etf",
+      "exchange-traded",
+      "fund",
+      "investment trust",
+      "collective investment"
+    ],
+    "banking_money": [
+      "銀行",
+      "預金",
+      "トークン化預金",
+      "日本銀行",
+      "中央銀行デジタル通貨",
+      "デジタル円",
+      "決済システム",
+      "資金移動",
+      "自己資本",
+      "bank",
+      "deposit",
+      "tokenized deposit",
+      "tokenised deposit",
+      "bank of japan",
+      "cbdc",
+      "central bank digital currency",
+      "digital yen",
+      "payment system",
+      "capital requirement",
+      "prudential"
+    ],
+    "aml_cft_enforcement": [
+      "マネー・ローンダリング",
+      "マネロン",
+      "犯罪収益移転防止",
+      "テロ資金供与",
+      "トラベルルール",
+      "制裁",
+      "資産凍結",
+      "業務改善命令",
+      "行政処分",
+      "money laundering",
+      "aml",
+      "cft",
+      "terrorist financing",
+      "travel rule",
+      "sanction",
+      "asset freeze",
+      "business improvement order",
+      "enforcement",
+      "suspicious",
+      "fatf"
+    ]
+  },
+  "regulators": [
+    {
+      "id": "fsa",
+      "name": "Financial Services Agency",
+      "short_name": "FSA",
+      "homepage": "https://www.fsa.go.jp/en/",
+      "official_domains": [
+        "www.fsa.go.jp",
+        "fsa.go.jp"
+      ],
+      "feeds": [
+        {
+          "id": "fsa_news_en",
+          "kind": "news",
+          "url": "https://www.fsa.go.jp/fsaEnNewsList_rss2.xml",
+          "mechanism": "rss"
+        },
+        {
+          "id": "fsa_news_ja",
+          "kind": "news",
+          "url": "https://www.fsa.go.jp/fsaNewsListAll_rss2.xml",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "jvcea",
+      "name": "Japan Virtual and Crypto assets Exchange Association (一般社団法人日本暗号資産等取引業協会)",
+      "short_name": "JVCEA",
+      "homepage": "https://jvcea.or.jp/",
+      "official_domains": [
+        "jvcea.or.jp"
+      ],
+      "feeds": [
+        {
+          "id": "jvcea_news",
+          "kind": "news",
+          "url": "https://jvcea.or.jp/feed/",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "japanese_law_translation",
+      "name": "Japanese Law Translation (Ministry of Justice's official portal for authorized bilingual texts of Japanese statutes)",
+      "short_name": "Japanese Law Translation",
+      "homepage": "https://www.japaneselawtranslation.go.jp/en/",
+      "official_domains": [
+        "www.japaneselawtranslation.go.jp",
+        "japaneselawtranslation.go.jp"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "e_gov",
+      "name": "e-Gov Law Search / elaws (Ministry of Digital Agency's official portal for consolidated Japanese statute and Cabinet Order/ordinance text); citable machine-readable forms only -- laws.e-gov.go.jp's ordinary HTML pages are a JS single-page application serving only an ~800-byte shell to non-browser fetchers, so citations use the JSON API (https://laws.e-gov.go.jp/api/2/law_data/{law_id}) or elaws's XML API (https://elaws.e-gov.go.jp/api/1/lawdata/{law_id}) instead",
+      "short_name": "e-Gov",
+      "homepage": "https://laws.e-gov.go.jp/",
+      "official_domains": [
+        "laws.e-gov.go.jp",
+        "elaws.e-gov.go.jp"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "boj",
+      "name": "Bank of Japan",
+      "short_name": "BOJ",
+      "homepage": "https://www.boj.or.jp/en/",
+      "official_domains": [
+        "www.boj.or.jp",
+        "boj.or.jp"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "mof",
+      "name": "Ministry of Finance -- registered for its role convening the CBDC（中央銀行デジタル通貨）に関する関係府省庁・日本銀行連絡会議 (Liaison Conference of Relevant Government Ministries/Agencies and the Bank of Japan on CBDC) and the earlier CBDC（中央銀行デジタル通貨）に関する有識者会議 (Expert Panel on CBDC); registered because banking_money content actually cites mof.go.jp",
+      "short_name": "MOF",
+      "homepage": "https://www.mof.go.jp/english/",
+      "official_domains": [
+        "www.mof.go.jp",
+        "mof.go.jp"
+      ],
+      "feeds": []
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "citations": [
+    {
+      "quote": "permitted payment stablecoin issuers (PPSIs) as financial institutions for purposes of the Bank Secrecy Act",
+      "url": "https://www.federalregister.gov/documents/full_text/html/2026/04/10/2026-06963.html"
+    },
+    {
+      "quote": "would require PPSIs to adopt and maintain an effective sanctions compliance program",
+      "url": "https://www.fincen.gov/news/news-releases/treasury-proposes-rule-implement-genius-acts-requirements-counter-illicit"
+    },
+    {
+      "quote": "Public Law 119 - 27 - Guiding and Establishing National Innovation for U.S. Stablecoins Act",
+      "url": "https://www.govinfo.gov/app/details/PLAW-119publ27"
+    }
+  ],
+  "generated_at": "2026-07-12T19:20:00Z",
+  "id": "4054404aa69919c454c0e48b99ba5da2ed6fa55477fd4d788fa40d9b8863aa43",
+  "jurisdiction_id": "us",
+  "key_dates": {
+    "deadline": "2026-06-09"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "stablecoins",
+    "aml_cft_enforcement"
+  ],
+  "published_date": "2026-04-10",
+  "regulator": "Financial Crimes Enforcement Network (FinCEN) and Office of Foreign Assets Control (OFAC)",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "On 10 April 2026, the U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) and Office of Foreign Assets Control (OFAC) jointly published a proposed rule implementing the GENIUS Act's (Public Law 119-27) anti-money-laundering and sanctions directives for permitted payment stablecoin issuers (PPSIs). The proposal would treat PPSIs as financial institutions under the Bank Secrecy Act, subjecting them to FinCEN-administered anti-money-laundering program requirements, and would separately require PPSIs to maintain an effective sanctions compliance program administered under OFAC, including technical capability to block, freeze, or reject transactions and to comply with lawful orders to seize, freeze, burn, or prevent transfer of stablecoins. FinCEN's portion would add a new part to 31 CFR chapter X; OFAC's a new part to chapter V. The public comment period closed 9 June 2026.",
+  "title": "Permitted Payment Stablecoin Issuer Anti-Money Laundering/Countering the Financing of Terrorism Program and Sanctions Compliance Program Requirements",
+  "type": "consultation",
+  "why_it_matters": "This proposed rule is part of the rulemaking implementing the GENIUS Act's stablecoin-issuer licensing regime, setting out the anti-money-laundering program and sanctions-compliance program requirements -- including technical capability to block, freeze, or reject transactions -- that FinCEN and OFAC are proposing for permitted payment stablecoin issuers. It has not been finalized, and the underlying obligations are not yet in effect."
+}

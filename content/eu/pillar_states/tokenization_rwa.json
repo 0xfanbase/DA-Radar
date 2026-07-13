@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "pillar": "tokenization_rwa",
+  "status_seal": "in_force",
+  "regulator": "European Commission and ESMA",
+  "instruments": [
+    "Regulation (EU) 2022/858 of 30 May 2022 on a pilot regime for market infrastructures based on distributed ledger technology (DLT Pilot Regime), applicable since 23 March 2023",
+    "ESMA Report on the functioning and review of the DLT Pilot Regime, pursuant to Article 14 of Regulation (EU) 2022/858 (ESMA75-117376770-460, 25 June 2025)",
+    "European Commission proposal COM(2025) 943 final / 2025/0383 (COD), 4 December 2025, amending Regulation (EU) 2022/858 among other instruments, as part of the Market Integration and Supervision Package -- not yet adopted"
+  ],
+  "standing_summary": "Tokenisation of real-world assets at EU level is anchored not in MiCA but in a separate, narrower instrument: Regulation (EU) 2022/858, the DLT Pilot Regime, which has been in application since 23 March 2023. It lets market infrastructures obtain a specific permission to operate a DLT multilateral trading facility (DLT MTF), a DLT settlement system (DLT SS), or a combined DLT trading-and-settlement system (DLT TSS), trading and settling 'DLT financial instruments' -- tokenised shares, bonds and units in collective investment undertakings that remain MiFID financial instruments and sit outside MiCA's scope, under exemptions from parts of MiFID II, MiFIR and CSDR granted for the duration of the pilot. Individual DLT market infrastructure authorisations are granted by national competent authorities (following coordination with ESMA), not by an EU-level body, and are out of scope of this pillar; per ESMA's own June 2025 report, as of that report only three infrastructures had been authorised EU-wide -- CSD Prague (specific permission to operate a DLT SS from 11 October 2024), 21X AG (DLT TSS from 3 December 2024) and 360X AG (DLT MTF from 29 April 2025) -- illustrating genuinely low uptake. Acting under Article 14 of the Regulation, which requires a comprehensive report to the Commission by 24 March 2026, ESMA published its report on 25 June 2025 -- well ahead of that statutory deadline -- covering the period from the regime's 23 March 2023 start of application to 31 May 2025, and recommended that the Commission make the regime permanent, widen eligible assets, remove or restructure the activity-based thresholds, and embed DLT-specific provisions into sectoral legislation rather than run a standalone temporary regime. The Commission acted on that recommendation on 4 December 2025, adopting proposal COM(2025) 943 final (interinstitutional file 2025/0383 (COD)) as part of its Market Integration and Supervision Package under the Savings and Investments Union strategy; the proposal would amend Regulation (EU) 2022/858 to raise the aggregate market-value cap for DLT financial instruments from EUR 6 billion to EUR 100 billion, remove existing product-specific thresholds, introduce a simplified authorisation track for smaller operators (up to EUR 10 billion), rename the DLT MTF category to 'DLT trading venue' so organised-trading-facility operators and MiCA-authorised crypto-asset service providers can also apply, and remove the time-limited nature of individual permissions. This is a legislative proposal only -- it has not been adopted, is subject to European Parliament and Council co-decision, and secondary reporting on the package describes negotiations continuing at least into 2027 (verify directly against the Parliament's Legislative Observatory as the procedure progresses, rather than treating any timeline as fixed). Taken together, the EU-level tokenisation pillar is genuinely thinner than the CASP, stablecoin or dealing/custody pillars: the current in-force text is a narrow, low-uptake sandbox regime, and its planned successor is still an unadopted proposal working through the ordinary legislative procedure. Most tokenisation activity in Europe beyond the pilot regime -- private-sector platforms, member-state-level initiatives, and any tokenised-asset activity falling under MiCA's CASP or ART/EMT titles rather than under the DLT Pilot Regime -- is either covered in other pillars of this jurisdiction or is out of the EU-level scope this radar tracks.",
+  "last_changed": "2025-12-04",
+  "key_links": [
+    {
+      "label": "EUR-Lex: Regulation (EU) 2022/858 on a pilot regime for DLT market infrastructures (DLT Pilot Regime)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2022/858/oj/eng"
+    },
+    {
+      "label": "EUR-Lex summary: Market infrastructures based on distributed ledger technology",
+      "url": "https://eur-lex.europa.eu/EN/legal-content/summary/market-infrastructures-based-on-distributed-ledger-technology.html"
+    },
+    {
+      "label": "ESMA: DLT Pilot Regime activities overview",
+      "url": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/dlt-pilot-regime"
+    },
+    {
+      "label": "ESMA: Report on the functioning and review of the DLT Pilot Regime, Article 14 (25 June 2025)",
+      "url": "https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf"
+    },
+    {
+      "label": "ESMA press release: ESMA suggests amendments to the DLT Pilot Regime to make it permanent and attractive",
+      "url": "https://www.esma.europa.eu/press-news/esma-news/esma-suggests-amendments-dlt-pilot-regime-make-it-permanent"
+    },
+    {
+      "label": "ESMA: Authorised DLT Market Infrastructures (list, January 2026 snapshot)",
+      "url": "https://www.esma.europa.eu/sites/default/files/2026-01/Authorised_DLT_Market_Infrastructures.pdf"
+    },
+    {
+      "label": "European Commission: Market Integration and Supervision Package (4 December 2025)",
+      "url": "https://finance.ec.europa.eu/publications/market-integration-and-supervision-package_en"
+    },
+    {
+      "label": "EUR-Lex: COM(2025) 943 final -- proposal amending Regulation (EU) 2022/858 and others (capital market integration and supervision)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:52025PC0943"
+    }
+  ],
+  "open_items": [
+    "This pillar covers only the EU-level DLT Pilot Regime text, ESMA's Article 14 review, and the Commission's amending proposal. Individual DLT market infrastructure authorisations (and any refusal, suspension or withdrawal of one) are acts of national competent authorities and are out of scope, even though ESMA coordinates and publishes the consolidated list.",
+    "The authorised-infrastructure count (three, per ESMA's June 2025 report and the January 2026 list snapshot cited here) should be re-checked against ESMA's live list before being repeated as current, since the list updates on a rolling basis and new applications were reported as pending.",
+    "COM(2025) 943 final is an unadopted legislative proposal. Its Article 8-area DLT Pilot Regime amendments (the EUR 100 billion cap, the DLT trading venue rename, CASP eligibility, removal of time limits) are proposed text only and must not be described as being in force until the co-decision procedure concludes; secondary commentary cited during this research suggested trialogues continuing into 2026-2027, but that timeline was not independently verified against the European Parliament's Legislative Observatory and should be re-confirmed directly there before being restated.",
+    "Regulation (EU) 2022/858 Article 14 sets a comprehensive-report deadline of 24 March 2026 for ESMA to report to the Commission; ESMA in fact published its report on 25 June 2025, well ahead of that date. This pillar state has not independently verified from primary EUR-Lex article text whether the 24 March 2026 date reflects an original three-year review clause or a since-amended deadline; the exact statutory basis for ESMA's early publication should be confirmed against the Regulation's full consolidated text.",
+    "Tokenised financial instruments issued or traded outside the DLT Pilot Regime -- including under general MiFID/CSDR rules at member-state level, or private-sector tokenisation activity generally -- are not tracked by this pillar, which is EU-level-instrument-specific by design; see the jurisdiction-wide EU-level-only scope note."
+  ],
+  "generated_at": "2026-07-11T19:03:31Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

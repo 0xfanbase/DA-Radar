@@ -1,0 +1,288 @@
+{
+  "documents": [
+    {
+      "item_hash": "071e458c6d0601176331507307aba4c9da13c95796039fba94ef9151a1fe22ea",
+      "link": "https://www.vara.ae/en/news/final-deadline-extension-for-virtual-asset-service-providers-to-file-for-vara-registration-or-license-to-operate-from-or-service-dubai/",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2023-11-07T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Final deadline extension for Virtual Asset Service Providers to file for VARA registration or license to operate from or service Dubai",
+      "type": "news"
+    },
+    {
+      "item_hash": "0e621d3edc458e658e7e750d762290ad5affacd1355609ff7f7f6c09c66a9312",
+      "link": "https://www.vara.ae/en/news/binance-secures-mvp-licence-from-dubais-virtual-assets-regulatory-authority/",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2022-09-19T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Binance Secures MVP Licence from Dubai's Virtual Assets Regulatory Authority",
+      "type": "news"
+    },
+    {
+      "item_hash": "116d56ae70248c454ea6be730b47b730e99b5c5471b2a9a0245377d2497a44ee",
+      "link": "https://www.vara.ae/en/news/bitoasis-becomes-the-first-broker-dealer-to-secure-mvp-operational-licence-from-dubais-virtual-asset-regulatory-authority/",
+      "pillar": [
+        "dealing_custody_advisory",
+        "exchanges_vatp"
+      ],
+      "published_at": "2023-05-01T00:00:00Z",
+      "regulator": "VARA",
+      "title": "BitOasis becomes the first Broker-Dealer to secure MVP Operational Licence from Dubai’s Virtual Asset Regulatory Authority",
+      "type": "news"
+    },
+    {
+      "item_hash": "3270bbbd90b4d5dc3cf99d74abcfd93d992e7318b4aafe280957644a60b171cc",
+      "link": "https://www.vara.ae/en/news/market-notice-market-wide-enforcements-pick-up-pace-as-final-vara-deadline-for-virtual-asset-service-provider-licensing-engagement-lapses/",
+      "pillar": [
+        "aml_cft_enforcement",
+        "exchanges_vatp"
+      ],
+      "published_at": "2023-11-17T00:00:00Z",
+      "regulator": "VARA",
+      "title": "MARKET Notice: Market-wide enforcements pick-up pace as final VARA deadline for Virtual Asset Service Provider licensing engagement lapses",
+      "type": "news"
+    },
+    {
+      "item_hash": "3ef14934fee81db749600f0ffd673037790cfc86b658efc6430d7de50ba7bf8b",
+      "link": "https://media.umbraco.io/dwtc/v3gfyica/circular-to-vasps-implementation-of-uae-anti-amlcft-pf-fv-1.pdf",
+      "pillar": [
+        "aml_cft_enforcement",
+        "exchanges_vatp"
+      ],
+      "published_at": "2026-03-04T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Implementation of the UAE Anti-Money Laundering, Counter-Terrorism Financing and Proliferation Financing Requirements Applicable to VASPs",
+      "type": "news"
+    },
+    {
+      "item_hash": "44ed8743d936628544683641ab93cd57839d971c8944ebecbe11217820d2da47",
+      "link": "https://www.vara.ae/en/news/dubais-vara-issues-specialised-regulations-for-virtual-assets/",
+      "pillar": [],
+      "published_at": "2023-02-07T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Dubai’s VARA issues specialised regulations for Virtual Assets",
+      "type": "news"
+    },
+    {
+      "item_hash": "572ddeffeaebc19dd51914dc09a0b8845a04724f1fa214bf71e15eab91c958da",
+      "link": "https://www.vara.ae/en/news/gcex-receives-mvp-preparatory-licence-from-dubais-virtual-assets-regulatory-authority/",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2023-02-17T00:00:00Z",
+      "regulator": "VARA",
+      "title": "GCEX Receives MVP Preparatory Licence from Dubai’s Virtual Assets Regulatory Authority",
+      "type": "news"
+    },
+    {
+      "item_hash": "575db98b35cb64b4a1a4bfe20b11fe5da088dba45b513a9e660b271b86bb5f62",
+      "link": "https://media.umbraco.io/dwtc/hhebemw5/circular-to-vasp-travel-rule-ardocx.pdf",
+      "pillar": [
+        "aml_cft_enforcement"
+      ],
+      "published_at": "2026-02-24T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Implementation of the UAE Virtual Assets Travel Rule Requirements",
+      "type": "news"
+    },
+    {
+      "item_hash": "5835ecf7ceb7cf5ac0cb27fffbacc2699cefd4021d8d5ffdf6b21694d12e8f65",
+      "link": "https://www.vara.ae/en/news/vara-and-det-join-forces-to-establish-best-in-class-market-assurance-standards-for-virtual-assets/",
+      "pillar": [],
+      "published_at": "2023-08-10T00:00:00Z",
+      "regulator": "VARA",
+      "title": "VARA and DET Join Forces to Establish Best-in-class Market Assurance Standards for Virtual Assets",
+      "type": "news"
+    },
+    {
+      "item_hash": "5b25f5d35448f4821ef9ff995727ac92818f49f1642c53aae99a30b08443f366",
+      "link": "https://www.vara.ae/en/news/komainu-secures-mvp-licence-from-dubais-virtual-assets-regulatory-authority/",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2022-11-21T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Komainu Secures MVP Licence from Dubai’s Virtual Assets Regulatory Authority",
+      "type": "news"
+    },
+    {
+      "item_hash": "6646dfacd48080e4e4b3e5268eae29e250f9e20b8f9ba8726ab1c4ae591d935d",
+      "link": "https://www.vara.ae/en/news/sca-vara-to-ensure-unified-va-sector-register-of-regulated-for-the-uae/",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2023-07-18T00:00:00Z",
+      "regulator": "VARA",
+      "title": "SCA-VARA to ensure Unified VA Sector Register of Regulated VASPs for the UAE",
+      "type": "news"
+    },
+    {
+      "item_hash": "8dfb7072a30188c1919f5422a001abbd1b6b1e904fc7c160cbec318f9265e336",
+      "link": "https://media.umbraco.io/dwtc/f5ufo23t/aan-circular-to-det-and-fzs-e-a-final.pdf",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2023-03-13T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Application Acknowledgment Notice [AAN] for Virtual Asset Service Providers [VASPs], and Transition of Legacy Firms3 – Deadline 31 March 2023.",
+      "type": "news"
+    },
+    {
+      "item_hash": "8fe3a09f568464ac25b1fbd3e5780c64796a6fe198feb952f761dab78c5ec34c",
+      "link": "https://www.vara.ae/en/news/vara-issues-regulations-governing-virtual-assets-marketing-as-the-foundation-for-safe-market-participation/",
+      "pillar": [],
+      "published_at": "2022-08-25T00:00:00Z",
+      "regulator": "VARA",
+      "title": "VARA issues Regulations governing Virtual Assets Marketing as the foundation for Safe Market participation",
+      "type": "news"
+    },
+    {
+      "item_hash": "9368392adb56583d655dd41473edd9f588343e6a06d0a805bd17624bab9cd58e",
+      "link": "https://www.vara.ae/en/news/web-3-launchpad-enjinstarter-mena-granted-initial-approval/",
+      "pillar": [],
+      "published_at": "2023-05-04T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Web3 launchpad Enjinstarter MENA granted Initial Approval by the Dubai’s Virtual Assets Regulatory Authority",
+      "type": "news"
+    },
+    {
+      "item_hash": "9aa83196d36955e34759b363086ff093be34c8dfad4a922443911b0af0d2845f",
+      "link": "https://www.vara.ae/en/news/vara-releases-staking-from-custody-services-rules/",
+      "pillar": [
+        "dealing_custody_advisory"
+      ],
+      "published_at": "2023-08-24T00:00:00Z",
+      "regulator": "VARA",
+      "title": "VARA Releases Staking from Custody Services Rules",
+      "type": "news"
+    },
+    {
+      "item_hash": "a0e8486ace1f192b15627c043db18e42af4d1ce7632c964299582ede170307cf",
+      "link": "https://www.vara.ae/en/news/hex-trust-receives-mvp-licence-from-dubais-virtual-assets-regulatory-authority/",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2022-11-24T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Hex Trust receives MVP Licence from Dubai’s Virtual Assets Regulatory Authority",
+      "type": "news"
+    },
+    {
+      "item_hash": "a5e96d3fd0477413f8eeba4c7fdf89a8f80176ba7e66f5f5bde13cfc6d388f6d",
+      "link": "https://media.umbraco.io/dwtc/pq2mku34/vasp-circular-on-iems-introduction.pdf",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2025-05-20T00:00:00Z",
+      "regulator": "VARA",
+      "title": "VARA hereby draws your attention to the requirements introduced by the UAE Financial Intelligence Unit (UAEFIU) regarding the use of the Integrated Enquiry Management System (hereinafter referred as the “IEMS”), and the expectations placed on all licensed and regulated Virtual Asset Service Providers (hereinafter referred as “VASPs”)",
+      "type": "news"
+    },
+    {
+      "item_hash": "af175c29cee40f73347b261f438decaddedd24824fb09451d97f34a19e289f6b",
+      "link": "https://www.vara.ae/en/news/regulated-virtual-assets-activities-are-now-offered-at-det-branches/",
+      "pillar": [],
+      "published_at": "2023-05-29T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Regulated Virtual Assets Activities are now offered at DET branches",
+      "type": "news"
+    },
+    {
+      "item_hash": "cbec9073825b0ef77bc9bf4e1c362a135482ca62bdfe40c200ddee265ca11d96",
+      "link": "https://www.vara.ae/en/news/dubais-det-and-free-zone-council-activate-applications-for-legacy-virtual-asset-operators-to-become-fully-regulated-under-vara/",
+      "pillar": [],
+      "published_at": "2023-04-14T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Dubai's DET and Free Zone Council activate applications for legacy virtual asset operators to become fully regulated under VARA",
+      "type": "news"
+    },
+    {
+      "item_hash": "e24a90deee7d1c8568073f25d231d449cb02128f36fa48a880231e3b8d384693",
+      "link": "https://media.umbraco.io/dwtc/h1yht0t5/carf-public-consultation.pdf",
+      "pillar": [],
+      "published_at": "2025-10-10T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Public Consultation on the UAE’s implementation of the Crypto-Asset Reporting Framework (“CARF”)",
+      "type": "news"
+    },
+    {
+      "item_hash": "eee68c3f111477e7a00019c085821d1c0357e7dfdd9cdbba16c0faeaec8bbf51",
+      "link": "https://www.vara.ae/en/news/crypto-com-secures-mvp-preparatory-license-from-dubais-virtual-assets-regulatory-authority/",
+      "pillar": [
+        "exchanges_vatp"
+      ],
+      "published_at": "2023-03-20T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Crypto.com Secures MVP Preparatory License from Dubai’s Virtual Assets Regulatory Authority",
+      "type": "news"
+    },
+    {
+      "item_hash": "f1383bade298bbad84a8068f43b572c57cdce7aafa142cffeab5eb098eabc521",
+      "link": "https://media.umbraco.io/dwtc/nslhra04/vara-circular-licensing-activities-final-v4-0.pdf",
+      "pillar": [
+        "stablecoins"
+      ],
+      "published_at": "2023-02-10T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Virtual Assets Licensing Activities Issuance from February in the Emirate of Dubai [excluding DIFC]",
+      "type": "news"
+    },
+    {
+      "item_hash": "f1ea9c335b51b312412101745e77f859f57ab6f3db5e03c28ddb64f106aaeb0c",
+      "link": "https://media.umbraco.io/dwtc/bmpneboh/vasp-circular-aml-federal-law-2025-v1.pdf",
+      "pillar": [
+        "aml_cft_enforcement",
+        "exchanges_vatp"
+      ],
+      "published_at": "2025-11-24T00:00:00Z",
+      "regulator": "VARA",
+      "title": "Publication of UAE Federal Decree-Law on AML/CFT/CPF (2025) — Mandatory GAP Assessment for VASPs",
+      "type": "news"
+    },
+    {
+      "item_hash": "fcc9e79a8df7a86cfc66deff67cdaa4dee1ede0531f9e3d5472f78d1a788b95e",
+      "link": "https://www.vara.ae/en/news/vara-defines-issuance-rules-to-be-the-global-standard-on-asset-reference-tokens/",
+      "pillar": [
+        "aml_cft_enforcement",
+        "stablecoins"
+      ],
+      "published_at": "2023-10-12T00:00:00Z",
+      "regulator": "VARA",
+      "title": "VARA Defines Issuance Rules to be the Global Standard on Asset Reference Tokens",
+      "type": "news"
+    },
+    {
+      "item_hash": "8fbfe47983051d4aeed9c08ccfa27f173667e26ad4c1ff71f4ae9e287c7dbefc",
+      "link": "https://www.uaecma.gov.ae/en/media-center/news/13/4/2026/هيئة-سوق-المال-تصدر-إطار-تنظيم-الأصول-الافتراضية-مؤسِّسةً-نظاماً-متكاملاً-يتكوّن-من-خمس-وحدات",
+      "pillar": [
+        "aml_cft_enforcement",
+        "banking_money",
+        "dealing_custody_advisory",
+        "exchanges_vatp",
+        "stablecoins"
+      ],
+      "published_at": "2026-04-13T00:00:00Z",
+      "regulator": "SCA / CMA",
+      "title": "The CMA Issues the Virtual Assets Framework, Establishing an Integrated Regulatory Regime Comprising Five Core Modules and Eight Regulated Activities",
+      "type": "news"
+    },
+    {
+      "item_hash": "d698ff8d003b3121287ac188d969912e044e2f886b5fdf5ea8119865125e2f0a",
+      "link": "https://rulebooks.vara.ae/rulebook/virtual-assets-and-related-activities-regulations-2023",
+      "pillar": [
+        "stablecoins"
+      ],
+      "published_at": "2023-02-07T00:00:00Z",
+      "regulator": "VARA",
+      "title": "VARA issues the Virtual Assets and Related Activities Regulations 2023, activating Dubai's dedicated virtual-asset regime",
+      "type": "news"
+    }
+  ],
+  "generated_at": "2026-07-13T00:59:15Z",
+  "jurisdiction_id": "uae",
+  "schema_version": 1
+}

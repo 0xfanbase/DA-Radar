@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "id": "cma",
+  "term": "CMA (Capital Market Authority)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "The UAE's federal securities and capital-markets regulator, covering the whole country except the two financial free zones (the DIFC and ADGM). Since 1 January 2026 the CMA is the direct legal successor to the former Securities and Commodities Authority (SCA) -- it is the same institution under a new name and a new founding statute, not a separate new body, so older documents that refer to 'the SCA' describe the CMA before its rename.",
+  "formal_definition": "Federal Decree-Law No. (32) of 2025 Concerning the Capital Market Authority, in force from 1 January 2026 (confirmed by direct fetch of the CMA's own domain, uaecma.gov.ae/en/new-cma-law), repeals Federal Law No. 4 of 2000 Concerning the Emirates Securities and Commodities Authority and Market in its entirety and reconstitutes the former Securities and Commodities Authority (SCA) as the Capital Market Authority (CMA), an independent federal public authority with its own legal personality that 'succeeds the SCA in all its rights, obligations and contracts.' Article 5(3) confines the CMA's powers to 'within the state, excluding financial free zones' -- i.e. outside the DIFC and ADGM, whose own regulators (DFSA and FSRA respectively) are unaffected by the CMA's remit. A companion statute, Federal Decree-Law No. (33) of 2025 Concerning the Regulation of the Capital Market, also in force 1 January 2026, recodifies the federal licensing regime for regulated financial activities and expressly expands the CMA's regulated-activities scope to virtual assets (Article 39 confirms the Authority regulates virtual-asset trading and related services, 'without prejudice to any provision in the Central Bank Law'). Building on this statutory base, the CMA issued a Virtual Assets Framework -- announced on the CMA's own site 13 April 2026, comprising five modules (General Requirements, Conduct of Business, Alternative Trading System, AML/CFT, and Prudential Requirements) and eight licensed virtual-asset activities, up from three under the prior SCA-era regime -- reported by multiple secondary legal-alert sources (not independently primary-verified) as CMA Decision No. 4/R.M/2026.",
+  "related_terms": [
+    "vatp",
+    "vara",
+    "dfsa",
+    "fsra",
+    "vasp",
+    "financial-free-zone"
+  ],
+  "first_used_card_id": "6646dfacd48080e4e4b3e5268eae29e250f9e20b8f9ba8726ab1c4ae591d935d",
+  "generated_at": "2026-07-13T14:32:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

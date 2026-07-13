@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "id": "mvp-licence",
+  "term": "MVP Licence (minimal viable product licence)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "A stage in VARA's (Dubai's virtual-asset regulator) licensing process. A firm that clears an earlier provisional-approval stage can be granted an MVP licence, letting it begin operating a defined set of licensed virtual-asset services under VARA's supervision.",
+  "formal_definition": "VARA's own published announcement of Komainu MEA FZE's licence approval states the firm received 'its minimal viable product licence' after 'provisional approval' had earlier been granted to it, and quotes VARA Chairman Helal Saeed Al Marri describing the firm as joining 'the MVP phase of the regulatory regime.' VARA's announcement does not itself set out the MVP phase's formal eligibility criteria or its place within a wider, formally named sequence of licensing stages beyond that earlier provisional-approval step; only the 'provisional approval' and 'MVP phase' terminology is confirmed directly from VARA's own published text.",
+  "related_terms": [
+    "vara",
+    "vasp"
+  ],
+  "first_used_card_id": "5b25f5d35448f4821ef9ff995727ac92818f49f1642c53aae99a30b08443f366",
+  "generated_at": "2026-07-13T16:05:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

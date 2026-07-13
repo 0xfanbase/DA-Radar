@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>SFA Bulletins</title>
+    <link>https://sfa.sylvania.invalid/rss/bulletins.xml</link>
+    <description>Sylvania Financial Authority bulletins</description>
+    <item>
+      <title>SFA bulletin one</title>
+      <link>https://sfa.sylvania.invalid/bulletins/one</link>
+      <guid>sfa-1</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <description>First Sylvania bulletin.</description>
+    </item>
+    <item>
+      <title>SFA bulletin two</title>
+      <link>https://sfa.sylvania.invalid/bulletins/two</link>
+      <guid>sfa-2</guid>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Second Sylvania bulletin.</description>
+    </item>
+  </channel>
+</rss>

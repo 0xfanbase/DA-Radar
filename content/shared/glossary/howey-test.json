@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "howey-test",
+  "term": "Howey test",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "The legal test US courts and the SEC use to decide whether an arrangement is an 'investment contract,' and therefore a 'security,' under the federal securities laws. It comes from the Supreme Court's 1946 decision in SEC v. W.J. Howey Co. and asks whether there is (1) an investment of money, (2) in a common enterprise, (3) with an expectation of profits derived from the efforts of others. The SEC and CFTC's March 2026 joint interpretation applies the Howey test as its central analytical tool for deciding whether a given crypto asset or crypto-asset transaction is, or is not, an investment contract -- and so a security -- describing this determination as fact-specific and capable of changing over the life of a crypto asset as the surrounding arrangement evolves. This entry describes the test's role in that analysis; it does not assess whether the test is well- or poorly-suited to crypto assets.",
+  "formal_definition": "SEC v. W.J. Howey Co., 328 U.S. 293 (1946). As restated by the SEC and CFTC in Release Nos. 33-11412; 34-105020 (effective March 23, 2026), footnote 7: 'The Howey test defines an investment contract as a contract, transaction, or scheme involving (1) an investment of money, (2) in a common enterprise, (3) with an expectation of profits derived from the efforts of others,' citing SEC v. W.J. Howey Co., 328 U.S. 293 (1946).",
+  "related_terms": [
+    "digital-commodity",
+    "digital-asset-security",
+    "sec"
+  ],
+  "first_used_card_id": "240ff989bb42b6a98147ecb79d85127444fa58f1deb659d3fa92d82d6c750a43",
+  "generated_at": "2026-07-12T18:07:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

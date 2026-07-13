@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "cbec9073825b0ef77bc9bf4e1c362a135482ca62bdfe40c200ddee265ca11d96",
+  "jurisdiction_id": "uae",
+  "published_date": "2023-04-14",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "exchanges_vatp",
+    "dealing_custody_advisory"
+  ],
+  "type": "guidance",
+  "title": "Dubai's DET and Free Zone Council activate applications for legacy virtual asset operators to become fully regulated under VARA",
+  "summary": "On 14 April 2023, VARA -- which regulates virtual asset activity in the Emirate of Dubai, including its free zones, but excluding the DIFC -- announced that Dubai's Department of Economy and Tourism (DET) and the Free Zones Council had activated the application process letting legacy virtual asset operators transition into VARA's licensing regime. Operators already carrying on virtual asset activities in Dubai before VARA's Virtual Assets and Related Activities Regulations 2023 took effect had to submit an Initial Disclosure Questionnaire to DET or their free zone authority by the final deadline of 30 April 2023. VARA would then issue each firm an Application Acknowledgement Notice setting its path toward being regulated or registered by 31 August 2023. Seven licensable virtual-asset activity types were named, including Exchange, Custody, Broker-Dealer, and Advisory Services.",
+  "why_it_matters": "VARA is the specialist regulator for virtual-asset businesses operating in Dubai outside the DIFC free zone, and this announcement set the concrete deadlines through which firms already operating before its 2023 licensing regime had to begin the formal process of becoming licensed, registered, or otherwise cleared to continue business.",
+  "key_dates": {
+    "deadline": "2023-04-30",
+    "effective": "2023-01-15",
+    "milestone": "2023-08-31"
+  },
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/dubais-det-and-free-zone-council-activate-applications-for-legacy-virtual-asset-operators-to-become-fully-regulated-under-vara/",
+      "quote": "by the final deadline of 30-April 2023"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T16:20:00Z",
+  "model": "Claude (Anthropic)"
+}

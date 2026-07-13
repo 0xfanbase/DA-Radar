@@ -1,7 +1,10 @@
-"""Derive content/document_library.json from the ledger -- a pure,
-deterministic view, same principle as pipeline/watcher/queue.py deriving
-data/queue.json: regenerated in full on every run, never accumulated, so
-"re-run adds nothing" holds here too.
+"""Derive content/{jurisdiction_id}/document_library.json from the ledger
+-- a pure, deterministic view, same principle as pipeline/watcher/queue.py
+deriving data/{jurisdiction_id}/queue.json: regenerated in full on every
+run, never accumulated, so "re-run adds nothing" holds here too. Carries
+the owning jurisdiction's own "jurisdiction_id" (from config, the same
+dict passed in for pillar_keywords/regulators) forward, required by
+pipeline/schemas/document_library.json since the registry-model pivot.
 
 This is the public-safe subset of the ledger (site structure item #5,
 "Document Library": "every primary document the watcher has seen: title,
@@ -44,7 +47,12 @@ def derive_document_library(ledger: dict, config: dict, run_ts: str) -> dict:
         }
         for e in entries
     ]
-    return {"schema_version": SCHEMA_VERSION, "generated_at": run_ts, "documents": documents}
+    return {
+        "schema_version": SCHEMA_VERSION,
+        "jurisdiction_id": config.get("jurisdiction_id"),
+        "generated_at": run_ts,
+        "documents": documents,
+    }
 
 
 def save_document_library(path: str, document_library_doc: dict) -> bool:

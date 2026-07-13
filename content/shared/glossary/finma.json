@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "id": "finma",
+  "term": "FINMA (Swiss Financial Market Supervisory Authority)",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "Switzerland's integrated financial regulator, supervising banks, securities firms, insurers, collective investment schemes, and financial market infrastructure such as stock exchanges and central securities depositories. FINMA has no dedicated digital-asset licence category; instead it applies Switzerland's existing, technology-neutral financial-market laws to crypto-asset business under a 'same risks, same rules' approach, publishing supervisory guidance (such as its 2018 ICO guidelines and 2024 stablecoin guidance) rather than new statutes, and licensing digital-asset infrastructure such as DLT trading facilities under existing frameworks amended for that purpose.",
+  "formal_definition": "Established under the Federal Act on the Swiss Financial Market Supervisory Authority (Finanzmarktaufsichtsgesetz, FINMASA/FINMAG) of 22 June 2007, SR 956.1. FINMA is Switzerland's single integrated prudential supervisor for banks, insurers, securities firms/dealers, collective investment schemes, and financial market infrastructure (Art. 3 FINMASA), and is the licensing and supervisory authority for the Art. 1b Banking Act 'fintech licence', the FMIA 'DLT trading facility' category, and CISA-authorised funds referenced elsewhere in this jurisdiction's coverage. FINMA describes its approach to crypto-asset business as applying existing law 'in a consistently technology-neutral way, i.e. in keeping with the \"same risks, same rules\" principle' (FINMA press release, 29 September 2021).",
+  "related_terms": [
+    "dlt-act",
+    "dlt-trading-facility",
+    "fintech-licence",
+    "ledger-based-security",
+    "payment-token",
+    "swiss-amla",
+    "finsa",
+    "finia"
+  ],
+  "first_used_card_id": "cf95e52fa13da650ceed71f6f2546ad2a9924924fbe9e4e1156d11cd5a299b1f",
+  "generated_at": "2026-07-12T20:00:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

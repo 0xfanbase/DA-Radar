@@ -1236,6 +1236,32 @@ Start Here pages is also a separate, immediate follow-up, not yet applied as of 
 until it lands, editorial rule 1's "every page and every card" provenance-display requirement is
 satisfied in the underlying data but not yet in the rendered site for these four content types.
 
+### 2026-07-11 — P6 multi-jurisdiction refactor: the operative-automation layer is the easiest
+thing to leave stale, and the hardest to notice
+
+Full detail of the P6 registry-model migration is in PROGRESS.md's matching entry. The finding
+worth generalizing here: the migration's own execution steps correctly moved every file, updated
+every schema, and re-pointed every pipeline entrypoint -- and pytest was green throughout, because
+the automated test suite exercises the deterministic pipeline code, not the prose instructions a
+human-triggered or CCR-triggered session actually reads. `docs/analyst-runbook.md`,
+`pipeline/prompts/{analyst,verifier}_prompt.md`, and three workflow YAML files (`correction.yml`,
+`analyze.yml`, `deploy.yml`) all still referenced the pre-migration flat paths after the "complete"
+migration -- silently, since nothing in the automated suite reads a `.md` runbook or asserts a
+workflow's `git add` path matches reality. This is the same class of gap as the GitHub Pages/Jekyll
+incident earlier this session (a green pipeline coexisting with broken reader-facing or operator-
+facing reality) but one layer removed: not the published site, but the *instructions a human or
+AI operator follows to operate the pipeline*. A dedicated skeptical final-check step caught it this
+time specifically because it was told to read the actually-operative files, not just re-run
+pytest -- worth remembering as a standing check for any future structural refactor: schema/code
+correctness and pytest-green do not imply the prose runbooks/prompts/workflow YAML that reference
+the same paths are still accurate, and nothing currently tests that they are.
+
+**Open, not decided:** editorial rule 3's "HK Government works are under copyright" phrasing was
+flagged during P6 planning as a candidate one-word generalization (to cover other jurisdictions'
+government works too) but the owner's explicit approvals for this round covered only rule 2 and
+the bot-identity naming. Left untouched -- still true for HK, just incomplete once other
+jurisdictions ship. Needs an explicit owner decision before or during P7-P14, not assumed.
+
 ## Audit findings, 2026-07-13
 
 - **link_rot**: Broken link: https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250128-2-EN (HTTPSConnectionPool(host='brdr.hkma.gov.hk', port=443): Max retries exceeded with url: /eng/doc-ldg/current/20250128-2-EN (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)'))))

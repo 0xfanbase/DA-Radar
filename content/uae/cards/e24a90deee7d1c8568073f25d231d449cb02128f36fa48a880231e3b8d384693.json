@@ -1,0 +1,30 @@
+{
+  "citations": [
+    {
+      "quote": "a new global standard for the automatic exchange of tax information on crypto-asset transactions",
+      "url": "https://media.umbraco.io/dwtc/h1yht0t5/carf-public-consultation.pdf"
+    },
+    {
+      "quote": "except within the jurisdiction of Dubai International Financial Centre (DIFC)",
+      "url": "https://www.vara.ae/en/"
+    }
+  ],
+  "generated_at": "2026-07-13T15:10:00Z",
+  "id": "e24a90deee7d1c8568073f25d231d449cb02128f36fa48a880231e3b8d384693",
+  "jurisdiction_id": "uae",
+  "key_dates": {
+    "deadline": "2025-11-08"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "exchanges_vatp"
+  ],
+  "published_date": "2025-10-10",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "VARA, the Virtual Assets Regulatory Authority that regulates virtual asset activity in the Emirate of Dubai outside the DIFC free zone, notified its regulated virtual asset service providers on 10 October 2025 of a public consultation on the UAE's implementation of the Crypto-Asset Reporting Framework (CARF), an OECD-developed global standard for the automatic exchange of tax information on crypto-asset transactions between jurisdictions. Under CARF, businesses providing crypto-asset services such as exchanges, brokers, and digital platforms may be classified as Reporting Crypto-Asset Service Providers, with duties to identify users, run tax-residency due diligence, and report transactions to the UAE's competent authority, which would then exchange the data with partner-jurisdiction tax authorities. The consultation sought feedback on scope, reporting timelines, due diligence, and compliance/enforcement considerations, with responses due by 8 November 2025.",
+  "title": "Public Consultation on the UAE's implementation of the Crypto-Asset Reporting Framework (\"CARF\")",
+  "type": "consultation",
+  "why_it_matters": "For newcomers: exchanges, brokers, and other virtual-asset platforms already regulated by VARA in Dubai now face CARF as a separate, additional obligation being layered on top -- one that would require them to identify customers' tax residency and report crypto-asset transaction data, which the UAE would then share with partner countries' tax authorities. This is Dubai's regulator flagging that global tax-transparency rules, not just anti-money-laundering rules, are now reaching into the crypto sector."
+}

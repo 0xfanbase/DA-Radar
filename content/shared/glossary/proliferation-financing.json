@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "proliferation-financing",
+  "term": "Proliferation financing (PF)",
+  "jurisdictions": [
+    "global"
+  ],
+  "plain_definition": "The financing of the spread of weapons of mass destruction (nuclear, chemical, biological or radiological) or their delivery systems, including financing that helps evade international sanctions aimed at stopping that spread. It is treated by the Financial Action Task Force (FATF) as a distinct financial-crime risk alongside money laundering and terrorist financing, so businesses that must run anti-money-laundering and counter-terrorist-financing (AML/CFT) programmes -- including virtual asset service providers -- are increasingly also required to identify, assess and mitigate proliferation-financing risk as part of the same compliance framework, rather than treating it as a lesser, optional add-on.",
+  "formal_definition": "In the UAE, Federal Decree-Law No. (10) of 2025 on Anti-Money Laundering, Combating the Financing of Terrorism and Proliferation Financing and its Executive Regulations (Cabinet Resolution No. (134) of 2025, effective 14 December 2025) require entities within the AML/CFT regime -- including Virtual Asset Service Providers (VASPs) -- to identify, assess and mitigate proliferation-financing risk as a distinct component of their Business Risk Assessment and ongoing risk-management framework, alongside existing money-laundering and terrorist-financing risks, including controls to identify and prevent attempts to evade or circumvent Targeted Financial Sanctions. VARA's 4 March 2026 circular to VASPs sets out its supervisory expectations for this expanded, proliferation-financing-inclusive risk-based framework.",
+  "related_terms": [
+    "vasp",
+    "vara",
+    "travel-rule"
+  ],
+  "first_used_card_id": "3ef14934fee81db749600f0ffd673037790cfc86b658efc6430d7de50ba7bf8b",
+  "generated_at": "2026-07-13T15:45:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

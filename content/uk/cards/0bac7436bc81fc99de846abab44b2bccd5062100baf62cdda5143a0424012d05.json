@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "0bac7436bc81fc99de846abab44b2bccd5062100baf62cdda5143a0424012d05",
+  "jurisdiction_id": "uk",
+  "published_date": "2026-05-18",
+  "regulator": "FCA",
+  "pillar": [
+    "tokenization_rwa",
+    "funds_etfs"
+  ],
+  "type": "consultation",
+  "title": "FCA and Bank of England publish joint Call for Input on the future of tokenisation; HM Treasury advances DIGIT digital gilt pilot",
+  "summary": "On 18 May 2026 the FCA, with the Bank of England and the Prudential Regulation Authority, published a joint Call for Input, 'The Future of Tokenisation,' seeking industry views on regulatory clarity for UK wholesale tokenised markets. It asks about the future of the Digital Securities Sandbox, where the FCA states 16 firms have already passed the first stage and are working towards going live, and about extending fund tokenisation following the FCA's April 2026 Policy Statement PS26/7. Feedback closes 3 July 2026; the authorities plan a joint response statement and cross-authority roadmap later in the year. Separately, HM Treasury's DIGIT pilot -- a distributed-ledger-technology-issued gilt instrument -- advanced when HM Treasury announced, on 12 February 2026, that it had appointed HSBC as the pilot's platform provider following a competitive procurement process.",
+  "why_it_matters": "This marks a coordinated push across three separate UK authorities -- the FCA, the Bank of England, and HM Treasury -- to make tokenised securities, funds, and even government debt a routine part of UK wholesale financial markets rather than one-off pilots. For a newcomer, the useful distinction is which body is responsible for which strand: the FCA and Bank of England on market-wide tokenisation policy questions, and HM Treasury specifically on its own DIGIT gilt pilot.",
+  "key_dates": {
+    "milestone": "2026-05-18",
+    "deadline": "2026-07-03"
+  },
+  "citations": [
+    {
+      "url": "https://www.fca.org.uk/publications/calls-input/future-tokenisation-joint-vision-authorities-uk-wholesale-markets",
+      "quote": "16 firms have already passed the first stage and are working towards going live"
+    },
+    {
+      "url": "https://www.gov.uk/government/news/update-on-the-procurement-for-digital-gilt-instrument-digit-pilot",
+      "quote": "appointed HSBC as the platform provider for the Digital Gilt Instrument (DIGIT) pilot issuance"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-11T14:03:00Z",
+  "model": "Claude (Anthropic)"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "financial-free-zone",
+  "term": "Financial Free Zone",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "The federal legal status that makes the DIFC and ADGM their own separate legal jurisdictions inside the UAE -- each with its own civil and commercial laws and its own courts -- distinct from an ordinary UAE free zone (which is typically just a customs/foreign-ownership zone, not a separate legal system). This is the statutory mechanism behind the recurring phrase 'excluding the Financial Free Zones' that appears in almost every UAE federal digital-asset rule.",
+  "formal_definition": "Federal Law No. (8) of 2004 Concerning Financial Free Zones permits the Federal Cabinet, by Federal Decree, to establish a Financial Free Zone in any Emirate, and exempts Financial Free Zones and the Financial Activities conducted in them from all federal civil and commercial laws -- while expressly preserving the application of federal criminal law, including federal anti-money-laundering law. Only two Financial Free Zones have been established under this Law to date: the DIFC (Dubai, by Dubai Law No. (9) of 2004, now Dubai Law No. (5) of 2021) and ADGM (Abu Dhabi, by Abu Dhabi Law No. (4) of 2013 and Federal Decree No. (15) of 2013). This project's own research directly fetched the operative definitional cross-reference confirming the statute is still in force and still the operative concept: the CBUAE's Payment Token Services Regulation (Circular No. C 2/2024) defines 'Financial Free Zones' in its own Article (1) as 'free zones subject to the provisions of Federal Law No. (8) of 2004, regarding Financial Free Zones, as amended', confirmed verbatim by direct fetch of the live CBUAE Rulebook. Because a Financial Free Zone sits outside federal civil/commercial law, each of the UAE's federal digital-asset instruments -- the CBUAE's Payment Token Services Regulation and the CMA's Virtual Assets Framework among them -- expressly and separately carves the DIFC and ADGM out of its territorial scope, leaving the DFSA and FSRA respectively as the sole regulators of financial services, including virtual-asset activity, inside each zone.",
+  "related_terms": [
+    "difc",
+    "adgm",
+    "cbuae",
+    "cma",
+    "vara"
+  ],
+  "first_used_card_id": "6646dfacd48080e4e4b3e5268eae29e250f9e20b8f9ba8726ab1c4ae591d935d",
+  "generated_at": "2026-07-13T14:32:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

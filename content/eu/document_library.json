@@ -1,0 +1,32 @@
+{
+  "documents": [
+    {
+      "item_hash": "4abcb472a38aa1f04ec85d986e59eb7ac560dbf82ab622a910bc18c7d85548bc",
+      "link": "https://www.esma.europa.eu/press-news/esma-news/esma-launches-common-supervisory-action-casps-digital-operational-resilience",
+      "pillar": [
+        "aml_cft_enforcement",
+        "dealing_custody_advisory",
+        "exchanges_vatp",
+        "tokenization_rwa"
+      ],
+      "published_at": null,
+      "regulator": "ESMA",
+      "title": "ESMA launches Common Supervisory Action on CASPs’ digital operational resilience for custody",
+      "type": "news"
+    },
+    {
+      "item_hash": "f62731290eae2a22b003a6b670bb98bfbe1b9bcbb0c36397146634e6c104d597",
+      "link": "https://www.esma.europa.eu/press-news/esma-news/esma-publishes-technical-standards-ccp-admission-criteria-elements",
+      "pillar": [
+        "aml_cft_enforcement"
+      ],
+      "published_at": null,
+      "regulator": "ESMA",
+      "title": "ESMA publishes technical standards on CCP admission criteria elements",
+      "type": "news"
+    }
+  ],
+  "generated_at": "2026-07-12T04:07:10Z",
+  "jurisdiction_id": "eu",
+  "schema_version": 1
+}

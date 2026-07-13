@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "test-term",
+  "term": "Test Term",
+  "jurisdictions": ["hk"],
+  "plain_definition": "A plain-language definition for testing.",
+  "formal_definition": "A formal definition for testing.",
+  "related_terms": ["another-term"],
+  "first_used_card_id": "card1",
+  "generated_at": "2026-01-01T00:00:00Z",
+  "model": "test-model",
+  "status": "unverified"
+}

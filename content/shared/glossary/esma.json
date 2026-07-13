@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "esma",
+  "term": "ESMA (European Securities and Markets Authority)",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "The EU's securities-markets regulator, and the lead EU-level body for most of MiCA's crypto-asset service provider (CASP), trading-platform, and market-abuse provisions, as well as the DLT Pilot Regime. ESMA writes technical standards and guidelines that bind national competent authorities and, in some cases, firms directly; maintains the EU-wide interim register of authorised CASPs and of entities providing crypto-asset services without authorisation; and coordinates NCA supervisory practice, including through Common Supervisory Actions. ESMA does not itself authorise or supervise individual firms -- that remains an NCA function under national administrative procedure. It plays a broadly similar EU-level standard-setting role to how Hong Kong's SFC or the UK's FCA set rules for securities-type activity, but ESMA sits above, rather than in place of, the 27 member-state regulators.",
+  "formal_definition": "The European Securities and Markets Authority, established under Regulation (EU) No 1095/2010 (the ESMA Regulation), is the EU-level authority for MiCA Title V (CASP authorisation and operating conditions) and Title VI (market abuse) technical standards and guidelines, and for Regulation (EU) 2022/858 (the DLT Pilot Regime)'s Article 14 review function.",
+  "related_terms": [
+    "eba",
+    "mica",
+    "casp",
+    "nca",
+    "ec"
+  ],
+  "first_used_card_id": "f8da9f58b4a403d8daba10c1197d70c08735f6125d5a7bc089b79a48f369cbca",
+  "generated_at": "2026-07-12T10:00:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

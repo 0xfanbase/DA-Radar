@@ -1,9 +1,17 @@
 """Ledger load/diff/upsert/save -- the watcher's idempotency memory.
 
-data/ledger.json is keyed by item_hash -> {..., status, card_id}. Phase 1
-only ever writes status="queued"; later phases move items through
-drafted -> verified -> published (and corrected / suppressed / error from
-there), per the lifecycle documented in IMPROVEMENT_BACKLOG.md.
+data/{jurisdiction_id}/ledger.json is keyed by item_hash -> {..., status,
+card_id}. Phase 1 only ever writes status="queued"; later phases move
+items through drafted -> verified -> published (and corrected /
+suppressed / error from there), per the lifecycle documented in
+IMPROVEMENT_BACKLOG.md.
+
+Every ledger dict built or rebuilt by this module carries a top-level
+"jurisdiction_id" (required by pipeline/schemas/ledger.json since the
+registry-model pivot). This module holds no jurisdiction id of its own --
+it only ever propagates ledger.get("jurisdiction_id") forward from
+whatever was already loaded (or an explicit jurisdiction_id passed to
+load_ledger, for bootstrapping a ledger that doesn't exist on disk yet).
 """
 from __future__ import annotations
 
@@ -39,9 +47,18 @@ class InvalidStatusTransition(Exception):
     lifecycle doesn't allow (see _VALID_TRANSITIONS)."""
 
 
-def load_ledger(path: str) -> dict:
+def load_ledger(path: str, jurisdiction_id: str | None = None) -> dict:
+    """jurisdiction_id is only used to seed a brand-new ledger (the file
+    doesn't exist yet on disk) -- an existing file's own "jurisdiction_id"
+    always wins, since the file on disk is the source of truth once it
+    exists."""
     if not os.path.exists(path):
-        return {"schema_version": SCHEMA_VERSION, "generated_at": None, "items": {}}
+        return {
+            "schema_version": SCHEMA_VERSION,
+            "jurisdiction_id": jurisdiction_id,
+            "generated_at": None,
+            "items": {},
+        }
     with open(path, "r", encoding="utf-8") as fh:
         return json.load(fh)
 
@@ -88,7 +105,12 @@ def upsert_items(ledger: dict, new_items: Iterable["NormalizedItem"], run_ts: st
             "status": "queued",
             "card_id": None,
         }
-    return {"schema_version": SCHEMA_VERSION, "generated_at": run_ts, "items": items}
+    return {
+        "schema_version": SCHEMA_VERSION,
+        "jurisdiction_id": ledger.get("jurisdiction_id"),
+        "generated_at": run_ts,
+        "items": items,
+    }
 
 
 def save_ledger(path: str, ledger: dict) -> bool:
@@ -123,7 +145,12 @@ def set_item_status(ledger: dict, item_hash: str, new_status: str, *, run_ts: st
     new_items = dict(items)
     new_items[item_hash] = new_entry
 
-    return {"schema_version": SCHEMA_VERSION, "generated_at": run_ts, "items": new_items}
+    return {
+        "schema_version": SCHEMA_VERSION,
+        "jurisdiction_id": ledger.get("jurisdiction_id"),
+        "generated_at": run_ts,
+        "items": new_items,
+    }
 
 
 def mark_drafted(ledger: dict, item_hash: str, card_id: str, run_ts: str) -> dict:

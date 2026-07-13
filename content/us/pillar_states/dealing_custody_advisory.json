@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "pillar": "dealing_custody_advisory",
+  "status_seal": "no_dedicated_regime",
+  "regulator": "SEC, CFTC, and OCC",
+  "instruments": [
+    "Securities Exchange Act Rule 15c3-3, the Customer Protection Rule (17 CFR 240.15c3-3), as applied to broker-dealer custody of crypto asset securities via SEC Division of Trading and Markets FAQs (Frequently Asked Questions Relating to Crypto Asset Activities and Distributed Ledger Technology, first issued 15 May 2025, updated 17 December 2025 and 19 February 2026)",
+    "SEC and FINRA: Withdrawal of Joint Staff Statement on Broker-Dealer Custody of Digital Asset Securities (effective 15 May 2025, withdrawing the 8 July 2019 Joint Staff Statement)",
+    "SEC Division of Trading and Markets: Statement and Request for Comment Regarding the Custody of Digital Asset Securities by Special Purpose Broker-Dealers (press release 2020-340, 25 December 2020) -- not withdrawn, but confirmed non-mandatory by the May 2025 FAQs",
+    "Investment Advisers Act Rule 206(4)-2, the Custody Rule (17 CFR 275.206(4)-2)",
+    "SEC: Withdrawal of Proposed Regulatory Actions, Release Nos. 33-11377; 34-103247; IA-6885; IC-35635 (effective 17 June 2025), withdrawing the March 2023 proposed 'Safeguarding Advisory Client Assets' rule (proposed new Advisers Act Rule 223-1, 88 FR 14672)",
+    "SEC Division of Investment Management: no-action letter to Simpson Thacher & Bartlett LLP regarding treatment of State Trust Companies as qualified custodians for crypto assets under the Custody Rule and Investment Company Act (30 September 2025)",
+    "Securities Exchange Act Section 3(a)(25) (15 U.S.C. 78c(a)(25)), the transfer agent definition, as applied to crypto asset securities and distributed ledger technology via SEC Division of Trading and Markets FAQ guidance",
+    "SEC Fall 2026 Unified Agenda of Regulatory and Deregulatory Actions, RIN 3235-AN48, 'Amendments to Broker-Dealer Financial Responsibility and Recordkeeping and Reporting Rules Regarding Crypto Assets,' Proposed Rule Stage, published 7 July 2026",
+    "OCC Interpretive Letter #1170 (22 July 2020, national bank crypto-asset custody services)",
+    "OCC Interpretive Letter #1183 (7 March 2025, rescinding the Interpretive Letter #1179 supervisory non-objection process and reaffirming Interpretive Letters #1170, #1172, and #1174)",
+    "OCC Interpretive Letter #1184 (7 May 2025, national bank purchase/sale of custodied assets at customer direction and outsourcing of custody and execution services to third parties)",
+    "Commodity Exchange Act Section 4d (7 U.S.C. 6d, futures commission merchant registration, dealing, and customer-fund segregation duties) and Section 4f (7 U.S.C. 6f, registration of futures commission merchants and introducing brokers)",
+    "CFTC Letter No. 25-40 (Market Participants Division no-action relief, 8 December 2025), permitting futures commission merchants to accept certain non-security digital assets as customer margin collateral, and withdrawing CFTC Staff Advisory No. 20-34"
+  ],
+  "standing_summary": "There is no single federal custody, dealing, or advisory regime for crypto assets; coverage is fragmented across the SEC, the CFTC, and the OCC, each acting within its own existing statutory framework rather than under a dedicated crypto-custody statute, and this fragmentation -- not a unified regime -- is the federal-level structural fact for this pillar. SEC -- broker-dealer custody: broker-dealer custody of crypto assets that are securities is governed by the existing Customer Protection Rule (Exchange Act Rule 15c3-3), not by a crypto-specific rule. On 15 May 2025, the staffs of the SEC's Division of Trading and Markets and FINRA withdrew, effective immediately, their 8 July 2019 Joint Staff Statement on Broker-Dealer Custody of Digital Asset Securities; the withdrawal statement itself states that, like all staff statements, it 'is not a rule, regulation, or statement of the Securities and Exchange Commission' and 'has no legal force or effect.' The same day, the Division of Trading and Markets issued FAQs (updated 17 December 2025 and again 19 February 2026) addressing how Rule 15c3-3 applies to crypto asset securities; those FAQs state that the Division's earlier Statement and Request for Comment Regarding the Custody of Digital Asset Securities by Special Purpose Broker-Dealers (25 December 2020) 'did not amend Rule 15c3-3 or any other rule,' so the special purpose broker-dealer (SPBD) framework that statement described remains available but is not mandatory -- a broker-dealer may instead establish 'possession or control' of crypto asset securities under Rule 15c3-3(c)'s existing control-location provisions without SPBD status. SEC -- investment adviser custody: the Advisers Act's existing Custody Rule (Rule 206(4)-2) does not by its terms extend qualified-custodian requirements to crypto assets that are not securities. A March 2023 proposal to replace it with a broader 'Safeguarding Rule' (proposed new Rule 223-1), which would have covered virtually all client assets including non-security crypto assets, was formally withdrawn by the Commission effective 17 June 2025 (Release Nos. 33-11377; 34-103247; IA-6885; IC-35635), which states the Commission 'does not intend to issue final rules with respect to' the withdrawn proposals. In the resulting gap, the SEC's Division of Investment Management issued a no-action letter on 30 September 2025 (to Simpson Thacher & Bartlett LLP) stating the Division 'would not recommend enforcement action to the Commission under the Custody Provisions against a Registered Adviser or Regulated Fund for treating a State Trust Company as a \"bank\"' for custody of crypto assets and related cash, conditioned on the adviser or fund having a reasonable, documented basis to believe the state trust company is authorized by its state banking authority to provide crypto custody services and maintains safeguarding controls, among other conditions; the letter is staff no-action relief, not a Commission rule. SEC -- transfer agents: the Division of Trading and Markets' FAQ guidance states that a person providing services for crypto asset securities must analyze whether those securities are 'Section 12 securities' and whether the services performed are transfer-agent functions under Exchange Act Section 3(a)(25), and that a registered transfer agent may use distributed ledger technology as its official master securityholder file provided it otherwise complies with the transfer agent rules under Exchange Act Sections 17A(a)(1) and 17(b). SEC -- 2026 rulemaking agenda: the SEC's Unified Agenda published 7 July 2026 lists RIN 3235-AN48, 'Amendments to Broker-Dealer Financial Responsibility and Recordkeeping and Reporting Rules Regarding Crypto Assets,' at the Proposed Rule Stage; the agenda abstract describes contemplated amendments to the broker-dealer net capital rule (15c3-1), the customer protection rule (15c3-3), and the broker-dealer recordkeeping rules (17a-3, 17a-4) to address their application to crypto assets -- this is the custody-adjacent item on the SEC's current agenda for this pillar. As of this writing no proposed rule text has been published. OCC -- national bank custody: the OCC has stated in a chain of interpretive letters that national banks and federal savings associations may provide crypto-asset custody services. Interpretive Letter #1170 (22 July 2020) first confirmed this authority. Interpretive Letter #1179 (18 November 2021) added a requirement that banks obtain a supervisory non-objection and demonstrate adequate controls before engaging in the crypto activities addressed by Letters #1170, #1172, and #1174. Interpretive Letter #1183 (7 March 2025) rescinded that supervisory non-objection process, stating it 'is no longer necessary' given that banks are expected to conduct these activities consistent with safe and sound banking practices under standard supervisory processes, while reaffirming the underlying permissibility of the custody, stablecoin-reserve, and node-verification activities described in Letters #1170, #1172, and #1174. Interpretive Letter #1184 (7 May 2025) further confirmed that national banks may buy and sell crypto assets held in custody at a customer's direction and may outsource bank-permissible crypto-asset custody and execution activities to third parties, subject to third-party risk management requirements. CFTC -- intermediaries: the CFTC's jurisdiction over dealing and custody-adjacent activity runs through its registered intermediary categories -- futures commission merchants (FCMs) and introducing brokers (IBs), registered under Commodity Exchange Act Section 4f (7 U.S.C. 6f) and subject to customer-fund segregation duties under Section 4d (7 U.S.C. 6d) -- for derivatives in commodity-classified crypto assets; the CFTC does not have a general spot-custody licensing regime, consistent with its long-acknowledged lack of direct oversight of spot commodity markets (described in the Exchanges/VATP pillar). On 8 December 2025, the CFTC's Market Participants Division issued Letter No. 25-40, no-action relief stating that FCMs may accept certain non-security digital assets -- initially limited to bitcoin, ether, and payment stablecoins -- as customer margin collateral, subject to interim reporting conditions, and withdrew the prior CFTC Staff Advisory No. 20-34, which had restricted FCMs' acceptance of virtual currencies as customer collateral. Where SEC and CFTC treatment of dealing/custody intermediaries differs, it differs by the classification of the underlying crypto asset and the nature of the activity, not by a shared rule each agency applies differently: the SEC's custody framework (Rule 15c3-3, the Custody Rule) governs crypto asset securities held by broker-dealers and advisers, while the CFTC's framework governs margin collateral and customer funds held by FCMs/IBs in connection with crypto-asset derivatives; neither agency's framework is presented here as more correct or more advanced than the other's. This pillar covers the federal level only: state trust-company chartering and supervision (including the state banking-authority authorization referenced in the SEC's September 2025 no-action letter) and state money-transmitter licensing regimes for custody activity are out of scope.",
+  "last_changed": "2026-07-07",
+  "key_links": [
+    {
+      "label": "SEC: Withdrawal of Joint Staff Statement on Broker-Dealer Custody of Digital Asset Securities (15 May 2025)",
+      "url": "https://www.sec.gov/newsroom/speeches-statements/withdrawal-joint-staff-statement-broker-dealer-custody-digital-asset-securities"
+    },
+    {
+      "label": "SEC: Division of Trading and Markets -- Frequently Asked Questions Relating to Crypto Asset Activities and Distributed Ledger Technology (15 May 2025, updated 19 Feb 2026)",
+      "url": "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-relating-crypto-asset-activities-distributed-ledger-technology"
+    },
+    {
+      "label": "SEC: SEC Issues Statement and Requests Comment Regarding the Custody of Digital Asset Securities by Special Purpose Broker-Dealers (press release 2020-340)",
+      "url": "https://www.sec.gov/newsroom/press-releases/2020-340"
+    },
+    {
+      "label": "SEC: Safeguarding Advisory Client Assets -- withdrawal of the 2023 proposed rule, Release Nos. 33-11377; 34-103247; IA-6885; IC-35635 (effective 17 Jun 2025)",
+      "url": "https://www.sec.gov/rules-regulations/2025/06/safeguarding-advisory-client-assets"
+    },
+    {
+      "label": "SEC: Division of Investment Management no-action letter to Simpson Thacher & Bartlett LLP -- State Trust Companies as crypto asset custodians (30 Sep 2025)",
+      "url": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-investment-management-staff-no-action-interpretive-letters/simpsonthacherbartlett093025"
+    },
+    {
+      "label": "reginfo.gov: Unified Agenda entry for RIN 3235-AN48, 'Amendments to Broker-Dealer Financial Responsibility and Recordkeeping and Reporting Rules Regarding Crypto Assets' (Proposed Rule Stage)",
+      "url": "https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=3235-AN48"
+    },
+    {
+      "label": "OCC: OCC Clarifies Bank Authority to Engage in Certain Cryptocurrency Activities -- Interpretive Letter #1183 (news release NR-OCC-2025-16, 7 Mar 2025)",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-16.html"
+    },
+    {
+      "label": "OCC: Interpretive Letter #1183 (7 Mar 2025, full text PDF)",
+      "url": "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2025/int1183.pdf"
+    },
+    {
+      "label": "OCC: OCC Clarifies Bank Authority to Engage in Crypto-Asset Custody and Execution Services -- Interpretive Letter #1184 (news release NR-OCC-2025-42, 7 May 2025)",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-42.html"
+    },
+    {
+      "label": "OCC: Interpretive Letter #1184 (7 May 2025, full text PDF)",
+      "url": "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2025/int1184.pdf"
+    },
+    {
+      "label": "CFTC: CFTC Letter No. 25-40, no-action relief on digital assets as FCM margin collateral (8 Dec 2025, full text PDF)",
+      "url": "https://www.cftc.gov/csl/25-40/download"
+    },
+    {
+      "label": "CFTC: Acting Chairman Pham Announces Launch of Digital Assets Pilot Program for Tokenized Collateral in Derivatives Markets (press release 9146-25, 8 Dec 2025)",
+      "url": "https://www.cftc.gov/PressRoom/PressReleases/9146-25"
+    },
+    {
+      "label": "Cornell LII: 7 U.S. Code Section 6d -- futures commission merchant/introducing broker registration and segregation duties",
+      "url": "https://www.law.cornell.edu/uscode/text/7/6d"
+    }
+  ],
+  "open_items": [
+    "This pillar covers the federal level only. State trust-company chartering, examination, and supervision (including the state banking-authority authorization that the SEC's 30 September 2025 no-action letter requires advisers and funds to have a reasonable basis to believe exists) and state money-transmitter licensing regimes for dealing/custody activity are real and materially affect where and how these services are provided, but are out of scope of this pillar.",
+    "Broker-dealer and CFTC intermediary registration/venue-authorization frameworks, and the September 2025 SEC-CFTC joint staff statement and March 2026 joint interpretation (Release Nos. 33-11412; 34-105020), are tracked in the Exchanges (VATP) pillar and cross-referenced here rather than re-quoted at length, to avoid duplicating citations across pillars.",
+    "GENIUS Act reserve-custody and attestation mechanics for payment stablecoin issuers are tracked in the Stablecoins pillar, not here, notwithstanding the overlap with 'custody' as a term.",
+    "The SPBD framework (SEC press release 2020-340) has not itself been withdrawn or rescinded by the Commission; the May 2025 and December 2025 Division of Trading and Markets FAQs state only that compliance with it is not mandatory and that broker-dealers may instead rely on Rule 15c3-3(c)'s existing control-location provisions. This pillar does not characterize the SPBD framework's practical relevance going forward, since no Commission action formally retiring it was identified.",
+    "The 30 September 2025 Division of Investment Management no-action letter is staff-level no-action relief addressed to a named requesting firm (Simpson Thacher & Bartlett LLP, on behalf of unnamed clients), not a Commission rule; it does not amend the Custody Rule and, like all staff no-action letters, reflects only the Division's own enforcement-recommendation position on the specific facts presented.",
+    "RIN 3235-AN48 is at the Proposed Rule Stage only as of the 7 July 2026 Unified Agenda publication; no proposed rule text, comment period, or final rule exists yet, and the agenda's stated target date is the agency's own plan, not a commitment this pillar state predicts will be met.",
+    "The OCC interpretive letters cited (#1170, #1183, #1184) were substantially corroborated via the OCC's own HTML news-release pages rather than the full primary PDF text, which returned corrupted or unparseable text on direct fetch during this research; the letter numbers, dates, and operative content were cross-checked against multiple secondary legal-alert summaries of the official texts for consistency before inclusion.",
+    "This research did not independently verify whether the CFTC has published a parallel intermediary-specific (FCM/IB) crypto rulemaking, as distinct from Letter No. 25-40's no-action relief, in a 2026 CFTC regulatory agenda; no such primary source was located and none is claimed here.",
+    "Investment-company (1940 Act) custody treatment of crypto assets held by registered funds, as distinct from adviser custody under the Advisers Act, is referenced only via the Investment Company Act release number (IC-35635) in the June 2025 withdrawal notice; a dedicated 1940 Act fund-custody item is tracked, where relevant to product structure, in the Funds & ETFs pillar."
+  ],
+  "generated_at": "2026-07-12T05:37:27Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

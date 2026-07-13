@@ -1,13 +1,62 @@
 {% extends "base.html" %}
 {% import "_macros.html" as m %}
 {% import "_timeline.html" as t %}
-{% block title %}Timeline &mdash; HK Digital Asset Radar{% endblock %}
+{% block title %}{{ jurisdiction_name }} &mdash; Timeline &mdash; {{ site_name }}{% endblock %}
 {% block content %}
-<h1 class="plate">Timeline</h1>
-{{ t.timeline_ribbon(timeline_events, trajectory, "full") }}
+<h1 class="plate">{{ jurisdiction_name }}: Timeline</h1>
+{#
+  Three stacked bands, per the P7 merge design (this template used to be
+  a thin wrapper around just the ribbon include below, with the
+  Trajectory Board living on its own separate trajectory.html page --
+  see that file's git history; it no longer exists as a standalone page,
+  and pipeline/site/generate.py's REDIRECT_STUBS sends its old URL here):
+
+    Band 1 -- the precise ribbon (dated cards + documents) and
+    Band 2 -- the Ahead rail (trajectory entries as pills, positioned by
+    window_sort_key, never on Band 1's precise date axis)
+    are both rendered by the one timeline_ribbon() include below -- see
+    pipeline/site/templates/_timeline.html for how the two bands share
+    one <section>.
+
+    Band 3 -- "Ahead, by pillar" immediately below: the same trajectory
+    entries as the old Trajectory Board's grouped, full-detail table
+    (full event text, window, confidence, source, and the generation/
+    verification provenance trio), moved here verbatim rather than
+    reimplemented -- same .trajectory-board/.trajectory-row markup and
+    CSS classes, so the theme-invariant "always a dark ticker board"
+    identity (--trajectory-surface/--trajectory-ink tokens, the amber-
+    border contrast fix) carries over with no visual change at all.
+#}
+{{ t.timeline_ribbon(timeline_events, trajectory, "full", asset_prefix=asset_prefix) }}
+
+<h2>Ahead, by pillar</h2>
+<p>Officially announced upcoming events &mdash; consultation deadlines, licence batches, bill milestones, effective dates. Only items a regulator has stated publicly; nothing speculative.</p>
+<div class="trajectory-board" role="table" aria-label="Upcoming regulatory events">
+  <div class="trajectory-row" role="row" style="font-size:0.7rem;opacity:0.7;">
+    <span role="columnheader">Date / window</span>
+    <span role="columnheader">Event</span>
+    <span role="columnheader">Pillar &middot; source</span>
+  </div>
+  {% for entry in trajectory %}
+  <div class="trajectory-row" role="row">
+    <span class="flap date-window" role="cell">{{ entry.date_or_window }}</span>
+    <span class="flap event {% if entry.confidence == 'indicated' %}confidence-indicated{% endif %}" role="cell">{{ entry.event }}</span>
+    <span class="flap" role="cell">
+      {{ entry.pillar_name }} &middot; <a href="{{ entry.source_url }}" style="color:inherit;">source</a>
+      <span class="trajectory-provenance">generated {{ entry.generated_at }} &middot; {{ entry.model }} &middot;
+        {% if entry.status == "corrected" %}<a href="{{ asset_prefix }}method.html#corrections-log" style="color:inherit;">Corrected &mdash; see corrections log</a>{% else %}Not independently verified{% endif %}
+      </span>
+    </span>
+  </div>
+  {% else %}
+  <div class="trajectory-row" role="row"><span role="cell">No officially announced upcoming events on record yet.</span></div>
+  {% endfor %}
+</div>
+
+<h2>All summary cards</h2>
 <p>Every summary card the analyst has drafted and the verifier has checked, most recent first.</p>
 {% for c in cards %}
-  {{ m.card(c) }}
+  {{ m.card(c, asset_prefix=asset_prefix) }}
 {% else %}
 <p>No cards published yet.</p>
 {% endfor %}

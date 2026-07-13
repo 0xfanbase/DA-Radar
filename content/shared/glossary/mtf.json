@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "id": "mtf",
+  "term": "MTF (Multilateral Trading Facility)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "A trading venue that brings together multiple buyers' and sellers' orders for virtual assets under fixed, non-discretionary rules -- broadly, an exchange or order-matching venue, as distinct from a firm that deals in virtual assets as principal on its own book. 'Operating a Multilateral Trading Facility' is one of the eight virtual-asset activities the UAE's Capital Market Authority (CMA) licenses under its Virtual Assets Framework.",
+  "formal_definition": "Named as one of the eight regulated virtual-asset activities in the CMA's Virtual Assets Framework, announced 13 April 2026 (see the cma glossary entry): 'Operating a Multilateral Trading Facility'. This project's own live fetch of the CMA's announcement page returned only the headline text confirming the activity's name and the framework's five-module, eight-activity structure; the fuller statutory definition of the term as used in the Framework itself could not be retrieved (the CMA's news article did not render beyond its headline/listing content on direct fetch) and is not asserted here.",
+  "related_terms": [
+    "cma",
+    "vasp"
+  ],
+  "first_used_card_id": "8fbfe47983051d4aeed9c08ccfa27f173667e26ad4c1ff71f4ae9e287c7dbefc",
+  "generated_at": "2026-07-13T15:20:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

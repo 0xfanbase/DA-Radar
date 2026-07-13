@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "site_name": "Test Digital Asset Radar",
+  "jurisdictions": [
+    {
+      "id": "hk",
+      "name": "Hong Kong",
+      "config": "config/jurisdictions/hk.json",
+      "status": {
+        "watcher": "live",
+        "analyst_verifier": "live",
+        "seeded": true
+      },
+      "coverage_notes": "Test fixture jurisdiction."
+    },
+    {
+      "id": "sg",
+      "name": "Singapore",
+      "config": null,
+      "status": {
+        "watcher": "planned",
+        "analyst_verifier": "planned",
+        "seeded": false
+      },
+      "coverage_notes": "Test fixture jurisdiction, not yet seeded."
+    }
+  ],
+  "pillars": [
+    {"id": "stablecoins", "name": "Stablecoins"},
+    {"id": "exchanges_vatp", "name": "Exchanges (VATP)"}
+  ],
+  "seal_vocabulary": {
+    "in_force": "In force",
+    "bill_pending": "Bill pending"
+  },
+  "fetch_defaults": {
+    "timeout_seconds": 15,
+    "max_retries": 3,
+    "backoff_base_seconds": 1.0,
+    "backoff_multiplier": 2.0
+  }
+}

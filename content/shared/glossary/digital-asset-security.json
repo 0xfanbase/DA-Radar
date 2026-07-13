@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "digital-asset-security",
+  "term": "Digital asset security (digital security)",
+  "jurisdictions": [
+    "us"
+  ],
+  "plain_definition": "The SEC and CFTC's March 2026 joint interpretation's taxonomy category for what it calls a 'digital security' -- commonly known as a 'tokenized' security: a financial instrument that already meets the definition of 'security' under the federal securities laws, formatted as or represented by a crypto asset, where the record of ownership is maintained wholly or partly on one or more crypto networks. The interpretation treats a security as a security 'regardless of whether it is issued, or otherwise represented, offchain or onchain' -- so tokenizing an instrument does not itself change whether it is a security. This site uses 'digital asset security' (the phrasing used in this jurisdiction's own watched relevance keywords) as a synonym for the interpretation's own term 'digital security'; it is conceptually related to, but distinct from, this site's 'tokenisation' and Hong Kong's 'security-token' entries, which describe similar tokenized-securities concepts under different regimes.",
+  "formal_definition": "SEC Release Nos. 33-11412; 34-105020 (CFTC RIN 3038-AF67), 'Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets,' effective March 23, 2026, section III.E: a digital security (commonly known as a 'tokenized' security) is a financial instrument enumerated in the definition of 'security' that is formatted as or represented by a crypto asset, where the record of ownership is maintained in whole or in part on or through one or more crypto networks.",
+  "related_terms": [
+    "digital-commodity",
+    "tokenisation",
+    "security-token",
+    "sec",
+    "howey-test"
+  ],
+  "first_used_card_id": "240ff989bb42b6a98147ecb79d85127444fa58f1deb659d3fa92d82d6c750a43",
+  "generated_at": "2026-07-12T18:04:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

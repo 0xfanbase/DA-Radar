@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "pillar": "funds_etfs",
+  "status_seal": "no_dedicated_regime",
+  "regulator": "ESMA",
+  "instruments": [
+    "European Commission mandate to ESMA (June 2023) requesting technical advice on the review of Commission Directive 2007/16/EC on UCITS Eligible Assets (the UCITS EAD)",
+    "ESMA Call for Evidence on the review of the UCITS Eligible Assets Directive (ESMA34-1270380148-1032, published 7 May 2024, closed 7 August 2024, 63 responses received)",
+    "ESMA Final Report: Technical advice to the European Commission on the review of the UCITS Eligible Assets Directive (ESMA34-2087785638-1548, 26 June 2025) -- non-binding advice; no European Commission legislative proposal has followed as of this research",
+    "Directive 2009/65/EC (UCITS Directive), Article 50 -- the current exhaustive list of UCITS-eligible assets, which does not include crypto-assets, plus the Article 50(2)(a) 10% limit for certain other transferable securities and money market instruments",
+    "Directive 2011/61/EU (AIFMD), as amended by Directive (EU) 2024/927 (AIFMD II) -- the alternative-investment-fund framework ESMA's technical advice points to as the more suitable EU-level vehicle for large-scale alternative-asset exposure, including crypto-assets, rather than UCITS"
+  ],
+  "standing_summary": "Funds & ETFs is structurally the thinnest EU-level pillar in this radar, and that is the headline finding rather than an artefact of limited research: there is no EU-level crypto-asset ETF or ETP regime at all. Crypto exchange-traded products traded in Europe are listed as exchange-traded notes (ETNs) or exchange-traded commodities (ETCs) under national prospectus and trading-venue rules, and any individual product's admission to listing is a member-state/firm-level act -- out of scope for this EU-level-only pillar, exactly as this jurisdiction's scope note requires flagging. MiCA itself does not touch fund products: Regulation (EU) 2023/1114 governs crypto-asset issuers and crypto-asset service providers, not UCITS or AIFs, and crypto-assets that themselves qualify as MiFID II financial instruments fall outside MiCA's scope entirely (MiCA Article 2(4)). The one genuine EU-level strand is fund-rule treatment of crypto-asset exposure inside the UCITS framework, which is currently at the non-binding advisory stage. In June 2023 the European Commission mandated ESMA to review Commission Directive 2007/16/EC, the UCITS Eligible Assets Directive (EAD), which implements Article 50 of the UCITS Directive (2009/65/EC); ESMA ran a Call for Evidence from 7 May to 7 August 2024 (63 responses) and published its Final Report -- Technical advice to the European Commission on the review of the UCITS EAD (ESMA34-2087785638-1548) -- on 26 June 2025. On crypto-assets specifically, the Final Report states plainly that crypto-assets are 'not explicitly eligible for direct investments under the current UCITS framework' because they are not referred to as an eligible asset class under Article 50(1) of the UCITS Directive (paragraph 200 and footnote 193), though ESMA notes a case-by-case analysis could still find a given instrument eligible if it qualifies as a financial instrument under MiFID II or AIFMD and separately meets the UCITS Directive's and EAD's eligibility criteria (paragraph 200). Several stakeholders responding to the Call for Evidence asked ESMA to recommend explicitly adding crypto-assets to the UCITS Directive's Article 50(1) eligible-asset list, and others asked for crypto-assets and crypto-asset ETPs to be folded into the existing Article 50(2)(a) 10% limit for other transferable securities and money-market instruments; ESMA declined to put forward either as a formal proposal in this exercise. It reasoned that expanding the Level 1 UCITS Directive's asset list is outside the scope of a Level 2 EAD review mandate and would require its own separate legislative workstream (paragraphs 95-98), and it recorded its own view that 'large-scale investments in such alternative assets with their idiosyncratic risks would be better done under the AIFMD framework given its more suitable risk management, valuation and safekeeping provisions for such asset classes' (paragraph 83) -- an explicit AIFMD-level steer rather than a UCITS-level one. The Final Report's central, generally-applicable proposal -- a stricter look-through approach for at least 90% of a UCITS portfolio, with continued flexibility to gain indirect exposure to alternative assets (subject to all other UCITS requirements) within roughly the existing 10% limit -- was not framed by ESMA as specifically opening that limit to crypto-assets; the report records divided stakeholder views on whether it should. As of this research, the technical advice remains advice only: it is not binding, the European Commission has not published a legislative proposal amending the EAD or the UCITS Directive in response, and secondary reporting (not independently confirmed against a Commission primary source) suggests the Commission's 2026 Work Programme, published 21 October 2025, does not include an EAD legislative proposal among its listed priorities. Separately, funds structured as AIFs under Directive 2011/61/EU (AIFMD), as amended by Directive (EU) 2024/927 (AIFMD II, EU-wide transposition due by 16 April 2026 per the amending Directive's own terms), are the framework ESMA's advice points toward for crypto-asset exposure, but AIFMD/AIFMD II contain no crypto-asset-specific eligibility or exposure rules of their own, and individual AIF/AIFM authorisation and supervision remain NCA acts out of scope here. No EBA, ECB or AMLA instrument bears on fund-level crypto-asset exposure specifically; this pillar's only live EU-level activity is ESMA's UCITS EAD technical advice described above.",
+  "last_changed": "2025-06-26",
+  "key_links": [
+    {
+      "label": "ESMA: ESMA provides advice on eligible assets for UCITS (press release, 26 Jun 2025)",
+      "url": "https://www.esma.europa.eu/press-news/esma-news/esma-provides-advice-eligible-assets-ucits"
+    },
+    {
+      "label": "ESMA Final Report: Technical advice to the European Commission on the review of the UCITS Eligible Assets Directive (ESMA34-2087785638-1548, 26 Jun 2025)",
+      "url": "https://www.esma.europa.eu/sites/default/files/2025-06/ESMA34-2087785638-1548_Final_report_on_the_Technical_Advice_on_the_review_of_the_UCITS_EAD.pdf"
+    },
+    {
+      "label": "ESMA: Call for Evidence on the review of the UCITS Eligible Assets Directive (landing page)",
+      "url": "https://www.esma.europa.eu/press-news/consultations/call-evidence-review-ucits-eligible-assets-directive"
+    },
+    {
+      "label": "ESMA Call for Evidence on the UCITS EAD Review (ESMA34-1270380148-1032, 7 May 2024)",
+      "url": "https://www.esma.europa.eu/sites/default/files/2024-05/ESMA34-1270380148-1032_Call_for_Evidence_on_the_UCITS_EAD_Review.pdf"
+    },
+    {
+      "label": "EUR-Lex: Directive 2009/65/EC (UCITS Directive), consolidated text",
+      "url": "https://eur-lex.europa.eu/eli/dir/2009/65/oj/eng"
+    },
+    {
+      "label": "EUR-Lex: Directive (EU) 2024/927 amending Directives 2011/61/EU (AIFMD) and 2009/65/EC (AIFMD II)",
+      "url": "https://eur-lex.europa.eu/eli/dir/2024/927/oj/eng"
+    },
+    {
+      "label": "EUR-Lex: Regulation (EU) 2023/1114 (MiCA), consolidated text",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj/eng"
+    }
+  ],
+  "open_items": [
+    "This pillar covers the EU-level framework only, per the jurisdiction-wide scope note: the UCITS/AIFMD legislative texts, the European Commission's EAD-review mandate, and ESMA's technical advice. It does not track individual crypto-ETN/ETP prospectus approvals or trading-venue listings, which are member-state/NCA and trading-venue acts, nor any member-state UCITS management company's actual portfolio holdings.",
+    "ESMA's Final Report paragraphs 83, 90-98 and 198-200 (cited above) were extracted directly from the primary PDF (ESMA34-2087785638-1548) for this research; the surrounding sections on the general 90%-look-through / 10%-indirect-exposure proposal were reviewed for whether ESMA explicitly places crypto-assets inside that 10% exemption, and no such explicit statement was found -- secondary (law-firm) commentary is divided on this point, with some summarising the report as including crypto-assets in the 10% limit and others emphasising ESMA's AIFMD steer instead; the primary text found during this research supports the latter, more cautious reading, but the report's Annexes (not fully reviewed here) may contain additional relevant detail.",
+    "The claim that the European Commission's 2026 Work Programme (published 21 October 2025) does not include an EAD legislative proposal was corroborated only via secondary (law-firm) commentary during this research, not confirmed against the Work Programme's own primary text or annexes on ec.europa.eu/commission.europa.eu; it should be re-verified directly before being treated as settled, and in any case reflects only the absence of a currently-announced proposal, not a permanent decision not to legislate.",
+    "The 16 April 2026 AIFMD II transposition date is corroborated by multiple independent secondary sources but was not independently confirmed against Directive (EU) 2024/927's own final/transitional articles on EUR-Lex during this research (the fetched EUR-Lex text did not reach those articles); it should be re-confirmed directly before being restated as definitive, though it is not itself a crypto-specific fact.",
+    "No EU-level primary source was found during this research indicating the European Commission or ESMA plans a dedicated crypto-asset fund or ETF product regime (comparable to, say, a bespoke EU crypto-ETF wrapper); absent such a source, this pillar state does not speculate about one.",
+    "The European Commission's May-August 2026 consultation on the functioning of the MiCA framework (opened 20 May 2026, closing 31 August 2026) does not, on the evidence reviewed, cover funds or investment-fund exposure to crypto-assets; it is not cited above because it does not bear on this pillar, but it should be rechecked if its scope is broadened."
+  ],
+  "generated_at": "2026-07-11T19:05:36Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

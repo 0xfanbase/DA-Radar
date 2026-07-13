@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "difc",
+  "term": "DIFC (Dubai International Financial Centre)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "Dubai's international financial free zone -- a separate legal jurisdiction within Dubai and the UAE, with its own civil and commercial laws and its own English-language common-law courts, where the DFSA (not VARA or the federal CMA) is the financial regulator. VARA's Dubai virtual-asset law and the CMA's federal framework both expressly exclude the DIFC from their territorial scope.",
+  "formal_definition": "The DIFC was originally established by Dubai Law No. (9) of 2004 on the Establishment of the Dubai International Financial Centre, which created the Centre's three constituent bodies -- the DIFC Authority, the DFSA, and the DIFC Judicial Authority (now the DIFC Courts). Dubai Law No. (9) of 2004 has since been replaced by the DIFC's current founding law, Dubai Law No. (5) of 2021 on the Establishment of the Dubai International Financial Centre, which recognises the DIFC's financial and administrative independence, re-establishes the same constituent bodies (DIFC Authority, DFSA, and the Dispute Resolution Authority/DIFC Courts), and exempts the DIFC from Dubai laws and regulations under certain conditions. Like ADGM, the DIFC is a Financial Free Zone under Federal Law No. (8) of 2004 Concerning Financial Free Zones (see financial-free-zone), permitting its own civil and commercial legal framework separate from the rest of the UAE. The DFSA is the DIFC's financial services regulator; Law No. (4) of 2022 (VARA's founding statute) and the CMA's federal Virtual Assets Framework both state their territorial scope excludes the DIFC.",
+  "related_terms": [
+    "dfsa",
+    "financial-free-zone",
+    "adgm",
+    "vara",
+    "cma"
+  ],
+  "first_used_card_id": "071e458c6d0601176331507307aba4c9da13c95796039fba94ef9151a1fe22ea",
+  "generated_at": "2026-07-13T09:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

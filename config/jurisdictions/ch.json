@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "jurisdiction_id": "ch",
+  "jurisdiction_name": "Switzerland",
+  "user_agent": "GlobalDigitalAssetRadarWatcher/0.1 (contact: da-radar-bot@users.noreply.github.com; purpose: public RSS regulatory monitoring)",
+  "fetch": {
+    "timeout_seconds": 15,
+    "max_retries": 3,
+    "backoff_base_seconds": 1.0,
+    "backoff_multiplier": 2.0
+  },
+  "relevance_keywords": [
+    "crypto",
+    "krypto",
+    "crypto asset",
+    "crypto-asset",
+    "cryptobased",
+    "crypto-based",
+    "cryptocurrency",
+    "digital asset",
+    "digital assets",
+    "virtual currency",
+    "virtual asset",
+    "stablecoin",
+    "stablecoins",
+    "stable coin",
+    "token",
+    "payment token",
+    "utility token",
+    "asset token",
+    "ledger-based securit",
+    "register uncertificated securit",
+    "dlt",
+    "distributed ledger",
+    "dlt trading facility",
+    "blockchain",
+    "bitcoin",
+    "ether",
+    "initial coin offering",
+    "ico",
+    "tokeniz",
+    "tokenis",
+    "staking",
+    "custody of crypto",
+    "crypto custody",
+    "wallet",
+    "fintech",
+    "payment instrument institution",
+    "crypto-institution",
+    "zahlungsmittelinstitut",
+    "kryptoinstitut",
+    "central bank digital currency",
+    "cbdc",
+    "project helvetia",
+    "defi",
+    "decentralized finance",
+    "decentralised finance",
+    "web3",
+    "nft",
+    "travel rule",
+    "virtual asset service provider"
+  ],
+  "pillar_keywords": {
+    "exchanges_vatp": [
+      "dlt trading facility",
+      "trading facility",
+      "trading venue",
+      "stock exchange",
+      "exchange",
+      "multilateral trading facility",
+      "organised trading facility",
+      "financial market infrastructure",
+      "market conduct",
+      "listing",
+      "sdx",
+      "six digital exchange"
+    ],
+    "stablecoins": [
+      "stablecoin",
+      "stable coin",
+      "value-stable",
+      "payment instrument institution",
+      "zahlungsmittelinstitut",
+      "means of payment",
+      "issuer",
+      "redemption",
+      "reserve",
+      "default guarantee",
+      "backing"
+    ],
+    "dealing_custody_advisory": [
+      "custod",
+      "safekeeping",
+      "segregation",
+      "client assets",
+      "securities firm",
+      "securities dealer",
+      "portfolio manager",
+      "asset manager",
+      "trustee",
+      "staking",
+      "wallet",
+      "broker"
+    ],
+    "tokenization_rwa": [
+      "tokeniz",
+      "tokenis",
+      "ledger-based securit",
+      "register uncertificated securit",
+      "dlt securities",
+      "digital securities",
+      "security token",
+      "asset token",
+      "intermediated securities",
+      "on-chain",
+      "onchain",
+      "digital bond"
+    ],
+    "funds_etfs": [
+      "fund",
+      "collective investment",
+      "cisa",
+      "sicav",
+      "fund management",
+      "etf",
+      "exchange-traded",
+      "etp",
+      "crypto fund",
+      "investment foundation"
+    ],
+    "banking_money": [
+      "bank",
+      "banking act",
+      "banking licence",
+      "fintech licence",
+      "fintech authorisation",
+      "deposit",
+      "deposit-taking",
+      "tokenized deposit",
+      "tokenised deposit",
+      "payment system",
+      "central bank digital currency",
+      "cbdc",
+      "project helvetia",
+      "wholesale cbdc",
+      "snb",
+      "swiss national bank",
+      "capital requirement",
+      "prudential"
+    ],
+    "aml_cft_enforcement": [
+      "money laundering",
+      "aml",
+      "cft",
+      "anti-money laundering act",
+      "amla",
+      "amlo",
+      "geldwäscherei",
+      "financial intermediary",
+      "self-regulatory organisation",
+      "sro",
+      "due diligence",
+      "travel rule",
+      "unhosted wallet",
+      "sanction",
+      "enforcement",
+      "suspicious",
+      "mros",
+      "terrorist financing"
+    ]
+  },
+  "regulators": [
+    {
+      "id": "finma",
+      "name": "Swiss Financial Market Supervisory Authority",
+      "short_name": "FINMA",
+      "homepage": "https://www.finma.ch/en/news/",
+      "official_domains": [
+        "www.finma.ch",
+        "finma.ch"
+      ],
+      "feeds": [
+        {
+          "id": "finma_news",
+          "kind": "news",
+          "url": "https://www.finma.ch/en/rss/news/",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "fedlex",
+      "name": "Fedlex (the Swiss Confederation's official publication platform for federal law)",
+      "short_name": "Fedlex",
+      "homepage": "https://www.fedlex.admin.ch/en/home",
+      "official_domains": [
+        "www.fedlex.admin.ch",
+        "fedlex.admin.ch",
+        "fedlex.data.admin.ch"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "sif",
+      "name": "State Secretariat for International Finance (SIF) / Federal Council and Federal Administration",
+      "short_name": "SIF",
+      "homepage": "https://www.sif.admin.ch",
+      "official_domains": [
+        "www.sif.admin.ch",
+        "sif.admin.ch",
+        "www.admin.ch",
+        "admin.ch"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "snb",
+      "name": "Swiss National Bank",
+      "short_name": "SNB",
+      "homepage": "https://www.snb.ch",
+      "official_domains": [
+        "www.snb.ch",
+        "snb.ch"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "six_exchange_regulation",
+      "name": "SIX Exchange Regulation AG",
+      "short_name": "SIX Exchange Regulation",
+      "homepage": "https://www.ser-ag.com",
+      "official_domains": [
+        "www.ser-ag.com",
+        "ser-ag.com",
+        "www.six-group.com",
+        "six-group.com",
+        "www.sdx.com",
+        "sdx.com"
+      ],
+      "feeds": []
+    }
+  ]
+}

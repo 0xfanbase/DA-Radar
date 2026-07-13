@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "market-abuse",
+  "term": "Market abuse (crypto-assets)",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "MiCA Title VI's regime prohibiting insider dealing, unlawful disclosure of inside information, and market manipulation involving crypto-assets admitted to trading on a trading platform operated by an authorised crypto-asset service provider (CASP). It applies alongside, but separately from, the general EU Market Abuse Regulation that governs traditional securities, and became applicable across the EU on 30 December 2024, at the same time as the CASP authorisation regime under Title V.",
+  "formal_definition": "Title VI of Regulation (EU) 2023/1114 (MiCA) sets out the prevention and prohibition of market abuse involving crypto-assets, applicable since 30 December 2024 pursuant to Article 149(2).",
+  "related_terms": [
+    "mica",
+    "casp",
+    "esma"
+  ],
+  "first_used_card_id": "f8da9f58b4a403d8daba10c1197d70c08735f6125d5a7bc089b79a48f369cbca",
+  "generated_at": "2026-07-12T10:00:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

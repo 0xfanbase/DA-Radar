@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "fcc9e79a8df7a86cfc66deff67cdaa4dee1ede0531f9e3d5472f78d1a788b95e",
+  "jurisdiction_id": "uae",
+  "published_date": "2023-10-12",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "stablecoins",
+    "tokenization_rwa"
+  ],
+  "type": "guidance",
+  "title": "VARA Defines Issuance Rules to be the Global Standard on Asset Reference Tokens",
+  "summary": "On 12 October 2023, VARA -- which licenses and supervises virtual asset activity across Dubai's mainland and free zones, excluding the Dubai International Financial Centre (DIFC) -- announced the September 2023 edition of its Virtual Asset (VA) Issuance Rulebook. The rulebook sets prudential requirements for two specialist categories of tokens that maintain a stable value against an underlying asset class: Asset Reference Tokens (ARTs) generally, and, via a dedicated annex, Fiat-Referenced Virtual Assets (FRVAs) specifically -- tokens designed to hold a stable value against one or more currencies. The rulebook introduces two categories of virtual asset issuance, requiring an issuer to obtain either VARA pre-approval registration or a full VARA licence prior to issuance. VARA states that FRVAs pegged to the UAE Dirham fall under the Central Bank of the UAE's exclusive purview, not VARA's, while FRVAs referencing other currencies remain within VARA's own scope; VARA itself frames this as a global standard for the sector.",
+  "why_it_matters": "For anyone new to the UAE's digital-asset rules: this rulebook update determines which regulator -- VARA or the UAE's Central Bank -- a business must approach before it can legally issue a token in Dubai (outside the DIFC free zone) designed to hold a stable value, based on whether that token references the UAE Dirham or another currency.",
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/vara-defines-issuance-rules-to-be-the-global-standard-on-asset-reference-tokens/",
+      "quote": "The September 2023 edition of VARA's Virtual Asset (VA) Issuance Rulebook"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T16:10:00Z",
+  "model": "Claude (Anthropic)"
+}

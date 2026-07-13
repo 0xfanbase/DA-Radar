@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "virtual-asset-uae",
+  "term": "Virtual Asset (UAE)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "The UAE's umbrella statutory term for a cryptocurrency or other tradeable digital asset -- broadly equivalent to what other jurisdictions call a 'virtual asset,' 'crypto-asset,' or 'digital asset.' Two separately enacted UAE laws (Dubai's VARA law and the federal Cabinet Resolution now administered by the CMA) define the term in near-identical wording.",
+  "formal_definition": "Law No. (4) of 2022 Regulating Virtual Assets in the Emirate of Dubai defines a 'Virtual Asset' as 'a digital representation of value that may be digitally traded, transferred, or used as an exchange or payment tool, or for investment purposes,' including Virtual Tokens and any other digital representation of value VARA determines, but excluding digital representations of fiat currency (e.g. a future digital dirham) and financial securities already regulated under separate UAE financial laws. Cabinet Resolution No. (111) of 2022 Regulating Virtual Assets and Their Service Providers -- issued for the (now-succeeded) Securities and Commodities Authority, published in UAE Federal Gazette issue no. 741 of 15 December 2022, in force from 14 January 2023 -- defines a Virtual Asset in near-identical terms as 'the digital representation of the value of a property that can be digitally traded or transferred, and can be used for investment purposes,' excluding digital representations of fiat currencies, securities, and other funds already regulated elsewhere; the Cabinet Resolution's own scope clause additionally excludes Virtual Assets inside the Financial Free Zones (DIFC and ADGM) and Virtual Assets used for payment via Stored Value Facilities (the CBUAE's remit) from its own reach. This entry is kept UAE-scoped, following the same convention as this radar's jurisdiction-specific statutory-definition entries (e.g. crypto-asset-jp for Japan), rather than merged into a single cross-jurisdiction 'virtual asset' term, because no such shared entry yet exists in this glossary to merge into and the UAE wording and its dual emirate-level/federal drafting history are UAE-specific; a reader comparing this to another jurisdiction's statutory wording should consult that jurisdiction's own glossary entries once written.",
+  "related_terms": [
+    "vasp",
+    "vara",
+    "cma",
+    "vatp",
+    "casp"
+  ],
+  "first_used_card_id": "d698ff8d003b3121287ac188d969912e044e2f886b5fdf5ea8119865125e2f0a",
+  "generated_at": "2026-07-13T16:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "id": "mvp-license",
+  "term": "MVP (Preparatory) License (VARA)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "A staged license VARA (Dubai's Virtual Assets Regulatory Authority) grants during what it calls the 'MVP' phase of its licensing process. Receiving an MVP Preparatory License does not by itself authorise a firm to operate -- VARA describes it as letting an approved applicant complete the remaining pre-conditions required before it can actually begin virtual asset activities in the market.",
+  "formal_definition": "VARA's own press release announcing Crypto.com's MVP Preparatory License (20 March 2023, confirmed by direct fetch of vara.ae) states that 'the MVP Phase in its preparatory stage allows for approved licensees to fulfill all pre-conditions required to undertake MVP market operations within the VARA Regime.' The same release describes VARA's review before granting this license as covering an applicant's 'key personnel, governance procedures, Anti Money Laundering / Countering the Financing of Terrorism (AML / CFT) capabilities, Know Your Customer (KYC) and Ultimate Beneficial Owner (UBO) policies and procedures, cross-border safety and security measures, and best-in-class compliance practices.' The release does not itself spell out what the 'MVP' initialism stands for, nor describe VARA's full licensing-stage sequence beyond this one preparatory step; those further details are not asserted here pending confirmation from a VARA rulebook or licensing-process page.",
+  "related_terms": [
+    "vara",
+    "vasp"
+  ],
+  "first_used_card_id": "eee68c3f111477e7a00019c085821d1c0357e7dfdd9cdbba16c0faeaec8bbf51",
+  "generated_at": "2026-07-13T15:20:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

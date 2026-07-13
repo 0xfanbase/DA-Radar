@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-01-01T00:00:00Z",
+  "documents": [
+    {
+      "item_hash": "freedonia-doc1",
+      "title": "Freedonia document title",
+      "link": "https://ffa.freedonia.invalid/doc1",
+      "published_at": "2026-01-01T00:00:00Z",
+      "regulator": "FFA",
+      "type": "press_releases",
+      "pillar": ["test_pillar_alpha"]
+    }
+  ]
+}

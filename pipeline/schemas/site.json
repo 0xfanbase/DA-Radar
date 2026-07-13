@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "site.json",
+  "title": "Site registry",
+  "description": "The top-level, jurisdiction-agnostic registry for Global Digital Asset Radar: the list of jurisdictions the site knows about (each pointing at its own config/jurisdictions/{id}.json, or null while still planned), the shared pillar taxonomy, the shared status-seal vocabulary, and shared fetch defaults. This is the one file every jurisdiction-specific config and every jurisdiction's content/data tree is registered against. 'pillars' here is the site-wide pillar taxonomy (id/name only) -- it moved out of the per-jurisdiction config (config/jurisdictions/{id}.json, governed by jurisdiction.json) because pillars are shared across jurisdictions, not jurisdiction-specific.",
+  "type": "object",
+  "properties": {
+    "schema_version": { "const": 1 },
+    "site_name": { "type": "string", "minLength": 1 },
+    "jurisdictions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "config": {
+            "description": "Repo-relative path to this jurisdiction's config/jurisdictions/{id}.json, or null if not yet written (status.watcher/analyst_verifier == 'planned').",
+            "type": ["string", "null"],
+            "minLength": 1
+          },
+          "status": {
+            "type": "object",
+            "properties": {
+              "watcher": { "type": "string", "enum": ["live", "planned", "dormant"] },
+              "analyst_verifier": { "type": "string", "enum": ["live", "planned", "dormant"] },
+              "seeded": { "type": "boolean" }
+            },
+            "required": ["watcher", "analyst_verifier", "seeded"],
+            "additionalProperties": false
+          },
+          "coverage_notes": { "type": "string", "minLength": 1 }
+        },
+        "required": ["id", "name", "config", "status", "coverage_notes"],
+        "additionalProperties": false
+      }
+    },
+    "pillars": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 }
+        },
+        "required": ["id", "name"],
+        "additionalProperties": false
+      }
+    },
+    "seal_vocabulary": {
+      "description": "Map of seal id -> display label, shared across jurisdictions.",
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    },
+    "fetch_defaults": {
+      "type": "object",
+      "properties": {
+        "timeout_seconds": { "type": "number", "exclusiveMinimum": 0 },
+        "max_retries": { "type": "integer", "minimum": 0 },
+        "backoff_base_seconds": { "type": "number", "exclusiveMinimum": 0 },
+        "backoff_multiplier": { "type": "number", "exclusiveMinimum": 0 }
+      },
+      "required": ["timeout_seconds", "max_retries", "backoff_base_seconds", "backoff_multiplier"],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "site_name",
+    "jurisdictions",
+    "pillars",
+    "seal_vocabulary",
+    "fetch_defaults"
+  ],
+  "additionalProperties": false
+}

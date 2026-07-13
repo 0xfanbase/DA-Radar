@@ -1,0 +1,20 @@
+{
+  "first_used_card_id": "89027aca00488f2b404db08b468eb197985e9c1f6e4d9292382e08cd26d19ac0",
+  "formal_definition": "The Financial Services and Markets Act 2000, the UK's principal financial services statute, which establishes the general prohibition on carrying on a regulated activity without authorisation (section 19) and the restriction on financial promotion (section 21). The Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102) add the new cryptoasset regulated activities (trading platforms, dealing, safeguarding, arranging deals, staking, qualifying-stablecoin issuance) to this framework using order-making powers under the Act; the separate Financial Services and Markets Act 2023 created the Digital Securities Sandbox powers.",
+  "generated_at": "2026-07-11T17:30:00Z",
+  "id": "fsma",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "Short for the Financial Services and Markets Act 2000, the core UK law establishing the FCA's and the PRA's regulatory powers -- broadly the equivalent of Hong Kong's Securities and Futures Ordinance as an organising statute. Both the UK's 2026 cryptoasset Regulations and the FCA's cryptoasset rulemaking hang off powers granted by this Act (as later amended, including by the separate Financial Services and Markets Act 2023).",
+  "related_terms": [
+    "fca",
+    "catp",
+    "qualifying-cryptoasset",
+    "cryptoasset-registration-mlr"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "FSMA (Financial Services and Markets Act 2000)"
+}

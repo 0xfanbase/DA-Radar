@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "pillar": "exchanges_vatp",
+  "status_seal": "proposed",
+  "regulator": "FCA",
+  "instruments": [
+    "Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102)",
+    "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017",
+    "FCA Policy Statement PS26/11: Crypto Regime -- Regulated Cryptoasset Activities",
+    "FCA Policy Statement PS26/13: Crypto Regime -- Application of the FCA Handbook for Regulated Cryptoasset Activities",
+    "Financial Services and Markets Act 2000 (Financial Promotion) (Amendment) Order 2023"
+  ],
+  "standing_summary": "Operating a qualifying cryptoasset trading platform (QCATP) becomes a new FCA-regulated activity under the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102), made by HM Treasury on 4 February 2026. Per the instrument's own Explanatory Memorandum, Part 1 gives the FCA early powers to issue directions, guidance and rules, but 'full commencement' -- the point at which the general prohibition bites and platforms must be authorised -- begins on Monday 25 October 2027; this does not bring compliance dates forward. The FCA published its final conduct rules for QCATPs on 30 June 2026 in PS26/11 (platform access and operation, conflicts of interest and market-making disclosure, pre/post-trade transparency, record-keeping, settlement, and Market Abuse Regime for Cryptoassets obligations), alongside PS26/13, which sets out how cross-cutting Handbook requirements -- Consumer Duty, COBS, SYSC, SM&CR, CASS 17 safeguarding, and regulatory reporting -- apply to QCATP operators, including overseas operators seeking UK authorisation via a branch under the FCA's Approach to International Cryptoasset Firms guidance (FG26/7). The FCA's authorisation gateway is expected to open for applications on 30 September 2026 and close 28 February 2027, with firms that apply in that window permitted to keep operating under a savings provision pending determination. None of this is in force today. The only cryptoasset-specific perimeter that currently applies to trading platforms is: (1) registration under the Money Laundering Regulations 2017 as a cryptoasset exchange or custodian wallet provider, supervised by the FCA for AML/CTF purposes since January 2020; and (2) the financial promotions regime for qualifying cryptoassets, in force since 8 October 2023 (COBS 4 and COBS 10, per FG23-3), requiring promotions to be fair, clear and not misleading, with a standardised risk warning and a 24-hour cooling-off period for first-time investors.",
+  "last_changed": "2026-06-30",
+  "key_links": [
+    {
+      "label": "legislation.gov.uk: The Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102)",
+      "url": "https://www.legislation.gov.uk/uksi/2026/102/contents/made"
+    },
+    {
+      "label": "legislation.gov.uk: Explanatory Memorandum to SI 2026/102 (commencement, 25 Oct 2027)",
+      "url": "https://www.legislation.gov.uk/uksi/2026/102/pdfs/uksiem_20260102_en_001.pdf"
+    },
+    {
+      "label": "FCA: PS26/11 Crypto Regime -- Regulated Cryptoasset Activities (30 Jun 2026)",
+      "url": "https://www.fca.org.uk/publication/policy/ps26-11.pdf"
+    },
+    {
+      "label": "FCA: PS26/13 Crypto Regime -- Application of FCA Handbook for Regulated Cryptoasset Activities (30 Jun 2026)",
+      "url": "https://www.fca.org.uk/publication/policy/ps26-13.pdf"
+    },
+    {
+      "label": "FCA: A new regime for cryptoasset regulation (overview)",
+      "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation"
+    },
+    {
+      "label": "FCA: Cryptoassets -- how the authorisation gateway will operate",
+      "url": "https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation/how-gateway-will-operate"
+    },
+    {
+      "label": "FCA press release: FCA sets landmark crypto rules to cement the UK's place as a global hub (30 Jun 2026)",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-sets-landmark-crypto-rules-cement-uks-place-global-hub"
+    },
+    {
+      "label": "FCA: Cryptoassets -- who needs to register under the Money Laundering Regulations (current regime)",
+      "url": "https://www.fca.org.uk/firms/cryptoassets-aml-ctf-regime/cryptoassets-who-needs-register"
+    },
+    {
+      "label": "FCA: FG23-3 Finalised guidance on cryptoasset financial promotions (in force since 8 Oct 2023)",
+      "url": "https://www.fca.org.uk/publication/finalised-guidance/fg23-3.pdf"
+    }
+  ],
+  "open_items": [
+    "The related new regulated activities of dealing, arranging, safeguarding and staking created by the same SI are covered in the Dealing, Custody, Advisory & Management pillar, not here; only the QCATP (trading platform) activity is scoped to this pillar.",
+    "The FCA's Approach to International Cryptoasset Firms (AICF) guidance (FG26/7) allows an overseas QCATP to be authorised in the UK via a branch of a UK legal entity in certain circumstances; how this interacts with the branch's home-state regulation was still being assessed case-by-case at the authorisation gateway as of the PS26/11/PS26/13 publication date and was not independently verified beyond the policy statements themselves.",
+    "This pillar state does not cover the FCA/Bank of England Digital Securities Sandbox, which operates under separate statutory powers and is already in force -- see the Tokenization & RWA pillar.",
+    "The FCA's public list of unregistered cryptoasset businesses and MLR registration/rejection statistics belong to the AML/CFT & Enforcement pillar and are not duplicated here."
+  ],
+  "generated_at": "2026-07-11T16:55:53Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

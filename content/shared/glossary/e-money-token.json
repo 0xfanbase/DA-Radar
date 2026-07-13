@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "e-money-token",
+  "term": "E-money token (EMT)",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "A category of stablecoin-like crypto-asset under MiCA Title IV that tries to hold a stable value by referencing a single official currency, such as the euro or US dollar -- functioning much like electronic money on a blockchain-style ledger. Only an authorised credit institution or electronic money institution may issue an EMT in the EU; holders must be able to redeem at par on demand, and issuers must invest funds received in exchange for EMTs so that a floor of the reserve sits as deposits with EU credit institutions, with the rest in secure, highly liquid, low-risk instruments in the referenced currency. Title IV has applied since 30 June 2024, alongside Title III. This is the EU's currency-pegged stablecoin instrument, in the same conceptual space as Hong Kong's HKD-referenced stablecoin regime and the UK's qualifying stablecoin, but confined to tokens referencing a single official currency rather than any peg structure.",
+  "formal_definition": "MiCA's own EUR-Lex summary describes e-money tokens as 'crypto-assets that stabilise their value in relation to a single official currency'; the formal definition sits in MiCA Article 3(1)(7). Title IV (Articles 48-58), including the Article 54 reserve-investment requirement, has applied since 30 June 2024 (Regulation (EU) 2023/1114, OJ L 150, 9.6.2023).",
+  "related_terms": [
+    "mica",
+    "asset-referenced-token",
+    "stablecoin",
+    "significant-art-emt",
+    "eba"
+  ],
+  "first_used_card_id": "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b",
+  "generated_at": "2026-07-12T05:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

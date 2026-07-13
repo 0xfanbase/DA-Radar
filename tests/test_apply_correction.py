@@ -110,6 +110,7 @@ def _write_card(repo_root, card_id, **overrides):
     card = {
         "schema_version": 1,
         "id": card_id,
+        "jurisdiction_id": "hk",
         "published_date": "2026-01-01",
         "regulator": "HKMA",
         "pillar": ["stablecoins"],
@@ -123,7 +124,7 @@ def _write_card(repo_root, card_id, **overrides):
         "model": "Claude (Anthropic)",
     }
     card.update(overrides)
-    cards_dir = os.path.join(repo_root, "content", "cards")
+    cards_dir = os.path.join(repo_root, "content", "hk", "cards")
     os.makedirs(cards_dir, exist_ok=True)
     path = os.path.join(cards_dir, f"{card_id}.json")
     with open(path, "w", encoding="utf-8") as fh:

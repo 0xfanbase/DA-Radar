@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "78a92f0dc2a6352deb0c150d1d7534e8b1fb39149c47ac1396d4e1578931ad4c",
+  "jurisdiction_id": "sg",
+  "published_date": "2023-07-03",
+  "regulator": "MAS (Monetary Authority of Singapore)",
+  "pillar": [
+    "dealing_custody_advisory"
+  ],
+  "type": "conclusions",
+  "title": "MAS publishes investor protection measures for DPT services: customer asset segregation and custody requirements",
+  "summary": "On 3 July 2023, the Monetary Authority of Singapore (MAS) announced new requirements for Digital Payment Token (DPT) service providers to safekeep customer assets under a statutory trust, segregated from the provider's own assets, before the end of 2023. The measures follow an October 2022 public consultation, which found broad support for daily reconciliation of customer assets, proper books and records, Singapore-based operational control of customer DPTs, operational independence of the custody function, and clear risk disclosures. MAS confirmed it will also restrict DPT service providers from facilitating lending and staking of DPTs for retail customers, while allowing this for institutional and accredited investors. MAS opened a further consultation on the draft legislative amendments and a new paper on market integrity, with comments due by 3 August 2023.",
+  "why_it_matters": "MAS is Singapore's central bank and integrated financial regulator; this announcement is the moment it committed digital payment token (DPT) service providers to holding customer crypto assets in a segregated trust account rather than mingling them with company funds, mitigating the risk of loss or misuse and facilitating recovery of customer assets if a platform becomes insolvent -- though MAS itself has cautioned that consumers may still face significant delays in recovering assets in an insolvency. It also confirmed that DPT providers will be barred from offering retail customers crypto lending and staking, activities MAS judged not suitable for the retail public.",
+  "key_dates": {
+    "deadline": "2023-08-03"
+  },
+  "citations": [
+    {
+      "url": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release_MAS%20Publishes%20Investor%20Protection%20Measures%20for%20Digital%20Payment%20Token%20Services.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20230703-3/attachment/MAS+Media+Release_MAS+Publishes+Investor+Protection+Measures+for+Digital+Payment+Token+Services.pdf",
+      "quote": "safekeep customer assets under a statutory trust before the end of the year"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T19:15:00Z",
+  "model": "Claude (Anthropic)"
+}

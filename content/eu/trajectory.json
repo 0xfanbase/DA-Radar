@@ -1,0 +1,134 @@
+[
+  {
+    "schema_version": 1,
+    "date_or_window": "30 June 2027",
+    "event": "Statutory deadline for the European Commission, having consulted EBA and ESMA, to present its main report to the European Parliament and the Council on the application of MiCA, accompanied where appropriate by a legislative proposal -- a review milestone inside MiCA's already-in-force regime, not a new proposal in itself (Regulation (EU) 2023/1114, Article 140(1))",
+    "pillar": "exchanges_vatp",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1114",
+    "confidence": "announced",
+    "generated_at": "2026-07-11T19:16:34Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "30 September 2026, 23:59 (CEST)",
+    "event": "Deadline for responses to the European Commission's targeted consultation on the review of MiCA (opened 20 May 2026), which the Commission states will feed into the reports it is required to prepare under MiCA Articles 140 and 142 -- an evidence-gathering step for the review of an already-in-force regime, not itself a proposal to change it",
+    "pillar": "exchanges_vatp",
+    "source_url": "https://finance.ec.europa.eu/regulation-and-supervision/consultations-0/targeted-consultation-review-mica-regulation_en",
+    "confidence": "announced",
+    "generated_at": "2026-07-11T19:16:34Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "31 December 2027",
+    "event": "Deadline under MiCA's transitional regime by which operators of trading platforms must ensure that a crypto-asset white paper, where required, is drawn up, notified and published (in accordance with Articles 6, 8 and 9) and kept updated (Article 12), for crypto-assets other than asset-referenced and e-money tokens that were already admitted to trading before 30 December 2024 -- an implementation deadline inside the already-in-force MiCA transitional regime (Regulation (EU) 2023/1114, Article 143(2)(b))",
+    "pillar": "exchanges_vatp",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1114",
+    "confidence": "announced",
+    "generated_at": "2026-07-11T19:16:34Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "10 July 2027",
+    "event": "General date from which Regulation (EU) 2024/1624 (the recast EU Anti-Money Laundering Regulation) applies directly across all Member States, establishing a single, directly-applicable AML/CFT rulebook covering obliged entities including crypto-asset service providers (Article 90)",
+    "pillar": "aml_cft_enforcement",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng",
+    "confidence": "announced",
+    "generated_at": "2026-07-11T19:16:34Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "10 July 2027",
+    "event": "General deadline for Member States to bring into force the national laws, regulations and administrative provisions transposing Directive (EU) 2024/1640 (the sixth EU Anti-Money Laundering Directive), which sets up the national AML/CFT supervisory and Financial Intelligence Unit architecture that will sit alongside AMLA and the directly-applicable AML Regulation (Article 78(1))",
+    "pillar": "aml_cft_enforcement",
+    "source_url": "https://eur-lex.europa.eu/eli/dir/2024/1640/oj/eng",
+    "confidence": "announced",
+    "generated_at": "2026-07-11T19:16:34Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "1 July 2027 (statutory deadline to commence AMLA's first selection process); direct supervision to start six months after the resulting list of selected obliged entities is published -- recital 86 states this 'should commence as of 2028'",
+    "event": "Statutory deadline for AMLA (the EU Authority for Anti-Money Laundering and Countering the Financing of Terrorism) to commence the first process for selecting the high-residual-risk credit and financial institutions ('selected obliged entities') that will come under AMLA's direct EU-level AML/CFT supervision; the Authority must then commence direct supervision six months after publishing the resulting list (Regulation (EU) 2024/1620, Article 13(4); recital 86)",
+    "pillar": "aml_cft_enforcement",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1620/oj/eng",
+    "confidence": "announced",
+    "generated_at": "2026-07-11T19:16:34Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "28 September 2026, 23:59 (CEST)",
+    "event": "Deadline for comments on EBA's draft methodology for setting fines against issuers of significant asset-referenced tokens or significant e-money tokens (or members of their management bodies) under MiCA Articles 130-134, following a public hearing on 16 July 2026 -- a still-unfinalised piece of MiCA's Level 3 enforcement framework, addressed only to the subset of issuers EBA directly or jointly supervises as significant",
+    "pillar": "stablecoins",
+    "source_url": "https://www.eba.europa.eu/publications-and-media/press-releases/european-banking-authority-consults-draft-methodology-setting-fines-under-markets-crypto-assets",
+    "confidence": "announced",
+    "generated_at": "2026-07-11T19:16:34Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "second half of 2026 to first half of 2027 (exercise); consolidated report to ESMA's Board of Supervisors in the second half of 2027",
+    "event": "ESMA's Common Supervisory Action (CSA) on the digital operational resilience of crypto-asset service providers' (CASPs') custody activities: national competent authorities examine a risk-based sample of authorised CASPs against a shared methodology, with findings consolidated into a report to ESMA's Board of Supervisors after the exercise concludes -- a supervisory-convergence exercise under MiCA's already-in-force CASP regime, not a new rule",
+    "pillar": "dealing_custody_advisory",
+    "source_url": "https://www.esma.europa.eu/press-news/esma-news/esma-launches-common-supervisory-action-casps-digital-operational-resilience",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T15:00:00Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "regulation adoption assumed 'in the course of 2026'; possible issuance 'during 2029' if that assumption holds",
+    "event": "The ECB's own stated working assumption for the digital euro: 'If EU lawmakers adopt the regulation in the course of 2026, the digital euro could be issued during 2029.' The ECB states its Governing Council's decision on whether -- and when -- to issue a digital euro will only be taken once the enabling Regulation has been adopted. Unlike the MiCA and AML items above, this concerns a genuinely pending legislative proposal, not an implementation deadline inside an already-in-force regime; the Regulation has not been adopted as of this writing",
+    "pillar": "banking_money",
+    "source_url": "https://www.ecb.europa.eu/euro/digital_euro/progress/html/index.en.html",
+    "confidence": "indicated",
+    "generated_at": "2026-07-11T19:16:34Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "September 2026",
+    "event": "Planned launch of Pontes, the ECB's service bridging DLT platforms to TARGET Services so that DLT-based transactions can be settled in central bank money, to be followed by further enhancements -- part of the Eurosystem's tokenised central bank money work for wholesale markets, alongside the longer-term Appia initiative. Stated by ECB Executive Board member Piero Cipollone in a 2 July 2026 speech; not independently corroborated here against a dedicated ECB Pontes webpage",
+    "pillar": "banking_money",
+    "source_url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260702_1~c58dcd8150.en.pdf",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T15:30:00Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "second half of 2027 (12-month pilot)",
+    "event": "Planned start of a 12-month digital euro pilot, part of the ECB's 'current phase' of continued preparation (running since November 2025); the ECB states that preparing for the pilot does not pre-empt any decision to issue the digital euro, which remains conditional on EU co-legislators adopting the digital euro Regulation. Stated by ECB Executive Board member Piero Cipollone in a 2 July 2026 speech",
+    "pillar": "banking_money",
+    "source_url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260702_1~c58dcd8150.en.pdf",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T15:30:00Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "2028",
+    "event": "Target date for the ECB to document, in an 'Appia Blueprint', its longer-term vision -- analysis, standardisation and design -- for a future-ready, integrated tokenised wholesale ecosystem developed in public-private partnership, alongside the nearer-term Pontes service. Stated by ECB Executive Board member Piero Cipollone in a 2 July 2026 speech; not independently corroborated here against a dedicated ECB Appia webpage",
+    "pillar": "banking_money",
+    "source_url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260702_1~c58dcd8150.en.pdf",
+    "confidence": "announced",
+    "generated_at": "2026-07-12T15:30:00Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  }
+]

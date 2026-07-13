@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "project-guardian",
+  "term": "Project Guardian",
+  "jurisdictions": [
+    "sg"
+  ],
+  "plain_definition": "MAS's collaborative initiative with the financial industry to pilot, and increasingly commercialise, asset tokenisation and shared digital-asset-network infrastructure for wholesale financial markets. Launched in May 2022, it has grown to convene, per MAS's own November 2024 count, more than 40 financial institutions, industry associations and international policymakers across seven jurisdictions, running industry trials across funds, structured products, fixed income and foreign exchange. It is industry collaboration and standards-setting, not a licensing regime -- tokenised instruments continue to be regulated under Singapore's existing technology-neutral framework (the Securities and Futures Act 2001 or Payment Services Act 2019, depending on what the token represents) rather than under any Project-Guardian-specific rule. Concrete outputs include the Guardian Fixed Income Framework, the Guardian Funds Framework, and the Global Layer One (GL1) shared-ledger initiative.",
+  "formal_definition": "Confirmed launch date per a footnote in MAS and the Deutsche Bundesbank's own joint media release, 'MAS and Deutsche Bundesbank sign MoU on tokenisation and cross-border settlement' (13 November 2025) -- fetched as a genuine PDF via the Singapore Government's press-release repository (sgpc.gov.sg), since www.mas.gov.sg served an identical bot-blocked page on every path tried -- which states verbatim: 'Project Guardian was launched by MAS in May 2022.' Scale figures (over 40 institutions across seven jurisdictions, 15+ industry trials in six currencies) are per MAS's own media release, 'MAS Announces Plans to Support Commercialisation of Asset Tokenisation' (4 November 2024), also fetched via sgpc.gov.sg.",
+  "related_terms": [
+    "tokenisation",
+    "project-orchid",
+    "mas",
+    "single-currency-stablecoin"
+  ],
+  "first_used_card_id": "3f7fc794e399e2b8012ad931de8e3487ec8667fe1b88ef86992f203f3cd7d65f",
+  "generated_at": "2026-07-13T19:10:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

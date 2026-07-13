@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "ledger-based-security",
+  "term": "Ledger-based security (Registerwertrecht)",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "A civil-law instrument created by the DLT Act, in force since 1 February 2021, that lets a right -- such as a share, bond or other claim -- be created natively on a distributed ledger with full legal effect, rather than existing on paper or in a traditional book-entry register. Under an agreement between the parties, the right is entered in a 'securities ledger' meeting statutory requirements, and from that point can only be asserted or transferred through that ledger; the ledger itself must give the rights-holders -- not the issuer -- technical control over their own entries, and must be protected against unauthorised alteration. Issuing one requires no FINMA licence, sandbox or regulatory pre-clearance -- it is ordinary Swiss contract and property law, extended to a new technology, and forms the civil-law foundation under Switzerland's tokenised-securities venues such as SIX Digital Exchange.",
+  "formal_definition": "Swiss Code of Obligations (Obligationenrecht, SR 220), Art. 973d-973i, inserted by the DLT Act with effect from 1 February 2021. Art. 973d para. 2 no. 1 CO (Fedlex consolidated German text): 'Es vermittelt den Gläubigern, nicht aber dem Schuldner, mittels technischer Verfahren die Verfügungsmacht über ihre Rechte' (it gives creditors, but not the debtor, technical control over their rights via technical means). No official English translation of Art. 973d-973i CO has been located; this entry paraphrases rather than translates the German text, consistent with this jurisdiction's sourcing practice. The DLT Act separately amended the Federal Act on Intermediated Securities (FISA, SR 957.1), Art. 4, to recognise FMIA-licensed DLT trading facilities as permitted custodians of immobilised ledger-based securities, and inserted Art. 145a into the Federal Act on Private International Law (PILA, SR 291), a conflict-of-laws rule for register-represented claims -- both also in force since 1 February 2021.",
+  "related_terms": [
+    "dlt-act",
+    "tokenisation",
+    "security-token",
+    "sdx",
+    "dlt-trading-facility"
+  ],
+  "first_used_card_id": "cf95e52fa13da650ceed71f6f2546ad2a9924924fbe9e4e1156d11cd5a299b1f",
+  "generated_at": "2026-07-12T20:03:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

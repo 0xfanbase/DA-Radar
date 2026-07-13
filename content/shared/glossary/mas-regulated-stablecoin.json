@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "mas-regulated-stablecoin",
+  "term": "MAS-regulated stablecoin (label)",
+  "jurisdictions": [
+    "sg"
+  ],
+  "plain_definition": "The opt-in status MAS's announced single-currency stablecoin (SCS) framework (see that entry) would create: only a stablecoin issuer meeting every SCS requirement (value stability, capital, redemption at par, disclosure) could apply to have its token recognised and labelled 'MAS-regulated stablecoin' -- a status intended to let users distinguish it from other, unregulated tokens calling themselves stablecoins. Misrepresenting a token as MAS-regulated can draw financial penalties or imprisonment, and MAS can place the misrepresenting party on its Investor Alert List (see that entry). Like the SCS framework itself, this label does not yet exist in force: it is part of the announced-but-not-yet-enacted 15 August 2023 policy design, not a status any issuer currently holds.",
+  "formal_definition": "MAS media release, 'MAS Finalises Stablecoin Regulatory Framework' (15 August 2023) -- confirmed by direct fetch of the genuine PDF via the Singapore Government's press-release repository (sgpc.gov.sg), since www.mas.gov.sg served an identical bot-blocked page on every path tried. This entry has not independently fetched any enacted statutory text creating this label -- see the single-currency-stablecoin entry's own caveat that the SCS framework, and this label with it, remains announced policy pending legislation as of 13 July 2026.",
+  "related_terms": [
+    "single-currency-stablecoin",
+    "investor-alert-list",
+    "mas",
+    "stablecoin"
+  ],
+  "first_used_card_id": "e0a2c95f4d90f8ad05037f48612b110860a9fc2f0acdf299d551e0da9d185246",
+  "generated_at": "2026-07-13T20:45:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

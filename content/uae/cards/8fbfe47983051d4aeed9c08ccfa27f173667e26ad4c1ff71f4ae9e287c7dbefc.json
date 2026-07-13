@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "8fbfe47983051d4aeed9c08ccfa27f173667e26ad4c1ff71f4ae9e287c7dbefc",
+  "jurisdiction_id": "uae",
+  "published_date": "2026-04-13",
+  "regulator": "Capital Market Authority (CMA), formerly the Securities and Commodities Authority (SCA)",
+  "pillar": [
+    "exchanges_vatp",
+    "dealing_custody_advisory",
+    "aml_cft_enforcement"
+  ],
+  "type": "ordinance",
+  "title": "The CMA Issues the Virtual Assets Framework, Establishing an Integrated Regulatory Regime Comprising Five Core Modules and Eight Regulated Activities",
+  "summary": "On 13 April 2026 the Capital Market Authority (CMA) -- the UAE's federal capital-markets regulator and, since 1 January 2026, the direct legal successor to the Securities and Commodities Authority (SCA) -- announced a Virtual Assets Framework. Per the CMA's own announcement headline, the framework establishes an integrated regulatory regime comprising five core modules and eight regulated activities; the specific module names, the specific activities, and any decision number, effective date, or grace period could not be independently confirmed from source text reachable for this card. The CMA regulates virtual-asset activity across the UAE outside the DIFC and ADGM financial free zones, which fall to the DFSA and FSRA respectively.",
+  "why_it_matters": "This is the moment the UAE's federal capital-markets regulator -- the CMA, direct legal successor to the SCA -- organized its virtual-asset oversight into a five-module, eight-activity regulatory framework applying nationwide, outside the separate Dubai (DIFC) and Abu Dhabi (ADGM) free-zone regimes, which the DFSA and FSRA regulate instead.",
+  "citations": [
+    {
+      "url": "https://www.uaecma.gov.ae/en/media-center/news/13/4/2026/هيئة-سوق-المال-تصدر-إطار-تنظيم-الأصول-الافتراضية-مؤسِّسةً-نظاماً-متكاملاً-يتكوّن-من-خمس-وحدات",
+      "quote": "Five Core Modules and Eight Regulated Activities"
+    },
+    {
+      "url": "https://www.uaecma.gov.ae/assets/7bf42556/federal-decree-law-no-32-of-2025-en.aspx",
+      "quote": "excluding Financial Free Zones"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T15:20:00Z",
+  "model": "Claude (Anthropic)"
+}

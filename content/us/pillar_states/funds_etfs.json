@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "pillar": "funds_etfs",
+  "status_seal": "in_force",
+  "regulator": "SEC",
+  "instruments": [
+    "Securities Exchange Act of 1934, Section 19(b) (15 U.S.C. 78s(b)) -- the individualized, case-by-case rule-change approval process for each exchange-traded product that the generic listing standards described below were adopted to replace for qualifying Commodity-Based Trust Shares",
+    "SEC Order Granting Accelerated Approval of Proposed Rule Changes, as Modified by Amendments Thereto, To Adopt Generic Listing Standards for Commodity-Based Trust Shares, Release No. 34-103995, File Nos. SR-NASDAQ-2025-056, SR-CboeBZX-2025-104 and SR-NYSEARCA-2025-54 (approved 17 September 2025; published Federal Register 22 September 2025, 90 FR 45414, Doc. 2025-18258)",
+    "SEC Order Granting Accelerated Approval of a Proposed Rule Change To List and Trade Shares of the Grayscale Digital Large Cap Fund, Release No. 34-103996 (17 September 2025)",
+    "SEC Commissioner Hester M. Peirce, 'A Special Generic: Statement on Commission Approval of Generic Listing Standards for Commodity-Based ETPs' (17 September 2025) -- describes the three quantitative eligibility pathways underlying the generic standards",
+    "SEC: Statement on the Commission's Approval of In-Kind Creations and Redemptions for Crypto Exchange-Traded Products (press release 2025-101, 29 July 2025) and accompanying Commissioner Mark T. Uyeda statement (29 July 2025)",
+    "SEC Division of Corporation Finance, Statement on Crypto Asset Exchange-Traded Products (1 July 2025) -- staff, non-binding disclosure-practice guidance for crypto asset ETP issuers",
+    "Nasdaq Rule 5711(d) (Commodity-Based Trust Shares) and NYSE Arca Rule 8.201-E (Generic) -- the exchange listing rules implementing the generic listing standards approved 17 September 2025",
+    "Nasdaq: proposed rule change to amend Rule 5711(d), File No. SR-NASDAQ-2026-032, filed 14 April 2026, as modified by Amendment No. 1 filed 9 June 2026 (replacing and superseding the original filing), published Federal Register 16 June 2026 (Doc. 2026-12037) -- proposes an 85%/15% eligible-asset buffer, a defined term 'digital commodity,' and permitting actively-managed strategies; not yet approved",
+    "NYSE Arca: proposed rule change to amend Rule 8.201-E, File No. SR-NYSEARCA-2026-42, filed 22 April 2026, published Federal Register 30 April 2026 (Doc. 2026-08368), with the SEC's action period extended to 29 July 2026 (Federal Register notice of 16 June 2026, Doc. 2026-12039) -- proposes a parallel 85% NAV eligibility threshold; not yet approved",
+    "SEC Order Granting Accelerated Approval of a Proposed Rule Change To List and Trade Shares of the iShares Bitcoin Premium Income ETF Under Nasdaq Rule 5711(d) (Commodity-Based Trust Shares), published Federal Register 3 June 2026 (Doc. 2026-11034)",
+    "SEC Order Instituting Proceedings To Determine Whether To Approve or Disapprove a Proposed Rule Change To List and Trade Shares of the VanEck JitoSOL ETF Under Nasdaq Rule 5711(d) (Commodity-Based Trust Shares), published Federal Register 23 June 2026 (Doc. 2026-12519)",
+    "Investment Company Act of 1940, Section 3(a)(1) (15 U.S.C. 80a-3(a)(1)) -- Commodity-Based Trust Shares, including spot crypto asset ETPs approved under the generic listing standards, are registered under the Securities Act of 1933 and are, per issuers' own SEC-filed disclosure (e.g. Grayscale Digital Large Cap Fund LLC's SEC-filed free writing prospectus), not registered investment companies under this Act",
+    "ProShares Trust SEC registration statements for the ProShares Bitcoin Strategy ETF (e.g. Form 485APOS filed with the SEC, 2026) -- an example of a crypto-linked fund that is registered as an investment company under the Investment Company Act of 1940, gaining exposure through bitcoin futures contracts traded on CFTC-designated contract markets (CME and Coinbase Derivatives Exchange, per the fund's own SEC filings)",
+    "SEC and CFTC Staff Joint Statement on the Trading of Certain Spot Crypto Asset Products (2 September 2025) -- cross-referenced from the Exchanges (VATP) pillar",
+    "Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets, Release Nos. 33-11412; 34-105020 (17 March 2026, effective 23 March 2026) -- cross-referenced from the Exchanges (VATP) pillar; its five-category crypto-asset taxonomy bears on which generic-listing eligibility pathway a given ETP filing relies on",
+    "SEC Fall 2026 Unified Agenda of Regulatory and Deregulatory Actions, RINs 3235-AN38, 3235-AN48 and 3235-AN49, published 7 July 2026 -- none of the three listed items targets Investment Company Act treatment of crypto funds specifically"
+  ],
+  "standing_summary": "Funds & ETFs is the most SEC-concentrated pillar in this jurisdiction's coverage, and its anchor fact is a structural one: on 17 September 2025 the Commission approved generic listing standards for Commodity-Based Trust Shares -- Release No. 34-103995, covering parallel rule changes by Nasdaq (SR-NASDAQ-2025-056), Cboe BZX (SR-CboeBZX-2025-104) and NYSE Arca (SR-NYSEARCA-2025-54), published in the Federal Register on 22 September 2025 (90 FR 45414, Doc. 2025-18258) -- which replaced the prior practice of requiring a separate, individualized Exchange Act Section 19(b) rule-change filing and Commission approval for every new commodity-based (including crypto-asset) exchange-traded product. Under the resulting exchange rules (Nasdaq Rule 5711(d); NYSE Arca Rule 8.201-E (Generic)), a Commodity-Based Trust Share can list without a bespoke 19b-4 filing if it satisfies one of three eligibility pathways described in Commissioner Hester Peirce's own statement accompanying the order: (1) the underlying commodity trades on a market that is a member of the Intermarket Surveillance Group (ISG) or is a party to a comprehensive surveillance-sharing agreement with a listing exchange; (2) the underlying commodity underlies a futures contract that has traded for at least six months on a CFTC-regulated designated contract market; or (3) an existing exchange-traded fund already listed on a national securities exchange holds at least 40% of its net asset value in the commodity. The second pathway is this pillar's clearest primary-sourced statement of the CFTC's role here: that role is indirect, running through the CFTC's designation of the futures markets referenced by pathway (2), not through any CFTC authority over the trust shares themselves. The same 17 September 2025 order set also included a separate SEC order (Release No. 34-103996) approving the listing and trading of the Grayscale Digital Large Cap Fund, which holds spot digital assets tracked to the CoinDesk 5 Index -- named here only as the Commission's own press release and order state it. A structural point that distinguishes this pillar's two product families: Commodity-Based Trust Shares, including spot crypto ETPs approved under the generic standards, are registered under the Securities Act of 1933 and, per issuers' own SEC-filed disclosure, are not registered investment companies under the Investment Company Act of 1940. Separately, crypto-linked products that are registered investment companies under the 1940 Act continue to exist and gain exposure indirectly -- for example, the ProShares Bitcoin Strategy ETF, a 1940 Act-registered fund whose own SEC filings describe it as gaining bitcoin exposure through futures contracts traded on CME and Coinbase Derivatives Exchange, both CFTC-designated contract markets. This research did not identify a current SEC staff or Commission statement addressing 1940 Act registered funds' direct holding of spot crypto assets, and none is claimed here; the SEC's Fall 2026 Unified Agenda (published 7 July 2026) lists three crypto-related rulemaking items at the Proposed Rule Stage -- RIN 3235-AN38 (crypto asset offerings), RIN 3235-AN48 (broker-dealer financial-responsibility and recordkeeping rules), and RIN 3235-AN49 (crypto market structure/trading venues) -- none of which is described in the agenda as targeting Investment Company Act treatment of crypto funds specifically. Two further Commission-level actions bear on how spot crypto ETPs operate under the now-generic framework. On 29 July 2025 the Commission approved orders permitting in-kind creations and redemptions by authorized participants for bitcoin and ether exchange-traded products (press release 2025-101, with an accompanying statement by Commissioner Mark T. Uyeda), a change from the cash-only creation/redemption structure the Commission had required when it first approved spot bitcoin and ether ETPs on a case-by-case basis in early 2024. On 1 July 2025 the SEC's Division of Corporation Finance published a staff Statement on Crypto Asset Exchange-Traded Products addressing how existing Securities Act and Exchange Act disclosure requirements apply to crypto asset ETP prospectuses (investment objectives, risk factors, business description, third-party/custodial relationships, and creation/redemption mechanics); the statement is explicitly non-binding staff views, not a Commission rule. Listings under the generic standards followed quickly: per NYSE Arca's own listing certification, the Grayscale Solana Trust's shares were approved for listing on 28 October 2025 and began trading on NYSE Arca on 29 October 2025; a Grayscale XRP Trust product listed on NYSE Arca in the following weeks under the same framework. More recently, the Commission granted accelerated approval, under Nasdaq Rule 5711(d), to list and trade shares of the iShares Bitcoin Premium Income ETF (Federal Register, 3 June 2026, Doc. 2026-11034), while a separate Nasdaq Rule 5711(d) filing to list and trade shares of the VanEck JitoSOL ETF instead became subject to an Order Instituting Proceedings to determine whether to approve or disapprove it (Federal Register, 23 June 2026, Doc. 2026-12519) -- an approval and an OIP are both described here as the procedural outcomes the Commission's own orders state, with no implication that either outcome is more likely for future filings generally. The generic standards themselves are also currently subject to proposed amendment on both exchanges: Nasdaq's SR-NASDAQ-2026-032 (filed 14 April 2026, Amendment No. 1 filed 9 June 2026) and NYSE Arca's parallel SR-NYSEARCA-2026-42 (filed 22 April 2026) each propose requiring that at least 85% of a trust's NAV consist of assets meeting the existing eligibility criteria (a new 15% buffer for other assets), adding a defined term 'digital commodity,' and, on Nasdaq's filing, permitting actively-managed strategies; the Commission's own Federal Register notice sets 29 July 2026 as its current action deadline for the NYSE Arca proposal. Neither amendment has been approved, disapproved, or withdrawn as of this writing. This pillar covers the federal level only, per the jurisdiction-wide scope note.",
+  "last_changed": "2026-06-23",
+  "key_links": [
+    {
+      "label": "SEC: SEC Approves Generic Listing Standards for Commodity-Based Trust Shares (press release 2025-121, 17 Sep 2025)",
+      "url": "https://www.sec.gov/newsroom/press-releases/2025-121-sec-approves-generic-listing-standards-commodity-based-trust-shares"
+    },
+    {
+      "label": "SEC: Order Granting Accelerated Approval of Proposed Rule Changes To Adopt Generic Listing Standards for Commodity-Based Trust Shares, Release No. 34-103995 (17 Sep 2025, full text PDF)",
+      "url": "https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103995.pdf"
+    },
+    {
+      "label": "Federal Register: Self-Regulatory Organizations; Nasdaq, Cboe BZX, NYSE Arca; Order Granting Accelerated Approval ... To Adopt Generic Listing Standards for Commodity-Based Trust Shares (22 Sep 2025, Doc. 2025-18258)",
+      "url": "https://www.federalregister.gov/documents/2025/09/22/2025-18258/self-regulatory-organizations-the-nasdaq-stock-market-llc-cboe-bzx-exchange-inc-nyse-arca-inc-order"
+    },
+    {
+      "label": "SEC: Commissioner Hester M. Peirce, 'A Special Generic: Statement on Commission Approval of Generic Listing Standards for Commodity-Based ETPs' (17 Sep 2025)",
+      "url": "https://www.sec.gov/newsroom/speeches-statements/peirce-statement-commodity-based-etps-091725"
+    },
+    {
+      "label": "SEC: SEC Permits In-Kind Creations and Redemptions for Crypto ETPs (press release 2025-101, 29 Jul 2025)",
+      "url": "https://www.sec.gov/newsroom/press-releases/2025-101-sec-permits-kind-creations-redemptions-crypto-etps"
+    },
+    {
+      "label": "SEC: Commissioner Mark T. Uyeda, Statement on the Commission's Approval of In-Kind Creations and Redemptions for Crypto Exchange-Traded Products (29 Jul 2025)",
+      "url": "https://www.sec.gov/newsroom/speeches-statements/uyeda-statement-crypto-exchange-traded-products-072925"
+    },
+    {
+      "label": "SEC: Division of Corporation Finance, Statement on Crypto Asset Exchange-Traded Products (1 Jul 2025)",
+      "url": "https://www.sec.gov/newsroom/speeches-statements/cf-crypto-asset-exchange-traded-products-070125"
+    },
+    {
+      "label": "Federal Register: Nasdaq -- Notice of Filing of Amendment No. 1 ... To Amend Rule 5711(d) To Modify the Generic Listing Standards for Commodity-Based Trust Shares (16 Jun 2026, Doc. 2026-12037)",
+      "url": "https://www.federalregister.gov/documents/2026/06/16/2026-12037/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-of-amendment-no-1-and"
+    },
+    {
+      "label": "Federal Register: NYSE Arca -- Notice of Filing of Proposed Rule Change To Amend Rule 8.201-E (Generic) To Modify the Generic Listing Standards for Commodity-Based Trust Shares (30 Apr 2026, Doc. 2026-08368)",
+      "url": "https://www.federalregister.gov/documents/2026/04/30/2026-08368/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-of-proposed-rule-change-to-amend-rule"
+    },
+    {
+      "label": "Federal Register: NYSE Arca -- Notice of Designation of a Longer Period for Commission Action on Proposed Rule Change To Amend Rule 8.201-E (16 Jun 2026, Doc. 2026-12039, sets 29 Jul 2026 action deadline)",
+      "url": "https://www.federalregister.gov/documents/2026/06/16/2026-12039/self-regulatory-organizations-nyse-arca-inc-notice-of-designation-of-a-longer-period-for-commission"
+    },
+    {
+      "label": "Federal Register: Nasdaq -- Order Granting Accelerated Approval To List and Trade Shares of the iShares Bitcoin Premium Income ETF Under Nasdaq Rule 5711(d) (3 Jun 2026, Doc. 2026-11034)",
+      "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11034/self-regulatory-organizations-nasdaq-stock-market-llc-order-granting-accelerated-approval-of-a"
+    },
+    {
+      "label": "Federal Register: Nasdaq -- Order Instituting Proceedings To Determine Whether To Approve or Disapprove Listing of Shares of the VanEck JitoSOL ETF Under Nasdaq Rule 5711(d) (23 Jun 2026, Doc. 2026-12519)",
+      "url": "https://www.federalregister.gov/documents/2026/06/23/2026-12519/self-regulatory-organizations-the-nasdaq-stock-market-llc-order-instituting-proceedings-to-determine"
+    },
+    {
+      "label": "SEC EDGAR: NYSE Arca listing certification (Form CERT) for Grayscale Solana Trust ETF shares, approved 28 Oct 2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/1896677/000114336225000368/GSOL102825.pdf"
+    },
+    {
+      "label": "SEC and CFTC: Joint Staff Statement on the Trading of Certain Spot Crypto Asset Products (2 Sep 2025) -- cross-referenced from the Exchanges (VATP) pillar",
+      "url": "https://www.sec.gov/newsroom/press-releases/2025-110-sec-cftc-staff-issue-joint-statement-trading-certain-spot-crypto-asset-products"
+    },
+    {
+      "label": "SEC: Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets, Release Nos. 33-11412; 34-105020 (rule release page) -- cross-referenced from the Exchanges (VATP) pillar",
+      "url": "https://www.sec.gov/rule-release/33-11412"
+    }
+  ],
+  "open_items": [
+    "This pillar covers the federal level only, per the jurisdiction-wide scope note; it tracks the generic listing standards themselves and Commission/exchange orders applying them, not the complete population of individual crypto ETP prospectus effectiveness dates or product launches, of which well over 90 filings were pending across issuers as of this research -- the Grayscale Digital Large Cap Fund, Grayscale Solana Trust, Grayscale XRP Trust, iShares Bitcoin Premium Income ETF and VanEck JitoSOL ETF are cited above only as the specific, named examples that appear in the primary SEC/exchange sources located during this research, not as an exhaustive list.",
+    "The exact File Nos. (SR-NASDAQ-2025-056, SR-CboeBZX-2025-104, SR-NYSEARCA-2025-54) attributed to Release No. 34-103995 were corroborated via secondary aggregation of Federal Register and SEC filing indices rather than independently confirmed by direct machine-extraction of the primary order PDF, which returned an unparseable binary/compressed rendering during this research; the release number, approval date (17 September 2025), and Federal Register citation (90 FR 45414, Doc. 2025-18258) were independently corroborated and are treated as solid, but the individual file numbers should be re-confirmed directly against the primary PDF or the Federal Register's own HTML rendering before being treated as machine-verified.",
+    "Neither the Nasdaq SR-NASDAQ-2026-032 amendment nor the NYSE Arca SR-NYSEARCA-2026-42 amendment (both proposing an 85%/15% eligible-asset threshold, among other changes) had been approved, disapproved, or withdrawn as of this writing. The Commission's own Federal Register notice sets 29 July 2026 as its current action deadline for the NYSE Arca proposal -- 17 days after this pillar state's generation date -- and this pillar records only that procedural fact, not a prediction of the outcome or timing.",
+    "The VanEck JitoSOL ETF listing is currently subject to an Order Instituting Proceedings under Exchange Act Section 19(b)(2); an OIP is a standard procedural step that extends the Commission's review period and, applying this jurisdiction's neutrality rule identically to approvals and OIPs alike, is not treated here as indicating a likely outcome for that filing or for others.",
+    "This research did not locate a current SEC staff or Commission statement addressing whether, or on what terms, a registered investment company under the Investment Company Act of 1940 may hold spot crypto assets directly (as distinct from gaining exposure via CFTC-regulated futures, as the ProShares Bitcoin Strategy ETF does); absent such a source, this pillar state does not describe or assume any such staff position.",
+    "The Sept 30, 2025 SEC Division of Investment Management no-action letter permitting state trust companies to serve as qualified custodians under the Investment Company Act and Investment Advisers Act (relevant to registered funds holding crypto assets) is tracked in full in the Dealing, Custody, Advisory & Management pillar and is cross-referenced, not duplicated, here.",
+    "The SEC-CFTC Joint Staff Statement of 2 September 2025 and the joint interpretation of 17 March 2026 (Release Nos. 33-11412; 34-105020) are tracked in full in the Exchanges (VATP) pillar; only their bearing on the generic listing standards' eligibility pathways is noted here.",
+    "The Grayscale product approved 17 September 2025 was named in the Commission's own order and press release as the 'Grayscale Digital Large Cap Fund'; this research separately found the same fund later referred to in its own SEC filings as the 'Grayscale CoinDesk Crypto 5 ETF' (ticker GDLC). Both names are the issuer's and the Commission's own, not added commentary; this pillar does not attempt to independently date or characterize the name change."
+  ],
+  "generated_at": "2026-07-12T05:45:04Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "watch_status.json",
+  "title": "Watch status",
+  "description": "P8's per-feed health substrate: written by pipeline/watcher/run.py at the end of every watcher run, one entry per feed, keyed by feed id. This is the missing link between the watcher and the audit -- pipeline/watcher/run.py's per-feed failures previously evaporated into stdout, and pipeline/audit/feed_health.py's check_feed_coverage could not mechanically distinguish 'quiet' (reachable, parsing fine, nothing new) from 'broken' (fetch failing, or a page/sitemap/API structurally changed out from under its configured selector). Fields are transition-keyed only ('status' + 'status_since', no per-run counters) so a stretch of identical daily outcomes writes byte-identical JSON -- see pipeline/watcher/jsonio.py's write_if_changed contract ('re-run adds nothing'). Lives at data/{jurisdiction_id}/watch_status.json since the registry-model pivot; top-level 'jurisdiction_id' must match the file's own directory and config/site.json's jurisdictions[].id.",
+  "type": "object",
+  "properties": {
+    "schema_version": { "const": 1 },
+    "jurisdiction_id": { "type": ["string", "null"], "minLength": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "feeds": {
+      "type": "object",
+      "description": "Keyed by feed id (config/jurisdictions/{id}.json's regulators[].feeds[].id).",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "source_id": { "type": "string", "minLength": 1 },
+          "mechanism": {
+            "type": "string",
+            "minLength": 1,
+            "description": "The dispatch mechanism this feed used this run (pipeline/watcher/mechanisms.DISPATCH key), e.g. 'rss', 'atom', 'html_diff', 'sitemap_diff', 'json_api' -- or an unrecognized value from a config typo, which is exactly what status=='config_error' reports."
+          },
+          "status": {
+            "type": "string",
+            "enum": ["ok", "fetch_error", "parse_error", "structure_error", "config_error"]
+          },
+          "status_since": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp of the run where this feed's status last transitioned; preserved unchanged across consecutive runs with the same status, so streak length is derivable as a date difference without storing a counter."
+          },
+          "last_error": {
+            "type": ["string", "null"],
+            "description": "The mechanism's own error message on the most recent run, or null when status=='ok'."
+          }
+        },
+        "required": ["source_id", "mechanism", "status", "status_since", "last_error"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["schema_version", "jurisdiction_id", "generated_at", "feeds"],
+  "additionalProperties": false
+}

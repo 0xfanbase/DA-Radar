@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "id": "mvp-preparatory-licence",
+  "term": "MVP Preparatory Licence (VARA)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "A staged licence VARA (Dubai's Virtual Assets Regulatory Authority) grants to virtual asset businesses as part of its MVP (Minimum Viable Product) program. Firms typically move from a Provisional Licence, to an MVP Preparatory Licence -- which allows preparatory activities ahead of live market operations -- and then to a Full Market Product Licence authorising full operation.",
+  "formal_definition": "VARA's own press release describing GCEX MENA's grant states the licence 'allows GCEX MENA to undertake preparatory activities for market operations within Dubai' as a Virtual Asset Service Provider, and quotes VARA's Chief Executive Officer describing the MVP program as 'a selective program' through which VARA aims to 'establish regulatory standards emphasising consumer protection and cross-border interoperability.'",
+  "related_terms": [
+    "vara",
+    "vasp"
+  ],
+  "first_used_card_id": "572ddeffeaebc19dd51914dc09a0b8845a04724f1fa214bf71e15eab91c958da",
+  "generated_at": "2026-07-13T15:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "d698ff8d003b3121287ac188d969912e044e2f886b5fdf5ea8119865125e2f0a",
+  "jurisdiction_id": "uae",
+  "published_date": "2023-02-07",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "exchanges_vatp",
+    "dealing_custody_advisory",
+    "aml_cft_enforcement"
+  ],
+  "type": "ordinance",
+  "title": "VARA issues the Virtual Assets and Related Activities Regulations 2023, activating Dubai's dedicated virtual-asset regime",
+  "summary": "On 7 February 2023, VARA -- the Virtual Assets Regulatory Authority, which licenses and supervises virtual-asset activity across Dubai's mainland and free zones but not inside the Dubai International Financial Centre (DIFC) -- issued the Virtual Assets and Related Activities Regulations 2023 (V.1), the founding rulebook activating its dedicated licensing regime under Law No. (4) of 2022. The Regulations establish VARA as regulator, set the framework for issuing virtual assets, define regulated VA activities and licensing, introduce activity-specific rulebooks, and set out AML/CFT, marketing, market-offence, supervision and confidentiality provisions, plus schedules on activity definitions, fees, fines and definitions. VARA's scope covers all zones across the Emirate, including Special Development Zones and Free Zones, excluding the DIFC. The Regulations have since been amended, with the current version effective from 19 June 2025.",
+  "why_it_matters": "This is the founding rulebook that gave Dubai its own dedicated, licensed virtual-asset regulator: VARA oversees virtual-asset activity across all zones of the Emirate of Dubai, including Special Development Zones and Free Zones, but excluding the Dubai International Financial Centre (DIFC), which sits outside VARA's mandate.",
+  "key_dates": {
+    "effective": "2025-06-19"
+  },
+  "citations": [
+    {
+      "url": "https://rulebooks.vara.ae/rulebook/virtual-assets-and-related-activities-regulations-2023",
+      "quote": "Effective From: 19 June 2025"
+    },
+    {
+      "url": "https://rulebooks.vara.ae/rulebook/introduction-2",
+      "quote": "including Special Development Zones and Free Zones but excluding the Dubai International Financial Centre"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T16:20:00Z",
+  "model": "Claude (Anthropic)"
+}

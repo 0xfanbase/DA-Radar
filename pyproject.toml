@@ -10,6 +10,16 @@ dependencies = [
     "defusedxml>=0.7.1",
     "pypdf>=4.0",
     "jinja2>=3.1",
+    # P8's html_diff watcher mechanism (pipeline/watcher/mechanisms/html_diff.py):
+    # parses regulator HTML listing pages that publish no RSS/Atom feed.
+    # Used on the stdlib html.parser backend deliberately, never lxml --
+    # avoids a C-extension dependency and keeps XML-entity attack surface
+    # at zero for untrusted fetched HTML. soupsieve (the CSS-selector
+    # engine behind BeautifulSoup.select()) comes along as bs4's own
+    # transitive dependency; pinned explicitly too since this module
+    # depends on its selector support directly, not just incidentally.
+    "beautifulsoup4>=4.12",
+    "soupsieve>=2.5",
 ]
 
 [project.optional-dependencies]

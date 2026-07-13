@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "fintech-licence",
+  "term": "Fintech licence (Art. 1b Banking Act)",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "A lighter-touch Swiss banking authorisation, in force since 1 January 2019, that lets a non-bank accept public deposits -- including, per FINMA guidance, crypto-based assets held for clients -- up to CHF 100 million, provided the deposits are not invested and no interest is paid on them. It carries lower capital requirements than a full banking licence (the greater of CHF 300,000 or 3% of public deposits held) but does not carry ordinary deposit protection: FINMA states that in the event of the licensee's bankruptcy, client assets held under a fintech licence are 'neither privileged nor protected by deposit protection' the way ordinary bank deposits are. It has been the main authorisation route for non-bank digital-asset custody and dealing businesses that do not seek a full banking licence. A Federal Council consultation, open from 22 October 2025 to 6 February 2026, proposes abolishing this licence entirely and replacing it with two new Financial Institutions Act categories, 'payment instrument institutions' and 'crypto-institutions'; as of this writing that proposal remains at the consultation stage and has not been enacted, so the Art. 1b fintech licence remains the current, in-force route.",
+  "formal_definition": "Federal Act on Banks and Savings Banks (Banking Act, BankA/BankG, SR 952.0), Art. 1b, and the Banking Ordinance (BankO/BankV) provisions implementing it, in force since 1 January 2019. FINMA's fintech-licence authorisation page states the licensee must be a company limited by shares, a corporation with unlimited partners, or a limited liability company registered and operating in Switzerland, and must hold minimum capital equal to the greater of CHF 300,000 or 3% of public deposits held.",
+  "related_terms": [
+    "payment-instrument-institution",
+    "crypto-institution",
+    "finma",
+    "finia"
+  ],
+  "first_used_card_id": "ff908e846b54306e4ba36952c8a9dfd2244bc20353e9749320d0c3c2b72c1f11",
+  "generated_at": "2026-07-12T20:07:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

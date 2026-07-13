@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "pillar": "stablecoins",
+  "status_seal": "no_dedicated_regime",
+  "regulator": "FINMA (Swiss Financial Market Supervisory Authority); Federal Council / Federal Department of Finance (FDF) for the pending FinIA amendment",
+  "instruments": [
+    "Federal Act on Banks and Savings Banks (Banking Act, BankA/BankG), SR 952.0 -- deposit-taking licence requirement, applied by FINMA to stablecoin structures that qualify as public deposits",
+    "Federal Act on Collective Investment Schemes (CISA/KAG), SR 951.31 -- applied by FINMA where a stablecoin arrangement has fund-like, pooled-asset characteristics",
+    "FINMA: Supplement to the guidelines for enquiries regarding the regulatory framework for initial coin offerings (ICOs) -- 'stable coins' (11 September 2019)",
+    "FINMA Guidance 06/2024 on Stablecoins: risks and challenges for stablecoin issuers and banks providing default guarantees (26 July 2024)",
+    "Federal Council / FDF: consultation draft amending the Federal Act on Financial Institutions (FinIA/FINIG) to introduce 'payment instrument institutions' and 'crypto-institutions' licence categories, replacing the Banking Act art. 1b fintech licence (consultation opened 22 October 2025, closed 6 February 2026) -- not enacted; no dispatch (Botschaft) to Parliament identified as adopted as of this writing"
+  ],
+  "standing_summary": "Switzerland has no stablecoin statute. There is no dedicated crypto-asset or stablecoin law in force; FINMA instead applies Switzerland's existing, technology-neutral financial market laws to stablecoin arrangements case by case, classifying each structure by its economic function under its long-standing 'same risks, same rules' and 'substance over form' approach -- the same amend-and-apply pattern that runs through every pillar of this jurisdiction. FINMA first addressed 'stable coins' specifically in an 11 September 2019 supplement to its ICO guidelines, prompted in part by a request from the Geneva-based Libra Association; that supplement set out that stablecoins are assessed by the assets backing them and the rights they confer on holders, and can trigger deposit-taking under the Banking Act (SR 952.0), collective-investment treatment under CISA (SR 951.31), a payment-system licence requirement under the Financial Market Infrastructure Act, and/or a banking licence where 'bank-like risks' are present, with anti-money-laundering duties applying throughout. FINMA updated its practice in Guidance 06/2024 on Stablecoins (26 July 2024), which addresses two developments since 2019: first, that Swiss stablecoin issuers commonly avoid triggering a FINMA banking licence by having a bank provide a default guarantee to holders instead of the issuer taking deposits itself -- FINMA's own words: issuers 'often do not require a licence from FINMA under banking law' where such a guarantee is in place -- and the guidance sets out FINMA's minimum requirements for such guarantees, including that the guarantee cover all public deposits, give each holder an individual, directly enforceable claim, and allow uncomplicated, rapid recourse in the event of the issuer's insolvency; and second, that this structure shifts risk onto the guaranteeing bank, so FINMA addresses the legal, reputational and operational risk this creates for banks. Guidance 06/2024 also restates AMLA duties specific to stablecoins, including that issuers or an appropriately supervised financial intermediary must identify all holders because anonymous transfers of a stablecoin are not permitted under Swiss AML law. None of this -- the 2019 supplement or Guidance 06/2024 -- is a rule with independent legal force; both are FINMA's published supervisory interpretation of existing statutes, and neither creates a stablecoin licence category. The live edge of this pillar is the Federal Council's proposed amendment to the Federal Act on Financial Institutions (FinIA/FINIG), on which the FDF opened a public consultation on 22 October 2025 that closed on 6 February 2026. The draft would abolish the Banking Act art. 1b 'fintech licence' (in force since 2019, currently capped at CHF 100 million in public deposits) and replace it within FinIA with two new licence categories: 'payment instrument institutions', which the consultation materials describe as authorised to accept client deposits, issue value-stable crypto-based means of payment (i.e. regulated stablecoins) at par against those deposits, provide custody of the stablecoins they issue, and provide payment services, subject to duties to redeem stablecoins to holders on demand, back them with segregated, high-quality liquid assets (or sight deposits with a bank or another payment instrument institution) held apart from the institution's own assets, and comply with tailored AML requirements; and 'crypto-institutions', a second new category for other crypto-asset services (custody, trading and related activities) with licensing requirements modelled on, but lighter than, those for securities firms. This is, precisely, another amendment to an existing statute (FinIA), not a new stand-alone crypto or stablecoin law, and it is not yet in force in any respect: the consultation phase closed 6 February 2026 and, as of this writing, this research found no confirmation that the Federal Council has adopted and submitted a dispatch (Botschaft) to Parliament, let alone that Parliament has enacted the amendment. Until and unless this proposal becomes law, the current, in-force state of play for stablecoins in Switzerland remains exactly what FINMA's 2019 and 2024 guidance describes: existing Banking Act, CISA and AML law, applied case by case, with no dedicated licence category and no stablecoin-specific statute.",
+  "last_changed": "2026-02-06",
+  "key_links": [
+    {
+      "label": "FINMA: FINMA publishes 'stable coin' guidelines (press release, 11 September 2019)",
+      "url": "https://www.finma.ch/en/news/2019/09/20190911-mm-stable-coins/"
+    },
+    {
+      "label": "FINMA: FINMA publishes guidance on stablecoins (press release, Guidance 06/2024, 26 July 2024)",
+      "url": "https://www.finma.ch/en/news/2024/07/20240726-m-am-06-24-stablecoins/"
+    },
+    {
+      "label": "FINMA Guidance 06/2024 on Stablecoins (PDF, primary document)",
+      "url": "https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/4dokumentation/finma-aufsichtsmitteilungen/20240726-finma-aufsichtsmitteilung-06-2024.pdf"
+    },
+    {
+      "label": "Federal Council: Federal Council moves forward with stablecoins and crypto -- consultation launched (press release, 22 October 2025)",
+      "url": "https://www.admin.ch/en/newnsb/x4TMWQ1SWofNoFx7XyHhY"
+    },
+    {
+      "label": "State Secretariat for International Finance (SIF): Faktenblatt Stablecoins (factsheet, German)",
+      "url": "https://www.sif.admin.ch/dam/de/sd-web/dUviLBIEgTjT/Faktenblatt%20Stablecoins.pdf"
+    },
+    {
+      "label": "Fedlex: Federal Act on Banks and Savings Banks (Banking Act), SR 952.0",
+      "url": "https://www.fedlex.admin.ch/eli/cc/51/117_121_129/en"
+    },
+    {
+      "label": "Fedlex: Federal Act on Collective Investment Schemes (CISA), SR 951.31",
+      "url": "https://www.fedlex.admin.ch/eli/cc/2006/822/en"
+    }
+  ],
+  "open_items": [
+    "The Federal Council's press release of 22 October 2025 (admin.ch/en/newnsb/x4TMWQ1SWofNoFx7XyHhY) and the SIF factsheet were used for the consultation's headline facts (opening/closing dates, the two licence-category names, and the general redemption/backing/segregation duty description); the SIF factsheet is in German and this research could not machine-extract its exact German wording via automated PDF fetch, so no verbatim German quote from it is included here -- only English-language paraphrase corroborated across the Federal Council press release and multiple independent law-firm summaries of the consultation draft (Deloitte, Loyens & Loeff, Grant Thornton, Bar & Karrer, velaw, MLL). The precise statutory wording of the draft FinIA amendment (article numbers, exact German/French/Italian legal text) should be re-confirmed directly against the FDF's consultation draft and explanatory report on fedlex.admin.ch/de/consultation-procedures before being cited as precise legislative text.",
+    "This research could not confirm, as of the generation date below, whether the Federal Council has adopted a dispatch (Botschaft) on the FinIA amendment and submitted it to the Federal Assembly following the consultation's close on 6 February 2026, nor any officially stated target date for parliamentary consideration or entry into force. Secondary commentary (law-firm alerts) suggests a dispatch is not expected before the second half of 2026 and entry into force not before 2027, but this could not be verified against a primary Federal Council or FDF statement in this research pass and is therefore not asserted as fact.",
+    "FINMA Guidance 06/2024's exact minimum requirements for bank default guarantees (individual enforceable claim, full coverage of public deposits, rapid recourse) are stated in this pillar based on the FINMA press release announcing the guidance; the underlying PDF's full text could not be reliably machine-extracted (compressed content streams) in this research pass, so the guidance's complete text, including any further conditions, should be re-confirmed directly against the PDF at the linked URL before being treated as exhaustive.",
+    "The Banking Act art. 1b fintech licence (in force since 2019, CHF 100 million public-deposit cap) that the FinIA amendment proposes to replace is the current innovation-tier authorisation route most relevant to non-bank stablecoin issuers who do not use the default-guarantee structure; its detailed mechanics are tracked in the Banking & Money pillar for this jurisdiction, not duplicated here.",
+    "AMLA/AMLO-FINMA duties applicable to stablecoin issuers and intermediaries (travel-rule mechanics, the unhosted-wallet threshold) are tracked in full in the AML/CFT & Enforcement pillar for this jurisdiction; this pillar states only that such duties apply to stablecoin holder identification, per Guidance 06/2024, without restating the AML/CFT pillar's detail.",
+    "Whether any Swiss stablecoin issuer currently operates under the CISA collective-investment-scheme classification described in the 2019 supplement's fourth category, as opposed to the bank-default-guarantee structure addressed in Guidance 06/2024, could not be confirmed with a named, primary-source example in this research pass and is not asserted."
+  ],
+  "generated_at": "2026-07-12T06:58:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

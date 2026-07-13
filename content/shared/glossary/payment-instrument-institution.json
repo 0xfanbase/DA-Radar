@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "payment-instrument-institution",
+  "term": "Payment instrument institution (proposed)",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "A proposed new Swiss licence category for issuers of value-stable crypto-based means of payment (a defined category of stablecoin), put out for public consultation by the Federal Council via the Federal Department of Finance from 22 October 2025 to 6 February 2026. This is a consultation-stage proposal only -- it is not law, has not been enacted, and no dispatch (Botschaft) to the Federal Assembly had been confirmed as adopted as of this writing. The draft would insert the category into the Financial Institutions Act (FinIA) in place of the current Banking Act art. 1b fintech licence, and, per the consultation materials, would authorise a licensee to accept client deposits, issue stablecoins at par against those deposits, provide custody of the stablecoins it issues, and provide payment services -- subject to duties to redeem stablecoins to holders on demand, back them with segregated, high-quality liquid assets held apart from the institution's own assets, and comply with tailored anti-money-laundering requirements, with the existing CHF 100 million deposit cap removed.",
+  "formal_definition": "Federal Council / Federal Department of Finance (FDF), consultation draft amending the Federal Act on Financial Institutions (FinIA/FINIG), consultation opened 22 October 2025 and closed 6 February 2026. The Federal Council's own 22 October 2025 press release and the accompanying State Secretariat for International Finance (SIF) factsheet describe the category's authorised activities and duties; no primary source located during this research confirms enactment, a dispatch to the Federal Assembly, or an entry-into-force date, and none is asserted here.",
+  "related_terms": [
+    "crypto-institution",
+    "fintech-licence",
+    "payment-token",
+    "swiss-amla",
+    "finia"
+  ],
+  "first_used_card_id": "2c74eac574b6247db912df38014ce404c39624a0a6a1a9831e8b2ce0264b73e7",
+  "generated_at": "2026-07-12T20:08:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

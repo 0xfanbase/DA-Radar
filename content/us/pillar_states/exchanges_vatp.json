@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "pillar": "exchanges_vatp",
+  "status_seal": "no_dedicated_regime",
+  "regulator": "SEC and CFTC",
+  "instruments": [
+    "Securities Exchange Act of 1934, Section 6 (15 U.S.C. 78f) -- registration of national securities exchanges -- and Regulation ATS (17 CFR 242.300-303), the framework the SEC applies to venues trading crypto assets that are securities",
+    "Commodity Exchange Act, Section 5 (7 U.S.C. 7, designated contract markets) and Section 5h (7 U.S.C. 7b-3, swap execution facilities), the framework the CFTC applies to derivatives markets in commodity-classified crypto assets",
+    "SEC and CFTC Staff Joint Statement on the Trading of Certain Spot Crypto Asset Products (2 September 2025)",
+    "Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets, Release Nos. 33-11412; 34-105020, File No. S7-2026-09 (SEC interpretation with accompanying CFTC guidance, effective 23 March 2026)",
+    "SEC Fall 2026 Unified Agenda of Regulatory and Deregulatory Actions, RIN 3235-AN49 \"Crypto Market Structure Amendments,\" Proposed Rule Stage, published 7 July 2026",
+    "H.R. 3633, Digital Asset Market Clarity Act, 119th Congress -- as passed by the House of Representatives 17 July 2025 (Roll Call 199, 294-134) and as reported, with an amendment in the nature of a substitute, by the Senate Committee on Banking, Housing, and Urban Affairs 1 June 2026 (not enacted)",
+    "CFTC Backgrounder on Oversight of and Approach to Virtual Currency Futures Markets (4 January 2018) -- the CFTC's own longstanding statement that U.S. law does not provide for direct, comprehensive federal oversight of virtual currency spot markets"
+  ],
+  "standing_summary": "There is no single federal licence for a crypto asset trading venue; which federal regulator, if any, has authority over a given venue turns on how the crypto assets traded on it are classified, and that split -- not a unified regime -- is the federal-level structural fact for this pillar. The SEC's jurisdiction runs to venues trading crypto assets that are securities: national securities exchanges registered under Exchange Act Section 6 (15 U.S.C. 78f), alternative trading systems operating under Regulation ATS (17 CFR 242.300-303), and broker-dealers operating crypto-asset-security trading platforms. The CFTC's jurisdiction runs to derivatives markets in crypto assets that are commodities: designated contract markets (DCMs) under Commodity Exchange Act (CEA) Section 5 (7 U.S.C. 7) and swap execution facilities (SEFs) under CEA Section 5h (7 U.S.C. 7b-3). Both agencies have long and, on the CFTC's side, explicitly acknowledged the resulting gap for spot (non-derivative) trading in crypto assets that are not securities: the CFTC's own Backgrounder on Oversight of and Approach to Virtual Currency Futures Markets (4 January 2018) states that '[U.S.] law does not provide for direct, comprehensive Federal oversight of underlying Bitcoin or virtual currency spot markets,' and that beyond its derivatives-market jurisdiction 'the CFTC has jurisdiction to police fraud and manipulation in cash or spot markets' only -- a limitation the agency's staff has continued to restate since (e.g., CFTC Division of Enforcement Director Ian McGinley, 11 September 2023: 'The CFTC does not have regulatory authority over the spot market for digital asset commodities. Our authority in the spot market is limited to prosecuting fraud and manipulation.'). Absent new legislation, this remains the CFTC's position as of this writing. Two recent joint SEC-CFTC actions are the current official articulations of how the two regimes meet at the venue level, and both are presented here as staff/agency positions rather than as settled law. First, on 2 September 2025, SEC and CFTC staff issued a Joint Statement on the Trading of Certain Spot Crypto Asset Products, stating staff's view that 'SEC- and CFTC-registered exchanges are not prohibited from facilitating the trading of certain spot commodity products' -- i.e., that current law does not bar CFTC-registered DCMs and foreign boards of trade, or SEC-registered national securities exchanges, from facilitating trading in certain spot crypto asset products, with the SEC's Division of Trading and Markets and the CFTC's Divisions of Market Oversight and Clearing and Risk committing to coordinate review of exchange filings and requests on this basis. The statement was issued as part of the SEC's 'Project Crypto' and the CFTC's 'Crypto Sprint,' building on the President's Working Group on Digital Asset Markets' July 2025 report; SEC Chairman Paul S. Atkins and then-CFTC Acting Chairman Caroline D. Pham issued accompanying statements. Second, on 17 March 2026 (effective 23 March 2026), the SEC issued an interpretation -- joined by CFTC guidance -- titled 'Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets' (Release Nos. 33-11412; 34-105020). The release sets out a five-category taxonomy (digital commodities, digital collectibles, digital tools, stablecoins, and digital securities) and states that a digital commodity 'is not a security because it does not have the economic characteristics of a security,' while noting that any non-security crypto asset (other than a GENIUS Act permitted payment stablecoin) 'could meet the definition of \"commodity\" under the Commodity Exchange Act.' The CFTC's accompanying guidance states it will 'administer the CEA consistent with the SEC's interpretation.' Both agencies present this as a harmonizing, not adjudicative, step: the release does not itself create new trading-venue registration categories or rules, and each agency's own venue-authorization framework (Exchange Act Section 6/Regulation ATS on one side, CEA Sections 5/5h on the other) continues to apply according to how a given crypto asset is classified. The release followed a 29 January 2026 announcement by SEC Chairman Atkins and CFTC Chairman Michael S. Selig that Project Crypto would proceed as a joint SEC-CFTC effort. On the SEC's rulemaking side specifically, the SEC's Unified Agenda published 7 July 2026 lists RIN 3235-AN49, 'Crypto Market Structure Amendments,' at the Proposed Rule Stage with a target Notice of Proposed Rulemaking date of July 2026 and an 'economically significant' priority designation; the agenda abstract describes the SEC as considering amendments to Exchange Act rules governing crypto asset trading on alternative trading systems and national securities exchanges. As of this writing no proposed rule text has been published; the July 2026 date is the agency's stated target, not a filing. On the legislative side, H.R. 3633, the Digital Asset Market Clarity Act, which would establish a system of regulation for the offer and sale of digital commodities allocated between the SEC and CFTC, passed the House of Representatives on 17 July 2025 by a vote of 294-134 (Roll Call 199). The Senate Committee on Banking, Housing, and Urban Affairs reported the bill, with an amendment in the nature of a substitute, on 1 June 2026, and it was placed on the Senate Legislative Calendar; per congress.gov, no Senate floor vote had been scheduled as of this writing. The bill is not enacted. This pillar covers the federal level only: state-level venue regulation -- including money-transmitter licensing regimes and the New York State Department of Financial Services' BitLicense -- is out of scope.",
+  "last_changed": "2026-07-07",
+  "key_links": [
+    {
+      "label": "SEC: SEC and CFTC Staff Issue Joint Statement on Trading of Certain Spot Crypto Asset Products (press release 2025-110, 2 Sep 2025)",
+      "url": "https://www.sec.gov/newsroom/press-releases/2025-110-sec-cftc-staff-issue-joint-statement-trading-certain-spot-crypto-asset-products"
+    },
+    {
+      "label": "CFTC and SEC Staff Joint Statement on Trading of Certain Spot Crypto Asset Products (full text, 2 Sep 2025)",
+      "url": "https://www.cftc.gov/PressRoom/SpeechesTestimony/cftcsecjointcryptostatement090225"
+    },
+    {
+      "label": "CFTC: CFTC and SEC Staff Issue Joint Statement on Trading of Certain Spot Crypto Asset Products (press release 9112-25)",
+      "url": "https://www.cftc.gov/PressRoom/PressReleases/9112-25"
+    },
+    {
+      "label": "SEC: Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets, Release Nos. 33-11412; 34-105020 (rule release page)",
+      "url": "https://www.sec.gov/rule-release/33-11412"
+    },
+    {
+      "label": "SEC: Release Nos. 33-11412; 34-105020, conformed to Federal Register version (full PDF)",
+      "url": "https://www.sec.gov/files/rules/interp/2026/33-11412.pdf"
+    },
+    {
+      "label": "CFTC: CFTC Joins SEC to Clarify the Application of Federal Securities Laws to Crypto Assets (press release 9198-26, 17 Mar 2026)",
+      "url": "https://www.cftc.gov/PressRoom/PressReleases/9198-26"
+    },
+    {
+      "label": "reginfo.gov: Unified Agenda entry for RIN 3235-AN49, \"Crypto Market Structure Amendments\" (Proposed Rule Stage)",
+      "url": "https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&RIN=3235-AN49"
+    },
+    {
+      "label": "SEC: Chairman Paul S. Atkins, Statement on the 2026 Regulatory Agenda (7 Jul 2026)",
+      "url": "https://www.sec.gov/newsroom/speeches-statements/atkins-statement-2026-regulatory-agenda-070726"
+    },
+    {
+      "label": "Congress.gov: H.R.3633 -- Digital Asset Market Clarity Act, 119th Congress (bill status)",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/3633"
+    },
+    {
+      "label": "Clerk, U.S. House of Representatives: Roll Call 199, H.R. 3633, 119th Congress, 1st Session (17 Jul 2025, 294-134)",
+      "url": "https://clerk.house.gov/Votes/2025199"
+    },
+    {
+      "label": "GovInfo: H.R.3633, Digital Asset Market Clarity Act, Reported in Senate (BILLS-119hr3633rs, 1 Jun 2026)",
+      "url": "https://www.govinfo.gov/app/details/BILLS-119hr3633rs"
+    },
+    {
+      "label": "CFTC: Backgrounder on Oversight of and Approach to Virtual Currency Futures Markets (4 Jan 2018)",
+      "url": "https://www.cftc.gov/sites/default/files/idc/groups/public/@newsroom/documents/file/backgrounder_virtualcurrency01.pdf"
+    },
+    {
+      "label": "CFTC: PLI White Collar Crime 2023 speech of Enforcement Director Ian McGinley, \"Enforcement by Enforcement\" (11 Sep 2023)",
+      "url": "https://www.cftc.gov/PressRoom/SpeechesTestimony/opamcginley1"
+    }
+  ],
+  "open_items": [
+    "State-level venue regulation -- including money-transmitter licensing regimes generally and the New York State Department of Financial Services' BitLicense specifically -- is real and materially affects where and how crypto trading venues operate, but is out of scope of this federal-level-only pillar.",
+    "Broker-dealer custody treatment of crypto asset securities, investment-adviser custody questions, and other dealing/custody/advisory topics are tracked in the Dealing, Custody, Advisory & Management pillar, not here; this pillar is scoped to trading-venue structure only.",
+    "The two related SEC 2026 Unified Agenda entries published alongside RIN 3235-AN49 -- RIN 3235-AN38 (crypto asset offer-and-sale rulemaking) and RIN 3235-AN48 (amendments to broker-dealer net capital, customer protection, and recordkeeping rules for crypto assets) -- are not duplicated in this pillar's instruments/summary; they bear more directly on other pillars and are noted here only so their absence is not read as an oversight.",
+    "RIN 3235-AN49 is at the Proposed Rule Stage only as of the 7 July 2026 Unified Agenda publication; no proposed rule text, comment period, or final rule exists yet, and the stated July 2026 NPRM target date is the agency's own plan, not a commitment this pillar state predicts will be met.",
+    "H.R. 3633 (CLARITY Act) is not enacted. This pillar state records only its congress.gov-documented procedural status (House passage 17 July 2025; Senate Banking Committee reported-with-amendment 1 June 2026; no floor vote scheduled as of the generation date) and does not describe, assume, or summarize any substantive allocation of jurisdiction the bill would create, since that allocation is not current law.",
+    "The taxonomy in Release Nos. 33-11412/34-105020 (digital commodities, digital collectibles, digital tools, stablecoins, digital securities) governs which venue-type framework applies to a given crypto asset, but the release itself does not create new venue-registration categories or amend Exchange Act/CEA venue rules; that prospective work is what RIN 3235-AN49 and any parallel CFTC rulemaking would do, and none of it has been proposed in rule-text form as of this writing.",
+    "This research did not independently verify whether the CFTC has published, or scheduled, its own parallel venue-related rulemaking (as distinct from the SEC's RIN 3235-AN49) in a spring/summer 2026 CFTC regulatory agenda; a genuine primary CFTC agenda source for such a rulemaking was not located and none is therefore claimed here."
+  ],
+  "generated_at": "2026-07-12T05:31:34Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

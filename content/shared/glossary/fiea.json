@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "fiea",
+  "term": "FIEA (Financial Instruments and Exchange Act / 金融商品取引法)",
+  "jurisdictions": [
+    "jp"
+  ],
+  "plain_definition": "Japan's principal securities law -- broadly the equivalent of Hong Kong's Securities and Futures Ordinance -- covering disclosure, broker-dealer and asset-management licensing, market conduct, and, since a 2019 amendment, tokenized securities. Unlike crypto-asset exchange business or digital-money-type stablecoins, which sit in the Payment Services Act, Japan regulates security tokens by treating them as ordinary FIEA securities carrying a digital 'electronically recorded transferable right' wrapper, layering full prospectus-style disclosure and Type I broker-dealer registration onto instruments that would otherwise get lighter treatment.",
+  "formal_definition": "金融商品取引法, Act No. 25 of 1948 (昭和二十三年法律第二十五号), promulgated 13 April 1948 -- confirmed by direct fetch of the Act's current consolidated text via the e-Gov Law API this session (law_id 323AC0000000025). Art. 2(2) enumerates instruments the Act deems securities ('みなし有価証券'), including trust beneficial interests and collective investment scheme interests. Art. 2(3), inserted by Act No. 28 of 2019, effective 1 May 2020, reclassifies such an instrument as an 'electronically recorded transferable right' (電子記録移転権利, ERTR) -- and therefore a first-paragraph, Art. 2(1)-equivalent security -- once it is tokenized on an electronically transferable system. Art. 4(1) requires a securities registration statement for a public offering of Art. 2(1) securities including ERTRs; Art. 29 requires Type I Financial Instruments Business Operator registration to deal in or broker them. A pending 2026 bill (submitted to the Diet 10 April 2026; passed the House of Representatives 11 June 2026; pending in the House of Councillors as of this research session) would migrate crypto-asset business regulation from the PSA into FIEA -- not yet enacted, and not asserted here as current law.",
+  "related_terms": [
+    "ertr",
+    "security-token",
+    "fsa",
+    "psa"
+  ],
+  "first_used_card_id": "40efe78597663a3d4d3915012b540c0e06fd8066d5b01d93b1e5445b10b41d40",
+  "generated_at": "2026-07-12T10:46:25Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

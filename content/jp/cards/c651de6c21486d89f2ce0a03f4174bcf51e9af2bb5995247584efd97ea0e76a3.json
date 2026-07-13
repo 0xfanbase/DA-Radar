@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "c651de6c21486d89f2ce0a03f4174bcf51e9af2bb5995247584efd97ea0e76a3",
+  "jurisdiction_id": "jp",
+  "published_date": "2017-03-24",
+  "regulator": "FSA (Financial Services Agency)",
+  "pillar": [
+    "exchanges_vatp"
+  ],
+  "type": "ordinance",
+  "title": "FSA promulgates Cabinet Order/Ordinance package including new ordinance on virtual currency exchange service providers, effective 1 April 2017",
+  "summary": "On 24 March 2017, Japan's Financial Services Agency (FSA) published a notice on a package of Cabinet Order and Cabinet Office Ordinance amendments -- covering, among other things, revisions to Banking Act and Money Lending Business Act enforcement instruments -- that also included a newly issued Cabinet Office Ordinance specifically concerning virtual currency exchange service providers (仮想通貨交換業者に関する内閣府令) and a corresponding new chapter of FSA administrative guidelines for virtual currency exchange service providers (事務ガイドライン 第三分冊：16 仮想通貨交換業者関係). The FSA's notice states the Cabinet Order was decided by Cabinet on 21 March 2017, that the Order and Ordinances were promulgated the same day the notice was published (24 March 2017), and that they take effect from 1 April 2017, with some provisions -- including the virtual currency exchange service provider guideline chapter -- applying from 25 March 2017.",
+  "why_it_matters": "This FSA notice fixes the exact commencement dates for the package -- 1 April 2017 for most of it, 25 March 2017 for some provisions -- including a new Cabinet Office Ordinance and an administrative guideline chapter devoted specifically to virtual currency exchange service providers, giving those measures a precise date of legal effect within Japan's FSA-administered regulatory framework.",
+  "key_dates": {
+    "effective": "2017-04-01",
+    "milestone": "2017-03-21"
+  },
+  "citations": [
+    {
+      "url": "https://www.fsa.go.jp/news/28/ginkou/20170324-1.html",
+      "quote": "平成29年４月１日（土）から施行されます（一部は平成29年３月25日施行）。"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-12T22:15:00Z",
+  "model": "Claude (Anthropic)"
+}

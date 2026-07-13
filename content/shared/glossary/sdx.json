@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "sdx",
+  "term": "SDX (SIX Digital Exchange)",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "Switzerland's first licensed digital-asset financial market infrastructure. On 10 September 2021, FINMA granted its first-ever approvals for a stock exchange (SDX Trading AG) and a central securities depository (SIX Digital Exchange AG) to trade and settle tokenised securities -- but, as FINMA's own press release states, these approvals 'took the traditional route ... as per the [Financial Market Infrastructure Act]', rather than using the newer 'DLT trading facility' licence category the same DLT Act had just created. SDX's tokenised-bond trading has since been consolidated onto SIX Swiss Exchange (from 1 June 2025, per SIX's own account), and FINMA approved merging SIX Digital Exchange AG's central-depository function into SIX SIS AG, per SIX's 5 May 2026 announcement -- a corporate restructuring described here only as SIX's own account of a regulatory outcome, not as a FINMA statement, since this research did not locate a dedicated FINMA press release describing that specific change.",
+  "formal_definition": "FINMA press release, 'FINMA issues first-ever approval for a stock exchange and a central securities depository for the trading of tokens' (10 September 2021): the approvals for SDX Trading AG and SIX Digital Exchange AG 'took the traditional route, namely approval to act as a stock exchange and central securities depository as per the [Financial Market Infrastructure Act].' FINMA's current public list of authorised financial market infrastructures no longer lists SDX Trading AG or SIX Digital Exchange AG as separately licensed entities, listing SIX Swiss Exchange AG as the stock exchange and SIX SIS AG as the central depository instead; the mechanism of that change is corroborated only by SIX Group's own 5 May 2026 announcement, not by an independently located FINMA press release.",
+  "related_terms": [
+    "dlt-trading-facility",
+    "ledger-based-security",
+    "finma",
+    "project-helvetia"
+  ],
+  "first_used_card_id": "cf95e52fa13da650ceed71f6f2546ad2a9924924fbe9e4e1156d11cd5a299b1f",
+  "generated_at": "2026-07-12T20:12:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

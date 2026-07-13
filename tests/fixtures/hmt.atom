@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>HM Treasury</title>
+  <id>https://www.gov.uk/government/organisations/hm-treasury.atom</id>
+  <updated>2026-06-23T09:01:09Z</updated>
+  <link href="https://www.gov.uk/government/organisations/hm-treasury.atom" rel="self"/>
+  <link href="https://www.gov.uk/government/organisations/hm-treasury"/>
+  <entry>
+    <id>https://www.gov.uk/government/publications/digital-assets-consultation-response</id>
+    <title>Digital assets: consultation response</title>
+    <link rel="alternate" href="https://www.gov.uk/government/publications/digital-assets-consultation-response"/>
+    <published>2026-06-23T09:01:09+01:00</published>
+    <updated>2026-06-23T10:15:00+01:00</updated>
+    <summary type="html">&lt;p&gt;HM Treasury sets out its &lt;strong&gt;response&lt;/strong&gt; to the digital assets consultation.&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Full content body, longer than the summary.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>https://www.gov.uk/government/news/stablecoin-regime-update</id>
+    <title>Stablecoin regime: update</title>
+    <link href="https://www.gov.uk/government/news/stablecoin-regime-update"/>
+    <updated>2026-06-20T08:30:00Z</updated>
+    <summary type="html">&lt;p&gt;An update on the stablecoin regulatory regime.&lt;/p&gt;</summary>
+  </entry>
+</feed>

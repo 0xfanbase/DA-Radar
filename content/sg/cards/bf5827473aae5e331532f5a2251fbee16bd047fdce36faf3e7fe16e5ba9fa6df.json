@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "bf5827473aae5e331532f5a2251fbee16bd047fdce36faf3e7fe16e5ba9fa6df",
+  "jurisdiction_id": "sg",
+  "published_date": "2023-11-16",
+  "regulator": "Monetary Authority of Singapore (MAS)",
+  "pillar": [
+    "banking_money",
+    "stablecoins",
+    "tokenization_rwa"
+  ],
+  "type": "guidance",
+  "title": "MAS lays foundation for digital money in Singapore: Orchid Blueprint published and first live wholesale CBDC issuance planned",
+  "summary": "On 16 November 2023, the Monetary Authority of Singapore (MAS) announced three digital-money initiatives. It published the Orchid Blueprint, a technical framework setting out the infrastructure needed for digital money in Singapore: a settlement ledger, a tokenisation bridge linking existing settlement systems to tokenised-money ledgers, a Purpose Bound Money programmability protocol, and a wallet-address Name Service. It expanded Project Orchid's industry trials into four new areas covering tokenised bank liabilities, wallet interoperability, supplier financing, and institutional payment controls. MAS also announced plans to begin developing wholesale central bank digital currency (CBDC) for interbank settlement in 2024, piloting its first \"live\" wholesale CBDC issuance after earlier, Project Ubin-era issuances were only simulated. MAS said it is promoting three forms of digital money: wholesale CBDCs, tokenised bank liabilities, and regulated stablecoins.",
+  "why_it_matters": "This is the moment MAS set out both the technical blueprint for a future digital Singapore dollar and a plan -- with development of wholesale CBDC for interbank settlement to begin in 2024 -- to move toward its first genuinely \"live\" wholesale central bank digital currency, beyond the purely simulated test-environment issuances it had run before.",
+  "citations": [
+    {
+      "url": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release_MAS%20Lays%20Foundation%20for%20Safe%20and%20Innovative%20Use%20of%20Digital%20Money%20in%20Singapore.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20231116-2/attachment/MAS+Media+Release_MAS+Lays+Foundation+for+Safe+and+Innovative+Use+of+Digital+Money+in+Singapore.pdf",
+      "quote": "MAS will pilot the “live” issuance of wholesale CBDCs for the first time"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T05:15:00Z",
+  "model": "Claude (Anthropic)"
+}

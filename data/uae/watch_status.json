@@ -1,0 +1,42 @@
+{
+  "feeds": {
+    "dfsa_news": {
+      "last_error": null,
+      "mechanism": "rss",
+      "source_id": "dfsa",
+      "status": "ok",
+      "status_since": "2026-07-13T00:52:43Z"
+    },
+    "fsra_adgm_announcements": {
+      "last_error": null,
+      "mechanism": "sitemap_diff",
+      "source_id": "fsra",
+      "status": "ok",
+      "status_since": "2026-07-13T00:52:43Z"
+    },
+    "sca_cma_news_ar": {
+      "last_error": null,
+      "mechanism": "sitemap_diff",
+      "source_id": "sca",
+      "status": "ok",
+      "status_since": "2026-07-13T00:52:43Z"
+    },
+    "sca_cma_news_en": {
+      "last_error": null,
+      "mechanism": "sitemap_diff",
+      "source_id": "sca",
+      "status": "ok",
+      "status_since": "2026-07-13T00:52:43Z"
+    },
+    "vara_news": {
+      "last_error": null,
+      "mechanism": "html_diff",
+      "source_id": "vara",
+      "status": "ok",
+      "status_since": "2026-07-13T00:52:43Z"
+    }
+  },
+  "generated_at": "2026-07-13T00:52:43Z",
+  "jurisdiction_id": "uae",
+  "schema_version": 1
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "schema_version": 1,
+    "date_or_window": "2026-06",
+    "event": "Freedonia-specific upcoming event",
+    "pillar": "test_pillar_alpha",
+    "source_url": "https://ffa.freedonia.invalid/trajectory-source",
+    "confidence": "announced"
+  }
+]

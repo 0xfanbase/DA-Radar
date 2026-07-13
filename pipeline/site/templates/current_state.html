@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% import "_timeline.html" as t %}
+{% block title %}{{ jurisdiction_name }} &mdash; Current State &mdash; {{ site_name }}{% endblock %}
+{% block content %}
+<h1 class="plate">{{ jurisdiction_name }}: Current State</h1>
+
+{#
+  "New here? How to read this board" panel (P7 plan). A <details> element,
+  open by default, so a no-JS visitor simply always sees it open -- the
+  correct, safe default (see the module-level comment in site.js's
+  initOrientationPanel()). Two parts:
+    - per-jurisdiction reading notes, sourced from this jurisdiction's own
+      content/{{ jurisdiction_id }}/orientation.json -- specifically its
+      "How to use this site" section, pulled out by
+      pipeline/site/data.py's split_orientation_body() so the same text
+      isn't also duplicated in the full essay below.
+    - the seal legend, shared verbatim across every jurisdiction (see
+      SEAL_LEGEND_COPY in pipeline/site/data.py) since config/site.json's
+      seal_vocabulary is itself jurisdiction-invariant.
+  data-jurisdiction-id lets site.js key the dismissal localStorage entry
+  per jurisdiction ("gdar-orientation-dismissed-{{ jurisdiction_id }}"),
+  matching the gdar-theme naming convention already used by theme.js.
+#}
+<details class="orientation-panel" id="orientation-panel" data-jurisdiction-id="{{ jurisdiction_id }}" open>
+  <summary>New here? How to read this board</summary>
+  <div class="orientation-panel-body">
+    {% for para in orientation_panel_notes %}
+    <p>{{ para }}</p>
+    {% endfor %}
+    {% if seal_labels %}
+    {# h2, not h3: this is the first sub-heading on the page (before the
+       orientation essay's own h2 sections and the State Board's h2), so
+       an h3 here would skip a level -- see
+       test_timeline_cards_use_h2_not_h3_no_heading_level_skip for why
+       this project treats that as a real regression, not a style nit. #}
+    <h2>What the seals mean</h2>
+    <dl class="seal-legend">
+      {% for seal_id, label in seal_labels.items() %}
+      <div class="seal-legend-item">
+        <dt>{{ label }}</dt>
+        {% if seal_legend_copy.get(seal_id) %}<dd>{{ seal_legend_copy[seal_id] }}</dd>{% endif %}
+      </div>
+      {% endfor %}
+    </dl>
+    {% endif %}
+    <p class="meta-line">Collapse this panel and your device remembers not to open it again automatically; it never disappears from the page, and reopening it anytime is one click on the heading above.</p>
+  </div>
+</details>
+
+{{ t.timeline_ribbon(timeline_events, trajectory, "hero", limit=40, asset_prefix=asset_prefix) }}
+{# _timeline.html's timeline_ribbon() macro renders both the precise
+   ribbon (Band 1) and the dedicated "Ahead" rail (Band 2, trajectory
+   entries as pills -- see that file) in one include; this Current State
+   page gets both automatically, with no separate include needed here.
+   The full grouped-by-pillar "Ahead, by pillar" board (Band 3) lives on
+   the Timeline page only, not here -- see timeline.html. #}
+{% if orientation %}
+<div class="prose">
+  {% for item in orientation_essay_items %}
+    {% if item.is_heading %}
+    <h2>{{ item.text }}</h2>
+    {% else %}
+    <p>{{ item.text }}</p>
+    {% endif %}
+  {% endfor %}
+</div>
+<p class="mono meta-line">Last changed {{ orientation.last_changed }} &middot; generated {{ orientation.generated_at }} &middot; {{ orientation.model }} &middot;
+  {% if orientation.status == "corrected" %}<a class="badge-corrected" href="{{ asset_prefix }}method.html#corrections-log">Corrected &mdash; see corrections log</a>{% else %}<span class="badge-unverified">Not independently verified</span>{% endif %}
+</p>
+{% endif %}
+<h2>The State Board</h2>
+<p>Current status of each of {{ jurisdiction_name }}'s digital-asset regulatory pillars, one paragraph each.</p>
+<div class="pillar-grid">
+  {% for p in pillar_states %}
+  <section class="pillar-card">
+    <div class="pillar-header">
+      <h3>{{ p.pillar_name }}</h3>
+      {{ m.seal(p.status_seal, p.status_label) }}
+    </div>
+    <p><strong>{{ p.regulator }}</strong></p>
+    <p class="instruments">{{ p.instruments | join(" · ") }}</p>
+    <p>{{ p.standing_summary }}</p>
+    {% if p.open_items %}
+    <p class="open-items"><strong>Open items:</strong></p>
+    <ul class="open-items">
+      {% for item in p.open_items %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    <p class="mono meta-line">Last changed {{ p.last_changed }}</p>
+    <div class="card-meta">
+      {% if p.status == "corrected" %}
+      <a class="badge-corrected" href="{{ asset_prefix }}method.html#corrections-log">Corrected &mdash; see corrections log</a>
+      {% else %}
+      <span class="badge-unverified">Not independently verified</span>
+      {% endif %}
+      <span>generated {{ p.generated_at }} &middot; {{ p.model }}</span>
+    </div>
+    <p>
+      {% for link in p.key_links %}<a href="{{ link.url }}">{{ link.label }}</a><br>{% endfor %}
+    </p>
+  </section>
+  {% endfor %}
+</div>
+{% endblock %}

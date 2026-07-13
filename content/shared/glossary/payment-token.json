@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "payment-token",
+  "term": "Payment token",
+  "jurisdictions": [
+    "ch"
+  ],
+  "plain_definition": "One of three token categories FINMA set out in its February 2018 ICO guidelines to decide which Swiss financial-market laws apply to a given crypto asset. A payment token, in FINMA's own words, is 'synonymous with cryptocurrencies and have no further functions or links to other development projects' -- a token intended purely as a means of payment or store of value, such as bitcoin. Payment tokens are not treated as securities, but their issuance and trading still trigger Switzerland's anti-money-laundering law. FINMA notes that a single token can carry features of more than one category ('hybrid tokens'), in which case the requirements for each applicable category apply cumulatively.",
+  "formal_definition": "FINMA, Guidelines for enquiries regarding the regulatory framework for initial coin offerings (ICOs) (16 February 2018): payment tokens 'are synonymous with cryptocurrencies and have no further functions or links to other development projects. Tokens may in some cases only develop the necessary functionality and become accepted as a means of payment over a period of time.' FINMA's ICO guidelines are the sole basis for this classification; no Swiss statute defines 'payment token' directly.",
+  "related_terms": [
+    "utility-token",
+    "asset-token",
+    "finma",
+    "swiss-amla",
+    "stablecoin"
+  ],
+  "first_used_card_id": "cf95e52fa13da650ceed71f6f2546ad2a9924924fbe9e4e1156d11cd5a299b1f",
+  "generated_at": "2026-07-12T20:04:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

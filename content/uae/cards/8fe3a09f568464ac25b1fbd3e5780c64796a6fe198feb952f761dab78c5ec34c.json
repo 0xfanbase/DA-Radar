@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "8fe3a09f568464ac25b1fbd3e5780c64796a6fe198feb952f761dab78c5ec34c",
+  "jurisdiction_id": "uae",
+  "published_date": "2022-08-25",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "exchanges_vatp",
+    "dealing_custody_advisory"
+  ],
+  "type": "guidance",
+  "title": "VARA issues Regulations governing Virtual Assets Marketing as the foundation for Safe Market participation",
+  "summary": "On 25 August 2022, VARA -- which regulates virtual asset activities across the Emirate of Dubai outside the DIFC free zone -- issued Regulatory Guidelines on Marketing, Advertising and Promotions of Virtual Assets. The guidelines arrived as VARA began operationalising its licensing regime, and set rules for all forms of virtual-asset outreach aimed at Dubai-based customers: publications, awareness campaigns, customer engagement, and investor solicitation. They bind not only VARA-licensed VASPs but also Dubai-based media, search, and publishing platforms carrying such content. Covered parties must act responsibly, ensure factual accuracy, disclose promotional intent, and avoid misleading claims about guaranteed returns. VARA states the guidelines are backed by enforcement standards and penalties for non-compliance, and sit alongside existing UAE marketing, data-protection, and consumer-protection laws. This is a narrower, earlier marketing-specific rule than VARA's 2023 Regulations.",
+  "why_it_matters": "For a newcomer, this shows that VARA, Dubai's dedicated virtual-asset regulator, governs not only licensed exchanges and custodians but also how virtual assets can be marketed and advertised in the emirate, extending compliance obligations to media and publishing platforms as well as to licensees themselves.",
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/vara-issues-regulations-governing-virtual-assets-marketing-as-the-foundation-for-safe-market-participation/",
+      "quote": "Regulatory Guidelines on Marketing, Advertising and Promotions of VA across the Emirate of Dubai"
+    },
+    {
+      "url": "https://www.vara.ae/en/news/dubais-vara-issues-specialised-regulations-for-virtual-assets/",
+      "quote": "has issued its Virtual Assets and Related Activities Regulations 2023"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T12:00:00Z",
+  "model": "Claude (Anthropic)"
+}

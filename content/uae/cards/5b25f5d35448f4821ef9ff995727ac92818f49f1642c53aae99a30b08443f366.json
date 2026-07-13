@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "5b25f5d35448f4821ef9ff995727ac92818f49f1642c53aae99a30b08443f366",
+  "jurisdiction_id": "uae",
+  "published_date": "2022-11-21",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "dealing_custody_advisory"
+  ],
+  "type": "licence",
+  "title": "Komainu Secures MVP Licence from Dubai's Virtual Assets Regulatory Authority",
+  "summary": "On 21 November 2022, VARA -- the Virtual Assets Regulatory Authority, which licenses and supervises virtual asset activity across the Emirate of Dubai's mainland and free zones, excluding the Dubai International Financial Centre (DIFC) -- announced that Komainu MEA FZE had received an MVP (minimal viable product) licence, following a provisional approval VARA had granted the firm in July 2022. The licence authorises Komainu to provide Virtual Assets Custodial Services and Virtual Assets Management Services to institutional clients. VARA's announcement describes Komainu MEA FZE as the first dedicated institutional digital-asset custodian to receive MVP licence approval from VARA, and states that VARA's Chairman described Komainu as VARA's first virtual asset service provider with a traditional-finance background to join the MVP phase of VARA's regulatory regime.",
+  "why_it_matters": "VARA is the specialist regulator that licenses virtual-asset businesses operating across Dubai outside the DIFC free zone, and this notice is an example of a named institutional provider being authorised, under VARA's phased licensing process, to offer regulated custody and asset-management services to institutions.",
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/komainu-secures-mvp-licence-from-dubais-virtual-assets-regulatory-authority/",
+      "quote": "the first 'dedicated' institutional digital asset custodian to receive its MVP licence approval from VARA"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T16:05:00Z",
+  "model": "Claude (Anthropic)"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "id": "dfsa",
+  "term": "DFSA (Dubai Financial Services Authority)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "The independent financial regulator for the Dubai International Financial Centre (DIFC) only -- a different regulator, with a different rulebook, from VARA (which covers the rest of Dubai) and the CMA (which covers the rest of the UAE outside both financial free zones).",
+  "formal_definition": "The DFSA is one of the DIFC's constituent bodies, originally established alongside the DIFC Authority and the DIFC Judicial Authority (now the DIFC Courts) under Dubai Law No. (9) of 2004 on the Establishment of the Dubai International Financial Centre, and continued under the DIFC's current founding law, Dubai Law No. (5) of 2021 on the Establishment of the Dubai International Financial Centre. The DFSA is the independent regulator of financial services conducted in or from the DIFC. Its Crypto Token regime came into force 1 November 2022 (confirmed by direct fetch of the DFSA Rulebook's own hosted page, dfsaen.thomsonreuters.com/rulebook/1-november-2022-dfsa-crypto-token-regime-comes-force), extending existing DFSA financial-service-activity modules -- advising, dealing, arranging, and custody, among others -- to a defined 'Crypto Token,' and covering AML/CFT, consumer protection, market integrity, custody and financial-resources risk. The regime was substantially updated in force 12 January 2026, replacing the DFSA's own eligibility gatekeeping for most token types with firm-led self-assessment (see the crypto-token-dfsa entry for the mechanics of that change).",
+  "related_terms": [
+    "difc",
+    "crypto-token-dfsa",
+    "casp",
+    "vatp",
+    "vara",
+    "cma"
+  ],
+  "first_used_card_id": "d698ff8d003b3121287ac188d969912e044e2f886b5fdf5ea8119865125e2f0a",
+  "generated_at": "2026-07-13T09:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

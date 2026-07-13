@@ -1,8 +1,8 @@
 """HTTP fetching for the watcher: ETag-conditional GET on top of the shared
 retry/backoff core in pipeline/http.py.
 
-The User-Agent is sourced from config/jurisdiction.json -- never hardcoded
-here, to keep this module jurisdiction-agnostic.
+The User-Agent is sourced from config/jurisdictions/{id}.json -- never
+hardcoded here, to keep this module jurisdiction-agnostic.
 """
 from __future__ import annotations
 

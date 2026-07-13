@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "pillar": "dealing_custody_advisory",
+  "status_seal": "in_force",
+  "regulator": "ESMA",
+  "instruments": [
+    "Regulation (EU) 2023/1114 of the European Parliament and of the Council of 31 May 2023 on markets in crypto-assets (MiCA) -- Article 75 (custody and administration of crypto-assets on behalf of clients) and Title V, Chapter 3 (Articles 77-82: exchange of crypto-assets for funds or other crypto-assets, execution of orders, placing of crypto-assets, reception and transmission of orders, advice on crypto-assets and portfolio management, and transfer services)",
+    "ESMA Guidelines on certain aspects of the suitability requirements and format of the periodic statement for portfolio management activities under MiCA (ESMA35-1872330276-2031, Final Report dated 26 March 2025, applicable from 25 May 2025)",
+    "ESMA Guidelines on transfer services for crypto-assets under MiCA (ESMA35-1872330276-2032, dated 26 February 2025, applicable from 27 April 2025)",
+    "ESMA Guidelines for the criteria on the assessment of knowledge and competence of staff providing information or advice on crypto-assets under MiCA (Final Report ESMA35-1872330276-2380, 11 July 2025; final translated Guidelines ESMA35-24871704-2922, adopted 28 January 2026, applicable from 28 July 2026)",
+    "ESMA press release: ESMA launches Common Supervisory Action on CASPs' digital operational resilience for custody (8 July 2026)"
+  ],
+  "standing_summary": "MiCA Title V's crypto-asset service provider (CASP) authorisation regime covers, alongside operation of a trading platform (a separate pillar), five further non-platform services that have all applied across the Union since 30 December 2024 under the same single authorisation: custody and administration of crypto-assets on behalf of clients (Article 75), exchange of crypto-assets for funds or other crypto-assets (Article 77), execution of orders for crypto-assets on behalf of clients (Article 78), placing of crypto-assets (Article 79), reception and transmission of orders for crypto-assets on behalf of clients (Article 80), providing advice on crypto-assets and providing portfolio management of crypto-assets (Article 81), and providing transfer services for crypto-assets on behalf of clients (Article 82). As with exchanges/VATP, individual CASP authorisation decisions and day-to-day supervision of authorised firms providing these services are acts of the 27 member-state national competent authorities (NCAs) and are out of scope of this EU-level pillar. What is EU-level and already finalised: (1) for advice and portfolio management, ESMA's Guidelines on certain aspects of the suitability requirements and the format of the periodic statement for portfolio-management activities (ESMA35-1872330276-2031), specifying the suitability-assessment criteria under Article 81(1), (7), (8), (10), (11) and (12) MiCA and the periodic-statement format under Article 81(14), finalised 26 March 2025 and applicable across the Union from 25 May 2025; (2) for transfer services, ESMA's Guidelines on transfer services for crypto-assets under MiCA (ESMA35-1872330276-2032), covering policies and procedures, client-rights disclosure, execution timing, rejection conditions and liability under Article 82, finalised 26 February 2025 and applicable from 27 April 2025; and (3) for staff giving information on, or advice relating to, crypto-assets across these services, ESMA's Guidelines for the criteria on the assessment of knowledge and competence (Final Report ESMA35-1872330276-2380 of 11 July 2025, distinguishing baseline requirements for information-only staff from higher requirements -- including a continuing-professional-development benchmark -- for advisory staff), with the final all-language Guidelines (ESMA35-24871704-2922) adopted 28 January 2026 and due to apply from 28 July 2026 -- not yet in application as of this pillar state's generation date. Custody and administration under Article 75 -- client-agreement content, the custody-policy requirement, client position registers, quarterly position statements, asset segregation on the distributed ledger, and provider liability capped at market value of the loss -- is set out directly and in detail in MiCA's own Level 1 text; no dedicated ESMA regulatory technical standard or guideline specific to Article 75 custody mechanics was identified. The live EU-level activity on custody is instead supervisory coordination: ESMA announced on 8 July 2026 that it is launching a Common Supervisory Action (CSA) in which NCAs will jointly assess, on a risk-based sample of authorised CASPs, the maturity of digital operational resilience frameworks for custody -- governance, private-key and storage management, transaction controls, incident detection and response, smart-contract risk and third-party/DLT dependencies -- running from the second half of 2026 to the first half of 2027, with a consolidated report to ESMA's Board of Supervisors in the second half of 2027. Execution of orders (Article 78), exchange of crypto-assets for funds or other crypto-assets (Article 77), placing of crypto-assets (Article 79), and reception and transmission of orders (Article 80) currently rely on MiCA's own Level 1 obligations (including Article 78's best-execution factors of price, costs, speed, likelihood of execution and settlement, size and nature of the order) without an identified dedicated ESMA RTS or guideline specific to any of those four services.",
+  "last_changed": "2026-07-08",
+  "key_links": [
+    {
+      "label": "EUR-Lex: Regulation (EU) 2023/1114 (MiCA), consolidated text",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj/eng"
+    },
+    {
+      "label": "ESMA: Interactive Single Rulebook -- MiCA Article 82, Providing transfer services",
+      "url": "https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/mica/article-82-providing-transfer-services"
+    },
+    {
+      "label": "ESMA: Guidelines on certain aspects of the suitability requirements and format of the periodic statement for portfolio management activities under MiCA (ESMA35-1872330276-2031, 26 Mar 2025)",
+      "url": "https://www.esma.europa.eu/sites/default/files/2025-03/ESMA35-1872330276-2031_Guidelines_on_suitability_and_periodic_statement_MiCA.pdf"
+    },
+    {
+      "label": "ESMA: document page -- Guidelines on certain aspects of the suitability requirements and format of the periodic statement",
+      "url": "https://www.esma.europa.eu/document/guidelines-certain-aspects-suitability-requirements-and-format-periodic-statement"
+    },
+    {
+      "label": "ESMA: Guidelines on transfer services for crypto-assets under MiCA (ESMA35-1872330276-2032, 26 Feb 2025)",
+      "url": "https://www.esma.europa.eu/sites/default/files/2025-02/ESMA35-1872330276-2032_Guidelines_on_transfer_services_for_crypto-assets_under_MiCA.pdf"
+    },
+    {
+      "label": "ESMA: Final Report -- Guidelines for the criteria on the assessment of knowledge and competence under MiCA (ESMA35-1872330276-2380, 11 Jul 2025)",
+      "url": "https://www.esma.europa.eu/sites/default/files/2025-07/ESMA35-1872330276-2380_Final_Report_on_MiCA_Guidelines_on_knowledge_and_competence.pdf"
+    },
+    {
+      "label": "ESMA: final Guidelines for the criteria on the assessment of knowledge and competence under MiCA (ESMA35-24871704-2922, adopted 28 Jan 2026, all-language versions)",
+      "url": "https://www.esma.europa.eu/sites/default/files/2026-01/ESMA35-24871704-2922_Guidelines_for_the_criteria_on_the_assessment_of_knowledge_and_competence_under_MiCA.pdf"
+    },
+    {
+      "label": "ESMA: press release -- ESMA launches Common Supervisory Action on CASPs' digital operational resilience for custody (8 Jul 2026)",
+      "url": "https://www.esma.europa.eu/press-news/esma-news/esma-launches-common-supervisory-action-casps-digital-operational-resilience"
+    }
+  ],
+  "open_items": [
+    "This pillar covers the EU-level framework only, per the jurisdiction-wide scope note: the Regulation's own text, Commission delegated/implementing acts, and ESMA technical standards, guidelines and coordinated supervisory action. Individual CASP authorisation decisions, day-to-day supervision, and enforcement against any named firm providing custody, exchange, execution, placing, reception/transmission, advice, portfolio management, or transfer services are acts of the 27 member-state NCAs and are out of scope.",
+    "Operation of a trading platform (Article 76) and the Title VI market-abuse regime are covered in the Exchanges (VATP) pillar, not here, to avoid duplicating MiCA citations across pillars.",
+    "No dedicated ESMA regulatory technical standard or guideline specific to Article 75 custody-and-administration mechanics (as distinct from the Level 1 text itself) was identified during this research; the genuine EU-level activity found on custody is the 8 July 2026 Common Supervisory Action, which is supervisory coordination rather than standard-setting, and an ESMA Q&A on whether staking-as-a-service falls within custody was referenced in secondary sources but not independently fetched and verified from ESMA's own Q&A database during this research.",
+    "No dedicated ESMA RTS or guideline was identified for exchange of crypto-assets for funds/other crypto-assets (Article 77), execution of orders (Article 78), placing of crypto-assets (Article 79), or reception and transmission of orders (Article 80); these four services currently rely on MiCA's own Level 1 obligations only, so far as this research could establish. This should be re-checked periodically, since ESMA's MiCA technical-standards work is ongoing.",
+    "The knowledge-and-competence Guidelines (ESMA35-24871704-2922) were adopted 28 January 2026 but do not become applicable until 28 July 2026, which is after this pillar state's generation date; the pillar should be re-confirmed once that application date has passed to check for any compliance-table or scope updates from NCAs.",
+    "The ESMA PDF documents cited above (final reports and final Guidelines) returned corrupted or unparseable text on direct fetch during this research; their content, reference numbers and dates were corroborated via ESMA's own HTML press and document pages and via national-regulator secondary summaries (e.g. the AMF) and law-firm legal-alert summaries of the official texts, rather than verified against the full primary PDF text directly.",
+    "The Transfer of Funds Regulation travel-rule extension to crypto-asset transfers, the 2024 AML package, and AMLA's institutional build-out are tracked in the AML/CFT & Enforcement pillar, not here, notwithstanding the similarly-named 'transfer services' CASP activity (Article 82) covered in this pillar."
+  ],
+  "generated_at": "2026-07-11T18:59:26Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

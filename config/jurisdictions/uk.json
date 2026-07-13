@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "jurisdiction_id": "uk",
+  "jurisdiction_name": "United Kingdom",
+  "user_agent": "GlobalDigitalAssetRadarWatcher/0.1 (contact: da-radar-bot@users.noreply.github.com; purpose: public RSS regulatory monitoring)",
+  "fetch": {
+    "timeout_seconds": 15,
+    "max_retries": 3,
+    "backoff_base_seconds": 1.0,
+    "backoff_multiplier": 2.0
+  },
+  "relevance_keywords": [
+    "cryptoasset",
+    "cryptoassets",
+    "crypto",
+    "digital asset",
+    "digital assets",
+    "stablecoin",
+    "stablecoins",
+    "tokenis",
+    "tokeniz",
+    "distributed ledger",
+    "blockchain",
+    "digital securities sandbox",
+    "digital gilt",
+    "catp",
+    "qualifying cryptoasset",
+    "exchange traded note",
+    "exchange-traded note",
+    "cetn",
+    "digital pound",
+    "web3",
+    "nft"
+  ],
+  "pillar_keywords": {
+    "exchanges_vatp": [
+      "cryptoasset trading platform",
+      "catp",
+      "trading platform",
+      "qualifying cryptoasset",
+      "cryptoasset exchange",
+      "staking"
+    ],
+    "stablecoins": [
+      "stablecoin",
+      "qualifying stablecoin",
+      "systemic stablecoin",
+      "sterling-denominated stablecoin",
+      "code of practice"
+    ],
+    "dealing_custody_advisory": [
+      "custod",
+      "safeguarding",
+      "dealing as principal",
+      "dealing as agent",
+      "arranging deals",
+      "staking",
+      "cryptoasset intermediar"
+    ],
+    "tokenization_rwa": [
+      "tokenis",
+      "tokeniz",
+      "digital securities sandbox",
+      "digital gilt",
+      "digit pilot",
+      "distributed ledger",
+      "blockchain",
+      "fund tokenisation",
+      "digital securities"
+    ],
+    "funds_etfs": [
+      "etf",
+      "exchange-traded fund",
+      "exchange traded note",
+      "exchange-traded note",
+      "cetn",
+      "ucits",
+      "nurs",
+      "restricted mass market",
+      "fund"
+    ],
+    "banking_money": [
+      "digital pound",
+      "central bank digital currency",
+      "cbdc",
+      "tokenised deposit",
+      "tokenized deposit",
+      "cryptoasset exposure",
+      "basel",
+      "prudential"
+    ],
+    "aml_cft_enforcement": [
+      "money laundering",
+      "mlr",
+      "aml",
+      "cft",
+      "travel rule",
+      "registration",
+      "unregistered cryptoasset",
+      "warning list",
+      "financial promotion",
+      "enforcement"
+    ]
+  },
+  "regulators": [
+    {
+      "id": "fca",
+      "name": "Financial Conduct Authority",
+      "short_name": "FCA",
+      "homepage": "https://www.fca.org.uk",
+      "official_domains": [
+        "www.fca.org.uk"
+      ],
+      "feeds": [
+        {
+          "id": "fca_news",
+          "kind": "news",
+          "url": "https://www.fca.org.uk/news/rss.xml",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "boe",
+      "name": "Bank of England",
+      "short_name": "Bank of England",
+      "homepage": "https://www.bankofengland.co.uk",
+      "official_domains": [
+        "www.bankofengland.co.uk"
+      ],
+      "feeds": [
+        {
+          "id": "boe_news",
+          "kind": "news",
+          "url": "https://www.bankofengland.co.uk/rss/news",
+          "mechanism": "rss"
+        },
+        {
+          "id": "boe_pra_publications",
+          "kind": "prudential_regulation_publications",
+          "url": "https://www.bankofengland.co.uk/rss/prudential-regulation-publications",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "hmt",
+      "name": "HM Treasury",
+      "short_name": "HM Treasury",
+      "homepage": "https://www.gov.uk/government/organisations/hm-treasury",
+      "official_domains": [
+        "www.gov.uk"
+      ],
+      "feeds": [
+        {
+          "id": "hmt_activity",
+          "kind": "activity",
+          "url": "https://www.gov.uk/government/organisations/hm-treasury.atom",
+          "mechanism": "atom"
+        }
+      ]
+    },
+    {
+      "id": "legislation_gov_uk",
+      "name": "legislation.gov.uk (The National Archives)",
+      "short_name": "legislation.gov.uk",
+      "homepage": "https://www.legislation.gov.uk",
+      "official_domains": [
+        "www.legislation.gov.uk"
+      ],
+      "feeds": []
+    }
+  ]
+}

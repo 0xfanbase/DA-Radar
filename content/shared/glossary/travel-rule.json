@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "travel-rule",
+  "term": "Travel rule",
+  "jurisdictions": [
+    "global"
+  ],
+  "plain_definition": "A Financial Action Task Force (FATF) anti-money-laundering standard, adopted into law separately by each jurisdiction, requiring that information about the sender (originator) and recipient (beneficiary) of a funds or crypto-asset transfer 'travel' with that transfer between the financial institutions or crypto-asset/virtual-asset service providers involved, so the transfer can be traced. It is not itself an EU, UK, or Hong Kong law -- FATF is not a regulator any jurisdiction covered by this radar reports to -- but each jurisdiction covered by this radar has implemented its own version. In the EU, Regulation (EU) 2023/1113 (the recast Transfer of Funds Regulation) extended the rule to crypto-asset transfers by crypto-asset service providers from 30 December 2024, with EBA implementing guidelines applying from the same date. In Hong Kong, licensed virtual asset service providers are subject to their own travel-rule requirement under AMLO guidance, with immediate submission of the required information required since 1 January 2024.",
+  "formal_definition": "In the EU, Regulation (EU) 2023/1113 of the European Parliament and of the Council of 31 May 2023 requires that transfers of funds and crypto-assets be accompanied by 'information on the originators and beneficiaries of those transfers' (recast Transfer of Funds Regulation, applicable from 30 December 2024), implemented for crypto-asset service providers by EBA's Guidelines on information requirements under Regulation (EU) 2023/1113 (published 4 July 2024, applicable from 30 December 2024). The underlying international standard is FATF Recommendation 16, which is not itself a source this radar treats as an official regulator of any covered jurisdiction.",
+  "related_terms": [
+    "amla",
+    "eba",
+    "amlo"
+  ],
+  "first_used_card_id": "103d85c38a37c2a8bf5ab493dd1d1af7a714781f3cd1d7fb3504f45423f8adce",
+  "generated_at": "2026-07-11T20:14:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}
