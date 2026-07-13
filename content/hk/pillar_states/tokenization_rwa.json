@@ -2,13 +2,15 @@
   "schema_version": 1,
   "pillar": "tokenization_rwa",
   "status_seal": "in_force",
-  "regulator": "HKMA and SFC",
+  "regulator": "FSTB, HKMA and SFC",
   "instruments": [
     "Policy Statement 2.0 on the Development of Digital Assets in Hong Kong (the \"LEAP\" framework)",
-    "SFC Circular 26EC22"
+    "SFC Circular 26EC22",
+    "HKMA Tokenised Bond Expert Group (convened 5 June 2026)",
+    "FSTB/HKMA review of distributed ledger technology in Hong Kong's fixed income market (Phase 1 concluded 29 June 2026)"
   ],
-  "standing_summary": "Policy Statement 2.0, issued 26 June 2025, set out a government-wide \"LEAP\" framework (Legal streamlining, Expanding tokenised products, Advancing use cases, People and partnership development) for digital-asset development. Tokenization activity has since moved from pilots to routine, real-value issuance: the HKSAR Government priced its third digital green bond in November 2025 (equivalent to roughly HK$10 billion across four currencies), the first bond reported to settle in both e-CNY and e-HKD tokenised central bank money. HKMA's Project Ensemble progressed to \"EnsembleTX,\" a real-value pilot phase launched 13 November 2025 focused on tokenised-deposit settlement of tokenised money-market-fund transactions. On 20 April 2026, the SFC issued Circular 26EC22 formally permitting tokenisation of SFC-authorised investment products, including primary dealing and 24/7 secondary trading on licensed virtual asset trading platforms.",
-  "last_changed": "2026-04-20",
+  "standing_summary": "Policy Statement 2.0, issued 26 June 2025, set out a government-wide \"LEAP\" framework (Legal streamlining, Expanding tokenised products, Advancing use cases, People and partnership development) for digital-asset development. Tokenization activity has since moved from pilots to routine, real-value issuance: the HKSAR Government priced its third digital green bond in November 2025 (equivalent to roughly HK$10 billion across four currencies), the first bond reported to settle in both e-CNY and e-HKD tokenised central bank money. HKMA's Project Ensemble progressed to \"EnsembleTX,\" a real-value pilot phase launched 13 November 2025 focused on tokenised-deposit settlement of tokenised money-market-fund transactions. On 20 April 2026, the SFC issued Circular 26EC22 formally permitting tokenisation of SFC-authorised investment products, including primary dealing and 24/7 secondary trading on licensed virtual asset trading platforms. On 5 June 2026, HKMA convened a Tokenised Bond Expert Group, bringing together industry, financial-infrastructure and legal-advisory representatives to explore policy measures, market practices and innovations to scale tokenised bond issuance; further legal and regulatory enhancements arising from the group's work are stated to be announced separately. On 29 June 2026, FSTB and HKMA concluded phase one of the comprehensive legal review flagged in Policy Statement 2.0 -- addressing settlement, registration and record-keeping requirements for tokenised real-world assets -- concluding that Hong Kong's existing legal and regulatory environment is already sufficiently flexible for tokenised bond issuances; the Companies Registry issued accompanying FAQs confirming that a register of debenture holders maintained using DLT can fulfil record-keeping requirements under the Companies Ordinance. FSTB and HKMA will begin a second review phase in the second half of 2026 to examine legislative changes for electronic execution of issuance documents and for possession and transfer of tokenised fixed-income instruments.",
+  "last_changed": "2026-07-13",
   "key_links": [
     {
       "label": "Government press release: Policy Statement 2.0 / LEAP framework (26 Jun 2025)",
@@ -25,14 +27,23 @@
     {
       "label": "SFC Circular 26EC22: tokenisation of SFC-authorised investment products (20 Apr 2026)",
       "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC22"
+    },
+    {
+      "label": "HKMA press release: Tokenised Bond Expert Group convened (5 Jun 2026)",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260605-3/"
+    },
+    {
+      "label": "HKMA press release: FSTB/HKMA fixed income market DLT review, phase 1 conclusions and Companies Registry FAQ (29 Jun 2026)",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260629-4/"
     }
   ],
   "open_items": [
+    "FSTB and HKMA will begin a second phase of their fixed income market DLT legal review in the second half of 2026, covering legislative changes for electronic execution and for possession/transfer of tokenised instruments; not yet published.",
+    "The Tokenised Bond Expert Group's further legal and regulatory enhancement recommendations are stated to be announced separately; no specific timeline given as of 5 June 2026.",
     "The EnsembleTX pilot is stated to run throughout 2026; its outputs and any expansion have not yet concluded.",
-    "The comprehensive legal review for real-world-asset tokenisation flagged in Policy Statement 2.0 has no discrete published output found yet.",
     "Migration from interim RTGS settlement to 24/7 tokenised central-bank-money settlement under Project Ensemble is described as a future step, not yet completed."
   ],
-  "generated_at": "2026-07-09T06:14:16Z",
-  "model": "not recorded (pre-provenance content)",
+  "generated_at": "2026-07-13T08:30:00Z",
+  "model": "Claude (Anthropic)",
   "status": "unverified"
 }

@@ -1644,7 +1644,52 @@ merge" asked for, rather than scattered across the log:**
 6. The 14-day soak itself: does the owner want this session (or a scheduled Routine) to check back
    periodically and report once 14 days of real, unattended, successful HK trigger firings have elapsed?
 
-## PM checkpoints (Fable)
+### 2026-07-13 — PR #6 merged; first post-merge maintenance pass: this week's real audit.yml findings
+
+PR #6 (the full P6-P15 registry-model rebuild) merged to `main`. `main` had also independently gained
+one commit while this branch was in review -- `audit.yml`'s first-ever genuine scheduled run, producing
+a real `data/audit/latest.json` (50 link-rot events, 5 staleness events, both against pre-registry-model
+HK content). Merged that in (one small, non-overlapping conflict in `IMPROVEMENT_BACKLOG.md`, resolved
+by keeping both branches' additions in chronological order) before opening the PR, so this is the first
+real "audit finding -> fix" cycle this project has ever run, done as a direct maintenance pass on `main`
+per the owner's explicit choice of this as the next task (over onboarding a 9th jurisdiction or the
+improve.yml dry-run).
+
+**Link rot, all 50 events on `brdr.hkma.gov.hk`:** root-caused to a real, pre-existing gap --
+`brdr.hkma.gov.hk` was never registered in `config/jurisdictions/hk.json`'s HKMA `official_domains`,
+the exact missing-domain-registration defect class repeatedly found and fixed for other jurisdictions
+(P9's `legislation.gov.uk`, P11's `uscode.house.gov`, P13's `media.umbraco.io`, P14's `bis.org`) but
+never previously caught for HK, since document_library/pillar_state citations aren't covered by
+`apply_verification_gate.py` (cards only). Fixed the registration. The underlying availability problem
+was investigated, not silently routed around: independently corroborated today via three unrelated
+live-fetch paths (this session's own `curl`/`openssl s_client` diagnostics, `WebFetch`, and three of
+five staleness-check sub-agents below hitting the same domain organically) that `brdr.hkma.gov.hk`'s
+TLS layer is currently broken (incomplete certificate chain) and its HTTP layer returns 503, while the
+bare domain root over plain HTTP still redirects to HTTPS -- a real, current HKMA-side outage, not an
+artifact of this session's own sandboxed networking (confirmed by testing with the correct CA bundle,
+and by the fact GitHub Actions' own unsandboxed runner hit the identical SSL error independently). Full
+detail in IMPROVEMENT_BACKLOG.md's matching entry, including the concrete operational cost found along
+the way: two live, already-queued HKMA circulars (`item_hash a5d16bbe...`, `8e676f99...`) cannot be
+drafted into cards at all while this outage continues.
+
+**Staleness, 5 flagged HK pillars:** dispatched five parallel, worktree-isolated live-research agents
+(one per flagged pillar), each instructed explicitly not to mechanically bump `last_changed` --
+`pipeline/audit/staleness.py`'s own docstring is clear that a stale flag is "a prompt... to look, not a
+claim that something is actually wrong." Two found genuine, material, live-verified developments and
+updated the pillar with real citations: `exchanges_vatp` (two new SFC cybersecurity circulars, 2 Jun
+and 9 Jul 2026) and `tokenization_rwa` (HKMA's Tokenised Bond Expert Group, 5 Jun 2026, and -- more
+significantly -- the actual published output of the legal review Policy Statement 2.0 had flagged as
+pending, concluded 29 Jun 2026, which this pillar's own `open_items` had explicitly logged as "not yet
+published" before this check). Three pillars (`funds_etfs`, `stablecoins`, `dealing_custody_advisory`)
+were genuinely re-verified as still accurate, with no content change and no `last_changed` bump -- this
+is the staleness check working as designed, not three gaps. Each agent's report was independently
+reviewed (diffed against the shared checkout) before being applied; nothing was merged on the strength
+of an agent's own say-so alone.
+
+**Verification, run fresh:** `pytest -q` 440/440 passing; `pipeline.ci.validate_content` clean on both
+changed pillar-state files; a full `pipeline.site.generate` rebuild succeeded with zero "coming soon"
+hits on `_site/hk/index.html`; all worktrees and scratch branches from the fix agents removed after
+their results were extracted and applied.
 
 ### 2026-07-09 — Kickoff review: approved with directives
 
