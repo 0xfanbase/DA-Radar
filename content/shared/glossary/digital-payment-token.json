@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "digital-payment-token",
+  "term": "Digital Payment Token (DPT)",
+  "jurisdictions": [
+    "sg"
+  ],
+  "plain_definition": "The Payment Services Act 2019's defined term for what is commonly called a cryptocurrency -- a digital unit of value not denominated in or pegged to any currency, usable as a medium of exchange and transferable, storable or tradeable electronically. It is the PS Act's licensing-scope trigger for 'digital payment token service' (see the dpt-service entry), and is distinct from an 'e-money' instrument (denominated in and pegged to a currency) and from a capital-markets-product token, which instead falls under the Securities and Futures Act 2001.",
+  "formal_definition": "This entry could not directly fetch the Payment Services Act 2019's own section 2(1)/First Schedule 'digital payment token' definition -- Singapore Statutes Online (sso.agc.gov.sg) returned a live-verified HTTP 403 CloudFront block on every path tried on the date of drafting (2026-07-13) -- so the general shape of the PS Act definition given in plain_definition rests on wide, consistent secondary/law-firm corroboration (multiple independent Singapore law-firm summaries and a U.S. Library of Congress Global Legal Monitor note), not on independently fetched statute text. A related but textually distinct 'digital payment token' definition, confirmed by direct fetch of IRAS's e-Tax Guide 'GST: Digital Payment Tokens' (Third Edition, 30 January 2026, iras.gov.sg), applies for Goods and Services Tax exemption purposes and states a DPT 'is not pegged by its issuer to any currency' (Glossary, s.3.2). This project has not confirmed that the PS Act's own licensing-scope DPT definition contains an identical exclusion, so the GST Act definition quoted here should not be assumed word-for-word identical to the PS Act's own definition.",
+  "related_terms": [
+    "dpt-service",
+    "payment-services-act-sg",
+    "mas",
+    "single-currency-stablecoin",
+    "vasp"
+  ],
+  "first_used_card_id": "1ca79f1f82222ee2b57b467c666ef9ef874784f810f7bafdbd99f36003ce00b6",
+  "generated_at": "2026-07-13T18:11:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

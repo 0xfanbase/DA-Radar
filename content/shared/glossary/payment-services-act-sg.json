@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "payment-services-act-sg",
+  "term": "Payment Services Act 2019 (Singapore) ('PS Act')",
+  "jurisdictions": [
+    "sg"
+  ],
+  "plain_definition": "Singapore's activity-based licensing statute for payment services, administered by MAS -- the base law bringing digital payment token (DPT) dealing, exchange facilitation and custody within Singapore's financial-regulation perimeter (see the digital-payment-token and dpt-service entries). Widely and consistently reported, including in MAS's own later media releases, as having commenced 28 January 2020. This is a different statute from Japan's 'Payment Services Act' (資金決済に関する法律, Act No. 59 of 2009) tracked in this glossary's psa entry -- the shared English short name is coincidental, not a shared regime. Singapore's PS Act is Act 2 of 2019, enacted by the Parliament of Singapore; Japan's PSA is Act No. 59 of 2009, enacted by the National Diet. Two unrelated national statutes that happen to translate to the same English name are kept as separate glossary entries for that reason, the same 'same-name, different regime' pattern already documented for the payment-token / payment-token-uae pair.",
+  "formal_definition": "Payment Services Act 2019 (Act 2 of 2019), Parliament of Singapore. This entry could not directly fetch the Act's own consolidated text from Singapore Statutes Online (sso.agc.gov.sg) -- every path tried, including the Act's own page, returned a live-verified HTTP 403 CloudFront block on the date of drafting (2026-07-13) -- so its exact commencement date (28 January 2020) rests on wide secondary/law-firm corroboration and on MAS's own footnote references to an already-commenced PS Act in its 2 April 2024 media release (fetched as a genuine PDF via the Singapore Government's press-release repository, sgpc.gov.sg), rather than on independently fetched primary statute text. The Payment Services (Amendment) Bill (Bill No. 41/2020, read first time 2 November 2020) was directly fetched from parliament.gov.sg and confirmed genuine; its Explanatory Statement states the Bill's purpose includes to widen the definition of 'digital payment token service' (see the dpt-service entry), and it became the Payment Services (Amendment) Act 2021 on commencement, per its own short-title clause.",
+  "related_terms": [
+    "psa",
+    "mas",
+    "digital-payment-token",
+    "dpt-service",
+    "fsm-act"
+  ],
+  "first_used_card_id": "1ca79f1f82222ee2b57b467c666ef9ef874784f810f7bafdbd99f36003ce00b6",
+  "generated_at": "2026-07-13T18:08:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

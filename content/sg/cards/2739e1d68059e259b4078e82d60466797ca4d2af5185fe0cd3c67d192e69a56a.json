@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "2739e1d68059e259b4078e82d60466797ca4d2af5185fe0cd3c67d192e69a56a",
+  "jurisdiction_id": "sg",
+  "published_date": "2024-04-02",
+  "regulator": "MAS (Monetary Authority of Singapore)",
+  "pillar": [
+    "dealing_custody_advisory",
+    "aml_cft_enforcement"
+  ],
+  "type": "ordinance",
+  "title": "Expanded Payment Services Act scope takes effect: DPT custody, non-possession transfers, and user-protection requirements",
+  "summary": "On 2 April 2024, the Monetary Authority of Singapore (MAS) announced amendments to the Payment Services Act and its subsidiary legislation, taking effect in stages from 4 April 2024. The changes bring three activities into MAS's regulatory scope: providing custodial services for digital payment tokens (DPTs); facilitating transmission or exchange of DPTs even without taking possession of the assets; and facilitating cross-border money transfers even where funds are never received in Singapore. MAS gains power to impose anti-money-laundering, user-protection, and financial-stability requirements on DPT service providers. Entities already conducting these newly-covered activities must notify MAS within 30 days and submit a licence application within six months, backed by an external auditor's attestation report within nine months, to keep operating while their application is reviewed. Amended rules requiring segregation of customer assets into trust accounts take effect six months later.",
+  "why_it_matters": "Digital-asset firms that only facilitated DPT transfers or held custody without ever taking possession of customer funds could previously operate in Singapore without an MAS payment-services licence; this change closes that gap and requires such firms to safeguard customer assets in segregated trust accounts.",
+  "key_dates": {
+    "effective": "2024-04-04"
+  },
+  "citations": [
+    {
+      "url": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release_MAS%20Expands%20Scope%20of%20Regulated%20Payment%20Services%20Introduces%20User%20Protection%20Requirements%20for%20Digital%20Payment%20Token%20Service%20Providers.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20240402-2/attachment/MAS+Media+Release_MAS+Expands+Scope+of+Regulated+Payment+Services+Introduces+User+Protection+Requirements+for+Digital+Payment+Token+Service+Providers.pdf",
+      "quote": "These amendments will take effect in stages from 4 April 2024."
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T19:35:00Z",
+  "model": "Claude (Anthropic)"
+}

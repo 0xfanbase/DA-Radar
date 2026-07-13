@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "id": "guardian-wholesale-network",
+  "term": "Guardian Wholesale Network",
+  "jurisdictions": [
+    "sg"
+  ],
+  "plain_definition": "An industry group formed under MAS's Project Guardian by five banks -- Citi, HSBC, Schroders, Standard Chartered and UOB -- announced 4 November 2024, intended to grow into a shared, multi-member network that commercialises the banks' individual asset-tokenisation trials and scales usage together, rather than each bank running separate pilots.",
+  "formal_definition": "MAS media release, 'MAS Announces Plans to Support Commercialisation of Asset Tokenisation' (4 November 2024) -- confirmed by direct fetch of the source page, which names Citi, HSBC, Schroders, Standard Chartered and UOB as the group's founding members and describes the network's intent to scale the members' individual tokenisation trials into a shared, multi-member network.",
+  "related_terms": [
+    "project-guardian",
+    "mas"
+  ],
+  "first_used_card_id": "dd95e183670f7300cfa2d4917c88e7e017555870f57cfe3f98707bb7fc38c686",
+  "generated_at": "2026-07-13T20:05:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

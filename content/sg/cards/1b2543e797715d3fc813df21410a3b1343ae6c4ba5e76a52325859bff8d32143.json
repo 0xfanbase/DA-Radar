@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "1b2543e797715d3fc813df21410a3b1343ae6c4ba5e76a52325859bff8d32143",
+  "jurisdiction_id": "sg",
+  "published_date": "2021-09-02",
+  "regulator": "Monetary Authority of Singapore (MAS)",
+  "pillar": [
+    "exchanges_vatp",
+    "aml_cft_enforcement"
+  ],
+  "type": "enforcement",
+  "title": "MAS places Binance.com on the Investor Alert List",
+  "summary": "On 2 September 2021, the Monetary Authority of Singapore (MAS) added Binance.com to its Investor Alert List (IAL), described by MAS as \"a list of unregulated persons who, based on information received by MAS\" that the public may mistake for entities MAS licenses or regulates. The listing means MAS does not regard Binance.com as a firm it licenses or regulates.",
+  "why_it_matters": "For a newcomer, an Investor Alert List listing is MAS's way of publicly flagging persons and platforms it does not license or regulate, including ones the public might otherwise take to be licensed or regulated by MAS -- which is what MAS signalled by adding Binance.com to the list on 2 September 2021.",
+  "citations": [
+    {
+      "url": "https://www.mas.gov.sg/investor-alert-list",
+      "quote": "a list of unregulated persons who, based on information received by MAS"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-13T19:10:00Z",
+  "model": "Claude (Anthropic)"
+}

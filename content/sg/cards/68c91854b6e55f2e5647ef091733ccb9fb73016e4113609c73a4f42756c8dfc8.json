@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "68c91854b6e55f2e5647ef091733ccb9fb73016e4113609c73a4f42756c8dfc8",
+  "jurisdiction_id": "sg",
+  "published_date": "2022-02-14",
+  "regulator": "Parliament of Singapore",
+  "pillar": [
+    "aml_cft_enforcement",
+    "exchanges_vatp"
+  ],
+  "type": "ordinance",
+  "title": "Financial Services and Markets Bill introduced in Parliament, proposing an omnibus framework including licensing for digital token service providers",
+  "summary": "Singapore's Parliament read the Financial Services and Markets Bill (Bill No. 4/2022) for the first time on 14 February 2022. The Bill's long title describes an Act to provide financial sector-wide regulation of financial services and markets, control over and resolution of financial institutions, and the licensing and regulation of digital token service providers. According to the Bill's Explanatory Statement, it would consolidate powers of the Monetary Authority of Singapore currently spread across several sectoral Acts, including by repealing certain provisions of the Monetary Authority of Singapore Act 1970. Among its provisions, Part 9 would create a dedicated licensing regime for \"digital token service providers\": persons who, from a place of business in Singapore, carry on a business of providing digital token services -- including dealing, custody, exchange-facilitation and transmission of digital tokens -- outside Singapore, unless licensed or exempt under clause 137. Clause 137(5) sets out exemptions, including for persons already licensed or exempt for specified activities under the Securities and Futures Act, Financial Advisers Act or Payment Services Act, persons specified in the Bill's Second Schedule, and other prescribed classes of persons.",
+  "why_it_matters": "This Bill is the legislative origin of Singapore's proposed Digital Token Service Provider (DTSP) licensing regime, embedding it inside a broad consolidation of the Monetary Authority of Singapore's existing powers rather than a standalone crypto law.",
+  "key_dates": {
+    "milestone": "2022-02-14"
+  },
+  "citations": [
+    {
+      "url": "https://www.parliament.gov.sg/docs/default-source/default-document-library/financial-services-and-markets-bill-4-2022.pdf",
+      "quote": "the licensing and regulation of digital token service providers"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T19:10:00Z",
+  "model": "Claude (Anthropic)"
+}

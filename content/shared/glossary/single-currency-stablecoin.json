@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "id": "single-currency-stablecoin",
+  "term": "SCS (Single-Currency Stablecoin)",
+  "jurisdictions": [
+    "sg"
+  ],
+  "plain_definition": "MAS's regulatory category, announced 15 August 2023, for a stablecoin pegged to the Singapore Dollar or any G10 currency and issued in Singapore. The framework as announced would require issuers meeting value-stability, minimum-capital, redemption-at-par (within five business days) and disclosure requirements to apply for their token to be labelled an 'MAS-regulated stablecoin' (see that entry). As of this entry's drafting date (13 July 2026), the SCS framework remains announced policy, not yet enacted law: no bill giving it legal effect had been introduced to the Singapore Parliament as of a live check of Parliament's own Bills Introduced listing on that date, and in the interim, stablecoin-type tokens fall to be regulated, if at all, under the PS Act's general digital payment token or e-money service-provider licensing.",
+  "formal_definition": "MAS media release, 'MAS Finalises Stablecoin Regulatory Framework' (15 August 2023) -- confirmed by direct fetch of the genuine PDF via the Singapore Government's press-release repository (sgpc.gov.sg), since www.mas.gov.sg served an identical bot-blocked page on every path tried, including this exact document's own -/media/ URL. No enacted SCS-specific statute or subsidiary legislation exists yet; this project separately confirmed, by direct fetch of Singapore Parliament's own Bills Introduced listing (parliament.gov.sg) on 13 July 2026, that none of the ten most recently introduced bills was titled or evidently related to stablecoins, the PS Act, or the FSM Act.",
+  "related_terms": [
+    "stablecoin",
+    "e-money-token",
+    "payment-stablecoin",
+    "qualifying-stablecoin",
+    "mas-regulated-stablecoin",
+    "mas",
+    "payment-services-act-sg"
+  ],
+  "first_used_card_id": "750c8b8da8448ca9634a9a7bc286121a662437fd8355ab3a380f56444f4e6d2b",
+  "generated_at": "2026-07-13T18:23:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

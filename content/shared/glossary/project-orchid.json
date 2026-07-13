@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "project-orchid",
+  "term": "Project Orchid",
+  "jurisdictions": [
+    "sg"
+  ],
+  "plain_definition": "MAS's own multi-year exploratory and pilot programme on the design and technical infrastructure of digital money in Singapore -- the central-bank-money counterpart to Project Guardian's industry-tokenisation work. Its November 2023 'Orchid Blueprint' set out four technology-infrastructure building blocks needed to facilitate digital-money transactions: a settlement ledger, a tokenisation bridge linking account-based settlement systems to tokenised-money ledgers, a 'Purpose Bound Money' programmability protocol, and a wallet-address Name Service. Project Orchid underpins MAS's wholesale central bank digital currency (CBDC) work: the Singapore Dollar Test Network ('SGD Testnet') built on this infrastructure achieved, per MAS's own November 2025 announcement, the first live issuance of Singapore-dollar wholesale CBDC, used to settle an interbank overnight-lending transaction -- distinct from the earlier Project Ubin programme, which had only ever simulated wholesale CBDC issuance in test environments. Project Orchid concerns wholesale CBDC and tokenised bank liabilities; this project has not been able to confirm a primary MAS statement on a retail 'digital Singapore dollar' this session (mas.gov.sg is blocked -- see the mas entry's fetch-access caveat), so no claim about MAS's retail-CBDC position is made here.",
+  "formal_definition": "MAS media release, 'MAS Lays Foundation for Safe and Innovative Use of Digital Money in Singapore' (16 November 2023) -- confirmed by direct fetch of the genuine PDF via the Singapore Government's press-release repository (sgpc.gov.sg), since www.mas.gov.sg, including MAS's own Project Orchid page, served an identical bot-blocked page on every path tried -- defines a wholesale CBDC as 'issued only to financial institutions for the settlement of inter-bank transactions', representing a direct liability of the central bank, as distinct from a tokenised bank liability. The first live wholesale-CBDC issuance is confirmed by direct fetch of MAS's own media release, 'MAS Announces Successful Live Trial of Settlement of Interbank Overnight Lending Using Wholesale Central Bank Digital Currency' (13 November 2025), also fetched via sgpc.gov.sg.",
+  "related_terms": [
+    "project-guardian",
+    "digital-euro",
+    "project-helvetia",
+    "mas",
+    "single-currency-stablecoin"
+  ],
+  "first_used_card_id": "bf5827473aae5e331532f5a2251fbee16bd047fdce36faf3e7fe16e5ba9fa6df",
+  "generated_at": "2026-07-13T18:35:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

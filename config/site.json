@@ -49,13 +49,13 @@
     {
       "id": "sg",
       "name": "Singapore",
-      "config": null,
+      "config": "config/jurisdictions/sg.json",
       "status": {
-        "watcher": "planned",
+        "watcher": "dormant",
         "analyst_verifier": "planned",
-        "seeded": false
+        "seeded": true
       },
-      "coverage_notes": "Planned. Ships as a manual-assisted watcher (no browser-UA impersonation), per owner decision."
+      "coverage_notes": "Manual-assisted watcher, by design, not oversight: MAS (mas.gov.sg) and Singapore Statutes Online block non-browser clients outright, and this project chose honest, descriptive-User-Agent fetching over impersonating a browser to get past that block. So no automated feed polls MAS on a daily cron -- mechanism status is 'dormant' (exists in principle, not currently polling), distinct from 'planned' (nothing built yet), because real content is here. Coverage instead comes from periodic manual seed_backfill review: a human or a one-off fetch supplies specific document URLs (from MAS's Singapore Press Centre PDF mirror, IRAS, and the Parliament of Singapore, all of which are honestly fetchable) for the analyst to cite, rather than a live daily poll."
     },
     {
       "id": "uae",

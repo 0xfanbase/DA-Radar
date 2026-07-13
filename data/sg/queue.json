@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-07-13T06:22:41Z",
+  "items": [
+    {
+      "feed_id": "mas_media_releases",
+      "item_hash": "2e31d682a8599af8632f8f4b735d3b9b8bc3ea6d9554acbd01752b823c32d2c3",
+      "link": "https://www.mas.gov.sg/news/media-releases/2020/payment-services-act-comes-into-force",
+      "published_at": "2020-01-28T00:00:00Z",
+      "source_id": "mas",
+      "status": "queued",
+      "summary": "The Payment Services Act 2019 came into force on 28 January 2020, repealing the Money-changing and Remittance Businesses Act and the Payment Systems (Oversight) Act, and bringing digital payment token services under MAS's activity-based licensing framework for the first time.",
+      "title": "Payment Services Act comes into force, bringing digital payment token services under MAS licensing"
+    },
+    {
+      "feed_id": "mas_media_releases",
+      "item_hash": "4b6643f2a61401cf33f8acfe4af02ca283ce842f74402a8b856cd5e84911602d",
+      "link": "https://www.mas.gov.sg/news/media-releases/2022/first-industry-pilot-for-digital-asset-and-decentralised-finance-goes-live",
+      "published_at": "2022-11-02T00:00:00Z",
+      "source_id": "mas",
+      "status": "queued",
+      "summary": "MAS announced on 2 November 2022 that the first industry pilot under Project Guardian, led by DBS Bank, JP Morgan and SBI Digital Asset Holdings, completed its first live trades: FX and government-bond transactions against liquidity pools of tokenised Singapore Government Securities bonds, Japanese Government Bonds, JPY and SGD.",
+      "title": "First Project Guardian industry pilot goes live: tokenised bond and FX transactions executed on a public blockchain"
+    },
+    {
+      "feed_id": "iras_etax",
+      "item_hash": "d365f27cc9f0094e1f7a65f35cd03c979f2992f639fe5867674b094fa190fb62",
+      "link": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/specific-business-sectors/digital-payment-tokens",
+      "published_at": "2019-11-19T00:00:00Z",
+      "source_id": "iras",
+      "status": "queued",
+      "summary": "IRAS published the first edition of its e-Tax Guide 'GST: Digital Payment Tokens' on 19 November 2019, exempting the supply and exchange of qualifying digital payment tokens from GST with effect from 1 January 2020, to avoid double taxation when DPTs are used as a medium of exchange. This is a tax-treatment measure, ancillary to and independent of MAS's financial-services licensing perimeter.",
+      "title": "IRAS e-Tax Guide: GST treatment of digital payment tokens - supplies of DPTs exempted from GST from 1 January 2020"
+    },
+    {
+      "feed_id": "mas_media_releases",
+      "item_hash": "e3c0beb24655faa8b58656ab4c8122fe14d80ece9b43903052737dc1a21052b7",
+      "link": "https://www.mas.gov.sg/news/media-releases/2022/mas-issues-guidelines-to-discourage-cryptocurrency-trading-by-general-public",
+      "published_at": "2022-01-17T00:00:00Z",
+      "source_id": "mas",
+      "status": "queued",
+      "summary": "MAS issued Guidelines on Provision of Digital Payment Token Services to the Public [PS-G02] on 17 January 2022, setting out its expectation that DPT service providers should not promote their services in public areas (transport, public websites, social media, broadcast/print, ATMs) or via third parties such as influencers, confining marketing to their own corporate channels.",
+      "title": "MAS issues Guidelines on Provision of Digital Payment Token Services to the Public (PS-G02), restricting DPT advertising to the general public"
+    },
+    {
+      "feed_id": "mas_notices",
+      "item_hash": "f5bc81ddf325938f80890af82904bac4ae4b48358bdf7aa5a07033a129cd0aa6",
+      "link": "https://www.mas.gov.sg/regulation/notices/psn02-aml-cft-notice---digital-payment-token-service",
+      "published_at": "2019-12-05T00:00:00Z",
+      "source_id": "mas",
+      "status": "queued",
+      "summary": "MAS issued Notice PSN02, setting out AML/CFT requirements for providers of digital payment token services, on 5 December 2019, ahead of the Payment Services Act's commencement on 28 January 2020. The notice has since been reissued in consolidated form as obligations moved under the Financial Services and Markets Act framework.",
+      "title": "MAS issues Notice PSN02 on prevention of money laundering and countering the financing of terrorism for digital payment token services"
+    }
+  ],
+  "jurisdiction_id": "sg",
+  "schema_version": 1
+}

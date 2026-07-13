@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "1ca79f1f82222ee2b57b467c666ef9ef874784f810f7bafdbd99f36003ce00b6",
+  "jurisdiction_id": "sg",
+  "published_date": "2018-11-19",
+  "regulator": "MAS (Monetary Authority of Singapore)",
+  "pillar": [
+    "exchanges_vatp"
+  ],
+  "type": "ordinance",
+  "title": "Payment Services Bill introduced in Parliament, proposing a licensing regime for digital payment token services",
+  "summary": "Singapore's Payment Services Bill (Bill No. 48/2018) was read for the first time in Parliament on 19 November 2018. As introduced, the Bill proposes an activity-based licensing framework administered by the Monetary Authority of Singapore (MAS) covering payment services, including a 'digital payment token service' category -- defined in the Bill to cover dealing in, or facilitating the exchange of, digital payment tokens such as cryptocurrencies -- alongside money-changing, domestic and cross-border money transfer, account issuance, merchant acquisition, and e-money issuance services. The Bill would repeal the Money-changing and Remittance Businesses Act and the Payment Systems (Oversight) Act, and make consequential amendments to several other Acts.",
+  "why_it_matters": "As introduced, the Bill would require businesses dealing in or facilitating the exchange of digital payment tokens -- a category covering cryptocurrencies and similar tokens -- to hold a licence from MAS under the same activity-based framework used for other payment services, rather than leaving that activity outside MAS's payment-services licensing regime.",
+  "key_dates": {
+    "milestone": "2018-11-19"
+  },
+  "citations": [
+    {
+      "url": "https://www.parliament.gov.sg/docs/default-source/default-document-library/payment-services-bill-48-2018.pdf",
+      "quote": "Read the first time on 19 November 2018"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T19:10:00Z",
+  "model": "Claude (Anthropic)"
+}

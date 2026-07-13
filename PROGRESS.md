@@ -85,6 +85,22 @@ along with `git log` — to know exactly where the project stands before doing a
   agents, not just status-flipped), a latent domain gap across four more already-cited government
   bodies, one glossary status-field misuse repeating P9's exact mistake, and one self-contradictory
   sentence in orientation.json's opening framing.
+- **P14 — Singapore onboarding (eighth jurisdiction, manual-assisted watcher, no live feed):
+  complete.** Full seed depth (7 pillar states, 13 verified + 1 honestly-unverified cards,
+  3-entry trajectory, 13 SG-tagged glossary terms, 19-document library, orientation page). The first
+  jurisdiction with `status.watcher: "dormant"` -- MAS (mas.gov.sg) and Singapore Statutes Online both
+  confirmed, live, to bot-block this project's honest User-Agent; per the owner's P6-stage decision, no
+  browser-UA impersonation was used, so `sg` is deliberately absent from `watch.yml`'s matrix and content
+  is curated via manual `seed_backfill` review instead. See the 2026-07-13 "P14" entry below for the
+  fix-then-commit cycle this phase needed: the workflow's own Research phase hit a "Prompt is too long"
+  failure and silently produced only 6 of 7 pillar-state files, crashing `pipeline.site.generate` outright
+  for every jurisdiction (not just Singapore) until fixed; two cards cited a blocked mas.gov.sg page when
+  an already-proven `sgpc.gov.sg` mirror existed but wasn't used; two cards had PDF-extraction-artifact
+  quote mismatches (a glued footnote digit, a curly-quote spacing difference); three cards were genuinely
+  authentic but had simply never received a completed verifier pass; and a `sgpc.gov.sg`-cited quote that
+  one fix agent believed it had verified was still caught and downgraded by the real gate on a second PDF-
+  extraction artifact, fixed by directly calling the gate's own `quote_is_authentic()` function to find a
+  clean substring before re-verifying through a fresh agent, never by hand-editing status.
 
 ## Owner / next-step punch list
 
@@ -1417,6 +1433,123 @@ verifier sub-agents created were removed after their fixes were extracted and ap
 **Seven jurisdictions now live: hk, uk, eu, us, ch, jp, uae.** P14 (Singapore onboarding, the
 project's first jurisdiction planned from the outset to use a manual-assisted watcher rather than a
 fully live feed/html_diff/sitemap_diff mechanism) is next.
+
+### 2026-07-13 — P14: Singapore onboarding (eighth jurisdiction, manual-assisted watcher -- a real fix-then-commit cycle)
+
+Singapore is this project's first jurisdiction with no live automated watcher: MAS (mas.gov.sg) and
+Singapore Statutes Online (sso.agc.gov.sg) both bot-block this project's own honest, non-browser-
+impersonating User-Agent with an identical "Maintenance"/HTTP-403 response, confirmed live multiple
+times across this phase (Research, Manual Seed, Gates, and again independently by the final-check, all
+on 2026-07-13). Per the owner's already-made P6-stage decision (logged in that phase's own entry above),
+this project chose honest fetching over browser-UA impersonation, so `config/jurisdictions/sg.json`
+registers `mas` with `feeds: []` and routes citations instead through the Singapore Press Centre
+(`sgpc.gov.sg`, which mirrors MAS media releases as genuine fetchable PDFs), Singapore's Parliament
+(`parliament.gov.sg`, which serves genuine Bill-text PDFs), and IRAS (`iras.gov.sg`) -- five regulators
+total, all zero-feed by design, matching the manual-assisted model this phase was scoped to build. Content
+seeded via a single large manually-curated `seed_backfill` batch rather than the watcher-first-plus-small-
+backfill pattern every live jurisdiction has used since P10: 7 pillar states, 14 cards, a 3-entry
+trajectory, 13 SG-tagged glossary terms, and a 19-document library, covering Singapore's Payment Services
+Act 2019 (PS Act) digital-payment-token licensing regime and its 2022 Financial Services and Markets Act
+(FSM Act) Part 9 Digital Token Service Provider extension.
+
+**This phase's own workflow run surfaced a genuine "Prompt is too long" agent failure** -- the exact
+failure class P9's own workflow first warned about avoiding -- in the Research phase's `exchanges_vatp`
+pillar-state agent, silently leaving only 6 of the 7 required `content/sg/pillar_states/*.json` files on
+disk. **This crashed `pipeline.site.generate` outright for every jurisdiction, not just Singapore** (the
+loader raises `SiteDataError` and aborts the whole `build_site()` call the moment any one jurisdiction is
+missing a mandatory pillar-state file) -- the identical failure *class* P9 first found for a missing
+`orientation.json`, recurring here one required file over, exactly as the workflow's own final-check
+brief was told to watch for. The gap was closed by re-running a single, deliberately leaner analyst-type
+agent (avoiding the giant director-brief prompt that likely caused the original overflow) that
+independently re-fetched real primary sources -- the Payment Services (Amendment) Bill (parliament.gov.sg,
+genuine PDF) and four MAS media releases (all via `sgpc.gov.sg` mirrors) -- and wrote a full, schema-valid
+`exchanges_vatp.json` covering DPT-service licensing categories, PS-G02 advertising restrictions, and the
+Investor Alert List mechanism, cross-referenced against the custody/AML pillars exactly like every sibling
+file. Independently re-ran `pipeline.site.generate` after the fix and confirmed the crash is gone and
+`_site/sg/index.html` renders real content.
+
+**Card-level defects, all found by the workflow's own final-check and fixed via targeted, worktree-
+isolated fix agents -- never by hand-editing a card's `status` field directly, per this project's
+established (and, for UAE, safety-classifier-enforced) discipline that only a genuine analyst/verifier
+pass may write `status: "verified"`:**
+- **Two cards cited a confirmed-blocked `mas.gov.sg` page** (the Binance.com Investor Alert List listing;
+  the October 2022 DPT/stablecoin consultation) **when an already-proven `sgpc.gov.sg` mirror existed for
+  one of them but wasn't used.** A fix agent found the real `sgpc.gov.sg` mirror for the October 2022
+  consultation (probing the `P-20221026-N` release-sequence pattern to the genuine `N=1`), switched the
+  citation, and in the same adversarial pass caught and corrected several further overreach issues the
+  original draft had layered on top (a specific consultation-paper number not actually in that release; an
+  unsupported Major-Payment-Institution-licence claim; a redemption-timeline figure from a *later* MAS
+  release, not this one; a cherry-picked capital-requirement figure that dropped an "or 50% of annual
+  operating expenses" qualifier). For the Investor Alert List card, no fetchable mirror exists anywhere in
+  this jurisdiction's registered domains (an IAL listing is a rolling database entry, not a discrete press
+  release) -- the fix agent searched exhaustively, confirmed this honestly, tightened the card's prose to
+  state only what its one (unfetchable but independently corroborated-genuine) citation actually supports,
+  and correctly left it `status: "unverified"` rather than fabricate a substitute source.
+- **Two cards had PDF-extraction-artifact quote mismatches** -- a footnote-reference digit glued directly
+  onto a word with no space ("policymakers" -> "policymakers¹across"), and a closing curly-quote rendered
+  with an inserted space by this pipeline's own `pypdf` extractor -- both are the same underlying defect
+  *class* logged for P10/P11 (a quote failing the exact-contiguous-substring check) but here genuinely
+  extraction artifacts, not fabrication; independently re-confirmed via a second extractor for one of the
+  two. Fixed by shortening each quote to end cleanly before the artifact boundary. Both fix passes also
+  caught and removed real unsupported claims layered into the same cards during drafting (an unconfirmed
+  Second Reading date/speaker attribution and an unconfirmed Parliamentary-passage date, in each case
+  because the only citation was the Bill *as introduced*, not Hansard or the enacted Act text -- neither of
+  which is fetchable in this jurisdiction) -- both cards were retitled/redated to describe only their
+  Bill's first reading, the one fact each citation genuinely supports.
+- **Three cards were genuinely authentic on independent re-fetch but had simply never received a completed
+  verifier pass** -- a process gap, not a content defect -- closed by three fresh, independent verifier
+  agents, each confirming the existing citations/quotes/dates held up and setting `status: "verified"`.
+- **A second-order gate-authenticity miss, caught only by running the real gate for real**: after the
+  `sgpc.gov.sg` mirror fix above, the orchestrating session ran `pipeline.ci.apply_verification_gate` and
+  watched it *downgrade* that same card back to `unverified` -- the fix agent's own quote (`"...submit
+  their comments on the proposals by 21 December 2022."`) still didn't survive the real gate's `pypdf`
+  extraction, which renders that same PDF's "comments" as "c omments" (a second, independent extraction
+  artifact in the same document). Root-caused by calling `pipeline.verify.docfetch.fetch_document` and
+  `pipeline.verify.authenticity.quote_is_authentic` directly against the live PDF -- the actual functions
+  the real gate calls, not a reimplementation -- to find a clean, artifact-free substring
+  (`"MAS invites interested parties to submit their"`), then, per the same never-hand-edit-status
+  discipline, sending the card through one more fresh verifier pass rather than writing `"verified"`
+  directly. This is a new instance of the "gate log line is misleading" gotcha logged since P9/P13 --
+  `apply_verification_gate`'s per-file print only reports whether a file *changed this run*, so a first,
+  naive `apply_verification_gate` pass after these fixes printed "citations OK" for every card, and only
+  reading each card's actual `status` field afterward revealed the real, still-broken state.
+- Registered a new, narrow zero-feed regulator entry, `bis` (Bank for International Settlements,
+  `bis.org`), for one `funds_etfs.json` key_link citing a verbatim BIS reproduction of an MAS Deputy
+  Managing Director's own speech -- used specifically because MAS's own speeches page is the same
+  confirmed-blocked domain, mirroring the `sgpc.gov.sg` precedent. Grepped `pipeline/` for the id and
+  confirmed no collision. Left one lower-stakes `web.archive.org` citation in `trajectory.json` as a
+  documented, disclosed open item rather than registering it as an official domain -- unlike `bis.org`
+  (an international financial institution reproducing a regulator's own words), a general web archive
+  is not itself an official body, and `trajectory.json` is outside the deterministic gate's own scope
+  (`apply_verification_gate.py` only scans `content/*/cards/*.json`) either way.
+
+`config/site.json`'s `sg` entry reads `status.watcher: "dormant"` (the schema's third enum value,
+alongside `"live"`/`"planned"` -- chosen deliberately over `"planned"`, which would understate the real
+seeded content, and over `"live"`, which would falsely imply a daily poll). `.github/workflows/watch.yml`
+was **not touched this phase** -- `sg` is deliberately absent from its matrix, confirmed both by direct
+inspection and by `git status` showing that file with zero diff. `content/sg/orientation.json` explicitly
+explains the manual-assisted model in its own text, so a compliance reader can tell this jurisdiction is
+not on a live daily feed.
+
+**Verification, run fresh by the orchestrating session** (not trusted from any sub-agent's report): full
+pytest suite 440/440 passing throughout every fix step; `pipeline.ci.validate_content` clean; a second,
+post-fix `apply_verification_gate --jurisdiction sg` run confirmed stable (zero further downgrades);
+final card census independently re-derived by reading each file's own `status` field directly: **13
+verified, 1 honestly unverified** (the Investor Alert List card, for the documented, genuine sourcing
+reason above); `promote_drafted`/`promote_verified --jurisdiction sg` both report 0 newly promoted (all
+14 already linked to `published` ledger items from the workflow's own Gates phase; ledger also shows 6
+correctly-untouched `queued` items); a full `pipeline.site.generate` rebuild succeeded, `_site/sg/
+index.html` confirmed to show real content (132 MAS mentions, zero "coming soon" hits) and the Method
+page's Singapore coverage row confirmed to carry the accurate manual-assisted `coverage_notes` explanation
+verbatim; `content/sg/orientation.json`'s "seven regulatory areas" claim, flagged as a stale mismatch by
+the final-check when only 6 pillar files existed, is now genuinely accurate (7 files, verified by count).
+All seven scratch worktrees the fix agents created were removed, along with their branches, after each
+fix was extracted, reviewed, and applied to the shared checkout.
+
+**Eight jurisdictions now live: hk, uk, eu, us, ch, jp, uae, sg.** P15 (full-autonomy soak + final PR) is
+next -- see the Owner / next-step punch list above and the open-questions summary that will accompany the
+final PR for what genuinely cannot be completed synchronously in any session (the 14-day zero-touch soak,
+live CCR trigger activation for any jurisdiction beyond HK).
 
 ## PM checkpoints (Fable)
 

@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "id": "mas",
+  "term": "MAS (Monetary Authority of Singapore)",
+  "jurisdictions": [
+    "sg"
+  ],
+  "plain_definition": "Singapore's central bank and its single, integrated financial regulator -- there is no separate securities regulator, banking regulator, AML authority, or crypto-specific regulator in Singapore. MAS licenses and supervises digital payment token (DPT) service providers under the Payment Services Act 2019, capital-markets-product token dealers and advisers under the Securities and Futures Act 2001 and Financial Advisers Act 2001, and, since 30 June 2025, certain overseas-only digital token service providers under the Financial Services and Markets Act 2022's Part 9 regime, while also running its own central-bank digital-money programmes (Project Orchid, the SGD Testnet) and convening the industry-collaboration Project Guardian tokenisation initiative.",
+  "formal_definition": "Established under the Monetary Authority of Singapore Act 1970 (Cap. 186) -- this entry could not independently fetch that Act's consolidated text, since Singapore Statutes Online (sso.agc.gov.sg) returned a live-verified HTTP 403 CloudFront block on every path tried on the date of drafting (2026-07-13), including a direct attempt against the Act itself. MAS's role as sole regulator across every digital-asset-relevant statute (PS Act, SFA, FAA, FSM Act) is instead confirmed by direct fetch of MAS's own media releases, consistently retrievable only via the Singapore Government's official press-release repository (sgpc.gov.sg) rather than www.mas.gov.sg itself, which served an identical bot-blocked 'Maintenance' / 'service ... currently unavailable' page on every path tried this session, including a live attempt against MAS's Investor Alert List page made while drafting this entry.",
+  "related_terms": [
+    "payment-services-act-sg",
+    "digital-payment-token",
+    "dpt-service",
+    "fsm-act",
+    "dtsp",
+    "single-currency-stablecoin"
+  ],
+  "first_used_card_id": "1ca79f1f82222ee2b57b467c666ef9ef874784f810f7bafdbd99f36003ce00b6",
+  "generated_at": "2026-07-13T18:05:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

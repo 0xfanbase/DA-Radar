@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "e2ba1b258469fe3c30661f87cc0b69c7d44c48b32f873ca818dd6fa265441e7d",
+  "jurisdiction_id": "sg",
+  "published_date": "2023-11-23",
+  "regulator": "Monetary Authority of Singapore (MAS)",
+  "pillar": [
+    "exchanges_vatp"
+  ],
+  "type": "conclusions",
+  "title": "MAS finalises business conduct and consumer access measures for digital payment token service providers",
+  "summary": "On 23 November 2023, the Monetary Authority of Singapore (MAS) published the final tranche of its responses to consultation feedback on proposed regulations for digital payment token (DPT) service providers. The response sets out business conduct measures -- requiring DPT service providers to disclose conflicts of interest, publish policies governing which tokens they list, and maintain complaint-handling and dispute-resolution procedures -- alongside consumer access measures aimed at discouraging retail speculation, including assessing a customer's risk awareness before granting access, and prohibiting trading incentives, financing/margin/leverage transactions, and local credit-card payments for DPT purchases. MAS also introduced minimum technology and cyber-risk requirements for high system availability and recoverability. These measures will be implemented through regulations and guidelines taking effect in phases from mid-2024.",
+  "why_it_matters": "This finalises MAS's rulebook for how digital payment token service providers in Singapore must treat retail customers -- covering conflict-of-interest disclosure, dispute handling, and curbs on speculative trading such as margin, leverage and credit-card funding -- completing MAS's consultation response on business-conduct and consumer-access measures for DPT service providers, with the rules phasing in from mid-2024.",
+  "citations": [
+    {
+      "url": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release%20-%20MAS%20Strengthens%20Regulatory%20Measures%20for%20Digital%20Payment%20Token%20Services.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20231123-2/attachment/MAS%20Media%20Release%20-%20MAS%20Strengthens%20Regulatory%20Measures%20for%20Digital%20Payment%20Token%20Services.pdf",
+      "quote": "business conduct and consumer access measures to limit potential consumer harm"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T05:20:00Z",
+  "model": "Claude (Anthropic)"
+}

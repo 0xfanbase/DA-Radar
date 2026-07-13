@@ -1,0 +1,28 @@
+{
+  "citations": [
+    {
+      "quote": "MAS invites interested parties to submit their",
+      "url": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release_MAS%20Proposes%20Measures%20to%20Reduce%20Risks%20to%20Consumers%20from%20Cryptocurrency%20Trading%20and%20Enhance%20Standards%20of%20Stablecoin-Related%20Activities.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20221026-1/attachment/"
+    }
+  ],
+  "generated_at": "2026-07-13T21:05:00Z",
+  "id": "750c8b8da8448ca9634a9a7bc286121a662437fd8355ab3a380f56444f4e6d2b",
+  "jurisdiction_id": "sg",
+  "key_dates": {
+    "deadline": "2022-12-21",
+    "milestone": "2022-10-26"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "exchanges_vatp",
+    "stablecoins"
+  ],
+  "published_date": "2022-10-26",
+  "regulator": "MAS (Monetary Authority of Singapore)",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "On 26 October 2022, the Monetary Authority of Singapore (MAS) published two consultation papers proposing regulatory measures to reduce the risk of consumer harm from cryptocurrency trading and to support the development of stablecoins as a medium of exchange, with the measures to be implemented as part of the Payment Services Act. One paper set out a proposed regulatory approach for single-currency stablecoins (SCS) pegged to the Singapore dollar or a G10 currency and issued in Singapore: MAS proposed regulating SCS issuance once the value of SCS in circulation exceeds S$5 million, with issuers required to hold reserve assets at least equivalent to 100% of the par value of outstanding SCS, meet a base capital requirement of the higher of S$1 million or 50% of annual operating expenses, provide timely redemption at par value, and publish a white paper disclosing SCS details including redemption rights. A companion paper proposed consumer-protection measures for digital payment token (cryptocurrency) service providers, covering consumer access (risk disclosures, no credit facilities or leverage for retail consumers), business conduct (segregation of customer assets, mitigating conflicts of interest, complaints handling), and technology risk (high system availability and recoverability). MAS invited interested parties to submit comments on both proposals by 21 December 2022.",
+  "title": "MAS consults on regulatory measures for digital payment token services and a regulatory approach for stablecoin-related activities",
+  "type": "consultation",
+  "why_it_matters": "This is the starting point of Singapore's dedicated stablecoin regulatory framework: MAS's own release describes the pre-existing regime as addressing money-laundering, terrorism-financing, and technology and cyber risks, and states it would be expanded so that regulated stablecoins also have a high degree of value stability -- meaning there was no separate requirement, before this paper, that a stablecoin actually hold enough reserves to honour its peg."
+}
