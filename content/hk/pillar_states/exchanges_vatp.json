@@ -7,8 +7,8 @@
     "Anti-Money Laundering and Counter-Terrorist Financing Ordinance (Cap. 615)",
     "Securities and Futures Ordinance (Cap. 571)"
   ],
-  "standing_summary": "The dual licence arrangement for virtual asset trading platforms (VATPs) -- a Securities and Futures Ordinance licence for platforms trading at least one security token, and an Anti-Money Laundering and Counter-Terrorist Financing Ordinance licence for all centralised VA exchanges -- has been in force since 1 June 2023. As of the SFC's most recently updated public list, 13 platforms are licensed. The SFC's ASPIRe roadmap, published 19 February 2025, continues to drive expansion: staking by licensed platforms has been permitted since 7 April 2025, and a 27 May 2026 circular set out how VATPs may offer HKMA-licensed stablecoins for trading.",
-  "last_changed": "2026-05-27",
+  "standing_summary": "The dual licence arrangement for virtual asset trading platforms (VATPs) -- a Securities and Futures Ordinance licence for platforms trading at least one security token, and an Anti-Money Laundering and Counter-Terrorist Financing Ordinance licence for all centralised VA exchanges -- has been in force since 1 June 2023. As of the SFC's most recently updated public list, 13 platforms are licensed. The SFC's ASPIRe roadmap, published 19 February 2025, continues to drive expansion: staking by licensed platforms has been permitted since 7 April 2025, and a 27 May 2026 circular set out how VATPs may offer HKMA-licensed stablecoins for trading. Two further SFC circulars have since addressed platform cybersecurity: a 2 June 2026 circular directing licensed corporations and SFC-licensed virtual asset service providers, including VATPs, to assess and strengthen their defences against AI-enabled cyberattacks, and a 9 July 2026 circular requiring internet brokers and VATP operators to replace one-time-password client authentication with phishing-resistant methods (e.g. passkeys or bound devices) within 12 months.",
+  "last_changed": "2026-07-13",
   "key_links": [
     {
       "label": "SFC: Virtual asset trading platform operators (legal basis)",
@@ -29,14 +29,23 @@
     {
       "label": "SFC circular 26EC26: stablecoin services by VATPs (27 May 2026)",
       "url": "https://apps.sfc.hk/edistributionWeb/api/circular/list-content/circular/doc?refNo=26EC26&lang=EN"
+    },
+    {
+      "label": "SFC circular 26EC32: enhanced cybersecurity measures against AI-enabled cyberattacks (2 Jun 2026)",
+      "url": "https://apps.sfc.hk/edistributionWeb/api/circular/list-content/circular/doc?refNo=26EC32&lang=EN"
+    },
+    {
+      "label": "SFC circular 26EC35: phishing-resistant authentication for internet brokers and VATPs (9 Jul 2026)",
+      "url": "https://apps.sfc.hk/edistributionWeb/api/circular/list-content/circular/doc?refNo=26EC35&lang=EN"
     }
   ],
   "open_items": [
     "Further ASPIRe workstream initiatives are ongoing and not all have concluded.",
     "Additional platform licensing continues incrementally (e.g. licences granted February and May 2026).",
-    "The separate virtual asset dealer, custodian, advisory, and management licensing regimes (a related but distinct pillar) remain at bill-pending stage, not yet in force."
+    "The separate virtual asset dealer, custodian, advisory, and management licensing regimes (a related but distinct pillar) remain at bill-pending stage, not yet in force.",
+    "The 9 July 2026 phishing-resistant authentication mandate has a 12-month transition period; full compliance across internet brokers and VATPs is not yet due."
   ],
-  "generated_at": "2026-07-09T06:14:16Z",
-  "model": "not recorded (pre-provenance content)",
+  "generated_at": "2026-07-13T09:00:00Z",
+  "model": "Claude (Anthropic)",
   "status": "unverified"
 }

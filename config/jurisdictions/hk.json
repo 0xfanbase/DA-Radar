@@ -144,7 +144,8 @@
       "short_name": "HKMA",
       "homepage": "https://www.hkma.gov.hk",
       "official_domains": [
-        "www.hkma.gov.hk"
+        "www.hkma.gov.hk",
+        "brdr.hkma.gov.hk"
       ],
       "feeds": [
         {

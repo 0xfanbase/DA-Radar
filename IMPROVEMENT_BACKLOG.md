@@ -1319,3 +1319,47 @@ jurisdictions ship. Needs an explicit owner decision before or during P7-P14, no
 - **staleness**: Pillar 'funds_etfs' last changed 47 days ago (threshold 45) -- worth a human check against the regulator's own page.
 - **staleness**: Pillar 'stablecoins' last changed 76 days ago (threshold 45) -- worth a human check against the regulator's own page.
 - **staleness**: Pillar 'tokenization_rwa' last changed 84 days ago (threshold 45) -- worth a human check against the regulator's own page.
+
+### 2026-07-13 — Response to the audit findings above
+
+**Link rot (50 events, all `brdr.hkma.gov.hk`):** Investigated rather than mass-fixed. `brdr.hkma.gov.hk`
+was not registered in `config/jurisdictions/hk.json`'s HKMA `official_domains` at all -- the exact
+missing-domain-registration defect class this build kept finding and fixing across P9/P11/P13/P14,
+just never caught for HK itself since these are `document_library`/`pillar_state` citations, which
+`apply_verification_gate.py` never gates (only `content/*/cards/*.json` is). Fixed: `brdr.hkma.gov.hk`
+is now registered.
+
+The underlying link rot itself was investigated, not fabricated a fix for. Independently corroborated
+across three separate, unrelated live-fetch attempts today (this session's own `curl`/openssl checks;
+`WebFetch`; and, separately, three of the five staleness-check agents below hitting the same domain
+while trying to fetch unrelated documents) that `brdr.hkma.gov.hk` is currently down at the TLS layer
+(`curl`/`requests`: "unable to get local issuer certificate" -- a broken/incomplete certificate chain
+being served by the origin) and via `WebFetch` (HTTP 503). The bare domain root over plain HTTP does
+resolve and redirect to HTTPS (confirming the host itself is up, Tengine-served), so this reads as a
+genuine, current HKMA-side TLS/availability misconfiguration on this specific subdomain -- not
+something a citation-URL fix or an alternate-mirror search can route around, and not a bug in this
+project's own fetch code (the exact same fetcher, `pipeline/verify/docfetch.py`, works fine against
+every other registered HK/HKMA/SFC domain). **Not just historical**: one of the staleness-check agents
+below found two live, currently-queued HKMA circulars (`item_hash a5d16bbe...`, `8e676f99...`, both
+2026-05-27) that cannot be drafted into cards at all while this outage continues, since their content
+is unreachable. No further fix attempted here beyond the domain registration -- re-check is naturally
+covered by `audit.yml`'s existing weekly cron; if `brdr.hkma.gov.hk` is still down next week, the same
+finding will simply recur, which is the correct behavior for a genuine external outage.
+
+**Staleness (5 HK pillars):** Per `pipeline/audit/staleness.py`'s own docstring, "a stale pillar is a
+prompt for a human... to look, not a claim that something is actually wrong" -- so each of the 5 flagged
+pillars was independently, genuinely live-checked against SFC/HKMA's current publications (not
+mechanically re-dated). Two had real, materially new content:
+- `exchanges_vatp`: two new SFC cybersecurity circulars since 27 May 2026 (26EC32, AI-enabled-attack
+  defences, 2 Jun; 26EC35, phishing-resistant authentication replacing OTP, 9 Jul, 12-month transition).
+- `tokenization_rwa`: HKMA's Tokenised Bond Expert Group (convened 5 Jun 2026) and, more materially,
+  the actual published phase-1 conclusion of the Policy-Statement-2.0-flagged legal review (29 Jun
+  2026 FSTB/HKMA finding that HK's existing law is "already sufficiently flexible" for tokenised bond
+  issuance, plus a Companies Registry FAQ on DLT-maintained debenture registers) -- this pillar's own
+  `open_items` had explicitly flagged that review's output as "not yet published" before this check.
+
+Three were genuinely re-confirmed accurate with no update needed -- `funds_etfs`, `stablecoins`, and
+`dealing_custody_advisory` (the last one specifically because its one live lead, the two brdr-hosted
+circulars above, is blocked by the same outage, not because nothing relevant exists). None of the five
+were mechanically bumped without a real check; three legitimately remain at their prior `last_changed`
+date, which is the audit design working as intended, not a gap.
