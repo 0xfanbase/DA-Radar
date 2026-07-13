@@ -108,6 +108,7 @@
   </main>
   <footer class="site-footer">
     <p>{{ site_name }} &mdash; code MIT-licensed, content CC BY 4.0. An automated, self-learning regulatory-watch project.</p>
+    {% if build_generated_at %}<p class="mono meta-line">Page generated {{ build_generated_at }}</p>{% endif %}
   </footer>
   <script src="{{ asset_prefix }}static/site.js"></script>
   <script src="{{ asset_prefix }}static/theme.js"></script>

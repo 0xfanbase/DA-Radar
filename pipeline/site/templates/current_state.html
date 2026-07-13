@@ -4,6 +4,9 @@
 {% block title %}{{ jurisdiction_name }} &mdash; Current State &mdash; {{ site_name }}{% endblock %}
 {% block content %}
 <h1 class="plate">{{ jurisdiction_name }}: Current State</h1>
+{% if content_last_updated %}
+<p class="mono meta-line freshness-line">Data on this page last updated {{ content_last_updated }}{% if build_generated_at %} &middot; page generated {{ build_generated_at }}{% endif %}</p>
+{% endif %}
 
 {#
   "New here? How to read this board" panel (P7 plan). A <details> element,

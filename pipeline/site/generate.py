@@ -38,6 +38,7 @@ from pipeline.site.data import (
     load_global_data,
     load_jurisdiction_data,
 )
+from pipeline.watcher.clock import utc_now_iso
 
 TEMPLATES_DIR = os.path.join(os.path.dirname(__file__), "templates")
 STATIC_DIR = os.path.join(os.path.dirname(__file__), "static")
@@ -128,6 +129,15 @@ def build_site(repo_root: str, output_dir: str) -> list:
     site_name = global_data["site_config"].get("site_name", "")
     registry = global_data["site_config"].get("jurisdictions", [])
 
+    # Computed once per build, passed to every template so the footer (see
+    # base.html) can show a real "page generated" timestamp on every page --
+    # distinct from a jurisdiction's own content_last_updated (when the
+    # displayed facts were last touched by an analyst run): this one
+    # answers "when was this HTML itself produced," so a reader can tell
+    # a same-day rebuild with nothing new to say apart from a stale rebuild
+    # that hasn't run in a while.
+    build_generated_at = utc_now_iso()
+
     # The header's row-1 nav (see pipeline/site/templates/base.html) always
     # shows Current State/Timeline links, even on pages with no jurisdiction
     # context of their own (the global landing page, Document Library,
@@ -172,6 +182,7 @@ def build_site(repo_root: str, output_dir: str) -> list:
             os.path.join(output_dir, "index.html"),
             active_page="landing",
             asset_prefix="",
+            build_generated_at=build_generated_at,
             site_name=site_name,
             jurisdictions=registry,
             default_jurisdiction_id=default_jurisdiction_id,
@@ -193,6 +204,7 @@ def build_site(repo_root: str, output_dir: str) -> list:
                     os.path.join(output_dir, jid, "index.html"),
                     active_page="current_state",
                     asset_prefix="../",
+                    build_generated_at=build_generated_at,
                     site_name=site_name,
                     jurisdictions=registry,
                     default_jurisdiction_id=default_jurisdiction_id,
@@ -215,6 +227,7 @@ def build_site(repo_root: str, output_dir: str) -> list:
                     os.path.join(output_dir, jid, "timeline.html"),
                     active_page="timeline",
                     asset_prefix="../",
+                    build_generated_at=build_generated_at,
                     site_name=site_name,
                     jurisdictions=registry,
                     default_jurisdiction_id=default_jurisdiction_id,
@@ -232,6 +245,7 @@ def build_site(repo_root: str, output_dir: str) -> list:
                         os.path.join(output_dir, jid, output_name),
                         active_page=active_page,
                         asset_prefix="../",
+                        build_generated_at=build_generated_at,
                         site_name=site_name,
                         jurisdictions=registry,
                         default_jurisdiction_id=default_jurisdiction_id,
@@ -250,6 +264,7 @@ def build_site(repo_root: str, output_dir: str) -> list:
                 os.path.join(output_dir, output_name),
                 active_page=active_page,
                 asset_prefix="",
+                build_generated_at=build_generated_at,
                 site_name=site_name,
                 jurisdictions=registry,
                 default_jurisdiction_id=default_jurisdiction_id,
