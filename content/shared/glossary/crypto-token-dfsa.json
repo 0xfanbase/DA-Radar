@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "id": "crypto-token-dfsa",
+  "term": "Crypto Token (DFSA) / Recognised Crypto Token",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "The DFSA/DIFC's umbrella regulatory term for a crypto-asset. Historically, a token could only be used in DIFC-regulated financial services once the DFSA itself had put it on a published 'Recognised Crypto Token' list; since 12 January 2026 that DFSA-maintained list has been replaced by a firm-led, documented self-assessment of a token's suitability -- except for Fiat Crypto Tokens (DIFC-facing stablecoins), which the DFSA still assesses and approves directly. This entry keeps the historical 'Recognised Crypto Token' name in its title because that is still the term readers and older documents will search for, while describing the regime as it actually operates today.",
+  "formal_definition": "The DFSA Crypto Token regime came into force 1 November 2022 (confirmed by direct fetch of the DFSA Rulebook's own hosted page, dfsaen.thomsonreuters.com/rulebook/1-november-2022-dfsa-crypto-token-regime-comes-force), extending existing DFSA financial-service-activity modules in the General Module (GEN) -- advising, dealing, arranging, and custody, among others -- to a defined 'Crypto Token,' with the original gateway condition requiring a token to appear on the DFSA's own published 'Recognised Crypto Token' list before an Authorised Person could deal in, advise on, arrange, manage, or provide custody for it. An update in force 12 January 2026 (confirmed via file metadata of the DFSA's own hosted PDF media release, dfsaen.thomsonreuters.com/sites/default/files/net_file_store/DFSA_Media_Release_-_Updated_Crypto_Token_Rules_-_ENG_-_12.1.pdf, corroborated by independent secondary legal-alert reporting from Clyde & Co, Simmons & Simmons and Dechert) discontinued the DFSA-maintained Recognised Crypto Token list in favour of firm-led, documented self-assessment of token suitability against DFSA-defined criteria (GEN 3A.2.1(2)(a)), with a transition period automatically treating tokens previously on the discontinued list as suitable. Fiat Crypto Tokens -- defined at GEN A2.5.5 as a Crypto Token whose value purports to be determined by reference to a single fiat currency -- remain the one exception to firm self-assessment: for these, GEN 3A's operative condition remains that 'the DFSA is satisfied that the Fiat Crypto Token is suitable for use in the DIFC,' so the DFSA (not the firm) continues to be the gatekeeper for DIFC stablecoin use. GEN 3A separately and absolutely prohibits DIFC activity relating to a Privacy Token or Privacy Device (GEN 3A.2.2) and to an Algorithmic Token (GEN 3A.2.3, i.e. an algorithmic stablecoin), most recently amended by DFSA RMI423/2025 (made 15 December 2025, consolidated as VER71/01-26 of the GEN module).",
+  "related_terms": [
+    "dfsa",
+    "difc",
+    "accepted-virtual-asset",
+    "stablecoin",
+    "casp"
+  ],
+  "first_used_card_id": "8fbfe47983051d4aeed9c08ccfa27f173667e26ad4c1ff71f4ae9e287c7dbefc",
+  "generated_at": "2026-07-13T16:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

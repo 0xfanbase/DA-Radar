@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "art",
+  "term": "ART (Asset Reference Token, VARA usage)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "VARA's category, under Dubai's Virtual Asset Issuance Rulebook, for a virtual asset designed to maintain a stable value by referencing real-world assets, which VARA states includes but is not limited to FIAT. A currency-referencing ART is the narrower FRVA subset, covered by the Rulebook's own dedicated annex. This is VARA's own regime-specific term and a different concept from the European Union's MiCA 'asset-referenced token' (see asset-referenced-token), which this glossary tracks as a separate entry rather than merging the two.",
+  "formal_definition": "VARA's Virtual Asset (VA) Issuance Rulebook (September 2023 edition) introduces two categories of VA issuance for an ART, determining whether an issuer requires Registration with VARA pre-approval or a Full-fledged Regulated VARA Licence prior to issuance, alongside whitepaper/public-disclosure, issuer-compliance, supervision, examination and enforcement requirements. VARA describes this as the first-of-its-kind regulatory position on issuance of specific categories of Virtual Assets backed by Real World Assets.",
+  "related_terms": [
+    "frva",
+    "vara",
+    "asset-referenced-token",
+    "stablecoin"
+  ],
+  "first_used_card_id": "fcc9e79a8df7a86cfc66deff67cdaa4dee1ede0531f9e3d5472f78d1a788b95e",
+  "generated_at": "2026-07-13T16:10:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

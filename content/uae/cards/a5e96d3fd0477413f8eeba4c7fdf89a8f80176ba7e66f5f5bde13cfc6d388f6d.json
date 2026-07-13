@@ -1,0 +1,30 @@
+{
+  "citations": [
+    {
+      "quote": "complete their IEMS registration no later than 30th May 2025",
+      "url": "https://media.umbraco.io/dwtc/pq2mku34/vasp-circular-on-iems-introduction.pdf"
+    },
+    {
+      "quote": "except within the jurisdiction of Dubai International Financial Centre (DIFC)",
+      "url": "https://www.vara.ae/en/"
+    }
+  ],
+  "generated_at": "2026-07-13T15:45:00Z",
+  "id": "a5e96d3fd0477413f8eeba4c7fdf89a8f80176ba7e66f5f5bde13cfc6d388f6d",
+  "jurisdiction_id": "uae",
+  "key_dates": {
+    "deadline": "2025-05-30"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "aml_cft_enforcement"
+  ],
+  "published_date": "2025-05-20",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "On 20 May 2025, VARA -- which regulates virtual assets in Dubai outside the DIFC free zone -- issued a circular to all licensed Virtual Asset Service Providers (VASPs) operating in Dubai's mainland and commercial free zones, on requirements introduced by the UAE Financial Intelligence Unit (UAEFIU) for use of its Integrated Enquiry Management System (IEMS), a centralized digital platform automating communication between the UAEFIU, domestic authorities, and reporting entities including VASPs. The circular sets out VASP obligations: registering relevant personnel, including money-laundering reporting and compliance officers, on IEMS using existing goAML credentials; assigning user roles; monitoring the platform for incoming requests; responding within stated deadlines with required documentation; and immediately implementing any freeze instructions received. VARA required VASPs to complete IEMS registration by 30 May 2025.",
+  "title": "VARA circular: UAEFIU requires all Dubai VASPs to register for its Integrated Enquiry Management System (IEMS) by 30 May 2025",
+  "type": "circular",
+  "why_it_matters": "VARA is the authority that licenses and supervises virtual-asset businesses in Dubai outside the DIFC free zone, and this circular shows how UAE financial-crime reporting duties for VASPs are being channelled through a shared federal platform on a fixed registration deadline, with non-compliance treated as a lack of cooperation with law enforcement."
+}

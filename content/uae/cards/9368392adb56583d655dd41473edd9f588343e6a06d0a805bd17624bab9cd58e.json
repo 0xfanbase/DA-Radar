@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "9368392adb56583d655dd41473edd9f588343e6a06d0a805bd17624bab9cd58e",
+  "jurisdiction_id": "uae",
+  "published_date": "2023-05-04",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "dealing_custody_advisory"
+  ],
+  "type": "licence",
+  "title": "Web3 launchpad Enjinstarter MENA granted Initial Approval by Dubai's Virtual Assets Regulatory Authority",
+  "summary": "On 4 May 2023, Enjinstarter MENA, a Web3 launchpad and advisory company operating in Dubai, announced it had received initial approval from VARA -- the Virtual Assets Regulatory Authority, which licenses and supervises virtual-asset activity across Dubai's mainland and free zones but not the Dubai International Financial Centre (DIFC). The announcement states the initial approval was granted while the firm undertakes VARA's in-depth process of applying for a licence, in accordance with VARA's requirements. Enjinstarter MENA describes itself as targeting the Middle East and North Africa's Web3 market, aiming to be a launchpad and incubator for metaverse, gaming, and entertainment projects. The announcement quotes the firm's co-founder and CEO describing the approval as significant for the company's commitment to accountability and transparency, and quotes its managing director on Dubai's ambition to be a global hub for Web3.",
+  "why_it_matters": "VARA is Dubai's dedicated regulator for virtual-asset businesses operating outside the DIFC free zone, and initial approval marks an early stage a firm passes through while it undertakes VARA's in-depth process of applying for a licence to conduct virtual-asset activities in the emirate.",
+  "key_dates": {
+    "milestone": "2023-05-04"
+  },
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/web-3-launchpad-enjinstarter-mena-granted-initial-approval/",
+      "quote": "granted initial approval by Dubai's Virtual Assets Regulatory Authority (VARA)"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T17:15:00Z",
+  "model": "Claude (Anthropic)"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "id": "vara",
+  "term": "VARA (Virtual Assets Regulatory Authority)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "Dubai's dedicated virtual-asset regulator. VARA licenses and supervises crypto exchanges, brokers, custodians, advisers and asset managers across Dubai's mainland and free zones -- but not inside the Dubai International Financial Centre (DIFC), which has its own separate regulator, the DFSA.",
+  "formal_definition": "Law No. (4) of 2022 Regulating Virtual Assets in the Emirate of Dubai -- approved 28 February 2022 by Sheikh Mohammed bin Rashid Al Maktoum, Ruler of Dubai, and in force from its publication in the Official Gazette on 11 March 2022 -- establishes 'Dubai Virtual Assets Regulatory Authority' as a public corporation with independent legal personality, financial and administrative autonomy, affiliated to the Dubai World Trade Centre Authority. The Law's territorial scope covers virtual asset services provided in all zones across the Emirate of Dubai, including Special Development Zones and free zones, but expressly excludes the DIFC. Within that territory VARA is the sole licensor of Virtual Asset Activities, coordinating on cross-cutting matters with the Central Bank of the UAE (CBUAE) and the Capital Market Authority (CMA, the federal successor to the former Securities and Commodities Authority). VARA's operative rules are consolidated in its own Rulebook (rulebooks.vara.ae), anchored by the Virtual Assets and Related Activities Regulations 2023 (current consolidated version effective 19 June 2025, originally published 7 February 2023) and a series of activity-specific rulebooks -- including Exchange Services, Broker-Dealer Services, Custody Services, Advisory Services, and VA Management and Investment Services.",
+  "related_terms": [
+    "vatp",
+    "vasp",
+    "difc",
+    "cma",
+    "dfsa",
+    "fsra"
+  ],
+  "first_used_card_id": "071e458c6d0601176331507307aba4c9da13c95796039fba94ef9151a1fe22ea",
+  "generated_at": "2026-07-13T09:05:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

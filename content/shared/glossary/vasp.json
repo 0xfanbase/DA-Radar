@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "id": "vasp",
+  "term": "VASP (Virtual Asset Service Provider)",
+  "jurisdictions": [
+    "global"
+  ],
+  "plain_definition": "The Financial Action Task Force's (FATF's) umbrella anti-money-laundering term for any business that provides crypto-related services -- exchanging, transferring, safekeeping, or facilitating the issuance of virtual assets -- for or on behalf of a customer. Individual jurisdictions each write their own statutory VASP definition and their own separate licence categories (such as Hong Kong's VATP or the EU's CASP), but nearly all of them trace back to the same FATF standard, which is why this entry is tagged global in the same way as the travel-rule entry.",
+  "formal_definition": "The FATF's standard-setting materials (Recommendation 16 and the FATF Glossary) describe a virtual asset service provider functionally, by reference to business activities carried out for or on behalf of a customer -- exchanging virtual assets for fiat currency, exchanging between virtual assets, transferring virtual assets, safekeeping and/or administering virtual assets or instruments enabling control over them, and participating in or providing financial services related to an issuer's offer or sale of a virtual asset. FATF is not itself a source this radar treats as an official regulator of any covered jurisdiction (see the travel-rule entry for the same caveat); each covered jurisdiction implements the standard in its own statute. The UAE's own implementation illustrates the pattern closely: Cabinet Resolution No. (134) of 2025 (the executive regulation of Federal Decree-Law No. (10) of 2025 on AML/CFT/CPF, confirmed by direct fetch of the CBUAE Rulebook) defines 'Virtual Asset Service Providers' verbatim as 'Any person who, as a commercial activity, conducts one or more Virtual Asset activities or related operations for the benefit of, or on behalf of, another natural or legal person,' and its Chapter Two lists the same five Virtual Asset Activities as the trigger for that status -- exchange between Virtual Assets and fiat currencies, exchange between Virtual Assets, transfer of Virtual Assets, safekeeping/administration of Virtual Assets or the instruments controlling them, and participation in or provision of financial services related to an issuer's offer or sale of a Virtual Asset -- binding this single federal definition on all five of the UAE's VASP-facing regulators (VARA, the CMA, the DFSA, and the FSRA) at once, independent of which regulator separately licenses the activity.",
+  "related_terms": [
+    "travel-rule",
+    "vatp",
+    "casp",
+    "vara",
+    "cma",
+    "dfsa",
+    "fsra"
+  ],
+  "first_used_card_id": "071e458c6d0601176331507307aba4c9da13c95796039fba94ef9151a1fe22ea",
+  "generated_at": "2026-07-13T09:50:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -60,13 +60,13 @@
     {
       "id": "uae",
       "name": "United Arab Emirates",
-      "config": null,
+      "config": "config/jurisdictions/uae.json",
       "status": {
-        "watcher": "planned",
+        "watcher": "live",
         "analyst_verifier": "planned",
-        "seeded": false
+        "seeded": true
       },
-      "coverage_notes": "Planned. Federal vs free-zone regulator scope to be settled in its build phase."
+      "coverage_notes": "Live RSS/HTML-diff/sitemap-diff watcher (VARA + SCA/CMA + DFSA + FSRA (ADGM) feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
     },
     {
       "id": "ch",

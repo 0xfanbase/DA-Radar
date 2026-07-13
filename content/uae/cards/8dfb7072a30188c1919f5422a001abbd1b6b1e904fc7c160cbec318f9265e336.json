@@ -1,0 +1,29 @@
+{
+  "citations": [
+    {
+      "quote": "by the final deadline of 31 March 2023",
+      "url": "https://media.umbraco.io/dwtc/f5ufo23t/aan-circular-to-det-and-fzs-e-a-final.pdf"
+    }
+  ],
+  "generated_at": "2026-07-13T15:55:00Z",
+  "id": "8dfb7072a30188c1919f5422a001abbd1b6b1e904fc7c160cbec318f9265e336",
+  "jurisdiction_id": "uae",
+  "key_dates": {
+    "deadline": "2023-03-31",
+    "effective": "2023-02-07",
+    "milestone": "2023-08-31"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "exchanges_vatp",
+    "aml_cft_enforcement"
+  ],
+  "published_date": "2023-03-10",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "In this 10 March 2023 circular to Dubai's Department of Economy and Tourism, the Free Zone Council, and Dubai's free zones, VARA -- the Virtual Assets Regulatory Authority, which licenses and supervises virtual-asset activity across the Emirate of Dubai's mainland and free zones, excluding the DIFC -- explained how it would transition legacy virtual asset service providers into its licensing regime. Firms carrying on virtual asset activities in Dubai before 7 February 2023 -- when VARA's Virtual Assets and Related Activities Regulations 2023 was issued -- had to submit applications for regulatory oversight or guidance by the final deadline of 31 March 2023. VARA would then issue each firm an Application Acknowledgment Notice stating whether it must become fully regulated, be registered under supervision, receive a No Objection Certificate, or in exceptional cases wind down. Firms whose notice required full regulation or registration then had until 31 August 2023 to submit their fully completed applications.",
+  "title": "Application Acknowledgment Notice [AAN] for Virtual Asset Service Providers [VASPs], and Transition of Legacy Firms – Deadline 31 March 2023.",
+  "type": "circular",
+  "why_it_matters": "VARA is the specialist regulator that licenses crypto businesses operating in Dubai outside the DIFC free zone, and this circular set the concrete deadlines and possible outcomes -- full licence, registration, No Objection Certificate, or wind-down -- through which firms already active before February 2023 had to fit into its regime."
+}

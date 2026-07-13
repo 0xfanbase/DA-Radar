@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "0e621d3edc458e658e7e750d762290ad5affacd1355609ff7f7f6c09c66a9312",
+  "jurisdiction_id": "uae",
+  "published_date": "2022-09-19",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "exchanges_vatp",
+    "dealing_custody_advisory"
+  ],
+  "type": "licence",
+  "title": "Binance Secures MVP Licence from Dubai's Virtual Assets Regulatory Authority",
+  "summary": "On 19 September 2022, VARA -- the Virtual Assets Regulatory Authority, which regulates virtual assets in the Emirate of Dubai, including its free zones, excluding the Dubai International Financial Centre (DIFC) -- announced that Binance had received a Minimal Viable Product (MVP) licence, moving up from the provisional licence VARA issued Binance earlier in 2022. Per VARA's release, the MVP licence lets Binance offer an approved range of virtual asset-related services -- exchange, conversion between virtual assets and fiat currencies, transfer, custody and management, token offering and trading, and payments and remittance -- to suitably qualified retail and institutional investors in Dubai, and lets Binance open a client money account with a domestic bank.",
+  "why_it_matters": "VARA is Dubai's dedicated virtual-asset regulator, licensing and regulating virtual asset activity in the Emirate of Dubai and its free zones but excluding the DIFC. This MVP licence illustrates VARA's staged licensing process, moving a VASP from a provisional to a fuller operating licence with a defined scope of approved services and local banking access.",
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/binance-secures-mvp-licence-from-dubais-virtual-assets-regulatory-authority/",
+      "quote": "received the Minimal Viable Product (MVP) license from Dubai's Virtual Asset Regulatory Authority (VARA)"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T14:32:00Z",
+  "model": "Claude (Anthropic)"
+}

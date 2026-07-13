@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "id": "initial-approval",
+  "term": "Initial Approval (VARA)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "An early-stage approval VARA (Dubai's virtual-asset regulator) can grant a firm before it has completed the full licensing process -- confirmation the firm may proceed with its application, not a final operating licence.",
+  "formal_definition": "VARA's own announcement of Enjinstarter MENA's approval states the firm 'has been granted initial approval by Dubai's Virtual Assets Regulatory Authority (VARA), while it undertakes the in-depth process of applying for a licence, in accordance with VARA requirements.' The announcement does not itself define 'initial approval' as a formally named stage within a wider, publicly documented licensing sequence, so this entry records only what VARA's own text states about this specific grant; it is not asserted to be equivalent to the separately documented 'provisional approval' or 'MVP licence' stages (see mvp-licence) without further primary-source confirmation.",
+  "related_terms": [
+    "vara",
+    "mvp-licence"
+  ],
+  "first_used_card_id": "9368392adb56583d655dd41473edd9f588343e6a06d0a805bd17624bab9cd58e",
+  "generated_at": "2026-07-13T17:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

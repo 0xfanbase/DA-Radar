@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "af175c29cee40f73347b261f438decaddedd24824fb09451d97f34a19e289f6b",
+  "jurisdiction_id": "uae",
+  "published_date": "2023-05-29",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "exchanges_vatp",
+    "dealing_custody_advisory"
+  ],
+  "type": "circular",
+  "title": "Regulated Virtual Assets Activities are now offered at DET branches",
+  "summary": "On 29 May 2023, VARA -- the Virtual Assets Regulatory Authority, which regulates virtual assets in Dubai outside the DIFC free zone -- and Dubai's Department of Economy and Tourism (DET) notified the market that the Regulated Virtual Assets Activities VARA had issued on 7 February 2023 are now available to apply for at physical DET branches, including Al Barsha Mall, DED Cafe, Palm Strip Mall Jumeirah, Al Twar Centre / Dubai Mall, and Clock Tower Deira (VARA's own list groups the latter two as one entry). The activities covered are VA Advisory, Broker-Dealer, Custody, Exchange, Lending and Borrowing, and Management and Investment Services, plus VA Proprietary Trading, which separately requires a No Objection Certificate (NOC) from VARA rather than a full VA licence. The same notice restates that Legacy VASPs operating in Dubai before 7 February 2023 needed to submit applications for VARA oversight or guidance by 30 April 2023.",
+  "why_it_matters": "This shows VARA, Dubai's dedicated virtual-asset regulator, working with a mainstream government service department to make applying for its virtual-asset licences physically accessible across Dubai -- useful context for readers unfamiliar with how Dubai's virtual-asset licensing regime, in force since February 2023, is administered day to day.",
+  "key_dates": {
+    "deadline": "2023-04-30",
+    "effective": "2023-05-29",
+    "milestone": "2023-02-07"
+  },
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/regulated-virtual-assets-activities-are-now-offered-at-det-branches/",
+      "quote": "are now offered at DET branches"
+    },
+    {
+      "url": "https://www.vara.ae/en/licenses-and-register/licensed-activities/",
+      "quote": "will require a No Objection Certificate [NoC] from VARA"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T18:40:00Z",
+  "model": "Claude (Anthropic)"
+}

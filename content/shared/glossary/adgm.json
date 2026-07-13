@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "adgm",
+  "term": "ADGM (Abu Dhabi Global Market)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "Abu Dhabi's international financial free zone -- a separate legal jurisdiction within the UAE, with its own civil and commercial laws and its own English-language common-law courts, where the FSRA (not the federal CMA) is the financial regulator. UAE federal virtual-asset rules, and VARA's Dubai-based regime, both expressly carve ADGM out of their territorial scope.",
+  "formal_definition": "ADGM was established under Abu Dhabi Law No. (4) of 2013 Concerning Abu Dhabi Global Market (as amended by Abu Dhabi Law No. (12) of 2020) and Federal Decree No. (15) of 2013 Establishment of Financial Free Zone in the Emirate of Abu Dhabi. The federal decree designates ADGM a Financial Free Zone under Federal Law No. (8) of 2004 Concerning Financial Free Zones (see financial-free-zone), meaning ADGM's own authority may issue its own civil and commercial laws, distinct from those applying in the rest of Abu Dhabi and the wider UAE, while federal criminal law -- including federal AML/CFT law -- continues to apply. FSRA (the Financial Services Regulatory Authority) is ADGM's financial services regulator, licensing and supervising, among other activities, the exchange, custody, dealing, advisory and management of virtual assets within ADGM's territory only.",
+  "related_terms": [
+    "fsra",
+    "financial-free-zone",
+    "difc"
+  ],
+  "first_used_card_id": "8fbfe47983051d4aeed9c08ccfa27f173667e26ad4c1ff71f4ae9e287c7dbefc",
+  "generated_at": "2026-07-13T09:25:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,31 @@
+{
+  "citations": [
+    {
+      "quote": "Perform a comprehensive GAP assessment of your current AML/CFT/CPF Policies, Procedures, Systems & Controls",
+      "url": "https://media.umbraco.io/dwtc/bmpneboh/vasp-circular-aml-federal-law-2025-v1.pdf"
+    },
+    {
+      "quote": "across Dubai's free zones and mainland, except within the jurisdiction of Dubai International Financial Centre",
+      "url": "https://www.vara.ae/en/"
+    }
+  ],
+  "generated_at": "2026-07-13T16:10:00Z",
+  "id": "f1ea9c335b51b312412101745e77f859f57ab6f3db5e03c28ddb64f106aaeb0c",
+  "jurisdiction_id": "uae",
+  "key_dates": {
+    "effective": "2025-10-14",
+    "milestone": "2025-09-30"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "aml_cft_enforcement"
+  ],
+  "published_date": "2025-11-24",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "On 24 November 2025, VARA (the Virtual Assets Regulatory Authority, which licenses and supervises virtual asset activity across Dubai's mainland and free zones, excluding the Dubai International Financial Centre) circulated a notice to all Virtual Asset Service Providers (VASPs) it licenses, announcing Federal Decree-Law No. (10) of 2025 on anti-money laundering, counter-terrorism financing and proliferation financing (AML/CFT/CPF), issued 30 September 2025 and effective from 14 October 2025. The Decree-Law brings VASPs within the AML/CFT/CPF supervisory perimeter and updates preventive measures, transparency, beneficial-ownership rules and penalties. VARA's circular makes a GAP Assessment mandatory: a completed, clause-by-clause report and board-approved remediation plan are due within 60 calendar days, priority fixes and staff training within 90 days, and remaining gaps closed with signed-off completion within 120 days, backed by mandatory recordkeeping.",
+  "title": "Publication of UAE Federal Decree-Law on AML/CFT/CPF (2025) — Mandatory GAP Assessment for VASPs",
+  "type": "circular",
+  "why_it_matters": "VARA is the regulator that licenses and supervises Virtual Asset Service Providers (VASPs) operating in Dubai outside the DIFC free zone. This circular is VARA's formal notice that a new federal anti-money-laundering law now binds those firms directly, with fixed 60/90/120-day compliance deadlines and the threat of enforcement action for firms that fall short."
+}

@@ -1,0 +1,27 @@
+{
+  "citations": [
+    {
+      "quote": "VARA has issued the Full Market Product [FMP] Regulatory Framework effective 07-February-2023.",
+      "url": "https://media.umbraco.io/dwtc/nslhra04/vara-circular-licensing-activities-final-v4-0.pdf"
+    }
+  ],
+  "generated_at": "2026-07-13T10:35:00Z",
+  "id": "f1383bade298bbad84a8068f43b572c57cdce7aafa142cffeab5eb098eabc521",
+  "jurisdiction_id": "uae",
+  "key_dates": {
+    "effective": "2023-02-07"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "exchanges_vatp",
+    "dealing_custody_advisory"
+  ],
+  "published_date": "2023-02-10",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "This VARA circular, addressed to Dubai's Department of Economy and Tourism, the Free Zone Council, and the Emirate's free zones, sets out which virtual-asset activities local licensing authorities may now issue commercial licences for. VARA, the Virtual Assets Regulatory Authority, regulates virtual assets in the Emirate of Dubai outside the Dubai International Financial Centre (DIFC) free zone. The circular notes a UAE Cabinet decision enacted in January 2023 requiring operators to obtain preliminary approvals and permits from VARA or the relevant local licensing authority, as the case may be, before proceeding with commercial licensing, and confirms VARA's Full Market Product Regulatory Framework took effect on 7 February 2023. Eight licensable activities are listed: advisory, broker-dealer, custody, exchange, issuance, lending-borrowing, management-investment, and payments-remittance services. Proprietary trading instead requires only registration and a No Objection Certificate. VARA states compliance inspections will begin shortly.",
+  "title": "Virtual Assets Licensing Activities Issuance from February in the Emirate of Dubai [excluding DIFC]",
+  "type": "circular",
+  "why_it_matters": "This circular marks the point at which local licensing authorities in Dubai (outside the DIFC) can begin issuing commercial virtual-asset licences under VARA's newly effective Full Market Product Framework, giving them a concrete list of licensable activities, and putting virtual asset service providers on notice that non-compliance can lead to fines or closure."
+}

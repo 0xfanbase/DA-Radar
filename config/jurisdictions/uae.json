@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "jurisdiction_id": "uae",
+  "jurisdiction_name": "United Arab Emirates",
+  "user_agent": "GlobalDigitalAssetRadarWatcher/0.1 (contact: da-radar-bot@users.noreply.github.com; purpose: public RSS regulatory monitoring)",
+  "fetch": {
+    "timeout_seconds": 15,
+    "max_retries": 3,
+    "backoff_base_seconds": 1.0,
+    "backoff_multiplier": 2.0
+  },
+  "relevance_keywords": [
+    "crypto",
+    "crypto asset",
+    "crypto-asset",
+    "cryptoasset",
+    "crypto token",
+    "cryptocurrency",
+    "virtual asset",
+    "virtual assets",
+    "vasp",
+    "virtual asset service provider",
+    "virtual asset platform",
+    "digital asset",
+    "digital assets",
+    "payment token",
+    "stablecoin",
+    "stablecoins",
+    "stable coin",
+    "fiat-referenced",
+    "asset-referenced",
+    "recognised crypto token",
+    "accepted virtual asset",
+    "investment token",
+    "security token",
+    "tokeniz",
+    "tokenis",
+    "distributed ledger",
+    "blockchain",
+    "dlt",
+    "bitcoin",
+    "ether",
+    "staking",
+    "custody",
+    "wallet",
+    "web3",
+    "nft",
+    "defi",
+    "decentralised finance",
+    "decentralized finance",
+    "central bank digital currency",
+    "cbdc",
+    "digital dirham",
+    "travel rule",
+    "multilateral trading facility",
+    "الأصول الافتراضية",
+    "الأصول الرقمية",
+    "الأصول المشفرة",
+    "العملات المشفرة",
+    "العملات الرقمية",
+    "العملات المستقرة",
+    "رموز الدفع",
+    "الدرهم الرقمي",
+    "البلوك تشين"
+  ],
+  "pillar_keywords": {
+    "exchanges_vatp": [
+      "vasp",
+      "virtual asset service provider",
+      "virtual asset platform",
+      "exchange",
+      "trading platform",
+      "multilateral trading facility",
+      "mtf",
+      "listing",
+      "market conduct",
+      "market abuse",
+      "licence",
+      "license",
+      "authorised person",
+      "recognised crypto token",
+      "accepted virtual asset",
+      "منصة الأصول الافتراضية",
+      "مزود خدمات الأصول الافتراضية",
+      "التداول"
+    ],
+    "stablecoins": [
+      "stablecoin",
+      "stable coin",
+      "payment token",
+      "dirham payment token",
+      "foreign payment token",
+      "fiat-referenced",
+      "asset-referenced",
+      "reserve",
+      "redemption",
+      "issuer",
+      "issuance",
+      "العملات المستقرة",
+      "رموز الدفع",
+      "المُصدر"
+    ],
+    "dealing_custody_advisory": [
+      "custody",
+      "custodian",
+      "safekeeping",
+      "cold wallet",
+      "wallet",
+      "broker",
+      "broker-dealer",
+      "dealing",
+      "advisory",
+      "investment advice",
+      "portfolio management",
+      "arranging",
+      "staking",
+      "margin",
+      "derivative",
+      "الحفظ",
+      "الوساطة"
+    ],
+    "tokenization_rwa": [
+      "tokeniz",
+      "tokenis",
+      "tokenisation",
+      "tokenization",
+      "investment token",
+      "security token",
+      "digital securities",
+      "digital bond",
+      "real-world asset",
+      "rwa",
+      "distributed ledger",
+      "blockchain",
+      "sandbox",
+      "الترميز",
+      "الرموز الاستثمارية"
+    ],
+    "funds_etfs": [
+      "fund",
+      "funds",
+      "etf",
+      "etp",
+      "exchange-traded",
+      "collective investment",
+      "investment fund",
+      "fund manager",
+      "qualified investor",
+      "صندوق",
+      "الصناديق الاستثمارية"
+    ],
+    "banking_money": [
+      "bank",
+      "banking",
+      "central bank",
+      "cbdc",
+      "central bank digital currency",
+      "digital dirham",
+      "mbridge",
+      "tokenised deposit",
+      "tokenized deposit",
+      "payment system",
+      "prudential",
+      "capital requirement",
+      "المصرف المركزي",
+      "الدرهم الرقمي",
+      "الودائع"
+    ],
+    "aml_cft_enforcement": [
+      "money laundering",
+      "aml",
+      "cft",
+      "cpf",
+      "terrorist financing",
+      "proliferation financing",
+      "travel rule",
+      "sanction",
+      "sanctions",
+      "targeted financial sanctions",
+      "enforcement",
+      "fine",
+      "penalty",
+      "fatf",
+      "goaml",
+      "eocn",
+      "suspicious",
+      "غسل الأموال",
+      "تمويل الإرهاب",
+      "العقوبات",
+      "المخالفات"
+    ]
+  },
+  "regulators": [
+    {
+      "id": "vara",
+      "name": "Virtual Assets Regulatory Authority",
+      "short_name": "VARA",
+      "homepage": "https://www.vara.ae/en/",
+      "official_domains": [
+        "www.vara.ae",
+        "vara.ae",
+        "media.umbraco.io"
+      ],
+      "feeds": [
+        {
+          "id": "vara_news",
+          "kind": "news",
+          "url": "https://www.vara.ae/en/news/",
+          "mechanism": "html_diff",
+          "html_diff": {
+            "item_selector": "div.border-b-2.border-b-bg-5",
+            "title_selector": "h3",
+            "date_selector": "span.uppercase",
+            "date_format": "%d %b %Y",
+            "base_url": "https://www.vara.ae/en/news/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sca",
+      "name": "Securities and Commodities Authority -- live-verified (2026-07-12) that sca.gov.ae now 301s, then soft-redirects every path (including nonsense ones) to www.uaecma.gov.ae, whose <title> reads \"Capital Market Authority\"; internal URL slugs (/media-center/news/..., many still literally containing \"sca-\") confirm this is the same regulator under a renamed domain, not a different body. The news listing page itself (/en/news, /en/media-center) is a client-side-rendered SPA shell (Angular-style {{...}} placeholders, zero server-rendered nav/list markup) so html_diff is not workable against it, but individual article pages (e.g. /en/media-center/news/9/9/2024/sca-and-vara-set-regulatory-framework-for-the-uaes-virtual-assets-sector-in-boost-to-the-countrys-) ARE server-rendered with real fetchable text, and a genuine sitemap.xml (1,597 <loc> entries, text/xml, HTTP 200) lists the full news archive, so sitemap_diff is used instead",
+      "short_name": "SCA / CMA",
+      "homepage": "https://www.uaecma.gov.ae/en/home",
+      "official_domains": [
+        "www.uaecma.gov.ae",
+        "uaecma.gov.ae",
+        "www.sca.gov.ae",
+        "sca.gov.ae"
+      ],
+      "feeds": [
+        {
+          "id": "sca_cma_news_en",
+          "kind": "news",
+          "url": "https://www.uaecma.gov.ae/sitemap.xml",
+          "mechanism": "sitemap_diff",
+          "sitemap_diff": {
+            "url_pattern": "^https://www\\.uaecma\\.gov\\.ae/en/media-center/news/",
+            "max_new_per_run": 700
+          }
+        },
+        {
+          "id": "sca_cma_news_ar",
+          "kind": "news",
+          "url": "https://www.uaecma.gov.ae/sitemap.xml",
+          "mechanism": "sitemap_diff",
+          "sitemap_diff": {
+            "url_pattern": "^https://www\\.uaecma\\.gov\\.ae/ar/media-center/news/",
+            "max_new_per_run": 700
+          }
+        }
+      ]
+    },
+    {
+      "id": "dfsa",
+      "name": "Dubai Financial Services Authority",
+      "short_name": "DFSA",
+      "homepage": "https://www.dfsa.ae/",
+      "official_domains": [
+        "www.dfsa.ae",
+        "dfsa.ae",
+        "dfsaen.thomsonreuters.com"
+      ],
+      "feeds": [
+        {
+          "id": "dfsa_news",
+          "kind": "news",
+          "url": "https://www.dfsa.ae/rss",
+          "mechanism": "rss"
+        }
+      ]
+    },
+    {
+      "id": "fsra",
+      "name": "Financial Services Regulatory Authority -- FSRA is ADGM's financial regulator, not a separately domained body; live checks (2026-07-12) found no fsra.adgm.com or fsra-specific press-release path (all 404), so this entry watches adgm.com's single combined media/announcements listing, which does carry FSRA-issued items alongside general ADGM (Registration Authority, Courts, Academy) news, e.g. \"Regulatory Alert: Veyron Markets\" (chip='ADGM FSRA') and \"ADGM's FSRA fines 23 entities for breaching CRS/FATCA regulations\". The listing page's items are custom <adgm-highlight-card href=... chip=... date=...> Web Components with the link as an attribute on the item element itself rather than inside a descendant <a> tag, which this pipeline's html_diff mechanism (link resolution only checks item_el itself if it is literally an <a>, else a descendant a[href]) cannot resolve -- live-verified: 20/20 matched item_selector hits, 0/20 yielded a link, which would raise html_diff's structure error every run. adgm.com/sitemap.xml is a genuine sitemap (text/xml, HTTP 200, 5,169 <loc> entries with real per-page <lastmod> timestamps) and IS used instead via sitemap_diff, scoped to the /media/announcements/ path (1,099 matching URLs at last check)",
+      "short_name": "FSRA (ADGM)",
+      "homepage": "https://www.adgm.com/financial-services-regulatory-authority",
+      "official_domains": [
+        "www.adgm.com",
+        "adgm.com",
+        "en.adgm.thomsonreuters.com"
+      ],
+      "feeds": [
+        {
+          "id": "fsra_adgm_announcements",
+          "kind": "news",
+          "url": "https://www.adgm.com/sitemap.xml",
+          "mechanism": "sitemap_diff",
+          "sitemap_diff": {
+            "url_pattern": "^https://www\\.adgm\\.com/media/announcements/",
+            "max_new_per_run": 1300
+          }
+        }
+      ]
+    },
+    {
+      "id": "cbuae",
+      "name": "Central Bank of the UAE -- owns the banking_money pillar exclusively and is the sole licensing authority for Payment Token Issuers, Custodians, Transferors, and Conversion Providers under its Payment Token Services Regulation (Circular No. C 2/2024); also runs the federal bank licensing/prudential regime and the Digital Dirham CBDC programme, all UAE-wide (payment-token licensing specifically excludes the Financial Free Zones). Registered here as a zero-feed citation source: this pillar's content already relies on the CBUAE's own rulebook and press-release domains as its primary factual basis, but no live watcher selector has yet been built/verified against either domain (a live rulebook/press-release watcher is a candidate for a future build pass, not this onboarding round).",
+      "short_name": "CBUAE",
+      "homepage": "https://www.centralbank.ae/en/",
+      "official_domains": [
+        "rulebook.centralbank.ae",
+        "www.centralbank.ae",
+        "centralbank.ae"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "dubai_land_department",
+      "name": "Dubai Land Department -- Dubai's mainland real-estate registry, cited jointly with VARA as the operating authority for the Real Estate Tokenisation Project (a VARA-regulated activity under VARA's rules, applicable in the Emirate of Dubai excluding the DIFC). Registered here as a zero-feed citation source for DLD's own primary announcements about the project, not as a virtual-asset regulator in its own right -- VARA remains the named regulator on every card citing this domain.",
+      "short_name": "DLD",
+      "homepage": "https://dubailand.gov.ae/en/",
+      "official_domains": [
+        "dubailand.gov.ae"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "uae_legislation",
+      "name": "The Official Platform of the UAE Government (u.ae) -- registered as the zero-feed citation source for official UAE federal legal text. Live-verified (2026-07-12): u.ae itself is real and fetchable (HTTP 200, genuine server-rendered prose, e.g. its \"Where to find the UAE's federal laws?\" page, which is itself the page that names and links the dedicated full-text platform, uaelegislation.gov.ae -- \"The UAE Legislation platform ... includes federal legislations and laws ... more than 1,000 laws and regulations\"). uaelegislation.gov.ae was tested directly and rejected: HTTP 403 \"Attention Required! | Cloudflare\" on every path tried (/, /en, /en/legislations, /en/legislations/1731, /sitemap.xml) -- a live Cloudflare bot-block this project's honest, descriptive, non-browser-spoofing User-Agent cannot and should not try to get past (see CLAUDE.md fetch discipline: politeness, not evasion, is the compliance strategy). A Dubai-specific legislation portal was also tried (dubailegislation.gov.ae and three domain variants: dubailegislation.ae, www.dubailegislation.ae, legislation.dubai.gov.ae) and every one failed at the TLS/CONNECT layer (curl exit 56, \"CONNECT tunnel failed, response 502\") from this environment, so none could be verified as live and none is registered. moj.gov.ae (Ministry of Justice) was also checked live: its /en/laws-and-legislation.aspx and AML/CFT sub-page both return HTTP 200, but both pages' extracted text is almost entirely repeated site-navigation menu labels with negligible unique body content, so it is not registered as a citation domain here -- u.ae is the one that actually verified as fetchable, citable prose",
+      "short_name": "U.AE",
+      "homepage": "https://u.ae/en",
+      "official_domains": [
+        "u.ae"
+      ],
+      "feeds": []
+    }
+  ]
+}

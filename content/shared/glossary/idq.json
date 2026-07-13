@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "idq",
+  "term": "IDQ (Initial Disclosure Questionnaire)",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "The first form a legacy virtual-asset business operating in Dubai (outside the DIFC) had to file with its existing licensing authority -- Dubai's Department of Economy and Tourism (DET) or a Free Zone Authority -- to declare that it wanted to keep carrying on virtual-asset activity and be considered for VARA's licensing regime. Filing an IDQ was the trigger step that led to VARA issuing the firm an Application Acknowledgment Notice (AAN) setting out its required next steps.",
+  "formal_definition": "VARA's 14 April 2023 press release, issued jointly with Dubai's Department of Economy and Tourism (DET) and the Dubai Free Zones Council, states that legacy market operators carrying out virtual asset activities in Dubai (excluding the DIFC) 'are required to declare their desire to undertake regulated activities by submitting an IDQ to their current licensing authority -- DET or any of FZAs, by the final deadline of 30-April 2023.' Submission of the IDQ was the step that preceded VARA's issuance of an Application Acknowledgment Notice (AAN) to each firm.",
+  "related_terms": [
+    "aan",
+    "vasp",
+    "vara"
+  ],
+  "first_used_card_id": "cbec9073825b0ef77bc9bf4e1c362a135482ca62bdfe40c200ddee265ca11d96",
+  "generated_at": "2026-07-13T16:20:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

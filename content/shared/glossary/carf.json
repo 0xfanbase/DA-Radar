@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "id": "carf",
+  "term": "CARF (Crypto-Asset Reporting Framework)",
+  "jurisdictions": [
+    "global"
+  ],
+  "plain_definition": "A new international tax-transparency standard, developed by the OECD, requiring crypto-asset businesses (exchanges, brokers, and similar platforms) to identify their users' tax residency and report cross-border crypto-asset transaction data to a tax authority each year, so that data can then be automatically exchanged between countries -- extending the existing OECD Common Reporting Standard (used for traditional bank and investment accounts) to crypto-assets. CARF itself is not law in any single country; each jurisdiction must separately adopt its own implementing legislation or regulation before it applies domestically.",
+  "formal_definition": "The OECD's Crypto-Asset Reporting Framework, published alongside a 2023 update to the Common Reporting Standard, is a global standard for the automatic exchange of tax information on crypto-asset transactions. It requires 'Reporting Crypto-Asset Service Providers' (RCASPs) -- businesses that, as an occupation, provide crypto-asset exchange, transfer, or related services -- to conduct due diligence to determine users' tax residency and to report specified transaction and user information to a competent authority, which then exchanges that information annually with the tax authorities of partner jurisdictions where the reportable users are tax resident. In the UAE, VARA (Dubai's Virtual Assets Regulatory Authority) notified its regulated virtual asset service providers on 10 October 2025 of a public consultation on the UAE's own CARF implementation, with responses due by 8 November 2025.",
+  "related_terms": [
+    "vasp",
+    "vara"
+  ],
+  "first_used_card_id": "e24a90deee7d1c8568073f25d231d449cb02128f36fa48a880231e3b8d384693",
+  "generated_at": "2026-07-13T15:10:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

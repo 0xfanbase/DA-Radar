@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "full-market-product",
+  "term": "FMP (Full Market Product) Regulatory Framework",
+  "jurisdictions": [
+    "uae"
+  ],
+  "plain_definition": "The name VARA gives to its complete, activity-by-activity rulebook for licensing virtual-asset businesses in Dubai (outside the DIFC). Once the FMP Framework took effect, VARA and Dubai's local licensing authorities (the Department of Economy and Tourism, the Free Zone Council, and Dubai's free zones) could begin issuing commercial licences covering specific virtual-asset activities, rather than only the narrower provisional approvals VARA had granted beforehand.",
+  "formal_definition": "Per VARA's circular 'Virtual Assets Licensing Activities Issuance from February in the Emirate of Dubai [excluding DIFC]', VARA issued the Full Market Product [FMP] Regulatory Framework effective 7 February 2023, following a UAE Cabinet decision (enacted January 2023) requiring persons wishing to engage in virtual asset activities to obtain preliminary approvals and permits from VARA or the relevant local licensing authority before proceeding with commercial licensing. Under the FMP Framework, Virtual Asset Service Providers may seek commercial operating licences for one or more of eight permissible activities: VA Advisory Services, VA Broker-Dealer Services, VA Custody Services, VA Exchange Services, VA Issuance, VA Lending-Borrowing Services, VA Management-Investment Services, and VA Payments-Remittance Services. VA Proprietary Trading is treated separately, requiring only registration and a No Objection Certificate rather than a full VA Licence.",
+  "related_terms": [
+    "vara",
+    "vasp",
+    "difc",
+    "no-objection-certificate"
+  ],
+  "first_used_card_id": "f1383bade298bbad84a8068f43b572c57cdce7aafa142cffeab5eb098eabc521",
+  "generated_at": "2026-07-13T10:35:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

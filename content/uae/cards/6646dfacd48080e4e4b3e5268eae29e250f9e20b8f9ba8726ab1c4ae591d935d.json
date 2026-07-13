@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "6646dfacd48080e4e4b3e5268eae29e250f9e20b8f9ba8726ab1c4ae591d935d",
+  "jurisdiction_id": "uae",
+  "published_date": "2023-07-18",
+  "regulator": "SCA (Securities and Commodities Authority) and VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "exchanges_vatp"
+  ],
+  "type": "circular",
+  "title": "SCA-VARA to ensure Unified VA Sector Register of Regulated VASPs for the UAE",
+  "summary": "On 18 July 2023, the UAE's Securities and Commodities Authority (SCA) -- the federal regulator for virtual asset service providers across the UAE, excluding Dubai and excluding Financial Free Zones -- announced that firms offering virtual asset services must obtain an SCA licence, under powers given by Cabinet Resolution No. 111 of 2022. Companies operating in Dubai must instead be licensed exclusively by VARA, the Virtual Assets Regulatory Authority, which regulates virtual assets in Dubai outside the DIFC free zone. The two authorities said VARA will inform the SCA of its licensees, so the SCA can maintain one unified register covering both regulators' licensed virtual-asset service providers. The SCA said it had already received licensing requests, and warned unlicensed operators of possible warnings, fines up to AED10 million, or referral to the Public Prosecution.",
+  "why_it_matters": "This announcement confirms that the UAE's federal SCA and Dubai's VARA coordinate licensing through a single shared register rather than operating in isolation, which matters for any firm trying to work out which UAE regulator it must apply to. It also signals that unlicensed virtual-asset activity in the UAE outside the Free Zones now faces active enforcement risk, with penalties of up to AED10 million.",
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/sca-vara-to-ensure-unified-va-sector-register-of-regulated-for-the-uae/",
+      "quote": "will inform the SCA to have a unified register of all licensed Virtual Asset"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T14:32:00Z",
+  "model": "Claude (Anthropic)"
+}

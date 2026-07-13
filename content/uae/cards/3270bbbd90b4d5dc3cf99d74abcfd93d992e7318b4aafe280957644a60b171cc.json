@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "3270bbbd90b4d5dc3cf99d74abcfd93d992e7318b4aafe280957644a60b171cc",
+  "jurisdiction_id": "uae",
+  "published_date": "2023-11-17",
+  "regulator": "VARA (Virtual Assets Regulatory Authority)",
+  "pillar": [
+    "aml_cft_enforcement",
+    "exchanges_vatp"
+  ],
+  "type": "enforcement",
+  "title": "MARKET Notice: Market-wide enforcements pick-up pace as final VARA deadline for Virtual Asset Service Provider licensing engagement lapses",
+  "summary": "On 17 November 2023, Dubai's Virtual Assets Regulatory Authority (VARA), the sole authority regulating virtual assets across Dubai's mainland and free zones other than the Dubai International Financial Centre (DIFC), published a market notice confirming that the final deadline for virtual asset businesses to begin the mandatory VARA licence application process had lapsed. VARA said this deadline followed advisories issued since Q2 2023 and a formal announcement made on 5 November 2023. The notice states that 18 Virtual Asset Service Providers, each commercially licensed on the Dubai mainland by the Department of Economy and Tourism, have so far been fined for failing to comply with VARA's directives and regulatory guidance. VARA said further fines, enforcement actions, and closures of unlicensed VASPs could follow if gaps are not addressed by year-end.",
+  "why_it_matters": "VARA is the primary regulator for virtual asset businesses operating in Dubai outside the DIFC free zone, and this notice shows VARA moving from its licensing on-boarding period into active market-wide enforcement, fining operators that missed the deadline and warning of further fines and closures for unlicensed VASPs.",
+  "key_dates": {
+    "deadline": "2023-11-17",
+    "milestone": "2023-11-05"
+  },
+  "citations": [
+    {
+      "url": "https://www.vara.ae/en/news/market-notice-market-wide-enforcements-pick-up-pace-as-final-vara-deadline-for-virtual-asset-service-provider-licensing-engagement-lapses/",
+      "quote": "have thus far, been issued fines for failing to comply with VARA's directives"
+    }
+  ],
+  "status": "verified",
+  "generated_at": "2026-07-13T15:30:00Z",
+  "model": "Claude (Anthropic)"
+}

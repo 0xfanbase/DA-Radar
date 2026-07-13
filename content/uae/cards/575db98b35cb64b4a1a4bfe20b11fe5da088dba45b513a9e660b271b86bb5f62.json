@@ -1,0 +1,27 @@
+{
+  "citations": [
+    {
+      "quote": "Failure to comply with the Travel Rule may result in supervision or enforcement action",
+      "url": "https://media.umbraco.io/dwtc/hhebemw5/circular-to-vasp-travel-rule-ardocx.pdf"
+    },
+    {
+      "quote": "excluding the Dubai International Financial Centre",
+      "url": "https://www.vara.ae/en/about-vara/"
+    }
+  ],
+  "generated_at": "2026-07-13T13:20:00Z",
+  "id": "575db98b35cb64b4a1a4bfe20b11fe5da088dba45b513a9e660b271b86bb5f62",
+  "jurisdiction_id": "uae",
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "aml_cft_enforcement"
+  ],
+  "published_date": "2026-02-24",
+  "regulator": "Virtual Assets Regulatory Authority (VARA)",
+  "schema_version": 1,
+  "status": "verified",
+  "summary": "On 24 February 2026, the Virtual Assets Regulatory Authority (VARA) -- which licenses and supervises virtual asset service providers (VASPs) in the Emirate of Dubai, excluding the Dubai International Financial Centre (DIFC) free zone -- issued a circular to all VASPs it licenses or authorises, setting out its supervisory expectations for implementing the UAE Virtual Assets Travel Rule. The Travel Rule was issued under Cabinet Decision No. (134) of 2025, the implementing regulation of the federal AML/CFT/CPF Decree-Law, and requires VASPs to collect, verify, transmit, monitor and retain originator and beneficiary information for qualifying virtual asset transfers, including within free zones. The circular also addresses counterparty regulatory-status checks, a value-based verification threshold, intermediary-provider duties, enhanced diligence for unhosted wallets, suspicious-transaction reporting to the UAE Financial Intelligence Unit, and a ban on privacy-token transfers.",
+  "title": "Implementation of the UAE Virtual Assets Travel Rule Requirements",
+  "type": "circular",
+  "why_it_matters": "The Travel Rule is a core anti-money-laundering safeguard requiring crypto transfers to carry sender and recipient information, similar to how bank wire transfers work, so this circular tells VASPs licensed by VARA in Dubai exactly what VARA expects of them and warns that failing to comply can lead to supervisory or enforcement action."
+}
