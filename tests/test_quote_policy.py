@@ -7,8 +7,10 @@ import json
 import os
 
 from pipeline.verify.quote_policy import (
+    MIN_QUOTE_WORDS,
     check_card_quote_policy,
     find_duplicate_citation_urls,
+    quote_meets_minimum_substance,
     quote_within_word_limit,
     quote_word_count,
 )
@@ -52,6 +54,31 @@ def test_find_duplicate_citation_urls_flags_repeated_url():
     assert find_duplicate_citation_urls(card) == ["https://example.invalid/a"]
 
 
+def test_two_word_quote_fails_minimum_substance():
+    """Real gap found live during the 2026-07-13 compliance audit: before
+    this floor existed, pipeline/verify/authenticity.py's
+    quote_is_authentic("the", <any regulator page>) returned True, since
+    "the" is a substring of nearly any real prose -- a contentless
+    "quote" could sail through the non-bypassable gate to status
+    "verified". No live card currently exploits this; the floor closes
+    the gap regardless."""
+    assert quote_meets_minimum_substance("the") is False
+    assert quote_meets_minimum_substance("crypto is") is False
+
+
+def test_three_word_quote_meets_minimum_substance():
+    assert quote_word_count("crypto is regulated") == MIN_QUOTE_WORDS
+    assert quote_meets_minimum_substance("crypto is regulated") is True
+
+
+def test_check_card_quote_policy_flags_under_minimum_quote():
+    card = {"citations": [{"url": "https://example.invalid/a", "quote": "the"}]}
+    result = check_card_quote_policy(card)
+    assert result.ok is False
+    assert result.under_minimum_quotes == ["the"]
+    assert result.over_limit_quotes == []
+
+
 def test_check_card_quote_policy_passes_clean_card():
     card = {
         "citations": [
@@ -89,8 +116,8 @@ def test_check_card_quote_policy_flags_duplicate_urls():
 def test_check_card_quote_policy_distinct_urls_pass():
     card = {
         "citations": [
-            {"url": "https://example.invalid/a", "quote": "first quote"},
-            {"url": "https://example.invalid/b", "quote": "second quote"},
+            {"url": "https://example.invalid/a", "quote": "first real quote"},
+            {"url": "https://example.invalid/b", "quote": "second real quote"},
         ]
     }
     result = check_card_quote_policy(card)

@@ -11,7 +11,7 @@
         "analyst_verifier": "live",
         "seeded": true
       },
-      "coverage_notes": "Founding jurisdiction. Live RSS watcher (SFC + HKMA feeds), live analyst/verifier via the scheduled CCR trigger, fully seeded."
+      "coverage_notes": "Founding jurisdiction. Live RSS watcher (SFC + HKMA feeds), live analyst/verifier via a scheduled automated run, fully seeded."
     },
     {
       "id": "us",
@@ -22,7 +22,7 @@
         "analyst_verifier": "planned",
         "seeded": true
       },
-      "coverage_notes": "Live RSS/HTML-diff/JSON-API watcher (SEC + CFTC + FinCEN + OCC + Federal Reserve + Federal Register feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
+      "coverage_notes": "Live RSS/HTML-diff/JSON-API watcher (SEC + CFTC + FinCEN + OCC + Federal Reserve + Federal Register feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before scheduled automated analyst/verifier runs are extended to this jurisdiction."
     },
     {
       "id": "eu",
@@ -33,7 +33,7 @@
         "analyst_verifier": "planned",
         "seeded": true
       },
-      "coverage_notes": "Live RSS watcher (European Commission + ESMA + EBA + ECB + AMLA feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
+      "coverage_notes": "Live RSS watcher (European Commission + ESMA + EBA + ECB + AMLA feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before scheduled automated analyst/verifier runs are extended to this jurisdiction."
     },
     {
       "id": "uk",
@@ -44,7 +44,7 @@
         "analyst_verifier": "planned",
         "seeded": true
       },
-      "coverage_notes": "Live RSS/Atom watcher (FCA + Bank of England + HM Treasury feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
+      "coverage_notes": "Live RSS/Atom watcher (FCA + Bank of England + HM Treasury feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before scheduled automated analyst/verifier runs are extended to this jurisdiction."
     },
     {
       "id": "sg",
@@ -66,7 +66,7 @@
         "analyst_verifier": "planned",
         "seeded": true
       },
-      "coverage_notes": "Live RSS/HTML-diff/sitemap-diff watcher (VARA + SCA/CMA + DFSA + FSRA (ADGM) feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
+      "coverage_notes": "Live RSS/HTML-diff/sitemap-diff watcher (VARA + SCA/CMA + DFSA + FSRA (ADGM) feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before scheduled automated analyst/verifier runs are extended to this jurisdiction."
     },
     {
       "id": "ch",
@@ -77,7 +77,7 @@
         "analyst_verifier": "planned",
         "seeded": true
       },
-      "coverage_notes": "Live RSS watcher (FINMA feed), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
+      "coverage_notes": "Live RSS watcher (FINMA feed), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before scheduled automated analyst/verifier runs are extended to this jurisdiction."
     },
     {
       "id": "jp",
@@ -88,7 +88,7 @@
         "analyst_verifier": "planned",
         "seeded": true
       },
-      "coverage_notes": "Live RSS watcher (FSA English + Japanese news feeds, JVCEA feed), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before the CCR trigger is extended to this jurisdiction."
+      "coverage_notes": "Live RSS watcher (FSA English + Japanese news feeds, JVCEA feed), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before scheduled automated analyst/verifier runs are extended to this jurisdiction."
     }
   ],
   "pillars": [

@@ -36,15 +36,37 @@ def _escapes_allowlist_via_symlink(path: str, repo_dir: str, allowed_prefixes: t
     escapes the repo root entirely), the change is a real allowlist
     violation the string check alone cannot see.
 
+    Walks the path component-by-component first, using os.path.islink
+    (never follows a link) rather than jumping straight to
+    os.path.realpath + os.path.exists: a DANGLING symlink -- one whose
+    target does not exist yet, e.g. planted by a content-scoped AI job
+    pointing at a not-yet-created path under /pipeline -- is a real symlink
+    sitting in the working tree right now, but os.path.exists() on its
+    resolved target returns False (nothing there to find), which used to
+    make this function report "does not escape" even though the path IS a
+    symlink escaping content/ or data/ in spirit. Any symlink anywhere in
+    the path is therefore treated as a violation outright, target
+    existent or not -- a legitimate AI content job never needs to create a
+    symlink, so this closes the hole without narrowing any real use case.
+
     Deliberately fail-open (returns False, i.e. "does not escape") for a
-    path that doesn't exist on disk under repo_dir -- e.g. a path from a
-    historical `git diff` that isn't present in the current working tree, or
-    a plain unit-test call with no real repo_dir at all. Working-tree mode
-    (this gate's actual pre-commit integration point, per this module's own
-    docstring) always has the real files on disk, so the check is live
-    exactly where it matters.
+    path that doesn't exist on disk at all under repo_dir -- e.g. a path
+    from a historical `git diff` that isn't present in the current working
+    tree, or a plain unit-test call with no real repo_dir at all. Working-
+    tree mode (this gate's actual pre-commit integration point, per this
+    module's own docstring) always has the real files on disk, so the
+    check is live exactly where it matters.
     """
     repo_real = os.path.realpath(repo_dir)
+    normalized_path = normalize_path(path)
+    current = repo_dir
+    for part in normalized_path.split("/") if normalized_path else []:
+        current = os.path.join(current, part)
+        if os.path.islink(current):
+            return True
+        if not os.path.lexists(current):
+            return False
+
     target_real = os.path.realpath(os.path.join(repo_dir, path))
     if not os.path.exists(target_real):
         return False
