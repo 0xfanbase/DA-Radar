@@ -28,7 +28,7 @@
       "url": "https://dfsaen.thomsonreuters.com/rulebook/qualified-investor-fund"
     },
     {
-      "label": "DFSA: Crypto Token Regulation overview page",
+      "label": "DFSA: Crypto Token Regulation overview page (dfsa.ae currently returns HTTP 403 to automated fetches -- Cloudflare-protected, confirmed by direct fetch this session; included for human readers, not independently verified against server-rendered text)",
       "url": "https://www.dfsa.ae/crypto"
     },
     {
@@ -64,7 +64,7 @@
     "This pillar tracks only fund/ETF product-level regulation -- i.e., rules governing what a Fund may hold and how it may be structured and marketed. Manager-level licensing for entities that manage funds or portfolios containing virtual assets (VARA's VA Management and Investment Services Rulebook; DFSA's and FSRA's asset-management Financial Services categories; CMA Decision No. 4/R.M/2026's portfolio-management and investment-advice activities) is tracked in full in the Dealing, Custody, Advisory & Management pillar and not duplicated here.",
     "This pillar does not cover the Central Bank of the UAE (CBUAE); the CBUAE has no confirmed fund/ETF product regime and the pillar brief allocates CBUAE-owned instruments (Payment Token Services Regulation, banking-side rules, the Digital Dirham programme) to the Banking & Money and Stablecoins pillars instead."
   ],
-  "generated_at": "2026-07-12T11:44:41Z",
+  "generated_at": "2026-07-13T12:01:58Z",
   "model": "Claude (Anthropic)",
   "status": "unverified"
 }

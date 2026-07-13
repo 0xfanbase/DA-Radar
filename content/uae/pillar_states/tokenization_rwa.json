@@ -30,11 +30,11 @@
       "url": "https://dfsaen.thomsonreuters.com/rulebook/investment-token-funds"
     },
     {
-      "label": "DFSA: Crypto Token Regulation overview page",
+      "label": "DFSA: Crypto Token Regulation overview page (dfsa.ae currently returns HTTP 403 to automated fetches -- Cloudflare-protected, confirmed by direct fetch this session; included for human readers, not independently verified against server-rendered text)",
       "url": "https://www.dfsa.ae/crypto"
     },
     {
-      "label": "DFSA: 'DFSA issues updated rules on the regulation of Crypto Tokens in the DIFC' (12 Jan 2026 update)",
+      "label": "DFSA: 'DFSA issues updated rules on the regulation of Crypto Tokens in the DIFC' (12 Jan 2026 update) (dfsa.ae currently returns HTTP 403 to automated fetches -- Cloudflare-protected, confirmed by direct fetch this session; included for human readers, not independently verified against server-rendered text)",
       "url": "https://www.dfsa.ae/news/dfsa-issues-updated-rules-regulation-crypto-tokens-difc"
     },
     {
@@ -84,7 +84,7 @@
     "This pillar does not address the CMA's broader Virtual Assets Framework (five modules, eight regulated activities, announced 13 April 2026) in detail, since that framework's primary subject matter -- VASP/exchange, custody, dealing, advisory and portfolio-management licensing -- belongs to the Exchanges (VATP) and Dealing, Custody, Advisory & Management pillars; it is cited here only as regulatory-succession context for the CMA's federal role.",
     "This pillar does not address CBUAE-side stablecoin/payment-token regulation (Payment Token Services Regulation, Circular No. 2/2024) or the Digital Dirham CBDC programme, which are tracked in the Stablecoins and Banking & Money pillars respectively, not duplicated here."
   ],
-  "generated_at": "2026-07-12T11:42:21Z",
+  "generated_at": "2026-07-13T12:01:58Z",
   "model": "Claude (Anthropic)",
   "status": "unverified"
 }

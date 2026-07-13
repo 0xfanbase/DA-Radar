@@ -58,7 +58,7 @@
       "url": "https://dfsaen.thomsonreuters.com/sites/default/files/net_file_store/DFSA_Media_Release_-_Updated_Crypto_Token_Rules_-_ENG_-_12.1.pdf"
     },
     {
-      "label": "DFSA: crypto regulation overview page",
+      "label": "DFSA: crypto regulation overview page (dfsa.ae currently returns HTTP 403 to automated fetches -- Cloudflare-protected, confirmed by direct fetch this session; included for human readers, not independently verified against server-rendered text)",
       "url": "https://www.dfsa.ae/crypto"
     },
     {
@@ -90,7 +90,7 @@
     "uaecma.gov.ae's own 'Latest Regulations' listing page, fetched this session, showed only three unrelated Chairman-level decisions from 2026 and did not surface the Virtual Assets Framework/Decision 4/R.M/2026 in that particular listing -- consistent with the framework having been issued as a Board (R.M.) rather than Chairman-level decision, but this distinction has not been independently confirmed and is flagged for a future session with direct access to the CMA's full regulations archive.",
     "VARA's licence categories beyond 'Exchange Services' (e.g. broker-dealer, custody, and the compulsory rulebooks referenced in Part V of the Virtual Assets and Related Activities Regulations 2023) were only partially enumerated by this session's VARA rulebook fetches and are tracked in the Dealing, Custody, Advisory & Management pillar rather than duplicated here."
   ],
-  "generated_at": "2026-07-12T11:19:55Z",
+  "generated_at": "2026-07-13T12:01:58Z",
   "model": "Claude (Anthropic)",
   "status": "unverified"
 }

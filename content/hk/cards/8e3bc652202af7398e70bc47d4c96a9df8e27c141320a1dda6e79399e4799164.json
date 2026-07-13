@@ -1,7 +1,7 @@
 {
   "citations": [
     {
-      "quote": "VA dealers custody client VAs with SFC -regulated VA custodian service providers",
+      "quote": "VA dealers custody client VAs with SFC-regulated VA custodian service providers",
       "url": "https://www.fstb.gov.hk/fsb/en/publication/consult/doc/VAdealing_consultation_conclusion_e.pdf"
     },
     {
@@ -23,7 +23,7 @@
   "published_date": "2025-12-24",
   "regulator": "FSTB and SFC",
   "schema_version": 1,
-  "status": "verified",
+  "status": "unverified",
   "summary": "The Financial Services and the Treasury Bureau and the Securities and Futures Commission published conclusions to their joint public consultation on a licensing regime for virtual asset dealing services, alongside separate conclusions on virtual asset custodian services published the same day. Licensed dealers must generally custody client virtual assets only with SFC-regulated virtual asset custodian service providers. The same day, FSTB and SFC opened a further consultation on new licensing regimes for virtual asset advisory service providers and virtual asset management service providers.",
   "title": "Consultation conclusions: licensing regimes for virtual asset dealing and custodian services",
   "type": "conclusions",

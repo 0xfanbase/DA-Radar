@@ -9,7 +9,7 @@
       ],
       "published_at": "2021-09-02T00:00:00Z",
       "regulator": "MAS",
-      "title": "MAS places Binance.com on the Investor Alert List",
+      "title": "MAS places Binance.com on the Investor Alert List [mas.gov.sg link is currently bot-blocked (\"Maintenance\" shell, live-verified 2026-07-13); no working sgpc.gov.sg mirror of this specific document was found]",
       "type": "unknown"
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "item_hash": "2739e1d68059e259b4078e82d60466797ca4d2af5185fe0cd3c67d192e69a56a",
-      "link": "https://www.mas.gov.sg/news/media-releases/2024/mas-expands-scope-of-regulated-payment-services",
+      "link": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release_MAS%20Expands%20Scope%20of%20Regulated%20Payment%20Services%20Introduces%20User%20Protection%20Requirements%20for%20Digital%20Payment%20Token%20Service%20Providers.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20240402-2/attachment/MAS+Media+Release_MAS+Expands+Scope+of+Regulated+Payment+Services+Introduces+User+Protection+Requirements+for+Digital+Payment+Token+Service+Providers.pdf",
       "pillar": [
         "dealing_custody_advisory",
         "exchanges_vatp"
@@ -44,7 +44,7 @@
       ],
       "published_at": "2020-01-28T00:00:00Z",
       "regulator": "MAS",
-      "title": "Payment Services Act comes into force, bringing digital payment token services under MAS licensing",
+      "title": "Payment Services Act comes into force, bringing digital payment token services under MAS licensing [mas.gov.sg link is currently bot-blocked (\"Maintenance\" shell, live-verified 2026-07-13); no working sgpc.gov.sg mirror of this specific document was found]",
       "type": "unknown"
     },
     {
@@ -56,7 +56,7 @@
       ],
       "published_at": "2022-05-31T00:00:00Z",
       "regulator": "MAS",
-      "title": "MAS launches Project Guardian, an industry pilot programme for asset tokenisation and institutional DeFi",
+      "title": "MAS launches Project Guardian, an industry pilot programme for asset tokenisation and institutional DeFi [mas.gov.sg link is currently bot-blocked (\"Maintenance\" shell, live-verified 2026-07-13); no working sgpc.gov.sg mirror of this specific document was found]",
       "type": "unknown"
     },
     {
@@ -68,7 +68,7 @@
       ],
       "published_at": "2022-11-02T00:00:00Z",
       "regulator": "MAS",
-      "title": "First Project Guardian industry pilot goes live: tokenised bond and FX transactions executed on a public blockchain",
+      "title": "First Project Guardian industry pilot goes live: tokenised bond and FX transactions executed on a public blockchain [mas.gov.sg link is currently bot-blocked (\"Maintenance\" shell, live-verified 2026-07-13); no working sgpc.gov.sg mirror of this specific document was found]",
       "type": "unknown"
     },
     {
@@ -85,7 +85,7 @@
     },
     {
       "item_hash": "6bb36293c49574c5144fc7b4a3270877e6a43ac04edaad8582b62accab79bcec",
-      "link": "https://www.mas.gov.sg/news/media-releases/2023/mas-partners-financial-industry-to-expand-asset-tokenisation-initiatives",
+      "link": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release_MAS%20Partners%20Financial%20Industry%20to%20Expand%20Asset%20Tokenisation%20Initiatives.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20231115-2/attachment/MAS%20Media%20Release_MAS%20Partners%20Financial%20Industry%20to%20Expand%20Asset%20Tokenisation%20Initiatives.pdf",
       "pillar": [
         "funds_etfs",
         "tokenization_rwa"
@@ -97,7 +97,7 @@
     },
     {
       "item_hash": "750c8b8da8448ca9634a9a7bc286121a662437fd8355ab3a380f56444f4e6d2b",
-      "link": "https://www.mas.gov.sg/news/media-releases/2022/mas-proposes-measures-to-reduce-risks-to-consumers-from-cryptocurrency-trading-and-enhance-standards-of-stablecoin-related-activities",
+      "link": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release_MAS%20Proposes%20Measures%20to%20Reduce%20Risks%20to%20Consumers%20from%20Cryptocurrency%20Trading%20and%20Enhance%20Standards%20of%20Stablecoin-Related%20Activities.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20221026-1/attachment/",
       "pillar": [
         "exchanges_vatp",
         "stablecoins"
@@ -109,7 +109,7 @@
     },
     {
       "item_hash": "78a92f0dc2a6352deb0c150d1d7534e8b1fb39149c47ac1396d4e1578931ad4c",
-      "link": "https://www.mas.gov.sg/news/media-releases/2023/mas-publishes-investor-protection-measures-for-digital-payment-token-services",
+      "link": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release_MAS%20Publishes%20Investor%20Protection%20Measures%20for%20Digital%20Payment%20Token%20Services.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20230703-3/attachment/MAS+Media+Release_MAS+Publishes+Investor+Protection+Measures+for+Digital+Payment+Token+Services.pdf",
       "pillar": [
         "dealing_custody_advisory",
         "exchanges_vatp"
@@ -121,7 +121,7 @@
     },
     {
       "item_hash": "bf5827473aae5e331532f5a2251fbee16bd047fdce36faf3e7fe16e5ba9fa6df",
-      "link": "https://www.mas.gov.sg/news/media-releases/2023/mas-lays-foundation-for-safe-and-innovative-use-of-digital-money-in-singapore",
+      "link": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release_MAS%20Lays%20Foundation%20for%20Safe%20and%20Innovative%20Use%20of%20Digital%20Money%20in%20Singapore.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20231116-2/attachment/MAS+Media+Release_MAS+Lays+Foundation+for+Safe+and+Innovative+Use+of+Digital+Money+in+Singapore.pdf",
       "pillar": [
         "banking_money",
         "stablecoins",
@@ -134,7 +134,7 @@
     },
     {
       "item_hash": "cfa8aecb7f75535a11ebac9e4e1ddda5734853d9d6eed628e90a722f205e8a52",
-      "link": "https://www.mas.gov.sg/news/media-releases/2025/mas-clarifies-regulatory-regime-for-digital-token-service-providers",
+      "link": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release%20-%20Clarification%20Statement%20on%20DTSP%20Regulatory%20Regime.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20250606-1/attachment/MAS+Media+Release+-+Clarification+Statement+on+DTSP+Regulatory+Regime.pdf",
       "pillar": [
         "aml_cft_enforcement",
         "exchanges_vatp"
@@ -158,7 +158,7 @@
     },
     {
       "item_hash": "dd95e183670f7300cfa2d4917c88e7e017555870f57cfe3f98707bb7fc38c686",
-      "link": "https://www.mas.gov.sg/news/media-releases/2024/mas-announces-plans-to-support-commercialisation-of-asset-tokenisation",
+      "link": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release_MAS%20Announces%20Plans%20to%20Support%20Commercialisation%20of%20Asset%20Tokenisation.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20241104-2/attachment/MAS%20Media%20Release_MAS%20Announces%20Plans%20to%20Support%20Commercialisation%20of%20Asset%20Tokenisation.pdf",
       "pillar": [
         "funds_etfs",
         "tokenization_rwa"
@@ -170,7 +170,7 @@
     },
     {
       "item_hash": "e0a2c95f4d90f8ad05037f48612b110860a9fc2f0acdf299d551e0da9d185246",
-      "link": "https://www.mas.gov.sg/news/media-releases/2023/mas-finalises-stablecoin-regulatory-framework",
+      "link": "https://www.sgpc.gov.sg/api/file/getfile/Media%20Release_MAS%20Finalises%20Stablecoin%20Regulatory%20Framework.pdf?path=%2Fsgpcmedia%2Fmedia_releases%2Fmas%2Fpress_release%2FP-20230815-2%2Fattachment%2FMedia+Release_MAS+Finalises+Stablecoin+Regulatory+Framework.pdf",
       "pillar": [
         "stablecoins"
       ],
@@ -181,7 +181,7 @@
     },
     {
       "item_hash": "e2ba1b258469fe3c30661f87cc0b69c7d44c48b32f873ca818dd6fa265441e7d",
-      "link": "https://www.mas.gov.sg/news/media-releases/2023/mas-strengthens-regulatory-measures-for-digital-payment-token-services",
+      "link": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release%20-%20MAS%20Strengthens%20Regulatory%20Measures%20for%20Digital%20Payment%20Token%20Services.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20231123-2/attachment/MAS+Media+Release+-+MAS+Strengthens+Regulatory+Measures+for+Digital+Payment+Token+Services.pdf",
       "pillar": [
         "dealing_custody_advisory",
         "exchanges_vatp"
@@ -199,7 +199,7 @@
       ],
       "published_at": "2022-01-17T00:00:00Z",
       "regulator": "MAS",
-      "title": "MAS issues Guidelines on Provision of Digital Payment Token Services to the Public (PS-G02), restricting DPT advertising to the general public",
+      "title": "MAS issues Guidelines on Provision of Digital Payment Token Services to the Public (PS-G02), restricting DPT advertising to the general public [mas.gov.sg link is currently bot-blocked (\"Maintenance\" shell, live-verified 2026-07-13); no working sgpc.gov.sg mirror of this specific document was found]",
       "type": "unknown"
     },
     {
@@ -212,7 +212,7 @@
       ],
       "published_at": "2021-01-04T00:00:00Z",
       "regulator": "MAS",
-      "title": "Payment Services (Amendment) Act 2021 passed, expanding the digital payment token service definition to align with FATF standards",
+      "title": "Payment Services (Amendment) Act 2021 passed, expanding the digital payment token service definition to align with FATF standards [mas.gov.sg link is currently bot-blocked (\"Maintenance\" shell, live-verified 2026-07-13); no working sgpc.gov.sg mirror of this specific document was found]",
       "type": "unknown"
     },
     {
@@ -224,11 +224,11 @@
       ],
       "published_at": "2019-12-05T00:00:00Z",
       "regulator": "MAS",
-      "title": "MAS issues Notice PSN02 on prevention of money laundering and countering the financing of terrorism for digital payment token services",
+      "title": "MAS issues Notice PSN02 on prevention of money laundering and countering the financing of terrorism for digital payment token services [mas.gov.sg link is currently bot-blocked (\"Maintenance\" shell, live-verified 2026-07-13); no working sgpc.gov.sg mirror of this specific document was found]",
       "type": "unknown"
     }
   ],
-  "generated_at": "2026-07-13T04:34:07Z",
+  "generated_at": "2026-07-13T12:01:34Z",
   "jurisdiction_id": "sg",
   "schema_version": 1
 }

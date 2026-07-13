@@ -27,7 +27,7 @@
     },
     {
       "label": "SFC press release: joint consultation launch (27 Jun 2025)",
-      "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=25PR99"
+      "url": "https://apps.sfc.hk/edistributionWeb/api/news/list-content?refNo=25PR99&lang=EN"
     }
   ],
   "open_items": [
@@ -36,7 +36,7 @@
     "The commencement date for the new regimes, once enacted, has not yet been set.",
     "A proposed limited self-custody threshold for private-equity/venture-capital fund managers' new tokens remains under consideration, not finalized."
   ],
-  "generated_at": "2026-07-09T06:14:16Z",
-  "model": "not recorded (pre-provenance content)",
+  "generated_at": "2026-07-13T11:53:32Z",
+  "model": "Claude (Anthropic)",
   "status": "unverified"
 }
