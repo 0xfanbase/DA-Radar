@@ -30,8 +30,41 @@ DEFAULT_USER_AGENT = (
 # Matches content/<jurisdiction_id>/cards/<id>.json for any jurisdiction id
 # (registry-model pivot) -- deliberately not scoped to a single jurisdiction
 # here, since a changed-paths list from one CI run can in principle span
-# more than one jurisdiction's cards.
-_CARD_PATH_RE = re.compile(r"^content/[^/]+/cards/[^/]+\.json$")
+# more than one jurisdiction's cards. The jurisdiction id is captured so
+# callers can verify a card's own path against an expected --jurisdiction.
+_CARD_PATH_RE = re.compile(r"^content/(?P<jurisdiction>[^/]+)/cards/[^/]+\.json$")
+
+
+class JurisdictionMismatchError(Exception):
+    """Raised when --jurisdiction=X is given but one or more matched card
+    paths belong to a different jurisdiction's content/<jid>/cards/ tree.
+
+    Applying X's official-domain allowlist to a card from another
+    jurisdiction would silently validate (or invalidate) citations against
+    the wrong regulator list -- a correctness gap that must fail loudly
+    rather than be papered over, once a CI run's diff can span more than
+    one jurisdiction (P9 onward)."""
+
+
+def _assert_single_jurisdiction(card_paths: list, expected_jurisdiction: str) -> None:
+    """Fails loudly if any card path's own jurisdiction segment differs
+    from --jurisdiction. No-op when --jurisdiction wasn't given."""
+    if not expected_jurisdiction:
+        return
+    mismatched = []
+    for rel_path in card_paths:
+        match = _CARD_PATH_RE.match(rel_path)
+        if match and match.group("jurisdiction") != expected_jurisdiction:
+            mismatched.append(rel_path)
+    if mismatched:
+        listing = ", ".join(sorted(mismatched))
+        raise JurisdictionMismatchError(
+            f"apply_verification_gate: --jurisdiction={expected_jurisdiction!r} was given, but the "
+            f"changed-files diff also contains card(s) belonging to a different jurisdiction: "
+            f"{listing}. Refusing to apply {expected_jurisdiction!r}'s official-domain allowlist to "
+            f"card(s) outside that jurisdiction. Run apply_verification_gate.py separately per "
+            f"jurisdiction, or split the diff so each run's changed files belong to one jurisdiction."
+        )
 
 
 def _load_official_domains(config_path: str) -> list:
@@ -101,6 +134,8 @@ def main(argv=None) -> int:
     if not card_paths:
         print("apply_verification_gate: no changed card files.")
         return 0
+
+    _assert_single_jurisdiction(card_paths, args.jurisdiction)
 
     if args.config_path:
         config_path = args.config_path

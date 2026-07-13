@@ -132,6 +132,20 @@ def test_card_with_internal_model_identifier_is_rejected(tmp_path):
     assert "claude-sonnet-5" in error
 
 
+def test_card_with_mixed_case_internal_model_identifier_is_rejected(tmp_path):
+    """The detector must be case-insensitive: "Claude-Sonnet-5" is the same
+    internal-identifier shape as "claude-sonnet-5" and must be caught too,
+    not just the all-lowercase form."""
+    leaked = dict(VALID_CARD, model="Claude-Sonnet-5")
+    _write(tmp_path, "content/hk/cards/card-1.json", leaked)
+    applicable, ok, error = validate_file("content/hk/cards/card-1.json", repo_dir=str(tmp_path))
+    assert applicable is True
+    assert ok is False
+    assert error is not None
+    assert "content/hk/cards/card-1.json" in error
+    assert "Claude-Sonnet-5" in error
+
+
 def test_card_with_human_readable_model_name_is_accepted(tmp_path):
     """The accepted replacement from the same correction: a human-readable
     model family name must still pass, since editorial rule 1 requires the

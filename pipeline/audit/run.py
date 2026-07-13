@@ -145,12 +145,49 @@ def run_audit(
     return [_finalize_event(e, run_ts=run_ts) for e in events]
 
 
+def _existing_backlog_bullet_sets_for_date(backlog_path: str, date: str) -> list:
+    """Returns a list of bullet-line sets, one per already-written
+    '## Audit findings, {date}' block in backlog_path (there could in
+    principle be more than one from prior runs before this guard existed).
+    Each set holds the exact '- **event_type**: summary' lines under that
+    block, up to (but not including) the next '## ' heading or EOF."""
+    if not os.path.exists(backlog_path):
+        return []
+    with open(backlog_path, "r", encoding="utf-8") as fh:
+        text = fh.read()
+
+    header = f"## Audit findings, {date}"
+    blocks = []
+    start = 0
+    while True:
+        idx = text.find(header, start)
+        if idx == -1:
+            break
+        body_start = idx + len(header)
+        next_heading = text.find("\n## ", body_start)
+        body = text[body_start:next_heading if next_heading != -1 else len(text)]
+        bullets = {line.strip() for line in body.splitlines() if line.strip().startswith("- **")}
+        blocks.append(bullets)
+        start = body_start
+    return blocks
+
+
 def _append_backlog_entry(backlog_path: str, actionable_events: list, *, run_ts: str) -> None:
     if not actionable_events:
         return
-    lines = [f"\n## Audit findings, {run_ts[:10]}\n\n"]
-    for event in actionable_events:
-        lines.append(f"- **{event['event_type']}**: {event['summary']}\n")
+    date = run_ts[:10]
+    bullet_lines = [f"- **{event['event_type']}**: {event['summary']}" for event in actionable_events]
+    new_bullet_set = set(bullet_lines)
+
+    for existing_bullet_set in _existing_backlog_bullet_sets_for_date(backlog_path, date):
+        if existing_bullet_set == new_bullet_set:
+            print(
+                f"audit: skipping backlog append -- a '## Audit findings, {date}' block with the "
+                f"same {len(new_bullet_set)} finding(s) already exists (no-op, not a silent skip)."
+            )
+            return
+
+    lines = [f"\n## Audit findings, {date}\n\n"] + [f"{line}\n" for line in bullet_lines]
     with open(backlog_path, "a", encoding="utf-8") as fh:
         fh.writelines(lines)
 

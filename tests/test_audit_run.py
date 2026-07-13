@@ -8,7 +8,7 @@ import json
 import os
 from datetime import datetime, timedelta, timezone
 
-from pipeline.audit.run import ACTIONABLE_EVENT_TYPES, main, run_audit
+from pipeline.audit.run import ACTIONABLE_EVENT_TYPES, _append_backlog_entry, main, run_audit
 from pipeline.watcher.clock import utc_now_iso
 
 
@@ -150,3 +150,30 @@ def test_main_does_not_touch_backlog_on_a_fully_clean_run(tmp_path, requests_moc
     exit_code = main(["--repo-root", str(tmp_path)])
     assert exit_code == 0
     assert backlog_path.read_text() == original_text
+
+
+def test_append_backlog_entry_is_idempotent_for_identical_same_day_events(tmp_path, capsys):
+    backlog_path = tmp_path / "IMPROVEMENT_BACKLOG.md"
+    backlog_path.write_text("# IMPROVEMENT_BACKLOG.md\n")
+
+    actionable_events = [
+        {"event_type": "link_rot", "summary": "https://example.invalid/source returned 404"},
+        {"event_type": "staleness", "summary": "stablecoins pillar last changed 200 days ago"},
+    ]
+    run_ts = utc_now_iso()
+
+    _append_backlog_entry(str(backlog_path), actionable_events, run_ts=run_ts)
+    text_after_first = backlog_path.read_text()
+    assert text_after_first.count("## Audit findings,") == 1
+    assert "link_rot" in text_after_first
+    assert "staleness" in text_after_first
+
+    # Re-run with the exact same events on the same day: must not duplicate
+    # the block, and must say so rather than doing nothing unexplained.
+    _append_backlog_entry(str(backlog_path), actionable_events, run_ts=run_ts)
+    text_after_second = backlog_path.read_text()
+    assert text_after_second == text_after_first
+    assert text_after_second.count("## Audit findings,") == 1
+
+    captured = capsys.readouterr()
+    assert "skipping backlog append" in captured.out

@@ -386,6 +386,34 @@ def load_jurisdiction_data(repo_root: str, jurisdiction_id: str, global_data: di
         os.path.join(repo_root, "config", "jurisdictions", f"{jurisdiction_id}.json"), {}
     )
 
+    # This jurisdiction's own registry entry in config/site.json -- looked
+    # up here (rather than passed in as a separate parameter) so every
+    # caller of load_jurisdiction_data() gets analyst/verifier status for
+    # free through the one dict it already returns, with no new threading
+    # of jurisdiction ids anywhere else in the pipeline. Never a hardcoded
+    # id: this walks whatever registry entries global_data["site_config"]
+    # happens to hold, so it works unchanged for any jurisdiction, seeded
+    # test fixture, or the two-fabricated-jurisdiction portability test.
+    registry_entry = next(
+        (
+            e
+            for e in global_data.get("site_config", {}).get("jurisdictions", [])
+            if e.get("id") == jurisdiction_id
+        ),
+        {},
+    )
+    # "live" is the only status.analyst_verifier value that means genuine
+    # ongoing daily analyst/verifier monitoring; anything else ("planned",
+    # or any future value) means everything currently on this
+    # jurisdiction's Current State/Timeline pages came from a one-time seed
+    # pass, not a live watcher -- the Current State/Timeline templates use
+    # this to show a non-alarming "seeded, not yet live" banner near the
+    # freshness line. Deliberately compared by value, never by jurisdiction
+    # id, so a jurisdiction never needs a code change to gain or lose the
+    # banner -- only its own config/site.json status entry does.
+    analyst_verifier_status = registry_entry.get("status", {}).get("analyst_verifier", "planned")
+    is_seed_pass_only = analyst_verifier_status != "live"
+
     content_root = os.path.join(repo_root, "content", jurisdiction_id)
     data_root = os.path.join(repo_root, "data", jurisdiction_id)
 
@@ -539,6 +567,8 @@ def load_jurisdiction_data(repo_root: str, jurisdiction_id: str, global_data: di
         "relevant_item_count": len(relevant_items),
         "watcher_live_since": watcher_live_since,
         "content_last_updated": content_last_updated,
+        "analyst_verifier_status": analyst_verifier_status,
+        "is_seed_pass_only": is_seed_pass_only,
     }
 
 
