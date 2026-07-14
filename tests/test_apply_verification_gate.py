@@ -5,7 +5,9 @@ from __future__ import annotations
 import json
 import subprocess
 
-from pipeline.ci.apply_verification_gate import apply_gate_to_file, main
+import pytest
+
+from pipeline.ci.apply_verification_gate import JurisdictionMismatchError, apply_gate_to_file, main
 
 UA = "TestAgent/0.1"
 FETCH_KWARGS = dict(
@@ -155,6 +157,38 @@ def test_apply_gate_to_file_downgrades_duplicate_citation_urls(tmp_path, request
 
     assert changed is True
     assert json.loads(path.read_text())["status"] == "unverified"
+
+
+def test_main_rejects_diff_spanning_two_jurisdictions_under_one_jurisdiction_flag(tmp_path):
+    """A single CI run's changed-files diff can in principle span more than
+    one jurisdiction's cards once a second jurisdiction goes live (P9). If
+    --jurisdiction=hk is given but the diff also contains a sg card,
+    applying hk's official-domain allowlist to the sg card would be a
+    silent correctness gap -- main() must fail loudly instead."""
+    _init_repo(tmp_path)
+    (tmp_path / "content" / "hk" / "cards").mkdir(parents=True)
+    (tmp_path / "content" / "sg" / "cards").mkdir(parents=True)
+    (tmp_path / "config").mkdir()
+    (tmp_path / "config" / "jurisdictions").mkdir()
+    (tmp_path / "config" / "jurisdictions" / "hk.json").write_text(
+        json.dumps({"regulators": [{"id": "x", "official_domains": ["example.invalid"]}]})
+    )
+    _commit_all(tmp_path, "base")
+
+    hk_card_path = tmp_path / "content" / "hk" / "cards" / "card-1.json"
+    hk_card_path.write_text(json.dumps(_card(status="verified")))
+    sg_card_path = tmp_path / "content" / "sg" / "cards" / "card-1.json"
+    sg_card_path.write_text(json.dumps(_card(status="verified")))
+
+    with pytest.raises(JurisdictionMismatchError) as excinfo:
+        main(["--repo-dir", str(tmp_path), "--user-agent", UA, "--jurisdiction", "hk"])
+
+    message = str(excinfo.value)
+    assert "hk" in message
+    assert "content/sg/cards/card-1.json" in message
+    # The mismatched card must not have been silently gated against hk's
+    # allowlist -- it must be left completely untouched on disk.
+    assert json.loads(sg_card_path.read_text())["status"] == "verified"
 
 
 def test_apply_gate_to_file_writes_numeric_claims_unsupported_field(tmp_path, requests_mock, fixture_bytes):

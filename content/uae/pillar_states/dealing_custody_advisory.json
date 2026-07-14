@@ -67,7 +67,7 @@
       "url": "https://dfsaen.thomsonreuters.com/rulebook/cob-6-additional-rules-investment-business-and-crypto-business"
     },
     {
-      "label": "DFSA: crypto regulation overview page",
+      "label": "DFSA: crypto regulation overview page (dfsa.ae currently returns HTTP 403 to automated fetches -- Cloudflare-protected, confirmed by direct fetch this session; included for human readers, not independently verified against server-rendered text)",
       "url": "https://www.dfsa.ae/crypto"
     },
     {
@@ -83,7 +83,7 @@
     "This pillar excludes the Central Bank of the UAE (CBUAE), whose Payment Token Services Regulation and banking rules are tracked in the Banking & Money and Stablecoins pillars, not here, per this pillar's brief instruction to avoid duplicating citations across pillars.",
     "This pillar's federal AML/CFT obligations applicable to dealing, custody and advisory licensees under all four regimes are tracked in the AML/CFT & Enforcement pillar, not restated here."
   ],
-  "generated_at": "2026-07-12T11:36:43Z",
+  "generated_at": "2026-07-13T12:01:58Z",
   "model": "Claude (Anthropic)",
   "status": "unverified"
 }

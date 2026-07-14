@@ -265,6 +265,94 @@ def test_symlinked_directory_under_content_is_rejected(tmp_path):
     assert violations == ["content/linked_dir"]
 
 
+def test_hard_link_under_content_to_pipeline_file_is_rejected(tmp_path):
+    """Real gap found live during the 2026-07-13 compliance audit's own
+    adversarial re-check of the symlink fix: os.path.islink never returns
+    True for a hard link (it's an ordinary directory entry sharing an
+    inode, not a link object), and os.path.realpath returns a hard-linked
+    path unchanged since there is no separate target to resolve. Without
+    an explicit st_nlink check, a hard link planted under content/ pointing
+    at the same inode as a file under pipeline/ passed every prior check,
+    and an in-place edit through the content/ path silently mutated the
+    pipeline/ file's on-disk bytes."""
+    repo = tmp_path
+    _init_repo(repo)
+    (repo / "content").mkdir()
+    (repo / "pipeline").mkdir()
+    (repo / "pipeline" / "secret.py").write_text("# real pipeline code\n")
+    _commit_all(repo, "base")
+
+    os.link(repo / "pipeline" / "secret.py", repo / "content" / "evil_hardlink.py")
+
+    changed = get_uncommitted_changed_paths(str(repo))
+    assert changed == ["content/evil_hardlink.py"]
+
+    ok, violations = check_path_allowlist(changed, repo_dir=str(repo))
+    assert ok is False
+    assert violations == ["content/evil_hardlink.py"]
+
+    exit_code = main(["--mode", "working-tree", "--repo-dir", str(repo)])
+    assert exit_code == 1
+
+
+def test_dangling_symlink_under_content_is_rejected(tmp_path):
+    """Real gap found live during the 2026-07-13 compliance audit, narrower
+    than (and not covered by) the 2026-07-11 fix above: those tests cover a
+    symlink whose TARGET ALREADY EXISTS, which os.path.realpath +
+    os.path.exists already resolved correctly. A DANGLING symlink -- target
+    does not exist yet, e.g. pointing at a /pipeline file that hasn't been
+    created yet -- used to make _escapes_allowlist_via_symlink report "does
+    not escape" (os.path.exists on the unresolvable target is False), even
+    though a real symlink sits in the working tree pointing outside
+    content/. A content-scoped AI job could plant this now and have it
+    silently start resolving into pipeline/ the moment something with that
+    name is later created."""
+    repo = tmp_path
+    _init_repo(repo)
+    (repo / "content").mkdir()
+    (repo / "content" / "placeholder.json").write_text("{}")
+    (repo / "pipeline").mkdir()
+    (repo / "pipeline" / "placeholder.py").write_text("# placeholder")
+    _commit_all(repo, "base")
+
+    os.symlink(
+        os.path.join("..", "pipeline", "not_yet_created.py"),
+        repo / "content" / "dangling_link.py",
+    )
+
+    changed = get_uncommitted_changed_paths(str(repo))
+    assert changed == ["content/dangling_link.py"]
+
+    ok, violations = check_path_allowlist(changed, repo_dir=str(repo))
+    assert ok is False
+    assert violations == ["content/dangling_link.py"]
+
+    exit_code = main(["--mode", "working-tree", "--repo-dir", str(repo)])
+    assert exit_code == 1
+
+
+def test_dangling_symlink_with_no_target_directory_at_all_is_rejected(tmp_path):
+    """Same dangling-symlink gap, but the target's parent directory doesn't
+    exist either (e.g. a symlink to a brand-new future top-level directory)
+    -- confirms the component-walk fix doesn't require any part of the
+    target path to exist on disk."""
+    repo = tmp_path
+    _init_repo(repo)
+    (repo / "content").mkdir()
+    (repo / "content" / "placeholder.json").write_text("{}")
+    _commit_all(repo, "base")
+
+    os.symlink(
+        os.path.join("..", "brand_new_dir", "not_yet_created.py"),
+        repo / "content" / "dangling_link2.py",
+    )
+
+    changed = get_uncommitted_changed_paths(str(repo))
+    ok, violations = check_path_allowlist(changed, repo_dir=str(repo))
+    assert ok is False
+    assert violations == ["content/dangling_link2.py"]
+
+
 def test_legitimate_real_files_still_pass_with_repo_dir_set(tmp_path):
     """The new filesystem-resolution check must not false-positive on
     ordinary, non-symlinked content/data files -- confirms the fix is

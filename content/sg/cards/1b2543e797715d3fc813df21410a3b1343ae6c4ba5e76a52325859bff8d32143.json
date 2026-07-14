@@ -9,9 +9,9 @@
     "aml_cft_enforcement"
   ],
   "type": "enforcement",
-  "title": "MAS places Binance.com on the Investor Alert List",
-  "summary": "On 2 September 2021, the Monetary Authority of Singapore (MAS) added Binance.com to its Investor Alert List (IAL), described by MAS as \"a list of unregulated persons who, based on information received by MAS\" that the public may mistake for entities MAS licenses or regulates. The listing means MAS does not regard Binance.com as a firm it licenses or regulates.",
-  "why_it_matters": "For a newcomer, an Investor Alert List listing is MAS's way of publicly flagging persons and platforms it does not license or regulate, including ones the public might otherwise take to be licensed or regulated by MAS -- which is what MAS signalled by adding Binance.com to the list on 2 September 2021.",
+  "title": "Binance.com reportedly added to MAS's Investor Alert List, per secondary media reports",
+  "summary": "Multiple independent secondary media sources (including Reuters, The Straits Times, Channel News Asia, The Business Times and Financial Times) reported that the Monetary Authority of Singapore (MAS) added Binance.com to its Investor Alert List (IAL) on 2 September 2021. MAS describes the IAL as \"a list of unregulated persons who, based on information received by MAS\" that the public may mistake for entities MAS licenses or regulates. This specific application to Binance.com could not be independently confirmed against a primary MAS source: MAS's own Investor Alert List page has been unreachable (a bot-blocked \"Maintenance\" page) on every fetch attempted for this card. This card therefore records the episode as consistently reported by secondary media only, not as independently primary-confirmed.",
+  "why_it_matters": "For a newcomer, an Investor Alert List listing is MAS's way of publicly flagging persons and platforms it does not license or regulate, including ones the public might otherwise take to be licensed or regulated by MAS -- which is what multiple secondary media sources reported MAS signalled by adding Binance.com to the list on 2 September 2021, though this card could not independently confirm that listing against a primary MAS source.",
   "citations": [
     {
       "url": "https://www.mas.gov.sg/investor-alert-list",

@@ -1887,3 +1887,77 @@ newly-live autonomous mechanisms at once would make any incident far harder to a
 **Fable's summary verdict:** "Phase 5's deterministic build (audit, corrections, improve) is in
 good shape. The remaining work is the owner's punch list ... and the sequenced live-proving steps
 ... -- not more engineering."
+
+### 2026-07-13 — Full compliance-officer audit (8 jurisdictions + UI/UX + code) and its fix cycle
+
+Owner's ask, verbatim: an end-to-end Fable-directed code and UI audit "to ensure this is fit for a
+senior compliance officer," using non-Fable models too "to fact check every line," every claim
+"supported by official sources or publications and referenced with the link that is correct and
+active." Run as a 6-phase Workflow: Fable Director Spec → per-jurisdiction fact-check (session-default
+model, live re-fetch of every citation) → Opus adversarial verification of every flagged finding →
+UI/UX audit (real build, Playwright screenshots, WCAG suite) → 3-way parallel code audit → Fable
+synthesis. 46 agents, ~332 citations live-fetched across all 8 jurisdictions (100% of card citations,
+weighted sampling of pillar key_links/document libraries), 3,061,267 subagent tokens.
+
+**Headline verdict: not fit for sign-off as found, narrowly and fixably so.** Zero fabricated facts,
+zero non-verbatim quotes, zero neutrality violations in body prose, zero named-entity commentary
+across everything checked. Four confirmed critical findings: (1) the internal tooling name "CCR"
+leaked 14 times into public site copy (landing + Method pages); (2) six US pillar-state citations
+rested on unregistered domains, one of them (law.cornell.edu) deliberately not registrable; (3) an
+empirically-reproduced hole in `path_allowlist.py` -- a symlink whose target doesn't exist yet passed
+the gate, since `os.path.exists` on the unresolvable target reported "safe"; (4) an empirically-
+reproduced hole in the quote-authenticity check -- no minimum-substance floor, so
+`quote_is_authentic("the", <any page>)` passed. ~13 moderate and ~11 minor findings across dead links,
+mis-citations, over-length/multi-source quotes, and UI gaps, full detail in the synthesis report.
+
+Owner approved the full tiered fix plan, including the two gate-logic patches (CLAUDE.md requires
+explicit separate approval before an AI touches path-allowlist/architecture code -- obtained
+explicitly before touching either file). Fix cycle, all on `fix/compliance-audit-802phh` (PR #9):
+
+- **Tier 1** (direct, not delegated -- small enough to implement with full context after the
+  recon needed to write it precisely): closed both gate holes, registered the genuine missing US/JP
+  domains (not law.cornell.edu), removed the 14 "CCR" occurrences from `config/site.json`'s
+  `coverage_notes`.
+- **Tiers 2-3** (a second Workflow: per-jurisdiction fix-then-adversarial-verify pipeline, plus 4
+  parallel site/pipeline fix groups, plus a final full-suite/rebuild/grep check). Adversarial
+  verification is what makes this cycle worth the name: 5 of 8 jurisdictions' first-pass fixes had a
+  real, disclosed problem the fresh re-check caught -- a UK card's status silently flipped
+  verified→unverified on a title-only edit with no gate re-run to justify it (reverted after
+  confirming the real gate, run against the current content, produces "verified"); pre-existing
+  over-length quotes in 3 Swiss pillar files the first pass hadn't touched; an EU document-library fix
+  applied only to the derived file, not `data/eu/ledger.json`'s `"relevant"` flag that regenerates it
+  (would have silently resurrected on the next watcher run); a US pillar's own newly-edited file left
+  a second 28-word quote untouched; two UAE key_links with the identical dead-link problem disclosed
+  on only one.
+- **Gate-hardening round 2**: a fresh adversarial pass specifically tasked with trying to break the
+  Tier 1 gate patches found two more real, live-reproduced holes -- `path_allowlist.py` never checked
+  hard links (only `os.path.islink`, which a hard link never triggers, since it's an ordinary
+  directory entry sharing an inode); the quote-substance floor was pure word count and any 3
+  contentless tokens (stopwords, punctuation, digits, emoji, a repeated word) still passed. Fixed
+  both. The word-count floor's own fix broke a real published quote twice over before landing: first
+  a too-strict alphabetic-content requirement broke a UK statutory-instrument-number citation
+  ("2026 No. 102"), found by directly re-verifying that card against the real gate before committing;
+  then, after loosening that, a full cross-jurisdiction sweep (not just the jurisdiction the original
+  finding touched) found the word-count approach itself silently broke 5 real, already-published
+  Japanese quotes, since `str.split()` treats a whole Japanese sentence as one token with no internal
+  whitespace to split on -- rewritten to count non-whitespace characters instead, which is
+  script-agnostic. `test_all_published_cards_pass_quote_policy` was itself widened from
+  `content/hk/cards/` only to `content/*/cards/` so a regression like this is caught by the suite next
+  time, not a manual sweep -- the narrow version had been passing the whole time the bug was live.
+  Also fixed, found during this round's own independent re-verification of the fix workflow's final
+  check: a pre-existing internal PM-role codename ("Fable") in a shipped `style.css` comment, same
+  leak class as the CCR fix, not introduced by this branch.
+
+465 tests passing (up from 448 at Tier 1's start), every touched file re-validated against its schema
+and, for cards, against a fresh direct call to the real `enforce_full_gate` (not the fixing agents'
+self-report) after this session's own edits.
+
+**Logged, not fixed this cycle** (owner-judgment or genuinely out of scope): `REDIRECT_STUBS`'s `hk`
+hardcode and `_CURRENCY_RE`'s missing CHF/AED/SGD/JPY coverage (both pre-existing, both flagged
+critical-adjacent-but-Tier-4 by the audit itself); a documented policy for bot-hostile official
+sources (EUR-Lex WAF, fedlex SPA, mas.gov.sg, congress.gov, dfsa.ae) generalizing SG's own
+sgpc.gov.sg-mirror convention; one CH pillar's ARETP two-quote-per-source cluster, left alone since
+neither quote was individually over-length and it wasn't part of any confirmed finding; the residual,
+accepted quote-policy gap where one real word plus punctuation filler (e.g. "crypto . ,") still passes
+the substance floor -- a semantic-substance judgment, not a fabrication-filler check, ruled out of
+scope for a deterministic function.

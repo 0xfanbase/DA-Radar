@@ -186,6 +186,23 @@ h1, h2, h3 {
   margin-bottom: 1.2rem;
 }
 
+/* "Seeded, not live yet" banner (Current State/Timeline, P8 fix) -- a
+   plain informational notice, deliberately NOT styled like the amber,
+   uppercase, alert-shaped unverified/corrected status badges further
+   below: this isn't flagging a problem with a specific card, it's
+   stating a whole jurisdiction's monitoring status, so it borrows the
+   same calm --harbour-teal boxed treatment as .orientation-panel instead
+   of any warning color. */
+.seed-pass-banner {
+  display: block;
+  border-left: 4px solid var(--harbour-teal);
+  background: var(--surface-card);
+  padding: 0.6rem 0.85rem;
+  margin: 0.3rem 0 1.2rem 0;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
 /* Two-row header (P7): both rows travel together as one sticky unit.
    Opaque --paper background is set explicitly here (rather than relying
    on <body>'s own background showing through) because a sticky element
@@ -466,6 +483,21 @@ hr.hairline {
   padding: 0.2rem 0;
 }
 
+/* Same visual styling as .badge-verified, deliberately its own class:
+   .badge-verified means "this specific card's citations were checked by
+   the verifier pass," while .badge-live means "this jurisdiction is a
+   live registry entry" (landing.html's jurisdiction grid, method.html's
+   coverage table) -- two different claims that happened to share one
+   class name before this split. Keep both rules identical if the visual
+   treatment ever changes; only the meaning differs. */
+.badge-live {
+  display: inline-block;
+  color: var(--verified-green);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.2rem 0;
+}
+
 /* Distinct from .badge-verified -- a corrected card is not the same claim
    as a verified one, and the label links through to the corrections log
    (rule 6 discoverability) so it needs its own affordance, not just its
@@ -539,6 +571,17 @@ hr.hairline {
 
 .card .citations li {
   margin-bottom: 0.35rem;
+}
+
+/* Some regulators' own citation URLs (e.g. sgpc.gov.sg press-release
+   links) are one long unbroken token with no natural break character --
+   without this, such a link overflows a .card's fixed width and pushes
+   the whole page wider than the viewport (real bug found on
+   content/sg/timeline.html at 1440px). overflow-wrap: anywhere lets the
+   browser break mid-token only when a link genuinely has nowhere else to
+   wrap, never for ordinary prose elsewhere on the site. */
+.card .citations li a {
+  overflow-wrap: anywhere;
 }
 
 .pillar-tag {
@@ -654,7 +697,7 @@ hr.hairline {
    1.16:1 contrast against the dark-mode page background (#0F1E2E) --
    both are near-black navy, so a same-color border was invisible and
    the whole board nearly vanished into the page in dark mode (caught by
-   Fable PM audit, confirmed by direct contrast-ratio computation, not
+   design review, confirmed by direct contrast-ratio computation, not
    eyeballed). --amber clears the WCAG 1.4.11 non-text/UI-boundary 3:1
    threshold against BOTH page backgrounds in both themes (3.09 light /
    3.62 dark) and against the board's own dark fill (4.01 light / 3.13

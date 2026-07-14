@@ -284,6 +284,40 @@
         "mof.go.jp"
       ],
       "feeds": []
+    },
+    {
+      "id": "diet",
+      "name": "National Diet of Japan (House of Representatives and House of Councillors)",
+      "short_name": "Diet",
+      "homepage": "https://www.shugiin.go.jp/",
+      "official_domains": [
+        "shugiin.go.jp",
+        "www.shugiin.go.jp",
+        "sangiin.go.jp",
+        "www.sangiin.go.jp"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "jstoa",
+      "name": "Japan STO Association (日本セキュリティトークン協会) -- self-regulatory organization, same registered-SRO basis as JVCEA",
+      "short_name": "JSTOA",
+      "homepage": "https://jstoa.or.jp/",
+      "official_domains": [
+        "jstoa.or.jp"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "jsda",
+      "name": "Japan Securities Dealers Association (日本証券業協会) -- self-regulatory organization, same registered-SRO basis as JVCEA",
+      "short_name": "JSDA",
+      "homepage": "https://www.jsda.or.jp/",
+      "official_domains": [
+        "www.jsda.or.jp",
+        "jsda.or.jp"
+      ],
+      "feeds": []
     }
   ]
 }

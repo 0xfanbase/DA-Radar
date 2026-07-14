@@ -36,16 +36,56 @@ def _escapes_allowlist_via_symlink(path: str, repo_dir: str, allowed_prefixes: t
     escapes the repo root entirely), the change is a real allowlist
     violation the string check alone cannot see.
 
+    Walks the path component-by-component first, using os.path.islink
+    (never follows a link) rather than jumping straight to
+    os.path.realpath + os.path.exists: a DANGLING symlink -- one whose
+    target does not exist yet, e.g. planted by a content-scoped AI job
+    pointing at a not-yet-created path under /pipeline -- is a real symlink
+    sitting in the working tree right now, but os.path.exists() on its
+    resolved target returns False (nothing there to find), which used to
+    make this function report "does not escape" even though the path IS a
+    symlink escaping content/ or data/ in spirit. Any symlink anywhere in
+    the path is therefore treated as a violation outright, target
+    existent or not -- a legitimate AI content job never needs to create a
+    symlink, so this closes the hole without narrowing any real use case.
+
+    Also rejects a hard link: os.path.islink never returns True for one (a
+    hard link is an ordinary directory entry, not a link object), and
+    os.path.realpath returns a hard-linked path unchanged, since hard links
+    have no separate "target" to resolve -- two directory entries simply
+    share one inode. Found live during the 2026-07-13 compliance audit's
+    adversarial re-check of the symlink fix above: a hard link planted
+    under content/ pointing at the same inode as a file under pipeline/
+    passed every check above, and an in-place edit (open+write+truncate,
+    no rename) through the content/ path silently mutated the pipeline/
+    file's on-disk bytes. os.stat(path, follow_symlinks=False).st_nlink > 1
+    catches this -- a legitimately new or edited AI-authored content file
+    is never hard-linked to anything else, so this has no false-positive
+    cost on real content changes.
+
     Deliberately fail-open (returns False, i.e. "does not escape") for a
-    path that doesn't exist on disk under repo_dir -- e.g. a path from a
-    historical `git diff` that isn't present in the current working tree, or
-    a plain unit-test call with no real repo_dir at all. Working-tree mode
-    (this gate's actual pre-commit integration point, per this module's own
-    docstring) always has the real files on disk, so the check is live
-    exactly where it matters.
+    path that doesn't exist on disk at all under repo_dir -- e.g. a path
+    from a historical `git diff` that isn't present in the current working
+    tree, or a plain unit-test call with no real repo_dir at all. Working-
+    tree mode (this gate's actual pre-commit integration point, per this
+    module's own docstring) always has the real files on disk, so the
+    check is live exactly where it matters.
     """
     repo_real = os.path.realpath(repo_dir)
-    target_real = os.path.realpath(os.path.join(repo_dir, path))
+    normalized_path = normalize_path(path)
+    current = repo_dir
+    for part in normalized_path.split("/") if normalized_path else []:
+        current = os.path.join(current, part)
+        if os.path.islink(current):
+            return True
+        if not os.path.lexists(current):
+            return False
+
+    full_path = os.path.join(repo_dir, path)
+    if os.path.isfile(full_path) and os.stat(full_path, follow_symlinks=False).st_nlink > 1:
+        return True
+
+    target_real = os.path.realpath(full_path)
     if not os.path.exists(target_real):
         return False
     rel = os.path.relpath(target_real, repo_real)

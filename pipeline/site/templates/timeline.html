@@ -7,6 +7,13 @@
 {% if content_last_updated %}
 <p class="mono meta-line freshness-line">Data on this page last updated {{ content_last_updated }}{% if build_generated_at %} &middot; page generated {{ build_generated_at }}{% endif %}</p>
 {% endif %}
+{% if is_seed_pass_only %}
+{# Same non-alarming "seeded, not live yet" banner as current_state.html --
+   see that template and pipeline/site/data.py's load_jurisdiction_data
+   for the full rationale; kept to one identical line of markup here so
+   the two pages never drift out of sync on this wording. #}
+<p class="mono meta-line seed-pass-banner">This jurisdiction's content comes from a one-time seed pass, not live daily monitoring yet (Analyst/Verifier status: {{ analyst_verifier_status }}). See <a href="{{ asset_prefix }}method.html">Method &amp; Audit</a> for coverage details.</p>
+{% endif %}
 {#
   Three stacked bands, per the P7 merge design (this template used to be
   a thin wrapper around just the ribbon include below, with the

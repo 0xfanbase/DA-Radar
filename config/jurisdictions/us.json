@@ -272,7 +272,7 @@
     },
     {
       "id": "govinfo",
-      "name": "GovInfo / Congress.gov / U.S. Code (U.S. Government Publishing Office; Library of Congress; Office of the Law Revision Counsel)",
+      "name": "GovInfo / Congress.gov / U.S. Code (U.S. Government Publishing Office; Library of Congress; Office of the Law Revision Counsel; Office of the Clerk of the House of Representatives)",
       "short_name": "GovInfo",
       "homepage": "https://www.govinfo.gov",
       "official_domains": [
@@ -280,7 +280,52 @@
         "govinfo.gov",
         "congress.gov",
         "www.congress.gov",
-        "uscode.house.gov"
+        "uscode.house.gov",
+        "clerk.house.gov"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "white_house",
+      "name": "The White House (Executive Office of the President)",
+      "short_name": "White House",
+      "homepage": "https://www.whitehouse.gov",
+      "official_domains": [
+        "www.whitehouse.gov",
+        "whitehouse.gov"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "ncua",
+      "name": "National Credit Union Administration",
+      "short_name": "NCUA",
+      "homepage": "https://ncua.gov/newsroom",
+      "official_domains": [
+        "ncua.gov",
+        "www.ncua.gov"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "fdic",
+      "name": "Federal Deposit Insurance Corporation",
+      "short_name": "FDIC",
+      "homepage": "https://www.fdic.gov/news",
+      "official_domains": [
+        "www.fdic.gov",
+        "fdic.gov"
+      ],
+      "feeds": []
+    },
+    {
+      "id": "reginfo",
+      "name": "Office of Information and Regulatory Affairs, OMB (Reginfo.gov Unified Agenda of Regulatory and Deregulatory Actions)",
+      "short_name": "Reginfo.gov",
+      "homepage": "https://www.reginfo.gov",
+      "official_domains": [
+        "www.reginfo.gov",
+        "reginfo.gov"
       ],
       "feeds": []
     }

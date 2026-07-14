@@ -1363,3 +1363,50 @@ Three were genuinely re-confirmed accurate with no update needed -- `funds_etfs`
 circulars above, is blocked by the same outage, not because nothing relevant exists). None of the five
 were mechanically bumped without a real check; three legitimately remain at their prior `last_changed`
 date, which is the audit design working as intended, not a gap.
+
+### 2026-07-13 — Compliance-officer audit fix cycle: owner-judgment items logged, not fixed
+
+Full findings and the fix cycle itself are narrated in PROGRESS.md's "Full compliance-officer audit"
+entry. Logged here, per that entry, as genuinely deferred rather than silently dropped:
+
+**`REDIRECT_STUBS`'s `hk` hardcode** (`pipeline/site/generate.py`): the legacy-URL redirect-stub
+mechanism (`state-board.html`, `trajectory.html`, etc. -> the real per-jurisdiction pages) currently
+hardcodes `hk` as the redirect target, a real instance of the class of thing
+`tests/test_jurisdiction_agnostic.py` exists to catch, that test doesn't happen to cover this specific
+file. Two legitimate fixes: bless it explicitly as a founding-jurisdiction special case (these
+particular legacy URLs only ever existed for HK, pre-registry-model), or key it off the registry's
+founding/first-seeded entry so it's not a literal string. Owner call, not made unilaterally here since
+it's a design-intent question, not a pure bug.
+
+**`_CURRENCY_RE`'s currency coverage** (`pipeline/verify/numeric_claims.py`): covers HK$/US$/EUR/GBP/
+RMB but not CHF/AED/SGD/JPY -- so a numeric claim denominated in 4 of this project's 8 registered
+jurisdictions' own currencies is currently invisible to numeric-claim tracing (not incorrectly
+flagged, just never checked at all -- fails silent, not fails loud). Two legitimate fixes: add a
+`currency` field to each jurisdiction's config (a schema + config change, protected territory) or hand
+-maintain the regex's coverage as jurisdictions are added. Owner call.
+
+**A documented convention for bot-hostile official sources**: EUR-Lex's WAF, Fedlex's Angular SPA
+shell, `mas.gov.sg`'s bot-block, `congress.gov`'s Cloudflare challenge, and `dfsa.ae`'s 403 are all the
+same underlying problem -- a genuinely official primary source that an automated, honest-User-Agent
+fetcher cannot read server-rendered text from -- currently handled ad hoc per jurisdiction (SG already
+has the closest thing to a real convention: `sgpc.gov.sg` as a registered mirror). Recommend
+generalizing that into an explicit "verification channel" concept in the registry model (a
+jurisdiction config can name a mirror domain for an otherwise-unfetchable official domain) plus a
+Method-page sentence disclosing it site-wide, rather than each jurisdiction's content re-explaining
+the same limitation in its own `open_items` prose. Design question, not a bug fix -- owner call.
+
+**One CH pillar's remaining multi-quote-per-source cluster**: `funds_etfs.json`'s SIX ARETP citation
+still draws two separate quotes from one source document (`'are not collective investment schemes...'`
+and `'classified as collateralised... debentures'`) -- neither individually over the 15-word cap, so
+neither was part of any confirmed audit finding, and consolidating it wasn't done this cycle to avoid
+expanding scope into content the audit itself never flagged. Left as a known, minor, non-blocking gap
+for a future editorial pass.
+
+**Accepted residual gap in `pipeline/verify/quote_policy.py`'s minimum-substance floor**: a quote
+mixing one real word with punctuation filler (e.g. `"crypto . ,"`) still passes -- documented directly
+in that function's own docstring and covered by
+`test_one_real_word_with_punctuation_filler_passes_minimum_substance`. This is a floor against
+clearly-fabricated filler (all-non-alphabetic content, or content that's just one distinct token/
+character repeated), not a semantic judgment of how substantive a quote is -- ruled out of scope for a
+deterministic check, consistent with `quote_is_authentic`'s own similar, already-documented limitation
+(pure substring matching, no semantic understanding of what the quote is meant to support).

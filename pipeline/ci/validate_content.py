@@ -62,7 +62,7 @@ def _internal_model_id_reason(value: str) -> str | None:
     acceptable human-readable display name."""
     if not isinstance(value, str):
         return None
-    candidate = value.strip()
+    candidate = value.strip().casefold()
     if not candidate:
         return None
     for pattern in _INTERNAL_MODEL_ID_PATTERNS:

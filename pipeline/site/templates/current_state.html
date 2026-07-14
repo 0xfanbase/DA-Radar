@@ -7,6 +7,17 @@
 {% if content_last_updated %}
 <p class="mono meta-line freshness-line">Data on this page last updated {{ content_last_updated }}{% if build_generated_at %} &middot; page generated {{ build_generated_at }}{% endif %}</p>
 {% endif %}
+{% if is_seed_pass_only %}
+{#
+  Non-alarming "seeded, not live yet" banner (P8 fix): shown for any
+  jurisdiction whose config/site.json status.analyst_verifier is not
+  "live" -- today every jurisdiction except Hong Kong -- so a reader never
+  mistakes a one-time seed pass for ongoing daily monitoring. Driven
+  entirely by is_seed_pass_only (see pipeline/site/data.py's
+  load_jurisdiction_data), never a hardcoded jurisdiction id or list.
+#}
+<p class="mono meta-line seed-pass-banner">This jurisdiction's content comes from a one-time seed pass, not live daily monitoring yet (Analyst/Verifier status: {{ analyst_verifier_status }}). See <a href="{{ asset_prefix }}method.html">Method &amp; Audit</a> for coverage details.</p>
+{% endif %}
 
 {#
   "New here? How to read this board" panel (P7 plan). A <details> element,

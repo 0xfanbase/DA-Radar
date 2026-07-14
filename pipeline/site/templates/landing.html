@@ -3,13 +3,13 @@
 {% block content %}
 <h1 class="plate">{{ site_name }}</h1>
 <p>A free, public, self-learning dashboard of digital-asset regulatory landscapes: for each jurisdiction below, a daily watcher spots new regulator publications, an AI analyst drafts cited summary cards, and a separate AI verifier fact-checks every card against the source text before it publishes &mdash; automatically, with its own editorial process audited in public on this site's <a href="method.html">Method &amp; Audit</a> page.</p>
-<p>Hong Kong is the pilot jurisdiction; the rest of the registry below is architecture already built to receive them, seeded one at a time. Pick a jurisdiction to see its current regulatory state, or a planned jurisdiction's coming-soon page for what's ahead.</p>
+<p>Hong Kong is the pilot jurisdiction; the rest of the registry below is architecture already built to receive them, seeded one at a time. Pick a jurisdiction below to see its current regulatory state and timeline; any jurisdiction registered before it is seeded shows a coming-soon page here instead until then.</p>
 <div class="jurisdiction-grid">
   {% for j in jurisdictions %}
   <a class="jurisdiction-card{% if j.status.seeded %} jurisdiction-card-seeded{% else %} jurisdiction-card-planned{% endif %}" href="{{ j.id }}/index.html">
     <h2>{{ j.name }}</h2>
     {% if j.status.seeded %}
-    <span class="badge-verified">Live</span>
+    <span class="badge-live">Live</span>
     {% else %}
     <span class="badge-unverified">Coming soon</span>
     {% endif %}

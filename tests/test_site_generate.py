@@ -141,6 +141,121 @@ def test_current_state_and_timeline_pages_show_content_last_updated(tmp_path):
     assert "Data on this page last updated 2026-01-05T00:00:00Z" in timeline_html
 
 
+def test_load_jurisdiction_data_flags_seed_pass_only_off_registry_status(tmp_path):
+    """analyst_verifier_status / is_seed_pass_only (P8 fix) must come from
+    config/site.json's own status.analyst_verifier for the jurisdiction in
+    question -- never a hardcoded jurisdiction id -- so flipping the
+    fixture's "hk" entry (normally "live") to "planned" changes the flag,
+    and the untouched fixture stays "live" / False."""
+    import json
+    import shutil
+
+    from pipeline.site.data import load_global_data, load_jurisdiction_data
+
+    repo_copy = tmp_path / "repo_seed_pass_flag"
+    shutil.copytree(FIXTURE_ROOT, repo_copy)
+    site_config_path = repo_copy / "config" / "site.json"
+    site_config = json.loads(site_config_path.read_text(encoding="utf-8"))
+    for entry in site_config["jurisdictions"]:
+        if entry["id"] == "hk":
+            entry["status"]["analyst_verifier"] = "planned"
+    site_config_path.write_text(json.dumps(site_config), encoding="utf-8")
+
+    global_data = load_global_data(str(repo_copy))
+    jdata = load_jurisdiction_data(str(repo_copy), "hk", global_data)
+    assert jdata["analyst_verifier_status"] == "planned"
+    assert jdata["is_seed_pass_only"] is True
+
+    jdata_default = _load_hk_jurisdiction_data(FIXTURE_ROOT)
+    assert jdata_default["analyst_verifier_status"] == "live"
+    assert jdata_default["is_seed_pass_only"] is False
+
+
+def test_seed_pass_banner_shown_when_analyst_verifier_not_live(tmp_path):
+    """P8 fix: any jurisdiction whose status.analyst_verifier is not "live"
+    must show a clear, non-alarming banner near the freshness line on both
+    Current State and Timeline, stating the content is from a seed pass,
+    not live daily monitoring -- driven off the registry, never a
+    hardcoded jurisdiction id or list. Mutates the fixture's hk entry
+    (normally "live") to "planned" rather than adding a new fixture
+    jurisdiction, so this stays a minimal, targeted regression test."""
+    import json
+    import shutil
+
+    repo_copy = tmp_path / "repo_seed_pass_only"
+    shutil.copytree(FIXTURE_ROOT, repo_copy)
+    site_config_path = repo_copy / "config" / "site.json"
+    site_config = json.loads(site_config_path.read_text(encoding="utf-8"))
+    for entry in site_config["jurisdictions"]:
+        if entry["id"] == "hk":
+            entry["status"]["analyst_verifier"] = "planned"
+    site_config_path.write_text(json.dumps(site_config), encoding="utf-8")
+
+    output_dir = tmp_path / "output_seed_pass_only"
+    build_site(str(repo_copy), str(output_dir))
+    current_state_html = open(output_dir / "hk" / "index.html", encoding="utf-8").read()
+    timeline_html = open(output_dir / "hk" / "timeline.html", encoding="utf-8").read()
+
+    for html in (current_state_html, timeline_html):
+        assert "seed-pass-banner" in html
+        assert "one-time seed pass" in html
+        assert "Analyst/Verifier status: planned" in html
+
+
+def test_seed_pass_banner_absent_for_live_analyst_verifier_jurisdiction(tmp_path):
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    current_state_html = open(os.path.join(str(tmp_path), "hk", "index.html"), encoding="utf-8").read()
+    timeline_html = open(os.path.join(str(tmp_path), "hk", "timeline.html"), encoding="utf-8").read()
+    assert "seed-pass-banner" not in current_state_html
+    assert "seed-pass-banner" not in timeline_html
+
+
+def test_citations_link_wraps_long_unbroken_urls():
+    """CSS fix: content/sg/timeline.html overflowed a 1440px viewport
+    because long unbroken sgpc.gov.sg citation URL tokens had no wrap
+    rule -- .card .citations li a must set overflow-wrap: anywhere."""
+    css = _read_style_css()
+    assert ".card .citations li a" in css
+    rule_start = css.index(".card .citations li a")
+    rule_chunk = css[rule_start : rule_start + 200]
+    assert "overflow-wrap: anywhere" in rule_chunk
+
+
+def test_landing_and_method_use_badge_live_for_jurisdiction_status(tmp_path):
+    """badge-live (split from badge-verified, P8 fix) is jurisdiction
+    "Live" status's own class now, distinct from a card's "Verified"
+    status -- checked on both places that ever showed a jurisdiction's
+    Live badge."""
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    index_html = open(os.path.join(str(tmp_path), "index.html"), encoding="utf-8").read()
+    method_html = open(os.path.join(str(tmp_path), "method.html"), encoding="utf-8").read()
+    assert '<span class="badge-live">Live</span>' in index_html
+    assert '<br><span class="badge-live">Live</span>' in method_html
+
+
+def test_method_page_has_badge_legend_section(tmp_path):
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    method_html = open(os.path.join(str(tmp_path), "method.html"), encoding="utf-8").read()
+    assert "What the badges mean" in method_html
+    legend_chunk = method_html.split("What the badges mean")[1][:2500]
+    assert "badge-verified" in legend_chunk
+    assert "badge-unverified" in legend_chunk
+    assert "badge-corrected" in legend_chunk
+
+
+def test_landing_second_paragraph_does_not_assume_unseeded_jurisdiction_currently_exists(tmp_path):
+    """Real config/site.json has every registered jurisdiction seeded as of
+    this fix, so the old "a planned jurisdiction's coming-soon page"
+    phrasing on the landing page falsely implied one currently exists.
+    The reworded sentence must still make sense generically (for if/when
+    an unseeded jurisdiction is registered later) without asserting one
+    exists right now."""
+    build_site(FIXTURE_ROOT, str(tmp_path))
+    index_html = open(os.path.join(str(tmp_path), "index.html"), encoding="utf-8").read()
+    assert "a planned jurisdiction's coming-soon page" not in index_html
+    assert "any jurisdiction registered before it is seeded shows a coming-soon page here instead" in index_html
+
+
 def test_legacy_redirect_stubs_are_real_html_with_meta_refresh_and_visible_link(tmp_path):
     build_site(FIXTURE_ROOT, str(tmp_path))
     for old_path, new_path in REDIRECT_STUBS:

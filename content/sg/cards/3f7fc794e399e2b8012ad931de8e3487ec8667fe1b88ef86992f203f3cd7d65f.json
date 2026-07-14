@@ -1,23 +1,27 @@
 {
-  "schema_version": 1,
+  "citations": [
+    {
+      "quote": "Project Guardian was launched by MAS in May 2022",
+      "url": "https://www.sgpc.gov.sg/api/file/getfile/Joint%20media%20release%20-%20MAS%20and%20Deutsche%20Bundesbank%20sign%20MoU%20on%20tokenisation%20and%20cross-border%20settlement.pdf?path=%2Fsgpcmedia%2Fmedia_releases%2Fmas%2Fpress_release%2FP-20251113-3%2Fattachment%2FJoint+media+release+-+MAS+and+Deutsche+Bundesbank+sign+MoU+on+tokenisation+and+cross-border+settlement.pdf"
+    },
+    {
+      "quote": "over 40 financial institutions, industry associations and international policymakers",
+      "url": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release_MAS%20Announces%20Plans%20to%20Support%20Commercialisation%20of%20Asset%20Tokenisation.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20241104-2/attachment/MAS%20Media%20Release_MAS%20Announces%20Plans%20to%20Support%20Commercialisation%20of%20Asset%20Tokenisation.pdf"
+    }
+  ],
+  "generated_at": "2026-07-13T19:10:00Z",
   "id": "3f7fc794e399e2b8012ad931de8e3487ec8667fe1b88ef86992f203f3cd7d65f",
   "jurisdiction_id": "sg",
-  "published_date": "2022-05-31",
-  "regulator": "MAS (Monetary Authority of Singapore)",
+  "model": "Claude (Anthropic)",
   "pillar": [
     "tokenization_rwa"
   ],
-  "type": "guidance",
-  "title": "MAS launches Project Guardian, an industry pilot programme for asset tokenisation",
+  "published_date": "2022-05-31",
+  "regulator": "MAS (Monetary Authority of Singapore)",
+  "schema_version": 1,
+  "status": "unverified",
   "summary": "The Monetary Authority of Singapore (MAS) has convened Project Guardian, a collaborative initiative with the financial industry to pilot asset tokenisation, into an effort involving over 40 financial institutions, industry associations and international policymakers across seven jurisdictions, running industry trials on the use of asset tokenisation in capital markets.",
-  "why_it_matters": "Project Guardian is MAS's main channel for testing how asset tokenisation can work with the financial industry. It has grown into a large industry-wide effort, and industry frameworks such as the Guardian Fixed Income Framework and Guardian Funds Framework have since been developed by its industry-group members, per MAS's own account.",
-  "citations": [
-    {
-      "url": "https://www.sgpc.gov.sg/api/file/getfile/MAS%20Media%20Release_MAS%20Announces%20Plans%20to%20Support%20Commercialisation%20of%20Asset%20Tokenisation.pdf?path=/sgpcmedia/media_releases/mas/press_release/P-20241104-2/attachment/MAS%20Media%20Release_MAS%20Announces%20Plans%20to%20Support%20Commercialisation%20of%20Asset%20Tokenisation.pdf",
-      "quote": "over 40 financial institutions, industry associations and international policymakers"
-    }
-  ],
-  "status": "verified",
-  "generated_at": "2026-07-13T19:10:00Z",
-  "model": "Claude (Anthropic)"
+  "title": "MAS launches Project Guardian, an industry pilot programme for asset tokenisation",
+  "type": "guidance",
+  "why_it_matters": "Project Guardian is MAS's main channel for testing how asset tokenisation can work with the financial industry. It has grown into a large industry-wide effort, and industry frameworks such as the Guardian Fixed Income Framework and Guardian Funds Framework have since been developed by its industry-group members, per MAS's own account."
 }

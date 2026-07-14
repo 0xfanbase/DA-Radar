@@ -6,6 +6,23 @@
 <h2>How this site works</h2>
 <p>For each jurisdiction in the registry below, a daily watcher polls that jurisdiction's own official regulator feeds for new publications, filters them for digital-asset relevance, and queues the relevant ones. An ANALYST pass drafts a summary card for each queued item with cited sources. A separate VERIFIER pass, in a fresh context with no access to the analyst's reasoning, re-fetches every citation and checks it against the source text, stripping or flagging anything unsupported. A deterministic, non-bypassable gate then re-checks every citation itself before anything is published &mdash; it never trusts either pass's self-report. The same watcher/analyst/verifier/gate pipeline code runs unchanged for every jurisdiction; only each jurisdiction's own config file (regulator list, feed URLs, pillar keywords) differs.</p>
 
+<h2>What the badges mean</h2>
+<p>Every summary card, pillar state, and trajectory entry on this site carries one of three verification badges, set by the same deterministic gate described above &mdash; never self-reported by the analyst or verifier pass.</p>
+<dl class="seal-legend">
+  <div class="seal-legend-item">
+    <dt><span class="badge-verified">&#10003; Verified</span></dt>
+    <dd>The verifier pass re-fetched every citation on this item, in a fresh context with no access to the analyst's reasoning, and confirmed the summary text and any stated figures are supported by the source.</dd>
+  </div>
+  <div class="seal-legend-item">
+    <dt><span class="badge-unverified">Unverified</span></dt>
+    <dd>The verifier pass could not confirm one or more citations, or a stated figure, against the source text. The item still publishes rather than being silently withheld, but flagged so a reader knows to check the primary source directly.</dd>
+  </div>
+  <div class="seal-legend-item">
+    <dt><a class="badge-corrected" href="#corrections-log">Corrected</a></dt>
+    <dd>A previously published item was found to need a correction after the fact. Corrections are always human-initiated and reviewed via pull request; see the <a href="#corrections-log">corrections log</a> below for what changed, when, and why.</dd>
+  </div>
+</dl>
+
 <h2>A unified pillar taxonomy, applied honestly</h2>
 <p>Every jurisdiction on this site is described using the same set of regulatory pillars, rather than each jurisdiction inventing its own categories &mdash; that consistency is what makes cross-jurisdiction comparison on this site possible at all. This taxonomy was originally drawn up around Hong Kong's own regime, the founding jurisdiction, and is meant to generalize, not to quietly assume every other jurisdiction's regulatory structure maps onto it perfectly. Where a jurisdiction genuinely has no dedicated regulatory regime for a given pillar, its pillar card says exactly that (the "No dedicated regime" seal) rather than being left off the board or filled in with a guess. If a future jurisdiction's regime turns out not to fit this taxonomy at all, that is treated as a reason to revisit the taxonomy, not to force-fit the jurisdiction.</p>
 
@@ -21,7 +38,7 @@
     <tr>
       <td>
         {{ row.name }}
-        {% if row.seeded %}<br><span class="badge-verified">Live</span>{% else %}<br><span class="badge-unverified">Coming soon</span>{% endif %}
+        {% if row.seeded %}<br><span class="badge-live">Live</span>{% else %}<br><span class="badge-unverified">Coming soon</span>{% endif %}
       </td>
       <td>
         {% if row.regulators %}
