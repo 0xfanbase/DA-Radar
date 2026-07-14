@@ -2034,3 +2034,23 @@ per-jurisdiction/per-firing caps under real multi-jurisdiction load, not just un
 project's own standing discipline (Fable PM directive, 2026-07-09): review the actual commits and
 card files that firing produces before calling this rollout proven, not just confirm the trigger
 fired.
+
+### 2026-07-14 — CCR trigger's stale bot identity fixed (owner-approved)
+
+Owner approved fixing the bot-identity bug flagged above. No tool in this session can edit a live
+trigger's own prompt content (only its name/cron/enabled state), so the fix was delete-and-recreate,
+not an edit: created a new trigger, `Global Digital Asset Radar — Analyst/Verifier daily run`
+(same `env_01NaDLzVcJMVt9aDwBmJC6ea` environment, same `30 22 * * *` schedule, same
+`create_new_session_on_fire` fresh-context-per-firing shape), with the bot identity corrected to
+`da-radar-bot <da-radar-bot@users.noreply.github.com>` and the project name corrected to "Global
+Digital Asset Radar" throughout -- then deleted the old, buggy `HK Radar — Analyst/Verifier daily
+run` trigger only after confirming the new one was created successfully (never the other order,
+to avoid a window with no trigger at all). The new prompt also shortens the inline step-by-step
+summary that had drifted from `docs/analyst-runbook.md` in the first place, deferring to the
+runbook as the authoritative source rather than re-describing its steps, and adds an explicit
+self-correcting clause: if the trigger's own prompt text and the current CLAUDE.md/runbook ever
+disagree, the actual repo files win. `list_triggers` confirms the old trigger id
+(`trig_01Bk3Lz2FKf3pWRMFkqBcdDE`) no longer exists and the new one
+(`trig_014KCBHpqU22iUiWfG3qBt93`) is enabled with the same `next_run_at` slot. Verification of
+this fix, same as the jurisdiction rollout above, is watching what the trigger's first real firing
+under the new identity actually commits as -- not assumed correct from the prompt text alone.
