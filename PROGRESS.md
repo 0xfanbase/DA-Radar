@@ -155,11 +155,12 @@ Consolidated here so nothing sits scattered across log entries.
    so this recurs on every future merge. Bot identity is guaranteed only for commits the pipeline
    and build sessions themselves create; closing the gap requires a bot-credentialed merge path
    (GitHub App/PAT merging as `hk-radar-bot`), which this environment does not have.
-7. **`audit.yml` has still never produced a real `data/audit/latest.json`** -- confirmed at P15 time:
-   `data/audit/` does not exist anywhere in the repo. No scheduled Actions run of `audit.yml` has
-   fired for real yet (it's weekly, and no owner action has triggered a manual run either). This is
-   a genuine gap in the "self-learning loop" diagram's audit stage, separate from and in addition to
-   the improve.yml dry-run gap above.
+7. ~~**`audit.yml` has still never produced a real `data/audit/latest.json`**~~ **Resolved,
+   2026-07-13.** `audit.yml`'s first genuine scheduled run fired for real and produced `data/
+   audit/latest.json` (63KB, merged into `main` via PR #6's merge window -- see that entry above);
+   its findings were the subject of the same day's "PR #6 merged; first post-merge maintenance
+   pass" fix cycle. The "self-learning loop" diagram's audit stage is now genuinely proven live,
+   not just built.
 8. ~~**P6-P14's registry-model rebuild added seven more jurisdictions... but `status.analyst_verifier`
    deliberately stays `"planned"`**~~ **Resolved, 2026-07-14.** Owner explicitly approved extending
    live analyst/verifier to all 6 remaining live-watcher jurisdictions (`us`, `eu`, `uk`, `uae`,
