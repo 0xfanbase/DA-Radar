@@ -19,10 +19,10 @@
       "config": "config/jurisdictions/us.json",
       "status": {
         "watcher": "live",
-        "analyst_verifier": "planned",
+        "analyst_verifier": "live",
         "seeded": true
       },
-      "coverage_notes": "Live RSS/HTML-diff/JSON-API watcher (SEC + CFTC + FinCEN + OCC + Federal Reserve + Federal Register feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before scheduled automated analyst/verifier runs are extended to this jurisdiction."
+      "coverage_notes": "Live RSS/HTML-diff/JSON-API watcher (SEC + CFTC + FinCEN + OCC + Federal Reserve + Federal Register feeds), seeded. Live analyst/verifier via a scheduled automated run, extended here 2026-07-14 (owner-approved, alongside eu/uk/uae/ch/jp)."
     },
     {
       "id": "eu",
@@ -30,10 +30,10 @@
       "config": "config/jurisdictions/eu.json",
       "status": {
         "watcher": "live",
-        "analyst_verifier": "planned",
+        "analyst_verifier": "live",
         "seeded": true
       },
-      "coverage_notes": "Live RSS watcher (European Commission + ESMA + EBA + ECB + AMLA feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before scheduled automated analyst/verifier runs are extended to this jurisdiction."
+      "coverage_notes": "Live RSS watcher (European Commission + ESMA + EBA + ECB + AMLA feeds), seeded. Live analyst/verifier via a scheduled automated run, extended here 2026-07-14 (owner-approved, alongside us/uk/uae/ch/jp)."
     },
     {
       "id": "uk",
@@ -41,10 +41,10 @@
       "config": "config/jurisdictions/uk.json",
       "status": {
         "watcher": "live",
-        "analyst_verifier": "planned",
+        "analyst_verifier": "live",
         "seeded": true
       },
-      "coverage_notes": "Live RSS/Atom watcher (FCA + Bank of England + HM Treasury feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before scheduled automated analyst/verifier runs are extended to this jurisdiction."
+      "coverage_notes": "Live RSS/Atom watcher (FCA + Bank of England + HM Treasury feeds), seeded. Live analyst/verifier via a scheduled automated run, extended here 2026-07-14 (owner-approved, alongside us/eu/uae/ch/jp)."
     },
     {
       "id": "sg",
@@ -63,10 +63,10 @@
       "config": "config/jurisdictions/uae.json",
       "status": {
         "watcher": "live",
-        "analyst_verifier": "planned",
+        "analyst_verifier": "live",
         "seeded": true
       },
-      "coverage_notes": "Live RSS/HTML-diff/sitemap-diff watcher (VARA + SCA/CMA + DFSA + FSRA (ADGM) feeds), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before scheduled automated analyst/verifier runs are extended to this jurisdiction."
+      "coverage_notes": "Live RSS/HTML-diff/sitemap-diff watcher (VARA + SCA/CMA + DFSA + FSRA (ADGM) feeds), seeded. Live analyst/verifier via a scheduled automated run, extended here 2026-07-14 (owner-approved, alongside us/eu/uk/ch/jp)."
     },
     {
       "id": "ch",
@@ -74,10 +74,10 @@
       "config": "config/jurisdictions/ch.json",
       "status": {
         "watcher": "live",
-        "analyst_verifier": "planned",
+        "analyst_verifier": "live",
         "seeded": true
       },
-      "coverage_notes": "Live RSS watcher (FINMA feed), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before scheduled automated analyst/verifier runs are extended to this jurisdiction."
+      "coverage_notes": "Live RSS watcher (FINMA feed), seeded. Live analyst/verifier via a scheduled automated run, extended here 2026-07-14 (owner-approved, alongside us/eu/uk/uae/jp)."
     },
     {
       "id": "jp",
@@ -85,10 +85,10 @@
       "config": "config/jurisdictions/jp.json",
       "status": {
         "watcher": "live",
-        "analyst_verifier": "planned",
+        "analyst_verifier": "live",
         "seeded": true
       },
-      "coverage_notes": "Live RSS watcher (FSA English + Japanese news feeds, JVCEA feed), seeded. Analyst/verifier automation not yet activated -- owner sign-off pending before scheduled automated analyst/verifier runs are extended to this jurisdiction."
+      "coverage_notes": "Live RSS watcher (FSA English + Japanese news feeds, JVCEA feed), seeded. Live analyst/verifier via a scheduled automated run, extended here 2026-07-14 (owner-approved, alongside us/eu/uk/uae/ch)."
     }
   ],
   "pillars": [

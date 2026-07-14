@@ -20,10 +20,9 @@ non-negotiable ground truth for this run, not background color.
 ## Step 0 — Iterate the live registry
 
 Read `config/site.json`'s `jurisdictions` array. For each entry with `status.analyst_verifier ==
-"live"` — as of this build, that is still just `hk`; `uk`'s `status.watcher` went live at P9, but
-its `status.analyst_verifier` is deliberately left `"planned"` — flipping it to `"live"` is a
-separate, explicit owner-approved step, not something this runbook or any firing of this trigger
-does on its own — process that jurisdiction's queue as follows, in registry order:
+"live"` — flipping a jurisdiction's `status.analyst_verifier` to `"live"` is always a separate,
+explicit owner-approved step, never something this runbook or any firing of this trigger does on
+its own — process that jurisdiction's queue as follows, in registry order:
 
 1. Read `data/{jid}/queue.json`. If `items` is empty, log "queue empty for {jid}, nothing to do"
    and move on to the next live jurisdiction (or stop, if it was the last one) — no per-item
@@ -43,13 +42,14 @@ does on its own — process that jurisdiction's queue as follows, in registry or
    separated on `main` and a gate failure in one jurisdiction's batch never blocks or entangles
    another's.
 
-Today, with only `hk` at `status.analyst_verifier: "live"`, this loop still runs exactly once —
-the loop structure and the caps above are the real mechanism now, not a placeholder for later.
+When only one jurisdiction is `"live"`, this loop still runs exactly once — the loop structure and
+the caps above are the real mechanism at any registry size, not a placeholder that only starts
+mattering once a second jurisdiction goes live.
 
 ## Step 1 — Analyst pass (restricted, worktree-isolated sub-agent)
 
-Spawn an `Agent` with `subagent_type: "hk-radar-analyst"` (defined in
-`.claude/agents/hk-radar-analyst.md` — tool access restricted to `Read, WebFetch, Write, Edit`,
+Spawn an `Agent` with `subagent_type: "radar-analyst"` (defined in
+`.claude/agents/radar-analyst.md` — tool access restricted to `Read, WebFetch, Write, Edit`,
 no Bash, plus `isolation: worktree`; this is the actual structural tool-restriction layer,
 equivalent to `analyze.yml`'s `claude_args`, not just the worktree blast-radius limiter). Give it
 the current contents of `data/{jid}/queue.json` (this firing's capped batch for that jurisdiction,
@@ -57,13 +57,6 @@ per Step 0) as its task input, and the jurisdiction id (`{jid}`) so it knows to 
 `content/{jid}/`. Nothing else — no context about this runbook, the CCR trigger, or how automation
 is wired here; its own agent definition already points it at `pipeline/prompts/analyst_prompt.md`
 for its full brief.
-
-*Naming note:* the agent definition file and its `subagent_type` are still literally named
-`hk-radar-analyst` — that is accurate today because `hk` is the only jurisdiction this step ever
-runs for. If a second jurisdiction's `status.analyst_verifier` is ever flipped to `"live"`,
-generalizing `.claude/agents/hk-radar-analyst.md` (and its verifier counterpart) to a
-jurisdiction-parameterized name/brief is a real follow-up code change at that time — out of scope
-for this edit, which only parameterizes this runbook's own path references.
 
 It works in its own disposable git worktree, entirely separate from your own working directory.
 When it reports back, **read the actual card file(s) it wrote from its worktree path** — do not
@@ -138,10 +131,9 @@ git push origin main
 ## Step 5 — Verifier pass (a *separate*, restricted, worktree-isolated sub-agent — genuinely fresh context)
 
 For each card the analyst drafted, spawn a **new** `Agent` with
-`subagent_type: "hk-radar-verifier"` (defined in `.claude/agents/hk-radar-verifier.md` — same tool
-restriction as the analyst: `Read, WebFetch, Write, Edit`, no Bash, `isolation: worktree`; see the
-naming note under Step 1 — still literally `hk`-named because `hk` is the only jurisdiction this
-step runs for today). Give it only:
+`subagent_type: "radar-verifier"` (defined in `.claude/agents/radar-verifier.md` — same tool
+restriction as the analyst: `Read, WebFetch, Write, Edit`, no Bash, `isolation: worktree`). Give
+it only:
 - The card file's path and its exact JSON content
 
 Nothing else. Do not give it the analyst sub-agent's reasoning, transcript, or anything from
