@@ -160,14 +160,15 @@ Consolidated here so nothing sits scattered across log entries.
    fired for real yet (it's weekly, and no owner action has triggered a manual run either). This is
    a genuine gap in the "self-learning loop" diagram's audit stage, separate from and in addition to
    the improve.yml dry-run gap above.
-8. **P6-P14's registry-model rebuild added seven more jurisdictions (uk, eu, us, ch, jp, uae, sg) on
-   top of the original hk-only build, but `status.analyst_verifier` deliberately stays `"planned"`
-   for all seven of them** -- an explicit, repeatedly-logged owner-decision framing throughout P9-P14
-   (never an oversight): the live CCR trigger currently services only Hong Kong. Extending it to any
-   second jurisdiction is a distinct, not-yet-made owner decision, separate from this build's own
-   completeness -- every non-HK jurisdiction's content pipeline (watcher, seed, cards, gates) is fully
-   built and proven per-phase, but none of them has a live, recurring, unattended analyst/verifier
-   cycle of its own yet.
+8. ~~**P6-P14's registry-model rebuild added seven more jurisdictions... but `status.analyst_verifier`
+   deliberately stays `"planned"`**~~ **Resolved, 2026-07-14.** Owner explicitly approved extending
+   live analyst/verifier to all 6 remaining live-watcher jurisdictions (`us`, `eu`, `uk`, `uae`,
+   `ch`, `jp`) at once -- see that entry below for the full decision, prerequisite generalization
+   work, and a real bot-identity bug found in the CCR trigger's own prompt text along the way (fix
+   left for explicit owner go-ahead, not done unilaterally). `sg` stays `"planned"` by design (its
+   watcher is `"dormant"`, manual-assisted only). **Still open, and now the real next verification
+   step**: watch the first real post-flip firing across all 7 live jurisdictions and confirm it
+   behaves as designed before calling this rollout proven, not just confirming the trigger fired.
 9. **The literal P15 acceptance criterion -- a 14-day zero-touch soak with two consecutive real
    publications -- cannot be completed synchronously in any single session**, exactly as flagged when
    this constraint was first named back at Phase 5's kickoff (see that entry above). The HK trigger has
@@ -1961,3 +1962,74 @@ neither quote was individually over-length and it wasn't part of any confirmed f
 accepted quote-policy gap where one real word plus punctuation filler (e.g. "crypto . ,") still passes
 the substance floor -- a semantic-substance judgment, not a fabrication-filler check, ruled out of
 scope for a deterministic function.
+
+### 2026-07-14 — Live analyst/verifier extended to all 6 remaining live-watcher jurisdictions
+
+Owner decision, explicit and direct: asked to pick the next candidate for live analyst/verifier
+(item 8 on the punch list above), this session recommended a single next jurisdiction picked by
+real operational readiness rather than "most content-rich" as originally framed -- comparing
+`data/{jid}/queue.json` sizes across all 7 non-HK jurisdictions found `us` had by far the largest
+genuine backlog (42 queued items, spot-checked for relevance: crypto ETF filings on Cboe BZX/
+Nasdaq, GENIUS Act stablecoin rulemaking, broker digital-asset reporting rules -- vs. 8 for jp, 3
+for uk, 0 for eu/uae/ch), making it the best real test of the mechanism rather than an idle
+trigger. The owner's reply named `us` as a deviation from the session's own earlier "likely uk or
+eu" framing without an explicit confirmation of that substitution -- correctly caught by this
+environment's permission classifier before any file was touched, and surfaced to the owner as an
+open question rather than proceeding. Owner's answer ("Do all, one by one step by step") was
+itself ambiguous between "activate all 6 now" and "activate them sequentially over real calendar
+time, watching each one's first firing before the next" -- a second classifier catch, since this
+session's own stated plan had explicitly been "watch first firings before expanding further," and
+flipping 6 configs in one pass means they all go live on the *same* next trigger fire, which is not
+actually sequential. Asked directly a second time; owner's answer ("all 6 live together now") was
+unambiguous. Proceeding required no further hedging once that answer was in hand.
+
+**What "all 6" means, precisely:** `us`, `eu`, `uk`, `uae`, `ch`, `jp` -- every live-watcher
+jurisdiction not already live. `sg` is deliberately excluded: its watcher is `"dormant"` by design
+(mas.gov.sg/Singapore Statutes Online block non-browser clients; coverage comes from periodic
+manual `seed_backfill` review, not a daily poll), so flipping its `analyst_verifier` status would
+be a no-op flag with no automated queue ever feeding it -- a functionally different kind of "live"
+than the other seven, not something this decision covers.
+
+**Real prerequisite work found and fixed before the flip, not assumed already done:** read
+`docs/analyst-runbook.md` in full expecting to need to generalize it for multi-jurisdiction
+operation -- found it already fully generic (Step 0 iterates every `status.analyst_verifier ==
+"live"` registry entry with per-jurisdiction/per-firing caps, built that way from P6 onward, not a
+placeholder). What genuinely wasn't generic, found by reading rather than assuming: (1)
+`.claude/agents/hk-radar-analyst.md`/`hk-radar-verifier.md` were literally HK-named (no HK-specific
+*logic*, both already jurisdiction-parameterized -- pure naming debt the runbook's own "real
+follow-up change at that time" comment had explicitly flagged) -- renamed to `radar-analyst.md`/
+`radar-verifier.md`. (2) `pipeline/prompts/analyst_prompt.md` had three genuinely hardcoded HK
+phrases, not caught by the runbook's own naming note: "the only live jurisdiction is `hk`" (stale
+factual claim), "LegCo, news.gov.hk" as primary-source examples (HK-specific institutions,
+generalized to "a legislature... official_domains entry"), and, most substantively, "written for a
+newcomer to HK digital-asset regulation" in the `why_it_matters` instruction -- this one would have
+produced a factually wrong sentence on every non-HK card had it shipped unfixed. `verifier_prompt.md`
+was already fully agnostic. Full test suite (465 passed), a real site rebuild (23 pages, exit 0),
+and a targeted grep confirmed the existing "seeded, not live yet" banner (built during the
+compliance-audit fix cycle, driven by `status.analyst_verifier != "live"`) now correctly disappears
+from all 6 newly-live jurisdictions' pages and remains only on `sg`'s -- with zero template code
+touched, proving that feature was genuinely data-driven when it was built, not coincidentally
+correct.
+
+**A second, unrelated bug found while checking the live CCR trigger's own configuration** (not
+touched yet, flagged to the owner instead of fixed unilaterally): the "HK Radar — Analyst/Verifier
+daily run" trigger's own prompt text still hardcodes the pre-registry-model bot identity
+(`hk-radar-bot <bot@users.noreply.github.com>`), not the current, CLAUDE.md-mandated
+`da-radar-bot <da-radar-bot@users.noreply.github.com>` every commit since P6 has used. `git log`
+confirms this is not just stale text sitting unused -- a real commit as recently as
+2026-07-13T05:40:28Z ("audit: ... weekly audit run") used the old identity. Checked every real
+`.github/workflows/*.yml` for the same pattern: all five (`analyze.yml`, `audit.yml`,
+`correction.yml`, `improve.yml`, `watch.yml`) correctly use `da-radar-bot` -- this bug lives only in
+the CCR trigger's own prompt text, invisible to anyone auditing the repo on GitHub, exactly the
+class of gap CLAUDE.md's own "Logged deviation" note about this mechanism already warns about. The
+`update_trigger` tool available in this session can change a trigger's name/cron/enabled state but
+not its prompt content -- fixing this for real means deleting and recreating the trigger, an action
+outside plain git and not something to do silently mid-way through an already-large, twice-
+clarified change. Left for the owner's explicit go-ahead as a separate next step.
+
+Next: watch the first real post-flip firing (next scheduled fire the night of 2026-07-14/15,
+`30 22 * * *`) across all 7 live jurisdictions at once -- the first genuine test of Step 0's
+per-jurisdiction/per-firing caps under real multi-jurisdiction load, not just unit-tested. Per this
+project's own standing discipline (Fable PM directive, 2026-07-09): review the actual commits and
+card files that firing produces before calling this rollout proven, not just confirm the trigger
+fired.
