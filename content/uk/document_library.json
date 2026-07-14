@@ -70,9 +70,53 @@
       "regulator": "Bank of England",
       "title": "Bank of England launches policy statement and draft rules on regulating systemic stablecoins",
       "type": "news"
+    },
+    {
+      "item_hash": "17dce5c8796185e0c2b0549d5660cf240379afcdea4d4c3d4409d919cd2e516f",
+      "link": "https://www.fca.org.uk/news/press-releases/fca-opens-retail-access-crypto-etns",
+      "pillar": [
+        "exchanges_vatp",
+        "funds_etfs"
+      ],
+      "published_at": "2025-10-08T00:00:00Z",
+      "regulator": "FCA",
+      "title": "FCA opens retail access to crypto ETNs",
+      "type": "news"
+    },
+    {
+      "item_hash": "3925ab57c62df4d68515f3cd8610e139c6e38f87c942c38b2238eed5565d62b1",
+      "link": "https://www.gov.uk/government/news/new-crypto-rules-to-unlock-growth-and-protect-customers",
+      "pillar": [],
+      "published_at": "2026-02-04T00:00:00Z",
+      "regulator": "HM Treasury",
+      "title": "New crypto rules to unlock growth and protect customers",
+      "type": "activity"
+    },
+    {
+      "item_hash": "4da45fcb335f58f80496d3d06983a92ec81b30ac3711e16719b15bc2d5888f37",
+      "link": "https://www.fca.org.uk/publication/consultation/cp26-17.pdf",
+      "pillar": [
+        "exchanges_vatp",
+        "funds_etfs"
+      ],
+      "published_at": "2026-06-05T00:00:00Z",
+      "regulator": "FCA",
+      "title": "CP26/17: consultation on cryptoasset exchange traded notes for retail funds",
+      "type": "news"
+    },
+    {
+      "item_hash": "2c13ae36166f94159592bb0cb316942ea06e0f52867b6e3864a59d2438dcd8e6",
+      "link": "https://www.gov.uk/government/publications/wholesale-digital-markets-champion-first-report",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2026-07-13T08:00:02Z",
+      "regulator": "HM Treasury",
+      "title": "Independent report: Wholesale Digital Markets Champion – first report",
+      "type": "activity"
     }
   ],
-  "generated_at": "2026-07-11T17:59:17Z",
+  "generated_at": "2026-07-14T04:23:03Z",
   "jurisdiction_id": "uk",
   "schema_version": 1
 }

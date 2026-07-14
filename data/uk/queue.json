@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T18:34:49Z",
+  "generated_at": "2026-07-14T04:23:03Z",
   "items": [
     {
       "feed_id": "boe_pra_publications",
@@ -30,6 +30,16 @@
       "status": "queued",
       "summary": "The Bank of England and the FCA have published a joint approach setting out how they and where relevant other authorities will work together to regulate systemic stablecoin issuers in the UK.It explains how responsibilities will be split between the authorities, and how UK stablecoin issuers may move from FCA supervision to joint regulation once recognised as systemic by HM Treasury.The approach aims to provide clarity and predictability for firms as the market develops.Read the paper",
       "title": "FCA and the Bank of England set out approach to joint regulation of systemic stablecoin issuers"
+    },
+    {
+      "feed_id": "hmt_activity",
+      "item_hash": "2c13ae36166f94159592bb0cb316942ea06e0f52867b6e3864a59d2438dcd8e6",
+      "link": "https://www.gov.uk/government/publications/wholesale-digital-markets-champion-first-report",
+      "published_at": "2026-07-13T08:00:02Z",
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Report from the UK’s Wholesale Digital Markets Champion, setting out a framework for the UK financial sector to drive tokenisation of wholesale financial markets.",
+      "title": "Independent report: Wholesale Digital Markets Champion – first report"
     }
   ],
   "jurisdiction_id": "uk",

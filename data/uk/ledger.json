@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T18:34:50Z",
+  "generated_at": "2026-07-14T04:23:03Z",
   "items": {
     "02028a9677575e76189a49022768f45cc07c84ca74ac72879172cd9671891801": {
       "card_id": null,
@@ -128,6 +128,22 @@
       "status": "queued",
       "summary": "The first meeting of the RTGS CHAPS Industry Forum",
       "title": "Summary of the RTGS CHAPS Industry Forum"
+    },
+    "0e796ec97431be959d8797abeaeffd8536ae05d45b42ad56ecb70b08c6b86687": {
+      "card_id": null,
+      "content_hash": "26b6360776069d89bf7b621d24fd22125ed592ce6dbb702d5c953182d6947d57",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-14T04:23:03Z",
+      "guid": "https://www.gov.uk/government/publications/pool-reinsurance-limited-annual-report-and-accounts-2025-to-2026#2026-07-13T16:16:57Z",
+      "item_hash": "0e796ec97431be959d8797abeaeffd8536ae05d45b42ad56ecb70b08c6b86687",
+      "link": "https://www.gov.uk/government/publications/pool-reinsurance-limited-annual-report-and-accounts-2025-to-2026",
+      "published_at": "2026-07-13T16:16:57Z",
+      "raw_published": "2026-07-13T16:16:57Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Pool Reinsurance Limited (Pool Re) have published their annual report and accounts for 2025 to 2026.",
+      "title": "Corporate report: Pool Reinsurance Limited Annual Report and Accounts 2025 to 2026"
     },
     "0fd98b084b89eebde8bb0cb7bdf5206269d9c057613add4006c360fe3a33182e": {
       "card_id": null,
@@ -400,6 +416,22 @@
       "status": "queued",
       "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC) Operations and Legal Sub-Committees. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators.",
       "title": "FXJSC Combined Operations and Legal Sub-Committee Meeting"
+    },
+    "2c13ae36166f94159592bb0cb316942ea06e0f52867b6e3864a59d2438dcd8e6": {
+      "card_id": null,
+      "content_hash": "a7357afb3736e3a2d7b521b735091a8099a593c1ab6292ebc40456b1b89b9908",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-14T04:23:03Z",
+      "guid": "https://www.gov.uk/government/publications/wholesale-digital-markets-champion-first-report#2026-07-13T08:00:02Z",
+      "item_hash": "2c13ae36166f94159592bb0cb316942ea06e0f52867b6e3864a59d2438dcd8e6",
+      "link": "https://www.gov.uk/government/publications/wholesale-digital-markets-champion-first-report",
+      "published_at": "2026-07-13T08:00:02Z",
+      "raw_published": "2026-07-13T08:00:02Z",
+      "relevant": true,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Report from the UK’s Wholesale Digital Markets Champion, setting out a framework for the UK financial sector to drive tokenisation of wholesale financial markets.",
+      "title": "Independent report: Wholesale Digital Markets Champion – first report"
     },
     "2dad4117731b3238e162463a693ad6714418986d306bd455736a4a71fbbe1514": {
       "card_id": null,
@@ -1297,6 +1329,22 @@
       "summary": "The Bank of England (the Bank), the Prudential Regulation Authority (PRA) and the FCA will start overseeing the first critical third parties (CTPs) on Monday 13 July 2026, following designation by the Treasury. CTPs are technology and other service providers whose services underpin the UK financial system. Today, the Treasury has announced its first designations of 4 global cloud services and technology providers: Amazon Web Services EMEA SARL, Google Cloud EMEA Limited, Microsoft Ireland Operations Ltd, and Oracle Corporation UK Limited.As many firms rely on these services, disruption or failure could affect multiple firms or markets at the same time, potentially impacting UK financial stability and services used by millions of consumers and businesses.For the first time, the three regulators will jointly oversee these CTPs under a new, proportionate regime, focused on the resilience of the critical services they provide to the UK financial sector. The regulators will work together with the CTPs to address system-level risks and reduce the risk of disruption to the services they provide spreading across the UK financial system. This will strengthen system-wide resilience and improve coordination and information sharing across the UK financial sector.CTPs must identify and manage risks to their critical services effectively, and maintain open, timely communication with regulators and the firms that rely on them, particularly during major incidents.Together, these changes support a more resilient environment for firms to operate in, which will, in turn support financial stability and confidence in UK financial markets.This regime complements, but does not replace, existing outsourcing and operational resilience rules for regulated firms who remain responsible for managing their own third-party arrangements including due diligence, risk management and contingency planning.Sarah Breeden, deputy governor for financial stability at the Bank, said:'As critical third parti",
       "title": "UK financial regulators to begin overseeing Critical Third Parties announced by Treasury"
     },
+    "7bc7b19587e13071037eee5bbd027fb6ccf9d9e329a3bbfb31a33c493d1767f4": {
+      "card_id": null,
+      "content_hash": "ce2734d513be85e106119ee374135cb03ddeaba8a46a5b05c60636171eeb22e5",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-14T04:23:03Z",
+      "guid": "https://www.gov.uk/government/consultations/consultation-on-the-introduction-of-electric-vehicle-excise-duty-eved#2026-07-13T12:08:55Z",
+      "item_hash": "7bc7b19587e13071037eee5bbd027fb6ccf9d9e329a3bbfb31a33c493d1767f4",
+      "link": "https://www.gov.uk/government/consultations/consultation-on-the-introduction-of-electric-vehicle-excise-duty-eved",
+      "published_at": "2026-07-13T12:08:55Z",
+      "raw_published": "2026-07-13T12:08:55Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "A consultation setting out further detail on how eVED will work.",
+      "title": "Consultation on the Introduction of Electric Vehicle Excise Duty (eVED)"
+    },
     "86c71504a76f61a78c2eaef0e4f64e21a285b68c8adf14142c971164a2b64f06": {
       "card_id": null,
       "content_hash": "7c61347c27dd87f41852f21759438816d42af59ba5a5f2c53ab5d5464e875673",
@@ -1377,6 +1425,22 @@
       "summary": "The Bank of England, the Prudential Regulation Authority and the Financial Conduct Authority will start overseeing the first Critical Third Parties on Monday 13 July 2026, following designation by HM Treasury.",
       "title": "UK financial regulators to begin overseeing Critical Third Parties announced by HM Treasury"
     },
+    "8cb5b69701e2cc1b9175b5147e1adf3e803efd71c8c062e37c9002bb95634b99": {
+      "card_id": null,
+      "content_hash": "6327b95d541b40bec77315d68c07c96632e2e7199ae9b20ab325f3351676a1fa",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-14T04:23:03Z",
+      "guid": "https://www.gov.uk/government/consultations/consultation-on-reforming-land-remediation-relief#2026-07-13T12:08:00Z",
+      "item_hash": "8cb5b69701e2cc1b9175b5147e1adf3e803efd71c8c062e37c9002bb95634b99",
+      "link": "https://www.gov.uk/government/consultations/consultation-on-reforming-land-remediation-relief",
+      "published_at": "2026-07-13T12:08:00Z",
+      "raw_published": "2026-07-13T12:08:00Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The government is consultation on potential reforms to make Land Remediation Relief more accessible, better targeted, and more closely aligned with the practical realities of brownfield development.",
+      "title": "Consultation on Reforming Land Remediation Relief"
+    },
     "94b4e02b0c678609cb46459c34c2adaa831e410af4580e6f2965deb65156d40a": {
       "card_id": null,
       "content_hash": "225d45b633a6188082cc2491082435ffcb042286bd76753bec5cffe2512f9063",
@@ -1424,6 +1488,22 @@
       "status": "queued",
       "summary": "The PRA Regulatory Digest is for people working in the UK financial services industry and highlights key regulatory news and publications delivered for the month.",
       "title": "PRA Regulatory Digest – March 2026"
+    },
+    "9cf7c1c605297044af9b345e28c5c229faf5d5d01d0e92442adae95fc9e690bd": {
+      "card_id": null,
+      "content_hash": "a710edfbd479465d74140059d8c7c9c59b8ab48b374c2157172fbc9c8ac7a4ac",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-14T04:23:03Z",
+      "guid": "https://www.gov.uk/government/consultations/reforming-the-customs-treatment-of-low-value-imports-into-the-united-kingdom#2026-07-13T12:09:13Z",
+      "item_hash": "9cf7c1c605297044af9b345e28c5c229faf5d5d01d0e92442adae95fc9e690bd",
+      "link": "https://www.gov.uk/government/consultations/reforming-the-customs-treatment-of-low-value-imports-into-the-united-kingdom",
+      "published_at": "2026-07-13T12:09:13Z",
+      "raw_published": "2026-07-13T12:09:13Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "This consultation announces the removal of the £135 customs duty relief for low-value imports and seeks views on certain elements of a new set of customs arrangements for these goods.",
+      "title": "Reforming the customs treatment of low value imports into the United Kingdom"
     },
     "9e82b578320c857f75e99a54de6ed076b6fc60f030589089a18aa0edb40c87a6": {
       "card_id": null,
@@ -1488,6 +1568,22 @@
       "status": "queued",
       "summary": "Richard Bloomfield has been charged by the FCA with 5 counts of insider dealing. The FCA alleges that in his role as a solicitor at a law firm, Mr Bloomfield worked on an acquisition of Seraphine Group PLC and used inside information obtained through his role to deal in securities of Seraphine Group PLC on 5 occasions between 28 March 2022 and 10 January 2023.Mr Bloomfield appeared before Westminster Magistrates’ Court and gave no indication of plea. The case was sent to Southwark Crown Court, and his next appearance will be on 5 August 2026. Mr Bloomfield has been released on unconditional bail.The FCA is not investigating the law firm or Seraphine Group PLC in this case.Notes to editorsRichard Bloomfield was born on 23 May 1988.Insider dealing is an offence under section 52 of the Criminal Justice Act 1993.",
       "title": "FCA charges individual with insider dealing"
+    },
+    "a80fcd7e96c35ab166cdd43f3118697db3697ff26d0c8f0604bac5454c70e0b6": {
+      "card_id": null,
+      "content_hash": "f0b67db14d1261735c0a09352d8ff523c1b368c62b9d079d4d5c3889aafb9444",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-14T04:23:03Z",
+      "guid": "https://www.gov.uk/government/statistics/bank-referral-scheme-july-2026#2026-07-13T08:30:01Z",
+      "item_hash": "a80fcd7e96c35ab166cdd43f3118697db3697ff26d0c8f0604bac5454c70e0b6",
+      "link": "https://www.gov.uk/government/statistics/bank-referral-scheme-july-2026",
+      "published_at": "2026-07-13T08:30:01Z",
+      "raw_published": "2026-07-13T08:30:01Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The Bank Referral Scheme statistics from 1 November 2016 to 31 March 2026.",
+      "title": "Official Statistics: Bank Referral Scheme: July 2026"
     },
     "aaa34b29ab0bb6b5c0191124d7cdd48eda2fa4d2d1849643657952387cbcb122": {
       "card_id": null,
@@ -1632,6 +1728,22 @@
       "status": "queued",
       "summary": "Published for the Treasury Select Committee",
       "title": "Megan Greene's CV and questionnaire for the Treasury Select Committee"
+    },
+    "b65025efbd8334119603c1785272c83f1af5f872c1a9173b8e88e7c10ae17b79": {
+      "card_id": null,
+      "content_hash": "c93c7744171d87738c847ba5db9f9ec7ce6511c2146304fa0f84f0104ca5fd3b",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-14T04:23:03Z",
+      "guid": "https://www.gov.uk/government/news/chancellor-to-unlock-billions-in-finance-for-small-businesses--2#2026-07-13T08:48:58Z",
+      "item_hash": "b65025efbd8334119603c1785272c83f1af5f872c1a9173b8e88e7c10ae17b79",
+      "link": "https://www.gov.uk/government/news/chancellor-to-unlock-billions-in-finance-for-small-businesses--2",
+      "published_at": "2026-07-13T08:48:58Z",
+      "raw_published": "2026-07-13T08:48:58Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Tens of thousands of small businesses to receive a boost, as Chancellor Rachel Reeves announces most significant reforms to small business finance in years.",
+      "title": "Chancellor to unlock billions in finance for small businesses"
     },
     "b6d364c342fd108c40e5ee6c8c11a28ea933cb27e9606893136da9ee66fd1581": {
       "card_id": null,
@@ -1809,6 +1921,22 @@
       "summary": "Letter to Chief Executive Officers of all banks and designated investment firms.",
       "title": "Letter from David Bailey, Charlotte Gerken and Rebecca Jackson on the prudential treatment of tokenised assets, stablecoins, and other cryptoasset exposures"
     },
+    "ca22ec6d242f087019bca871e31c37a990e6077f551cfb85a702804934e444be": {
+      "card_id": null,
+      "content_hash": "ad14e810f77c5b3694a5ae7b8553c86fc0017d8256c1fc21c6e00a086b22bd0f",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-14T04:23:03Z",
+      "guid": "https://www.gov.uk/guidance/duty-suspensions-and-tariff-quotas#2026-07-13T11:00:02Z",
+      "item_hash": "ca22ec6d242f087019bca871e31c37a990e6077f551cfb85a702804934e444be",
+      "link": "https://www.gov.uk/guidance/duty-suspensions-and-tariff-quotas",
+      "published_at": "2026-07-13T11:00:02Z",
+      "raw_published": "2026-07-13T11:00:02Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Temporary duty suspensions and autonomous tariff quotas (ATQs) for importing goods into the UK.",
+      "title": "UK Trade Tariff: duty suspensions and autonomous tariff quotas"
+    },
     "ca395e8fd3068ebd9d8fdc7fd19352503bf75adc56730ac0244ffec03e87bb5f": {
       "card_id": null,
       "content_hash": "f9ab6c7db31020384547f0ec354444cf2374d0184c0eaed750f9ea131542c820",
@@ -1872,6 +2000,22 @@
       "status": "queued",
       "summary": "The Bank of England and the FCA have published a joint approach setting out how they and where relevant other authorities will work together to regulate systemic stablecoin issuers in the UK.It explains how responsibilities will be split between the authorities, and how UK stablecoin issuers may move from FCA supervision to joint regulation once recognised as systemic by HM Treasury.The approach aims to provide clarity and predictability for firms as the market develops.Read the paper",
       "title": "FCA and the Bank of England set out approach to joint regulation of systemic stablecoin issuers"
+    },
+    "cf140f8a0844591d6252e375f238ad9168162bc92ab2d430131beb9750fbf2f0": {
+      "card_id": null,
+      "content_hash": "7a2efcbaa50cab54e31ab086dc9c33b0357dbf3719006c733d2e905d772b1eb4",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-14T04:23:03Z",
+      "guid": "https://www.gov.uk/government/publications/recommendations-for-the-financial-conduct-authority-november-2024#2026-07-13T16:12:57Z",
+      "item_hash": "cf140f8a0844591d6252e375f238ad9168162bc92ab2d430131beb9750fbf2f0",
+      "link": "https://www.gov.uk/government/publications/recommendations-for-the-financial-conduct-authority-november-2024",
+      "published_at": "2026-07-13T16:12:57Z",
+      "raw_published": "2026-07-13T16:12:57Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Letter from the Chancellor of the Exchequer to the Chief Executive of the Financial Conduct Authority (FCA) providing recommendations for the FCA.",
+      "title": "Correspondence: Recommendations for the Financial Conduct Authority: November 2024"
     },
     "cfa6c756d0fe50413482ef6d209e33b1dee1e4f56bc525ce1e0eda2ad1e60d2e": {
       "card_id": null,
@@ -2224,6 +2368,22 @@
       "status": "queued",
       "summary": "The PRA Regulatory Digest is for people working in the UK financial services industry and highlights key regulatory news and publications delivered for the month.",
       "title": "PRA Regulatory Digest - January 2026"
+    },
+    "fac229246c66d7f37ae24866088d1dd377728708fdb3c12c7257451f0727ef0a": {
+      "card_id": null,
+      "content_hash": "1b5d5032f4ccc5bec5c21ff9bf195d170482198af459b82111b264bdc6472197",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-14T04:23:03Z",
+      "guid": "https://www.gov.uk/government/consultations/tax-treatment-of-predevelopment-costs--2#2026-07-13T12:08:00Z",
+      "item_hash": "fac229246c66d7f37ae24866088d1dd377728708fdb3c12c7257451f0727ef0a",
+      "link": "https://www.gov.uk/government/consultations/tax-treatment-of-predevelopment-costs--2",
+      "published_at": "2026-07-13T12:08:00Z",
+      "raw_published": "2026-07-13T12:08:00Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The government is consulting on the tax treatment of predevelopment costs. The consultation seeks views and evidence from stakeholders on the types of costs incurred, their treatment under the current rules, and the impact on investment decisions.",
+      "title": "Tax Treatment of Predevelopment costs"
     },
     "fce2e845a96982ada1b126c8cae051f4460543ef57bff32c9aced4cc18d09a7c": {
       "card_id": null,
