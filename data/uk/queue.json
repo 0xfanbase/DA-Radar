@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T04:23:03Z",
+  "generated_at": "2026-07-15T04:23:00Z",
   "items": [
     {
       "feed_id": "boe_pra_publications",
@@ -40,6 +40,16 @@
       "status": "queued",
       "summary": "Report from the UK’s Wholesale Digital Markets Champion, setting out a framework for the UK financial sector to drive tokenisation of wholesale financial markets.",
       "title": "Independent report: Wholesale Digital Markets Champion – first report"
+    },
+    {
+      "feed_id": "hmt_activity",
+      "item_hash": "0f4c88c4edd97ef6c0bc158f482be945ec20d3eb2754e21d2a437436554257b5",
+      "link": "https://www.gov.uk/government/publications/recommendations-of-the-transatlantic-taskforce-for-markets-of-the-future",
+      "published_at": "2026-07-14T15:20:14Z",
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Recommendations of the Transatlantic Taskforce for Markets of the Future to advance UK-US financial services collaboration on digital assets and capital markets",
+      "title": "Policy paper: Recommendations of the Transatlantic Taskforce for Markets of the Future"
     }
   ],
   "jurisdiction_id": "uk",

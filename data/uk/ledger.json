@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T04:23:03Z",
+  "generated_at": "2026-07-15T04:23:00Z",
   "items": {
     "02028a9677575e76189a49022768f45cc07c84ca74ac72879172cd9671891801": {
       "card_id": null,
@@ -145,6 +145,22 @@
       "summary": "Pool Reinsurance Limited (Pool Re) have published their annual report and accounts for 2025 to 2026.",
       "title": "Corporate report: Pool Reinsurance Limited Annual Report and Accounts 2025 to 2026"
     },
+    "0f4c88c4edd97ef6c0bc158f482be945ec20d3eb2754e21d2a437436554257b5": {
+      "card_id": null,
+      "content_hash": "b86d9a8cbf4ffc3c20cf869d7dd301a357f0f1ff19ec04fe74b533b46a80a75e",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "https://www.gov.uk/government/publications/recommendations-of-the-transatlantic-taskforce-for-markets-of-the-future#2026-07-14T15:20:14Z",
+      "item_hash": "0f4c88c4edd97ef6c0bc158f482be945ec20d3eb2754e21d2a437436554257b5",
+      "link": "https://www.gov.uk/government/publications/recommendations-of-the-transatlantic-taskforce-for-markets-of-the-future",
+      "published_at": "2026-07-14T15:20:14Z",
+      "raw_published": "2026-07-14T15:20:14Z",
+      "relevant": true,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Recommendations of the Transatlantic Taskforce for Markets of the Future to advance UK-US financial services collaboration on digital assets and capital markets",
+      "title": "Policy paper: Recommendations of the Transatlantic Taskforce for Markets of the Future"
+    },
     "0fd98b084b89eebde8bb0cb7bdf5206269d9c057613add4006c360fe3a33182e": {
       "card_id": null,
       "content_hash": "66d730f0ce89cdd3c4f199cdac651a62e28ce596ff2df29a73ad4e94dac0ad5e",
@@ -177,6 +193,22 @@
       "summary": "The PRA Regulatory Digest is for people working in the UK financial services industry and highlights key regulatory news and publications delivered for the month.",
       "title": "PRA Regulatory Digest – April 2026"
     },
+    "114a13aed1376ca55fef411fa83d35ac3e1768fd6d242218536c0d9ad75a72b0": {
+      "card_id": null,
+      "content_hash": "ecd59078690ff8e4074b3ddfd40e236d635d1765cd704e039c3e7f5b96b171a0",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "https://www.gov.uk/government/publications/ai-adoption-plan-financial-services#2026-07-14T15:11:01Z",
+      "item_hash": "114a13aed1376ca55fef411fa83d35ac3e1768fd6d242218536c0d9ad75a72b0",
+      "link": "https://www.gov.uk/government/publications/ai-adoption-plan-financial-services",
+      "published_at": "2026-07-14T15:11:01Z",
+      "raw_published": "2026-07-14T15:11:01Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "FS AI Champions – Harriet Rees and Dr Rohit Dhawan – have developed an AI adoption plan for the UK’s financial services sector.",
+      "title": "Independent report: AI Adoption Plan: Financial Services"
+    },
     "1444fff6536fd2da8faa834bf9b4e817488d66874364ee3175a316244a32f186": {
       "card_id": null,
       "content_hash": "13923ac6709855c21bee3937e5525327122e6c24aa0ff3b0705b849d3a41d2bc",
@@ -192,6 +224,22 @@
       "status": "queued",
       "summary": "The review sets out how AI could reshape retail financial services for consumers, firms, markets and regulators by 2030 and beyond. Led by FCA executive director Sheldon Mills and commissioned by the Board, The Mills Review is the first work of its kind initiated by a regulator globally.Drawing on views from across the financial services landscape, the report identifies 4 major AI‑driven shifts likely to impact retail financial services: the transformation of firm operations; the evolution of consumer journeys; the reshaping of competition and market power; and the amplification of fraud and cyber risks.The report finds there is already consumer appetite for the use of agentic AI in personal finance, with research commissioned by the FCA showing that a fifth of people – equivalent to 11 million UK adults – are likely to use AI that can act autonomously within pre-set goals. But consumers in the survey are concerned about trust and control of AI.The Review concludes that AI is likely to become a defining force in retail financial services, transforming how firms operate, how consumers make financial decisions and how markets function. While AI has the potential to improve access, personalisation and efficiency, it could also amplify risks associated with fraud, cyber security, consumer harm and market concentration.Executive director Sheldon Mills said: 'Artificial intelligence will transform financial services by 2030. It creates significant opportunities for consumers, firms and the wider economy. This report sets out a roadmap for how industry regulators and government can prepare for the next phase of AI-driven change in our world-leading financial services sector.'Key recommendationsThe Mills Review also outlines 7 recommendations for the FCA Board and Executive to consider, which are as follows:Secure and adapt the regulatory perimeter.Strengthen system-wide coordination and oversight.Monitor the transition to autonomous models and adapt regulatory frameworks.S",
       "title": "FCA publishes landmark review into impact of AI on retail financial services"
+    },
+    "17235a3a18fb23ff8b2e1769cc11d1bc391a1361355c250b73ba4dc8215fc5b0": {
+      "card_id": null,
+      "content_hash": "8a13ebe4b4597ff1068faa06af1ee973bdba06479d6966a00562aaee9e442e0e",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "https://www.gov.uk/government/speeches/rachel-reeves-mansion-house-2026-speech#2026-07-14T21:35:32Z",
+      "item_hash": "17235a3a18fb23ff8b2e1769cc11d1bc391a1361355c250b73ba4dc8215fc5b0",
+      "link": "https://www.gov.uk/government/speeches/rachel-reeves-mansion-house-2026-speech",
+      "published_at": "2026-07-14T21:35:32Z",
+      "raw_published": "2026-07-14T21:35:32Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Chancellor of the Exchequer Rachel Reeves delivered her third Mansion House speech on the evening of Tuesday 14 July 2026.",
+      "title": "Rachel Reeves Mansion House 2026 speech"
     },
     "17dce5c8796185e0c2b0549d5660cf240379afcdea4d4c3d4409d919cd2e516f": {
       "card_id": "17dce5c8796185e0c2b0549d5660cf240379afcdea4d4c3d4409d919cd2e516f",
@@ -401,6 +449,22 @@
       "summary": "Policy statement 11/26",
       "title": "PS11/26 – Disclosure: resolvability resources, capital distribution constraints and the basis for firm Pillar 3 disclosure"
     },
+    "2475eaaf6fd58294e7d95892755f544d93d77e6f3e8bb30a33770cc4190f6ea0": {
+      "card_id": null,
+      "content_hash": "18ebd1097a371b8bc940d057d82440acf544298d7cb9fccfce43c280acd3665e",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "https://www.gov.uk/government/publications/financial-services-skills-compact--2#2026-07-14T15:10:53Z",
+      "item_hash": "2475eaaf6fd58294e7d95892755f544d93d77e6f3e8bb30a33770cc4190f6ea0",
+      "link": "https://www.gov.uk/government/publications/financial-services-skills-compact--2",
+      "published_at": "2026-07-14T15:10:53Z",
+      "raw_published": "2026-07-14T15:10:53Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The Financial Services Skills Compact asks financial services firms to commit to targeted, meaningful and ambitious actions to reduce skills gaps.",
+      "title": "Guidance: Financial Services Skills Compact"
+    },
     "255a4771c8c1c8c75f8232462493d6ab4fc7243e5f0f5eb30175cb1df6216129": {
       "card_id": null,
       "content_hash": "e82c857c65bfbe1bd2eb7a53d7c7905b7745797217ed4ad196fafd942b903554",
@@ -496,6 +560,22 @@
       "status": "queued",
       "summary": "Appendix to the Prudential Regulation Authority Annual Report 2025/26",
       "title": "Accountability of the Prudential Regulation Authority for delivery of the Secondary Competitiveness and Growth Objective (SCGO)"
+    },
+    "35ef529892cdea510e965ac1d3f09d870e7e194fb11e185fe47e16e7fb3480d5": {
+      "card_id": null,
+      "content_hash": "0c7413e89ecc6a8c77e2a1625904c9fe1dc485ab8e1eaaa726322a63635645fc",
+      "feed_id": "boe_pra_publications",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "{665E1019-A110-49A9-AF8E-B415156584E1}",
+      "item_hash": "35ef529892cdea510e965ac1d3f09d870e7e194fb11e185fe47e16e7fb3480d5",
+      "link": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/july/ring-fenced-bodies-consultation-paper",
+      "published_at": "2026-07-14T14:00:00Z",
+      "raw_published": "Tue, 14 Jul 2026 15:00:00 +0100",
+      "relevant": false,
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "Consultation paper 10/26",
+      "title": "CP10/26 – Ring-fenced bodies: Changes to the continuity of provision of services rules"
     },
     "35f80d4005bb63be394573be7175d17e661e8c5058ef9d7727001b14643815c6": {
       "card_id": null,
@@ -752,6 +832,22 @@
       "status": "queued",
       "summary": "On 1 July 2026, Logbook Lending Limited (trading as AFPremier.co.uk, pawnmy.co.uk, LBL Asset Finance, Log Book Loans 247) entered administration. Paul Appleton, Adam Shama and Robert Ferne of BTG Begbies Traynor (London) LLP were appointed as Joint Administrators. Logbook Lending Limited provided lending secured on vehicles (known as logbook loans or bill of sale agreements), as well as pawnbroking.The firm is no longer lending. However, all existing loan agreements remain in place, and customers should continue to make payments as usual. The Joint Administrators will update customers as soon as possible.We are in regular contact with the firm and the Joint Administrators to help ensure customers are treated fairly.",
       "title": "Logbook Lending Limited enters administration"
+    },
+    "4856d2153846dbaa7eb6e7a8b22b7b4d0caabf3ceb3b3a74e334bcab538a0e87": {
+      "card_id": null,
+      "content_hash": "f5210cf826c989a14f3875d633ea82c2be57c092748c5ed9770c1dce92c2796a",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "https://www.gov.uk/government/publications/one-year-on-delivering-the-fs-growth-and-competitiveness-strategy#2026-07-14T15:10:02Z",
+      "item_hash": "4856d2153846dbaa7eb6e7a8b22b7b4d0caabf3ceb3b3a74e334bcab538a0e87",
+      "link": "https://www.gov.uk/government/publications/one-year-on-delivering-the-fs-growth-and-competitiveness-strategy",
+      "published_at": "2026-07-14T15:10:02Z",
+      "raw_published": "2026-07-14T15:10:02Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "This document updates on delivery of the government’s Financial Services Growth and Competitiveness Strategy.",
+      "title": "Policy paper: One Year On: Delivering the FS Growth and Competitiveness Strategy"
     },
     "495d886198c57a2c5480b62fec6b23580e104c81cab2c089d4f2e1ed884624ab": {
       "card_id": null,
@@ -1345,6 +1441,22 @@
       "summary": "A consultation setting out further detail on how eVED will work.",
       "title": "Consultation on the Introduction of Electric Vehicle Excise Duty (eVED)"
     },
+    "82e93e3b1672d3a160eec7a267692a58f61ff354c83de1ef443141f96bb889d5": {
+      "card_id": null,
+      "content_hash": "c8b76d574941687744a027fd6ce72b6d56ad9ef7298148e5857ef0b413a7a540",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "https://www.gov.uk/government/consultations/modernising-payment-services-regulation#2026-07-14T15:10:43Z",
+      "item_hash": "82e93e3b1672d3a160eec7a267692a58f61ff354c83de1ef443141f96bb889d5",
+      "link": "https://www.gov.uk/government/consultations/modernising-payment-services-regulation",
+      "published_at": "2026-07-14T15:10:43Z",
+      "raw_published": "2026-07-14T15:10:43Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "A consultation on the government's approach to modernising payment services regulation.",
+      "title": "Modernising Payment Services Regulation"
+    },
     "86c71504a76f61a78c2eaef0e4f64e21a285b68c8adf14142c971164a2b64f06": {
       "card_id": null,
       "content_hash": "7c61347c27dd87f41852f21759438816d42af59ba5a5f2c53ab5d5464e875673",
@@ -1393,6 +1505,22 @@
       "summary": "The FCA has appointed members to its advisory committee on secondary markets for the period July 2026 to July 2028. The committee will increase from 25 to 27 members. The Secondary Markets Advisory Committee supports the FCA’s work in wholesale secondary markets in equities, fixed income, foreign exchange, and commodities markets across securities, futures, swaps, and options markets. The committee includes representatives from firms operating from across the different segments of financial markets. It supports the work of the FCA by:Helping to develop reforms that improve market competition, increase consumer protection, and enhance the integrity of markets.Identifying market changes, trends, and risks that may affect the proper functioning of secondary markets.Providing data and analysis to support policy reforms.The Secondary Markets Advisory Committee members are: Jamie Turner (Chief Operating Officer &amp; Head of Trading at London Metal Exchange)Gary Chia-Hsing Li (Head of Regulatory Affairs, EMEA &amp; APAC at MarketAxess)Laurence Walton (Head of Regulation and Compliance at ICE Futures Europe)Laetitia Visconti (Head of Market Structure and Product Innovation at Aquis Exchange Ltd)Simon McQuoid Mason (Head of New Products, Market Structure &amp; Business Development at London Stock Exchange Group)Jennifer Keser (Managing Director, Head of Regulation and Market Structure at Tradeweb)Nick Dutton (Chief Regulatory Officer at CBOE Europe Ltd)Maria Salamanca Mejia (Head of Market Structure, EMEA at Morgan Stanley)Kate Finlayson (Head of FICC Market Structure &amp; Liquidity Strategy at J.P. Morgan Securities Plc)Avery Later (Head of EMEA &amp; APAC CIO, UK at BNY CIO)Michael Kucharski (Head of Electronic Trading Risk and Control Strategy at Barclays Bank Plc)Mario Muth (Global Head of Platform Sales and Fixed Income Market Structure at Deutsche Bank AG)Eleanor Beasley (Global Head of Equity Market Structure &amp; COO at Goldman Sachs International)Christos Nifadop",
       "title": "FCA appoints new members to the Secondary Markets Advisory Committee"
     },
+    "88eb228cd50d01c5234902d806b44c465c9fee1ed85e0f3833c52022416efa7a": {
+      "card_id": null,
+      "content_hash": "cfdd95e59a36c91069e831bb3987db91ff94d275ff258a49bbaa8fcfcd55d5bf",
+      "feed_id": "boe_pra_publications",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "{C136FE49-68FA-474B-8DF5-F1DEAB56796C}",
+      "item_hash": "88eb228cd50d01c5234902d806b44c465c9fee1ed85e0f3833c52022416efa7a",
+      "link": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/july/a-tailored-regime-for-captive-insurance-consultation-paper",
+      "published_at": "2026-07-14T14:00:00Z",
+      "raw_published": "Tue, 14 Jul 2026 15:00:00 +0100",
+      "relevant": false,
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "Consultation paper 11/26",
+      "title": "CP11/26 – A tailored regime for captive insurance"
+    },
     "89027aca00488f2b404db08b468eb197985e9c1f6e4d9292382e08cd26d19ac0": {
       "card_id": "89027aca00488f2b404db08b468eb197985e9c1f6e4d9292382e08cd26d19ac0",
       "content_hash": "5bb12d3eeee7e533b60747b697d811302698baac6e698d24a025046f30ff3f65",
@@ -1440,6 +1568,22 @@
       "status": "queued",
       "summary": "The government is consultation on potential reforms to make Land Remediation Relief more accessible, better targeted, and more closely aligned with the practical realities of brownfield development.",
       "title": "Consultation on Reforming Land Remediation Relief"
+    },
+    "8dcde14aa7d34dfcf89d255b996921821660be55bf5452a40568c3ebfc9b8e4f": {
+      "card_id": null,
+      "content_hash": "7552adae43e55e080b85bb33a4f90f8a194ab49987dd121653036b9b3be9f28b",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "https://www.gov.uk/government/publications/ministerial-group-for-digital-inclusion-meeting-summaries#2026-07-14T15:43:31Z",
+      "item_hash": "8dcde14aa7d34dfcf89d255b996921821660be55bf5452a40568c3ebfc9b8e4f",
+      "link": "https://www.gov.uk/government/publications/ministerial-group-for-digital-inclusion-meeting-summaries",
+      "published_at": "2026-07-14T15:43:31Z",
+      "raw_published": "2026-07-14T15:43:31Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Summary of minutes of the meetings for the Ministerial Group for Digital Inclusion.",
+      "title": "Transparency data: Ministerial Group for Digital Inclusion: meeting summaries"
     },
     "94b4e02b0c678609cb46459c34c2adaa831e410af4580e6f2965deb65156d40a": {
       "card_id": null,
@@ -1521,6 +1665,22 @@
       "summary": "Meeting held 15 April 2026",
       "title": "Banknote imagery expert panel minutes – 15 April 2026"
     },
+    "9f63aa828eae6822ff421b7c95f33d93b8a21d41b5951c77094d57f978f7601c": {
+      "card_id": null,
+      "content_hash": "b0dba3461d63b6ee84f5fa0d4037ab70eaeb733a964bfb337a87d268e55a81b0",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "https://www.gov.uk/government/publications/reclaim-fund-ltd-annual-report-and-accounts-202526#2026-07-14T10:04:40Z",
+      "item_hash": "9f63aa828eae6822ff421b7c95f33d93b8a21d41b5951c77094d57f978f7601c",
+      "link": "https://www.gov.uk/government/publications/reclaim-fund-ltd-annual-report-and-accounts-202526",
+      "published_at": "2026-07-14T10:04:40Z",
+      "raw_published": "2026-07-14T10:04:40Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Reclaim Fund Ltd presents its Annual Report and Accounts, covering the 12 month accounting period to 31 March 2026.",
+      "title": "Corporate report: Reclaim Fund Ltd Annual Report and Accounts 2025/26"
+    },
     "a05db273c207749713204c5ab1bac3b789990af2ba6ace8c897186e6783ce135": {
       "card_id": null,
       "content_hash": "eaed086a96367971be4d71a806aea63c14ce7af387607cca1261ce104154b3b6",
@@ -1569,6 +1729,22 @@
       "summary": "Richard Bloomfield has been charged by the FCA with 5 counts of insider dealing. The FCA alleges that in his role as a solicitor at a law firm, Mr Bloomfield worked on an acquisition of Seraphine Group PLC and used inside information obtained through his role to deal in securities of Seraphine Group PLC on 5 occasions between 28 March 2022 and 10 January 2023.Mr Bloomfield appeared before Westminster Magistrates’ Court and gave no indication of plea. The case was sent to Southwark Crown Court, and his next appearance will be on 5 August 2026. Mr Bloomfield has been released on unconditional bail.The FCA is not investigating the law firm or Seraphine Group PLC in this case.Notes to editorsRichard Bloomfield was born on 23 May 1988.Insider dealing is an offence under section 52 of the Criminal Justice Act 1993.",
       "title": "FCA charges individual with insider dealing"
     },
+    "a1dc7e5ebdbbe49c45aa781f1ace0dcf5df7994d84ad34be5c8d897adbbc2c5f": {
+      "card_id": null,
+      "content_hash": "bc2c9edd5fc6ebbe0cdf47806c55d4b3646916f8129b28ef0e7d349222019471",
+      "feed_id": "boe_pra_publications",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "{9AC002D3-7E70-435D-AADB-CD85618D3E98}",
+      "item_hash": "a1dc7e5ebdbbe49c45aa781f1ace0dcf5df7994d84ad34be5c8d897adbbc2c5f",
+      "link": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/july/pra-rule-changes-for-hmt-overseas-prudential-requirements-regime",
+      "published_at": "2026-07-14T14:00:00Z",
+      "raw_published": "Tue, 14 Jul 2026 15:00:00 +0100",
+      "relevant": false,
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "Policy statement 16/26",
+      "title": "PS16/26 – PRA rule changes to accommodate HM Treasury’s Overseas Prudential Requirements Regime"
+    },
     "a80fcd7e96c35ab166cdd43f3118697db3697ff26d0c8f0604bac5454c70e0b6": {
       "card_id": null,
       "content_hash": "f0b67db14d1261735c0a09352d8ff523c1b368c62b9d079d4d5c3889aafb9444",
@@ -1616,6 +1792,38 @@
       "status": "queued",
       "summary": "Speech by Sarah Pritchard, deputy chief executive, at a Breakfast Briefing at The Whitehall &amp; Industry Group. As everyone who has wrestled with a problem knows, getting to the right answer is about more than just understanding the question.It’s about having a firm grasp on your constants.We’re working with 2. And they are, admittedly, significant. The first is our vision: deepening trust, rebalancing risk, supporting growth and improving lives.We want to see a fair, thriving financial services market that works for consumers and the wider economy.The second is our priorities: supporting growth, fighting financial crime, helping consumers and being a smarter regulator.We’re now in the second year of our 5-year strategy (PDF), which shapes how we engage, prioritise and make decisions.But it isn’t a fixed formula. Markets are always shifting. New threats and opportunities emerge daily, and with AI, faster than ever.So, while our strategy to 2030 provides consistency and predictability in our focus and work, we know good regulation means being both principled and agile – willing to pivot when we need to.",
       "title": "Showing our workings: solving for growth, risk and trust"
+    },
+    "aaef1f8cd110717f8f93554fc3f102205752d6b43cb0fd45e70873d3ae4345ed": {
+      "card_id": null,
+      "content_hash": "889a06dfe452de3dee6c158d266ba73c6a5e3f161d42738ba4c102d7bbb33d67",
+      "feed_id": "fca_news",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "170841",
+      "item_hash": "aaef1f8cd110717f8f93554fc3f102205752d6b43cb0fd45e70873d3ae4345ed",
+      "link": "https://www.fca.org.uk/news/press-releases/streamlined-rulebook-save-asset-managers-128m-year",
+      "published_at": null,
+      "raw_published": "Tuesday, July 14, 2026 - 10:58",
+      "relevant": false,
+      "source_id": "fca",
+      "status": "queued",
+      "summary": "The FCA has proposed a package of reforms that would tailor requirements proportionately for asset managers, cut costs for firms and give better data to supervise the sector more effectively. A large share of the £128m-a-year savings are expected to come from simpler Fund Reporting for Asset Management Entities (FRAME) requirements. These would be tailored to the specific circumstances of UK industry, delivering better data to make regulation more efficient.The package would also modernise and simplify Alternative Investment Fund Managers Directive (AIFMD)-related rules dating from 2013.The updated rules would be fit for today’s UK market: more flexible, tailored and proportionate, while maintaining clear standards, especially for firms serving retail clients.A consultation by the regulator is also seeking to simplify remuneration rules for the relevant firms, which are ones solely regulated by the FCA, by replacing overlapping remuneration codes with a clearer, more proportionate framework, while maintaining appropriate standards and safeguards.Simon Walls, executive director, markets, at the FCA, said:'By tailoring the regime for UK asset managers, we can collect better data while also saving industry 10s of millions of pounds a year.'With a sharp focus on proportionality, we can particularly boost freedom for smaller firms to find new ways to achieve the same high standards. 'Together, the proposals are a practical example of the FCA’s strategy in action: becoming a smarter regulator, which is more efficient and effective, using proportionate data collection to better identify risk.'The FCA is consulting on the proposals and is inviting feedback before making final decisions.Notes to editorsRead more: UK Alternative Investment Fund Managers (AIFM) regime consultation paper with a deadline for input of 14 October 2026, the Solo Remuneration Rules Reform consultation paper with a deadline for input of 16 September 2026 and the Fund Reporting for Asset Management En",
+      "title": "Streamlined rulebook to save asset managers £128m a year"
+    },
+    "ab61227bc93e91b7b50c42e9df638770b9d142d5eb5d0d0dd1577ddd478e2076": {
+      "card_id": null,
+      "content_hash": "ffd0a165810ae0a7504713ba5a05ac6d1afdd1e869afa6b8be2b751b41350253",
+      "feed_id": "boe_news",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "{879F9D84-E662-4AFB-BAEF-44BFF9C11A98}",
+      "item_hash": "ab61227bc93e91b7b50c42e9df638770b9d142d5eb5d0d0dd1577ddd478e2076",
+      "link": "https://www.bankofengland.co.uk/news/2026/july/pra-and-fca-propose-new-captive-insurance-regime-to-drive-uk-growth-and-competitiveness",
+      "published_at": "2026-07-14T14:00:00Z",
+      "raw_published": "Tue, 14 Jul 2026 15:00:00 +0100",
+      "relevant": false,
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "Innovative new proposals aim to establish the UK as a centre for the fast-growing captive insurance market.",
+      "title": "PRA and FCA propose new captive insurance regime to drive UK growth and competitiveness"
     },
     "ac3a93a7a737062d4a59730e1f9675169f73b64bf298adf9359e2b6c5f926b11": {
       "card_id": null,
@@ -1792,6 +2000,22 @@
       "status": "queued",
       "summary": "Policy statement 7/26",
       "title": "PS7/26 – Operational resilience: Operational incident and third-party reporting"
+    },
+    "bd3b3514a77a61b9a86b5fb2043592a148b2a49e871b7096ebbf7476ac1691cc": {
+      "card_id": null,
+      "content_hash": "82949b9b1f08e8312ea6fe45f8fbfabd8e50f637a1dbca64baa002b7125eaefd",
+      "feed_id": "fca_news",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "170746",
+      "item_hash": "bd3b3514a77a61b9a86b5fb2043592a148b2a49e871b7096ebbf7476ac1691cc",
+      "link": "https://www.fca.org.uk/news/press-releases/new-member-regulatory-decisions-committee",
+      "published_at": null,
+      "raw_published": "Tuesday, July 14, 2026 - 12:26",
+      "relevant": false,
+      "source_id": "fca",
+      "status": "queued",
+      "summary": "The FCA Board has appointed Dan Lavender as a new member of its Regulatory Decisions Committee (RDC). The RDC is responsible for taking certain regulatory decisions on behalf of the FCA relating to contested enforcement action. Committee members bring a broad range of professional experience to support fair, independent and evidence-based decision-making.Alison Potter, the Chair of the RDC, said: ‘I am delighted to welcome Dan to the committee. Dan has significant legal and leadership experience in relation to contentious financial services matters, so his skill set will complement existing committee members and enhance the overall capability and effectiveness of the RDC.’Notes to editorsMore detail about the work of the RDC is available on the FCA website, including the biographies of all committee members.Read Dan Lavender's biography.The RDC is an FCA Board Committee that is operationally separate from the rest of the FCA. The FCA Board appoints the RDC Chair and members, who are drawn from across a spectrum of business, consumer and industry backgrounds.Find out more information about the FCA.",
+      "title": "New member appointed to the Regulatory Decisions Committee"
     },
     "bea2ad525002306ed2bc35a5186cf5072b41c3f7fd07b23cbca3d1fafb19c170": {
       "card_id": null,
@@ -2001,6 +2225,38 @@
       "summary": "The Bank of England and the FCA have published a joint approach setting out how they and where relevant other authorities will work together to regulate systemic stablecoin issuers in the UK.It explains how responsibilities will be split between the authorities, and how UK stablecoin issuers may move from FCA supervision to joint regulation once recognised as systemic by HM Treasury.The approach aims to provide clarity and predictability for firms as the market develops.Read the paper",
       "title": "FCA and the Bank of England set out approach to joint regulation of systemic stablecoin issuers"
     },
+    "ccf3696766a00763037ce4354d399d39b6a429e9df90fee958446101ff8d3af5": {
+      "card_id": null,
+      "content_hash": "86c4098d45cd185f89c3c84d0cef212c17e575a860070019f674060f802d9be0",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "https://www.gov.uk/government/publications/alternative-investment-fund-managers-regulation-draft-si-and-policy-note#2026-07-14T08:45:04Z",
+      "item_hash": "ccf3696766a00763037ce4354d399d39b6a429e9df90fee958446101ff8d3af5",
+      "link": "https://www.gov.uk/government/publications/alternative-investment-fund-managers-regulation-draft-si-and-policy-note",
+      "published_at": "2026-07-14T08:45:04Z",
+      "raw_published": "2026-07-14T08:45:04Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Draft legislation to reform the regulatory framework for Alternative Investment Fund managers, streamlining the regulation to support growth and tailoring for UK markets.",
+      "title": "Policy paper: Alternative Investment Fund Managers Regulation – Draft SI and Policy note"
+    },
+    "cdbbf2dfcf066efa9e2f496d186f6006b171c5ec1a0346cf21f6b25de4eba3a3": {
+      "card_id": null,
+      "content_hash": "1d4bc9517a25fcdd433d06d9a52d9ad2f93d38165b8979e523fb3300b93592af",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "https://www.gov.uk/government/publications/dematerialisation-market-action-taskforce#2026-07-14T15:10:20Z",
+      "item_hash": "cdbbf2dfcf066efa9e2f496d186f6006b171c5ec1a0346cf21f6b25de4eba3a3",
+      "link": "https://www.gov.uk/government/publications/dematerialisation-market-action-taskforce",
+      "published_at": "2026-07-14T15:10:20Z",
+      "raw_published": "2026-07-14T15:10:20Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The Dematerialisation Market Action Taskforce (DEMAT), chaired by Mark Austin CBE, has been set up to take forward reforms to the UK’s shareholding framework",
+      "title": "Policy paper: Dematerialisation Market Action Taskforce"
+    },
     "cf140f8a0844591d6252e375f238ad9168162bc92ab2d430131beb9750fbf2f0": {
       "card_id": null,
       "content_hash": "7a2efcbaa50cab54e31ab086dc9c33b0357dbf3719006c733d2e905d772b1eb4",
@@ -2048,6 +2304,22 @@
       "status": "queued",
       "summary": "Policy statement 8/26",
       "title": "PS8/26 – Financial Services Compensation Scheme – Management Expenses Levy Limit (MELL) 2026/27"
+    },
+    "d3a05e7b7f9b10f4fc7a45254e723bb22b704b8d131f5107c99a814b2c6b88b5": {
+      "card_id": null,
+      "content_hash": "9a82955b3e385f386fb82268d01cb779a43c1045b4a9fedeec3497f578e41184",
+      "feed_id": "boe_news",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "{2454DD19-3587-4AB3-8488-266868B0C32F}",
+      "item_hash": "d3a05e7b7f9b10f4fc7a45254e723bb22b704b8d131f5107c99a814b2c6b88b5",
+      "link": "https://www.bankofengland.co.uk/minutes/2026/june/money-markets-committee-minutes-june-2026",
+      "published_at": "2026-07-13T12:32:45Z",
+      "raw_published": "Mon, 13 Jul 2026 13:32:45 +0100",
+      "relevant": false,
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "The Money Markets Committee is a forum for market participants and authorities to discuss the UK unsecured deposits and funding market and securities lending and repo markets.",
+      "title": "Minutes of the Money Market Committee meeting – June 2026"
     },
     "d473febabdc91fe00db564af9684a79edef05804e60275021b7e11fb73565631": {
       "card_id": null,
@@ -2401,6 +2673,22 @@
       "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate.",
       "title": "Bank Rate maintained at 3.75% - April 2026 Monetary Policy Summary and Minutes"
     },
+    "fd1c486889e02b619775a67ed897f2b97ddda392a3f99eeb9fcf124e239cbed7": {
+      "card_id": null,
+      "content_hash": "65c71a906a296d813c2ba0e51d54192dfb15b9cf91cb13d80ff2b3419ef3d899",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "https://www.gov.uk/government/publications/ministerial-group-for-digital-inclusion-terms-of-reference#2026-07-14T15:43:35Z",
+      "item_hash": "fd1c486889e02b619775a67ed897f2b97ddda392a3f99eeb9fcf124e239cbed7",
+      "link": "https://www.gov.uk/government/publications/ministerial-group-for-digital-inclusion-terms-of-reference",
+      "published_at": "2026-07-14T15:43:35Z",
+      "raw_published": "2026-07-14T15:43:35Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Terms of reference for Ministerial Group for Digital Inclusion.",
+      "title": "Transparency data: Ministerial Group for Digital Inclusion: terms of reference"
+    },
     "fd42f48a5c35ac4990573b4ad59eabb72437d3b07a5e9e33d4636f464da79660": {
       "card_id": null,
       "content_hash": "b9b330f49b2fe1f8fcc43adec001ec2e0181d5fcd3565093256fc7a7dfded2c8",
@@ -2448,6 +2736,22 @@
       "status": "queued",
       "summary": "The FCA has announced Kirsty Cooper will take up the role as Chair of the Listing Authority Advisory Panel (LAAP). Clare Woodman and Matt Hammerstein have been reappointed as Chair of the FCA Markets Practitioner Panel and Chair of the FCA Practitioner Panel. The panels play an important role helping the FCA develop policy – representing the interests of consumers and financial services firms, including smaller regulated firms.Welcoming the appointments, FCA Chair Ashley Alder said:'I am pleased to welcome Kirsty to the role of Chair of the LAAP at a time of profound change across markets. Clare and Matt will continue their great work leading the practitioner-focused panels enabling input from practitioners and market participants. 'Also, thank you to the outgoing Chair of the LAAP, Mandy Gradden. Mandy has worked tirelessly supporting the FCA’s ambitious programme of innovation and reform of the market.'Kirsty Cooper, Non-Executive Director, Scottish Widows Group and Aon UK, said:'I am delighted to be joining the Listing Authority Advisory Panel as Chair and look forward to working with the Panel members to deliver on our priorities. The Panel provides the FCA with an essential link to the perspective of the primary markets and continues to play a key role in advising the FCA on emerging policy priorities and market challenges.'Clare Woodman, CEO Morgan Stanley &amp; Co International, said:'Having seen first-hand the value of close engagement between industry and the FCA, I am very pleased to continue serving as Chair of the Markets Practitioner Panel. As financial markets evolve, that dialogue is more important than ever. The UK continues to be a key global financial centre, and I look forward to working with colleagues across the Panel and the FCA to support and drive markets forward, ensuring capital is allocated efficiently and high standards are maintained.'Matt Hammerstein, CEO, Barclays UK Corporate Bank, said:'It’s a privilege to continue to chair the FCA P",
       "title": "Statutory panel chair appointments confirmed for FCA listing authority and practitioner panels"
+    },
+    "fe7ceb1fb6d2db96a1d72a186cc1d82efceb2aa4f2b3c1452eafb6a35e710c3e": {
+      "card_id": null,
+      "content_hash": "120b2b8769387f9329d8c1a4be804b624cef46cbc20c1ac3967c657d083c6c46",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-15T04:23:00Z",
+      "guid": "https://www.gov.uk/government/consultations/safeguarding-stability-enabling-growth-consultation-on-ring-fencing-reform#2026-07-14T15:10:12Z",
+      "item_hash": "fe7ceb1fb6d2db96a1d72a186cc1d82efceb2aa4f2b3c1452eafb6a35e710c3e",
+      "link": "https://www.gov.uk/government/consultations/safeguarding-stability-enabling-growth-consultation-on-ring-fencing-reform",
+      "published_at": "2026-07-14T15:10:12Z",
+      "raw_published": "2026-07-14T15:10:12Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "This consultation invites views on changes to the ring-fencing regime announced as part of the government's ring-fencing review, which are intended to be delivered via secondary legislation.",
+      "title": "Safeguarding Stability, Enabling Growth: Consultation on Ring-fencing Reform"
     }
   },
   "jurisdiction_id": "uk",
