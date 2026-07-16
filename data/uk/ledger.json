@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T04:23:00Z",
+  "generated_at": "2026-07-16T04:33:09Z",
   "items": {
     "02028a9677575e76189a49022768f45cc07c84ca74ac72879172cd9671891801": {
       "card_id": null,
@@ -192,6 +192,22 @@
       "status": "queued",
       "summary": "The PRA Regulatory Digest is for people working in the UK financial services industry and highlights key regulatory news and publications delivered for the month.",
       "title": "PRA Regulatory Digest – April 2026"
+    },
+    "1106f44be225cb5ed3421ab7f0b339a3e16ffcc55312ad9565ff7f374c08248c": {
+      "card_id": null,
+      "content_hash": "f9205db68dedfd4fd46fdf13eaedfd80032a61ecdf2a6ea6d4dbf2c5a473879f",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-16T04:33:09Z",
+      "guid": "https://www.gov.uk/government/publications/national-insurance-fund-investment-account-report-accounts-2025-to-2026#2026-07-15T16:30:03Z",
+      "item_hash": "1106f44be225cb5ed3421ab7f0b339a3e16ffcc55312ad9565ff7f374c08248c",
+      "link": "https://www.gov.uk/government/publications/national-insurance-fund-investment-account-report-accounts-2025-to-2026",
+      "published_at": "2026-07-15T16:30:03Z",
+      "raw_published": "2026-07-15T16:30:03Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Annual report and accounts of the National Insurance Fund Investment Account.",
+      "title": "Corporate report: National Insurance Fund Investment Account Report & Accounts 2025 to 2026"
     },
     "114a13aed1376ca55fef411fa83d35ac3e1768fd6d242218536c0d9ad75a72b0": {
       "card_id": null,
@@ -1105,6 +1121,22 @@
       "summary": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments. Required to meet a minimum seven times per year, it has five executive members from the Bank and up to nine non-executive members.",
       "title": "Minutes of the Meeting of the Court of Directors held on 23 April 2026"
     },
+    "5e8ca1d34e0119cb20680335f6e5e897200e9312e96ccaba293579ca2778ecba": {
+      "card_id": null,
+      "content_hash": "ab918aeb20a22a9b5c075d34af9be93961d6c807723bead646490d04583af667",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-16T04:33:09Z",
+      "guid": "https://www.gov.uk/government/news/great-british-summer-savings-families-can-now-find-deals-closer-to-home-at-the-click-of-a-button#2026-07-15T14:31:37Z",
+      "item_hash": "5e8ca1d34e0119cb20680335f6e5e897200e9312e96ccaba293579ca2778ecba",
+      "link": "https://www.gov.uk/government/news/great-british-summer-savings-families-can-now-find-deals-closer-to-home-at-the-click-of-a-button",
+      "published_at": "2026-07-15T14:31:37Z",
+      "raw_published": "2026-07-15T14:31:37Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Find thousands of restaurants, cinemas, theatres and other attractions near you offering customer discounts following the Chancellor’s summer tax cuts.",
+      "title": "Great British Summer Savings: Families can now find deals closer to home at the click of a button"
+    },
     "5f41333c5692f21014f6344858f1a727eb7ff8b0e305addaaa9dba935f0332ec": {
       "card_id": null,
       "content_hash": "c38624c4d241ac3d0183c6893ca3debf11f5101b6a149a5ac86c870ebba9bd3c",
@@ -1216,6 +1248,22 @@
       "status": "queued",
       "summary": "Meeting held 5 August 2025",
       "title": "Banknotes imagery advisory group minutes - 5 August 2025"
+    },
+    "6a5657ce291e9c20a0f0c772f3db824550b48bf6d06aef063014cd3cd2437a3d": {
+      "card_id": null,
+      "content_hash": "cae35e4c7c7acadfbd30d08c7ae9d54bb6a35d22f9b63313d650758a447945ac",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-16T04:33:09Z",
+      "guid": "https://www.gov.uk/government/publications/uk-debt-management-office-and-debt-management-account-annual-report-and-accounts-2025-to-2026#2026-07-15T16:19:04Z",
+      "item_hash": "6a5657ce291e9c20a0f0c772f3db824550b48bf6d06aef063014cd3cd2437a3d",
+      "link": "https://www.gov.uk/government/publications/uk-debt-management-office-and-debt-management-account-annual-report-and-accounts-2025-to-2026",
+      "published_at": "2026-07-15T16:19:04Z",
+      "raw_published": "2026-07-15T16:19:04Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Annual report and accounts of the United Kingdom Debt Management Office and the Debt Management Account.",
+      "title": "Corporate report: UK Debt Management Office and Debt Management Account annual report and accounts, 2025 to 2026"
     },
     "6af88a25fea0da8bd02e309c24ee3c6d8ccba1e568f6f8b8ba1984f0666f119a": {
       "card_id": null,
@@ -1441,6 +1489,22 @@
       "summary": "A consultation setting out further detail on how eVED will work.",
       "title": "Consultation on the Introduction of Electric Vehicle Excise Duty (eVED)"
     },
+    "8119562f3d85c2ee558e568c87482c1165005c02d86b586464f0ebb21af784f2": {
+      "card_id": null,
+      "content_hash": "6871d910ffe0d8adf1ed5c0f46d18890c116143dc590d6654a14b42a048e85b7",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-16T04:33:09Z",
+      "guid": "https://www.gov.uk/government/publications/financial-services-regulators-complaints-commissioner-annual-report-and-accounts-2025-26-and-regulator-responses#2026-07-15T10:08:08Z",
+      "item_hash": "8119562f3d85c2ee558e568c87482c1165005c02d86b586464f0ebb21af784f2",
+      "link": "https://www.gov.uk/government/publications/financial-services-regulators-complaints-commissioner-annual-report-and-accounts-2025-26-and-regulator-responses",
+      "published_at": "2026-07-15T10:08:08Z",
+      "raw_published": "2026-07-15T10:08:08Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The annual report and accounts for the Financial Services Regulators Complaints Commissioner for the year ended 31 March 2026, and the responses provided by the Financial Conduct Authority and Prudential Regulation Authority.",
+      "title": "Policy paper: Financial Services Regulators Complaints Commissioner Annual Report and Accounts 2025-26 and regulator responses"
+    },
     "82e93e3b1672d3a160eec7a267692a58f61ff354c83de1ef443141f96bb889d5": {
       "card_id": null,
       "content_hash": "c8b76d574941687744a027fd6ce72b6d56ad9ef7298148e5857ef0b413a7a540",
@@ -1585,6 +1649,22 @@
       "summary": "Summary of minutes of the meetings for the Ministerial Group for Digital Inclusion.",
       "title": "Transparency data: Ministerial Group for Digital Inclusion: meeting summaries"
     },
+    "8e765ccfb4216f32e6e47cfc024f9f736a13e4c619cdefcc386d90ecaffd02fa": {
+      "card_id": null,
+      "content_hash": "a64d7e2b1e05198780d7d3715d39c0b732c9d9840e5fd37282e3f6e17ea0c305",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-16T04:33:09Z",
+      "guid": "https://www.gov.uk/government/publications/british-sign-language-5-year-plan-hm-treasury#2026-07-15T11:13:54Z",
+      "item_hash": "8e765ccfb4216f32e6e47cfc024f9f736a13e4c619cdefcc386d90ecaffd02fa",
+      "link": "https://www.gov.uk/government/publications/british-sign-language-5-year-plan-hm-treasury",
+      "published_at": "2026-07-15T11:13:54Z",
+      "raw_published": "2026-07-15T11:13:54Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "This plan sets out how HM Treasury plans to improve the use of BSL in its communications in the next 5 years. Includes an annual progress update.",
+      "title": "Policy paper: British Sign Language (BSL) 5-year plan: HM Treasury"
+    },
     "94b4e02b0c678609cb46459c34c2adaa831e410af4580e6f2965deb65156d40a": {
       "card_id": null,
       "content_hash": "225d45b633a6188082cc2491082435ffcb042286bd76753bec5cffe2512f9063",
@@ -1633,6 +1713,38 @@
       "summary": "The PRA Regulatory Digest is for people working in the UK financial services industry and highlights key regulatory news and publications delivered for the month.",
       "title": "PRA Regulatory Digest – March 2026"
     },
+    "9bdd02a14cedb5f8554c7f420571a536be2583db1f36b4c53adfad27433ae5a3": {
+      "card_id": null,
+      "content_hash": "0f02c84f3b2efe37921b4819a5eaf0adaa9aba80aefe87d477b2ab07e99af424",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-16T04:33:09Z",
+      "guid": "https://www.gov.uk/government/publications/reference-documents-for-the-customs-tariff-suspension-of-import-duty-rates-eu-exit-regulations-2020#2026-07-15T14:39:15Z",
+      "item_hash": "9bdd02a14cedb5f8554c7f420571a536be2583db1f36b4c53adfad27433ae5a3",
+      "link": "https://www.gov.uk/government/publications/reference-documents-for-the-customs-tariff-suspension-of-import-duty-rates-eu-exit-regulations-2020",
+      "published_at": "2026-07-15T14:39:15Z",
+      "raw_published": "2026-07-15T14:39:15Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Find out about the tariff suspensions that apply from the end of the transition period.",
+      "title": "Statutory guidance: Reference Documents for The Customs Tariff (Suspension of Import Duty Rates) (EU Exit) Regulations 2020"
+    },
+    "9bf06c99dcb0619b39973b67c13a72d368967b767b900a3fd7bb81c631e19186": {
+      "card_id": null,
+      "content_hash": "76102a33a6c7b60e6cf2c5c39f30125696c249fb1b87fe69fda51dcc09ec1829",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-16T04:33:09Z",
+      "guid": "https://www.gov.uk/government/publications/consolidated-fund-account-2025-to-2026--2#2026-07-15T11:36:31Z",
+      "item_hash": "9bf06c99dcb0619b39973b67c13a72d368967b767b900a3fd7bb81c631e19186",
+      "link": "https://www.gov.uk/government/publications/consolidated-fund-account-2025-to-2026--2",
+      "published_at": "2026-07-15T11:36:31Z",
+      "raw_published": "2026-07-15T11:36:31Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The Consolidated Fund accounts for 2025 to 2026 have been published.",
+      "title": "Corporate report: Consolidated Fund account 2025 to 2026"
+    },
     "9cf7c1c605297044af9b345e28c5c229faf5d5d01d0e92442adae95fc9e690bd": {
       "card_id": null,
       "content_hash": "a710edfbd479465d74140059d8c7c9c59b8ab48b374c2157172fbc9c8ac7a4ac",
@@ -1680,6 +1792,22 @@
       "status": "queued",
       "summary": "Reclaim Fund Ltd presents its Annual Report and Accounts, covering the 12 month accounting period to 31 March 2026.",
       "title": "Corporate report: Reclaim Fund Ltd Annual Report and Accounts 2025/26"
+    },
+    "9faac6558a0f8e5ed36fc4c8eff9ce124b0e60da56b46531f018831c0656b791": {
+      "card_id": null,
+      "content_hash": "2c38699682c00245f5d43390ae2479cdc7fa4ab91065f5a78b8bdac1a7831cb8",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-16T04:33:09Z",
+      "guid": "https://www.gov.uk/government/statistics/forecasts-for-the-uk-economy-july-2026#2026-07-15T09:00:05Z",
+      "item_hash": "9faac6558a0f8e5ed36fc4c8eff9ce124b0e60da56b46531f018831c0656b791",
+      "link": "https://www.gov.uk/government/statistics/forecasts-for-the-uk-economy-july-2026",
+      "published_at": "2026-07-15T09:00:05Z",
+      "raw_published": "2026-07-15T09:00:05Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "A comparison of independent forecasts for the UK economy in July 2026.",
+      "title": "Official Statistics: Forecasts for the UK economy: July 2026"
     },
     "a05db273c207749713204c5ab1bac3b789990af2ba6ace8c897186e6783ce135": {
       "card_id": null,
@@ -1744,6 +1872,22 @@
       "status": "queued",
       "summary": "Policy statement 16/26",
       "title": "PS16/26 – PRA rule changes to accommodate HM Treasury’s Overseas Prudential Requirements Regime"
+    },
+    "a6a9e699c25490379423e35708cbe6cdaad68235b31ad08f0cc274c1df2463b8": {
+      "card_id": null,
+      "content_hash": "874780dbf71937707a75330f1539a90b1ca2959fa0d8794cbc3f4cada357c7cf",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-16T04:33:09Z",
+      "guid": "https://www.gov.uk/government/consultations/updating-the-bank-of-englands-fee-regime-for-recognised-payment-systems#2026-07-15T13:00:02Z",
+      "item_hash": "a6a9e699c25490379423e35708cbe6cdaad68235b31ad08f0cc274c1df2463b8",
+      "link": "https://www.gov.uk/government/consultations/updating-the-bank-of-englands-fee-regime-for-recognised-payment-systems",
+      "published_at": "2026-07-15T13:00:02Z",
+      "raw_published": "2026-07-15T13:00:02Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The government is consulting on the fee regime for recognised payment systems, specified service providers and digital settlement asset service providers.",
+      "title": "Updating the Bank of England’s fee regime for recognised payment systems"
     },
     "a80fcd7e96c35ab166cdd43f3118697db3697ff26d0c8f0604bac5454c70e0b6": {
       "card_id": null,
@@ -1984,6 +2128,22 @@
       "status": "queued",
       "summary": "Policy statement 4/26",
       "title": "PS4/26 – The Strong and Simple Framework: The simplified capital regime for Small Domestic Deposit Takers (SDDTs) – final"
+    },
+    "bb08f38c6175e62eb22b26b8928fc3d2128b1794200916a2cb95719d06883924": {
+      "card_id": null,
+      "content_hash": "048b59710cdb2ca60ecb3acae5d80694dd05fac3c188ecb057ebe080efc0e20e",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-16T04:33:09Z",
+      "guid": "https://www.gov.uk/government/calls-for-evidence/fraud-anonymous-access-to-phone-numbers-and-call-routing#2026-07-15T11:00:06Z",
+      "item_hash": "bb08f38c6175e62eb22b26b8928fc3d2128b1794200916a2cb95719d06883924",
+      "link": "https://www.gov.uk/government/calls-for-evidence/fraud-anonymous-access-to-phone-numbers-and-call-routing",
+      "published_at": "2026-07-15T11:00:06Z",
+      "raw_published": "2026-07-15T11:00:06Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The government is keen to understand the link between anonymous access to phone numbers, call routing, and fraudulent activity.",
+      "title": "Fraud: Anonymous access to phone numbers and call routing"
     },
     "bce4e6f08a6c62a5c43b1d7d789002764182f36d9e78719058676cf63788e590": {
       "card_id": null,
@@ -2417,6 +2577,22 @@
       "summary": "Statement from the Bank of England, Financial Conduct Authority and HM Treasury",
       "title": "The Bank, FCA and HM Treasury joint statement on Frontier AI models and cyber resilience"
     },
+    "db149d912761f4014557dc8a1224e8c6e0d7cc73bed0c3df79defc001d513fa5": {
+      "card_id": null,
+      "content_hash": "6153269c685f338a46c0d0b05e46b6eaa99f1471303e5d1f0f0a9b3c8e2fa0ad",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-16T04:33:09Z",
+      "guid": "https://www.gov.uk/government/publications/hm-treasury-annual-report-and-accounts-2025-to-2026#2026-07-15T15:03:08Z",
+      "item_hash": "db149d912761f4014557dc8a1224e8c6e0d7cc73bed0c3df79defc001d513fa5",
+      "link": "https://www.gov.uk/government/publications/hm-treasury-annual-report-and-accounts-2025-to-2026",
+      "published_at": "2026-07-15T15:03:08Z",
+      "raw_published": "2026-07-15T15:03:08Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Here are HM Treasury's annual report and accounts for the year 2025 to 2026.",
+      "title": "Corporate report: HM Treasury annual report and accounts 2025 to 2026"
+    },
     "db361da4e0d4ce24e6039e760ce7105d0910b296ed50ea75c8cf9fcbf6d53e4c": {
       "card_id": "db361da4e0d4ce24e6039e760ce7105d0910b296ed50ea75c8cf9fcbf6d53e4c",
       "content_hash": "1c297e5812095da5d8e44759f7461f8f50f383ab6c6c7d55076677eeb4b8e331",
@@ -2704,6 +2880,22 @@
       "status": "queued",
       "summary": "His Majesty’s Treasury (HMT) has today announced the reappointment of Dr Vanessa Lawrence CB, Andrew Halford and Iain Mackay as Non-Executive Directors of UK Government Investments (UKGI).",
       "title": "Vanessa Lawrence, Andrew Halford and Iain Mackay reappointed on UK Government Investments Board"
+    },
+    "fd4b4280158f54f5a56df8d6eb7675af0fd7ac1f5dd4771a4d2a37ebca7a5d09": {
+      "card_id": null,
+      "content_hash": "d9408dd515086107f2bb4e49c27dbb5c8e74aeea15f0623d77f4ed99ecf482ce",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-16T04:33:09Z",
+      "guid": "https://www.gov.uk/government/news/government-delivers-fairer-deal-for-shoppers-as-buy-now-pay-later-rules-come-into-force#2026-07-15T09:16:39Z",
+      "item_hash": "fd4b4280158f54f5a56df8d6eb7675af0fd7ac1f5dd4771a4d2a37ebca7a5d09",
+      "link": "https://www.gov.uk/government/news/government-delivers-fairer-deal-for-shoppers-as-buy-now-pay-later-rules-come-into-force",
+      "published_at": "2026-07-15T09:16:39Z",
+      "raw_published": "2026-07-15T09:16:39Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "New rules deliver on government commitment to give Buy-Now, Pay-Later users the same key protections offered by other forms of credit.",
+      "title": "Government delivers fairer deal for shoppers as Buy-Now, Pay-Later rules come into force"
     },
     "fd82621d7c507fb3c62c05ad462d21115ef75011cdd744c08f457f921e8859af": {
       "card_id": null,
