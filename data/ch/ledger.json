@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T08:48:24Z",
+  "generated_at": "2026-07-17T04:36:43Z",
   "items": {
     "0172de58a453fe0e7e3beff31deaab5f813413fd456954f5e5be8b1452c83344": {
       "card_id": null,
@@ -447,6 +447,22 @@
       "source_id": "finma",
       "status": "queued",
       "summary": "Das Staatssekretariat für Wirtschaft (SECO) hat eine Änderung der Liste der sanktionierten natürlichen Personen, Unternehmen und Organisationen der Verordnung vom 21. März 2025 über Massnahmen gegenüber Personen und Organisationen, die mit den Organisationen ISIL (Da'esh) und Al-Kaida in Verbindung stehen (SR 946.231.08), publiziert.",
+      "title": "Aktualisierte Sanktionsmeldung: ISIL (Da'esh) und Al-Kaida"
+    },
+    "7ed8620017dae0ec15d00a816429996a6a6e18cd1a15289317c4cf70dcf6ad5c": {
+      "card_id": null,
+      "content_hash": "f1a1ee848bab698a3ddc55d5da918a4a75cc56ef03a550497a6286a45ab20d6f",
+      "feed_id": "finma_news",
+      "first_seen": "2026-07-17T04:36:43Z",
+      "guid": "{71C5DE59-B177-41B9-A6E9-EB4FC259F009}",
+      "item_hash": "7ed8620017dae0ec15d00a816429996a6a6e18cd1a15289317c4cf70dcf6ad5c",
+      "link": "https://www.finma.ch/en/news/2026/07/20260714-sr-946-231-08/",
+      "published_at": "2026-07-14T04:12:02Z",
+      "raw_published": "Tue, 14 Jul 2026 06:12:02 +0200",
+      "relevant": false,
+      "source_id": "finma",
+      "status": "queued",
+      "summary": "Das Staatssekretariat für Wirtschaft (SECO) hat eine Änderung der Liste der sanktionierten natürlichen Personen, Unternehmen und Organisationen der Verordnung vom 21. März 2025 über Massnahmen gegenüber Personen und Organisationen, die mit den Organisationen ISIL (Da'esh) und Al-Kaida in Verbindung stehen (SR 946.231.08), publiziert.&nbsp;<br />",
       "title": "Aktualisierte Sanktionsmeldung: ISIL (Da'esh) und Al-Kaida"
     },
     "846c3cf7b0ad57baf6b428903767371e752e774c22fd337b59724a36dcb7444f": {
