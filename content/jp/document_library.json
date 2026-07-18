@@ -130,9 +130,18 @@
       "regulator": "FSA",
       "title": "Amended Payment Services Act enters into force: registration regime for virtual currency exchange service providers begins",
       "type": "news"
+    },
+    {
+      "item_hash": "f3e774dbc5cd978e3a5f27873db9360956913566b400e1d0dff0c5f2a716830e",
+      "link": "https://jvcea.or.jp/information/statistics-reports/20260715-001/",
+      "pillar": [],
+      "published_at": "2026-07-15T02:00:00Z",
+      "regulator": "JVCEA",
+      "title": "取扱廃止銘柄のお知らせ",
+      "type": "news"
     }
   ],
-  "generated_at": "2026-07-12T10:16:50Z",
+  "generated_at": "2026-07-18T04:21:00Z",
   "jurisdiction_id": "jp",
   "schema_version": 1
 }
