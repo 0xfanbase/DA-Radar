@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T04:23:00Z",
+  "generated_at": "2026-07-19T04:43:27Z",
   "items": [
     {
       "feed_id": "boe_pra_publications",
@@ -50,6 +50,16 @@
       "status": "queued",
       "summary": "Recommendations of the Transatlantic Taskforce for Markets of the Future to advance UK-US financial services collaboration on digital assets and capital markets",
       "title": "Policy paper: Recommendations of the Transatlantic Taskforce for Markets of the Future"
+    },
+    {
+      "feed_id": "hmt_activity",
+      "item_hash": "3d85ae44714ca581dd4c1f90b8f7f3fc6abbe3e91977c726803c0c2deb2eab0d",
+      "link": "https://www.gov.uk/government/publications/update-on-the-digital-gilt-instrument-digit-pilot-issuance",
+      "published_at": "2026-07-16T12:00:00Z",
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The Chancellor announced that DIGIT will be issued by Q1 2027, and the government is taking steps to prepare for potential future issuances. HSBC and LSEG have signed an MoU to develop connectivity together to support investor access.",
+      "title": "Policy paper: Update on the Digital Gilt Instrument (DIGIT) pilot issuance"
     }
   ],
   "jurisdiction_id": "uk",

@@ -123,9 +123,20 @@
       "regulator": "HM Treasury",
       "title": "Policy paper: Recommendations of the Transatlantic Taskforce for Markets of the Future",
       "type": "activity"
+    },
+    {
+      "item_hash": "3d85ae44714ca581dd4c1f90b8f7f3fc6abbe3e91977c726803c0c2deb2eab0d",
+      "link": "https://www.gov.uk/government/publications/update-on-the-digital-gilt-instrument-digit-pilot-issuance",
+      "pillar": [
+        "tokenization_rwa"
+      ],
+      "published_at": "2026-07-16T12:00:00Z",
+      "regulator": "HM Treasury",
+      "title": "Policy paper: Update on the Digital Gilt Instrument (DIGIT) pilot issuance",
+      "type": "activity"
     }
   ],
-  "generated_at": "2026-07-15T04:23:00Z",
+  "generated_at": "2026-07-19T04:43:27Z",
   "jurisdiction_id": "uk",
   "schema_version": 1
 }

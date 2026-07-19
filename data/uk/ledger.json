@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T04:33:09Z",
+  "generated_at": "2026-07-19T04:43:27Z",
   "items": {
     "02028a9677575e76189a49022768f45cc07c84ca74ac72879172cd9671891801": {
       "card_id": null,
@@ -321,6 +321,22 @@
       "summary": "Consultation paper 2/26",
       "title": "CP2/26 – Reforms to securitisation requirements"
     },
+    "1d5108317224d01954dcf94284c603c0dd469941eda86f6be45f66bbcf35c071": {
+      "card_id": null,
+      "content_hash": "f35b40be921942952cda098b545173d2dbf8f9e5555afca3afa828299aba38cc",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-19T04:43:27Z",
+      "guid": "https://www.gov.uk/government/statistics/public-spending-statistics-release-july-2026#2026-07-16T08:30:06Z",
+      "item_hash": "1d5108317224d01954dcf94284c603c0dd469941eda86f6be45f66bbcf35c071",
+      "link": "https://www.gov.uk/government/statistics/public-spending-statistics-release-july-2026",
+      "published_at": "2026-07-16T08:30:06Z",
+      "raw_published": "2026-07-16T08:30:06Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The July 2026 national statistics public expenditure outturn release.",
+      "title": "Accredited official statistics: Public Spending Statistics release: July 2026"
+    },
     "1da766dec8b8e96ba9abd325e7d3a644dbe99877c30eaaa747e1380e2c932787": {
       "card_id": null,
       "content_hash": "fc48ab2af4fba63e0f3e726a46f793cd25b431eeaa0112eadd96c1dfcab797e4",
@@ -561,6 +577,22 @@
       "summary": "The PRA Regulatory Digest is for people working in the UK financial services industry and highlights key regulatory news and publications delivered for the month.",
       "title": "PRA Regulatory Digest – February 2026"
     },
+    "34430e6df4c0819b34077e9ffd2127facc0bd10a2e4fa3a638066215da5993fd": {
+      "card_id": null,
+      "content_hash": "5a6c3be9cf7cde5dca6cc72a8216823bb3da49cbacfe289fcdbd9d76861197ef",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-19T04:43:27Z",
+      "guid": "https://www.gov.uk/government/publications/economic-crime-levy-report-2024-25#2026-07-16T13:02:50Z",
+      "item_hash": "34430e6df4c0819b34077e9ffd2127facc0bd10a2e4fa3a638066215da5993fd",
+      "link": "https://www.gov.uk/government/publications/economic-crime-levy-report-2024-25",
+      "published_at": "2026-07-16T13:02:50Z",
+      "raw_published": "2026-07-16T13:02:50Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Report on the operation of the Economic Crime Levy for 2024-25.",
+      "title": "Corporate report: Economic Crime Levy Report 2024-25"
+    },
     "34c5bd86c63fc0e8da8a55518f20d772b39a2b2d87924606344d60e7d76e4590": {
       "card_id": null,
       "content_hash": "9c45d1f14c510dd2178bc31d3e2a3bfb916af22cd11a0f54f80a8096ed6ca979",
@@ -769,6 +801,22 @@
       "summary": "The Prudential Regulation Authority (PRA) has today published a consultation on the internal model approach to market risk (IMA), which represents the final piece of Basel 3.1’s implementation in the UK.",
       "title": "PRA sets out adjustments to its market risk internal model approach under Basel 3.1"
     },
+    "3d85ae44714ca581dd4c1f90b8f7f3fc6abbe3e91977c726803c0c2deb2eab0d": {
+      "card_id": null,
+      "content_hash": "d683d7015a4e4181709947ab083b770fe45c1c9ec52090dd9cd7f081d506ffab",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-19T04:43:27Z",
+      "guid": "https://www.gov.uk/government/publications/update-on-the-digital-gilt-instrument-digit-pilot-issuance#2026-07-16T12:00:00Z",
+      "item_hash": "3d85ae44714ca581dd4c1f90b8f7f3fc6abbe3e91977c726803c0c2deb2eab0d",
+      "link": "https://www.gov.uk/government/publications/update-on-the-digital-gilt-instrument-digit-pilot-issuance",
+      "published_at": "2026-07-16T12:00:00Z",
+      "raw_published": "2026-07-16T12:00:00Z",
+      "relevant": true,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The Chancellor announced that DIGIT will be issued by Q1 2027, and the government is taking steps to prepare for potential future issuances. HSBC and LSEG have signed an MoU to develop connectivity together to support investor access.",
+      "title": "Policy paper: Update on the Digital Gilt Instrument (DIGIT) pilot issuance"
+    },
     "420d1eb09583b215bf30e464d3ccedc4f46d191b3927c19a5149de6310bf8675": {
       "card_id": null,
       "content_hash": "58469d982ea2ca530f60cbf9a628722fc37a33b5c8a2fe9c72606da2ece635f9",
@@ -929,6 +977,22 @@
       "summary": "The annual firm feedback survey gives PRA-authorised firms the opportunity to comment on their experience of being supervised by the PRA.",
       "title": "Results of the firm feedback survey 2025"
     },
+    "4c3dccb81801edf1470045c6362dade3c926f8c93755e7319a142449597d096f": {
+      "card_id": null,
+      "content_hash": "b4beb7ee406a06aa9f3bda879f12dcf8b13d78ad54beeb8de7fe07f1afce5ea2",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-19T04:43:27Z",
+      "guid": "https://www.gov.uk/government/consultations/updating-the-bank-of-englands-fee-regime-for-recognised-payment-systems#2026-07-15T13:00:00Z",
+      "item_hash": "4c3dccb81801edf1470045c6362dade3c926f8c93755e7319a142449597d096f",
+      "link": "https://www.gov.uk/government/consultations/updating-the-bank-of-englands-fee-regime-for-recognised-payment-systems",
+      "published_at": "2026-07-15T13:00:00Z",
+      "raw_published": "2026-07-15T13:00:00Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The government is consulting on the fee regime for recognised payment systems, specified service providers and digital settlement asset service providers.",
+      "title": "Updating the Bank of England’s fee regime for recognised payment systems"
+    },
     "4da45fcb335f58f80496d3d06983a92ec81b30ac3711e16719b15bc2d5888f37": {
       "card_id": "4da45fcb335f58f80496d3d06983a92ec81b30ac3711e16719b15bc2d5888f37",
       "content_hash": "ea2cb9c26ff838a26e3d759b0e0f1e44afa79350ebabfce251fd4494b5c115d5",
@@ -944,6 +1008,22 @@
       "status": "published",
       "summary": "The FCA consults on allowing UK UCITS and NURS retail funds up to 10% exposure to crypto ETNs.",
       "title": "CP26/17: consultation on cryptoasset exchange traded notes for retail funds"
+    },
+    "4e0cd16c12bc1f856c78b433bfef436cef9dd2b4acb31f9656e968ae2bdb1dc9": {
+      "card_id": null,
+      "content_hash": "aae67223712c0f2bc3b19c080fe31b8af2fbc36b5ee52868e3e17a56802b2b58",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-19T04:43:27Z",
+      "guid": "https://www.gov.uk/government/publications/meeting-minutes-february-2026#2026-07-16T13:26:08Z",
+      "item_hash": "4e0cd16c12bc1f856c78b433bfef436cef9dd2b4acb31f9656e968ae2bdb1dc9",
+      "link": "https://www.gov.uk/government/publications/meeting-minutes-february-2026",
+      "published_at": "2026-07-16T13:26:08Z",
+      "raw_published": "2026-07-16T13:26:08Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Minutes from Chancellor of the Exchequer Rachel Reeves' meeting with the Governor of the Bank of England discussing the Bank’s latest Financial Stability Report.",
+      "title": "Policy paper: Meeting minutes - February 2026"
     },
     "4e9858b3709c8ab15103cb55f32182eb5c061fedf452c7b572683b082903fd53": {
       "card_id": null,
@@ -1201,6 +1281,22 @@
       "summary": "Exchange of letters between the Governor and the Chancellor",
       "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - April 2026"
     },
+    "679af0482d05233d895eee01359ce87edc383db08bfeac3ceb3969ffd998af54": {
+      "card_id": null,
+      "content_hash": "ec883ef69ccc9d633de960e9ffb42236b43cfa7621a08c35a502f9ce29e164f0",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-19T04:43:27Z",
+      "guid": "https://www.gov.uk/government/statistics/public-expenditure-statistical-analyses-2026#2026-07-16T09:34:43Z",
+      "item_hash": "679af0482d05233d895eee01359ce87edc383db08bfeac3ceb3969ffd998af54",
+      "link": "https://www.gov.uk/government/statistics/public-expenditure-statistical-analyses-2026",
+      "published_at": "2026-07-16T09:34:43Z",
+      "raw_published": "2026-07-16T09:34:43Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "HM Treasury statistical data setting out the year's information on government spending.",
+      "title": "Accredited official statistics: Public Expenditure Statistical Analyses 2026"
+    },
     "67f14f10d40fad0b37dd084b33c6d39a0b8471647dbc3b8636d2aa9a240ab0f8": {
       "card_id": null,
       "content_hash": "4dbc1249f66abb94ea3c268a0b9288784048b1e7e427591c62723805b942b55a",
@@ -1393,6 +1489,22 @@
       "summary": "Policy statement 10/26",
       "title": "PS10/26 – Amendments to Resolution Assessment threshold and Recovery Plans review frequency"
     },
+    "749389df6fdd5c1d2b946be3f92cb9261f571b8b4036c5349b0e48bcb8932cc2": {
+      "card_id": null,
+      "content_hash": "413095f8ed01360bce5e40bbbbfb10763e57834bf84c208a2f337f09bbfe8282",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-19T04:43:27Z",
+      "guid": "https://www.gov.uk/government/statistics/public-spending-statistics-release-july-2025#2026-07-16T08:29:02Z",
+      "item_hash": "749389df6fdd5c1d2b946be3f92cb9261f571b8b4036c5349b0e48bcb8932cc2",
+      "link": "https://www.gov.uk/government/statistics/public-spending-statistics-release-july-2025",
+      "published_at": "2026-07-16T08:29:02Z",
+      "raw_published": "2026-07-16T08:29:02Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The July 2025 national statistics public expenditure outturn release.",
+      "title": "Accredited official statistics: Public Spending Statistics release: July 2025"
+    },
     "75bf3fa479e76c9302cbf1ac6f10857c4cff8279401f4771175a21134c2d8189": {
       "card_id": null,
       "content_hash": "2ce1b97535bda1c7911d2f52bc4cd5d546a7cb0a4aa25935ac73bddafa4bb75f",
@@ -1472,6 +1584,22 @@
       "status": "queued",
       "summary": "The Bank of England (the Bank), the Prudential Regulation Authority (PRA) and the FCA will start overseeing the first critical third parties (CTPs) on Monday 13 July 2026, following designation by the Treasury. CTPs are technology and other service providers whose services underpin the UK financial system. Today, the Treasury has announced its first designations of 4 global cloud services and technology providers: Amazon Web Services EMEA SARL, Google Cloud EMEA Limited, Microsoft Ireland Operations Ltd, and Oracle Corporation UK Limited.As many firms rely on these services, disruption or failure could affect multiple firms or markets at the same time, potentially impacting UK financial stability and services used by millions of consumers and businesses.For the first time, the three regulators will jointly oversee these CTPs under a new, proportionate regime, focused on the resilience of the critical services they provide to the UK financial sector. The regulators will work together with the CTPs to address system-level risks and reduce the risk of disruption to the services they provide spreading across the UK financial system. This will strengthen system-wide resilience and improve coordination and information sharing across the UK financial sector.CTPs must identify and manage risks to their critical services effectively, and maintain open, timely communication with regulators and the firms that rely on them, particularly during major incidents.Together, these changes support a more resilient environment for firms to operate in, which will, in turn support financial stability and confidence in UK financial markets.This regime complements, but does not replace, existing outsourcing and operational resilience rules for regulated firms who remain responsible for managing their own third-party arrangements including due diligence, risk management and contingency planning.Sarah Breeden, deputy governor for financial stability at the Bank, said:'As critical third parti",
       "title": "UK financial regulators to begin overseeing Critical Third Parties announced by Treasury"
+    },
+    "7b9334b4e85e97d16700c6b35558de52c747583a2668c3ae13c68747eb54d86e": {
+      "card_id": null,
+      "content_hash": "b0f62639f2d9263c71de4f84c2c1bb33d36097bfa627a9aecff7e5b3548610ab",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-19T04:43:27Z",
+      "guid": "https://www.gov.uk/government/publications/sustainability-reporting-guidance-2026-27#2026-07-16T10:29:30Z",
+      "item_hash": "7b9334b4e85e97d16700c6b35558de52c747583a2668c3ae13c68747eb54d86e",
+      "link": "https://www.gov.uk/government/publications/sustainability-reporting-guidance-2026-27",
+      "published_at": "2026-07-16T10:29:30Z",
+      "raw_published": "2026-07-16T10:29:30Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Guidance on sustainability reporting requirements for central government annual reports and accounts, which may be used by other public sector bodies.",
+      "title": "Guidance: Sustainability Reporting Guidance 2026-27"
     },
     "7bc7b19587e13071037eee5bbd027fb6ccf9d9e329a3bbfb31a33c493d1767f4": {
       "card_id": null,
@@ -1776,6 +1904,22 @@
       "status": "queued",
       "summary": "Meeting held 15 April 2026",
       "title": "Banknote imagery expert panel minutes – 15 April 2026"
+    },
+    "9e98915f9d38b2033ea14e68243545a0dfd59792765df9acc1036b4e94ecff7a": {
+      "card_id": null,
+      "content_hash": "5572f628fcd98ad1a59017f6fafb25ff470b99984fa1f76b7ad0084eae3aba85",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-19T04:43:27Z",
+      "guid": "https://www.gov.uk/government/publications/royal-mint-trading-fund-framework-document#2026-07-16T15:01:25Z",
+      "item_hash": "9e98915f9d38b2033ea14e68243545a0dfd59792765df9acc1036b4e94ecff7a",
+      "link": "https://www.gov.uk/government/publications/royal-mint-trading-fund-framework-document",
+      "published_at": "2026-07-16T15:01:25Z",
+      "raw_published": "2026-07-16T15:01:25Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "This document sets out the accountabilities and relationships between the Royal Mint Trading Fund, the Shareholder (HM Treasury) and the Shareholder Representative (UK Government Investments).",
+      "title": "Guidance: Royal Mint Trading Fund: framework document"
     },
     "9f63aa828eae6822ff421b7c95f33d93b8a21d41b5951c77094d57f978f7601c": {
       "card_id": null,
@@ -2209,6 +2353,22 @@
       "summary": "The latest meeting of the Synchronisation thematic engagement working group",
       "title": "Minutes of the Synchronisation thematic engagement working group - 30 April 2026"
     },
+    "bedc721cdcf3327fc9816c2fbd752909ab8ba9ac578ca8d36b82df1c091d8ac9": {
+      "card_id": null,
+      "content_hash": "cd428494adaa957e310878eb91705152374c624e003561803202ba446a664b0d",
+      "feed_id": "fca_news",
+      "first_seen": "2026-07-19T04:43:27Z",
+      "guid": "170866",
+      "item_hash": "bedc721cdcf3327fc9816c2fbd752909ab8ba9ac578ca8d36b82df1c091d8ac9",
+      "link": "https://www.fca.org.uk/news/press-releases/joint-taskforce-continues-crack-down-misleading-car-finance-claims-adverts",
+      "published_at": null,
+      "raw_published": "Thursday, July 16, 2026 - 11:45",
+      "relevant": false,
+      "source_id": "fca",
+      "status": "queued",
+      "summary": "The FCA, Advertising Standards Authority, Solicitors Regulation Authority and Information Commissioner's Office are tackling the poor handling of motor finance claims by some claims companies and law firms. As part of the joint taskforce's continued crackdown, in June the FCA had 170 misleading car finance claims adverts removed or amended by claims management companies (CMCs), bringing the total up to 1,200 since January 2024. Some of the misleading adverts seen by the FCA:Were disguised as a consumer posting on social media recommending a website to look up agreements. However, the advert failed to make clear it was a financial promotion for a CMC that was recommending its own website.Were using the FCA motor finance redress scheme in a misleading way to promote the firm’s own services, which could suggest an affiliation with the FCA.Failed to clearly highlight free claim options and the FCA's redress scheme.Promoted claims management services when not authorised to do so.The FCA also agreed to voluntary requirements (VREQs) with 2 firms, securing agreement that they would stop or change their marketing activities. This brings the total number of VREQs to 12 in relation to a range of motor finance claims activities over the last 12 months.The FCA also issued 8 alerts in June against unauthorised firms promoting regulated claims management activities without the necessary authorisation.Alongside this, the Advertising Standards Authority (ASA) has launched investigations into various motor finance claims ads placed by law firms. It is scrutinising a range of issues including clarity around fees, the ability to claim for free via other routes, potentially exaggerated compensation amounts and consumers being potentially misled by 'free checker' tools.Alison Walters, director of consumer finance at the FCA, said: 'Consumers should be able to trust the information they see about car finance claims. Too often, we are still seeing promotions that obscure key facts, create",
+      "title": "Joint taskforce continues crack down on misleading car finance claims adverts"
+    },
     "c13dc8614ee45a1efdd8f14a58b05682fc2a16ea688a0901b0ecb03e32becd9b": {
       "card_id": null,
       "content_hash": "6cba8ec73318d60e11fdf9d20a73dd6bfa305c131089ab46327eed29361e46a0",
@@ -2384,6 +2544,22 @@
       "status": "queued",
       "summary": "The Bank of England and the FCA have published a joint approach setting out how they and where relevant other authorities will work together to regulate systemic stablecoin issuers in the UK.It explains how responsibilities will be split between the authorities, and how UK stablecoin issuers may move from FCA supervision to joint regulation once recognised as systemic by HM Treasury.The approach aims to provide clarity and predictability for firms as the market develops.Read the paper",
       "title": "FCA and the Bank of England set out approach to joint regulation of systemic stablecoin issuers"
+    },
+    "cc9bffbf1b3c194a611158dc684e7645565a4be8f098cb0e1dae6c4ec18a1b18": {
+      "card_id": null,
+      "content_hash": "7d37db0ef1491b06e6664e29166fcd48ad1461a5d1c6e24ff24349cda5a43acf",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-19T04:43:27Z",
+      "guid": "https://www.gov.uk/government/news/care-workers-to-be-represented-in-fair-pay-agreements#2026-07-16T08:15:00Z",
+      "item_hash": "cc9bffbf1b3c194a611158dc684e7645565a4be8f098cb0e1dae6c4ec18a1b18",
+      "link": "https://www.gov.uk/government/news/care-workers-to-be-represented-in-fair-pay-agreements",
+      "published_at": "2026-07-16T08:15:00Z",
+      "raw_published": "2026-07-16T08:15:00Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "New negotiating body to be set up as part of the first ever adult social care fair pay agreement, representing millions of care workers.",
+      "title": "Care workers to be represented in fair pay agreements"
     },
     "ccf3696766a00763037ce4354d399d39b6a429e9df90fee958446101ff8d3af5": {
       "card_id": null,
@@ -2657,6 +2833,22 @@
       "summary": "Joint statement from the United Kingdom, the Netherlands, Finland and Poland",
       "title": "Joint statement from member countries of the Multilateral Defence Mechanism"
     },
+    "e16552032be278325324caf66eeda9b8dc0271b89c39b3c6cfe7a9918d4057f9": {
+      "card_id": null,
+      "content_hash": "2341fde43d2196966219b33d8f2f04cd8dc5d2651f29ee0b00554195e6cc7b46",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-19T04:43:27Z",
+      "guid": "https://www.gov.uk/government/statistics/public-spending-statistics-release-july-2024#2026-07-16T08:29:02Z",
+      "item_hash": "e16552032be278325324caf66eeda9b8dc0271b89c39b3c6cfe7a9918d4057f9",
+      "link": "https://www.gov.uk/government/statistics/public-spending-statistics-release-july-2024",
+      "published_at": "2026-07-16T08:29:02Z",
+      "raw_published": "2026-07-16T08:29:02Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The July 2024 national statistics public expenditure outturn release.",
+      "title": "Accredited official statistics: Public Spending Statistics release: July 2024"
+    },
     "e428bbc7105ffd0c483505eca5f07c53150063de0e327978400446b723d8fb64": {
       "card_id": null,
       "content_hash": "c99f74dd9781c1a1b6593a5fe32eb5ddc0faae92a9d35b3aded42d480803af05",
@@ -2752,6 +2944,38 @@
       "status": "queued",
       "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC) Operations and Legal Sub-Committees. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators.",
       "title": "Minutes of the London FXJSC Operations Sub-Committee Meeting – 18 March 2026"
+    },
+    "efb61ce4e9cb84987d3f31e19de2349316fca35fa7d9de12dd4146328c6bbf40": {
+      "card_id": null,
+      "content_hash": "5087359290ad60e5c4ec3cb69f086b33811a4cf8a4f49100ea71a52eaf4896e6",
+      "feed_id": "fca_news",
+      "first_seen": "2026-07-19T04:43:27Z",
+      "guid": "171051",
+      "item_hash": "efb61ce4e9cb84987d3f31e19de2349316fca35fa7d9de12dd4146328c6bbf40",
+      "link": "https://www.fca.org.uk/news/news-stories/customers-anthony-jones-uk-limited-urged-check-insurance-policy",
+      "published_at": null,
+      "raw_published": "Friday, July 17, 2026 - 09:36",
+      "relevant": false,
+      "source_id": "fca",
+      "status": "queued",
+      "summary": "The insurance broker has agreed to stop carrying out any regulated activity. This means it can't provide any services on behalf of an insurer. From 9 July 2026, the insurance broker Anthony Jones (UK) Limited (AJL) agreed to stop carrying out any regulated activity.This means that AJL cannot provide any services on behalf of an insurer, including selling new insurance policies, offering renewals, or providing any advice to new or existing consumers.If you purchased an insurance policy through AJL, please contact the underwriter or insurer directly to check whether your policy is valid and your cover remains in place.These requirements remain in force while we continue engaging with the firm.Next steps for customersAnthony Jones (UK) Limited acts as an insurance intermediary and is not itself an insurer or underwriter.Please contact the insurer or underwriter named on your policy documentation to:Confirm whether your insurance policy is valid.Check that any payments you have made have been received by your insurer.Details of the relevant insurer or underwriter can be found in your policy documentation, including your policy schedule and policy terms and conditions.ComplaintsIf you are unhappy with the service provided by AJL, you should complain directly to the firm. The firm’s details are on the FCA Firm Checker.If you remain unhappy with the outcome of your complaint, or if you do not receive a response within 8 weeks, you can refer your complaint to the Financial Ombudsman Service.Find out more about how to complain.",
+      "title": "Customers of Anthony Jones (UK) Limited urged to check their insurance policy"
+    },
+    "f098939c93c813d3f632537b73b71c0c8b3d491b478b66a12d4ff83f76a14c55": {
+      "card_id": null,
+      "content_hash": "7a99427b25e07b5069e09489ea75e8cfc4f95a7dd56f83e46a9e130d15719cda",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-19T04:43:27Z",
+      "guid": "https://www.gov.uk/government/publications/public-service-pensions-and-judicial-offices-act-amending-directions-july-2026#2026-07-16T12:00:00Z",
+      "item_hash": "f098939c93c813d3f632537b73b71c0c8b3d491b478b66a12d4ff83f76a14c55",
+      "link": "https://www.gov.uk/government/publications/public-service-pensions-and-judicial-offices-act-amending-directions-july-2026",
+      "published_at": "2026-07-16T12:00:00Z",
+      "raw_published": "2026-07-16T12:00:00Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Amendments to Treasury Directions made under the Public Service Pensions and Judicial Offices Act 2022 in relation to the McCloud remedy.",
+      "title": "Statutory guidance: Public Service Pensions and Judicial Offices Act: Amending Directions - July 2026"
     },
     "f2040082a7132147c57fc24b7ab874e6af6aad484cf20de51c8df00d9e774ae6": {
       "card_id": null,
