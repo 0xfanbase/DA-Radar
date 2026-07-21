@@ -2054,3 +2054,92 @@ disagree, the actual repo files win. `list_triggers` confirms the old trigger id
 (`trig_014KCBHpqU22iUiWfG3qBt93`) is enabled with the same `next_run_at` slot. Verification of
 this fix, same as the jurisdiction rollout above, is watching what the trigger's first real firing
 under the new identity actually commits as -- not assumed correct from the prompt text alone.
+
+### 2026-07-21 -- watch.yml matrix push race (8 failed nights, fixed on branch) and a larger finding underneath: the live analyst/verifier trigger has never once landed a commit
+
+Owner forwarded a GitHub Actions failure email for the nightly Watcher run at `ed29746`. Root
+cause found by reading the actual failed-job logs via the GitHub Actions API, not guessed: since
+the multi-jurisdiction matrix reached main, `watch.yml` runs one matrix job per live jurisdiction
+(`[hk, uk, eu, us, ch, jp, uae]`), all checked out from the same base commit and run in parallel.
+Each job that finds new items does `git add` (its own jurisdiction's paths only) -> `git commit`
+-> a plain `git push`. Since they all start from the same base and race, only whichever job's
+push lands first succeeds -- every other job's push is rejected non-fast-forward (`! [rejected]
+main -> main (fetch first)` / `cannot lock ref 'refs/heads/main'`), the job fails, and that
+jurisdiction's ledger/queue/document-library update is discarded for the night. The Actions API
+confirms every scheduled run from `2026-07-14T04:22:52Z` through `2026-07-21` concluded
+`"failure"` (every scheduled run before 07-14 succeeded), and git history carries the exact
+signature: precisely one `watch(...)` commit per night since 07-15 -- uk on 07-15/16/19, ch
+07-17, jp 07-18/21, uae 07-20. `hk`, `us`, and `eu` have won zero races in 8 nights. Nothing is
+destroyed outright (a losing jurisdiction's ledger stays stale, so the watcher re-discovers the
+same "new" items the next night); the real exposure is an item scrolling out of a feed's window
+before its jurisdiction happens to win a race.
+
+Fix, on `claude/radar-updates-fable-7cx8q9` (not yet merged -- scheduled workflows run whatever
+version of the workflow file is on the default branch, so this has zero production effect until
+the owner merges): the bare `git push` becomes a bounded retry loop (4 attempts, 2s/4s/8s
+backoff) that fetches and rebases onto `origin/main` before retrying. Safe because each matrix
+job only ever stages its own jurisdiction's 2-3 paths -- no cross-jurisdiction overlap is
+possible -- and a genuine rebase conflict still fails the job loud via the shell's default
+errexit. Full test suite (465 tests) passes; the change is confined to one step of one workflow
+file, outside the AI-job path allowlist's actual scope (that allowlist restricts the
+analyst/verifier's own automated writes, not a human-reviewed workflow-file fix on a feature
+branch) and deliberately not pushed straight to main.
+
+**A larger finding surfaced while fact-checking the backlog, not assumed from the queue sizes
+alone:** `data/hk/queue.json` (67 items, several dated 2025-04/06/12) was last touched by `a2cb110`
+(P6, 2026-07-11); `data/us/queue.json` (42 items) by `05ad665` (P11 onboarding, 2026-07-12). Both
+backlogs predate the push race entirely -- the race explains why nights fail, not why these
+queues never drained. `git log --all` was checked directly for any commit matching
+`analyst(...)`/`verifier(...)`, under either the current `da-radar-bot` or the historical
+`hk-radar-bot` identity: there are **zero**, not just since the 07-14 multi-jurisdiction rollout,
+but ever. Every card currently under `content/*/cards/` traces to a seed, onboarding, or
+compliance-audit-fix commit -- none to a live analyst/verifier run. The CCR trigger
+(`trig_014KCBHpqU22iUiWfG3qBt93`) has fired nightly and on schedule since its 07-14 recreation
+(`last_fired_at` 2026-07-20T22:38:25Z, enabled, `30 22 * * *`) with zero visible output. By this
+project's own standing discipline (Fable PM directive, 2026-07-09 -- commits and files are the
+evidence, not a self-report), the live analyst/verifier mechanism has never yet produced a proven
+run, despite PROGRESS.md's 07-14 entries describing its rollout as complete.
+
+Leading hypothesis, explicitly unverified (fired sessions produce no transcript this repo can
+read): the trigger's own runbook precondition -- "`git status` first, always... if the working
+tree is not clean or not on `main`, stop and report rather than force past it" -- is tripping
+silently. The trigger's own prompt text says the repo is "very likely already cloned in this
+environment" at a path like `/home/user/DA-Radar`, which is exactly this session's own working
+directory; if fired sessions share environment `env_01NaDLzVcJMVt9aDwBmJC6ea`'s disk with
+whatever interactive session last touched it, then any interactive session (this one included)
+left sitting on a feature branch with local changes would make every subsequent firing stop at
+its own first precondition check, before it ever reads a queue -- and a graceful "nothing to do"
+stop may not clear this trigger's own noteworthy-only push-notification bar, so the owner would
+see nothing. Zero-cost mitigation regardless of whether this is the actual cause: this session
+is restoring the checkout to a clean `main` before ending, ahead of tonight's 22:38 UTC firing.
+
+**Consulted Fable as project director on three open questions, evidence independently
+re-verified by this session before acting on any of it:**
+
+1. *Open a PR now, given the urgency, or push-and-flag?* Push-and-flag, no PR -- the explicit
+   no-unrequested-PR instruction stands, a PR doesn't accelerate a merge only the owner can
+   perform, and the second finding above needs owner discussion beyond a mechanical merge
+   anyway. Offered to the owner: open the PR on a one-word go-ahead.
+2. *Does `docs/analyst-runbook.md`'s Step 0 cap (4 cards/jurisdiction, 10/firing) need raising to
+   drain the backlog faster?* No -- the backlog is owned by the never-ran trigger, not the cap
+   size; raising a cap that has never once been exercised, ahead of the mechanism's first
+   observed successful cycle, would multiply unproven output. At the designed cap the drain is
+   acceptable once the trigger is actually running (hk ~17 firings, us ~11). Revisit only after
+   several proven cycles, owner-decided. Separately flagged for owner triage: `hk`'s 2025-dated
+   queue items may deserve a staleness review independent of this incident.
+3. *Manually intervene now (`workflow_dispatch`, or manually fire the CCR trigger)?* No --
+   `workflow_dispatch` against `main` would run the unfixed file; against the branch it would
+   entangle nightly watch data with the fix branch; manually firing the analyst trigger mid-
+   incident would launch its first-ever real cycle unobserved and, per the hypothesis above,
+   would plausibly no-op anyway. Sequence instead: clean-`main` checkout now (done), owner
+   merges the watch.yml fix, then one manual `workflow_dispatch` of `watch.yml` against main as
+   same-day validation, then review tonight's trigger firing's actual output (or continued
+   absence of one) -- which now doubles as the diagnostic for the second finding.
+
+One process deviation this session found in its own work, corrected before merge: commit
+`8191fa8` (the watch.yml fix above) was authored under this session's own default identity
+rather than `da-radar-bot <da-radar-bot@users.noreply.github.com>` -- the only commit in this
+repo's entire history, across every prior PR-branch dev session and every bot-authored run
+alike, that isn't under the bot identity. Flagged to the owner rather than force-pushed over
+silently, since amending a pushed commit is a deliberately gated action in this session's own
+harness.
