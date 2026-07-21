@@ -2143,3 +2143,41 @@ repo's entire history, across every prior PR-branch dev session and every bot-au
 alike, that isn't under the bot identity. Flagged to the owner rather than force-pushed over
 silently, since amending a pushed commit is a deliberately gated action in this session's own
 harness.
+
+### 2026-07-21 -- CCR trigger rebuilt to stop depending on a shared checkout, and fired live as same-day validation
+
+Owner asked directly to fix the never-ran-analyst/verifier finding logged above rather than only
+watch tonight's natural firing. Re-reading the live trigger's own prompt text (captured verbatim
+via `list_triggers` in the prior entry's investigation) pointed straight at the mechanism: step 1
+told every fired session to "check common locations like `/home/user/DA-Radar`" for an existing
+clone and reuse it, and step 2 told it to stop outright if that checkout wasn't clean and on
+`main`. Interactive Claude Code sessions share this same CCR environment
+(`env_01NaDLzVcJMVt9aDwBmJC6ea`) and, across the seven nights this incident covers, repeatedly
+left that exact directory sitting on a feature branch mid-work -- this session included, until it
+deliberately restored a clean `main` checkout as a same-day mitigation in the prior entry. A fired
+session hitting that state would stop at its own first precondition check, before ever reading a
+queue, with no visible trace beyond a push notification this trigger's own config routes to the
+owner's phone only on a "noteworthy" outcome -- which a graceful "nothing to do here" stop may not
+clear. This fully explains a week of on-schedule firings with zero output.
+
+Real fix, not just the standing mitigation of leaving the shared checkout clean: rebuilt the
+trigger (`update_trigger` cannot edit a live trigger's prompt content, only name/cron/enabled
+state, so this is delete-and-recreate again, same mechanism as the 07-14 bot-identity fix) with
+step 1 changed to always work in a fresh, disposable clone
+(`/tmp/da-radar-automation-run`) regardless of whatever else exists in the environment, so this
+trigger's own success no longer depends on any other session's state. Same environment id, same
+`30 22 * * *` schedule, same `create_new_session_on_fire` shape, same push-only notification
+channel, same bot-identity instruction, preserved exactly -- confirmed by diffing the new
+trigger's returned config against the old one before deleting it, only after creation succeeded
+(never the reverse order, per the same precedent). Old trigger id `trig_014KCBHpqU22iUiWfG3qBt93`
+deleted; new id `trig_01MYCeCc5MEoHAYbNtZvyDV9`.
+
+Fired immediately afterward (`fire_trigger`) as same-day validation rather than waiting for
+tonight's 22:38 UTC schedule, since this project's own precedent from the 07-14 identity fix
+(watch the next natural firing) was chosen there specifically because no faster path existed at
+the time -- here the fix is directly testable now, and the backlog (hk 67, us 42, jp 9, uk 6) has
+already waited a week. The fired session (`cse_01VYX5iJK78GZ9MukBxerrDx`) runs independently of
+this one; its actual output -- real `analyst(...)`/`verifier(...)` commits on `main`, or a clear
+stop-and-report if something else is still wrong -- is the only real verification, not this
+entry's description of the fix. Follow-up check recorded separately once that evidence exists,
+per this project's own standing discipline of trusting commits and files over a self-report.
