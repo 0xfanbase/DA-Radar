@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T04:21:00Z",
+  "generated_at": "2026-07-21T04:42:25Z",
   "items": {
     "02d83335c3f185a01f78ac8bf5f64fad166ccc68cc60456b0c37127aece0ca25": {
       "card_id": null,
@@ -145,6 +145,22 @@
       "summary": "",
       "title": "第152回自動車損害賠償責任保険審議会議事録について公表しました。"
     },
+    "2586945180fade010fe4f5fdcf8a05eae27a74aa91829c32910da2ede7caf7cf": {
+      "card_id": null,
+      "content_hash": "4740024f826d85b5fb77a9aff5545aec5ed519014f0e6c199bc891ff302bece7",
+      "feed_id": "fsa_news_en",
+      "first_seen": "2026-07-21T04:42:25Z",
+      "guid": null,
+      "item_hash": "2586945180fade010fe4f5fdcf8a05eae27a74aa91829c32910da2ede7caf7cf",
+      "link": "https://www.fsa.go.jp/en/refer/councils/revision_corporategovernance/index.html#03meeting",
+      "published_at": "2026-07-21T10:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 10:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "Councils,The Expert Panel on the Revision of the Corporate Governance Code (3rd meeting) Minutes"
+    },
     "31716f37af7e16c3eb2f4feb498a4e25a916ca1f1d1a94276f11547dfb17c652": {
       "card_id": null,
       "content_hash": "74dc3a907cfb175f598ef477797c820eb3bf11d5b6e0a5bad6f651888c69439e",
@@ -240,6 +256,22 @@
       "status": "queued",
       "summary": "",
       "title": "その他,審判手続状況一覧を更新しました。"
+    },
+    "4853a9ade4c842917c45f97c589eb6aaa8d3a831ff1343d93eec6ca280c11b28": {
+      "card_id": null,
+      "content_hash": "364907659b405ad3171ee1cc578d27ca0acb492453fb5553c4d94225f64fcba6",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-21T04:42:25Z",
+      "guid": null,
+      "item_hash": "4853a9ade4c842917c45f97c589eb6aaa8d3a831ff1343d93eec6ca280c11b28",
+      "link": "https://www.fsa.go.jp/common/choutatu/index.html#other_Info",
+      "published_at": "2026-07-21T11:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 11:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "調達,令和７年度における環境物品等の調達実績の概要について公表しました。"
     },
     "4da337e6809feac6ef7ae5b7e7f5b7e7db0c5d884784d4c01cf81dad5a3c4698": {
       "card_id": null,
@@ -352,6 +384,22 @@
       "status": "queued",
       "summary": "",
       "title": "Publication,Publication of \"FSA Analytical Notes (2026.7) vol.1: I. Analysis of the Relationship between VC Investment and Bank Lending for Startup Firms: Sequence and Structure of Fundraising, and II. Pilot Analysis of Climate-Related Risks in Housing Loans Extended by Regional Banks\" in Japanese"
+    },
+    "6e6b12143a9fc7b2abab7c2ff0d9113ba65d455baa0064d2111134a10a429d47": {
+      "card_id": null,
+      "content_hash": "e1b940de2af7fb38ad8eea9d944d613bda269e1610eef4ecec8b43cd1f22fe51",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-21T04:42:25Z",
+      "guid": null,
+      "item_hash": "6e6b12143a9fc7b2abab7c2ff0d9113ba65d455baa0064d2111134a10a429d47",
+      "link": "https://www.fsa.go.jp/news/r7/singi/20260721.html",
+      "published_at": "2026-07-21T10:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 10:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "コーポレートガバナンス・コード（2026年改訂版）の確定について公表しました。"
     },
     "8126b3a2408b0e3e4581aa9659329e143895c10ea293161e3dbfa7c9d216048e": {
       "card_id": null,
@@ -608,6 +656,22 @@
       "status": "queued",
       "summary": "",
       "title": "「南海トラフ地震臨時情報（巨大地震警戒）」発表時における「住民事前避難対象地域」内の金融機関の休業予定店舗等について公表しました。"
+    },
+    "c37a19e9d4e561a3e2736ef43730bf391dace22ae6a0c2b89376c17f3a5f4f6a": {
+      "card_id": null,
+      "content_hash": "3cc5b043856bd0b7d789752cf22c60a60581afbfda23dc2b6a789ae7f00c564d",
+      "feed_id": "fsa_news_en",
+      "first_seen": "2026-07-21T04:42:25Z",
+      "guid": null,
+      "item_hash": "c37a19e9d4e561a3e2736ef43730bf391dace22ae6a0c2b89376c17f3a5f4f6a",
+      "link": "https://www.fsa.go.jp/en/news/2026/20260721-2.html",
+      "published_at": "2026-07-21T10:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 10:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "Councils,Finalization of the Corporate Governance Code (2026 Revision)"
     },
     "c44dc494c97a488c5b0cde8318685e63093321a89c928417632f286545cbabfa": {
       "card_id": null,
