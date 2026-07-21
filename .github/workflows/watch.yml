@@ -72,6 +72,20 @@ jobs:
       # under /content or /data. Only this jurisdiction's own paths are staged
       # here -- never a blanket `git add` -- so one matrix job's commit can never
       # sweep up another jurisdiction's concurrently-modified working tree.
+      # Every live jurisdiction's watch job is a parallel matrix entry checked out
+      # from the same base commit, so a plain `git push` here would only ever win
+      # for whichever sibling job's push lands first -- every other jurisdiction's
+      # push is rejected as non-fast-forward and the job fails outright, discarding
+      # that jurisdiction's ledger/queue update for the day (real incident: since
+      # the 2026-07-14 multi-jurisdiction rollout, most nights only 1-2 of 7 live
+      # jurisdictions actually got their queue committed). Since each matrix job
+      # only ever stages its own jurisdiction's paths, rebasing onto the latest
+      # main is always safe -- retry with backoff mirrors this project's own
+      # fetch-discipline convention (config/site.json's fetch_defaults: <=3
+      # retries, exponential backoff), just applied to the push instead of a feed
+      # fetch. A rebase conflict (which should never happen given the disjoint
+      # paths) still fails the job loud via the shell's default errexit, same as
+      # before.
       - name: Commit ledger/queue/document-library updates
         if: steps.changes.outputs.changed == 'true'
         env:
@@ -82,7 +96,22 @@ jobs:
         run: |
           git add data/${{ matrix.jurisdiction }}/ledger.json data/${{ matrix.jurisdiction }}/queue.json content/${{ matrix.jurisdiction }}/document_library.json
           git commit -m "watch(${{ matrix.jurisdiction }}): $(date -u +%Y-%m-%dT%H:%M:%SZ) update ledger/queue/document-library"
-          git push
+
+          pushed=false
+          for attempt in 1 2 3 4; do
+            if git push; then
+              pushed=true
+              break
+            fi
+            echo "push attempt ${attempt} rejected (likely a sibling jurisdiction's job won the race) -- rebasing onto latest main and retrying"
+            sleep $((2 ** attempt))
+            git fetch origin main
+            git rebase origin/main
+          done
+          if [ "$pushed" != "true" ]; then
+            echo "::error::git push failed after 4 attempts for jurisdiction ${{ matrix.jurisdiction }}"
+            exit 1
+          fi
 
       - name: Trigger analyze.yml
         if: steps.changes.outputs.changed == 'true'
