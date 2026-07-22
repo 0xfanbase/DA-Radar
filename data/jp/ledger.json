@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T04:42:25Z",
+  "generated_at": "2026-07-22T04:42:32Z",
   "items": {
     "02d83335c3f185a01f78ac8bf5f64fad166ccc68cc60456b0c37127aece0ca25": {
       "card_id": null,
@@ -97,6 +97,22 @@
       "summary": "つみたて投資枠対象商品に関する、様々な資料を掲載しています。",
       "title": "その他,つみたて投資枠対象商品届出一覧（対象資産別）を更新しました。"
     },
+    "17020d76e14a78e842742863418fdad18253751318c560f3347d12b8d32c8c34": {
+      "card_id": null,
+      "content_hash": "503cb8a73357881bdf2388e295ed196b10814e548d5fc65c2ae9576e6b446b5f",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-22T04:42:32Z",
+      "guid": null,
+      "item_hash": "17020d76e14a78e842742863418fdad18253751318c560f3347d12b8d32c8c34",
+      "link": "https://www.fsa.go.jp/common/conference/minister/2026b/20260714-1.html",
+      "published_at": "2026-07-21T16:59:00Z",
+      "raw_published": "Tue, 21 Jul 2026 16:59:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "記者会見,片山財務大臣兼内閣府特命担当大臣閣議後記者会見の概要（令和８年７月14日）について掲載しました。"
+    },
     "1a3f20eb4e845d8353b6d40e6d699417e8da92253d3b681be3f0b6766514f5d0": {
       "card_id": "1a3f20eb4e845d8353b6d40e6d699417e8da92253d3b681be3f0b6766514f5d0",
       "content_hash": "bf31f1c8c6dc7abe3b89667bdd61b8eb7b8211f123f20e414923d014560d28bb",
@@ -144,6 +160,22 @@
       "status": "queued",
       "summary": "",
       "title": "第152回自動車損害賠償責任保険審議会議事録について公表しました。"
+    },
+    "23b6a439ccf19d9f33b84dc404e66466734f2fd256a6135f67ca1262535f13ad": {
+      "card_id": null,
+      "content_hash": "377dbb8c2dca75e3b994ef732cdfd708f81d10697d54d4e6fb6d9ab06ec6e076",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-22T04:42:32Z",
+      "guid": null,
+      "item_hash": "23b6a439ccf19d9f33b84dc404e66466734f2fd256a6135f67ca1262535f13ad",
+      "link": "https://www.fsa.go.jp/policy/fsa.html",
+      "published_at": "2026-07-21T16:15:00Z",
+      "raw_published": "Tue, 21 Jul 2026 16:15:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "「成長投資を促進するための金融戦略 ー 資産運用立国のアップグレード ー」について公表しました。"
     },
     "2586945180fade010fe4f5fdcf8a05eae27a74aa91829c32910da2ede7caf7cf": {
       "card_id": null,
@@ -224,6 +256,22 @@
       "status": "queued",
       "summary": "<p>会員において新たに取り扱うに至った銘柄を以下へお知らせいたします。 電子決済手段</p> <p>The post <a href=\"https://jvcea.or.jp/information/statistics-reports/20260624-001/\">新規取扱銘柄のお知らせ</a> first appeared on <a href=\"https://jvcea.or.jp\">一般社団法人日本暗号資産等取引業協会（JVCEA）</a>.</p>",
       "title": "新規取扱銘柄のお知らせ"
+    },
+    "3b9eeb74b938ab4045bef27a85dc0e8286fae576db25d05cc39a7e07305ee060": {
+      "card_id": null,
+      "content_hash": "4b69fe0429ac9d09e9594600adab8064c7974a4bc637e640de46d50e38bcaa53",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-22T04:42:32Z",
+      "guid": null,
+      "item_hash": "3b9eeb74b938ab4045bef27a85dc0e8286fae576db25d05cc39a7e07305ee060",
+      "link": "https://www.fsa.go.jp/ordinary/chuui/mutouroku.html",
+      "published_at": "2026-07-22T11:00:00Z",
+      "raw_published": "Wed, 22 Jul 2026 11:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "その他,無登録で金融商品取引業を行う者の名称等について更新しました。"
     },
     "40efe78597663a3d4d3915012b540c0e06fd8066d5b01d93b1e5445b10b41d40": {
       "card_id": "40efe78597663a3d4d3915012b540c0e06fd8066d5b01d93b1e5445b10b41d40",
@@ -320,6 +368,22 @@
       "status": "queued",
       "summary": "",
       "title": "「令和６年度政策評価結果の政策への反映状況」について公表しました。"
+    },
+    "5450f051be8a48424a3fea73e19be68c00c48e081b34e82d04a8428a8859c0e1": {
+      "card_id": null,
+      "content_hash": "30850f4c8d70c11b8e275ba877c415d1610fd0fa740a18d317196ab7bef7e3ad",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-22T04:42:32Z",
+      "guid": null,
+      "item_hash": "5450f051be8a48424a3fea73e19be68c00c48e081b34e82d04a8428a8859c0e1",
+      "link": "https://www.fsa.go.jp/common/conference/minister/2026b/20260717-1.html",
+      "published_at": "2026-07-21T17:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 17:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "記者会見,片山財務大臣兼内閣府特命担当大臣閣議後記者会見の概要（令和８年７月17日）について掲載しました。"
     },
     "598402eef0df276b0cd30be7285672bae58146affb37afcb93fcce7b8b3926fc": {
       "card_id": null,
@@ -625,6 +689,22 @@
       "summary": "<p>会員において新たに取り扱うに至った銘柄を以下へお知らせいたします。 暗号資産</p> <p>The post <a href=\"https://jvcea.or.jp/information/statistics-reports/20260626-001/\">新規取扱銘柄のお知らせ</a> first appeared on <a href=\"https://jvcea.or.jp\">一般社団法人日本暗号資産等取引業協会（JVCEA）</a>.</p>",
       "title": "新規取扱銘柄のお知らせ"
     },
+    "bc7b4a428e2ea2f6ab954390eac58915307a3db7c2b75de1ca40c708cb81ef67": {
+      "card_id": null,
+      "content_hash": "eec4b7bc4cd68d11f5b083aa8abebf6a264ff1f1c1be67baa497a48f305b1ee0",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-22T04:42:32Z",
+      "guid": null,
+      "item_hash": "bc7b4a428e2ea2f6ab954390eac58915307a3db7c2b75de1ca40c708cb81ef67",
+      "link": "https://www.fsa.go.jp/singi/vc/gijiroku/20260618.html",
+      "published_at": "2026-07-21T15:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 15:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "「ベンチャーキャピタルに関する有識者会議」（第４回）議事録について公表しました。"
+    },
     "c0b5b33930b6c0233fcb8fe45b9bfb3626392f27026660f2a525b5be827fd5ac": {
       "card_id": null,
       "content_hash": "44adabe5c4d8033050aa51ec086cfad297ec085c8737fa9efecaafdfb5e7d2b0",
@@ -833,6 +913,22 @@
       "summary": "",
       "title": "Public Comment,Publication of the finalized \"the Partial Amendment to the Designation of a country or region under Articles 17-2 and 17-3 of the Order for Enforcement of the Act on Prevention of Transfer of Criminal Proceeds\" after public consultation"
     },
+    "e4c8882facc4e75222ddd381c79356308143b7796586a0b3635739d475c126f2": {
+      "card_id": null,
+      "content_hash": "16e15faec0a9986900e5e8646fb0c508cea1e1c8df332a5b3d7d7edd57ee38bc",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-22T04:42:32Z",
+      "guid": null,
+      "item_hash": "e4c8882facc4e75222ddd381c79356308143b7796586a0b3635739d475c126f2",
+      "link": "https://www.fsa.go.jp/common/ronten/index.html",
+      "published_at": "2026-07-21T18:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 18:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "その他,令和８年６月に開催された業界団体との意見交換会において、金融庁が提起した主な論点を公表しました。"
+    },
     "e88655f9e4479d25fa4f86ac3266ae56d35a5a9da4c8216baf262ffbad8eec63": {
       "card_id": null,
       "content_hash": "ba13406565c8d878b576ee1c60487f1d193db38b8696f76707f2406057d02b47",
@@ -976,6 +1072,22 @@
       "status": "queued",
       "summary": "",
       "title": "株式会社全東信の破産手続開始を踏まえた金融上の対応について公表しました。"
+    },
+    "fa704987ae1d44944a7c2aea900e7eadfc011b99b778d511a7bf2c45d0fcc3c8": {
+      "card_id": null,
+      "content_hash": "a8f0921b8a980f37c14bb0e31452c3631de2b733aa056b9f9e062cccfb8760ca",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-22T04:42:32Z",
+      "guid": null,
+      "item_hash": "fa704987ae1d44944a7c2aea900e7eadfc011b99b778d511a7bf2c45d0fcc3c8",
+      "link": "https://www.fsa.go.jp/common/about/jinji/index.html",
+      "published_at": "2026-07-21T15:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 15:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "人事異動（令和８年７月17日付及び令和８年７月21日付）について公表しました。"
     },
     "fdf32f787149728915cd0cf503bd9d0e67e16df70d06d0fe14acbc07a1f255b4": {
       "card_id": null,
