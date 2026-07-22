@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T04:43:27Z",
+  "generated_at": "2026-07-22T04:42:34Z",
   "items": {
     "02028a9677575e76189a49022768f45cc07c84ca74ac72879172cd9671891801": {
       "card_id": null,
@@ -16,6 +16,22 @@
       "status": "queued",
       "summary": "The Prudential Regulation Authority has today announced plans to consult on reforming rules around shared operational services for ring-fenced banks.",
       "title": "PRA announces ring-fence change to reduce costs"
+    },
+    "020ee7268a37e45e564dd96719779465a3e3a4a317cd9c3e6ecd22d818f9700f": {
+      "card_id": null,
+      "content_hash": "3276aa21623e441a38192a016b373ea8355a757e83b1c1caa065d01ca1cf51b7",
+      "feed_id": "boe_news",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "{E026F16A-A501-4794-A09B-7E54F2EE30CE}",
+      "item_hash": "020ee7268a37e45e564dd96719779465a3e3a4a317cd9c3e6ecd22d818f9700f",
+      "link": "https://www.bankofengland.co.uk/news/2026/july/pra-fines-hdi-global-se-4165000-for-inaccurate-reporting",
+      "published_at": "2026-07-20T09:00:00Z",
+      "raw_published": "Mon, 20 Jul 2026 10:00:00 +0100",
+      "relevant": false,
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "The Prudential Regulation Authority (PRA) has imposed a financial penalty of £4,165,000 on HDI Global SE in connection with the submission of incorrect data to the PRA.",
+      "title": "PRA fines HDI Global SE £4,165,000 for inaccurate reporting of FSCS Liabilities and FSCS Fee Tariff data"
     },
     "02b9104540f2d9c017ddb297d57b0ca470f3e2c6ba85a23cbeb96515e1b432af": {
       "card_id": null,
@@ -576,6 +592,22 @@
       "status": "queued",
       "summary": "The PRA Regulatory Digest is for people working in the UK financial services industry and highlights key regulatory news and publications delivered for the month.",
       "title": "PRA Regulatory Digest – February 2026"
+    },
+    "3089a95f5eb5f12c4b7f181aa70d0045b17742aa2c788de41556f056e3e1c196": {
+      "card_id": null,
+      "content_hash": "9cfaf2b86bfc7182c1d6db88036b5e4dfbfb2d1fee971b44498477dcf4f8d65b",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.gov.uk/government/publications/em-on-customs-duty-on-distance-imported-goods-sales-c20262760#2026-07-20T12:39:46Z",
+      "item_hash": "3089a95f5eb5f12c4b7f181aa70d0045b17742aa2c788de41556f056e3e1c196",
+      "link": "https://www.gov.uk/government/publications/em-on-customs-duty-on-distance-imported-goods-sales-c20262760",
+      "published_at": "2026-07-20T12:39:46Z",
+      "raw_published": "2026-07-20T12:39:46Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The government's summary of a Commission Delegated Regulation as regards elements related to the temporary customs duty on distance sales of imported goods.",
+      "title": "Policy paper: EM on customs duty on distance imported goods sales (C(2026)2760)"
     },
     "34430e6df4c0819b34077e9ffd2127facc0bd10a2e4fa3a638066215da5993fd": {
       "card_id": null,
@@ -1376,6 +1408,22 @@
       "status": "queued",
       "summary": "Wholesale financial businesses involved in retail markets will find it easier to comply with the Consumer Duty, following proposals from the FCA. The changes are part of the FCA's plans to give wholesale firms the confidence to apply the Duty proportionately. Under the proposals, firms will benefit from:Removing business for genuinely non-UK customers from the Duty’s scope where there is no clear UK link or reasonable expectation of UK protection.Clearer boundaries around what is out of scope, so they can focus on running their business rather than having to show that the Duty does not apply.More clarity on firms’ responsibilities when they work together, including across distribution chains and in the design of complex products.Simon Walls, executive director of markets, said:'The Consumer Duty is helping deliver good outcomes and build confidence for retail consumers, but it was never intended to become a Wholesale Duty imposing on deals between sophisticated parties. That's why we are refining its scope to provide greater clarity to wholesale markets, and keep the focus on the consumer outcomes it was created to improve.'The FCA has today also published proposals to further simplify its insurance rules, while maintaining appropriate levels of consumer protection. The FCA will continue to engage firms and other stakeholders to support effective implementation of the Consumer Duty and ensure it delivers good outcomes across markets.Notes to editorsThe FCA’s wholesale Duty consultation.The FCA’s 4-point plan (PDF) on addressing concerns about the Consumer Duty and wholesale markets.The FCA's insurance simplification consultation.",
       "title": "Non-UK business removed from Consumer Duty scope to reduce burdens on wholesale businesses"
+    },
+    "6c272745d4dffc64ead2ce34f3268c4a8a399b9b64fb23ba084ea634abc3f1bd": {
+      "card_id": null,
+      "content_hash": "df07e0922213c00c4fa5c2acb3dd7d182bb13fa3d4e1436842f4563f6aa85938",
+      "feed_id": "fca_news",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "171061",
+      "item_hash": "6c272745d4dffc64ead2ce34f3268c4a8a399b9b64fb23ba084ea634abc3f1bd",
+      "link": "https://www.fca.org.uk/news/news-stories/prosper-capital-llp-enters-creditors-voluntary-liquidation",
+      "published_at": null,
+      "raw_published": "Monday, July 20, 2026 - 09:51",
+      "relevant": false,
+      "source_id": "fca",
+      "status": "queued",
+      "summary": "On 1 June 2026, Prosper Capital LLP (Prosper) went into creditors’ voluntary liquidation. Jeremy Karr and Simon Killick of BTG Begbies Traynor (Central) LLP were appointed as joint liquidators. Prosper, an FCA-authorised firm (firm reference number (FRN): 453007), was an alternative investment fund manager and arranged deals in investments. Prosper has applied to cancel its authorisation, which is subject to review by the FCA.Prosper was also responsible for the activities of its appointed representative, Crowd2Let Capital Limited (Crowd2Let) (FRN: 743371).Below we set out:What to do if you’re a customer who wishes to make a complaint or has an existing complaint against the firm.How to contact the joint liquidators.How to protect yourself from fraudsters claiming to act on behalf of the firm or the joint liquidators.If you believe you have a claim against Prosper, contact the joint liquidators using the details below.",
+      "title": "Prosper Capital LLP enters creditors’ voluntary liquidation"
     },
     "6ccaa4f2a34dad3287200abe2c0975161cb7bd1af062bca1195103366d176028": {
       "card_id": null,
@@ -2321,6 +2369,22 @@
       "summary": "The FCA Board has appointed Dan Lavender as a new member of its Regulatory Decisions Committee (RDC). The RDC is responsible for taking certain regulatory decisions on behalf of the FCA relating to contested enforcement action. Committee members bring a broad range of professional experience to support fair, independent and evidence-based decision-making.Alison Potter, the Chair of the RDC, said: ‘I am delighted to welcome Dan to the committee. Dan has significant legal and leadership experience in relation to contentious financial services matters, so his skill set will complement existing committee members and enhance the overall capability and effectiveness of the RDC.’Notes to editorsMore detail about the work of the RDC is available on the FCA website, including the biographies of all committee members.Read Dan Lavender's biography.The RDC is an FCA Board Committee that is operationally separate from the rest of the FCA. The FCA Board appoints the RDC Chair and members, who are drawn from across a spectrum of business, consumer and industry backgrounds.Find out more information about the FCA.",
       "title": "New member appointed to the Regulatory Decisions Committee"
     },
+    "bdfbe57a8ec3673f935637c1e1dccb5cbc82d93d58850262bb6de97f7deda50d": {
+      "card_id": null,
+      "content_hash": "67892c23b5c224cc81dcde9da0547bacbfb4ac51b43c165c24b79f604358642e",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.gov.uk/government/news/new-pm-cuts-tax-on-household-electricity-bills-to-give-breathing-space-on-cost-of-living#2026-07-21T05:05:00Z",
+      "item_hash": "bdfbe57a8ec3673f935637c1e1dccb5cbc82d93d58850262bb6de97f7deda50d",
+      "link": "https://www.gov.uk/government/news/new-pm-cuts-tax-on-household-electricity-bills-to-give-breathing-space-on-cost-of-living",
+      "published_at": "2026-07-21T05:05:00Z",
+      "raw_published": "2026-07-21T05:05:00Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "New Prime Minister takes immediate action to cut taxes on electricity bills to give millions of households breathing space this winter.",
+      "title": "New PM cuts tax on household electricity bills to give breathing space on cost of living"
+    },
     "bea2ad525002306ed2bc35a5186cf5072b41c3f7fd07b23cbca3d1fafb19c170": {
       "card_id": null,
       "content_hash": "cf1521d48d6a2c2a52eaa7f36a8c5cc304d686736035736cbafd113dbfcbc627",
@@ -2496,6 +2560,22 @@
       "status": "queued",
       "summary": "Policy statement 13/26",
       "title": "PS13/26 – Insurance third-country branches: policy implementation and other updates"
+    },
+    "ca5f53d451e92fd978ffc811b537c78cda0392333cee3d96491c6a6a86306785": {
+      "card_id": null,
+      "content_hash": "7c1e9d1edd619a2d68c65ee6fe5a7119a481e969cdc6a41795c9bc4d37c089b1",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.gov.uk/government/calls-for-evidence/customs-modernisation#2026-07-21T12:05:20Z",
+      "item_hash": "ca5f53d451e92fd978ffc811b537c78cda0392333cee3d96491c6a6a86306785",
+      "link": "https://www.gov.uk/government/calls-for-evidence/customs-modernisation",
+      "published_at": "2026-07-21T12:05:20Z",
+      "raw_published": "2026-07-21T12:05:20Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "We welcome views on the future of international trade and the impacts of digitalised and modernised practices on the UK customs regime.",
+      "title": "Customs Modernisation"
     },
     "cb136916f43872add2e99acead30b89a9216e6598db76cd99c3cf00360b88813": {
       "card_id": null,
@@ -2832,6 +2912,22 @@
       "status": "queued",
       "summary": "Joint statement from the United Kingdom, the Netherlands, Finland and Poland",
       "title": "Joint statement from member countries of the Multilateral Defence Mechanism"
+    },
+    "e1650567e14963adf3a5d9be9d846a9e58f79307fc83a99a27c85c8af9ebe340": {
+      "card_id": null,
+      "content_hash": "4a0d716676ee79ed581c155e341aa40b4499b64f2fd78e591748c2493ac90466",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.gov.uk/government/statistics/public-sector-finances-bulletin#2026-07-21T06:00:03Z",
+      "item_hash": "e1650567e14963adf3a5d9be9d846a9e58f79307fc83a99a27c85c8af9ebe340",
+      "link": "https://www.gov.uk/government/statistics/public-sector-finances-bulletin",
+      "published_at": "2026-07-21T06:00:03Z",
+      "raw_published": "2026-07-21T06:00:03Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The public sector finances statistical bulletin.",
+      "title": "Accredited official statistics: Public sector finances bulletin"
     },
     "e16552032be278325324caf66eeda9b8dc0271b89c39b3c6cfe7a9918d4057f9": {
       "card_id": null,
