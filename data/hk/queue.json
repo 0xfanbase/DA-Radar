@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T05:29:36Z",
+  "generated_at": "2026-07-22T04:42:34Z",
   "items": [
     {
       "feed_id": "hkma_circulars",
@@ -670,6 +670,16 @@
       "status": "queued",
       "summary": "",
       "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Cybersecurity Webinar"
+    },
+    {
+      "feed_id": "sfc_circulars",
+      "item_hash": "fe84c2c18d3cafc661e1ad965438dd38a2368297cb88ee0e0a4ee82ecf453d8d",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/aml/doc?refNo=26EC39",
+      "published_at": "2026-07-14T10:31:00Z",
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism (1) FATF Statement on High-Risk Jurisdictions subject to a Call for Action (2) FATF Statement on Jurisdictions under Increased Monitoring (3) Outcomes from the FATF Plenary, 17-19 June 2026"
     }
   ],
   "jurisdiction_id": "hk",

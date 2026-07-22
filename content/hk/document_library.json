@@ -48,7 +48,7 @@
     },
     {
       "item_hash": "10f7a10281763fb27fdd513cd213e6c8436edcd5926915e8e3e85fe1b87ed0b2",
-      "link": "https://apps.sfc.hk/edistributionWeb/api/news/list-content?refNo=25PR210&lang=EN",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=25PR210",
       "pillar": [
         "banking_money",
         "dealing_custody_advisory"
@@ -93,7 +93,7 @@
     },
     {
       "item_hash": "1aa3c695532f834c0cf306105eb488cd524ac2069be6d34fd310f53bca5a308b",
-      "link": "https://apps.sfc.hk/edistributionWeb/api/circular/list-content/circular/doc?refNo=26EC26&lang=EN",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC26",
       "pillar": [
         "exchanges_vatp",
         "stablecoins"
@@ -204,7 +204,7 @@
     },
     {
       "item_hash": "3cb77193bb9f36c6cb4e2b95627fa78751d449509de9fdc3469d2895408372d8",
-      "link": "https://apps.sfc.hk/edistributionWeb/api/news/list-content?refNo=26PR75&lang=EN",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR75",
       "pillar": [
         "dealing_custody_advisory"
       ],
@@ -326,7 +326,7 @@
     },
     {
       "item_hash": "709df5c06eb6654dd67aca359346660320c86f59ae526b22bac15b7eabdab877",
-      "link": "https://apps.sfc.hk/edistributionWeb/api/circular/list-content/circular/doc?refNo=26EC32&lang=EN",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC32",
       "pillar": [
         "exchanges_vatp"
       ],
@@ -638,7 +638,7 @@
     },
     {
       "item_hash": "d8926e7c94fd548a591881ac02809c24eebff940f5ec329b42d02dd21d1313fd",
-      "link": "https://apps.sfc.hk/edistributionWeb/api/circular/list-content/circular/doc?refNo=26EC31&lang=EN",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC31",
       "pillar": [
         "funds_etfs"
       ],
@@ -761,7 +761,7 @@
     },
     {
       "item_hash": "f66431227c57b961755f9fad4bf2a393c31541dc6925c78ddd77b9dc0618305c",
-      "link": "https://apps.sfc.hk/edistributionWeb/api/news/list-content?refNo=26PR1&lang=EN",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR1",
       "pillar": [
         "aml_cft_enforcement",
         "funds_etfs"
@@ -773,7 +773,7 @@
     },
     {
       "item_hash": "39499a09b0b4ba86f89ce85f2f6b171e1368560d9b30a2026a688bae15e677d2",
-      "link": "https://apps.sfc.hk/edistributionWeb/api/news/list-content?refNo=26PR101&lang=EN",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR101",
       "pillar": [
         "exchanges_vatp"
       ],
@@ -784,7 +784,7 @@
     },
     {
       "item_hash": "8272757695e6293ebad597bce8c0c59caf20b12c0796a37bad13a24377b0a565",
-      "link": "https://apps.sfc.hk/edistributionWeb/api/circular/list-content/circular/doc?refNo=26EC35&lang=EN",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC35",
       "pillar": [
         "exchanges_vatp"
       ],
@@ -795,7 +795,7 @@
     },
     {
       "item_hash": "c9915298e5aac90bfa5341b0c7f7f41694d6005fd4df653ce5a092215f47b6c2",
-      "link": "https://apps.sfc.hk/edistributionWeb/api/circular/list-content/circular/doc?refNo=26EC40&lang=EN",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC40",
       "pillar": [
         "exchanges_vatp"
       ],
@@ -803,9 +803,21 @@
       "regulator": "SFC",
       "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Cybersecurity Webinar",
       "type": "circulars"
+    },
+    {
+      "item_hash": "fe84c2c18d3cafc661e1ad965438dd38a2368297cb88ee0e0a4ee82ecf453d8d",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/aml/doc?refNo=26EC39",
+      "pillar": [
+        "aml_cft_enforcement",
+        "exchanges_vatp"
+      ],
+      "published_at": "2026-07-14T10:31:00Z",
+      "regulator": "SFC",
+      "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism (1) FATF Statement on High-Risk Jurisdictions subject to a Call for Action (2) FATF Statement on Jurisdictions under Increased Monitoring (3) Outcomes from the FATF Plenary, 17-19 June 2026",
+      "type": "circulars"
     }
   ],
-  "generated_at": "2026-07-13T11:53:32Z",
+  "generated_at": "2026-07-22T04:42:34Z",
   "jurisdiction_id": "hk",
   "schema_version": 1
 }

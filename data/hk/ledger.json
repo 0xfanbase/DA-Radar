@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T04:37:37Z",
+  "generated_at": "2026-07-22T04:42:34Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -833,6 +833,22 @@
       "summary": "",
       "title": "Return template on Liquidity Monitoring Tools : MA(BS)23 Enclosure 1: Return on Liquidity Monitoring Tools"
     },
+    "0beaaa731d08e09c3fee41e4aea02dd90dc70313634fb05484cf3ad591dcbc66": {
+      "card_id": null,
+      "content_hash": "dd2866e78d2e4e40d226df9257178ae14d5b230fe7f82f0be76614e0087a833b",
+      "feed_id": "hkma_circulars",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "0beaaa731d08e09c3fee41e4aea02dd90dc70313634fb05484cf3ad591dcbc66",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260708-1-EN",
+      "published_at": "2026-07-09T16:00:00Z",
+      "raw_published": "Fri, 10 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Interpretation Note issued by the Insurance Authority (“IA”) on the Review Mechanism for Illustration Rate Caps in Benefit Illustration for Participating Policies"
+    },
     "0c274516f0281485c1eae73db0d0fbaa1add4441baae482a234316f609ff7d0e": {
       "card_id": null,
       "content_hash": "1b9b95364a282cc4fbe2d4a46175620bf388a2d265ff5c1aba8dba06ed3ba543",
@@ -928,6 +944,22 @@
       "status": "queued",
       "summary": "",
       "title": "Scam alert related to banks"
+    },
+    "0d621b345f213ffb1b86fe56f635eea2e87f757d1c7d60ffcd92576f87ab6ec6": {
+      "card_id": null,
+      "content_hash": "f5075e37b1125957ad07f9543b735122c80ed11cf2802047f9506580ba303920",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "0d621b345f213ffb1b86fe56f635eea2e87f757d1c7d60ffcd92576f87ab6ec6",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260716-7/",
+      "published_at": "2026-07-15T16:00:00Z",
+      "raw_published": "Thu, 16 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Tender of 20-year HKD HKSAR Institutional Government Bonds through re-opening to be held on Wednesday, 22 July 2026"
     },
     "0e255a4de3c3f2d5294654a43ef4e4f205e8ba2fee772a890093d45bb8f9fe74": {
       "card_id": null,
@@ -1505,6 +1537,22 @@
       "summary": "",
       "title": "Hong Kong’s Latest Foreign Currency Reserve Assets Figures Released"
     },
+    "17cb7d14e2c7df147e0266c1d096c6cf3509215bd82a53c36ce06f84e912af3a": {
+      "card_id": null,
+      "content_hash": "a58ed68abf3b86d8ffac0b510dc405e56b855f0e662f2c0fab0561d731a1471d",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "17cb7d14e2c7df147e0266c1d096c6cf3509215bd82a53c36ce06f84e912af3a",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260720-3/",
+      "published_at": "2026-07-19T16:00:00Z",
+      "raw_published": "Mon, 20 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Additional Referral Institution for “HKMC Retire 3”"
+    },
     "18ac20a49efb789b36cdaba7d20d6b83cb959abe3ee75b883e2fa2119dbf1a66": {
       "card_id": null,
       "content_hash": "05549c0ad304467051f19a87e62a24cf83740a5117be787f8d61e8fa5194d600",
@@ -1921,6 +1969,22 @@
       "summary": "",
       "title": "Keynote at CASI Sustainability Forum: Building Capacity for Developing Transition Finance Ecosystems in Asia by Arthur Yuen, Deputy Chief Executive, Hong Kong Monetary Authority"
     },
+    "1f44f0f84d4068c7be38936998a2a8c9761297f6a15e365eaa41888561a69011": {
+      "card_id": null,
+      "content_hash": "1f6af4b32fea4fddf8ba53ea64c0a54c675ec74edda5a5b0d54cb200dc0487f5",
+      "feed_id": "hkma_speeches",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "1f44f0f84d4068c7be38936998a2a8c9761297f6a15e365eaa41888561a69011",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/speeches/2026/07/20260713-1/",
+      "published_at": "2026-07-12T16:00:00Z",
+      "raw_published": "Mon, 13 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Opening remarks at HKIMR-BIS-IMF Joint Conference on “Global Interconnections and Financial Stability” by Darryl Chan, Deputy Chief Executive, Hong Kong Monetary Authority"
+    },
     "1f485acc3785f20e62d5873856cb1a8ab393b08ce63d4ab021b31637184a71ca": {
       "card_id": null,
       "content_hash": "3cb2ccb38b957db530f3e0fc2784ae6561447a38e0c20bdb13356b5b31f68377",
@@ -2304,6 +2368,22 @@
       "status": "queued",
       "summary": "",
       "title": "Scam alert related to banks"
+    },
+    "26241771a5250e676d0558008945da8c27cdf5f5577b0cc170e5b165cc230c1d": {
+      "card_id": null,
+      "content_hash": "ba4f1dcce643711669bf9e65e3ca1ec4c13a4cc19071926eac6b7737363c5bef",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "26241771a5250e676d0558008945da8c27cdf5f5577b0cc170e5b165cc230c1d",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260717-5/",
+      "published_at": "2026-07-16T16:00:00Z",
+      "raw_published": "Fri, 17 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Tender of 3-year RMB HKSAR Institutional Government Bonds through re-opening to be held on Thursday, 23 July 2026"
     },
     "266dcbe4a0dc447c3b06928a64ed68bfc22f3ce8b4f8de5db703f18e2ac69f7f": {
       "card_id": null,
@@ -3745,6 +3825,22 @@
       "summary": "",
       "title": "Analytical Accounts of the Exchange Fund"
     },
+    "3e95c51482a50b4331b58162e71443f024cc7c77a57fd90581d073f73e84d8bd": {
+      "card_id": null,
+      "content_hash": "5c1bc2ef3eee14e9e37d0ddf07cb293290168596dca8def159cb0eb0580540ae",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "3e95c51482a50b4331b58162e71443f024cc7c77a57fd90581d073f73e84d8bd",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260721-4/",
+      "published_at": "2026-07-20T16:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Exchange Fund Bills Tender Results"
+    },
     "3e9a68116e4fac8b2f27ccba0784258abb9064a232e8e8ae8ec4fa439a6cb0ea": {
       "card_id": null,
       "content_hash": "2d40102e70b85400aaf226955058582c31d1492430c6b5302a002245e5ac8580",
@@ -3840,6 +3936,22 @@
       "status": "queued",
       "summary": "",
       "title": "Revised Supervisory Policy Manual (SPM) Module IB-1 on “Supervision of Insurance Intermediary Business of Authorized Institutions”"
+    },
+    "404b748361c37f8f4a220e27d451a021d98d449af03c9d4e2030eeb0f6529092": {
+      "card_id": null,
+      "content_hash": "13aba783c8cd8eccb1443b85d472003d0c32d8260ef583315ab01d5f7c5be694",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "404b748361c37f8f4a220e27d451a021d98d449af03c9d4e2030eeb0f6529092",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260717-6/",
+      "published_at": "2026-07-16T16:00:00Z",
+      "raw_published": "Fri, 17 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Tender of 10-year RMB HKSAR Institutional Government Bonds through re-opening to be held on Thursday, 23 July 2026"
     },
     "406bbdcf0e83649076c436e981241b74ef55b2184604145a7d532d87ec7f4430": {
       "card_id": null,
@@ -4273,6 +4385,22 @@
       "summary": "",
       "title": "Instant Message and Website Alert – fraudulent websites related to Alipay Financial Services (HK) Limited"
     },
+    "4786d9748f1550a9f07e6ecadb80644b374ecc8bff3d0a4f37294458484f1a07": {
+      "card_id": null,
+      "content_hash": "a02f8a4ede80301e18b22c6b675ec0b6644c3387f74da103d8f7e57d0345caba",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "4786d9748f1550a9f07e6ecadb80644b374ecc8bff3d0a4f37294458484f1a07",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260715-3/",
+      "published_at": "2026-07-14T16:00:00Z",
+      "raw_published": "Wed, 15 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Scam alert related to banks"
+    },
     "4795357126df358928d78f59cf36beaa8736ab36d346b51ce84cfd17b1f1c202": {
       "card_id": null,
       "content_hash": "01abe866428216daa1399727bd96890a99694b254370c749b5af99fe4593f13c",
@@ -4288,6 +4416,22 @@
       "status": "queued",
       "summary": "",
       "title": "Handling of Cash at Bank of Deceased Account Holders"
+    },
+    "47a4f880701a9d8613edd9f8b1afd8bccb0b46ed64bdd6c2a7150b87c44ec2c6": {
+      "card_id": null,
+      "content_hash": "72911dd05fcfffb15907236090bc1c36ac7aefae2cb4e4416f904fb598a03334",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "47a4f880701a9d8613edd9f8b1afd8bccb0b46ed64bdd6c2a7150b87c44ec2c6",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260717-3/",
+      "published_at": "2026-07-16T16:00:00Z",
+      "raw_published": "Fri, 17 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Scam alert related to banks"
     },
     "4901d34471abee68e27f0ef63f5c7a2906a7d3d9a4cc895c4888da9f8d3d79d5": {
       "card_id": null,
@@ -5473,6 +5617,22 @@
       "summary": "",
       "title": "Opening Remarks at HKMA-HKAB Seminar on Quantum Computing and Quantum Resilience for Banking Industry by Arthur Yuen, Deputy Chief Executive, Hong Kong Monetary Authority"
     },
+    "5c1e1931bbd095f71a0540e52e81b62c08b3547072229babdfd5a98b39e34e2e": {
+      "card_id": null,
+      "content_hash": "e95be44e55fa61e1c992ea00696cf6fd97cc4c85c2f70d2cbe996dc92edc2572",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "5c1e1931bbd095f71a0540e52e81b62c08b3547072229babdfd5a98b39e34e2e",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260716-6/",
+      "published_at": "2026-07-15T16:00:00Z",
+      "raw_published": "Thu, 16 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Tender of 7-year HKD HKSAR Institutional Government Bonds through re-opening to be held on Wednesday, 22 July 2026"
+    },
     "5c22e947280a802fb7f00398386da6ac1b994a1198ba795ed9c84af524b721f7": {
       "card_id": null,
       "content_hash": "ef9af68a022b4bdbde819278ad6be9f7ddc6246f0d4e190130153a8734265ac0",
@@ -5569,6 +5729,22 @@
       "summary": "",
       "title": "Revisions to standard LAC disclosure templates"
     },
+    "5df034554f440c2bda0bd0e7c7e34dc16b37c758dbda5a5355657fc430b8a895": {
+      "card_id": null,
+      "content_hash": "f9f1d5631044fd0e054c11b46f738459172201297d3a5e06fa46c26a8ff0a4b9",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "5df034554f440c2bda0bd0e7c7e34dc16b37c758dbda5a5355657fc430b8a895",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260717-4/",
+      "published_at": "2026-07-16T16:00:00Z",
+      "raw_published": "Fri, 17 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Tender of 1-year RMB HKSAR Institutional Government Bonds through re-opening to be held on Thursday, 23 July 2026"
+    },
     "5df8e7a1cb3236c60a6b13791179b816010cdda41e07059c4150ebdc54a51012": {
       "card_id": null,
       "content_hash": "4b53c7be708214cfa7a2509f8bfda6170ea2c5d71a617f54bcf7da2c9d28738d",
@@ -5584,6 +5760,22 @@
       "status": "queued",
       "summary": "",
       "title": "Complaints Against Debt Collection Agents Employed by Authorized Institutions (PDF File, 186.9 KB)"
+    },
+    "5e86e37d06a1d5a4e88b076a60e66e300e36be63737b739b640b9486b8e2ba8b": {
+      "card_id": null,
+      "content_hash": "bdd7b080aa9439f0e41d1df0ea9c930f44326e3ed495bcf60970f3c6343f5e94",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "5e86e37d06a1d5a4e88b076a60e66e300e36be63737b739b640b9486b8e2ba8b",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260716-5/",
+      "published_at": "2026-07-15T16:00:00Z",
+      "raw_published": "Thu, 16 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Tender of 3-year HKD HKSAR Institutional Government Bonds through re-opening to be held on Wednesday, 22 July 2026"
     },
     "5e88b313e3812d39aa198c0ed278788a407607e68c00a97f79448e350a29c1f6": {
       "card_id": null,
@@ -5808,6 +6000,22 @@
       "status": "queued",
       "summary": "",
       "title": "Supervisory Policy Manual (SPM): Updated Module CG-6 on “Competence and Ethical Behaviour” (PDF File, 166.9 KB)"
+    },
+    "61d7daeaecddd2f05db0e65d0271f58413fea754a6e8777e67184cd9c6363f19": {
+      "card_id": null,
+      "content_hash": "86f46b64ac1633e92116877e270adc5d71315009894343c87b3fc22a6ba1392c",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "61d7daeaecddd2f05db0e65d0271f58413fea754a6e8777e67184cd9c6363f19",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260714-4/",
+      "published_at": "2026-07-13T16:00:00Z",
+      "raw_published": "Tue, 14 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Exchange Fund Bills Tender Results"
     },
     "61dbd4dc9b161f852035bc7301fae1df32f5623cf0d0a9f4eecc88272916bc0c": {
       "card_id": null,
@@ -6673,6 +6881,22 @@
       "summary": "",
       "title": "Coin Collection Programme"
     },
+    "6da9f25a96c8b3336c6cc91fdffd5282d5f87b886dd85a93156126b98cd76d6e": {
+      "card_id": null,
+      "content_hash": "202cb95b71ef660457b143024dcfa5fac17ab523fc199765a43f4bb36258c40d",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "6da9f25a96c8b3336c6cc91fdffd5282d5f87b886dd85a93156126b98cd76d6e",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260714-3/",
+      "published_at": "2026-07-13T16:00:00Z",
+      "raw_published": "Tue, 14 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Scam alert related to banks"
+    },
     "6deb454343a4748bbd68a5d6a9dd01bf78029bf2eae2120ed8bc76c76b93344a": {
       "card_id": null,
       "content_hash": "4f41323c192b893b7a372f198bf441eb69f7c8010902d2f0a6b0b343eab0036f",
@@ -6720,6 +6944,22 @@
       "status": "queued",
       "summary": "",
       "title": "Scam alert related to banks"
+    },
+    "6ec87400d0e720c5ad533ed9a9c23ded064ecba82d5a52e5d95e0c938bf0badd": {
+      "card_id": null,
+      "content_hash": "94d731609504f7f6675282caab6e5e59eb89dcc3e0c13273c00f1361317366ad",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "6ec87400d0e720c5ad533ed9a9c23ded064ecba82d5a52e5d95e0c938bf0badd",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260714-5/",
+      "published_at": "2026-07-13T16:00:00Z",
+      "raw_published": "Tue, 14 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Analytical Accounts of the Exchange Fund"
     },
     "6edf9e1d42ce47b828c18e0df1f89a05bf75373a09adc06622020b7d9d02a71f": {
       "card_id": null,
@@ -6800,6 +7040,22 @@
       "status": "queued",
       "summary": "",
       "title": "Cross-boundary Data Validation Platform"
+    },
+    "704f27c3b4295bffa3f710e1cc3c1a15d9effcc8eca990c7db0cdf33500695a3": {
+      "card_id": null,
+      "content_hash": "3d437ded8840bc5b7a8a0e983235c6263dc9bce1a377e0f6be40b185623bc9c3",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "704f27c3b4295bffa3f710e1cc3c1a15d9effcc8eca990c7db0cdf33500695a3",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260722-3/",
+      "published_at": "2026-07-21T16:00:00Z",
+      "raw_published": "Wed, 22 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Coin Collection Programme"
     },
     "706e9ec568257ebab0320a70baf2d3972fcf093b592eff92a16f5362ab73f809": {
       "card_id": null,
@@ -7985,6 +8241,22 @@
       "summary": "",
       "title": "Beware of fraudulent documents purported to be issued by HKMA"
     },
+    "83c11014a041969cad10a6e61616a31cf49190a5669bff5b9646e981658b170f": {
+      "card_id": null,
+      "content_hash": "ce67868f933cabf8ed8c121d01a9858815e1d2dcfbf569426fdd0461c6739913",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "83c11014a041969cad10a6e61616a31cf49190a5669bff5b9646e981658b170f",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260713-3/",
+      "published_at": "2026-07-12T16:00:00Z",
+      "raw_published": "Mon, 13 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "HKICL alerts public of fraudulent website"
+    },
     "83eb7745f85140c1f8e44a544e53ecd8aa6a0bdecf79579a400a88be8109ee31": {
       "card_id": null,
       "content_hash": "07abac335032b776a8cbf6219959f5eab5b77e2f1a8f9855e6d23024f7d97efa",
@@ -8000,6 +8272,22 @@
       "status": "queued",
       "summary": "",
       "title": "HKMA, CEDB and IPD launch IP Financing Sandbox"
+    },
+    "83fb2abc9e8538a7c79907d360e4d26f4479400db7d901b7c82d31c886386c5a": {
+      "card_id": null,
+      "content_hash": "08b3b55307455257a66bdb4ebd4445f6c30d193494b90c56caf6057acc1d97ca",
+      "feed_id": "sfc_circulars",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "26EC44",
+      "item_hash": "83fb2abc9e8538a7c79907d360e4d26f4479400db7d901b7c82d31c886386c5a",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC44",
+      "published_at": "2026-07-21T09:31:56Z",
+      "raw_published": "Tue, 21 Jul 2026 17:31:56 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "Circular to intermediaries Updates on HKEX’s post release tests for the launch of its backbone network upgrade for securities market systems"
     },
     "846fb589808e1ba82e537c6596783c3925c0103374650970a753a660f0230121": {
       "card_id": null,
@@ -8640,6 +8928,22 @@
       "status": "queued",
       "summary": "",
       "title": "Exchange Fund Bills Tender Results"
+    },
+    "8cc229eacb38c8793f20afdbaba43e3e829879da1ce589a0dcb6296fb8aaae9f": {
+      "card_id": null,
+      "content_hash": "67a0795ef4818867aceed4599698884e097209684bdc91a6a5f7a18ade3638d9",
+      "feed_id": "sfc_circulars",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "26EC41",
+      "item_hash": "8cc229eacb38c8793f20afdbaba43e3e829879da1ce589a0dcb6296fb8aaae9f",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC41",
+      "published_at": "2026-07-13T09:00:42Z",
+      "raw_published": "Mon, 13 Jul 2026 17:00:42 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "Circular to Intermediaries ─ Over-the-counter Derivatives Regulatory Regime – Industry Webinar"
     },
     "8cd2af8938b5a7c102ce15d5bd62827dced4ae8cc0ebb968c52e5371443c1c27": {
       "card_id": null,
@@ -9857,6 +10161,22 @@
       "summary": "",
       "title": "Regulators launch GenA.I. Sandbox++ to foster A.I. innovation across financial services"
     },
+    "a01cfffb96085b0b649746cda813abdb46e6ae87bcdad958207eb8536e4fbd05": {
+      "card_id": null,
+      "content_hash": "e295db4b214054b4227fde8afcf8b21dcb997b76a77e9d423b2e6f31f08cef22",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "a01cfffb96085b0b649746cda813abdb46e6ae87bcdad958207eb8536e4fbd05",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260716-3/",
+      "published_at": "2026-07-15T16:00:00Z",
+      "raw_published": "Thu, 16 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Website alert: trustwallet[.]uk[.]com"
+    },
     "a06bb7d8999bdd8c612f09a648ab0c6747267de2c1309f28e2847a7186920885": {
       "card_id": null,
       "content_hash": "d983e00cc2cfc29a97307c91639457b9b0c67242cc4dcdf71f198f3d42b6cfb7",
@@ -10112,6 +10432,22 @@
       "status": "queued",
       "summary": "",
       "title": "Exchange Fund Abridged Balance Sheet and Currency Board Account"
+    },
+    "a39f2351529815797186e5eb2624a7ea9b9d9a4df06c1cb244364fa99f74b7c6": {
+      "card_id": null,
+      "content_hash": "51b90f229c16f1127d4f4b728abd6d8c73350ef7b1f0a8babef06b8f2adc27a3",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "a39f2351529815797186e5eb2624a7ea9b9d9a4df06c1cb244364fa99f74b7c6",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260716-4/",
+      "published_at": "2026-07-15T16:00:00Z",
+      "raw_published": "Thu, 16 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Scam alert related to banks"
     },
     "a44f835b7dbfdf270a394b6c157844eb3fcb6240ae0dcad1df24e095f82ff2c1": {
       "card_id": null,
@@ -11216,6 +11552,22 @@
       "status": "queued",
       "summary": "",
       "title": "HKMA Quarterly Bulletin and Half-Yearly Monetary and Financial Stability Report (September 2025 Issue)"
+    },
+    "b4f7def4da37e18c35503986b9f31b30c2a4c35fe645e968f231901aec94b78b": {
+      "card_id": null,
+      "content_hash": "edc4afed3e9d2d5506eee1606d4c9b8afb1814a2fda46d0db971541e7934ce49",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "b4f7def4da37e18c35503986b9f31b30c2a4c35fe645e968f231901aec94b78b",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260721-3/",
+      "published_at": "2026-07-20T16:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Scam alert related to banks"
     },
     "b529d518363b90b0595cff2e13a4e8c7de065916289ef8293d8bf99734778dc9": {
       "card_id": null,
@@ -12625,6 +12977,22 @@
       "summary": "",
       "title": "Scam alert related to banks"
     },
+    "cb27f86a6ec026673cd3f995eee18daa5acb6e34a041e956d8321258fe96aca2": {
+      "card_id": null,
+      "content_hash": "2ef5b17ff239183eab84b4dfee5da2bffb8b13e80eef1f4fdc8e318cb3ebcbea",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "cb27f86a6ec026673cd3f995eee18daa5acb6e34a041e956d8321258fe96aca2",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260720-4/",
+      "published_at": "2026-07-19T16:00:00Z",
+      "raw_published": "Mon, 20 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Scam alert related to banks"
+    },
     "cbecdf48bb7d14caa42af87847a03eae6bb30609033c3032ea4e5f5d1be5e01d": {
       "card_id": null,
       "content_hash": "45c9bf357b3a618c38af8ec94b34e8a3688e66ad718ee20563937b571ed8246a",
@@ -12960,6 +13328,22 @@
       "status": "queued",
       "summary": "",
       "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3 Part IIIc"
+    },
+    "d24e0c7ea85b2cef0b556458959bf8af219e021b7320353d858b8f958055ea99": {
+      "card_id": null,
+      "content_hash": "a8984c5d005d4422d4fb13f5485a070a083a34c846966adeb63f46bf29ac6df7",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "d24e0c7ea85b2cef0b556458959bf8af219e021b7320353d858b8f958055ea99",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260713-4/",
+      "published_at": "2026-07-12T16:00:00Z",
+      "raw_published": "Mon, 13 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Scam alert related to banks"
     },
     "d2cfef35cb1f669d58530acbe2dfa3ed8898b5a1859897ea7c0bd14b08947ac6": {
       "card_id": null,
@@ -15537,6 +15921,22 @@
       "summary": "",
       "title": "Scam alert related to banks"
     },
+    "fa440b5ee1317a162c324ce43db8df1d747c6c56d457dc8ca57d0c9e34de2d1f": {
+      "card_id": null,
+      "content_hash": "9aaaa3dbfb6829197a7acbd526ca9981c4f09b985835afb303d1974991721506",
+      "feed_id": "hkma_circulars",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "fa440b5ee1317a162c324ce43db8df1d747c6c56d457dc8ca57d0c9e34de2d1f",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260710-1-EN",
+      "published_at": "2026-07-09T16:00:00Z",
+      "raw_published": "Fri, 10 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Licence Fees"
+    },
     "fa57dcb6af3654facd1541740e0854b076a4df9102b86e89fcbb9ae7206073a5": {
       "card_id": null,
       "content_hash": "ceba077c6a8722f8c228367e6fdbc3b768dd3a1c1b55c9f3814acb116e07c0ca",
@@ -15760,6 +16160,22 @@
       "status": "queued",
       "summary": "",
       "title": "Scam alert related to banks"
+    },
+    "fe84c2c18d3cafc661e1ad965438dd38a2368297cb88ee0e0a4ee82ecf453d8d": {
+      "card_id": null,
+      "content_hash": "daa497e14d6d0a185ded9e5f4b7af115e05d1fb005b8764d4b951078d0b8586c",
+      "feed_id": "sfc_circulars",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "26EC39",
+      "item_hash": "fe84c2c18d3cafc661e1ad965438dd38a2368297cb88ee0e0a4ee82ecf453d8d",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/aml/doc?refNo=26EC39",
+      "published_at": "2026-07-14T10:31:00Z",
+      "raw_published": "Tue, 14 Jul 2026 18:31:00 +0800",
+      "relevant": true,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism (1) FATF Statement on High-Risk Jurisdictions subject to a Call for Action (2) FATF Statement on Jurisdictions under Increased Monitoring (3) Outcomes from the FATF Plenary, 17-19 June 2026"
     },
     "fea3cd0b2925ef960e62e71574b709204121238f6d3912f0973fffc4a24482d9": {
       "card_id": null,
