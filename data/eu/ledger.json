@@ -1,6 +1,22 @@
 {
-  "generated_at": "2026-07-12T04:44:41Z",
+  "generated_at": "2026-07-22T04:42:34Z",
   "items": {
+    "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
+      "card_id": null,
+      "content_hash": "d68b609fb5d192ff9eb2f4de2c89e3a97cebfc19fb4544c57db721723904c200",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1665",
+      "item_hash": "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1665",
+      "published_at": "2026-07-21T08:00:28Z",
+      "raw_published": "Tue, 21 Jul 2026 08:00:28 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Speech Warsaw, 21 Jul 2026 Dear Minister Kierwiński, Dear Secretary of State Szymański, Excellencies, Ladies and gentlemen, My dear Polish friends, I have come to Poland to celebrate a su...",
+      "title": "Speech by Commissioner Kubilius at the IRIS² - Polish contribution Agreement Signature Ceremony"
+    },
     "04061ba71b606d9cb43910fe5ea893046f1daa9910b4e4006dcd27b220f92d16": {
       "card_id": null,
       "content_hash": "39f13b2fa1c6acf80d059fe75b469a783b600c72c3d64f6a17fa13fe39063b8c",
@@ -32,6 +48,22 @@
       "status": "queued",
       "summary": "",
       "title": "ECB sanctions BIL for breaching ECB decision on internal models"
+    },
+    "07581a6b7aeeb3be35b9df998ed1b41f928131e2d3eee1e6cb7527403c3eb08d": {
+      "card_id": null,
+      "content_hash": "723772aa98d38442d83af3c5a0596aa96f52944f0291a20ebe7f898efa566890",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260721~44ee50f75c.en.html",
+      "item_hash": "07581a6b7aeeb3be35b9df998ed1b41f928131e2d3eee1e6cb7527403c3eb08d",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260721~44ee50f75c.en.html",
+      "published_at": "2026-07-21T08:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 10:00:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "July 2026 euro area bank lending survey"
     },
     "085b69bda56c2810bf9eec5fec67a1098e965865693eedbd840d09356b00527b": {
       "card_id": null,
@@ -257,6 +289,22 @@
       "summary": "",
       "title": "Sharon Donnery: Interview with Central Banking"
     },
+    "42dae139fed654a31416ae311074a8f875172703eef154c42acaf189864bd0f7": {
+      "card_id": null,
+      "content_hash": "52fa67dbe4ee6a39f3b3ffc7a0ca10c2203b732cff3428ae7cb7e0560efa9719",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ac_26_1649",
+      "item_hash": "42dae139fed654a31416ae311074a8f875172703eef154c42acaf189864bd0f7",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ac_26_1649",
+      "published_at": "2026-07-17T13:36:21Z",
+      "raw_published": "Fri, 17 Jul 2026 13:36:21 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission News Brussels, 17 Jul 2026 President Ursula von der Leyen travelled to Kyiv on 15 July for her eleventh wartime visit to Ukraine, where she was awarded the inaugural Order of Europe, a n...",
+      "title": "\"Ukraine has become a net security provider for Europe\": President von der Leyen unveils new defence partnership with Kyiv"
+    },
     "44898e7f4fe4f128db2e9c7aa78581e6127ac46c6f4472ba0b30ac34530e5035": {
       "card_id": null,
       "content_hash": "875ae42d350ee6167575e226096e3c2d9fd27350cb31737a25083e01a53e3c2d",
@@ -353,6 +401,22 @@
       "summary": "",
       "title": "ECB to integrate non-financial credit claim portfolios into general collateral framework, phasing out temporary measures"
     },
+    "5a21766d506ff299b999dc5274988ab2add945b2151d785b5b9befc70e91faff": {
+      "card_id": null,
+      "content_hash": "a337dd1f671e26bc112411970ebfb9a8d36955a6c1e1cc9e4f4bd5a9a3b64674",
+      "feed_id": "eba_news",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.eba.europa.eu/publications-and-media/press-releases/joint-board-appeal-dismisses-appeal-against-eba",
+      "item_hash": "5a21766d506ff299b999dc5274988ab2add945b2151d785b5b9befc70e91faff",
+      "link": "https://www.eba.europa.eu/publications-and-media/press-releases/joint-board-appeal-dismisses-appeal-against-eba",
+      "published_at": "2026-07-16T12:00:00Z",
+      "raw_published": "Thu, 16 Jul 2026 14:00:00 +0200",
+      "relevant": false,
+      "source_id": "eba",
+      "status": "queued",
+      "summary": "​The Joint Board of Appeal of the European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) has issued a decision stating that an appeal brought by an individual against the European Banking Authority (EBA) is inadmissible.",
+      "title": "​Joint Board of Appeal dismisses appeal against the EBA"
+    },
     "5ced94e175730204580b9762aefbe1fd5294c938a010e8fd50fccbd06df0c693": {
       "card_id": null,
       "content_hash": "4cbf61ae1533b798a9e11b16bd1a95a283ad183663374f830901ae723dc3f8f9",
@@ -368,6 +432,22 @@
       "status": "queued",
       "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">ESMA selects Etrading Software (Netherlands) B.V. as Consolidated Tape Provider for OTC derivatives</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-06T17:20:51+02:00\" title=\"Monday, July 6, 2026 - 17:20\" class=\"datetime\">06 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">Trading</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\">The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, has selected Etrading Software (Netherlands) B.V. as the Consolidated Tape Provider (CTP) for over-the-counter (OTC) derivatives. This constitutes an important step in improving transparency for OTC derivatives markets under the Markets in Financial Instruments Regulation (MiFIR).</p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span lang=\"PT\">Natasha Cazenave, ESMA’s Executive Director, said:&nbsp;</span></p> <h6 class=\"text-align-justify\"><em>“Today’s decision represents an important milestone in enhancing transparency in OTC derivatives markets. It is also an important step towards establishing consolidated tapes in the EU and delivering on the objectives of the MiFIR Review.</em></h6> <h6 class=\"text-align-justify\"><em>The consolidated tape for OTC derivatives will contribute to a more transparent and integrated EU market, benefiting investors and market participants across the European Union.”</em></h6> <p class=\"text-align-justify\"><span>ESMA selected&nbsp;&nbsp;Etrading Software (Netherlands) B.V. following a comprehensive assessment of its ",
       "title": "ESMA selects Etrading Software (Netherlands) B.V. as Consolidated Tape Provider for OTC derivatives"
+    },
+    "5f04c5349c03f2b35ebd69727251201ec6bf5285dc2ac21902691798d7da4392": {
+      "card_id": null,
+      "content_hash": "9c53557e7aa62f7d3c3cc48fa69aa12b24dd40be96717b408fcfaca396f5b181",
+      "feed_id": "esma_news",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "5f04c5349c03f2b35ebd69727251201ec6bf5285dc2ac21902691798d7da4392",
+      "link": "https://www.esma.europa.eu/press-news/esma-news/joint-board-appeal-dismisses-appeal-against-eba",
+      "published_at": null,
+      "raw_published": null,
+      "relevant": false,
+      "source_id": "esma",
+      "status": "queued",
+      "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">Joint Board of Appeal dismisses appeal against the EBA</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-16T13:53:00+02:00\" title=\"Thursday, July 16, 2026 - 13:53\" class=\"datetime\">16 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">Board of Appeal</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>The Joint Board of Appeal of the European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) has issued a </span><a href=\"https://www.esma.europa.eu/sites/default/files/2026-07/BoA-D-2026-01_Decision_by_the_Board_of_Appeal_on_D_v_EBA.pdf\"><span>decision</span></a><span> stating that an appeal brought by an individual against the European Banking Authority (EBA) is inadmissible.</span></p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>The appeal concerned a response by the EBA to a complaint regarding the closure of a bank account by a credit institution and the handling of the matter by the Finnish National Competent Authority (FIN-FSA). The appellant had requested that the EBA investigate a possible breach of Union law by FIN-FSA.</span></p> <p class=\"text-align-justify\"><span>Following its assessment, the EBA decided against initiating an investigation. The appellant subsequently challenged that decision before the Board of Appeal.</span></p> <p class=\"text-align-justify\"><span>The Board of Appeal concluded that, under established EU case law, any decision to initiate an investigation is at the EBA’s discretion. The Board added that a decision not to open such an inves",
+      "title": "Joint Board of Appeal dismisses appeal against the EBA"
     },
     "5fbbd8b94506d4a760143947f5dce3e37e2b1af3190e3acf375db4f420089ec4": {
       "card_id": null,
@@ -432,6 +512,38 @@
       "status": "queued",
       "summary": "",
       "title": "ECB reports on progress towards euro adoption"
+    },
+    "68d4b2f07ee536cfe137b2fa3e24ded9021531e7b20302c08fe93a88e4d9be30": {
+      "card_id": null,
+      "content_hash": "eadf9aaca9df52fc5ce7bc3da23416fa56d4dcb6544c1d5d441ca56c1c4e9416",
+      "feed_id": "eba_news",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-draft-technical-standards-material-acquisitions-material-transfers-mergers",
+      "item_hash": "68d4b2f07ee536cfe137b2fa3e24ded9021531e7b20302c08fe93a88e4d9be30",
+      "link": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-draft-technical-standards-material-acquisitions-material-transfers-mergers",
+      "published_at": "2026-07-17T12:00:00Z",
+      "raw_published": "Fri, 17 Jul 2026 14:00:00 +0200",
+      "relevant": false,
+      "source_id": "eba",
+      "status": "queued",
+      "summary": "The European Banking Authority (EBA) today published its final draft Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITSs) on material acquisitions, transfers of assets or liabilities, mergers and divisions involving credit institutions or (mixed) financial holding companies under the Capital Requirements Directive (CRD). The standards aim to support banking consolidation and deepen EU market integration by clarifying supervisory expectations, reducing regulatory uncertainty, and promoting a consistent prudential assessment framework across the European Union.",
+      "title": "The EBA publishes its final draft technical standards on material acquisitions, material transfers, mergers and divisions under the Capital Requirements Directive"
+    },
+    "6a8cee38b5b8d8863f51b646c841713e14710c11a97f94a72d5f72b5a66602d3": {
+      "card_id": null,
+      "content_hash": "dc274cce0fb05ddd5282d3f1d5d9ee8aee0519ef5fa5dadba80affa0d78e85c2",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1656",
+      "item_hash": "6a8cee38b5b8d8863f51b646c841713e14710c11a97f94a72d5f72b5a66602d3",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1656",
+      "published_at": "2026-07-20T09:21:13Z",
+      "raw_published": "Mon, 20 Jul 2026 09:21:13 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Daily news Brussels, 20 Jul 2026 Commission fines AliExpress €550 million for breaching the Digital Services Act Today, the European Commission fined AliExpress €550 million for breaching its o...",
+      "title": "Daily News 20 / 07 / 2026"
     },
     "6b60e65a6d8734a27e2e6225643649239b26f5ee518ae6160ccb165d1fb0a2a5": {
       "card_id": null,
@@ -545,6 +657,22 @@
       "summary": "The European Banking Authority (EBA) today published end-2025 data on two key concepts and indicators in the DGSD, namely financial means available to, and covered deposits protected by DGSs. This annual publication, covering each Member State, enhances transparency and accountability across the EU to the benefit of depositors, markets, policymakers, DGSs and Members States.",
       "title": "EU deposit guarantee scheme funds to protect depositors against bank failures continue to grow and have reached a volume of €85bn, the EBA observes"
     },
+    "86329858f1392a54ebd8f192f799a20f27ad1c98d8fea049920caf6fb8414e18": {
+      "card_id": null,
+      "content_hash": "d4fd5077e56bc9b20332490a61cd5cf2622271d2e84dc8409bf3b0430468ff35",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1655",
+      "item_hash": "86329858f1392a54ebd8f192f799a20f27ad1c98d8fea049920caf6fb8414e18",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1655",
+      "published_at": "2026-07-19T22:00:00Z",
+      "raw_published": "Sun, 19 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 20 Jul 2026 The European Commission endorsed Latvia's Social Climate Plan — the third national plan approved under the new Social Climate Fund. Using carbon pricing revenues, the Fund ensures a fair and inclusive clean transition for vulnerable citizens and businesses.",
+      "title": "Commission endorses Latvia's €617 million Social Climate Plan"
+    },
     "88cbb3b8d73218e1a3b5d75687bb5e66fb295eb433d27047eaa6580447ce12e8": {
       "card_id": null,
       "content_hash": "22f68249d2f70634ee7dcf9f682883e118f400e6ee2797a559593e7247003ec5",
@@ -561,6 +689,22 @@
       "summary": "European Commission Statement Brussels, 10 Jul 2026 Thank you, Simon. Good afternoon, everyone. Let me start by thanking Minister Harris for presenting the Irish Presidency's priorities at today's meeting. We wel...",
       "title": "Remarks by Commissioner Dombrovskis at the ECOFIN press conference"
     },
+    "8c1b1420a2a7b7308f10e2aca5102b4d360493b0682062932ba47636035de782": {
+      "card_id": null,
+      "content_hash": "dd458df9371552eaa08fb6951fa0d8dcf5b53a28e4d3118be7b5fe7a864e4e97",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1654",
+      "item_hash": "8c1b1420a2a7b7308f10e2aca5102b4d360493b0682062932ba47636035de782",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1654",
+      "published_at": "2026-07-19T22:00:00Z",
+      "raw_published": "Sun, 19 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 20 Jul 2026 Today, the European Commission fined AliExpress €550 million for breaching its obligations under the Digital Services Act (DSA) to diligently assess and mitigate risks relating to the sale of illegal, unsafe or counterfeit products on its e-commerce platform. The Commission has ordered the platform to take action.",
+      "title": "Commission fines AliExpress €550 million for breaching the Digital Services Act"
+    },
     "8c5ffd76480e5e6d2817fd34e6f540cec94056742da21bcc7d48441e41b5c872": {
       "card_id": null,
       "content_hash": "f9c73c1e0c254ba9b6d6b5a9697e8aad824ca4a71ac947bf2ea6a7b4a3eae47b",
@@ -576,6 +720,54 @@
       "status": "queued",
       "summary": "",
       "title": "Frank Elderson: The green transition – benefits and barriers"
+    },
+    "8c70df80b02b25fae5e2d88dc5fe17c04413223d434c48f9427d89203012f1bb": {
+      "card_id": null,
+      "content_hash": "dc06e04322ef5524528c1f1027d80e4afdfe0f36cfc33bed5d94deffaa06097c",
+      "feed_id": "esma_news",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "8c70df80b02b25fae5e2d88dc5fe17c04413223d434c48f9427d89203012f1bb",
+      "link": "https://www.esma.europa.eu/press-news/esma-news/esma-publishes-report-cross-border-investment-services-supervision",
+      "published_at": null,
+      "raw_published": null,
+      "relevant": false,
+      "source_id": "esma",
+      "status": "queued",
+      "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">ESMA publishes report on cross-border investment services supervision</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-20T10:30:10+02:00\" title=\"Monday, July 20, 2026 - 10:30\" class=\"datetime\">20 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">Supervisory convergence</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\">The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, today published its <a href=\"https://www.esma.europa.eu/sites/default/files/2026-07/ESMA42-2004696504-8471_Follow-up_report_to_peer_review_on_cross_border_activities_of_investment_firms.pdf\">follow-up report</a> to the Peer Review on the supervision of cross-border activities of investment firms. The report assesses the progress made by national competent authorities (NCAs) in implementing recommendations <a href=\"https://www.esma.europa.eu/sites/default/files/library/esma42-111-5534_report_peer_review_cross_border_activities_investment_firms.pdf\">issued in 2022</a> and covers the Netherlands, Germany, the Czech Republic, Luxembourg, Cyprus and Malta.</p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>The follow-up shows that the peer review has successfully driven improvements across the supervisory cycle and helped strengthen the supervision of cross-border investment services within the EU Single Market.</span></p> <p class=\"text-align-justify\"><span>The report highlights notable progress in three key areas:</span></p> <ul> <li><span><strong>Stronger auth",
+      "title": "ESMA publishes report on cross-border investment services supervision"
+    },
+    "8ebafbd54a00b8e9255c2ecd768fa9da558ba70b9ca1a9ef8172b0354afc64d7": {
+      "card_id": null,
+      "content_hash": "7b36320f920f0e0130d2b6f1168447fd1bd44b244b1f4ace559aa6bcc32d1feb",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1394",
+      "item_hash": "8ebafbd54a00b8e9255c2ecd768fa9da558ba70b9ca1a9ef8172b0354afc64d7",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1394",
+      "published_at": "2026-07-19T22:00:00Z",
+      "raw_published": "Sun, 19 Jul 2026 22:00:00 GMT",
+      "relevant": true,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 20 Jul 2026 The European Commission has informed several manufacturers of construction chemicals active in France, Germany and Spain as well as three national trade associations, of its preliminary view that they have breached EU antitrust rules by colluding to increase prices in the supply of chemicals for cement, concrete and mortar.",
+      "title": "Commission sends Statements of Objections to several companies and trade associations in suspected construction chemicals cartel"
+    },
+    "8f3ab9b9e4ef6ee983c957a8c4d0f6b1386d1a1d7c9f81f81de83c69efd04569": {
+      "card_id": null,
+      "content_hash": "dfd0ba868eca0b51c553d7b0c01bea0f5f87f7a022f3f21df7f3051bff4c32c3",
+      "feed_id": "esma_news",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": null,
+      "item_hash": "8f3ab9b9e4ef6ee983c957a8c4d0f6b1386d1a1d7c9f81f81de83c69efd04569",
+      "link": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
+      "published_at": null,
+      "raw_published": null,
+      "relevant": false,
+      "source_id": "esma",
+      "status": "queued",
+      "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-20T14:00:40+02:00\" title=\"Monday, July 20, 2026 - 14:00\" class=\"datetime\">20 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">Post Trading</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p>The European Securities and Markets Authority (ESMA), the EU regulator and supervisor, has published a <a href=\"https://www.esma.europa.eu/sites/default/files/2026-07/ESMA74-2119945926-3773_T_1_statement.pdf\">statement</a> highlighting key deadlines and action points to be ready for the transition to a T+1 settlement cycle in EU financial markets.</p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>With the move scheduled for 11 October 2027, ESMA underlines that 2026 is a critical year for market participants to finalise their preparations.</span></p> <p class=\"text-align-justify\"><span>The statement outlines key milestones, including the first regulatory deadline on 7 December 2026 for allocations and confirmations processes.</span></p> <p class=\"text-align-justify\"><span>Market participants are encouraged to prepare and test their own readiness, and to check the readiness of&nbsp;their&nbsp;entire ecosystem,&nbsp;across the entire trading and settlement chain.</span></p> <p class=\"text-align-justify\">&nbsp;</p> <p class=\"text-align-justify\"><span lang=\"EN-US\">Further information:</span></p> <h6><strong>Cristina Bonillo</strong></h6> <p>Senior Communications Officer<br><a href=\"mailto:press",
+      "title": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
     },
     "92b8a274e047a4f427e2e822c2469e8f8cbe43527860f05aa383949ce13182b7": {
       "card_id": null,
@@ -609,6 +801,38 @@
       "summary": "",
       "title": "Sharon Donnery: Trust is the infrastructure: banking supervision in a changing risk landscape"
     },
+    "996cf78fc466d4dc2a52369161caf9f382455dfdc61c31694fc1c66f91578ba7": {
+      "card_id": null,
+      "content_hash": "9a556053257f747c6961605346d35bc94f90c078905e851adeea2131ee5465f2",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260715~ab95a43007.en.html",
+      "item_hash": "996cf78fc466d4dc2a52369161caf9f382455dfdc61c31694fc1c66f91578ba7",
+      "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260715~ab95a43007.en.html",
+      "published_at": "2026-07-15T06:00:00Z",
+      "raw_published": "Wed, 15 Jul 2026 08:00:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "Piero Cipollone: Interview with Ouest-France"
+    },
+    "9d7c0752ffae35b5bd489c3528aff052ff2d9855f8be3763347be42b264cb314": {
+      "card_id": null,
+      "content_hash": "6ecbeab5245634114fde270d1635de51db5ea79129341709c510ea12d7d2df0e",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260721_1~8c6ba4c5fb.en.html",
+      "item_hash": "9d7c0752ffae35b5bd489c3528aff052ff2d9855f8be3763347be42b264cb314",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260721_1~8c6ba4c5fb.en.html",
+      "published_at": "2026-07-21T14:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 16:00:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "ECB appoints Boris Kisselevsky as Director General Secretariat"
+    },
     "9d7c0c19d057cbc3f2d54b7141d52d89ae9c506ab48a6511f351c874fb2a89b5": {
       "card_id": null,
       "content_hash": "1300b4eb2c41e99674b26d3ff71bc76c0ddbf3919fd08f82ffab103e169fb7c5",
@@ -624,6 +848,22 @@
       "status": "queued",
       "summary": "The European Banking Authority (EBA) today published a Discussion Paper on certain key performance indicators (KPIs) and other aspects of the Disclosures Delegated Act, under Article 8 of the Taxonomy Regulation. The aim is to consult the public on potential measures to simplify and enhance the usability of information disclosed by credit institutions and investment firms. The consultation is open until 12 August 2026.",
       "title": "The EBA launches consultation on key performance indicators of Taxonomy disclosures"
+    },
+    "9fd51fc4f6f6a7576c9bbb4da27dd74f46565ecac9d489d5efcfd11d3bf6a114": {
+      "card_id": null,
+      "content_hash": "11bdb3bde0f57112a8e41b300a957616a2f95595042ee86c6ee35d107d0539f9",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1653",
+      "item_hash": "9fd51fc4f6f6a7576c9bbb4da27dd74f46565ecac9d489d5efcfd11d3bf6a114",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1653",
+      "published_at": "2026-07-19T22:00:00Z",
+      "raw_published": "Sun, 19 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 20 Jul 2026 Today, the European Commission published guidelines to assist providers and deployers of artificial intelligence (AI) systems in meeting the AI Act's transparency obligations, which start to apply on 2 August 2026.",
+      "title": "Commission publishes guidelines on transparency obligations for providers and deployers of certain AI systems"
     },
     "a027b2700f066514b51391c674fd90f4b804deb1a335c3ef2c2fb6d794def6b6": {
       "card_id": null,
@@ -656,6 +896,22 @@
       "status": "queued",
       "summary": "",
       "title": "Iceland joins TIPS for instant payments"
+    },
+    "a135343a9dd87374b6632d80907d38599a24d5fe4cd2d47e3fdbad3b44e8289a": {
+      "card_id": null,
+      "content_hash": "8c6629e23697ced32c01cf558a9d07d5a73018d7c7b808ac7c243e36cb4d2331",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260720~cafc3874a7.en.html",
+      "item_hash": "a135343a9dd87374b6632d80907d38599a24d5fe4cd2d47e3fdbad3b44e8289a",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260720~cafc3874a7.en.html",
+      "published_at": "2026-07-20T08:00:00Z",
+      "raw_published": "Mon, 20 Jul 2026 10:00:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "Survey on the Access to Finance of Enterprises: lending conditions tightened"
     },
     "a15e4795607e122fb7e5afb5dcd15122ab4bb80e25bbd4e4a6bd78e18f496e8a": {
       "card_id": null,
@@ -721,6 +977,22 @@
       "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">The ESAs support ESRB warning on systemic cyber risks from frontier AI models</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-07T11:52:18+02:00\" title=\"Tuesday, July 7, 2026 - 11:52\" class=\"datetime\">07 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">Digital Finance and Innovation</div> <div class=\"field__item\">Joint Committee</div> <div class=\"field__item\">Press Releases</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>The European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) welcome and support&nbsp;</span><a href=\"https://www.esrb.europa.eu/news/pr/date/2026/html/esrb.pr260707~4e1b68241a.en.html\"><span lang=\"EN-GB\">today’s warning</span></a><span> from European Systemic Risk Board (ESRB) on the systemic cyber risks posed by frontier AI models.</span></p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>Recent advances have significantly enhanced the ability of frontier AI models to identify and exploit high-severity vulnerabilities in IT systems within very short timeframes. While the EU’s regulatory framework – including DORA and the AI Act – provides a solid foundation for managing cyber and AI-related risks, the speed and scale of these tools raise concerns that AI-enabled cyber-attacks could undermine the operational resilience of financial entities.&nbsp;</span></p> <p class=\"text-align-justify\"><span>Since the release of the first frontier AI models, the ESAs have raised awareness about the ICT risks posed by the widespread adoption of these models",
       "title": "The ESAs support ESRB warning on systemic cyber risks from frontier AI models"
     },
+    "b76bc08a8e503b1be1d14c38ed56300515fd892db6d23acfbe4d77fc2aeba8c2": {
+      "card_id": null,
+      "content_hash": "c85b9bdb4cca9779a3e76e9b5d85b2fe57f025d916434dc89f43913ccf616b29",
+      "feed_id": "eba_news",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-amendments-data-collection-2027-market-risk-benchmarking-exercise",
+      "item_hash": "b76bc08a8e503b1be1d14c38ed56300515fd892db6d23acfbe4d77fc2aeba8c2",
+      "link": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-amendments-data-collection-2027-market-risk-benchmarking-exercise",
+      "published_at": "2026-07-17T07:46:09Z",
+      "raw_published": "Fri, 17 Jul 2026 09:46:09 +0200",
+      "relevant": false,
+      "source_id": "eba",
+      "status": "queued",
+      "summary": "​The European Banking Authority (EBA) today launched a consultation on amendments to the Implementing Technical Standards (ITS) governing the benchmarking of internal models and the standardised approach for market risk for the 2027 exercise. The proposed amendments aim to ensure that the benchmarking framework remains aligned with the evolving regulatory framework, while providing institutions and supervisors with adequate time to prepare for the implementation of the upcoming market risk requirements. This consultation runs until 3 September 2026.",
+      "title": "​The EBA consults on amendments to data collection for the 2027 market risk benchmarking exercise"
+    },
     "b9911244d4c0dcbae1c2934085dbfebc08be7dd78d98f7803abc82f84df2bc9c": {
       "card_id": null,
       "content_hash": "41db864d9c2dbf0b4385ff71d023adc4cbb8ee6248a1c00b2bd4f747ac1c09ce",
@@ -752,6 +1024,22 @@
       "status": "queued",
       "summary": "",
       "title": "Anneli Tuominen: Navigating risk, cutting complexity: financial conglomerates in the current environment"
+    },
+    "c423bcbe7699279c9b66b87bb802d3c8231d10d0ac6621123ef9d230589db5e1": {
+      "card_id": null,
+      "content_hash": "880c9410f10ad181643b446b6a258c643a4441de689e6c38598a36f6480f37ee",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1650",
+      "item_hash": "c423bcbe7699279c9b66b87bb802d3c8231d10d0ac6621123ef9d230589db5e1",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1650",
+      "published_at": "2026-07-17T13:43:54Z",
+      "raw_published": "Fri, 17 Jul 2026 13:43:54 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Speech Brussels, 17 Jul 2026 Good afternoon, ladies and gentlemen, and thank you for your presence. Today, the Commission is presenting its report on the competitiveness of the banking sect...",
+      "title": "Remarks by Commissioner Albuquerque at the press conference on the Report on the competitiveness of the EU banking sector"
     },
     "c60fa9ae5dd3c4c726024036ab63345dbca2edd2dc768215ce1f329b209aa011": {
       "card_id": null,
@@ -800,6 +1088,22 @@
       "status": "queued",
       "summary": "",
       "title": "Isabel Schnabel: Interview with Die Zeit"
+    },
+    "cdfe9d2d1b9e9067cc5f83b77ba8112b118728d7780e5edd1893fcc36a7ee4ac": {
+      "card_id": null,
+      "content_hash": "af339aa84d35ce8ca07a72b3c4fbd80101953a09d5b529771642276ea319337f",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260713~e78632b27a.en.pdf",
+      "item_hash": "cdfe9d2d1b9e9067cc5f83b77ba8112b118728d7780e5edd1893fcc36a7ee4ac",
+      "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260713~e78632b27a.en.pdf",
+      "published_at": "2026-07-13T16:45:00Z",
+      "raw_published": "Mon, 13 Jul 2026 18:45:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "Isabel Schnabel: How to foster growth and resilience in Europe"
     },
     "cea6f55bc1b5e0035b0ccf528628ac181eeeb1d7fef0a471e42376d9434e9404": {
       "card_id": null,
@@ -865,6 +1169,22 @@
       "summary": "​The European Banking Authority (EBA) today published its final Guidelines on authorisation of third-country credit institutions to set-up a third-country branch (TCB) in a Member State. These Guidelines were mandated by the Capital Requirements Directive (CRD6) which introduced a new regime for TCBs and contribute to the harmonised access to the EU market for banking services.",
       "title": "​The EBA publishes final Guidelines on the authorisation of third-country branches under the Capital Requirements Directive"
     },
+    "d1f2172063e3fa54965c96dc2b72020bc8c956b9a42255615e5577c63e120d77": {
+      "card_id": null,
+      "content_hash": "5a161ae6fec98823286fae1a827dc5833fb61859d53a66e17891f9d8467cb6c7",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html",
+      "item_hash": "d1f2172063e3fa54965c96dc2b72020bc8c956b9a42255615e5577c63e120d77",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html",
+      "published_at": "2026-07-14T09:00:00Z",
+      "raw_published": "Tue, 14 Jul 2026 11:00:00 +0200",
+      "relevant": true,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "ECB selects 36 payment service providers to join digital euro pilot"
+    },
     "d85019dbf3ee48c792b87dcbabb41f43c9ddd2f7152332134f03db6245fba54e": {
       "card_id": null,
       "content_hash": "0e4b3501292d3c52c22c23610460daedb00704fa347c63772ffb7b37be2e5703",
@@ -912,6 +1232,70 @@
       "status": "queued",
       "summary": "European Commission Speech Brussels, 10 Jul 2026 We are here because we all have something in common: we believe that health security is not the job of one institution or one sector. It is all our responsibili...",
       "title": "Speech by Commissioner Lahbib at the Health Emergency Preparedness and Response Authority (HERA) Implementation Dialogue"
+    },
+    "e7f1ccb14fca00cef44c6b7cbd886d81b454f41155de8493788dddae7fc4a371": {
+      "card_id": null,
+      "content_hash": "4a4ad4ff7cd27d6a01b5eae6e0cd870adc10daca32ae4e667c6690a45d57c43b",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260717~b6a156dc40.en.html",
+      "item_hash": "e7f1ccb14fca00cef44c6b7cbd886d81b454f41155de8493788dddae7fc4a371",
+      "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260717~b6a156dc40.en.html",
+      "published_at": "2026-07-17T10:00:00Z",
+      "raw_published": "Fri, 17 Jul 2026 12:00:00 +0200",
+      "relevant": true,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "Piero Cipollone: The cooperative spirit at the heart of the digital euro"
+    },
+    "e822222369bf47076f5fd2662ed8ce6d2971f3b44d73824f2c8e83c8868ef322": {
+      "card_id": null,
+      "content_hash": "ad32f8ef6a23f475040efde7e8d8f952f952564b4ef79b6549ae703966afc640",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/qanda_26_1652",
+      "item_hash": "e822222369bf47076f5fd2662ed8ce6d2971f3b44d73824f2c8e83c8868ef322",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/qanda_26_1652",
+      "published_at": "2026-07-19T22:00:00Z",
+      "raw_published": "Sun, 19 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Questions and answers Brussels, 20 Jul 2026 What is the Commission recommending to Member States to implement the EU Methane Regulation? The European Commission has adopted two recommendations (one on com...",
+      "title": "Questions and answers on a set of recommendations to implement the EU Methane Regulation"
+    },
+    "e87dad97673165a449ccf48cf3887755fc07d52739e6c9006e8161444952608c": {
+      "card_id": null,
+      "content_hash": "3b9d212d247282968918f132d32763a7a7fcff96b4fe9fca9835d68065fd5fd5",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1651",
+      "item_hash": "e87dad97673165a449ccf48cf3887755fc07d52739e6c9006e8161444952608c",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1651",
+      "published_at": "2026-07-19T22:00:00Z",
+      "raw_published": "Sun, 19 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 20 Jul 2026 The conflict in the Middle East has forced the EU to compete for supplies on global oil and gas markets, which have seen a significant reduction in supply and increased prices.",
+      "title": "Commission provides clarity on how to effectively implement EU rules to reduce methane emissions"
+    },
+    "e9e25e7f9d58dc5be48d9a6dbc2a898bb17b351e24de24ca7a398e9e45c02dd0": {
+      "card_id": null,
+      "content_hash": "e04c7fa02cc065ddf1877704e1daa4d1f156fab8671b3d59d6673431745cf53b",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-22T04:42:34Z",
+      "guid": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260713~d928475792.en.html",
+      "item_hash": "e9e25e7f9d58dc5be48d9a6dbc2a898bb17b351e24de24ca7a398e9e45c02dd0",
+      "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260713~d928475792.en.html",
+      "published_at": "2026-07-13T17:00:00Z",
+      "raw_published": "Mon, 13 Jul 2026 19:00:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "Piero Cipollone: Interview with Jornal de Negocios"
     },
     "ee6714eaf036175d605ab5d6f0fb9ac4120045ac228fce4f4f5ca9774fc048d9": {
       "card_id": null,

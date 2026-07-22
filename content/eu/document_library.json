@@ -13,9 +13,77 @@
       "regulator": "ESMA",
       "title": "ESMA launches Common Supervisory Action on CASPs’ digital operational resilience for custody",
       "type": "news"
+    },
+    {
+      "item_hash": "103d85c38a37c2a8bf5ab493dd1d1af7a714781f3cd1d7fb3504f45423f8adce",
+      "link": "https://eur-lex.europa.eu/eli/reg/2024/1620/oj",
+      "pillar": [
+        "aml_cft_enforcement",
+        "exchanges_vatp"
+      ],
+      "published_at": "2025-07-01T00:00:00Z",
+      "regulator": "AMLA",
+      "title": "AMLA, the EU Anti-Money Laundering Authority, begins operations in Frankfurt",
+      "type": "news"
+    },
+    {
+      "item_hash": "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b",
+      "link": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj",
+      "pillar": [
+        "aml_cft_enforcement",
+        "banking_money",
+        "stablecoins"
+      ],
+      "published_at": "2024-06-30T00:00:00Z",
+      "regulator": "European Commission",
+      "title": "MiCA Titles III and IV (asset-referenced tokens and e-money tokens) become applicable across the EU",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "f8da9f58b4a403d8daba10c1197d70c08735f6125d5a7bc089b79a48f369cbca",
+      "link": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj",
+      "pillar": [
+        "aml_cft_enforcement",
+        "exchanges_vatp"
+      ],
+      "published_at": "2024-12-30T00:00:00Z",
+      "regulator": "European Commission",
+      "title": "MiCA becomes fully applicable: crypto-asset service provider authorisation and market abuse rules take effect across the EU",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "8ebafbd54a00b8e9255c2ecd768fa9da558ba70b9ca1a9ef8172b0354afc64d7",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1394",
+      "pillar": [],
+      "published_at": "2026-07-19T22:00:00Z",
+      "regulator": "European Commission",
+      "title": "Commission sends Statements of Objections to several companies and trade associations in suspected construction chemicals cartel",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "d1f2172063e3fa54965c96dc2b72020bc8c956b9a42255615e5577c63e120d77",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2026-07-14T09:00:00Z",
+      "regulator": "ECB",
+      "title": "ECB selects 36 payment service providers to join digital euro pilot",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "e7f1ccb14fca00cef44c6b7cbd886d81b454f41155de8493788dddae7fc4a371",
+      "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260717~b6a156dc40.en.html",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2026-07-17T10:00:00Z",
+      "regulator": "ECB",
+      "title": "Piero Cipollone: The cooperative spirit at the heart of the digital euro",
+      "type": "press_releases"
     }
   ],
-  "generated_at": "2026-07-13T12:08:39Z",
+  "generated_at": "2026-07-22T04:42:34Z",
   "jurisdiction_id": "eu",
   "schema_version": 1
 }
