@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T04:36:43Z",
+  "generated_at": "2026-07-22T04:42:33Z",
   "items": {
     "0172de58a453fe0e7e3beff31deaab5f813413fd456954f5e5be8b1452c83344": {
       "card_id": null,
@@ -448,6 +448,22 @@
       "status": "queued",
       "summary": "Das Staatssekretariat für Wirtschaft (SECO) hat eine Änderung der Liste der sanktionierten natürlichen Personen, Unternehmen und Organisationen der Verordnung vom 21. März 2025 über Massnahmen gegenüber Personen und Organisationen, die mit den Organisationen ISIL (Da'esh) und Al-Kaida in Verbindung stehen (SR 946.231.08), publiziert.",
       "title": "Aktualisierte Sanktionsmeldung: ISIL (Da'esh) und Al-Kaida"
+    },
+    "7eafc08ecdeb7d47928a38e996d0a856f4843a119d7d413f594028bf9bf3d2f6": {
+      "card_id": null,
+      "content_hash": "93f95c77fcbf5ece8aacf84dfc489ef97eefc762d40347585ed4573907933392",
+      "feed_id": "finma_news",
+      "first_seen": "2026-07-22T04:42:33Z",
+      "guid": "{7C828195-5283-403C-A2A6-48AB0331F10D}",
+      "item_hash": "7eafc08ecdeb7d47928a38e996d0a856f4843a119d7d413f594028bf9bf3d2f6",
+      "link": "https://www.finma.ch/en/news/2026/07/20260720-sr-946-231-12/",
+      "published_at": "2026-07-20T08:50:09Z",
+      "raw_published": "Mon, 20 Jul 2026 10:50:09 +0200",
+      "relevant": false,
+      "source_id": "finma",
+      "status": "queued",
+      "summary": "Das Staatssekretariat für Wirtschaft (SECO) hat eine Änderung des Anhangs 1 der Verordnung vom 22. Juni 2005 über Massnahmen gegenüber der Demokratischen Republik Kongo (SR 946.231.12) publiziert.",
+      "title": "Aktualisierte Sanktionsmeldung: Demokratische Republik Kongo"
     },
     "7ed8620017dae0ec15d00a816429996a6a6e18cd1a15289317c4cf70dcf6ad5c": {
       "card_id": null,
