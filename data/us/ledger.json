@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T06:45:38Z",
+  "generated_at": "2026-07-22T04:42:35Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -64,6 +64,22 @@
       "status": "queued",
       "summary": "The Securities and Exchange Commission today proposed the rescission of overly burdensome and costly rules that require companies to provide certain climate-related information in their registration statements and annual reports. The Commission’s…",
       "title": "SEC Proposes Rescission of Climate-Related Disclosure Rules"
+    },
+    "0515e5d540e2c022fe5cabf8b1e49e361efe58064ed77885f5db23e5ec3aba6d": {
+      "card_id": null,
+      "content_hash": "ec37a4840eb969ef089c67be9e6e1b8438801679af3b069e066f5ce8a5fb2aab",
+      "feed_id": "cftc_press_releases",
+      "first_seen": "2026-07-22T04:42:35Z",
+      "guid": "https://www.cftc.gov/PressRoom/PressReleases/9267-26",
+      "item_hash": "0515e5d540e2c022fe5cabf8b1e49e361efe58064ed77885f5db23e5ec3aba6d",
+      "link": "https://www.cftc.gov/PressRoom/PressReleases/9267-26",
+      "published_at": "2026-07-14T14:00:00Z",
+      "raw_published": "Tue, 14 Jul 2026 14:00:00 +0000",
+      "relevant": false,
+      "source_id": "cftc",
+      "status": "queued",
+      "summary": "",
+      "title": "CFTC Stays KalshiEX Rule Change and Exercises Emergency Authority to Order Fulfillment of Pending Trades"
     },
     "0b82eb399ada68e2499f16c9669603d952da069a8535e88ac1bb1efcba5e6158": {
       "card_id": null,
@@ -289,6 +305,22 @@
       "summary": "WASHINGTON—Since President Trump resumed office, the Financial Crimes Enforcement Network’s (FinCEN) Rapid Response Program (RRP) has facilitated the interdiction of over $268 million in stolen funds on behalf of U.S. victims, bringing the total to more than $1.8 billion since the program’s…",
       "title": "FinCEN’s Rapid Response Program Interdicts Nearly $2 Billion on Behalf of U.S. Cyber-Enabled Fraud Victims"
     },
+    "1f8759c8c7880897d4cf423eff1e1e55a3e6b381fc23e073cf411a40b91c1699": {
+      "card_id": null,
+      "content_hash": "692995eef0917479dbf4da6926a642b6f1e86272f4c9b6dd35eeda29afad55b3",
+      "feed_id": "frb_bcreg_press_releases",
+      "first_seen": "2026-07-22T04:42:35Z",
+      "guid": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260716a.htm",
+      "item_hash": "1f8759c8c7880897d4cf423eff1e1e55a3e6b381fc23e073cf411a40b91c1699",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260716a.htm",
+      "published_at": "2026-07-16T18:00:00Z",
+      "raw_published": "Thu, 16 Jul 2026 18:00:00 GMT",
+      "relevant": false,
+      "source_id": "federal_reserve",
+      "status": "queued",
+      "summary": "Agencies issue joint statement on handling of highly sensitive information during bank examinations",
+      "title": "Agencies issue joint statement on handling of highly sensitive information during bank examinations"
+    },
     "1f9007aa5e00aed7318cb68351a79eb3c23fc68a58fed1b157731282bceb1416": {
       "card_id": null,
       "content_hash": "6871a9cead495c99eb06678d2b1c8df8015820a44f9361011c1883c4c775e92d",
@@ -400,6 +432,22 @@
       "status": "queued",
       "summary": "",
       "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of Proposed Rule Change To List and Trade Shares of Grayscale Hedera Trust (HBAR) Under Nasdaq Rule 5711(d) (Commodity-Based Trust Shares)"
+    },
+    "34d010ec1bcfedb6b9395b899573d3e13d1cf1ef2200118e13202a045a1d1f3b": {
+      "card_id": null,
+      "content_hash": "c8a8ece4012ceed91df34bdb287e125354d36f15f76a47c9b7db8e5f14aed7cc",
+      "feed_id": "occ_news",
+      "first_seen": "2026-07-22T04:42:35Z",
+      "guid": null,
+      "item_hash": "34d010ec1bcfedb6b9395b899573d3e13d1cf1ef2200118e13202a045a1d1f3b",
+      "link": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
+      "published_at": "2026-07-16T15:00:00Z",
+      "raw_published": "16 Jul 2026 11:00:00 -0400",
+      "relevant": false,
+      "source_id": "occ",
+      "status": "queued",
+      "summary": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026.",
+      "title": "OCC Announces Enforcement Actions for July 2026"
     },
     "351d8580e89e4b523bb9ca8321a6ced183e4bf317d5b763ceade3cecaf60e7ce": {
       "card_id": null,
@@ -625,6 +673,22 @@
       "summary": "Agencies issue host state loan-to-deposit ratios",
       "title": "Agencies issue host state loan-to-deposit ratios"
     },
+    "456caa715c88521d04e75624a34507030784347cc02dfd3030c2c2af6b59eb9d": {
+      "card_id": null,
+      "content_hash": "034fb2863c9541a5f33a582ccacfe644cd79afd7c8698d16788495af2f51bb6b",
+      "feed_id": "occ_news",
+      "first_seen": "2026-07-22T04:42:35Z",
+      "guid": null,
+      "item_hash": "456caa715c88521d04e75624a34507030784347cc02dfd3030c2c2af6b59eb9d",
+      "link": "https://www.occ.gov/news-issuances/news-releases/2026/nr-ia-2026-60.html",
+      "published_at": "2026-07-16T18:00:00Z",
+      "raw_published": "16 Jul 2026 14:00:00 -0400",
+      "relevant": false,
+      "source_id": "occ",
+      "status": "queued",
+      "summary": "Agencies Issue Joint Statement on Handling of Highly Sensitive Information During Bank Examinations The federal bank regulatory agencies today issued a joint statement describing enhanced security procedures for review of highly sensitive information in connection with examinations of supervised banks, such as reviewing materials on-site rather than transferring them onto agency systems.",
+      "title": "Agencies Issue Joint Statement on Handling of Highly Sensitive Information During Bank Examinations"
+    },
     "49cea12f55d2671d07e9f2bbcd564d2a89c114f3ab195e8aaa07a915a2776928": {
       "card_id": null,
       "content_hash": "893eb911a2c6a0b84cf673f8a01b853326f2a74012cc686ea7d05da66122b479",
@@ -688,6 +752,22 @@
       "status": "queued",
       "summary": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
       "title": "SEC Establishes Joint Data Standards as Required Under the Financial Data Transparency Act of 2022"
+    },
+    "5406d26089ac1d2d1eecdc5b66020ce221f29b7e429693005593ab19ae8721a5": {
+      "card_id": null,
+      "content_hash": "236524a50f802d0cf7151e70e0876cbab0d0d61d54fba1a686a81c169534052b",
+      "feed_id": "cftc_press_releases",
+      "first_seen": "2026-07-22T04:42:35Z",
+      "guid": "https://www.cftc.gov/PressRoom/PressReleases/9269-26",
+      "item_hash": "5406d26089ac1d2d1eecdc5b66020ce221f29b7e429693005593ab19ae8721a5",
+      "link": "https://www.cftc.gov/PressRoom/PressReleases/9269-26",
+      "published_at": "2026-07-17T14:38:56Z",
+      "raw_published": "Fri, 17 Jul 2026 14:38:56 +0000",
+      "relevant": false,
+      "source_id": "cftc",
+      "status": "queued",
+      "summary": "",
+      "title": "CFTC Sunsets Routine Large Trader Reporting Requirements for Physical Commodity Swaps"
     },
     "566e0c1ac6f7a5bd527bf4b9e522699e367cd915fdfb35bbe8f862b10c5aa7c5": {
       "card_id": null,
@@ -1137,6 +1217,22 @@
       "summary": "",
       "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of Proposed Rule Change To List and Trade Shares of the Grayscale Polkadot Trust Under Nasdaq Rule 5711(d)"
     },
+    "991a4f546200506266e6ccec325d62bb16d473151a7aca8760a46036a980d192": {
+      "card_id": null,
+      "content_hash": "4e4c92e595eb93b116cbd1b090c35e284652e18776f4836496d423f2e594614e",
+      "feed_id": "occ_news",
+      "first_seen": "2026-07-22T04:42:35Z",
+      "guid": null,
+      "item_hash": "991a4f546200506266e6ccec325d62bb16d473151a7aca8760a46036a980d192",
+      "link": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-58.html",
+      "published_at": "2026-07-15T14:00:00Z",
+      "raw_published": "15 Jul 2026 10:00:00 -0400",
+      "relevant": false,
+      "source_id": "occ",
+      "status": "queued",
+      "summary": "Comptroller of the Currency Jonathan V. Gould today issued remarks on his work and progress to ensure the continued relevance of the federal banking system and its ability to meet the evolving financial needs of the American people.",
+      "title": "Jonathan V. Gould Marks One Year as Comptroller of the Currency"
+    },
     "9a853765e05dad3bcdc49958f383d09baf5eb2134b7c70b6a1471c11eb638756": {
       "card_id": null,
       "content_hash": "5357c935ec414509726ea1d1da9b7a854ba6b17a493ab5c4c5daf850293cb218",
@@ -1185,6 +1281,22 @@
       "summary": "The&nbsp;Securities and Exchange Commission’s&nbsp;Small Business Capital Formation Advisory Committee announced that it will hold a meeting on Tuesday, July&nbsp;21, 2026 at 10 a.m. to explore ways to modernize public market access and encourage IPOs…",
       "title": "SEC Small Business Advisory Committee to Explore Modernizing Market Access"
     },
+    "9fc5696268b72cd04b9ed2cd1f7923b0ef2f1f51ea7c40f0a757de71fc7b295f": {
+      "card_id": null,
+      "content_hash": "19bbaabeb61a7a7148d53ba53614d2907eeed3b3551806efa12d544c9a3c962d",
+      "feed_id": "cftc_press_releases",
+      "first_seen": "2026-07-22T04:42:35Z",
+      "guid": "https://www.cftc.gov/PressRoom/PressReleases/9266-26",
+      "item_hash": "9fc5696268b72cd04b9ed2cd1f7923b0ef2f1f51ea7c40f0a757de71fc7b295f",
+      "link": "https://www.cftc.gov/PressRoom/PressReleases/9266-26",
+      "published_at": "2026-07-13T14:46:20Z",
+      "raw_published": "Mon, 13 Jul 2026 14:46:20 +0000",
+      "relevant": false,
+      "source_id": "cftc",
+      "status": "queued",
+      "summary": "",
+      "title": "CFTC Approves Final Rule Amending Margin Requirements for Uncleared Swaps"
+    },
     "a0068cffbfcfaa6674e615e9c94ee2c56eb090eaebc63c64fa5768c463000cf3": {
       "card_id": null,
       "content_hash": "2a969ab5b1e2958a4aed0d7cff75c54bf5fdb11c10d2896b0e8d6e7a5c405d90",
@@ -1216,6 +1328,22 @@
       "status": "queued",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the Wise Origin Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    "a70f1b762a20ecebe091d005cc6c06c2ff0153b595154e76d5579fe4ed9b6084": {
+      "card_id": null,
+      "content_hash": "df7599101e2833b5605f76d378e8bea77d32e40532547a81574a3b65ac5b0b15",
+      "feed_id": "occ_news",
+      "first_seen": "2026-07-22T04:42:35Z",
+      "guid": null,
+      "item_hash": "a70f1b762a20ecebe091d005cc6c06c2ff0153b595154e76d5579fe4ed9b6084",
+      "link": "https://www.occ.gov/news-issuances/news-releases/2026/nr-ia-2026-57.html",
+      "published_at": "2026-07-13T14:30:00Z",
+      "raw_published": "13 Jul 2026 10:30:00 -0400",
+      "relevant": false,
+      "source_id": "occ",
+      "status": "queued",
+      "summary": "The Office of the Comptroller of the Currency, the Federal Deposit Insurance Corporation, and the National Credit Union Association (collectively, the agencies) today issued guidance to remind supervised financial institutions of existing supervisory expectations with respect to credit risk management, particularly as it relates to borrowers who are not legally authorized to work in the United States.",
+      "title": "Agencies Issue Guidance on Lending to Individuals Not Legally Authorized to Work in the United States"
     },
     "a72a736d6c4aadb501d259a20f9b82306f62ea1dc97eea2380cbea168b2297cf": {
       "card_id": null,
@@ -1553,6 +1681,22 @@
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change, as Modified by Amendment No. 1, To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
+    "c54d446e73b88e634a8e3e91a0e65c607171b913692ed4d67252796e0344989b": {
+      "card_id": null,
+      "content_hash": "355567518239048190565129e30727a7ba2de048c712f70a768b1c9d0d23fc11",
+      "feed_id": "cftc_press_releases",
+      "first_seen": "2026-07-22T04:42:35Z",
+      "guid": "https://www.cftc.gov/PressRoom/PressReleases/9268-26",
+      "item_hash": "c54d446e73b88e634a8e3e91a0e65c607171b913692ed4d67252796e0344989b",
+      "link": "https://www.cftc.gov/PressRoom/PressReleases/9268-26",
+      "published_at": "2026-07-15T19:45:36Z",
+      "raw_published": "Wed, 15 Jul 2026 19:45:36 +0000",
+      "relevant": false,
+      "source_id": "cftc",
+      "status": "queued",
+      "summary": "",
+      "title": "Chairman Selig Announces CFTC Agricultural Advisory Committee to Meet July 29 in Washington"
+    },
     "cbb1571a7bb54a24377cbad2280f4731f025ae7fe404b064fd7a99c6a76bc429": {
       "card_id": null,
       "content_hash": "10923357acb6d3b1097fa004e53a41ee6b5fcca3d8a2822f43726ae5efc47210",
@@ -1792,6 +1936,22 @@
       "status": "published",
       "summary": "The Financial Crimes Enforcement Network (FinCEN), together with the Office of the Comptroller of the Currency (OCC), the Board of Governors of the Federal Reserve System (Board), the Federal Deposit Insurance Corporation (FDIC), and the National Credit Union Administration (NCUA) are jointly issuing this proposed rule to implement certain provisions of the Guiding and Establishing National and Innovation for U.S. Stablecoins Act (GENIUS Act). Specifically, this rulemaking implements the GENIUS Act's directives to treat permitted payment stablecoin issuers as financial institutions under the Bank Secrecy Act and to require issuers to maintain an effective customer identification program.",
       "title": "Permitted Payment Stablecoin Issuer Customer Identification Program"
+    },
+    "e6976a967d6b6c639c1d3567798262435da4703c0a81f0bf7c9c5bfca8d4598a": {
+      "card_id": null,
+      "content_hash": "a2d2285f7e2ca16a4b998411e165ea680782df3a574613eca64bd34d05916a9f",
+      "feed_id": "sec_press_releases",
+      "first_seen": "2026-07-22T04:42:35Z",
+      "guid": "faef21cd-fd8b-472b-95f2-7559ed5be292",
+      "item_hash": "e6976a967d6b6c639c1d3567798262435da4703c0a81f0bf7c9c5bfca8d4598a",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-67-sec-proposes-new-e-delivery-approach-make-information-more-readily-accessible-useful-investors",
+      "published_at": "2026-07-16T12:57:00Z",
+      "raw_published": "Thu, 16 Jul 2026 08:57:00 -0400",
+      "relevant": false,
+      "source_id": "sec",
+      "status": "queued",
+      "summary": "The Securities and Exchange Commission today&nbsp;proposed Regulation E-Delivery, a new rule that would expand the ability of issuers, broker-dealers, investment advisers, and others to use electronic delivery to satisfy information delivery requirements…",
+      "title": "SEC Proposes New E-Delivery Approach to Make Information More Readily Accessible and Useful for Investors"
     },
     "e745b1b27fe1e30a40ce1808e83a417b6f8242c1ac297d216ae048011cba7f1b": {
       "card_id": null,

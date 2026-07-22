@@ -518,9 +518,31 @@
       "regulator": "Federal Register",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the Kryptoin Bitcoin ETF Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares",
       "type": "register_documents"
+    },
+    {
+      "item_hash": "240ff989bb42b6a98147ecb79d85127444fa58f1deb659d3fa92d82d6c750a43",
+      "link": "https://www.sec.gov/files/rules/interp/2026/33-11412.pdf",
+      "pillar": [
+        "aml_cft_enforcement"
+      ],
+      "published_at": "2026-03-17T00:00:00Z",
+      "regulator": "SEC",
+      "title": "SEC interpretation and CFTC guidance: Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets (Release Nos. 33-11412; 34-105020; File No. S7-2026-09)",
+      "type": "press_releases"
+    },
+    {
+      "item_hash": "f0aa81db42234c8d2f05bc6b3435a0e46a5c14e9cb48dbe5a3bf1e99cefda60d",
+      "link": "https://www.govinfo.gov/app/details/PLAW-119publ27",
+      "pillar": [
+        "stablecoins"
+      ],
+      "published_at": "2025-07-18T00:00:00Z",
+      "regulator": "GovInfo",
+      "title": "Guiding and Establishing National Innovation for U.S. Stablecoins Act (GENIUS Act) enacted as Public Law 119-27",
+      "type": "unknown"
     }
   ],
-  "generated_at": "2026-07-12T06:11:01Z",
+  "generated_at": "2026-07-22T04:42:35Z",
   "jurisdiction_id": "us",
   "schema_version": 1
 }
