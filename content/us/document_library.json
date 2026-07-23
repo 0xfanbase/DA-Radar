@@ -540,9 +540,20 @@
       "regulator": "GovInfo",
       "title": "Guiding and Establishing National Innovation for U.S. Stablecoins Act (GENIUS Act) enacted as Public Law 119-27",
       "type": "unknown"
+    },
+    {
+      "item_hash": "9bab6eecc92cece0684c4b9ff4e4f734e00ee8902b007f5eec1808bef1e76b88",
+      "link": "https://www.fincen.gov/news/news-releases/fincen-extends-comment-period-proposed-rule-amend-definition-huione-group",
+      "pillar": [
+        "aml_cft_enforcement"
+      ],
+      "published_at": "2026-07-22T00:00:00Z",
+      "regulator": "FinCEN",
+      "title": "FinCEN Extends Comment Period for Proposed Rule To Amend the Definition of Huione Group",
+      "type": "press_releases"
     }
   ],
-  "generated_at": "2026-07-22T04:42:35Z",
+  "generated_at": "2026-07-23T04:46:18Z",
   "jurisdiction_id": "us",
   "schema_version": 1
 }

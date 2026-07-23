@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T04:42:35Z",
+  "generated_at": "2026-07-23T04:46:18Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -689,6 +689,22 @@
       "summary": "Agencies Issue Joint Statement on Handling of Highly Sensitive Information During Bank Examinations The federal bank regulatory agencies today issued a joint statement describing enhanced security procedures for review of highly sensitive information in connection with examinations of supervised banks, such as reviewing materials on-site rather than transferring them onto agency systems.",
       "title": "Agencies Issue Joint Statement on Handling of Highly Sensitive Information During Bank Examinations"
     },
+    "48687cc03a5f79a036bac6a5116f3147fb326e961ed5070e9989c641733be041": {
+      "card_id": null,
+      "content_hash": "861963fd516cef3634f27a68e19a40c1668410e4351c96714eca5255dda889ac",
+      "feed_id": "sec_press_releases",
+      "first_seen": "2026-07-23T04:46:18Z",
+      "guid": "1cba3a68-748d-4949-a422-89805543be57",
+      "item_hash": "48687cc03a5f79a036bac6a5116f3147fb326e961ed5070e9989c641733be041",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-68-sec-announces-departure-principal-deputy-director-enforcement-sam-waldon",
+      "published_at": "2026-07-22T13:45:25Z",
+      "raw_published": "Wed, 22 Jul 2026 09:45:25 -0400",
+      "relevant": false,
+      "source_id": "sec",
+      "status": "queued",
+      "summary": "The Securities and Exchange Commission today announced that Sam Waldon, Principal Deputy Director of the Division of Enforcement, will depart the agency on July 31, 2026, after more than 14 years at the SEC. He will be succeeded as Principal Deputy…",
+      "title": "SEC Announces Departure of Principal Deputy Director of Enforcement Sam Waldon"
+    },
     "49cea12f55d2671d07e9f2bbcd564d2a89c114f3ab195e8aaa07a915a2776928": {
       "card_id": null,
       "content_hash": "893eb911a2c6a0b84cf673f8a01b853326f2a74012cc686ea7d05da66122b479",
@@ -1248,6 +1264,22 @@
       "status": "queued",
       "summary": "WASHINGTON—Today, the Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) assessed an $80,000,000civil money penaltyagainst Canaccord Genuity LLC (Canaccord) for willful…",
       "title": "FinCEN Assesses Historic $80 Million Penalty Against Canaccord Genuity LLC for Securities Fraud-Related Bank Secrecy Act Violations"
+    },
+    "9bab6eecc92cece0684c4b9ff4e4f734e00ee8902b007f5eec1808bef1e76b88": {
+      "card_id": null,
+      "content_hash": "0039c8d475364f89d6cc846dae1e5eb74ae025eacb5f139ba107e957c8a86b93",
+      "feed_id": "fincen_press_releases",
+      "first_seen": "2026-07-23T04:46:18Z",
+      "guid": "https://www.fincen.gov/news/news-releases/fincen-extends-comment-period-proposed-rule-amend-definition-huione-group",
+      "item_hash": "9bab6eecc92cece0684c4b9ff4e4f734e00ee8902b007f5eec1808bef1e76b88",
+      "link": "https://www.fincen.gov/news/news-releases/fincen-extends-comment-period-proposed-rule-amend-definition-huione-group",
+      "published_at": "2026-07-22T00:00:00Z",
+      "raw_published": "07/22/2026",
+      "relevant": true,
+      "source_id": "fincen",
+      "status": "queued",
+      "summary": "Due to a technological issue that prevented the public from electronically filing comments for several days, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period for the notice of proposed rulemaking (NPRM) it published in June to amend the existing definition of…",
+      "title": "FinCEN Extends Comment Period for Proposed Rule To Amend the Definition of Huione Group"
     },
     "9bf74e7dd7d61984658fbb5d87f8b167a7966e2772742968017f2efd88656632": {
       "card_id": null,

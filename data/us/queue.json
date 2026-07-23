@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T06:45:30Z",
+  "generated_at": "2026-07-23T04:46:18Z",
   "items": [
     {
       "feed_id": "fedreg_digital_assets",
@@ -420,6 +420,16 @@
       "status": "queued",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the Kryptoin Bitcoin ETF Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    {
+      "feed_id": "fincen_press_releases",
+      "item_hash": "9bab6eecc92cece0684c4b9ff4e4f734e00ee8902b007f5eec1808bef1e76b88",
+      "link": "https://www.fincen.gov/news/news-releases/fincen-extends-comment-period-proposed-rule-amend-definition-huione-group",
+      "published_at": "2026-07-22T00:00:00Z",
+      "source_id": "fincen",
+      "status": "queued",
+      "summary": "Due to a technological issue that prevented the public from electronically filing comments for several days, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period for the notice of proposed rulemaking (NPRM) it published in June to amend the existing definition of…",
+      "title": "FinCEN Extends Comment Period for Proposed Rule To Amend the Definition of Huione Group"
     }
   ],
   "jurisdiction_id": "us",
