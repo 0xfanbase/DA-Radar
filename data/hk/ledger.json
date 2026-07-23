@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T04:42:34Z",
+  "generated_at": "2026-07-23T04:46:14Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -2641,6 +2641,22 @@
       "summary": "",
       "title": "Scam alert related to banks"
     },
+    "29f0cfa1e0776b564c88c8f1759b46da46c9912e85ed294ff22fdf4d1464d1b1": {
+      "card_id": null,
+      "content_hash": "72370aed62610c66e0a12546e7dacff07e500f7dbd231ebd89c195338b4e8c76",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-23T04:46:14Z",
+      "guid": null,
+      "item_hash": "29f0cfa1e0776b564c88c8f1759b46da46c9912e85ed294ff22fdf4d1464d1b1",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260722-5/",
+      "published_at": "2026-07-21T16:00:00Z",
+      "raw_published": "Wed, 22 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Results of 3-year HKD HKSAR Institutional Government Bonds tender through re-opening"
+    },
     "2a990437ac39fc8bb068c40c788486d10f9cf1f971a8c779711dd40a4dbc3b97": {
       "card_id": null,
       "content_hash": "9d3a7ddbb684c611f69989e584e2e087249fa0154153765eee20b1962b745f63",
@@ -2961,6 +2977,22 @@
       "summary": "",
       "title": "The Year 2000 Problem Annex: Technical Paper on Year 2000 issued by Basle Committee"
     },
+    "2fcf5af57c0dec39d96be54bfb191179a91f861cf46ccb5a11ee86fe7f37824a": {
+      "card_id": null,
+      "content_hash": "498510f989f82302fe6f271d95afd22c2c22a04d4aff3c78a51552e55323dde4",
+      "feed_id": "sfc_press_releases",
+      "first_seen": "2026-07-23T04:46:14Z",
+      "guid": "26PR110",
+      "item_hash": "2fcf5af57c0dec39d96be54bfb191179a91f861cf46ccb5a11ee86fe7f37824a",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR110",
+      "published_at": "2026-07-23T04:34:12Z",
+      "raw_published": "Thu, 23 Jul 2026 12:34:12 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "New speech by Kelvin Wong: Remarks at SFC and Securities Commission Malaysia’s MoU Signing Ceremony"
+    },
     "2fe207cd781de4257446b865ff89226a246f5c9bd4a4f83ed7b4bc839fd3516b": {
       "card_id": null,
       "content_hash": "488b26ce9b5928e0338ecd99e9a4f6f26990184cfd99f13ff66be1b21fb4cd53",
@@ -2992,6 +3024,22 @@
       "status": "queued",
       "summary": "",
       "title": "The People's Bank of China will issue Renminbi Bills through Central Moneymarkets Unit of Hong Kong Monetary Authority"
+    },
+    "3017ab3de69baf3827681e26c9be271297e7c8eff80d1322b98c1b4edb035329": {
+      "card_id": null,
+      "content_hash": "5ae0de9f6abbb8303272567298d5b88d5370090c6803ca85821ef9aacfd8e613",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-23T04:46:14Z",
+      "guid": null,
+      "item_hash": "3017ab3de69baf3827681e26c9be271297e7c8eff80d1322b98c1b4edb035329",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260722-6/",
+      "published_at": "2026-07-21T16:00:00Z",
+      "raw_published": "Wed, 22 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Results of 7-year HKD HKSAR Institutional Government Bonds tender through re-opening"
     },
     "3028fd00c9577a46306c133eea4c255737ca415c3bfe59b8f70ae03f0a2da6c5": {
       "card_id": null,
@@ -5457,6 +5505,22 @@
       "summary": "",
       "title": "HKMA 2026 Pay Review"
     },
+    "5ad05a41bda7bfebb04f77a15285435b742fe62b95191fb0c08cd95f5137f2ab": {
+      "card_id": null,
+      "content_hash": "8ef3505c0ae22de792e5b71e9b004d578e13ba5b22c9c3b17b1eabea50288e7f",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-23T04:46:14Z",
+      "guid": null,
+      "item_hash": "5ad05a41bda7bfebb04f77a15285435b742fe62b95191fb0c08cd95f5137f2ab",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260722-4/",
+      "published_at": "2026-07-21T16:00:00Z",
+      "raw_published": "Wed, 22 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Scam alert related to banks"
+    },
     "5b1a8c2c267d40d22bf872555c3f1a83a34dd959b68194992008334ee815e5a8": {
       "card_id": null,
       "content_hash": "dfbc97d313c533f3c3f0d6fe08dee15dcb05eb2ea47ca57123d9ef0798d46be3",
@@ -7344,6 +7408,22 @@
       "status": "queued",
       "summary": "",
       "title": "Scam alert related to banks"
+    },
+    "7616f865a890001b985922bb824963407c5d8d7349ca2e7cff831d5e208f947d": {
+      "card_id": null,
+      "content_hash": "57c4f829144cbe64c06d9c1531febfaa7fa4d4568499d520ab9a58b823062233",
+      "feed_id": "sfc_circulars",
+      "first_seen": "2026-07-23T04:46:14Z",
+      "guid": "26EC38",
+      "item_hash": "7616f865a890001b985922bb824963407c5d8d7349ca2e7cff831d5e208f947d",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC38",
+      "published_at": "2026-07-23T03:38:35Z",
+      "raw_published": "Thu, 23 Jul 2026 11:38:35 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "Cross-listings of Malaysian Real Estate Investment Trusts in Hong Kong"
     },
     "7617e29bdc7d96d51236688822280336662897218d869ece7f6368f46138dc74": {
       "card_id": null,
@@ -9713,6 +9793,22 @@
       "summary": "",
       "title": "Result of the tender of the People's Bank of China RMB Bills held on 25 March 2026"
     },
+    "98409236469216382601b426b330cae8824fe58d2b1a8af3342171013c872a7a": {
+      "card_id": null,
+      "content_hash": "6f2224029dd219933b6c817350360c805713dd445d1e1ebc6d2adfaa99d737f4",
+      "feed_id": "sfc_circulars",
+      "first_seen": "2026-07-23T04:46:14Z",
+      "guid": "26EC37",
+      "item_hash": "98409236469216382601b426b330cae8824fe58d2b1a8af3342171013c872a7a",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC37",
+      "published_at": "2026-07-23T03:34:51Z",
+      "raw_published": "Thu, 23 Jul 2026 11:34:51 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "Mutual Recognition of Funds (MRF) between Malaysia and Hong Kong"
+    },
     "98664ee03f1e25a8f30a4ef0c0652dfc68256711dc2fc01888f42d2309fab853": {
       "card_id": null,
       "content_hash": "f76e307ea99c8ae62c650014e3ba675ca68b1130a8bdb703404f6cc2df159042",
@@ -10816,6 +10912,22 @@
       "status": "queued",
       "summary": "",
       "title": "Exchange Fund Bills Tender Results"
+    },
+    "a737df8b53f5a8cac57504349d602b96e75099843448a6adb6c02d547a86907d": {
+      "card_id": null,
+      "content_hash": "b5db7b6318280f0cae5c82d84102bfd7ce782c360bc1424caf81b25573e42785",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-23T04:46:14Z",
+      "guid": null,
+      "item_hash": "a737df8b53f5a8cac57504349d602b96e75099843448a6adb6c02d547a86907d",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260722-7/",
+      "published_at": "2026-07-21T16:00:00Z",
+      "raw_published": "Wed, 22 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Results of 20-year HKD HKSAR Institutional Government Bonds tender through re-opening"
     },
     "a75f38dc7daab604fc16653b46b6a8fb833127c8820a198bc914bd106d6fabd2": {
       "card_id": null,
