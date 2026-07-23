@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T04:42:34Z",
+  "generated_at": "2026-07-23T04:46:15Z",
   "items": {
     "02028a9677575e76189a49022768f45cc07c84ca74ac72879172cd9671891801": {
       "card_id": null,
@@ -64,6 +64,22 @@
       "status": "queued",
       "summary": "The Market Participants Group (MPG) is a senior-level forum for financial market participants to share their views on relevant themes and narratives in financial markets with members of the Bank of England’s Monetary Policy Committee.",
       "title": "Minutes of the Market Participants Group meeting – 7 May 2026"
+    },
+    "078a0570bad537880eb02be89a1ee917f2fb3a6c3b5b9236303add89c2424a13": {
+      "card_id": null,
+      "content_hash": "65ce54cdec999993a1be65af577b65683b9e90a35b2770631b57e830631781a8",
+      "feed_id": "boe_news",
+      "first_seen": "2026-07-23T04:46:15Z",
+      "guid": "{6F3D5C0D-D4C0-4A28-93CE-7F21622F66A5}",
+      "item_hash": "078a0570bad537880eb02be89a1ee917f2fb3a6c3b5b9236303add89c2424a13",
+      "link": "https://www.bankofengland.co.uk/news/2026/july/pra-consults-on-updated-guidance-for-friendly-society-amalgamations-and-transfers",
+      "published_at": "2026-07-22T09:00:00Z",
+      "raw_published": "Wed, 22 Jul 2026 10:00:00 +0100",
+      "relevant": false,
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "The proposals would provide more detail on the PRA’s approach to Part VIII transactions, helping firms plan amalgamations and transfers more efficiently.",
+      "title": "PRA consults on updated guidance for friendly society amalgamations and transfers"
     },
     "07af03cf06a4c3d457c1ae7ce7d149a02d8b8562338e3588f2e813c38e7323f7": {
       "card_id": null,
@@ -609,6 +625,22 @@
       "summary": "The government's summary of a Commission Delegated Regulation as regards elements related to the temporary customs duty on distance sales of imported goods.",
       "title": "Policy paper: EM on customs duty on distance imported goods sales (C(2026)2760)"
     },
+    "33d8ff8b82b21b886719088a17591d3dbc5ed2217e31cda06d3681b72bfbd717": {
+      "card_id": null,
+      "content_hash": "063fda70e807a517556e81e694e7cfb009429ceb521137941dd2da17437e404c",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-23T04:46:15Z",
+      "guid": "https://www.gov.uk/government/speeches/chancellor-john-healey-delivers-speech-to-treasury-staff#2026-07-22T16:16:37Z",
+      "item_hash": "33d8ff8b82b21b886719088a17591d3dbc5ed2217e31cda06d3681b72bfbd717",
+      "link": "https://www.gov.uk/government/speeches/chancellor-john-healey-delivers-speech-to-treasury-staff",
+      "published_at": "2026-07-22T16:16:37Z",
+      "raw_published": "2026-07-22T16:16:37Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "On 21 July Chancellor John Healey delivered his first speech to Treasury staff.",
+      "title": "Chancellor John Healey delivers speech to Treasury staff"
+    },
     "34430e6df4c0819b34077e9ffd2127facc0bd10a2e4fa3a638066215da5993fd": {
       "card_id": null,
       "content_hash": "5a6c3be9cf7cde5dca6cc72a8216823bb3da49cbacfe289fcdbd9d76861197ef",
@@ -864,6 +896,22 @@
       "status": "queued",
       "summary": "The Cost Benefit Analysis (CBA) Panel is a statutory panel established to provide advice to the PRA and the Bank on the preparation of CBA. The Panel provides independent input to the PRA’s and the Bank’s CBAs, helping to support increased transparency and scrutiny of their policymaking. This report covers the period from 1 March 2025 to 28 February 2026.",
       "title": "Prudential Regulation Authority’s (PRA) Cost Benefit Analysis Panel Annual Report 2025/26"
+    },
+    "42358369b43dd2927fbdf187b95d9c968ebcb6d183a4398c32023256eed15087": {
+      "card_id": null,
+      "content_hash": "18e21c28909f6a0e28ccc20f00cd02f816011b04af966a42c27071728b26409f",
+      "feed_id": "fca_news",
+      "first_seen": "2026-07-23T04:46:15Z",
+      "guid": "171306",
+      "item_hash": "42358369b43dd2927fbdf187b95d9c968ebcb6d183a4398c32023256eed15087",
+      "link": "https://www.fca.org.uk/news/press-releases/arrests-searches-made-fraud-money-laundering-investigation",
+      "published_at": null,
+      "raw_published": "Wednesday, July 22, 2026 - 10:25",
+      "relevant": false,
+      "source_id": "fca",
+      "status": "queued",
+      "summary": "Four people have been arrested and search warrants executed in Hackney, Beckenham and Slough as part of a FCA and police investigation into fraud and money laundering. The arrests and searcheswere carried out by the police’s Eastern Region Special Operations Unit and South East Regional Organised Crime Unit with the FCA.The suspects were interviewed under caution by the FCA and released on bail. The investigation is ongoing and further updates will be provided in due course.Notes to editorsThe FCA cannot comment further at this time.The FCA enables a fair and thriving financial services market for the good of consumers and the economy. Find out more about the FCA.",
+      "title": "Arrests and searches made as part of a fraud and money laundering investigation"
     },
     "430f42ac8aef8af7e7d67602815c0b506ef9bb6f517c4b7cf085bf915ea2105f": {
       "card_id": null,
@@ -1216,6 +1264,22 @@
       "status": "queued",
       "summary": "Policy statement 5/26",
       "title": "PS5/26 – Credit Union Service Organisations"
+    },
+    "5d6d8270eb2996ac50d8359f9d41cfbe42dfd60a3bb5e7addbe5c4db99351a99": {
+      "card_id": null,
+      "content_hash": "1f15fafa0a0d048ba4b0eb30b264d64c55b6f3f6b7ac32ef0a9e7b308b663a2b",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-23T04:46:15Z",
+      "guid": "https://www.gov.uk/government/publications/whole-of-government-accounts-2025-to-2026-guidance-for-preparers#2026-07-22T11:37:21Z",
+      "item_hash": "5d6d8270eb2996ac50d8359f9d41cfbe42dfd60a3bb5e7addbe5c4db99351a99",
+      "link": "https://www.gov.uk/government/publications/whole-of-government-accounts-2025-to-2026-guidance-for-preparers",
+      "published_at": "2026-07-22T11:37:21Z",
+      "raw_published": "2026-07-22T11:37:21Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Guidance for central government and local government preparers for Whole of Government Accounts.",
+      "title": "Corporate report: Whole of Government Accounts 2025 to 2026: guidance for preparers"
     },
     "5db913aa6f3c70868c40f281a38183ad1f86d56057e1314318426dad081966d9": {
       "card_id": null,
@@ -1857,6 +1921,22 @@
       "summary": "Policy statement 17/26",
       "title": "PS17/26 – Regulated fees and levies: Rates proposals 2026/27"
     },
+    "96526cb8e8604628044d443dc7600ebcf580dc7e97454ab2000e1f141af4d004": {
+      "card_id": null,
+      "content_hash": "08f794146fdba96a89575aea0415a4279f8b27297fb505652ccc1f2e388c0e4e",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-23T04:46:15Z",
+      "guid": "https://www.gov.uk/government/news/cheaper-travel-for-millions-with-a-third-off-fares#2026-07-22T05:35:00Z",
+      "item_hash": "96526cb8e8604628044d443dc7600ebcf580dc7e97454ab2000e1f141af4d004",
+      "link": "https://www.gov.uk/government/news/cheaper-travel-for-millions-with-a-third-off-fares",
+      "published_at": "2026-07-22T05:35:00Z",
+      "raw_published": "2026-07-22T05:35:00Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Millions of people will save a third on bus travel as Prime Minister Andy Burnham announces a cap on single bus tickets at £2 during his first week in office.",
+      "title": "Cheaper travel for millions with a third off fares"
+    },
     "99e2e83ab0ce7da6bb6af7644df803f633097a90d94e4cd384a9d753cbc8155f": {
       "card_id": null,
       "content_hash": "fa2a3e931a41bc6a3e3a864ecdbf864ba1e5090250e6c5926b48b42910f252f4",
@@ -2304,6 +2384,38 @@
       "status": "queued",
       "summary": "The public are being asked to give their views on a selection of wildlife, native to the UK, that will appear on the next series of banknotes in a consultation launched today.",
       "title": "Public asked to help select UK wildlife to appear on new banknote series"
+    },
+    "b92d041590333b5d9b514af096f57fd45aac7ba196974bbeb5b5d3c7a1594f1e": {
+      "card_id": null,
+      "content_hash": "fbc0af5a7bd67949d6142c2ffe2160da6b038716a6bbed05d4a9821e1bdbd569",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-23T04:46:15Z",
+      "guid": "https://www.gov.uk/government/statistics/public-expenditure-statistical-analyses-2026#2026-07-16T09:34:00Z",
+      "item_hash": "b92d041590333b5d9b514af096f57fd45aac7ba196974bbeb5b5d3c7a1594f1e",
+      "link": "https://www.gov.uk/government/statistics/public-expenditure-statistical-analyses-2026",
+      "published_at": "2026-07-16T09:34:00Z",
+      "raw_published": "2026-07-16T09:34:00Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "HM Treasury statistical data setting out the year's information on government spending.",
+      "title": "Accredited official statistics: Public Expenditure Statistical Analyses 2026"
+    },
+    "b9676a5e0fbe8a779c8149bdcc0c8fc05c08b657f256bb7b192f55fae41f0892": {
+      "card_id": null,
+      "content_hash": "dd20d82016913246ca4d3a5d9da377e790d3277aab01695d1becec57fa32c50d",
+      "feed_id": "fca_news",
+      "first_seen": "2026-07-23T04:46:15Z",
+      "guid": "171336",
+      "item_hash": "b9676a5e0fbe8a779c8149bdcc0c8fc05c08b657f256bb7b192f55fae41f0892",
+      "link": "https://www.fca.org.uk/news/press-releases/anthropic-supercharged-sandbox",
+      "published_at": null,
+      "raw_published": "Wednesday, July 22, 2026 - 10:31",
+      "relevant": false,
+      "source_id": "fca",
+      "status": "queued",
+      "summary": "Anthropic will support the second group of firms in the FCA's Supercharged Sandbox. The Sandbox is a controlled environment where firms can safely experiment with advanced AI.Anthropic will provide access to Claude for participants – including Claude Code and Claude Cowork – to help speed up their development work.The second group of firms in the Supercharged Sandbox will explore a range of AI use cases. This includes testing solutions designed to:enable safer agent-led payments and commercedetect fraud and economic crime more effectivelystrengthen AI governance and accountabilitywiden access to financial services for vulnerable and underserved consumersstreamline compliance and business automation21 organisations, including Scottish Widows, Money Advice Trust and TrueLayer, will join the second group. The selection process followed strong demand, with a 51% increase in the number of applications compared to the first group.The Sandbox builds on existing support from NayaOne and NVIDIA.'The high level of interest in the Supercharged Sandbox demonstrates the demand for trusted environments where firms can experiment safely and responsibly,' said Jessica Rusu, chief data, intelligence and information officer, FCA. 'With the support of Anthropic, participants will benefit from the technology they need to accelerate innovation.'This is central to our commitment to supporting economic growth – enabling firms to make the most of technological advances while maintaining the UK’s position at the forefront of responsible AI adoption and innovation.'The FCA has also launched the new Agentic Academy, a 10-week specialist AI programme for selected firms which is delivered by the FCA and the Centre for Finance, Technology and Entrepreneurship (CFTE).Notes to editorsFirms accepted into the second cohort also include: calQrisk; Merx Digital Solutions Ltd (SmartDrops); Aegis Trace; Sardine AI Corp; Zquas; Trustie Labs; Welleness; IntelXview Ltd; RMI Agentic; Ubyx, partnering with A",
+      "title": "Anthropic to support FCA’s Supercharged Sandbox"
     },
     "b9b4b9b6ec76b876d6fbfaf9b8392fa6aece999dc4793c4abfd2008c5595d074": {
       "card_id": null,
@@ -2817,6 +2929,22 @@
       "summary": "Consultation paper 6/26",
       "title": "CP6/26 – High loan to income lending"
     },
+    "d9fa54143e4fa3fbf162eb67d2298d40c624c929d48f3ca1c4fbd4d38a47f4b8": {
+      "card_id": null,
+      "content_hash": "d77b4b65514ccbb76f4a30dd7c049a8042d295caed03ee319c46ef50dac8f522",
+      "feed_id": "boe_pra_publications",
+      "first_seen": "2026-07-23T04:46:15Z",
+      "guid": "{C1A0E1CC-B40A-4831-8C1B-CC9A209ECC9C}",
+      "item_hash": "d9fa54143e4fa3fbf162eb67d2298d40c624c929d48f3ca1c4fbd4d38a47f4b8",
+      "link": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/july/insurance-friendly-societies-amalgamations-and-transfers-consultation-paper",
+      "published_at": "2026-07-22T09:00:00Z",
+      "raw_published": "Wed, 22 Jul 2026 10:00:00 +0100",
+      "relevant": false,
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "Consultation paper 12/26",
+      "title": "CP12/26 – Insurance friendly societies, amalgamations and transfers"
+    },
     "da00f0fa54babab30eb30ba4605e4644aa89af74dcb1db908ef8a0ae4ef38d64": {
       "card_id": null,
       "content_hash": "e93f3c998b0a89547d39a753f4155a0f2e8891e5f21b25bae0c9dffa1c4c9bfa",
@@ -2944,6 +3072,22 @@
       "status": "queued",
       "summary": "The July 2024 national statistics public expenditure outturn release.",
       "title": "Accredited official statistics: Public Spending Statistics release: July 2024"
+    },
+    "e2e87a7b13ebc16889212d5d65f1227a7712ac82545357e3403d4420f642f180": {
+      "card_id": null,
+      "content_hash": "de75b9fdba485717aadd1b7b5e0fb1a76670da37471c21f83740dd4261f2fc89",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-23T04:46:15Z",
+      "guid": "https://www.gov.uk/government/publications/reference-document-for-the-customs-tariff-establishment-eu-exit-regulations-2020#2026-07-22T11:48:01Z",
+      "item_hash": "e2e87a7b13ebc16889212d5d65f1227a7712ac82545357e3403d4420f642f180",
+      "link": "https://www.gov.uk/government/publications/reference-document-for-the-customs-tariff-establishment-eu-exit-regulations-2020",
+      "published_at": "2026-07-22T11:48:01Z",
+      "raw_published": "2026-07-22T11:48:01Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Find the UK’s most favoured nation tariff rates as referenced in The Customs Tariff (Establishment) (EU Exit) Regulations 2020.",
+      "title": "Statutory guidance: Reference Document for The Customs Tariff (Establishment) (EU Exit) Regulations 2020"
     },
     "e428bbc7105ffd0c483505eca5f07c53150063de0e327978400446b723d8fb64": {
       "card_id": null,
