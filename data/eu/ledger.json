@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T04:42:34Z",
+  "generated_at": "2026-07-23T04:46:12Z",
   "items": {
     "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
       "card_id": null,
@@ -16,6 +16,22 @@
       "status": "queued",
       "summary": "European Commission Speech Warsaw, 21 Jul 2026 Dear Minister Kierwiński, Dear Secretary of State Szymański, Excellencies, Ladies and gentlemen, My dear Polish friends, I have come to Poland to celebrate a su...",
       "title": "Speech by Commissioner Kubilius at the IRIS² - Polish contribution Agreement Signature Ceremony"
+    },
+    "03d2d370c508cea62d1b17c98f000678f92f12c382914181c516d96a2c85c6b6": {
+      "card_id": null,
+      "content_hash": "81831b4034a538e6fa17310a0e574d3f6d6e13725f375c5646d5f82dc200e1f2",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-23T04:46:12Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1664",
+      "item_hash": "03d2d370c508cea62d1b17c98f000678f92f12c382914181c516d96a2c85c6b6",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1664",
+      "published_at": "2026-07-21T22:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 22 Jul 2026 Today, the European Commission adopted a Communication on the European Pillar of Social Rights. It confirms that the Pillar remains the EU's social shield and compass for fairness in an age of fast transformation, for a Europe that protects and empowers citizens.",
+      "title": "European Pillar of Social Rights: a renewed commitment to protect and empower EU's citizens"
     },
     "04061ba71b606d9cb43910fe5ea893046f1daa9910b4e4006dcd27b220f92d16": {
       "card_id": null,
@@ -97,6 +113,22 @@
       "summary": "",
       "title": "Frank Elderson: A central banker’s perspective on climate change and nature degradation"
     },
+    "0bb81b0f0f03cd1c3027f862f778c1b67b8ba1845351dbd3f957a72d4bd310f0": {
+      "card_id": null,
+      "content_hash": "de562ebeaf139c7445dfed2704bec40e9fb2c6aa23cf1bf175041b4bc356dc46",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-23T04:46:12Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1658",
+      "item_hash": "0bb81b0f0f03cd1c3027f862f778c1b67b8ba1845351dbd3f957a72d4bd310f0",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1658",
+      "published_at": "2026-07-21T22:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 22 Jul 2026 Today, the European Commission concluded the eligibility checks for the registration requests of two European Citizens' Initiatives (ECIs) entitled: ‘Stop Killing The Internet: No Digital ID & No Age Verification' and ‘Save Europe Act'.",
+      "title": "Commission concludes eligibility checks for two European Citizens' Initiatives on digital identity and age-verification, and on migration and asylum"
+    },
     "0dea2805d9e5ad17a549d1ced7fe1677a247be9bf57db22f37f92fd13869c32c": {
       "card_id": null,
       "content_hash": "d7700a686222cde189bdd957227807155d0548362ccd2f72f783a19f45989023",
@@ -176,6 +208,22 @@
       "status": "queued",
       "summary": "",
       "title": "Patrick Montagner: When fragmentation creates complexity"
+    },
+    "201a2a3cfaf2127975758a082805035fed40d054a12df6fded59715f3f01ee08": {
+      "card_id": null,
+      "content_hash": "98cb76a51b1dc32577b0d1aec4b0b287027ce800cca46be8b172edd666344b8f",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-23T04:46:12Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1663",
+      "item_hash": "201a2a3cfaf2127975758a082805035fed40d054a12df6fded59715f3f01ee08",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1663",
+      "published_at": "2026-07-21T22:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 22 Jul 2026 The European Commission has approved, under the EU Merger Regulation, the proposed acquisition by Paramount Skydance Corporation (‘Paramount') of Warner Bros. Discovery (‘Warner'). The approval is conditional upon full compliance with the commitments offered by Paramount.",
+      "title": "Commission approves Paramount's acquisition of Warner, subject to conditions"
     },
     "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b": {
       "card_id": "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b",
@@ -273,6 +321,38 @@
       "summary": "​The European Banking Authority (EBA) today published its 2025 Report on supervisory convergence, as part of its broader efforts to contribute to a more efficient, streamlined and effective EU prudential framework. This work responds to the EBA’s initiatives to increase the efficiency of the regulatory and supervisory framework, including through greater transparency and a focus on supervisory convergence. The Report highlights continued progress in aligning supervisory practices across the European Union (EU), while identifying areas where further convergence is needed. It shows how strong and consistent supervision can support the simplification of the regulatory framework, reduce unnecessary complexity, and help secure a level playing field across the Single Market.",
       "title": "The EBA publishes its 2025 Report on supervisory convergence, supporting a simpler and more efficient EU prudential framework"
     },
+    "34e59a4a43258dac1910886c41d93e3c9a0ca81cf9d9d9b8bc2ee087aa8d2308": {
+      "card_id": null,
+      "content_hash": "dbc754c8d9ff0259f91e6e83c8af87a1c2c5df20b0c78636fc0477262117992d",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-23T04:46:12Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1662",
+      "item_hash": "34e59a4a43258dac1910886c41d93e3c9a0ca81cf9d9d9b8bc2ee087aa8d2308",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1662",
+      "published_at": "2026-07-21T22:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 22 Jul 2026 Today, Commission decided to transfer in the interest of the service Zacharias Giakoumis as new Head of Representation in Athens, Greece.",
+      "title": "European Commission transfers in the Interest of the Service Zacharias Giakoumis as Head of Representation in Athens"
+    },
+    "3a6494870e5236d3d7dd27bd6bf4036cf460717d5441b796d320027b13449921": {
+      "card_id": null,
+      "content_hash": "5e0f8cf40ab706fee97b549127a9052cbfe6f684173e91962dff24850718a264",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-23T04:46:12Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1657",
+      "item_hash": "3a6494870e5236d3d7dd27bd6bf4036cf460717d5441b796d320027b13449921",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1657",
+      "published_at": "2026-07-21T22:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 22 Jul 2026 The European Commission has opened an in-depth investigation to assess, under the EU Merger Regulation, the proposed merger between Saipem and Subsea7 to become \"Saipem7\". The Commission is concerned that the proposed concentration may significantly impact effective competition in some offshore engineering and construction service markets.",
+      "title": "Commission opens in-depth investigation into proposed merger between Saipem and Subsea7"
+    },
     "3f89e214dbac85a518d70341e3d11c739b726596a055b50dfe807446a1698e99": {
       "card_id": null,
       "content_hash": "894386568ee722bf2a3c9a5fa2ab65ffa692c8d355f0809585cc171636b33d28",
@@ -288,6 +368,22 @@
       "status": "queued",
       "summary": "",
       "title": "Sharon Donnery: Interview with Central Banking"
+    },
+    "41c44750bc332a88c0e02c65f6757e80edf03b59b085611965d05727d6fb77f4": {
+      "card_id": null,
+      "content_hash": "7fd4bda2bccc17022ce51b7f086b16a746b585a7b0497b4ee98dac38671a64f2",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-23T04:46:12Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1671",
+      "item_hash": "41c44750bc332a88c0e02c65f6757e80edf03b59b085611965d05727d6fb77f4",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1671",
+      "published_at": "2026-07-22T11:18:48Z",
+      "raw_published": "Wed, 22 Jul 2026 11:18:48 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Speech Brussels, 22 Jul 2026 Let me begin with a question. What does ”the European model” mean in a person's everyday life? Like, for example, for a fresh graduate looking for a first profe...",
+      "title": "Remarks by Executive Vice-President Mînzatu on the European Pillar of Social Rights"
     },
     "42dae139fed654a31416ae311074a8f875172703eef154c42acaf189864bd0f7": {
       "card_id": null,
@@ -384,6 +480,22 @@
       "status": "queued",
       "summary": "",
       "title": "Frank Elderson: Interview with Het Financieele Dagblad"
+    },
+    "55ad94b6313a1f30fa9ebb5ffe43d8796504f43e8a319d81fe3b8ac6529bac96": {
+      "card_id": null,
+      "content_hash": "8b2b1817a10352d80ed994005426da93a9719be9e2b6701bff748a1f87d02c30",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-23T04:46:12Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1669",
+      "item_hash": "55ad94b6313a1f30fa9ebb5ffe43d8796504f43e8a319d81fe3b8ac6529bac96",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1669",
+      "published_at": "2026-07-22T08:51:03Z",
+      "raw_published": "Wed, 22 Jul 2026 08:51:03 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Daily news Brussels, 22 Jul 2026 Commission concludes eligibility checks for two European Citizens' Initiatives on digital identity and age-verification, and on migration and asylum Today, the ...",
+      "title": "Daily News 22 / 07 / 2026"
     },
     "5902d7d01a3833949a59ffb421c834a11c131f04d17bf847896b7ce41f8ef23c": {
       "card_id": null,
@@ -865,6 +977,22 @@
       "summary": "European Commission Press release Brussels, 20 Jul 2026 Today, the European Commission published guidelines to assist providers and deployers of artificial intelligence (AI) systems in meeting the AI Act's transparency obligations, which start to apply on 2 August 2026.",
       "title": "Commission publishes guidelines on transparency obligations for providers and deployers of certain AI systems"
     },
+    "9fd884ff8876c7dd604b727ac5e931c76229deb7db41a6857b76070b471e079d": {
+      "card_id": null,
+      "content_hash": "2a8acb0d268555c7fe92fbf163989f50f536d6929b638b2dfc5e0bb6ad5f39b7",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-23T04:46:12Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1660",
+      "item_hash": "9fd884ff8876c7dd604b727ac5e931c76229deb7db41a6857b76070b471e079d",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1660",
+      "published_at": "2026-07-21T22:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 22 Jul 2026 Today, Cecilia Thorfinn has been appointed as the new Head of the European Commission Representation in The Hague, The Netherlands.",
+      "title": "European Commission Appoints Cecilia Thorfinn as Head of Representation in The Hague"
+    },
     "a027b2700f066514b51391c674fd90f4b804deb1a335c3ef2c2fb6d794def6b6": {
       "card_id": null,
       "content_hash": "95cefd28944f48fce44999d6a3d0298a41cb47dc5a780bfa3f890e4f7b28953d",
@@ -1137,6 +1265,22 @@
       "summary": "",
       "title": "Frank Elderson: Fireside chat"
     },
+    "d02928760c03e7a689477cbde799595f239a9779b2008d48e5a5b3b8dbce7660": {
+      "card_id": null,
+      "content_hash": "a1128cf4e51dd985603f4349a3360e457cc3149f4d708e2465d6021a257588ef",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-23T04:46:12Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/fs_26_1666",
+      "item_hash": "d02928760c03e7a689477cbde799595f239a9779b2008d48e5a5b3b8dbce7660",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/fs_26_1666",
+      "published_at": "2026-07-22T07:51:10Z",
+      "raw_published": "Wed, 22 Jul 2026 07:51:10 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Factsheet Brussels, 22 Jul 2026 Factsheet: A renewed commitment to a future-ready Social Europe Factsheet: A renewed commitment to a future-ready Social Europe",
+      "title": "Factsheet: A renewed commitment to a future-ready Social Europe"
+    },
     "d17f3c0c56104f87b17b6085b008c8d1d68fc314984a1f5712b7f430347e65bb": {
       "card_id": null,
       "content_hash": "2115a40117074eb0885f825e325ffd69b1127b5b216590229d2339462cc37bd2",
@@ -1200,6 +1344,22 @@
       "status": "queued",
       "summary": "",
       "title": "ECB concludes asset quality reviews of KfW Beteiligungsholding GmbH and Promontoria 19 Coöperatie U.A."
+    },
+    "d903ba947052ecc9137193ce890e8202f50ea4ffbc4b7305faaec769a7842c16": {
+      "card_id": null,
+      "content_hash": "2919e8fc1f7c3767d9394ee0b042c6c07c1a8041216fa3a5c49317d0f21c681d",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-23T04:46:12Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1661",
+      "item_hash": "d903ba947052ecc9137193ce890e8202f50ea4ffbc4b7305faaec769a7842c16",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1661",
+      "published_at": "2026-07-21T22:00:00Z",
+      "raw_published": "Tue, 21 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 22 Jul 2026 Today, Aliénor Margerit has been appointed as the new Head of the European Commission Representation in Paris, France.",
+      "title": "European Commission Appoints Aliénor Margerit as Head of Representation in Paris"
     },
     "e54330eff0aa4c24ab5bd99cd1bc4500c20a11e15f7b31e6b455429dc91f2679": {
       "card_id": null,
