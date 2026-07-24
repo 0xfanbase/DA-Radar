@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T04:42:32Z",
+  "generated_at": "2026-07-24T04:43:51Z",
   "items": {
     "02d83335c3f185a01f78ac8bf5f64fad166ccc68cc60456b0c37127aece0ca25": {
       "card_id": null,
@@ -192,6 +192,22 @@
       "status": "queued",
       "summary": "",
       "title": "Councils,The Expert Panel on the Revision of the Corporate Governance Code (3rd meeting) Minutes"
+    },
+    "2a6bcf5e95f83b3695276e9436aa0cb265a5586c4fd1cf92ed1bfdea2958935e": {
+      "card_id": null,
+      "content_hash": "e91f2acb6f303a95b824f5a827a90ade777044a9167005ddeb16e2bf6fb2e208",
+      "feed_id": "fsa_news_en",
+      "first_seen": "2026-07-24T04:43:51Z",
+      "guid": null,
+      "item_hash": "2a6bcf5e95f83b3695276e9436aa0cb265a5586c4fd1cf92ed1bfdea2958935e",
+      "link": "https://www.fsa.go.jp/en/newsletter/weekly2026/696.html",
+      "published_at": "2026-07-22T10:46:00Z",
+      "raw_published": "Wed, 22 Jul 2026 10:46:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "Publication,FSA Weekly Review No.696 July 22, 2026"
     },
     "31716f37af7e16c3eb2f4feb498a4e25a916ca1f1d1a94276f11547dfb17c652": {
       "card_id": null,
@@ -721,6 +737,22 @@
       "summary": "<p>取扱いを一時中止する銘柄と会員を以下へお知らせいたします。 暗号資産</p> <p>The post <a href=\"https://jvcea.or.jp/information/statistics-reports/20260703-001/\">取扱い一時中止のお知らせ</a> first appeared on <a href=\"https://jvcea.or.jp\">一般社団法人日本暗号資産等取引業協会（JVCEA）</a>.</p>",
       "title": "取扱い一時中止のお知らせ"
     },
+    "c13c05f4d2aaad388e556cdd3dd276820bdbe427a59ef6867358e25d71e3e19a": {
+      "card_id": null,
+      "content_hash": "d90160ceab375c464d708fcd6a2b4e8d5fc24b2375f97554334c6cf50ef9977d",
+      "feed_id": "fsa_news_en",
+      "first_seen": "2026-07-24T04:43:51Z",
+      "guid": null,
+      "item_hash": "c13c05f4d2aaad388e556cdd3dd276820bdbe427a59ef6867358e25d71e3e19a",
+      "link": "https://www.fsa.go.jp/en/conference/minister/2026/20260710.html",
+      "published_at": "2026-07-22T10:57:00Z",
+      "raw_published": "Wed, 22 Jul 2026 10:57:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "Press Conferences,Press Conference by KATAYAMA Satsuki, Minister of Finance and Minister of State for Financial Services (July 10, 2026)"
+    },
     "c2caba6a137161710bb077bf23b1d9c061f51e2e424f2534799591cdfa700b18": {
       "card_id": null,
       "content_hash": "aa9b6dbe90499fe1bad81dbbdc71a22f564635a1eb20d55c9d440b28287f8b5b",
@@ -801,6 +833,22 @@
       "summary": "FSA page (平成29年３月24日 / 24 March 2017) reporting the results of public comment on the cabinet order and Cabinet Office ordinances implementing amendments related to virtual currency exchange service providers (仮想通貨交換業者). The page states verbatim: 「本件の政令は、平成29年３月21日（火）に閣議決定されており、本件の政令及び本件の内閣府令等は本日公布、平成29年４月１日（土）から施行されます（一部は平成29年３月25日施行）。」 -- the cabinet order was approved by Cabinet on 21 March 2017, promulgated the same day, and enters into force 1 April 2017, with some provisions taking effect 25 March 2017. This established Japan's registration regime for virtual currency exchange service providers, among the first national frameworks of its kind following the 2014 Mt. Gox failure. The page does not name the amending statute; that must be separately confirmed from FSA's 190th-session Diet page or e-Gov before drafting.",
       "title": "Amended Payment Services Act enters into force: registration regime for virtual currency exchange service providers begins"
     },
+    "c76a29073c6cdbd98b64d2f565e2550e02c2ba4f1927968c8c4148eadae09401": {
+      "card_id": null,
+      "content_hash": "56a78703fb00dab0c401e1a04d2a75bb8db353b85f6da12a8258940d98877c0a",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-24T04:43:51Z",
+      "guid": null,
+      "item_hash": "c76a29073c6cdbd98b64d2f565e2550e02c2ba4f1927968c8c4148eadae09401",
+      "link": "https://www.fsa.go.jp/policy/bgin/innovationtop.html",
+      "published_at": "2026-07-23T17:00:00Z",
+      "raw_published": "Thu, 23 Jul 2026 17:00:00 JST",
+      "relevant": true,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "「暗号資産関連業者におけるサイバーセキュリティの課題と対策に関する研究調査」報告書について公表しました。"
+    },
     "c7baa2ef34b72b9f87a1527dc7ff178dc420193d14100bc89e6925347ed5ba69": {
       "card_id": null,
       "content_hash": "1a0e5eb5c5239192a99271dc2f93f50085477e455008bbafb1bf91f9f7e2c602",
@@ -864,6 +912,38 @@
       "status": "queued",
       "summary": "",
       "title": "Publication,FSA Weekly Review No.694 July 8, 2026"
+    },
+    "cdc45fa87ce490048a3512f4e0a1cbbe494bbf3653e2dfbc8b343e2f7a2e07a9": {
+      "card_id": null,
+      "content_hash": "b5d53936d430f0fce2f9b4ff50d87c0872f0b741c0a9a43b2a5f3e14e4c002e4",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-24T04:43:51Z",
+      "guid": null,
+      "item_hash": "cdc45fa87ce490048a3512f4e0a1cbbe494bbf3653e2dfbc8b343e2f7a2e07a9",
+      "link": "https://www.fsa.go.jp/news/r8/sonota/20260723/20260723.html",
+      "published_at": "2026-07-23T15:00:00Z",
+      "raw_published": "Thu, 23 Jul 2026 15:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "「中小・地域金融機関向けの総合的な監督指針」等の一部改正（案）に対するパブリックコメントの結果等について公表しました。"
+    },
+    "cfc3b51a622b91081e4307db3c3250af7fbd07a3f60f40f1f549e898cffd081c": {
+      "card_id": null,
+      "content_hash": "00e60bb030bdc60866205b9e83039c7f0eb5240780df9aa1565657af67b3a782",
+      "feed_id": "fsa_news_en",
+      "first_seen": "2026-07-24T04:43:51Z",
+      "guid": null,
+      "item_hash": "cfc3b51a622b91081e4307db3c3250af7fbd07a3f60f40f1f549e898cffd081c",
+      "link": "https://www.fsa.go.jp/en/policy/bgin/innovationtop.html",
+      "published_at": "2026-07-23T17:00:00Z",
+      "raw_published": "Thu, 23 Jul 2026 17:00:00 JST",
+      "relevant": true,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "Publication,Cybersecurity Issues and Countermeasures in Crypto-Asset-Related Businesses"
     },
     "d43e90ec376c373ed97ad133d755ace57694ade27110015379b2da2d29e9e1b1": {
       "card_id": null,

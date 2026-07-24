@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T04:21:00Z",
+  "generated_at": "2026-07-24T04:43:51Z",
   "items": [
     {
       "feed_id": "jvcea_news",
@@ -90,6 +90,26 @@
       "status": "queued",
       "summary": "<p>取扱いを廃止する銘柄と会員を以下へお知らせいたします。 暗号資産</p> <p>The post <a href=\"https://jvcea.or.jp/information/statistics-reports/20260715-001/\">取扱廃止銘柄のお知らせ</a> first appeared on <a href=\"https://jvcea.or.jp\">一般社団法人日本暗号資産等取引業協会（JVCEA）</a>.</p>",
       "title": "取扱廃止銘柄のお知らせ"
+    },
+    {
+      "feed_id": "fsa_news_ja",
+      "item_hash": "c76a29073c6cdbd98b64d2f565e2550e02c2ba4f1927968c8c4148eadae09401",
+      "link": "https://www.fsa.go.jp/policy/bgin/innovationtop.html",
+      "published_at": "2026-07-23T17:00:00Z",
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "「暗号資産関連業者におけるサイバーセキュリティの課題と対策に関する研究調査」報告書について公表しました。"
+    },
+    {
+      "feed_id": "fsa_news_en",
+      "item_hash": "cfc3b51a622b91081e4307db3c3250af7fbd07a3f60f40f1f549e898cffd081c",
+      "link": "https://www.fsa.go.jp/en/policy/bgin/innovationtop.html",
+      "published_at": "2026-07-23T17:00:00Z",
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "Publication,Cybersecurity Issues and Countermeasures in Crypto-Asset-Related Businesses"
     }
   ],
   "jurisdiction_id": "jp",

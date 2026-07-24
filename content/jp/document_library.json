@@ -139,9 +139,27 @@
       "regulator": "JVCEA",
       "title": "取扱廃止銘柄のお知らせ",
       "type": "news"
+    },
+    {
+      "item_hash": "c76a29073c6cdbd98b64d2f565e2550e02c2ba4f1927968c8c4148eadae09401",
+      "link": "https://www.fsa.go.jp/policy/bgin/innovationtop.html",
+      "pillar": [],
+      "published_at": "2026-07-23T17:00:00Z",
+      "regulator": "FSA",
+      "title": "「暗号資産関連業者におけるサイバーセキュリティの課題と対策に関する研究調査」報告書について公表しました。",
+      "type": "news"
+    },
+    {
+      "item_hash": "cfc3b51a622b91081e4307db3c3250af7fbd07a3f60f40f1f549e898cffd081c",
+      "link": "https://www.fsa.go.jp/en/policy/bgin/innovationtop.html",
+      "pillar": [],
+      "published_at": "2026-07-23T17:00:00Z",
+      "regulator": "FSA",
+      "title": "Publication,Cybersecurity Issues and Countermeasures in Crypto-Asset-Related Businesses",
+      "type": "news"
     }
   ],
-  "generated_at": "2026-07-18T04:21:00Z",
+  "generated_at": "2026-07-24T04:43:51Z",
   "jurisdiction_id": "jp",
   "schema_version": 1
 }
