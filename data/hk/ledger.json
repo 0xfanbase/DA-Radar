@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T04:46:14Z",
+  "generated_at": "2026-07-24T04:43:51Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -2225,6 +2225,22 @@
       "summary": "",
       "title": "HKMC organises premiere and sharing session of “100 Things I Want to Do after Retirement”"
     },
+    "237d68584c9c3ad2c0444adf02ffa5798f2f54bc1918adb27a94590c9a3d5992": {
+      "card_id": null,
+      "content_hash": "389ef14406a18577574ba55f2afb7bcdb2d3f26f74d5245d918889f3bf661708",
+      "feed_id": "sfc_press_releases",
+      "first_seen": "2026-07-24T04:43:51Z",
+      "guid": "26PR114",
+      "item_hash": "237d68584c9c3ad2c0444adf02ffa5798f2f54bc1918adb27a94590c9a3d5992",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR114",
+      "published_at": "2026-07-23T04:55:34Z",
+      "raw_published": "Thu, 23 Jul 2026 12:55:34 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "New speech by Julia Leung: Remarks at SFC and Securities Commission Malaysia’s MoU Signing Ceremony"
+    },
     "238bcbd52f24f19ff7d8a08912807eb64c23db7e4caad95e4bbb0a514def19fb": {
       "card_id": null,
       "content_hash": "7b4f6e68d4600f53e6504e630e6cef4ee44376f969d69e6d48ce0146f185d579",
@@ -2576,6 +2592,22 @@
       "status": "queued",
       "summary": "",
       "title": "HKMC and CICC Sign MoU on Co-operation of Infrastructure Financing and Securitisation"
+    },
+    "296a777529a275b3ba0da76963fb05034955c26bc4c440157d1c7b8d818ed77d": {
+      "card_id": null,
+      "content_hash": "95a2264dc65023eee32c827816ae37845b48025a89a7e1f19fc7aab1de1f0189",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-24T04:43:51Z",
+      "guid": null,
+      "item_hash": "296a777529a275b3ba0da76963fb05034955c26bc4c440157d1c7b8d818ed77d",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260723-4/",
+      "published_at": "2026-07-22T16:00:00Z",
+      "raw_published": "Thu, 23 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Results of 1-year RMB HKSAR Institutional Government Bonds tender through re-opening"
     },
     "29a15e7f8a37b21c8330b61762ea819fa5d991d0f50eb5168395dbd9c7809a2a": {
       "card_id": null,
@@ -4112,6 +4144,22 @@
       "status": "queued",
       "summary": "",
       "title": "RMB Trade Financing Liquidity Facility (PDF File, 225.5 KB)"
+    },
+    "41fb89f895976801db0565a991b9084fd56c5c5f0e03411f69e70d10ff42d5fe": {
+      "card_id": null,
+      "content_hash": "341644a686436887a2e381c30497603a33585cffd9c2b4ff2ba91ca7f5d6a386",
+      "feed_id": "sfc_press_releases",
+      "first_seen": "2026-07-24T04:43:51Z",
+      "guid": "26PR111",
+      "item_hash": "41fb89f895976801db0565a991b9084fd56c5c5f0e03411f69e70d10ff42d5fe",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR111",
+      "published_at": "2026-07-23T05:18:20Z",
+      "raw_published": "Thu, 23 Jul 2026 13:18:20 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "SFC and Securities Commission Malaysia sign MoU to expand mutual recognition of funds and facilitate simplified dual IPO listing framework"
     },
     "430e04d6033931aa4ad8527a9ba3388fdc004470348bdf8b3260f994b934d040": {
       "card_id": null,
@@ -7633,6 +7681,22 @@
       "summary": "",
       "title": "Beware of tokens purported to be associated with licensed stablecoin issuers"
     },
+    "79d91f152bd0237caa3ff35e1443c7819ba95d24643ea90faf37bfede4b8a3bc": {
+      "card_id": null,
+      "content_hash": "ae55f3f54e6ad6db19e277d1126c27d98e326d3455f5314d11304e8c24c7ac68",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-24T04:43:51Z",
+      "guid": null,
+      "item_hash": "79d91f152bd0237caa3ff35e1443c7819ba95d24643ea90faf37bfede4b8a3bc",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260723-5/",
+      "published_at": "2026-07-22T16:00:00Z",
+      "raw_published": "Thu, 23 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Results of 3-year RMB HKSAR Institutional Government Bonds tender through re-opening"
+    },
     "79eafaf7744ce3ffab3a5c1d491b301abe62767fbe5387cc9e4c868c5162bdb5": {
       "card_id": null,
       "content_hash": "f8d748a970da33c8f8db62c38fad2fa9ad518c3c0475a3b4305e009ea0d5707f",
@@ -8288,6 +8352,22 @@
       "status": "queued",
       "summary": "",
       "title": "Scam alert related to banks"
+    },
+    "83182fa1c0e7498bd284d74962de359354058dd2d14e81d4bdf2c1eed2dde5f1": {
+      "card_id": null,
+      "content_hash": "0f3fa68c6bcc6f9f845a2f50f0f16201df925b0222020633556ed484cd0fc116",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-24T04:43:51Z",
+      "guid": null,
+      "item_hash": "83182fa1c0e7498bd284d74962de359354058dd2d14e81d4bdf2c1eed2dde5f1",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260723-3/",
+      "published_at": "2026-07-22T16:00:00Z",
+      "raw_published": "Thu, 23 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "HKICL alerts public of fraudulent website"
     },
     "834cd85d433a4314f490f6b9de792cf5fb31df7a946b19632430006a5f6fbab6": {
       "card_id": null,
@@ -8960,6 +9040,22 @@
       "status": "queued",
       "summary": "",
       "title": "Keynote Address at the Treasury Markets Summit 2025 by Eddie Yue, Chief Executive, Hong Kong Monetary Authority"
+    },
+    "8c4f7fee993a63c8524a23a43c598cb63125b9dfd208730dbfa7caab2eb8db77": {
+      "card_id": null,
+      "content_hash": "ef3ab9bc3427e108ec5d157ac2494e9e4a2989fc48985ba51f9d847a86b30ab5",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-24T04:43:51Z",
+      "guid": null,
+      "item_hash": "8c4f7fee993a63c8524a23a43c598cb63125b9dfd208730dbfa7caab2eb8db77",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260723-6/",
+      "published_at": "2026-07-22T16:00:00Z",
+      "raw_published": "Thu, 23 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Results of 10-year RMB HKSAR Institutional Government Bonds tender through re-opening"
     },
     "8c7bd32ad0f72ac4493dca7142c2323c65872220ced226914afa873c01e9e9dc": {
       "card_id": null,
@@ -11408,6 +11504,22 @@
       "status": "queued",
       "summary": "",
       "title": "SPM CRP-1: update on cryptoassets classification conditions"
+    },
+    "b019f99fc9e549cf3b8c38d3c3b334045e6c1966916fd3a99dfeecbe9ec118ac": {
+      "card_id": null,
+      "content_hash": "335e8961d4ea2e994edb357ee24cb4eb931d680bf9ada81f02eadef5b24c4b96",
+      "feed_id": "sfc_press_releases",
+      "first_seen": "2026-07-24T04:43:51Z",
+      "guid": "26PR112",
+      "item_hash": "b019f99fc9e549cf3b8c38d3c3b334045e6c1966916fd3a99dfeecbe9ec118ac",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR112",
+      "published_at": "2026-07-23T10:08:32Z",
+      "raw_published": "Thu, 23 Jul 2026 18:08:32 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "SFC and Securities Commission Malaysia co-host industry roundtables on mutual recognition of funds and simplified dual IPO listing framework"
     },
     "b0b0af3a11909bcc513418d9efa681766fa9e324d9a2618265bfa3aa28953a5a": {
       "card_id": null,
