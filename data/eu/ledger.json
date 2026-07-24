@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T04:46:12Z",
+  "generated_at": "2026-07-24T04:43:49Z",
   "items": {
     "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
       "card_id": null,
@@ -161,6 +161,38 @@
       "summary": "The Authority for Anti-Money Laundering and Countering the Financing of Terrorism (AMLA) was established by Regulation (EU) 2024/1620, which entered into force on 26 June 2024 and applies generally from 1 July 2025 (with a small set of articles applying earlier, from 26 June 2024, and Article 103 applying from 31 December 2025). AMLA's own published timeline states operations started in summer 2025 from its seat in Frankfurt. Direct supervision of a group of selected high-risk obliged entities -- a category that includes certain crypto-asset service providers as obliged entities under the EU's AML Regulation -- does not begin until 2028; until then AMLA coordinates and supports national supervisors, which retain day-to-day supervision of most obliged entities.",
       "title": "AMLA, the EU Anti-Money Laundering Authority, begins operations in Frankfurt"
     },
+    "125424fadf2ab2c106717ff8324b69ae0dd25e285d9845d96a8d039c1914e262": {
+      "card_id": null,
+      "content_hash": "a52cfd9b9d7c0b3f86cc51240186b097fab6bee61e2b6ea3647dd96af90086b8",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-24T04:43:49Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1677",
+      "item_hash": "125424fadf2ab2c106717ff8324b69ae0dd25e285d9845d96a8d039c1914e262",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1677",
+      "published_at": "2026-07-23T12:31:58Z",
+      "raw_published": "Thu, 23 Jul 2026 12:31:58 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Speech Washington, DC, 24 Jul 2026 Good evening, It's always great to be back in America and to be here among friends: friends of Europe, friends of defence. Friends of football. The World Cup is...",
+      "title": "Speech by Commissioner Kubilius at “EU Defense Night”"
+    },
+    "16b5711f054a7d8346a912792ceff753ee52ffb7968e5b301108f69bf7738be0": {
+      "card_id": null,
+      "content_hash": "e2e0c615a56dc8d41cde70f520392731f98aa8fe6960d6677dfba2726e3acdf1",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-24T04:43:49Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1670",
+      "item_hash": "16b5711f054a7d8346a912792ceff753ee52ffb7968e5b301108f69bf7738be0",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1670",
+      "published_at": "2026-07-22T22:00:00Z",
+      "raw_published": "Wed, 22 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 23 Jul 2026 Today, the European Commission took two decisions finding non-compliance by Google with the Digital Markets Act (DMA) for self-preferencing its own services on Google Search, and for putting in place restrictions on businesses to direct consumers to alternative, often cheaper, purchase channels on Google Play (steering). In this regard, the Commission issued Google a fine of €460 million and a fine of €430 million respectively.",
+      "title": "Commission fines Google €890 million for breaches of the Digital Markets Act"
+    },
     "18a2f12c16d99aa3ded7e44055b93af6a07a8fa93131131eed21d74ed8f6c5f8": {
       "card_id": null,
       "content_hash": "49da8007ea20e10dcb4f488d510b53c2cacedb3a28c80da29294e04328370eb0",
@@ -192,6 +224,22 @@
       "status": "queued",
       "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">ESMA publishes preliminary findings on the Active Account Requirement and the first Annual Report of the Joint Monitoring Mechanism</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-06T13:55:21+02:00\" title=\"Monday, July 6, 2026 - 13:55\" class=\"datetime\">06 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">CCP</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, has today published the </span><a href=\"https://www.esma.europa.eu/sites/default/files/2026-07/ESMA91-1525761655-5356_Interim_report_of_the_effectiveness_of_the_active_account_requirement.pdf\"><span>Interim Report of the Effectiveness of the Active Account Requirement</span></a><span> and the </span><a href=\"https://www.esma.europa.eu/sites/default/files/2026-07/ESMA91-1525761655-5414_First_annual_report_of_the_Joint_Monitoring_Mechanism.pdf\"><span>First Annual Report of the Joint Monitoring Mechanism</span></a><span>.</span></p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><h4><span><strong>Preliminary findings on the Active Account Requirement&nbsp;</strong></span></h4> <p class=\"text-align-justify\"><span>Based on available data, analytics and industry feedback, the Interim Report provides preliminary findings on the Active Account Requirement (AAR) implementation during 2025 and early 2026.&nbsp;</span></p> <p><span>The preliminary findings show that:</span></p> <ul> <li><span>As of February 2026, around 500 entities had notified ESMA and nat",
       "title": "ESMA publishes preliminary findings on the Active Account Requirement and the first Annual Report of the Joint Monitoring Mechanism"
+    },
+    "1cd572fef7897f74b609bc2169421c4a91c9f78776a27c2cc15f3e9eba5ba68c": {
+      "card_id": null,
+      "content_hash": "17c9721c11cf6c3be21412f8db2d28439e55d9427fdd4b4cd00b88898dcdd779",
+      "feed_id": "eba_news",
+      "first_seen": "2026-07-24T04:43:49Z",
+      "guid": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-rules-further-improve-depositor-protection-under-revised-deposit-guarantee-schemes",
+      "item_hash": "1cd572fef7897f74b609bc2169421c4a91c9f78776a27c2cc15f3e9eba5ba68c",
+      "link": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-rules-further-improve-depositor-protection-under-revised-deposit-guarantee-schemes",
+      "published_at": "2026-07-23T08:30:15Z",
+      "raw_published": "Thu, 23 Jul 2026 10:30:15 +0200",
+      "relevant": false,
+      "source_id": "eba",
+      "status": "queued",
+      "summary": "​The European Banking Authority (EBA) today launched four public consultations on proposed rules to further strengthen depositor protection, preserve financial stability, and further harmonise depositor protection standards across the EU under the revised Deposit Guarantee Schemes Directive (DGSD3). The EBA seeks stakeholders’ feedback on Implementing Technical Standards (ITS) on depositor information, ITS on information exchange between credit institutions, Deposit Guarantee Schemes (DGSs) and other relevant authorities, Regulatory Technical Standards (RTS) on the treatment of client funds protection standards across the EU, and Guidelines (GL) on how DGSs should invest funds collected from the industry. The four consultations run until 23 October 2026.",
+      "title": "​The EBA consults on rules to further improve depositor protection under the revised Deposit Guarantee Schemes Directive"
     },
     "1d02d534b5b2af15976d3512e7a75d849c7c639d70b018540b4c13871d914087": {
       "card_id": null,
@@ -225,6 +273,22 @@
       "summary": "European Commission Press release Brussels, 22 Jul 2026 The European Commission has approved, under the EU Merger Regulation, the proposed acquisition by Paramount Skydance Corporation (‘Paramount') of Warner Bros. Discovery (‘Warner'). The approval is conditional upon full compliance with the commitments offered by Paramount.",
       "title": "Commission approves Paramount's acquisition of Warner, subject to conditions"
     },
+    "220522803c4f67e7d2afe0aa87a30163afa87cf89254e78dd7780225f1f5f324": {
+      "card_id": null,
+      "content_hash": "c5c47dcd267a31ebad603d46105adedacf2a4583e0f975941a2f3895e2ef7417",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-24T04:43:49Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1675",
+      "item_hash": "220522803c4f67e7d2afe0aa87a30163afa87cf89254e78dd7780225f1f5f324",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1675",
+      "published_at": "2026-07-23T09:28:37Z",
+      "raw_published": "Thu, 23 Jul 2026 09:28:37 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Daily news Brussels, 23 Jul 2026 Commission fines Google €890 million for breaches of the Digital Markets Act Today, the European Commission took two decisions finding non-compliance by Google ...",
+      "title": "Daily News 23 / 07 / 2026"
+    },
     "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b": {
       "card_id": "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b",
       "content_hash": "13e3d587ef36ecdfaa93e2f9ef4b855fc98ab4212aa4900f0809630b094490e1",
@@ -240,6 +304,22 @@
       "status": "published",
       "summary": "Under Article 149(3) of Regulation (EU) 2023/1114 (Markets in Crypto-Assets Regulation, MiCA), Titles III and IV -- covering asset-referenced tokens (ARTs) and e-money tokens (EMTs) -- applied from 30 June 2024, ahead of the Regulation's general application date. From this date, only credit institutions and authorised e-money institutions may issue e-money tokens, and issuers of asset-referenced tokens require authorisation, with the EBA supervising issuers determined to be significant and national competent authorities supervising the rest. On 5 July 2024 the EBA published a statement bringing MiCAR's application to ARTs/EMTs to the attention of issuers and consumers and setting supervisory priorities for 2024/2025.",
       "title": "MiCA Titles III and IV (asset-referenced tokens and e-money tokens) become applicable across the EU"
+    },
+    "2ef1af4c57668c95d09fd41ba94222250992b0f3625bfb92eb918debd2add264": {
+      "card_id": null,
+      "content_hash": "10ee06aa805daa40a0cc8f11aa020f09121edc7b550d1beff15f23772920d44b",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-24T04:43:49Z",
+      "guid": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260723~c2d43f9170.en.html",
+      "item_hash": "2ef1af4c57668c95d09fd41ba94222250992b0f3625bfb92eb918debd2add264",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260723~c2d43f9170.en.html",
+      "published_at": "2026-07-23T14:15:00Z",
+      "raw_published": "Thu, 23 Jul 2026 16:15:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "ECB reveals shortlisted designs for new banknotes and launches public survey"
     },
     "2f72ce65e86890b9b841d1f1c662ddc7c111cb84fb6cd030e9a9e6a22fbf80f5": {
       "card_id": "2f72ce65e86890b9b841d1f1c662ddc7c111cb84fb6cd030e9a9e6a22fbf80f5",
@@ -849,6 +929,22 @@
       "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">ESMA publishes report on cross-border investment services supervision</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-20T10:30:10+02:00\" title=\"Monday, July 20, 2026 - 10:30\" class=\"datetime\">20 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">Supervisory convergence</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\">The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, today published its <a href=\"https://www.esma.europa.eu/sites/default/files/2026-07/ESMA42-2004696504-8471_Follow-up_report_to_peer_review_on_cross_border_activities_of_investment_firms.pdf\">follow-up report</a> to the Peer Review on the supervision of cross-border activities of investment firms. The report assesses the progress made by national competent authorities (NCAs) in implementing recommendations <a href=\"https://www.esma.europa.eu/sites/default/files/library/esma42-111-5534_report_peer_review_cross_border_activities_investment_firms.pdf\">issued in 2022</a> and covers the Netherlands, Germany, the Czech Republic, Luxembourg, Cyprus and Malta.</p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>The follow-up shows that the peer review has successfully driven improvements across the supervisory cycle and helped strengthen the supervision of cross-border investment services within the EU Single Market.</span></p> <p class=\"text-align-justify\"><span>The report highlights notable progress in three key areas:</span></p> <ul> <li><span><strong>Stronger auth",
       "title": "ESMA publishes report on cross-border investment services supervision"
     },
+    "8c72b467c0c4f53458c266f49d904c099d334f349d88c6ddad9ec9cdd2541b4f": {
+      "card_id": null,
+      "content_hash": "142076fc89c8e81a148d5aaff4867e834f89671fcb7427d27080193df33a05f1",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-24T04:43:49Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1674",
+      "item_hash": "8c72b467c0c4f53458c266f49d904c099d334f349d88c6ddad9ec9cdd2541b4f",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1674",
+      "published_at": "2026-07-23T09:23:43Z",
+      "raw_published": "Thu, 23 Jul 2026 09:23:43 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 23 Jul 2026 Today, the European Commission positively assessed Sweden's second payment request for €1.47 billion under the Recovery and Resilience Facility, the centrepiece of NextGenerationEU.",
+      "title": "Commission greenlights Sweden's payment request for €1.47 billion under NextGenerationEU"
+    },
     "8ebafbd54a00b8e9255c2ecd768fa9da558ba70b9ca1a9ef8172b0354afc64d7": {
       "card_id": null,
       "content_hash": "7b36320f920f0e0130d2b6f1168447fd1bd44b244b1f4ace559aa6bcc32d1feb",
@@ -1073,6 +1169,38 @@
       "summary": "",
       "title": "Christine Lagarde: Back to basics in an uncertain environment"
     },
+    "a8af92249085bb48d38e3257c74c1f0229bad3b138961ca7ef0593f8a89ba828": {
+      "card_id": null,
+      "content_hash": "255614a4fe160d82d366adc97e65ed3ef855cdd1be89fea77bbad11ed484cd6c",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-24T04:43:49Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1680",
+      "item_hash": "a8af92249085bb48d38e3257c74c1f0229bad3b138961ca7ef0593f8a89ba828",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1680",
+      "published_at": "2026-07-23T14:48:16Z",
+      "raw_published": "Thu, 23 Jul 2026 14:48:16 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 23 Jul 2026 Today, the European Commission welcomes the adoption by EU Member States of the 21st package of sanctions against Russia. The package further restricts Russia's ability to fund its illegal war and to carry out attacks on Ukrainian civilians and civilian infrastructure.",
+      "title": "EU adopts 21st package of sanctions against Russia"
+    },
+    "ac8d05b203559e0d8a111620dcbf080126616565027458ea4f4276bf49091b08": {
+      "card_id": null,
+      "content_hash": "289935a7fa5a687adf55db8602a3b05e746b18edf1df7cc9ee8dae93787add09",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-24T04:43:49Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1676",
+      "item_hash": "ac8d05b203559e0d8a111620dcbf080126616565027458ea4f4276bf49091b08",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1676",
+      "published_at": "2026-07-23T12:00:26Z",
+      "raw_published": "Thu, 23 Jul 2026 12:00:26 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 23 Jul 2026 The Commission welcomes today's adoption by the Council of a proposal to reinstate the interim derogation from certain provisions of the e-Privacy Directive for the purpose of combating online child sexual abuse. Today's Council adoption includes the amendments that the European Parliament adopted in its vote on 9 July. The Commission has already given a positive opinion to the Parliament's amendments.",
+      "title": "Commission welcomes the Council's adoption of a renewed Interim Regulation to detect child sexual abuse online"
+    },
     "af7cf4aaea9fc39992a33653e4e2cecd3058e445470d3e17a3f3d154e5821596": {
       "card_id": null,
       "content_hash": "3ce5c1e6017859fd89816e2c6a12f4b8e2f5df94155e7d26199a9b6705325fc3",
@@ -1088,6 +1216,22 @@
       "status": "queued",
       "summary": "​The European Banking Authority (EBA) today published its annual dataset on losses and exposures for residential and commercial immovable property across the European Union and European Economic Area for 2025, in line with Article 430a(3) of the Capital Requirements Regulation (CRR). The publication provides a centralised and harmonised source of data on losses and exposures relating to residential and commercial immovable property across the EU/EEA. The data are drawn from supervisory reporting submitted by institutions and are presented by national immovable property market.",
       "title": "​The EBA publishes 2025 loss data for immovable property markets under Article 430a of the Capital Requirements Regulation"
+    },
+    "b10909bc9c887ad726b4e5f3ba62bc740511e6932635a15f2fec9d624bfafb12": {
+      "card_id": null,
+      "content_hash": "c1dfa8626a50ca7844386740493225fe38052a4c6976b899c486ede0683dfcd0",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-24T04:43:49Z",
+      "guid": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp260723~29f24d99bc.en.html",
+      "item_hash": "b10909bc9c887ad726b4e5f3ba62bc740511e6932635a15f2fec9d624bfafb12",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp260723~29f24d99bc.en.html",
+      "published_at": "2026-07-23T12:15:00Z",
+      "raw_published": "Thu, 23 Jul 2026 14:15:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "Monetary policy decisions"
     },
     "b3c6788e05dcca238ba8142e46293c8af2ce69d79b3369f771487d1c63e1dc68": {
       "card_id": null,
@@ -1360,6 +1504,22 @@
       "status": "queued",
       "summary": "European Commission Press release Brussels, 22 Jul 2026 Today, Aliénor Margerit has been appointed as the new Head of the European Commission Representation in Paris, France.",
       "title": "European Commission Appoints Aliénor Margerit as Head of Representation in Paris"
+    },
+    "dc07c197c9a3385e64ff01ca25aa7d2c9361bf9f4375a79717842b5cacd38c98": {
+      "card_id": null,
+      "content_hash": "911e826822f4fa437f3d20c1e821fc57bc9c51e7aeb4ef58b7d9da1d67137afd",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-24T04:43:49Z",
+      "guid": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is260723~b6fadd48f4.en.html",
+      "item_hash": "dc07c197c9a3385e64ff01ca25aa7d2c9361bf9f4375a79717842b5cacd38c98",
+      "link": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is260723~b6fadd48f4.en.html",
+      "published_at": "2026-07-23T13:00:00Z",
+      "raw_published": "Thu, 23 Jul 2026 15:00:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)"
     },
     "e54330eff0aa4c24ab5bd99cd1bc4500c20a11e15f7b31e6b455429dc91f2679": {
       "card_id": null,
