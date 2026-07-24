@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T04:46:18Z",
+  "generated_at": "2026-07-24T04:43:52Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -1089,6 +1089,38 @@
       "summary": "",
       "title": "CFTC Seeks Public Comment on the Extension of Standard Futures Contracts to 24/7 Trading and on Perpetual Contracts Referencing Physically Delivered or Storable Energy Commodities"
     },
+    "7bdb3e79fe4489399411af1ae7a49f025db13f775865e9c655f8c938eff88272": {
+      "card_id": null,
+      "content_hash": "77b3cdb763da47e869e08eb184156106d13cafe4482c3ae56ff8b9d505f90365",
+      "feed_id": "cftc_press_releases",
+      "first_seen": "2026-07-24T04:43:52Z",
+      "guid": "https://www.cftc.gov/PressRoom/PressReleases/9271-26",
+      "item_hash": "7bdb3e79fe4489399411af1ae7a49f025db13f775865e9c655f8c938eff88272",
+      "link": "https://www.cftc.gov/PressRoom/PressReleases/9271-26",
+      "published_at": "2026-07-23T20:12:15Z",
+      "raw_published": "Thu, 23 Jul 2026 20:12:15 +0000",
+      "relevant": false,
+      "source_id": "cftc",
+      "status": "queued",
+      "summary": "",
+      "title": "CFTC Extends Public Comment Period on Proposed Rule on the Extension of Standard Futures Contracts to 24/7 Trading and on Perpetual Contracts Referencing Physically Delivered or Storable Energy Commodities"
+    },
+    "7c277e20437c08802d5a0c82ea22698e0d43065fcecf5583a6cfba18bfcf2be1": {
+      "card_id": null,
+      "content_hash": "2599ed20eea8c4f0a9e93e923e3398474005786cacf039ed34baf5a809cc5e07",
+      "feed_id": "cftc_press_releases",
+      "first_seen": "2026-07-24T04:43:52Z",
+      "guid": "https://www.cftc.gov/PressRoom/PressReleases/9270-26",
+      "item_hash": "7c277e20437c08802d5a0c82ea22698e0d43065fcecf5583a6cfba18bfcf2be1",
+      "link": "https://www.cftc.gov/PressRoom/PressReleases/9270-26",
+      "published_at": "2026-07-23T16:18:33Z",
+      "raw_published": "Thu, 23 Jul 2026 16:18:33 +0000",
+      "relevant": false,
+      "source_id": "cftc",
+      "status": "queued",
+      "summary": "",
+      "title": "Chairman Selig Announces Agenda for July 29 Agricultural Advisory Committee Meeting in Washington"
+    },
     "7c9440e819c99cf0c7c65f181895bab113179fbcb36e91ccdba47eb13a171c00": {
       "card_id": null,
       "content_hash": "5c537fbf89a43c4d6ef12ac0809db557eca70c1f75d07d1d346f2d582b1665b1",
@@ -1712,6 +1744,22 @@
       "status": "queued",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change, as Modified by Amendment No. 1, To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    "c4bbad3e1bce78a06c21de51ea7ad85ad412a05435523c4ec23e59f1db6c5005": {
+      "card_id": null,
+      "content_hash": "2e4fcd66b30a75e19c18fd24502afaffb7708f70ec13aa240c6e1bb7bfa45991",
+      "feed_id": "sec_press_releases",
+      "first_seen": "2026-07-24T04:43:52Z",
+      "guid": "58e3f4dc-f597-4d50-af9c-2d88525a3c98",
+      "item_hash": "c4bbad3e1bce78a06c21de51ea7ad85ad412a05435523c4ec23e59f1db6c5005",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-69-sec-announces-roundtable-preparations-24-hour-trading",
+      "published_at": "2026-07-23T15:04:00Z",
+      "raw_published": "Thu, 23 Jul 2026 11:04:00 -0400",
+      "relevant": false,
+      "source_id": "sec",
+      "status": "queued",
+      "summary": "The Securities and Exchange Commission announced today that it will host a roundtable on Sept. 17, 2026, to discuss moving towards 24-hour trading in the U.S. equity markets, including preparations to support overnight trading, operations and resiliency…",
+      "title": "SEC Announces Roundtable on Preparations for 24-Hour Trading"
     },
     "c54d446e73b88e634a8e3e91a0e65c607171b913692ed4d67252796e0344989b": {
       "card_id": null,
