@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T05:01:57Z",
+  "generated_at": "2026-07-24T04:43:50Z",
   "items": {
     "00035ea799942fd003d09846d9035e0f2f5cb81a658f47edbc00a74507de179c": {
       "card_id": null,
@@ -17761,6 +17761,22 @@
       "summary": "",
       "title": ""
     },
+    "7c1719d30d5f0a53b872479297e51369848909fcff070906476f0e93a30dd4a6": {
+      "card_id": null,
+      "content_hash": "b8c9e440ead3ddaccf7cc7e879d512a263272270df2d5504c0c3d1f85d16f9d9",
+      "feed_id": "fsra_adgm_announcements",
+      "first_seen": "2026-07-24T04:43:50Z",
+      "guid": "https://www.adgm.com/media/announcements/adgm-ra-strengthens-commercial-permits-framework-with-new-sales-and-promotions-guidance-and-regulations",
+      "item_hash": "7c1719d30d5f0a53b872479297e51369848909fcff070906476f0e93a30dd4a6",
+      "link": "https://www.adgm.com/media/announcements/adgm-ra-strengthens-commercial-permits-framework-with-new-sales-and-promotions-guidance-and-regulations",
+      "published_at": null,
+      "raw_published": "2026-07-23T12:01:40+04:00",
+      "relevant": false,
+      "source_id": "fsra",
+      "status": "queued",
+      "summary": "",
+      "title": ""
+    },
     "7c46587e372ed87e938f22a1fbe71907af9cce8f13c086a1efbcd2864b030da8": {
       "card_id": null,
       "content_hash": "b8c9e440ead3ddaccf7cc7e879d512a263272270df2d5504c0c3d1f85d16f9d9",
@@ -32973,6 +32989,22 @@
       "raw_published": "2026-07-11",
       "relevant": false,
       "source_id": "sca",
+      "status": "queued",
+      "summary": "",
+      "title": ""
+    },
+    "e6c0abb4ea9c3d412703dda672a4e6bcf786ef162f8a18a0d3d56e9cc258004c": {
+      "card_id": null,
+      "content_hash": "b8c9e440ead3ddaccf7cc7e879d512a263272270df2d5504c0c3d1f85d16f9d9",
+      "feed_id": "fsra_adgm_announcements",
+      "first_seen": "2026-07-24T04:43:50Z",
+      "guid": "https://www.adgm.com/media/announcements/tethers-xau-recognized-as-accepted-spot-commodity-in-adgm",
+      "item_hash": "e6c0abb4ea9c3d412703dda672a4e6bcf786ef162f8a18a0d3d56e9cc258004c",
+      "link": "https://www.adgm.com/media/announcements/tethers-xau-recognized-as-accepted-spot-commodity-in-adgm",
+      "published_at": null,
+      "raw_published": "2026-07-23T13:36:52+04:00",
+      "relevant": false,
+      "source_id": "fsra",
       "status": "queued",
       "summary": "",
       "title": ""
