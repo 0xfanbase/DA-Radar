@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T04:46:15Z",
+  "generated_at": "2026-07-24T04:43:52Z",
   "items": {
     "02028a9677575e76189a49022768f45cc07c84ca74ac72879172cd9671891801": {
       "card_id": null,
@@ -784,6 +784,22 @@
       "status": "published",
       "summary": "HM Treasury announces the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102), made 4 February 2026, bringing new FCA-regulated cryptoasset activities into force from 25 October 2027.",
       "title": "New crypto rules to unlock growth and protect customers"
+    },
+    "39fe7febdce100b51b0771a62b4ecd34462f7dfaf21cce8a636d658c5e278b03": {
+      "card_id": null,
+      "content_hash": "b555e813e84b94f623e49512f5a3993778eec89661c2042127bee87065efde6e",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-24T04:43:52Z",
+      "guid": "https://www.gov.uk/government/news/burnham-means-business-pm-slashes-business-rates-bills-for-pubs-clubs-and-live-music-venues#2026-07-23T05:10:00Z",
+      "item_hash": "39fe7febdce100b51b0771a62b4ecd34462f7dfaf21cce8a636d658c5e278b03",
+      "link": "https://www.gov.uk/government/news/burnham-means-business-pm-slashes-business-rates-bills-for-pubs-clubs-and-live-music-venues",
+      "published_at": "2026-07-23T05:10:00Z",
+      "raw_published": "2026-07-23T05:10:00Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Continuing his drive to build an economy that works for every postcode, the Prime Minister has taken action to cut business rates bills for pubs, social clubs and live music venues across England from April next year.",
+      "title": "Burnham means business: PM slashes business rates bills for pubs, clubs and live music venues"
     },
     "3a582e58e1a1ed0f4fa5ef3dbb052b2f1f5e45c0bc87973a322ebae421e23aca": {
       "card_id": null,
@@ -2097,6 +2113,22 @@
       "summary": "Statement of Policy 14/24",
       "title": "SoP14/24 – The Prudential Regulation Authority’s approach to cost benefit analysis"
     },
+    "a1312b08f2deec88c7a29fb25d404555784420640b75c7a63b431e3758c48b7d": {
+      "card_id": null,
+      "content_hash": "528f42e120fe47edf704bb3b16b594f47dad7ac2e6f1c39742226228cb435c7d",
+      "feed_id": "fca_news",
+      "first_seen": "2026-07-24T04:43:52Z",
+      "guid": "171486",
+      "item_hash": "a1312b08f2deec88c7a29fb25d404555784420640b75c7a63b431e3758c48b7d",
+      "link": "https://www.fca.org.uk/news/press-releases/fca-ban-father-son-fraud-misuse-client-money",
+      "published_at": null,
+      "raw_published": "Thursday, July 23, 2026 - 10:01",
+      "relevant": false,
+      "source_id": "fca",
+      "status": "queued",
+      "summary": "The FCA has decided to ban a father and son from UK financial services after the High Court found that they had engaged in fraud and misused client money.",
+      "title": "FCA decides to ban father and son following fraud and misuse of client money"
+    },
     "a14b7e3d5f65e1c2199b0cefe7681b552f432a775ce0e7a5776c7f5aa77e1dee": {
       "card_id": null,
       "content_hash": "8a9e95ac972ea8c5098bbeabb10c01a39a661f6d6645685063ae66c738b7e0ad",
@@ -2352,6 +2384,22 @@
       "status": "queued",
       "summary": "Published for the Treasury Select Committee",
       "title": "Megan Greene's CV and questionnaire for the Treasury Select Committee"
+    },
+    "b499a402b7545e125c186e9461f5b10d10fedec7eb5d38ad4f12a6452b729ff2": {
+      "card_id": null,
+      "content_hash": "f21ecda51bb855e84ef1ca9fd353db6f89b955fa3e45b3a788f6cb0cf9e5c360",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-24T04:43:52Z",
+      "guid": "https://www.gov.uk/government/publications/treasury-minutes-july-2026#2026-07-23T16:23:00Z",
+      "item_hash": "b499a402b7545e125c186e9461f5b10d10fedec7eb5d38ad4f12a6452b729ff2",
+      "link": "https://www.gov.uk/government/publications/treasury-minutes-july-2026",
+      "published_at": "2026-07-23T16:23:00Z",
+      "raw_published": "2026-07-23T16:23:00Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Government departments respond to the Public Accounts Committee reports through a Treasury minute.",
+      "title": "Policy paper: Treasury Minutes – July 2026"
     },
     "b65025efbd8334119603c1785272c83f1af5f872c1a9173b8e88e7c10ae17b79": {
       "card_id": null,
@@ -2817,6 +2865,22 @@
       "summary": "Policy statement 1/26",
       "title": "PS1/26 – Implementation of Basel 3.1: Final rules"
     },
+    "d101f2120470070caae8a289d38bf15a673d49f39cb0320b74d8a7ff16ecda30": {
+      "card_id": null,
+      "content_hash": "9e0ceb89e2afbeed5a74897fd50287cca2929141b96437e8999378de18f6f0b6",
+      "feed_id": "boe_news",
+      "first_seen": "2026-07-24T04:43:52Z",
+      "guid": "{84B38D4E-3DB6-4DE5-9D0C-AC7DBB76C59A}",
+      "item_hash": "d101f2120470070caae8a289d38bf15a673d49f39cb0320b74d8a7ff16ecda30",
+      "link": "https://www.bankofengland.co.uk/letter/2026/letter-from-the-governor-to-the-daily-mail",
+      "published_at": "2026-07-23T16:00:00Z",
+      "raw_published": "Thu, 23 Jul 2026 17:00:00 +0100",
+      "relevant": false,
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "Letter from Governor Andrew Bailey to the Daily Mail on the subject of AI and cyber-attacks",
+      "title": "Letter from the Governor to the Daily Mail"
+    },
     "d22b41eb96b0ab90a5c7d015c44e91cefba495d2c4ced05c2b58a338d8f43581": {
       "card_id": null,
       "content_hash": "4635aff403f46d0888935e040ecd491fd76f0c514a8aea7a63511f761e0f39ad",
@@ -3216,6 +3280,22 @@
       "status": "queued",
       "summary": "Amendments to Treasury Directions made under the Public Service Pensions and Judicial Offices Act 2022 in relation to the McCloud remedy.",
       "title": "Statutory guidance: Public Service Pensions and Judicial Offices Act: Amending Directions - July 2026"
+    },
+    "f1eea6d89412ff5d55cf666d8aa2df2e53995478b770c8defae0c4ca45f7b39e": {
+      "card_id": null,
+      "content_hash": "343363ad26b76916358191e658641b205173289d4b6445c710ecea1e4c4fce51",
+      "feed_id": "fca_news",
+      "first_seen": "2026-07-24T04:43:52Z",
+      "guid": "171386",
+      "item_hash": "f1eea6d89412ff5d55cf666d8aa2df2e53995478b770c8defae0c4ca45f7b39e",
+      "link": "https://www.fca.org.uk/news/blogs/managing-conflicts-interest-insurance",
+      "published_at": null,
+      "raw_published": "Thursday, July 23, 2026 - 12:05",
+      "relevant": false,
+      "source_id": "fca",
+      "status": "queued",
+      "summary": "Having just joined as the FCA’s new insurance director, it’s been great getting to know the team and see the variety of work they’re doing – whether that’s working with the industry to improve claims experiences for customers, consulting on simplifying our rules or supporting growth with a new regime for captive insurers.One item that has crossed my desk is vertically integrated business models, which we’re publishing information for firms on today.When a consumer buys insurance, they need to trust that the firm they're dealing with is genuinely working toward the best outcome for them – and that they’re not losing out due to conflicts of interest.This can happen when a single group of companies span multiple parts of the insurance chain: underwriting the policy, distributing it to customers, arranging premium finance, and providing other related services.It can also happen when firms are connected through ownership or financing relationships that may be publicly disclosed or private in nature.These arrangements can make good and efficient business sense. But they can also create conflicts of interest – particularly if they influence consumer journeys or potentially alter commercial incentives. This has the potential to shape decisions in ways that don't serve the customer.This isn't just a theoretical concern. We've taken enforcement action before against firms where conflicts of interest weren't properly managed, and where ownership or remuneration arrangements influenced customer outcomes.What firms should doHaving a conflict of interest doesn't automatically make a business model unacceptable. But you need to take these risks seriously.You must actively identify, manage and evidence those conflicts. That means effective governance, clear senior management accountability and controls that actually work in practice, not just on paper.Crucially, disclosure alone is not enough. Simply telling customers about a conflict doesn't remove your obligation to manage it pro",
+      "title": "Managing conflicts of interest in insurance"
     },
     "f2040082a7132147c57fc24b7ab874e6af6aad484cf20de51c8df00d9e774ae6": {
       "card_id": null,
