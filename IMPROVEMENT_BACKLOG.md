@@ -1409,6 +1409,43 @@ in that function's own docstring and covered by
 clearly-fabricated filler (all-non-alphabetic content, or content that's just one distinct token/
 character repeated), not a semantic judgment of how substantive a quote is -- ruled out of scope for a
 deterministic check, consistent with `quote_is_authentic`'s own similar, already-documented limitation
+
+### 2026-07-25 — Analyst/verifier automation is now session-bound, not portable, and its root cause is still unconfirmed
+
+Full narrative in PROGRESS.md's 07-25 entry. Logged here as a real architectural deviation, per
+this file's own convention for exactly this class of thing (see CLAUDE.md's own "Logged deviation"
+notes on the CCR trigger and the anonymity org-creation mechanic):
+
+**Portability regression.** `trig_01MYCeCc5MEoHAYbNtZvyDV9` (the fresh-session-per-fire trigger)
+never worked, but it was at least *architecturally* portable -- CLAUDE.md already logs that "a
+future clone must separately stand up its own CCR account/trigger for the same ongoing
+automation," and a fresh-session trigger fits that sentence cleanly. `trig_01CHa5wLW4G5LGj8fREeKUkE`
+(the replacement) is bound to one specific persistent session (`session_011UUDEzUUzYP4ea45aAPcWc`).
+If that session is ever deleted, the Routine is auto-disabled with it
+(`ended_reason: auto_disabled_session_gone`, a real observed outcome elsewhere on this account, per
+Fable's research, not a hypothetical) -- there is no config file, no repo artifact, nothing a future
+clone or a new owner could find and restart without knowing to go looking in the Claude Code Remote
+Routines UI. A future owner (or this project's own portability documentation) should treat "the
+live automation currently runs as a session-bound Routine, id `trig_01CHa5wLW4G5LGj8fREeKUkE`,
+tied to session `session_011UUDEzUUzYP4ea45aAPcWc`" as a fact that needs periodic re-confirming
+(`list_triggers`), not a fire-and-forget fix. A related, undecided maintenance question: this
+session's own context grows unboundedly across weeks of nightly firings plus whatever unrelated
+interactive work the owner does in the same chat -- Opus's suggestion (re-bind to a fresh session
+periodically, e.g. monthly) was not implemented, since it adds a second thing to remember to do and
+the owner asked for a working fix today, not a self-maintaining one.
+
+**Root cause still circumstantial, not proven.** The credential/repo-scope-gap diagnosis (this
+environment's git proxy injects a token scoped to the calling session; a brand-new fresh-fired
+session likely never receives that scope) fits every observed fact -- sixteen-plus silent nights,
+zero trace of any kind, three *other* working Routines on this account that all happen to be
+session-bound -- but it was reasoned from evidence, never directly observed inside a fired session
+(fired sessions still produce no transcript this repo can read, the same limitation noted in the
+07-21 entry above). Fable proposed a cheap, decisive test: repurpose or clone the disabled trigger
+into a one-shot fresh-session Routine whose only instruction is to push an empty
+`probe/ccr-fresh-session-<date>` branch and stop -- the branch appearing (or not) on `origin` is a
+definitive, transcript-free answer. Not run as part of this fix, since it's forensic rather than
+blocking; worth doing before this project ever again assumes a fresh-session Routine can reach a
+private or scope-gated repo without independent verification.
 (pure substring matching, no semantic understanding of what the quote is meant to support).
 
 ### 2026-07-25 -- A correctly-declined queue item has no terminal status; it will resurface every firing
