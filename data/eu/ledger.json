@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T05:48:28Z",
+  "generated_at": "2026-07-25T05:58:30Z",
   "items": {
     "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
       "card_id": null,
@@ -1613,7 +1613,7 @@
       "raw_published": "Tue, 14 Jul 2026 11:00:00 +0200",
       "relevant": true,
       "source_id": "ecb",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "ECB selects 36 payment service providers to join digital euro pilot"
     },

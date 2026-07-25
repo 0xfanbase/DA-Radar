@@ -10,17 +10,17 @@
   "type": "circular",
   "title": "ECB selects 36 payment service providers to join digital euro pilot",
   "summary": "On 14 July 2026 the European Central Bank announced it had selected 36 payment service providers (PSPs) from across the euro area to take part in its digital euro pilot, chosen from over 50 applications. Some participate as 'distributing PSPs', giving Eurosystem staff access to beta digital euro accounts and payment services; others as 'acquiring PSPs', enabling selected merchants to receive beta digital euro payments; some providers hold both roles. Participants, together with the ECB and national central banks across the euro area, will test the beta digital euro's technical functionality, operational processes and user experience, covering person-to-person and person-to-business payments, both online and offline. The pilot is still planned to run for 12 months, starting in the second half of 2027.",
-  "why_it_matters": "For a newcomer, this shows the ECB moving from planning to real-world testing of the digital euro -- a possible future central bank digital currency for euro-area consumers and merchants -- by lining up the banks and payment firms that would actually deliver it. It does not mean the digital euro has been approved or will launch: that still depends on the EU adopting the digital euro Regulation, which remains under negotiation.",
+  "why_it_matters": "For a newcomer, this shows the ECB moving from planning to real-world testing of the digital euro -- a possible future central bank digital currency for euro-area consumers and merchants -- by lining up the banks and payment firms that would actually deliver it. It does not mean the digital euro has launched: the pilot itself uses only a 'beta' version that the ECB says is based on draft legislation and will not have legal tender status.",
   "key_dates": {
     "milestone": "2026-07-14"
   },
   "citations": [
     {
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html",
-      "quote": "The ECB has selected 36 payment service providers to participate in the digital euro pilot."
+      "quote": "has selected 36 payment service providers (PSP) from across the euro area"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-25T06:00:00Z",
   "model": "Claude (Anthropic)"
 }
