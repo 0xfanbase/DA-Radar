@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "id": "authorized-institution",
+  "term": "Authorized Institution",
+  "jurisdictions": [
+    "hk"
+  ],
+  "plain_definition": "A bank, restricted licence bank, or deposit-taking company authorized under Hong Kong's Banking Ordinance to carry on banking or deposit-taking business, and supervised by the Hong Kong Monetary Authority (HKMA). HKMA's circulars on digital-asset custody, staking, and distribution of tokenised products are addressed to Authorized Institutions -- a different population of firms from the virtual asset trading platforms and other virtual-asset-service-provider types that the Securities and Futures Commission licenses separately.",
+  "formal_definition": "A person authorized under the Banking Ordinance (Cap. 155) to carry on banking business or, for a deposit-taking company, business as a deposit-taking company; the category includes licensed banks, restricted licence banks, and deposit-taking companies, all supervised by HKMA.",
+  "related_terms": [
+    "hkma"
+  ],
+  "first_used_card_id": "002071c55b749742cb415f5db4caa0beea84c448fd0017cdfd23e9d86497fbb1",
+  "generated_at": "2026-07-25T02:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

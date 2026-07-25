@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "distributed-ledger-technology",
+  "term": "Distributed Ledger Technology (DLT)",
+  "jurisdictions": [
+    "global"
+  ],
+  "plain_definition": "A way of recording and updating a shared database (a 'ledger') across multiple participants at once, without relying on one central operator to keep the master copy. Blockchain is the best-known kind of DLT, but the umbrella term also covers other data structures. DLT underlies cryptoassets and virtual assets, and financial institutions and regulators separately explore it for uses such as payments, settlement, and record-keeping that do not necessarily involve a cryptocurrency at all.",
+  "formal_definition": "No single cross-jurisdiction statutory definition exists; regulators typically describe DLT functionally -- a shared, replicated, and synchronised digital ledger across multiple sites, institutions, or geographies, generally without a central administrator -- rather than adopting a fixed legal definition.",
+  "related_terms": [
+    "cryptoasset",
+    "virtual-asset",
+    "hkma"
+  ],
+  "first_used_card_id": "0eb569c65235f908b3372e2ecaac7f5399b657d3a098c83c5c556ff6127a5692",
+  "generated_at": "2026-07-25T02:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

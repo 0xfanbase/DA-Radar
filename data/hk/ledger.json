@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T04:39:09Z",
+  "generated_at": "2026-07-25T22:58:34Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -18,7 +18,7 @@
       "title": "Tender for the re-opening of 2-year RMB HKSAR Institutional Government Bonds to be held on Thursday, 5 February 2026"
     },
     "002071c55b749742cb415f5db4caa0beea84c448fd0017cdfd23e9d86497fbb1": {
-      "card_id": null,
+      "card_id": "002071c55b749742cb415f5db4caa0beea84c448fd0017cdfd23e9d86497fbb1",
       "content_hash": "371e5bf0328e4e972db79188984989b35b4f20d91875bb962e852ea19b5d819d",
       "feed_id": "hkma_circulars",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -29,12 +29,12 @@
       "raw_published": "Mon, 07 Apr 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Provision of Staking Services for Virtual Assets from Custodial Services (PDF File, 131.0 KB)"
     },
     "0033e56be440a28e995c43c19ffb6b6d0bc9fa3fc3834ac7eeb95a572f531005": {
-      "card_id": null,
+      "card_id": "0033e56be440a28e995c43c19ffb6b6d0bc9fa3fc3834ac7eeb95a572f531005",
       "content_hash": "41a115aca26d78c0972c851a3b5950df3706a329a1681ce5521f08330e16b120",
       "feed_id": "hkma_consultations",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -45,7 +45,7 @@
       "raw_published": "Fri, 13 Jun 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)3 Part IIIc"
     },
@@ -1026,7 +1026,7 @@
       "title": "New Anti-Digital Fraud Measures: “E-Banking Security ABC”"
     },
     "0eb569c65235f908b3372e2ecaac7f5399b657d3a098c83c5c556ff6127a5692": {
-      "card_id": null,
+      "card_id": "0eb569c65235f908b3372e2ecaac7f5399b657d3a098c83c5c556ff6127a5692",
       "content_hash": "af17bd00fd95165a592faeae0f39753f4d065fb6f10999934539ac49308fb916",
       "feed_id": "hkma_circulars",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -1037,7 +1037,7 @@
       "raw_published": "Wed, 19 Mar 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Research Paper on Distributed Ledger Technology in the Financial Sector Annex: Distributed Ledger Technology in the Financial Sector - A Study on the Opportunities and Challenges"
     },
@@ -1122,7 +1122,7 @@
       "title": "Tender for the re-opening of 5-year RMB HKSAR Institutional Government Bonds to be held on Thursday, 4 December 2025"
     },
     "103b7829696239ecc37dad26304370a13cfbcbd2b387157db9521813efc4664c": {
-      "card_id": null,
+      "card_id": "103b7829696239ecc37dad26304370a13cfbcbd2b387157db9521813efc4664c",
       "content_hash": "83df997a4c784d88dc15ae17f358d5c361ad3a3a656ee39f67036a8d5e559772",
       "feed_id": "hkma_circulars",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -1133,7 +1133,7 @@
       "raw_published": "Wed, 19 Mar 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Research Paper on Distributed Ledger Technology in the Financial Sector (PDF File, 122.5 KB)"
     },

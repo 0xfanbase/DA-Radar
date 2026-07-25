@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "0eb569c65235f908b3372e2ecaac7f5399b657d3a098c83c5c556ff6127a5692",
+  "jurisdiction_id": "hk",
+  "published_date": "2025-03-19",
+  "regulator": "HKMA",
+  "pillar": [
+    "tokenization_rwa"
+  ],
+  "type": "circular",
+  "title": "Distributed Ledger Technology in the Financial Sector: A Study on the Opportunities and Challenges",
+  "summary": "This is the annex to a 19 March 2025 Hong Kong Monetary Authority (HKMA) circular addressed to all Authorized Institutions: a research paper titled 'Distributed Ledger Technology in the Financial Sector -- A Study on the Opportunities and Challenges.' Distributed ledger technology (DLT) is a way of recording and updating a shared database across multiple participants at once, without a single central operator keeping the master copy; it underlies cryptoassets and is increasingly explored by financial institutions for other uses such as payments, settlement, and record-keeping. As its title states, the paper studies both DLT's opportunities and its challenges for the financial sector. The transmitting circular also references an earlier HKMA circular on the 'Supervisory Incubator for Distributed Ledger Technology (DLT),' dated 8 January 2025.",
+  "why_it_matters": "For a newcomer, this paper is a research-stage document, not a rule: it is how Hong Kong's banking regulator sets out its own thinking on distributed ledger technology's potential and risks before any related guideline or requirement follows. Read together with HKMA's separate supervisory-incubator initiative for the same technology, it shows DLT study as an ongoing HKMA workstream rather than a one-off exercise.",
+  "citations": [
+    {
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250319-2-EN",
+      "quote": "Distributed Ledger Technology in the Financial Sector - A Study on the Opportunities and Challenges"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-25T02:15:00Z",
+  "model": "Claude (Anthropic)"
+}

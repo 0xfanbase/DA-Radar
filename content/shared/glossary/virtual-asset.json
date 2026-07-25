@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "virtual-asset",
+  "term": "Virtual Asset",
+  "jurisdictions": [
+    "hk"
+  ],
+  "plain_definition": "Hong Kong's statutory umbrella term for a cryptographically-secured digital representation of value that can be transferred, stored, or traded electronically, and that functions as a medium of exchange, unit of account, or store of value -- covering most cryptocurrencies and many other crypto-industry tokens. It is the term Hong Kong's securities and anti-money-laundering law uses to define what falls within the jurisdiction's virtual-asset-specific licensing regimes, such as those for virtual asset trading platforms.",
+  "formal_definition": "Defined in Hong Kong's Securities and Futures Ordinance (Cap. 571) and Anti-Money Laundering and Counter-Terrorist Financing Ordinance (Cap. 615). The definition is broadly technology-neutral and centres on a cryptographically secured digital representation of value that can be transferred, stored, or traded electronically and serves as a medium of exchange, unit of account, or investment, subject to specific statutory exclusions -- see the ordinances themselves for the precise operative wording.",
+  "related_terms": [
+    "vatp",
+    "hkma",
+    "sfc",
+    "cryptoasset"
+  ],
+  "first_used_card_id": "002071c55b749742cb415f5db4caa0beea84c448fd0017cdfd23e9d86497fbb1",
+  "generated_at": "2026-07-25T02:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

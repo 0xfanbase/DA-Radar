@@ -32,14 +32,19 @@
     {
       "label": "HKMA press release: Project Ensemble new phase, EnsembleTX (13 Nov 2025)",
       "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/11/20251113-3/"
+    },
+    {
+      "label": "HKMA consultation: Cryptoassets standard and other miscellaneous amendments to return MA(BS)3 Part IIIc (13 Jun 2025)",
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-17-EN"
     }
   ],
   "open_items": [
     "HKMA indicated further preparatory work toward a possible future retail e-HKD would continue into H1 2026; no published outcome of that work was found yet.",
     "No standalone HKMA guidance on tokenised deposits exists yet; the topic is currently being handled through the Project Ensemble pilot rather than a codified circular.",
-    "The 27 May 2026 updated custody guidance circular is hosted on HKMA's banking-sector document repository (brdr.hkma.gov.hk), which was unreachable during this research (TLS certificate-chain failure to the live site; no Wayback Machine snapshot yet archived, likely due to the document's recency); its content above is corroborated only by secondary legal-commentary sources and should be re-confirmed directly against the primary text when the repository is reachable or an archived copy appears."
+    "The 27 May 2026 updated custody guidance circular is hosted on HKMA's banking-sector document repository (brdr.hkma.gov.hk), which was unreachable during this research (TLS certificate-chain failure to the live site; no Wayback Machine snapshot yet archived, likely due to the document's recency); its content above is corroborated only by secondary legal-commentary sources and should be re-confirmed directly against the primary text when the repository is reachable or an archived copy appears.",
+    "HKMA consulted (13 Jun 2025) on amendments -- described in the consultation's own title as a 'cryptoassets standard' plus other miscellaneous changes -- to banking return MA(BS)3 Part IIIc and its explanatory notes; the consultation's source page (brdr.hkma.gov.hk) returned a server error each time it was requested during this update, so the specific proposed changes, consultation deadline, and outcome are not yet confirmed against primary source text and should be checked directly once the page is reachable."
   ],
-  "generated_at": "2026-07-09T06:14:16Z",
-  "model": "not recorded (pre-provenance content)",
+  "generated_at": "2026-07-25T02:15:00Z",
+  "model": "Claude (Anthropic)",
   "status": "unverified"
 }

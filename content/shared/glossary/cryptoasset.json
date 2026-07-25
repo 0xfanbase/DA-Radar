@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "cryptoasset",
+  "term": "Cryptoasset",
+  "jurisdictions": [
+    "global"
+  ],
+  "plain_definition": "A broad umbrella term for a digitally-native asset that relies on cryptography and distributed-ledger-type technology -- covering everything from bitcoin-style tokens to stablecoins and tokenised traditional assets -- commonly used in banking and prudential regulation (for example, in the Basel Committee on Banking Supervision's international standard on banks' cryptoasset exposures). In Hong Kong, banking and prudential material sometimes uses 'cryptoasset,' while HKMA's and the SFC's own licensing and conduct rules generally use the separately-defined term 'virtual asset' instead; the two terms overlap heavily in practice but are not always used identically across documents.",
+  "formal_definition": "No single Hong Kong statutory definition exists; usage in HKMA prudential material typically follows the sense used in international standards for banks' cryptoasset exposures, rather than the Securities and Futures Ordinance/Anti-Money Laundering and Counter-Terrorist Financing Ordinance definition of 'virtual asset.'",
+  "related_terms": [
+    "virtual-asset",
+    "authorized-institution",
+    "hkma"
+  ],
+  "first_used_card_id": "0033e56be440a28e995c43c19ffb6b6d0bc9fa3fc3834ac7eeb95a572f531005",
+  "generated_at": "2026-07-25T02:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,46 +1,6 @@
 {
-  "generated_at": "2026-07-22T04:42:34Z",
+  "generated_at": "2026-07-25T22:58:34Z",
   "items": [
-    {
-      "feed_id": "hkma_circulars",
-      "item_hash": "002071c55b749742cb415f5db4caa0beea84c448fd0017cdfd23e9d86497fbb1",
-      "link": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2025/20250407e1.pdf",
-      "published_at": "2025-04-06T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Provision of Staking Services for Virtual Assets from Custodial Services (PDF File, 131.0 KB)"
-    },
-    {
-      "feed_id": "hkma_consultations",
-      "item_hash": "0033e56be440a28e995c43c19ffb6b6d0bc9fa3fc3834ac7eeb95a572f531005",
-      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-17-EN",
-      "published_at": "2025-06-12T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)3 Part IIIc"
-    },
-    {
-      "feed_id": "hkma_circulars",
-      "item_hash": "0eb569c65235f908b3372e2ecaac7f5399b657d3a098c83c5c556ff6127a5692",
-      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250319-2-EN",
-      "published_at": "2025-03-18T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Research Paper on Distributed Ledger Technology in the Financial Sector Annex: Distributed Ledger Technology in the Financial Sector - A Study on the Opportunities and Challenges"
-    },
-    {
-      "feed_id": "hkma_circulars",
-      "item_hash": "103b7829696239ecc37dad26304370a13cfbcbd2b387157db9521813efc4664c",
-      "link": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2025/20250319e1.pdf",
-      "published_at": "2025-03-18T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Research Paper on Distributed Ledger Technology in the Financial Sector (PDF File, 122.5 KB)"
-    },
     {
       "feed_id": "sfc_consultations",
       "item_hash": "10f7a10281763fb27fdd513cd213e6c8436edcd5926915e8e3e85fe1b87ed0b2",
