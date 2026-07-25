@@ -2181,3 +2181,124 @@ this one; its actual output -- real `analyst(...)`/`verifier(...)` commits on `m
 stop-and-report if something else is still wrong -- is the only real verification, not this
 entry's description of the fix. Follow-up check recorded separately once that evidence exists,
 per this project's own standing discipline of trusting commits and files over a self-report.
+
+### 2026-07-25 -- First real analyst/verifier output in this project's history: session-bound trigger's supervised test fire (hk/us/eu processed)
+
+The 07-21 fix above never worked either -- confirmed via `git log`, zero `analyst(...)`/`verifier(...)`
+commits anywhere in this repo's history, despite the isolated-clone trigger firing nightly through
+07-24. Owner asked for a workaround; Fable and Opus, consulted as project directors, independently
+converged on the same diagnosis (this environment's git access is scoped per-session via a local
+proxy with session-injected credentials -- `trig_01MYCeCc5MEoHAYbNtZvyDV9` was genuinely
+fresh-session-per-fire, unlike every other working nightly Routine on this account, which are all
+session-bound) and the same fix. `trig_01MYCeCc5MEoHAYbNtZvyDV9` disabled (not deleted). New trigger
+`trig_01CHa5wLW4G5LGj8fREeKUkE` created, bound to the interactive session, same `30 22 * * *` UTC
+schedule, with two must-fixes both directors required: a PROGRESS.md heartbeat every firing
+(including no-op nights) and a `PushNotification` call on any stop-and-report condition, since a
+self-bound Routine cannot carry the platform's own completion-notification param. Full reasoning:
+IMPROVEMENT_BACKLOG.md's same-dated entry. This section is the heartbeat itself, and the first one
+has real work to report.
+
+**Batch plan (Step 0 caps, registry order):** hk 68 queued / us 43 / eu 3 / uk 6 / uae 0 / ch 0 / jp
+11. Took hk=4, us=4, eu=2 before the 10-per-firing total cap bound; uk, uae, ch, jp untouched this
+firing despite non-empty queues (uae/ch legitimately empty anyway) -- not an oversight, the cap
+working as designed.
+
+**hk -- 0 cards.** All 4 items are HKMA-hosted (2 on `hkma.gov.hk`, 2 on `brdr.hkma.gov.hk`).
+`hkma.gov.hk` returned empty content on WebFetch; `brdr.hkma.gov.hk` returned HTTP 503 on both.
+Confirmed domain-specific, not a general fetch problem, via a successful control fetch against a
+different HK regulator (`sfc.hk`). Matches `banking_money.json`'s existing `open_items` note about a
+prior `brdr.hkma.gov.hk` outage -- worth a look next firing to see if it's cleared. No files written
+under `/content`, nothing touched under `/data`; all 4 items remain `"queued"` for a later firing.
+
+**us -- 4 cards drafted, verified, published.** Analyst drafted cards for all 4 items plus 4 new
+shared glossary terms (`congressional-review-act`, `digital-asset-broker`,
+`self-regulatory-organization`, `commodity-based-trust-shares`); read all 7 us pillar-state files
+and `trajectory.json` and correctly left them untouched (none of the 4 items changes a pillar's
+standing state or introduces a new officially-dated event). Notable finding, independently
+source-verified rather than assumed: the IRS/Treasury broker gross-proceeds-reporting rule
+(item `023ed5b0...`) was disapproved under the Congressional Review Act four months after
+finalization (Public Law 119-5) -- the card states plainly that the rule never took legal effect.
+Committed (`analyst(us)`, `aafd9f6`) -- **hit a real push race**: today's `watch.yml` run (`us`
+matrix job) landed on `origin/main` mid-flight (this analyst pass took ~17 minutes; watch.yml fired
+during it), rejecting the first push non-fast-forward. Rebased; one genuine conflict, in
+`data/us/ledger.json`, on the file's own `generated_at` metadata field only (watch's 49 new ledger
+entries and the analyst's 4 status-to-`drafted` changes auto-merged cleanly with no overlap) --
+resolved by keeping the later timestamp, verified item-by-item post-resolution, pushed clean.
+
+Verifier ran as 4 parallel, independent, worktree-isolated passes (one per card, each given only
+the drafted card, no analyst reasoning). All 4 found and fixed real problems, none rejected outright:
+- `023ed5b0` (CRA item): stripped an unsupported inferential claim ("as though it had never taken
+  effect") not textually present in either citation -- rather than deleting the point, fetched the
+  actual CRA statute (5 U.S.C. Sec. 801(f)) and added it as a genuine third citation. Also fixed a
+  date-math error (called the CRA disapproval "four months after" finalization; it was 101 days).
+- `0fc58aa0` (ARK/21Shares ETF filing): caught a citation quote that spliced tense and article from
+  two distinct nearby source sentences into a string that existed verbatim in neither -- replaced
+  with a genuine, independently-confirmed 14-word quote. This is exactly the class of error
+  `apply_verification_gate`'s exact-substring re-fetch exists to catch even if a verifier LLM missed
+  it; caught here first.
+- `18b380d7` (FinCEN awards): caught a numeric misattribution -- the draft credited "96 convictions,
+  $1.1B seized, $347M restitution" to the 7 award-winning cases; the source attributes those figures
+  to all 42 *nominated* cases (corroborated by TD Bank's own $1.8B penalty alone exceeding the $1.1B
+  figure, which couldn't fit inside a 7-case scope). Also removed an unsupported "crypto and other
+  financial businesses" framing the source never states. Named-entity check on Backpage.com/TD Bank
+  mentions passed clean (stated exactly as the source states, zero commentary, per CLAUDE.md rule 4).
+- `18e009a1` (VanEck order): removed an unsupported claim about the order's scope relative to other
+  exchanges' proposals; while checking it, this verifier caught its *own* WebFetch tool hallucinating
+  a supporting quote on one pass, didn't trust it, and disproved it with a literal re-search on the
+  same cached document before excluding it.
+
+All 4 corrected cards passed `path_allowlist`, `validate_content`, and (after a real environment fix,
+below) `apply_verification_gate` -- every citation independently re-fetched by deterministic code,
+not taken on the verifier LLM's word. Promoted, committed (`verifier(us)`, `e128153`), pushed clean
+(no second race).
+
+**Real environment bug hit and fixed, not routed around:** `apply_verification_gate` crashed on
+import -- `pypdf`'s crypto provider chain requires `cryptography`, which requires a `_cffi_backend`
+that this Python environment didn't have (`ModuleNotFoundError: No module named '_cffi_backend'`,
+surfacing as a `pyo3` panic). This is an environment gap, not a content or gate-logic problem --
+`pip install cffi` resolved it cleanly (the system `cryptography` package itself didn't need
+touching). Re-ran the gate after the fix; it passed for real. Flagging in case this environment
+doesn't persist the fix across a future firing's fresh clone -- if `apply_verification_gate` panics
+on this same import again, this is the known cause and fix.
+
+**eu -- 1 card drafted, verified, published; 1 item correctly declined.** Item `d1f21720...` (ECB
+selects 36 PSPs for the digital-euro pilot): card drafted, `banking_money` pillar state updated (new
+`instruments`/`key_links`/`open_items` entries), new glossary term `payment-service-provider` added
+(`jurisdictions: ["global"]`, generic payments category). `trajectory.json` correctly left untouched
+-- the pilot's H2-2027 timeline was already tracked from an earlier item; this one corroborates it
+rather than introducing a new officially-dated event. Item `8ebafbd5...` (EC statement of objections,
+construction-chemicals cartel): correctly no card written -- competition-law enforcement against
+cement/concrete/mortar manufacturers has no connection to any of the 7 pillars, and the analyst
+confirmed this is an established, recurring pattern for the `ec_presscorner` feed (which carries all
+Commission press releases undifferentiated) by checking `data/eu/ledger.json` for precedent before
+concluding, rather than assuming.
+
+Committed (`analyst(eu)`, `eaf30ed`), pushed clean. Verifier ran once (1 card), found and fixed two
+real problems: the citation quote was a paraphrase dressed as verbatim (silently dropped "from
+across the euro area" and shortened "The European Central Bank (ECB)" to "The ECB"; replaced with a
+genuine 12-word verbatim excerpt), and `why_it_matters` cited a specific legislative fact (the
+digital euro Regulation "under negotiation") that, while true, wasn't supported by the card's sole
+citation -- per the verifier's own remit ("fix using what's already cited, not go source-shopping"),
+rewrote using only what the cited press release itself states (beta version, based on draft
+legislation, no legal tender status) rather than importing an uncited source to patch it. This
+verifier also independently caught one inconsistent WebFetch response (falsely claiming "no
+legislative references" in the document) contradicted by three other consistent fetches, and
+correctly treated the outlier as an unreliable read rather than ground truth. Gates passed, promoted,
+committed (`verifier(eu)`, `cb7afce`), pushed clean.
+
+**Real finding, logged not fixed (out of scope tonight, `/pipeline` territory):** `promote_drafted.py`
+only ever transitions a ledger item off `"queued"` when a card file exists for it. An item the
+analyst correctly declines to draft (like the cartel item above) has no path to any terminal
+"not relevant" status -- it stays `"queued"` and `derive_queue()` will resurface it in the very next
+firing that reaches eu's batch, forcing a re-fetch and re-rejection every time, indefinitely, at real
+cost. Not touched here, per the runbook's own path-allowlist discipline and because the right fix
+(a new terminal ledger status? a pre-filter in watch.yml's own relevance keywording?) is a design
+call, not a bug with one obvious answer. Detail in IMPROVEMENT_BACKLOG.md.
+
+**Net result of this firing:** 5 real, gate-verified, published cards
+(`aafd9f6`/`e128153`/`eaf30ed`/`cb7afce`, 4 us + 1 eu), the first of this project's entire history --
+closing the never-ran-analyst/verifier finding for real, with commits as the evidence, not a
+self-report. `data/hk/queue.json` (68), `data/us/queue.json` (39 after this firing's 4),
+`data/eu/queue.json` (2, including the permanently-recurring cartel item), `data/uk/queue.json` (6),
+and `data/jp/queue.json` (11) remain for future firings. PR #16 (documenting the trigger swap itself)
+is still open as of this entry.

@@ -1410,3 +1410,44 @@ clearly-fabricated filler (all-non-alphabetic content, or content that's just on
 character repeated), not a semantic judgment of how substantive a quote is -- ruled out of scope for a
 deterministic check, consistent with `quote_is_authentic`'s own similar, already-documented limitation
 (pure substring matching, no semantic understanding of what the quote is meant to support).
+
+### 2026-07-25 -- A correctly-declined queue item has no terminal status; it will resurface every firing
+
+Found during the session-bound trigger's first real firing (full narrative in PROGRESS.md's
+same-dated entry): the analyst was given an EU item -- a Commission antitrust Statement of
+Objections against construction-chemicals manufacturers -- with zero connection to any of the 7
+digital-asset pillars, and correctly declined to write a card for it rather than force a
+fabricated pillar classification. That was the right call. What happens next is not: per
+`pipeline/ci/promote_drafted.py`'s own logic, a ledger item only ever leaves `"queued"` when a card
+file exists for it. An item nothing will ever draft a card for has no other exit -- it stays
+`"queued"` forever, and `derive_queue()` regenerates it back into every future `queue.json` for that
+jurisdiction, oldest-first. Since Step 0's batching takes the queue's oldest items first, a
+permanently-irrelevant item at the front of a queue doesn't just sit there harmlessly -- it
+occupies a batch slot and gets re-fetched and re-evaluated by a fresh analyst pass every single
+firing that reaches that jurisdiction, indefinitely, at real and recurring cost, until either the
+queue drains past it (impossible, since it's always oldest) or someone intervenes by hand.
+
+Confirmed this is not a one-off: the analyst that hit this checked `data/eu/ledger.json` for
+precedent before concluding, and found numerous prior `ec_presscorner` items already sitting at
+`"relevant": false` / `"card_id": null` with no card ever written -- the European Commission's press
+corner feed carries every Commission release undifferentiated (M&A clearances, unrelated personnel
+announcements, any policy area), not just digital-asset items, and per-item relevance judgment is
+squarely the analyst's own job, not something the watcher or queue pre-filters. This will recur for
+any broad, undifferentiated feed in any jurisdiction, not just this one item.
+
+Not fixed here -- it's `/pipeline` code, outside the analyst/verifier path allowlist, and outside
+the scope of a single firing regardless. Two legitimate directions, genuinely different tradeoffs,
+owner call:
+- Add a real terminal ledger status (e.g. `"not_relevant"`) that `promote_drafted` (or a new,
+  separate deterministic step) can set when an analyst pass explicitly reports "no card for this
+  item," so `derive_queue()` stops resurfacing it. Requires the analyst to report per-item
+  decisions in a structured, machine-readable way it doesn't currently produce (today it only
+  writes card files; a declined item leaves no trace at all beyond its own remarks in the runbook
+  session's chat).
+- Push relevance filtering earlier, into `watch.yml`'s own diff/classification step, using each
+  jurisdiction's existing `config/jurisdictions/{id}.json` relevance keywords -- keeps the queue
+  itself clean but risks false-negative filtering (a genuinely relevant item worded unusually
+  never reaching the analyst at all), which the current design deliberately avoids by leaving all
+  judgment to the analyst.
+Either way, this is a real, now-confirmed-recurring cost (not just a one-time queue artifact) worth
+prioritizing before it's costing real turns across every jurisdiction with a broad regulator feed.
