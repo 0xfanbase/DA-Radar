@@ -18,3 +18,10 @@ venv/
 # deploy.yml uploads it straight to GitHub Pages as a build artifact within
 # a single workflow run, so it has no reason to live in git history.
 /_site/
+
+# Agent tool's worktree-isolation scratch directories (the analyst/verifier
+# runbook's radar-analyst/radar-verifier sub-agents run with isolation:
+# worktree, per docs/analyst-runbook.md). Purely transient tooling state,
+# auto-created and auto-removed per agent run -- never repo content, the
+# same class of thing as .pytest_cache/ above.
+/.claude/worktrees/
