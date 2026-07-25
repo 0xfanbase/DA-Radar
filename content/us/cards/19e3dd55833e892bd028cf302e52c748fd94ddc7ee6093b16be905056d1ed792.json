@@ -7,15 +7,15 @@
   "pillar": ["stablecoins", "aml_cft_enforcement"],
   "type": "consultation",
   "title": "FinCEN, Agencies Propose Rule to Implement GENIUS Act Customer Identification Program Requirement",
-  "summary": "On 18 June 2026, FinCEN announced that it had, together with the Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, and the National Credit Union Administration, proposed a rule to implement the GENIUS Act's customer identification program requirement for permitted payment stablecoin issuers. The proposal would treat permitted payment stablecoin issuers as financial institutions under the Bank Secrecy Act and require them to maintain an effective customer identification program, addressing potential illicit-finance risks the agencies describe stablecoins as posing. FinCEN's release states the agencies are inviting public comment on the proposal but does not itself state a comment-period deadline or the rule's proposed effective date.",
-  "why_it_matters": "This rule would require GENIUS Act-licensed payment stablecoin issuers to verify their customers' identities, extending a standard Bank Secrecy Act safeguard to a category of company that is entirely new to US law. It has not been finalized and is not yet in effect.",
+  "summary": "On 18 June 2026, FinCEN announced that it had, together with the Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, and the National Credit Union Administration, proposed a rule to implement the GENIUS Act's customer identification program requirement for permitted payment stablecoin issuers. The proposal would treat permitted payment stablecoin issuers as financial institutions under the Bank Secrecy Act and require them to maintain an effective customer identification program, which the agencies state is intended to mitigate potential illicit-finance risks while protecting the U.S. financial system and national security interests. FinCEN's release states the agencies are inviting public comment on the proposal but does not itself state a comment-period deadline or the rule's proposed effective date.",
+  "why_it_matters": "This rule would require permitted payment stablecoin issuers to verify their customers' identities, implementing the GENIUS Act's own directive that they be treated as financial institutions under the Bank Secrecy Act. It has not been finalized and is not yet in effect.",
   "citations": [
     {
       "url": "https://www.fincen.gov/news/news-releases/fincen-agencies-propose-rule-implement-genius-act-customer-identification",
       "quote": "Permitted payment stablecoin issuers be treated as financial institutions under the Bank Secrecy Act"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-25T11:15:00Z",
   "model": "Claude (Anthropic)"
 }

@@ -7,7 +7,7 @@
   "pillar": ["funds_etfs"],
   "type": "consultation",
   "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of Amendment No. 3 to a Proposed Rule Change To List and Trade Shares of the Fidelity Wise Origin Bitcoin Fund Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares",
-  "summary": "On 12 January 2024, the Federal Register published an SEC notice that Cboe BZX Exchange had filed Amendment No. 3 to its proposed rule change (File No. SR-CboeBZX-2023-044, originally filed 30 June 2023) to list and trade shares of the Fidelity Wise Origin Bitcoin Fund, formerly the Wise Origin Bitcoin Trust, under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares. Filed 5 January 2024, Amendment No. 3 replaced the proposal as previously modified by Amendment No. 2 in its entirety, to clarify and add detail. The filing names Fidelity Digital Assets Services, LLC -- described as licensed by the New York State Department of Financial Services -- as the trust's bitcoin custodian, and states that both Cboe BZX and the CME are members of the Intermarket Surveillance Group.",
+  "summary": "On 12 January 2024, the Federal Register published an SEC notice that Cboe BZX Exchange had filed Amendment No. 3 to its proposed rule change (File No. SR-CboeBZX-2023-044, originally filed 30 June 2023) to list and trade shares of the Fidelity Wise Origin Bitcoin Fund, formerly the Wise Origin Bitcoin Trust, under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares. Filed 5 January 2024, Amendment No. 3 replaced the proposal as previously modified by Amendment No. 2 in its entirety, to clarify and add detail. The filing names Fidelity Digital Assets Services, LLC -- described as licensed by the New York Department of Financial Services -- as the trust's bitcoin custodian, and states that both Cboe BZX and the CME are members of the Intermarket Surveillance Group.",
   "why_it_matters": "Custody arrangements and surveillance-sharing arrangements like the ones described here go to the same fraud-and-manipulation-prevention standard the SEC has applied when reviewing other proposed crypto exchange-traded products. This notice records only the amendment Cboe BZX filed and does not itself state how, or whether, the SEC acted on the underlying proposal.",
   "citations": [
     {
@@ -15,7 +15,7 @@
       "quote": "in order to clarify certain points and add additional details to the proposal"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-25T11:35:00Z",
   "model": "Claude (Anthropic)"
 }
