@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T04:43:49Z",
+  "generated_at": "2026-07-25T04:39:07Z",
   "items": {
     "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
       "card_id": null,
@@ -193,6 +193,38 @@
       "summary": "European Commission Press release Brussels, 23 Jul 2026 Today, the European Commission took two decisions finding non-compliance by Google with the Digital Markets Act (DMA) for self-preferencing its own services on Google Search, and for putting in place restrictions on businesses to direct consumers to alternative, often cheaper, purchase channels on Google Play (steering). In this regard, the Commission issued Google a fine of €460 million and a fine of €430 million respectively.",
       "title": "Commission fines Google €890 million for breaches of the Digital Markets Act"
     },
+    "17c702aeb1cde97cbf8b17abecb65ae9f79c6bebae51e81f335e591c40542f26": {
+      "card_id": null,
+      "content_hash": "f64c5f7bfbc30dc040fe68f1d29eee83594571c20aaf4d83e5be22154dac7da1",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724_2~d7d475d2f0.en.html",
+      "item_hash": "17c702aeb1cde97cbf8b17abecb65ae9f79c6bebae51e81f335e591c40542f26",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724_2~d7d475d2f0.en.html",
+      "published_at": "2026-07-24T08:30:00Z",
+      "raw_published": "Fri, 24 Jul 2026 10:30:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "ECB to start implementing enhanced repo facility for central banks"
+    },
+    "181c3d8380cabcb57edbf6adeb25fde281f6bfcf6ceff432e4e5e2c92a500a72": {
+      "card_id": null,
+      "content_hash": "8c0d41ec73b96a6d81704efd77f3606119a843ea1d5cb4dcf32d38af83c14836",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724_4~f082ce289d.en.html",
+      "item_hash": "181c3d8380cabcb57edbf6adeb25fde281f6bfcf6ceff432e4e5e2c92a500a72",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724_4~f082ce289d.en.html",
+      "published_at": "2026-07-24T10:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 12:00:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "ECB to extend use of climate factors in Eurosystem collateral framework to non-financial corporate credit claims"
+    },
     "18a2f12c16d99aa3ded7e44055b93af6a07a8fa93131131eed21d74ed8f6c5f8": {
       "card_id": null,
       "content_hash": "49da8007ea20e10dcb4f488d510b53c2cacedb3a28c80da29294e04328370eb0",
@@ -289,6 +321,22 @@
       "summary": "European Commission Daily news Brussels, 23 Jul 2026 Commission fines Google €890 million for breaches of the Digital Markets Act Today, the European Commission took two decisions finding non-compliance by Google ...",
       "title": "Daily News 23 / 07 / 2026"
     },
+    "23d5c30c371240a949d8ad47cc6efe8d641f54504c785ea772379f71a391080b": {
+      "card_id": null,
+      "content_hash": "ff6c5a8795b021bf6df72db5eb6f3f5fad0a2760d13e63ac9604a2ea98b6ffb7",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724~a099353951.en.html",
+      "item_hash": "23d5c30c371240a949d8ad47cc6efe8d641f54504c785ea772379f71a391080b",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724~a099353951.en.html",
+      "published_at": "2026-07-24T08:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 10:00:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "Results of the ECB Survey of Professional Forecasters for the third quarter of 2026"
+    },
     "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b": {
       "card_id": "2ee913362bf49bec31b0da932e4c8145696857c0d36ee21dc8267943a55b8b6b",
       "content_hash": "13e3d587ef36ecdfaa93e2f9ef4b855fc98ab4212aa4900f0809630b094490e1",
@@ -320,6 +368,22 @@
       "status": "queued",
       "summary": "",
       "title": "ECB reveals shortlisted designs for new banknotes and launches public survey"
+    },
+    "2f55a7042d6a3c5de70f18d93379c83180f294943b8482f44f58d733bc897b11": {
+      "card_id": null,
+      "content_hash": "3d12a083cddc6cec8dbe4be346d09a6209c95b33a07cfee80eed6c97411a0cb1",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724_1~fa277eb6fe.en.html",
+      "item_hash": "2f55a7042d6a3c5de70f18d93379c83180f294943b8482f44f58d733bc897b11",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724_1~fa277eb6fe.en.html",
+      "published_at": "2026-07-24T08:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 10:00:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "ECB Consumer Expectations Survey results – June 2026"
     },
     "2f72ce65e86890b9b841d1f1c662ddc7c111cb84fb6cd030e9a9e6a22fbf80f5": {
       "card_id": "2f72ce65e86890b9b841d1f1c662ddc7c111cb84fb6cd030e9a9e6a22fbf80f5",
@@ -449,6 +513,22 @@
       "summary": "",
       "title": "Sharon Donnery: Interview with Central Banking"
     },
+    "3fdff8101ef2f321b93322febdc9f1afb70e264b2fd36cfc536d48d9249eb8c3": {
+      "card_id": null,
+      "content_hash": "98a7817794a7d0e6e1c386ad9fb81eef63cc93717fde409e3e32f912c1d101e5",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1673",
+      "item_hash": "3fdff8101ef2f321b93322febdc9f1afb70e264b2fd36cfc536d48d9249eb8c3",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1673",
+      "published_at": "2026-07-23T22:00:00Z",
+      "raw_published": "Thu, 23 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 24 Jul 2026 The European Commission has approved a €54 million Luxembourgish State aid scheme to support road transport and rail freight companies facing increased fuel prices due to the Middle East crisis.",
+      "title": "Commission approves €54 million Luxembourgish State aid for road and rail transport firms facing increased fuel prices"
+    },
     "41c44750bc332a88c0e02c65f6757e80edf03b59b085611965d05727d6fb77f4": {
       "card_id": null,
       "content_hash": "7fd4bda2bccc17022ce51b7f086b16a746b585a7b0497b4ee98dac38671a64f2",
@@ -544,6 +624,22 @@
       "status": "queued",
       "summary": "European Commission Daily news Brussels, 10 Jul 2026 Commission preliminarily finds the addictive design of Instagram and Facebook in breach of the Digital Services Act Today, the European Commission preliminarily...",
       "title": "Daily News 10 / 07 / 2026"
+    },
+    "51a613b1b3ca6be0788eddb16e10682c3377056c9f663376471b016cd99cf115": {
+      "card_id": null,
+      "content_hash": "404e759b6a2d12baee51faf54951cec47228490b6a389387b6196bacd0859c45",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/fs_24_6565",
+      "item_hash": "51a613b1b3ca6be0788eddb16e10682c3377056c9f663376471b016cd99cf115",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/fs_24_6565",
+      "published_at": "2026-07-23T22:00:00Z",
+      "raw_published": "Thu, 23 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Factsheet Brussels, 24 Jul 2026 Solidarity with Ukraine Solidarity with Ukraine",
+      "title": "Solidarity with Ukraine"
     },
     "51e41ad4afdb380430588e600350bcf284c3e04471960b611c9598d0ccbc28ec": {
       "card_id": null,
@@ -769,6 +865,22 @@
       "summary": "The European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) welcome and support today’s warning from European Systemic Risk Board (ESRB) on the systemic cyber risks posed by frontier AI models.",
       "title": "The ESAs support ESRB warning on systemic cyber risks from frontier AI models"
     },
+    "6c87b45f575a188e2068aa8bac08285f0878107a5c67fcf8f6a3898cb445f798": {
+      "card_id": null,
+      "content_hash": "c89fa2a8da0847a2438cffff931e0344001158b6ece22a9f3747a33970284e0b",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/qanda_26_1686",
+      "item_hash": "6c87b45f575a188e2068aa8bac08285f0878107a5c67fcf8f6a3898cb445f798",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/qanda_26_1686",
+      "published_at": "2026-07-24T09:27:38Z",
+      "raw_published": "Fri, 24 Jul 2026 09:27:38 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Questions and answers Brussels, 24 Jul 2026 ENERGY MEASURES What energy measures are included in the package? Curbing Russia's energy export revenues is the most effective way to inflict significant costs...",
+      "title": "Questions and answers on the 21st package of sanctions against Russia"
+    },
     "70b2f573adb9763d108b106afdaababd4cb243b99b77b4f92927e5edbaefff21": {
       "card_id": null,
       "content_hash": "5c2533e8b4ea511b2251f70eceea22676cc51863e22e395304fbad5635091bea",
@@ -848,6 +960,38 @@
       "status": "queued",
       "summary": "The European Banking Authority (EBA) today published end-2025 data on two key concepts and indicators in the DGSD, namely financial means available to, and covered deposits protected by DGSs. This annual publication, covering each Member State, enhances transparency and accountability across the EU to the benefit of depositors, markets, policymakers, DGSs and Members States.",
       "title": "EU deposit guarantee scheme funds to protect depositors against bank failures continue to grow and have reached a volume of €85bn, the EBA observes"
+    },
+    "844eebcb8f53339e46677dc7fc545405829f21cf31bc875462c247c3b7d5ec44": {
+      "card_id": null,
+      "content_hash": "3b442b73b59cc70a39d04e790a881e53a89f7446e1b4a84ab45d7bfbc52c525f",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1687",
+      "item_hash": "844eebcb8f53339e46677dc7fc545405829f21cf31bc875462c247c3b7d5ec44",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1687",
+      "published_at": "2026-07-24T09:42:48Z",
+      "raw_published": "Fri, 24 Jul 2026 09:42:48 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Daily news Brussels, 24 Jul 2026 Commission preliminary finds TikTok in breach of Digital Services Act for failing to ensure safe accounts for minors Today, the European Commission sent TikTok...",
+      "title": "Daily News 24 / 07 / 2026"
+    },
+    "8609b6885e4dd05e9edb500671daa8f0b24a606c96010681d926972dcfd51497": {
+      "card_id": null,
+      "content_hash": "6570c81f43c2b67f59f5614a21adadeebe606848805c022538c7f0f2af10f549",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1678",
+      "item_hash": "8609b6885e4dd05e9edb500671daa8f0b24a606c96010681d926972dcfd51497",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1678",
+      "published_at": "2026-07-23T22:00:00Z",
+      "raw_published": "Thu, 23 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 24 Jul 2026 The European Commission has launched a public consultation on the draft of new Guidelines on State aid for rescuing and restructuring non-financial undertakings in difficulty (‘Rescue and Restructuring Guidelines'). The new version will align the existing Guidelines with current social, market and technological conditions. The Commission invites Member States and all other interested parties to comment on the draft by 4 September 2026.",
+      "title": "Commission invites comments on draft new rescue and restructuring State aid guidelines"
     },
     "86329858f1392a54ebd8f192f799a20f27ad1c98d8fea049920caf6fb8414e18": {
       "card_id": null,
@@ -1473,6 +1617,22 @@
       "summary": "",
       "title": "ECB selects 36 payment service providers to join digital euro pilot"
     },
+    "d69cf3f2dcdc0169fae97545c710be12053487fd2e3012f0273db53cfadddd1e": {
+      "card_id": null,
+      "content_hash": "c1ad6e837b01e6bb2517d8f69ab4c2bac3b58211979244084b58ec4349a9f25b",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260724~d484b483b9.en.pdf",
+      "item_hash": "d69cf3f2dcdc0169fae97545c710be12053487fd2e3012f0273db53cfadddd1e",
+      "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260724~d484b483b9.en.pdf",
+      "published_at": "2026-07-24T15:30:00Z",
+      "raw_published": "Fri, 24 Jul 2026 17:30:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "Philip R. Lane: Outlook for the euro area economy"
+    },
     "d85019dbf3ee48c792b87dcbabb41f43c9ddd2f7152332134f03db6245fba54e": {
       "card_id": null,
       "content_hash": "0e4b3501292d3c52c22c23610460daedb00704fa347c63772ffb7b37be2e5703",
@@ -1633,6 +1793,70 @@
       "summary": "The European Banking Authority (EBA) today published revised Guidelines on product oversight and governance (POG) for retail banking products. They clarify requirements for products with environmental, social and governance (ESG) features whenever offered and sold to consumers and address greenwashing risks. The Guidelines aim to ensure that financial institutions apply robust standards when designing and distributing ESG-related retail products, with a view to reducing the risk of consumers being misled or sold products that do not meet their needs.",
       "title": "The EBA clarifies its Product Oversight and Governance Guidelines which address greenwashing risks in ESG products"
     },
+    "f0a05acf9393a51b1b06e24ee924f9f114adf6967795b65385af0e6495ac61dd": {
+      "card_id": null,
+      "content_hash": "dcc6bd1ce3624265f3794b832efc5a5be0b779d9383851105003c3a81cbdec12",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc260724~eebbc30622.en.html",
+      "item_hash": "f0a05acf9393a51b1b06e24ee924f9f114adf6967795b65385af0e6495ac61dd",
+      "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc260724~eebbc30622.en.html",
+      "published_at": "2026-07-24T13:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 15:00:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)"
+    },
+    "f1a4b80bffce5c37d93a1f7d037d62c027353263faac2f1b4d6e7a52d9e7f073": {
+      "card_id": null,
+      "content_hash": "feb5d2166f84d11a3ef9275f6639f5221171ddfe8b30e670f97e6c57e81e1f87",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1684",
+      "item_hash": "f1a4b80bffce5c37d93a1f7d037d62c027353263faac2f1b4d6e7a52d9e7f073",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1684",
+      "published_at": "2026-07-24T08:15:19Z",
+      "raw_published": "Fri, 24 Jul 2026 08:15:19 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 24 Jul 2026 The European Commission has proposed to mobilise €410,310 from the European Globalisation Adjustment Fund for Displaced Workers (EGF) to support 235 workers dismissed by Valmet Automotive in Finland.",
+      "title": "Commission proposes more than €410,000 from the European Globalisation Adjustment Fund to support dismissed car industry workers in Finland"
+    },
+    "f1ff82261f351419f782d32295837f81c45600e38b7a518b88bc8f8d02b3135c": {
+      "card_id": null,
+      "content_hash": "d69508a78358afbaad5b1f0f9474acc7b2dbace778e9c4ff80a05ab5966b07da",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1679",
+      "item_hash": "f1ff82261f351419f782d32295837f81c45600e38b7a518b88bc8f8d02b3135c",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1679",
+      "published_at": "2026-07-23T22:00:00Z",
+      "raw_published": "Thu, 23 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 24 Jul 2026 Today, the European Commission sent TikTok preliminary findings indicating that TikTok accounts of minors do not meet the safety standards required under the Digital Services Act (DSA).",
+      "title": "Commission preliminary finds TikTok in breach of Digital Services Act for failing to ensure safe accounts for minors"
+    },
+    "f3c4e62a209c2e34e133929c16a10a19aac81708b90bbaf0913d2111e0e3d25c": {
+      "card_id": null,
+      "content_hash": "f96da4af5978aa2c9d2483c2cb9b10f590d5ffb65e5ea733f17507f4e1fad31f",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724_3~c0b45e246f.en.html",
+      "item_hash": "f3c4e62a209c2e34e133929c16a10a19aac81708b90bbaf0913d2111e0e3d25c",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724_3~c0b45e246f.en.html",
+      "published_at": "2026-07-24T09:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 11:00:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "Results of the June 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)"
+    },
     "f52dbe0ab8801c4756a9dc7a573ba5800c70d8fa2aa8beb32c6dbcdb6b40a02a": {
       "card_id": null,
       "content_hash": "05101b144f55413c4e5de0ffbd3edd4be78b8ee9519d7ead323c6e086d75e2f4",
@@ -1648,6 +1872,22 @@
       "status": "queued",
       "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">ESMA publishes first market capitalisation data for EU Member States</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-10T10:30:27+02:00\" title=\"Friday, July 10, 2026 - 10:30\" class=\"datetime\">10 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">Market data</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\">The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, has published today the annual <a href=\"https://www.esma.europa.eu/sites/default/files/2026-07/ESMA12-2121844265-6026_FASTER_Market_capitalisation_figures_and_ratios.pdf\">market capitalisation and market capitalisation ratios</a> of EU Member States for the reference years 2024 and 2025.</p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>This publication marks the first implementation of ESMA’s mandate under the FASTER Directive, under which ESMA developed technical standards on the calculation methodology and is required to publish annual market capitalisation figures and ratios for EU Member States.</span></p> <p class=\"text-align-justify\"><span>Countries whose market size exceeds 1.5% of the total EU market capitalisation for four consecutive years are subject to specific requirements related to withholding tax relief.</span></p> <p class=\"text-align-justify\"><span>The data provides clarity on Member States’ position within the framework and helps authorities and market participants prepare for and implement these requirements in a timely manner.&nbsp;</span></p> <h4>",
       "title": "ESMA publishes first market capitalisation data for EU Member States"
+    },
+    "f5d4540177afc09b176172f5af4596dadf4b9e1edcdd7cd230f86f94504f7daf": {
+      "card_id": null,
+      "content_hash": "b54e4fe49c20fb111bd5b68455a4c1ba0a01522fb49ccdc0dd74b0b36236e5ff",
+      "feed_id": "eba_news",
+      "first_seen": "2026-07-25T04:39:07Z",
+      "guid": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-seeks-feedback-44-draft-technical-package-its-reporting-and-disclosure-framework",
+      "item_hash": "f5d4540177afc09b176172f5af4596dadf4b9e1edcdd7cd230f86f94504f7daf",
+      "link": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-seeks-feedback-44-draft-technical-package-its-reporting-and-disclosure-framework",
+      "published_at": "2026-07-24T09:08:23Z",
+      "raw_published": "Fri, 24 Jul 2026 11:08:23 +0200",
+      "relevant": false,
+      "source_id": "eba",
+      "status": "queued",
+      "summary": "The European Banking Authority (EBA) today published a draft technical package for version 4.4 of its reporting and disclosure framework, covering IFRS 18 reporting, Pillar 3 ESG disclosures and other technical amendments.",
+      "title": "The EBA seeks feedback on the 4.4 draft technical package of its reporting and disclosure framework"
     },
     "f62731290eae2a22b003a6b670bb98bfbe1b9bcbb0c36397146634e6c104d597": {
       "card_id": null,
