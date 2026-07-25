@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T04:39:19Z",
+  "generated_at": "2026-07-25T05:16:01Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -18,7 +18,7 @@
       "title": "OCC Announces Deputy Comptroller for Supervision System and Analytical Support"
     },
     "023ed5b02ccc066ffac3316c4e67f956802652e0187dd9bfcf3de2d0b3bc7a97": {
-      "card_id": null,
+      "card_id": "023ed5b02ccc066ffac3316c4e67f956802652e0187dd9bfcf3de2d0b3bc7a97",
       "content_hash": "cb86c525c0d06d956e450ccb4966415d5178ea3e127a0316858a0d625376cb73",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -29,7 +29,7 @@
       "raw_published": "2024-12-30",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "This document contains final regulations regarding information reporting by brokers that regularly provide services effectuating certain digital asset sales and exchanges. The final regulations require these brokers to file information returns and furnish payee statements reporting gross proceeds on dispositions of digital assets effected for customers in certain sale or exchange transactions.",
       "title": "Gross Proceeds Reporting by Brokers That Regularly Provide Services Effectuating Digital Asset Sales"
     },
@@ -130,7 +130,7 @@
       "title": "FinCEN Proposes Rule to Pay Whistleblowers"
     },
     "0fc58aa001676ecea0c9ae30afd1d8a1bae6981ad6f102287e4859aca69fdf5b": {
-      "card_id": null,
+      "card_id": "0fc58aa001676ecea0c9ae30afd1d8a1bae6981ad6f102287e4859aca69fdf5b",
       "content_hash": "eb3e642436014f40e07cd5cb67382a5bb444c09c628980456c11982994e1068f",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -141,7 +141,7 @@
       "raw_published": "2022-06-01",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
@@ -178,7 +178,7 @@
       "title": "SEC Proposes Transformative Reforms to Help Public Companies Conduct Registered Offerings and Simplify Reporting Requirements"
     },
     "18b380d7168fde0a1b6089558fae30dc7907e6f4628e5b684bfaaf8032d2ca43": {
-      "card_id": null,
+      "card_id": "18b380d7168fde0a1b6089558fae30dc7907e6f4628e5b684bfaaf8032d2ca43",
       "content_hash": "3095510b402b817607cee3eb7cb8ac153441f27c47dd4a62910739a2bd1ba1d2",
       "feed_id": "fincen_press_releases",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -189,12 +189,12 @@
       "raw_published": "06/22/2026",
       "relevant": true,
       "source_id": "fincen",
-      "status": "queued",
+      "status": "drafted",
       "summary": "WASHINGTON—Last week, the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) recognized seven cases during its Law Enforcement Awards Program for effectively using Bank Secrecy Act (BSA) data to support criminal prosecutions and…",
       "title": "FinCEN Announces Recipients of Its 11th Law Enforcement Awards Program"
     },
     "18e009a1e65e145d956d100eb6c8598a94cc79c3851c3278a4462c4a609d69bf": {
-      "card_id": null,
+      "card_id": "18e009a1e65e145d956d100eb6c8598a94cc79c3851c3278a4462c4a609d69bf",
       "content_hash": "55dfda7a3eb19426c00253f5ba29c3caeedd95098707a93b063ff3f854658f61",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -205,7 +205,7 @@
       "raw_published": "2021-11-18",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the VanEck Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },

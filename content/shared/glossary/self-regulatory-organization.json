@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "self-regulatory-organization",
+  "term": "Self-regulatory organization (SRO)",
+  "jurisdictions": ["us"],
+  "plain_definition": "A US securities-market body -- such as a national securities exchange -- that is itself registered with and overseen by the SEC, and that must file any change to its own rules, including a new product listing, with the SEC for public notice, comment, and approval before the change can take effect. Cboe BZX Exchange, NYSE Arca, and the Nasdaq Stock Market are SROs that have each filed numerous proposed rule changes to list crypto-asset exchange-traded products.",
+  "formal_definition": "Securities Exchange Act of 1934, Section 19(b) (15 U.S.C. 78s(b)) requires an SRO to file a 'proposed rule change' with the SEC; the Commission must publish notice and give interested persons an opportunity to comment before approving or disapproving it, or instituting proceedings to determine whether to do so. Federal Register notices in this category are commonly captioned 'Self-Regulatory Organizations' and are informally called 19b-4 filings, after the SEC form used to submit them.",
+  "related_terms": ["commodity-based-trust-shares"],
+  "first_used_card_id": "0fc58aa001676ecea0c9ae30afd1d8a1bae6981ad6f102287e4859aca69fdf5b",
+  "generated_at": "2026-07-25T09:27:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "commodity-based-trust-shares",
+  "term": "Commodity-Based Trust Shares",
+  "jurisdictions": ["us"],
+  "plain_definition": "A listing category some US national securities exchanges, including Cboe BZX and NYSE Arca, use in their own rulebooks for exchange-traded products structured as a trust holding a commodity -- including, for many recent filings, bitcoin or another crypto asset -- rather than as a registered investment company. Nasdaq uses a similarly-purposed but differently-numbered rule for the same kind of product. Each such listing originally required its own individual, SEC-approved rule change; the SEC later adopted generic listing standards letting qualifying products list without that bespoke filing.",
+  "formal_definition": "E.g. Cboe BZX Rule 14.11(e)(4) and NYSE Arca Rule 8.201-E (Commodity-Based Trust Shares); Nasdaq's parallel category is Rule 5711(d). Shares in this category are registered under the Securities Act of 1933 and, per issuers' own SEC-filed disclosure, are not registered investment companies under the Investment Company Act of 1940.",
+  "related_terms": ["self-regulatory-organization"],
+  "first_used_card_id": "0fc58aa001676ecea0c9ae30afd1d8a1bae6981ad6f102287e4859aca69fdf5b",
+  "generated_at": "2026-07-25T09:27:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

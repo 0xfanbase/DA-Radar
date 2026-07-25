@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "18e009a1e65e145d956d100eb6c8598a94cc79c3851c3278a4462c4a609d69bf",
+  "jurisdiction_id": "us",
+  "published_date": "2021-11-18",
+  "regulator": "SEC",
+  "pillar": ["funds_etfs"],
+  "type": "conclusions",
+  "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the VanEck Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares",
+  "summary": "On 18 November 2021, the Federal Register published an SEC order disapproving Cboe BZX Exchange's proposed rule change (File No. SR-CboeBZX-2021-019, Release No. 34-93559) to list and trade shares of the VanEck Bitcoin Trust under BZX Rule 14.11(e)(4), the exchange's Commodity-Based Trust Shares listing standard. The Commission's order, dated 12 November 2021, concludes that BZX had not shown its rule change satisfied Exchange Act Section 6(b)(5)'s requirement that exchange rules guard against fraud and manipulation. The order disapproves this specific proposed listing only; it makes no finding about, and this document does not address, any other exchange's separate proposals for similar bitcoin trust products.",
+  "why_it_matters": "This November 2021 order shows the legal standard the SEC applied when reviewing proposed crypto exchange-traded product listings one at a time: whether the listing exchange had shown its rules would guard against fraud and manipulation, as Exchange Act Section 6(b)(5) requires. Naming the VanEck Bitcoin Trust here reflects only what the SEC's own order states about that specific proposal.",
+  "key_dates": {
+    "milestone": "2021-11-12"
+  },
+  "citations": [
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2021-11-18/html/2021-25129.htm",
+      "quote": "has not met its burden under the Exchange Act and the Commission's Rules of Practice"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-25T09:45:00Z",
+  "model": "Claude (Anthropic)"
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "congressional-review-act",
+  "term": "Congressional Review Act (CRA)",
+  "jurisdictions": ["us"],
+  "plain_definition": "A US federal law that lets Congress vote to overturn a recently issued federal agency regulation. If both the House and Senate pass a joint resolution of disapproval and the President signs it (or Congress overrides a veto), the disapproved regulation has no force or effect -- treated in law as if the agency had never issued it -- and the agency generally cannot reissue a substantially similar rule without new legislative authority.",
+  "formal_definition": "5 U.S.C. 801-802. Section 801(a)(1) requires an agency to submit each new rule to Congress before it can take effect; Section 802 sets out the expedited procedure for a joint resolution of disapproval. A joint resolution disapproving a specific rule, once enacted, states that the disapproved rule 'shall have no force or effect' -- the operative language of, for example, Public Law 119-5 (10 April 2025), which disapproved an IRS digital-asset broker reporting rule.",
+  "related_terms": ["digital-asset-broker"],
+  "first_used_card_id": "023ed5b02ccc066ffac3316c4e67f956802652e0187dd9bfcf3de2d0b3bc7a97",
+  "generated_at": "2026-07-25T09:12:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "023ed5b02ccc066ffac3316c4e67f956802652e0187dd9bfcf3de2d0b3bc7a97",
+  "jurisdiction_id": "us",
+  "published_date": "2024-12-30",
+  "regulator": "Internal Revenue Service (IRS), U.S. Department of the Treasury",
+  "pillar": ["dealing_custody_advisory"],
+  "type": "conclusions",
+  "title": "Gross Proceeds Reporting by Brokers That Regularly Provide Services Effectuating Digital Asset Sales",
+  "summary": "On 30 December 2024, the US Treasury Department's Internal Revenue Service published final regulations (Treasury Decision 10021, 89 FR 106928) amending 26 CFR 1.6045-1 to require brokers that regularly provide services effectuating digital asset sales and exchanges to file information returns and furnish payee statements reporting customers' gross proceeds. The regulations extended the broker-reporting definition to reach decentralized finance (DeFi) trading front-end service providers and other persons giving customers access to digital asset trading platforms or automatically executing DeFi protocols. They were due to take effect 28 February 2025, with applicability dates set out in section 1.6045-1(q). On 10 April 2025, however, Congress and the President disapproved the rule under the Congressional Review Act (Public Law 119-5), a step that voids a disapproved rule entirely, as though it had never taken effect.",
+  "why_it_matters": "This rule would have required decentralized finance (DeFi) platforms to report customers' digital asset transactions to the IRS for the first time, extending broker tax-reporting duties beyond centralized exchanges. It never took legal effect, though: Congress disapproved it under the Congressional Review Act four months after Treasury finalized it, a mechanism that by law treats a disapproved rule as if it never applied.",
+  "key_dates": {
+    "effective": "2025-02-28",
+    "milestone": "2025-04-10"
+  },
+  "citations": [
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2024-12-30/html/2024-30496.htm",
+      "quote": "final regulations regarding information reporting by brokers"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ5/html/PLAW-119publ5.htm",
+      "quote": "shall have no force or effect"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-25T09:10:00Z",
+  "model": "Claude (Anthropic)"
+}

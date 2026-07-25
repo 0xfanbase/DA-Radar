@@ -1,46 +1,6 @@
 {
-  "generated_at": "2026-07-23T04:46:18Z",
+  "generated_at": "2026-07-25T05:16:01Z",
   "items": [
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "023ed5b02ccc066ffac3316c4e67f956802652e0187dd9bfcf3de2d0b3bc7a97",
-      "link": "https://www.federalregister.gov/documents/2024/12/30/2024-30496/gross-proceeds-reporting-by-brokers-that-regularly-provide-services-effectuating-digital-asset-sales",
-      "published_at": "2024-12-30T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "This document contains final regulations regarding information reporting by brokers that regularly provide services effectuating certain digital asset sales and exchanges. The final regulations require these brokers to file information returns and furnish payee statements reporting gross proceeds on dispositions of digital assets effected for customers in certain sale or exchange transactions.",
-      "title": "Gross Proceeds Reporting by Brokers That Regularly Provide Services Effectuating Digital Asset Sales"
-    },
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "0fc58aa001676ecea0c9ae30afd1d8a1bae6981ad6f102287e4859aca69fdf5b",
-      "link": "https://www.federalregister.gov/documents/2022/06/01/2022-11676/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-a-proposed-rule-change-to",
-      "published_at": "2022-06-01T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "",
-      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
-    },
-    {
-      "feed_id": "fincen_press_releases",
-      "item_hash": "18b380d7168fde0a1b6089558fae30dc7907e6f4628e5b684bfaaf8032d2ca43",
-      "link": "https://www.fincen.gov/news/news-releases/fincen-announces-recipients-its-11th-law-enforcement-awards-program",
-      "published_at": "2026-06-22T00:00:00Z",
-      "source_id": "fincen",
-      "status": "queued",
-      "summary": "WASHINGTON—Last week, the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) recognized seven cases during its Law Enforcement Awards Program for effectively using Bank Secrecy Act (BSA) data to support criminal prosecutions and…",
-      "title": "FinCEN Announces Recipients of Its 11th Law Enforcement Awards Program"
-    },
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "18e009a1e65e145d956d100eb6c8598a94cc79c3851c3278a4462c4a609d69bf",
-      "link": "https://www.federalregister.gov/documents/2021/11/18/2021-25129/self-regulatory-organizations-cboe-bzx-exchange-inc-order-disapproving-a-proposed-rule-change-to",
-      "published_at": "2021-11-18T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "",
-      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the VanEck Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
-    },
     {
       "feed_id": "fedreg_digital_assets",
       "item_hash": "19cc761821a5364080d2ed2dc8b895badd825b26632d4bd13c5896f4d2be358a",

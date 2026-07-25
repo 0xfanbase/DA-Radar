@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "0fc58aa001676ecea0c9ae30afd1d8a1bae6981ad6f102287e4859aca69fdf5b",
+  "jurisdiction_id": "us",
+  "published_date": "2022-06-01",
+  "regulator": "SEC",
+  "pillar": ["funds_etfs"],
+  "type": "consultation",
+  "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares",
+  "summary": "On 1 June 2022, the Federal Register published an SEC notice that Cboe BZX Exchange had filed a proposed rule change (File No. SR-CboeBZX-2022-031, filed 13 May 2022) to list and trade shares of the ARK 21Shares Bitcoin ETF under BZX Rule 14.11(e)(4), the exchange's Commodity-Based Trust Shares listing standard. The trust's sponsor is 21Shares US LLC, with ARK Investment Management LLC providing marketing services. Publication of the notice opened a public comment period under Exchange Act Section 19(b)(1), the first procedural step before the Commission could approve, disapprove, or open formal proceedings on the proposed listing; the notice itself takes no position on, and does not resolve, how the SEC will ultimately act on the proposal.",
+  "why_it_matters": "This is the procedural first step the SEC required before it could approve, disapprove, or open formal proceedings on a proposed crypto exchange-traded product listing: publishing the exchange's proposal and inviting public comment. It does not itself approve or disapprove anything, and this notice does not address the proposal's eventual outcome.",
+  "citations": [
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2022-06-01/html/2022-11676.htm",
+      "quote": "Cboe BZX Exchange, Inc. filed with the Securities and Exchange Commission a proposed rule change"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-25T09:25:00Z",
+  "model": "Claude (Anthropic)"
+}

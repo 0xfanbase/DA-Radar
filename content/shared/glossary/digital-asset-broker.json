@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "digital-asset-broker",
+  "term": "Digital asset broker (tax reporting)",
+  "jurisdictions": ["us"],
+  "plain_definition": "A term the US Treasury Department and IRS defined broadly for federal tax information-reporting purposes, covering any person who, for consideration, regularly provides services effectuating transfers of digital assets on behalf of customers. Depending on the specific regulation, this can include digital asset trading platforms, digital asset payment processors, certain hosted wallet providers, and -- under a final rule Congress later disapproved -- decentralized finance (DeFi) trading front-end services. It is a tax-law definition tied to broker information returns, distinct from the securities-law meaning of 'broker-dealer.'",
+  "formal_definition": "26 CFR 1.6045-1, implementing Internal Revenue Code Section 6045 broker information-reporting requirements as applied to digital assets. The extension of this definition to DeFi trading front-end service providers, made by Treasury Decision 10021 (30 December 2024), was disapproved under the Congressional Review Act by Public Law 119-5 (10 April 2025) and has no force or effect.",
+  "related_terms": ["congressional-review-act"],
+  "first_used_card_id": "023ed5b02ccc066ffac3316c4e67f956802652e0187dd9bfcf3de2d0b3bc7a97",
+  "generated_at": "2026-07-25T09:12:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}
