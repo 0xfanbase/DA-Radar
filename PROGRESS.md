@@ -2182,6 +2182,75 @@ stop-and-report if something else is still wrong -- is the only real verificatio
 entry's description of the fix. Follow-up check recorded separately once that evidence exists,
 per this project's own standing discipline of trusting commits and files over a self-report.
 
+### 2026-07-25 -- The 07-21 fix didn't work either: `trig_01MYCeCc5MEoHAYbNtZvyDV9` disabled, replaced with a session-bound Routine
+
+Owner asked directly for a workaround, hypothesizing that scheduled/Routine-fired fresh sessions
+in Claude Code aren't reliably connected to this GitHub repo the way an interactive session is.
+Checked before acting on that hypothesis, not assumed: `git log origin/main` has zero
+`analyst(...)`/`verifier(...)` commits anywhere in this repo's history, ever, under either bot
+identity. The 07-21 entry above's own fix (isolated `/tmp/da-radar-automation-run` clone,
+eliminating the shared-checkout cause) has now fired every night since -- the same-day test fire
+plus four more nightly firings through last night (`last_fired_at` 2026-07-24T22:31:51Z, next
+`22:31:34Z` tonight, confirmed live via `list_triggers`) -- and produced nothing. The follow-up
+check that entry said would be "recorded separately once that evidence exists" was never written;
+it should have been the first place this was caught. Backlog by this morning: 131 queued items
+across every `analyst_verifier: "live"` jurisdiction (68 hk, 43 us, 11 jp, 6 uk, 3 eu, 0 uae/ch;
+sg correctly excluded -- still `"planned"`).
+
+**Consulted Fable and Opus as project directors, per the owner's explicit request** -- both given
+the same evidence and told to verify it independently rather than take it on trust, same standing
+discipline as every prior consultation in this file. Both confirmed the zero-commit finding and
+converged on the same diagnosis and direction, reached independently:
+
+- **Diagnosis, sharper than the owner's original hypothesis.** `trig_01MYCeCc5MEoHAYbNtZvyDV9` has
+  no `persist_session`/`persistent_session_id` -- genuinely fresh-session-per-fire. Every other
+  working nightly Routine on this account (three, for an unrelated project) sets both, and one of
+  their own prompts states outright: "This session is already authorized to read/write [the repo],
+  so a plain clone is sufficient -- no repo-registration step is needed." Opus additionally found
+  the mechanism: this environment's `~/.gitconfig` rewrites `https://github.com/` to a local proxy
+  URL with a proxy-injected token, scoped to the calling session -- a brand-new fresh-fired session
+  most likely never receives that scope, so the clone itself (not just the later push) probably
+  never succeeds, which is exactly consistent with sixteen-plus silent nights and zero observable
+  trace of any kind.
+- **Q1 (root-cause fix vs. workaround):** both said do the workaround now -- session-binding is the
+  only pattern with actual proof on this account, `create_trigger` exposes no repo-scope parameter
+  to fix the fresh-session path directly, and ten-plus silent nights across two fix attempts had
+  already spent the benefit of the doubt. Fable proposed a cheap, separate, non-blocking root-cause
+  probe for later: a one-shot fresh-session trigger whose only job is pushing an empty
+  `probe/ccr-fresh-session-<date>` branch -- the branch either appears or it doesn't, no transcript
+  needed to read the result. Not run yet; logged in IMPROVEMENT_BACKLOG.md rather than actioned,
+  since it's forensic, not blocking today's fix.
+- **Q2 (old trigger):** disable, never delete -- deleting already cost this project
+  `trig_014KCBHpqU22iUiWfG3qBt93`'s history once (07-21 entry above), and leaving it enabled
+  alongside a working replacement risks two sessions drafting the same queue items and racing to
+  push `main`, the same bug class `watch.yml`'s matrix race was fixed for on 07-21.
+- **Q3 (safeguards for running inside a session the owner also uses interactively):** the one
+  must-fix both directors converged on independently -- self-bound Routines cannot carry the
+  `notifications` param (the server rejects it), so this design is otherwise just as unobservable
+  from outside as the trigger it replaces. Fixed by requiring two things every single firing, not
+  just on a real processing night: (a) a PROGRESS.md heartbeat entry even when every queue is empty,
+  so "ran, nothing to do" and "didn't run" are never indistinguishable again: exactly the gap that
+  let 07-21's fix run silently-broken for four more nights before anyone caught it; (b) a
+  `PushNotification` call on any stop-and-report condition, since there's no other channel that
+  reaches the owner unprompted. Also folded in: verify every push against `origin/main` for real
+  rather than trusting the commit step's own exit code, never raise the existing 4/jurisdiction /
+  10/firing caps until several proven cycles, and a noted tradeoff neither the old trigger nor this
+  one avoids -- this workaround's durability is tied to this specific session's continued existence
+  (`ended_reason: auto_disabled_session_gone` if it's ever deleted, per Fable, already observed once
+  on this account for an unrelated trigger) and its context will grow unboundedly over weeks of
+  nightly firings plus unrelated interactive use of the same session. Logged in
+  IMPROVEMENT_BACKLOG.md as a portability caveat, not fixed here.
+
+**Done:** `trig_01MYCeCc5MEoHAYbNtZvyDV9` disabled (`enabled: false`, not deleted). New trigger
+`trig_01CHa5wLW4G5LGj8fREeKUkE` created, bound to this session (`persistent_session_id`
+`session_011UUDEzUUzYP4ea45aAPcWc`), same `30 22 * * *` UTC schedule, prompt carrying all of the
+Q3 must-fixes above plus the same isolation/caps/identity/gate discipline the old trigger's prompt
+already had. Fired once immediately (`fire_trigger`) as a same-day supervised test, per both
+directors' direction to rehearse this before trusting it unattended overnight. Same discipline as
+every entry above: this description of the fix is not the verification. Real evidence is
+`analyst(...)`/`verifier(...)` commits actually landing on `origin/main`, or a clear stop-and-report
+-- recorded separately, once it exists.
+
 ### 2026-07-25 -- First real analyst/verifier output in this project's history: session-bound trigger's supervised test fire (hk/us/eu processed)
 
 The 07-21 fix above never worked either -- confirmed via `git log`, zero `analyst(...)`/`verifier(...)`
@@ -2300,5 +2369,6 @@ call, not a bug with one obvious answer. Detail in IMPROVEMENT_BACKLOG.md.
 closing the never-ran-analyst/verifier finding for real, with commits as the evidence, not a
 self-report. `data/hk/queue.json` (68), `data/us/queue.json` (39 after this firing's 4),
 `data/eu/queue.json` (2, including the permanently-recurring cartel item), `data/uk/queue.json` (6),
-and `data/jp/queue.json` (11) remain for future firings. PR #16 (documenting the trigger swap itself)
-is still open as of this entry.
+and `data/jp/queue.json` (11) remain for future firings. PR #16 (documenting the trigger-swap
+decision above) is being merged alongside this entry, along with PR #17 (an unrelated `.gitignore`
+fix for the worktree-isolation scratch dirs this same firing's sub-agents ran in).
