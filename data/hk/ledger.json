@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T04:43:51Z",
+  "generated_at": "2026-07-25T04:39:09Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -432,6 +432,22 @@
       "status": "queued",
       "summary": "",
       "title": "SFC and HKMA joint product survey 2025"
+    },
+    "054176f8c39b63a02dddf09ae4198cfbfbc6093804a5371c27fca5432b568395": {
+      "card_id": null,
+      "content_hash": "8c8a0554820e80e2ba91d1a9b32393108a04daca897af74e5391f0de175a2a59",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-25T04:39:09Z",
+      "guid": null,
+      "item_hash": "054176f8c39b63a02dddf09ae4198cfbfbc6093804a5371c27fca5432b568395",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260724-3/",
+      "published_at": "2026-07-23T16:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Complaints Watch Issue No. 28"
     },
     "054656b27a271b9d2d50c27a9437b87d5a07503943ec3017ac7b55b3187388fa": {
       "card_id": null,
@@ -9153,6 +9169,22 @@
       "summary": "",
       "title": "The Eighth Hong Kong-Switzerland Financial Dialogue"
     },
+    "8d2c2016096fee6a334b6303e86f4b9afd8b398d4e243b267ff5fe7b86e8fdb7": {
+      "card_id": null,
+      "content_hash": "07ba151854bd1cdb6e575634ab39847f93c9ed4dcd04c5b016b5b129e01d8740",
+      "feed_id": "sfc_press_releases",
+      "first_seen": "2026-07-25T04:39:09Z",
+      "guid": "26PR113",
+      "item_hash": "8d2c2016096fee6a334b6303e86f4b9afd8b398d4e243b267ff5fe7b86e8fdb7",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR113",
+      "published_at": "2026-07-24T08:11:20Z",
+      "raw_published": "Fri, 24 Jul 2026 16:11:20 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "SFC reprimands and fines Victory Securities Company Limited $1.7 million and suspends its responsible officer for regulatory breaches"
+    },
     "8e072cece283ae3a85d7aa73090d9dcefb476270e108beca003aa2e3b5258eea": {
       "card_id": null,
       "content_hash": "bae9ff7a3de45916e8ad5d62dbbbd6655b324aacc43281a53cfad752150715ef",
@@ -13217,6 +13249,22 @@
       "summary": "",
       "title": "Scam alert related to banks"
     },
+    "cbcb1d841929c3eb5d1fce46a37d0d652bf9c9d321eb11fb58f5f546ee75da6a": {
+      "card_id": null,
+      "content_hash": "053a35e411176d38b55ddd7b2540e51dd33894b7a7fd4edac593739a4f232e4d",
+      "feed_id": "sfc_press_releases",
+      "first_seen": "2026-07-25T04:39:09Z",
+      "guid": "26PR115",
+      "item_hash": "cbcb1d841929c3eb5d1fce46a37d0d652bf9c9d321eb11fb58f5f546ee75da6a",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR115",
+      "published_at": "2026-07-24T08:42:04Z",
+      "raw_published": "Fri, 24 Jul 2026 16:42:04 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "SFC enhances regulatory framework for daily leveraged and inverse products to ensure orderly market trading"
+    },
     "cbecdf48bb7d14caa42af87847a03eae6bb30609033c3032ea4e5f5d1be5e01d": {
       "card_id": null,
       "content_hash": "45c9bf357b3a618c38af8ec94b34e8a3688e66ad718ee20563937b571ed8246a",
@@ -13776,6 +13824,22 @@
       "status": "queued",
       "summary": "",
       "title": "Opening Remarks at Data Summit 2025 on “Empowering Business and Trade Through Advanced Data Infrastructure” (Chinese version) by Eddie Yue, Chief Executive, Hong Kong Monetary Authority"
+    },
+    "d724189dc9d57454d0f0d54ce39af0612179438088d2d9d7bda858b2f8f19c79": {
+      "card_id": null,
+      "content_hash": "3df75e992a913cecddc225a1173a9468351a209ae6fb69956dbfb1aa1d095aa6",
+      "feed_id": "sfc_circulars",
+      "first_seen": "2026-07-25T04:39:09Z",
+      "guid": "26EC43",
+      "item_hash": "d724189dc9d57454d0f0d54ce39af0612179438088d2d9d7bda858b2f8f19c79",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC43",
+      "published_at": "2026-07-24T08:27:04Z",
+      "raw_published": "Fri, 24 Jul 2026 16:27:04 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "Circular on listed structured funds"
     },
     "d7baae1821e02f8e3bf9a9f4867a183439d6e0db3718b714f49c4410a8ccfc88": {
       "card_id": null,
