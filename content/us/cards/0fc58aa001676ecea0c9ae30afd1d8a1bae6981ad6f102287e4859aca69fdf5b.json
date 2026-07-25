@@ -12,10 +12,10 @@
   "citations": [
     {
       "url": "https://www.govinfo.gov/content/pkg/FR-2022-06-01/html/2022-11676.htm",
-      "quote": "Cboe BZX Exchange, Inc. filed with the Securities and Exchange Commission a proposed rule change"
+      "quote": "The Commission is publishing this notice to solicit comments on the proposed rule change"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-25T09:25:00Z",
   "model": "Claude (Anthropic)"
 }

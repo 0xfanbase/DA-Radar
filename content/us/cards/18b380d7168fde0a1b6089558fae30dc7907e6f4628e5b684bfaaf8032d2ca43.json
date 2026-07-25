@@ -7,15 +7,15 @@
   "pillar": ["aml_cft_enforcement"],
   "type": "circular",
   "title": "FinCEN Announces Recipients of Its 11th Law Enforcement Awards Program",
-  "summary": "On 22 June 2026, FinCEN announced the recipients of its 11th Law Enforcement Awards Program, recognizing seven cases for effectively using Bank Secrecy Act (BSA) data to support criminal prosecutions and safeguard the financial system. FinCEN reviewed 42 case nominations from 39 separate law enforcement agencies, drawing on more than 16,000 BSA reports filed by more than 1,400 financial institutions; the recognized cases collectively resulted in 96 convictions, $1.1 billion seized, and $347 million in restitution. Recognized cases involved agencies including the FBI, DEA, IRS Criminal Investigation, the US Postal Inspection Service, and HUD's Office of Inspector General, and named matters involving Backpage.com and TD Bank. FinCEN Director Andrea Gacki is quoted in the release. One recognized case, involving cyber-enabled sextortion, is described as involving digital wallet accounts.",
-  "why_it_matters": "This release announces no new rule or requirement. It illustrates how the Bank Secrecy Act data that crypto and other financial businesses file with FinCEN can later be used by law enforcement to build criminal cases, including one case the release describes as involving digital wallet accounts.",
+  "summary": "On 22 June 2026, FinCEN announced the recipients of its 11th Law Enforcement Awards Program, recognizing seven cases for effectively using Bank Secrecy Act (BSA) data to support criminal prosecutions and safeguard the financial system. FinCEN received 42 case nominations from 39 separate law enforcement agencies; those nominated cases together involved more than 16,000 BSA reports filed by more than 1,400 financial institutions and resulted in 96 convictions, $1.1 billion seized, and $347 million in restitution. Recognized cases involved agencies including the FBI, DEA, IRS Criminal Investigation, the US Postal Inspection Service, and HUD's Office of Inspector General, and named matters involving Backpage.com and TD Bank. FinCEN Director Andrea Gacki is quoted in the release. One recognized case, involving cyber-enabled sextortion, is described as involving digital wallet accounts.",
+  "why_it_matters": "This release announces no new rule or requirement. It illustrates how Bank Secrecy Act (BSA) data filed with FinCEN can later be used by law enforcement to build criminal cases, including one case the release describes as involving digital wallet accounts.",
   "citations": [
     {
       "url": "https://www.fincen.gov/news/news-releases/fincen-announces-recipients-its-11th-law-enforcement-awards-program",
       "quote": "recognized seven cases during its Law Enforcement Awards Program for effectively using"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-25T09:35:00Z",
   "model": "Claude (Anthropic)"
 }
