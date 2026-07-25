@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T22:58:34Z",
+  "generated_at": "2026-07-25T23:15:07Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -29,7 +29,7 @@
       "raw_published": "Mon, 07 Apr 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Provision of Staking Services for Virtual Assets from Custodial Services (PDF File, 131.0 KB)"
     },
@@ -45,7 +45,7 @@
       "raw_published": "Fri, 13 Jun 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)3 Part IIIc"
     },
@@ -1037,7 +1037,7 @@
       "raw_published": "Wed, 19 Mar 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Research Paper on Distributed Ledger Technology in the Financial Sector Annex: Distributed Ledger Technology in the Financial Sector - A Study on the Opportunities and Challenges"
     },
@@ -1133,7 +1133,7 @@
       "raw_published": "Wed, 19 Mar 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Research Paper on Distributed Ledger Technology in the Financial Sector (PDF File, 122.5 KB)"
     },
