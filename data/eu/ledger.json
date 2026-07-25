@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T04:39:07Z",
+  "generated_at": "2026-07-25T05:48:28Z",
   "items": {
     "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
       "card_id": null,
@@ -1602,7 +1602,7 @@
       "title": "​The EBA publishes final Guidelines on the authorisation of third-country branches under the Capital Requirements Directive"
     },
     "d1f2172063e3fa54965c96dc2b72020bc8c956b9a42255615e5577c63e120d77": {
-      "card_id": null,
+      "card_id": "d1f2172063e3fa54965c96dc2b72020bc8c956b9a42255615e5577c63e120d77",
       "content_hash": "5a161ae6fec98823286fae1a827dc5833fb61859d53a66e17891f9d8467cb6c7",
       "feed_id": "ecb_press",
       "first_seen": "2026-07-22T04:42:34Z",
@@ -1613,7 +1613,7 @@
       "raw_published": "Tue, 14 Jul 2026 11:00:00 +0200",
       "relevant": true,
       "source_id": "ecb",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "ECB selects 36 payment service providers to join digital euro pilot"
     },

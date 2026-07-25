@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T04:42:34Z",
+  "generated_at": "2026-07-25T05:48:28Z",
   "items": [
     {
       "feed_id": "ec_presscorner",
@@ -10,16 +10,6 @@
       "status": "queued",
       "summary": "European Commission Press release Brussels, 20 Jul 2026 The European Commission has informed several manufacturers of construction chemicals active in France, Germany and Spain as well as three national trade associations, of its preliminary view that they have breached EU antitrust rules by colluding to increase prices in the supply of chemicals for cement, concrete and mortar.",
       "title": "Commission sends Statements of Objections to several companies and trade associations in suspected construction chemicals cartel"
-    },
-    {
-      "feed_id": "ecb_press",
-      "item_hash": "d1f2172063e3fa54965c96dc2b72020bc8c956b9a42255615e5577c63e120d77",
-      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html",
-      "published_at": "2026-07-14T09:00:00Z",
-      "source_id": "ecb",
-      "status": "queued",
-      "summary": "",
-      "title": "ECB selects 36 payment service providers to join digital euro pilot"
     },
     {
       "feed_id": "ecb_press",

@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "id": "payment-service-provider",
+  "term": "Payment service provider (PSP)",
+  "jurisdictions": [
+    "global"
+  ],
+  "plain_definition": "A firm authorised to provide payment services -- such as executing payments, issuing payment instruments, or enabling merchants to accept payments -- to customers. It is a generic payments-regulation category used across many jurisdictions, distinct from a crypto-asset service provider (which deals in crypto-assets) or a central bank (which issues currency). In the ECB's digital euro pilot, participating PSPs take one of two roles: a 'distributing PSP' gives customers a beta digital euro account and payment services, while an 'acquiring PSP' enables merchants to receive beta digital euro payments; some PSPs hold both roles at once.",
+  "formal_definition": "As used in the ECB's digital euro pilot: distributing PSPs 'give Eurosystem staff access to beta digital euro services, such as setting up their beta digital euro account and paying', and acquiring PSPs 'serve selected merchants and enable them to receive beta digital euro payments' (ECB press release, 14 July 2026).",
+  "related_terms": [
+    "digital-euro"
+  ],
+  "first_used_card_id": "d1f2172063e3fa54965c96dc2b72020bc8c956b9a42255615e5577c63e120d77",
+  "generated_at": "2026-07-25T06:00:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}
