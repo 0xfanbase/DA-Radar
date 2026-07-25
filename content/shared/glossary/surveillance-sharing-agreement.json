@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "surveillance-sharing-agreement",
+  "term": "Surveillance-sharing agreement",
+  "jurisdictions": ["us"],
+  "plain_definition": "An arrangement giving a listing exchange access to trading data from the market where an exchange-traded product's underlying asset, or a derivative on it, actually trades, so the exchange can help detect fraud and manipulation. An exchange typically satisfies this by showing that market is a member of the Intermarket Surveillance Group (ISG), a group of exchanges and regulators that share surveillance information with one another, or by entering into a bespoke surveillance-sharing agreement with that market directly.",
+  "formal_definition": "Cited in SEC orders and notices reviewing proposed rule changes under Exchange Act Section 19(b) as one basis for finding that a national securities exchange's rules are designed to prevent fraudulent and manipulative acts and practices, as Section 6(b)(5) (15 U.S.C. 78f(b)(5)) requires; also incorporated as an eligibility pathway in the SEC's generic listing standards for Commodity-Based Trust Shares (Release No. 34-103995, 17 September 2025).",
+  "related_terms": ["commodity-based-trust-shares", "self-regulatory-organization"],
+  "first_used_card_id": "2d715e79b95cf9ef06e3ff7d7cf01f03fd2b26064e9245dd9d4bd5304a820962",
+  "generated_at": "2026-07-25T11:37:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

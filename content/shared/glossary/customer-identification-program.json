@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "customer-identification-program",
+  "term": "Customer identification program (CIP)",
+  "jurisdictions": ["us"],
+  "plain_definition": "A set of procedures a financial institution must follow under Bank Secrecy Act regulations to verify each customer's identity before opening an account -- collecting identifying information such as name, address, and taxpayer identification number, and verifying it through documentary or other means. Banks have long been required to maintain one; the GENIUS Act's implementing rulemaking would extend the same kind of requirement to permitted payment stablecoin issuers, a category of company the Act newly created.",
+  "formal_definition": "31 CFR 1020.220 sets out the customer identification program requirement currently applicable to banks under the Bank Secrecy Act. The rule proposed here would add a parallel customer identification program requirement for permitted payment stablecoin issuers as part of implementing the GENIUS Act (Public Law 119-27).",
+  "related_terms": ["genius-act", "permitted-payment-stablecoin-issuer", "bank-secrecy-act"],
+  "first_used_card_id": "19e3dd55833e892bd028cf302e52c748fd94ddc7ee6093b16be905056d1ed792",
+  "generated_at": "2026-07-25T11:17:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

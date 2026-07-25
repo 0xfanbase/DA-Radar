@@ -1,46 +1,6 @@
 {
-  "generated_at": "2026-07-25T05:16:01Z",
+  "generated_at": "2026-07-25T23:32:05Z",
   "items": [
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "19cc761821a5364080d2ed2dc8b895badd825b26632d4bd13c5896f4d2be358a",
-      "link": "https://www.federalregister.gov/documents/2021/09/09/2021-19420/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-of-a-proposed-rule-change",
-      "published_at": "2021-09-09T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "",
-      "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of a Proposed Rule Change, as Modified by Amendment No. 1, To List and Trade Shares of the Valkyrie XBTO Bitcoin Futures Fund Under Nasdaq Rule 5711(g)"
-    },
-    {
-      "feed_id": "fincen_press_releases",
-      "item_hash": "19e3dd55833e892bd028cf302e52c748fd94ddc7ee6093b16be905056d1ed792",
-      "link": "https://www.fincen.gov/news/news-releases/fincen-agencies-propose-rule-implement-genius-act-customer-identification",
-      "published_at": "2026-06-18T00:00:00Z",
-      "source_id": "fincen",
-      "status": "queued",
-      "summary": "WASHINGTON—Today, the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN), together with the Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, and the National…",
-      "title": "FinCEN, Agencies Propose Rule to Implement GENIUS Act Customer Identification Program Requirement"
-    },
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "20e400bc8610bfa502d57420d63d246e6e905e64a1960a1ce262ac9556ec0e82",
-      "link": "https://www.federalregister.gov/documents/2024/07/02/2024-14516/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-of-proposed-rule-change",
-      "published_at": "2024-07-02T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "",
-      "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of Proposed Rule Change To List and Trade Shares of the Hashdex Nasdaq Crypto Index US ETF Under Nasdaq Rule 5711(d)"
-    },
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "2d715e79b95cf9ef06e3ff7d7cf01f03fd2b26064e9245dd9d4bd5304a820962",
-      "link": "https://www.federalregister.gov/documents/2024/01/12/2024-00506/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-of-amendment-no-3-to-a-proposed",
-      "published_at": "2024-01-12T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "",
-      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of Amendment No. 3 to a Proposed Rule Change To List and Trade Shares of the Fidelity Wise Origin Bitcoin Fund Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
-    },
     {
       "feed_id": "fedreg_digital_assets",
       "item_hash": "3abc52fa56221eedc5541f4cb57b15a5b937612639ab4155eaaea77243f50898",

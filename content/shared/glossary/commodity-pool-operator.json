@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "commodity-pool-operator",
+  "term": "Commodity pool operator (CPO)",
+  "jurisdictions": ["us"],
+  "plain_definition": "A person or firm registered with the CFTC that operates a pooled investment vehicle -- a 'commodity pool' -- trading in futures, options, or swaps on behalf of investors. Some exchange-traded funds that invest in bitcoin futures contracts, rather than in bitcoin itself, are structured this way, with the fund's sponsor registered as the pool's commodity pool operator.",
+  "formal_definition": "Commodity Exchange Act Section 1a(11) (7 U.S.C. 1a(11)) defines 'commodity pool operator.' CFTC Regulation 4.10(d) (17 CFR 4.10(d)) defines 'commodity pool.' A commodity pool operator must generally register with the CFTC, through the National Futures Association, under Commodity Exchange Act Section 4m (7 U.S.C. 6m), unless an exemption applies.",
+  "related_terms": ["self-regulatory-organization", "commodity-based-trust-shares"],
+  "first_used_card_id": "19cc761821a5364080d2ed2dc8b895badd825b26632d4bd13c5896f4d2be358a",
+  "generated_at": "2026-07-25T11:07:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

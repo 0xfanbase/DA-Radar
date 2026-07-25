@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "20e400bc8610bfa502d57420d63d246e6e905e64a1960a1ce262ac9556ec0e82",
+  "jurisdiction_id": "us",
+  "published_date": "2024-07-02",
+  "regulator": "SEC",
+  "pillar": ["funds_etfs"],
+  "type": "consultation",
+  "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of Proposed Rule Change To List and Trade Shares of the Hashdex Nasdaq Crypto Index US ETF Under Nasdaq Rule 5711(d)",
+  "summary": "On 2 July 2024, the Federal Register published an SEC notice that Nasdaq had filed a proposed rule change (File No. SR-NASDAQ-2024-028, filed 17 June 2024) to list and trade shares of the Hashdex Nasdaq Crypto Index US ETF under Nasdaq Rule 5711(d), the exchange's Commodity-Based Trust Shares listing standard. Sponsored by Hashdex Asset Management Ltd., the trust would hold bitcoin and ether directly, tracking the Nasdaq Crypto US Settlement Price Index, which the filing states was weighted, as of 27 May 2024, 70.54% bitcoin and 29.46% ether. Publication opened a public comment period under Exchange Act Section 19(b)(1); the notice takes no position on how the SEC will ultimately act on the proposal.",
+  "why_it_matters": "This is the same procedural first step -- publishing the exchange's proposal and opening it to public comment -- the SEC requires before it can approve, disapprove, or open formal proceedings on any crypto exchange-traded product; this particular filing proposed a single fund holding two crypto assets rather than the single-bitcoin trusts that dominate this category. The notice does not indicate how, or whether, the SEC will act on the proposal.",
+  "citations": [
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2024-07-02/html/2024-14516.htm",
+      "quote": "The assets of the Trust will consist of bitcoin and ether"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-25T11:25:00Z",
+  "model": "Claude (Anthropic)"
+}

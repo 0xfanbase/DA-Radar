@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T05:31:37Z",
+  "generated_at": "2026-07-25T23:32:05Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -226,7 +226,7 @@
       "title": "Agencies request comment on proposals to modernize the regulatory capital framework and maintain the strength of the banking system"
     },
     "19cc761821a5364080d2ed2dc8b895badd825b26632d4bd13c5896f4d2be358a": {
-      "card_id": null,
+      "card_id": "19cc761821a5364080d2ed2dc8b895badd825b26632d4bd13c5896f4d2be358a",
       "content_hash": "50db59f6128129d359bdb6125bf445ca2eaf0d9d466f3729eb2aecdd60fbd1bc",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -237,12 +237,12 @@
       "raw_published": "2021-09-09",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of a Proposed Rule Change, as Modified by Amendment No. 1, To List and Trade Shares of the Valkyrie XBTO Bitcoin Futures Fund Under Nasdaq Rule 5711(g)"
     },
     "19e3dd55833e892bd028cf302e52c748fd94ddc7ee6093b16be905056d1ed792": {
-      "card_id": null,
+      "card_id": "19e3dd55833e892bd028cf302e52c748fd94ddc7ee6093b16be905056d1ed792",
       "content_hash": "bde1f2b152643eaa1d992f872ce89ed385bc20973fa3514b3c22ed45e76a1a33",
       "feed_id": "fincen_press_releases",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -253,7 +253,7 @@
       "raw_published": "06/18/2026",
       "relevant": true,
       "source_id": "fincen",
-      "status": "queued",
+      "status": "drafted",
       "summary": "WASHINGTON—Today, the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN), together with the Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, and the National…",
       "title": "FinCEN, Agencies Propose Rule to Implement GENIUS Act Customer Identification Program Requirement"
     },
@@ -370,7 +370,7 @@
       "title": "FinCEN Issues Joint Advisory on Non-Work Authorized Populations and Their Employers and Risks to the Integrity of the U.S. Financial System"
     },
     "20e400bc8610bfa502d57420d63d246e6e905e64a1960a1ce262ac9556ec0e82": {
-      "card_id": null,
+      "card_id": "20e400bc8610bfa502d57420d63d246e6e905e64a1960a1ce262ac9556ec0e82",
       "content_hash": "03134df4869c54e30064629748db6dab8178b4ada64d5c26060be3c07ad62208",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -381,7 +381,7 @@
       "raw_published": "2024-07-02",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of Proposed Rule Change To List and Trade Shares of the Hashdex Nasdaq Crypto Index US ETF Under Nasdaq Rule 5711(d)"
     },
@@ -418,7 +418,7 @@
       "title": "SEC Announces New Members of Small Business Capital Formation Advisory Committee"
     },
     "2d715e79b95cf9ef06e3ff7d7cf01f03fd2b26064e9245dd9d4bd5304a820962": {
-      "card_id": null,
+      "card_id": "2d715e79b95cf9ef06e3ff7d7cf01f03fd2b26064e9245dd9d4bd5304a820962",
       "content_hash": "0c7190c3457bc61e2d1289d4a82c000c1aea7a6fc73ee84c81f88837a9ff5aff",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -429,7 +429,7 @@
       "raw_published": "2024-01-12",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of Amendment No. 3 to a Proposed Rule Change To List and Trade Shares of the Fidelity Wise Origin Bitcoin Fund Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
