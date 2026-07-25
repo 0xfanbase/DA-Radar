@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" fill="#F0EEE6"/>
+  <text x="262" y="280" text-anchor="middle" dominant-baseline="central"
+        font-family="Liberation Sans, Arial, Helvetica, sans-serif"
+        font-weight="700" font-style="italic" font-size="230"
+        letter-spacing="-4" fill="#000000">DA</text>
+</svg>
