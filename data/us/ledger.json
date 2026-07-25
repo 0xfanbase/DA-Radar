@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T04:43:52Z",
+  "generated_at": "2026-07-25T04:39:19Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -256,6 +256,22 @@
       "status": "queued",
       "summary": "WASHINGTON—Today, the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN), together with the Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, and the National…",
       "title": "FinCEN, Agencies Propose Rule to Implement GENIUS Act Customer Identification Program Requirement"
+    },
+    "1a741ef895843991a4cab719c58eac7ce7ea03f65acd8533d958affaf725ca24": {
+      "card_id": null,
+      "content_hash": "80952912f1f838105126ad8d92d18ca76a5c2e7f5f700d6d4db1f8737edc8ae0",
+      "feed_id": "fincen_press_releases",
+      "first_seen": "2026-07-25T04:39:19Z",
+      "guid": "https://www.fincen.gov/news/news-releases/fincen-issues-alert-fraud-schemes-targeting-federal-student-aid",
+      "item_hash": "1a741ef895843991a4cab719c58eac7ce7ea03f65acd8533d958affaf725ca24",
+      "link": "https://www.fincen.gov/news/news-releases/fincen-issues-alert-fraud-schemes-targeting-federal-student-aid",
+      "published_at": "2026-07-24T00:00:00Z",
+      "raw_published": "07/24/2026",
+      "relevant": false,
+      "source_id": "fincen",
+      "status": "queued",
+      "summary": "Today, the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) issued an Alert urging financial institutions to detect, prevent, and report suspicious activity connected to fraud schemes targeting student aid programs administered by the Federal government. …",
+      "title": "FinCEN Issues Alert on Fraud Schemes Targeting Federal Student Aid"
     },
     "1be21d8b08ada60675236b2950014009425a22fc77ed43ee92c03d2e15169b40": {
       "card_id": null,
@@ -1777,6 +1793,22 @@
       "summary": "",
       "title": "Chairman Selig Announces CFTC Agricultural Advisory Committee to Meet July 29 in Washington"
     },
+    "c7102b384a2685660f850c2e06f743044e8a0cea6d31efc2a8cbb1f9aa083f58": {
+      "card_id": null,
+      "content_hash": "d79eb95a640e28248c76f54deb9ddb868aaa8ecef3791bcb04796b77f2194af3",
+      "feed_id": "cftc_press_releases",
+      "first_seen": "2026-07-25T04:39:19Z",
+      "guid": "https://www.cftc.gov/PressRoom/PressReleases/9272-26",
+      "item_hash": "c7102b384a2685660f850c2e06f743044e8a0cea6d31efc2a8cbb1f9aa083f58",
+      "link": "https://www.cftc.gov/PressRoom/PressReleases/9272-26",
+      "published_at": "2026-07-24T19:05:39Z",
+      "raw_published": "Fri, 24 Jul 2026 19:05:39 +0000",
+      "relevant": false,
+      "source_id": "cftc",
+      "status": "queued",
+      "summary": "",
+      "title": "CFTC Staff Issues No-Action Position on Designated Contract Market Procedures"
+    },
     "cbb1571a7bb54a24377cbad2280f4731f025ae7fe404b064fd7a99c6a76bc429": {
       "card_id": null,
       "content_hash": "10923357acb6d3b1097fa004e53a41ee6b5fcca3d8a2822f43726ae5efc47210",
@@ -2208,6 +2240,22 @@
       "status": "queued",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change to List and Trade Shares of the WisdomTree Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    "faa324349daa4e5c0fdf7fc93493d6d361f8da207e21aefbbbdf1dc625128a10": {
+      "card_id": null,
+      "content_hash": "34aeb1c6be0aede8f02c91f661b9f2d5dd2be60f057b8b03bc079c5d0ea028a8",
+      "feed_id": "cftc_press_releases",
+      "first_seen": "2026-07-25T04:39:19Z",
+      "guid": "https://www.cftc.gov/PressRoom/PressReleases/9273-26",
+      "item_hash": "faa324349daa4e5c0fdf7fc93493d6d361f8da207e21aefbbbdf1dc625128a10",
+      "link": "https://www.cftc.gov/PressRoom/PressReleases/9273-26",
+      "published_at": "2026-07-24T19:30:31Z",
+      "raw_published": "Fri, 24 Jul 2026 19:30:31 +0000",
+      "relevant": false,
+      "source_id": "cftc",
+      "status": "queued",
+      "summary": "",
+      "title": "CFTC Releases Advisory on Self-Certification of an Event Contract Series"
     },
     "fb51e0e0744e927ba0799893668b7086775d83f86a8a299edbf30ff82c5ed94c": {
       "card_id": null,
