@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T04:43:51Z",
+  "generated_at": "2026-07-25T04:39:08Z",
   "items": {
     "02d83335c3f185a01f78ac8bf5f64fad166ccc68cc60456b0c37127aece0ca25": {
       "card_id": null,
@@ -193,6 +193,22 @@
       "summary": "",
       "title": "Councils,The Expert Panel on the Revision of the Corporate Governance Code (3rd meeting) Minutes"
     },
+    "27e47464fa9b9db3ab2a5e2299eac90c0bb5ca43e13eed3df4d7fecc2ac72c8a": {
+      "card_id": null,
+      "content_hash": "fe6296f3be51c860792924cfb0e62cb9ce7ca020b03d2ae779819a3abead4479",
+      "feed_id": "fsa_news_en",
+      "first_seen": "2026-07-25T04:39:08Z",
+      "guid": null,
+      "item_hash": "27e47464fa9b9db3ab2a5e2299eac90c0bb5ca43e13eed3df4d7fecc2ac72c8a",
+      "link": "https://www.fsa.go.jp/en/news/2026/20260724/20260724.html",
+      "published_at": "2026-07-24T17:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 17:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "Others,Publication of \"Progress Report 2026 for Advancing Asset Management Services in Japan\""
+    },
     "2a6bcf5e95f83b3695276e9436aa0cb265a5586c4fd1cf92ed1bfdea2958935e": {
       "card_id": null,
       "content_hash": "e91f2acb6f303a95b824f5a827a90ade777044a9167005ddeb16e2bf6fb2e208",
@@ -320,6 +336,38 @@
       "status": "queued",
       "summary": "",
       "title": "その他,審判手続状況一覧を更新しました。"
+    },
+    "4759e8162e503880ebebc5bdee5ff6f0675518473fa67977eca6b19b8c7b7424": {
+      "card_id": null,
+      "content_hash": "d1a6adc3e100b0336cd53ca5c15d8a23b55426b8a3f84efd439b0490f35dead9",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-25T04:39:08Z",
+      "guid": null,
+      "item_hash": "4759e8162e503880ebebc5bdee5ff6f0675518473fa67977eca6b19b8c7b7424",
+      "link": "https://www.fsa.go.jp/policy/nisa2/products/index.html",
+      "published_at": "2026-07-24T17:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 17:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "つみたて投資枠対象商品に関する、様々な資料を掲載しています。",
+      "title": "その他,つみたて投資枠対象商品の概要を更新しました。"
+    },
+    "47af414518f25506c36bfb62f9868a6859cf06156b98c39412a86fa54429b7ce": {
+      "card_id": null,
+      "content_hash": "d7f7340fbfc3bebfa97ff1002404ff009c5262b85821b22e4c140f84d45d72bf",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-25T04:39:08Z",
+      "guid": null,
+      "item_hash": "47af414518f25506c36bfb62f9868a6859cf06156b98c39412a86fa54429b7ce",
+      "link": "https://www.fsa.go.jp/news/r8/sonota/20260724-4/20260724.html",
+      "published_at": "2026-07-24T14:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 14:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "その他,「FinTech実証実験ハブ」支援決定案件の実験結果（第13号案件）について公表しました。"
     },
     "4853a9ade4c842917c45f97c589eb6aaa8d3a831ff1343d93eec6ca280c11b28": {
       "card_id": null,
@@ -449,6 +497,22 @@
       "summary": "",
       "title": "調達,入札公告等を更新しました。"
     },
+    "67499e4524ab719c7ca6d7614879a46c1155dcac920e58c0248168f0759ee2eb": {
+      "card_id": null,
+      "content_hash": "be03787d042c5820a7cdeb2ac76a219fddccc62a6d7537f15a09b2cb86c5f2d4",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-25T04:39:08Z",
+      "guid": null,
+      "item_hash": "67499e4524ab719c7ca6d7614879a46c1155dcac920e58c0248168f0759ee2eb",
+      "link": "https://www.fsa.go.jp/policy/pjlamc/20260724/20260724.html",
+      "published_at": "2026-07-24T17:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 17:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "「資産運用サービスの高度化に向けたプログレスレポート2026」について公表しました。"
+    },
     "6e3f4b29e5e97c9d373bdbd1aa196b4f50ded49e7bf0b193f8cdd3968fb257c1": {
       "card_id": null,
       "content_hash": "e166620afd9a24daa3665241d40c29d0c5d26921ce8576ec5d6646ee4c26b83a",
@@ -513,6 +577,22 @@
       "summary": "",
       "title": "その他,「国際会計基準審議会の議論内容及び討議資料等の調査分析等」（令和７年度）の成果物について公表しました。"
     },
+    "921a9c66db016b06aa38c473e68d7e5e5dc5a5d5958936afee00877e7c8c419f": {
+      "card_id": null,
+      "content_hash": "b0d5af1be2ac5b83cc6234828c386f49c0961c05b0a6c47eab3c15bb2b9f13d8",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-25T04:39:08Z",
+      "guid": null,
+      "item_hash": "921a9c66db016b06aa38c473e68d7e5e5dc5a5d5958936afee00877e7c8c419f",
+      "link": "https://www.fsa.go.jp/news/r8/ginkou/20260724/20260724.html",
+      "published_at": "2026-07-24T15:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 15:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "「地域活性化取組事典」について公表しました。"
+    },
     "923ec7138b88dceac28bb9a906d4682c26b42f06f63a40ab6910bb99bc001625": {
       "card_id": null,
       "content_hash": "001c222847fad70f924f25107e099adcf88bc0070776d133dff16c2d51361c24",
@@ -576,6 +656,22 @@
       "status": "queued",
       "summary": "",
       "title": "第153回自動車損害賠償責任保険審議会議事要旨について公表しました。"
+    },
+    "96098577be2bafee576ddd882ff7d1ad9ea8b27652449bea84d75738ab3ce506": {
+      "card_id": null,
+      "content_hash": "0ea85a2a30ca168ebb848f268038c52cbc43cfccb902fab02b18c19a6d0cfb39",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-25T04:39:08Z",
+      "guid": null,
+      "item_hash": "96098577be2bafee576ddd882ff7d1ad9ea8b27652449bea84d75738ab3ce506",
+      "link": "https://www.fsa.go.jp/news/r8/sonota/20260724/20260724.html",
+      "published_at": "2026-07-24T17:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 17:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "「金融分野における個人情報保護に関するガイドライン」の一部改正（案）に対する意見募集の結果等について公表しました。"
     },
     "968a98e7e9672d582c408cdbc2e367e2c3776f4fe5d70c3f91a240d7fb126ce2": {
       "card_id": null,
@@ -1024,6 +1120,22 @@
       "status": "queued",
       "summary": "",
       "title": "金融庁広報誌アクセスＦＳＡ第275号（2026年７月号）を発行しました。"
+    },
+    "ebc9ed38f2774c3f9d0d6533f876847ac7ade6cb7eaa8f3023e1ebc895d9288f": {
+      "card_id": null,
+      "content_hash": "88be33497debbdaa1aba02df9ddf9d9c549f99d210f280069d1e5fdc4fd7b6e8",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-25T04:39:08Z",
+      "guid": null,
+      "item_hash": "ebc9ed38f2774c3f9d0d6533f876847ac7ade6cb7eaa8f3023e1ebc895d9288f",
+      "link": "https://www.fsa.go.jp/news/r8/sonota/20260724-2/20260724.html",
+      "published_at": "2026-07-24T17:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 17:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "「金融商品取引法第二条に規定する定義に関する内閣府令等の一部を改正する内閣府令（案）」に対するパブリックコメントの実施について公表しました。"
     },
     "f14e995aede6c6e4718a3948f549319dd22bc11a3209fc852c8ea6d5ea7a5aea": {
       "card_id": null,
