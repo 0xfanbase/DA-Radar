@@ -111,12 +111,12 @@
   },
   {
     "schema_version": 1,
-    "date_or_window": "second half of 2027 (12-month pilot)",
-    "event": "Planned start of a 12-month digital euro pilot, part of the ECB's 'current phase' of continued preparation (running since November 2025); the ECB states that preparing for the pilot does not pre-empt any decision to issue the digital euro, which remains conditional on EU co-legislators adopting the digital euro Regulation. Stated by ECB Executive Board member Piero Cipollone in a 2 July 2026 speech",
+    "date_or_window": "September 2027 (12-month pilot)",
+    "event": "Planned start of a 12-month digital euro pilot, part of the ECB's 'current phase' of continued preparation (running since November 2025); the ECB states that preparing for the pilot does not pre-empt any decision to issue the digital euro, which remains conditional on EU co-legislators adopting the digital euro Regulation. First described only as 'the second half of 2027' by ECB Executive Board member Piero Cipollone in a 2 July 2026 speech, then narrowed to 'September 2027' and tied to a confirmed list of 36 selected payment service providers in his 17 July 2026 speech to Italy's cooperative credit banks (Federcasse)",
     "pillar": "banking_money",
-    "source_url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260702_1~c58dcd8150.en.pdf",
+    "source_url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260717~b6a156dc40.en.html",
     "confidence": "announced",
-    "generated_at": "2026-07-12T15:30:00Z",
+    "generated_at": "2026-07-25T06:30:00Z",
     "model": "Claude (Anthropic)",
     "status": "unverified"
   },

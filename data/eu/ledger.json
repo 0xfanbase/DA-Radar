@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T05:58:30Z",
+  "generated_at": "2026-07-26T00:01:04Z",
   "items": {
     "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
       "card_id": null,
@@ -1714,7 +1714,7 @@
       "title": "Speech by Commissioner Lahbib at the Health Emergency Preparedness and Response Authority (HERA) Implementation Dialogue"
     },
     "e7f1ccb14fca00cef44c6b7cbd886d81b454f41155de8493788dddae7fc4a371": {
-      "card_id": null,
+      "card_id": "e7f1ccb14fca00cef44c6b7cbd886d81b454f41155de8493788dddae7fc4a371",
       "content_hash": "4a4ad4ff7cd27d6a01b5eae6e0cd870adc10daca32ae4e667c6690a45d57c43b",
       "feed_id": "ecb_press",
       "first_seen": "2026-07-22T04:42:34Z",
@@ -1725,7 +1725,7 @@
       "raw_published": "Fri, 17 Jul 2026 12:00:00 +0200",
       "relevant": true,
       "source_id": "ecb",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Piero Cipollone: The cooperative spirit at the heart of the digital euro"
     },

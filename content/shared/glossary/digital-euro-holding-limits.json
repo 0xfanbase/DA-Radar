@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "digital-euro-holding-limits",
+  "term": "Digital euro holding limits",
+  "jurisdictions": ["eu"],
+  "plain_definition": "A cap, not yet fixed, on how much digital euro any one person could hold at a time. It is part of the digital euro's design so that people cannot shift large sums out of commercial bank deposits into digital euro, which could otherwise weaken bank funding or interfere with monetary policy. The ECB has said holding limits will be calibrated to avoid harming the digital euro's usability, financial stability, or monetary policy, and that no interest would be paid on digital euro holdings. The precise limit has not been set and depends on the digital euro Regulation being adopted; the ECB has referred to an October 2025 analysis it says found no systemic risk to bank liquidity or financial stability from the project as currently designed.",
+  "formal_definition": "ECB Executive Board member Piero Cipollone described holding limits, in a 17 July 2026 speech, as an additional safeguard that 'will be calibrated to avoid impairing usability, financial stability or monetary policy.' This entry reflects the ECB's own public description of the mechanism; it has not independently verified holding limits' precise legal basis against the operative articles of the still-unadopted digital euro proposal (European Commission, COM(2023) 369 final).",
+  "related_terms": ["digital-euro"],
+  "first_used_card_id": "e7f1ccb14fca00cef44c6b7cbd886d81b454f41155de8493788dddae7fc4a371",
+  "generated_at": "2026-07-25T06:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

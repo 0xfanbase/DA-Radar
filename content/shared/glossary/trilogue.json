@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "trilogue",
+  "term": "Trilogue",
+  "jurisdictions": ["eu"],
+  "plain_definition": "The informal, closed-door three-way negotiation between the European Parliament, the Council of the EU, and the European Commission that reconciles their differing positions on a piece of EU legislation into a single agreed text, once the Parliament and the Council have each adopted their own negotiating position. A trilogue does not itself finish the legislative process -- the resulting compromise text still has to be formally adopted by both the Parliament and the Council -- but it is the stage at which most of the real negotiation over a Regulation's or Directive's final wording happens. The digital euro Regulation entered trilogue in July 2026, after the European Parliament's plenary adopted its negotiating position on 9 July 2026.",
+  "formal_definition": "Trilogues are not defined in the EU Treaties themselves; they are an informal tripartite negotiation practice between the European Parliament, the Council of the EU and the European Commission, used to agree a single compromise text under the ordinary legislative procedure (Article 294 TFEU) ahead of each institution's own formal adoption.",
+  "related_terms": ["digital-euro"],
+  "first_used_card_id": "e7f1ccb14fca00cef44c6b7cbd886d81b454f41155de8493788dddae7fc4a371",
+  "generated_at": "2026-07-25T06:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

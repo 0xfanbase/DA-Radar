@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T05:48:28Z",
+  "generated_at": "2026-07-26T00:01:04Z",
   "items": [
     {
       "feed_id": "ec_presscorner",
@@ -10,16 +10,6 @@
       "status": "queued",
       "summary": "European Commission Press release Brussels, 20 Jul 2026 The European Commission has informed several manufacturers of construction chemicals active in France, Germany and Spain as well as three national trade associations, of its preliminary view that they have breached EU antitrust rules by colluding to increase prices in the supply of chemicals for cement, concrete and mortar.",
       "title": "Commission sends Statements of Objections to several companies and trade associations in suspected construction chemicals cartel"
-    },
-    {
-      "feed_id": "ecb_press",
-      "item_hash": "e7f1ccb14fca00cef44c6b7cbd886d81b454f41155de8493788dddae7fc4a371",
-      "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260717~b6a156dc40.en.html",
-      "published_at": "2026-07-17T10:00:00Z",
-      "source_id": "ecb",
-      "status": "queued",
-      "summary": "",
-      "title": "Piero Cipollone: The cooperative spirit at the heart of the digital euro"
     }
   ],
   "jurisdiction_id": "eu",
