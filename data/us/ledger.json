@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T23:41:03Z",
+  "generated_at": "2026-07-26T23:50:42Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -525,7 +525,7 @@
       "raw_published": "2021-12-07",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the WisdomTree Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
@@ -573,7 +573,7 @@
       "raw_published": "2021-12-27",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of Amendment No. 1 to a Proposed Rule Change To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
@@ -637,7 +637,7 @@
       "raw_published": "2021-12-29",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the Kryptoin Bitcoin ETF Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
@@ -765,7 +765,7 @@
       "raw_published": "2024-01-12",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of Amendment No. 2 to a Proposed Rule Change To List and Trade Shares of the VanEck Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },

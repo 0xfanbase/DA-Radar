@@ -8,14 +8,14 @@
   "type": "consultation",
   "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of Amendment No. 1 to a Proposed Rule Change To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares",
   "summary": "On 27 December 2021, the Federal Register published an SEC notice that Cboe BZX Exchange had filed Amendment No. 1 (File No. SR-CboeBZX-2021-051) to its proposed rule change to list and trade shares of the ARK 21Shares Bitcoin ETF under BZX Rule 14.11(e)(4), the exchange's Commodity-Based Trust Shares listing standard. The trust's sponsor is 21Shares US LLC. BZX originally filed the proposal on 20 July 2021, and the Commission had already instituted proceedings on 2 November 2021 to decide whether to approve or disapprove it. Filed 9 December 2021, Amendment No. 1 replaced and superseded the original filing in its entirety, clarifying points and adding detail; publication opened public comment on the amended proposal and does not resolve how the SEC will ultimately act.",
-  "why_it_matters": "This notice reopened public comment on a substantially rewritten version of a proposed crypto exchange-traded product listing, filed while the SEC's formal proceeding on the original proposal was already underway -- illustrating how an exchange could amend a pending 19b-4 filing mid-review. It does not itself approve or disapprove anything, and does not address how the SEC ultimately acted on this proposal.",
+  "why_it_matters": "This notice reopened public comment on a revised filing for a proposed crypto exchange-traded product listing -- formally replacing and superseding the original filing, though the exchange described the changes only as clarifying points and adding detail -- filed while the SEC's formal proceeding on the original proposal was already underway, illustrating how an exchange can amend a pending 19b-4 filing mid-review. It does not itself approve or disapprove anything, and does not address how the SEC ultimately acted on this proposal.",
   "citations": [
     {
       "url": "https://www.govinfo.gov/content/pkg/FR-2021-12-27/html/2021-27824.htm",
       "quote": "replaced and superseded the proposed rule change as originally filed"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-26T04:25:00Z",
   "model": "Claude (Anthropic)"
 }
