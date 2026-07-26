@@ -7,8 +7,8 @@
   "pillar": ["dealing_custody_advisory"],
   "type": "conclusions",
   "title": "FSTB and SFC conclude consultations on virtual asset dealer and custodian regimes, further consult on two new regimes",
-  "summary": "On 24 December 2025, the Financial Services and the Treasury Bureau (FSTB) and the Securities and Futures Commission (SFC) published joint conclusions on their consultation on new licensing regimes for virtual asset (VA) dealing and VA custodian services, after receiving more than 190 responses from a broad spectrum of stakeholders. Both regimes will proceed: VA dealing modelled on the existing securities-dealing licence framework, and VA custody focused on safeguarding clients' private keys. Alongside the conclusions, FSTB and SFC launched a further consultation on two additional regimes, for VA advisory and VA management services, modelled on existing securities-market regulation. All four regimes are proposed as amendments to the Anti-Money Laundering and Counter-Terrorist Financing Ordinance, targeting introduction of a bill to the Legislative Council within 2026.",
-  "why_it_matters": "Hong Kong currently licenses virtual asset exchanges and stablecoin issuers directly, but firms that merely deal in, custody, advise on, or manage virtual assets for clients have no dedicated licence to hold today. This document confirms two of the four planned new regimes (dealing and custody) will proceed, and opens consultation on the remaining two (advisory and management), moving toward a licensing regime targeted for introduction to the Legislative Council within 2026.",
+  "summary": "On 24 December 2025, the Financial Services and the Treasury Bureau (FSTB) and the Securities and Futures Commission (SFC) published joint conclusions on their consultation on new licensing regimes for virtual asset (VA) dealing and VA custodian services, after receiving more than 190 responses from a broad spectrum of stakeholders. Both regimes will proceed: VA dealing modelled on the existing securities-dealing licence framework, and VA custody focused on safeguarding clients' private keys. Alongside the conclusions, FSTB and SFC launched a further consultation on two additional regimes, for VA advisory and VA management services, modelled on existing securities-market regulation. The VA dealing and custody regimes are proposed as amendments to the Anti-Money Laundering and Counter-Terrorist Financing Ordinance, with FSTB and SFC targeting introduction of a bill to the Legislative Council within 2026.",
+  "why_it_matters": "This document confirms two of the four planned new virtual-asset licensing regimes (dealing and custody) will proceed toward a bill targeted for introduction to the Legislative Council within 2026, and opens consultation on the remaining two (advisory and management) to expand the licensing scope for virtual-asset service providers.",
   "key_dates": {
     "deadline": "2026-01-23"
   },
@@ -18,7 +18,7 @@
       "quote": "more than 190 responses from a broad spectrum of stakeholders"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-26T02:00:00Z",
   "model": "Claude (Anthropic)"
 }

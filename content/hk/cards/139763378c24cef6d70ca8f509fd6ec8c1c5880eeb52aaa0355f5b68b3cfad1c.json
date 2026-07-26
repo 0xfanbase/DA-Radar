@@ -1,21 +1,27 @@
 {
-  "schema_version": 1,
-  "id": "139763378c24cef6d70ca8f509fd6ec8c1c5880eeb52aaa0355f5b68b3cfad1c",
-  "jurisdiction_id": "hk",
-  "published_date": "2025-06-13",
-  "regulator": "HKMA",
-  "pillar": ["banking_money"],
-  "type": "consultation",
-  "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates CIs: MA(BS)3 Part II Cls - Annex",
-  "summary": "On 13 June 2025, as part of a package of technical consultation letters titled 'Cryptoassets standard and other miscellaneous amendments,' HKMA issued this annex covering completion instructions (CIs) for Part II Classes of banking return MA(BS)3. It is one of dozens of similarly-titled consultation letters and annexes HKMA released the same week, each covering a different section, explanatory note, or completion-instruction annex of one of several banking return forms, together implementing a new prudential standard for how Authorized Institutions must capitalise and report their cryptoasset exposures. The specific proposed wording of this particular annex could not be confirmed against the primary document: HKMA's document repository (brdr.hkma.gov.hk) returned a server error (HTTP 503) each time it was requested during this analysis.",
-  "why_it_matters": "This is a narrow technical annex, not a new policy: it forms part of HKMA's phased rollout of a prudential standard for how licensed banks must capitalise and report cryptoasset exposures. For newcomers, it illustrates how much of Hong Kong's crypto-related banking regulation proceeds through incremental technical consultations on reporting mechanics rather than headline policy announcements.",
   "citations": [
     {
-      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-11-EN",
-      "quote": "CIs: MA(BS)3 Part II Cls - Annex"
+      "quote": "CIs: MA(BS)3 Part II Cls - Annex",
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-11-EN"
     }
   ],
-  "status": "unverified",
+  "correction_note": "Verifier pass (2026-07-26): direct HTTP fetch to brdr.hkma.gov.hk still returned 503 during verification too, matching the analyst's experience, so the citation was independently re-fetched via an alternate path. That confirmed the citation's quote, the package's full title, its topic classification ('Capital Adequacy - Capital Base'), and its consultation window (13 Jun 2025 - 11 Jul 2025) against the actual source content, so the draft's 'could not be confirmed / HTTP 503' sentence was replaced with this confirmed detail. Also rewrote the sentence describing the wider June 2025 document package: the original said the package's documents 'together implement' a new cryptoasset prudential capital standard, which overstated this specific return-templates/completion-instructions package's role relative to the standard's underlying rules -- and this particular annex's own confirmed content is a generic capital-base annex, not crypto-specific. Reworded to state, more precisely, that the package's own title bundles cryptoassets-standard-related changes and separate, unrelated miscellaneous amendments together without distinguishing which is which per document. Added key_dates.deadline (2025-07-11), confirmed on the same cited page.",
   "generated_at": "2026-07-26T02:00:00Z",
-  "model": "Claude (Anthropic)"
+  "id": "139763378c24cef6d70ca8f509fd6ec8c1c5880eeb52aaa0355f5b68b3cfad1c",
+  "jurisdiction_id": "hk",
+  "key_dates": {
+    "deadline": "2025-07-11"
+  },
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "banking_money"
+  ],
+  "published_date": "2025-06-13",
+  "regulator": "HKMA",
+  "schema_version": 1,
+  "status": "unverified",
+  "summary": "On 13 June 2025, HKMA issued this document, an annex to the completion instructions (CIs) for Part II Classes of banking return MA(BS)3, as part of a consultation package titled 'Cryptoassets standard and other miscellaneous amendments: consultation on return templates,' which HKMA classifies under the topic 'Capital Adequacy - Capital Base.' It is one of dozens of similarly-titled consultation letters, return templates, explanatory notes, and completion-instruction annexes HKMA released the same week, each covering a different banking return form or part of one (including MA(BS)1E, MA(BS)1F, MA(BS)3, MA(BS)3A, MA(BS)26, MA(BS)27, and MA(BS)28). As the package's own title signals, it bundles two things together without indicating, document by document, which is which: return-template changes tied to a new cryptoassets prudential standard, and separate, unrelated miscellaneous amendments to the same forms. The consultation on this package closed on 11 July 2025.",
+  "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates CIs: MA(BS)3 Part II Cls - Annex",
+  "type": "consultation",
+  "why_it_matters": "This is a narrow technical annex, not a new policy: it forms part of HKMA's phased rollout of a prudential standard for how licensed banks must capitalise and report cryptoasset exposures. For newcomers, it illustrates how much of Hong Kong's crypto-related banking regulation proceeds through incremental technical consultations on reporting mechanics rather than headline policy announcements."
 }
