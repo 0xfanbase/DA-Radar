@@ -1488,3 +1488,69 @@ owner call:
   judgment to the analyst.
 Either way, this is a real, now-confirmed-recurring cost (not just a one-time queue artifact) worth
 prioritizing before it's costing real turns across every jurisdiction with a broad regulator feed.
+
+**Update, 2026-07-26 firing:** reproduced exactly as predicted, second firing in a row -- the same
+construction-chemicals cartel item was handed to the analyst again, declined again for the same
+correct reason, at the same real cost. No longer a hypothesis; full detail in PROGRESS.md's
+same-dated entry.
+
+### 2026-07-26 — `brdr.hkma.gov.hk`'s unreachability is a permanent limitation of this deployment's live automation, not a one-time sandbox artifact
+
+The 2026-07-09 entry above ("Live audit.yml run in the dev sandbox") first diagnosed
+`brdr.hkma.gov.hk` TLS failures as specific to *that* dev sandbox's TLS-inspecting egress proxy,
+"not expected to reproduce on a real GitHub Actions runner." That framing was accurate for its own
+context (a one-off manual `audit.yml` test run, when the live analyst/verifier mechanism was still
+meant to be `analyze.yml` on real GitHub Actions infrastructure per the original spec). It no longer
+describes the actual deployed situation. Since PROGRESS.md's 2026-07-25 entry, the live analyst/
+verifier mechanism is a session-bound Claude Code Remote trigger running in this same class of
+sandboxed environment, permanently -- not a GitHub Actions runner, and not going to become one
+without a `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_API_KEY` secret being provisioned (an explicit owner
+non-decision; see the "Architecture pivot" entry). Two consecutive real firings (07-25 supervised,
+07-25/26 unattended) both hit the identical, reproducible failure against `brdr.hkma.gov.hk` --
+independently re-confirmed by five separate fresh-context sub-agents across both firings, one of
+which additionally proved a workaround exists in principle (a translate-proxy mirror successfully
+read the page's real content) but doesn't help in practice, since the deterministic
+`apply_verification_gate` does a plain direct fetch of the cited URL and will downgrade the card
+regardless of what route the verifier used to confirm the content.
+
+**Concrete, material impact, not a theoretical risk:** one HKMA verifier estimated roughly half of
+HKMA's circular ecosystem is hosted on this specific subdomain. Every one of hk's 4 cards in the
+07-25/26 firing ended up `status: "unverified"` -- not because the content was wrong, but because
+this environment cannot complete the one action ("actually re-fetch and read the source") that
+`status: "verified"` is supposed to certify. This will keep happening, indefinitely, to every future
+`brdr.hkma.gov.hk`-linked item, until one of the following changes:
+- This CCR environment's egress proxy is fixed to properly validate `brdr.hkma.gov.hk`'s TLS chain
+  (outside this project's control -- a platform/infrastructure fix, not something a pipeline change
+  can reach).
+- A future owner provisions the `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_API_KEY` secret, letting
+  `analyze.yml` run for real on GitHub Actions runners instead (direct egress, no intercepting
+  proxy, per the 07-09 diagnosis) -- the one existing, designed path that would make this a
+  non-issue with no pipeline code change at all.
+- The analyst/verifier pipeline grows an explicit fallback fetch route for domains with a known,
+  persistent proxy conflict (e.g. the translate-proxy mirror one verifier used successfully) --
+  not attempted here: it's `/pipeline` territory, a bigger design surface (does the deterministic
+  gate need the same fallback, or does it stay strict and only the LLM passes get the workaround?),
+  and arguably the wrong fix if the first option above is ever pursued instead.
+Not fixed here, for the same reasons as always: out of scope for a single firing, and a genuine
+owner-level tradeoff between three real options, not a bug with one obvious answer. Flagging now,
+explicitly as a *permanent* characteristic of the current deployment rather than a transient
+glitch, so it doesn't get re-diagnosed from scratch a third time.
+
+### 2026-07-26 — `CLAUDE.md`'s own prose is stale against the actual multi-jurisdiction registry
+
+Independently re-discovered by a `us` verifier in the 07-25/26 firing (while checking a card's
+regulator/domain against config, not something it went looking for): `CLAUDE.md`'s "self-learning
+loop" section and its P6 note still read "Hong Kong -- the only live registry entry" and describe a
+second jurisdiction going live as a future, P9 event requiring a runbook update. `config/site.json`
+has actually had 6 jurisdictions (hk, us, eu, uk, uae, ch, jp minus sg) at `analyst_verifier: "live"`
+since 2026-07-14, and `docs/analyst-runbook.md` was in fact updated for this already (it iterates
+the full live registry, per its own Step 0). This is a real, user-facing documentation-accuracy gap
+in the project's own canonical file -- a reader of `CLAUDE.md` alone would materially
+misunderstand the current state of the project. This session independently noticed the exact same
+staleness at the very start of tonight's work (reading `CLAUDE.md` fresh, as instructed, before its
+first firing), so this is now corroborated from two unrelated angles in the same night. Not fixed
+here: `CLAUDE.md` is explicitly read-only to any AI agent working in this repository ("changes to
+editorial rules, the path allowlist, or the architecture constraints require an explicit, separate
+human-approved change") -- a prose update describing current state isn't an editorial-rule change,
+but the file's own blanket rule doesn't carve out an exception for that, so this is logged for an
+explicit human-approved fix rather than assumed to be a safe exception.

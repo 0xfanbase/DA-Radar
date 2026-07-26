@@ -2372,3 +2372,98 @@ self-report. `data/hk/queue.json` (68), `data/us/queue.json` (39 after this firi
 and `data/jp/queue.json` (11) remain for future firings. PR #16 (documenting the trigger-swap
 decision above) is being merged alongside this entry, along with PR #17 (an unrelated `.gitignore`
 fix for the worktree-isolation scratch dirs this same firing's sub-agents ran in).
+
+### 2026-07-25/26 -- First genuinely unattended firing (`trig_01CHa5wLW4G5LGj8fREeKUkE`, fired 22:32 UTC on schedule, no one watching): hk/us/eu processed
+
+Everything above this entry was a same-day, human-supervised test fire. This one wasn't -- the
+trigger woke on its own `30 22 * * *` schedule with nobody prompting it, and this entry is itself
+the heartbeat proving that. Same batch shape as the supervised run (caps unchanged): hk=4, us=4,
+eu=2, 10-total cap bound after eu; uk (6 queued), uae (0), ch (0), jp (11) untouched this firing.
+
+**hk -- 4 cards (same 4 items as the supervised firing's HKMA-outage batch, retried) drafted,
+verified, published; all remain `unverified`.** Analyst wrote all 4 this time (unlike the
+supervised firing's zero), using generic/definitional content plus verbatim titles rather than
+document-specific claims, "to stay narrowly scoped to what I could actually confirm" -- but
+reading the actual cards (not just the self-report) surfaced a real inconsistency: 3 of 4 (all but
+the return-template consultation) included specific, uncited claims anyway -- HKMA topic-category
+tags, cross-references to *other* circulars with precise dates -- that go well beyond a verbatim
+title, unlike the analyst's own honestly-hedged treatment of the same outage in its
+`banking_money.json` pillar-state edit. Flagged this explicitly to all 4 verifiers rather than
+gating it myself. All 4 confirmed and fixed it independently: two stripped the unsupported
+specifics outright (one via a genuine multi-pronged re-fetch attempt including a Wayback check and
+a second real HKMA PDF as a control, both confirming a real, reproducible, domain-wide access
+failure -- not a one-off); one found and removed two *additional* unsupported specifics beyond
+what was flagged; one went further and, via an alternate fetch route (a translate-proxy mirror),
+actually read the source page, found the flagged cross-reference was genuinely true (independently
+triple-corroborated: the mirrored page itself, an `info.gov.hk` press release, and this project's
+own deterministic `queue.json`), added a second, currently-reachable citation for it, and set
+`status: "verified"` -- which the real `apply_verification_gate` then downgraded straight back to
+`unverified` when its own direct re-fetch of the still-down `brdr.hkma.gov.hk` citation failed, exactly
+as that verifier itself predicted it might. Accepted the downgrade without second-guessing it, per
+the gate's own design. All 4 promoted to `published` regardless of unverified status -- this
+pipeline publishes honestly-labeled unverified content by design (the site's own unverified badge
+exists for exactly this), it doesn't gate publication on verification success; verification exists
+to keep whatever *does* get published from containing fabrication, not to hide unverified work.
+
+**Correction to the supervised firing's own framing, above:** calling `brdr.hkma.gov.hk`'s failure
+an "outage... worth a look next firing to see if it's cleared" undersold it. Tonight's verifiers
+independently re-discovered what a 2026-07-09 entry in this very file already established: this
+is a **sandbox-specific TLS-inspecting-proxy limitation** ("not expected to reproduce on a real
+GitHub Actions runner"), not a transient external outage -- diagnosed with `curl`/`openssl
+s_client`/`requests` against this exact host, back on 2026-07-09, and independently reproduced
+again tonight via a completely different route (multiple fresh verifier contexts, tonight,
+16 days later). Since this session-bound trigger is now the *permanent* production mechanism, and
+production firings run in this same class of sandboxed environment, this isn't a one-off to
+monitor -- it will persistently affect `brdr.hkma.gov.hk`-linked HKMA content (roughly half of
+HKMA's circular ecosystem, per one verifier's estimate) every firing, indefinitely, until either
+this environment's proxy is fixed or a workaround is found. Full writeup in IMPROVEMENT_BACKLOG.md.
+
+**us -- 4 cards drafted, verified, published; 3 verified, 1 unverified.** 3 Federal Register ETF
+SRO-filing notices (Valkyrie XBTO bitcoin futures fund, Hashdex Nasdaq Crypto Index US ETF,
+Fidelity Wise Origin Bitcoin Fund Amendment No. 3) plus one FinCEN/OCC/Fed/FDIC/NCUA joint release
+on the proposed GENIUS Act customer-identification-program rule. `federalregister.gov` itself
+CAPTCHA-walled the analyst's direct fetch attempts; it used `govinfo.gov` instead (a listed
+`official_domains` entry), consistent with precedent from the earlier firing. No pillar-state or
+trajectory changes -- all 4 items are either historical procedural steps already superseded by an
+existing pillar-state summary, or duplicate a fact already tracked from an earlier pass. Verifiers
+found and fixed real, substantive issues on 3 of 4 cards (the 4th, Valkyrie XBTO, was fully clean
+on first check): a named-entity precision slip ("New York **State** Department of Financial
+Services" vs. the source's actual "New York Department of Financial Services"); an unsupported
+market-dominance comparative clause, stripped (numeric claims in the same card -- the 70.54%/29.46%
+BTC/ETH index weighting -- held up exactly under independent re-fetch); and, on the FinCEN card, an
+attributed risk-framing not actually in the source plus a "novelty" claim the verifier correctly
+refused to backstop with an *unverified* pillar-state file rather than the card's own citation. The
+deterministic gate then downgraded the Hashdex card back to `unverified` on its own live re-fetch
+(a `govinfo.gov` citation, generally reliable -- a reminder that even a normally-solid domain isn't
+immune to a transient miss). One verifier also independently re-surfaced that `CLAUDE.md`'s own
+prose is stale -- it still reads "Hong Kong, the only live entry as of P6" against `config/site.json`'s
+actual 6-jurisdictions-live-since-07-14 registry -- the same staleness this session noticed at the
+very start of tonight's work. Not fixed (out of scope, `CLAUDE.md` is read-only to any AI agent
+here); logged in IMPROVEMENT_BACKLOG.md.
+
+**eu -- 1 card drafted, verified, published; 1 item correctly declined for the second firing in a
+row.** The ECB's 17 July 2026 Cipollone speech ("The cooperative spirit at the heart of the digital
+euro") produced a rich card (implementation cost €4-5.8bn/3.4% of tech budgets, ~70% Parliament
+approval, 36 PSPs, September 2027 pilot, possible 2029 first issuance) plus a `banking_money`
+pillar-state update, a `trajectory.json` refinement (pilot date narrowed from "second half of 2027"
+to "September 2027"), and two new glossary terms. Every numeric claim held up under independent
+re-verification. The verifier caught one genuine but subtle issue: the source's own "trilogue
+negotiations began this week" is accurate *in the speech's own moment* but reads as stale/misleading
+in an evergreen card read well after that week -- fixed to "had begun earlier that week," anchored
+to the date already in the same sentence, without inventing an absolute date the source doesn't
+state (which would also have risked an unrelated false-positive downgrade from the numeric-claims
+gate). The construction-chemicals antitrust item was, for the second consecutive firing, correctly
+left undrafted -- zero digital-asset relevance, confirmed against `config/jurisdictions/eu.json`'s
+relevance keywords and against `ec_presscorner`'s own established pattern of carrying every
+Commission release undifferentiated. This is no longer a one-off queue artifact -- it has now
+reproduced exactly as the prior finding predicted. Detail in IMPROVEMENT_BACKLOG.md.
+
+**Net result of this firing:** 9 cards processed end-to-end (analyst -> verifier -> real gate ->
+publish) across 3 jurisdictions -- checked card-by-card against the actual published files rather
+than tallied from memory: **4 verified, 5 unverified** (hk 0/4 verified -- all 4 stayed unverified,
+the one verifier-upgrade the gate re-downgraded included; us 3/4 verified, 1 unverified from the
+Hashdex gate-downgrade; eu 1/1 verified), all honestly labeled, none fabricated. Real commits:
+`da24895`/`5adb707` (hk), `12e259d`/`4ac8f6f` (us), `6a4ed54`/`8f791ce` (eu). Backlog after this
+firing: hk 64, us 35, eu 1 (the recurring cartel item), uk 6, jp 11, uae/ch 0. No `PushNotification`
+fired -- nothing stopped early, no gate failure blocked a commit, every push landed and was
+independently confirmed against `origin/main`, not self-reported.
