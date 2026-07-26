@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T23:42:37Z",
+  "generated_at": "2026-07-26T23:41:03Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -514,7 +514,7 @@
       "title": "CFTC Issues a Request for Information to Facilitate Innovation and Competition for Fintech Firms"
     },
     "3abc52fa56221eedc5541f4cb57b15a5b937612639ab4155eaaea77243f50898": {
-      "card_id": null,
+      "card_id": "3abc52fa56221eedc5541f4cb57b15a5b937612639ab4155eaaea77243f50898",
       "content_hash": "6eb2294e0dc018e98d14ab75e97b743b1a6d9b93ea7a5fcf85a01b9431d77d77",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -525,7 +525,7 @@
       "raw_published": "2021-12-07",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the WisdomTree Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
@@ -562,7 +562,7 @@
       "title": "SEC Announces Four New Members of Investor Advisory Committee"
     },
     "3c5fffede26511487e7f1d28067b982dc2cb7ea8c27c8d0d5874d0113686017a": {
-      "card_id": null,
+      "card_id": "3c5fffede26511487e7f1d28067b982dc2cb7ea8c27c8d0d5874d0113686017a",
       "content_hash": "47ec01b4590d6944aaf9dad47f59026030385c3b44ede209e7a18fe82c4735ff",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -573,7 +573,7 @@
       "raw_published": "2021-12-27",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of Amendment No. 1 to a Proposed Rule Change To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
@@ -626,7 +626,7 @@
       "title": "Permitted Payment Stablecoin Issuer Anti-Money Laundering/Countering the Financing of Terrorism Program and Sanctions Compliance Program Requirements"
     },
     "40546c12c27916a1b3f5d02f41734cc460312427794fa92d14364c68bda8356c": {
-      "card_id": null,
+      "card_id": "40546c12c27916a1b3f5d02f41734cc460312427794fa92d14364c68bda8356c",
       "content_hash": "3d10fd85e348666a106bb82d977dbc1ed7cba5e760c0ceeb43d2652761213364",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -637,7 +637,7 @@
       "raw_published": "2021-12-29",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the Kryptoin Bitcoin ETF Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
@@ -754,7 +754,7 @@
       "title": "Special Measure Regarding Huione Group, as a Foreign Financial Institution of Primary Money Laundering Concern"
     },
     "4e4ff927e7cc70298ce5de47433faa86c75be501b1d87f8acfd7e702f154c634": {
-      "card_id": null,
+      "card_id": "4e4ff927e7cc70298ce5de47433faa86c75be501b1d87f8acfd7e702f154c634",
       "content_hash": "f6ad4956c58f52c861224b1bd7c4dab1fd125e4a2f5b79f36978d8352a063092",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -765,7 +765,7 @@
       "raw_published": "2024-01-12",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of Amendment No. 2 to a Proposed Rule Change To List and Trade Shares of the VanEck Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "3abc52fa56221eedc5541f4cb57b15a5b937612639ab4155eaaea77243f50898",
+  "jurisdiction_id": "us",
+  "published_date": "2021-12-07",
+  "regulator": "SEC",
+  "pillar": ["funds_etfs"],
+  "type": "conclusions",
+  "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the WisdomTree Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares",
+  "summary": "On 7 December 2021, the Federal Register published an SEC order (Release No. 34-93700) disapproving Cboe BZX Exchange's proposed rule change (File No. SR-CboeBZX-2021-024, filed 26 March 2021) to list and trade shares of the WisdomTree Bitcoin Trust under BZX Rule 14.11(e)(4), the exchange's Commodity-Based Trust Shares listing standard. The trust's sponsor is WisdomTree Digital Commodity Services, LLC. The order, dated 1 December 2021, concludes that BZX had not shown its proposal satisfied Exchange Act Section 6(b)(5)'s requirement that exchange rules be designed to prevent fraudulent and manipulative acts and protect investors, finding BZX had not established either sufficient alternative safeguards or a comprehensive surveillance-sharing agreement with a regulated market of significant size related to bitcoin.",
+  "why_it_matters": "This December 2021 order shows the legal test the SEC applied to proposed crypto exchange-traded product listings at the time: whether the listing exchange demonstrated its rules would prevent fraud and manipulation, principally through a surveillance-sharing agreement with a regulated market trading the underlying asset. Naming the WisdomTree Bitcoin Trust here reflects only what the SEC's own order states about that specific proposal.",
+  "key_dates": {
+    "milestone": "2021-12-01"
+  },
+  "citations": [
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2021-12-07/html/2021-26442.htm",
+      "quote": "has not met its burden under the Exchange Act and the Commission's Rules of Practice"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-26T04:10:00Z",
+  "model": "Claude (Anthropic)"
+}

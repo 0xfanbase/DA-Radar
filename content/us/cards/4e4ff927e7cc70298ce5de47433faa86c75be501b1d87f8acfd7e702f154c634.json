@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "4e4ff927e7cc70298ce5de47433faa86c75be501b1d87f8acfd7e702f154c634",
+  "jurisdiction_id": "us",
+  "published_date": "2024-01-12",
+  "regulator": "SEC",
+  "pillar": ["funds_etfs"],
+  "type": "consultation",
+  "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of Amendment No. 2 to a Proposed Rule Change To List and Trade Shares of the VanEck Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares",
+  "summary": "On 12 January 2024, the Federal Register published an SEC notice that Cboe BZX Exchange had filed Amendment No. 2 (File No. SR-CboeBZX-2023-040) to its proposed rule change to list and trade shares of the VanEck Bitcoin Trust under BZX Rule 14.11(e)(4), the exchange's Commodity-Based Trust Shares listing standard. The trust's sponsor is VanEck Digital Assets, LLC. BZX originally filed this proposal on 30 June 2023; Amendment No. 2, filed 5 January 2024, amended and replaced the proposal, as previously modified by Amendment No. 1, in its entirety. The filing notes two earlier, separate VanEck Bitcoin Trust proposals had already been disapproved, with one of those still under separate Commission-level review. Publication opened comment on the amended filing; the notice does not resolve how the SEC will act on it.",
+  "why_it_matters": "This January 2024 notice shows a third, separate Cboe BZX proposal to list the VanEck Bitcoin Trust moving through the SEC's rule-change review process, after two earlier VanEck Bitcoin Trust proposals had already been disapproved. The notice describes only the amendment itself and does not resolve, or address, how the SEC ultimately acted on this proposal.",
+  "citations": [
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2024-01-12/html/2024-00503.htm",
+      "quote": "amended and replaced the proposed rule change, as modified by Amendment No. 1"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-26T04:55:00Z",
+  "model": "Claude (Anthropic)"
+}
