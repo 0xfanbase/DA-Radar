@@ -7,7 +7,7 @@
   "pillar": ["banking_money"],
   "type": "speech",
   "title": "Piero Cipollone: The cooperative spirit at the heart of the digital euro",
-  "summary": "On 17 July 2026, ECB Executive Board member Piero Cipollone told Italy's cooperative credit banks (Federcasse) that the digital euro is designed as a public-private partnership: the Eurosystem would issue it without identifying individual payers or payees, banks would distribute it and keep the customer relationship, and holding limits would be calibrated to protect usability, financial stability, and monetary policy. He put banks' implementation cost across the euro area at €4 billion to €5.8 billion over four years, about 3.4% of significant banks' annual technology budgets. He said trilogue negotiations on the enabling Regulation began this week, after Parliament approved its negotiating position by almost 70%, and that 36 payment service providers will pilot the digital euro from September 2027, with possible first issuance in 2029.",
+  "summary": "On 17 July 2026, ECB Executive Board member Piero Cipollone told Italy's cooperative credit banks (Federcasse) that the digital euro is designed as a public-private partnership: the Eurosystem would issue it without identifying individual payers or payees, banks would distribute it and keep the customer relationship, and holding limits would be calibrated to protect usability, financial stability, and monetary policy. He put banks' implementation cost across the euro area at €4 billion to €5.8 billion over four years, about 3.4% of significant banks' annual technology budgets. He said trilogue negotiations on the enabling Regulation had begun earlier that week, after Parliament approved its negotiating position by almost 70%, and that 36 payment service providers will pilot the digital euro from September 2027, with possible first issuance in 2029.",
   "why_it_matters": "For someone new to the digital euro, this speech shows the ECB deliberately designing the project as a partnership with banks -- including smaller cooperative banks -- addressing how they would distribute it, what it would cost them to build, and what privacy and stability safeguards apply. It also marks concrete legislative progress: trilogue negotiations on the enabling Regulation are now under way, with a euro-area pilot involving 36 payment service providers due to start in September 2027.",
   "citations": [
     {
@@ -15,7 +15,7 @@
       "quote": "That's why from the outset we conceived the digital euro as a public-private partnership"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-25T06:30:00Z",
   "model": "Claude (Anthropic)"
 }

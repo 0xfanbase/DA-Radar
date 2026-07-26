@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T00:01:04Z",
+  "generated_at": "2026-07-26T00:11:07Z",
   "items": {
     "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
       "card_id": null,
@@ -1725,7 +1725,7 @@
       "raw_published": "Fri, 17 Jul 2026 12:00:00 +0200",
       "relevant": true,
       "source_id": "ecb",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Piero Cipollone: The cooperative spirit at the heart of the digital euro"
     },
