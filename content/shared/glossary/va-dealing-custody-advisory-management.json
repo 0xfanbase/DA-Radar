@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "va-dealing-custody-advisory-management",
+  "term": "Virtual asset dealing, custody, advisory, and management regimes",
+  "jurisdictions": ["hk"],
+  "plain_definition": "Four new Hong Kong licence categories, still proposed and not yet in force, for firms that deal in virtual assets on behalf of clients, safeguard (custody) clients' virtual assets or private keys, advise clients on virtual assets, or manage clients' virtual asset portfolios. Each is modelled on an existing, comparable licensed activity already regulated in Hong Kong's traditional securities market, applying the same style of rules to virtual asset business as already apply to the equivalent securities business.",
+  "formal_definition": "Four regulated-activity regimes proposed by the FSTB and SFC as amendments to the Anti-Money Laundering and Counter-Terrorist Financing Ordinance (Cap. 615): virtual asset dealing (aligned with the existing Type 1 dealing-in-securities regulated activity), virtual asset custodian services (a dedicated private-key-custody framework), virtual asset advisory (Type 4-aligned), and virtual asset management (Type 9-aligned). As of the consultation conclusions published 24 December 2025, none had yet been enacted; a bill was targeted for introduction to the Legislative Council within 2026.",
+  "related_terms": ["amlo", "vatp"],
+  "first_used_card_id": "10f7a10281763fb27fdd513cd213e6c8436edcd5926915e8e3e85fe1b87ed0b2",
+  "generated_at": "2026-07-26T02:00:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

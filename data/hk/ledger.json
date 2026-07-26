@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T23:15:07Z",
+  "generated_at": "2026-07-26T23:04:46Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -1170,7 +1170,7 @@
       "title": "The Hong Kong Mortgage Corporation Limited Interim Results Highlights for 2025"
     },
     "10f7a10281763fb27fdd513cd213e6c8436edcd5926915e8e3e85fe1b87ed0b2": {
-      "card_id": null,
+      "card_id": "10f7a10281763fb27fdd513cd213e6c8436edcd5926915e8e3e85fe1b87ed0b2",
       "content_hash": "99c0acd5ea2b0766830d705aff6ed5669b4d373961c601fc2f442121786240f0",
       "feed_id": "sfc_consultations",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -1181,7 +1181,7 @@
       "raw_published": "Wed, 24 Dec 2025 15:06:55 +0800",
       "relevant": true,
       "source_id": "sfc",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "FSTB and SFC conclude consultations on virtual asset dealer and custodian regimes, further consult on two new regimes"
     },
@@ -1266,7 +1266,7 @@
       "title": "Scam alert related to banks"
     },
     "127006774306d942e0fa816e0b624bb6ea52f3c2651092c311f7a0e2164a1e54": {
-      "card_id": null,
+      "card_id": "127006774306d942e0fa816e0b624bb6ea52f3c2651092c311f7a0e2164a1e54",
       "content_hash": "218d185eb467d40b2be0ab504a64dba2dfa69490dd649efed1bff7ca0b37c22d",
       "feed_id": "hkma_consultations",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -1277,7 +1277,7 @@
       "raw_published": "Thu, 04 Sep 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Letter to HKAB: Cryptoassets standard and other miscellaneous amendments: consultation on revised completion instructions"
     },
@@ -1298,7 +1298,7 @@
       "title": "Hong Kong’s Latest Foreign Currency Reserve Assets Figures Released"
     },
     "12ad1f7361191e8c2cade0b9e7ca52bccfa805629c0d1f36bd1ae4e330313efc": {
-      "card_id": null,
+      "card_id": "12ad1f7361191e8c2cade0b9e7ca52bccfa805629c0d1f36bd1ae4e330313efc",
       "content_hash": "22402b573c14379980c845ad0b131f38c478015cf5933019d8092be16a204baf",
       "feed_id": "hkma_speeches",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -1309,7 +1309,7 @@
       "raw_published": "Thu, 12 Mar 2026 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Opening Remarks at “Tokenisation: Banking the Future” by Carmen Chu, Executive Director (Banking Supervision), Hong Kong Monetary Authority"
     },
@@ -1362,7 +1362,7 @@
       "title": "SFC and CSRC hold high-level enforcement cooperation meeting"
     },
     "139763378c24cef6d70ca8f509fd6ec8c1c5880eeb52aaa0355f5b68b3cfad1c": {
-      "card_id": null,
+      "card_id": "139763378c24cef6d70ca8f509fd6ec8c1c5880eeb52aaa0355f5b68b3cfad1c",
       "content_hash": "57028d3814b32211d25025b2c7e9d4ca5777df65905a8593fb93f5d142f5ca50",
       "feed_id": "hkma_consultations",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -1373,7 +1373,7 @@
       "raw_published": "Fri, 13 Jun 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates CIs: MA(BS)3 Part II Cls - Annex"
     },

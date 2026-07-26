@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "completion-instructions",
+  "term": "Completion Instructions",
+  "jurisdictions": ["hk"],
+  "plain_definition": "The detailed, form-by-form guidance HKMA gives Authorized Institutions (banks) on exactly how to fill in a specific regulatory return -- which figures go in which field, how to classify a given exposure, and so on. HKMA often consults the industry (via the Hong Kong Association of Banks or the Deposit-Taking Companies Association) on draft or revised completion instructions before a new or amended return takes effect.",
+  "formal_definition": "Explanatory guidance issued by HKMA accompanying a banking return form (e.g. an 'MA(BS)' series return), setting out how Authorized Institutions must complete each field of that return; frequently abbreviated 'CI' or 'CIs' in HKMA consultation document titles.",
+  "related_terms": ["authorized-institution", "cryptoassets-standard"],
+  "first_used_card_id": "127006774306d942e0fa816e0b624bb6ea52f3c2651092c311f7a0e2164a1e54",
+  "generated_at": "2026-07-26T02:00:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "12ad1f7361191e8c2cade0b9e7ca52bccfa805629c0d1f36bd1ae4e330313efc",
+  "jurisdiction_id": "hk",
+  "published_date": "2026-03-12",
+  "regulator": "HKMA",
+  "pillar": ["tokenization_rwa"],
+  "type": "speech",
+  "title": "Opening Remarks at “Tokenisation: Banking the Future” by Carmen Chu, Executive Director (Banking Supervision), Hong Kong Monetary Authority",
+  "summary": "On 12 March 2026, Carmen Chu, HKMA's Executive Director (Banking Supervision), delivered opening remarks at an HKMA event titled 'Tokenisation: Banking the Future.' A companion speech -- welcoming remarks by Nelson Chow, HKMA's Executive Director (Financial Infrastructure) -- was delivered at the same event on the same date. The substantive content of Chu's remarks could not be retrieved or confirmed during this analysis: HKMA's website returned no retrievable body text for this speech page each time it was requested. Beyond the confirmed title, speaker, role, event name, and date recorded here, no specific claims from the speech itself are included in this card; readers should consult the linked HKMA page directly for the remarks' substance.",
+  "why_it_matters": "Two of HKMA's most senior banking-facing executives -- from Banking Supervision and from Financial Infrastructure -- spoke at the same dedicated tokenisation event on the same day, a sign of how central tokenisation now is to HKMA's institutional priorities. For newcomers: this card cannot yet confirm what was actually said, only that the event and these speakers took place, since the speech text could not be retrieved this run.",
+  "citations": [
+    {
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/speeches/2026/03/20260312-2/",
+      "quote": "Tokenisation: Banking the Future"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-26T02:00:00Z",
+  "model": "Claude (Anthropic)"
+}
