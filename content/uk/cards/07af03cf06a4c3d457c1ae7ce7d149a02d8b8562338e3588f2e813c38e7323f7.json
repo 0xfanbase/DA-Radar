@@ -9,7 +9,7 @@
   ],
   "type": "guidance",
   "title": "PRA reaffirms deposit-takers must issue e-money and stablecoins from separate, insolvency-remote entities",
-  "summary": "On 18 May 2026 the Bank of England's Prudential Regulation Authority (PRA) wrote to CEOs of all banks and designated investment firms, superseding its 2023 letter on deposits, e-money and stablecoins. It reaffirms that deposit-takers may innovate within their deposit-taking entities, including issuing tokenised deposits, but that e-money or 'qualifying stablecoins' offered to retail customers must come from a separate, insolvency-remote entity, distinctly branded from the deposit-taker, so its failure cannot spread contagion into FSCS-protected deposits -- an approach the PRA likens to the US GENIUS Act's issuer separation. Wholesale-only stablecoin proposals get a more proportionate approach and may use the Bank's Digital Securities Sandbox, being expanded to accept stablecoins as settlement assets. The letter also restates money-laundering, risk-control and senior-manager expectations.",
+  "summary": "On 18 May 2026 the Bank of England's Prudential Regulation Authority (PRA) wrote to deposit-takers' Chief Executive Officers, superseding its 2023 letter on deposits, e-money and stablecoins. It reaffirms that deposit-takers may innovate within their deposit-taking entities, including issuing tokenised deposits, but that e-money or 'qualifying stablecoins' offered to retail customers must come from a separate, insolvency-remote entity, distinctly branded from the deposit-taker, so its failure cannot spread contagion into FSCS-protected deposits -- an approach the PRA likens to the US GENIUS Act's issuer separation. Wholesale-only stablecoin proposals get a more proportionate approach and may use the Bank's Digital Securities Sandbox, being expanded to accept stablecoins as settlement assets. The letter also restates money-laundering, risk-control and senior-manager expectations.",
   "why_it_matters": "For anyone new to UK bank regulation, this is the Bank of England's answer to a specific risk: if a bank sells e-money or a stablecoin under its own brand, a wobble in that product could spook customers into pulling their ordinary, government-protected bank deposits too. Rather than new legislation, the PRA is using this supervisory letter to insist any such product come from a separately branded, insolvency-remote entity kept apart from the bank itself -- a structural fix it explicitly likens to what the US requires of stablecoin issuers under the GENIUS Act.",
   "citations": [
     {
@@ -17,7 +17,7 @@
       "quote": "this should be done from a non-deposit-taking insolvency-remote entity with distinct branding from the deposit-taker"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-27T12:00:00Z",
   "model": "Claude (Anthropic)"
 }

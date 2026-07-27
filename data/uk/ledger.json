@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T00:07:29Z",
+  "generated_at": "2026-07-27T00:14:37Z",
   "items": {
     "02028a9677575e76189a49022768f45cc07c84ca74ac72879172cd9671891801": {
       "card_id": null,
@@ -93,7 +93,7 @@
       "raw_published": "Mon, 18 May 2026 09:00:00 +0100",
       "relevant": true,
       "source_id": "boe",
-      "status": "drafted",
+      "status": "published",
       "summary": "Letter to Chief Executive Officers of all banks and designated investment firms.",
       "title": "Letter from David Bailey, Charlotte Gerken and Rebecca Jackson on reaffirming the PRA's position and clarifying expectations on innovations in the use of deposits, e-money and stablecoins"
     },
