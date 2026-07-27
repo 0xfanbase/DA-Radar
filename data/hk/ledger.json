@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T05:04:53Z",
+  "generated_at": "2026-07-27T22:55:15Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -1714,7 +1714,7 @@
       "title": "Tender of 1-year HONIA-indexed Floating Rate Notes to be held on Wednesday, 4 February 2026"
     },
     "1aa3c695532f834c0cf306105eb488cd524ac2069be6d34fd310f53bca5a308b": {
-      "card_id": null,
+      "card_id": "1aa3c695532f834c0cf306105eb488cd524ac2069be6d34fd310f53bca5a308b",
       "content_hash": "93fdad2cb6da185f9a0560d3e4215941ef4cf5bc20932bebbc0b456656ab665c",
       "feed_id": "sfc_circulars",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -1725,7 +1725,7 @@
       "raw_published": "Wed, 27 May 2026 19:11:46 +0800",
       "relevant": true,
       "source_id": "sfc",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Circular on provision of Relevant Stablecoin service by virtual asset trading platforms and licensed corporations"
     },

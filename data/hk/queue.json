@@ -1,16 +1,6 @@
 {
-  "generated_at": "2026-07-26T23:04:46Z",
+  "generated_at": "2026-07-27T22:55:15Z",
   "items": [
-    {
-      "feed_id": "sfc_circulars",
-      "item_hash": "1aa3c695532f834c0cf306105eb488cd524ac2069be6d34fd310f53bca5a308b",
-      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC26",
-      "published_at": "2026-05-27T11:11:46Z",
-      "source_id": "sfc",
-      "status": "queued",
-      "summary": "",
-      "title": "Circular on provision of Relevant Stablecoin service by virtual asset trading platforms and licensed corporations"
-    },
     {
       "feed_id": "hkma_consultations",
       "item_hash": "20df5027480c2f4fe06df0b45d73d7a611bf0621263b4bc51e587fff93ea0700",

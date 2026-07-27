@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "stablecoins-ordinance",
+  "term": "Stablecoins Ordinance",
+  "jurisdictions": ["hk"],
+  "plain_definition": "Hong Kong's law requiring anyone who issues a fiat-referenced stablecoin in Hong Kong, or pegged to the Hong Kong dollar, to hold a licence from the Hong Kong Monetary Authority. It has been in force since 1 August 2025 and sets minimum capital, reserve-backing, and redemption requirements for licensees.",
+  "formal_definition": "Stablecoins Ordinance (Cap. 656), in force since 1 August 2025, establishing a licensing regime administered by the Hong Kong Monetary Authority for issuers of specified (fiat-referenced) stablecoins issued in Hong Kong or referencing the Hong Kong dollar.",
+  "related_terms": ["stablecoin", "hkma", "relevant-stablecoin"],
+  "first_used_card_id": "544d29ba08c14f8b692356fc7f11a36eabbad05f23c2ed7ea47ad45f730a726e",
+  "generated_at": "2026-07-27T08:33:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "relevant-stablecoin",
+  "term": "Relevant Stablecoin",
+  "jurisdictions": ["hk"],
+  "plain_definition": "An SFC term for a stablecoin that Hong Kong's licensed virtual asset trading platforms and licensed corporations may handle under adjusted, lighter rules -- broadly, one of the stablecoins issued by an entity the Hong Kong Monetary Authority has licensed and authorised under the Stablecoins Ordinance.",
+  "formal_definition": "A stablecoin that (i) qualifies as a \"specified stablecoin\" under section 4 of the Stablecoins Ordinance (Cap. 656) and (ii) is issued by an entity licensed under that Ordinance and authorised under such licence, per SFC Circular 26EC26.",
+  "related_terms": ["stablecoin", "stablecoins-ordinance", "vatp", "hkma", "sfc"],
+  "first_used_card_id": "1aa3c695532f834c0cf306105eb488cd524ac2069be6d34fd310f53bca5a308b",
+  "generated_at": "2026-07-27T08:32:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}
