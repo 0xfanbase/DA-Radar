@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T22:55:15Z",
+  "generated_at": "2026-07-27T23:06:28Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -1725,7 +1725,7 @@
       "raw_published": "Wed, 27 May 2026 19:11:46 +0800",
       "relevant": true,
       "source_id": "sfc",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Circular on provision of Relevant Stablecoin service by virtual asset trading platforms and licensed corporations"
     },

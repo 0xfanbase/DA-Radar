@@ -7,15 +7,15 @@
   "pillar": ["exchanges_vatp", "stablecoins"],
   "type": "circular",
   "title": "Circular on provision of Relevant Stablecoin service by virtual asset trading platforms and licensed corporations",
-  "summary": "On 27 May 2026, the SFC issued a circular on how licensed virtual asset trading platforms (VATPs) and licensed corporations may deal in Relevant Stablecoins -- those that qualify as Specified Stablecoins under section 4 of the Stablecoins Ordinance and are issued by an HKMA-licensed, HKMA-authorised issuer. It adapts the SFC's VATP Guidelines and 2023 joint circular to this asset class: platforms need not apply standard liquidity and token-admission screening, need not assess Relevant-Stablecoin-only clients' virtual-asset knowledge, and may exclude these holdings from a client's overall virtual-asset exposure calculation. Licensed corporations may also partner directly with HKMA-licensed issuers for clients' custody. Disclosure and suitability duties apply, and firms must notify the SFC in writing in advance before admitting, suspending, or removing any Relevant Stablecoin for client trading.",
-  "why_it_matters": "This circular lets Hong Kong's licensed virtual asset trading platforms and brokers begin offering Hong Kong's newly HKMA-licensed stablecoins to clients under lighter compliance requirements than apply to typical, more volatile cryptocurrencies -- one of the first formal links between Hong Kong's new stablecoin-issuer licensing regime and its existing virtual-asset-trading-platform licensing regime.",
+  "summary": "On 27 May 2026, the SFC issued a circular on how licensed virtual asset trading platforms (VATPs) and licensed corporations may deal in Relevant Stablecoins -- those that qualify as Specified Stablecoins under section 4 of the Stablecoins Ordinance, are issued by an HKMA-licensed issuer, and are themselves authorised under that issuer's licence. It adapts the SFC's VATP Guidelines and 2023 joint circular to this asset class: platforms need not apply those frameworks' standard liquidity and index requirements to Relevant Stablecoins, need not assess Relevant-Stablecoin-only clients' virtual-asset knowledge, and may exclude these holdings from a client's overall virtual-asset exposure calculation. Licensed corporations may also partner directly with HKMA-licensed issuers for clients' custody. Disclosure and suitability duties apply, and firms should notify the SFC in writing in advance before admitting, suspending, or removing any Relevant Stablecoin for client trading.",
+  "why_it_matters": "This circular lets Hong Kong's licensed virtual asset trading platforms and brokers begin offering Hong Kong's newly HKMA-authorised stablecoins to clients under lighter compliance requirements than apply to other virtual assets -- one of the first formal links between Hong Kong's new stablecoin-issuer licensing regime and its existing virtual-asset-trading-platform licensing regime.",
   "citations": [
     {
       "url": "https://apps.sfc.hk/edistributionWeb/api/circular/list-content/circular/doc?refNo=26EC26&lang=EN",
       "quote": "notify the SFC in writing in advance of any plan or proposal to admit"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-27T08:30:00Z",
   "model": "Claude (Anthropic)"
 }
