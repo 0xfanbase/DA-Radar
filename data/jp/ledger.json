@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T04:39:08Z",
+  "generated_at": "2026-07-27T05:04:59Z",
   "items": {
     "02d83335c3f185a01f78ac8bf5f64fad166ccc68cc60456b0c37127aece0ca25": {
       "card_id": null,
@@ -480,6 +480,22 @@
       "status": "queued",
       "summary": "<p>取扱いを再開する銘柄と会員を以下へお知らせいたします。 暗号資産</p> <p>The post <a href=\"https://jvcea.or.jp/information/statistics-reports/20260623-001/\">取扱い再開のお知らせ</a> first appeared on <a href=\"https://jvcea.or.jp\">一般社団法人日本暗号資産等取引業協会（JVCEA）</a>.</p>",
       "title": "取扱い再開のお知らせ"
+    },
+    "5e195583759738a85790598055316f211348dc94dac0b98323984920bdd48621": {
+      "card_id": null,
+      "content_hash": "a192c860a59166f05214e340e49264c7b1e6de41dc867eaf5aeae249a7544a8e",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-27T05:04:59Z",
+      "guid": null,
+      "item_hash": "5e195583759738a85790598055316f211348dc94dac0b98323984920bdd48621",
+      "link": "https://www.fsa.go.jp/inter/fatf/20260716/20260716.html",
+      "published_at": "2026-07-27T13:00:00Z",
+      "raw_published": "Mon, 27 Jul 2026 13:00:00 JST",
+      "relevant": true,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "国際関係,FATFによる「暗号資産及び暗号資産サービス・プロバイダー（VASP）に係るFATF基準の実施状況についての報告書」について公表しました。"
     },
     "61a271c09b76dd32e7f7187d7c149ca70ed431af6889a82acc1ac17fd22f30c3": {
       "card_id": null,

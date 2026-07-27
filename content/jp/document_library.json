@@ -157,9 +157,20 @@
       "regulator": "FSA",
       "title": "Publication,Cybersecurity Issues and Countermeasures in Crypto-Asset-Related Businesses",
       "type": "news"
+    },
+    {
+      "item_hash": "5e195583759738a85790598055316f211348dc94dac0b98323984920bdd48621",
+      "link": "https://www.fsa.go.jp/inter/fatf/20260716/20260716.html",
+      "pillar": [
+        "aml_cft_enforcement"
+      ],
+      "published_at": "2026-07-27T13:00:00Z",
+      "regulator": "FSA",
+      "title": "国際関係,FATFによる「暗号資産及び暗号資産サービス・プロバイダー（VASP）に係るFATF基準の実施状況についての報告書」について公表しました。",
+      "type": "news"
     }
   ],
-  "generated_at": "2026-07-24T04:43:51Z",
+  "generated_at": "2026-07-27T05:04:59Z",
   "jurisdiction_id": "jp",
   "schema_version": 1
 }
