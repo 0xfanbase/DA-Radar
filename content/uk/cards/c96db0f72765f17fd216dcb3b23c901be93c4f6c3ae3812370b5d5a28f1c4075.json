@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "c96db0f72765f17fd216dcb3b23c901be93c4f6c3ae3812370b5d5a28f1c4075",
+  "jurisdiction_id": "uk",
+  "published_date": "2026-05-18",
+  "regulator": "Bank of England",
+  "pillar": [
+    "banking_money"
+  ],
+  "type": "guidance",
+  "title": "PRA updates interim prudential treatment of tokenised assets, stablecoins and other cryptoasset exposures",
+  "summary": "On 18 May 2026 the Bank of England's Prudential Regulation Authority (PRA) wrote to Chief Executive Officers of all banks and designated investment firms, superseding its 2022 letter on cryptoasset exposures. It reaffirms that firms must keep applying the full prudential framework -- the PRA's Fundamental Rules, Pillar 1, ICAAP and Pillar 2 -- including a 100% capital requirement for unbacked cryptoassets under the market risk framework. The Basel Committee on Banking Supervision has published an international cryptoasset-exposure standard and started an expedited review of targeted elements on an unconfirmed timeline; firms may use the standard's classification conditions where PRA rules allow discretion, but the PRA expects to consult on a proposed future framework only 'in 2028 at the earliest.' Tokenised traditional assets, including Digital Securities Sandbox and Digital Gilt Issuance Pilot instruments, should generally get the same treatment as non-tokenised equivalents where legal rights and risks are comparable.",
+  "why_it_matters": "For someone new to UK bank regulation, this letter is the Bank of England's Prudential Regulation Authority (PRA) telling banks how much capital they must hold against cryptoassets they hold themselves: a conservative 100% capital charge still applies to most of them today. It also signals that safer or tokenised assets could eventually get more risk-sensitive treatment as an international Basel standard develops, though the PRA does not expect to consult on a formal UK framework before 2028 at the earliest.",
+  "citations": [
+    {
+      "url": "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/letter/2026/tokenised-assets-stablecoins-and-other-cryptoasset-exposures.pdf",
+      "quote": "to apply a 100% capital requirement to unbacked cryptoassets to reflect their elevated volatility"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-27T13:15:00Z",
+  "model": "Claude (Anthropic)"
+}

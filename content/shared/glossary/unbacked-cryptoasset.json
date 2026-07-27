@@ -1,0 +1,18 @@
+{
+  "first_used_card_id": "c96db0f72765f17fd216dcb3b23c901be93c4f6c3ae3812370b5d5a28f1c4075",
+  "formal_definition": "A cryptoasset whose value is not linked to, or backed by, a reserve of other assets, in contrast to a stablecoin or tokenised traditional asset. The PRA's 18 May 2026 Dear CEO letter on cryptoasset exposures reaffirms that a 100% capital requirement under the market risk framework remains appropriate for unbacked cryptoassets, reflecting their elevated volatility and/or limited price history, while noting that some cryptoassets have begun to emerge with features posing less significant risk than this category.",
+  "generated_at": "2026-07-27T13:15:00Z",
+  "id": "unbacked-cryptoasset",
+  "jurisdictions": [
+    "global"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "A cryptoasset -- such as bitcoin -- that is not backed by, or does not derive its value from, a reserve of other assets, unlike a stablecoin or a tokenised traditional asset. Prudential regulators treat unbacked cryptoassets as carrying the highest capital risk of any cryptoasset category: the PRA, for example, continues to expect firms to hold capital equal to 100% of the value of their unbacked cryptoasset holdings, reflecting their high volatility and limited price history.",
+  "related_terms": [
+    "cryptoasset",
+    "bcbs"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "Unbacked cryptoasset"
+}

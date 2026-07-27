@@ -1,0 +1,18 @@
+{
+  "first_used_card_id": "c96db0f72765f17fd216dcb3b23c901be93c4f6c3ae3812370b5d5a28f1c4075",
+  "formal_definition": "Overarching requirements in the PRA Rulebook that apply to all PRA-authorised firms independently of more specific rules elsewhere. The PRA's 18 May 2026 Dear CEO letter on cryptoasset exposures states that firms' responsibilities under the Fundamental Rules are to act in a prudent manner, have effective risk strategies and risk management systems, and deal with regulators in an open and co-operative way; its Annex separately identifies Fundamental Rules 3, 5 and 7 as the ones emphasised for firms' cryptoasset risk controls.",
+  "generated_at": "2026-07-27T13:15:00Z",
+  "id": "pra-fundamental-rules",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "A small set of overarching, principle-based obligations that apply to every PRA-regulated bank and designated investment firm, regardless of the more detailed rules found elsewhere in the PRA Rulebook. The PRA's Dear CEO letter on cryptoasset exposures cites three of them as relevant to how firms should treat crypto risk: acting in a prudent manner, maintaining effective risk strategies and risk management systems, and dealing with the PRA in an open and co-operative way.",
+  "related_terms": [
+    "boe",
+    "icaap"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "PRA Fundamental Rules"
+}

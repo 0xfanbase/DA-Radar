@@ -75,5 +75,16 @@
     "generated_at": "2026-07-11T17:10:42Z",
     "model": "Claude (Anthropic)",
     "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "2028 at the earliest",
+    "event": "PRA expects to consult on a proposed future prudential framework for banks' cryptoasset exposures, following completion of the Basel Committee on Banking Supervision's expedited targeted review of its cryptoasset prudential standard (itself on an unconfirmed timeline)",
+    "pillar": "banking_money",
+    "source_url": "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/letter/2026/tokenised-assets-stablecoins-and-other-cryptoasset-exposures.pdf",
+    "confidence": "indicated",
+    "generated_at": "2026-07-27T13:15:00Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T00:14:37Z",
+  "generated_at": "2026-07-27T23:54:22Z",
   "items": {
     "02028a9677575e76189a49022768f45cc07c84ca74ac72879172cd9671891801": {
       "card_id": null,
@@ -2674,7 +2674,7 @@
       "title": "Official Statistics: HM Treasury Statistics: Timetable, standards and policies"
     },
     "c96db0f72765f17fd216dcb3b23c901be93c4f6c3ae3812370b5d5a28f1c4075": {
-      "card_id": null,
+      "card_id": "c96db0f72765f17fd216dcb3b23c901be93c4f6c3ae3812370b5d5a28f1c4075",
       "content_hash": "370c8e07aa41e6d499daad3ea49a95b92e815a51aa8add4f4e09b70d65193af4",
       "feed_id": "boe_pra_publications",
       "first_seen": "2026-07-11T17:59:17Z",
@@ -2685,7 +2685,7 @@
       "raw_published": "Mon, 18 May 2026 09:00:00 +0100",
       "relevant": true,
       "source_id": "boe",
-      "status": "queued",
+      "status": "drafted",
       "summary": "Letter to Chief Executive Officers of all banks and designated investment firms.",
       "title": "Letter from David Bailey, Charlotte Gerken and Rebecca Jackson on the prudential treatment of tokenised assets, stablecoins, and other cryptoasset exposures"
     },

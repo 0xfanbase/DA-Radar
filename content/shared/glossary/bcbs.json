@@ -1,0 +1,18 @@
+{
+  "first_used_card_id": "c96db0f72765f17fd216dcb3b23c901be93c4f6c3ae3812370b5d5a28f1c4075",
+  "formal_definition": "A committee of banking supervisory authorities that develops non-binding global standards for bank capital and supervision (the 'Basel' framework). The PRA's 18 May 2026 Dear CEO letter on cryptoasset exposures states that the BCBS has published the international standard for the prudential treatment of cryptoasset exposures, and has since expedited a review of targeted elements of that standard on a timeline the BCBS has not confirmed publicly.",
+  "generated_at": "2026-07-27T13:15:00Z",
+  "id": "bcbs",
+  "jurisdictions": [
+    "global"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "The international group of central banks and bank supervisors that sets global standards for how banks should be capitalised and supervised, hosted by the Bank for International Settlements in Basel, Switzerland. Its standards are not directly binding on any bank -- each country's own regulator, such as the PRA in the UK, decides whether and how to write them into its own rulebook. The BCBS has published an international standard for how banks should treat their exposures to cryptoassets and is separately reviewing targeted elements of it.",
+  "related_terms": [
+    "icaap",
+    "unbacked-cryptoasset"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "Basel Committee on Banking Supervision (BCBS)"
+}

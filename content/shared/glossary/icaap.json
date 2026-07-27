@@ -1,0 +1,18 @@
+{
+  "first_used_card_id": "c96db0f72765f17fd216dcb3b23c901be93c4f6c3ae3812370b5d5a28f1c4075",
+  "formal_definition": "The Internal Capital Adequacy Assessment Process is a firm's own process for identifying, measuring and reporting the risks it faces and determining the internal capital it judges adequate against them; it sits within Pillar 2 (the supervisory review process) of the Basel capital framework, alongside and in addition to the standardised, minimum requirements set under Pillar 1. The PRA's 18 May 2026 Dear CEO letter on cryptoasset exposures instructs firms to consider cryptoasset risks through the ICAAP and related Pillar 2 frameworks, alongside Pillar 1 requirements and the PRA Fundamental Rules.",
+  "generated_at": "2026-07-27T13:15:00Z",
+  "id": "icaap",
+  "jurisdictions": [
+    "global"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "A bank's own internal exercise to identify all the material risks it faces and judge for itself how much capital it needs against them, going beyond the minimum, formula-based capital rules ('Pillar 1') that apply the same way to every firm. A firm's ICAAP is reviewed by its supervisor as part of 'Pillar 2' of the Basel capital framework, and the supervisor can require a firm to hold more capital than the Pillar 1 minimum if it disagrees with the firm's own assessment.",
+  "related_terms": [
+    "pra-fundamental-rules",
+    "bcbs"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "ICAAP (Internal Capital Adequacy Assessment Process)"
+}
