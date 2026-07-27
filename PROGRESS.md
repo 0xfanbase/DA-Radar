@@ -2467,3 +2467,72 @@ Hashdex gate-downgrade; eu 1/1 verified), all honestly labeled, none fabricated.
 firing: hk 64, us 35, eu 1 (the recurring cartel item), uk 6, jp 11, uae/ch 0. No `PushNotification`
 fired -- nothing stopped early, no gate failure blocked a commit, every push landed and was
 independently confirmed against `origin/main`, not self-reported.
+
+### 2026-07-26/27 -- Second genuinely unattended firing (`trig_01CHa5wLW4G5LGj8fREeKUkE`, fired 22:37 UTC on schedule, no one watching): hk/us/eu/uk processed
+
+Same cap logic as every prior firing, applied to this firing's specific queue state: hk=4, us=4,
+eu=1 (its queue only had one item), uk=1 (the 10-cap's one remaining slot, taken in registry order)
+-- 10 total, cap bound at uk. uae/ch (both empty) and jp (queue of 11, untouched -- the cap bound
+before reaching it) got nothing this firing.
+
+**hk -- 4 cards drafted, verified, published; 1 verified, 3 unverified.** FSTB/SFC's 24 Dec 2025
+consultation conclusions on VA dealing/custody regimes (plus a further consultation on VA
+advisory/management) came through cleanly via `apps.sfc.hk` and ended up fully verified. The other
+three -- two HKMA consultation letters and an HKMA speech announcement -- stayed unverified:
+`brdr.hkma.gov.hk` returned HTTP 503 on both consultation-letter citations, again, now reproduced
+identically across every firing this trigger has run. One verifier separately confirmed a citation
+via an alternate fetch route and set `status: "verified"`, exactly as IMPROVEMENT_BACKLOG.md's
+07-26 entry anticipated ("a workaround exists in principle... doesn't help in practice") -- the
+deterministic gate's own plain-fetch re-check downgraded it right back to `unverified`, the gate
+working exactly as designed, not overridden. A second verifier caught and removed an uncited
+cross-reference from the speech card (it had asserted a companion speaker's remarks as fact, sourced
+only from an unrelated, not-yet-drafted queue item) rather than let it stand. New, distinct
+observation this firing: `www.hkma.gov.hk` (the main site, not the already-known-bad `brdr`
+subdomain) also returned no retrievable content on several independent attempts, by both the analyst
+and a verifier -- not yet corroborated across multiple firings the way `brdr.hkma.gov.hk`'s failure
+is, so logged as a new open question rather than escalated to "permanent." Detail in
+IMPROVEMENT_BACKLOG.md.
+
+**us -- 4 cards drafted, verified, published; 4 verified, 0 unverified -- a clean sweep.** Three
+2021 Federal Register items (SEC orders disapproving Cboe BZX's WisdomTree and Kryptoin Bitcoin ETF
+listings; a notice of ARK 21Shares Bitcoin ETF's Amendment No. 1) plus one January 2024 notice of
+VanEck Bitcoin Trust's Amendment No. 2. `federalregister.gov` itself bot-blocked automated fetches
+again, so all four cite `govinfo.gov` (a registered official domain), consistent with precedent.
+Verifiers found and fixed two real overclaims not supported by source text -- an unsupported
+"Hong Kong currently licenses..." premise was not part of this jurisdiction's cards (that correction
+was hk's), correcting instead here: the ARK 21Shares card's "substantially rewritten" characterization
+of Amendment No. 1, when the source itself only says the amendment "clarif[ies] certain points and
+add[s] additional details." All four then passed the deterministic gate's live re-fetch cleanly --
+`govinfo.gov` held up reliably across all four, unlike `brdr.hkma.gov.hk`.
+
+**eu -- 0 cards; the recurring cartel item declined for a third consecutive firing, and this time
+its root cause was found.** The analyst traced exactly why this specific non-digital-asset item
+(a Commission construction-chemicals cartel Statement of Objections) keeps entering the queue at
+all, not just why it persists once there: `pipeline/watcher/relevance.py` does plain substring
+matching, and the English word "chemicals" contains the bare relevance keyword "mica" as a literal
+substring (che-mica-ls) -- a false-positive collision, not a genuine MiCA reference. This is the
+concrete, actionable root cause the two prior firings' entries flagged as still-undiagnosed. Not
+fixed here (`pipeline/watcher/relevance.py` and `config/jurisdictions/eu.json` are both outside the
+analyst/verifier path allowlist and this runbook's own scope) -- logged in IMPROVEMENT_BACKLOG.md
+with two concrete fix directions for the owner.
+
+**uk -- 1 card drafted, verified, published; 1 verified, 0 unverified.** The Bank of England PRA's
+18 May 2026 "Dear CEO" letter reaffirming that deposit-takers must issue e-money and (retail)
+stablecoins from a separate, insolvency-remote, distinctly-branded entity -- explicitly likened by
+the PRA itself to the US GENIUS Act's issuer-separation approach -- with a more proportionate path
+for wholesale-only stablecoin proposals via the Bank's Digital Securities Sandbox. Four new glossary
+terms added (e-money, tokenised deposit, FSCS, Dear CEO letter). The source was PDF-only (the linked
+landing page had no extractable body text); both the analyst and verifier read the saved PDF
+directly rather than relying on a lossy HTML conversion. The verifier caught one unsupported claim --
+the letter never actually names "designated investment firms" as a recipient class, only the generic
+"Dear Chief Executive Officer" salutation -- and corrected it before verifying.
+
+**Net result of this firing:** 9 cards processed end-to-end across 3 jurisdictions (hk, us, uk; eu
+processed with zero cards by design) -- checked card-by-card against the actual published files,
+not tallied from memory: **6 verified, 3 unverified** (hk 1/4 verified; us 4/4 verified; uk 1/1
+verified). Real commits: `8569381`/`14ff691` (hk), `ef49685`/`eeb076a` (us), `4be53a0`/`98e8229`
+(uk); eu produced no commit (nothing to commit, by design -- zero cards drafted). Backlog after
+this firing: hk 60, us 31, eu 1 (the recurring cartel item, root-caused this firing but not yet
+fixed), uk 5, jp 11, uae/ch 0. No `PushNotification` fired -- nothing stopped early, no gate failure
+blocked a commit, every push landed and was independently confirmed against `origin/main`, not
+self-reported.

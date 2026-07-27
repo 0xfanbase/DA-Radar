@@ -1554,3 +1554,42 @@ editorial rules, the path allowlist, or the architecture constraints require an 
 human-approved change") -- a prose update describing current state isn't an editorial-rule change,
 but the file's own blanket rule doesn't carve out an exception for that, so this is logged for an
 explicit human-approved fix rather than assumed to be a safe exception.
+
+### 2026-07-27 -- Root cause found: eu's recurring queue item is a relevance-keyword substring collision ("mica" inside "chemicals")
+
+Third consecutive firing to hit the same eu queue item (Commission construction-chemicals cartel
+Statement of Objections, `item_hash 8ebafbd5...`) -- previously logged above (07-25, 07-26 entries)
+only as "correctly declined, recurring, no terminal ledger status." This firing's analyst went
+further and found *why* it enters the queue at all, not just why it persists once there:
+`pipeline/watcher/relevance.py`'s `is_relevant()` does plain case-insensitive substring matching of
+each jurisdiction's `relevance_keywords` against `"{title} {summary}".lower()`.
+`config/jurisdictions/eu.json`'s keyword list includes the bare token `"mica"` (intended for "MiCA,"
+the Markets in Crypto-Assets Regulation) -- and the English word "chemicals" contains "mica" as a
+literal substring (che-**mica**-ls). This item's title/summary use "chemicals" three times, so it
+passes the relevance filter on a false positive, with zero genuine MiCA content anywhere in it.
+
+Two concrete fix directions (owner call, not made here -- `pipeline/watcher/relevance.py` and
+`config/jurisdictions/*.json` are both outside the analyst/verifier path allowlist and outside this
+runbook's own scope regardless):
+- Require a word-boundary match (e.g. regex `\bmica\b`) instead of bare substring containment.
+- Drop the bare `"mica"` keyword from `eu.json`'s `relevance_keywords`, relying on the already-present,
+  more specific phrase `"markets in crypto-assets"` instead.
+
+This is upstream of, and likely explains, most or all of the recurring-item cost already logged on
+07-25/07-26 -- the no-terminal-ledger-status problem described there is still real and still unfixed,
+but this specific recurring item's root cause is no longer a mystery. Worth the owner fixing the
+keyword collision directly, independent of whether the broader terminal-status design question is
+ever resolved.
+
+### 2026-07-27 -- www.hkma.gov.hk (the main site, not the already-known-bad brdr.hkma.gov.hk subdomain) also failed to return retrievable content this firing -- new, single-session observation, not yet confirmed as a pattern
+
+Both this firing's hk analyst and one of its verifiers independently reported that `www.hkma.gov.hk`
+-- previously confirmed fetchable in the 07-13 audit-response entry above ("Sibling HKMA hosts...
+verified and fetched cleanly") -- returned no retrievable body text this firing, for a speech page
+and (separately, per the verifier) for `robots.txt` and several other same-domain pages, ruling out a
+single-page rendering quirk. This is distinct from the confirmed-permanent `brdr.hkma.gov.hk`
+TLS/503 issue documented above (different subdomain, different failure mode -- empty body / no
+content, not a connection error). Logged here as a new, single-firing observation only -- unlike
+`brdr.hkma.gov.hk`, which has now failed identically across every firing to date, `www.hkma.gov.hk`
+has previously worked, so this may be transient rather than a new permanent limitation. Worth
+checking again next firing before treating it as a pattern.
