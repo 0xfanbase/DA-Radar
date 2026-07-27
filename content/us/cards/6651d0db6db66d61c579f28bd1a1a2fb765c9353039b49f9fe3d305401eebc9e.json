@@ -12,10 +12,10 @@
   "citations": [
     {
       "url": "https://www.govinfo.gov/content/pkg/FR-2021-05-27/html/2021-11172.htm",
-      "quote": "issuing Creation Units in exchange for deposits of bitcoins"
+      "quote": "redemption proceeds are similarly only paid in bitcoin"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-27T00:15:00Z",
   "model": "Claude (Anthropic)"
 }

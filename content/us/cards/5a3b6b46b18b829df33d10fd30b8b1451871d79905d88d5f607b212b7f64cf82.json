@@ -7,7 +7,7 @@
   "pillar": ["funds_etfs"],
   "type": "conclusions",
   "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the One River Carbon Neutral Bitcoin Trust Under NYSE Arca Rule 8.201-E (Commodity-Based Trust Shares)",
-  "summary": "On 2 June 2022, the Federal Register published an SEC order (Release No. 34-94999, File No. SR-NYSEArca-2021-67) disapproving NYSE Arca's proposed rule change to list and trade shares of the One River Carbon Neutral Bitcoin Trust under NYSE Arca Rule 8.201-E, the exchange's Commodity-Based Trust Shares listing standard. NYSE Arca filed the proposal on 20 September 2021; the Commission instituted proceedings on 21 December 2021 before issuing this order, dated 27 May 2022. The trust, sponsored by One River Digital Asset Management, LLC, would have held bitcoin and retired carbon offset tokens to track bitcoin's price on a carbon-neutral basis. The Commission concluded NYSE Arca had not met its burden under Exchange Act Section 6(b)(5), because it did not assert a comprehensive surveillance-sharing agreement with a regulated market of significant size trading bitcoin.",
+  "summary": "On 2 June 2022, the Federal Register published an SEC order (Release No. 34-94999, File No. SR-NYSEArca-2021-67) disapproving NYSE Arca's proposed rule change to list and trade shares of the One River Carbon Neutral Bitcoin Trust under NYSE Arca Rule 8.201-E, the exchange's Commodity-Based Trust Shares listing standard. NYSE Arca filed the proposal on 20 September 2021; the Commission instituted proceedings on 21 December 2021 before issuing this order, dated 27 May 2022. The trust, sponsored by One River Digital Asset Management, LLC, would have held bitcoin as its asset, while separately paying each quarter to retire carbon offset (MCO2) tokens — not held by the trust — to offset the bitcoin's carbon footprint and track bitcoin's price on that carbon-neutral basis. The Commission concluded NYSE Arca had not met its burden under Exchange Act Section 6(b)(5), because it did not assert a comprehensive surveillance-sharing agreement with a regulated market of significant size trading bitcoin.",
   "why_it_matters": "This order applies the same fraud-and-manipulation standard the SEC used in its other bitcoin exchange-traded product decisions to a proposal with an added feature: a carbon-neutral structure using offset tokens. Naming the One River Carbon Neutral Bitcoin Trust here reflects only what the SEC's own order states about that specific proposal.",
   "key_dates": {
     "milestone": "2022-05-27"
@@ -18,7 +18,7 @@
       "quote": "does not assert that the Exchange has a comprehensive surveillance-sharing agreement"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-27T00:15:00Z",
   "model": "Claude (Anthropic)"
 }
