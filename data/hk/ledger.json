@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T23:27:56Z",
+  "generated_at": "2026-07-27T05:04:53Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -3088,6 +3088,22 @@
       "status": "queued",
       "summary": "",
       "title": "Results of 7-year HKD HKSAR Institutional Government Bonds tender through re-opening"
+    },
+    "302073444cb5017690dbd3657e955947a0f4a00ea37a190241ea98fa8ab99e48": {
+      "card_id": null,
+      "content_hash": "66d86ecc24c7484801816c485f331acb0ea0b5b81cac59a4c64600b354779c50",
+      "feed_id": "hkma_circulars",
+      "first_seen": "2026-07-27T05:04:53Z",
+      "guid": null,
+      "item_hash": "302073444cb5017690dbd3657e955947a0f4a00ea37a190241ea98fa8ab99e48",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260713-1-EN",
+      "published_at": "2026-07-23T16:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Code of Practice chapters regarding valuation in resolution issued under the Financial Institutions (Resolution) Ordinance (Cap. 628) (“FIRO”)"
     },
     "3028fd00c9577a46306c133eea4c255737ca415c3bfe59b8f70ae03f0a2da6c5": {
       "card_id": null,
@@ -7696,6 +7712,22 @@
       "status": "queued",
       "summary": "",
       "title": "Beware of tokens purported to be associated with licensed stablecoin issuers"
+    },
+    "79c6a89d4ae424954d2801a96354f85d327cb80967db20d1821c638983c26a94": {
+      "card_id": null,
+      "content_hash": "8c8a0554820e80e2ba91d1a9b32393108a04daca897af74e5391f0de175a2a59",
+      "feed_id": "hkma_circulars",
+      "first_seen": "2026-07-27T05:04:53Z",
+      "guid": null,
+      "item_hash": "79c6a89d4ae424954d2801a96354f85d327cb80967db20d1821c638983c26a94",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260709-1-EN",
+      "published_at": "2026-07-23T16:00:00Z",
+      "raw_published": "Fri, 24 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Complaints Watch Issue No. 28"
     },
     "79d91f152bd0237caa3ff35e1443c7819ba95d24643ea90faf37bfede4b8a3bc": {
       "card_id": null,
