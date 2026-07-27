@@ -1,16 +1,6 @@
 {
-  "generated_at": "2026-07-19T04:43:27Z",
+  "generated_at": "2026-07-27T00:07:29Z",
   "items": [
-    {
-      "feed_id": "boe_pra_publications",
-      "item_hash": "07af03cf06a4c3d457c1ae7ce7d149a02d8b8562338e3588f2e813c38e7323f7",
-      "link": "https://www.bankofengland.co.uk/prudential-regulation/letter/2026/innovations-in-the-use-of-deposits-emoney-and-regulated-stablecoins",
-      "published_at": "2026-05-18T08:00:00Z",
-      "source_id": "boe",
-      "status": "queued",
-      "summary": "Letter to Chief Executive Officers of all banks and designated investment firms.",
-      "title": "Letter from David Bailey, Charlotte Gerken and Rebecca Jackson on reaffirming the PRA's position and clarifying expectations on innovations in the use of deposits, e-money and stablecoins"
-    },
     {
       "feed_id": "boe_pra_publications",
       "item_hash": "c96db0f72765f17fd216dcb3b23c901be93c4f6c3ae3812370b5d5a28f1c4075",

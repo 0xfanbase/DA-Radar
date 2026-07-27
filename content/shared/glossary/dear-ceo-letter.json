@@ -1,0 +1,20 @@
+{
+  "first_used_card_id": "07af03cf06a4c3d457c1ae7ce7d149a02d8b8562338e3588f2e813c38e7323f7",
+  "formal_definition": "Not a form of legislation or delegated legislation in its own right, but a supervisory communication issued under a regulator's general supervisory powers, typically grounding its expectations in existing binding requirements -- such as the PRA's Fundamental Rules or Threshold Conditions -- rather than creating new ones. A Dear CEO letter can itself be superseded by a later one on the same subject: the Bank of England PRA's 18 May 2026 letter on deposits, e-money and stablecoins explicitly replaces a predecessor the PRA had issued on the same topic in 2023.",
+  "generated_at": "2026-07-27T12:00:00Z",
+  "id": "dear-ceo-letter",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "A letter a UK regulator -- most often the Prudential Regulation Authority or the Financial Conduct Authority -- sends to the chief executives of an entire category of regulated firms to set out or clarify its supervisory expectations on a given topic. It does not create new legislation or formal rules; firms are still expected to already meet the underlying obligations, but the letter explains how the regulator expects those obligations to be applied, often in a new or fast-moving area.",
+  "related_terms": [
+    "boe",
+    "e-money",
+    "stablecoin",
+    "fscs"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "Dear CEO letter"
+}

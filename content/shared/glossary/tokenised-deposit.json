@@ -1,0 +1,20 @@
+{
+  "first_used_card_id": "07af03cf06a4c3d457c1ae7ce7d149a02d8b8562338e3588f2e813c38e7323f7",
+  "formal_definition": "The PRA's working description, set out in Annex 1 of its 18 May 2026 Dear CEO letter on deposits, e-money and stablecoins, is a deposit claim held on a programmable ledger that supports techniques such as instant (atomic) settlement and smart-contract automation; the letter cautions that neither standard-setters nor market participants have yet agreed a common meaning for the term. The PRA treats tokenised deposits -- including those structured as transferable liabilities of the issuing deposit-taker, sometimes called 'deposit tokens' -- as ordinary deposits for FSCS depositor-protection purposes, provided the PRA's associated rules and operational requirements for depositor protection are met.",
+  "generated_at": "2026-07-27T12:00:00Z",
+  "id": "tokenised-deposit",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "A bank deposit represented as a transferable token on a programmable ledger rather than only as an entry in a bank's internal ledger -- enabling techniques such as near-instant settlement and smart contracts -- while remaining, legally, an ordinary deposit rather than a stablecoin or e-money product.",
+  "related_terms": [
+    "e-money",
+    "stablecoin",
+    "fscs",
+    "qualifying-stablecoin"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "Tokenised deposit"
+}

@@ -1,0 +1,20 @@
+{
+  "first_used_card_id": "07af03cf06a4c3d457c1ae7ce7d149a02d8b8562338e3588f2e813c38e7323f7",
+  "formal_definition": "In the UK, e-money is defined, for the purposes of the Bank of England PRA's 18 May 2026 Dear CEO letter on deposits, e-money and stablecoins, by reference to the Electronic Money Regulations 2011 (SI 2011/99) as electronic monetary value the customer holds as a claim against the issuer. E-money issuance is a regulated activity separate from deposit-taking; the PRA's letter treats e-money, like stablecoin issuance, as carrying different (non-FSCS) protections from a bank deposit, and expects deposit-taking banking groups that also issue e-money or stablecoins to retail customers to do so from a separate, insolvency-remote, distinctly-branded entity. Other jurisdictions regulate e-money under their own separate regimes, not covered here.",
+  "generated_at": "2026-07-27T12:00:00Z",
+  "id": "e-money",
+  "jurisdictions": [
+    "global"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "Digital value stored electronically and redeemable at face value on request -- the sort of balance behind many prepaid cards and non-bank payment apps -- which is legally distinct from a bank deposit even though it can look and feel similar to a customer. Because it is not a deposit, it typically does not carry the same government-backed protection if the issuer fails.",
+  "related_terms": [
+    "stablecoin",
+    "tokenised-deposit",
+    "fscs",
+    "dear-ceo-letter"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "E-money"
+}

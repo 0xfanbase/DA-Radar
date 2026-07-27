@@ -1,0 +1,20 @@
+{
+  "first_used_card_id": "07af03cf06a4c3d457c1ae7ce7d149a02d8b8562338e3588f2e813c38e7323f7",
+  "formal_definition": "Referred to as 'FSCS' throughout Bank of England PRA correspondence, including its 18 May 2026 Dear CEO letter on deposits, e-money and stablecoins, which defines a 'deposit' by reference to Article 5 of the Financial Services and Markets Act 2000 (Regulated Activities) Order 2001 (SI 2001/544) and treats FSCS protection as the feature that legally and behaviourally separates a deposit from e-money or a stablecoin, neither of which carries FSCS protection. The letter also states that because FSCS cover reaches deposits placed with UK branches of overseas banks, it expects those branches' UK operations to follow the same approach as UK-headquartered deposit-takers.",
+  "generated_at": "2026-07-27T12:00:00Z",
+  "id": "fscs",
+  "jurisdictions": [
+    "uk"
+  ],
+  "model": "Claude (Anthropic)",
+  "plain_definition": "The UK's statutory scheme that reimburses eligible customers if their bank, building society or credit union fails, up to a protected limit. It covers deposits but not e-money or stablecoins, which is the key legal distinction behind Bank of England expectations that banks keep those digital-money products visibly separate from their deposit-taking business.",
+  "related_terms": [
+    "e-money",
+    "stablecoin",
+    "tokenised-deposit",
+    "boe"
+  ],
+  "schema_version": 2,
+  "status": "unverified",
+  "term": "Financial Services Compensation Scheme (FSCS)"
+}
