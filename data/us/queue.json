@@ -1,46 +1,6 @@
 {
-  "generated_at": "2026-07-26T23:41:03Z",
+  "generated_at": "2026-07-27T23:24:42Z",
   "items": [
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "5a3b6b46b18b829df33d10fd30b8b1451871d79905d88d5f607b212b7f64cf82",
-      "link": "https://www.federalregister.gov/documents/2022/06/02/2022-11819/self-regulatory-organizations-nyse-arca-inc-order-disapproving-a-proposed-rule-change-to-list-and",
-      "published_at": "2022-06-02T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "",
-      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the One River Carbon Neutral Bitcoin Trust Under NYSE Arca Rule 8.201-E (Commodity-Based Trust Shares)"
-    },
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "618978ee9f544db3a8769011dd4414434f57b2ac1a0b0de0e52c94479f8025eb",
-      "link": "https://www.federalregister.gov/documents/2024/11/04/2024-25529/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-of-proposed-rule-change-to-adopt-new",
-      "published_at": "2024-11-04T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "",
-      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Proposed Rule Change To Adopt New NYSE Arca Rule 8.800-E To Provide for the Listing and Trading of Commodity- and Digital Asset-Based Investment Interests and To List and Trade Shares of the Grayscale Digital Large Cap Fund LLC"
-    },
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "6651d0db6db66d61c579f28bd1a1a2fb765c9353039b49f9fe3d305401eebc9e",
-      "link": "https://www.federalregister.gov/documents/2021/05/27/2021-11172/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-of-proposed-rule-change-to-list-and",
-      "published_at": "2021-05-27T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "",
-      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Proposed Rule Change To List and Trade Shares of the First Trust SkyBridge Bitcoin ETF Trust Under NYSE Arca Rule 8.201-E"
-    },
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "7080aeab107968c1398bb3bd2874a74a42eed154ee810a522e1aca1c7d63e569",
-      "link": "https://www.federalregister.gov/documents/2022/03/16/2022-05499/self-regulatory-organizations-nyse-arca-inc-order-disapproving-a-proposed-rule-change-to-list-and",
-      "published_at": "2022-03-16T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "",
-      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the NYDIG Bitcoin ETF Under NYSE Arca Rule 8.201-E (Commodity-Based Trust Shares)"
-    },
     {
       "feed_id": "fedreg_digital_assets",
       "item_hash": "76bee6dc51a1b13f1863d9b517ee929d81240491cf09a6cdb6b95aee720a6b5a",

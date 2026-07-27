@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "7080aeab107968c1398bb3bd2874a74a42eed154ee810a522e1aca1c7d63e569",
+  "jurisdiction_id": "us",
+  "published_date": "2022-03-16",
+  "regulator": "SEC",
+  "pillar": ["funds_etfs"],
+  "type": "conclusions",
+  "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the NYDIG Bitcoin ETF Under NYSE Arca Rule 8.201-E (Commodity-Based Trust Shares)",
+  "summary": "On 16 March 2022, the Federal Register published an SEC order (Release No. 34-94395, File No. SR-NYSEArca-2021-57) disapproving NYSE Arca's proposed rule change to list and trade shares of the NYDIG Bitcoin ETF under NYSE Arca Rule 8.201-E, the exchange's Commodity-Based Trust Shares listing standard. NYSE Arca filed the proposal on 30 June 2021; the Commission instituted proceedings on 29 September 2021 and issued this order on 10 March 2022. The trust's sponsor is NYDIG Asset Management LLC, with NYDIG Trust Company LLC, chartered by the New York Department of Financial Services, as bitcoin custodian. The Commission concluded NYSE Arca had not met its burden under Exchange Act Section 6(b)(5), finding no reasonable likelihood that manipulating the ETP would require trading on the CME bitcoin futures market, the alternative basis NYSE Arca offered instead of a surveillance-sharing agreement.",
+  "why_it_matters": "This March 2022 order applies the same Exchange Act Section 6(b)(5) fraud-and-manipulation standard used in the SEC's other bitcoin exchange-traded product decisions, this time finding the record did not show that manipulating the proposed ETP would require trading on the CME bitcoin futures market. Naming NYDIG Asset Management LLC and NYDIG Trust Company LLC here reflects only what the SEC's own order states about their proposed roles.",
+  "key_dates": {
+    "milestone": "2022-03-10"
+  },
+  "citations": [
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2022-03-16/html/2022-05499.htm",
+      "quote": "has not met its burden under the Exchange Act and the Commission's Rules of Practice"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-27T00:15:00Z",
+  "model": "Claude (Anthropic)"
+}

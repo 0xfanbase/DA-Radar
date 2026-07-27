@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "6651d0db6db66d61c579f28bd1a1a2fb765c9353039b49f9fe3d305401eebc9e",
+  "jurisdiction_id": "us",
+  "published_date": "2021-05-27",
+  "regulator": "SEC",
+  "pillar": ["funds_etfs"],
+  "type": "consultation",
+  "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Proposed Rule Change To List and Trade Shares of the First Trust SkyBridge Bitcoin ETF Trust Under NYSE Arca Rule 8.201-E",
+  "summary": "On 27 May 2021, the Federal Register published an SEC notice (Release No. 34-91962, File No. SR-NYSEArca-2021-37) that NYSE Arca had filed a proposed rule change, on 6 May 2021, to list and trade shares of the First Trust SkyBridge Bitcoin ETF Trust under NYSE Arca Rule 8.201-E, the exchange's Commodity-Based Trust Shares listing standard. The trust's sponsor is First Trust Advisors L.P., with SkyBridge Capital II, LLC as sub-adviser and NYDIG Trust Company LLC as bitcoin custodian; net asset value would reference CF Benchmarks Ltd.'s CF Bitcoin US Settlement Price. The trust would hold bitcoin directly, issuing Creation Units in exchange for bitcoin deposited by Authorized Participants and paying redemptions in bitcoin rather than cash. Publication opened a public comment period under Exchange Act Section 19(b)(1); the notice itself takes no position on approval or disapproval.",
+  "why_it_matters": "This is the procedural first step the SEC required before it could approve, disapprove, or open formal proceedings on this proposed bitcoin exchange-traded product: publishing NYSE Arca's filing and inviting public comment. Naming First Trust Advisors L.P. and SkyBridge Capital II, LLC here reflects only what NYSE Arca's own filing states about their roles in this specific proposal.",
+  "citations": [
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2021-05-27/html/2021-11172.htm",
+      "quote": "issuing Creation Units in exchange for deposits of bitcoins"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-27T00:15:00Z",
+  "model": "Claude (Anthropic)"
+}

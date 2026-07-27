@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "in-kind-creation-redemption",
+  "term": "In-kind creation and redemption",
+  "jurisdictions": ["us"],
+  "plain_definition": "The way some exchange-traded product trusts issue and redeem large blocks of shares (Creation Units): an Authorized Participant delivers the trust's underlying asset itself, such as bitcoin, to create new shares, and receives that same underlying asset back when redeeming, rather than delivering or receiving cash.",
+  "formal_definition": "Illustrated by the First Trust SkyBridge Bitcoin ETF Trust's proposed structure (NYSE Arca File No. SR-NYSEArca-2021-37): the trust would issue Creation Units in exchange for deposits of bitcoin by Authorized Participants and distribute bitcoin in connection with redemptions, rather than cash -- a structure common to early proposed spot bitcoin trusts filed under the Commodity-Based Trust Shares listing rules.",
+  "related_terms": ["commodity-based-trust-shares"],
+  "first_used_card_id": "6651d0db6db66d61c579f28bd1a1a2fb765c9353039b49f9fe3d305401eebc9e",
+  "generated_at": "2026-07-27T00:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

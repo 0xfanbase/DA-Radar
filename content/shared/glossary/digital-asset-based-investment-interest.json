@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "digital-asset-based-investment-interest",
+  "term": "Digital Asset-Based Investment Interest",
+  "jurisdictions": ["us"],
+  "plain_definition": "A listing category NYSE Arca has proposed for its own rulebook (proposed Rule 8.800-E) for securities issued by a trust, limited liability company, or other similar entity that can hold a mix of specified commodities, digital assets, Derivative Securities Products, and/or cash -- broader than the exchange's existing Commodity-Based Trust Shares category, which is limited to a trust holding a single commodity.",
+  "formal_definition": "Proposed in NYSE Arca's filing to adopt new Rule 8.800-E, File No. SR-NYSEARCA-2024-87 (filed 15 October 2024; published Federal Register 4 November 2024, Doc. 2024-25529), alongside a proposal to list and trade shares of the Grayscale Digital Large Cap Fund LLC under the new rule.",
+  "related_terms": ["commodity-based-trust-shares", "self-regulatory-organization"],
+  "first_used_card_id": "618978ee9f544db3a8769011dd4414434f57b2ac1a0b0de0e52c94479f8025eb",
+  "generated_at": "2026-07-27T00:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

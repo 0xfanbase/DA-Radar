@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T23:50:42Z",
+  "generated_at": "2026-07-27T23:24:42Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -834,7 +834,7 @@
       "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Proposed Rule Change, as Modified by Amendment No. 1, To List and Trade Shares of the Grayscale Solana Trust Under NYSE Arca Rule 8.201-E, Commodity-Based Trust Shares"
     },
     "5a3b6b46b18b829df33d10fd30b8b1451871d79905d88d5f607b212b7f64cf82": {
-      "card_id": null,
+      "card_id": "5a3b6b46b18b829df33d10fd30b8b1451871d79905d88d5f607b212b7f64cf82",
       "content_hash": "edb27a15a68ec47e0ca8b0e3faf78dc4c81622cfb8859b99a29932fc92351ac3",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -845,7 +845,7 @@
       "raw_published": "2022-06-02",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the One River Carbon Neutral Bitcoin Trust Under NYSE Arca Rule 8.201-E (Commodity-Based Trust Shares)"
     },
@@ -882,7 +882,7 @@
       "title": "SEC Publishes Draft Strategic Plan for Public Comment"
     },
     "618978ee9f544db3a8769011dd4414434f57b2ac1a0b0de0e52c94479f8025eb": {
-      "card_id": null,
+      "card_id": "618978ee9f544db3a8769011dd4414434f57b2ac1a0b0de0e52c94479f8025eb",
       "content_hash": "1e1aa57e1a6957cb8cde9eb034605626303f5e34fc114809e0905babbad823c2",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -893,12 +893,12 @@
       "raw_published": "2024-11-04",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Proposed Rule Change To Adopt New NYSE Arca Rule 8.800-E To Provide for the Listing and Trading of Commodity- and Digital Asset-Based Investment Interests and To List and Trade Shares of the Grayscale Digital Large Cap Fund LLC"
     },
     "6651d0db6db66d61c579f28bd1a1a2fb765c9353039b49f9fe3d305401eebc9e": {
-      "card_id": null,
+      "card_id": "6651d0db6db66d61c579f28bd1a1a2fb765c9353039b49f9fe3d305401eebc9e",
       "content_hash": "c4fc890fd7aa3b056209148526cd1d46de145096ec75f6eee9e46b569f9421ed",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -909,7 +909,7 @@
       "raw_published": "2021-05-27",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Proposed Rule Change To List and Trade Shares of the First Trust SkyBridge Bitcoin ETF Trust Under NYSE Arca Rule 8.201-E"
     },
@@ -978,7 +978,7 @@
       "title": "SEC and NFA Announce Memorandum of Understanding to Further Harmonize Regulatory Coordination"
     },
     "7080aeab107968c1398bb3bd2874a74a42eed154ee810a522e1aca1c7d63e569": {
-      "card_id": null,
+      "card_id": "7080aeab107968c1398bb3bd2874a74a42eed154ee810a522e1aca1c7d63e569",
       "content_hash": "5faa81fcc8cde5912a1c579b00c1e1ca796bbb54fd5c9c2534de0ec39b2b817f",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -989,7 +989,7 @@
       "raw_published": "2022-03-16",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Order Disapproving a Proposed Rule Change To List and Trade Shares of the NYDIG Bitcoin ETF Under NYSE Arca Rule 8.201-E (Commodity-Based Trust Shares)"
     },
