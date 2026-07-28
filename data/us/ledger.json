@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T23:34:35Z",
+  "generated_at": "2026-07-28T04:37:54Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -1073,6 +1073,22 @@
       "summary": "",
       "title": "CFTC, SEC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions"
     },
+    "7b37fd5ef17b66dd35e5e07fb39586825eb9d1697b7998cc802ef79670c9cb57": {
+      "card_id": null,
+      "content_hash": "debab5f485fe535fe463352fa0cb2425d159a0c8227af7e93945d3a898e35208",
+      "feed_id": "occ_news",
+      "first_seen": "2026-07-28T04:37:54Z",
+      "guid": null,
+      "item_hash": "7b37fd5ef17b66dd35e5e07fb39586825eb9d1697b7998cc802ef79670c9cb57",
+      "link": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-61.html",
+      "published_at": "2026-07-27T18:00:00Z",
+      "raw_published": "27 Jul 2026 14:00:00 -0400",
+      "relevant": false,
+      "source_id": "occ",
+      "status": "queued",
+      "summary": "WASHINGTON - Comptroller of the Currency Jonathan V. Gould today highlighted the OCC's efforts to expand financial literacy, support responsible innovation, and provide consumers with practical educational resources in remarks at the Financial Literacy and Education Commission meeting.",
+      "title": "Comptroller Gould Highlights OCC’s Financial Literacy Efforts at Financial Literacy and Education Commission Meeting"
+    },
     "7b5fe399719466c0e9a3cbcc429367a81b9ec1dba9818eadc226787a23f8b78c": {
       "card_id": null,
       "content_hash": "7b4ad89135391dd9ac6732ea3a537b8bb1da01436e2c9dabaa7e61c9d81944d4",
@@ -2001,6 +2017,22 @@
       "summary": "",
       "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Amendment No. 2 to a Proposed Rule Change To List and Trade Shares of the Grayscale Ethereum Trust"
     },
+    "e207ad25f6c5d6bb08c6d931895328b43a7d80d07f566d373662b17c7d1f500c": {
+      "card_id": null,
+      "content_hash": "904ba34d13b334ad9c1f252f56cb7a2d733268b8a79dd30dfa7034a07e9e0f8b",
+      "feed_id": "sec_press_releases",
+      "first_seen": "2026-07-28T04:37:54Z",
+      "guid": "d2788195-1473-4b91-8bbb-b008e5299767",
+      "item_hash": "e207ad25f6c5d6bb08c6d931895328b43a7d80d07f566d373662b17c7d1f500c",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-70-small-business-forums-report-congress-highlights-recommendations-improve-capital-raising-policy",
+      "published_at": "2026-07-27T19:59:17Z",
+      "raw_published": "Mon, 27 Jul 2026 15:59:17 -0400",
+      "relevant": false,
+      "source_id": "sec",
+      "status": "queued",
+      "summary": "The Securities and Exchange Commission released a report to Congress today highlighting policy recommendations from the SEC’s&nbsp;45th Annual Government-Business Forum on Small Business Capital Formation. The report provides a summary of the forum…",
+      "title": "Small Business Forum’s Report to Congress Highlights Recommendations to Improve Capital-Raising Policy"
+    },
     "e64aa247b8d8c2d78ae62cbf1ea3067f731e08d05e263d58d6e35e0694a633e2": {
       "card_id": null,
       "content_hash": "9a6be7204a23e84f89f63bf10b57720a10c84e4de85c1c4cb198d6931c54e8c2",
@@ -2128,6 +2160,22 @@
       "status": "queued",
       "summary": "Today, the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) issued a supplemental Alert to advise financial institutions to be vigilant in detecting, identifying, and reporting suspicious activity connected to Cartel de Jalisco Nueva Generacion (CJNG) and other…",
       "title": "FinCEN Issues Supplemental Alert on Fuel Smuggling and Tax Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels"
+    },
+    "f0a7745e33b97083a412b0e248e1fbf064f4e3c58371d8e3d23319479e2b7dab": {
+      "card_id": null,
+      "content_hash": "90574e35c626a4cdb744da493d5aa2884db79892c5f6cb188cbcce45b7c524d4",
+      "feed_id": "fincen_press_releases",
+      "first_seen": "2026-07-28T04:37:54Z",
+      "guid": "https://www.fincen.gov/news/news-releases/fincen-issues-statement-enforcement-policy-support-venezuelas-economic-recovery",
+      "item_hash": "f0a7745e33b97083a412b0e248e1fbf064f4e3c58371d8e3d23319479e2b7dab",
+      "link": "https://www.fincen.gov/news/news-releases/fincen-issues-statement-enforcement-policy-support-venezuelas-economic-recovery",
+      "published_at": "2026-07-27T00:00:00Z",
+      "raw_published": "07/27/2026",
+      "relevant": false,
+      "source_id": "fincen",
+      "status": "queued",
+      "summary": "Today, the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) issued a statement of enforcement policy in support ofeconomic recovery andearthquake relief efforts in Venezuela.Resources…",
+      "title": "FinCEN Issues Statement of Enforcement Policy in Support of Venezuela’s Economic Recovery and Earthquake Relief Efforts"
     },
     "f0aa81db42234c8d2f05bc6b3435a0e46a5c14e9cb48dbe5a3bf1e99cefda60d": {
       "card_id": "f0aa81db42234c8d2f05bc6b3435a0e46a5c14e9cb48dbe5a3bf1e99cefda60d",
