@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T22:58:34Z",
+  "generated_at": "2026-07-28T23:11:11Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -2109,7 +2109,7 @@
       "raw_published": "Fri, 13 Jun 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3 Part IIIb"
     },
@@ -2333,7 +2333,7 @@
       "raw_published": "Fri, 13 Jun 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3a Part I"
     },
@@ -2445,7 +2445,7 @@
       "raw_published": "Tue, 23 Jul 2024 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Cryptoasset disclosure requirements and standard amendments (PDF File, 189.2 KB)"
     },
@@ -2541,7 +2541,7 @@
       "raw_published": "Fri, 11 Jul 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Gazettal of rules: cryptoassets standard and other updates"
     },
