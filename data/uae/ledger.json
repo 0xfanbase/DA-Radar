@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T04:43:50Z",
+  "generated_at": "2026-07-28T04:38:00Z",
   "items": {
     "00035ea799942fd003d09846d9035e0f2f5cb81a658f47edbc00a74507de179c": {
       "card_id": null,
@@ -11565,6 +11565,22 @@
       "raw_published": "2026-07-11",
       "relevant": false,
       "source_id": "sca",
+      "status": "queued",
+      "summary": "",
+      "title": ""
+    },
+    "51fe74f7becd6a048437db5e17cabd0ef6b23b8499670bba0055b87b9d501a22": {
+      "card_id": null,
+      "content_hash": "b8c9e440ead3ddaccf7cc7e879d512a263272270df2d5504c0c3d1f85d16f9d9",
+      "feed_id": "fsra_adgm_announcements",
+      "first_seen": "2026-07-28T04:38:00Z",
+      "guid": "https://www.adgm.com/media/announcements/fsra-publishes-proposed-regulatory-framework-for-transfer-schemes",
+      "item_hash": "51fe74f7becd6a048437db5e17cabd0ef6b23b8499670bba0055b87b9d501a22",
+      "link": "https://www.adgm.com/media/announcements/fsra-publishes-proposed-regulatory-framework-for-transfer-schemes",
+      "published_at": null,
+      "raw_published": "2026-07-27T14:12:13+04:00",
+      "relevant": false,
+      "source_id": "fsra",
       "status": "queued",
       "summary": "",
       "title": ""
@@ -36253,6 +36269,22 @@
       "raw_published": "2026-07-11",
       "relevant": false,
       "source_id": "sca",
+      "status": "queued",
+      "summary": "",
+      "title": ""
+    },
+    "fca63913e5b25d9802b5f857e86239d847c2a39e9305c1fd74de58ada86ab037": {
+      "card_id": null,
+      "content_hash": "b8c9e440ead3ddaccf7cc7e879d512a263272270df2d5504c0c3d1f85d16f9d9",
+      "feed_id": "fsra_adgm_announcements",
+      "first_seen": "2026-07-28T04:38:00Z",
+      "guid": "https://www.adgm.com/media/announcements/under-the-patronage-of-his-highness-sheikh-khaled-bin-mohamed-bin-zayed-al-nahyan-adfw-2026-to-reinforce-abu-dhabis-role-as-capital-of-capital",
+      "item_hash": "fca63913e5b25d9802b5f857e86239d847c2a39e9305c1fd74de58ada86ab037",
+      "link": "https://www.adgm.com/media/announcements/under-the-patronage-of-his-highness-sheikh-khaled-bin-mohamed-bin-zayed-al-nahyan-adfw-2026-to-reinforce-abu-dhabis-role-as-capital-of-capital",
+      "published_at": null,
+      "raw_published": "2026-07-27T15:57:54+04:00",
+      "relevant": false,
+      "source_id": "fsra",
       "status": "queued",
       "summary": "",
       "title": ""
