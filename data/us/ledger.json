@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T23:29:43Z",
+  "generated_at": "2026-07-28T23:40:27Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -1053,7 +1053,7 @@
       "raw_published": "2025-07-10",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Proposed Rule Change To List and Trade Shares of the Truth Social Bitcoin and Ethereum ETF, B.T. Under NYSE Arca Rule 8.201-E (Commodity-Based Trust Shares)"
     },
@@ -1069,7 +1069,7 @@
       "raw_published": "Thu, 18 Jun 2026 19:59:43 +0000",
       "relevant": true,
       "source_id": "cftc",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "CFTC, SEC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions"
     },
@@ -1101,7 +1101,7 @@
       "raw_published": "2025-08-18",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "drafted",
+      "status": "published",
       "summary": "The U.S. Department of the Treasury invites interested members of the public to provide input on the use of innovative or novel methods, techniques, or strategies to detect and mitigate illicit finance risks involving digital assets. This notice fulfills a requirement of the Guiding and Establishing National Innovation for U.S. Stablecoins Act (GENIUS Act) and supports the Administration's policy of supporting the responsible growth and use of digital assets, as outlined in the January 23, 2025, Executive Order 14178 on \"Strengthening American Leadership in Digital Financial Technology.\"",
       "title": "Request for Comment on Innovative Methods To Detect Illicit Activity Involving Digital Assets"
     },
@@ -1165,7 +1165,7 @@
       "raw_published": "2025-03-07",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of Proposed Rule Change, as Modified by Amendment No. 1, To Adopt Nasdaq Rule 5712 To Provide for the Listing and Trading of Commodity- and Digital Asset-Based Investment Interests and To List and Trade Shares of the Hashdex Nasdaq Crypto Index US ETF Under Proposed Nasdaq Rule 5712"
     },

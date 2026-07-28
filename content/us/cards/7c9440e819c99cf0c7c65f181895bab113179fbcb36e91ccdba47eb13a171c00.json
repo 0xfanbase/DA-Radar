@@ -8,14 +8,14 @@
   "type": "consultation",
   "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of Proposed Rule Change, as Modified by Amendment No. 1, To Adopt Nasdaq Rule 5712 To Provide for the Listing and Trading of Commodity- and Digital Asset-Based Investment Interests and To List and Trade Shares of the Hashdex Nasdaq Crypto Index US ETF Under Proposed Nasdaq Rule 5712",
   "summary": "On 7 March 2025, the Federal Register published an SEC notice of Nasdaq's proposed rule change, as modified by Amendment No. 1 (filed 27 February 2025, which replaced and superseded the original 18 February 2025 filing in its entirety), to adopt new Nasdaq Rule 5712. The new rule would provide for listing and trading Commodity- and Digital Asset-Based Investment Interests, securities issued by a trust, limited liability company, or similar entity holding specified commodities, digital assets, derivative securities products, and/or cash. Under the proposed rule, the filing also proposes listing shares of the Hashdex Nasdaq Crypto Index US ETF, sponsored by Hashdex Asset Management Ltd., which would track an index of bitcoin, ether, solana, XRP, cardano, chainlink, avalanche, litecoin, and uniswap. Publication opened a public comment period under Exchange Act Section 19(b)(1); the notice takes no position on how the SEC will act.",
-  "why_it_matters": "This is the same procedural first step -- publishing the exchange's proposal and opening it to public comment -- the SEC requires before it can approve, disapprove, or open formal proceedings on any crypto exchange-traded product; this particular filing proposed an entirely new listing category alongside a multi-asset crypto index fund, broader than a single bitcoin or bitcoin-and-ether product. The notice does not indicate how, or whether, the SEC will act on the proposal.",
+  "why_it_matters": "Publishing the exchange's proposal and opening it to public comment is the procedural step the notice itself says the SEC must complete before it can approve, disapprove, or institute proceedings on this rule change; the filing proposed a new listing category alongside a multi-asset crypto index fund, broader than a single bitcoin or bitcoin-and-ether product. The notice does not indicate how, or whether, the SEC will act on the proposal.",
   "citations": [
     {
       "url": "https://www.govinfo.gov/content/pkg/FR-2025-03-07/html/2025-03662.htm",
-      "quote": "The Exchange proposes to adopt new Rule 5712 to provide for listing and trading"
+      "quote": "The Exchange proposes to adopt new Rule 5712 to provide for the listing and trading"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-28T15:10:00Z",
   "model": "Claude (Anthropic)"
 }

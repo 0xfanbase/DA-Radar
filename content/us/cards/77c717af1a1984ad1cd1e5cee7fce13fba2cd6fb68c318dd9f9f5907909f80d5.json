@@ -8,7 +8,7 @@
   "type": "consultation",
   "title": "CFTC, SEC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions",
   "summary": "On 18 June 2026, the CFTC and SEC jointly requested public comment on clearer regulatory lines for financial products implicating both agencies' jurisdictions. Published in the Federal Register on 24 June 2026 (91 FR 37873), the request poses numbered questions on distinguishing swaps, security-based swaps, and mixed swaps; on event contracts and other novel or emerging products; on exclusions from the swap definition; and on cross-market surveillance and enforcement coordination, all under Title VII of the Dodd-Frank Act. CFTC Chairman Michael S. Selig and SEC Chairman Paul S. Atkins both issued statements describing the effort as addressing longstanding definitional ambiguities and enabling fair competition between SEC- and CFTC-registered firms. The request's own published text does not name digital assets or crypto assets. Comments are due by 24 August 2026.",
-  "why_it_matters": "This joint CFTC-SEC request does not name digital assets, but it addresses the same underlying question -- which agency's rules, if either, apply to a given financial product -- that has repeatedly shaped how crypto derivatives and trading venues get classified. It is included here as relevant background, not because the request itself targets crypto assets specifically.",
+  "why_it_matters": "This joint CFTC-SEC request does not name digital assets, but it addresses the same underlying question -- which agency's rules, if either, apply to a given financial product. It is included here as relevant background, not because the request itself targets crypto assets specifically.",
   "key_dates": {
     "deadline": "2026-08-24"
   },
@@ -22,7 +22,7 @@
       "quote": "Comments must be received on or before August 24, 2026"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-28T15:10:00Z",
   "model": "Claude (Anthropic)"
 }
