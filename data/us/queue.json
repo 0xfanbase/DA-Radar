@@ -1,46 +1,6 @@
 {
-  "generated_at": "2026-07-27T23:24:42Z",
+  "generated_at": "2026-07-28T23:29:43Z",
   "items": [
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "76bee6dc51a1b13f1863d9b517ee929d81240491cf09a6cdb6b95aee720a6b5a",
-      "link": "https://www.federalregister.gov/documents/2025/07/10/2025-12809/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-of-proposed-rule-change-to-list-and",
-      "published_at": "2025-07-10T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "",
-      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Proposed Rule Change To List and Trade Shares of the Truth Social Bitcoin and Ethereum ETF, B.T. Under NYSE Arca Rule 8.201-E (Commodity-Based Trust Shares)"
-    },
-    {
-      "feed_id": "cftc_press_releases",
-      "item_hash": "77c717af1a1984ad1cd1e5cee7fce13fba2cd6fb68c318dd9f9f5907909f80d5",
-      "link": "https://www.cftc.gov/PressRoom/PressReleases/9258-26",
-      "published_at": "2026-06-18T19:59:43Z",
-      "source_id": "cftc",
-      "status": "queued",
-      "summary": "",
-      "title": "CFTC, SEC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions"
-    },
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "7b5fe399719466c0e9a3cbcc429367a81b9ec1dba9818eadc226787a23f8b78c",
-      "link": "https://www.federalregister.gov/documents/2025/08/18/2025-15697/request-for-comment-on-innovative-methods-to-detect-illicit-activity-involving-digital-assets",
-      "published_at": "2025-08-18T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "The U.S. Department of the Treasury invites interested members of the public to provide input on the use of innovative or novel methods, techniques, or strategies to detect and mitigate illicit finance risks involving digital assets. This notice fulfills a requirement of the Guiding and Establishing National Innovation for U.S. Stablecoins Act (GENIUS Act) and supports the Administration's policy of supporting the responsible growth and use of digital assets, as outlined in the January 23, 2025, Executive Order 14178 on \"Strengthening American Leadership in Digital Financial Technology.\"",
-      "title": "Request for Comment on Innovative Methods To Detect Illicit Activity Involving Digital Assets"
-    },
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "7c9440e819c99cf0c7c65f181895bab113179fbcb36e91ccdba47eb13a171c00",
-      "link": "https://www.federalregister.gov/documents/2025/03/07/2025-03662/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-of-proposed-rule-change",
-      "published_at": "2025-03-07T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "",
-      "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of Proposed Rule Change, as Modified by Amendment No. 1, To Adopt Nasdaq Rule 5712 To Provide for the Listing and Trading of Commodity- and Digital Asset-Based Investment Interests and To List and Trade Shares of the Hashdex Nasdaq Crypto Index US ETF Under Proposed Nasdaq Rule 5712"
-    },
     {
       "feed_id": "fincen_press_releases",
       "item_hash": "9a853765e05dad3bcdc49958f383d09baf5eb2134b7c70b6a1471c11eb638756",

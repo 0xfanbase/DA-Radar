@@ -75,5 +75,16 @@
     "generated_at": "2026-07-12T19:00:00Z",
     "model": "Claude (Anthropic)",
     "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "24 August 2026",
+    "event": "Comment deadline for a joint CFTC-SEC request for public comment on definitions used to classify financial products under Title VII of the Dodd-Frank Act -- covering swap, security-based swap, and mixed-swap classification; event contracts and other novel or emerging products; exclusions from the swap definition; and cross-market surveillance and enforcement coordination. Announced 18 June 2026 (CFTC press release 9258-26) and published in the Federal Register 24 June 2026 (91 FR 37873, Doc. 2026-12743), which states comments must be received on or before 24 August 2026. The request's own published text does not name digital assets, crypto assets, or blockchain; it is tracked here because SEC-CFTC jurisdictional line-drawing for novel financial products bears on how crypto derivatives and trading venues are eventually classified, consistent with this pillar's other tracked joint SEC-CFTC actions -- not because this particular request addresses crypto by name",
+    "pillar": "exchanges_vatp",
+    "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-06-24/html/2026-12743.htm",
+    "confidence": "announced",
+    "generated_at": "2026-07-28T15:10:00Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
   }
 ]

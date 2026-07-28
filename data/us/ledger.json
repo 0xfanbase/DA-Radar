@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T04:37:54Z",
+  "generated_at": "2026-07-28T23:29:43Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -1042,7 +1042,7 @@
       "title": "Agencies remove additional references to reputation risk"
     },
     "76bee6dc51a1b13f1863d9b517ee929d81240491cf09a6cdb6b95aee720a6b5a": {
-      "card_id": null,
+      "card_id": "76bee6dc51a1b13f1863d9b517ee929d81240491cf09a6cdb6b95aee720a6b5a",
       "content_hash": "d5a57c47aa18aacbac29cfb55d4606badce70be745092f30be5df61c0b1be1c1",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1053,12 +1053,12 @@
       "raw_published": "2025-07-10",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Proposed Rule Change To List and Trade Shares of the Truth Social Bitcoin and Ethereum ETF, B.T. Under NYSE Arca Rule 8.201-E (Commodity-Based Trust Shares)"
     },
     "77c717af1a1984ad1cd1e5cee7fce13fba2cd6fb68c318dd9f9f5907909f80d5": {
-      "card_id": null,
+      "card_id": "77c717af1a1984ad1cd1e5cee7fce13fba2cd6fb68c318dd9f9f5907909f80d5",
       "content_hash": "54d57c366be847c3032d95abb1f7dd596331c9be076b054eb23a0fd818dcf8af",
       "feed_id": "cftc_press_releases",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1069,7 +1069,7 @@
       "raw_published": "Thu, 18 Jun 2026 19:59:43 +0000",
       "relevant": true,
       "source_id": "cftc",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "CFTC, SEC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions"
     },
@@ -1090,7 +1090,7 @@
       "title": "Comptroller Gould Highlights OCC’s Financial Literacy Efforts at Financial Literacy and Education Commission Meeting"
     },
     "7b5fe399719466c0e9a3cbcc429367a81b9ec1dba9818eadc226787a23f8b78c": {
-      "card_id": null,
+      "card_id": "7b5fe399719466c0e9a3cbcc429367a81b9ec1dba9818eadc226787a23f8b78c",
       "content_hash": "7b4ad89135391dd9ac6732ea3a537b8bb1da01436e2c9dabaa7e61c9d81944d4",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1101,7 +1101,7 @@
       "raw_published": "2025-08-18",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "The U.S. Department of the Treasury invites interested members of the public to provide input on the use of innovative or novel methods, techniques, or strategies to detect and mitigate illicit finance risks involving digital assets. This notice fulfills a requirement of the Guiding and Establishing National Innovation for U.S. Stablecoins Act (GENIUS Act) and supports the Administration's policy of supporting the responsible growth and use of digital assets, as outlined in the January 23, 2025, Executive Order 14178 on \"Strengthening American Leadership in Digital Financial Technology.\"",
       "title": "Request for Comment on Innovative Methods To Detect Illicit Activity Involving Digital Assets"
     },
@@ -1154,7 +1154,7 @@
       "title": "Chairman Selig Announces Agenda for July 29 Agricultural Advisory Committee Meeting in Washington"
     },
     "7c9440e819c99cf0c7c65f181895bab113179fbcb36e91ccdba47eb13a171c00": {
-      "card_id": null,
+      "card_id": "7c9440e819c99cf0c7c65f181895bab113179fbcb36e91ccdba47eb13a171c00",
       "content_hash": "5c537fbf89a43c4d6ef12ac0809db557eca70c1f75d07d1d346f2d582b1665b1",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1165,7 +1165,7 @@
       "raw_published": "2025-03-07",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of Proposed Rule Change, as Modified by Amendment No. 1, To Adopt Nasdaq Rule 5712 To Provide for the Listing and Trading of Commodity- and Digital Asset-Based Investment Interests and To List and Trade Shares of the Hashdex Nasdaq Crypto Index US ETF Under Proposed Nasdaq Rule 5712"
     },

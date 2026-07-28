@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "7b5fe399719466c0e9a3cbcc429367a81b9ec1dba9818eadc226787a23f8b78c",
+  "jurisdiction_id": "us",
+  "published_date": "2025-08-18",
+  "regulator": "U.S. Department of the Treasury",
+  "pillar": ["aml_cft_enforcement"],
+  "type": "consultation",
+  "title": "Request for Comment on Innovative Methods To Detect Illicit Activity Involving Digital Assets",
+  "summary": "On 18 August 2025, the Department of the Treasury's Departmental Offices published a Federal Register request for comment on innovative or novel methods, techniques, or strategies that regulated financial institutions use, or could use, to detect and mitigate illicit finance risks involving digital assets. The notice states it fulfills a requirement of the GENIUS Act (Public Law 119-27, signed 18 July 2025) directing the Secretary of the Treasury to seek such comment, and situates the request within the policy of Executive Order 14178, \"Strengthening American Leadership in Digital Financial Technology.\" Treasury invited comment on methods involving APIs, artificial intelligence, digital identity verification, and blockchain-based monitoring, among other technologies. Comments were due by 17 October 2025, submitted through the Federal eRulemaking Portal.",
+  "why_it_matters": "This is Treasury's formal invitation for financial institutions and technology providers to weigh in on the illicit-finance detection tools regulators expect them to use for digital assets, and it is one of the public-comment processes the GENIUS Act itself required. It creates no new obligation on its own; it only solicits input toward possible future guidance or rulemaking.",
+  "key_dates": {
+    "deadline": "2025-10-17"
+  },
+  "citations": [
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-08-18/html/2025-15697.htm",
+      "quote": "innovative or novel methods, techniques, or strategies that regulated financial institutions use"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-28T15:10:00Z",
+  "model": "Claude (Anthropic)"
+}
