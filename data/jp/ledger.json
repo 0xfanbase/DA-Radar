@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T05:04:59Z",
+  "generated_at": "2026-07-28T04:37:59Z",
   "items": {
     "02d83335c3f185a01f78ac8bf5f64fad166ccc68cc60456b0c37127aece0ca25": {
       "card_id": null,
@@ -32,6 +32,22 @@
       "status": "queued",
       "summary": "",
       "title": "「中小企業の事業再生等に関するガイドライン」の活用実績について公表しました。"
+    },
+    "0430a9af1ff44fa4849155dfdb61a1ef1f002d135cf59b6ae3e0336748264b87": {
+      "card_id": null,
+      "content_hash": "1d6a66a83644c74e6e2ae6d8ff87c3570ee1290e998f4822032fe5c869c6fcfd",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-28T04:37:59Z",
+      "guid": null,
+      "item_hash": "0430a9af1ff44fa4849155dfdb61a1ef1f002d135cf59b6ae3e0336748264b87",
+      "link": "https://www.fsa.go.jp/common/conference/minister/2026b/20260721-1.html",
+      "published_at": "2026-07-27T17:00:00Z",
+      "raw_published": "Mon, 27 Jul 2026 17:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "記者会見,片山財務大臣兼内閣府特命担当大臣閣議後記者会見の概要（令和８年７月21日）について掲載しました。"
     },
     "0b3b9ad82f3f416283f432e665a88f1cf39ff15e36349e9b50ec441b73b9baef": {
       "card_id": null,
@@ -304,6 +320,22 @@
       "status": "queued",
       "summary": "",
       "title": "その他,無登録で金融商品取引業を行う者の名称等について更新しました。"
+    },
+    "3d22239d775d8faebea470ecb243870f491fdfd486a0b8f085fc35eb716f2ca2": {
+      "card_id": null,
+      "content_hash": "96a8c4507df1baa025473f883031c9eee582f75d3f0bd3790d51f5e2962075e9",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-28T04:37:59Z",
+      "guid": null,
+      "item_hash": "3d22239d775d8faebea470ecb243870f491fdfd486a0b8f085fc35eb716f2ca2",
+      "link": "https://www.fsa.go.jp/policy/pjlamc/emp/japanese_emp.html",
+      "published_at": "2026-07-27T17:00:00Z",
+      "raw_published": "Mon, 27 Jul 2026 17:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "その他,新興運用業者促進プログラム（日本版EMP）特設ページを更新しました。"
     },
     "40efe78597663a3d4d3915012b540c0e06fd8066d5b01d93b1e5445b10b41d40": {
       "card_id": "40efe78597663a3d4d3915012b540c0e06fd8066d5b01d93b1e5445b10b41d40",
