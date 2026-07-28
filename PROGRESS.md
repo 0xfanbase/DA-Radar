@@ -2536,3 +2536,86 @@ this firing: hk 60, us 31, eu 1 (the recurring cartel item, root-caused this fir
 fixed), uk 5, jp 11, uae/ch 0. No `PushNotification` fired -- nothing stopped early, no gate failure
 blocked a commit, every push landed and was independently confirmed against `origin/main`, not
 self-reported.
+
+### 2026-07-26/28 -- Third genuinely unattended firing (`trig_01CHa5wLW4G5LGj8fREeKUkE`, fired on schedule, no one watching): hk/us/eu/uk processed
+
+Same cap logic as every prior firing, applied to this firing's specific queue state: hk=4, us=4,
+eu=1 (its queue still only had the one recurring item), uk=1 (the 10-cap's one remaining slot,
+taken in registry order) -- 10 total, cap bound at uk. uae/ch (both empty) and jp (queue of 12,
+untouched -- the cap bound before reaching it) got nothing this firing.
+
+**hk -- only 1 of 4 batched items produced a card; that 1 was drafted, verified, published.** The
+SFC's 27 May 2026 circular on Relevant Stablecoin service by VATPs and licensed corporations came
+through cleanly via `apps.sfc.hk` and ended up fully verified, after the verifier fixed three real
+overclaims (an invented "token-admission screening" exemption not in the source; a misattributed
+"HKMA-authorised issuer" status that the source actually applies to the stablecoin itself, not the
+issuer; an unsupported volatility comparison). The other three items in the batch -- two HKMA
+consultation letters and one HKMA circular PDF -- were correctly left queued rather than forced
+into thin or fabricated cards: the two consultation letters hit the same `brdr.hkma.gov.hk` 503
+already documented as permanent in IMPROVEMENT_BACKLOG.md, and the circular's PDF returned
+completely empty content from this run's fetch tool despite the host itself being reachable. Worth
+watching, not yet alarming: a prior firing's uk analyst and us verifier both successfully read PDFs
+by having WebFetch save a local copy and then reading that copy directly with the Read tool: this
+firing's hk analyst reported no Bash/curl and "no way to download-then-Read a remote PDF locally,"
+suggesting it didn't attempt that same technique rather than that the technique itself has stopped
+working. No card was fabricated to route around this -- all three items remain queued for a future
+firing.
+
+**us -- 4 cards drafted, verified, published; 4 verified, 0 unverified -- a second consecutive
+clean sweep.** Four more NYSE Arca Bitcoin ETF/ETP items from the Federal Register (One River
+Carbon Neutral Bitcoin Trust and NYDIG Bitcoin ETF disapproval orders; a Grayscale Digital Large
+Cap Fund LLC / new Rule 8.800-E filing notice; a First Trust SkyBridge Bitcoin ETF Trust filing
+notice), all cited via `govinfo.gov` since `federalregister.gov` itself still bot-blocks automated
+fetches. Verifiers caught four distinct, real problems this firing -- a fabricated "verbatim" quote
+that was actually a silently blended paraphrase of two separate sentences (caught by checking the
+quote as a contiguous string against raw source text, not trusting an intermediate fetch tool's own
+"verbatim" claim); a legal mischaracterization that inverted which SEC argument the CME-futures
+"reasonable likelihood" analysis actually supported; a "held bitcoin and retired carbon offset
+tokens" framing that wrongly implied the offset tokens were a trust holding rather than a quarterly
+paid-and-retired expense; and a "sponsor" label the source itself never uses for that entity,
+which is instead defined throughout as "the Manager." All four then passed the deterministic gate's
+live re-fetch cleanly.
+
+**eu -- 0 cards; the recurring cartel item declined for a fourth consecutive firing.** Same
+item as the three prior firings, same correct decision, same already-diagnosed root cause (the
+`"mica"` relevance keyword substring-matching inside "chemicals") -- still unfixed, since fixing it
+is `/pipeline`/`/config` work outside the analyst/verifier path allowlist and this runbook's own
+scope. No new information this firing; logged briefly in IMPROVEMENT_BACKLOG.md so the recurrence
+count stays visible.
+
+**uk -- 1 card drafted, verified, published; 1 verified, 0 unverified.** A second, genuinely
+distinct Bank of England PRA "Dear CEO" letter from the same 18 May 2026 date and signatories as
+the card processed two firings ago -- this one on the prudential (capital) treatment of tokenised
+assets, stablecoins, and other cryptoasset exposures, not the e-money/stablecoin issuer-separation
+letter from before. Confirmed genuinely distinct, not a duplicate, before processing. Reaffirms a
+100% capital requirement for unbacked cryptoassets, notes the Basel Committee's published
+cryptoasset-exposure standard is under an expedited targeted review, and states the PRA does not
+expect to consult on its own future framework before "2028 at the earliest." One new trajectory
+entry and four new glossary terms (PRA Fundamental Rules, ICAAP, BCBS, unbacked cryptoasset) added.
+The verifier fixed four precision issues -- an unsupported "all" before "banks and designated
+investment firms"; a flattened "comparable" standard where the source actually states two distinct
+thresholds ("identical" legal rights, "comparable" risks); an overstated "applies to most of them"
+scope where the source ties the reaffirmed 100% specifically to unbacked cryptoassets; and a
+why-it-matters sentence that blurred "the Basel standard is already published, under review" with
+"the PRA's own future framework isn't due for consultation before 2028," two genuinely separate
+facts the original draft had run together.
+
+**Also discovered this firing, unrelated to any jurisdiction's queue processing:** the first real
+`audit.yml` scheduled run landed on `main` (commit `2e6a267`, between firings) -- but its
+verifier-pass-rate check reads the old, pre-registry-pivot bare `content/cards/` path rather than
+the per-jurisdiction paths, so it reported "No published cards yet" despite 21+ real published
+cards already existing. The gap is already documented as deliberately deferred in the check's own
+code, but this is the first time it has produced a real, misleading public artifact rather than a
+theoretical one. Full detail and a concrete fix direction in IMPROVEMENT_BACKLOG.md; not fixed here
+(`/pipeline`, outside this runbook's scope).
+
+**Net result of this firing:** 6 cards processed end-to-end across 3 jurisdictions (hk, us, uk; eu
+processed with zero cards by design) -- checked card-by-card against the actual published files,
+not tallied from memory: **6 verified, 0 unverified** -- the cleanest firing yet, helped by hk's
+analyst correctly declining to draft thin cards for its three unfetchable items rather than
+drafting-then-downgrading them. Real commits: `88945fc`/`eae6cdb` (hk), `16a493c`/`12d1729` (us),
+`20c7cbe`/`677201a` (uk); eu produced no commit (nothing to commit, by design -- zero cards
+drafted). Backlog after this firing: hk 59, us 27, eu 1 (the recurring cartel item, still
+unfixed), uk 4, jp 12, uae/ch 0. No `PushNotification` fired -- nothing stopped early, no gate
+failure blocked a commit, every push landed and was independently confirmed against `origin/main`,
+not self-reported.

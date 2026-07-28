@@ -1593,3 +1593,42 @@ content, not a connection error). Logged here as a new, single-firing observatio
 `brdr.hkma.gov.hk`, which has now failed identically across every firing to date, `www.hkma.gov.hk`
 has previously worked, so this may be transient rather than a new permanent limitation. Worth
 checking again next firing before treating it as a pattern.
+
+### 2026-07-27 -- First real audit.yml scheduled run landed, and it exposes a genuine gap: the pass-rate check still reads the pre-registry-pivot bare content path
+
+`audit.yml` produced its first real scheduled-Actions `data/audit/latest.json` (commit `2e6a267`,
+2026-07-27T05:48:36Z) -- closing one of the two long-standing caveats CLAUDE.md's "Current build
+state" section has flagged since Phase 5 ("no genuine scheduled Actions run has produced a real
+`data/audit/latest.json` yet"). That caveat can be updated once an owner reviews this.
+
+The run's single event is a `verifier_pass_rate_snapshot` with `"summary": "No published cards yet.",
+"total": 0, "verified": 0, "unverified": 0, "corrected": 0`. This is materially wrong: by the time
+this audit ran, 21+ real cards were already published across `hk`/`us`/`eu`/`uk` from three prior
+analyst/verifier firings. Traced the cause (read-only, `pipeline/audit/pass_rate.py` and
+`pipeline/audit/run.py`): `run.py`'s `run_all_checks` globs `{content_root}/cards/*.json`, where
+`content_root` defaults to the bare `content/` directory unless a `jurisdiction` kwarg is passed --
+i.e. it still looks for the pre-registry-pivot `content/cards/*.json` path, which has been empty
+since the registry pivot moved everything to `content/{jid}/cards/*.json`. This is not an
+undiscovered bug -- the function's own docstring already says so explicitly: "wiring this up to walk
+every jurisdiction in `config/site.json` is deliberately deferred to a later step, same as
+`pipeline/site/data.py`." What's new is that this deferred gap is no longer theoretical: it just
+produced a real, publicly-committed artifact making a false claim on a page the Method page surfaces
+to readers, precisely the kind of "confidently wrong public artifact" CLAUDE.md's editorial rules
+exist to prevent.
+
+Not fixed here -- `pipeline/audit/run.py` is `/pipeline`, outside the analyst/verifier path
+allowlist and outside this runbook's own scope regardless. Concrete fix direction for the owner:
+wire `run_all_checks` to iterate `config/site.json`'s live registry (same pattern already used by
+`docs/analyst-runbook.md`'s own Step 0, and already noted as the intended follow-up in this same
+function's docstring) and merge per-jurisdiction card lists before computing the snapshot, rather
+than reading a single flat path. Until that lands, every future `audit.yml` run will keep reporting
+a false "no published cards yet" pass-rate snapshot, growing more misleading as more cards publish.
+
+### 2026-07-27 -- eu's recurring queue item: fourth consecutive firing, root cause still unfixed
+
+The construction-chemicals cartel item (`item_hash 8ebafbd5...`, root cause -- a `"mica"` /
+`"chemicals"` substring collision in `pipeline/watcher/relevance.py` -- found and logged in the
+07-27 entry above) was correctly declined a fourth time in a row this firing, at the same real,
+recurring cost already described. No new information this firing beyond reconfirming the pattern;
+logged briefly here only so a reader scanning entries in order sees the count keep incrementing
+until an owner fixes the underlying keyword collision.
