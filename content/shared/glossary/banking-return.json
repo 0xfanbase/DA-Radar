@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "banking-return",
+  "term": "Banking Return",
+  "jurisdictions": ["hk"],
+  "plain_definition": "A standardised periodic report that HKMA requires Authorized Institutions (banks) to file for prudential-supervision purposes, identified by a form code such as 'MA(BS)3' -- each covering a specific area of a bank's business, such as assets and liabilities or a particular class of exposure. A 'return template' is the blank or proposed version of a return; HKMA periodically consults on new or amended templates, together with their completion instructions and explanatory notes, before finalising a version institutions must use.",
+  "formal_definition": "A statistical or supervisory return required from Authorized Institutions under the Banking Ordinance (Cap. 155) and related HKMA guidance, identified by a form code (commonly from the 'MA(BS)' series); HKMA consults on and revises these templates, and their accompanying completion instructions, from time to time, including as part of implementing the Cryptoassets Standard.",
+  "related_terms": ["completion-instructions", "authorized-institution", "cryptoassets-standard"],
+  "first_used_card_id": "20df5027480c2f4fe06df0b45d73d7a611bf0621263b4bc51e587fff93ea0700",
+  "generated_at": "2026-07-28T04:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

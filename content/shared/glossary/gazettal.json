@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "gazettal",
+  "term": "Gazettal",
+  "jurisdictions": ["hk"],
+  "plain_definition": "The formal publication of a rule, notice, or piece of legislation in Hong Kong's official Gazette. For subsidiary legislation such as banking rules, gazettal is typically the step that brings the instrument into, or on the way to, legal effect; the precise effect of any particular gazettal depends on what is being gazetted and the enabling ordinance's own terms.",
+  "formal_definition": "In Hong Kong, gazettal is publication of an instrument in the Gazette. Subsidiary legislation made under an ordinance is typically gazetted and then subject to that ordinance's own commencement and legislative-scrutiny provisions (for example, tabling before the Legislative Council).",
+  "related_terms": ["cryptoassets-standard", "authorized-institution"],
+  "first_used_card_id": "27b37503a7ed8fe1c96a73245f626339008ce08d9cc51e968b7d1fdd441bb27e",
+  "generated_at": "2026-07-28T04:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

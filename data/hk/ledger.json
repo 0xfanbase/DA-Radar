@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T04:38:00Z",
+  "generated_at": "2026-07-28T22:58:34Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -2098,7 +2098,7 @@
       "title": "Generative Artificial Intelligence Sandbox: Second Cohort"
     },
     "20df5027480c2f4fe06df0b45d73d7a611bf0621263b4bc51e587fff93ea0700": {
-      "card_id": null,
+      "card_id": "20df5027480c2f4fe06df0b45d73d7a611bf0621263b4bc51e587fff93ea0700",
       "content_hash": "3eec458fd9eccfe635743c07f71641f22bd76f61aadfacaca3eae5135e89a01b",
       "feed_id": "hkma_consultations",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -2109,7 +2109,7 @@
       "raw_published": "Fri, 13 Jun 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3 Part IIIb"
     },
@@ -2322,7 +2322,7 @@
       "title": "Observations from Review on Premium Financing Activities for Insurance Policies"
     },
     "2472b287bd3b643b01a57bdf4e11cf82bbef45a3eb451abed4ab07b7a579c625": {
-      "card_id": null,
+      "card_id": "2472b287bd3b643b01a57bdf4e11cf82bbef45a3eb451abed4ab07b7a579c625",
       "content_hash": "da754f2f9e37a97670f5b547f55f4755316b1b1c1674f461eda33823515ea43f",
       "feed_id": "hkma_consultations",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -2333,7 +2333,7 @@
       "raw_published": "Fri, 13 Jun 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3a Part I"
     },
@@ -2434,7 +2434,7 @@
       "title": "Scam alert related to banks"
     },
     "26d95c5eb4ef062e24c24ff646490ccfa4e9a93891692fd7ecf5bbebd45c6cc1": {
-      "card_id": null,
+      "card_id": "26d95c5eb4ef062e24c24ff646490ccfa4e9a93891692fd7ecf5bbebd45c6cc1",
       "content_hash": "90ec36da196fe55dc7754143bc7a8e46fbe8dde7eb2d089f635992e221db3d2b",
       "feed_id": "hkma_circulars",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -2445,7 +2445,7 @@
       "raw_published": "Tue, 23 Jul 2024 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Cryptoasset disclosure requirements and standard amendments (PDF File, 189.2 KB)"
     },
@@ -2530,7 +2530,7 @@
       "title": "Tender for the re-opening of 1-year RMB HKSAR Institutional Government Bonds to be held on Thursday, 5 March 2026"
     },
     "27b37503a7ed8fe1c96a73245f626339008ce08d9cc51e968b7d1fdd441bb27e": {
-      "card_id": null,
+      "card_id": "27b37503a7ed8fe1c96a73245f626339008ce08d9cc51e968b7d1fdd441bb27e",
       "content_hash": "c2c6ceccbba458e393b85f4eeb68c4b6fc09fec3a63491c0109ec268371fd2d5",
       "feed_id": "hkma_circulars",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -2541,7 +2541,7 @@
       "raw_published": "Fri, 11 Jul 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Gazettal of rules: cryptoassets standard and other updates"
     },

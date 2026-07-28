@@ -1,46 +1,6 @@
 {
-  "generated_at": "2026-07-27T22:55:15Z",
+  "generated_at": "2026-07-28T22:58:34Z",
   "items": [
-    {
-      "feed_id": "hkma_consultations",
-      "item_hash": "20df5027480c2f4fe06df0b45d73d7a611bf0621263b4bc51e587fff93ea0700",
-      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-14-EN",
-      "published_at": "2025-06-12T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3 Part IIIb"
-    },
-    {
-      "feed_id": "hkma_consultations",
-      "item_hash": "2472b287bd3b643b01a57bdf4e11cf82bbef45a3eb451abed4ab07b7a579c625",
-      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-20-EN",
-      "published_at": "2025-06-12T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3a Part I"
-    },
-    {
-      "feed_id": "hkma_circulars",
-      "item_hash": "26d95c5eb4ef062e24c24ff646490ccfa4e9a93891692fd7ecf5bbebd45c6cc1",
-      "link": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2024/20240723e1.pdf",
-      "published_at": "2024-07-22T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Cryptoasset disclosure requirements and standard amendments (PDF File, 189.2 KB)"
-    },
-    {
-      "feed_id": "hkma_circulars",
-      "item_hash": "27b37503a7ed8fe1c96a73245f626339008ce08d9cc51e968b7d1fdd441bb27e",
-      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250711-1-EN",
-      "published_at": "2025-07-10T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Gazettal of rules: cryptoassets standard and other updates"
-    },
     {
       "feed_id": "hkma_circulars",
       "item_hash": "28e73715a7f2c472bf2718849c9005a4655b520c23a58bbf725236c6ffa13c92",

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "26d95c5eb4ef062e24c24ff646490ccfa4e9a93891692fd7ecf5bbebd45c6cc1",
+  "jurisdiction_id": "hk",
+  "published_date": "2024-07-23",
+  "regulator": "HKMA",
+  "pillar": ["banking_money"],
+  "type": "circular",
+  "title": "Cryptoasset disclosure requirements and standard amendments",
+  "summary": "This is an HKMA circular titled 'Cryptoasset disclosure requirements and standard amendments,' issued 23 July 2024 as a PDF addressed to Authorized Institutions. Based on its title, it introduces or amends disclosure requirements for how licensed banks report cryptoasset-related exposures -- an earlier step in the same wider programme HKMA continued through 2025 with a series of consultations amending banking return templates to add a dedicated prudential 'cryptoassets standard.' The PDF could not be retrieved during this review: repeated attempts returned no extractable text, and a separate check of an unrelated, previously-cited HKMA PDF and an unrelated HKMA press-release page also returned no retrievable content, suggesting a broader access problem with HKMA's site at the time rather than an issue specific to this file. The specific disclosure requirements, any transition period, and effective date are therefore not confirmed against primary source text; this summary is limited to what the circular's own published title states.",
+  "why_it_matters": "HKMA is Hong Kong's banking regulator, and a circular is how it issues binding instructions to the banks it supervises. This one appears to be an early step establishing disclosure rules specifically for banks' cryptoasset holdings, a topic that previously had no dedicated prudential treatment.",
+  "citations": [
+    {
+      "url": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2024/20240723e1.pdf",
+      "quote": "Cryptoasset disclosure requirements and standard amendments"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-28T04:15:00Z",
+  "model": "Claude (Anthropic)"
+}

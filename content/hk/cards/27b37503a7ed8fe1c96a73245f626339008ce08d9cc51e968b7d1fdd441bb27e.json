@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "27b37503a7ed8fe1c96a73245f626339008ce08d9cc51e968b7d1fdd441bb27e",
+  "jurisdiction_id": "hk",
+  "published_date": "2025-07-11",
+  "regulator": "HKMA",
+  "pillar": ["banking_money"],
+  "type": "circular",
+  "title": "Gazettal of rules: cryptoassets standard and other updates",
+  "summary": "HKMA's circular 'Gazettal of rules: cryptoassets standard and other updates,' dated 11 July 2025, notifies Authorized Institutions that rules implementing HKMA's 'cryptoassets standard' -- the same prudential framework covered by the return-template consultations HKMA ran the previous month -- have been published in the Gazette, together with unrelated miscellaneous updates. Gazettal is the formal publication step through which subsidiary rules made under an ordinance take, or move toward, legal effect in Hong Kong. HKMA's document repository (brdr.hkma.gov.hk) returned a server error (HTTP 503) on every attempt to retrieve this document during this review, so which specific rules were gazetted, their commencement date, and the 'other updates' referenced in the title are not confirmed against primary source text; this summary is limited to what the circular's own published title states.",
+  "why_it_matters": "Gazettal is how Hong Kong formally publishes new or amended subsidiary legislation, so this circular marks a concrete step toward legal force for the bank capital and reporting rules HKMA had been consulting on. For a newcomer, it is a sign this rulemaking has moved from proposal toward formal legal effect, even though the rules' substance is not confirmed here.",
+  "citations": [
+    {
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250711-1-EN",
+      "quote": "Gazettal of rules: cryptoassets standard and other updates"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-28T04:15:00Z",
+  "model": "Claude (Anthropic)"
+}

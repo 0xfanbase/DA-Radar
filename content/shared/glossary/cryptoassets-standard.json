@@ -5,9 +5,9 @@
   "jurisdictions": ["hk"],
   "plain_definition": "HKMA's name for a set of new prudential (capital and reporting) rules governing how licensed banks (Authorized Institutions) must treat their exposure to cryptoassets. HKMA has been rolling this out in stages since mid-2025 through a long running series of consultation letters, revised banking return templates, explanatory notes, and completion instructions, rather than a single rulebook published all at once.",
   "formal_definition": "A prudential standard introduced by HKMA covering Authorized Institutions' cryptoasset exposures, implemented through amendments to Supervisory Policy Manual modules, banking return forms (including the MA(BS) series), and their completion instructions and explanatory notes, rolled out via a large batch of HKAB/DTCA-directed consultation letters issued from June 2025 onward.",
-  "related_terms": ["cryptoasset", "authorized-institution", "completion-instructions"],
+  "related_terms": ["cryptoasset", "authorized-institution", "completion-instructions", "banking-return", "gazettal"],
   "first_used_card_id": "127006774306d942e0fa816e0b624bb6ea52f3c2651092c311f7a0e2164a1e54",
-  "generated_at": "2026-07-26T02:00:00Z",
+  "generated_at": "2026-07-28T04:15:00Z",
   "model": "Claude (Anthropic)",
   "status": "unverified"
 }
