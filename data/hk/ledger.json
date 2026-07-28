@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T23:06:28Z",
+  "generated_at": "2026-07-28T04:38:00Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -2929,6 +2929,22 @@
       "summary": "",
       "title": "Scam alert related to banks"
     },
+    "2dc430c434e10703ef92a739a1d3669144f9bcf843ddc5e3da6246eba3a20fd1": {
+      "card_id": null,
+      "content_hash": "4090c2acdc5f04fd76a953fc00a12135eccd0ebca02a79b8c3962abe423b89a4",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-28T04:38:00Z",
+      "guid": null,
+      "item_hash": "2dc430c434e10703ef92a739a1d3669144f9bcf843ddc5e3da6246eba3a20fd1",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260727-3/",
+      "published_at": "2026-07-26T16:00:00Z",
+      "raw_published": "Mon, 27 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "HKMA launches quantum preparedness whitepaper and index to support banking sector’s readiness for quantum era"
+    },
     "2e240b89a26281e526aec10cb75ac46d0fd53f80ea6d306643f97feecac91bc7": {
       "card_id": null,
       "content_hash": "8acfaaeadd29761a4c0695c525cf45b2967ffc25a3e978ac0a1719221ab311fc",
@@ -3745,6 +3761,22 @@
       "summary": "",
       "title": "Second Edition of Practical Guideline on Barrier-free Banking Services of Hong Kong Association of Banks"
     },
+    "3982e4682a4fcd4541ae9ac4c0dc736602fd543dabba213e4c5506ec2e2578b1": {
+      "card_id": null,
+      "content_hash": "0f5d0e764d1d7670296ff4c948fcd27d794619084be6b5297901669487636c3f",
+      "feed_id": "hkma_circulars",
+      "first_seen": "2026-07-28T04:38:00Z",
+      "guid": null,
+      "item_hash": "3982e4682a4fcd4541ae9ac4c0dc736602fd543dabba213e4c5506ec2e2578b1",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260727-1-EN",
+      "published_at": "2026-07-26T16:00:00Z",
+      "raw_published": "Mon, 27 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Results of Quantum Preparedness Index Survey"
+    },
     "398bd21245bacd74b32bccaf5e327fb3eb1113bb0cfd66cec40a7bfb744794d7": {
       "card_id": null,
       "content_hash": "8cce50dc8b2e0d8fe31ce073268a06d2f95952f64530088b799923e1beeaa0e8",
@@ -4193,6 +4225,22 @@
       "summary": "",
       "title": "SFC and Securities Commission Malaysia sign MoU to expand mutual recognition of funds and facilitate simplified dual IPO listing framework"
     },
+    "424899d853dd88093a1091e545559ac3b38f923865c4d639d005685bbc6effc9": {
+      "card_id": null,
+      "content_hash": "e1cdebe0b036fc5517d8e4e2bf961da48f6e31cc08dccefe0e97e2551cc1cafd",
+      "feed_id": "hkma_speeches",
+      "first_seen": "2026-07-28T04:38:00Z",
+      "guid": null,
+      "item_hash": "424899d853dd88093a1091e545559ac3b38f923865c4d639d005685bbc6effc9",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/speeches/2026/07/20260727-1/",
+      "published_at": "2026-07-26T16:00:00Z",
+      "raw_published": "Mon, 27 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Opening Remarks at FiNETech8 on “Navigating Quantum Duality” by Carmen Chu, Executive Director (Banking Supervision), Hong Kong Monetary Authority"
+    },
     "430e04d6033931aa4ad8527a9ba3388fdc004470348bdf8b3260f994b934d040": {
       "card_id": null,
       "content_hash": "4b223a79302407848effac7c608581ab33a20e19814b4016ef8bd446572e3afa",
@@ -4496,6 +4544,22 @@
       "status": "queued",
       "summary": "",
       "title": "HKMA and Cyberport co-host GenA.I. Symposium to share outcomes of GenA.I. Sandbox"
+    },
+    "4705ab2a14990523a272e2384088a1107f78e1521356469059a661af13b4fe79": {
+      "card_id": null,
+      "content_hash": "f0b5f184326de2648f2cd46e83ad7c7604cc4fa05f0bef5a16d72448e65e2469",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-28T04:38:00Z",
+      "guid": null,
+      "item_hash": "4705ab2a14990523a272e2384088a1107f78e1521356469059a661af13b4fe79",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260727-4/",
+      "published_at": "2026-07-26T16:00:00Z",
+      "raw_published": "Mon, 27 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "HKICL alerts public of fraudulent website"
     },
     "47442c09864b02449c7dd7c233d082993fd67244a8f63c910aadcc7e9e08c8bf": {
       "card_id": null,
@@ -6960,6 +7024,22 @@
       "status": "queued",
       "summary": "",
       "title": "Exchange Fund Bills Tender Results"
+    },
+    "6cdcd2c807427e5249c572c955977a10493dca323196df47c3dfef3f38273e3f": {
+      "card_id": null,
+      "content_hash": "94c89e842b05ea74fd12e6e0e11742c7fc280c9511ca507f0bccbfa027d35bb6",
+      "feed_id": "sfc_press_releases",
+      "first_seen": "2026-07-28T04:38:00Z",
+      "guid": "26PR117",
+      "item_hash": "6cdcd2c807427e5249c572c955977a10493dca323196df47c3dfef3f38273e3f",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR117",
+      "published_at": "2026-07-27T08:24:03Z",
+      "raw_published": "Mon, 27 Jul 2026 16:24:03 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "SFC reprimands and fines Bright Smart Securities International (H.K.) Limited $2.8 million for internal control failures in monitoring suspicious trades"
     },
     "6d03aaecb6ae2de2733cff2c2e6c1094b9051bf0fdc2eb6fdae1210f1b16d8f2": {
       "card_id": null,
@@ -11168,6 +11248,22 @@
       "status": "queued",
       "summary": "",
       "title": "Monetary Statistics for April 2026"
+    },
+    "a9d68a26de6322fe13031406dcc2f55890365e61e5db333aa98fad98cc5b6857": {
+      "card_id": null,
+      "content_hash": "722e8e42fc18a5a7138dfda9105d6e9bc37ab98af6909b3873d0abd943f27063",
+      "feed_id": "sfc_press_releases",
+      "first_seen": "2026-07-28T04:38:00Z",
+      "guid": "26PR116",
+      "item_hash": "a9d68a26de6322fe13031406dcc2f55890365e61e5db333aa98fad98cc5b6857",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR116",
+      "published_at": "2026-07-27T08:33:48Z",
+      "raw_published": "Mon, 27 Jul 2026 16:33:48 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "SFC reprimands and fines China Industrial Securities International Asset Management Limited $6.8 million for failing to properly identify and address red flags in dubious arrangements and other failures in managing private fund"
     },
     "a9e9f8093397bb7037ec736f2d8575aaa5544734c324165c60917fadae9cf4f7": {
       "card_id": null,
