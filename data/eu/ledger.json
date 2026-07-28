@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T00:11:07Z",
+  "generated_at": "2026-07-28T04:37:58Z",
   "items": {
     "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
       "card_id": null,
@@ -176,6 +176,22 @@
       "status": "queued",
       "summary": "European Commission Speech Washington, DC, 24 Jul 2026 Good evening, It's always great to be back in America and to be here among friends: friends of Europe, friends of defence. Friends of football. The World Cup is...",
       "title": "Speech by Commissioner Kubilius at “EU Defense Night”"
+    },
+    "14d9e8505c5fd2d1eb733b50e73b477e6ed5a6c569149e8e16bfeea4255a4ffe": {
+      "card_id": null,
+      "content_hash": "ca7e984bdde8da5a97be38ca416be3c691183aa479d102844e92cb877b7502ee",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-28T04:37:58Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1693",
+      "item_hash": "14d9e8505c5fd2d1eb733b50e73b477e6ed5a6c569149e8e16bfeea4255a4ffe",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1693",
+      "published_at": "2026-07-27T09:37:55Z",
+      "raw_published": "Mon, 27 Jul 2026 09:37:55 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Daily news Brussels, 27 Jul 2026 The EU sends planes and firefighters as wildfires ravage France and Spain The EU has deployed assistance to both France and Spain under the EU Civil Protection ...",
+      "title": "Daily News 27 / 07 / 2026"
     },
     "16b5711f054a7d8346a912792ceff753ee52ffb7968e5b301108f69bf7738be0": {
       "card_id": null,
@@ -480,6 +496,22 @@
       "status": "queued",
       "summary": "European Commission Press release Brussels, 22 Jul 2026 Today, Commission decided to transfer in the interest of the service Zacharias Giakoumis as new Head of Representation in Athens, Greece.",
       "title": "European Commission transfers in the Interest of the Service Zacharias Giakoumis as Head of Representation in Athens"
+    },
+    "39fc7a4531600a06616174b13c4aa1c77c0c7d8c59a8a906a17a3f617f7cb7c2": {
+      "card_id": null,
+      "content_hash": "db366e2e39c2d3b9978e90cbb0bd86d0d98efddabb5c443db049d7078252866e",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-28T04:37:58Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1688",
+      "item_hash": "39fc7a4531600a06616174b13c4aa1c77c0c7d8c59a8a906a17a3f617f7cb7c2",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1688",
+      "published_at": "2026-07-26T22:00:00Z",
+      "raw_published": "Sun, 26 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 27 Jul 2026 New guidance from the European Commission shows how State aid rules allow EU Member States to provide social support and social investment. This guidance assists Member States in designing State aid measures for social support and social investment, as set out in the Clean Industrial Deal.",
+      "title": "EU State aid rules enable social support and investments, new Commission guidance shows"
     },
     "3a6494870e5236d3d7dd27bd6bf4036cf460717d5441b796d320027b13449921": {
       "card_id": null,
@@ -897,6 +929,22 @@
       "summary": "",
       "title": "Frank Elderson: Strengthening operational resilience for the age of AI"
     },
+    "73f8d4c14945c4f8c2194fe160182697df43734eb66425d2cfeaf56caf086aac": {
+      "card_id": null,
+      "content_hash": "3c8157ee42fac33ac31d37ee798aa476bcdec183222697aa6c77fd4d1ee713e4",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-28T04:37:58Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1692",
+      "item_hash": "73f8d4c14945c4f8c2194fe160182697df43734eb66425d2cfeaf56caf086aac",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1692",
+      "published_at": "2026-07-27T09:20:41Z",
+      "raw_published": "Mon, 27 Jul 2026 09:20:41 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 27 Jul 2026 Today, the European Commission positively assessed Belgium's fifth payment request for €225 million under the Recovery and Resilience Facility (RRF), the centrepiece of NextGenerationEU.",
+      "title": "Commission greenlights Belgium's fifth payment request for €225 million under NextGenerationEU"
+    },
     "75fc80827043a8b81affe43212c9d7861d0791a03e6f75ddaca61762729e3d22": {
       "card_id": null,
       "content_hash": "c5bdce61eb75381d6527f0e7da9d95db7d49cb2f72f29cebcf71bbdd7bd47964",
@@ -1088,6 +1136,22 @@
       "status": "queued",
       "summary": "European Commission Press release Brussels, 23 Jul 2026 Today, the European Commission positively assessed Sweden's second payment request for €1.47 billion under the Recovery and Resilience Facility, the centrepiece of NextGenerationEU.",
       "title": "Commission greenlights Sweden's payment request for €1.47 billion under NextGenerationEU"
+    },
+    "8ce54fde7a7a4c1f2de0a14b991fc597168f63ae59cd1b0447eda8e7b51bf5fb": {
+      "card_id": null,
+      "content_hash": "e6df7b2c630ec4ee42497008b00e514fc5c500ceefd3b9ecbf52c1cbd299de15",
+      "feed_id": "esma_news",
+      "first_seen": "2026-07-28T04:37:58Z",
+      "guid": null,
+      "item_hash": "8ce54fde7a7a4c1f2de0a14b991fc597168f63ae59cd1b0447eda8e7b51bf5fb",
+      "link": "https://www.esma.europa.eu/press-news/esma-news/esma-authorises-euroctp-consolidated-tape-provider-shares-and-exchange-traded",
+      "published_at": null,
+      "raw_published": null,
+      "relevant": false,
+      "source_id": "esma",
+      "status": "queued",
+      "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">ESMA authorises EuroCTP as the Consolidated Tape Provider for shares and exchange-traded funds</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-27T13:49:18+02:00\" title=\"Monday, July 27, 2026 - 13:49\" class=\"datetime\">27 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">Market data</div> <div class=\"field__item\">Press Releases</div> <div class=\"field__item\">Trading</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\">The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, has authorised EuroCTP B.V. (EuroCTP) to operate as the <a href=\"https://www.esma.europa.eu/esmas-activities/markets-and-infrastructure/consolidated-tape-providers\">Consolidated Tape Provider (CTP)</a> for shares and exchange-traded funds (ETFs).</p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>Natasha Cazenave, ESMA’s Executive Director, said:&nbsp;</span></p> <h6 class=\"text-align-justify\"><em><span>“This authorisation marks a key step in the implementation of the consolidated tape framework, strengthening the transparency and efficiency of EU equity capital markets.&nbsp;</span></em></h6> <h6 class=\"text-align-justify\"><em><span>By bringing pre-trade and post-trade data from multiple data contributors into a single stream, the CTP for shares and ETFs will give market participants a comprehensive view of trading activity.&nbsp;</span></em></h6> <h6 class=\"text-align-justify\"><em><span>It will thus support better price discovery and facilitate more informed i",
+      "title": "ESMA authorises EuroCTP as the Consolidated Tape Provider for shares and exchange-traded funds"
     },
     "8ebafbd54a00b8e9255c2ecd768fa9da558ba70b9ca1a9ef8172b0354afc64d7": {
       "card_id": null,
