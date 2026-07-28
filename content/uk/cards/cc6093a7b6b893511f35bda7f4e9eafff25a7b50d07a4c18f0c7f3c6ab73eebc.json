@@ -1,0 +1,28 @@
+{
+  "citations": [
+    {
+      "quote": "It explains how responsibilities will be split between the authorities",
+      "url": "https://www.fca.org.uk/news/statements/fca-and-bank-england-set-out-approach-joint-regulation-systemic-stablecoin-issuers"
+    },
+    {
+      "quote": "we aim to provide regulatory clarity and certainty to firms issuing stablecoins in the UK",
+      "url": "https://www.bankofengland.co.uk/paper/2026/boe-and-fcas-approach-to-joint-regulation-of-systemic-stablecoin-issuers"
+    }
+  ],
+  "generated_at": "2026-07-28T10:00:00Z",
+  "id": "cc6093a7b6b893511f35bda7f4e9eafff25a7b50d07a4c18f0c7f3c6ab73eebc",
+  "jurisdiction_id": "uk",
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "stablecoins",
+    "banking_money"
+  ],
+  "published_date": "2026-06-30",
+  "regulator": "FCA and Bank of England",
+  "schema_version": 1,
+  "status": "unverified",
+  "summary": "On 30 June 2026 the FCA and the Bank of England published a joint approach describing how they, and other authorities where relevant, will regulate systemic stablecoin issuers in the UK. It sets out how supervisory responsibility is split: the Bank leads on prudential matters such as backing assets, capital and failure arrangements, the FCA leads on conduct, consumer protection and financial crime, and some areas overlap. An issuer starts out under FCA-only supervision and moves to joint FCA/Bank of England regulation once HM Treasury formally recognises it as systemic to UK payments, a designation assessed by factors including transaction volumes, substitutability and interconnectedness. The authorities describe the approach as aiming to give firms clarity and predictability as the market develops.",
+  "title": "FCA and the Bank of England set out approach to joint regulation of systemic stablecoin issuers",
+  "type": "guidance",
+  "why_it_matters": "The FCA supervises a UK stablecoin issuer on its own until HM Treasury formally designates it systemic to UK payments, at which point the Bank of England -- the UK's central bank, not otherwise an individual firm's regulator -- joins as a second, financial-stability-focused regulator alongside the FCA. It shows UK stablecoin oversight is designed to intensify as a stablecoin grows in size and importance, rather than staying fixed with one regulator throughout."
+}

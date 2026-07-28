@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T04:38:00Z",
+  "generated_at": "2026-07-28T23:53:27Z",
   "items": {
     "02028a9677575e76189a49022768f45cc07c84ca74ac72879172cd9671891801": {
       "card_id": null,
@@ -2850,7 +2850,7 @@
       "title": "Non-executive director reappointment at GAD"
     },
     "cc6093a7b6b893511f35bda7f4e9eafff25a7b50d07a4c18f0c7f3c6ab73eebc": {
-      "card_id": null,
+      "card_id": "cc6093a7b6b893511f35bda7f4e9eafff25a7b50d07a4c18f0c7f3c6ab73eebc",
       "content_hash": "e66291be0e98c92b705f12957a399bdd203a929c79278e74715537c1e9830043",
       "feed_id": "fca_news",
       "first_seen": "2026-07-11T17:59:17Z",
@@ -2861,7 +2861,7 @@
       "raw_published": "Tuesday, June 30, 2026 - 10:08",
       "relevant": true,
       "source_id": "fca",
-      "status": "queued",
+      "status": "drafted",
       "summary": "The Bank of England and the FCA have published a joint approach setting out how they and where relevant other authorities will work together to regulate systemic stablecoin issuers in the UK.It explains how responsibilities will be split between the authorities, and how UK stablecoin issuers may move from FCA supervision to joint regulation once recognised as systemic by HM Treasury.The approach aims to provide clarity and predictability for firms as the market develops.Read the paper",
       "title": "FCA and the Bank of England set out approach to joint regulation of systemic stablecoin issuers"
     },
