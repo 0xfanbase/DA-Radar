@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T23:40:27Z",
+  "generated_at": "2026-07-29T23:47:15Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -1314,7 +1314,7 @@
       "title": "Jonathan V. Gould Marks One Year as Comptroller of the Currency"
     },
     "9a853765e05dad3bcdc49958f383d09baf5eb2134b7c70b6a1471c11eb638756": {
-      "card_id": null,
+      "card_id": "9a853765e05dad3bcdc49958f383d09baf5eb2134b7c70b6a1471c11eb638756",
       "content_hash": "5357c935ec414509726ea1d1da9b7a854ba6b17a493ab5c4c5daf850293cb218",
       "feed_id": "fincen_press_releases",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1325,7 +1325,7 @@
       "raw_published": "03/06/2026",
       "relevant": true,
       "source_id": "fincen",
-      "status": "queued",
+      "status": "drafted",
       "summary": "WASHINGTON—Today, the Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) assessed an $80,000,000civil money penaltyagainst Canaccord Genuity LLC (Canaccord) for willful…",
       "title": "FinCEN Assesses Historic $80 Million Penalty Against Canaccord Genuity LLC for Securities Fraud-Related Bank Secrecy Act Violations"
     },
@@ -1394,7 +1394,7 @@
       "title": "CFTC Approves Final Rule Amending Margin Requirements for Uncleared Swaps"
     },
     "a0068cffbfcfaa6674e615e9c94ee2c56eb090eaebc63c64fa5768c463000cf3": {
-      "card_id": null,
+      "card_id": "a0068cffbfcfaa6674e615e9c94ee2c56eb090eaebc63c64fa5768c463000cf3",
       "content_hash": "2a969ab5b1e2958a4aed0d7cff75c54bf5fdb11c10d2896b0e8d6e7a5c405d90",
       "feed_id": "sec_press_releases",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1405,12 +1405,12 @@
       "raw_published": "Thu, 18 Jun 2026 14:42:47 -0400",
       "relevant": true,
       "source_id": "sec",
-      "status": "queued",
+      "status": "drafted",
       "summary": "The Securities and Exchange Commission and the Commodity Futures Trading Commission today issued a joint request for public comment on potential opportunities to further update, clarify, and harmonize certain derivatives product definitions and…",
       "title": "SEC, CFTC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions"
     },
     "a14dfbd2deb12aec2b0d52f18db982d2ec1eff69baec245a3cf0149129c204c1": {
-      "card_id": null,
+      "card_id": "a14dfbd2deb12aec2b0d52f18db982d2ec1eff69baec245a3cf0149129c204c1",
       "content_hash": "62d2efcc214343e21ba6c41dac86482dbbdf98014f3390677103d06fc5601611",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1421,7 +1421,7 @@
       "raw_published": "2021-06-01",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the Wise Origin Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
@@ -1490,7 +1490,7 @@
       "title": "SEC Seeks Public Comment on Novel Exchange-Traded Funds"
     },
     "aab6af1ec4c46465b777ffa55889de9928773443e10b6170572dc1562e9a74ae": {
-      "card_id": null,
+      "card_id": "aab6af1ec4c46465b777ffa55889de9928773443e10b6170572dc1562e9a74ae",
       "content_hash": "afa2e2b5a3e9ff565991e16113e4465c757ee31468c90b4b5068610450fbedf9",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1501,7 +1501,7 @@
       "raw_published": "2022-02-14",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the WisdomTree Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },

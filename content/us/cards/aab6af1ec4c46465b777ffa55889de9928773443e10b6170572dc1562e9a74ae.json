@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "aab6af1ec4c46465b777ffa55889de9928773443e10b6170572dc1562e9a74ae",
+  "jurisdiction_id": "us",
+  "published_date": "2022-02-14",
+  "regulator": "SEC",
+  "pillar": ["funds_etfs"],
+  "type": "consultation",
+  "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the WisdomTree Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares",
+  "summary": "On 14 February 2022, the Federal Register published an SEC notice that Cboe BZX Exchange had filed a proposed rule change (File No. SR-CboeBZX-2022-006, filed 25 January 2022) to list and trade shares of the WisdomTree Bitcoin Trust under BZX Rule 14.11(e)(4), its Commodity-Based Trust Shares listing standard. The filing names WisdomTree Digital Commodity Services, LLC as sponsor, U.S. Bank Global Fund Services as administrator/transfer agent, and U.S. Bank, N.A. as custodian. Per the filing, the trust would hold bitcoin, valued daily against the CF Bitcoin US Settlement Price, with shares created and redeemed in-kind in blocks of 50,000: authorized participants deliver bitcoin to the custodian to receive shares, and receive bitcoin back on redemption. Publication opened a public comment period under Exchange Act Section 19(b)(1); this notice does not resolve the proposal's outcome.",
+  "why_it_matters": "This is the procedural first step the SEC required before it could approve, disapprove, or open formal proceedings on a proposed crypto exchange-traded product listing: publishing the exchange's own proposal and opening it to public comment. The notice does not itself approve, disapprove, or predict the outcome for this specific Bitcoin trust proposal.",
+  "citations": [
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2022-02-14/html/2022-03019.htm",
+      "quote": "licensed and regulated service providers have emerged to provide fund custodial services for digital assets"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-29T09:45:00Z",
+  "model": "Claude (Anthropic)"
+}

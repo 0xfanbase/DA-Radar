@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "civil-money-penalty",
+  "term": "Civil money penalty",
+  "jurisdictions": ["us"],
+  "plain_definition": "A monetary fine a US regulator such as FinCEN, the SEC, or the CFTC can assess against a person or firm for violating a statute or regulation, through the regulator's own administrative enforcement authority rather than a criminal prosecution. FinCEN assesses civil money penalties under the Bank Secrecy Act against banks, broker-dealers, and money services businesses -- including, in past FinCEN actions, convertible-virtual-currency businesses -- for violations such as failing to maintain an effective anti-money-laundering program or failing to file required suspicious activity reports.",
+  "formal_definition": "E.g. 31 U.S.C. 5321, the Bank Secrecy Act's civil money penalty provision, which FinCEN's regulations at 31 CFR Chapter X implement.",
+  "related_terms": ["bank-secrecy-act", "fincen", "money-services-business"],
+  "first_used_card_id": "9a853765e05dad3bcdc49958f383d09baf5eb2134b7c70b6a1471c11eb638756",
+  "generated_at": "2026-07-29T09:12:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}
