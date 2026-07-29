@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "2c99a3346a5ec739f75f8f8b16bc810df62eb35d269297fd5d0c05196a3d7ca9",
+  "jurisdiction_id": "hk",
+  "published_date": "2026-06-10",
+  "regulator": "HKMA",
+  "pillar": [
+    "tokenization_rwa"
+  ],
+  "type": "guidance",
+  "title": "HKMA Demonstrates Potential of Tokenisation to Corporate Treasury Community",
+  "summary": "On 10 June 2026, the Hong Kong Monetary Authority (HKMA) held an event demonstrating the potential of tokenisation to Hong Kong's corporate treasury community, according to its own press release title. Tokenisation means representing ownership of a real-world asset -- such as a bond, a fund, or a bank deposit -- as a digital token on a blockchain-style ledger, transferable and settleable without traditional paper-based or centralised-registry processes. Corporate treasury teams manage a company's cash, funding, and financial risk -- functions that tokenised money and tokenised financial instruments could potentially affect. The event forms part of HKMA's wider push, set out in the government's Policy Statement 2.0 on digital assets, to expand tokenised financial products and build market familiarity with the technology.",
+  "why_it_matters": "For a newcomer, this event signals HKMA actively promoting tokenisation to a specific corporate audience -- treasury teams -- rather than only to banks or virtual asset firms, reflecting Hong Kong's official strategy of expanding practical, everyday uses for tokenised financial products.",
+  "citations": [
+    {
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260610-5/",
+      "quote": "HKMA demonstrates potential of tokenisation to corporate treasury community"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-29T09:15:00Z",
+  "model": "Claude (Anthropic)"
+}

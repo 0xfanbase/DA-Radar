@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "30c9e8e842f751f6ac2c0b8498a403413528e594ba2cea3765f5ec6deb0d9bae",
+  "jurisdiction_id": "hk",
+  "published_date": "2025-10-23",
+  "regulator": "HKMA",
+  "pillar": [
+    "banking_money"
+  ],
+  "type": "consultation",
+  "title": "Cryptoasset Standard: Consultation on Revised SPM Module CA-G-1 (Capital Adequacy Regime for Locally Incorporated Authorized Institutions)",
+  "summary": "On 23 October 2025, the Hong Kong Monetary Authority (HKMA) published a consultation on a revised version of SPM module CA-G-1, 'Overview of Capital Adequacy Regime for Locally Incorporated Authorized Institutions,' as part of its Cryptoasset Standard, according to the consultation's own title. HKMA's Supervisory Policy Manual (SPM) is its collection of modules setting out supervisory approach and expectations for Authorized Institutions, and CA-G-1 is the overview module for the capital adequacy regime -- the framework requiring locally incorporated banks to hold minimum capital against risk-weighted exposures. Consulting on a revision means inviting affected institutions and other stakeholders to comment on proposed changes before HKMA finalises them. This consultation forms part of the same broader HKMA project applying a dedicated prudential standard to cryptoasset exposures, which has also produced related changes to HKMA return templates and disclosure requirements.",
+  "why_it_matters": "For a newcomer, this shows HKMA extending core bank-capital rules, not just licensing or conduct requirements, to cover cryptoasset exposures, so that the amount of capital a bank must hold keeps pace with its growing digital-asset activity.",
+  "citations": [
+    {
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20251022-3-EN",
+      "quote": "Cryptoasset Standard: consultation on revised SPM module CA-G-1"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-29T09:15:00Z",
+  "model": "Claude (Anthropic)"
+}

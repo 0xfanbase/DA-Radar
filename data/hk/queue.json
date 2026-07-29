@@ -1,46 +1,6 @@
 {
-  "generated_at": "2026-07-28T22:58:34Z",
+  "generated_at": "2026-07-29T23:09:37Z",
   "items": [
-    {
-      "feed_id": "hkma_circulars",
-      "item_hash": "28e73715a7f2c472bf2718849c9005a4655b520c23a58bbf725236c6ffa13c92",
-      "link": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2024/20240416e1.pdf",
-      "published_at": "2024-04-15T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Risk management considerations related to the use of distributed ledger technology (PDF File, 230.0 KB)"
-    },
-    {
-      "feed_id": "hkma_press_release",
-      "item_hash": "2c99a3346a5ec739f75f8f8b16bc810df62eb35d269297fd5d0c05196a3d7ca9",
-      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260610-5/",
-      "published_at": "2026-06-09T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "HKMA demonstrates potential of tokenisation to corporate treasury community"
-    },
-    {
-      "feed_id": "hkma_press_release",
-      "item_hash": "2f69c645e8ffb99342b710b2ba63f6f1991250966cfa045aa2db83f069e61c7c",
-      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/10/20251028-4/",
-      "published_at": "2025-10-27T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "HKMA completes e-HKD Pilot Programme and outlines future direction of e-HKD"
-    },
-    {
-      "feed_id": "hkma_consultations",
-      "item_hash": "30c9e8e842f751f6ac2c0b8498a403413528e594ba2cea3765f5ec6deb0d9bae",
-      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20251022-3-EN",
-      "published_at": "2025-10-22T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Cryptoasset Standard: consultation on revised SPM module CA-G-1 “Overview of Capital Adequacy Regime for Locally Incorporated Authorized Institutions” Enclosure: Overview of Capital Adequacy Regime for Locally Incorporated Authorized Institutions (Consultation)"
-    },
     {
       "feed_id": "hkma_circulars",
       "item_hash": "386290a754590e6eb6a2ad831e93757ea8a3a40dc50ecfbddd1d31ee835d8e0a",

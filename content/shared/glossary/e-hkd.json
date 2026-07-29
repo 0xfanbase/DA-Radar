@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "e-hkd",
+  "term": "e-HKD",
+  "jurisdictions": [
+    "hk"
+  ],
+  "plain_definition": "HKMA's name for a potential digital form of the Hong Kong dollar issued by the monetary authority itself, distinct from money held in a commercial bank account or a privately issued stablecoin. HKMA has explored e-HKD in stages, most recently through the e-HKD Pilot Programme, completed in October 2025; it has said its near-term focus for e-HKD is on wholesale payments and support for Hong Kong's tokenisation ecosystem (an effort it brands e-HKD+), rather than on a retail e-HKD available directly to the public.",
+  "formal_definition": "No decision to issue e-HKD has been made; it remains a research and pilot initiative of HKMA rather than legal tender. A retail e-HKD, if HKMA ultimately proceeded with one, would be a form of central bank digital currency (CBDC).",
+  "related_terms": [
+    "hkma",
+    "distributed-ledger-technology",
+    "tokenisation"
+  ],
+  "first_used_card_id": "2f69c645e8ffb99342b710b2ba63f6f1991250966cfa045aa2db83f069e61c7c",
+  "generated_at": "2026-07-29T09:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

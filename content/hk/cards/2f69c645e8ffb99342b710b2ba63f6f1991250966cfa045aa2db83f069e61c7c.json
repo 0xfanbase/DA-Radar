@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "2f69c645e8ffb99342b710b2ba63f6f1991250966cfa045aa2db83f069e61c7c",
+  "jurisdiction_id": "hk",
+  "published_date": "2025-10-28",
+  "regulator": "HKMA",
+  "pillar": [
+    "banking_money"
+  ],
+  "type": "guidance",
+  "title": "HKMA Completes e-HKD Pilot Programme and Outlines Future Direction of e-HKD",
+  "summary": "On 28 October 2025, the Hong Kong Monetary Authority (HKMA) announced that it had completed the e-HKD Pilot Programme -- its staged exploration of a potential Hong Kong dollar central bank digital currency -- and set out the initiative's future direction. HKMA said the immediate priority for e-HKD now lies beyond retail use cases, redirecting near-term focus toward wholesale payments and toward supporting Hong Kong's wider tokenisation ecosystem, an effort it brands e-HKD+. HKMA did not commit to a specific timetable for a possible future retail e-HKD, describing further preparatory work on that question as ongoing. e-HKD is one strand of HKMA's broader work on tokenised forms of money, alongside its separate work on tokenised bank deposits.",
+  "why_it_matters": "For a newcomer, this announcement marks Hong Kong's central-bank-style regulator concluding a phase of retail digital-currency experimentation and redirecting its near-term digital-money efforts toward the banking system's wholesale and institutional plumbing rather than a Hong Kong dollar available directly to the public.",
+  "citations": [
+    {
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/10/20251028-4/",
+      "quote": "HKMA completes e-HKD Pilot Programme and outlines future direction of e-HKD"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-29T09:15:00Z",
+  "model": "Claude (Anthropic)"
+}

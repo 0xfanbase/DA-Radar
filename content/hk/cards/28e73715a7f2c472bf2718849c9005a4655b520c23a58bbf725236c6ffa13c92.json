@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "28e73715a7f2c472bf2718849c9005a4655b520c23a58bbf725236c6ffa13c92",
+  "jurisdiction_id": "hk",
+  "published_date": "2024-04-16",
+  "regulator": "HKMA",
+  "pillar": [
+    "banking_money"
+  ],
+  "type": "circular",
+  "title": "Risk Management Considerations Related to the Use of Distributed Ledger Technology",
+  "summary": "On 16 April 2024, the Hong Kong Monetary Authority (HKMA) issued a circular titled 'Risk management considerations related to the use of distributed ledger technology.' As its own title states, the circular sets out considerations for Authorized Institutions to take into account when using distributed ledger technology (DLT) -- a way of recording and updating a shared database across multiple participants without one central operator, which underlies both cryptoassets and other, non-crypto uses such as payments and settlement. The circular was issued about two months after HKMA's 20 February 2024 circulars on digital-asset custody and the sale and distribution of tokenised products, as HKMA continued building out its guidance to the Authorized Institutions it supervises on their use of blockchain-based technology.",
+  "why_it_matters": "For a newcomer, this circular shows HKMA extending its digital-asset guidance to the underlying technology itself, not just specific products like stablecoins or staking, as part of how Hong Kong's banking regulator oversees banks adopting blockchain-based infrastructure.",
+  "citations": [
+    {
+      "url": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2024/20240416e1.pdf",
+      "quote": "Risk management considerations related to the use of distributed ledger technology"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-29T09:15:00Z",
+  "model": "Claude (Anthropic)"
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "id": "capital-adequacy-regime",
+  "term": "Capital Adequacy Regime",
+  "jurisdictions": [
+    "hk"
+  ],
+  "plain_definition": "The set of rules requiring a bank to hold a minimum amount of its own capital -- funds able to absorb losses -- in proportion to the risk of the assets and exposures it holds, so it stays solvent even if some of those assets lose value. In Hong Kong, HKMA sets and supervises this regime for locally incorporated Authorized Institutions, and has been extending it to address how cryptoasset exposures should be risk-weighted.",
+  "formal_definition": "Implemented in Hong Kong through the Banking (Capital) Rules made under the Banking Ordinance (Cap. 155), supplemented by HKMA's Supervisory Policy Manual (e.g. module CA-G-1), broadly following the internationally agreed Basel capital framework.",
+  "related_terms": [
+    "authorized-institution",
+    "supervisory-policy-manual",
+    "cryptoasset",
+    "hkma"
+  ],
+  "first_used_card_id": "30c9e8e842f751f6ac2c0b8498a403413528e594ba2cea3765f5ec6deb0d9bae",
+  "generated_at": "2026-07-29T09:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T04:42:09Z",
+  "generated_at": "2026-07-29T23:09:37Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -2578,7 +2578,7 @@
       "title": "Scam alert related to banks"
     },
     "28e73715a7f2c472bf2718849c9005a4655b520c23a58bbf725236c6ffa13c92": {
-      "card_id": null,
+      "card_id": "28e73715a7f2c472bf2718849c9005a4655b520c23a58bbf725236c6ffa13c92",
       "content_hash": "8f32e47381274225cb1c51b1dfddee338a759a13748d3ead02dae14f23387980",
       "feed_id": "hkma_circulars",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -2589,7 +2589,7 @@
       "raw_published": "Tue, 16 Apr 2024 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Risk management considerations related to the use of distributed ledger technology (PDF File, 230.0 KB)"
     },
@@ -2882,7 +2882,7 @@
       "title": "Exchange Fund Bills Tender Results"
     },
     "2c99a3346a5ec739f75f8f8b16bc810df62eb35d269297fd5d0c05196a3d7ca9": {
-      "card_id": null,
+      "card_id": "2c99a3346a5ec739f75f8f8b16bc810df62eb35d269297fd5d0c05196a3d7ca9",
       "content_hash": "3b757b97687fcfdff8e5363e0ff61491cb4e5369b2e2a28a4c6480e1a4f14e8b",
       "feed_id": "hkma_press_release",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -2893,7 +2893,7 @@
       "raw_published": "Wed, 10 Jun 2026 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "HKMA demonstrates potential of tokenisation to corporate treasury community"
     },
@@ -3026,7 +3026,7 @@
       "title": "Scam alert related to banks"
     },
     "2f69c645e8ffb99342b710b2ba63f6f1991250966cfa045aa2db83f069e61c7c": {
-      "card_id": null,
+      "card_id": "2f69c645e8ffb99342b710b2ba63f6f1991250966cfa045aa2db83f069e61c7c",
       "content_hash": "086ce78e82deb2ab17e30bde4ad3a5f6217053e0c49394572a329ebe3fb15294",
       "feed_id": "hkma_press_release",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -3037,7 +3037,7 @@
       "raw_published": "Tue, 28 Oct 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "HKMA completes e-HKD Pilot Programme and outlines future direction of e-HKD"
     },
@@ -3234,7 +3234,7 @@
       "title": "International Reserves and Foreign Currency Liquidity"
     },
     "30c9e8e842f751f6ac2c0b8498a403413528e594ba2cea3765f5ec6deb0d9bae": {
-      "card_id": null,
+      "card_id": "30c9e8e842f751f6ac2c0b8498a403413528e594ba2cea3765f5ec6deb0d9bae",
       "content_hash": "3a26bfe959597b7055f70e84ac493883cd7f17c43dc9582658101093e5444b0f",
       "feed_id": "hkma_consultations",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -3245,7 +3245,7 @@
       "raw_published": "Thu, 23 Oct 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Cryptoasset Standard: consultation on revised SPM module CA-G-1 “Overview of Capital Adequacy Regime for Locally Incorporated Authorized Institutions” Enclosure: Overview of Capital Adequacy Regime for Locally Incorporated Authorized Institutions (Consultation)"
     },

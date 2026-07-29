@@ -35,15 +35,20 @@
     {
       "label": "HKMA press release: FSTB/HKMA fixed income market DLT review, phase 1 conclusions and Companies Registry FAQ (29 Jun 2026)",
       "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260629-4/"
+    },
+    {
+      "label": "HKMA press release: tokenisation demonstration for the corporate treasury community (10 Jun 2026)",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260610-5/"
     }
   ],
   "open_items": [
     "FSTB and HKMA will begin a second phase of their fixed income market DLT legal review in the second half of 2026, covering legislative changes for electronic execution and for possession/transfer of tokenised instruments; not yet published.",
     "The Tokenised Bond Expert Group's further legal and regulatory enhancement recommendations are stated to be announced separately; no specific timeline given as of 5 June 2026.",
     "The EnsembleTX pilot is stated to run throughout 2026; its outputs and any expansion have not yet concluded.",
-    "Migration from interim RTGS settlement to 24/7 tokenised central-bank-money settlement under Project Ensemble is described as a future step, not yet completed."
+    "Migration from interim RTGS settlement to 24/7 tokenised central-bank-money settlement under Project Ensemble is described as a future step, not yet completed.",
+    "A 10 June 2026 HKMA press release stated, per its own title, that HKMA demonstrated the potential of tokenisation to Hong Kong's corporate treasury community. HKMA's site was unreachable during a 29 Jul 2026 update (see the Banking & Money pillar's open_items for the same, HKMA-wide fetch problem observed that day), so this item's card is drafted from title/metadata only; what specifically was demonstrated, and to whom, should be confirmed against primary text once the site is reachable."
   ],
-  "generated_at": "2026-07-13T11:53:32Z",
+  "generated_at": "2026-07-29T09:15:00Z",
   "model": "Claude (Anthropic)",
   "status": "unverified"
 }

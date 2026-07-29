@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "id": "supervisory-policy-manual",
+  "term": "Supervisory Policy Manual (SPM)",
+  "jurisdictions": [
+    "hk"
+  ],
+  "plain_definition": "HKMA's collected set of numbered modules setting out its supervisory approach, policies, and the standards it expects Authorized Institutions to meet -- covering topics from corporate governance to, increasingly, cryptoasset-related risk. Each module has a short code, such as CA-G-1 for the overview module on capital adequacy; HKMA periodically consults on and revises individual modules.",
+  "formal_definition": "A non-statutory supervisory manual issued by HKMA to Authorized Institutions under its general supervisory powers over banks; individual modules are referenced by an alphanumeric code (e.g. CA-G-1) and are periodically revised, sometimes following public consultation.",
+  "related_terms": [
+    "authorized-institution",
+    "capital-adequacy-regime",
+    "hkma"
+  ],
+  "first_used_card_id": "30c9e8e842f751f6ac2c0b8498a403413528e594ba2cea3765f5ec6deb0d9bae",
+  "generated_at": "2026-07-29T09:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}
