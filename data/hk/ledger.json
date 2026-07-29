@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T23:09:37Z",
+  "generated_at": "2026-07-29T23:27:29Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -2589,7 +2589,7 @@
       "raw_published": "Tue, 16 Apr 2024 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Risk management considerations related to the use of distributed ledger technology (PDF File, 230.0 KB)"
     },
@@ -2893,7 +2893,7 @@
       "raw_published": "Wed, 10 Jun 2026 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "HKMA demonstrates potential of tokenisation to corporate treasury community"
     },
@@ -3037,7 +3037,7 @@
       "raw_published": "Tue, 28 Oct 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "HKMA completes e-HKD Pilot Programme and outlines future direction of e-HKD"
     },
@@ -3245,7 +3245,7 @@
       "raw_published": "Thu, 23 Oct 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Cryptoasset Standard: consultation on revised SPM module CA-G-1 “Overview of Capital Adequacy Regime for Locally Incorporated Authorized Institutions” Enclosure: Overview of Capital Adequacy Regime for Locally Incorporated Authorized Institutions (Consultation)"
     },

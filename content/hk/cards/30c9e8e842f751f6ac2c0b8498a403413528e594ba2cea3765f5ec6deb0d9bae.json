@@ -9,7 +9,7 @@
   ],
   "type": "consultation",
   "title": "Cryptoasset Standard: Consultation on Revised SPM Module CA-G-1 (Capital Adequacy Regime for Locally Incorporated Authorized Institutions)",
-  "summary": "On 23 October 2025, the Hong Kong Monetary Authority (HKMA) published a consultation on a revised version of SPM module CA-G-1, 'Overview of Capital Adequacy Regime for Locally Incorporated Authorized Institutions,' as part of its Cryptoasset Standard, according to the consultation's own title. HKMA's Supervisory Policy Manual (SPM) is its collection of modules setting out supervisory approach and expectations for Authorized Institutions, and CA-G-1 is the overview module for the capital adequacy regime -- the framework requiring locally incorporated banks to hold minimum capital against risk-weighted exposures. Consulting on a revision means inviting affected institutions and other stakeholders to comment on proposed changes before HKMA finalises them. This consultation forms part of the same broader HKMA project applying a dedicated prudential standard to cryptoasset exposures, which has also produced related changes to HKMA return templates and disclosure requirements.",
+  "summary": "On 23 October 2025, the Hong Kong Monetary Authority (HKMA) published a consultation on a revised version of SPM module CA-G-1, 'Overview of Capital Adequacy Regime for Locally Incorporated Authorized Institutions,' as part of its Cryptoasset Standard, according to the consultation's own title. HKMA's Supervisory Policy Manual (SPM) is its collection of modules setting out supervisory approach and expectations for Authorized Institutions, and CA-G-1 is the overview module for the capital adequacy regime -- the framework requiring locally incorporated banks to hold minimum capital against risk-weighted exposures. Consulting on a revision means inviting affected institutions and other stakeholders to comment on proposed changes before HKMA finalises them.",
   "why_it_matters": "For a newcomer, this shows HKMA extending core bank-capital rules, not just licensing or conduct requirements, to cover cryptoasset exposures, so that the amount of capital a bank must hold keeps pace with its growing digital-asset activity.",
   "citations": [
     {
@@ -19,5 +19,6 @@
   ],
   "status": "unverified",
   "generated_at": "2026-07-29T09:15:00Z",
-  "model": "Claude (Anthropic)"
+  "model": "Claude (Anthropic)",
+  "correction_note": "Verifier pass (2026-07-29): the cited URL and its parent paths, including the brdr.hkma.gov.hk domain root, returned HTTP 503 on every attempt, and no archived snapshot was found either, so the quote and underlying claims could not be independently re-confirmed against source text this pass -- status remains unverified pending a successful re-fetch. Two further issues found on review of the card itself: (1) the citation URL's document-ledger reference (20251022-3-EN) encodes 22 October 2025, one day before the card's stated 23 October 2025 publication date, unresolved without source access; (2) a sentence claiming the consultation 'has also produced related changes to HKMA return templates and disclosure requirements' was removed as unsupported by the card's sole citation."
 }
