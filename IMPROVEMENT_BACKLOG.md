@@ -1632,3 +1632,26 @@ The construction-chemicals cartel item (`item_hash 8ebafbd5...`, root cause -- a
 recurring cost already described. No new information this firing beyond reconfirming the pattern;
 logged briefly here only so a reader scanning entries in order sees the count keep incrementing
 until an owner fixes the underlying keyword collision.
+
+### 2026-07-29 -- HKMA's outage has now escalated to its entire web presence, two firings running -- no longer a brdr.hkma.gov.hk-only issue
+
+The 07-26 entry above first noted `www.hkma.gov.hk` (not just the already-known-bad
+`brdr.hkma.gov.hk` subdomain) failing to return content, flagged then as "a new, single-firing
+observation... may be transient rather than a new permanent limitation." That is no longer true.
+This firing (the second in a row to hit this), all four analyst-worktree fetch attempts and all
+four independent verifier re-fetch attempts -- eight separate contexts in total across two
+firings -- found HKMA's entire web presence unreachable: `brdr.hkma.gov.hk` returning HTTP 503 on
+every document URL and its own listing/home pages, and `www.hkma.gov.hk` returning empty,
+unparseable content on press releases, PDFs (including a previously-successfully-fetched one, used
+as a specific control test), and RSS feeds. Every verifier this firing independently confirmed
+`sfc.hk` fetched cleanly at the same time, ruling out a general tool/proxy failure -- this is
+specific to HKMA's domain(s).
+
+All four of this firing's `hk` cards were correctly published as `unverified` as a direct result --
+not because the content was wrong, but because neither the analyst nor any verifier could complete
+a single successful fetch against HKMA to confirm anything beyond bare RSS-feed titles. Not fixed
+here (same reasons as the `brdr.hkma.gov.hk`-only version of this finding: out of scope for a
+single firing, a genuine platform/infrastructure question, not a pipeline bug with one obvious
+fix). Re-flagging with the escalated scope so a future reader doesn't mistake this for the
+narrower, single-subdomain issue already described above -- if this persists through more firings,
+it's worth treating as the new baseline reality for HKMA rather than a still-unfolding anomaly.

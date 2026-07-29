@@ -2619,3 +2619,68 @@ drafted). Backlog after this firing: hk 59, us 27, eu 1 (the recurring cartel it
 unfixed), uk 4, jp 12, uae/ch 0. No `PushNotification` fired -- nothing stopped early, no gate
 failure blocked a commit, every push landed and was independently confirmed against `origin/main`,
 not self-reported.
+
+### 2026-07-28/29 -- Fourth genuinely unattended firing (`trig_01CHa5wLW4G5LGj8fREeKUkE`, fired 22:37 UTC on schedule, no one watching): hk/us/eu/uk processed
+
+Same cap logic as every prior firing, applied to this firing's specific queue state: hk=4, us=4,
+eu=1 (its queue still only had the one recurring item), uk=1 (the 10-cap's one remaining slot,
+taken in registry order) -- 10 total, cap bound at uk. uae/ch (both empty) and jp (queue of 12,
+untouched -- the cap bound before reaching it) got nothing this firing.
+
+**hk -- 4 cards drafted, verified, published; 0 verified, 4 unverified.** All four batched items
+(two HKMA return-template consultation annexes, the original 2024 cryptoasset-disclosure circular,
+and a July 2025 gazettal circular) were correctly drafted as honest, title-only cards rather than
+declined outright, following real precedent already in this repo for exactly this situation. Every
+one stayed unverified: this is the second firing in a row where HKMA's *entire* web presence, not
+just the already-known-bad `brdr.hkma.gov.hk` subdomain, was unreachable to both the analyst and
+all four independent verifiers -- eight separate fetch contexts across two firings, all
+confirming the same outage, while a control fetch to `sfc.hk` succeeded every time. Verifiers
+still found and stripped real problems even from these thin cards: several uncited "wider
+consultation package" claims the analyst had attributed to an HKMA feed URL that was never
+actually added to the card's own citations. Escalated finding (was single-subdomain, now
+site-wide, two firings running) written up in IMPROVEMENT_BACKLOG.md.
+
+**us -- 4 cards drafted, verified, published; 4 verified, 0 unverified -- a third consecutive
+clean sweep.** A Truth Social Bitcoin and Ethereum ETF filing notice (NYSE Arca, sponsor Yorkville
+America Digital, LLC); a joint CFTC/SEC request for comment on harmonizing derivatives-product
+definitions (included as adjacent market-structure background -- the analyst disclosed
+transparently, in both `summary` and `why_it_matters`, that the source itself never mentions
+digital assets, rather than overclaiming a connection); a GENIUS Act-mandated Treasury request for
+comment on illicit-activity detection methods for digital assets; and a Nasdaq filing (Amendment
+No. 1) proposing new Rule 5712 alongside the nine-asset Hashdex Nasdaq Crypto Index US ETF (the
+analyst deliberately omitted percentage weightings this time, avoiding the exact
+`numeric_claims_unsupported` failure mode a sibling card hit in an earlier firing -- a verifier
+confirmed this was sufficient). Verifiers caught four different real issues across the batch: a
+non-verbatim citation quote missing one word, a cherry-picked/incomplete registration-statement
+caveat, an unsupported historical generalization about crypto-derivatives classification, and a
+"sponsor" label the source itself never uses (defining the entity as "the Manager" instead).
+
+**eu -- 0 cards; the recurring cartel item declined for a fifth consecutive firing.** Same item,
+same correct decision, same already-diagnosed and still-unfixed root cause (the `"mica"` keyword
+substring-matching inside "chemicals"). No new information; the recurrence count is tracked in
+IMPROVEMENT_BACKLOG.md rather than repeated here in full each time.
+
+**uk -- 1 card drafted, verified, published; 1 verified, 0 unverified.** The FCA and Bank of
+England's joint approach to regulating systemic stablecoin issuers -- a UK issuer starts under
+FCA-only supervision and moves to joint FCA/Bank of England regulation once HM Treasury formally
+recognises it as systemic (assessed by transaction volume, substitutability, and
+interconnectedness), with the Bank leading on prudential matters and the FCA on conduct. Correctly
+identified as a genuinely distinct item from two firings ago's UK cards (same general subject area,
+different specific document), and correctly recognized that the existing `stablecoins` pillar
+state already fully covered this paper, so no redundant pillar-state edit was made. The verifier
+caught two precision issues: a conflated "systemic to UK payments" phrase that didn't match the
+source's actual statutory trigger (a payment system being recognised as posing risk to the UK
+financial system generally, not being "systemic to payments" specifically), and a false
+overgeneralization claiming the Bank of England is "not otherwise an individual firm's regulator"
+-- untrue in general, since the Bank (via the PRA) is the prudential regulator for UK banks and
+insurers; the claim was only meant to apply narrowly to this one stablecoin issuer pre-designation.
+
+**Net result of this firing:** 9 cards processed end-to-end across 3 jurisdictions (hk, us, uk; eu
+processed with zero cards by design) -- checked card-by-card against the actual published files,
+not tallied from memory: **5 verified, 4 unverified** (hk 0/4 verified -- the HKMA outage's second
+consecutive firing; us 4/4 verified; uk 1/1 verified). Real commits: `8ac1f43`/`7900b29` (hk),
+`1e293d9`/`f4b9b10` (us), `ed9f15e`/`3639ad6` (uk); eu produced no commit (nothing to commit, by
+design -- zero cards drafted). Backlog after this firing: hk 55, us 23, eu 1 (the recurring cartel
+item, still unfixed), uk 3, jp 12, uae/ch 0. No `PushNotification` fired -- nothing stopped early,
+no gate failure blocked a commit, every push landed and was independently confirmed against
+`origin/main`, not self-reported.
