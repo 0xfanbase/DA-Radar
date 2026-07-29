@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T23:11:11Z",
+  "generated_at": "2026-07-29T04:42:09Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -624,6 +624,22 @@
       "status": "queued",
       "summary": "",
       "title": "Tender results of the re-opening of 3-year HKD HKSAR Institutional Government Bonds"
+    },
+    "08fb571a5a383e11f2f4a289fa7f604c59c6c4fe322f3725422f99d6272711e1": {
+      "card_id": null,
+      "content_hash": "d2a7999559b990368357723d0f220134fe8408ca861a2848547102679d00f636",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-29T04:42:09Z",
+      "guid": null,
+      "item_hash": "08fb571a5a383e11f2f4a289fa7f604c59c6c4fe322f3725422f99d6272711e1",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260728-3/",
+      "published_at": "2026-07-27T16:00:00Z",
+      "raw_published": "Tue, 28 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Exchange Fund Bills Tender Results"
     },
     "095aa6cc26459c0fdbe16ffbc2a14ba4a5c2d05d6ba63c1926fe603026ebd27e": {
       "card_id": null,
@@ -4288,6 +4304,22 @@
       "status": "queued",
       "summary": "",
       "title": "Scam alert related to banks"
+    },
+    "43c63ca024da2ee2b747e0495c2a7c1a1be51ae61f0d4c35a2ce7079997f0998": {
+      "card_id": null,
+      "content_hash": "d7863b3b002e62619fe309d6f0ec2b30352898d70c962aacac68e5a153f883d0",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-29T04:42:09Z",
+      "guid": null,
+      "item_hash": "43c63ca024da2ee2b747e0495c2a7c1a1be51ae61f0d4c35a2ce7079997f0998",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260728-4/",
+      "published_at": "2026-07-27T16:00:00Z",
+      "raw_published": "Tue, 28 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Exchange Fund Position at end-June 2026"
     },
     "443d3e8cc34bd890d332620c3efa36230d80c304bef6bc09a71b53090d1faab7": {
       "card_id": null,
@@ -16416,6 +16448,22 @@
       "status": "queued",
       "summary": "",
       "title": "Cross-Agency Steering Group welcomes first sector-based operational guide on transition finance"
+    },
+    "faf20368ab6ab147878b931feddcc41fddf3612906074c0c2bf69255ec81def5": {
+      "card_id": null,
+      "content_hash": "78ec81a8da0f7925be2148bc740f57a24a9bff01ad12a03f765843faea52261f",
+      "feed_id": "sfc_press_releases",
+      "first_seen": "2026-07-29T04:42:09Z",
+      "guid": "26PR118",
+      "item_hash": "faf20368ab6ab147878b931feddcc41fddf3612906074c0c2bf69255ec81def5",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR118",
+      "published_at": "2026-07-28T08:18:28Z",
+      "raw_published": "Tue, 28 Jul 2026 16:18:28 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "SFC reprimands and fines Luk Fook Securities (HK) Limited $2.1 million for inadequate cybersecurity control to fend off cyberattack"
     },
     "faf5e77391ea2536425f862a52538a0a00a29d5264214e1c979cf788c71eff7d": {
       "card_id": null,
