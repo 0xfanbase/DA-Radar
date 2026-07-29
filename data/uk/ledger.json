@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T00:00:41Z",
+  "generated_at": "2026-07-29T04:42:11Z",
   "items": {
     "02028a9677575e76189a49022768f45cc07c84ca74ac72879172cd9671891801": {
       "card_id": null,
@@ -721,6 +721,22 @@
       "summary": "Index-linked treasury stocks are gilts issued by the UK Government. They pay out twice a year, with the amount indexed to the Retail Prices Index.",
       "title": "Index-linked Treasury Stock"
     },
+    "363ea1d7b41e64a450347cce6752baf06a4cb01861e1b17b084dc38ed9223acb": {
+      "card_id": null,
+      "content_hash": "5b5c8b61a832c2b68d9732e9cec6adb380ac0f64adf3ec85bf18b76cfa23b3a8",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-29T04:42:11Z",
+      "guid": "https://www.gov.uk/government/publications/dao-0726-sharing-information-covered-by-injunctions#2026-07-28T11:10:27Z",
+      "item_hash": "363ea1d7b41e64a450347cce6752baf06a4cb01861e1b17b084dc38ed9223acb",
+      "link": "https://www.gov.uk/government/publications/dao-0726-sharing-information-covered-by-injunctions",
+      "published_at": "2026-07-28T11:10:27Z",
+      "raw_published": "2026-07-28T11:10:27Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "‘Dear Accounting Officer’ letters provide advice on accountability, regularity, propriety, value for money and annual accounting exercises.",
+      "title": "Correspondence: DAO 07/26 Sharing information covered by injunctions"
+    },
     "3702d4e2f44caf3800d88440f18815eefcc4aa3952704a1155ee480d346d9c25": {
       "card_id": null,
       "content_hash": "a248c82bc6e34be97255a0651fb32721f070629d654e3492af1264a9f2ec5ac9",
@@ -1377,6 +1393,22 @@
       "summary": "Policy statement 15/26",
       "title": "PS15/26 – Pillar 2A review – Phase 1"
     },
+    "6273258f52741ca4bf2f65f6f4c7dfc45ebb4fdb23bc30c31d946af06ce410fe": {
+      "card_id": null,
+      "content_hash": "f368b56475227030615a3962ce21164b20ac860fc758cb0453bce4ac325629ee",
+      "feed_id": "fca_news",
+      "first_seen": "2026-07-29T04:42:11Z",
+      "guid": "172276",
+      "item_hash": "6273258f52741ca4bf2f65f6f4c7dfc45ebb4fdb23bc30c31d946af06ce410fe",
+      "link": "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system",
+      "published_at": null,
+      "raw_published": "Tuesday, July 28, 2026 - 12:02",
+      "relevant": false,
+      "source_id": "fca",
+      "status": "queued",
+      "summary": "Think of the last time you made a payment, transferred money, used a banking app or logged on to online financial services. Did you give much thought to the infrastructure that makes those essential everyday transactions possible?Let’s be honest, you probably didn’t. Most people don’t – until something goes wrong.Financial services rely on a network of providers working behind the scenes – including technology, data and operational service providers.These are so important to the resilience of the financial system that the government granted us powers to implement a new oversight regime, and has now designated the first critical third parties (CTPs).That means, the Bank of England, PRA and FCA will together directly oversee these providers, with a targeted, proportionate focus on ensuring the services they provide to UK financial firms and financial market infrastructures (FMIs) are resilient.Our oversight aims to address system level risks, where many firms rely on the same services from common service providers. And improve coordination and information-sharing across the sector, particularly during major incidents. This complements the existing rules in place for regulated firms to manage the risks they individually face.Operational resilience has evolvedThe primary focus of our operational resilience regulatory framework has been on the ability of individual firms to prevent, respond to and recover from disruption to maintain financial stability and confidence – including from risks arising from their outsourcing and third party arrangements.That remains vital.What's changed is the environment in which those firms operate.Banks, insurers, payment firms and FMIs increasingly rely on a relatively small number of common third party service providers. These may be cloud providers, technology firms, data providers or other specialist service providers.The benefits of this approach are obvious: it can support innovation, boost efficiency, help firms improve the services",
+      "title": "Strengthening resilience across an increasingly interconnected financial system"
+    },
     "63b4be00930e9d35c8eac18b0ef1c996bd21762fc6de6f23ec3a0c9f18f9369c": {
       "card_id": null,
       "content_hash": "733058dbbc098ebdf10014c6dc4a89519b3890b1450183fe9ca32bc21dbc7217",
@@ -1744,6 +1776,22 @@
       "status": "queued",
       "summary": "Meeting held 10 March 2026",
       "title": "Banknote imagery expert panel minutes – 10 March 2026"
+    },
+    "7779aa7f6f4772dc9ec4a9f57aeb635e1507078b9883bf0d985fe5ac09fbd4c2": {
+      "card_id": null,
+      "content_hash": "91b115dcc402b482a6a1a291619e868c93a026fb4ab3d8080516ab218bb515ce",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-29T04:42:11Z",
+      "guid": "https://www.gov.uk/government/consultations/ifrs-18-presentation-and-disclosure-in-financial-statements-exposure-draft#2026-07-28T11:22:45Z",
+      "item_hash": "7779aa7f6f4772dc9ec4a9f57aeb635e1507078b9883bf0d985fe5ac09fbd4c2",
+      "link": "https://www.gov.uk/government/consultations/ifrs-18-presentation-and-disclosure-in-financial-statements-exposure-draft",
+      "published_at": "2026-07-28T11:22:45Z",
+      "raw_published": "2026-07-28T11:22:45Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Public consultation on HM Treasury proposals for the application of IFRS 18 Presentation and Disclosure in Financial Statements across Central Government",
+      "title": "IFRS 18 Presentation and Disclosure in Financial Statements Exposure Draft"
     },
     "7784eb777be5571b1ae05d7c18f01277e1e61cf230fb8e98b3da2500ce8c454b": {
       "card_id": null,
