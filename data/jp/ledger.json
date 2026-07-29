@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T04:37:59Z",
+  "generated_at": "2026-07-29T04:42:10Z",
   "items": {
     "02d83335c3f185a01f78ac8bf5f64fad166ccc68cc60456b0c37127aece0ca25": {
       "card_id": null,
@@ -208,6 +208,22 @@
       "status": "queued",
       "summary": "",
       "title": "Councils,The Expert Panel on the Revision of the Corporate Governance Code (3rd meeting) Minutes"
+    },
+    "259360636bc624b56965c00c677e2eb00d4794410e79331c11684f5e02291a49": {
+      "card_id": null,
+      "content_hash": "ac4013736fca6a153f9bd842f78785b255ee6bd90a79aeed137e71be4749556e",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-29T04:42:10Z",
+      "guid": null,
+      "item_hash": "259360636bc624b56965c00c677e2eb00d4794410e79331c11684f5e02291a49",
+      "link": "https://www.fsa.go.jp/news/r8/shouken/20260729/20260729.html",
+      "published_at": "2026-07-29T12:00:00Z",
+      "raw_published": "Wed, 29 Jul 2026 12:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "令和８年金融商品取引法等改正（20日後施行）に係る政令の公布について公表しました。"
     },
     "27e47464fa9b9db3ab2a5e2299eac90c0bb5ca43e13eed3df4d7fecc2ac72c8a": {
       "card_id": null,
@@ -561,6 +577,22 @@
       "summary": "",
       "title": "「資産運用サービスの高度化に向けたプログレスレポート2026」について公表しました。"
     },
+    "6d6ddd6a059ef5ca886ad89d067a8c9708a52b8e4e00f3aa0b454e30c91aaeb9": {
+      "card_id": null,
+      "content_hash": "1a86e528a89666c741f3bd396bfda5b3d28e8dd774a14aeed290cdef9be47a3b",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-29T04:42:10Z",
+      "guid": null,
+      "item_hash": "6d6ddd6a059ef5ca886ad89d067a8c9708a52b8e4e00f3aa0b454e30c91aaeb9",
+      "link": "https://www.fsa.go.jp/news/r8/shouken/20260728.html",
+      "published_at": "2026-07-28T16:00:00Z",
+      "raw_published": "Tue, 28 Jul 2026 16:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "ベースフード（株）株式外２銘柄に係る相場操縦審判事件の第１回審判手続期日開催について公表しました。"
+    },
     "6e3f4b29e5e97c9d373bdbd1aa196b4f50ded49e7bf0b193f8cdd3968fb257c1": {
       "card_id": null,
       "content_hash": "e166620afd9a24daa3665241d40c29d0c5d26921ce8576ec5d6646ee4c26b83a",
@@ -704,6 +736,22 @@
       "status": "queued",
       "summary": "",
       "title": "第153回自動車損害賠償責任保険審議会議事要旨について公表しました。"
+    },
+    "953434d2b2c022ad6c269d76e9c1e17bdd34f369140a46ba1e8a64a0abe1a118": {
+      "card_id": null,
+      "content_hash": "a5b06211feb735a6f89cdfa6e3e18acf829cdbba13a42520d7980bbcd152924d",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-29T04:42:10Z",
+      "guid": null,
+      "item_hash": "953434d2b2c022ad6c269d76e9c1e17bdd34f369140a46ba1e8a64a0abe1a118",
+      "link": "https://www.fsa.go.jp/news/r8/shouken/20260728/20260728.html",
+      "published_at": "2026-07-28T16:00:00Z",
+      "raw_published": "Tue, 28 Jul 2026 16:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "「投資信託及び投資法人に関する法律施行規則の一部を改正する内閣府令（案）」に対するパブリックコメントの実施について公表しました。"
     },
     "96098577be2bafee576ddd882ff7d1ad9ea8b27652449bea84d75738ab3ce506": {
       "card_id": null,
