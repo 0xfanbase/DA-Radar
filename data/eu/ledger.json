@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T04:37:58Z",
+  "generated_at": "2026-07-29T04:42:15Z",
   "items": {
     "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
       "card_id": null,
@@ -192,6 +192,22 @@
       "status": "queued",
       "summary": "European Commission Daily news Brussels, 27 Jul 2026 The EU sends planes and firefighters as wildfires ravage France and Spain The EU has deployed assistance to both France and Spain under the EU Civil Protection ...",
       "title": "Daily News 27 / 07 / 2026"
+    },
+    "15dc378d354d3284d21f7a69d0451cc90be7995d9f3c5e5554fcf73207333ec3": {
+      "card_id": null,
+      "content_hash": "96316d015f1db3a85e98fe4dbb85db33a74eeec8dbc6ee64c0808b36ddc5db77",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-29T04:42:15Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1690",
+      "item_hash": "15dc378d354d3284d21f7a69d0451cc90be7995d9f3c5e5554fcf73207333ec3",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1690",
+      "published_at": "2026-07-27T22:00:00Z",
+      "raw_published": "Mon, 27 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 28 Jul 2026 The European Commission has launched a public consultation inviting all interested parties to comment on its proposal to amend the Guidelines on regional State aid to keep them up-to-date.",
+      "title": "Commission seeks feedback on proposed amendments to regional State aid guidelines"
     },
     "16b5711f054a7d8346a912792ceff753ee52ffb7968e5b301108f69bf7738be0": {
       "card_id": null,
@@ -833,6 +849,22 @@
       "summary": "",
       "title": "ECB reports on progress towards euro adoption"
     },
+    "674a39d2da0f5feef88867e6f38a12b57dabc38b57b7c9a26cbe69416b06111f": {
+      "card_id": null,
+      "content_hash": "0ad58c38564c35ddbe237ab85a3f7d46c228bfcdbb0bbc53edaea2986c713e89",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-29T04:42:15Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1691",
+      "item_hash": "674a39d2da0f5feef88867e6f38a12b57dabc38b57b7c9a26cbe69416b06111f",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1691",
+      "published_at": "2026-07-27T22:00:00Z",
+      "raw_published": "Mon, 27 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 28 Jul 2026 The European Commission has approved a €149 million (SEK 1.6 billion) State aid scheme for agricultural, fishing and aquaculture companies facing increased fuel and fertiliser prices due to the Middle East crisis.",
+      "title": "Commission approves €149 million Swedish State aid for agricultural, fishing and aquaculture companies facing increased fuel and fertiliser prices"
+    },
     "68d4b2f07ee536cfe137b2fa3e24ded9021531e7b20302c08fe93a88e4d9be30": {
       "card_id": null,
       "content_hash": "eadf9aaca9df52fc5ce7bc3da23416fa56d4dcb6544c1d5d441ca56c1c4e9416",
@@ -912,6 +944,22 @@
       "status": "queued",
       "summary": "European Commission Questions and answers Brussels, 24 Jul 2026 ENERGY MEASURES What energy measures are included in the package? Curbing Russia's energy export revenues is the most effective way to inflict significant costs...",
       "title": "Questions and answers on the 21st package of sanctions against Russia"
+    },
+    "6f976fb2601b859446209e26b0c163b5daf0cdd3348bc18c22c56c85f1c92f3a": {
+      "card_id": null,
+      "content_hash": "d7dad4646faad3409dce374e65f5e1ad1ba0ab8f101874091d5155b4ee56e1ad",
+      "feed_id": "ecb_banking_supervision_press",
+      "first_seen": "2026-07-29T04:42:15Z",
+      "guid": "https://www.bankingsupervision.europa.eu//press/interviews/date/2026/html/ssm.in260728~574c738cea.en.html",
+      "item_hash": "6f976fb2601b859446209e26b0c163b5daf0cdd3348bc18c22c56c85f1c92f3a",
+      "link": "https://www.bankingsupervision.europa.eu//press/interviews/date/2026/html/ssm.in260728~574c738cea.en.html",
+      "published_at": "2026-07-28T08:00:00Z",
+      "raw_published": "Tue, 28 Jul 2026 10:00:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "Sharon Donnery: Interview with Liberal.gr"
     },
     "70b2f573adb9763d108b106afdaababd4cb243b99b77b4f92927e5edbaefff21": {
       "card_id": null,
@@ -1361,6 +1409,22 @@
       "summary": "European Commission Speech Paris, 09 Jul 2026 Imagine being a 15-year-old girl. Someone copies a photo from your social media profile. They upload it to an AI app. Minutes later, explicit images of you are ...",
       "title": "Speech by Commissioner Lahbib at the OECD Gender Equality Forum"
     },
+    "a1a5da2d53bff17ce40608722b7fa5b2ca72c8753186dc1e5ff3cbaff5a15f0f": {
+      "card_id": null,
+      "content_hash": "a857d1bcc6877cc77dd4414d910ecc5a46f0a74a03dad9d664ac51f3d337be3a",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-29T04:42:15Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1696",
+      "item_hash": "a1a5da2d53bff17ce40608722b7fa5b2ca72c8753186dc1e5ff3cbaff5a15f0f",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1696",
+      "published_at": "2026-07-28T09:35:26Z",
+      "raw_published": "Tue, 28 Jul 2026 09:35:26 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Daily news Brussels, 28 Jul 2026 Commission adopts new guidance to improve companies' access to Europe's cutting-edge research and technology infrastructures The European Commission has adopted...",
+      "title": "Daily News 28 / 07 / 2026"
+    },
     "a53fa053047d1fdf3f1da86a984e6baa4a2a6fbb10a5ecf7f4703c8ea1ecc3b4": {
       "card_id": null,
       "content_hash": "9c00a73a874eb2f305de3ecfb5245f23e25960e18310820a432e8d67ff4dee16",
@@ -1456,6 +1520,22 @@
       "status": "queued",
       "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">The ESAs support ESRB warning on systemic cyber risks from frontier AI models</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-07T11:52:18+02:00\" title=\"Tuesday, July 7, 2026 - 11:52\" class=\"datetime\">07 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">Digital Finance and Innovation</div> <div class=\"field__item\">Joint Committee</div> <div class=\"field__item\">Press Releases</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>The European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) welcome and support&nbsp;</span><a href=\"https://www.esrb.europa.eu/news/pr/date/2026/html/esrb.pr260707~4e1b68241a.en.html\"><span lang=\"EN-GB\">today’s warning</span></a><span> from European Systemic Risk Board (ESRB) on the systemic cyber risks posed by frontier AI models.</span></p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>Recent advances have significantly enhanced the ability of frontier AI models to identify and exploit high-severity vulnerabilities in IT systems within very short timeframes. While the EU’s regulatory framework – including DORA and the AI Act – provides a solid foundation for managing cyber and AI-related risks, the speed and scale of these tools raise concerns that AI-enabled cyber-attacks could undermine the operational resilience of financial entities.&nbsp;</span></p> <p class=\"text-align-justify\"><span>Since the release of the first frontier AI models, the ESAs have raised awareness about the ICT risks posed by the widespread adoption of these models",
       "title": "The ESAs support ESRB warning on systemic cyber risks from frontier AI models"
+    },
+    "b4b6abd49ce577dc8290b6bf72d416b57d41845487594dd0c3f448ad20c3f4f6": {
+      "card_id": null,
+      "content_hash": "e05847785387fa99bd805b96d86eb896442e96eeaa960bef11012ffed3f754a9",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-29T04:42:15Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/statement_26_1694",
+      "item_hash": "b4b6abd49ce577dc8290b6bf72d416b57d41845487594dd0c3f448ad20c3f4f6",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/statement_26_1694",
+      "published_at": "2026-07-27T22:00:00Z",
+      "raw_published": "Mon, 27 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Statement Brussels, 28 Jul 2026 Today, as we mark the 75th anniversary of the 1951 Convention relating to the Status of Refugees, the European Union reaffirms its full commitment to the Convention, to its values and principles, and to ensuring that refugee protection remains firmly anchored in EU and partner countries' legislation, international law and effective multilateral cooperation.",
+      "title": "Joint statement by European Commission and High Representative marking the 75th anniversary of the 1951 Convention relating to the Status of Refugees"
     },
     "b76bc08a8e503b1be1d14c38ed56300515fd892db6d23acfbe4d77fc2aeba8c2": {
       "card_id": null,
