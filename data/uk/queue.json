@@ -1,16 +1,6 @@
 {
-  "generated_at": "2026-07-28T23:53:27Z",
+  "generated_at": "2026-07-30T00:25:45Z",
   "items": [
-    {
-      "feed_id": "hmt_activity",
-      "item_hash": "2c13ae36166f94159592bb0cb316942ea06e0f52867b6e3864a59d2438dcd8e6",
-      "link": "https://www.gov.uk/government/publications/wholesale-digital-markets-champion-first-report",
-      "published_at": "2026-07-13T08:00:02Z",
-      "source_id": "hmt",
-      "status": "queued",
-      "summary": "Report from the UK’s Wholesale Digital Markets Champion, setting out a framework for the UK financial sector to drive tokenisation of wholesale financial markets.",
-      "title": "Independent report: Wholesale Digital Markets Champion – first report"
-    },
     {
       "feed_id": "hmt_activity",
       "item_hash": "0f4c88c4edd97ef6c0bc158f482be945ec20d3eb2754e21d2a437436554257b5",

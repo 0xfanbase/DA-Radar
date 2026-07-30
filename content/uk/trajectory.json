@@ -86,5 +86,49 @@
     "generated_at": "2026-07-27T13:15:00Z",
     "model": "Claude (Anthropic)",
     "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "September 2026",
+    "event": "Membership and precise tasks of the Digital Markets Champion Industry Taskforce's nine Action Groups, set up to deliver the Wholesale Digital Markets Champion's first-report priorities, to be finalised",
+    "pillar": "tokenization_rwa",
+    "source_url": "https://assets.publishing.service.gov.uk/media/6a510e8b2467584757371d58/Digital_Markets_Champion_Report.pdf",
+    "confidence": "announced",
+    "generated_at": "2026-07-30T09:15:00Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "4 September 2026",
+    "event": "Deadline for industry feedback on the Wholesale Digital Markets Champion's first report, so its proposed programme of work reflects sector priorities",
+    "pillar": "tokenization_rwa",
+    "source_url": "https://assets.publishing.service.gov.uk/media/6a510e8b2467584757371d58/Digital_Markets_Champion_Report.pdf",
+    "confidence": "announced",
+    "generated_at": "2026-07-30T09:15:00Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "spring 2027",
+    "event": "Target for the Digital Markets Champion Taskforce's Orchestration Group to complete testing and, if possible, run a live trial of an end-to-end repo transaction on blockchain",
+    "pillar": "tokenization_rwa",
+    "source_url": "https://assets.publishing.service.gov.uk/media/6a510e8b2467584757371d58/Digital_Markets_Champion_Report.pdf",
+    "confidence": "indicated",
+    "generated_at": "2026-07-30T09:15:00Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
+  },
+  {
+    "schema_version": 1,
+    "date_or_window": "July 2027",
+    "event": "Second report to the Chancellor from the Wholesale Digital Markets Champion, covering DLT adoption and interoperability recommendations (Terms of Reference deliverable 2)",
+    "pillar": "tokenization_rwa",
+    "source_url": "https://assets.publishing.service.gov.uk/media/6a4fa5c41228eb26a4cab6d1/Wholesale_Digital_Markets_Champion_-_Terms_of_Reference_.pdf",
+    "confidence": "announced",
+    "generated_at": "2026-07-30T09:15:00Z",
+    "model": "Claude (Anthropic)",
+    "status": "unverified"
   }
 ]

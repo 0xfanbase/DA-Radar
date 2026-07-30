@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "great-british-tokenised-deposit",
+  "term": "Great British Tokenised Deposit (GBTD)",
+  "jurisdictions": ["uk"],
+  "plain_definition": "A private sector-led project to let different UK banks' tokenised deposits interact with each other, so that programmable commercial bank money can support both wholesale and everyday payments. It is a shared, cross-bank initiative -- distinct from any one bank's own tokenised-deposit product, a stablecoin, or the Bank of England's proposed digital pound.",
+  "formal_definition": "Described in the Wholesale Digital Markets Champion's first report (HM Treasury, 13 July 2026) as a new private sector-led platform enabling different banks' tokenised deposits to interact, and as an approved participant in the Bank of England's Synchronisation Lab; the report recommends industry 'continue to build GBTD at scale.'",
+  "related_terms": ["tokenised-deposit", "digital-securities-sandbox", "distributed-ledger-technology"],
+  "first_used_card_id": "2c13ae36166f94159592bb0cb316942ea06e0f52867b6e3864a59d2438dcd8e6",
+  "generated_at": "2026-07-30T09:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

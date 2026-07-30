@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "wholesale-digital-markets-champion",
+  "term": "Wholesale Digital Markets Champion",
+  "jurisdictions": ["uk"],
+  "plain_definition": "A role the UK government created to lead industry towards tokenising wholesale (institutional) financial markets, under the July 2025 Wholesale Financial Markets Digital Strategy. The Champion convenes a cross-industry taskforce, reports to the Chancellor twice over an 18-month term, and is a private-sector appointee rather than a regulator or civil servant.",
+  "formal_definition": "A role established under the Wholesale Financial Markets Digital Strategy (HM Treasury, 15 July 2025) to provide market leadership on tokenisation of UK wholesale capital markets and co-ordinate the sector's wider implementation of digitalisation, per the role's Terms of Reference. The government appointed Chris Woolard CBE -- a partner at Ernst & Young (EY) and former interim Chief Executive of the FCA -- to the role. Deliverables set out in the Terms of Reference are a cross-industry taskforce, an initial forward look (by July 2026), and a report on DLT adoption and interoperability (by July 2027), over an 18-month term.",
+  "related_terms": ["tokenisation", "digital-securities-sandbox", "digit", "hm-treasury"],
+  "first_used_card_id": "2c13ae36166f94159592bb0cb316942ea06e0f52867b6e3864a59d2438dcd8e6",
+  "generated_at": "2026-07-30T09:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}
