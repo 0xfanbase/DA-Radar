@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T05:04:59Z",
+  "generated_at": "2026-07-30T04:28:27Z",
   "items": [
     {
       "feed_id": "jvcea_news",
@@ -120,6 +120,16 @@
       "status": "queued",
       "summary": "",
       "title": "国際関係,FATFによる「暗号資産及び暗号資産サービス・プロバイダー（VASP）に係るFATF基準の実施状況についての報告書」について公表しました。"
+    },
+    {
+      "feed_id": "fsa_news_ja",
+      "item_hash": "4aeb2648f9830554569a234d787238f40c3be9b41a91e1fd9382474b125b9036",
+      "link": "https://www.fsa.go.jp/inter/fatf/20260721/20260721.html",
+      "published_at": "2026-07-29T18:00:00Z",
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "国際関係,FATFによる「DeFiに係る規制上の課題に関する報告書」について公表しました。"
     }
   ],
   "jurisdiction_id": "jp",

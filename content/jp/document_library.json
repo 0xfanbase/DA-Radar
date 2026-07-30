@@ -168,9 +168,20 @@
       "regulator": "FSA",
       "title": "国際関係,FATFによる「暗号資産及び暗号資産サービス・プロバイダー（VASP）に係るFATF基準の実施状況についての報告書」について公表しました。",
       "type": "news"
+    },
+    {
+      "item_hash": "4aeb2648f9830554569a234d787238f40c3be9b41a91e1fd9382474b125b9036",
+      "link": "https://www.fsa.go.jp/inter/fatf/20260721/20260721.html",
+      "pillar": [
+        "aml_cft_enforcement"
+      ],
+      "published_at": "2026-07-29T18:00:00Z",
+      "regulator": "FSA",
+      "title": "国際関係,FATFによる「DeFiに係る規制上の課題に関する報告書」について公表しました。",
+      "type": "news"
     }
   ],
-  "generated_at": "2026-07-27T05:04:59Z",
+  "generated_at": "2026-07-30T04:28:27Z",
   "jurisdiction_id": "jp",
   "schema_version": 1
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T04:42:10Z",
+  "generated_at": "2026-07-30T04:28:27Z",
   "items": {
     "02d83335c3f185a01f78ac8bf5f64fad166ccc68cc60456b0c37127aece0ca25": {
       "card_id": null,
@@ -49,6 +49,22 @@
       "summary": "",
       "title": "記者会見,片山財務大臣兼内閣府特命担当大臣閣議後記者会見の概要（令和８年７月21日）について掲載しました。"
     },
+    "0b17c344286001ee0a03bf845845f9361ff3fda908afd412e87504a478032d44": {
+      "card_id": null,
+      "content_hash": "c0f46c179b81ead71204c764c1c9ca6001ddeb97ed7acb2941e1b1dbbb27bac6",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "0b17c344286001ee0a03bf845845f9361ff3fda908afd412e87504a478032d44",
+      "link": "https://www.fsa.go.jp/policy/kashikin/campaign/campaign2026.html",
+      "published_at": "2026-07-30T11:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 11:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "多重債務者相談強化キャンペーン2026の実施について公表しました。"
+    },
     "0b3b9ad82f3f416283f432e665a88f1cf39ff15e36349e9b50ec441b73b9baef": {
       "card_id": null,
       "content_hash": "bf8abd78704b740ccaac610d36101ac106cec6fcf85204275b0f750d05227090",
@@ -97,6 +113,22 @@
       "summary": "",
       "title": "Press Conferences,Press Conference by KATAYAMA Satsuki, Minister of Finance and Minister of State for Financial Services (June 24, 2026)"
     },
+    "13d00dbe79c718bf1728bd740f4bd485f4d01bfcdbb86d9a7b2a7f319fdd4cd2": {
+      "card_id": null,
+      "content_hash": "08d4af7cc9f5f4d65ac7c6a4cc92e8d2d846a71a8c3f0524ab7228e9078ceb78",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "13d00dbe79c718bf1728bd740f4bd485f4d01bfcdbb86d9a7b2a7f319fdd4cd2",
+      "link": "https://www.fsa.go.jp/common/conference/minister/2026b/20260724-1.html",
+      "published_at": "2026-07-30T12:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 12:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "記者会見,片山財務大臣兼内閣府特命担当大臣閣議後記者会見の概要（令和８年７月24日）について掲載しました。"
+    },
     "13fc10ee307727d5e0c838165aebda0c3150c9aabd185045797fa8008a1deaf3": {
       "card_id": null,
       "content_hash": "e41ef26e6a488165054f954c86c06c3a7a850c86f78b9aebb83c00954ec90e30",
@@ -112,6 +144,22 @@
       "status": "queued",
       "summary": "つみたて投資枠対象商品に関する、様々な資料を掲載しています。",
       "title": "その他,つみたて投資枠対象商品届出一覧（対象資産別）を更新しました。"
+    },
+    "16637cf2b1d06f7110c4275248b2bc1c7303668a5e11c56f9182a6cf8d9da55f": {
+      "card_id": null,
+      "content_hash": "d05ca9414976e2bd9d5b16ba70496a862d5d688a80fea5ddac64b2beccf8f2bc",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "16637cf2b1d06f7110c4275248b2bc1c7303668a5e11c56f9182a6cf8d9da55f",
+      "link": "https://www.fsa.go.jp/news/r8/sonota/20260729/soudan.html",
+      "published_at": "2026-07-29T19:15:00Z",
+      "raw_published": "Wed, 29 Jul 2026 19:15:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "「令和８年熊本地震金融庁相談ダイヤル」の開設について公表しました。"
     },
     "17020d76e14a78e842742863418fdad18253751318c560f3347d12b8d32c8c34": {
       "card_id": null,
@@ -145,6 +193,22 @@
       "summary": "<p>「新規暗号資産の販売に関する規則」等の一部改正（案）に関する規則・ガイドラインの制定（案）等について2026年5月29日（金）から2026年6月17日（水）にかけて公表し、広く意見の募集を行いました。 その結果、一般の方 [&#8230;]</p> <p>The post <a href=\"https://jvcea.or.jp/information/pc/20260629-001/\">「新規暗号資産の販売に関する規則」等の一部改正（案）に関する意見公募手続きの結果について</a> first appeared on <a href=\"https://jvcea.or.jp\">一般社団法人日本暗号資産等取引業協会（JVCEA）</a>.</p>",
       "title": "「新規暗号資産の販売に関する規則」等の一部改正（案）に関する意見公募手続きの結果について"
     },
+    "1c450ef20658a66d9d43a8dece5965ecde8719cecbf5d374bd75e62b1f8d68b8": {
+      "card_id": null,
+      "content_hash": "63e1b7e68898903ac2c55cde9464aba12adc7c732c27b4b785fe04ba73b4ab7b",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "1c450ef20658a66d9d43a8dece5965ecde8719cecbf5d374bd75e62b1f8d68b8",
+      "link": "https://www.fsa.go.jp/common/recruit/r8/kantoku-01/kantoku-01.html",
+      "published_at": "2026-07-30T10:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 10:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "採用,職員を募集しています。（金融機関に対するモニタリング業務等に従事する職員【公認会計士】）"
+    },
     "1c5c609a98812fbe63a7ef352a4fea0f073619978ddea801892365f74781c6a7": {
       "card_id": null,
       "content_hash": "d8d8e5e14fe4a5da2ed5d415d9437487ed876abd3bf7aca591bfb0f3d0bfc94b",
@@ -176,6 +240,38 @@
       "status": "queued",
       "summary": "",
       "title": "第152回自動車損害賠償責任保険審議会議事録について公表しました。"
+    },
+    "1eac2d6fdd2dae12ec35c9f7ed76dbbd5371fcfd1b9a5c8fee85153dbc8ae1de": {
+      "card_id": null,
+      "content_hash": "9e8c51ef9f82f12b720698afd0a5255b8b7ddebc450f31001dc73d3817799426",
+      "feed_id": "fsa_news_en",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "1eac2d6fdd2dae12ec35c9f7ed76dbbd5371fcfd1b9a5c8fee85153dbc8ae1de",
+      "link": "https://www.fsa.go.jp/en/newsletter/weekly2026/697.html",
+      "published_at": "2026-07-27T18:39:00Z",
+      "raw_published": "Mon, 27 Jul 2026 18:39:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "Publication,FSA Weekly Review No.697 July 27, 2026"
+    },
+    "21728b855201fcdc36a0bc43928a4af1d6045e460b32fbc47847b53c37710eec": {
+      "card_id": null,
+      "content_hash": "c143d8b3974b9e82b51c5fe57109184b3b163e512e06faecadb02e99afaec6b5",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "21728b855201fcdc36a0bc43928a4af1d6045e460b32fbc47847b53c37710eec",
+      "link": "https://www.fsa.go.jp/ordinary/earthquake202607/press.html",
+      "published_at": "2026-07-29T19:15:00Z",
+      "raw_published": "Wed, 29 Jul 2026 19:15:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "令和８年熊本地震関連情報に関する特設ページを公表しました。"
     },
     "23b6a439ccf19d9f33b84dc404e66466734f2fd256a6135f67ca1262535f13ad": {
       "card_id": null,
@@ -273,6 +369,22 @@
       "summary": "",
       "title": "「公認会計士及び監査法人におけるマネー・ローンダリング、テロ資金供与及び拡散金融対策に関するガイドライン（案）」に対するパブリックコメントの結果等について公表しました。"
     },
+    "326925f73db75841fe16ae5a0e2d62fd71c9f9a578194375a0f0c9f34ecf0e7c": {
+      "card_id": null,
+      "content_hash": "7f5e25a3c24c768b41a785b400583c317e8b84df8b203cf7592b97dd145345e9",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "326925f73db75841fe16ae5a0e2d62fd71c9f9a578194375a0f0c9f34ecf0e7c",
+      "link": "https://www.fsa.go.jp/news/r8/sonota/20260730/20260730.html",
+      "published_at": "2026-07-30T12:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 12:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "「金融分野におけるITレジリエンスに関する分析レポート」について公表しました。"
+    },
     "32933c8e774294cbf84f0f631ba635fc48cfb84c1f2f0f2bef3f6a0126115e8b": {
       "card_id": null,
       "content_hash": "2f9c63bd982e0250cb166e6b0b4edb6f07579b96ac43e16c6a5da56d48374a3b",
@@ -369,6 +481,22 @@
       "summary": "<p>定款・規則の制定及び改正に関する意見公募手続きについて、2026年5月26日(火) から2026年6月11日(木)にかけて公表し、広く意見の募集を行いました。 その結果、3社より計16件のご意見をいただきました。本件につ [&#8230;]</p> <p>The post <a href=\"https://jvcea.or.jp/information/pc/20260630-002/\">定款・規則の制定及び改正に関する意見公募手続きの結果について</a> first appeared on <a href=\"https://jvcea.or.jp\">一般社団法人日本暗号資産等取引業協会（JVCEA）</a>.</p>",
       "title": "定款・規則の制定及び改正に関する意見公募手続きの結果について"
     },
+    "431a043af802c8b270dec3e786d9ccda5a4edac78837eacd172260256627abff": {
+      "card_id": null,
+      "content_hash": "717d9ce4621f3c0241bf6455060b908f5167d8ffe98abef867f500c210e0b3a8",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "431a043af802c8b270dec3e786d9ccda5a4edac78837eacd172260256627abff",
+      "link": "https://www.fsa.go.jp/common/recruit/r8/kantoku-02/kantoku-02.html",
+      "published_at": "2026-07-30T10:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 10:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "採用,職員を募集しています。（外国銀行及び外資系証券会社等の監督・モニタリング業務等に従事する職員【弁護士】）"
+    },
     "456950ccf583b4a6f5b555fbadc4a8db0e5a0352b32dc36faa4c7c291ae0c87a": {
       "card_id": null,
       "content_hash": "61a586676f16702b61e7b3b0fd9512470be7805a6983bdcd7a5167f155b30168",
@@ -433,6 +561,22 @@
       "summary": "",
       "title": "調達,令和７年度における環境物品等の調達実績の概要について公表しました。"
     },
+    "4aeb2648f9830554569a234d787238f40c3be9b41a91e1fd9382474b125b9036": {
+      "card_id": null,
+      "content_hash": "a70f1ec07f2ef49c5144ec0034f46ee15d43e1c9edfd2ba389840d23eb98202f",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "4aeb2648f9830554569a234d787238f40c3be9b41a91e1fd9382474b125b9036",
+      "link": "https://www.fsa.go.jp/inter/fatf/20260721/20260721.html",
+      "published_at": "2026-07-29T18:00:00Z",
+      "raw_published": "Wed, 29 Jul 2026 18:00:00 JST",
+      "relevant": true,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "国際関係,FATFによる「DeFiに係る規制上の課題に関する報告書」について公表しました。"
+    },
     "4da337e6809feac6ef7ae5b7e7f5b7e7db0c5d884784d4c01cf81dad5a3c4698": {
       "card_id": null,
       "content_hash": "b37ba7bcf87264e93f9f15e6da5542c10e14d19e03b7f3c177d9f09fb01c9229",
@@ -480,6 +624,38 @@
       "status": "queued",
       "summary": "",
       "title": "「令和６年度政策評価結果の政策への反映状況」について公表しました。"
+    },
+    "50cd0b63fc2833235a85167126d541bafa7e5cfb5969673c31e8a35ddc5ac96c": {
+      "card_id": null,
+      "content_hash": "912034ab32ee4a8732b2eafb930f4230f5e65e593c794f6a1282e6ff245ebdb3",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "50cd0b63fc2833235a85167126d541bafa7e5cfb5969673c31e8a35ddc5ac96c",
+      "link": "https://www.fsa.go.jp/news/r8/kokyakuhoni/20260729.html",
+      "published_at": "2026-07-29T18:00:00Z",
+      "raw_published": "Wed, 29 Jul 2026 18:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "リスク性金融商品の販売・組成会社による顧客本位の業務運営に関するモニタリング結果について（2025事務年度）公表しました。"
+    },
+    "51f00979f9881cd3c93bac9bd262c1c1f7530dea3d05823d8215f2c14f5666e8": {
+      "card_id": null,
+      "content_hash": "ef5ba9255dcf34677cb751379a5c22d08dbdcc5cfb89949bc9da9032e2dc66e4",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "51f00979f9881cd3c93bac9bd262c1c1f7530dea3d05823d8215f2c14f5666e8",
+      "link": "https://www.fsa.go.jp/news/r8/ginkou/20260729.html",
+      "published_at": "2026-07-29T18:50:00Z",
+      "raw_published": "Wed, 29 Jul 2026 18:50:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "令和８年熊本地震に係る災害等に対する金融上の措置について公表しました。"
     },
     "5450f051be8a48424a3fea73e19be68c00c48e081b34e82d04a8428a8859c0e1": {
       "card_id": null,
@@ -561,6 +737,22 @@
       "summary": "",
       "title": "調達,入札公告等を更新しました。"
     },
+    "66f9e1d879f0c5062a8db7c9595f1e21c4221b896f043d6f94ef7f6797f4117b": {
+      "card_id": null,
+      "content_hash": "a2d5635a2cf41fd5caa29b1e3cfd24afebe009ade655fc393c2cfc3ad8a31dca",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "66f9e1d879f0c5062a8db7c9595f1e21c4221b896f043d6f94ef7f6797f4117b",
+      "link": "https://www.fsa.go.jp/common/recruit/r8/kikaku-01/kikaku-01.html",
+      "published_at": "2026-07-30T10:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 10:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "採用,職員を募集しています。（国内金融及び金融機関等の行う国際業務に関する制度の企画及び立案等に従事する職員（課長補佐クラス））"
+    },
     "67499e4524ab719c7ca6d7614879a46c1155dcac920e58c0248168f0759ee2eb": {
       "card_id": null,
       "content_hash": "be03787d042c5820a7cdeb2ac76a219fddccc62a6d7537f15a09b2cb86c5f2d4",
@@ -576,6 +768,22 @@
       "status": "queued",
       "summary": "",
       "title": "「資産運用サービスの高度化に向けたプログレスレポート2026」について公表しました。"
+    },
+    "6b869d265262d0668e94aeee966af4b99d3e2dc8e9ff131b7b41028e962cf300": {
+      "card_id": null,
+      "content_hash": "dcf3b4241628fd5724703601f50c017188c13212e320ca159c782f73ae34b1aa",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "6b869d265262d0668e94aeee966af4b99d3e2dc8e9ff131b7b41028e962cf300",
+      "link": "https://www.fsa.go.jp/common/recruit/r8/sousei-01/sousei-01.html",
+      "published_at": "2026-07-30T10:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 10:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "採用,職員を募集しています。（サステナブルファイナンス関連業務に従事する職員（任期付職員））"
     },
     "6d6ddd6a059ef5ca886ad89d067a8c9708a52b8e4e00f3aa0b454e30c91aaeb9": {
       "card_id": null,
@@ -625,6 +833,22 @@
       "summary": "",
       "title": "コーポレートガバナンス・コード（2026年改訂版）の確定について公表しました。"
     },
+    "73cc7b2ad98cfe5ee82218ffc64b4dbcfb2f1e505275f0382c67bcf3bec172bb": {
+      "card_id": null,
+      "content_hash": "6587003c1017f7947deb36aed9a47faec2ce27ba889353af0cfe2a043d589f55",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "73cc7b2ad98cfe5ee82218ffc64b4dbcfb2f1e505275f0382c67bcf3bec172bb",
+      "link": "https://www.fsa.go.jp/policy/nisa2/products/index.html",
+      "published_at": "2026-07-30T11:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 11:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "つみたて投資枠対象商品に関する、様々な資料を掲載しています。",
+      "title": "その他,つみたて投資枠対象商品届出一覧を更新しました。"
+    },
     "8126b3a2408b0e3e4581aa9659329e143895c10ea293161e3dbfa7c9d216048e": {
       "card_id": null,
       "content_hash": "0a22d7b754a8c13577d4dd3d8e95a0ccc8da740c981206e99afe851266d1ed2d",
@@ -656,6 +880,22 @@
       "status": "queued",
       "summary": "",
       "title": "その他,「国際会計基準審議会の議論内容及び討議資料等の調査分析等」（令和７年度）の成果物について公表しました。"
+    },
+    "91e4d53293ca7aa1191a0626a00c59248125654f249cd7d3b2a91fee306c4f2c": {
+      "card_id": null,
+      "content_hash": "c34350eee0291502afa6986a81775dc433899a04bb932974e877677faa3ed530",
+      "feed_id": "fsa_news_en",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "91e4d53293ca7aa1191a0626a00c59248125654f249cd7d3b2a91fee306c4f2c",
+      "link": "https://www.fsa.go.jp/en/conference/minister/2026/20260721.html",
+      "published_at": "2026-07-27T18:37:00Z",
+      "raw_published": "Mon, 27 Jul 2026 18:37:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "Press Conferences,Press Conference by KATAYAMA Satsuki, Minister of Finance and Minister of State for Financial Services (July 21, 2026)"
     },
     "921a9c66db016b06aa38c473e68d7e5e5dc5a5d5958936afee00877e7c8c419f": {
       "card_id": null,
@@ -1232,6 +1472,22 @@
       "status": "queued",
       "summary": "",
       "title": "「金融商品取引法第二条に規定する定義に関する内閣府令等の一部を改正する内閣府令（案）」に対するパブリックコメントの実施について公表しました。"
+    },
+    "ec3149ebe3a41f7ee2bac04d3f802329c9f62f9d62a69ae7876112bedc3dbd04": {
+      "card_id": null,
+      "content_hash": "f9f9bbe4aad42cefb917f0561219601683ac4d5637805b9caead5cae7fe5457d",
+      "feed_id": "fsa_news_en",
+      "first_seen": "2026-07-30T04:28:27Z",
+      "guid": null,
+      "item_hash": "ec3149ebe3a41f7ee2bac04d3f802329c9f62f9d62a69ae7876112bedc3dbd04",
+      "link": "https://www.fsa.go.jp/en/news/2026/20260730/20260730.html",
+      "published_at": "2026-07-30T12:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 12:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "Others,Publication of Analytical Report on IT Resilience in the Financial Sector"
     },
     "f14e995aede6c6e4718a3948f549319dd22bc11a3209fc852c8ea6d5ea7a5aea": {
       "card_id": null,
