@@ -2684,3 +2684,80 @@ design -- zero cards drafted). Backlog after this firing: hk 55, us 23, eu 1 (th
 item, still unfixed), uk 3, jp 12, uae/ch 0. No `PushNotification` fired -- nothing stopped early,
 no gate failure blocked a commit, every push landed and was independently confirmed against
 `origin/main`, not self-reported.
+
+### 2026-07-29/30 -- Sixth firing (`trig_01CHa5wLW4G5LGj8fREeKUkE`, fired 22:37:43 UTC on schedule, no one watching): hk/us/eu/uk processed
+
+Same cap logic as every prior firing: hk=4, us=4, eu=1 (its queue still only had the one recurring
+item), uk=1 (10-cap's remaining slot) -- 10 total, cap bound at uk. uae/ch (both empty) and jp
+(queue of 12, untouched) got nothing this firing.
+
+**hk -- 4 cards drafted, verified, published; 1 verified, 3 unverified.** All four batched items
+were HKMA sources (a DLT risk-management circular, two press releases including the e-HKD Pilot
+Programme completion, and a Cryptoasset Standard consultation on SPM module CA-G-1) and every one
+hit the now-familiar HKMA-wide fetch outage on first attempt -- a fifth firing running. Drafted
+title-metadata-only per established precedent, same as the prior two firings. Notably more mixed
+this time than the last two straight zero-verified firings: one verifier (e-HKD card) found the
+press release verbatim on `www.info.gov.hk` (a listed `govhk` official domain) and fully
+re-derived + corrected the card from that alternate primary source, removing an unsupported
+"e-HKD+" branding claim and a mischaracterized "separate work on tokenised deposits" sentence --
+and the deterministic gate's own re-fetch of the original `hkma.gov.hk` citation then
+independently succeeded too, confirming `verified` rather than downgrading it. A second verifier
+worked around the same outage via a third-party URL-to-text proxy, corroborated its findings
+against the deterministic `data/hk/queue.json` record, removed two unsupported clauses (an
+uncited DLT definition; a reference to two different, uncited February 2024 circulars), but
+deliberately left status `unverified` out of explicit epistemic caution about the proxy route not
+being the primary source itself. A third card's own verifier flagged a one-day discrepancy between
+the item's stated publish date and its source URL's embedded date, left unresolved without source
+access. See IMPROVEMENT_BACKLOG.md for the refined outage read this firing contributes (evidence
+now points to intermittent/request-level failures, not a hard domain block).
+
+**us -- 4 cards drafted, verified, published; 3 verified, 1 unverified.** A FinCEN $80M penalty
+against Canaccord Genuity LLC for BSA violations (a broker-dealer securities-fraud case with zero
+digital-asset content anywhere in the source -- the analyst and, independently, its verifier both
+flagged this as almost certainly a relevance-filter false positive on the generic "bank secrecy
+act" keyword, and handled it via the same transparent-disclosure precedent as the derivatives-RFC
+item two firings ago rather than fabricating a crypto angle; new backlog entry, see below); a
+joint SEC/CFTC request for comment on derivatives product definitions (two citations, thoroughly
+verified with no changes needed, then downgraded to unverified by the deterministic gate's own
+re-fetch regardless -- accepted without override, per the runbook); and two historical Cboe BZX
+Bitcoin-trust SEC filing notices (Wise Origin, WisdomTree), both cited via `govinfo.gov` since
+`federalregister.gov` itself redirected to a bot-verification page. Verifiers caught two genuine
+cherry-picking problems this firing -- the Wise Origin card's "would hold bitcoin exclusively"
+omitted the filing's own adjacent "however, there may be situations where the Trust will
+unexpectedly hold cash" caveat; the Canaccord card's SAR-count sentence conflated two separate
+findings in the source (a 160-SAR count tied to "dozens of...securities," misattached to a
+different paragraph's penny-stock/microcap customer example) -- plus one unsupportable
+enumeration trimmed from the WisdomTree card's `why_it_matters` after the source's closing
+"Solicitation of Comments" section repeatedly failed to fetch.
+
+**eu -- 0 cards; the recurring cartel item declined for a sixth consecutive firing.** Same item,
+same correct decision, same already-diagnosed and still-unfixed root cause (the `"mica"` keyword
+substring-matching inside "chemicals"). No new information this firing.
+
+**uk -- 1 card drafted, verified, published; 0 verified, 1 unverified.** HM Treasury's Wholesale
+Digital Markets Champion first report (Christopher Woolard CBE) -- a framework and delivery
+roadmap for tokenising UK wholesale markets, ten priorities across nine industry Action Groups
+plus an Orchestration Group targeting a live cross-border repo transaction on blockchain by spring
+2027. Substantially more than a single card this firing: the `tokenization_rwa` pillar state was
+rewritten to fold in the report (new instruments, key links, and an `open_items` entry noting the
+report itself corroborates this pillar's already-flagged tension between the regulators' "16 firms
+on live issuance" framing and the Bank's own DSS Dashboard showing all entrants still at Gate 1),
+four new trajectory entries, and two new glossary terms (Wholesale Digital Markets Champion, Great
+British Tokenised Deposit). The verifier re-fetched all three citations (two `assets.publishing.
+service.gov.uk` PDFs plus the `www.gov.uk` landing page) verbatim-confirmed every claim including
+both mentions of the 4 September 2026 feedback deadline, and found nothing to correct -- marked
+`verified` -- but the deterministic gate downgraded it anyway on its own re-fetch pass, plausibly
+PDF-extraction-related given the verifier's own report of an initial WebFetch failure on the same
+two PDFs before it fell back to reading raw fetched binaries directly. Accepted without override.
+New backlog entry on this possible gate/PDF gap, see below.
+
+**Net result of this firing:** 9 cards processed end-to-end across 3 jurisdictions (hk, us, uk; eu
+processed with zero cards by design) -- checked card-by-card against the actual published files,
+not tallied from memory: **4 verified, 5 unverified** (hk 1/4 verified; us 3/4 verified; uk 0/1
+verified -- all three of this firing's gate downgrades were cards their own verifiers had fully
+confirmed, not a verifier-quality problem). Real commits: `582487e`/`115740f` (hk),
+`56f7310`/`cfaa59c` (us), `8e6f641`/`732ae40` (uk); eu produced no commit (nothing to commit, by
+design -- zero cards drafted). Backlog after this firing: hk 51, us 19, eu 1 (the recurring cartel
+item, still unfixed), uk 2, jp 12, uae/ch 0. No `PushNotification` fired -- nothing stopped early,
+no gate failure blocked a commit, every push landed and was independently confirmed against
+`origin/main`, not self-reported.

@@ -1655,3 +1655,114 @@ single firing, a genuine platform/infrastructure question, not a pipeline bug wi
 fix). Re-flagging with the escalated scope so a future reader doesn't mistake this for the
 narrower, single-subdomain issue already described above -- if this persists through more firings,
 it's worth treating as the new baseline reality for HKMA rather than a still-unfolding anomaly.
+
+### 2026-07-30 -- HKMA outage refined: evidence now points to intermittent/request-level failures, not a hard domain block
+
+This firing's `hk` batch again hit the outage on every first attempt (analyst plus all four
+verifiers), consistent with the two prior firings' escalated, site-wide finding above -- but two
+new data points this firing complicate the "hard block" reading:
+
+- One verifier, unable to reach `www.hkma.gov.hk` directly, found the same press release verbatim
+  on `www.info.gov.hk` (a listed `govhk` official domain in `config/jurisdictions/hk.json`) and
+  fully re-derived the card from that alternate primary source. The deterministic
+  `apply_verification_gate` then re-fetched the card's original, unchanged `hkma.gov.hk` citation
+  URL on its own separate pass -- and succeeded, keeping the card `verified` rather than
+  downgrading it. That gate's fetch mechanism is a plain, non-LLM subprocess call, run minutes
+  after four separate LLM-driven `WebFetch` attempts had all failed against the same general
+  domain (different specific pages).
+- A second verifier worked around the same failure via a third-party URL-to-text proxy
+  (`r.jina.ai`), retrieving internally-consistent content that cross-checked against the
+  deterministic `data/hk/queue.json` record -- but explicitly declined to mark the card
+  `verified`, reasoning it couldn't rule out the proxy result reflecting training-data familiarity
+  with a real public document rather than a genuinely fresh fetch. That epistemic caution is
+  itself worth preserving as a norm for future verifiers facing the same tool-reliability
+  question, independent of the underlying HKMA issue.
+
+Taken together, these two outcomes -- same domain, same firing, one plain deterministic fetch
+succeeding minutes after four LLM fetches failed -- are hard to reconcile with a simple permanent
+block (which the confirmed-permanent `brdr.hkma.gov.hk` 503/TLS failure still is) and easier to
+reconcile with intermittent, request-level flakiness: some requests to `hkma.gov.hk` succeed,
+most don't, and which ones do appears to vary firing to firing and even within a firing. Not fixed
+here (still an infrastructure/tooling question, not a pipeline bug with one obvious answer); noted
+because it changes the shape of the problem the three previously-logged fix directions (proxy
+fix / `analyze.yml` + real secret / an explicit fallback-fetch route) are aimed at, and because a
+future firing's session should not assume every `hkma.gov.hk` fetch will fail just because a prior
+one did in the same run.
+
+### 2026-07-30 -- Second confirmed relevance-filter false positive: "bank secrecy act" keyword pulled in a securities-fraud case with zero digital-asset content
+
+The 07-27 entry above root-caused the EU cartel item's recurrence to a bare `"mica"` keyword
+substring-matching inside "chemicals." This firing's `us` batch surfaced a structurally identical
+problem in a different jurisdiction and a different keyword: a FinCEN press release assessing an
+$80M penalty against Canaccord Genuity LLC -- a traditional broker-dealer securities-fraud/BSA
+case that never mentions digital assets, crypto, or virtual currency anywhere in its source text --
+reached `data/us/queue.json` as `"queued"`, almost certainly because "Bank Secrecy Act" sits on
+`config/jurisdictions/us.json`'s relevance-keyword list (there for the legitimate reason that BSA
+obligations govern crypto money-services businesses specifically, but matching on the bare phrase
+rather than anything crypto-specific).
+
+Unlike the EU cartel item -- which every firing's analyst has correctly recognized as out of scope
+and simply declined to draft, leaving it stuck in the queue forever with no terminal ledger status
+-- this firing's `us` analyst drafted the card anyway, reasoning it had no authority to
+unilaterally drop a queued item, and handled the mismatch via prominent, honest disclosure in both
+`summary` and `why_it_matters` ("FinCEN's release does not mention digital assets, crypto, or
+virtual currency..."). The card's own verifier, working independently and given only the card
+itself, reached the same conclusion from scratch and flagged it more precisely still: comparing
+this item's generic "FinCEN enforces similar BSA standards against MSBs too" justification against
+the project's own existing precedent (the CFTC/SEC derivatives-RFC card, firing four) as a
+materially *tighter*, more mechanistic nexus (jurisdictional line-drawing that directly determines
+how crypto derivatives get classified) than this card's generic same-legal-framework rationale.
+
+This is now two independent, hard-confirmed instances of the same underlying pattern (broad,
+single-word relevance keywords producing false positives with zero editorial nexus to digital
+assets) plus one inconsistency worth an owner's attention: the pipeline currently has no single
+policy for what an analyst should do when a queued item turns out to be irrelevant -- decline
+silently (EU precedent, but leaves the item permanently stuck with no terminal status) or draft
+with disclosure (this firing's US precedent, and the firing-four CFTC/SEC RFC before it, but
+publishes site content genuinely unrelated to the site's stated purpose). Not fixed here
+(`pipeline/watcher/relevance.py` and `config/jurisdictions/*.json` are both outside the
+analyst/verifier path allowlist and this runbook's own scope); flagging both the second
+keyword-collision data point and the unresolved decline-vs-disclose inconsistency for an
+owner-level decision, since the two now-different resolutions are themselves an inconsistency a
+future audit pass would likely flag.
+
+### 2026-07-30 -- Possible gap in the deterministic verification gate's PDF handling
+
+This firing's sole `uk` card cited two `assets.publishing.service.gov.uk` PDFs (a 71-page report
+and a short Terms of Reference document) alongside one HTML landing page. Its verifier initially
+hit the same failure mode WebFetch has shown against other document types this project has logged
+before -- unable to extract text from these specific PDFs -- and worked around it by reading the
+fetched binaries directly, at which point full, verbatim-confirmable text was available; every
+citation, quote, and date in the card was independently re-confirmed, and the verifier marked it
+`verified` with zero corrections needed. The deterministic `apply_verification_gate` then
+downgraded the same card back to `unverified` on its own separate re-fetch pass.
+
+This is not proof the gate's fetch mechanism specifically chokes on these PDFs -- the gate gives no
+per-citation failure detail in its output, only a bare "downgraded to unverified," and a same-
+firing `us` card citing two different `govinfo.gov` *HTML* pages (not PDFs) was also downgraded
+despite an equally thorough verifier pass, so PDF-vs-HTML is not obviously the whole story. But the
+UK card's own verifier independently hitting, and describing, the identical extraction failure
+WebFetch showed on the exact same URLs before falling back to reading raw bytes is a concrete,
+specific data point worth a future owner's attention, distinct from the HKMA-domain-outage
+pattern logged elsewhere in this file: if the gate's fetch/match logic doesn't handle certain PDFs
+(or certain response shapes generally) as robustly as an LLM-driven fetch eventually can, it will
+keep producing `unverified` downgrades on cards that are, in fact, fully verified -- particularly
+costly for jurisdictions like UK and US whose primary sources are disproportionately PDF-hosted.
+Not fixed here (`pipeline/verify/gate.py` is outside the analyst/verifier path allowlist and this
+runbook's own scope); flagging as a possible, not confirmed, root cause for a future firing or an
+owner-level investigation to either corroborate or rule out with the gate's own more detailed logs.
+
+### 2026-07-30 -- `docs/analyst-runbook.md`'s own "what must never happen" section contains a stale worked example
+
+Its own text reads: "...a `\"planned\"` or `\"dormant\"` entry (e.g. `uk` today) never gets a queue
+read..." -- but `uk`'s `status.analyst_verifier` has been `"live"` in `config/site.json` since
+2026-07-14 (alongside us/eu/uae/ch/jp), and this runbook has correctly processed `uk` every firing
+since. This is the same category of documentation drift already logged for `CLAUDE.md`'s P6 prose
+(07-26 entry above) -- an illustrative example written before a registry expansion that was never
+updated afterward -- just discovered independently in a second file this firing, by this session
+re-reading the runbook fresh per its own Step 2 instruction rather than trusting memory. No
+functional impact (this runbook's actual Step 0 logic correctly reads `config/site.json`'s live
+`status.analyst_verifier` values, not the stale prose example), but worth an owner's attention for
+the same reason the `CLAUDE.md` staleness was: a future reader taking the example literally would
+be misled, and `docs/analyst-runbook.md` is explicitly in this runbook's own "never touch" list, so
+it cannot self-correct.
