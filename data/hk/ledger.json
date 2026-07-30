@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T23:02:55Z",
+  "generated_at": "2026-07-30T23:18:15Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -3709,7 +3709,7 @@
       "raw_published": "Thu, 27 Nov 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Cryptoassets Standard: SPM Modules, Code of Practice, Disclosure Templates and Tables, and Banking Returns"
     },
@@ -3965,7 +3965,7 @@
       "raw_published": "Tue, 26 May 2026 18:25:21 +0800",
       "relevant": true,
       "source_id": "sfc",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "FSTB and SFC conclude consultations on virtual asset advisory and management regimes"
     },
@@ -4061,7 +4061,7 @@
       "raw_published": "Tue, 30 Sep 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Supplemental joint circular on intermediaries’ virtual asset-related activities"
     },
@@ -5053,7 +5053,7 @@
       "raw_published": "Fri, 05 Jun 2026 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "HKMA establishes Tokenised Bond Expert Group"
     },

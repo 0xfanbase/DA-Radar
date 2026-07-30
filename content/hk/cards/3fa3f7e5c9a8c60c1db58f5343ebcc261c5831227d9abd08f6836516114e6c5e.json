@@ -1,21 +1,23 @@
 {
-  "schema_version": 1,
-  "id": "3fa3f7e5c9a8c60c1db58f5343ebcc261c5831227d9abd08f6836516114e6c5e",
-  "jurisdiction_id": "hk",
-  "published_date": "2025-09-30",
-  "regulator": "HKMA",
-  "pillar": ["exchanges_vatp"],
-  "type": "circular",
-  "title": "Supplemental joint circular on intermediaries' virtual asset-related activities",
-  "summary": "This HKMA circular, addressed to Authorized Institutions, is described in its own title as a 'supplemental joint circular on intermediaries' virtual asset-related activities.' Circulars of this kind typically set expected standards for how intermediaries and banks may engage in, or facilitate clients' access to, virtual-asset-related products and services, distinct from Hong Kong's dedicated virtual asset trading platform and stablecoin issuer licensing regimes. Being described as 'supplemental' indicates this circular updates or adds to an earlier circular addressing the same subject; the specific prior circular it supplements, and the specific points it adds, are not stated in the title alone. The circular was published via HKMA's circulars feed, dated 30 September 2025 Hong Kong time.",
-  "why_it_matters": "For a newcomer, this shows HKMA continuing to refine existing supervisory expectations for banks that give clients access to virtual-asset-related products, a framework distinct from -- and pre-dating -- Hong Kong's newer licensing regimes for dedicated virtual asset trading platforms and (once enacted) virtual asset dealers.",
   "citations": [
     {
-      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250930-1-EN",
-      "quote": "Supplemental joint circular on intermediaries' virtual asset-related activities"
+      "quote": "Supplemental joint circular on intermediaries' virtual asset-related activities",
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250930-1-EN"
     }
   ],
-  "status": "unverified",
   "generated_at": "2026-07-30T09:20:00Z",
-  "model": "Claude (Anthropic)"
+  "id": "3fa3f7e5c9a8c60c1db58f5343ebcc261c5831227d9abd08f6836516114e6c5e",
+  "jurisdiction_id": "hk",
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "exchanges_vatp"
+  ],
+  "published_date": "2025-09-30",
+  "regulator": "HKMA",
+  "schema_version": 1,
+  "status": "unverified",
+  "summary": "This HKMA circular is described in its own title as a 'supplemental joint circular on intermediaries' virtual asset-related activities.' Circulars of this kind typically set expected standards for how intermediaries and banks may engage in, or facilitate clients' access to, virtual-asset-related products and services, distinct from Hong Kong's dedicated virtual asset trading platform and stablecoin issuer licensing regimes. Being described as 'supplemental' indicates this circular updates or adds to an earlier circular addressing the same subject; the specific prior circular it supplements, and the specific points it adds, are not stated in the title alone. The circular was published via HKMA's circulars feed, dated 30 September 2025 Hong Kong time.",
+  "title": "Supplemental joint circular on intermediaries' virtual asset-related activities",
+  "type": "circular",
+  "why_it_matters": "For a newcomer, this shows HKMA continuing to refine existing supervisory expectations for banks that give clients access to virtual-asset-related products, a framework distinct from -- and pre-dating -- Hong Kong's newer licensing regimes for dedicated virtual asset trading platforms and (once enacted) virtual asset dealers."
 }
