@@ -1,28 +1,30 @@
 {
-  "schema_version": 1,
+  "citations": [
+    {
+      "quote": "Clarification is long overdue on Title VII definitional issues, including event-based products.",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-57-sec-cftc-seek-public-comment-further-clarify-harmonize-derivatives-product-definitions"
+    },
+    {
+      "quote": "New trading models, digital infrastructure, and onchain, automated systems are increasingly blurring traditional jurisdictional lines.",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-06-24/html/2026-12743.htm"
+    }
+  ],
+  "generated_at": "2026-07-29T09:22:00Z",
   "id": "a0068cffbfcfaa6674e615e9c94ee2c56eb090eaebc63c64fa5768c463000cf3",
   "jurisdiction_id": "us",
-  "published_date": "2026-06-18",
-  "regulator": "SEC and CFTC",
-  "pillar": ["exchanges_vatp"],
-  "type": "consultation",
-  "title": "SEC, CFTC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions",
-  "summary": "On 18 June 2026, the SEC and CFTC jointly requested public comment on derivatives product definitions under Title VII of the Dodd-Frank Act -- covering how swaps, security-based swaps, and mixed swaps are classified, exclusions from the swap definition, and how novel or emerging products, including event contracts, should be treated -- to evaluate whether current definitions and jurisdictional lines still reflect evolving market structures and trading practices. SEC Chairman Paul S. Atkins and CFTC Chairman Michael S. Selig are both quoted calling longstanding Title VII ambiguities overdue for clarification. The underlying Federal Register notice (published 24 June 2026, comment deadline 24 August 2026) cites \"digital infrastructure, and onchain, automated systems\" as one factor blurring jurisdictional lines, though the request itself is not focused on digital assets.",
-  "why_it_matters": "Neither this press release nor the underlying Federal Register notice is primarily about crypto, but how the SEC and CFTC draw the line between a \"swap\" and a \"security-based swap\" -- and how they treat novel products -- bears on the same SEC/CFTC jurisdictional boundary that governs crypto derivatives and trading venues. The comment window on these definitions runs through 24 August 2026.",
   "key_dates": {
     "deadline": "2026-08-24"
   },
-  "citations": [
-    {
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-57-sec-cftc-seek-public-comment-further-clarify-harmonize-derivatives-product-definitions",
-      "quote": "Clarification is long overdue on Title VII definitional issues, including event-based products."
-    },
-    {
-      "url": "https://www.govinfo.gov/content/pkg/FR-2026-06-24/html/2026-12743.htm",
-      "quote": "New trading models, digital infrastructure, and onchain, automated systems are increasingly blurring traditional jurisdictional lines."
-    }
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "exchanges_vatp"
   ],
+  "published_date": "2026-06-18",
+  "regulator": "SEC and CFTC",
+  "schema_version": 1,
   "status": "unverified",
-  "generated_at": "2026-07-29T09:22:00Z",
-  "model": "Claude (Anthropic)"
+  "summary": "On 18 June 2026, the SEC and CFTC jointly requested public comment on derivatives product definitions under Title VII of the Dodd-Frank Act -- covering how swaps, security-based swaps, and mixed swaps are classified, exclusions from the swap definition, and how novel or emerging products, including event contracts, should be treated -- to evaluate whether current definitions and jurisdictional lines still reflect evolving market structures and trading practices. SEC Chairman Paul S. Atkins and CFTC Chairman Michael S. Selig are both quoted calling longstanding Title VII ambiguities overdue for clarification. The underlying Federal Register notice (published 24 June 2026, comment deadline 24 August 2026) cites \"digital infrastructure, and onchain, automated systems\" as one factor blurring jurisdictional lines, though the request itself is not focused on digital assets.",
+  "title": "SEC, CFTC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions",
+  "type": "consultation",
+  "why_it_matters": "Neither this press release nor the underlying Federal Register notice is primarily about crypto, but how the SEC and CFTC draw the line between a \"swap\" and a \"security-based swap\" -- and how they treat novel products -- bears on the same SEC/CFTC jurisdictional boundary that governs crypto derivatives and trading venues. The comment window on these definitions runs through 24 August 2026."
 }

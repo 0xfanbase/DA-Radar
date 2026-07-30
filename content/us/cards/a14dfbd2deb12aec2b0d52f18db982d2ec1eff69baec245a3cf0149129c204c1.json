@@ -7,7 +7,7 @@
   "pillar": ["funds_etfs"],
   "type": "consultation",
   "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the Wise Origin Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares",
-  "summary": "On 1 June 2021, the Federal Register published an SEC notice that Cboe BZX Exchange had filed a proposed rule change (File No. SR-CboeBZX-2021-039, filed 10 May 2021) to list and trade shares of the Wise Origin Bitcoin Trust under BZX Rule 14.11(e)(4), its Commodity-Based Trust Shares listing standard. The filing names FD Funds Management LLC as sponsor, Fidelity Service Company as administrator, and Fidelity Digital Assets Services as custodian. Per the filing, the trust would hold bitcoin exclusively, with shares created and redeemed in-kind: authorized participants deliver bitcoin to the custodian for new share baskets and receive bitcoin back on redemption, valued daily via the Fidelity Bitcoin Index. Publication opened a public comment period under Exchange Act Section 19(b)(1); this notice does not resolve the proposal's outcome.",
+  "summary": "On 1 June 2021, the Federal Register published an SEC notice that Cboe BZX Exchange had filed a proposed rule change (File No. SR-CboeBZX-2021-039, filed 10 May 2021) to list and trade shares of the Wise Origin Bitcoin Trust under BZX Rule 14.11(e)(4), its Commodity-Based Trust Shares listing standard. The filing names FD Funds Management LLC as sponsor, Fidelity Service Company as administrator, and Fidelity Digital Assets Services as custodian. Per the filing, the trust's assets would consist of bitcoin held by the custodian (the trust does not generally intend to hold cash, though it could unexpectedly do so on a temporary basis), with shares created and redeemed in-kind: authorized participants deliver bitcoin to the custodian for new share baskets and receive bitcoin back on redemption, valued daily via the Fidelity Bitcoin Index PR. Publication opened a public comment period under Exchange Act Section 19(b)(1); this notice does not resolve the proposal's outcome.",
   "why_it_matters": "This is the procedural first step the SEC required before it could approve, disapprove, or open formal proceedings on a proposed crypto exchange-traded product listing: publishing the exchange's own proposal and opening it to public comment. The notice does not itself approve, disapprove, or predict the outcome for this specific Bitcoin trust proposal.",
   "citations": [
     {
@@ -15,7 +15,7 @@
       "quote": "The Commission is publishing this notice to solicit comments on the proposed rule change"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-29T09:34:00Z",
   "model": "Claude (Anthropic)"
 }

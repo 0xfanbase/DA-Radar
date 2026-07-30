@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T23:47:15Z",
+  "generated_at": "2026-07-30T00:01:06Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -1325,7 +1325,7 @@
       "raw_published": "03/06/2026",
       "relevant": true,
       "source_id": "fincen",
-      "status": "drafted",
+      "status": "published",
       "summary": "WASHINGTON—Today, the Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) assessed an $80,000,000civil money penaltyagainst Canaccord Genuity LLC (Canaccord) for willful…",
       "title": "FinCEN Assesses Historic $80 Million Penalty Against Canaccord Genuity LLC for Securities Fraud-Related Bank Secrecy Act Violations"
     },
@@ -1405,7 +1405,7 @@
       "raw_published": "Thu, 18 Jun 2026 14:42:47 -0400",
       "relevant": true,
       "source_id": "sec",
-      "status": "drafted",
+      "status": "published",
       "summary": "The Securities and Exchange Commission and the Commodity Futures Trading Commission today issued a joint request for public comment on potential opportunities to further update, clarify, and harmonize certain derivatives product definitions and…",
       "title": "SEC, CFTC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions"
     },
@@ -1421,7 +1421,7 @@
       "raw_published": "2021-06-01",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the Wise Origin Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
@@ -1501,7 +1501,7 @@
       "raw_published": "2022-02-14",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the WisdomTree Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },

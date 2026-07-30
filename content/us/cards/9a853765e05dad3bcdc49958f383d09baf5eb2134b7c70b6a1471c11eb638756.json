@@ -7,15 +7,15 @@
   "pillar": ["aml_cft_enforcement"],
   "type": "enforcement",
   "title": "FinCEN Assesses Historic $80 Million Penalty Against Canaccord Genuity LLC for Securities Fraud-Related Bank Secrecy Act Violations",
-  "summary": "On 6 March 2026, FinCEN assessed an $80,000,000 civil money penalty against Canaccord Genuity LLC, a broker-dealer FinCEN's release describes as acting in a market-making capacity, for willful violations of the Bank Secrecy Act. FinCEN's release states Canaccord failed to develop and maintain an effective anti-money-laundering program with adequate risk-based customer due diligence, failed to establish internal controls to monitor transactions for suspicious activity, failed to file at least 160 suspicious activity reports tied to dozens of over-the-counter securities fraud schemes -- including penny-stock and microcap fraud -- and failed to conduct due diligence on foreign correspondent accounts. FinCEN states this is the largest penalty it has ever imposed on a broker-dealer for BSA violations, reached with cooperation from the SEC and FINRA.",
-  "why_it_matters": "FinCEN's release does not mention digital assets, crypto, or virtual currency -- this action concerns a traditional broker-dealer's securities-fraud-related Bank Secrecy Act failures, unconnected to crypto or digital assets. It is included here because FinCEN describes it as the largest BSA penalty it has ever imposed on a broker-dealer, applying the same Bank Secrecy Act program-adequacy and reporting standards this pillar otherwise tracks for money-services businesses that handle convertible virtual currency.",
+  "summary": "On 6 March 2026, FinCEN assessed an $80,000,000 civil money penalty against Canaccord Genuity LLC, a broker-dealer FinCEN's release describes as acting in a market-making capacity, for willful violations of the Bank Secrecy Act. FinCEN's release states Canaccord failed to develop and maintain an effective anti-money-laundering program with adequate risk-based customer due diligence, failed to establish internal controls to monitor transactions for suspicious activity, failed to file at least 160 suspicious activity reports relating to dozens of different over-the-counter securities whose underlying suspicious transactions FinCEN estimates to be in the thousands, and failed to conduct due diligence on correspondent accounts for foreign financial institutions. FinCEN states this is the largest penalty it has ever imposed on a broker-dealer for BSA violations and credits effective cooperation on the matter from the SEC and FINRA.",
+  "why_it_matters": "FinCEN's release does not mention digital assets, crypto, or virtual currency -- this action concerns a traditional broker-dealer's securities-fraud-related Bank Secrecy Act failures, unconnected to crypto or digital assets. It is included here because FinCEN describes it as the largest penalty it has ever imposed on a broker-dealer for violating the Bank Secrecy Act.",
   "citations": [
     {
       "url": "https://www.fincen.gov/news/news-releases/fincen-assesses-historic-80-million-penalty-against-canaccord-genuity-llc",
       "quote": "This is the largest penalty ever imposed against a broker-dealer for violating the BSA."
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-29T09:10:00Z",
   "model": "Claude (Anthropic)"
 }
