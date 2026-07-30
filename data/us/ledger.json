@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T00:01:06Z",
+  "generated_at": "2026-07-30T23:30:17Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -1554,7 +1554,7 @@
       "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of a Proposed Rule Change To List and Trade Shares of Grayscale Avalanche Trust (AVAX) Under Nasdaq Rule 5711(d) (Commodity-Based Trust Shares)"
     },
     "aec433ce3ad1e3e7aa39bb90cc3b385c37fc3731cc3a2451eb3ca04220c42a6a": {
-      "card_id": null,
+      "card_id": "aec433ce3ad1e3e7aa39bb90cc3b385c37fc3731cc3a2451eb3ca04220c42a6a",
       "content_hash": "f45a399a6b39c212fc929a666ef9396ea0ef3e8f5af08e6731805941c73f7a5d",
       "feed_id": "fincen_press_releases",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1565,12 +1565,12 @@
       "raw_published": "04/08/2026",
       "relevant": true,
       "source_id": "fincen",
-      "status": "queued",
+      "status": "drafted",
       "summary": "Today, the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) and the Office of Foreign Assets Control issued a joint proposed rule to implement provisions of the Guiding and Establishing National Innovation for U.S. Stablecoins Act (GENIUS Act). The proposed…",
       "title": "Treasury Proposes Rule to Implement the GENIUS Act’s Requirements to Counter Illicit Finance"
     },
     "b2a82161389197cf8587969ddb98bdd07b39f790c3ea153624f417e1ad8dec42": {
-      "card_id": null,
+      "card_id": "b2a82161389197cf8587969ddb98bdd07b39f790c3ea153624f417e1ad8dec42",
       "content_hash": "4cc893f6e422d4ff7db692a3b74ee9391ef31064db2934d74cbe47619e79b2da",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1581,7 +1581,7 @@
       "raw_published": "2021-08-23",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the Global X Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
@@ -1666,7 +1666,7 @@
       "title": "OCC Announces Senior Personnel Changes"
     },
     "b93b05e15dc656d7393e5a3a674978b589200c072f159a0d119b67e81ede8d3e": {
-      "card_id": null,
+      "card_id": "b93b05e15dc656d7393e5a3a674978b589200c072f159a0d119b67e81ede8d3e",
       "content_hash": "6ac009201ab0dcd36f18c29a6fd066648bbb3b7fdf47713d7acf2e5918ef26bf",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1677,12 +1677,12 @@
       "raw_published": "2021-08-06",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
     "bc9c8bd88fa59ae753af7dcf52fcd2696dc69904b0ad58d33b7b29c29a4a5b72": {
-      "card_id": null,
+      "card_id": "bc9c8bd88fa59ae753af7dcf52fcd2696dc69904b0ad58d33b7b29c29a4a5b72",
       "content_hash": "4c7dcccc2715a6d838a2af85c7b323180fd09d6de89396964775cefe3231e143",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1693,7 +1693,7 @@
       "raw_published": "2022-07-13",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the VanEck Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },

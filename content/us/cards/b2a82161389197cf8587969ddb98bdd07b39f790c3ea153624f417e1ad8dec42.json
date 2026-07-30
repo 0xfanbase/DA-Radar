@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "b2a82161389197cf8587969ddb98bdd07b39f790c3ea153624f417e1ad8dec42",
+  "jurisdiction_id": "us",
+  "published_date": "2021-08-23",
+  "regulator": "SEC",
+  "pillar": ["funds_etfs"],
+  "type": "consultation",
+  "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the Global X Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares",
+  "summary": "On 23 August 2021, the Federal Register published an SEC notice that Cboe BZX Exchange had filed a proposed rule change (File No. SR-CboeBZX-2021-052, filed 3 August 2021) to list and trade shares of the Global X Bitcoin Trust under BZX Rule 14.11(e)(4), the exchange's Commodity-Based Trust Shares listing standard. The trust's sponsor is Global X Digital Assets, LLC, and the filing describes the trust as holding bitcoin as its sole asset. Publication of the notice opened a public comment period under Exchange Act Section 19(b)(1), the first procedural step before the Commission could approve, disapprove, or open formal proceedings on the proposed listing; the notice itself takes no position on, and does not resolve, how the SEC will ultimately act on the proposal.",
+  "why_it_matters": "This is the procedural first step the SEC required before it could approve, disapprove, or open formal proceedings on a proposed crypto exchange-traded product listing: publishing the exchange's proposal and inviting public comment. It does not itself approve or disapprove anything, and this notice does not address the proposal's eventual outcome.",
+  "citations": [
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2021-08-23/html/2021-17965.htm",
+      "quote": "The Commission is publishing this notice to solicit comments on the proposed rule change"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-30T01:25:00Z",
+  "model": "Claude (Anthropic)"
+}
