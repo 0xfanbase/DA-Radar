@@ -1,32 +1,34 @@
 {
-  "schema_version": 1,
+  "citations": [
+    {
+      "quote": "a framework for the UK financial sector to drive tokenisation of wholesale financial markets",
+      "url": "https://www.gov.uk/government/publications/wholesale-digital-markets-champion-first-report"
+    },
+    {
+      "quote": "This is the first of two reports to the Chancellor",
+      "url": "https://assets.publishing.service.gov.uk/media/6a510e8b2467584757371d58/Digital_Markets_Champion_Report.pdf"
+    },
+    {
+      "quote": "the government has appointed Chris Woolard CBE as the Wholesale Digital Markets Champion",
+      "url": "https://assets.publishing.service.gov.uk/media/6a4fa5c41228eb26a4cab6d1/Wholesale_Digital_Markets_Champion_-_Terms_of_Reference_.pdf"
+    }
+  ],
+  "generated_at": "2026-07-30T09:15:00Z",
   "id": "2c13ae36166f94159592bb0cb316942ea06e0f52867b6e3864a59d2438dcd8e6",
   "jurisdiction_id": "uk",
-  "published_date": "2026-07-13",
-  "regulator": "HM Treasury",
-  "pillar": ["tokenization_rwa"],
-  "type": "consultation",
-  "title": "Independent report: Wholesale Digital Markets Champion – first report",
-  "summary": "HM Treasury has published an independent report -- the first of two -- by Christopher Woolard CBE, the Wholesale Digital Markets Champion, setting out a framework for tokenising UK wholesale financial markets. Developed with an industry Taskforce of more than fifty firms, it sets ten priorities -- including scaling the Digital Gilt Instrument (DIGIT) pilot, tokenised collateral, a tokenised funds market, and interoperable payment rails -- to be delivered through nine Action Groups and an Orchestration Group testing an end-to-end repo transaction on blockchain. The report reviews progress under the 2025 Wholesale Financial Markets Digital Strategy, compares UK pace with other jurisdictions, and recommends actions for HM Treasury, the Bank of England and the FCA. A second report on DLT adoption and interoperability is due by July 2027.",
-  "why_it_matters": "This report matters because it shows HM Treasury and industry treating tokenisation of wholesale (institutional) financial markets -- not retail cryptoassets -- as a strategic priority, backed by a named government-appointed champion, an industry taskforce, and a set of recommended priorities and a timetable for scaling pilots like the Digital Gilt Instrument. It sits alongside, and is meant to complement, the FCA and Bank of England's separate cryptoasset and stablecoin rulemaking that a newcomer may encounter elsewhere on this site.",
   "key_dates": {
     "deadline": "2026-09-04"
   },
-  "citations": [
-    {
-      "url": "https://www.gov.uk/government/publications/wholesale-digital-markets-champion-first-report",
-      "quote": "a framework for the UK financial sector to drive tokenisation of wholesale financial markets"
-    },
-    {
-      "url": "https://assets.publishing.service.gov.uk/media/6a510e8b2467584757371d58/Digital_Markets_Champion_Report.pdf",
-      "quote": "This is the first of two reports to the Chancellor"
-    },
-    {
-      "url": "https://assets.publishing.service.gov.uk/media/6a4fa5c41228eb26a4cab6d1/Wholesale_Digital_Markets_Champion_-_Terms_of_Reference_.pdf",
-      "quote": "the government has appointed Chris Woolard CBE as the Wholesale Digital Markets Champion"
-    }
+  "model": "Claude (Anthropic)",
+  "pillar": [
+    "tokenization_rwa"
   ],
+  "published_date": "2026-07-13",
+  "regulator": "HM Treasury",
+  "schema_version": 1,
   "status": "unverified",
-  "generated_at": "2026-07-30T09:15:00Z",
-  "model": "Claude (Anthropic)"
+  "summary": "HM Treasury has published an independent report -- the first of two -- by Christopher Woolard CBE, the Wholesale Digital Markets Champion, setting out a framework for tokenising UK wholesale financial markets. Developed with an industry Taskforce of more than fifty firms, it sets ten priorities -- including scaling the Digital Gilt Instrument (DIGIT) pilot, tokenised collateral, a tokenised funds market, and interoperable payment rails -- to be delivered through nine Action Groups and an Orchestration Group testing an end-to-end repo transaction on blockchain. The report reviews progress under the 2025 Wholesale Financial Markets Digital Strategy, compares UK pace with other jurisdictions, and recommends actions for HM Treasury, the Bank of England and the FCA. A second report on DLT adoption and interoperability is due by July 2027.",
+  "title": "Independent report: Wholesale Digital Markets Champion – first report",
+  "type": "consultation",
+  "why_it_matters": "This report matters because it shows HM Treasury and industry treating tokenisation of wholesale (institutional) financial markets -- not retail cryptoassets -- as a strategic priority, backed by a named government-appointed champion, an industry taskforce, and a set of recommended priorities and a timetable for scaling pilots like the Digital Gilt Instrument. It sits alongside, and is meant to complement, the FCA and Bank of England's separate cryptoasset and stablecoin rulemaking that a newcomer may encounter elsewhere on this site."
 }
