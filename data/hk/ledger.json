@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T23:27:29Z",
+  "generated_at": "2026-07-30T04:28:20Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -1153,6 +1153,22 @@
       "summary": "",
       "title": "Research Paper on Distributed Ledger Technology in the Financial Sector (PDF File, 122.5 KB)"
     },
+    "105a97c690ce47b1e73ba27e792cc3214049b6733d6e98cc992e3bf7b1a2b11b": {
+      "card_id": null,
+      "content_hash": "d4a4a3924d927695736b605eae3989f2fc89c6f87b2538eb4814e36d8d20b870",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-30T04:28:20Z",
+      "guid": null,
+      "item_hash": "105a97c690ce47b1e73ba27e792cc3214049b6733d6e98cc992e3bf7b1a2b11b",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260730-3/",
+      "published_at": "2026-07-29T16:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Ministry of Finance issues Renminbi Sovereign Bonds through Central Moneymarkets Unit of Hong Kong Monetary Authority"
+    },
     "108bac574d37355376e61f8f1625954dce727b5369c286fd07f2f4326e717b6f": {
       "card_id": null,
       "content_hash": "91ac340624a1088668f0ccbd0eca4d0288bb30009792bb35e0a891489aa749c9",
@@ -1248,6 +1264,22 @@
       "status": "queued",
       "summary": "",
       "title": "Tender results of 5-year HKD HKSAR Institutional Government Bonds"
+    },
+    "117c4e4f05c5176b26261e4c75e12017c692b6495aad58f8e9653e6be9705ed3": {
+      "card_id": null,
+      "content_hash": "3d43b806a321570e3d809a8966b6b7a797f74fbf20ee812912a109f6819d38b3",
+      "feed_id": "sfc_circulars",
+      "first_seen": "2026-07-30T04:28:20Z",
+      "guid": "26EC45",
+      "item_hash": "117c4e4f05c5176b26261e4c75e12017c692b6495aad58f8e9653e6be9705ed3",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC45",
+      "published_at": "2026-07-29T09:04:26Z",
+      "raw_published": "Wed, 29 Jul 2026 17:04:26 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "Joint Circular on the Cross-Sectoral Cyber Mapping Exercise"
     },
     "119355dbe4ede0e35c122e16080f7a31e652bc07a670f36470cd619c24a26ed1": {
       "card_id": null,
@@ -5121,6 +5153,22 @@
       "summary": "",
       "title": "Ministry of Finance issues Renminbi Sovereign Bonds through Central Moneymarkets Unit of Hong Kong Monetary Authority"
     },
+    "50800e3e5d180224e5f6a7fb0ad21e7084ba97a86600a8528d239a4f1b10a9ba": {
+      "card_id": null,
+      "content_hash": "899317fc1b655ef9baf17ae66b58cf24267e58efd036ec830801b321e2369848",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-30T04:28:20Z",
+      "guid": null,
+      "item_hash": "50800e3e5d180224e5f6a7fb0ad21e7084ba97a86600a8528d239a4f1b10a9ba",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260729-5/",
+      "published_at": "2026-07-28T16:00:00Z",
+      "raw_published": "Wed, 29 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "HKICL alerts public of fraudulent website"
+    },
     "509b3204a8311ad3f7860ee44516a1a647788135d3be989e35e6c7bc45304ec6": {
       "card_id": null,
       "content_hash": "05e14c4185df65df2dc39dcd14326b1ca42aba02d3723e5285d2d792671624e4",
@@ -7584,6 +7632,22 @@
       "status": "queued",
       "summary": "",
       "title": "Consumer Protection in the Use of Alternative Data"
+    },
+    "75fa1dec5e733c103f7aa56917dba93ab17927813d88909047642f7b9934a77d": {
+      "card_id": null,
+      "content_hash": "815df24d8a37670f83d7087488632ffb2fceebc7a8124a57cfa7c38a37763243",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-30T04:28:20Z",
+      "guid": null,
+      "item_hash": "75fa1dec5e733c103f7aa56917dba93ab17927813d88909047642f7b9934a77d",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260729-4/",
+      "published_at": "2026-07-28T16:00:00Z",
+      "raw_published": "Wed, 29 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Scam alert related to banks"
     },
     "7609a10f772b636bae2a4690c109860c564e574a21547e28476719e8a96d9b67": {
       "card_id": null,
@@ -10816,6 +10880,22 @@
       "status": "queued",
       "summary": "",
       "title": "Scam alert related to banks"
+    },
+    "a3d4c333527b728b6327ebe593033b3af2928481868dac714a1ee288978abd33": {
+      "card_id": null,
+      "content_hash": "60f4c3a6ac59ab71c5a7ff510d714d8ad6e513894e61e9c37d27ba475a559d83",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-30T04:28:20Z",
+      "guid": null,
+      "item_hash": "a3d4c333527b728b6327ebe593033b3af2928481868dac714a1ee288978abd33",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260729-3/",
+      "published_at": "2026-07-28T16:00:00Z",
+      "raw_published": "Wed, 29 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "HKMA Welcomes CMU’s Expanded International Network and Service Offerings"
     },
     "a44f835b7dbfdf270a394b6c157844eb3fcb6240ae0dcad1df24e095f82ff2c1": {
       "card_id": null,
@@ -14225,6 +14305,22 @@
       "summary": "",
       "title": "Tender for the re-opening of 10-year HKD HKSAR Institutional Government Bonds to be held on Wednesday, 5 November 2025"
     },
+    "da631c7c19fd6cfc2f8394cdea0e8d80d86e855e8cdfca1e3d8cd12f25d04e99": {
+      "card_id": null,
+      "content_hash": "d31ac69b452ef24ac28e03b7ed235f693cb72a7e123b4f30fdb6af0425578bdc",
+      "feed_id": "hkma_circulars",
+      "first_seen": "2026-07-30T04:28:20Z",
+      "guid": null,
+      "item_hash": "da631c7c19fd6cfc2f8394cdea0e8d80d86e855e8cdfca1e3d8cd12f25d04e99",
+      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260729-1-EN",
+      "published_at": "2026-07-28T16:00:00Z",
+      "raw_published": "Wed, 29 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Joint Circular on the Cross-Sectoral Cyber Mapping Exercise"
+    },
     "da743c32a297287dd3476329aca277b34ac8d3482eb7e5c7453bd4b1b3b54cf3": {
       "card_id": null,
       "content_hash": "ade268bd6b29dae36fcf4af7a6e2a0d9e8cbcdd1e092d4a91f3db1d631b893a1",
@@ -16432,6 +16528,22 @@
       "status": "queued",
       "summary": "",
       "title": "Basel III implementation (PDF File, 170.4 KB)"
+    },
+    "fa767e64cda1d2122b1e5a7834bd766eefd1dd1e72c7b9b03e3e29daba4acf4b": {
+      "card_id": null,
+      "content_hash": "c7f7e25f8597e14eaebe5f202d8e773c0265cf77f0d777e6879e300d0376509b",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-30T04:28:20Z",
+      "guid": null,
+      "item_hash": "fa767e64cda1d2122b1e5a7834bd766eefd1dd1e72c7b9b03e3e29daba4acf4b",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260730-4/",
+      "published_at": "2026-07-29T16:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "HKMA’s Response to US Fed’s Interest Rate Decision"
     },
     "fabc30014c139b74b846a0d037f5fbe60de8128c25e050a2dd47b4b72d5f8b4f": {
       "card_id": null,
