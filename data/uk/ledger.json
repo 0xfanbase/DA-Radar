@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T00:36:43Z",
+  "generated_at": "2026-07-30T04:28:17Z",
   "items": {
     "02028a9677575e76189a49022768f45cc07c84ca74ac72879172cd9671891801": {
       "card_id": null,
@@ -449,6 +449,22 @@
       "summary": "The Retail Payments Infrastructure Board (RPIB), led by the Bank of England, recently published a consultation on the future retail payments infrastructure.To support the consultation, the Payment Vision Delivery Committee (PVDC) which comprises representatives of HM Treasury, the FCA, Bank of England and the PSR, has published further context to support stakeholders' reading of the consultation. It covers issues such as how the commercial model for the infrastructure should work and how the new infrastructure can support consumer protection and the fight against financial crime.Both the PVDC and RPIB were set up to deliver the government’s National Payments Vision of a trusted, world-leading payments ecosystem delivered on next generation technology, where consumers and businesses have a choice of payment methods to meet their needs.Further informationThe Retail Payments Infrastructure Board (RPIB) is a senior advisory board that is chaired by the Bank of England. The PSR/FCA is an observer of the RPIB.The RPIB will translate the vision and strategy for future retail payments infrastructure set by the PVDC into design, including through consultation with the broader payments ecosystem and end-users.The Payments Vision Delivery Committee (PVDC) comprises HM Treasury, the Bank of England, the FCA and the PSR.It was established through the National Payments Vision to ensure coordination between the regulators and provide a mechanism to facilitate prioritisation decisions on initiatives.RPIB have published their consultation on the Design of the Future Retail Payments Infrastructure.",
       "title": "Payments Vision Delivery Committee update on future retail payments infrastructure"
     },
+    "1f84ef69e99ff3a91e7c9787f67ee18af0f3ebbc6e315a0285e486c72179a809": {
+      "card_id": null,
+      "content_hash": "369a6141b32d9a4d52d74cd8e6787cb64376c6c660bac6685ce9b4c0b0106e0c",
+      "feed_id": "boe_pra_publications",
+      "first_seen": "2026-07-30T04:28:17Z",
+      "guid": "{A5A03A4E-226F-48D4-95AF-3B838CDA63EF}",
+      "item_hash": "1f84ef69e99ff3a91e7c9787f67ee18af0f3ebbc6e315a0285e486c72179a809",
+      "link": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/july/low-impact-amendments-consultation-july-2026",
+      "published_at": "2026-07-29T09:00:00Z",
+      "raw_published": "Wed, 29 Jul 2026 10:00:00 +0100",
+      "relevant": false,
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "Low Impact Amendments Consultation July 2026",
+      "title": "LIAC02/26 – Low Impact Amendments Consultation July 2026"
+    },
     "1fae43a81d7bffe0ccc9d8d91495bd86265b2c5d22c0c8ce81779f7e349eef3b": {
       "card_id": null,
       "content_hash": "446a4cf0db13711be5d21cb46ef2cab7242e4b6ee69cdbabf7a982fab564490c",
@@ -512,6 +528,22 @@
       "status": "queued",
       "summary": "Policy statement 11/26",
       "title": "PS11/26 – Disclosure: resolvability resources, capital distribution constraints and the basis for firm Pillar 3 disclosure"
+    },
+    "23e055545c40ecd4ad88ed3101949f96c7b385f5a0457d9fbc2342d4379ebadc": {
+      "card_id": null,
+      "content_hash": "aac88b2c3e541de25c6e00902035aecced9747046dcf77c0da760566ab7944a8",
+      "feed_id": "boe_pra_publications",
+      "first_seen": "2026-07-30T04:28:17Z",
+      "guid": "{6130282B-8E46-4220-B5A0-2A870E4C4BE0}",
+      "item_hash": "23e055545c40ecd4ad88ed3101949f96c7b385f5a0457d9fbc2342d4379ebadc",
+      "link": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/july/low-impact-amendments-finalisation-july-2026",
+      "published_at": "2026-07-29T09:00:00Z",
+      "raw_published": "Wed, 29 Jul 2026 10:00:00 +0100",
+      "relevant": false,
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "Low Impact Amendments Finalisation July 2026",
+      "title": "LIAF02/26 – Low Impact Amendments Finalisation July 2026"
     },
     "2475eaaf6fd58294e7d95892755f544d93d77e6f3e8bb30a33770cc4190f6ea0": {
       "card_id": null,
@@ -1169,6 +1201,22 @@
       "summary": "When the FCA introduced the Consumer Duty, we set out to do something simple but transformative: ensure financial services work better for consumers. It was, by design, ambitious. And it is working. For example, most investment platforms have improved how they treat interest on clients’ cash and public confidence in banks has grown since the Duty was introduced. Wherever possible, it is also helping us to avoid prescriptive new rules.The Duty’s foundations are simple harmonising concepts that apply across sectors and value chains. But it was novel, and a big undertaking for firms to implement, so it is only natural that we should reflect on how it’s been working three years on.Tailored to wholesale standardsWe have heard from some firms that uncertainty about the Duty causes friction in wholesale markets. The combination of a new regime and understandable caution by firms has, in practice, generated unnecessary cost and complexity for parts of the market where consumer protection is not at risk. That was not our intent. It’s a consumer duty not a wholesale one. While it is intended to cover manufacture of products for retail customers, the vast majority of business-to-business activities were intended to be simply out of scope.We want to address this feedback. Wholesale markets perform a distinct function. They allow investors, companies and governments to raise and allocate capital, manage risk and fund investment. And they are central to the UK’s position as a leading global financial centre. That is why we have been pursuing reforms to reinforce that position, for example, simpler listing and prospectus rules, consolidated tapes to improve price transparency and market liquidity. Our guiding philosophy has been to replace prescriptions with outcomes and pre-emptive checks with disclosures, thus enabling market forces to drive good outcomes. It would be self-defeating to allow an overly cautious interpretation of the Consumer Duty to work against those goals.Whole",
       "title": "Refining the Consumer Duty to give greater confidence to wholesale firms"
     },
+    "50ee6bb74f512f77b894a65ef13743f2be51e86299e6ab5ccdcd2b8254b07a63": {
+      "card_id": null,
+      "content_hash": "2914303b645518e5b42168e41e22df5517fdfa2e2140e597f744ef5c6fef8dc8",
+      "feed_id": "boe_pra_publications",
+      "first_seen": "2026-07-30T04:28:17Z",
+      "guid": "{E6B21CBE-5A61-4BC6-8D1D-222A7E9203C6}",
+      "item_hash": "50ee6bb74f512f77b894a65ef13743f2be51e86299e6ab5ccdcd2b8254b07a63",
+      "link": "https://www.bankofengland.co.uk/prudential-regulation/publication/2026/july/solvency-uk-policy-statement",
+      "published_at": "2026-07-29T09:00:00Z",
+      "raw_published": "Wed, 29 Jul 2026 10:00:00 +0100",
+      "relevant": false,
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "Policy statement 18/26",
+      "title": "PS18/26 – Solvency UK: Post-implementation reporting and disclosure amendments and Own Funds permissions update"
+    },
     "5292351d4f45be400d116451954f0bfcaa861ab91763017501630ae7ae6d17c8": {
       "card_id": null,
       "content_hash": "ab75c9131544fbefb7feac5ab287ef4f7c1e25ee98dc3e915cfe1f6d1d5e8a7c",
@@ -1441,6 +1489,22 @@
       "summary": "Exchange of letters between the Governor and the Chancellor",
       "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - April 2026"
     },
+    "669e6b089ee5e4c4b759fb4d3e5ab5e94b2cbdaeac15c712d23237b4cc9c3c18": {
+      "card_id": null,
+      "content_hash": "576f0c01b89ab50d049ffa1da6e9c1988d8fced17a3787a38a6e20791cbc6be1",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-30T04:28:17Z",
+      "guid": "https://www.gov.uk/government/publications/orange-book#2026-07-29T16:07:45Z",
+      "item_hash": "669e6b089ee5e4c4b759fb4d3e5ab5e94b2cbdaeac15c712d23237b4cc9c3c18",
+      "link": "https://www.gov.uk/government/publications/orange-book",
+      "published_at": "2026-07-29T16:07:45Z",
+      "raw_published": "2026-07-29T16:07:45Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "This guidance establishes the concept of risk management.",
+      "title": "Guidance: Orange Book"
+    },
     "679af0482d05233d895eee01359ce87edc383db08bfeac3ceb3969ffd998af54": {
       "card_id": null,
       "content_hash": "ec883ef69ccc9d633de960e9ffb42236b43cfa7621a08c35a502f9ce29e164f0",
@@ -1632,6 +1696,22 @@
       "status": "queued",
       "summary": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments. Required to meet a minimum seven times per year, it has five executive members from the Bank and up to nine non-executive members.",
       "title": "Minutes of the Meeting of the Court of Directors held on 12 February 2026"
+    },
+    "7203879698979ebc4f18e081ad31c4cebd19caf00785209e7e06f12f69ce9d3f": {
+      "card_id": null,
+      "content_hash": "0752ccb5d234ac675b1c1fe6c498bc41b1669569a124fbcd53ea3fe277699f60",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-30T04:28:17Z",
+      "guid": "https://www.gov.uk/government/statistics/public-spending-statistics-release-july-2026#2026-07-29T13:20:18Z",
+      "item_hash": "7203879698979ebc4f18e081ad31c4cebd19caf00785209e7e06f12f69ce9d3f",
+      "link": "https://www.gov.uk/government/statistics/public-spending-statistics-release-july-2026",
+      "published_at": "2026-07-29T13:20:18Z",
+      "raw_published": "2026-07-29T13:20:18Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "The July 2026 national statistics public expenditure outturn release.",
+      "title": "Accredited official statistics: Public Spending Statistics release: July 2026"
     },
     "72417fcb51274e5d8c954de106d54ef5bec60b9cb60045b957905386c5dcaa3d": {
       "card_id": null,
@@ -3472,6 +3552,22 @@
       "status": "queued",
       "summary": "The FCA and Bank of England (Bank) have appointed members to their Transaction and Post-trade Reporting Harmonisation Taskforce. The taskforce will inform our long-term approach to harmonising transaction and post-trade reporting requirements across UK Markets in Financial Instruments Regulation (UK MiFIR), UK European Market Infrastructure Regulation (UK EMIR) and UK Securities Financing Transactions Regulation (UK SFTR).The taskforce comprises 3 separate working groups: a main Policy working group, supported by a Strategy working group and an Architecture working group. The objectives of the working groups were set out in the terms of reference.The Policy working group is chaired by Helen Packard (head of market oversight data &amp; intelligence at FCA) and Julia Giese (head of financial markets infrastructure analytics at the Bank). The members of the Policy working group are:Giulia Pecce (head of secondary capital markets &amp; wholesale investor protection at AFME)Adam Jacobs-Dean (managing director, global head of markets, governance and innovation at AIMA)Andy Leonard (regulatory reporting lead SME at Barclays Bank PLC)Hussain Abdullah (director, data &amp; regulatory operations at Citigroup)Karen Stretch (partner at Dechert LLP)Emma Kalliomaki (managing director at ANNA &amp; DSB)Paul Sedgwick (head of DDRL at DTCC)John Graham (senior director of regulation at Futures Industry Association)Greg Stevens (reporting operations director at ICE Futures Europe)Andrew Bayley (senior director, regulatory reporting transformation at ISDA)Tony Holland (director of market practice &amp; regulatory reporting at ISLA)Stuart Cosgrave (operations director at J.P. Morgan Chase)Tim Hartley (global head of SME team &amp; director, EMIR reporting at Kaizen Reporting Ltd)Zach Johnson (director at Kroll)Mark Burnal (managing director, head of fund regulatory reporting and infrastructure at Man Group)Ayo Fashina (executive director, shared services compliance at Morgan Stanley)Rav",
       "title": "FCA and Bank appoint members to their Transaction and Post-trade Reporting Harmonisation Taskforce"
+    },
+    "f66185a67a09e6c1c40bb5da1bbc4d79b734a547a36f748de9477f1e3c11d051": {
+      "card_id": null,
+      "content_hash": "ad90b71df33850e8efddf4038b197d88bfa50b0bef424cf2abfed07e839a9c40",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-30T04:28:17Z",
+      "guid": "https://www.gov.uk/government/publications/whole-of-government-accounts-2025-to-2026-guidance-for-preparers#2026-07-29T11:17:24Z",
+      "item_hash": "f66185a67a09e6c1c40bb5da1bbc4d79b734a547a36f748de9477f1e3c11d051",
+      "link": "https://www.gov.uk/government/publications/whole-of-government-accounts-2025-to-2026-guidance-for-preparers",
+      "published_at": "2026-07-29T11:17:24Z",
+      "raw_published": "2026-07-29T11:17:24Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Guidance for central government and local government preparers for Whole of Government Accounts.",
+      "title": "Corporate report: Whole of Government Accounts 2025 to 2026: guidance for preparers"
     },
     "f98f1dd4a208dd0b2a2844544c06fac54ef88e20e3360e4617ec4a0122a6c917": {
       "card_id": null,
