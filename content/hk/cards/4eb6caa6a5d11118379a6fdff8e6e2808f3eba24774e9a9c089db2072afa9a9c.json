@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "4eb6caa6a5d11118379a6fdff8e6e2808f3eba24774e9a9c089db2072afa9a9c",
+  "jurisdiction_id": "hk",
+  "published_date": "2026-06-05",
+  "regulator": "HKMA",
+  "pillar": ["tokenization_rwa"],
+  "type": "guidance",
+  "title": "HKMA establishes Tokenised Bond Expert Group",
+  "summary": "On 5 June 2026, the Hong Kong Monetary Authority (HKMA) announced that it had convened a Tokenised Bond Expert Group, bringing together representatives from industry, financial-infrastructure providers, and legal advisers. The group's stated purpose is to explore policy measures, market practices, and innovations that could help scale tokenised bond issuance in Hong Kong. HKMA said that further legal and regulatory enhancements arising from the group's work would be announced separately, without giving a specific timeline. Convening the group is itself a coordination and consultation step: it does not create any new rule, licence, or binding requirement, and HKMA has not stated a deadline for the group to report back.",
+  "why_it_matters": "For a newcomer, this shows HKMA using a stakeholder working group -- rather than a formal circular or new rule -- as an early step toward possible future changes supporting tokenised bond issuance, so no new compliance obligation exists yet from this announcement alone.",
+  "citations": [
+    {
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260605-3/",
+      "quote": "HKMA establishes Tokenised Bond Expert Group"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-30T09:20:00Z",
+  "model": "Claude (Anthropic)"
+}

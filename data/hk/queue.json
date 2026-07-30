@@ -1,46 +1,6 @@
 {
-  "generated_at": "2026-07-29T23:09:37Z",
+  "generated_at": "2026-07-30T23:02:55Z",
   "items": [
-    {
-      "feed_id": "hkma_circulars",
-      "item_hash": "386290a754590e6eb6a2ad831e93757ea8a3a40dc50ecfbddd1d31ee835d8e0a",
-      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20251127-1-EN",
-      "published_at": "2025-11-26T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Cryptoassets Standard: SPM Modules, Code of Practice, Disclosure Templates and Tables, and Banking Returns"
-    },
-    {
-      "feed_id": "sfc_consultations",
-      "item_hash": "3cb77193bb9f36c6cb4e2b95627fa78751d449509de9fdc3469d2895408372d8",
-      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR75",
-      "published_at": "2026-05-26T10:25:21Z",
-      "source_id": "sfc",
-      "status": "queued",
-      "summary": "",
-      "title": "FSTB and SFC conclude consultations on virtual asset advisory and management regimes"
-    },
-    {
-      "feed_id": "hkma_circulars",
-      "item_hash": "3fa3f7e5c9a8c60c1db58f5343ebcc261c5831227d9abd08f6836516114e6c5e",
-      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250930-1-EN",
-      "published_at": "2025-09-29T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Supplemental joint circular on intermediaries’ virtual asset-related activities"
-    },
-    {
-      "feed_id": "hkma_press_release",
-      "item_hash": "4eb6caa6a5d11118379a6fdff8e6e2808f3eba24774e9a9c089db2072afa9a9c",
-      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260605-3/",
-      "published_at": "2026-06-04T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "HKMA establishes Tokenised Bond Expert Group"
-    },
     {
       "feed_id": "hkma_consultations",
       "item_hash": "558f3e9d61cd4c2d7c8a3e35a85de257355f1261155cfbd25d3c985828f24ef4",

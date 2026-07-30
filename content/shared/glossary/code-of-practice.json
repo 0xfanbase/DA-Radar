@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "code-of-practice",
+  "term": "Code of Practice",
+  "jurisdictions": ["hk"],
+  "plain_definition": "A named supervisory instrument HKMA issues to Authorized Institutions (banks) setting out expected practices for a specific area of supervision. As part of the Cryptoassets Standard, HKMA has developed a Code of Practice covering how Authorized Institutions manage their cryptoasset exposures; it is issued and revised alongside, but is a distinct instrument from, HKMA's Supervisory Policy Manual modules on the same standard.",
+  "formal_definition": "A supervisory instrument issued by HKMA to Authorized Institutions, distinct from a Supervisory Policy Manual module, setting out HKMA's expected practices for a specified area of bank supervision; HKMA has consulted on and revised a Code of Practice as part of implementing the Cryptoassets Standard.",
+  "related_terms": ["cryptoassets-standard", "supervisory-policy-manual", "authorized-institution"],
+  "first_used_card_id": "386290a754590e6eb6a2ad831e93757ea8a3a40dc50ecfbddd1d31ee835d8e0a",
+  "generated_at": "2026-07-30T09:20:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

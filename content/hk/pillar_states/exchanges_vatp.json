@@ -37,15 +37,20 @@
     {
       "label": "SFC circular 26EC35: phishing-resistant authentication for internet brokers and VATPs (9 Jul 2026)",
       "url": "https://apps.sfc.hk/edistributionWeb/api/circular/list-content/circular/doc?refNo=26EC35&lang=EN"
+    },
+    {
+      "label": "HKMA circular: supplemental joint circular on intermediaries' virtual asset-related activities (30 Sep 2025)",
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250930-1-EN"
     }
   ],
   "open_items": [
     "Further ASPIRe workstream initiatives are ongoing and not all have concluded.",
     "Additional platform licensing continues incrementally (e.g. licences granted February and May 2026).",
     "The separate virtual asset dealer, custodian, advisory, and management licensing regimes (a related but distinct pillar) remain at bill-pending stage, not yet in force.",
-    "The 9 July 2026 phishing-resistant authentication mandate has a 12-month transition period; full compliance across internet brokers and VATPs is not yet due."
+    "The 9 July 2026 phishing-resistant authentication mandate has a 12-month transition period; full compliance across internet brokers and VATPs is not yet due.",
+    "On 30 Jul 2026, while drafting a card for a 30 Sep 2025 HKMA circular described in its own title as a 'Supplemental joint circular on intermediaries' virtual asset-related activities,' HKMA's site (brdr.hkma.gov.hk, www.hkma.gov.hk, and its RSS feeds) was found unreachable -- the same HKMA-wide access problem already logged in the Banking & Money pillar's open_items for 26, 28, and 29 Jul 2026 -- while a control fetch of SFC's site succeeded at the same time. That circular's card was therefore drafted from its official title alone; its substantive content, and specifically which earlier circular it supplements, should be confirmed against primary text once HKMA's site is reachable again."
   ],
-  "generated_at": "2026-07-13T09:00:00Z",
+  "generated_at": "2026-07-30T09:20:00Z",
   "model": "Claude (Anthropic)",
   "status": "unverified"
 }

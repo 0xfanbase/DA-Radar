@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "3cb77193bb9f36c6cb4e2b95627fa78751d449509de9fdc3469d2895408372d8",
+  "jurisdiction_id": "hk",
+  "published_date": "2026-05-26",
+  "regulator": "FSTB and SFC",
+  "pillar": ["dealing_custody_advisory"],
+  "type": "conclusions",
+  "title": "FSTB and SFC conclude consultations on virtual asset advisory and management regimes",
+  "summary": "On 26 May 2026, the Financial Services and the Treasury Bureau (FSTB) and the Securities and Futures Commission (SFC) published conclusions to their joint consultation on proposed licensing regimes for virtual asset advisory and virtual asset management services. The consultation drew 51 respondents, described as showing broad support. The new regimes' scope will align with the SFC's existing Type 4 (advising on securities) and Type 9 (asset management) regulated-activity categories. Together with the already-concluded virtual asset dealing and custodian regimes, all four proposed regimes are to be introduced as amendments to the Anti-Money Laundering and Counter-Terrorist Financing Ordinance, with FSTB and SFC targeting introduction of the enabling bill to the Legislative Council within 2026.",
+  "why_it_matters": "For a newcomer, this confirms that Hong Kong's two remaining planned virtual-asset licensing gaps -- advisory and asset-management services -- will be regulated using the same activity categories as existing securities advisers and asset managers, with a single bill now expected to bring all four new virtual-asset licensing regimes (dealing, custodian, advisory, and management) into law within 2026.",
+  "citations": [
+    {
+      "url": "https://apps.sfc.hk/edistributionWeb/api/news/list-content?refNo=26PR75&lang=EN",
+      "quote": "Aligning with the standards for traditional financial services, the new regimes will bolster investor protection."
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-30T09:20:00Z",
+  "model": "Claude (Anthropic)"
+}

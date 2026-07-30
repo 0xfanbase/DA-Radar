@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "386290a754590e6eb6a2ad831e93757ea8a3a40dc50ecfbddd1d31ee835d8e0a",
+  "jurisdiction_id": "hk",
+  "published_date": "2025-11-27",
+  "regulator": "HKMA",
+  "pillar": ["banking_money"],
+  "type": "circular",
+  "title": "Cryptoassets Standard: SPM Modules, Code of Practice, Disclosure Templates and Tables, and Banking Returns",
+  "summary": "This HKMA circular is part of HKMA's ongoing rollout of its Cryptoassets Standard -- a set of prudential rules governing how Authorized Institutions (banks) must treat exposures to cryptoassets. As its own title states, the circular covers Supervisory Policy Manual (SPM) modules, a Code of Practice, disclosure templates and tables, and banking returns for the standard -- several of the main instruments HKMA has used to implement the standard in stages since mid-2025, alongside consultation letters and completion instructions addressed to the Hong Kong Association of Banks and the Deposit-Taking Companies Association. It follows earlier 2025 consultations on related return templates and on new SPM modules and a code of practice.",
+  "why_it_matters": "For a newcomer, this shows Hong Kong's banking regulator extending its routine supervisory and reporting toolkit -- not just its licensing rules -- to explicitly cover Authorized Institutions' cryptoasset exposures, using several linked instruments (guidance modules, a code of practice, disclosure forms, and banking returns) rather than a single law.",
+  "citations": [
+    {
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20251127-1-EN",
+      "quote": "Cryptoassets Standard: SPM Modules, Code of Practice, Disclosure Templates and Tables, and Banking Returns"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-30T09:20:00Z",
+  "model": "Claude (Anthropic)"
+}

@@ -6,8 +6,8 @@
   "instruments": [
     "Anti-Money Laundering and Counter-Terrorist Financing Ordinance (Cap. 615) (proposed amendment, not yet enacted)"
   ],
-  "standing_summary": "The FSTB and SFC ran a joint consultation (27 June to 29 August 2025) on new licensing regimes for virtual asset dealing and custodian services, aligned respectively with the existing Type 1 (dealing in securities) and a dedicated private-key-custody framework. Consultation conclusions were published 24 December 2025, alongside the launch of a further consultation on separate virtual asset advisory (Type 4-aligned) and management (Type 9-aligned) regimes, which closed 23 January 2026; conclusions on that further consultation were published 26 May 2026. All four regimes are proposed as amendments to the Anti-Money Laundering and Counter-Terrorist Financing Ordinance. No deeming or transitional arrangement is planned for any of the four regimes; regulators are instead urging firms to begin pre-application engagement. Licensed dealers will be required to custody client virtual assets with SFC-regulated custodians, with HKMA-licensed stablecoin issuers exempt for their own coins. As of the most recent primary source found (a LegCo background brief dated 28 May 2026), the bill remained a stated target for introduction to the Legislative Council within 2026, not yet introduced.",
-  "last_changed": "2026-05-26",
+  "standing_summary": "The FSTB and SFC ran a joint consultation (27 June to 29 August 2025) on new licensing regimes for virtual asset dealing and custodian services, aligned respectively with the existing Type 1 (dealing in securities) and a dedicated private-key-custody framework. Consultation conclusions were published 24 December 2025, alongside the launch of a further consultation on separate virtual asset advisory (Type 4-aligned) and management (Type 9-aligned) regimes, which closed 23 January 2026; conclusions on that further consultation -- which FSTB and SFC said drew 51 respondents and broad market support -- were published 26 May 2026. All four regimes are proposed as amendments to the Anti-Money Laundering and Counter-Terrorist Financing Ordinance. No deeming or transitional arrangement is planned for any of the four regimes; regulators are instead urging firms to begin pre-application engagement. Licensed dealers will be required to custody client virtual assets with SFC-regulated custodians, with HKMA-licensed stablecoin issuers exempt for their own coins. As of the most recent primary source found (a LegCo background brief dated 28 May 2026), the bill remained a stated target for introduction to the Legislative Council within 2026, not yet introduced.",
+  "last_changed": "2026-07-30",
   "key_links": [
     {
       "label": "FSTB/SFC consultation conclusions: VA custodian services (24 Dec 2025)",
@@ -28,6 +28,10 @@
     {
       "label": "SFC press release: joint consultation launch (27 Jun 2025)",
       "url": "https://apps.sfc.hk/edistributionWeb/api/news/list-content?refNo=25PR99&lang=EN"
+    },
+    {
+      "label": "SFC press release 26PR75: FSTB/SFC conclude consultations on VA advisory and management regimes (26 May 2026)",
+      "url": "https://apps.sfc.hk/edistributionWeb/api/news/list-content?refNo=26PR75&lang=EN"
     }
   ],
   "open_items": [
@@ -36,7 +40,7 @@
     "The commencement date for the new regimes, once enacted, has not yet been set.",
     "A proposed limited self-custody threshold for private-equity/venture-capital fund managers' new tokens remains under consideration, not finalized."
   ],
-  "generated_at": "2026-07-13T11:53:32Z",
+  "generated_at": "2026-07-30T09:20:00Z",
   "model": "Claude (Anthropic)",
   "status": "unverified"
 }

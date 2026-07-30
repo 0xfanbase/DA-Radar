@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T04:28:20Z",
+  "generated_at": "2026-07-30T23:02:55Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -3698,7 +3698,7 @@
       "title": "Keynote speech at 2025 Cross-Strait and Hong Kong-Macao Banking Wealth Management Forum cum Award Presentation Ceremony of the 14th Outstanding Financial Management Planning Skills Competition (Chinese version) by Alan Au, Executive Director (Banking Conduct), Hong Kong Monetary Authority"
     },
     "386290a754590e6eb6a2ad831e93757ea8a3a40dc50ecfbddd1d31ee835d8e0a": {
-      "card_id": null,
+      "card_id": "386290a754590e6eb6a2ad831e93757ea8a3a40dc50ecfbddd1d31ee835d8e0a",
       "content_hash": "b26b256b7d6bd8142940e4b7ac7fb45211bebf35a2c49508bb4493a72b614dca",
       "feed_id": "hkma_circulars",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -3709,7 +3709,7 @@
       "raw_published": "Thu, 27 Nov 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Cryptoassets Standard: SPM Modules, Code of Practice, Disclosure Templates and Tables, and Banking Returns"
     },
@@ -3954,7 +3954,7 @@
       "title": "Welcome Remarks at the Anti-Scam Consumer Protection Charter 3.0 by Eddie Yue, Chief Executive, Hong Kong Monetary Authority"
     },
     "3cb77193bb9f36c6cb4e2b95627fa78751d449509de9fdc3469d2895408372d8": {
-      "card_id": null,
+      "card_id": "3cb77193bb9f36c6cb4e2b95627fa78751d449509de9fdc3469d2895408372d8",
       "content_hash": "dd02069c9bcf1a0f89317aeaa18e4fec2b7ca480aba9c5ab576b77b8f6aac211",
       "feed_id": "sfc_consultations",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -3965,7 +3965,7 @@
       "raw_published": "Tue, 26 May 2026 18:25:21 +0800",
       "relevant": true,
       "source_id": "sfc",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "FSTB and SFC conclude consultations on virtual asset advisory and management regimes"
     },
@@ -4050,7 +4050,7 @@
       "title": "Statistics of Payment Cards Issued in Hong Kong for Second Quarter 2025"
     },
     "3fa3f7e5c9a8c60c1db58f5343ebcc261c5831227d9abd08f6836516114e6c5e": {
-      "card_id": null,
+      "card_id": "3fa3f7e5c9a8c60c1db58f5343ebcc261c5831227d9abd08f6836516114e6c5e",
       "content_hash": "82c5949848cf1c0f0a941dbb0e86b59dd1264d341c787738812dc9c983017d1d",
       "feed_id": "hkma_circulars",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -4061,7 +4061,7 @@
       "raw_published": "Tue, 30 Sep 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Supplemental joint circular on intermediaries’ virtual asset-related activities"
     },
@@ -5042,7 +5042,7 @@
       "title": "Tentative Issuance Schedule for HKSAR Institutional Government Bonds under Infrastructure Bond Programme and Government Sustainable Bond Programme"
     },
     "4eb6caa6a5d11118379a6fdff8e6e2808f3eba24774e9a9c089db2072afa9a9c": {
-      "card_id": null,
+      "card_id": "4eb6caa6a5d11118379a6fdff8e6e2808f3eba24774e9a9c089db2072afa9a9c",
       "content_hash": "46a576d72a422fba358d672cdf794d7ca25ae10b31c70201801de39b29ef2a62",
       "feed_id": "hkma_press_release",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -5053,7 +5053,7 @@
       "raw_published": "Fri, 05 Jun 2026 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "HKMA establishes Tokenised Bond Expert Group"
     },
