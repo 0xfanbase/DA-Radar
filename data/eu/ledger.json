@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T04:42:15Z",
+  "generated_at": "2026-07-30T04:28:21Z",
   "items": {
     "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
       "card_id": null,
@@ -16,6 +16,22 @@
       "status": "queued",
       "summary": "European Commission Speech Warsaw, 21 Jul 2026 Dear Minister Kierwiński, Dear Secretary of State Szymański, Excellencies, Ladies and gentlemen, My dear Polish friends, I have come to Poland to celebrate a su...",
       "title": "Speech by Commissioner Kubilius at the IRIS² - Polish contribution Agreement Signature Ceremony"
+    },
+    "01bdbbd08d0369f1cd1f9c5471623f0f763eb1a48faf566a1ac5166eb2822f05": {
+      "card_id": null,
+      "content_hash": "283e9ac2a75755cd1919082013fee6f394962b1d71cb4b75dce4199ddc41b7c9",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-30T04:28:21Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1703",
+      "item_hash": "01bdbbd08d0369f1cd1f9c5471623f0f763eb1a48faf566a1ac5166eb2822f05",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1703",
+      "published_at": "2026-07-29T09:21:33Z",
+      "raw_published": "Wed, 29 Jul 2026 09:21:33 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Daily news Brussels, 29 Jul 2026 Commission endorses Malta's €60 million Social Climate Plan to support vulnerable households and small companies in the clean transition The European Commissio...",
+      "title": "Daily News 29 / 07 / 2026"
     },
     "03d2d370c508cea62d1b17c98f000678f92f12c382914181c516d96a2c85c6b6": {
       "card_id": null,
@@ -176,6 +192,22 @@
       "status": "queued",
       "summary": "European Commission Speech Washington, DC, 24 Jul 2026 Good evening, It's always great to be back in America and to be here among friends: friends of Europe, friends of defence. Friends of football. The World Cup is...",
       "title": "Speech by Commissioner Kubilius at “EU Defense Night”"
+    },
+    "14cc6e1c2d07351b65dda7fbfc651a567f29262c17942bb93d618a6fc447ddb1": {
+      "card_id": null,
+      "content_hash": "e7b8340746772f1010415afb6a2f5d360b6962b26e9ea75023885479b2311278",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-30T04:28:21Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1685",
+      "item_hash": "14cc6e1c2d07351b65dda7fbfc651a567f29262c17942bb93d618a6fc447ddb1",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1685",
+      "published_at": "2026-07-28T22:00:00Z",
+      "raw_published": "Tue, 28 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 29 Jul 2026 The European Commission has opened an in-depth investigation to assess whether an arbitration award ordering Romania to pay compensation to ten investors for changes to a renewable electricity support measure is in line with EU State aid rules.",
+      "title": "Commission opens in-depth investigation into arbitration award ordering Romania to pay compensation to ten energy investors"
     },
     "14d9e8505c5fd2d1eb733b50e73b477e6ed5a6c569149e8e16bfeea4255a4ffe": {
       "card_id": null,
@@ -656,6 +688,22 @@
       "status": "queued",
       "summary": "European Commission Press release Brussels, 10 Jul 2026 The European Commission has opened a formal investigation to assess whether, in the context of the proposed acquisition by XXXLutz of Porta, the parties may have engaged in gun jumping, which would be in breach of the EU Merger Regulation.",
       "title": "Commission opens formal investigation into possible gun jumping in XXXLutz's acquisition of Porta"
+    },
+    "4ee890caa0eeb9e3e0a960a1437c9026cd499a3b5d00505965f932499e33748f": {
+      "card_id": null,
+      "content_hash": "1e1e8e59026a73ecf0987cb5e8a29a011ca51890adc188d4c2dcad6f19c9e357",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-30T04:28:21Z",
+      "guid": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260729~4ad7508d8a.en.html",
+      "item_hash": "4ee890caa0eeb9e3e0a960a1437c9026cd499a3b5d00505965f932499e33748f",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260729~4ad7508d8a.en.html",
+      "published_at": "2026-07-29T08:00:00Z",
+      "raw_published": "Wed, 29 Jul 2026 10:00:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "ECB wage tracker at 2.7% in Q1 2027, indicating stable negotiated wage pressures"
     },
     "5025825b7de1a25a0a7243e647cf9bfbab679e24ee8aa2571e0ec84e4e74966e": {
       "card_id": null,
@@ -1936,6 +1984,22 @@
       "status": "queued",
       "summary": "The European Banking Authority (EBA) today published revised Guidelines on product oversight and governance (POG) for retail banking products. They clarify requirements for products with environmental, social and governance (ESG) features whenever offered and sold to consumers and address greenwashing risks. The Guidelines aim to ensure that financial institutions apply robust standards when designing and distributing ESG-related retail products, with a view to reducing the risk of consumers being misled or sold products that do not meet their needs.",
       "title": "The EBA clarifies its Product Oversight and Governance Guidelines which address greenwashing risks in ESG products"
+    },
+    "ee884756b3094477f9518d128014f4ffbb728256eb2c4fd9990f1735bb733b74": {
+      "card_id": null,
+      "content_hash": "4a36ee9ed23133d9bbccaf1c4eb9767726a3b1a066debb56d68647a4200d42c8",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-30T04:28:21Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1701",
+      "item_hash": "ee884756b3094477f9518d128014f4ffbb728256eb2c4fd9990f1735bb733b74",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1701",
+      "published_at": "2026-07-28T22:00:00Z",
+      "raw_published": "Tue, 28 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 29 Jul 2026 The European Commission has today endorsed Malta's Social Climate Plan – the fourth national plan adopted under the Social Climate Fund using revenues from carbon pricing to ensure a fair and inclusive clean transition. Malta's plan will mobilise €60.6 million until 2032, including €45.4 million from the European Union.",
+      "title": "Commission endorses Malta's €60 million Social Climate Plan to support vulnerable households and small companies in the clean transition"
     },
     "f0a05acf9393a51b1b06e24ee924f9f114adf6967795b65385af0e6495ac61dd": {
       "card_id": null,
