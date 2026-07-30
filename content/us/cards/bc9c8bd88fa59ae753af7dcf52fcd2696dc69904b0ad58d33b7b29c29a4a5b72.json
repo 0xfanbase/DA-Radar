@@ -7,15 +7,16 @@
   "pillar": ["funds_etfs"],
   "type": "consultation",
   "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the VanEck Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares",
-  "summary": "On 13 July 2022, the Federal Register published an SEC notice that Cboe BZX Exchange had filed a proposed rule change (File No. SR-CboeBZX-2022-035, filed 24 June 2022) to list and trade shares of the VanEck Bitcoin Trust under BZX Rule 14.11(e)(4), the exchange's Commodity-Based Trust Shares listing standard. The trust's sponsor is VanEck Digital Assets, LLC; the filing states the trust would hold bitcoin directly in cold storage, create and redeem shares only in-kind, and track the MVIS CryptoCompare Bitcoin Benchmark Rate less expenses. Publication of the notice opened a public comment period under Exchange Act Section 19(b)(1), the first procedural step before the Commission could approve, disapprove, or open formal proceedings on the proposed listing; the notice itself takes no position on, and does not resolve, how the SEC will ultimately act on the proposal.",
-  "why_it_matters": "This is the procedural first step the SEC required before it could approve, disapprove, or open formal proceedings on a proposed crypto exchange-traded product listing: publishing the exchange's proposal and inviting public comment. It does not itself approve or disapprove anything, and this notice does not address the proposal's eventual outcome.",
+  "summary": "On 13 July 2022, the Federal Register published an SEC notice that Cboe BZX Exchange had filed a proposed rule change (File No. SR-CboeBZX-2022-035, filed 24 June 2022) to list and trade shares of the VanEck Bitcoin Trust under BZX Rule 14.11(e)(4), the exchange's Commodity-Based Trust Shares listing standard. The trust's sponsor is VanEck Digital Assets, LLC; the filing states the trust would hold bitcoin directly in cold storage, create and redeem shares only in-kind, and track the MVIS CryptoCompare Bitcoin Benchmark Rate less expenses. Publication of the notice opened a public comment period under Exchange Act Section 19(b)(1); the notice is limited to describing the proposal and soliciting public comment, and does not state or resolve how the SEC will act on it.",
+  "why_it_matters": "This notice is the SEC's publication of a proposed rule change for public comment under Exchange Act Section 19(b)(1) — the step by which a proposed crypto exchange-traded product listing, such as this one, is opened to public input. It does not itself approve or disapprove anything, and does not address the proposal's eventual outcome.",
   "citations": [
     {
       "url": "https://www.govinfo.gov/content/pkg/FR-2022-07-13/html/2022-14884.htm",
       "quote": "The Commission is publishing this notice to solicit comments on the proposed rule change"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-30T01:45:00Z",
-  "model": "Claude (Anthropic)"
+  "model": "Claude (Anthropic)",
+  "correction_note": "Verifier pass (2026-07-30): re-fetched the cited Federal Register notice and confirmed the title, publication date, file number (SR-CboeBZX-2022-035), filing date, filer, trust sponsor (VanEck Digital Assets, LLC), cold-storage custody, in-kind-only creation/redemption, benchmark, Section 19(b)(1) basis, and the cited quote, all verbatim-accurate and not cherry-picked. Softened summary/why_it_matters language that had characterized this notice as the step 'before the Commission could approve, disapprove, or open formal proceedings' -- that specific procedural enumeration could not be confirmed within the portion of the cited document retrievable on re-fetch (repeated fetches truncated mid-document, before the 'Solicitation of Comments' section), so it was replaced with language limited to what the fetched source text directly supports: that the notice solicits public comment and does not itself state or resolve the SEC's eventual decision."
 }

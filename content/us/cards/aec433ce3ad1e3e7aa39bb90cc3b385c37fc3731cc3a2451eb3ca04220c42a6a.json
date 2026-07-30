@@ -7,15 +7,15 @@
   "pillar": ["stablecoins", "aml_cft_enforcement"],
   "type": "consultation",
   "title": "Treasury Proposes Rule to Implement the GENIUS Act’s Requirements to Counter Illicit Finance",
-  "summary": "On 8 April 2026, the U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) announced that it and the Office of Foreign Assets Control (OFAC) had jointly issued a proposed rule implementing anti-money-laundering and sanctions-compliance requirements of the Guiding and Establishing National Innovation for U.S. Stablecoins Act (GENIUS Act). The proposal would treat permitted payment stablecoin issuers (PPSIs) as financial institutions subject to Bank Secrecy Act obligations administered by FinCEN, and would separately require PPSIs to adopt and maintain an effective sanctions compliance program administered by OFAC. FinCEN's release frames the proposed obligations as tailored to mitigate illicit-finance risk while minimizing unnecessary compliance burden and encouraging continued innovation in payment stablecoins.",
-  "why_it_matters": "This is Treasury's own announcement of a proposed rule requiring GENIUS Act-licensed stablecoin issuers to run anti-money-laundering and sanctions-compliance programs like other financial institutions, part of the rulemaking the Act's stablecoin-issuer framework needs before it can operate. The rule has not been finalized and creates no binding obligation yet.",
+  "summary": "On 8 April 2026, the U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) announced that it and the Office of Foreign Assets Control (OFAC) had jointly issued a proposed rule implementing anti-money-laundering and sanctions-compliance requirements of the Guiding and Establishing National Innovation for U.S. Stablecoins Act (GENIUS Act). The proposal would subject permitted payment stablecoin issuers (PPSIs) to Bank Secrecy Act requirements applicable to financial institutions, and would separately require PPSIs to adopt and maintain an effective sanctions compliance program. FinCEN's release frames the proposed obligations as tailored to mitigate illicit-finance risk while minimizing unnecessary compliance burden and encouraging continued innovation in payment stablecoins.",
+  "why_it_matters": "This is Treasury's own announcement of a proposed rule requiring the GENIUS Act's permitted payment stablecoin issuers (PPSIs) to run anti-money-laundering and sanctions-compliance programs like other financial institutions, part of the rulemaking the Act's stablecoin-issuer framework needs before it can operate. The rule has not been finalized and creates no binding obligation yet.",
   "citations": [
     {
       "url": "https://www.fincen.gov/news/news-releases/treasury-proposes-rule-implement-genius-acts-requirements-counter-illicit",
       "quote": "would require PPSIs to adopt and maintain an effective sanctions compliance program"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-30T01:10:00Z",
   "model": "Claude (Anthropic)"
 }
