@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T04:54:00Z",
+  "generated_at": "2026-07-31T23:58:25Z",
   "items": {
     "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
       "card_id": null,
@@ -1682,7 +1682,7 @@
       "title": "ESMA launches data collection under the first phase of ESAP"
     },
     "ba473519053e880027cd841c8d4922087cc73069dba556e5179cb75aaa6951d7": {
-      "card_id": null,
+      "card_id": "ba473519053e880027cd841c8d4922087cc73069dba556e5179cb75aaa6951d7",
       "content_hash": "fc22f03c9dfad599126c84b2577536d58aab12a3997f51f41b7681339c254934",
       "feed_id": "ecb_press",
       "first_seen": "2026-07-31T04:54:00Z",
@@ -1693,7 +1693,7 @@
       "raw_published": "Thu, 30 Jul 2026 10:00:00 +0200",
       "relevant": true,
       "source_id": "ecb",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Digital euro app to incorporate highest accessibility standards"
     },

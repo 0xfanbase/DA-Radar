@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "ba473519053e880027cd841c8d4922087cc73069dba556e5179cb75aaa6951d7",
+  "jurisdiction_id": "eu",
+  "published_date": "2026-07-30",
+  "regulator": "European Central Bank (ECB)",
+  "pillar": [
+    "banking_money"
+  ],
+  "type": "guidance",
+  "title": "Digital euro app to incorporate highest accessibility standards",
+  "summary": "On 30 July 2026 the European Central Bank set out the accessibility features it plans for the digital euro app, which is still under development. The ECB says the design goes beyond the EU's European Accessibility Act and the related EN 301 549 standard, applying the highest level of the Web Content Accessibility Guidelines as adapted for mobile payment apps, covering perception, operability and cognitive accessibility. Planned features include enhanced visual design, full keyboard navigation, screen reader support, time-out warnings, simplified language, error prevention and reduced motion settings. The app will be tested during the digital euro pilot due to launch in 2027, with usability and accessibility testing involving the ONCE Foundation for Cooperation and Social Inclusion of People with Disabilities and staff from the ECB and 19 national central banks.",
+  "why_it_matters": "The digital euro would be the European Central Bank's own digital cash for everyone in the euro area, but the law creating it has not yet been passed. This announcement shows the ECB already committing to specific accessibility design standards for the planned app -- concrete evidence that preparation is continuing well ahead of any final legislative outcome or launch decision.",
+  "citations": [
+    {
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260730~3b3bfbb565.en.html",
+      "quote": "go beyond the requirements of the European Accessibility Act"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-31T06:00:00Z",
+  "model": "Claude (Anthropic)"
+}

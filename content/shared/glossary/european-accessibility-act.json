@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "id": "european-accessibility-act",
+  "term": "European Accessibility Act",
+  "jurisdictions": [
+    "eu"
+  ],
+  "plain_definition": "An EU law (Directive (EU) 2019/882, adopted 17 April 2019) that sets common accessibility requirements for a range of products and services -- including banking services, e-commerce platforms and self-service terminals -- so people with disabilities can use them on equal terms across the EU's internal market. It is referenced here because the European Central Bank has said the planned digital euro app's design will go beyond this Directive's requirements and the related EN 301 549 technical standard.",
+  "formal_definition": "Directive (EU) 2019/882 of the European Parliament and of the Council of 17 April 2019 on the accessibility requirements for products and services (Text with EEA relevance).",
+  "related_terms": [
+    "digital-euro"
+  ],
+  "first_used_card_id": "ba473519053e880027cd841c8d4922087cc73069dba556e5179cb75aaa6951d7",
+  "generated_at": "2026-07-31T06:00:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}
