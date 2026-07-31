@@ -1,16 +1,6 @@
 {
-  "generated_at": "2026-07-30T00:25:45Z",
+  "generated_at": "2026-07-31T00:02:25Z",
   "items": [
-    {
-      "feed_id": "hmt_activity",
-      "item_hash": "0f4c88c4edd97ef6c0bc158f482be945ec20d3eb2754e21d2a437436554257b5",
-      "link": "https://www.gov.uk/government/publications/recommendations-of-the-transatlantic-taskforce-for-markets-of-the-future",
-      "published_at": "2026-07-14T15:20:14Z",
-      "source_id": "hmt",
-      "status": "queued",
-      "summary": "Recommendations of the Transatlantic Taskforce for Markets of the Future to advance UK-US financial services collaboration on digital assets and capital markets",
-      "title": "Policy paper: Recommendations of the Transatlantic Taskforce for Markets of the Future"
-    },
     {
       "feed_id": "hmt_activity",
       "item_hash": "3d85ae44714ca581dd4c1f90b8f7f3fc6abbe3e91977c726803c0c2deb2eab0d",

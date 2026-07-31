@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T04:28:17Z",
+  "generated_at": "2026-07-31T00:02:25Z",
   "items": {
     "02028a9677575e76189a49022768f45cc07c84ca74ac72879172cd9671891801": {
       "card_id": null,
@@ -178,7 +178,7 @@
       "title": "Corporate report: Pool Reinsurance Limited Annual Report and Accounts 2025 to 2026"
     },
     "0f4c88c4edd97ef6c0bc158f482be945ec20d3eb2754e21d2a437436554257b5": {
-      "card_id": null,
+      "card_id": "0f4c88c4edd97ef6c0bc158f482be945ec20d3eb2754e21d2a437436554257b5",
       "content_hash": "b86d9a8cbf4ffc3c20cf869d7dd301a357f0f1ff19ec04fe74b533b46a80a75e",
       "feed_id": "hmt_activity",
       "first_seen": "2026-07-15T04:23:00Z",
@@ -189,7 +189,7 @@
       "raw_published": "2026-07-14T15:20:14Z",
       "relevant": true,
       "source_id": "hmt",
-      "status": "queued",
+      "status": "drafted",
       "summary": "Recommendations of the Transatlantic Taskforce for Markets of the Future to advance UK-US financial services collaboration on digital assets and capital markets",
       "title": "Policy paper: Recommendations of the Transatlantic Taskforce for Markets of the Future"
     },

@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "ttmf",
+  "term": "Transatlantic Taskforce for Markets of the Future (TTMF)",
+  "jurisdictions": ["uk", "us"],
+  "plain_definition": "A joint UK-US body that HM Treasury and the US Treasury set up to develop recommendations for deepening financial-services cooperation between the two countries, covering both digital assets (including tokenisation and stablecoins) and wider capital markets. It reported its recommendations back to both finance ministries via the UK-US Financial Regulatory Working Group (FRWG).",
+  "formal_definition": "A bilateral taskforce jointly announced by the UK Chancellor of the Exchequer, Rachel Reeves, and the US Secretary of the Treasury, Scott Bessent, in September 2025. HM Treasury published the Taskforce's recommendations -- five on digital assets, five on capital markets -- plus a companion UK-US joint statement on stablecoins, on 14 July 2026; the recommendations were reported to both finance ministries via the UK-US Financial Regulatory Working Group (FRWG).",
+  "related_terms": ["stablecoin", "tokenisation", "hm-treasury", "fca", "boe", "sec", "cftc"],
+  "first_used_card_id": "0f4c88c4edd97ef6c0bc158f482be945ec20d3eb2754e21d2a437436554257b5",
+  "generated_at": "2026-07-31T09:00:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}
