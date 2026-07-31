@@ -179,9 +179,18 @@
       "regulator": "FSA",
       "title": "国際関係,FATFによる「DeFiに係る規制上の課題に関する報告書」について公表しました。",
       "type": "news"
+    },
+    {
+      "item_hash": "e90753e503c9e7ac43670e6de4ecb91047f4ec1a2247768733922ee2d98bcebc",
+      "link": "https://jvcea.or.jp/information/statistics-reports/20260731-001/",
+      "pillar": [],
+      "published_at": "2026-07-30T23:08:43Z",
+      "regulator": "JVCEA",
+      "title": "移転制限が付された暗号資産の情報提供及び公表に関する規則第5条第3項に基づく公表について更新しました。",
+      "type": "news"
     }
   ],
-  "generated_at": "2026-07-30T04:28:27Z",
+  "generated_at": "2026-07-31T04:54:02Z",
   "jurisdiction_id": "jp",
   "schema_version": 1
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T04:28:27Z",
+  "generated_at": "2026-07-31T04:54:02Z",
   "items": [
     {
       "feed_id": "jvcea_news",
@@ -130,6 +130,16 @@
       "status": "queued",
       "summary": "",
       "title": "国際関係,FATFによる「DeFiに係る規制上の課題に関する報告書」について公表しました。"
+    },
+    {
+      "feed_id": "jvcea_news",
+      "item_hash": "e90753e503c9e7ac43670e6de4ecb91047f4ec1a2247768733922ee2d98bcebc",
+      "link": "https://jvcea.or.jp/information/statistics-reports/20260731-001/",
+      "published_at": "2026-07-30T23:08:43Z",
+      "source_id": "jvcea",
+      "status": "queued",
+      "summary": "<p>移転制限が付された暗号資産の情報提供及び公表に関する規則第5条第3項に基づく公表について更新しました。 詳細につきましては、下記ページよりご確認ください。</p> <p>The post <a href=\"https://jvcea.or.jp/information/statistics-reports/20260731-001/\">移転制限が付された暗号資産の情報提供及び公表に関する規則第5条第3項に基づく公表について更新しました。</a> first appeared on <a href=\"https://jvcea.or.jp\">一般社団法人日本暗号資産等取引業協会（JVCEA）</a>.</p>",
+      "title": "移転制限が付された暗号資産の情報提供及び公表に関する規則第5条第3項に基づく公表について更新しました。"
     }
   ],
   "jurisdiction_id": "jp",

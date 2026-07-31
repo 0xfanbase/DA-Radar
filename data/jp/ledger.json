@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T04:28:27Z",
+  "generated_at": "2026-07-31T04:54:02Z",
   "items": {
     "02d83335c3f185a01f78ac8bf5f64fad166ccc68cc60456b0c37127aece0ca25": {
       "card_id": null,
@@ -112,6 +112,22 @@
       "status": "queued",
       "summary": "",
       "title": "Press Conferences,Press Conference by KATAYAMA Satsuki, Minister of Finance and Minister of State for Financial Services (June 24, 2026)"
+    },
+    "129c09c96079993eac2ff772f730f56d0b0505cb3bed483a31262a01c1e9b0b9": {
+      "card_id": null,
+      "content_hash": "e9ec58a29237f76e7521a138c2139101ef62b7f7bc490a51706462491444d906",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-31T04:54:02Z",
+      "guid": null,
+      "item_hash": "129c09c96079993eac2ff772f730f56d0b0505cb3bed483a31262a01c1e9b0b9",
+      "link": "https://www.fsa.go.jp/news/r8/sonota/20260730-3/20260730-3.html",
+      "published_at": "2026-07-30T18:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 18:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "「主要行等向けの総合的な監督指針」等の一部改正（案）（仕組預金関係）について公表しました。"
     },
     "13d00dbe79c718bf1728bd740f4bd485f4d01bfcdbb86d9a7b2a7f319fdd4cd2": {
       "card_id": null,
@@ -401,6 +417,22 @@
       "summary": "",
       "title": "Publication,FSA Weekly Review No.695 July 14, 2026"
     },
+    "333c030a0568fab90e46e6dc0a7653be02e0b58c8553ba59f142b72974e6def4": {
+      "card_id": null,
+      "content_hash": "ed9bedcdff667c5b2f12a18fa35e128e0aa87e9c2a228cc93ba988b7c41204d4",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-31T04:54:02Z",
+      "guid": null,
+      "item_hash": "333c030a0568fab90e46e6dc0a7653be02e0b58c8553ba59f142b72974e6def4",
+      "link": "https://www.fsa.go.jp/ordinary/earthquake202607/press.html",
+      "published_at": "2026-07-31T11:00:00Z",
+      "raw_published": "Fri, 31 Jul 2026 11:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "その他,令和８年熊本地震関連情報に関する特設ページを更新しました。"
+    },
     "3672531503b44bdf07ca559cddc9837b6f4cb2f3d194f0b2858a003a090f6f05": {
       "card_id": null,
       "content_hash": "18978ce2252c4342f9625de00e883fe20dd36f4ddf99b05ad837a38401e8ed55",
@@ -416,6 +448,22 @@
       "status": "queued",
       "summary": "",
       "title": "「インターネット取引サービスへの不正アクセス・不正取引にご注意ください」のページを更新しました。"
+    },
+    "382026589c3dd0fe87fdf2ad19c3352a4fb8fdb711ceabf92cef743115251340": {
+      "card_id": null,
+      "content_hash": "183ef3ca2b671e3d241c9514d1956372935b4b077a501c8b6b9ca926da4a3094",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-31T04:54:02Z",
+      "guid": null,
+      "item_hash": "382026589c3dd0fe87fdf2ad19c3352a4fb8fdb711ceabf92cef743115251340",
+      "link": "https://www.fsa.go.jp/news/r8/sonota/20260731/20260731.html",
+      "published_at": "2026-07-31T12:00:00Z",
+      "raw_published": "Fri, 31 Jul 2026 12:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "令和８年熊本地震に関連する有価証券報告書等の提出期限について公表しました。"
     },
     "39d77f8678c58308b6186142a8ab30d0dcf133e7efcb42e4ea442e8d19507e67": {
       "card_id": null,
@@ -1009,6 +1057,22 @@
       "summary": "",
       "title": "「金融分野における個人情報保護に関するガイドライン」の一部改正（案）に対する意見募集の結果等について公表しました。"
     },
+    "9651db05255cd598c7585a46d6207171999d070598b92ff6cf6f4398ef4e06b3": {
+      "card_id": null,
+      "content_hash": "429929aa0555ec1a91814c1e37c8e8f3cf5da940fbcd4bd4df4df817dce833fa",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-31T04:54:02Z",
+      "guid": null,
+      "item_hash": "9651db05255cd598c7585a46d6207171999d070598b92ff6cf6f4398ef4e06b3",
+      "link": "https://www.fsa.go.jp/news/r8/ginkou/20260731-2/20260731-2.html",
+      "published_at": "2026-07-31T11:00:00Z",
+      "raw_published": "Fri, 31 Jul 2026 11:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "令和８年熊本地震の影響を受けた事業者への資金繰り支援の徹底等について公表しました。"
+    },
     "968a98e7e9672d582c408cdbc2e367e2c3776f4fe5d70c3f91a240d7fb126ce2": {
       "card_id": null,
       "content_hash": "232eef1f8a38f90fa240f404c0fd2aa52dbeef30f8c3d8e3150efb449e0e22bd",
@@ -1409,6 +1473,22 @@
       "summary": "",
       "title": "「連結財務諸表の用語、様式及び作成方法に関する規則に規定する金融庁長官が定める企業会計の基準を指定する件」に対するパブリックコメントの実施について公表しました。"
     },
+    "d6a772a0149af02150567e9641a15baf08af5c76610cf1a1e586ce842b6db370": {
+      "card_id": null,
+      "content_hash": "fa53de0255c0c53bd8ac3fcae693ddfc4ea2b8a23a0af5d13cf0eda05b4429e3",
+      "feed_id": "fsa_news_ja",
+      "first_seen": "2026-07-31T04:54:02Z",
+      "guid": null,
+      "item_hash": "d6a772a0149af02150567e9641a15baf08af5c76610cf1a1e586ce842b6db370",
+      "link": "https://www.fsa.go.jp/news/r8/sonota/20260730-2/20260730-2.html",
+      "published_at": "2026-07-30T18:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 18:00:00 JST",
+      "relevant": false,
+      "source_id": "fsa",
+      "status": "queued",
+      "summary": "",
+      "title": "「主要行等向けの総合的な監督指針」等の一部改正（案）（銀行代理業関係等）について公表しました。"
+    },
     "db6394e2a3751251a6e2b9208aa3dd87b055a25da21cc74a5346e465923937cc": {
       "card_id": null,
       "content_hash": "996746f2b1e82955ac8459a943a6e7a7654ce54bb6288f9575c8189fc16a786e",
@@ -1456,6 +1536,22 @@
       "status": "queued",
       "summary": "",
       "title": "金融庁広報誌アクセスＦＳＡ第275号（2026年７月号）を発行しました。"
+    },
+    "e90753e503c9e7ac43670e6de4ecb91047f4ec1a2247768733922ee2d98bcebc": {
+      "card_id": null,
+      "content_hash": "2703b800fc5965faf0d78b31d7fa0abaf74547ae677586469d60380e737ae688",
+      "feed_id": "jvcea_news",
+      "first_seen": "2026-07-31T04:54:02Z",
+      "guid": "https://jvcea.or.jp/?p=12809",
+      "item_hash": "e90753e503c9e7ac43670e6de4ecb91047f4ec1a2247768733922ee2d98bcebc",
+      "link": "https://jvcea.or.jp/information/statistics-reports/20260731-001/",
+      "published_at": "2026-07-30T23:08:43Z",
+      "raw_published": "Thu, 30 Jul 2026 23:08:43 +0000",
+      "relevant": true,
+      "source_id": "jvcea",
+      "status": "queued",
+      "summary": "<p>移転制限が付された暗号資産の情報提供及び公表に関する規則第5条第3項に基づく公表について更新しました。 詳細につきましては、下記ページよりご確認ください。</p> <p>The post <a href=\"https://jvcea.or.jp/information/statistics-reports/20260731-001/\">移転制限が付された暗号資産の情報提供及び公表に関する規則第5条第3項に基づく公表について更新しました。</a> first appeared on <a href=\"https://jvcea.or.jp\">一般社団法人日本暗号資産等取引業協会（JVCEA）</a>.</p>",
+      "title": "移転制限が付された暗号資産の情報提供及び公表に関する規則第5条第3項に基づく公表について更新しました。"
     },
     "ebc9ed38f2774c3f9d0d6533f876847ac7ade6cb7eaa8f3023e1ebc895d9288f": {
       "card_id": null,
