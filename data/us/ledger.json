@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T23:41:40Z",
+  "generated_at": "2026-07-31T04:54:02Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -657,6 +657,22 @@
       "summary": "The Securities and Exchange Commission’s&nbsp;Office of the Advocate for Small Business Capital Formation&nbsp;and the&nbsp;Division of Corporation Finance&nbsp;will co-host a livestreamed discussion on Monday, July 13, 2026, at 2 p.m.&nbsp;to re-examine…",
       "title": "SEC to Host Virtual Roundtable on Modernizing IPOs and Expanding Access to Public Markets"
     },
+    "421a36fa6c4e74fa7dc75a9e32871e9a598ca857dc8855fa3b219c68791b19fb": {
+      "card_id": null,
+      "content_hash": "a8835be3f7680a3d888ef2d74f7d1fe0e93753b3a3ddeb4446b77a47accf90e2",
+      "feed_id": "sec_press_releases",
+      "first_seen": "2026-07-31T04:54:02Z",
+      "guid": "8a776414-36bd-4800-a82c-b525aa231fa4",
+      "item_hash": "421a36fa6c4e74fa7dc75a9e32871e9a598ca857dc8855fa3b219c68791b19fb",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-71-sec-announces-continuation-small-business-advisory-committee-meeting",
+      "published_at": "2026-07-30T13:53:38Z",
+      "raw_published": "Thu, 30 Jul 2026 09:53:38 -0400",
+      "relevant": false,
+      "source_id": "sec",
+      "status": "queued",
+      "summary": "The Securities and Exchange Commission announced that the&nbsp;Small Business Capital Formation Advisory Committee&nbsp;meeting held on July 21, 2026, will reconvene August&nbsp;6, 2026, at 1 p.m. ET, virtually, on SEC.gov.&nbsp;The committee will…",
+      "title": "SEC Announces Continuation of Small Business Advisory Committee Meeting"
+    },
     "453f94de1c1ba3d253511167c759da6193f841c46baed8a215137b406001b6e1": {
       "card_id": null,
       "content_hash": "1b6cf0989804eee27a4991d7e6549ae0492299abceb00d9b5fad01c661cd95be",
@@ -1073,6 +1089,22 @@
       "summary": "",
       "title": "CFTC, SEC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions"
     },
+    "7b2a2e144eae9a9112bd72a32d629088d3244ad6bef4e395663cdc8ee71eec51": {
+      "card_id": null,
+      "content_hash": "574253d748ccd3496b2e7fc39cd3ba41646b58fdeb31e3db3b4b5eebbd82c017",
+      "feed_id": "occ_news",
+      "first_seen": "2026-07-31T04:54:02Z",
+      "guid": null,
+      "item_hash": "7b2a2e144eae9a9112bd72a32d629088d3244ad6bef4e395663cdc8ee71eec51",
+      "link": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-62.html",
+      "published_at": "2026-07-30T16:00:00Z",
+      "raw_published": "30 Jul 2026 12:00:00 -0400",
+      "relevant": false,
+      "source_id": "occ",
+      "status": "queued",
+      "summary": "The Office of the Comptroller of the Currency today issued a revised compliance guide for the community bank leverage ratio (CBLR) framework as part of its ongoing work to provide regulatory relief for community banks.",
+      "title": "OCC Continues Community Bank Comeback with Revised CBLR Framework"
+    },
     "7b37fd5ef17b66dd35e5e07fb39586825eb9d1697b7998cc802ef79670c9cb57": {
       "card_id": null,
       "content_hash": "debab5f485fe535fe463352fa0cb2425d159a0c8227af7e93945d3a898e35208",
@@ -1424,6 +1456,22 @@
       "status": "published",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing of a Proposed Rule Change To List and Trade Shares of the Wise Origin Bitcoin Trust Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
+    },
+    "a670273e357cedcf2dabf50446563f588350223d43eff439f827c9d2f81ee5bd": {
+      "card_id": null,
+      "content_hash": "c523e162d43bed4be2b0a505577bb2efae3a9c4087b837f52caea9723f261506",
+      "feed_id": "cftc_press_releases",
+      "first_seen": "2026-07-31T04:54:02Z",
+      "guid": "https://www.cftc.gov/PressRoom/PressReleases/9274-26",
+      "item_hash": "a670273e357cedcf2dabf50446563f588350223d43eff439f827c9d2f81ee5bd",
+      "link": "https://www.cftc.gov/PressRoom/PressReleases/9274-26",
+      "published_at": "2026-07-30T16:29:23Z",
+      "raw_published": "Thu, 30 Jul 2026 16:29:23 +0000",
+      "relevant": false,
+      "source_id": "cftc",
+      "status": "queued",
+      "summary": "",
+      "title": "CFTC Seeks Public Comment on Notice of Proposed Rulemaking Concerning Affiliations Among Certain CFTC-Regulated Entities"
     },
     "a70f1b762a20ecebe091d005cc6c06c2ff0153b595154e76d5579fe4ed9b6084": {
       "card_id": null,
@@ -1840,6 +1888,22 @@
       "status": "queued",
       "summary": "The Securities and Exchange Commission has appointed Kathleen M. Hutchinson as Director of the agency’s Office of International Affairs (OIA). OIA advises the Commission on international policy matters, coordinates with foreign authorities across the…",
       "title": "SEC Appoints Kathleen Hutchinson as Director of Office of International Affairs"
+    },
+    "cd1231208d7d2593e41ecb30b331d78f0ae7c87a1a198fbbc140085e247de2b9": {
+      "card_id": null,
+      "content_hash": "e6ba12bcb17f6c90ceeb8ce89352c89f2b3e31e4f00bea47d63c7b0b11d210c8",
+      "feed_id": "occ_news",
+      "first_seen": "2026-07-31T04:54:02Z",
+      "guid": null,
+      "item_hash": "cd1231208d7d2593e41ecb30b331d78f0ae7c87a1a198fbbc140085e247de2b9",
+      "link": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-63.html",
+      "published_at": "2026-07-30T19:00:00Z",
+      "raw_published": "30 Jul 2026 15:00:00 -0400",
+      "relevant": false,
+      "source_id": "occ",
+      "status": "queued",
+      "summary": "The Office of the Comptroller of the Currency (OCC) today released a list of Community Reinvestment Act (CRA) performance evaluations that became public during the period of July 1, 2026, through July 30, 2026.",
+      "title": "OCC Releases CRA Performance Evaluations for 14 National Banks and Federal Savings Associations"
     },
     "ce6de5d5b711120159e603deba897cc1f20c4847d2b3df545678481d8a4c7d2d": {
       "card_id": null,
