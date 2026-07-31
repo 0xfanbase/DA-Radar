@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "587a60fad63855e3398bb8b2183918f5c2b32550932ad780254715aae885ff4b",
+  "jurisdiction_id": "hk",
+  "published_date": "2025-08-14",
+  "regulator": "HKMA and SFC",
+  "pillar": ["stablecoins"],
+  "type": "guidance",
+  "title": "Joint Statement by the HKMA and the SFC on Stablecoin-related Market Movements",
+  "summary": "On 14 August 2025, the HKMA and the SFC issued a joint statement titled 'Joint Statement by the HKMA and the SFC on Stablecoin-related Market Movements,' according to the press release's own title. Hong Kong's Stablecoins Ordinance, which requires a licence to issue a fiat-referenced stablecoin in or pegged to the Hong Kong dollar, had come into force less than two weeks earlier, on 1 August 2025. HKMA's press-release page returned no retrievable content on every attempt made during this review, so the specific market movements addressed, and any warning, clarification, or action the two regulators state, are not confirmed against primary source text; this summary reflects only the statement's own published title.",
+  "why_it_matters": "A joint statement from both of Hong Kong's digital-asset regulators signals they saw something in stablecoin markets significant enough to address together, shortly after the Stablecoins Ordinance took effect. For a newcomer, it is a reminder that HKMA and the SFC monitor market conditions on an ongoing basis, not only through formal licensing and rulemaking.",
+  "citations": [
+    {
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/08/20250814-8/",
+      "quote": "Joint Statement by the HKMA and the SFC on Stablecoin-related Market Movements"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-31T09:15:00Z",
+  "model": "Claude (Anthropic)"
+}

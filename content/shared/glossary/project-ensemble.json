@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "project-ensemble",
+  "term": "Project Ensemble",
+  "jurisdictions": ["hk"],
+  "plain_definition": "HKMA's ongoing initiative exploring tokenisation and settlement infrastructure for Hong Kong's financial markets, run in successive phases together with industry participants. It focuses on how tokenised forms of money, including tokenised deposits issued by banks, can settle transactions involving tokenised real-world assets such as bonds or investment funds.",
+  "formal_definition": "Not a statutory scheme in itself; Project Ensemble is HKMA's own name for a programme of technical pilots -- beginning with industry proof-of-concept work and since extended to phases handling real-value transactions -- exploring wholesale tokenisation and settlement use cases, distinct from HKMA's separate retail-facing e-HKD work.",
+  "related_terms": ["hkma", "tokenised-deposit"],
+  "first_used_card_id": "592df0331e40fd782a9cc6983be9e187e21e951ec1c95a02239dbf464a1e2ab8",
+  "generated_at": "2026-07-31T09:15:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

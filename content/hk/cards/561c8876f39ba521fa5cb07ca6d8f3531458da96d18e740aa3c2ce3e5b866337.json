@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "561c8876f39ba521fa5cb07ca6d8f3531458da96d18e740aa3c2ce3e5b866337",
+  "jurisdiction_id": "hk",
+  "published_date": "2025-12-19",
+  "regulator": "HKMA",
+  "pillar": ["banking_money"],
+  "type": "circular",
+  "title": "Cryptoassets Standard: Gazettal of Revised SPM Modules and Code of Practice",
+  "summary": "HKMA's circular 'Cryptoassets standard: gazettal of revised SPM modules and code of practice,' dated 19 December 2025, states in its own title that revised Supervisory Policy Manual (SPM) modules and a code of practice -- instruments HKMA uses to implement its ongoing Cryptoassets Standard for Authorized Institutions -- have been gazetted, Hong Kong's formal publication step for supervisory rulemaking. This follows earlier 2025 stages of the same rollout, including consultations on the underlying SPM modules and code of practice and a November 2025 circular on related banking returns. HKMA's document repository returned a server error (HTTP 503) on every attempt to retrieve the full circular during this review, so which specific modules were revised and any commencement date are not confirmed against primary source text; this summary reflects only the circular's own published title.",
+  "why_it_matters": "Gazettal is the formal publication step that gives HKMA's revised cryptoasset supervisory instruments legal standing, so this circular marks these Cryptoassets Standard modules moving from consultation to formal issuance. For a newcomer, it shows Hong Kong's banking regulator completing another stage of embedding cryptoasset-specific expectations into its standing supervisory framework for banks.",
+  "citations": [
+    {
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20251218-2-EN",
+      "quote": "gazettal of revised SPM modules and code of practice"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-31T09:15:00Z",
+  "model": "Claude (Anthropic)"
+}

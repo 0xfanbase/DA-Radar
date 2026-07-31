@@ -32,14 +32,19 @@
     {
       "label": "HKMA Insight: Chief Executive's article on the stablecoin licensing regime (10 Apr 2026)",
       "url": "https://www.hkma.gov.hk/eng/news-and-media/insight/2026/04/20260410/"
+    },
+    {
+      "label": "HKMA/SFC joint statement on stablecoin-related market movements (14 Aug 2025)",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/08/20250814-8/"
     }
   ],
   "open_items": [
     "Whether HKMA grants further licences beyond the initial two is unresolved; HKMA has described the eventual total number as likely to remain very limited.",
     "Neither licensee has stated a specific product launch date; both have indicated a general window of mid-to-second-half 2026.",
-    "How virtual asset trading platforms may offer these stablecoins for trading is governed by a separate SFC circular (see the Exchanges (VATP) pillar)."
+    "How virtual asset trading platforms may offer these stablecoins for trading is governed by a separate SFC circular (see the Exchanges (VATP) pillar).",
+    "A 14 August 2025 joint HKMA/SFC statement titled 'Joint Statement by the HKMA and the SFC on Stablecoin-related Market Movements' predates the regime's first licences (10 Apr 2026); HKMA's press-release page returned no retrievable content on every attempt made on 31 Jul 2026 (the same HKMA-wide access problem logged in the Banking & Money pillar's open_items across several recent updates), so the specific market movements it addresses remain unconfirmed against primary source text and should be checked directly once the site is reachable."
   ],
-  "generated_at": "2026-07-13T11:53:32Z",
+  "generated_at": "2026-07-31T09:15:00Z",
   "model": "Claude (Anthropic)",
   "status": "unverified"
 }

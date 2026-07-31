@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T04:54:05Z",
+  "generated_at": "2026-07-31T23:01:54Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -5442,7 +5442,7 @@
       "title": "Scam alert related to banks"
     },
     "558f3e9d61cd4c2d7c8a3e35a85de257355f1261155cfbd25d3c985828f24ef4": {
-      "card_id": null,
+      "card_id": "558f3e9d61cd4c2d7c8a3e35a85de257355f1261155cfbd25d3c985828f24ef4",
       "content_hash": "2ad5f12eecdd63073050b446e801866801924c7dfdb695e9ea06a60fa23d7488",
       "feed_id": "hkma_consultations",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -5453,12 +5453,12 @@
       "raw_published": "Fri, 13 Jun 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)28"
     },
     "561c8876f39ba521fa5cb07ca6d8f3531458da96d18e740aa3c2ce3e5b866337": {
-      "card_id": null,
+      "card_id": "561c8876f39ba521fa5cb07ca6d8f3531458da96d18e740aa3c2ce3e5b866337",
       "content_hash": "06dc93fca5bcf9684bcc389fb778dcaa5701d7068d57d6472f6d468b558c4574",
       "feed_id": "hkma_circulars",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -5469,7 +5469,7 @@
       "raw_published": "Fri, 19 Dec 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Cryptoassets standard: gazettal of revised SPM modules and code of practice"
     },
@@ -5586,7 +5586,7 @@
       "title": "Tender results of the re-opening of 10-year HKD HKSAR Institutional Government Bonds"
     },
     "587a60fad63855e3398bb8b2183918f5c2b32550932ad780254715aae885ff4b": {
-      "card_id": null,
+      "card_id": "587a60fad63855e3398bb8b2183918f5c2b32550932ad780254715aae885ff4b",
       "content_hash": "3b203b2119ef4cca01892eec76542c21a30f2c073cf0c51cfaa0eef3e44eeabb",
       "feed_id": "hkma_press_release",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -5597,7 +5597,7 @@
       "raw_published": "Thu, 14 Aug 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Joint Statement by the HKMA and the SFC on Stablecoin-related Market Movements"
     },
@@ -5666,7 +5666,7 @@
       "title": "Exchange Fund Position at end-June 2025"
     },
     "592df0331e40fd782a9cc6983be9e187e21e951ec1c95a02239dbf464a1e2ab8": {
-      "card_id": null,
+      "card_id": "592df0331e40fd782a9cc6983be9e187e21e951ec1c95a02239dbf464a1e2ab8",
       "content_hash": "9b157bbf7b1a87aaa7e96ffc698f0b3656f560f0a877c20697816889b634b287",
       "feed_id": "hkma_press_release",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -5677,7 +5677,7 @@
       "raw_published": "Thu, 13 Nov 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "HKMA announces the new phase of Project Ensemble to support real-value transactions in tokenised deposits and digital assets"
     },

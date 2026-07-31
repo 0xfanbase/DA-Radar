@@ -1,46 +1,6 @@
 {
-  "generated_at": "2026-07-30T23:02:55Z",
+  "generated_at": "2026-07-31T23:01:54Z",
   "items": [
-    {
-      "feed_id": "hkma_consultations",
-      "item_hash": "558f3e9d61cd4c2d7c8a3e35a85de257355f1261155cfbd25d3c985828f24ef4",
-      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-25-EN",
-      "published_at": "2025-06-12T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)28"
-    },
-    {
-      "feed_id": "hkma_circulars",
-      "item_hash": "561c8876f39ba521fa5cb07ca6d8f3531458da96d18e740aa3c2ce3e5b866337",
-      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20251218-2-EN",
-      "published_at": "2025-12-18T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Cryptoassets standard: gazettal of revised SPM modules and code of practice"
-    },
-    {
-      "feed_id": "hkma_press_release",
-      "item_hash": "587a60fad63855e3398bb8b2183918f5c2b32550932ad780254715aae885ff4b",
-      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/08/20250814-8/",
-      "published_at": "2025-08-13T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Joint Statement by the HKMA and the SFC on Stablecoin-related Market Movements"
-    },
-    {
-      "feed_id": "hkma_press_release",
-      "item_hash": "592df0331e40fd782a9cc6983be9e187e21e951ec1c95a02239dbf464a1e2ab8",
-      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/11/20251113-3/",
-      "published_at": "2025-11-12T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "HKMA announces the new phase of Project Ensemble to support real-value transactions in tokenised deposits and digital assets"
-    },
     {
       "feed_id": "hkma_press_release",
       "item_hash": "5b8be9cc1c0e00a3893e55c68f92fc93217e1b6ad8e6c95de77dae8609cf1b4b",
