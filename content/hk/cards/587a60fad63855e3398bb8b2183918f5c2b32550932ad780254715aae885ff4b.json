@@ -7,15 +7,15 @@
   "pillar": ["stablecoins"],
   "type": "guidance",
   "title": "Joint Statement by the HKMA and the SFC on Stablecoin-related Market Movements",
-  "summary": "On 14 August 2025, the HKMA and the SFC issued a joint statement titled 'Joint Statement by the HKMA and the SFC on Stablecoin-related Market Movements,' according to the press release's own title. Hong Kong's Stablecoins Ordinance, which requires a licence to issue a fiat-referenced stablecoin in or pegged to the Hong Kong dollar, had come into force less than two weeks earlier, on 1 August 2025. HKMA's press-release page returned no retrievable content on every attempt made during this review, so the specific market movements addressed, and any warning, clarification, or action the two regulators state, are not confirmed against primary source text; this summary reflects only the statement's own published title.",
-  "why_it_matters": "A joint statement from both of Hong Kong's digital-asset regulators signals they saw something in stablecoin markets significant enough to address together, shortly after the Stablecoins Ordinance took effect. For a newcomer, it is a reminder that HKMA and the SFC monitor market conditions on an ongoing basis, not only through formal licensing and rulemaking.",
+  "summary": "On 14 August 2025, the SFC and the HKMA issued a joint statement on stablecoin-related market movements. The regulators said they had noted \"abrupt market movements linked to the stablecoin concept\" following corporate announcements, news reports, social media posts, or speculation about plans to apply for a stablecoin issuer licence, engage in related activities, or explore the feasibility of such initiatives in Hong Kong; some of these claims also mentioned recent engagement with Hong Kong's financial regulators. The statement said the resulting volatility in share prices can lead to irrational investment decisions. The HKMA reiterated that it applies a robust and prudent approach with a reasonably high bar when considering stablecoin issuer licence applications, and that an indication of interest, an application, or its communication with an interested party is only part of the licensing process, with any licence's grant depending on the licensing criteria being met. The SFC and the HKMA urged the public to exercise caution and avoid investment decisions based on market hype, reminded market participants not to make misleading public statements, and said the SFC's market surveillance team would monitor trading activity and take action against manipulative or deceptive practices.",
+  "why_it_matters": "This joint statement is a market-conduct and investor-protection message rather than a licensing or rulemaking step, showing the two regulators actively watching how companies' share prices react to stablecoin-related news and speculation, not only processing formal applications. For a newcomer, the clearest takeaway is the regulators' own caution that an indication of interest, a licence application, or contact with the HKMA about stablecoins is not itself a sign of approval: the HKMA's chief executive said only a limited number of licences are expected to be granted initially, even though the HKMA has had preliminary contact with dozens of interested parties.",
   "citations": [
     {
-      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/08/20250814-8/",
-      "quote": "Joint Statement by the HKMA and the SFC on Stablecoin-related Market Movements"
+      "url": "https://www.sfc.hk/en/News-and-announcements/Policy-statements-and-announcements/Joint-statement-by-the-SFC-and-the-HKMA-on-stablecoin-related-market-movements",
+      "quote": "abrupt market movements linked to the stablecoin concept"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-31T09:15:00Z",
   "model": "Claude (Anthropic)"
 }

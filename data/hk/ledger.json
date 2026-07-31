@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T23:01:54Z",
+  "generated_at": "2026-07-31T23:16:19Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -5453,7 +5453,7 @@
       "raw_published": "Fri, 13 Jun 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Explanatory notes : MA(BS)28"
     },
@@ -5469,7 +5469,7 @@
       "raw_published": "Fri, 19 Dec 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Cryptoassets standard: gazettal of revised SPM modules and code of practice"
     },
@@ -5597,7 +5597,7 @@
       "raw_published": "Thu, 14 Aug 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Joint Statement by the HKMA and the SFC on Stablecoin-related Market Movements"
     },
@@ -5677,7 +5677,7 @@
       "raw_published": "Thu, 13 Nov 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "HKMA announces the new phase of Project Ensemble to support real-value transactions in tokenised deposits and digital assets"
     },
