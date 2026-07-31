@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T23:18:15Z",
+  "generated_at": "2026-07-31T04:54:05Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -5697,6 +5697,22 @@
       "summary": "",
       "title": "Tender results of 10-year HKD HKSAR Institutional Government Bonds"
     },
+    "59543fc4a448f4b6f9c568a26ea9a96b0c062036cc68418e056e0e1d2671c4e7": {
+      "card_id": null,
+      "content_hash": "185c1818d39b94856d21e3cc083e4bb81f6064a02b275de3018d1dd2bab95693",
+      "feed_id": "sfc_press_releases",
+      "first_seen": "2026-07-31T04:54:05Z",
+      "guid": "26PR119",
+      "item_hash": "59543fc4a448f4b6f9c568a26ea9a96b0c062036cc68418e056e0e1d2671c4e7",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR119",
+      "published_at": "2026-07-30T08:21:33Z",
+      "raw_published": "Thu, 30 Jul 2026 16:21:33 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "SFC issues restriction notice to broker to freeze assets of over $125 million linked to suspected IPO fraud"
+    },
     "5962657bcd2ceb4c0b6c3a1e554ad19b27de41e0ff0fe7024c8ba310866ee549": {
       "card_id": null,
       "content_hash": "053100254bda82048127b78a10f183417a01876c884db6e7cdd8c90a70176c54",
@@ -11344,6 +11360,22 @@
       "status": "queued",
       "summary": "",
       "title": "Company Re-domiciliation Regime"
+    },
+    "a963441332eedfd79d79fb4327d6e991875b8b9f3ca5f7e46177e14f2a7f7d62": {
+      "card_id": null,
+      "content_hash": "67809423d63615a40e994c3cfd9b643eacccabeeeb44181e84b369c53ea05782",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-07-31T04:54:05Z",
+      "guid": null,
+      "item_hash": "a963441332eedfd79d79fb4327d6e991875b8b9f3ca5f7e46177e14f2a7f7d62",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260730-5/",
+      "published_at": "2026-07-29T16:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "HKICL alerts public of fraudulent website"
     },
     "a972e645602a8287acf179d7ea764351bcc312ba37c67e0c6093fac40f3105d7": {
       "card_id": null,
