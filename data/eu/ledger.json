@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T04:28:21Z",
+  "generated_at": "2026-07-31T04:54:00Z",
   "items": {
     "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
       "card_id": null,
@@ -577,6 +577,22 @@
       "summary": "European Commission Press release Brussels, 22 Jul 2026 The European Commission has opened an in-depth investigation to assess, under the EU Merger Regulation, the proposed merger between Saipem and Subsea7 to become \"Saipem7\". The Commission is concerned that the proposed concentration may significantly impact effective competition in some offshore engineering and construction service markets.",
       "title": "Commission opens in-depth investigation into proposed merger between Saipem and Subsea7"
     },
+    "3c8ef86f458cf23ca59f0e8316e800fc9d2913594203318b1af30d9e2199788b": {
+      "card_id": null,
+      "content_hash": "4a8a8679153de0263ab3653946e2b10a47ee580a940ee08d1181c9a6b29d714c",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-31T04:54:00Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1708",
+      "item_hash": "3c8ef86f458cf23ca59f0e8316e800fc9d2913594203318b1af30d9e2199788b",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1708",
+      "published_at": "2026-07-29T22:00:00Z",
+      "raw_published": "Wed, 29 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 30 Jul 2026 The EU today launched a call for tenders to establish up to seven AI Gigafactories across Europe, as part of its latest major push to accelerate Europe's technological sovereignty and ambition of becoming the AI Continent.",
+      "title": "EU launches AI Gigafactories call to boost Europe's computing capacity and unlock more than €30 billion in investment"
+    },
     "3f89e214dbac85a518d70341e3d11c739b726596a055b50dfe807446a1698e99": {
       "card_id": null,
       "content_hash": "894386568ee722bf2a3c9a5fa2ab65ffa692c8d355f0809585cc171636b33d28",
@@ -801,6 +817,22 @@
       "summary": "​The Joint Board of Appeal of the European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) has issued a decision stating that an appeal brought by an individual against the European Banking Authority (EBA) is inadmissible.",
       "title": "​Joint Board of Appeal dismisses appeal against the EBA"
     },
+    "5a5dae3963f57de499a4200ce2d3b806196dcf690d35c34c0765ca9d8baca403": {
+      "card_id": null,
+      "content_hash": "684f2945af04747336f7be1175842f6c6a9ed18fa13deae7f5d36606214cca77",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-31T04:54:00Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1712",
+      "item_hash": "5a5dae3963f57de499a4200ce2d3b806196dcf690d35c34c0765ca9d8baca403",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1712",
+      "published_at": "2026-07-30T13:55:14Z",
+      "raw_published": "Thu, 30 Jul 2026 13:55:14 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Speech Dublin, 30 Jul 2026 Dear Minister Foley, High Commissioner El Haïry, Deputy Minister Grigaliené, Irish Presidency and Commission colleagues, Policy Makers and Practitioners, But ...",
+      "title": "Speech by Commissioner McGrath at the High-Level Conference on Listening to Children and Young People - Challenges in Challenging Settings"
+    },
     "5ced94e175730204580b9762aefbe1fd5294c938a010e8fd50fccbd06df0c693": {
       "card_id": null,
       "content_hash": "4cbf61ae1533b798a9e11b16bd1a95a283ad183663374f830901ae723dc3f8f9",
@@ -832,6 +864,22 @@
       "status": "queued",
       "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">Joint Board of Appeal dismisses appeal against the EBA</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-16T13:53:00+02:00\" title=\"Thursday, July 16, 2026 - 13:53\" class=\"datetime\">16 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">Board of Appeal</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>The Joint Board of Appeal of the European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) has issued a </span><a href=\"https://www.esma.europa.eu/sites/default/files/2026-07/BoA-D-2026-01_Decision_by_the_Board_of_Appeal_on_D_v_EBA.pdf\"><span>decision</span></a><span> stating that an appeal brought by an individual against the European Banking Authority (EBA) is inadmissible.</span></p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>The appeal concerned a response by the EBA to a complaint regarding the closure of a bank account by a credit institution and the handling of the matter by the Finnish National Competent Authority (FIN-FSA). The appellant had requested that the EBA investigate a possible breach of Union law by FIN-FSA.</span></p> <p class=\"text-align-justify\"><span>Following its assessment, the EBA decided against initiating an investigation. The appellant subsequently challenged that decision before the Board of Appeal.</span></p> <p class=\"text-align-justify\"><span>The Board of Appeal concluded that, under established EU case law, any decision to initiate an investigation is at the EBA’s discretion. The Board added that a decision not to open such an inves",
       "title": "Joint Board of Appeal dismisses appeal against the EBA"
+    },
+    "5f87a020580095a4123abb45de62472c04b1a089964364e72de4290e7b535178": {
+      "card_id": null,
+      "content_hash": "284e990cf216e4da30572f9800a88c1969674de35cc5dc036fac928cea79ac9e",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-31T04:54:00Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1705",
+      "item_hash": "5f87a020580095a4123abb45de62472c04b1a089964364e72de4290e7b535178",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1705",
+      "published_at": "2026-07-29T22:00:00Z",
+      "raw_published": "Wed, 29 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 30 Jul 2026 As of today, Japan is officially associated to Horizon Europe. Home to 123 million people, Japan is the most populous country associated to the programme, adding one of the world's most advanced research and innovation ecosystems to Europe's network of scientific cooperation.",
+      "title": "Japan officially joins Horizon Europe"
     },
     "5fbbd8b94506d4a760143947f5dce3e37e2b1af3190e3acf375db4f420089ec4": {
       "card_id": null,
@@ -1473,6 +1521,22 @@
       "summary": "European Commission Daily news Brussels, 28 Jul 2026 Commission adopts new guidance to improve companies' access to Europe's cutting-edge research and technology infrastructures The European Commission has adopted...",
       "title": "Daily News 28 / 07 / 2026"
     },
+    "a44f4d362e91f64154d291d8957d10428698a19a06633f79c596b7ca967bd84f": {
+      "card_id": null,
+      "content_hash": "5c9646cc7ca9a72357928555bb3cb875f4115ce8cb5f46226e0687c755a0fd64",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-31T04:54:00Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/fs_22_3862",
+      "item_hash": "a44f4d362e91f64154d291d8957d10428698a19a06633f79c596b7ca967bd84f",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/fs_22_3862",
+      "published_at": "2026-07-29T22:00:00Z",
+      "raw_published": "Wed, 29 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Factsheet Brussels, 30 Jul 2026 Factsheet - EU solidarity with Ukraine Factsheet - EU solidarity with Ukraine",
+      "title": "Factsheet - EU solidarity with Ukraine"
+    },
     "a53fa053047d1fdf3f1da86a984e6baa4a2a6fbb10a5ecf7f4703c8ea1ecc3b4": {
       "card_id": null,
       "content_hash": "9c00a73a874eb2f305de3ecfb5245f23e25960e18310820a432e8d67ff4dee16",
@@ -1617,6 +1681,22 @@
       "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">ESMA launches data collection under the first phase of ESAP</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-10T15:26:04+02:00\" title=\"Friday, July 10, 2026 - 15:26\" class=\"datetime\">10 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">Market data</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\">The European Securities and Markets Authority (ESMA), the EU regulator and supervisor, has launched the collection of information from Officially Appointed Mechanisms (OAMs) and National Competent Authorities (NCAs) - “collection bodies” - for the first phase of implementation of the <a href=\"https://www.esma.europa.eu/esmas-activities/data/european-single-access-point-esap\">European Single Access Point (ESAP)</a>.</p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>From today, OAMs and NCAs will start providing to ESAP the information and the metadata collected from entities. This marks the first milestone towards the go-live of the ESAP platform, which will become accessible to the public by July 2027 as required by the ESAP Regulation.&nbsp;</span></p> <p class=\"text-align-justify\"><span>ESAP will provide free, easy and centralised access to financial and sustainability information about entities and their products.&nbsp;</span></p> <h4 class=\"text-align-justify\"><span><strong>Next steps</strong></span></h4> <p class=\"text-align-justify\"><span>Over the next 12 months, ESAP will gather a meaningful set of EU-wide information ahead of the platform’s public opening.&nbsp;</span></p> <p",
       "title": "ESMA launches data collection under the first phase of ESAP"
     },
+    "ba473519053e880027cd841c8d4922087cc73069dba556e5179cb75aaa6951d7": {
+      "card_id": null,
+      "content_hash": "fc22f03c9dfad599126c84b2577536d58aab12a3997f51f41b7681339c254934",
+      "feed_id": "ecb_press",
+      "first_seen": "2026-07-31T04:54:00Z",
+      "guid": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260730~3b3bfbb565.en.html",
+      "item_hash": "ba473519053e880027cd841c8d4922087cc73069dba556e5179cb75aaa6951d7",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260730~3b3bfbb565.en.html",
+      "published_at": "2026-07-30T08:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 10:00:00 +0200",
+      "relevant": true,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "Digital euro app to incorporate highest accessibility standards"
+    },
     "bd4ae9b868670998eb746db887727fcc9af6e58880842bb6ead8552c14289dc7": {
       "card_id": null,
       "content_hash": "6ad34de538e777329344795af67aed67f6d0934a33252a7c9733166a01739338",
@@ -1696,6 +1776,38 @@
       "status": "queued",
       "summary": "",
       "title": "Isabel Schnabel: Interview with Die Zeit"
+    },
+    "c71aa9d5f36bb70ead73a7ba8b88d797bf4c25afb991a3d5c3e71b42ebeffb80": {
+      "card_id": null,
+      "content_hash": "eaa5efc10390a8a73155816631e5da4d3d6eb70d9b87d2f2be6f9db50ea2b79b",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-31T04:54:00Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1709",
+      "item_hash": "c71aa9d5f36bb70ead73a7ba8b88d797bf4c25afb991a3d5c3e71b42ebeffb80",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1709",
+      "published_at": "2026-07-30T08:24:13Z",
+      "raw_published": "Thu, 30 Jul 2026 08:24:13 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Daily news Brussels, 30 Jul 2026 Commission disburses another €3.47 billion to Ukraine for drones, missiles, air defence and fighter jets The European Commission has today disbursed €3.47 bill...",
+      "title": "Daily News 30 / 07 / 2026"
+    },
+    "c9c4ab7cad10a7b41d4617b4a4e9d6063c79283be9f0fad3d7555a953e502582": {
+      "card_id": null,
+      "content_hash": "b572dea6aa6e2812799550aa651aa3146cd03b0a4db2b502645a5a176fde60cc",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-07-31T04:54:00Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1710",
+      "item_hash": "c9c4ab7cad10a7b41d4617b4a4e9d6063c79283be9f0fad3d7555a953e502582",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1710",
+      "published_at": "2026-07-30T09:36:27Z",
+      "raw_published": "Thu, 30 Jul 2026 09:36:27 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 30 Jul 2026 The European Commission has today disbursed €3.47 billion to Ukraine, under the defence window of the €90 billion Ukraine Support Loan.",
+      "title": "Commission disburses another €3.47 billion to Ukraine for drones, missiles, air defence and fighter jets"
     },
     "cdfe9d2d1b9e9067cc5f83b77ba8112b118728d7780e5edd1893fcc36a7ee4ac": {
       "card_id": null,

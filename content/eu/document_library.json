@@ -81,9 +81,20 @@
       "regulator": "ECB",
       "title": "Piero Cipollone: The cooperative spirit at the heart of the digital euro",
       "type": "press_releases"
+    },
+    {
+      "item_hash": "ba473519053e880027cd841c8d4922087cc73069dba556e5179cb75aaa6951d7",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260730~3b3bfbb565.en.html",
+      "pillar": [
+        "banking_money"
+      ],
+      "published_at": "2026-07-30T08:00:00Z",
+      "regulator": "ECB",
+      "title": "Digital euro app to incorporate highest accessibility standards",
+      "type": "press_releases"
     }
   ],
-  "generated_at": "2026-07-22T04:42:34Z",
+  "generated_at": "2026-07-31T04:54:00Z",
   "jurisdiction_id": "eu",
   "schema_version": 1
 }
