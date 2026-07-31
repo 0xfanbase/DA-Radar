@@ -1,46 +1,6 @@
 {
-  "generated_at": "2026-07-30T23:30:17Z",
+  "generated_at": "2026-07-31T23:31:03Z",
   "items": [
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "c309a712a0986a12ede79a3cfcdf5a5625dbb48c54318b2dbdf0b7567030e4d0",
-      "link": "https://www.federalregister.gov/documents/2022/04/06/2022-07193/self-regulatory-organizations-cboe-bzx-exchange-inc-order-disapproving-a-proposed-rule-change-as",
-      "published_at": "2022-04-06T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "",
-      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change, as Modified by Amendment No. 1, To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
-    },
-    {
-      "feed_id": "frb_bcreg_press_releases",
-      "item_hash": "d27ef327018d57da56d71c5e97873e2d60edf0a8e35c9cd92c4920c0575d2d36",
-      "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260618a.htm",
-      "published_at": "2026-06-18T13:00:00Z",
-      "source_id": "federal_reserve",
-      "status": "queued",
-      "summary": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
-      "title": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program"
-    },
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "d391431ec6edcc6afe628106abccc0ebe3ce4f792f493a88712e00a800fb8bce",
-      "link": "https://www.federalregister.gov/documents/2023/01/31/2023-01983/self-regulatory-organizations-cboe-bzx-exchange-inc-order-disapproving-a-proposed-rule-change-to",
-      "published_at": "2023-01-31T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "",
-      "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change to List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
-    },
-    {
-      "feed_id": "fedreg_digital_assets",
-      "item_hash": "d64c4c0d882b7eecb193df8c9a3864e27b7cabb24c5a8968555f8bca348ab82d",
-      "link": "https://www.federalregister.gov/documents/2024/01/12/2024-00498/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-of-amendment-no-1-to-a-proposed-rule",
-      "published_at": "2024-01-12T00:00:00Z",
-      "source_id": "federal_register",
-      "status": "queued",
-      "summary": "",
-      "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Amendment No. 1 to a Proposed Rule Change To List and Trade Shares of the Hashdex Bitcoin ETF Under NYSE Arca Rule 8.500-E (Trust Units)"
-    },
     {
       "feed_id": "fedreg_digital_assets",
       "item_hash": "e64aa247b8d8c2d78ae62cbf1ea3067f731e08d05e263d58d6e35e0694a633e2",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T04:54:02Z",
+  "generated_at": "2026-07-31T23:31:03Z",
   "items": {
     "018add68e8da068aa6f62e382cf51d4148752a3b682829c3728df8580e90635f": {
       "card_id": null,
@@ -1810,7 +1810,7 @@
       "title": "Electronic Fund Transfers Through Accounts Established Primarily for Personal, Family, or Household Purposes Using Emerging Payment Mechanisms"
     },
     "c309a712a0986a12ede79a3cfcdf5a5625dbb48c54318b2dbdf0b7567030e4d0": {
-      "card_id": null,
+      "card_id": "c309a712a0986a12ede79a3cfcdf5a5625dbb48c54318b2dbdf0b7567030e4d0",
       "content_hash": "fa246b18506b7de4cb091d4e8e0851ad86e5058c7155e2e2570ee790cf7cbba6",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1821,7 +1821,7 @@
       "raw_published": "2022-04-06",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change, as Modified by Amendment No. 1, To List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
@@ -1970,7 +1970,7 @@
       "title": "CFTC, SEC Seek Public Comment on the Harmonization of Portfolio Margining Frameworks"
     },
     "d27ef327018d57da56d71c5e97873e2d60edf0a8e35c9cd92c4920c0575d2d36": {
-      "card_id": null,
+      "card_id": "d27ef327018d57da56d71c5e97873e2d60edf0a8e35c9cd92c4920c0575d2d36",
       "content_hash": "8bbb6199d780fc70d0e34aa9bf60a8074c53fb9496f154dbb34977fcb585529e",
       "feed_id": "frb_bcreg_press_releases",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1981,12 +1981,12 @@
       "raw_published": "Thu, 18 Jun 2026 13:00:00 GMT",
       "relevant": true,
       "source_id": "federal_reserve",
-      "status": "queued",
+      "status": "drafted",
       "summary": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
       "title": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program"
     },
     "d391431ec6edcc6afe628106abccc0ebe3ce4f792f493a88712e00a800fb8bce": {
-      "card_id": null,
+      "card_id": "d391431ec6edcc6afe628106abccc0ebe3ce4f792f493a88712e00a800fb8bce",
       "content_hash": "7079c494793b46db8510c3d0648a3e802cf432f56e0447aa1742da0d4da2d879",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -1997,7 +1997,7 @@
       "raw_published": "2023-01-31",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change to List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares"
     },
@@ -2018,7 +2018,7 @@
       "title": "FinCEN Issues Advisory on Health Care Fraud Schemes Targeting Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs"
     },
     "d64c4c0d882b7eecb193df8c9a3864e27b7cabb24c5a8968555f8bca348ab82d": {
-      "card_id": null,
+      "card_id": "d64c4c0d882b7eecb193df8c9a3864e27b7cabb24c5a8968555f8bca348ab82d",
       "content_hash": "98577e4cd19b0b0a993af953c9aacf375e73618a59c980c5dc35f61b1fb279d8",
       "feed_id": "fedreg_digital_assets",
       "first_seen": "2026-07-12T06:11:01Z",
@@ -2029,7 +2029,7 @@
       "raw_published": "2024-01-12",
       "relevant": true,
       "source_id": "federal_register",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Amendment No. 1 to a Proposed Rule Change To List and Trade Shares of the Hashdex Bitcoin ETF Under NYSE Arca Rule 8.500-E (Trust Units)"
     },

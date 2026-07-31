@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "d27ef327018d57da56d71c5e97873e2d60edf0a8e35c9cd92c4920c0575d2d36",
+  "jurisdiction_id": "us",
+  "published_date": "2026-06-18",
+  "regulator": "FinCEN, OCC, Federal Reserve, FDIC and NCUA",
+  "pillar": ["stablecoins", "aml_cft_enforcement"],
+  "type": "consultation",
+  "title": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
+  "summary": "On 18 June 2026, the Federal Reserve Board announced that it had requested public comment on a proposal, issued jointly with FinCEN, the OCC, the FDIC, and the NCUA, to require permitted payment stablecoin issuers to maintain an effective customer identification program (CIP) under the Bank Secrecy Act, implementing a requirement of the GENIUS Act (Public Law 119-27). Published in the Federal Register on 22 June 2026, the proposal would require a permitted payment stablecoin issuer's CIP to include risk-based procedures for verifying each customer's identity, multi-year recordkeeping of the information obtained, and procedures for checking customers against government lists of known or suspected terrorists, comparable to existing bank customer identification program requirements. Comments are due by 21 August 2026. If finalized, the agencies propose that the rule take effect 12 months after a final rule issues.",
+  "why_it_matters": "This is the Federal Reserve's own announcement of a five-agency proposal requiring the newly created category of 'permitted payment stablecoin issuer' to verify customers' identities much like banks already must, implementing a specific GENIUS Act directive. It has not been finalized, and stablecoin issuers are not yet subject to this requirement.",
+  "key_dates": {
+    "deadline": "2026-08-21"
+  },
+  "citations": [
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260618a.htm",
+      "quote": "require certain payment stablecoin issuers to maintain an effective customer identification program"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-06-22/html/2026-12460.htm",
+      "quote": "risk-based procedures for verifying the identity of each customer to the extent reasonable and practicable"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-07-31T15:18:00Z",
+  "model": "Claude (Anthropic)"
+}
