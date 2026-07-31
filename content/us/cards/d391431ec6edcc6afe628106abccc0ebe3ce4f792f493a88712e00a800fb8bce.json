@@ -7,8 +7,8 @@
   "pillar": ["funds_etfs"],
   "type": "conclusions",
   "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Order Disapproving a Proposed Rule Change to List and Trade Shares of the ARK 21Shares Bitcoin ETF Under BZX Rule 14.11(e)(4), Commodity-Based Trust Shares",
-  "summary": "On 31 January 2023, the Federal Register published a second SEC order (Release No. 34-96751) disapproving Cboe BZX Exchange's proposed rule change (File No. SR-CboeBZX-2022-031) to list and trade shares of the ARK 21Shares Bitcoin ETF under BZX Rule 14.11(e)(4), the exchange's Commodity-Based Trust Shares listing standard. Dated 26 January 2023, the order again concludes BZX had not met its burden under Exchange Act Section 6(b)(5): it had not shown a comprehensive surveillance-sharing agreement with a regulated market of significant size in bitcoin, nor that other means sufficiently prevent fraud and manipulation. The order states BZX's filing repeated assertions the Commission had already rejected when it disapproved an earlier, separate BZX filing for the same trust in April 2022, and that BZX did not respond to many of the Commission's reasons for that earlier rejection.",
-  "why_it_matters": "This January 2023 order was the SEC's second disapproval of a Cboe BZX proposal to list the same ARK 21Shares Bitcoin ETF, applying the same Exchange Act Section 6(b)(5) surveillance-sharing standard as its first disapproval roughly nine months earlier and finding BZX's renewed arguments did not resolve the Commission's prior concerns. Naming the ARK 21Shares Bitcoin ETF here reflects only what the SEC's own order states about that specific, historical proposal.",
+  "summary": "On 31 January 2023, the Federal Register published a second SEC order (Release No. 34-96751) disapproving Cboe BZX Exchange's proposed rule change (File No. SR-CboeBZX-2022-031) to list and trade shares of the ARK 21Shares Bitcoin ETF under BZX Rule 14.11(e)(4), the exchange's Commodity-Based Trust Shares listing standard. Dated 26 January 2023, the order again concludes BZX had not met its burden under Exchange Act Section 6(b)(5): it had not shown a comprehensive surveillance-sharing agreement with a regulated market of significant size in bitcoin, nor that other means sufficiently prevent fraud and manipulation. The order states BZX's filing repeated assertions already rejected by the Commission's 31 March 2022 order disapproving an earlier, separate BZX filing for the same trust, and that BZX did not respond to many of the Commission's reasons for that earlier rejection.",
+  "why_it_matters": "This January 2023 order was the SEC's second disapproval of a Cboe BZX proposal to list the same ARK 21Shares Bitcoin ETF, applying the same Exchange Act Section 6(b)(5) surveillance-sharing standard as its first disapproval roughly ten months earlier and finding BZX's renewed arguments did not resolve the Commission's prior concerns. Naming the ARK 21Shares Bitcoin ETF here reflects only what the SEC's own order states about that specific, historical proposal.",
   "key_dates": {
     "milestone": "2023-01-26"
   },
@@ -18,7 +18,7 @@
       "quote": "designed to prevent fraudulent and manipulative acts and practices"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-31T15:14:00Z",
   "model": "Claude (Anthropic)"
 }

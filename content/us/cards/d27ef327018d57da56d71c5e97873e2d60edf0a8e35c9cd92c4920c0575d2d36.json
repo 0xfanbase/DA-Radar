@@ -22,7 +22,7 @@
       "quote": "risk-based procedures for verifying the identity of each customer to the extent reasonable and practicable"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-31T15:18:00Z",
   "model": "Claude (Anthropic)"
 }

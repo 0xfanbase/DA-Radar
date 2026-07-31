@@ -7,15 +7,15 @@
   "pillar": ["funds_etfs"],
   "type": "consultation",
   "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of Amendment No. 1 to a Proposed Rule Change To List and Trade Shares of the Hashdex Bitcoin ETF Under NYSE Arca Rule 8.500-E (Trust Units)",
-  "summary": "On 12 January 2024, the Federal Register published an SEC notice that NYSE Arca had filed Amendment No. 1 (File No. SR-NYSEARCA-2023-58) to its proposed rule change to list and trade shares of the Hashdex Bitcoin ETF under NYSE Arca Rule 8.500-E, Trust Units. NYSE Arca originally filed the proposal on 22 September 2023, and the Commission instituted proceedings on 28 November 2023 to determine whether to approve or disapprove it. Amendment No. 1, filed 5 January 2024, amends and replaces the original filing in its entirety, reflecting the fund's renaming from the Hashdex Bitcoin Futures ETF and a revised strategy tracking the Nasdaq Bitcoin Reference Price-Settlement benchmark through physical bitcoin and CME bitcoin futures holdings. The sponsor is Tidal Investments LLC. The notice invites comment on the amended proposal and does not resolve whether the SEC will approve or disapprove it.",
-  "why_it_matters": "This notice reopened public comment on an amended NYSE Arca proposal to list a spot-bitcoin exchange-traded product that was already under a formal SEC proceeding to decide whether to approve or disapprove it, showing how a sponsor could substantially revise a pending listing proposal mid-review. Naming the Hashdex Bitcoin ETF here reflects only what the SEC's own notice states about that specific, historical proposal.",
+  "summary": "On 12 January 2024, the Federal Register published an SEC notice that NYSE Arca had filed Amendment No. 1 (File No. SR-NYSEARCA-2023-58) to its proposed rule change to list and trade shares of the Hashdex Bitcoin ETF under NYSE Arca Rule 8.500-E, Trust Units. NYSE Arca originally filed the proposal on 22 September 2023, and the Commission instituted proceedings on 28 November 2023 to determine whether to disapprove it. Amendment No. 1, filed 5 January 2024, amends and replaces the original filing in its entirety, reflecting the fund's renaming from the Hashdex Bitcoin Futures ETF and a revised strategy tracking the Nasdaq Bitcoin Reference Price-Settlement benchmark through physical bitcoin and CME bitcoin futures holdings. The sponsor is Tidal Investments LLC. The notice invites comment on the amended proposal and does not resolve whether the SEC will approve or disapprove it.",
+  "why_it_matters": "This notice reopened public comment on an amended NYSE Arca proposal to list a spot-bitcoin exchange-traded product that was already under a formal SEC proceeding to decide whether to disapprove it, showing how a sponsor could substantially revise a pending listing proposal mid-review. Naming the Hashdex Bitcoin ETF here reflects only what the SEC's own notice states about that specific, historical proposal.",
   "citations": [
     {
       "url": "https://www.govinfo.gov/content/pkg/FR-2024-01-12/html/2024-00498.htm",
       "quote": "to list and trade shares of the Hashdex Bitcoin ETF under NYSE Arca Rule 8.500-E"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-31T15:22:00Z",
   "model": "Claude (Anthropic)"
 }
