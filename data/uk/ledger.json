@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T00:13:30Z",
+  "generated_at": "2026-07-31T04:54:00Z",
   "items": {
     "02028a9677575e76189a49022768f45cc07c84ca74ac72879172cd9671891801": {
       "card_id": null,
@@ -576,6 +576,22 @@
       "status": "queued",
       "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC) Operations and Legal Sub-Committees. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators.",
       "title": "FXJSC Combined Operations and Legal Sub-Committee Meeting"
+    },
+    "274944b0aab983b8a6e5aee7d00bc7cd6b034340056b6f57a8311146d6139e57": {
+      "card_id": null,
+      "content_hash": "f155782ddb98a90f8fce103468e159410a332fbdc8471adbbd568944aa1f1299",
+      "feed_id": "hmt_activity",
+      "first_seen": "2026-07-31T04:54:00Z",
+      "guid": "https://www.gov.uk/government/publications/preston-guidance-june-2026#2026-07-30T15:37:57Z",
+      "item_hash": "274944b0aab983b8a6e5aee7d00bc7cd6b034340056b6f57a8311146d6139e57",
+      "link": "https://www.gov.uk/government/publications/preston-guidance-june-2026",
+      "published_at": "2026-07-30T15:37:57Z",
+      "raw_published": "2026-07-30T15:37:57Z",
+      "relevant": false,
+      "source_id": "hmt",
+      "status": "queued",
+      "summary": "Preston factors (earnings and interest factors) are provided for employers.",
+      "title": "Guidance: Preston guidance: June 2026"
     },
     "2c13ae36166f94159592bb0cb316942ea06e0f52867b6e3864a59d2438dcd8e6": {
       "card_id": "2c13ae36166f94159592bb0cb316942ea06e0f52867b6e3864a59d2438dcd8e6",
@@ -1504,6 +1520,22 @@
       "status": "queued",
       "summary": "This guidance establishes the concept of risk management.",
       "title": "Guidance: Orange Book"
+    },
+    "67974f2f3b7980d2a7b53694cd9180ab2e32e94f68795977804c083737b816ea": {
+      "card_id": null,
+      "content_hash": "4d3bdfed82145accf83db79fbc7a85bb9811e2d675e5793c36ec7ee766f8cce6",
+      "feed_id": "fca_news",
+      "first_seen": "2026-07-31T04:54:00Z",
+      "guid": "172681",
+      "item_hash": "67974f2f3b7980d2a7b53694cd9180ab2e32e94f68795977804c083737b816ea",
+      "link": "https://www.fca.org.uk/news/news-stories/blue-motor-finance-limited-enters-administration",
+      "published_at": null,
+      "raw_published": "Thursday, July 30, 2026 - 15:33",
+      "relevant": false,
+      "source_id": "fca",
+      "status": "queued",
+      "summary": "On 30 July 2026, Blue Motor Finance Limited (BMFL) was placed into administration. Simon Edel, Richard Barker and Alan Michael Hudson of Ernst &amp; Young LLP were appointed as joint administrators. BMFL (firm reference number 737682) operated as a motor finance lender.The firm had been running at a loss for a number of years and faced significant compensation liabilities it could not meet.Simon Edel, Richard Barker and Alan Michael Hudson have been appointed as joint administrators. They are now responsible for BMFL while it is in administration. They will contact all affected customers.BMFL in administration is no longer lending. However, all outstanding loan agreements remain in place and will continue to be serviced by BMFL in the short term. You should continue to make payments as usual.BMFL remains liable for any compensation it owes, including under the FCA's motor finance compensation scheme (the scheme).We are engaging with BMFL and the joint administrators to ensure the best outcomes for customers who are owed compensation. However, customers are unlikely to receive all the money they’re owed. We know this will be disappointing. Having become aware that BMFL was in financial difficulty, we have worked to make sure that the firm's decisions secured the best outcome for redress consumers. Alternative options would have reduced the likelihood of any redress being paid.Customers who are struggling financially can get free and impartial guidance from MoneyHelper.All customers should remain alert to the possibility of fraud.If customers get an unexpected phone call from someone claiming to be from BMFL, the joint administrators or the FCA, end the call and contact the relevant party directly.Find out more about protecting yourself from scams.If you're looking for an alternative firm to provide a loan, you should only deal with firms authorised by us. If you're unsure whether a firm is authorised, use FCA Firm Checker.",
+      "title": "Blue Motor Finance Limited enters administration"
     },
     "679af0482d05233d895eee01359ce87edc383db08bfeac3ceb3969ffd998af54": {
       "card_id": null,
@@ -2577,6 +2609,22 @@
       "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate.",
       "title": "Bank Rate maintained at 3.75% - June 2026 Monetary Policy Summary and Minutes"
     },
+    "b2affa334e1ac3913c67136442cad8804f062f602071d825fe0601a940175ddd": {
+      "card_id": null,
+      "content_hash": "8b7ff6ae47500c36d7cd57bc0c1ea532d4dcd3d592c33ad1408164d5c1c28a52",
+      "feed_id": "boe_news",
+      "first_seen": "2026-07-31T04:54:00Z",
+      "guid": "{D86FCC88-D9E3-49EF-8518-7C3028AEBC7D}",
+      "item_hash": "b2affa334e1ac3913c67136442cad8804f062f602071d825fe0601a940175ddd",
+      "link": "https://www.bankofengland.co.uk/minutes/2026/july/court-minutes-4-june-2026",
+      "published_at": "2026-07-30T13:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 14:00:00 +0100",
+      "relevant": false,
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments. Required to meet a minimum seven times per year, it has five executive members from the Bank and up to nine non-executive members.",
+      "title": "Minutes of the Meeting of the Court of Directors held on 4 June 2026"
+    },
     "b3617c04c7a1ee0903d732f7522ad12b5f2aad70fe93647111fd930c9006461d": {
       "card_id": null,
       "content_hash": "f3c0a479bd734e8462a19721113ae43f8de707dc8f91837bceb509fa7fa23e6c",
@@ -3089,6 +3137,22 @@
       "summary": "Letter from Governor Andrew Bailey to the Daily Mail on the subject of AI and cyber-attacks",
       "title": "Letter from the Governor to the Daily Mail"
     },
+    "d13cf1576867084e592a7934ba43e48639d715434c0a548d8ccc7185ef40d7f9": {
+      "card_id": null,
+      "content_hash": "7e261ad5b85a7d3b580bb08223f12584ec756150640a8438c89b08f8e119c807",
+      "feed_id": "fca_news",
+      "first_seen": "2026-07-31T04:54:00Z",
+      "guid": "172726",
+      "item_hash": "d13cf1576867084e592a7934ba43e48639d715434c0a548d8ccc7185ef40d7f9",
+      "link": "https://www.fca.org.uk/news/press-releases/trial-date-set-individual-charged-illegal-promotions",
+      "published_at": null,
+      "raw_published": "Thursday, July 30, 2026 - 16:36",
+      "relevant": false,
+      "source_id": "fca",
+      "status": "queued",
+      "summary": "On 30 July 2026, Lucy Beck attended Southwark Crown Court for a hearing in relation to unauthorised promotions on social media. Ms Beck entered a not guilty plea and the date of her trial has been set as 12 June 2028.It is alleged that Ms Beck promoted buying and selling Foreign Exchange Contracts for Difference through social media accounts and websites, without being authorised to do so, contrary to sections 21 and 25 of the Financial Services and Markets Act 2000.Notes to editorsLucy Beck’s date of birth is 30/04/1994.Anyone who believes they may have suffered loss in relation to this matter is encouraged to contact the FCA consumer contact centre on 0800 111 6768. Calls are free from UK landlines and mobiles.Fighting financial crime is central to the FCA’s 5-year strategy (PDF).Consumers can use the FCA’s Firm Checker to see whether a firm is authorised and has permission to offer the service it is promoting. The FCA’s InvestSmart website provides information to help people understand investment risks and make better informed decisions.The FCA enables a fair and thriving financial services market for the good of consumers and the economy. Find out more about the FCA.",
+      "title": "Trial date set for individual charged with illegal promotions"
+    },
     "d22b41eb96b0ab90a5c7d015c44e91cefba495d2c4ced05c2b58a338d8f43581": {
       "card_id": null,
       "content_hash": "4635aff403f46d0888935e040ecd491fd76f0c514a8aea7a63511f761e0f39ad",
@@ -3425,6 +3489,22 @@
       "summary": "The Money Markets Committee is a forum for market participants and authorities to discuss the UK unsecured deposits and funding market and securities lending and repo markets.",
       "title": "Minutes of the UK Money Markets Code Sub-Committee – June 2026"
     },
+    "e9679b69c7f826eb0bce9e3fdc1b6189ab51e89ba75ecef836e84108c6573f11": {
+      "card_id": null,
+      "content_hash": "8fe32837675340d14155d37362baf279e9ba81722ef13e5401f19368e8cde0a6",
+      "feed_id": "fca_news",
+      "first_seen": "2026-07-31T04:54:00Z",
+      "guid": "172591",
+      "item_hash": "e9679b69c7f826eb0bce9e3fdc1b6189ab51e89ba75ecef836e84108c6573f11",
+      "link": "https://www.fca.org.uk/news/press-releases/fca-censures-equity-growth-securities-limited",
+      "published_at": null,
+      "raw_published": "Thursday, July 30, 2026 - 10:31",
+      "relevant": false,
+      "source_id": "fca",
+      "status": "queued",
+      "summary": "The FCA has censured Equity for Growth (Securities) Limited (EFG) for approving financial promotions relating to minibonds that were unfair, unclear and misleading. EFG approved financial promotions which failed to disclose very high commission fees charged by its appointed representatives and other introducers for marketing the minibonds to investors. Appointed representatives carry out regulated activities under the responsibility of an authorised firm, known as ‘the principal’.The promotions also failed to state that these fees would be deducted from investors’ money. This meant they could not make a fully informed decision before investing.Therese Chambers, joint executive director of enforcement and market oversight at the FCA, said:'Investors cannot make informed decisions without key information. Firms must make sure that the financial promotions they are approving are transparent about the high commissions taken from people’s money and the impact those charges have on their investments.’On 25 March 2026, following an FCA petition and restrictions to prevent the firm from conducting regulated activities, the High Court ordered EFG to be wound up on the basis that it was insolvent.As a result, investor claims will be assessed by the Financial Services Compensation Scheme (FSCS). For more information about how affected investors can make a claim, see our press release on the winding‑up order.The FCA has decided not to impose a financial penalty because the firm is insolvent and being wound up, and any penalty would reduce the funds available to repay creditors. Had the FCA imposed a financial penalty, this would have been £386,467.Notes to editorsRead the Final Notice (PDF).Find more information on the relationship between principals and appointed representatives.The FCA enables a fair and thriving financial services market for the good of consumers and the economy. Find out more about the FCA.",
+      "title": "FCA censures Equity for Growth (Securities) Limited"
+    },
     "e99b1212a30c6117b30b67b8d96ea217df55cabb6a5a1a273ccc8d80c022d264": {
       "card_id": null,
       "content_hash": "0227e49bce72729291f862c6deecbc88f8b5afbe237bb4e427a16075ff0a7a9a",
@@ -3456,6 +3536,22 @@
       "status": "queued",
       "summary": "Consultation paper 5/26",
       "title": "CP5/26 – Modernising the liquidity policy framework"
+    },
+    "eafb6be29af017dc33ee6a322b82ca3a052815a1eab565d0500a2f9239019b42": {
+      "card_id": null,
+      "content_hash": "2efd323181f0d92b9eac76140aa01010ab8b02aafc429afa7006cd8766e2381c",
+      "feed_id": "boe_news",
+      "first_seen": "2026-07-31T04:54:00Z",
+      "guid": "{DAA6D477-8030-42CD-940B-F208E667FBC7}",
+      "item_hash": "eafb6be29af017dc33ee6a322b82ca3a052815a1eab565d0500a2f9239019b42",
+      "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+      "published_at": "2026-07-30T11:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 12:00:00 +0100",
+      "relevant": false,
+      "source_id": "boe",
+      "status": "queued",
+      "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate.",
+      "title": "Bank Rate maintained at 3.75% - July 2026 Monetary Policy Summary and Minutes"
     },
     "ec1fc70e555cc4d6334357acf49b9e96493b7f297a0a5799a0887b480b77b848": {
       "card_id": null,
