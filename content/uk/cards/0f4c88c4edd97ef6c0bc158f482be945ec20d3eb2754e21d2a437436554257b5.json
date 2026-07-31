@@ -7,7 +7,7 @@
   "pillar": ["tokenization_rwa", "stablecoins"],
   "type": "guidance",
   "title": "Recommendations of the Transatlantic Taskforce for Markets of the Future",
-  "summary": "On 14 July 2026, HM Treasury published recommendations from the Transatlantic Taskforce for Markets of the Future (TTMF), launched by Chancellor Rachel Reeves and US Treasury Secretary Scott Bessent in September 2025. Of ten recommendations, five cover digital assets: a one-year private-sector group on cross-border tokenised-asset use cases; joint Bank of England, CFTC, FCA and SEC work on common regulatory approaches to tokenised assets, including settlement finality and stablecoins' use as margin collateral; frameworks for stablecoins, tokenised deposits and other digital money to coexist; and UK-US support for the Basel Committee's cryptoasset prudential-standards review. A companion joint statement affirms ten shared positions on stablecoins, including full backing by high-quality liquid assets and exploring mutual market access for each country's stablecoins. The Taskforce reported its recommendations via the UK-US Financial Regulatory Working Group (FRWG).",
+  "summary": "On 14 July 2026, HM Treasury published recommendations from the Transatlantic Taskforce for Markets of the Future (TTMF), launched by Chancellor Rachel Reeves and US Treasury Secretary Scott Bessent in September 2025. Of ten recommendations, five cover digital assets: a one-year private-sector group on cross-border tokenised-asset use cases; joint Bank of England, CFTC, FCA and SEC work on common regulatory approaches to tokenised assets, including settlement finality and stablecoins' use as margin collateral; a joint UK-US statement on stablecoins; frameworks for stablecoins, tokenised deposits and other digital money to coexist; and UK-US support for the Basel Committee's cryptoasset prudential-standards review. The companion joint statement affirms ten shared positions on stablecoins, including full backing by high-quality liquid assets and, subject to each jurisdiction's laws, exploring mutual market access for each country's stablecoins. The Taskforce reported its recommendations to both finance ministries via the UK-US Financial Regulatory Working Group (FRWG).",
   "why_it_matters": "This is not a new UK rule -- it is a joint statement of intent by HM Treasury and the US Treasury to align future UK and US policy on tokenised assets and stablecoins. It matters because it signals the direction UK cryptoasset regulation may move next, particularly for firms planning stablecoin or tokenised-asset operations across both markets.",
   "citations": [
     {
@@ -19,7 +19,7 @@
       "quote": "stablecoins are an important vehicle for innovation in digital money"
     }
   ],
-  "status": "unverified",
+  "status": "verified",
   "generated_at": "2026-07-31T09:00:00Z",
   "model": "Claude (Anthropic)"
 }
