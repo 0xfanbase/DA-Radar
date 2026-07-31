@@ -1766,3 +1766,43 @@ functional impact (this runbook's actual Step 0 logic correctly reads `config/si
 the same reason the `CLAUDE.md` staleness was: a future reader taking the example literally would
 be misled, and `docs/analyst-runbook.md` is explicitly in this runbook's own "never touch" list, so
 it cannot self-correct.
+
+### 2026-07-31 -- The deterministic gate downgraded citations on three previously-reliable domains in one firing, not just the known-bad HKMA ones
+
+Every prior gate-downgrade finding in this file has been traceable to a specific, already-known
+problem domain: `brdr.hkma.gov.hk`'s permanent TLS/503 failure, or a plausible PDF-extraction gap
+on `assets.publishing.service.gov.uk`. This firing broke that pattern. Of 9 cards processed, the
+gate downgraded 4 -- two `brdr.hkma.gov.hk` citations (consistent with the ongoing outage, no new
+information there), but also:
+
+- One `apps.sfc.hk` citation. SFC has been used as the *working control* to confirm HKMA-specific
+  outages in every prior firing this file documents (e.g. the 07-29 entry: "every verifier this
+  firing independently confirmed `sfc.hk` fetched cleanly at the same time"). This is the first
+  time an SFC citation has itself been downgraded.
+- One `govinfo.gov` citation (the ARK 21Shares Bitcoin ETF card). `govinfo.gov` is this project's
+  standard, repeatedly-successful fallback for `federalregister.gov`'s bot-blocking -- used
+  successfully across roughly a dozen other US cards in this same firing and prior ones, including
+  three other cards in this exact firing's `us` batch that cited the same domain and passed.
+
+That card's own verifier had already flagged a concrete, independent access difficulty before the
+gate even ran: repeated fetch truncation before the source document's closing section, and a
+missing `pdftoppm` binary in the verifier's sandbox blocking a PDF-extraction fallback it
+attempted. That detail suggests at least this one downgrade may be explainable by the same kind of
+document-specific access gap already logged for the UK PDF case (07-30 entry above), rather than a
+`govinfo.gov`-wide problem -- three sibling cards citing the same domain in the same firing passed
+cleanly. The SFC downgrade has no equivalent explanation on record; nothing in that card's verifier
+report flagged any access difficulty with its `apps.sfc.hk` citation.
+
+Taken together, this is a different-shaped problem than anything logged before: not "domain X is
+down," but "the gate's downgrade rate this firing (4/9, ~44%) touched three separate domains with
+established track records of reliability, in the same run." Two plausible explanations, neither
+confirmed: (a) genuine transient flakiness in this specific run's network conditions (proxy,
+rate-limiting, or timeout behavior) that happened to affect several unrelated fetches at once,
+independent of any regulator's actual uptime; or (b) something in the gate's own fetch/match logic
+that produces false-negative downgrades more often than previously assumed, with the true rate
+having simply not shown up in earlier, smaller samples. Not fixed here (`pipeline/verify/gate.py`
+is outside the analyst/verifier path allowlist and this runbook's own scope); flagging because it
+complicates how confidently a future firing's downgrade should be attributed to "known HKMA issue"
+by default -- this firing shows the gate can and does downgrade citations from domains with no
+other evidence of being unreachable. An owner-level look at the gate's own request/response logs
+for this specific run (if retained) would settle which explanation is correct.

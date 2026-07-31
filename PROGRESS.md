@@ -2761,3 +2761,78 @@ design -- zero cards drafted). Backlog after this firing: hk 51, us 19, eu 1 (th
 item, still unfixed), uk 2, jp 12, uae/ch 0. No `PushNotification` fired -- nothing stopped early,
 no gate failure blocked a commit, every push landed and was independently confirmed against
 `origin/main`, not self-reported.
+
+### 2026-07-30/31 -- Seventh firing (`trig_01CHa5wLW4G5LGj8fREeKUkE`, fired 22:37:57 UTC on schedule, no one watching): hk/us/eu/uk processed
+
+Same cap logic as every prior firing: hk=4, us=4, eu=1 (its queue still only had the one recurring
+item), uk=1 (10-cap's remaining slot, uk's queue of 2 having a second item left untouched, still
+queued for a future firing) -- 10 total, cap bound at uk. uae/ch (both empty) and jp (queue of 13,
+grown by one since last firing, untouched -- the cap bound before reaching it) got nothing this
+firing.
+
+**hk -- 4 cards drafted, verified, published; 1 verified, 3 unverified.** One SFC item (FSTB/SFC
+conclusions on virtual asset advisory and management consultations) plus three HKMA items (a
+Cryptoassets Standard circular bundling SPM modules/Code of Practice/disclosure templates; a
+supplemental joint circular on intermediaries' virtual-asset activities; the Tokenised Bond Expert
+Group announcement) -- a deliberate mix this firing, unlike recent all-HKMA batches. The HKMA
+outage continues (a fifth distinct date: 26, 28, 29, 30 Jul), but this firing's verifiers found
+two different working routes around it: one used the `info.gov.hk`/Internet-Archive-availability
+combination successfully (the Tokenised Bond card, ultimately gate-confirmed verified); another
+used a third-party text-rendering proxy to add two genuine new supporting citations rather than
+just stripping an unsupported claim. A third verifier, unable to load the primary source at all,
+leaned on five independent secondary/law-firm sources for its confidence and marked the card
+verified anyway -- reasoning the downstream gate is the real backstop -- which is exactly what
+then happened: the gate's own re-fetch downgraded it. Notably, the gate also downgraded the SFC
+card this firing -- SFC has been a reliable control in every prior firing to date; see the new
+finding below.
+
+**us -- 4 cards drafted, verified, published; 3 verified, 1 unverified.** The FinCEN/OFAC proposed
+rule implementing the GENIUS Act's AML/sanctions requirements for payment stablecoin issuers, plus
+three more 2021/2022 Cboe BZX Bitcoin-trust SEC filing notices (Global X, ARK 21Shares, VanEck),
+all cited via `govinfo.gov` since `federalregister.gov` still bot-blocks automated fetches.
+Verifiers caught the same cherry-picking pattern twice more this firing -- "holding bitcoin as its
+sole asset" / "would hold bitcoin exclusively" both omitted the filing's own adjacent "however,
+there may be situations where the Trust will hold cash on a temporary basis" caveat, the third
+time this exact omission has been caught across the DIGIT-instrument-family cards -- plus an
+unsupported "administered by FinCEN/OFAC" attribution the GENIUS Act release never actually makes.
+One card (ARK 21Shares) was downgraded by the gate despite a thorough verifier pass whose own
+report had already flagged the same access difficulty (repeated truncation before the source's
+closing section, and a missing `pdftoppm` binary blocking a PDF-extraction fallback).
+
+**eu -- 0 cards; the recurring cartel item declined for a seventh consecutive firing.** Same item,
+same correct decision, same already-diagnosed and still-unfixed root cause (the `"mica"` keyword
+substring-matching inside "chemicals"). No new information this firing.
+
+**uk -- 1 card drafted, verified, published; 1 verified, 0 unverified.** HM Treasury's 14 July
+2026 recommendations from the Transatlantic Taskforce for Markets of the Future (TTMF), a
+bilateral UK-US body launched by Chancellor Rachel Reeves and US Treasury Secretary Scott Bessent
+in September 2025 -- five of ten recommendations cover digital assets (a one-year cross-border
+tokenised-asset engagement group; joint BoE/FCA/CFTC/SEC work on common tokenised-asset
+approaches; a joint UK-US stablecoin statement; stablecoin/tokenised-deposit coexistence
+frameworks; Basel Committee cryptoasset-standard support), alongside a companion joint statement
+affirming ten shared stablecoin positions. Both `tokenization_rwa` and `stablecoins` pillar states
+were updated with new sourced paragraphs, explicitly flagged as policy commitments to future
+engagement rather than new UK rules. The verifier caught a real internal miscount (the card said
+"five" digital-asset recommendations but its own list enumerated only four, silently dropping the
+joint-stablecoin-statement recommendation) and a genuine cherry-picked caveat (the source's
+mutual-market-access sentence is conditioned on "the laws, regulations, and processes of each
+jurisdiction," which the draft had dropped) -- both fixed, then confirmed verified by the gate's
+own re-fetch.
+
+**New finding this firing: the deterministic gate downgraded citations across three previously-
+reliable domains, not just the known-bad HKMA one.** Of 9 cards, 4 were downgraded this firing --
+two `brdr.hkma.gov.hk` citations (consistent with the ongoing, already-documented outage), but
+also one `apps.sfc.hk` citation (SFC has been the reliable control domain in every prior firing to
+date) and one `govinfo.gov` citation (used successfully dozens of times across this project's US
+cards). This is a materially different pattern from the HKMA-specific finding already logged --
+full detail and what it might mean for the three previously-proposed fix directions is in
+IMPROVEMENT_BACKLOG.md.
+
+**Net result of this firing:** 9 cards processed end-to-end across 3 jurisdictions (hk, us, uk; eu
+processed with zero cards by design) -- checked card-by-card against the actual published files,
+not tallied from memory: **5 verified, 4 unverified** (hk 1/4 verified; us 3/4 verified; uk 1/1
+verified). Real commits: `78d2164`/`4cbffb4` (hk), `29ee2c6`/`e3e0754` (us), `82d18b0`/`0c8e512`
+(uk); eu produced no commit (nothing to commit, by design -- zero cards drafted). Backlog after
+this firing: hk 47, us 15, eu 1 (the recurring cartel item, still unfixed), uk 1, jp 13, uae/ch 0.
+No `PushNotification` fired -- nothing stopped early, no gate failure blocked a commit, every push
+landed and was independently confirmed against `origin/main`, not self-reported.
