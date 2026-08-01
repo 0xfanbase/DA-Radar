@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T23:16:19Z",
+  "generated_at": "2026-08-01T04:47:21Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -496,6 +496,22 @@
       "status": "queued",
       "summary": "",
       "title": "Statistics of Stored Value Facilities (SVF) Schemes Issued by SVF Licensees"
+    },
+    "063acc569bb40ec3d7164084f9e021fbbe70716db6b65c5738f5c3688087ac2b": {
+      "card_id": null,
+      "content_hash": "8bd437a4ef61976d98a5f3aeb740c8348e1567a69c8956d2830aa12f94b9acaa",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-08-01T04:47:21Z",
+      "guid": null,
+      "item_hash": "063acc569bb40ec3d7164084f9e021fbbe70716db6b65c5738f5c3688087ac2b",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260731-4/",
+      "published_at": "2026-07-30T16:00:00Z",
+      "raw_published": "Fri, 31 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "International Reserves and Foreign Currency Liquidity"
     },
     "067538fe58a5fc61c45a34a417641c042f3499ddc450100ac031a3407aaecfee": {
       "card_id": null,
@@ -1888,6 +1904,22 @@
       "status": "queued",
       "summary": "",
       "title": "Guidance on Banking Services for Individuals with Higher Risk Profiles"
+    },
+    "1ca48daf4d9518963b912779d31e5c0f5cc7630189d0af35be70704968b335ca": {
+      "card_id": null,
+      "content_hash": "02d0e4146eb9f50b5dede1b506f51bc73d1dec3217f9521875d27fff27c9d096",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-08-01T04:47:21Z",
+      "guid": null,
+      "item_hash": "1ca48daf4d9518963b912779d31e5c0f5cc7630189d0af35be70704968b335ca",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260731-5/",
+      "published_at": "2026-07-30T16:00:00Z",
+      "raw_published": "Fri, 31 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Residential Mortgage Survey Results for June 2026"
     },
     "1cd364d97aae1c118de77966badfa299363c2933aba4aac521b547b15b69bae2": {
       "card_id": null,
@@ -5729,6 +5761,22 @@
       "summary": "",
       "title": "Exchange Fund Bills Tender Results"
     },
+    "5a2bc0f6c20492299ae876d4c35b7f7317f59856aee4a0c0599418e40db29d12": {
+      "card_id": null,
+      "content_hash": "6c8840ed26c1973ce1ebd2c619463109b40e72f04805c6ea6ae1d100ada6a7b7",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-08-01T04:47:21Z",
+      "guid": null,
+      "item_hash": "5a2bc0f6c20492299ae876d4c35b7f7317f59856aee4a0c0599418e40db29d12",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260731-8/",
+      "published_at": "2026-07-30T16:00:00Z",
+      "raw_published": "Fri, 31 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "HKICL alerts public of fraudulent website"
+    },
     "5a8c78360b510979fb6c44ede289f53c7cc238f4638fc79e8e8da7e0d469cd25": {
       "card_id": null,
       "content_hash": "7d231f2bc5abc205ae3e1945cd5c09cfb3625a946531be72481ab7aba5d23ef7",
@@ -6833,6 +6881,22 @@
       "summary": "",
       "title": "Tender of 7-year HKD HKSAR Institutional Government Bonds to be held on Wednesday, 4 February 2026"
     },
+    "693a4b434a6a8d9688fd2506c97d54f8a42c5fbc5d483c16fe3a95fe80950218": {
+      "card_id": null,
+      "content_hash": "5da2d318e130dec2d3fdcfa4dd4d864d1563d415ea91e9a73943d81e0db55d75",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-08-01T04:47:21Z",
+      "guid": null,
+      "item_hash": "693a4b434a6a8d9688fd2506c97d54f8a42c5fbc5d483c16fe3a95fe80950218",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260731-6/",
+      "published_at": "2026-07-30T16:00:00Z",
+      "raw_published": "Fri, 31 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Residential mortgage loans in negative equity: End of June 2026"
+    },
     "69c09d9317f9515b679e5e1f73b75804239bf215a900664bebcc53c1b7a1d843": {
       "card_id": null,
       "content_hash": "9ce04fe95845bc9e3359c985d42a717c1e9ffae95eb61daab1c00f83bb49d6da",
@@ -7153,6 +7217,22 @@
       "summary": "",
       "title": "Tender of 1-year RMB HKSAR Institutional Government Bonds to be held on Thursday, 4 December 2025"
     },
+    "6d43dc93b84a84d6aa0a352d385220b954743ca402eac786844afa696615697c": {
+      "card_id": null,
+      "content_hash": "6635846f40e1451550c8bb7cab0ad72a6d2e61e246b7d3a0bb76ad8aadf9a10d",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-08-01T04:47:21Z",
+      "guid": null,
+      "item_hash": "6d43dc93b84a84d6aa0a352d385220b954743ca402eac786844afa696615697c",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260731-3/",
+      "published_at": "2026-07-30T16:00:00Z",
+      "raw_published": "Fri, 31 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Exchange Fund Abridged Balance Sheet and Currency Board Account"
+    },
     "6d685fe70757c40db94c9d3f0e935c09ca2c0ccad88b44e51f1a3f0bf6124622": {
       "card_id": null,
       "content_hash": "39959675899f4396459d7be992f6171f6f8b1fe0ad81aaebe869c4b26a72b645",
@@ -7376,6 +7456,22 @@
       "status": "queued",
       "summary": "",
       "title": "Coin Collection Programme"
+    },
+    "706bd70cfcceef6c1fcdac30afd8605f3ca5b1fb03efa435037818bcc8040a63": {
+      "card_id": null,
+      "content_hash": "5e10762642fb8c76a53cf95dee2170969e2780526ff69f8c159d9ce2ed2651b7",
+      "feed_id": "hkma_press_release",
+      "first_seen": "2026-08-01T04:47:21Z",
+      "guid": null,
+      "item_hash": "706bd70cfcceef6c1fcdac30afd8605f3ca5b1fb03efa435037818bcc8040a63",
+      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260731-7/",
+      "published_at": "2026-07-30T16:00:00Z",
+      "raw_published": "Fri, 31 Jul 2026 00:00:00 +0800",
+      "relevant": false,
+      "source_id": "hkma",
+      "status": "queued",
+      "summary": "",
+      "title": "Monetary Statistics for June 2026"
     },
     "706e9ec568257ebab0320a70baf2d3972fcf093b592eff92a16f5362ab73f809": {
       "card_id": null,
@@ -11408,6 +11504,22 @@
       "status": "queued",
       "summary": "",
       "title": "SFC reprimands and fines China Industrial Securities International Asset Management Limited $6.8 million for failing to properly identify and address red flags in dubious arrangements and other failures in managing private fund"
+    },
+    "a9e66e4f5835c61c89581680bd706d29325cda1533e21c91baa0a70032be772a": {
+      "card_id": null,
+      "content_hash": "baea52fd978e72adb36913ba7e8e540e2efc4fa87498c6eb066fe0415b219168",
+      "feed_id": "sfc_press_releases",
+      "first_seen": "2026-08-01T04:47:21Z",
+      "guid": "26PR121",
+      "item_hash": "a9e66e4f5835c61c89581680bd706d29325cda1533e21c91baa0a70032be772a",
+      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR121",
+      "published_at": "2026-07-31T10:39:27Z",
+      "raw_published": "Fri, 31 Jul 2026 18:39:27 +0800",
+      "relevant": false,
+      "source_id": "sfc",
+      "status": "queued",
+      "summary": "",
+      "title": "Market Misconduct Tribunal finds Sir Dickson Poon culpable of insider dealing ahead of disclosure of HK$1.15 billion corporate windfall"
     },
     "a9e9f8093397bb7037ec736f2d8575aaa5544734c324165c60917fadae9cf4f7": {
       "card_id": null,
