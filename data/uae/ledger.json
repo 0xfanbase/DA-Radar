@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T04:38:00Z",
+  "generated_at": "2026-08-01T04:47:27Z",
   "items": {
     "00035ea799942fd003d09846d9035e0f2f5cb81a658f47edbc00a74507de179c": {
       "card_id": null,
@@ -28557,6 +28557,22 @@
       "raw_published": "2026-07-11",
       "relevant": false,
       "source_id": "sca",
+      "status": "queued",
+      "summary": "",
+      "title": ""
+    },
+    "c8660d18a463abfdee798bedf9728cc250f9cf849577830d5de59795811ea71d": {
+      "card_id": null,
+      "content_hash": "b8c9e440ead3ddaccf7cc7e879d512a263272270df2d5504c0c3d1f85d16f9d9",
+      "feed_id": "fsra_adgm_announcements",
+      "first_seen": "2026-08-01T04:47:27Z",
+      "guid": "https://www.adgm.com/media/announcements/adgms-registration-authority-activates-broker-classification-framework-to-strengthen-brokers-role-in-the-real-estate-market",
+      "item_hash": "c8660d18a463abfdee798bedf9728cc250f9cf849577830d5de59795811ea71d",
+      "link": "https://www.adgm.com/media/announcements/adgms-registration-authority-activates-broker-classification-framework-to-strengthen-brokers-role-in-the-real-estate-market",
+      "published_at": null,
+      "raw_published": "2026-07-31T11:43:14+04:00",
+      "relevant": false,
+      "source_id": "fsra",
       "status": "queued",
       "summary": "",
       "title": ""
