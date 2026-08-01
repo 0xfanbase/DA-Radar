@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T23:58:25Z",
+  "generated_at": "2026-08-01T00:05:56Z",
   "items": {
     "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
       "card_id": null,
@@ -1693,7 +1693,7 @@
       "raw_published": "Thu, 30 Jul 2026 10:00:00 +0200",
       "relevant": true,
       "source_id": "ecb",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Digital euro app to incorporate highest accessibility standards"
     },
