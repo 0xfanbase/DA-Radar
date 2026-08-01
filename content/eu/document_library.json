@@ -92,9 +92,21 @@
       "regulator": "ECB",
       "title": "Digital euro app to incorporate highest accessibility standards",
       "type": "press_releases"
+    },
+    {
+      "item_hash": "74841e33b18d7e3cd355aa372e29fb122437e135786f855008bb6349fa2c94e0",
+      "link": "https://www.esma.europa.eu/press-news/esma-news/esma-publishes-latest-edition-its-newsletter-44",
+      "pillar": [
+        "aml_cft_enforcement",
+        "exchanges_vatp"
+      ],
+      "published_at": null,
+      "regulator": "ESMA",
+      "title": "ESMA publishes latest edition of its newsletter",
+      "type": "news"
     }
   ],
-  "generated_at": "2026-07-31T04:54:00Z",
+  "generated_at": "2026-08-01T04:47:20Z",
   "jurisdiction_id": "eu",
   "schema_version": 1
 }

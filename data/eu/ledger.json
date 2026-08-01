@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T00:05:56Z",
+  "generated_at": "2026-08-01T04:47:20Z",
   "items": {
     "005550b45c25dac3b732c8106582e7210921b25046542bb749ae7f4bb56b3c81": {
       "card_id": null,
@@ -80,6 +80,22 @@
       "status": "queued",
       "summary": "",
       "title": "ECB sanctions BIL for breaching ECB decision on internal models"
+    },
+    "07209666d3e0e0cb4aad354936e5f9a4e144c2754dfa0485f624317a6a119f07": {
+      "card_id": null,
+      "content_hash": "4dfc7665a32fe47da24dd5549cbcbfa79fe772fb4c69a7db62568e2d747e2c3d",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-08-01T04:47:20Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1707",
+      "item_hash": "07209666d3e0e0cb4aad354936e5f9a4e144c2754dfa0485f624317a6a119f07",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1707",
+      "published_at": "2026-07-30T22:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 31 Jul 2026 The European Commission has sent a Statement of Grounds to Temu's owner PDD Holdings Inc. (‘PDD') and its subsidiary WhaleCo Technology Limited (‘Whaleco'), outlining concerns that they may have obstructed an inspection at WhaleCo's premises in Ireland.",
+      "title": "Commission sends Statement of Grounds to Temu over possible obstruction of inspection under the Foreign Subsidies Regulation"
     },
     "07581a6b7aeeb3be35b9df998ed1b41f928131e2d3eee1e6cb7527403c3eb08d": {
       "card_id": null,
@@ -529,6 +545,22 @@
       "summary": "​The European Banking Authority (EBA) today published its 2025 Report on supervisory convergence, as part of its broader efforts to contribute to a more efficient, streamlined and effective EU prudential framework. This work responds to the EBA’s initiatives to increase the efficiency of the regulatory and supervisory framework, including through greater transparency and a focus on supervisory convergence. The Report highlights continued progress in aligning supervisory practices across the European Union (EU), while identifying areas where further convergence is needed. It shows how strong and consistent supervision can support the simplification of the regulatory framework, reduce unnecessary complexity, and help secure a level playing field across the Single Market.",
       "title": "The EBA publishes its 2025 Report on supervisory convergence, supporting a simpler and more efficient EU prudential framework"
     },
+    "32e5d821cb6ccb4c0bd9600d7275f11d44ed84f4e053cc52ac2155c6428828b2": {
+      "card_id": null,
+      "content_hash": "e3232902cbf1b4233498ce2031167a62ae3601b6440e2995ba0a1b695b5f6e0f",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-08-01T04:47:20Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1713",
+      "item_hash": "32e5d821cb6ccb4c0bd9600d7275f11d44ed84f4e053cc52ac2155c6428828b2",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1713",
+      "published_at": "2026-07-30T22:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 31 Jul 2026 The European Commission has disbursed today more than €1.86 billion to Belgium, Bulgaria, Slovenia and Denmark under the Recovery and Resilience Facility (RRF), the centrepiece of NextGenerationEU.",
+      "title": "Belgium, Bulgaria, Denmark, and Slovenia receive more than €1.86 billion under NextGenerationEU"
+    },
     "34e59a4a43258dac1910886c41d93e3c9a0ca81cf9d9d9b8bc2ee087aa8d2308": {
       "card_id": null,
       "content_hash": "dbc754c8d9ff0259f91e6e83c8af87a1c2c5df20b0c78636fc0477262117992d",
@@ -592,6 +624,22 @@
       "status": "queued",
       "summary": "European Commission Press release Brussels, 30 Jul 2026 The EU today launched a call for tenders to establish up to seven AI Gigafactories across Europe, as part of its latest major push to accelerate Europe's technological sovereignty and ambition of becoming the AI Continent.",
       "title": "EU launches AI Gigafactories call to boost Europe's computing capacity and unlock more than €30 billion in investment"
+    },
+    "3f350d3c4c61bde045790c9b7f3079bebca0ba5bbe7c7e939c7b899fa9e33eb3": {
+      "card_id": null,
+      "content_hash": "bfa170daf62224ce9e0cddc028a785e6a5ff8f32c16cd031da08546f6828aa59",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-08-01T04:47:20Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1706",
+      "item_hash": "3f350d3c4c61bde045790c9b7f3079bebca0ba5bbe7c7e939c7b899fa9e33eb3",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1706",
+      "published_at": "2026-07-30T22:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 31 Jul 2026 The European Commission has approved, under EU State aid rules, two Dutch schemes with a combined budget of €290 million to support sustainable aviation fuels (‘SAF'). The schemes will contribute to the objectives of the Clean Industrial Deal to accelerate the decarbonisation of EU industry, as well as of the ReFuelEU Aviation Regulation to boost the supply and demand of SAF and accelerate the transition to climate-neutral aviation.",
+      "title": "Commission approves €290 million Dutch State aid to support sustainable aviation fuels"
     },
     "3f89e214dbac85a518d70341e3d11c739b726596a055b50dfe807446a1698e99": {
       "card_id": null,
@@ -705,6 +753,22 @@
       "summary": "European Commission Press release Brussels, 10 Jul 2026 The European Commission has opened a formal investigation to assess whether, in the context of the proposed acquisition by XXXLutz of Porta, the parties may have engaged in gun jumping, which would be in breach of the EU Merger Regulation.",
       "title": "Commission opens formal investigation into possible gun jumping in XXXLutz's acquisition of Porta"
     },
+    "4bc9a3cb5a67f481aa89553054e258cc450005a659bf25a9cdabb57d70bdfdd9": {
+      "card_id": null,
+      "content_hash": "0ab06e3e3523407a6e867da0efa5c855a3725469cb3707a5f5d334d5c3508009",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-08-01T04:47:20Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1505",
+      "item_hash": "4bc9a3cb5a67f481aa89553054e258cc450005a659bf25a9cdabb57d70bdfdd9",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1505",
+      "published_at": "2026-07-30T22:00:00Z",
+      "raw_published": "Thu, 30 Jul 2026 22:00:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 31 Jul 2026 The European Commission has approved a €59 million Slovenian State aid scheme to promote battery energy storage systems, in line with the objectives of the Clean Industrial Deal. This measure will contribute to the transition towards a net-zero economy. The scheme was approved under the Clean Industrial Deal State Aid Framework (CISAF) adopted by the Commission on 25 June 2025.",
+      "title": "Commission approves €59 million Slovenian State aid scheme to promote battery energy storage systems"
+    },
     "4ee890caa0eeb9e3e0a960a1437c9026cd499a3b5d00505965f932499e33748f": {
       "card_id": null,
       "content_hash": "1e1e8e59026a73ecf0987cb5e8a29a011ca51890adc188d4c2dcad6f19c9e357",
@@ -801,6 +865,22 @@
       "summary": "",
       "title": "ECB to integrate non-financial credit claim portfolios into general collateral framework, phasing out temporary measures"
     },
+    "5a0c385dc5db3ecdf16a69953276cc855e9876c773859d607b17684e4db25ba8": {
+      "card_id": null,
+      "content_hash": "4aa85e96b9f91e502ca7103e849718b6d25e9dc6fd31a6cf2611a79caa26cad8",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-08-01T04:47:20Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714",
+      "item_hash": "5a0c385dc5db3ecdf16a69953276cc855e9876c773859d607b17684e4db25ba8",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714",
+      "published_at": "2026-07-31T06:04:12Z",
+      "raw_published": "Fri, 31 Jul 2026 06:04:12 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Press release Brussels, 31 Jul 2026 From 2 August 2026, the European Commission's AI Office, together with national authorities, will begin enforcing the Artificial Intelligence (AI) Act. On the same date, new transparency rules will start to apply.",
+      "title": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August"
+    },
     "5a21766d506ff299b999dc5274988ab2add945b2151d785b5b9befc70e91faff": {
       "card_id": null,
       "content_hash": "a337dd1f671e26bc112411970ebfb9a8d36955a6c1e1cc9e4f4bd5a9a3b64674",
@@ -833,6 +913,22 @@
       "summary": "European Commission Speech Dublin, 30 Jul 2026 Dear Minister Foley, High Commissioner El Haïry, Deputy Minister Grigaliené, Irish Presidency and Commission colleagues, Policy Makers and Practitioners, But ...",
       "title": "Speech by Commissioner McGrath at the High-Level Conference on Listening to Children and Young People - Challenges in Challenging Settings"
     },
+    "5bb0bac88a4ac9661f5b3a7973dc852db35da9c28429a22c1a06fce105ee1efa": {
+      "card_id": null,
+      "content_hash": "bce2e80dbccbc1390c5a369c10590fea73196c13f17a372dfdc043c3f1cc888d",
+      "feed_id": "ec_presscorner",
+      "first_seen": "2026-08-01T04:47:20Z",
+      "guid": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1715",
+      "item_hash": "5bb0bac88a4ac9661f5b3a7973dc852db35da9c28429a22c1a06fce105ee1efa",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1715",
+      "published_at": "2026-07-31T08:27:00Z",
+      "raw_published": "Fri, 31 Jul 2026 08:27:00 GMT",
+      "relevant": false,
+      "source_id": "ec",
+      "status": "queued",
+      "summary": "European Commission Daily news Brussels, 31 Jul 2026 Commission starts enforcing AI Act rules and new transparency requirements on 2 August From 2 August 2026, the European Commission's AI Office, together with na...",
+      "title": "Daily News 31 / 07 / 2026"
+    },
     "5ced94e175730204580b9762aefbe1fd5294c938a010e8fd50fccbd06df0c693": {
       "card_id": null,
       "content_hash": "4cbf61ae1533b798a9e11b16bd1a95a283ad183663374f830901ae723dc3f8f9",
@@ -848,6 +944,22 @@
       "status": "queued",
       "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">ESMA selects Etrading Software (Netherlands) B.V. as Consolidated Tape Provider for OTC derivatives</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-06T17:20:51+02:00\" title=\"Monday, July 6, 2026 - 17:20\" class=\"datetime\">06 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">Trading</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\">The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, has selected Etrading Software (Netherlands) B.V. as the Consolidated Tape Provider (CTP) for over-the-counter (OTC) derivatives. This constitutes an important step in improving transparency for OTC derivatives markets under the Markets in Financial Instruments Regulation (MiFIR).</p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span lang=\"PT\">Natasha Cazenave, ESMA’s Executive Director, said:&nbsp;</span></p> <h6 class=\"text-align-justify\"><em>“Today’s decision represents an important milestone in enhancing transparency in OTC derivatives markets. It is also an important step towards establishing consolidated tapes in the EU and delivering on the objectives of the MiFIR Review.</em></h6> <h6 class=\"text-align-justify\"><em>The consolidated tape for OTC derivatives will contribute to a more transparent and integrated EU market, benefiting investors and market participants across the European Union.”</em></h6> <p class=\"text-align-justify\"><span>ESMA selected&nbsp;&nbsp;Etrading Software (Netherlands) B.V. following a comprehensive assessment of its ",
       "title": "ESMA selects Etrading Software (Netherlands) B.V. as Consolidated Tape Provider for OTC derivatives"
+    },
+    "5e0b7bebe30d8170e790c58dcfae982b3500956891dd43235ed16515e8150c1c": {
+      "card_id": null,
+      "content_hash": "fce87f4d759d3d89bfe2f4b515c239a33413609532c4a0d9ef77b3e68d19bb6d",
+      "feed_id": "esma_news",
+      "first_seen": "2026-08-01T04:47:20Z",
+      "guid": null,
+      "item_hash": "5e0b7bebe30d8170e790c58dcfae982b3500956891dd43235ed16515e8150c1c",
+      "link": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision",
+      "published_at": null,
+      "raw_published": null,
+      "relevant": false,
+      "source_id": "esma",
+      "status": "queued",
+      "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-31T13:53:44+02:00\" title=\"Friday, July 31, 2026 - 13:53\" class=\"datetime\">31 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">Digital Finance and Innovation</div> <div class=\"field__item\">Joint Committee</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>The European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) today published a </span><a href=\"https://www.esma.europa.eu/sites/default/files/2026-07/JC_2026_25_ESA_statement_on_frontier_AI_models.pdf\"><span>statement</span></a><span> calling for a cross-sectoral, risk-based and consistent supervisory approach to mitigate the ICT risks stemming from frontier AI models.</span></p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\"><span>The statement takes into account existing regulatory requirements, the European Commission’s Action Plan on Cybersecurity and Artificial Intelligence, as well as recent publications by the European Systemic Risk Board (ESRB), the European Union Agency for Cybersecurity (ENISA), the Single Supervisory Mechanism (SSM) and other competent authorities.</span></p> <p class=\"text-align-justify\"><span>The ESAs outline measures to help financial entities strengthen their operational resilience against cyber risks linked to frontier AI models. Particular emphasis is placed on the prevention, detection and",
+      "title": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector"
     },
     "5f04c5349c03f2b35ebd69727251201ec6bf5285dc2ac21902691798d7da4392": {
       "card_id": null,
@@ -1088,6 +1200,22 @@
       "status": "queued",
       "summary": "European Commission Press release Brussels, 27 Jul 2026 Today, the European Commission positively assessed Belgium's fifth payment request for €225 million under the Recovery and Resilience Facility (RRF), the centrepiece of NextGenerationEU.",
       "title": "Commission greenlights Belgium's fifth payment request for €225 million under NextGenerationEU"
+    },
+    "74841e33b18d7e3cd355aa372e29fb122437e135786f855008bb6349fa2c94e0": {
+      "card_id": null,
+      "content_hash": "80228f237f872ce1d1f1b5e83680117dba0acd26d34c3cf5b46c5f58050d25ff",
+      "feed_id": "esma_news",
+      "first_seen": "2026-08-01T04:47:20Z",
+      "guid": null,
+      "item_hash": "74841e33b18d7e3cd355aa372e29fb122437e135786f855008bb6349fa2c94e0",
+      "link": "https://www.esma.europa.eu/press-news/esma-news/esma-publishes-latest-edition-its-newsletter-44",
+      "published_at": null,
+      "raw_published": null,
+      "relevant": true,
+      "source_id": "esma",
+      "status": "queued",
+      "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">ESMA publishes latest edition of its newsletter</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-31T09:56:51+02:00\" title=\"Friday, July 31, 2026 - 09:56\" class=\"datetime\">31 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">ESMA newsletter</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\">The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, has published today the <a href=\"https://www.esma.europa.eu/sites/default/files/2026-07/Newsletter_June_and_July_2026.pdf\">latest edition</a> of its Spotlight on Markets newsletter, covering key activities and publications from June and July 2026.</p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\">This edition opens with the <a href=\"https://www.esma.europa.eu/sites/default/files/2026-06/ESMA75-113276571-1710_Public_Statement_MiCA_transitional_period_ends.pdf\">statement</a> on the end of the MiCA transitional period, calling on unauthorised crypto-asset service providers to wind down their activities in an orderly manner while safeguarding clients’ interests and protecting market integrity.</p> <p class=\"text-align-justify\">Top news highlights include the <a href=\"https://www.esma.europa.eu/press-news/esma-news/esma-identifies-eu1-billion-potential-annual-savings-simplifying-eu\">final report</a> on simplifying transaction reporting, identifying up to €1 billion in potential annual savings through a \"report once\" approach, ESMA’s <a href=\"https://www.esma.europa.eu/press-news/esma-news/esma-cal",
+      "title": "ESMA publishes latest edition of its newsletter"
     },
     "75fc80827043a8b81affe43212c9d7861d0791a03e6f75ddaca61762729e3d22": {
       "card_id": null,
@@ -1809,6 +1937,22 @@
       "summary": "European Commission Press release Brussels, 30 Jul 2026 The European Commission has today disbursed €3.47 billion to Ukraine, under the defence window of the €90 billion Ukraine Support Loan.",
       "title": "Commission disburses another €3.47 billion to Ukraine for drones, missiles, air defence and fighter jets"
     },
+    "caa8b910a4150d0ce53bdffafef9f2b417fd0dc280aaee8b4713eee07ab1f4ec": {
+      "card_id": null,
+      "content_hash": "49c2c5fedbd157744ef60acdcff13a6ebff55b0fdbcbe7a4b86271ab349c7b45",
+      "feed_id": "eba_news",
+      "first_seen": "2026-08-01T04:47:20Z",
+      "guid": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision-mitigate-ict-risks-frontier",
+      "item_hash": "caa8b910a4150d0ce53bdffafef9f2b417fd0dc280aaee8b4713eee07ab1f4ec",
+      "link": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision-mitigate-ict-risks-frontier",
+      "published_at": "2026-07-31T12:30:00Z",
+      "raw_published": "Fri, 31 Jul 2026 14:30:00 +0200",
+      "relevant": false,
+      "source_id": "eba",
+      "status": "queued",
+      "summary": "The European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) today published a statement calling for a cross-sectoral, risk-based and consistent supervisory approach to mitigate the ICT risks stemming from frontier AI models.",
+      "title": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector"
+    },
     "cdfe9d2d1b9e9067cc5f83b77ba8112b118728d7780e5edd1893fcc36a7ee4ac": {
       "card_id": null,
       "content_hash": "af339aa84d35ce8ca07a72b3c4fbd80101953a09d5b529771642276ea319337f",
@@ -2113,6 +2257,22 @@
       "summary": "European Commission Press release Brussels, 29 Jul 2026 The European Commission has today endorsed Malta's Social Climate Plan – the fourth national plan adopted under the Social Climate Fund using revenues from carbon pricing to ensure a fair and inclusive clean transition. Malta's plan will mobilise €60.6 million until 2032, including €45.4 million from the European Union.",
       "title": "Commission endorses Malta's €60 million Social Climate Plan to support vulnerable households and small companies in the clean transition"
     },
+    "f0216ab3903ab9fe86b878ddaa5678f81aba864bd179467ee0fb61d1741511f7": {
+      "card_id": null,
+      "content_hash": "eb144465a82f31a59baeb8dd69908d4e5552a8ad20a6b9166c6a41a7c887b31c",
+      "feed_id": "ecb_banking_supervision_press",
+      "first_seen": "2026-08-01T04:47:20Z",
+      "guid": "https://www.bankingsupervision.europa.eu//press/pr/date/2026/html/ssm.pr260731~93964644b0.en.html",
+      "item_hash": "f0216ab3903ab9fe86b878ddaa5678f81aba864bd179467ee0fb61d1741511f7",
+      "link": "https://www.bankingsupervision.europa.eu//press/pr/date/2026/html/ssm.pr260731~93964644b0.en.html",
+      "published_at": "2026-07-31T09:00:00Z",
+      "raw_published": "Fri, 31 Jul 2026 11:00:00 +0200",
+      "relevant": false,
+      "source_id": "ecb",
+      "status": "queued",
+      "summary": "",
+      "title": "ECB publishes results of 2026 geopolitical risk reverse stress test"
+    },
     "f0a05acf9393a51b1b06e24ee924f9f114adf6967795b65385af0e6495ac61dd": {
       "card_id": null,
       "content_hash": "dcc6bd1ce3624265f3794b832efc5a5be0b779d9383851105003c3a81cbdec12",
@@ -2224,6 +2384,22 @@
       "status": "queued",
       "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">ESMA publishes technical standards on CCP admission criteria elements</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-08T15:02:57+02:00\" title=\"Wednesday, July 8, 2026 - 15:02\" class=\"datetime\">08 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">CCP</div> <div class=\"field__item\">Guidelines and Technical standards</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\">The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, has published its <a href=\"https://www.esma.europa.eu/sites/default/files/2026-07/ESMA91-1505572268-4692_Final_Report_RTS_Admission_Criteria_Elements.pdf\">Final Report on the Regulatory Technical Standards (RTS) concerning the central counterparties’ (CCPs) admission criteria elements</a>, following the review of the European Market Infrastructure Regulation (EMIR 3).</p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p>EMIR 3 introduces amendments to the provisions on participation requirements in CCPs, including for non-financial counterparties (NFCs).&nbsp;</p> <p>The RTS specify the elements which CCPs should consider when establishing their admission criteria for clearing members. This includes considerations related to NFC clearing members and sponsored membership models. The RTS do not set the actual admission criteria but instead define the elements for CCPs to consider.</p> <p>ESMA conducted a public consultation on the draft RTS in the last quarter of 2025 and held a public hearing in November 2025. The Final Report considers the feedb",
       "title": "ESMA publishes technical standards on CCP admission criteria elements"
+    },
+    "f769efba6157a846122abfb6e58a6348df2ec6b6d8bb41e7492af4864303af17": {
+      "card_id": null,
+      "content_hash": "3cc967892adc4cef5c257ee7cd5c522214e2fd4e8556ff41a813220086501ba7",
+      "feed_id": "eba_news",
+      "first_seen": "2026-08-01T04:47:20Z",
+      "guid": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
+      "item_hash": "f769efba6157a846122abfb6e58a6348df2ec6b6d8bb41e7492af4864303af17",
+      "link": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
+      "published_at": "2026-07-31T11:30:00Z",
+      "raw_published": "Fri, 31 Jul 2026 13:30:00 +0200",
+      "relevant": false,
+      "source_id": "eba",
+      "status": "queued",
+      "summary": "The Data Point Model Alliance, a joint initiative of the EBA, ECB and EIOPA, is committed to making financial sector statistical and supervisory reporting across the EU simpler, smarter and more proportionate. To facilitate the integration of reporting, they launched today a public consultation on enhancements to their DPM metamodel for two months. They also published naming conventions for a consistent approach to metadata.",
+      "title": "The EBA-ECB-EIOPA “Data Point Model Alliance” consults on improvements to their data dictionary metamodel to better support statistical and supervisory reporting"
     },
     "f8879051dfb6e300dff9193064dd2dc481084d016fb2b52ecc5c500da1b90b04": {
       "card_id": null,

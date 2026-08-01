@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T23:58:25Z",
+  "generated_at": "2026-08-01T04:47:20Z",
   "items": [
     {
       "feed_id": "ec_presscorner",
@@ -10,6 +10,16 @@
       "status": "queued",
       "summary": "European Commission Press release Brussels, 20 Jul 2026 The European Commission has informed several manufacturers of construction chemicals active in France, Germany and Spain as well as three national trade associations, of its preliminary view that they have breached EU antitrust rules by colluding to increase prices in the supply of chemicals for cement, concrete and mortar.",
       "title": "Commission sends Statements of Objections to several companies and trade associations in suspected construction chemicals cartel"
+    },
+    {
+      "feed_id": "esma_news",
+      "item_hash": "74841e33b18d7e3cd355aa372e29fb122437e135786f855008bb6349fa2c94e0",
+      "link": "https://www.esma.europa.eu/press-news/esma-news/esma-publishes-latest-edition-its-newsletter-44",
+      "published_at": null,
+      "source_id": "esma",
+      "status": "queued",
+      "summary": "<span class=\"field field--name-title field--type-string field--label-hidden\">ESMA publishes latest edition of its newsletter</span> <span class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2026-07-31T09:56:51+02:00\" title=\"Friday, July 31, 2026 - 09:56\" class=\"datetime\">31 July 2026</time> </span> <div class=\"field field--name-field-news-section field--type-entity-reference field--label-hidden field__items\"> <div class=\"field__item\">ESMA newsletter</div> </div> <div class=\"clearfix text-formatted field field--name-field-news-introduction field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\">The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, has published today the <a href=\"https://www.esma.europa.eu/sites/default/files/2026-07/Newsletter_June_and_July_2026.pdf\">latest edition</a> of its Spotlight on Markets newsletter, covering key activities and publications from June and July 2026.</p> </div> <div class=\"clearfix text-formatted field field--name-field-news-body field--type-text-long field--label-hidden field__item\"><p class=\"text-align-justify\">This edition opens with the <a href=\"https://www.esma.europa.eu/sites/default/files/2026-06/ESMA75-113276571-1710_Public_Statement_MiCA_transitional_period_ends.pdf\">statement</a> on the end of the MiCA transitional period, calling on unauthorised crypto-asset service providers to wind down their activities in an orderly manner while safeguarding clients’ interests and protecting market integrity.</p> <p class=\"text-align-justify\">Top news highlights include the <a href=\"https://www.esma.europa.eu/press-news/esma-news/esma-identifies-eu1-billion-potential-annual-savings-simplifying-eu\">final report</a> on simplifying transaction reporting, identifying up to €1 billion in potential annual savings through a \"report once\" approach, ESMA’s <a href=\"https://www.esma.europa.eu/press-news/esma-news/esma-cal",
+      "title": "ESMA publishes latest edition of its newsletter"
     }
   ],
   "jurisdiction_id": "eu",
