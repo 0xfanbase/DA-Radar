@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T04:47:21Z",
+  "generated_at": "2026-08-01T23:09:00Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -5890,7 +5890,7 @@
       "title": "Scam alert related to banks"
     },
     "5b8be9cc1c0e00a3893e55c68f92fc93217e1b6ad8e6c95de77dae8609cf1b4b": {
-      "card_id": null,
+      "card_id": "5b8be9cc1c0e00a3893e55c68f92fc93217e1b6ad8e6c95de77dae8609cf1b4b",
       "content_hash": "9233d8806d7537ffc7f9e642b51909749ae592e4ec1c6c74c28fb2a0fa5935de",
       "feed_id": "hkma_press_release",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -5901,7 +5901,7 @@
       "raw_published": "Tue, 29 Jul 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Implementation of regulatory regime for stablecoin issuers"
     },
@@ -6498,7 +6498,7 @@
       "title": "HKICL alerts public of fraudulent website"
     },
     "640e985d195a3900a87101ecd4a714840c61d619c869cc71673dbb79d81a87bc": {
-      "card_id": null,
+      "card_id": "640e985d195a3900a87101ecd4a714840c61d619c869cc71673dbb79d81a87bc",
       "content_hash": "5202edbd23c23c07508544b289a2f373a0a61c7c013282bcedd9f0ea7812e07b",
       "feed_id": "hkma_consultations",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -6509,7 +6509,7 @@
       "raw_published": "Fri, 13 Jun 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)1Fb"
     },
@@ -6930,7 +6930,7 @@
       "title": "Tender for the re-opening of 5-year RMB HKSAR Institutional Government Bonds to be held on Thursday, 5 March 2026"
     },
     "6a3df2ea39ba47009aa19271f937f08657701f21b965aa40996cd062681c8e57": {
-      "card_id": null,
+      "card_id": "6a3df2ea39ba47009aa19271f937f08657701f21b965aa40996cd062681c8e57",
       "content_hash": "d066467662b7c56aaed21a252c87c27d5dbe16e6b8824262123c13fef7d3eaba",
       "feed_id": "hkma_consultations",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -6941,7 +6941,7 @@
       "raw_published": "Fri, 13 Jun 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3 Part I"
     },
@@ -6994,7 +6994,7 @@
       "title": "Keynote Speech at International Symposium on Digital Fraud Prevention and Detection by Raymond Chan, Executive Director (Enforcement and AML), Hong Kong Monetary Authority"
     },
     "6a92aafff44208e043fefcb33e646a270ceeb90b852042684b91731e6d892cc5": {
-      "card_id": null,
+      "card_id": "6a92aafff44208e043fefcb33e646a270ceeb90b852042684b91731e6d892cc5",
       "content_hash": "eb3a01ba602115f1064d034ecded4c928a07207978ed34b7a3152bcd5419b74a",
       "feed_id": "hkma_circulars",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -7005,7 +7005,7 @@
       "raw_published": "Wed, 27 May 2026 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Relevant Stablecoin-related Activities"
     },

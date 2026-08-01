@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "5b8be9cc1c0e00a3893e55c68f92fc93217e1b6ad8e6c95de77dae8609cf1b4b",
+  "jurisdiction_id": "hk",
+  "published_date": "2025-07-29",
+  "regulator": "HKMA",
+  "pillar": [
+    "stablecoins"
+  ],
+  "type": "conclusions",
+  "title": "Implementation of regulatory regime for stablecoin issuers",
+  "summary": "This HKMA press release, published 29 July 2025, announces the documents implementing Hong Kong's regulatory regime for stablecoin issuers, which took effect on 1 August 2025. The release describes materials including consultation conclusions and a finalised Guideline on Supervision of Licensed Stablecoin Issuers, consultation conclusions and guidance on anti-money-laundering and counter-financing-of-terrorism requirements, and explanatory notes on licensing procedures and transitional arrangements for pre-existing issuers. Parties interested in a licence are encouraged to contact HKMA by 31 August 2025, with early-consideration applications due by 30 September 2025. HKMA states it is an offence under the Stablecoins Ordinance to falsely claim to be a licensee or applicant, notes no licences had yet been issued as of the release date, and says a register of licensees will be maintained on its website.",
+  "why_it_matters": "This press release marks the practical start of Hong Kong's stablecoin issuer licensing regime under the Stablecoins Ordinance, setting out how prospective issuers should engage with HKMA and warning that falsely claiming to be a licensee or applicant is itself an offence. For a newcomer, that combination -- a real licensing process plus an explicit anti-impersonation warning -- signals HKMA treating this regime as immediately operative, not merely announced.",
+  "key_dates": {
+    "deadline": "2025-09-30",
+    "effective": "2025-08-01",
+    "milestone": "2025-08-31"
+  },
+  "citations": [
+    {
+      "url": "https://www.info.gov.hk/gia/general/202507/29/P2025072900703.htm",
+      "quote": "it is an offence under the Stablecoins Ordinance to falsely claim oneself as a licensee"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-08-01T06:45:00Z",
+  "model": "Claude (Anthropic)"
+}

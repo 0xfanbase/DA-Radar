@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "6a3df2ea39ba47009aa19271f937f08657701f21b965aa40996cd062681c8e57",
+  "jurisdiction_id": "hk",
+  "published_date": "2025-06-13",
+  "regulator": "HKMA",
+  "pillar": [
+    "banking_money"
+  ],
+  "type": "consultation",
+  "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3 Part I",
+  "summary": "This is an HKMA consultation document dated 13 June 2025, part of a bundle titled \"Cryptoassets standard and other miscellaneous amendments: consultation on return templates.\" This specific item, Return template MA(BS)3 Part I, is a banking-sector return form in HKMA's \"MA(BS)\" prudential-return series for Authorized Institutions, consulted on as part of HKMA's wider Cryptoassets Standard rollout. Repeated attempts to fetch this document from HKMA's document repository (brdr.hkma.gov.hk) during this analysis all returned HTTP 503 Service Unavailable, consistent with a persistent, previously-documented access problem specific to that subdomain. This card therefore cannot describe what the proposed amendments actually contain, only the document's official title, type, and publication date; it should be revisited once the repository is reachable and the primary text confirmed.",
+  "why_it_matters": "This item is part of the same HKMA Cryptoassets Standard consultation series as other return-template amendments processed alongside it, extending Hong Kong banks' existing prudential-return paperwork to cover cryptoasset exposures. For a newcomer, that is a sign Hong Kong is folding crypto risk reporting into standard banking supervision rather than regulating it separately, though this card could not confirm this item's specific proposed changes because HKMA's document repository was unreachable during drafting.",
+  "citations": [
+    {
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-8-EN",
+      "quote": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)3 Part I"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-08-01T06:15:00Z",
+  "model": "Claude (Anthropic)"
+}

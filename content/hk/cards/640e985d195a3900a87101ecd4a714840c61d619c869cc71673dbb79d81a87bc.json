@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "640e985d195a3900a87101ecd4a714840c61d619c869cc71673dbb79d81a87bc",
+  "jurisdiction_id": "hk",
+  "published_date": "2025-06-13",
+  "regulator": "HKMA",
+  "pillar": [
+    "banking_money"
+  ],
+  "type": "consultation",
+  "title": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)1Fb",
+  "summary": "This is an HKMA consultation document dated 13 June 2025, part of a bundle titled \"Cryptoassets standard and other miscellaneous amendments: consultation on return templates.\" This specific item, Return template MA(BS)1Fb, is a banking-sector return form in HKMA's \"MA(BS)\" prudential-return series for Authorized Institutions, consulted on as part of HKMA's wider Cryptoassets Standard rollout. Repeated attempts to fetch this document from HKMA's document repository (brdr.hkma.gov.hk) during this analysis all returned HTTP 503 Service Unavailable, consistent with a persistent, previously-documented access problem specific to that subdomain. This card therefore cannot describe what the proposed amendments actually contain, only the document's official title, type, and publication date; it should be revisited once the repository is reachable and the primary text confirmed.",
+  "why_it_matters": "HKMA's Cryptoassets Standard consultation series is amending the prudential banking-return forms Hong Kong's Authorized Institutions file with their regulator, extending them to cover cryptoasset exposures. For a newcomer, that is a signal that bank-level crypto risk reporting is being built into Hong Kong's existing banking-supervision paperwork, though this card could not confirm this item's specific proposed changes because HKMA's document repository was unreachable during drafting.",
+  "citations": [
+    {
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250613-6-EN",
+      "quote": "Cryptoassets standard and other miscellaneous amendments: consultation on return templates Return template: MA(BS)1Fb"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-08-01T06:15:00Z",
+  "model": "Claude (Anthropic)"
+}
