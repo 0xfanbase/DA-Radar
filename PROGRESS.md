@@ -2836,3 +2836,63 @@ verified). Real commits: `78d2164`/`4cbffb4` (hk), `29ee2c6`/`e3e0754` (us), `82
 this firing: hk 47, us 15, eu 1 (the recurring cartel item, still unfixed), uk 1, jp 13, uae/ch 0.
 No `PushNotification` fired -- nothing stopped early, no gate failure blocked a commit, every push
 landed and was independently confirmed against `origin/main`, not self-reported.
+
+### 2026-07-31/08-01 -- Eighth firing (`trig_01CHa5wLW4G5LGj8fREeKUkE`, fired 22:37:29 UTC on schedule, no one watching): hk/us/eu processed
+
+Same cap logic as every prior firing: hk=4, us=4, eu=2 (both its queued items this firing -- the
+recurring cartel item plus a newly-arrived ECB item) -- 10 total, cap bound exactly at eu. This is
+the first firing where `uk` got zero items purely because `eu`'s queue happened to hold 2 items
+instead of its usual 1, not from any policy change or cap increase. uae/ch (both empty) and jp
+(queue of 14, grown by one since last firing, untouched) also got nothing.
+
+**hk -- 4 cards drafted, verified, published; 1 verified, 3 unverified.** Three HKMA items (the
+MA(BS)28 explanatory-notes consultation on Cryptoassets Standard return templates; gazettal of the
+revised SPM modules and Code of Practice for the same standard; a new phase of Project Ensemble for
+tokenised deposits and digital assets) plus one joint HKMA/SFC item (a statement on stablecoin-
+related market movements). The one verified card is the joint statement: unable to fetch its cited
+`brdr.hkma.gov.hk` URL, its verifier found the identical statement mirrored on SFC's own official
+domain -- a genuine co-issuer of the joint statement and itself a listed official source -- and
+replaced the citation entirely rather than leave a dead link, re-deriving the summary from the SFC
+mirror; the deterministic gate independently re-fetched that new citation and held the card
+verified. The other three all cite HKMA domains directly (two `brdr.hkma.gov.hk`, one
+`www.hkma.gov.hk`) and stayed unverified -- notably, the deterministic gate found zero citation
+problems across all four cards this batch (a first for `hk` in this window's tracked history,
+unlike firings #6/#7's multi-card downgrades), so these three reflect each verifier's own
+unresolved access difficulty against those HKMA domains rather than a gate-stage downgrade. New
+glossary term `project-ensemble`; `tokenised-deposit` extended from uk-only to uk+hk.
+
+**us -- 4 cards drafted, verified, published; 4 verified, 0 unverified.** A clean sweep: two more
+historical Cboe BZX ARK 21Shares Bitcoin ETF disapproval orders (April 2022, January 2023), the
+five-agency (Fed/FinCEN/OCC/FDIC/NCUA) proposal requiring payment stablecoin issuers to maintain a
+customer identification program under the GENIUS Act, and an NYSE Arca Amendment No. 1 notice for
+the Hashdex Bitcoin ETF. Verifiers caught a genuine adjacent-sentence conflation in the Hashdex card
+(a 15 Nov "approve/disapprove/institute proceedings" three-way menu wrongly merged with 28 Nov's
+narrower "institute proceedings to determine whether to disapprove") and two precision fixes in the
+second ARK 21Shares card (order-date vs. Federal-Register-publication-date conflation; "nine
+months" corrected to "ten months" since the first disapproval); the other two needed no changes.
+All four citations (`govinfo.gov` throughout) passed the deterministic gate with zero downgrades --
+the first fully clean 4/4 jurisdiction-batch (zero downgrades on zero-issue cards) in this window's
+tracked history.
+
+**eu -- 1 card drafted, verified, published; 1 verified, 0 unverified. Cartel item declined for an
+eighth consecutive firing.** Same recurring construction-chemicals cartel item, same correct
+decision, same already-diagnosed and still-unfixed root cause (the `"mica"` keyword substring-
+matching inside "che-MICA-ls"); left queued, not drafted, again. The new item -- an ECB press
+release on planned digital-euro-app accessibility features (beyond the European Accessibility Act
+and EN 301 549, tested via the 2027 pilot with the ONCE Foundation and 19 national central banks)
+-- was drafted, added a sourced paragraph to the digital-euro strand of the `banking_money` pillar
+state, and added a new `european-accessibility-act` glossary term. Its citation URL contains a
+double slash after the domain (`ecb.europa.eu//press/...`); rather than assume this was a typo, the
+verifier fetched ECB's own press RSS feed directly and confirmed every item in it uses the identical
+double-slash pattern -- a genuine, systemic quirk of the ECB CMS's own link generation, not an
+error -- and correctly left it unchanged. The deterministic gate confirmed the citation authentic
+on its own re-fetch; card stayed verified with no content changes needed.
+
+**Net result of this firing:** 9 cards processed end-to-end across 3 jurisdictions (hk, us, eu; uk
+untouched this firing, cap bound before reaching it) -- checked card-by-card against the actual
+published files, not tallied from memory: **6 verified, 3 unverified** (hk 1/4 verified; us 4/4
+verified; eu 1/1 verified). Real commits: `cbb8d38`/`5dc19f8` (hk), `25b3ade`/`12fc142` (us),
+`8532859`/`59189ed` (eu). Backlog after this firing: hk 43, us 11, eu 1 (the recurring cartel item,
+still unfixed), uk 1, jp 14, uae/ch 0. No `PushNotification` fired -- nothing stopped early, no gate
+failure blocked a commit, every push landed and was independently confirmed against `origin/main`,
+not self-reported.

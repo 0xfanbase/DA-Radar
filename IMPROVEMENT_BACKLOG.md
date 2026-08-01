@@ -1806,3 +1806,21 @@ complicates how confidently a future firing's downgrade should be attributed to 
 by default -- this firing shows the gate can and does downgrade citations from domains with no
 other evidence of being unreachable. An owner-level look at the gate's own request/response logs
 for this specific run (if retained) would settle which explanation is correct.
+
+### 2026-08-01 -- Follow-up data point: zero gate downgrades in the very next firing's 8-card batch
+
+The entry immediately above (2026-07-31) flagged two candidate explanations for that firing's
+unusually high downgrade rate (4/9 cards, touching `apps.sfc.hk` and `govinfo.gov` alongside the
+known-bad HKMA domains) and left the question open: (a) transient network flakiness specific to
+that run, or (b) a higher underlying gate false-negative rate than previously assumed. This firing
+(eighth) is a relevant data point either way: the deterministic gate re-fetched 8 cards' citations
+across `hk` (4, including two `brdr.hkma.gov.hk` citations left unresolved by their verifiers) and
+`us` (4, all `govinfo.gov`) and downgraded **zero** of them -- every citation, including the same
+`govinfo.gov` domain that was downgraded last firing, passed cleanly this time. This one firing
+can't settle the question on its own (a single clean batch is consistent with either explanation --
+flakiness that simply didn't recur, or a false-negative rate too low to show up in every sample),
+but it is a real, logged data point leaning against "the gate has a persistently high false-
+negative rate on these domains" and toward "the 07-31 spike was a transient/run-specific event."
+Not fixed here (same reasons as the entry above -- `pipeline/verify/gate.py` is outside this
+runbook's scope); recording so a future owner reviewing this open question has both data points,
+not just the alarming one.
