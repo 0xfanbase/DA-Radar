@@ -1,8 +1,15 @@
 name: Watcher
 
 on:
-  schedule:
-    - cron: "30 1 * * *" # 09:30 HKT (UTC+8, no DST) daily
+  # Automatic daily schedule disabled 2026-08-01 at owner request (repeated
+  # failure-email notifications from the `us` matrix job). This stops the
+  # entire automatic ingestion side of the self-learning loop -- no live
+  # jurisdiction's ledger/queue will update, so analyze.yml's CCR trigger
+  # will find only empty/stale queues -- until a human re-adds the schedule
+  # block below. workflow_dispatch is left in place so it can still be run
+  # by hand.
+  # schedule:
+  #   - cron: "30 1 * * *" # 09:30 HKT (UTC+8, no DST) daily
   workflow_dispatch: {}
 
 permissions:
