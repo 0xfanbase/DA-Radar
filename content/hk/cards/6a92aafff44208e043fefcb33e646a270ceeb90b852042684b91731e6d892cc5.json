@@ -4,13 +4,11 @@
   "jurisdiction_id": "hk",
   "published_date": "2026-05-27",
   "regulator": "HKMA",
-  "pillar": [
-    "stablecoins"
-  ],
+  "pillar": ["stablecoins"],
   "type": "circular",
   "title": "Relevant Stablecoin-related Activities",
-  "summary": "This is an HKMA circular dated 27 May 2026, titled \"Relevant Stablecoin-related Activities.\" Beyond its title, publication date, and regulator, this card cannot describe the circular's substantive content -- including which entities it addresses and what activities it covers: repeated attempts to fetch it from HKMA's document repository (brdr.hkma.gov.hk) during this analysis all returned HTTP 503 Service Unavailable, consistent with a persistent, previously-documented access problem affecting that subdomain rather than a one-off failure. This card classifies it under the Stablecoins pillar based on its title alone; it should be revisited and its classification and summary confirmed once the repository is reachable and the primary text can be read directly.",
-  "why_it_matters": "HKMA issuing a circular specifically titled \"Relevant Stablecoin-related Activities\" signals continued, active regulatory attention to stablecoin-related conduct in Hong Kong. For a newcomer, that is worth tracking, though this card could not confirm what specific activities or requirements the circular addresses because HKMA's document repository was unreachable during drafting.",
+  "summary": "This is an HKMA circular dated 27 May 2026, titled \"Relevant Stablecoin-related Activities.\" Beyond its title, publication date, and regulator, this card cannot describe the circular's substantive content -- including which entities it addresses and what activities it covers: repeated attempts to fetch it from HKMA's document repository (brdr.hkma.gov.hk) returned HTTP 503 Service Unavailable both when this card was first drafted and again, independently, during verification; the same error also affects the wider brdr.hkma.gov.hk subdomain (its root and its document-ledger listing page both also returned HTTP 503), not just this one document. This card classifies it under the Stablecoins pillar based on its title alone; it should be revisited and its classification and summary confirmed once the repository is reachable and the primary text can be read directly.",
+  "why_it_matters": "HKMA issuing a circular specifically titled \"Relevant Stablecoin-related Activities\" signals continued, active regulatory attention to stablecoin-related conduct in Hong Kong. For a newcomer, that is worth tracking, though this card could not confirm what specific activities or requirements the circular addresses because HKMA's document repository remained unreachable (HTTP 503) through both drafting and this independent verification pass.",
   "citations": [
     {
       "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260527-4-EN",
@@ -18,6 +16,6 @@
     }
   ],
   "status": "unverified",
-  "generated_at": "2026-08-01T06:15:00Z",
+  "generated_at": "2026-08-01T08:30:00Z",
   "model": "Claude (Anthropic)"
 }

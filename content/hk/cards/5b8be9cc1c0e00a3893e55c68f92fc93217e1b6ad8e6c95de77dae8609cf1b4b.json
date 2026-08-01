@@ -4,9 +4,7 @@
   "jurisdiction_id": "hk",
   "published_date": "2025-07-29",
   "regulator": "HKMA",
-  "pillar": [
-    "stablecoins"
-  ],
+  "pillar": ["stablecoins"],
   "type": "conclusions",
   "title": "Implementation of regulatory regime for stablecoin issuers",
   "summary": "This HKMA press release, published 29 July 2025, announces the documents implementing Hong Kong's regulatory regime for stablecoin issuers, which took effect on 1 August 2025. The release describes materials including consultation conclusions and a finalised Guideline on Supervision of Licensed Stablecoin Issuers, consultation conclusions and guidance on anti-money-laundering and counter-financing-of-terrorism requirements, and explanatory notes on licensing procedures and transitional arrangements for pre-existing issuers. Parties interested in a licence are encouraged to contact HKMA by 31 August 2025, with early-consideration applications due by 30 September 2025. HKMA states it is an offence under the Stablecoins Ordinance to falsely claim to be a licensee or applicant, notes no licences had yet been issued as of the release date, and says a register of licensees will be maintained on its website.",
@@ -22,7 +20,7 @@
       "quote": "it is an offence under the Stablecoins Ordinance to falsely claim oneself as a licensee"
     }
   ],
-  "status": "unverified",
-  "generated_at": "2026-08-01T06:45:00Z",
+  "status": "verified",
+  "generated_at": "2026-08-01T09:20:00Z",
   "model": "Claude (Anthropic)"
 }
