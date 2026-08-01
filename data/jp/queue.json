@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T04:54:02Z",
+  "generated_at": "2026-08-01T04:47:18Z",
   "items": [
     {
       "feed_id": "jvcea_news",
@@ -140,6 +140,26 @@
       "status": "queued",
       "summary": "<p>移転制限が付された暗号資産の情報提供及び公表に関する規則第5条第3項に基づく公表について更新しました。 詳細につきましては、下記ページよりご確認ください。</p> <p>The post <a href=\"https://jvcea.or.jp/information/statistics-reports/20260731-001/\">移転制限が付された暗号資産の情報提供及び公表に関する規則第5条第3項に基づく公表について更新しました。</a> first appeared on <a href=\"https://jvcea.or.jp\">一般社団法人日本暗号資産等取引業協会（JVCEA）</a>.</p>",
       "title": "移転制限が付された暗号資産の情報提供及び公表に関する規則第5条第3項に基づく公表について更新しました。"
+    },
+    {
+      "feed_id": "jvcea_news",
+      "item_hash": "52ce1a387a43eb2bc28e4dc55c023bc517cf45551781862f2bfc781124bb82c7",
+      "link": "https://jvcea.or.jp/information/statistics-reports/20260731-002/",
+      "published_at": "2026-07-31T07:00:51Z",
+      "source_id": "jvcea",
+      "status": "queued",
+      "summary": "<p>一般社団法人日本暗号資産等取引業協会にて集計・公表している統計情報について更新しました。 統計データの詳細につきましては、下記ページよりご確認ください。</p> <p>The post <a href=\"https://jvcea.or.jp/information/statistics-reports/20260731-002/\">会員統計情報を更新しました</a> first appeared on <a href=\"https://jvcea.or.jp\">一般社団法人日本暗号資産等取引業協会（JVCEA）</a>.</p>",
+      "title": "会員統計情報を更新しました"
+    },
+    {
+      "feed_id": "jvcea_news",
+      "item_hash": "a9c55799976afb623cbcf964d02c05ea6b37bb3ed6a3a61a4437cc79e47d915c",
+      "link": "https://jvcea.or.jp/information/heads-up/20260731-003/",
+      "published_at": "2026-07-31T10:56:46Z",
+      "source_id": "jvcea",
+      "status": "queued",
+      "summary": "<p>会員各位 平素より当協会の活動にご理解・ご協力を賜り、誠にありがとうございます。 令和8年（2026年）に発生した熊本地震により、熊本県を中心として広範囲にわたる甚大な被害が発生しております。 被災された皆様に心よりお見 [&#8230;]</p> <p>The post <a href=\"https://jvcea.or.jp/information/heads-up/20260731-003/\">【周知】熊本地震に便乗した義援金詐欺等に関する注意喚起</a> first appeared on <a href=\"https://jvcea.or.jp\">一般社団法人日本暗号資産等取引業協会（JVCEA）</a>.</p>",
+      "title": "【周知】熊本地震に便乗した義援金詐欺等に関する注意喚起"
     }
   ],
   "jurisdiction_id": "jp",

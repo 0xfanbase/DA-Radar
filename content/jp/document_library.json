@@ -188,9 +188,27 @@
       "regulator": "JVCEA",
       "title": "移転制限が付された暗号資産の情報提供及び公表に関する規則第5条第3項に基づく公表について更新しました。",
       "type": "news"
+    },
+    {
+      "item_hash": "52ce1a387a43eb2bc28e4dc55c023bc517cf45551781862f2bfc781124bb82c7",
+      "link": "https://jvcea.or.jp/information/statistics-reports/20260731-002/",
+      "pillar": [],
+      "published_at": "2026-07-31T07:00:51Z",
+      "regulator": "JVCEA",
+      "title": "会員統計情報を更新しました",
+      "type": "news"
+    },
+    {
+      "item_hash": "a9c55799976afb623cbcf964d02c05ea6b37bb3ed6a3a61a4437cc79e47d915c",
+      "link": "https://jvcea.or.jp/information/heads-up/20260731-003/",
+      "pillar": [],
+      "published_at": "2026-07-31T10:56:46Z",
+      "regulator": "JVCEA",
+      "title": "【周知】熊本地震に便乗した義援金詐欺等に関する注意喚起",
+      "type": "news"
     }
   ],
-  "generated_at": "2026-07-31T04:54:02Z",
+  "generated_at": "2026-08-01T04:47:18Z",
   "jurisdiction_id": "jp",
   "schema_version": 1
 }
