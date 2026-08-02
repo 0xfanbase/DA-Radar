@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "75aecbaa6ec9dca70452ef85f47c0dc0431464e9e55810a76bf3dec2116f4682",
+  "jurisdiction_id": "hk",
+  "published_date": "2026-05-27",
+  "regulator": "HKMA",
+  "pillar": ["stablecoins"],
+  "type": "circular",
+  "title": "Virtual asset-related activities in relation to relevant stablecoins issued by licensed stablecoin issuers",
+  "summary": "On 27 May 2026, the Hong Kong Monetary Authority (HKMA) issued a circular titled 'Virtual asset-related activities in relation to relevant stablecoins issued by licensed stablecoin issuers.' HKMA's document repository (brdr.hkma.gov.hk) returned a server error (HTTP 503) on every fetch attempt made while drafting this card; a control fetch of the Securities and Futures Commission's site succeeded at the same time, pointing to an HKMA-specific access problem rather than a general fetch failure. Because the circular's full text could not be retrieved, its substantive requirements -- including which institutions it addresses and what obligations it sets -- are not yet confirmed against primary source text. Based on the title alone, the circular concerns virtual-asset-related activities involving stablecoins issued by HKMA-licensed stablecoin issuers. This card should be revisited, and its content checked directly against the primary source, once brdr.hkma.gov.hk becomes reachable.",
+  "why_it_matters": "This is a supervisory circular tied to Hong Kong's stablecoin issuer licensing regime, though its specific requirements could not be confirmed this pass because the source document was unreachable. Readers new to this regime should treat this as a placeholder pending direct confirmation, since HKMA is known to issue circulars addressing how virtual-asset activities interact with its licensed stablecoin issuers.",
+  "citations": [
+    {
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260527-2-EN",
+      "quote": "Virtual asset-related activities in relation to relevant stablecoins issued by licensed stablecoin issuers"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-08-02T03:15:00Z",
+  "model": "Claude (Anthropic)"
+}

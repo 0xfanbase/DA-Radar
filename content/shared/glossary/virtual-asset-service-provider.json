@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "id": "virtual-asset-service-provider",
+  "term": "Virtual Asset Service Provider (VASP)",
+  "jurisdictions": ["global"],
+  "plain_definition": "An umbrella term, originating from international anti-money-laundering standards, for a business that provides services involving virtual assets on behalf of customers -- for example running an exchange, transferring virtual assets, or safekeeping them. Each jurisdiction defines which specific activities count as VASP services and which regulator licenses them; in Hong Kong, virtual asset trading platforms are currently the main licensed VASP category, with virtual asset dealing, custodian, advisory, and management services due to become separately licensed VASP categories.",
+  "formal_definition": "A term originating in the Financial Action Task Force's global anti-money-laundering standards for a natural or legal person conducting virtual-asset-related activities as a business on behalf of a customer. In Hong Kong, the Anti-Money Laundering and Counter-Terrorist Financing Ordinance (Cap. 615) implements this concept: virtual asset trading platforms are licensed as VASPs today, and the ordinance is proposed to be extended to licence virtual asset dealing, custodian, advisory, and management services as further VASP categories.",
+  "related_terms": ["vatp", "amlo", "hkma", "sfc"],
+  "first_used_card_id": "709df5c06eb6654dd67aca359346660320c86f59ae526b22bac15b7eabdab877",
+  "generated_at": "2026-08-02T03:30:00Z",
+  "model": "Claude (Anthropic)",
+  "status": "unverified"
+}

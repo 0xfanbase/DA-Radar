@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "79bd051568f016dbe899066150c81890c40e67dc5c63ee94529d8f5a1195e4c2",
+  "jurisdiction_id": "hk",
+  "published_date": "2026-04-28",
+  "regulator": "HKMA",
+  "pillar": ["stablecoins", "aml_cft_enforcement"],
+  "type": "guidance",
+  "title": "Beware of tokens purported to be associated with licensed stablecoin issuers",
+  "summary": "On 28 April 2026, the Hong Kong Monetary Authority (HKMA) published a press release titled 'Beware of tokens purported to be associated with licensed stablecoin issuers.' HKMA's website returned no retrievable content on every fetch attempt made while drafting this card, and web searches for the release's exact title found no readable copy on any other official Hong Kong government domain, so its substantive content -- including any specific tokens or entities named, and what advice it gives the public -- could not be confirmed against primary source text. Based on the title alone, the release appears to be a public warning that some tokens circulating claim an association with HKMA-licensed stablecoin issuers, without HKMA confirming that association is genuine. This card should be revisited, and its content checked directly against the primary source, once HKMA's website is reachable.",
+  "why_it_matters": "This is HKMA policing the edges of its own stablecoin-issuer licensing regime, warning the public against tokens that falsely trade on a licensed issuer's name, though the release's specific details could not be confirmed this pass. For a newcomer, it is a reminder that being 'associated' with a licensed issuer is a specific, checkable regulatory fact rather than something to take on a token promoter's word.",
+  "citations": [
+    {
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260428-5/",
+      "quote": "Beware of tokens purported to be associated with licensed stablecoin issuers"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-08-02T03:20:00Z",
+  "model": "Claude (Anthropic)"
+}

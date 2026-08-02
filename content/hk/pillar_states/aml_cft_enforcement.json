@@ -33,9 +33,10 @@
   "open_items": [
     "The SFC's Alert List continues to add unlicensed-platform entries on a rolling basis.",
     "The precise transfer-value threshold and record-retention period for the travel rule could not be independently confirmed against primary-source guideline text during this research and should be re-verified directly.",
-    "The four new AMLO-based licensing regimes for VA dealing, custody, advisory, and management (see that pillar) will extend AML/CFT coverage once enacted, but are not yet in force."
+    "The four new AMLO-based licensing regimes for VA dealing, custody, advisory, and management (see that pillar) will extend AML/CFT coverage once enacted, but are not yet in force.",
+    "On 2 Aug 2026, while drafting a dedicated card for the 28 April 2026 press release already cited above ('Beware of tokens purported to be associated with licensed stablecoin issuers'), www.hkma.gov.hk returned no retrievable content on three separate attempts, and web searches (Google and Bing) for the release's exact title found no alternate official mirror; a control fetch of SFC's site succeeded at the same time. The card was drafted from its title alone, so the specific token(s) or entities the warning names, if any, remain unconfirmed against primary source text."
   ],
-  "generated_at": "2026-07-13T11:53:32Z",
+  "generated_at": "2026-08-02T03:38:00Z",
   "model": "Claude (Anthropic)",
   "status": "unverified"
 }

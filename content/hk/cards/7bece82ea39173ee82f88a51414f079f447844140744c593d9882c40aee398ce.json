@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "7bece82ea39173ee82f88a51414f079f447844140744c593d9882c40aee398ce",
+  "jurisdiction_id": "hk",
+  "published_date": "2025-01-08",
+  "regulator": "HKMA",
+  "pillar": ["tokenization_rwa"],
+  "type": "circular",
+  "title": "Supervisory Incubator for Distributed Ledger Technology (DLT)",
+  "summary": "On 8 January 2025, the Hong Kong Monetary Authority (HKMA) issued a circular titled 'Supervisory Incubator for Distributed Ledger Technology (DLT).' The document is hosted only as a PDF on HKMA's website, which returned no retrievable content on every fetch attempt made while drafting this card, so its substantive content -- what the 'Supervisory Incubator' involves, which institutions it applies to, and any application process, conditions, or deadline -- could not be confirmed against primary source text. Based on the title alone, the circular appears to concern a supervisory scheme or arrangement specifically for distributed ledger technology use, addressed to HKMA-regulated institutions. This card should be revisited, and its content checked directly against the primary source, once HKMA's website is reachable.",
+  "why_it_matters": "This circular is HKMA's earliest indication, among the items processed in this batch, of a dedicated supervisory pathway for distributed ledger technology, though its specific mechanics could not be confirmed this pass. Distributed ledger technology underlies much of Hong Kong's later tokenisation and stablecoin infrastructure, so how the banking regulator structured early oversight of it is useful background for a newcomer to this regime.",
+  "citations": [
+    {
+      "url": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2025/20250108e1.pdf",
+      "quote": "Supervisory Incubator for Distributed Ledger Technology (DLT)"
+    }
+  ],
+  "status": "unverified",
+  "generated_at": "2026-08-02T03:25:00Z",
+  "model": "Claude (Anthropic)"
+}

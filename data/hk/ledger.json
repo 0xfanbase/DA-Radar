@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T23:52:38Z",
+  "generated_at": "2026-08-02T23:06:08Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -7490,7 +7490,7 @@
       "title": "Enhancement of the Renminbi (RMB) Liquidity Facility"
     },
     "709df5c06eb6654dd67aca359346660320c86f59ae526b22bac15b7eabdab877": {
-      "card_id": null,
+      "card_id": "709df5c06eb6654dd67aca359346660320c86f59ae526b22bac15b7eabdab877",
       "content_hash": "257b25c189fbc53bfa8af575d80bf88f890732ab3ab2de1820eaacb72c00689b",
       "feed_id": "sfc_circulars",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -7501,7 +7501,7 @@
       "raw_published": "Tue, 02 Jun 2026 17:15:19 +0800",
       "relevant": true,
       "source_id": "sfc",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Circular to licensed corporations, SFC-licensed virtual asset service providers and associated entities Enhanced cybersecurity measures to address evolving risks arising from artificial intelligence-enabled cyberattacks"
     },
@@ -7714,7 +7714,7 @@
       "title": "Report on “Beyond Wealth: Advancing Hong Kong’s Family Office Ecosystem Through Philanthropy, Impact Investing, and Risk Management”"
     },
     "75aecbaa6ec9dca70452ef85f47c0dc0431464e9e55810a76bf3dec2116f4682": {
-      "card_id": null,
+      "card_id": "75aecbaa6ec9dca70452ef85f47c0dc0431464e9e55810a76bf3dec2116f4682",
       "content_hash": "65c83cbdd2fc078bcb67085a3a4eac1863b8b5844109d27d2e7faea12aed03b4",
       "feed_id": "hkma_circulars",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -7725,7 +7725,7 @@
       "raw_published": "Wed, 27 May 2026 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Virtual asset-related activities in relation to relevant stablecoins issued by licensed stablecoin issuers"
     },
@@ -7986,7 +7986,7 @@
       "title": "Exchange Fund Bills Tender Results"
     },
     "79bd051568f016dbe899066150c81890c40e67dc5c63ee94529d8f5a1195e4c2": {
-      "card_id": null,
+      "card_id": "79bd051568f016dbe899066150c81890c40e67dc5c63ee94529d8f5a1195e4c2",
       "content_hash": "a583ea8ab8dd59192d6e78f06c9d3ebb9b89a1bd05cba241e470aa749086a2ab",
       "feed_id": "hkma_press_release",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -7997,7 +7997,7 @@
       "raw_published": "Tue, 28 Apr 2026 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Beware of tokens purported to be associated with licensed stablecoin issuers"
     },
@@ -8146,7 +8146,7 @@
       "title": "Scam alert related to banks"
     },
     "7bece82ea39173ee82f88a51414f079f447844140744c593d9882c40aee398ce": {
-      "card_id": null,
+      "card_id": "7bece82ea39173ee82f88a51414f079f447844140744c593d9882c40aee398ce",
       "content_hash": "de5e34443456f2f9a861d2e93d62e8b6bd87f5dfb2636fbf33f554fca9b42ea2",
       "feed_id": "hkma_circulars",
       "first_seen": "2026-07-09T02:43:00Z",
@@ -8157,7 +8157,7 @@
       "raw_published": "Wed, 08 Jan 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "queued",
+      "status": "drafted",
       "summary": "",
       "title": "Supervisory Incubator for Distributed Ledger Technology (DLT) (PDF File, 172.4 KB)"
     },

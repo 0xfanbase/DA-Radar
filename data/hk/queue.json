@@ -1,46 +1,6 @@
 {
-  "generated_at": "2026-08-01T23:09:00Z",
+  "generated_at": "2026-08-02T23:06:08Z",
   "items": [
-    {
-      "feed_id": "sfc_circulars",
-      "item_hash": "709df5c06eb6654dd67aca359346660320c86f59ae526b22bac15b7eabdab877",
-      "link": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC32",
-      "published_at": "2026-06-02T09:15:19Z",
-      "source_id": "sfc",
-      "status": "queued",
-      "summary": "",
-      "title": "Circular to licensed corporations, SFC-licensed virtual asset service providers and associated entities Enhanced cybersecurity measures to address evolving risks arising from artificial intelligence-enabled cyberattacks"
-    },
-    {
-      "feed_id": "hkma_circulars",
-      "item_hash": "75aecbaa6ec9dca70452ef85f47c0dc0431464e9e55810a76bf3dec2116f4682",
-      "link": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260527-2-EN",
-      "published_at": "2026-05-26T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Virtual asset-related activities in relation to relevant stablecoins issued by licensed stablecoin issuers"
-    },
-    {
-      "feed_id": "hkma_press_release",
-      "item_hash": "79bd051568f016dbe899066150c81890c40e67dc5c63ee94529d8f5a1195e4c2",
-      "link": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260428-5/",
-      "published_at": "2026-04-27T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Beware of tokens purported to be associated with licensed stablecoin issuers"
-    },
-    {
-      "feed_id": "hkma_circulars",
-      "item_hash": "7bece82ea39173ee82f88a51414f079f447844140744c593d9882c40aee398ce",
-      "link": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2025/20250108e1.pdf",
-      "published_at": "2025-01-07T16:00:00Z",
-      "source_id": "hkma",
-      "status": "queued",
-      "summary": "",
-      "title": "Supervisory Incubator for Distributed Ledger Technology (DLT) (PDF File, 172.4 KB)"
-    },
     {
       "feed_id": "hkma_press_release",
       "item_hash": "8a2158335f9311bef8ff14ab3fa297e980dae3162b033ad2b110dc11dd2a2459",
