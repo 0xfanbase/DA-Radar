@@ -1824,3 +1824,64 @@ negative rate on these domains" and toward "the 07-31 spike was a transient/run-
 Not fixed here (same reasons as the entry above -- `pipeline/verify/gate.py` is outside this
 runbook's scope); recording so a future owner reviewing this open question has both data points,
 not just the alarming one.
+
+### 2026-08-02 -- HK's title-only-stub-card practice has reached 16/34 (47%) of the corpus; never previously surfaced as an explicit editorial decision
+
+This firing's `hk` analyst initially self-reported drafting all 4 of its batch as "title/metadata
+only" cards, citing what it called "established precedent... documented across this project's
+Fourth through Eighth firings." That specific framing was not something this session could verify
+from its own direct observation of firings #6-8 (only citations, not full card prose, had been
+spot-checked in those firings) -- but `content/hk/pillar_states/stablecoins.json`'s own accumulated
+`open_items` entries turned out to independently corroborate it: dated notes drafting cards from
+title alone appear on 26, 28, 29, 30, and 31 Jul, continuing today. A repo-wide count just run
+confirms the scale: **16 of hk's 34 cards (47%) mention an inability to fetch their cited source**,
+most drafted from title/metadata alone. This has become a de facto, load-bearing editorial practice
+through accretion -- one analyst decision at a time, each individually reasonable -- without ever
+being surfaced as an explicit choice for an owner to bless or reject. This firing did push back on
+one instance before accepting it (see the sibling entry below on the info.gov.hk mirror), which
+recovered one card from stub to substantive, but did not revisit the other three or the ~15 many
+prior stubs, since re-litigating already-committed cards is outside a single firing's scope.
+
+Not fixed here (an editorial-policy question, not a code change, and touches published content
+already live on the site). Flagging plainly for an owner decision: is a title-only card -- honest,
+properly cited, but with no summarized substance -- an acceptable permanent publication for this
+site, or should unfetchable items instead stay queued indefinitely until reachable (with its own
+cost: some may never become reachable, per the entry below)? A middle path also exists and was not
+attempted here: a periodic re-sweep pass that retries every `status: "unverified"` stub card's
+citation and upgrades those that become fetchable, rather than a one-shot draft-and-forget.
+
+### 2026-08-02 -- Fresh evidence the `brdr.hkma.gov.hk`/`www.hkma.gov.hk` "outage" is this deployment's fetch path, not (necessarily) HKMA's servers
+
+Two of this firing's `hk` verifiers independently found and cited IMPROVEMENT_BACKLOG.md's own
+2026-07-09 entry ("Live audit.yml run in the dev sandbox"), which diagnosed an earlier
+`brdr.hkma.gov.hk` mass-failure as a sandbox-local TLS/proxy artifact, not genuine regulator-side
+downtime -- correctly kept that diagnosis out of the public card text (internal infrastructure
+detail, not citable/appropriate for a card) but let it inform their confidence that the underlying
+documents are real. Neither verifier surfaced the newer 2026-07-26 entry, which refines this: since
+the live analyst/verifier mechanism is now permanently the CCR-trigger runbook (this same class of
+sandboxed environment, not a GitHub Actions runner), the failure is not a one-time artifact but a
+standing characteristic of this deployment's current execution path.
+
+This firing adds a fresh, direct data point that corroborates it further. Three `hk` verifiers'
+own `WebFetch`-based re-fetch attempts against `brdr.hkma.gov.hk` all failed (503) on multiple
+independent tries each, worktree-isolated, minutes apart. Immediately afterward, this same firing's
+`apply_verification_gate` run -- a real Python `requests` subprocess, a genuinely different fetch
+path than the sub-agents' `WebFetch` tool, run from this orchestrating session rather than a
+worktree -- reached `brdr.hkma.gov.hk` cleanly on its very first attempt, for all three of those
+same cards' citations ("citations OK"). The same domain, unreachable to one fetch mechanism and
+immediately reachable to another, in the same firing, minutes apart, is difficult to explain as
+regulator-side downtime and easy to explain as a fetch-path-specific proxy/TLS issue specific to
+whatever egress `WebFetch` uses in this environment.
+
+Practical implication worth an owner's attention, beyond the three options the 07-26 entry already
+lists: this firing's own deterministic-gate subprocess appears to be a *more reliable* fetch path
+for at least this one domain than the sub-agents' `WebFetch` tool. This session did not act on that
+observation beyond noting it -- giving an analyst/verifier sub-agent access to the gate's own fetch
+function, or having the runbook itself pre-flight a domain's reachability via that path before
+spawning a sub-agent, would be a `/pipeline`-territory design change, out of scope for a single
+firing and not attempted here. Not fixed here for the same reason as the 07-26 entry: a genuine
+owner-level tradeoff, not a bug with one obvious answer. Recording the fresh corroborating evidence
+so it doesn't get re-diagnosed from scratch a third time, and so "HKMA outage" framing in this
+file's and PROGRESS.md's own past entries is read with this caveat: what's confirmed is that this
+deployment's `WebFetch`-based fetch path cannot reach these two HKMA hosts, not that HKMA's own
+servers are down.

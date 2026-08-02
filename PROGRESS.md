@@ -2896,3 +2896,46 @@ verified; eu 1/1 verified). Real commits: `cbb8d38`/`5dc19f8` (hk), `25b3ade`/`1
 still unfixed), uk 1, jp 14, uae/ch 0. No `PushNotification` fired -- nothing stopped early, no gate
 failure blocked a commit, every push landed and was independently confirmed against `origin/main`,
 not self-reported.
+
+### 2026-08-01/02 -- Ninth firing (`trig_01CHa5wLW4G5LGj8fREeKUkE`, fired 22:37 UTC on schedule, no one watching): hk complete, us interrupted mid-batch, eu not yet attempted
+
+Same cap logic as every prior firing: hk=4, us=4, eu=2 (its queue held 2 items again: the recurring
+cartel item, plus a new ESMA-newsletter item) -- 10 total, cap bound at eu, uk/uae/ch/jp untouched.
+
+**hk -- 4 cards drafted, verified, published; 1 verified, 3 unverified.** One HKMA press release
+(implementation of the stablecoin-issuer regime) plus three brdr.hkma.gov.hk items (two Cryptoassets
+Standard return-template consultations, one stablecoin-activities circular). The analyst initially
+drafted all 4 as title-only stubs after every hkma.gov.hk/brdr.hkma.gov.hk fetch failed; pushed back
+on the press-release item specifically, since CLAUDE.md's own Sources table documents a DATA.GOV.HK/
+GovHK alternate route for HKMA press releases that hadn't been tried -- a general web search then
+surfaced the same release mirrored on `www.info.gov.hk` (a listed official `govhk` domain), and the
+card was re-derived from real substantive content. The other three items had no equivalent
+documented alternative and stayed title-only; two independent verifiers caught and fixed real
+problems in them regardless (an unsupported causal claim about *why* the fetch was failing in one,
+an internal contradiction between `summary` and `why_it_matters` in another, plus a quote-splicing
+bug in a third) -- see IMPROVEMENT_BACKLOG.md's two new 2026-08-02 entries for the fuller findings:
+the accumulated scale of hk's title-only-stub practice (16/34 cards, 47%, never previously an
+explicit editorial decision), and fresh evidence from this firing's own deterministic-gate run that
+the "HKMA outage" is more likely this deployment's `WebFetch` path than HKMA's actual servers.
+Real commits: `fd73403` (analyst), `23db90b` (verifier), both independently confirmed on
+`origin/main`.
+
+**us -- interrupted, zero cards, queue untouched.** The `us` analyst sub-agent failed mid-batch with
+a genuine API session-limit error ("You've hit your session limit -- resets 3:30am (UTC)"), after
+research but before writing any card file -- confirmed via its worktree, which never materialized
+on disk (`git worktree list` and `.claude/worktrees/` both show nothing), so there is no partial
+state to describe and nothing was committed. `data/us/queue.json` is exactly as it was before this
+firing started; no ledger mutation occurred for `us`. This is a first in this window's tracked
+history -- every prior firing's interruption, if any, was a gate failure or a fetch failure inside
+a sub-agent's own report, never the sub-agent's own API access failing outright mid-run.
+
+**eu -- not yet attempted.** Per the runbook's own Step 0.3 (finish one jurisdiction fully, including
+both its commits, before starting the next), `eu` was correctly not started while `us` was
+incomplete.
+
+**Plan:** this orchestrating session is not itself rate-limited (bash and file operations continued
+normally after the failure), but retrying `us` immediately would very likely fail again before the
+stated 3:30am UTC reset. Scheduled a resumption for after that window via `send_later`, to complete
+`us` and `eu` under this same firing's identity rather than silently deferring to firing #10
+tomorrow night. `PushNotification` fired with a concrete, actionable message. A follow-up
+PROGRESS.md entry will record the completed resumption once it happens.
