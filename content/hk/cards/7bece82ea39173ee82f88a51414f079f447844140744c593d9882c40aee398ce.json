@@ -7,7 +7,7 @@
   "pillar": ["tokenization_rwa"],
   "type": "circular",
   "title": "Supervisory Incubator for Distributed Ledger Technology (DLT)",
-  "summary": "On 8 January 2025, the Hong Kong Monetary Authority (HKMA) issued a circular titled 'Supervisory Incubator for Distributed Ledger Technology (DLT).' The document is hosted only as a PDF on HKMA's website, which returned no retrievable content on every fetch attempt made while drafting this card, so its substantive content -- what the 'Supervisory Incubator' involves, which institutions it applies to, and any application process, conditions, or deadline -- could not be confirmed against primary source text. Based on the title alone, the circular appears to concern a supervisory scheme or arrangement specifically for distributed ledger technology use, addressed to HKMA-regulated institutions. This card should be revisited, and its content checked directly against the primary source, once HKMA's website is reachable.",
+  "summary": "On 8 January 2025, the Hong Kong Monetary Authority (HKMA) issued a circular titled 'Supervisory Incubator for Distributed Ledger Technology (DLT).' The document is hosted only as a PDF on HKMA's website, which returned no retrievable content on every fetch attempt made while drafting this card, so its substantive content -- what the 'Supervisory Incubator' involves, which institutions it applies to, and any application process, conditions, or deadline -- could not be confirmed against primary source text. An independent verification pass on 2 August 2026 re-attempted the fetch -- the cited PDF URL itself, HKMA's circulars listing page, its RSS listing, and its site root -- and likewise retrieved no content from any hkma.gov.hk page, while unrelated sites fetched normally in the same session; the access barrier therefore appears specific to HKMA's website rather than a one-off failure or a general tool problem, and has now recurred on two independent attempts. Based on the title alone, the circular appears to concern a supervisory scheme or arrangement specifically for distributed ledger technology use, addressed to HKMA-regulated institutions. This card should be revisited, and its content checked directly against the primary source, once HKMA's website is reachable.",
   "why_it_matters": "This circular is HKMA's earliest indication, among the items processed in this batch, of a dedicated supervisory pathway for distributed ledger technology, though its specific mechanics could not be confirmed this pass. Distributed ledger technology underlies much of Hong Kong's later tokenisation and stablecoin infrastructure, so how the banking regulator structured early oversight of it is useful background for a newcomer to this regime.",
   "citations": [
     {
@@ -16,6 +16,6 @@
     }
   ],
   "status": "unverified",
-  "generated_at": "2026-08-02T03:25:00Z",
+  "generated_at": "2026-08-02T06:45:00Z",
   "model": "Claude (Anthropic)"
 }

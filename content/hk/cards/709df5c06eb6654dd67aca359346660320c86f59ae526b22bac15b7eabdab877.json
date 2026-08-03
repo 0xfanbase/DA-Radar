@@ -7,7 +7,7 @@
   "pillar": ["exchanges_vatp"],
   "type": "circular",
   "title": "Enhanced cybersecurity measures to address evolving risks arising from artificial intelligence-enabled cyberattacks",
-  "summary": "On 2 June 2026, the Securities and Futures Commission (SFC) issued a circular to licensed corporations, SFC-licensed virtual asset service providers, and associated entities on cybersecurity risks from artificial-intelligence-enabled cyberattacks. It states the SFC has been engaging licensed firms on their preparedness for AI-assisted or AI-accelerated attacks, and sets out expected measures: senior-management oversight of cybersecurity frameworks, faster patching of known vulnerabilities, zero-trust access controls including least-privilege access and maker-checker approval for high-impact actions, stronger monitoring for anomalies in trading and system activity, due diligence on third-party service providers, tested incident-response plans with clear escalation and reporting procedures, and daily backups of business records and client databases. Firms must promptly notify the SFC of material cybersecurity incidents; no specific compliance deadline is stated.",
+  "summary": "On 2 June 2026, the Securities and Futures Commission (SFC) issued a circular to licensed corporations, SFC-licensed virtual asset service providers, and associated entities on cybersecurity risks from artificial-intelligence-enabled cyberattacks. It states the SFC has been engaging licensed firms on their preparedness for AI-assisted or AI-accelerated attacks, and sets out expected measures: senior-management oversight of cybersecurity frameworks, faster patching of known vulnerabilities, stronger access and privilege controls including least-privilege access and maker-checker approval for high-impact actions, stronger monitoring for anomalies in trading and system activity, due diligence on third-party service providers, tested incident-response plans with clear escalation and reporting procedures, and daily backups of business records and client databases. Firms must promptly notify the SFC of material cybersecurity incidents; no specific compliance deadline is stated.",
   "why_it_matters": "This circular shows Hong Kong's securities regulator extending its standard cybersecurity expectations for licensed brokers to explicitly address AI-enabled attacks, applied directly to firms already licensed to operate virtual asset trading platforms. It matters because it signals that virtual-asset firms in Hong Kong are held to the same evolving operational-risk standards as traditional brokers, rather than a separate, lighter-touch regime.",
   "citations": [
     {
@@ -15,7 +15,7 @@
       "quote": "promptly notify the SFC of material cybersecurity incidents"
     }
   ],
-  "status": "unverified",
-  "generated_at": "2026-08-02T03:10:00Z",
+  "status": "verified",
+  "generated_at": "2026-08-02T06:45:00Z",
   "model": "Claude (Anthropic)"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T23:06:08Z",
+  "generated_at": "2026-08-03T03:26:31Z",
   "items": {
     "0003ef775a3a98e9bd0dc5cdffd5951c8fc4032682c17dd7e4b136073cd12f32": {
       "card_id": null,
@@ -7501,7 +7501,7 @@
       "raw_published": "Tue, 02 Jun 2026 17:15:19 +0800",
       "relevant": true,
       "source_id": "sfc",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Circular to licensed corporations, SFC-licensed virtual asset service providers and associated entities Enhanced cybersecurity measures to address evolving risks arising from artificial intelligence-enabled cyberattacks"
     },
@@ -7725,7 +7725,7 @@
       "raw_published": "Wed, 27 May 2026 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Virtual asset-related activities in relation to relevant stablecoins issued by licensed stablecoin issuers"
     },
@@ -7997,7 +7997,7 @@
       "raw_published": "Tue, 28 Apr 2026 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Beware of tokens purported to be associated with licensed stablecoin issuers"
     },
@@ -8157,7 +8157,7 @@
       "raw_published": "Wed, 08 Jan 2025 00:00:00 +0800",
       "relevant": true,
       "source_id": "hkma",
-      "status": "drafted",
+      "status": "published",
       "summary": "",
       "title": "Supervisory Incubator for Distributed Ledger Technology (DLT) (PDF File, 172.4 KB)"
     },
