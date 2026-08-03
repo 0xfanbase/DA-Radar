@@ -2939,3 +2939,57 @@ stated 3:30am UTC reset. Scheduled a resumption for after that window via `send_
 `us` and `eu` under this same firing's identity rather than silently deferring to firing #10
 tomorrow night. `PushNotification` fired with a concrete, actionable message. A follow-up
 PROGRESS.md entry will record the completed resumption once it happens.
+
+### 2026-08-02/03 -- Tenth firing (`trig_01CHa5wLW4G5LGj8fREeKUkE`): fresh hk batch processed; us/eu not attempted; automation ceased at owner request mid-firing
+
+This firing's own injected trigger prompt arrived before the ninth firing's scheduled
+`send_later` resumption (target 2026-08-03T04:00:00Z) had fired -- current time at receipt was
+~22:43 UTC on 2026-08-02, only minutes after that resumption was scheduled. Verified via
+`list_triggers` that the resumption trigger genuinely had not fired yet (no `last_fired_at`, no
+`ended_reason`), and via `data/{jid}/queue.json` sizes that `hk` reflected the ninth firing's
+completed work (39, down from 43) while `us`/`eu` were untouched exactly as the interruption left
+them. Rather than treat this as an error, processed it as the natural next firing: the runbook is
+queue-state-driven, so the correct action is identical whether this is "#9 continued" or a fresh
+firing -- read current state and proceed. Labelled it Firing #10 for a clean, unambiguous audit
+trail rather than conflating two firings' hk batches under one number.
+
+**hk -- 4 cards drafted, verified, published; 1 verified, 3 unverified.** One SFC circular (AI-
+enabled-cyberattack cybersecurity measures) plus three HKMA items (a relevant-stablecoins circular,
+a fraud-warning press release on tokens falsely claiming stablecoin-issuer association, and a 2025
+Supervisory Incubator for DLT circular). The SFC card's verifier caught a real inflation: the draft
+said the circular required "zero-trust access controls," but the source's own heading is "Access
+and privilege controls" -- "zero-trust" appeared only in a footnote to one sub-point, not as the
+SFC's own framing; corrected and verified. A second card's verifier fixed a hedge-level mismatch
+between `summary` (properly hedged) and `why_it_matters` (overstated as confirmed). The other two
+HKMA items stayed title-only stubs, both independently re-confirmed unreachable on a second pass.
+New glossary term `virtual-asset-service-provider`. Real commits: `705718a` (analyst), `6ba8a79`
+(verifier), both independently confirmed on `origin/main`.
+
+**Two of four hk verifiers hit the same API session-limit error that stopped firing #9's `us`
+analyst** ("resets 3am (UTC)"), mid-response, after completing their actual analysis and file
+write -- confirmed by reading the worktree files directly rather than trusting the "failed" status
+label: both had genuinely finished writing correct, complete cards before the error truncated only
+their final summary text. This is now a second occurrence of the same failure mode in two
+consecutive firings, worth an owner's awareness even though nothing was lost either time (this
+project's own "never trust self-report, always read the actual file" discipline caught both cleanly,
+and a `"failed"` task status turned out not to mean "no useful work happened").
+
+**us, eu -- not attempted.** Before starting `us`, the repo owner sent a direct, explicit
+instruction: "Please cease all daily cron and scheduled task on this." Actioned immediately:
+`trig_01CHa5wLW4G5LGj8fREeKUkE` (this firing's own trigger) disabled, and `trig_01MTsYNth6AuwrjtDcUdTkUe`
+(the now-moot pending resumption from the ninth firing) deleted. No further automatic firings of
+this pipeline will occur. The already-in-flight `hk` verifier batch above was finished and
+committed cleanly (work already substantially done, gates already known to pass) rather than
+discarded mid-stream, but no new jurisdiction was started once the instruction arrived. `us`'s
+4-item batch (unchanged since the ninth firing) and `eu`'s 2-item batch (the recurring cartel item
+plus the ESMA newsletter item) remain queued, untouched, for whenever an owner next runs this
+pipeline manually or re-enables the trigger.
+
+**Net result of this firing:** 4 cards processed end-to-end (hk only) -- **1 verified, 3
+unverified**. Backlog after this firing: hk 35, us 11, eu 2 (unchanged), uk 1, jp 16, uae/ch 0. No
+`PushNotification` needed -- the two agent failures were recovered from, not left unresolved, and
+the automation-cessation instruction was a direct request, not a failure condition.
+
+**This is expected to be the last automatic entry in this log for the foreseeable future** -- the
+trigger that produced every dated entry since 2026-07-25 is now disabled. A human re-enabling it,
+or a future firing of a newly-created trigger, would be the next thing to add here.
