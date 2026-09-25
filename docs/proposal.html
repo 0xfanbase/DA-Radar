@@ -1,0 +1,333 @@
+<title>Praya proposal</title>
+<meta name="description" content="Design proposal for a Hong Kong digital-asset learning guide for bank compliance heads, built from 737 official documents.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Source+Sans+3:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#FAF9F5; --surface:#F0EEE6; --card:#FFFFFF; --ink:#1F1E1D; --muted:#5E5D59; --faint:#8A877F;
+  --rule:#E3DDD0; --source:#1F4E79; --source-bg:#E6EDF4; --live:#2F6B3A; --live-bg:#E4EFE3;
+  --coming:#8A5A00; --coming-bg:#F6EBD5; --old:#6B6760; --old-bg:#ECE9E2; --focus:#1F4E79;
+  --serif:"Source Serif 4",Georgia,"Iowan Old Style",serif;
+  --sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1D1C1A; --surface:#262522; --card:#2C2B28; --ink:#ECE9E1; --muted:#B5B1A7; --faint:#8F8B82;
+    --rule:#3A3834; --source:#8FB5DA; --source-bg:#233241; --live:#8CC592; --live-bg:#22301F;
+    --coming:#E0B061; --coming-bg:#3A2F1C; --old:#B0ACA3; --old-bg:#33312D; --focus:#8FB5DA; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1D1C1A; --surface:#262522; --card:#2C2B28; --ink:#ECE9E1; --muted:#B5B1A7; --faint:#8F8B82;
+  --rule:#3A3834; --source:#8FB5DA; --source-bg:#233241; --live:#8CC592; --live-bg:#22301F;
+  --coming:#E0B061; --coming-bg:#3A2F1C; --old:#B0ACA3; --old-bg:#33312D; --focus:#8FB5DA; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 18px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+.wrap{max-width:46rem;margin:0 auto;padding-inline:20px;padding-block:3rem 4rem}
+.wide{max-width:70rem;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
+h1{font-size:clamp(2rem,5.2vw,2.9rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.45rem,3.4vw,1.85rem);margin-top:3.5rem;margin-bottom:.9rem}
+h3{font-size:1.15rem;margin-bottom:.35rem}
+p{margin:0 0 1rem}
+a{color:var(--source);text-underline-offset:2px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+.kicker{font:600 .78rem/1.4 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:.9rem}
+.lede{font-size:1.2rem;color:var(--ink);max-width:40rem}
+.muted{color:var(--muted)}
+.small{font-size:.92rem}
+.rule{border:0;border-top:1px solid var(--rule);margin:2.5rem 0}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(7.6rem,1fr));gap:10px;margin:1.5rem 0}
+.stat{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:.9rem 1rem}
+.stat b{display:block;font:600 1.65rem/1.1 var(--serif);font-variant-numeric:tabular-nums}
+.stat span{font-size:.88rem;color:var(--muted)}
+.bar{display:flex;height:12px;border-radius:6px;overflow:hidden;margin:.6rem 0 .5rem}
+.bar i{display:block}
+.legend{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;font-size:.86rem;color:var(--muted)}
+.legend i{display:inline-block;width:.7rem;height:.7rem;border-radius:2px;margin-right:.35rem;vertical-align:-1px}
+/* lists */
+.checks{list-style:none;padding:0;margin:0;display:grid;gap:.9rem}
+.checks li{padding-left:1.4rem;position:relative}
+.checks li::before{content:"";position:absolute;left:0;top:.6em;width:.55rem;height:.55rem;border-radius:50%;background:var(--source)}
+/* audience grid */
+.aud{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:12px;margin-top:1rem}
+.aud div{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:1rem 1.1rem}
+.aud h3{font-family:var(--sans);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.45rem}
+.aud p{margin:0;font-size:1rem}
+/* chips */
+.chip{display:inline-flex;align-items:center;gap:.3rem;font:600 .72rem/1 var(--sans);letter-spacing:.03em;padding:.32rem .5rem;border-radius:999px;white-space:nowrap}
+.chip.live{color:var(--live);background:var(--live-bg)}
+.chip.coming{color:var(--coming);background:var(--coming-bg)}
+.chip.old{color:var(--old);background:var(--old-bg)}
+.cite{display:inline;font:500 .78rem/1.3 var(--sans);color:var(--source);background:var(--source-bg);padding:.12rem .42rem;border-radius:5px;white-space:normal;border:0;cursor:pointer}
+/* course */
+.parts{display:grid;gap:14px;margin-top:1.2rem}
+.part{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:1.1rem 1.2rem}
+.part h3{display:flex;gap:.6rem;align-items:baseline}
+.part h3 small{font:600 .8rem var(--sans);color:var(--muted);letter-spacing:.05em}
+.mods{list-style:none;margin:.6rem 0 0;padding:0;display:grid;gap:.5rem}
+.mods li{display:grid;grid-template-columns:2.6rem 1fr;gap:.5rem;font-size:1rem}
+.mods code{font:600 .85rem var(--sans);color:var(--source);padding-top:.12rem}
+.mods .start{font:600 .68rem var(--sans);color:var(--live);background:var(--live-bg);padding:.1rem .4rem;border-radius:4px;margin-left:.35rem;letter-spacing:.03em;vertical-align:1px}
+/* mockups */
+.showcase{display:grid;grid-template-columns:1fr;gap:28px;align-items:start;margin-top:1.5rem}
+@media (min-width:900px){.showcase{grid-template-columns:minmax(0,360px) minmax(0,1fr)}}
+.phone{width:100%;max-width:360px;margin:0 auto;border:10px solid #2B2A27;border-radius:36px;background:#FAF9F5;color:#1F1E1D;overflow:hidden;box-shadow:0 12px 40px rgba(31,30,29,.14)}
+.phone .scr{height:640px;overflow-y:auto;padding:14px 16px 20px;font:400 16px/1.6 var(--sans)}
+.phone .top{display:flex;justify-content:space-between;align-items:center;font:600 .72rem var(--sans);color:#5E5D59;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.7rem}
+.phone h4{font:600 1.35rem/1.2 var(--serif);margin:.2rem 0 .6rem;color:#1F1E1D}
+.phone .sec{font:600 .7rem var(--sans);letter-spacing:.09em;text-transform:uppercase;color:#5E5D59;margin:1.1rem 0 .45rem}
+.phone p{font-size:.98rem;margin:0 0 .6rem}
+.phone .fact{background:#fff;border:1px solid #E3DDD0;border-radius:10px;padding:.7rem .8rem;margin-bottom:.55rem;font-size:.95rem}
+.phone .fact .cite{background:#E6EDF4;color:#1F4E79}
+.phone .chip.live{color:#2F6B3A;background:#E4EFE3}.phone .chip.old{color:#6B6760;background:#ECE9E2}.phone .chip.coming{color:#8A5A00;background:#F6EBD5}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.tabs button{font:600 .8rem var(--sans);border:1px solid #D9D3C5;background:#fff;color:#1F1E1D;border-radius:999px;padding:.4rem .75rem;cursor:pointer;white-space:nowrap}
+.tabs button[aria-selected="true"]{background:#1F1E1D;color:#FAF9F5;border-color:#1F1E1D}
+.tp{background:#fff;border:1px solid #E3DDD0;border-radius:10px;padding:.75rem .8rem;margin-top:.55rem;font-size:.95rem}
+.tp .copy{float:right;font:600 .72rem var(--sans);color:#1F4E79;background:none;border:0;cursor:pointer;padding:0 0 0 .5rem}
+.sheet{margin-top:.9rem;background:#fff;border:1px solid #D9D3C5;border-radius:14px 14px 10px 10px;padding:.9rem .9rem 1rem;box-shadow:0 -6px 20px rgba(31,30,29,.08)}
+.sheet .grab{width:38px;height:4px;border-radius:2px;background:#D9D3C5;margin:0 auto .7rem}
+.sheet .t{font:600 .95rem/1.35 var(--serif);margin-bottom:.35rem}
+.sheet .meta{font-size:.82rem;color:#5E5D59;margin-bottom:.55rem}
+.sheet .loc{font:600 .9rem var(--sans);margin-bottom:.6rem}
+.sheet a{display:block;text-align:center;font:600 .9rem var(--sans);background:#1F4E79;color:#fff;text-decoration:none;border-radius:8px;padding:.6rem}
+.notes h3{margin-top:1.3rem}
+.notes p{font-size:1rem}
+.anatomy{counter-reset:a;list-style:none;padding:0;margin:.4rem 0 0;display:grid;gap:.45rem}
+.anatomy li{counter-increment:a;display:grid;grid-template-columns:1.8rem 1fr;font-size:1rem}
+.anatomy li::before{content:counter(a);font:600 .85rem var(--sans);color:var(--muted);padding-top:.1rem}
+/* pipeline */
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(10.5rem,1fr));gap:10px;margin-top:1rem}
+.flow div{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:.85rem .9rem;font-size:.95rem}
+.flow b{display:block;font:600 .8rem var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:.25rem}
+/* tokens */
+.swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(6.6rem,1fr));gap:10px;margin-top:1rem}
+.sw{border:1px solid var(--rule);border-radius:10px;overflow:hidden;background:var(--card);font-size:.84rem}
+.sw i{display:block;height:52px}
+.sw span{display:block;padding:.45rem .6rem;color:var(--muted)}
+.sw b{color:var(--ink);font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+.tbl{overflow-x:auto;margin-top:1rem;border:1px solid var(--rule);border-radius:10px;background:var(--card)}
+th,td{text-align:left;padding:.65rem .8rem;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font:600 .78rem var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--surface)}
+tr:last-child td{border-bottom:0}
+.find{display:grid;gap:12px;margin-top:1rem}
+.find div{border-left:3px solid var(--coming);background:var(--card);border-radius:0 10px 10px 0;padding:.8rem 1rem;font-size:1rem}
+.find b{display:block;margin-bottom:.15rem}
+.decide{display:grid;gap:10px;margin-top:1rem}
+.decide div{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:.9rem 1rem;font-size:1rem}
+footer{margin-top:4rem;padding-top:1.3rem;border-top:1px solid var(--rule);font-size:.88rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+
+<div class="wrap">
+  <p class="kicker">Design proposal · 25 September 2026</p>
+  <h1>Praya: Hong Kong digital assets, for the bank compliance desk</h1>
+  <p class="lede" style="margin-top:1.1rem">A free, calm reading guide that takes a bank's head of compliance for digital assets from the basics to expert level, in about six hours of reading. Every sentence is checked against the HKMA, SFC or government document it comes from, and every citation names the paragraph.</p>
+  <p class="muted small">Working name: <b>Praya</b>, the old waterfront road Hong Kong's banks were built on. Alternatives are listed at the end.</p>
+
+  <h2>What you will be able to do</h2>
+  <p>After the "Start here" path, you can explain the moving pieces clearly to each person you work with. Every module ends with short talking points for each of them. These examples come from the custody module.</p>
+  <div class="aud">
+    <div><h3>To the CCO</h3><p>The HKMA's 27 May 2026 custody annex replaced the 2024 one. Existing services must review and revise their controls. <span class="cite">HKMA · Updated custody guidance · Implementation, p.2</span></p></div>
+    <div><h3>To business heads</h3><p>With HKMA consent, a licensed stablecoin issuer can now hold its own coins for us as custody delegate. <span class="cite">HKMA · Custody annex 2026 · para 14(iii)</span></p></div>
+    <div><h3>To the CEO</h3><p>Fixed insurance percentages are gone for banks. We are liable for losses attributable to us and must hold adequate resources. <span class="cite">HKMA · Custody annex 2026 · para 11(n)</span></p></div>
+    <div><h3>To Risk / CRO</h3><p>The SFC says choosing HSM, MPC or multi-signature does not by itself fix wallet weaknesses. Process controls decide it. <span class="cite">SFC · 25EC44 · p.1</span></p></div>
+  </div>
+
+  <h2>What the research covered</h2>
+  <p>Before designing anything, we listed every digital-asset publication from Hong Kong's official sources and read each one in full, annexes included. Listing used the regulators' own indexes: the HKMA press-release API and its Banking Regulatory Document Repository, the SFC circular, news and consultation databases, and ten years of GovHK daily press releases.</p>
+  <div class="stats">
+    <div class="stat"><b>948</b><span>files read in full</span></div>
+    <div class="stat"><b>737</b><span>official documents registered</span></div>
+    <div class="stat"><b>4.3m</b><span>words of source text</span></div>
+    <div class="stat"><b>2014–2026</b><span>period covered</span></div>
+    <div class="stat"><b>21</b><span>module briefs drafted</span></div>
+  </div>
+  <div class="bar" role="img" aria-label="Documents by issuer: HKMA 413, SFC 174, joint HKMA and SFC 46, LegCo and GovHK 48, FSTB 37, other 19">
+    <i style="flex:413;background:#1F4E79"></i><i style="flex:174;background:#4E7FA8"></i><i style="flex:46;background:#8FB0CC"></i><i style="flex:48;background:#B89B5E"></i><i style="flex:37;background:#8A5A00"></i><i style="flex:19;background:#B5B1A7"></i>
+  </div>
+  <div class="legend"><span><i style="background:#1F4E79"></i>HKMA 413</span><span><i style="background:#4E7FA8"></i>SFC 174</span><span><i style="background:#8FB0CC"></i>Joint HKMA–SFC 46</span><span><i style="background:#B89B5E"></i>LegCo and GovHK 48</span><span><i style="background:#8A5A00"></i>FSTB 37</span><span><i style="background:#B5B1A7"></i>Other 19</span></div>
+  <p class="small muted" style="margin-top:1rem">Each document has a registry entry written in our own words: a summary, key points with paragraph references, status as of 25 September 2026, who it binds, and what a bank's compliance function must do about it. An automatic check rejects any entry that copies eight or more words in a row from the source.</p>
+
+  <h3 style="margin-top:2rem">What reading everything caught</h3>
+  <div class="find">
+    <div><b>Bank custody rules changed in May 2026.</b>The HKMA's updated annex dropped the fixed 50% cold / 100% hot compensation cover for banks and replaced it with liability plus adequate financial resources. The 50%/100% figure now applies only to SFC-licensed platforms.</div>
+    <div><b>AML scope for banks.</b>A bank's own AML rulebook is the HKMA Guideline for Authorized Institutions. Its virtual-asset hooks are the HK$8,000 walk-in transfer threshold (para 4.2.1(b)(iii)), the travel rule through AMLO Schedule 2 section 13A, and checks on overseas VASP customers (paras 11.23–11.25). The SFC's Chapter 12 applies only to the bank's SFC-registered activities.</div>
+    <div><b>"EnsembleTX" is official.</b>The HKMA named Project Ensemble's live pilot phase EnsembleTX on 13 November 2025, with seven participating banks listed in its annex.</div>
+    <div><b>The June 2026 CRP-1 letter loosened, not tightened.</b>It lets supervision of tokenisation by a financial regulator count, not only regulator approval.</div>
+    <div><b>A site quirk that would have misled readers.</b>HKMA pages carry a "Latest Speeches" sidebar. Our first fetch attached today's newest speech to 26 older pages. It is fixed, and the live site's link checker will compare content, not just check that links load.</div>
+  </div>
+  <p class="small muted" style="margin-top:1rem">Not reachable from the research environment: the Insurance Authority and Cyberport sites (blocked), parts of LegCo, and the statute text on e-Legislation. These are listed as gaps. The live site's own checks will cover them.</p>
+
+  <h2>The course</h2>
+  <p>Five parts, 21 modules. Each module takes 10–15 minutes. The seven modules marked <span class="chip live" style="vertical-align:1px">Start here</span> take about 90 minutes and give you enough to hold your own in any meeting.</p>
+  <div class="parts">
+    <div class="part"><h3><small>A</small>Orientation</h3><ul class="mods">
+      <li><code>A1</code><span>The Hong Kong digital-asset map: who regulates what, and what is live versus coming<span class="start">START</span></span></li>
+      <li><code>A2</code><span>How Hong Kong rules are made, and how to read a circular in ten minutes</span></li>
+      <li><code>A3</code><span>Where policy is heading: Policy Statements, LEAP, ASPIRe, the 2026 Policy Address</span></li></ul></div>
+    <div class="part"><h3><small>B</small>Your bank as a regulated entity</h3><ul class="mods">
+      <li><code>B1</code><span>Authorized institution, registered institution, licensed subsidiary: which rulebook binds you<span class="start">START</span></span></li>
+      <li><code>B2</code><span>Engaging the HKMA and SFC: every prior-consultation and notification duty<span class="start">START</span></span></li>
+      <li><code>B3</code><span>Governance, DLT risk and technology expectations</span></li></ul></div>
+    <div class="part"><h3><small>C</small>Activities</h3><ul class="mods">
+      <li><code>C1</code><span>Selling, dealing and advising on virtual assets under the joint circulars</span></li>
+      <li><code>C2</code><span>Virtual-asset funds, ETFs and tokenised funds</span></li>
+      <li><code>C3</code><span>Custody of digital assets and key management<span class="start">START</span></span></li>
+      <li><code>C4</code><span>Stablecoins: the ordinance, licences, and what banks may do<span class="start">START</span></span></li>
+      <li><code>C5</code><span>Tokenisation: products, deposits, Project Ensemble and digital bonds</span></li>
+      <li><code>C6</code><span>Financing, shared order books and client withdrawals</span></li>
+      <li><code>C7</code><span>Trading-platform counterparties and the SFC platform regime</span></li></ul></div>
+    <div class="part"><h3><small>D</small>Risk and control</h3><ul class="mods">
+      <li><code>D1</code><span>Capital: the Basel cryptoasset standard and SPM CRP-1</span></li>
+      <li><code>D2</code><span>Regulatory returns and Pillar 3 disclosure</span></li>
+      <li><code>D3</code><span>AML/CFT for digital assets at a bank<span class="start">START</span></span></li>
+      <li><code>D4</code><span>Cyber, fraud and technology risk</span></li>
+      <li><code>D5</code><span>Tax and information reporting, including CARF</span></li></ul></div>
+    <div class="part"><h3><small>E</small>Horizon and reference</h3><ul class="mods">
+      <li><code>E1</code><span>What's coming: the legislative and infrastructure pipeline<span class="start">START</span></span></li>
+      <li><code>E2</code><span>Wholesale money, e-HKD, mBridge and cross-border projects</span></li>
+      <li><code>E3</code><span>Glossary and master timeline</span></li></ul></div>
+  </div>
+</div>
+
+<div class="wide">
+  <h2 style="max-width:46rem;margin-inline:auto">What a module looks like</h2>
+  <div class="showcase">
+    <div class="phone" aria-label="Phone mockup of the custody module">
+      <div class="scr">
+        <div class="top"><span>C3 · Activities</span><span>12 min</span></div>
+        <h4>Custody of digital assets and key management</h4>
+        <div class="sec">In 60 seconds</div>
+        <p>Holding a crypto asset really means controlling the private key that can move it. The HKMA replaced its 2024 custody standards on 27 May 2026. The 98% cold-storage rule and the Hong Kong key-location rule stay. Fixed insurance percentages are gone.</p>
+        <div class="sec">Status as of 25 Sep 2026</div>
+        <div class="fact"><span class="chip live">In force</span> Updated custody guidance + annex · HKMA · 27 May 2026</div>
+        <div class="fact"><span class="chip old">Superseded</span> Custody guidance + annex · HKMA · 20 Feb 2024</div>
+        <div class="fact"><span class="chip coming">Conclusions published</span> VA custodian licensing regime · FSTB + SFC · 24 Dec 2025</div>
+        <div class="sec">Key facts</div>
+        <div class="fact">Keep 98% of client virtual assets in cold storage. Keys and backups are generated, stored and kept in Hong Kong. <button class="cite" type="button">HKMA custody annex 2026 · para 11(b), (l)</button></div>
+        <div class="fact">Banks are liable for losses attributable to them and must hold adequate resources, which may include insurance. <button class="cite" type="button">HKMA custody annex 2026 · para 11(n)</button></div>
+        <div class="sec">Talking points</div>
+        <div class="tabs" role="tablist">
+          <button role="tab" aria-selected="true" data-k="cco">CCO</button><button role="tab" aria-selected="false" data-k="biz">Business</button><button role="tab" aria-selected="false" data-k="ceo">CEO</button><button role="tab" aria-selected="false" data-k="risk">Risk</button>
+        </div>
+        <div class="tp" id="tp"><button class="copy" type="button" id="copybtn">Copy</button><span id="tptext">The 2026 annex replaced the 2024 one. Existing services must review and revise their controls; the new wallet controls are expected now.</span></div>
+        <div class="sheet" aria-label="Citation detail">
+          <div class="grab"></div>
+          <div class="t">Updated Guidance on Expected Standards on Provision of Custodial Services for Digital Assets by Authorized Institutions</div>
+          <div class="meta">HKMA · Annex to circular of 27 May 2026 · <span class="chip live">In force</span></div>
+          <div class="loc">Paragraph 11(n)</div>
+          <a href="https://brdr.hkma.gov.hk/eng/doc-ldg/docId/20260527-7-EN" target="_blank" rel="noopener">Open official document</a>
+          <div class="meta" style="margin:.55rem 0 0">Last verified 25 Sep 2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="notes">
+      <p>Every module has the same ten parts, so you always know where to look. Reading comes first. Nothing is hidden behind a quiz.</p>
+      <ol class="anatomy">
+        <li>In 60 seconds: the whole idea, in plain English</li>
+        <li>Status board: each rule, its status, and who it binds</li>
+        <li>Key facts, each with its paragraph citation</li>
+        <li>What your bank must do: obligations, controls, notifications, counterparty checks</li>
+        <li>Talking points for the CCO, business, CEO and Risk, with a copy button</li>
+        <li>Common mix-ups, corrected</li>
+        <li>Read these first: three official documents and the exact pages</li>
+        <li>Open items: what is not yet decided or published</li>
+        <li>Three quick check questions, which feed a light review deck</li>
+        <li>Related modules</li>
+      </ol>
+      <h3>Citations you never have to hunt for</h3>
+      <p>Each fact carries a chip that names the document and paragraph in words, for example "HKMA custody annex 2026 · para 11(n)". Tap it and a panel opens with the full official title, issuer, date, status, the paragraph again, and a button to the official page or PDF. On desktop the same details sit in a side column next to the text.</p>
+      <h3>Status you can see at a glance</h3>
+      <p>Green means in force. Amber means proposed, in consultation, or a stated target. Grey means superseded or historical. Each chip carries an "as of" date. Targets whose date passes switch automatically to "target date passed".</p>
+      <h3>Desktop</h3>
+      <p>Three columns: contents on the left, reading column at 65 characters in the middle, sources on the right. On phones the contents fold into a bottom bar and sources open as a sheet.</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" style="padding-top:0">
+  <h2>Beyond the modules</h2>
+  <ul class="checks">
+    <li><b>The map.</b> One page showing every regime, who runs it, and its status: live, coming, or superseded. This is the home page.</li>
+    <li><b>What changed.</b> A weekly list of new HKMA, SFC and FSTB publications. Each item has a two-line summary and flags which modules it affects. Modules touched by a change show a "changed since you read this" note.</li>
+    <li><b>Source library.</b> All 737 documents, searchable and filterable by regulator, topic, status and "binds banks directly".</li>
+    <li><b>Review deck.</b> Three short questions per module that come back after a few days. Progress stays on your device, with no account.</li>
+    <li><b>Glossary in English and Chinese.</b> Terms as the regulators use them, each linked to where it is defined.</li>
+  </ul>
+  <p class="small muted" style="margin-top:1rem">Deliberately left out: points, badges, leaderboards, a chat tutor, videos, and a long branching story. The earlier game-like ideas have been cut back to optional short scenarios for later, because you asked for a reading resource that makes you fluent fast.</p>
+
+  <h2>Design</h2>
+  <p>Built for long reading on a phone and on a desk. Cream background as you asked, dark mode that follows your device, and generous spacing.</p>
+  <div class="swatches">
+    <div class="sw"><i style="background:#FAF9F5;border-bottom:1px solid #E3DDD0"></i><span><b>Cream</b> #FAF9F5 page</span></div>
+    <div class="sw"><i style="background:#F0EEE6"></i><span><b>Paper</b> #F0EEE6 panels</span></div>
+    <div class="sw"><i style="background:#1F1E1D"></i><span><b>Ink</b> #1F1E1D text</span></div>
+    <div class="sw"><i style="background:#1F4E79"></i><span><b>Source blue</b> #1F4E79 citations</span></div>
+    <div class="sw"><i style="background:#2F6B3A"></i><span><b>In force</b> #2F6B3A</span></div>
+    <div class="sw"><i style="background:#8A5A00"></i><span><b>Coming</b> #8A5A00</span></div>
+  </div>
+  <div class="tbl" style="margin-top:1.2rem"><table>
+    <thead><tr><th>Element</th><th>Phone</th><th>Desktop</th></tr></thead>
+    <tbody>
+      <tr><td>Body text</td><td>17px Source Sans 3, line height 1.65</td><td>18px, line height 1.7</td></tr>
+      <tr><td>Headings</td><td>Source Serif 4, 22–28px</td><td>Source Serif 4, 26–36px</td></tr>
+      <tr><td>Line length</td><td>Full width, 20px margins</td><td>About 65 characters</td></tr>
+      <tr><td>Paragraph spacing</td><td>1em between paragraphs, 2.5em before sections</td><td>Same</td></tr>
+      <tr><td>Tap targets</td><td>At least 44px</td><td>Not applicable</td></tr>
+    </tbody></table></div>
+
+  <h2>How it stays accurate and current</h2>
+  <p>The research pipeline becomes the site's maintenance engine. Plain code does the watching and checking, and AI writes only what the checks can verify.</p>
+  <div class="flow">
+    <div><b>Watch</b>Daily listing from the same official indexes used in the research: HKMA API and repository, SFC databases, GovHK.</div>
+    <div><b>Read</b>Each new document is fetched in full and summarised into a registry entry with paragraph references.</div>
+    <div><b>Verify</b>A separate verifier re-checks every sentence against the source text. Anything unsupported is removed.</div>
+    <div><b>Gate</b>Automatic checks: every citation resolves, official domains only, no copied text, quotes of 15 words or fewer, links load and still match.</div>
+    <div><b>Publish</b>"What changed" updates. Affected modules are flagged. Module rewrites go to a pull request for you to approve.</div>
+  </div>
+  <p class="small muted" style="margin-top:1rem">A monthly job re-fetches every source and compares its content, because regulators sometimes revise documents in place at the same address. Source text is used only for checking and is never published: we link, we don't republish.</p>
+
+  <h2>Build plan</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Stage</th><th>What you get</th></tr></thead>
+    <tbody>
+      <tr><td><b>1. Start here</b></td><td>The map, the seven "Start here" modules, citation panels, source library, cream design on phone and desktop.</td></tr>
+      <tr><td><b>2. Full course</b></td><td>All 21 modules, glossary and timeline, review deck.</td></tr>
+      <tr><td><b>3. Kept current</b></td><td>Daily watcher, "What changed" page, change flags on modules, monthly re-check of all sources.</td></tr>
+      <tr><td><b>4. Extras</b></td><td>Chinese glossary, the "read a circular in ten minutes" exercise, optional short scenarios.</td></tr>
+    </tbody></table></div>
+  <p class="small muted" style="margin-top:1rem">Already done: the repository is a clean slate, the old site is retired, and the full research corpus and module briefs exist.</p>
+
+  <h2>Decisions for you</h2>
+  <div class="decide">
+    <div><b>Name.</b> Praya (recommended), Des Voeux, or Harbour Brief.</div>
+    <div><b>Who can see it.</b> Public like the old site, or unlisted for you and your team.</div>
+    <div><b>Updates.</b> The daily watcher runs on GitHub for free. Summaries of new documents need Claude to run on a schedule: either a Claude Code routine like before, or an API key stored in GitHub. Or you approve each update by hand.</div>
+    <div><b>Chinese.</b> Glossary only at launch, or full Traditional Chinese pages later.</div>
+  </div>
+
+  <footer>For general information only. Not legal or regulatory advice. Always check the official source. Content reflects official publications up to 25 September 2026.</footer>
+</div>
+
+<script>
+(function(){
+  var tps={cco:"The 2026 annex replaced the 2024 one. Existing services must review and revise their controls; the new wallet controls are expected now.",
+    biz:"With HKMA consent, a licensed stablecoin issuer can now act as custody delegate for its own coins.",
+    ceo:"Fixed insurance percentages are gone for banks. We are liable for losses attributable to us and must hold adequate resources.",
+    risk:"The SFC says HSM, MPC or multi-signature alone does not remove wallet weaknesses. Process controls decide the outcome."};
+  var tabs=document.querySelectorAll('.tabs button'), txt=document.getElementById('tptext'), copy=document.getElementById('copybtn');
+  tabs.forEach(function(b){b.addEventListener('click',function(){tabs.forEach(function(x){x.setAttribute('aria-selected','false')});b.setAttribute('aria-selected','true');txt.textContent=tps[b.dataset.k];copy.textContent='Copy';});});
+  copy.addEventListener('click',function(){
+    var t=txt.textContent;
+    try{navigator.clipboard.writeText(t).then(function(){copy.textContent='Copied'},function(){sel()});}catch(e){sel()}
+    function sel(){var r=document.createRange();r.selectNodeContents(txt);var s=getSelection();s.removeAllRanges();s.addRange(r);copy.textContent='Selected';}
+  });
+})();
+</script>
