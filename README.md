@@ -1,29 +1,11 @@
-# Global Digital Asset Radar
+# Hong Kong Digital Assets — Bank Compliance Guide
 
-A free, public, self-learning dashboard of the digital-asset regulatory landscape across multiple
-jurisdictions — current state, trajectory, key documents, and cited AI summary cards. A watcher
-tracks official regulator publications, an AI analyst drafts cited summary cards, an AI verifier
-fact-checks them against source text, and the site publishes automatically. The editorial process
-is auditable in public.
+A free learning guide to Hong Kong digital-asset regulation for a bank's compliance function:
+HKMA first, the SFC where its rules reach banks, and FSTB policy and legislation where relevant.
 
-**This project provides information, not legal or regulatory advice.** Every AI-generated
-summary links back to its primary source and should be independently verified.
+**Status:** restarting from a clean slate (September 2026). The design proposal is in [`docs/`](docs/).
+The earlier multi-jurisdiction "Global Digital Asset Radar" is preserved on the
+`archive/global-da-radar-2026-09-25` branch.
 
-Hong Kong is the founding jurisdiction. The architecture is a registry model: one deployment
-serves every configured jurisdiction, with the United States, European Union, United Kingdom,
-Singapore, UAE, Switzerland, and Japan registered to go live in phased order.
-
-## Status
-
-The site is live at **https://0xfanbase.github.io/DA-Radar/**. See `PROGRESS.md` for the current
-phase table and exact build status, and `CLAUDE.md` for the project's governing rules and
-architecture.
-
-## License
-
-Code is released under the MIT License (see `LICENSE`). Site content, once published, is released
-under CC BY 4.0.
-
-## Contact
-
-da-radar-bot@users.noreply.github.com
+Content is for general information only and is not legal or regulatory advice.
+Code: MIT. Site content: CC BY 4.0.
