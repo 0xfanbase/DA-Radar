@@ -22,6 +22,22 @@ Hong Kong only, English only. The design lives in `docs/`. This repository is th
 6. Readability: plain English, short sentences, acronyms defined on first use; mobile-first;
    cream background (#FAF9F5), comfortable type size and line spacing.
 
+## Business lens (Part F, the Business tab, cases) — owner-approved exceptions
+Part F ("Business and opportunities") helps the owner think commercially and grow toward a COO role.
+The rules above still apply, with these additions (full detail: `docs/research/tools/business_spec.md`):
+- Facts still come from official sources, cited `[S:<id>, <locator>]`.
+- Numbers official sources do not give (fees, margins, volumes, costs) may come from named industry
+  sources in `docs/research/industry-registry.jsonl`, cited `[I:<id>, <locator>]`. In words, say who
+  published it, when, the scope (global / Asia / HK) and the type (reported, survey, modelled). Such
+  numbers are "estimates", never facts. Forecasts appear only inside F4's "How to read forecasts" box.
+- Listed firms' own filings may be used for their figures, attributed, with no commentary or ranking.
+- One factual comparison page may use Singapore (MAS) and UAE (VARA) official sources. No ranking.
+- Analysis is allowed only inside boxes that start `> **Analysis — not official**` and follow the box
+  grammar in the spec. In analysis: no forecasts ("will", "likely", "expected to"), no advice
+  ("should", "recommend", "best"), no uncited percentages; round made-up numbers are tagged
+  "(illustrative)". "Should" stays reserved for regulatory expectations.
+- Scenarios carry no probabilities and no "base case". Case studies use obviously fictional names.
+
 ## Engineering rules
 - AI-authored content is data (Markdown/Markdoc/JSON), never executable code (no MDX).
 - CI gates must pass before publish: schema validation, citation resolution, official-domain

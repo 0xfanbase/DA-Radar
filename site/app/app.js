@@ -1,7 +1,7 @@
 /* HKDA Brief — single-page app. Data: data/sources.json, modules.json, projects.json */
 (function () {
   "use strict";
-  var S = { sources: [], byId: {}, modules: [], byCode: {}, projects: [], bySlug: {}, x: { obligations: [], talking: [], timeline: [], glossary: [], coming: [] } };
+  var S = { sources: [], byId: {}, modules: [], byCode: {}, projects: [], bySlug: {}, x: { obligations: [], talking: [], timeline: [], glossary: [], coming: [] }, biz: { lines: [], cases: [], compare: null }, byLine: {}, byCase: {} };
   var view = document.getElementById("view");
   document.documentElement.lang = "en";
   var DISCLAIMER = "For general information only. Not legal or regulatory advice. Always check the official source.";
@@ -23,24 +23,34 @@
   function chip(st) { return '<span class="chip ' + statusClass(st) + '">' + esc(st) + "</span>"; }
 
   /* ---------- citations ---------- */
+  var CLS = { industry: "Industry estimate", intl: "International official", foreign: "Foreign regulator", filing: "Company filing" };
   function citeHTML(id, loc) {
     var s = S.byId[id];
     var short = s ? s.p.join("/") + (s.d ? " " + s.d.slice(0, 4) : "") : "Source";
     var full = (s ? s.t : id) + (loc ? ", " + loc : "");
-    return '<button type="button" class="cite" data-id="' + esc(id) + '" data-loc="' + esc(loc || "") + '" title="' + esc(full) + '" aria-label="Source: ' + esc(full) + '">' + esc(short) + (loc ? " · " + esc(loc) : "") + "</button>";
+    var cls = s && s.cls ? " ind " + s.cls : "";
+    var pre = s && s.cls ? (s.cls === "industry" ? "Estimate · " : s.cls === "intl" ? "Intl · " : s.cls === "foreign" ? "Foreign · " : "Filing · ") : "";
+    return '<button type="button" class="cite' + cls + '" data-id="' + esc(id) + '" data-loc="' + esc(loc || "") + '" title="' + esc(full) + '" aria-label="' + (s && s.cls ? esc(CLS[s.cls]) : "Source") + ": " + esc(full) + '">' + esc(pre + short) + (loc ? " · " + esc(loc) : "") + "</button>";
   }
   function linkCitations(md) {
-    return md.replace(/\[S:([^\]]+)\]/g, function (_, inner) {
-      return inner.split(/;\s*S:/).map(function (part) {
-        var m = part.trim().match(/^([0-9a-f]{12})\s*(?:,\s*([\s\S]*))?$/);
-        return m ? citeHTML(m[1], (m[2] || "").trim()) : "[S:" + esc(part) + "]";
+    return md.replace(/\[((?:S|I):[^\]]+)\]/g, function (whole, inner) {
+      return inner.split(/;\s*(?=(?:S|I):)/).map(function (part) {
+        var m = part.trim().match(/^(?:S|I):([0-9a-f]{12})\s*(?:,\s*([\s\S]*))?$/);
+        return m ? citeHTML(m[1], (m[2] || "").trim()) : esc(whole);
       }).join(" ");
     });
   }
+  function joinCites(md) { return md.replace(/\]\s*;\s*\[(S|I):/g, "] [$1:"); }
   function renderMD(md) {
-    var html = marked.parse(linkCitations(md.replace(/\]\s*;\s*\[S:/g, "] [S:")), { mangle: false, headerIds: false });
+    md = md.replace(/^(>\s*\*\*[^\n]*)$/gm, "$1\n>");   // each labelled slot of an analysis box on its own line
+    var html = marked.parse(linkCitations(joinCites(md)), { mangle: false, headerIds: false })
+      .replace(/\s?\(concept\)/g, ' <span class="concept" title="A general explanation of how the business works, not a sourced fact about Hong Kong">concept</span>');
     var tmp = document.createElement("div");
     tmp.innerHTML = html;
+    tmp.querySelectorAll("blockquote").forEach(function (b) {   // labelled analysis boxes
+      var st = b.querySelector("strong");
+      if (st && /^Analysis/.test(st.textContent)) { b.className = "analysis"; b.setAttribute("aria-label", "Analysis, not official"); }
+    });
     tmp.querySelectorAll("table").forEach(function (t) { var w = document.createElement("div"); w.className = "tblwrap"; t.parentNode.insertBefore(w, t); w.appendChild(t); });
     tmp.querySelectorAll("a[href^='http']").forEach(function (a) { a.target = "_blank"; a.rel = "noopener"; });
     return tmp.innerHTML;
@@ -60,14 +70,16 @@
     lastFocus = document.activeElement;
     root.innerHTML = '<div class="scrim" data-close></div><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-h"><div class="grab"></div>' +
       '<button class="close" data-close aria-label="Close">×</button>' +
-      '<div class="meta">' + esc(s.p.join(" + ")) + " · " + esc(fmtDate(s.d)) + " · " + esc(s.ty) + " " + chip(s.st) + "</div>" +
+      '<div class="meta">' + esc(s.p.join(" + ")) + " · " + esc(fmtDate(s.d)) + " · " + esc(s.ty) + (s.cls ? "" : " " + chip(s.st)) + "</div>" +
       '<h3 id="sheet-h">' + esc(s.t) + "</h3>" +
       (loc ? '<div class="locbig">' + esc(loc) + "</div>" : "") +
+      (s.cls ? '<p class="note"><b>' + esc(CLS[s.cls]) + ".</b> Not an official Hong Kong source" + (s.cls === "industry" ? "; figures are the publisher's estimates" : "") + (s.geo ? ". Scope: " + esc(s.geo) : "") + (s.sponsor && !/none/i.test(s.sponsor) ? ". Sponsor: " + esc(s.sponsor) : "") + (s.conflict ? ". The publisher sells products in this market" : "") + ".</p>" : "") +
       (s.s ? "<p>" + esc(s.s) + "</p>" : "") +
-      (s.rg ? '<p class="small muted"><b>How to read it:</b> ' + rgHtml(s.rg) + "</p>" : "") +
-      '<div class="acts">' + (s.u ? '<a class="btn primary" href="' + esc(s.u) + '" target="_blank" rel="noopener">Open official document ↗</a>' : "") +
+      (s.cls && s.k.length ? '<ul class="small">' + s.k.slice(0, 6).map(function (k) { return "<li>" + esc(k[0]) + (k[1] ? ' <span class="loc">(' + esc(k[1]) + ")</span>" : "") + "</li>"; }).join("") + "</ul>" : "") +
+      (s.rg ? '<p class="small muted"><b>' + (s.cls ? "Method and caveats:" : "How to read it:") + "</b> " + rgHtml(s.rg) + "</p>" : "") +
+      '<div class="acts">' + (s.u ? '<a class="btn primary" href="' + esc(s.u) + '" target="_blank" rel="noopener">' + (s.cls ? "Open the source ↗" : "Open official document ↗") + "</a>" : "") +
       '<a class="btn" href="#doc-' + esc(s.id) + '" data-close>See in Documents</a></div>' +
-      '<p class="small muted" style="margin-top:1rem">Status as of ' + ASOF + ". Summary written in our own words; always check the official text.</p></div>";
+      '<p class="small muted" style="margin-top:1rem">' + (s.cls ? "Summary written in our own words; check the original." : "Status as of " + ASOF + ". Summary written in our own words; always check the official text.") + "</p></div>";
     document.body.classList.add("noscroll");
     var closeBtn = root.querySelector(".close"); closeBtn.focus();
     root.querySelectorAll("[data-close]").forEach(function (el) {
@@ -105,7 +117,7 @@
     var recent = S.sources.filter(function (s) { return !s.hid && s.imp !== "routine" && s.br !== "context"; }).slice(0, 6);
     var h = '<div class="read"><p class="kicker">Hong Kong · digital assets · bank compliance</p>' +
       '<h1 class="page-title">Know the rules, the projects and the moving pieces.</h1>' +
-      '<p class="lede">' + S.modules.length + ' short modules built from ' + S.sources.length + ' official HKMA, SFC and government documents. Every fact names its paragraph and links to the source.</p></div>';
+      '<p class="lede">' + S.modules.length + ' short modules built from ' + S.sources.filter(function (x) { return !x.cls; }).length + ' official HKMA, SFC and government documents. Every fact names its paragraph and links to the source.</p></div>';
     var mins = start.reduce(function (a, m) { return a + m.minutes; }, 0);
     h += '<h2 class="sec-h">Start here · about ' + Math.round(mins / 5) * 5 + ' minutes</h2><ol class="path">' + start.map(function (m) {
       return '<li><a href="#m-' + m.code + '"><div><b>' + esc(m.title) + '</b><br><span>' + m.code + " · " + m.minutes + " min" + (read[m.code] ? " · read" : "") + "</span></div><span>→</span></a></li>";
@@ -114,6 +126,7 @@
       var c = S.x.changes[0];
       h += '<div class="box"><h3>What changed · ' + esc(c.d) + "</h3>" + renderMD(c.md) + "</div>";
     }
+    if (S.biz.lines.length) h += '<h2 class="sec-h">Think like a COO</h2><div class="mcards"><a class="card" href="#business"><h3>Business and opportunities</h3><p>' + S.biz.lines.length + " business lines, " + S.biz.cases.length + ' case studies and how regulation shapes the P&amp;L.</p></a><a class="card" href="#m-F1"><h3>Part F: the course</h3><p>Where the money is, costs and capital, market structure, timing and scenarios, the COO toolkit, your path to COO.</p></a></div>';
     h += '<h2 class="sec-h">Before a meeting</h2><div class="mcards">' +
       '<a class="card" href="#briefings"><h3>Briefings</h3><p>Talking points for the CEO, CCO, business heads and Risk.</p></a>' +
       '<a class="card" href="#obligations"><h3>Obligations</h3><p>' + S.x.obligations.length + ' obligations as a checklist.</p></a>' +
@@ -131,7 +144,7 @@
     S.modules.forEach(function (m) { (parts[m.part] = parts[m.part] || { t: m.partTitle, ms: [] }).ms.push(m); });
     var done = S.modules.filter(function (m) { return read[m.code]; }).length;
     var ms = S.modules.filter(function (m) { return m.code !== "E3"; }).map(function (m) { return m.minutes; });
-    var h = '<div class="read"><p class="kicker">Learn</p><h1 class="page-title">The course</h1><p class="lede">Five parts and ' + S.modules.length + " modules, most " + Math.min.apply(null, ms) + "–" + Math.max.apply(null, ms) + " minutes each. You have marked " + done + " of " + S.modules.length + " as read.</p></div>";
+    var h = '<div class="read"><p class="kicker">Learn</p><h1 class="page-title">The course</h1><p class="lede">' + (function () { var o = {}; S.modules.forEach(function (m) { o[m.part] = 1; }); return Object.keys(o).length; })() + " parts and " + S.modules.length + " modules, most " + Math.min.apply(null, ms) + "–" + Math.max.apply(null, ms) + " minutes each. You have marked " + done + " of " + S.modules.length + " as read.</p></div>";
     Object.keys(parts).sort().forEach(function (k) {
       h += '<h2 class="sec-h">' + k + ". " + esc(parts[k].t) + '</h2><div class="grid">' + parts[k].ms.map(function (m) {
         return '<a class="card" href="#m-' + m.code + '"><div class="meta"><span class="code">' + m.code + "</span><span>" + m.minutes + " min</span>" + (m.start ? '<span class="chip live">Start here</span>' : "") + (read[m.code] ? '<span class="done">✓ Read</span>' : "") + "</div><h3>" + esc(m.title) + "</h3></a>";
@@ -192,7 +205,7 @@
     return '<article class="article"><p class="kicker">Project or initiative</p><h1 class="page-title">' + esc(p.title) + "</h1>" + renderMD(p.md) + '</article><p style="margin-top:2rem"><a href="#projects">← All projects and initiatives</a></p>' + footer();
   }
   /* ---------- obligations, briefings, timeline, glossary ---------- */
-  function inl(md) { return marked.parseInline(linkCitations(md.replace(/\]\s*;\s*\[S:/g, "] [S:"))); }
+  function inl(md) { return marked.parseInline(linkCitations(joinCites(md))); }
   function hashStr(t) { var h = 0; for (var i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) | 0; return (h >>> 0).toString(36); }
   function segBtns(list, cur, attr) { return '<div class="seg" role="group">' + list.map(function (v) { return '<button type="button" data-' + attr + '="' + esc(v) + '" aria-pressed="' + (v === cur) + '">' + esc(v) + "</button>"; }).join("") + "</div>"; }
   function modOpts(cur, withProjects) {
@@ -329,14 +342,61 @@
   }
   function afterGl() { document.getElementById("gl-q").addEventListener("input", function (e) { paintGl(e.target.value); }); paintGl(""); }
 
+  /* ---------- business (Part F) ---------- */
+  var CHAIN = ["All", "Issue", "Distribute", "Trade", "Hold", "Settle and pay", "Finance", "Advise and manage"];
+  var BZ = { chain: "All", seg: "" };
+  function lineCard(l) {
+    return '<a class="card" href="#b-' + l.slug + '"><div class="meta">' + (l.status ? chip(l.status) : "") + "<span>" + esc(l.chain.join(" · ")) + "</span></div><h3>" + esc(l.title) + '</h3><p class="small"><b>Bank role:</b> ' + esc(l.role) + '</p><p class="small muted">' + l.nS + " official " + (l.nS === 1 ? "fact" : "facts") + " · " + l.nI + " industry " + (l.nI === 1 ? "estimate" : "estimates") + "</p></a>";
+  }
+  function caseCard(c, i) {
+    return '<a class="card" href="#case-' + c.slug + '"><div class="meta"><span class="code">Case ' + (i + 1) + "</span><span>" + c.minutes + ' min</span><span class="chip">Fictional</span></div><h3>' + esc(c.title.replace(/^Case \d+:\s*/, "")) + "</h3><p>" + esc(c.teaser) + "</p></a>";
+  }
+  function vBusiness() {
+    var segs = {};
+    S.biz.lines.forEach(function (l) { l.segments.split(/[,;/]\s*/).forEach(function (x) { x = x.trim(); if (x) segs[x.charAt(0).toUpperCase() + x.slice(1)] = 1; }); });
+    var h = '<div class="read"><p class="kicker">Business and opportunities</p><h1 class="page-title">Where the money is, and what it takes</h1><p class="lede">Every digital-asset business line open to a Hong Kong bank: the bank\u2019s role, who pays, what drives cost and capital, the regulatory gate, and the official signals. For thinking like a COO.</p>' +
+      '<p class="note">Facts are official and cited. Figures marked <b>Estimate</b>, <b>Filing</b> or <b>Intl</b> come from named non-official sources. Boxes marked <b>Analysis \u2014 not official</b> are frameworks for thinking, not forecasts or advice.</p></div>';
+    h += '<h2 class="sec-h">Business lines</h2>' + segBtns(CHAIN, BZ.chain, "chain") +
+      '<div class="tools"><label>Client segment<select id="bz-seg"><option value="">All segments</option>' + Object.keys(segs).sort().map(function (x) { return '<option' + (x === BZ.seg ? " selected" : "") + ">" + esc(x) + "</option>"; }).join("") + '</select></label></div><div id="bz-list"></div>';
+    if (S.biz.cases.length) h += '<h2 class="sec-h">Case studies</h2><p class="small muted">Read-throughs with invented people and firms. The Hong Kong rules in them are real and cited.</p><div class="grid">' + S.biz.cases.map(caseCard).join("") + "</div>";
+    h += '<h2 class="sec-h">Go deeper</h2><div class="mcards">' + S.modules.filter(function (m) { return m.part === "F"; }).map(function (m) { return '<a class="card" href="#m-' + m.code + '"><div class="meta"><span class="code">' + m.code + "</span><span>" + m.minutes + " min</span></div><h3>" + esc(m.title) + "</h3></a>"; }).join("") +
+      (S.biz.compare ? '<a class="card" href="#compare"><div class="meta"><span class="code">Compare</span></div><h3>' + esc(S.biz.compare.title) + "</h3><p>Factual side-by-side from each regulator\u2019s own sources.</p></a>" : "") + "</div>";
+    return h + footer();
+  }
+  function paintBz() {
+    var list = S.biz.lines.filter(function (l) { return (BZ.chain === "All" || l.chain.indexOf(BZ.chain) >= 0) && (!BZ.seg || l.segments.toLowerCase().indexOf(BZ.seg.toLowerCase()) >= 0); });
+    document.getElementById("bz-list").innerHTML = list.length ? '<div class="grid">' + list.map(lineCard).join("") + "</div>" : '<div class="empty">No business line matches. Try another filter.</div>';
+  }
+  function afterBz() {
+    view.querySelectorAll("[data-chain]").forEach(function (b) { b.addEventListener("click", function () { BZ.chain = b.dataset.chain; view.querySelectorAll("[data-chain]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); }); paintBz(); }); });
+    document.getElementById("bz-seg").addEventListener("change", function (e) { BZ.seg = e.target.value; paintBz(); });
+    paintBz();
+  }
+  function vLine(slug) {
+    var l = S.byLine[slug]; if (!l) return notFound();
+    var i = S.biz.lines.indexOf(l), prev = S.biz.lines[i - 1], next = S.biz.lines[i + 1];
+    return '<article class="article"><p class="kicker">Business line' + (l.status ? " · " + esc(l.status) : "") + '</p><h1 class="page-title">' + esc(l.title) + "</h1>" + renderMD(l.md) + "</article>" +
+      '<div class="pager">' + (prev ? '<a href="#b-' + prev.slug + '"><small>Previous</small>' + esc(prev.title) + "</a>" : "<span></span>") + (next ? '<a href="#b-' + next.slug + '" style="text-align:right"><small>Next</small>' + esc(next.title) + "</a>" : "<span></span>") + '</div><p style="margin-top:1.5rem"><a href="#business">\u2190 All business lines</a></p>' + footer();
+  }
+  function vCase(slug) {
+    var c = S.byCase[slug]; if (!c) return notFound();
+    var i = S.biz.cases.indexOf(c), prev = S.biz.cases[i - 1], next = S.biz.cases[i + 1];
+    return '<article class="article case"><p class="kicker">Case study ' + (i + 1) + " · fictional · " + c.minutes + ' min</p><h1 class="page-title">' + esc(c.title.replace(/^Case \d+:\s*/, "")) + "</h1>" + renderMD(c.md) + "</article>" +
+      '<div class="pager">' + (prev ? '<a href="#case-' + prev.slug + '"><small>Previous case</small>' + esc(prev.title.replace(/^Case \d+:\s*/, "")) + "</a>" : "<span></span>") + (next ? '<a href="#case-' + next.slug + '" style="text-align:right"><small>Next case</small>' + esc(next.title.replace(/^Case \d+:\s*/, "")) + "</a>" : "<span></span>") + '</div><p style="margin-top:1.5rem"><a href="#business">\u2190 Business and opportunities</a></p>' + footer();
+  }
+  function vCompare() {
+    var c = S.biz.compare; if (!c) return notFound();
+    return '<article class="article"><p class="kicker">Comparison · factual, no ranking</p><h1 class="page-title">' + esc(c.title) + "</h1>" + renderMD(c.md) + '</article><p style="margin-top:1.5rem"><a href="#business">\u2190 Business and opportunities</a></p>' + footer();
+  }
+
   function vMore() {
-    var items = [["obligations", "Obligations", "Every obligation, as a checklist you can tick."], ["briefings", "Briefings", "Talking points for the CEO, CCO, business and Risk."], ["timeline", "Timeline", "What is coming next, and every milestone since 2017."], ["glossary", "Glossary", "About 80 terms in plain English, with sources."]];
+    var items = [["business", "Business", "Business lines, case studies and the path to COO."], ["obligations", "Obligations", "Every obligation, as a checklist you can tick."], ["briefings", "Briefings", "Talking points for the CEO, CCO, business and Risk."], ["timeline", "Timeline", "What is coming next, and every milestone since 2017."], ["glossary", "Glossary", "About 80 terms in plain English, with sources."]];
     return '<div class="read"><p class="kicker">More</p><h1 class="page-title">Reference tools</h1></div><div class="mcards">' + items.map(function (i) { return '<a class="card" href="#' + i[0] + '"><h3>' + i[1] + "</h3><p>" + i[2] + "</p></a>"; }).join("") + "</div>" + footer();
   }
   function notFound() { return '<div class="empty">That page does not exist. <a href="#home">Go home</a></div>' + footer(); }
 
   /* ---------- documents ---------- */
-  var PUBS = ["HKMA", "SFC", "FSTB", "Government", "LegCo", "HKEX", "IRD", "Other"];
+  var PUBS = ["HKMA", "SFC", "FSTB", "Government", "LegCo", "HKEX", "IRD", "Other", "Industry"];
   var DEF = { q: "", pubs: [], ty: "", st: "", tp: "", br: "", from: "", to: "", sort: "new", hideRoutine: true, shown: 40 };
   function docState() { var s = store("docs") || {}; var o = {}; for (var k in DEF) o[k] = s[k] !== undefined ? s[k] : DEF[k]; o.shown = 40; o.focus = ""; return o; }
   function advCount() { return ["ty", "st", "tp", "br", "from", "to"].filter(function (k) { return DS[k]; }).length + (DS.sort !== "new" ? 1 : 0); }
@@ -360,7 +420,9 @@
       if (DS.focus) return s.id === DS.focus;
       if (s.hid) return false;
       if (DS.hideRoutine && s.imp === "routine") return false;
-      if (DS.pubs.length && !s.p.some(function (p) { return DS.pubs.indexOf(p) >= 0; })) return false;
+      var wantInd = DS.pubs.indexOf("Industry") >= 0, offPubs = DS.pubs.filter(function (p) { return p !== "Industry"; });
+      if (s.cls) { if (!wantInd) return false; }                              // non-official only when asked for
+      else if (offPubs.length ? !s.p.some(function (p) { return offPubs.indexOf(p) >= 0; }) : wantInd) return false;
       if (DS.ty && s.ty !== DS.ty) return false;
       if (DS.st && s.st !== DS.st) return false;
       if (DS.tp && s.tp.indexOf(DS.tp) < 0) return false;
@@ -383,7 +445,7 @@
     var h = '<div class="read"><p class="kicker">Documents</p><h1 class="page-title">All official documents</h1><p class="lede">Every HKMA, SFC and government publication in the research, newest first. Each title opens the official page or PDF.</p></div>';
     h += '<form class="filters" id="docf" onsubmit="return false">' +
       '<label class="wide">Search<input id="f-q" type="search" placeholder="Title, summary or topic" value="' + esc(DS.q) + '"></label>' +
-      '<div class="pubs" role="group" aria-label="Publisher">' + PUBS.map(function (p) { return '<button type="button" data-pub="' + p + '" aria-pressed="' + (DS.pubs.indexOf(p) >= 0) + '">' + p + "</button>"; }).join("") + "</div>" +
+      '<div class="pubs" role="group" aria-label="Publisher">' + PUBS.map(function (p) { return '<button type="button" data-pub="' + p + '" aria-pressed="' + (DS.pubs.indexOf(p) >= 0) + '">' + (p === "Industry" ? "Industry &amp; foreign" : p) + "</button>"; }).join("") + "</div>" +
       '<details class="fx" id="fx"' + (advCount() || window.innerWidth >= 760 ? " open" : "") + '><summary>More filters' + (advCount() ? " (" + advCount() + " on)" : "") + '</summary><div class="fgrid">' +
       '<label>From<input id="f-from" type="date" value="' + esc(DS.from) + '"></label>' +
       '<label>To<input id="f-to" type="date" value="' + esc(DS.to) + '"></label>' +
@@ -424,15 +486,18 @@
 
   /* ---------- router ---------- */
   function setNav(tab) {
-    var more = { obligations: 1, briefings: 1, timeline: 1, glossary: 1 };
+    var more = { obligations: 1, briefings: 1, timeline: 1, glossary: 1, business: 1 };
     document.querySelectorAll(".nav a, .tabbar a").forEach(function (a) { if (a.getAttribute("href") === "#" + tab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
-    document.querySelectorAll(".tabbar a, .nav a.m").forEach(function (a) { if (a.getAttribute("href") === "#more" && more[tab]) a.setAttribute("aria-current", "page"); });
+    document.querySelectorAll(".tabbar a").forEach(function (a) { if (a.getAttribute("href") === "#more" && more[tab]) a.setAttribute("aria-current", "page"); });
+    document.querySelectorAll(".nav a.m").forEach(function (a) { if (more[tab] && tab !== "business") a.setAttribute("aria-current", "page"); });
   }
-  var TITLES = { home: "Home", learn: "Learn", projects: "Projects", docs: "Documents", glossary: "Glossary", obligations: "Obligations", briefings: "Briefings", timeline: "Timeline", more: "More" };
+  var TITLES = { business: "Business and opportunities", compare: "Hong Kong, Singapore and the UAE", home: "Home", learn: "Learn", projects: "Projects", docs: "Documents", glossary: "Glossary", obligations: "Obligations", briefings: "Briefings", timeline: "Timeline", more: "More" };
   var stack = [], pos = {};
   function pageTitle(h) {
     if (/^m-/.test(h) && S.byCode[h.slice(2)]) return h.slice(2) + " " + S.byCode[h.slice(2)].title;
     if (/^p-/.test(h) && S.bySlug[h.slice(2)]) return S.bySlug[h.slice(2)].title;
+    if (/^b-/.test(h) && S.byLine[h.slice(2)]) return S.byLine[h.slice(2)].title;
+    if (/^case-/.test(h) && S.byCase[h.slice(5)]) return S.byCase[h.slice(5)].title;
     if (/^doc-/.test(h) && S.byId[h.slice(4)]) return S.byId[h.slice(4)].sl;
     return TITLES[h] || "Not found";
   }
@@ -444,7 +509,11 @@
     if (back) stack.pop(); else if (prev !== h) stack.push(h);
     if (h === "home" || h === "") { html = vHome(); }
     else if (h === "learn") { tab = "learn"; html = vLearn(); }
-    else if (/^m-[A-E]\d$/.test(h)) { tab = "learn"; var c = h.slice(2); html = vModule(c); after = function () { afterModule(c); }; }
+    else if (h === "business") { tab = "business"; html = vBusiness(); after = afterBz; }
+    else if (/^b-[a-z0-9-]+$/.test(h)) { tab = "business"; html = vLine(h.slice(2)); }
+    else if (/^case-[a-z0-9-]+$/.test(h)) { tab = "business"; html = vCase(h.slice(5)); }
+    else if (h === "compare") { tab = "business"; html = vCompare(); }
+    else if (/^m-[A-F]\d[a-z]?$/.test(h)) { tab = "learn"; var c = h.slice(2); html = vModule(c); after = function () { afterModule(c); }; }
     else if (h === "projects") { tab = "projects"; html = vProjects(); }
     else if (/^p-[a-z0-9-]+$/.test(h)) { tab = "projects"; html = vProject(h.slice(2)); }
     else if (h === "docs") { tab = "docs"; html = vDocs(); after = function () { afterDocs(); }; }
@@ -464,11 +533,12 @@
   window.addEventListener("hashchange", route);
 
   /* ---------- load ---------- */
-  Promise.all(["sources", "modules", "projects", "extras"].map(function (n) { return fetch("data/" + n + ".json").then(function (r) { return r.json(); }); }))
+  Promise.all(["sources", "modules", "projects", "extras", "business"].map(function (n) { return fetch("data/" + n + ".json").then(function (r) { return r.json(); }); }))
     .then(function (d) {
       S.sources = d[0]; S.sources.forEach(function (s) { S.byId[s.id] = s; });
       S.modules = d[1]; S.modules.forEach(function (m) { S.byCode[m.code] = m; });
       S.x = d[3];
+      S.biz = d[4] || S.biz; S.biz.lines.forEach(function (l) { S.byLine[l.slug] = l; }); S.biz.cases.forEach(function (c) { S.byCase[c.slug] = c; });
       S.projects = d[2]; S.projects.forEach(function (p) { S.bySlug[p.slug] = p; });
       route();
     })

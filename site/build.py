@@ -86,20 +86,20 @@ def build_sources():
     return out
 
 
-PARTS = {"A": "Orientation", "B": "Your bank as a regulated entity", "C": "Activities",
+PARTS = {"F": "Business and opportunities", "A": "Orientation", "B": "Your bank as a regulated entity", "C": "Activities",
          "D": "Risk and control", "E": "Horizon and reference"}
 START = {"A1", "B1", "B2", "C3", "C4", "D3", "E1"}
 
 
 def build_modules():
     mods = []
-    for f in sorted((DOCS / "modules").glob("*.md")):
+    for f in sorted((DOCS / "modules").glob("*.md"), key=lambda f: (f.stem[0], int(re.sub(r"\D", "", f.stem) or 0), f.stem)):
         md = f.read_text()
-        m = re.match(r"#\s+([A-E]\d)\s+(.+)", md)
+        m = re.match(r"#\s+([A-F]\d[a-z]?)\s+(.+)", md)
         code, title = m.group(1), m.group(2).strip()
         body = md.split("\n", 1)[1].strip()
         body = re.sub(r"(## Related modules\s*\n)(.*?)(?=\n## |\Z)",
-                      lambda m: m.group(1) + re.sub(r"\b([A-E]\d)\b(?![^\[]*\])", r"[\1](#m-\1)", m.group(2)), body, flags=re.S)
+                      lambda m: m.group(1) + re.sub(r"\b([A-F]\d[a-z]?)\b(?![^\[]*\])", r"[\1](#m-\1)", m.group(2)), body, flags=re.S)
         words = len(re.findall(r"\w+", re.sub(r"\[S:[^\]]*\]", "", body)))
         mods.append({"code": code, "title": title, "part": code[0], "partTitle": PARTS[code[0]],
                      "start": code in START, "minutes": max(5, round(words / 200)), "md": body})
@@ -126,7 +126,7 @@ def build_projects():
             m = re.match(r"#\s+(.+)", md)
             body = md.split("\n", 1)[1].strip()
             body = re.sub(r"^(\| Covered in \|)(.*?)\|\s*$",
-                          lambda m: m.group(1) + " " + re.sub(r"\b([A-E]\d)\b", r"[\1](#m-\1)", m.group(2).strip()) + " |",
+                          lambda m: m.group(1) + " " + re.sub(r"\b([A-F]\d[a-z]?)\b", r"[\1](#m-\1)", m.group(2).strip()) + " |",
                           body, flags=re.M)
             glance = {r[0]: r[1] for r in table_rows(section(md, "At a glance")) if len(r) >= 2}
             plain = lambda v: re.sub(r"\s*\[S:[^\]]*\]", "", v or "").strip()
@@ -135,7 +135,7 @@ def build_projects():
                         "oneLine": re.sub(r"\s*\[S:[^\]]*\][;,]?", "", body.split("\n\n", 1)[0]).strip(),
                         "runBy": short_by(plain(glance.get("Run by", ""))),
                         "status": re.split(r"\s*[(;:—]", status)[0].strip(),
-                        "coveredIn": re.sub(r"\[([A-E]\d)\]\(#m-[A-E]\d\)", r"\1", plain(glance.get("Covered in", "")))})
+                        "coveredIn": re.sub(r"\[([A-F]\d[a-z]?)\]\(#m-[A-F]\d[a-z]?\)", r"\1", plain(glance.get("Covered in", "")))})
     return out
 
 
@@ -217,16 +217,99 @@ def build_extras(mods, projs=()):
     return {"changes": changes[:6], "obligations": obligations, "talking": talking, "timeline": timeline, "glossary": glossary, "coming": coming}
 
 
+IND_CLASS = {"international_official": ("intl", "International official"), "foreign_regulator": ("foreign", "Foreign regulator"),
+             "listed_filing": ("filing", "Company filing"), "consultancy": ("industry", "Industry estimate"),
+             "bank_research": ("industry", "Industry estimate"), "association": ("industry", "Industry estimate"),
+             "data_provider": ("industry", "Industry estimate")}
+
+
+def build_industry():
+    """Non-official sources for Part F (docs/research/industry-registry.jsonl). Never mixed into official facts."""
+    p = DOCS / "research" / "industry-registry.jsonl"
+    out = []
+    if not p.exists():
+        return out
+    for line in open(p):
+        if not line.strip():
+            continue
+        e = json.loads(line)
+        cls, label = IND_CLASS.get(e.get("publisher_type"), ("industry", "Industry estimate"))
+        figs = [[f"{g.get('metric','')}: {g.get('value','')} {g.get('unit','')}".strip() +
+                 f" ({', '.join(x for x in [g.get('as_of',''), g.get('scope',''), g.get('estimate_type','')] if x)})",
+                 g.get("locator", "")] for g in (e.get("figures") or [])]
+        rules = [[r.get("point", ""), r.get("locator", "")] for r in (e.get("rules") or [])]
+        year = (e.get("date") or "")[:4]
+        out.append({"id": e["id"], "t": e.get("title", ""), "sl": f"{e.get('publisher','')} · {e.get('title','')[:60]} ({year})",
+                    "d": e.get("date") or "", "p": [e.get("publisher", "Other")], "ty": label, "st": label,
+                    "imp": "reference", "br": "context", "ap": [], "tp": e.get("topics") or [],
+                    "s": e.get("summary", ""), "w": "", "k": (figs + rules)[:14],
+                    "rg": " ".join(x for x in [e.get("methodology_note", ""), e.get("caveats", "")] if x),
+                    "u": e.get("url", ""), "hid": False, "cls": cls, "geo": e.get("geography", ""),
+                    "sponsor": e.get("sponsor", ""), "conflict": bool(e.get("conflict"))})
+    return out
+
+
+LINE_STATUS = re.compile(r"^(In force|Pilot|Consultation|Conclusions published|Bill before LegCo|Stated target|Exploratory|Issued|Proposed)", re.I)
+
+
+def build_business():
+    d = DOCS / "business"
+    lines, cases, compare = [], [], None
+    plain = lambda v: re.sub(r"\s*\[[SI]:[^\]]*\]", "", v or "").strip()
+    for f in sorted((d / "lines").glob("*.md")) if (d / "lines").exists() else []:
+        md = f.read_text()
+        title = re.match(r"#\s+(.+)", md).group(1).strip()
+        body = md.split("\n", 1)[1].strip()
+        g = {r[0]: r[1] for r in table_rows(section(md, "At a glance")) if len(r) >= 2}
+        st = plain(g.get("Status as of 25 Sep 2026", ""))
+        m = LINE_STATUS.match(st)
+        rel = plain(g.get("Related modules", ""))
+        body = re.sub(r"^(\| Related modules \|)(.*?)\|\s*$",
+                      lambda m2: m2.group(1) + " " + re.sub(r"\b([A-F]\d[a-z]?)\b", r"[\1](#m-\1)", m2.group(2).strip()) + " |",
+                      body, flags=re.M)
+        case_titles = {c.stem: re.match(r"#\s+(.+)", c.read_text()).group(1).strip() for c in (d / "cases").glob("*.md")} if (d / "cases").exists() else {}
+        body = re.sub(r"^(\| Related cases \|)(.*?)\|\s*$",
+                      lambda m2: m2.group(1) + " " + ", ".join(f"[{case_titles[x.strip()]}](#case-{x.strip()})" if x.strip() in case_titles else x.strip()
+                                                            for x in m2.group(2).split(",")) + " |", body, flags=re.M)
+        lines.append({"slug": f.stem, "title": title, "md": body,
+                      "oneLine": re.sub(r"\s*\[[SI]:[^\]]*\][;,]?", "", body.split("\n\n", 1)[0]).replace("(concept)", "").strip(),
+                      "role": plain(g.get("Bank role", "")), "segments": plain(g.get("Client segments", "")),
+                      "chain": [c.strip() for c in plain(g.get("Value chain", "")).split(",") if c.strip()],
+                      "status": m.group(1) if m else (st.split(".")[0][:30] if st else ""),
+                      "related": rel, "cases": plain(g.get("Related cases", "")),
+                      "nS": len(re.findall(r"(?:\[|;\s*)S:[0-9a-f]{12}", body)),
+                      "nI": len(re.findall(r"(?:\[|;\s*)I:[0-9a-f]{12}", body))})
+    for f in sorted((d / "cases").glob("*.md"), key=lambda f: int(re.match(r"\d+", f.stem).group(0)) if re.match(r"\d+", f.stem) else 99) if (d / "cases").exists() else []:
+        md = f.read_text()
+        m = re.match(r"#\s+(.+)", md)
+        body = md.split("\n", 1)[1].strip()
+        situation = re.sub(r"\s*\[[SI]:[^\]]*\][;,]?", "", section(md, "The situation")).strip().split("\n\n")[0]
+        words = len(re.findall(r"\w+", re.sub(r"\[[SI]:[^\]]*\]", "", body)))
+        cases.append({"slug": f.stem, "title": m.group(1).strip() if m else f.stem, "md": body,
+                      "teaser": situation[:280], "minutes": max(5, round(words / 200))})
+    if (d / "compare-sg-uae.md").exists():
+        md = (d / "compare-sg-uae.md").read_text()
+        m = re.match(r"#\s+(.+)", md)
+        compare = {"title": m.group(1).strip() if m else "Hong Kong, Singapore and the UAE", "md": md.split("\n", 1)[1].strip()}
+    return {"lines": lines, "cases": cases, "compare": compare}
+
+
 if __name__ == "__main__":
     src = build_sources()
+    ind = build_industry()
     mods = build_modules()
     projs = build_projects()
+    biz = build_business()
     ids = {s["id"] for s in src}
-    missing = sorted({i for m in mods + projs for i in re.findall(r"\[S:([0-9a-f]{12})", m["md"]) if i not in ids})
-    if missing:
-        raise SystemExit(f"Unknown citation ids: {missing[:10]}")
+    iids = {s["id"] for s in ind}
+    texts = [m["md"] for m in mods + projs + biz["lines"] + biz["cases"]] + ([biz["compare"]["md"]] if biz["compare"] else [])
+    missing = sorted({i for t in texts for i in re.findall(r"(?:\[|;\s*)S:([0-9a-f]{12})", t) if i not in ids})
+    imissing = sorted({i for t in texts for i in re.findall(r"(?:\[|;\s*)I:([0-9a-f]{12})", t) if i not in iids})
+    if missing or imissing:
+        raise SystemExit(f"Unknown citation ids: official {missing[:10]} industry {imissing[:10]}")
+    src = src + ind
     extras = build_extras(mods, projs)
-    for name, data in (("sources", src), ("modules", mods), ("projects", projs), ("extras", extras)):
+    for name, data in (("sources", src), ("modules", mods), ("projects", projs), ("extras", extras), ("business", biz)):
         (OUT / f"{name}.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
-    print(f"sources={len(src)} modules={len(mods)} projects={len(projs)} " +
+    print(f"sources={len(src)} (industry {len(ind)}) modules={len(mods)} projects={len(projs)} lines={len(biz['lines'])} cases={len(biz['cases'])} " +
           " ".join(f"{k}={len(v)}" for k, v in extras.items()))
