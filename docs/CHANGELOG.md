@@ -2,6 +2,9 @@
 
 Newest first. Each entry is written by the update routine or by hand when the content changes.
 
+## 26 Sep 2026 (A5 print edition)
+- The printed book now uses A5 pages with 14 pt body text, for printing on A5 at actual size. It is about 1.5 times the size of the previous edition's text when printed on A5.
+
 ## 26 Sep 2026 (review, study layer and benefits)
 - **Stablecoins:** the first regulated stablecoin in Hong Kong launched in August 2026. A Government spokesman said so on 16 September 2026, without naming the issuer. The site no longer implies that no coin is live.
 - **mBridge:** the Bank for International Settlements (BIS) handed the project to the partner central banks in October 2024. Its General Manager said mBridge is not a "BRICS bridge" and that BIS products cannot be used by sanctioned countries. The FSTB's December 2025 list of members no longer includes the BIS.

@@ -1,4 +1,4 @@
-// Build the printable edition of HKDA Brief: one A4 PDF (plus HTML for Word conversion).
+// Build the printable edition of HKDA Brief: one A5 PDF (plus HTML for Word conversion).
 // Usage: node print/build_print.mjs <node_modules dir> [fonts dir]
 // Reads the same data the site uses (site/app/data/*.json). Citations become numbered endnotes collected at the very end.
 import fs from "fs";
@@ -59,15 +59,16 @@ function cite(md) {
       const m = part.match(/^[SI]:([0-9a-f]{12})\s*,?\s*(.*)$/s);
       return m ? noteRef(m[1], m[2].trim()) : null;
     }).filter(Boolean);
-    return '<sup class="fn">' + [...new Set(nums)].join(",") + "</sup>";
+    return '<sup class="fn">' + [...new Set(nums)].join(",<wbr>") + "</sup>";
   });
-  return md.replace(/<\/sup>\s*;?\s*<sup class="fn">/g, ",");
+  return md.replace(/<\/sup>\s*;?\s*<sup class="fn">/g, ",<wbr>");
 }
 function renderMD(md) {
   md = md.replace(/^(>\s*\*\*[^\n]*)$/gm, ">\n$1\n>");
   md = md.replace(/\[([^\]]+)\]\(#[^)]*\)/g, "$1");                       // internal links become plain text
   let html = marked.parse(cite(md), { mangle: false, headerIds: false });
   html = html.replace(/\s?\(concept\)/g, ' <span class="tag">concept</span>');
+  html = html.replace(/<th>Status \(chip\)<\/th>/g, "<th>Status</th>").replace(/<th>Source<\/th>/g, '<th>Src</th>');
   html = html.replace(/<h2>([^<]+)<\/h2>/g, (m, t) => "<h2>" + (HEAD[t.trim()] || t) + "</h2>");
   html = html.replace(/<blockquote>\s*<p>\s*<strong>Analysis/g, '<blockquote class="analysis"><p><strong>Analysis');
   html = html.replace(/<blockquote>\s*<p>\s*<strong>Commercial and customer benefits/g, '<blockquote class="benefits"><p><strong>Commercial and customer benefits');
@@ -152,7 +153,7 @@ const HOWTO = `<h1>How to read this book</h1>
 const study = (f) => { const p = path.join(ROOT, "docs/study", f); return fs.existsSync(p) ? fs.readFileSync(p, "utf8") : null; };
 function sinceLast() {
   const log = fs.readFileSync(path.join(ROOT, "docs/CHANGELOG.md"), "utf8");
-  const parts = log.split(/\n(?=## )/).filter((p) => p.startsWith("## ")).slice(0, 4);
+  const parts = log.split(/\n(?=## )/).filter((p) => p.startsWith("## ")).slice(0, 2);
   return "<h1>Since the last edition</h1><p>The most recent changes to the content, newest first. The full list is in the live site's change log.</p>" +
     parts.map((p) => marked.parse(p.replace(/^## /, "### "))).join("");
 }
@@ -211,16 +212,28 @@ print(json.dumps(out))`, pdf]).toString());
 
 async function build(browser) {
   const body = book();
-  const headerTemplate = `<div style="font:8pt Georgia,serif;color:#777;width:100%;padding:0 16mm 0 20mm;display:flex;justify-content:space-between"><span>HKDA Brief</span><span>As of ${ASOF}</span></div>`;
-  const footerTemplate = `<div style="font:7.5pt Georgia,serif;color:#777;width:100%;padding:0 16mm 0 20mm;display:flex;justify-content:space-between"><span>${DISCLAIMER}</span><span style="font-size:10pt;color:#333"><span class="pageNumber"></span></span></div>`;
-  const opts = { format: "A4", printBackground: true, displayHeaderFooter: true, headerTemplate, footerTemplate,
-    margin: { top: "17mm", bottom: "16mm", left: "20mm", right: "16mm" } };
+  const headerTemplate = `<div style="font:8pt Georgia,serif;color:#777;width:100%;padding:0 11mm 0 15mm;display:flex;justify-content:space-between"><span>HKDA Brief</span><span>As of ${ASOF}</span></div>`;
+  const footerTemplate = `<div style="font:7pt Georgia,serif;color:#777;width:100%;padding:0 11mm 0 15mm;display:flex;justify-content:space-between;align-items:baseline"><span>Not legal or regulatory advice. Check the official source.</span><span style="font-size:10pt;color:#333"><span class="pageNumber"></span></span></div>`;
+  const opts = { format: "A5", printBackground: true, displayHeaderFooter: true, headerTemplate, footerTemplate,
+    margin: { top: "14mm", bottom: "14mm", left: "15mm", right: "11mm" } };
   const pg = await browser.newPage();
   const html = (pages) => page("HKDA Brief", body.replace("@@TOC@@", tocHtml(pages)));
   const render = async (pages, file) => {
     fs.writeFileSync(path.join(TMP, "book.html"), html(pages));
+    await pg.setViewportSize({ width: 461, height: 900 });   // A5 text width (148 mm - 26 mm margins) at 96 dpi
     await pg.goto("file://" + path.join(TMP, "book.html"), { waitUntil: "load" });
     await pg.evaluate(() => document.fonts.ready);
+    const fit = await pg.evaluate(() => {   // shrink any too-wide table step by step (not below 9pt), then allow word breaks
+      const W = document.body.clientWidth; let shrunk = 0, broken = 0;
+      document.querySelectorAll("table").forEach((t) => {
+        let fs = 11;
+        while (t.getBoundingClientRect().width > W + 0.5 && fs > 9) { fs -= 0.5; t.style.fontSize = fs + "pt"; }
+        if (fs < 11) shrunk++;
+        if (t.getBoundingClientRect().width > W + 0.5) { t.style.overflowWrap = "anywhere"; t.querySelectorAll("td,th").forEach((c) => (c.style.overflowWrap = "anywhere")); broken++; }
+      });
+      return { W, shrunk, broken, sw: document.documentElement.scrollWidth };
+    });
+    console.log("table fit:", JSON.stringify(fit));
     await pg.pdf({ path: file, ...opts });
   };
   const pass1 = path.join(TMP, "book-pass1.pdf");
@@ -234,7 +247,7 @@ async function build(browser) {
   await pg.setContent(COVER, { waitUntil: "load" });
   await pg.evaluate(() => document.fonts.ready);
   const cov = path.join(TMP, "book-cover.pdf");
-  await pg.pdf({ path: cov, format: "A4", printBackground: true, margin: { top: "0", bottom: "0", left: "0", right: "0" } });
+  await pg.pdf({ path: cov, format: "A5", printBackground: true, margin: { top: "0", bottom: "0", left: "0", right: "0" } });
   const final = path.join(OUT, "HKDA-Brief.pdf");
   // merge cover + book, add bookmarks (PDF page = printed page + 1 for the cover)
   const outline = JSON.stringify(toc.map((t) => [t.level, t.title, (check[t.n] || 1) + 1]));
