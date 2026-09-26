@@ -1,11 +1,11 @@
-# CLAUDE.md — Hong Kong Digital Assets: Bank Compliance Guide
+# CLAUDE.md — HKDA Brief
 
 ## What this is
-A free, static learning site that teaches the head of compliance (digital assets) at a Hong Kong bank
+HKDA Brief is a private learning site, hosted as a Claude artifact for its owner only, that teaches the head of compliance (digital assets) at a Hong Kong bank
 everything from basics to expert level: HKMA requirements for authorized institutions first, SFC rules
 where they reach banks (registered-institution activities, joint circulars, distribution, dealing,
 advisory, custody, VATP due diligence), and FSTB policy and the legislative pipeline.
-Hong Kong only. The design lives in `docs/`.
+Hong Kong only, English only. The design lives in `docs/`. This repository is the private store for the source registry, module content and tools; a scheduled Claude routine updates content from it and republishes the artifact. Every official initiative (e.g. Project Ensemble / EnsembleTX, e-HKD, mBridge, digital bonds) has its own project profile, and topic modules link to those profiles.
 
 ## Non-negotiable content rules
 1. Official sources only for facts: HKMA, SFC, FSTB, LegCo, e-Legislation, the Gazette, other HKSAR
