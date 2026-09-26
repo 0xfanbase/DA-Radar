@@ -32,6 +32,7 @@ Banned inside analysis and case discussion notes: "will" (about markets/firms/th
 tagged "(illustrative)". Scenarios: no probabilities, no base case, symmetric treatment.
 
 ## Style
+Follow `plain_language_spec.md` in full (lead with the point, one idea per sentence, ≤20 words where possible, everyday words, explain every term and abbreviation on first use, no riddles). Business jargon counts too: explain terms like take rate, basis points, net interest margin, hurdle rate, AUM, P&L the first time they appear on a page.
 Plain English, short sentences, acronyms defined on first use in each file, own words (no 8+ word runs
 from any source; at most one quote of ≤15 words per source). HK dollars written HK$; say "about" for
 rounded figures. Fictional names must be obviously fictional (e.g. "Harbourlight Bank", "Kestrel

@@ -47,6 +47,10 @@
       .replace(/\s?\(concept\)/g, ' <span class="concept" title="A general explanation of how the business works, not a sourced fact about Hong Kong">concept</span>');
     var tmp = document.createElement("div");
     tmp.innerHTML = html;
+    var HEAD = { "Status board": "Where things stand", "Open items": "Open questions", "Common mix-ups": "Common misunderstandings",
+      "Read these first": "Official documents to read first", "What your bank must do": "What your bank must or should do",
+      "Key facts": "Key facts", "In 60 seconds": "In 60 seconds", "Related modules": "Related modules" };
+    tmp.querySelectorAll("h2").forEach(function (h) { var t = h.textContent.trim(); if (HEAD[t]) h.textContent = HEAD[t]; });
     tmp.querySelectorAll("blockquote").forEach(function (b) {   // labelled analysis boxes
       var st = b.querySelector("strong");
       if (st && /^Analysis/.test(st.textContent)) { b.className = "analysis"; b.setAttribute("aria-label", "Analysis, not official"); }
@@ -76,9 +80,9 @@
       (s.cls ? '<p class="note"><b>' + esc(CLS[s.cls]) + ".</b> Not an official Hong Kong source" + (s.cls === "industry" ? "; figures are the publisher's estimates" : "") + (s.geo ? ". Scope: " + esc(s.geo) : "") + (s.sponsor && !/none/i.test(s.sponsor) ? ". Sponsor: " + esc(s.sponsor) : "") + (s.conflict ? ". The publisher sells products in this market" : "") + ".</p>" : "") +
       (s.s ? "<p>" + esc(s.s) + "</p>" : "") +
       (s.cls && s.k.length ? '<ul class="small">' + s.k.slice(0, 6).map(function (k) { return "<li>" + esc(k[0]) + (k[1] ? ' <span class="loc">(' + esc(k[1]) + ")</span>" : "") + "</li>"; }).join("") + "</ul>" : "") +
-      (s.rg ? '<p class="small muted"><b>' + (s.cls ? "Method and caveats:" : "How to read it:") + "</b> " + rgHtml(s.rg) + "</p>" : "") +
+      (s.rg ? '<p class="small muted"><b>' + (s.cls ? "How it was measured, and limits:" : "Where to look:") + "</b> " + rgHtml(s.rg) + "</p>" : "") +
       '<div class="acts">' + (s.u ? '<a class="btn primary" href="' + esc(s.u) + '" target="_blank" rel="noopener">' + (s.cls ? "Open the source ↗" : "Open official document ↗") + "</a>" : "") +
-      '<a class="btn" href="#doc-' + esc(s.id) + '" data-close>See in Documents</a></div>' +
+      '<a class="btn" href="#doc-' + esc(s.id) + '" data-close>Show in the document list</a></div>' +
       '<p class="small muted" style="margin-top:1rem">' + (s.cls ? "Summary written in our own words; check the original." : "Status as of " + ASOF + ". Summary written in our own words; always check the official text.") + "</p></div>";
     document.body.classList.add("noscroll");
     var closeBtn = root.querySelector(".close"); closeBtn.focus();
@@ -104,7 +108,7 @@
   });
 
   /* ---------- helpers ---------- */
-  function footer() { return "<footer>" + DISCLAIMER + " Content reflects official publications up to " + ASOF + ".</footer>"; }
+  function footer() { return "<footer>" + DISCLAIMER + " Content reflects official publications up to " + ASOF + '. <a href="#help">How to read this site</a></footer>'; }
   function readSet() { return store("read") || {}; }
   function projectsFor(code) {
     return S.projects.filter(function (p) { return new RegExp("\\b" + code + "\\b").test(p.coveredIn || ""); });
@@ -160,7 +164,7 @@
     var body = renderMD(m.md);
     if (projs.length) {
       var box = '<div class="box"><h3>Initiatives in this area</h3><div class="links">' + projs.map(function (p) { return '<a href="#p-' + p.slug + '">' + esc(p.title) + "</a>"; }).join("") + "</div></div>";
-      body = body.replace(/(<h2[^>]*>Status board<\/h2>)/, box + "$1");
+      body = body.replace(/(<h2[^>]*>Where things stand<\/h2>)/, box + "$1");
     }
     var read = readSet();
     var h = '<article class="article"><p class="kicker">' + m.code + " · " + esc(m.partTitle) + " · " + m.minutes + ' min</p><h1 class="page-title">' + esc(m.title) + "</h1>" + body + "</article>";
@@ -173,7 +177,7 @@
     if (b) b.addEventListener("click", function () { var r = readSet(); r[code] = !r[code]; store("read", r); b.textContent = r[code] ? "✓ Marked as read" : "Mark as read"; });
     // copy buttons on talking points
     var hs = Array.prototype.slice.call(view.querySelectorAll("h2"));
-    var tp = hs.filter(function (h) { return /Talking points/i.test(h.textContent); })[0];
+    var tp = hs.filter(function (h) { return /Talking points/i.test(h.textContent); })[0];   // headings renamed for display only
     if (!tp) return;
     var el = tp.nextElementSibling;
     while (el && el.tagName !== "H2") {
@@ -226,10 +230,10 @@
     return h ? h + "</ul>" : '<div class="empty">Nothing matches. Try another filter.</div>';
   }
 
-  var CATS = ["All", "Obligations", "Controls and monitoring", "Notify or consult", "Counterparty due diligence"];
+  var CATS = ["All", "Obligations", "Controls and monitoring", "Tell or consult the regulator", "Checks on partners"];
   var OB = { cat: "All", mod: "", q: "" };
   function vObligations() {
-    var h = '<div class="read"><p class="kicker">Obligations</p><h1 class="page-title">What the bank must do</h1><p class="lede">Every obligation from the 20 topic modules, sorted into four kinds. Tick what your bank has covered. Ticks stay on this device only.</p></div>';
+    var h = '<div class="read"><p class="kicker">Obligations</p><h1 class="page-title">What the bank must or should do</h1><p class="lede">Every requirement and expectation from the topic modules, sorted into four kinds. Each item keeps the regulator\u2019s own word: <b>must</b> means required; <b>should</b> means expected. Tick what your bank has covered. Ticks are saved on this device only.</p></div>';
     h += '<div class="tools"><label>Module<select id="ob-mod">' + modOpts(OB.mod) + '</select></label><label>Search<input id="ob-q" type="search" placeholder="e.g. cold storage, travel rule" value="' + esc(OB.q) + '"></label></div>';
     h += segBtns(CATS, OB.cat, "cat") + '<div class="count"><span id="ob-count"></span></div><div class="progress"><i id="ob-bar" style="width:0"></i></div><div id="ob-list"></div>';
     return h + footer();
@@ -389,8 +393,19 @@
     return '<article class="article"><p class="kicker">Comparison · factual, no ranking</p><h1 class="page-title">' + esc(c.title) + "</h1>" + renderMD(c.md) + '</article><p style="margin-top:1.5rem"><a href="#business">\u2190 Business and opportunities</a></p>' + footer();
   }
 
+  function vHelp() {
+    var rows = function (list) { return '<div class="tblwrap"><table><tbody>' + list.map(function (r) { return "<tr><th scope=\"row\">" + r[0] + "</th><td>" + r[1] + "</td></tr>"; }).join("") + "</tbody></table></div>"; };
+    return '<article class="article"><p class="kicker">Help</p><h1 class="page-title">How to read this site</h1>' +
+      '<p class="lede">Every fact on this site comes from an official document and shows exactly where it comes from. The Business section also uses clearly marked estimates from named non-official sources. This page explains the labels.</p>' +
+      "<h2>The words that carry legal weight</h2>" + rows([["<b>must</b> / <b>required</b>", "The law or a binding rule requires it."], ["<b>should</b> / <b>expects</b>", "The regulator expects it. It is guidance rather than law."], ["<b>may</b>", "It is allowed, not required."], ["<b>proposes</b> / <b>would</b>", "A proposal. It is not law yet."], ["<b>stated target</b>", "A plan or date the government or a regulator has announced. It is not a forecast by this site."]]) +
+      "<h2>Status labels</h2>" + rows([[chip("In force"), "The rule applies now."], [chip("Issued, not yet in force"), "Published, but it starts later."], [chip("Consultation"), "The regulator is asking for views. Nothing is final."], [chip("Conclusions published"), "The consultation is finished and the final policy is set, but the law may not be made yet."], [chip("Bill"), "A draft law is before the Legislative Council (LegCo)."], [chip("Pilot"), "A trial with selected firms."], [chip("Stated target"), "An announced plan or date."], [chip("Superseded"), "Replaced by a newer document. Kept for history."], [chip("Past event"), "A past event or announcement, kept for background."]]) +
+      "<h2>Source buttons</h2>" + rows([['<span class="cite">HKMA 2026 \u00b7 para 11(n)</span>', "Tap to see the source: who published it, when, the exact paragraph, and a link to the official document."], ['<span class="cite ind industry">Estimate \u00b7 Citi 2025</span>', "A figure from a named non-official source, such as a bank or consultancy. Treat it as an estimate, not a fact. Used only in the Business section."], ['<span class="cite ind intl">Intl \u00b7 BIS 2025</span>', "An international official body, such as the Bank for International Settlements (BIS)."], ['<span class="cite ind filing">Filing \u00b7 OSL 2025</span>', "A company\u2019s own published results. Numbers only, with no comment on the company."], ['<span class="concept">concept</span>', "A plain explanation of how a business works in general. It is not a fact about Hong Kong."]]) +
+      "<h2>Analysis boxes</h2><p>In the Business section, a shaded box marked <b>Analysis \u2014 not official</b> gives a way to think about a question. It is not a forecast and not advice.</p>" +
+      "<h2>Dates</h2><p>Everything reflects official publications up to " + ASOF + ". A scheduled update checks for new documents every weekday.</p></article>" + footer();
+  }
+
   function vMore() {
-    var items = [["business", "Business", "Business lines, case studies and the path to COO."], ["obligations", "Obligations", "Every obligation, as a checklist you can tick."], ["briefings", "Briefings", "Talking points for the CEO, CCO, business and Risk."], ["timeline", "Timeline", "What is coming next, and every milestone since 2017."], ["glossary", "Glossary", "About 80 terms in plain English, with sources."]];
+    var items = [["help", "How to read this site", "What must, should and may mean, and what each label and button means."], ["business", "Business", "Business lines, case studies and the path to COO."], ["obligations", "Obligations", "Every obligation, as a checklist you can tick."], ["briefings", "Briefings", "Talking points for the CEO, CCO, business and Risk."], ["timeline", "Timeline", "What is coming next, and every milestone since 2017."], ["glossary", "Glossary", "About 80 terms in plain English, with sources."]];
     return '<div class="read"><p class="kicker">More</p><h1 class="page-title">Reference tools</h1></div><div class="mcards">' + items.map(function (i) { return '<a class="card" href="#' + i[0] + '"><h3>' + i[1] + "</h3><p>" + i[2] + "</p></a>"; }).join("") + "</div>" + footer();
   }
   function notFound() { return '<div class="empty">That page does not exist. <a href="#home">Go home</a></div>' + footer(); }
@@ -406,7 +421,7 @@
       (s.s ? "<p>" + esc(s.s) + "</p>" : "") +
       (s.w ? '<p><b>Why it matters to a bank:</b> ' + esc(s.w) + "</p>" : "") +
       (s.k.length ? "<ul>" + s.k.map(function (k) { return "<li>" + esc(k[0]) + (k[1] ? ' <span class="loc">(' + esc(k[1]) + ")</span>" : "") + "</li>"; }).join("") + "</ul>" : "") +
-      (s.rg ? '<p class="small muted"><b>How to read it:</b> ' + rgHtml(s.rg) + "</p>" : "") +
+      (s.rg ? '<p class="small muted"><b>Where to look:</b> ' + rgHtml(s.rg) + "</p>" : "") +
       (s.u ? '<a class="btn primary" href="' + esc(s.u) + '" target="_blank" rel="noopener">Open official document ↗</a>' : "") + "</div></details>";
     return '<li class="doc" id="doc-' + s.id + '"><div class="row1"><span>' + esc(fmtDate(s.d)) + "</span><span>·</span><span>" + esc(s.p.join(" + ")) + '</span><span class="chip src">' + esc(s.ty) + "</span>" + chip(s.st) +
       (s.br === "direct" ? (/^In force/.test(s.st) ? '<span class="chip live">Binds banks</span>' : '<span class="chip src">About banks</span>') : "") + "</div>" +
@@ -442,7 +457,7 @@
   }
   function vDocs() {
     DS = docState();
-    var h = '<div class="read"><p class="kicker">Documents</p><h1 class="page-title">All official documents</h1><p class="lede">Every HKMA, SFC and government publication in the research, newest first. Each title opens the official page or PDF.</p></div>';
+    var h = '<div class="read"><p class="kicker">Documents</p><h1 class="page-title">All official documents</h1><p class="lede">Every HKMA, SFC and government document used to build this guide, newest first. Tap a title to open the official page or PDF. Tap \u201cSummary and key points\u201d for a plain-English summary.</p></div>';
     h += '<form class="filters" id="docf" onsubmit="return false">' +
       '<label class="wide">Search<input id="f-q" type="search" placeholder="Title, summary or topic" value="' + esc(DS.q) + '"></label>' +
       '<div class="pubs" role="group" aria-label="Publisher">' + PUBS.map(function (p) { return '<button type="button" data-pub="' + p + '" aria-pressed="' + (DS.pubs.indexOf(p) >= 0) + '">' + (p === "Industry" ? "Industry &amp; foreign" : p) + "</button>"; }).join("") + "</div>" +
@@ -452,9 +467,9 @@
       '<label>Type<select id="f-ty">' + opts(uniq("ty"), DS.ty, "All types") + "</select></label>" +
       '<label>Status<select id="f-st">' + opts(uniq("st"), DS.st, "All statuses") + "</select></label>" +
       '<label>Topic<select id="f-tp">' + opts(uniq("tp", true), DS.tp, "All topics") + "</select></label>" +
-      '<label>Relevance to banks<select id="f-br"><option value="">All</option><option value="direct"' + (DS.br === "direct" ? " selected" : "") + '>Directly about banks</option><option value="indirect"' + (DS.br === "indirect" ? " selected" : "") + '>Counterparties and due diligence</option><option value="context"' + (DS.br === "context" ? " selected" : "") + '>Background</option></select></label>' +
+      '<label>Relevance to banks<select id="f-br"><option value="">All</option><option value="direct"' + (DS.br === "direct" ? " selected" : "") + '>About banks directly</option><option value="indirect"' + (DS.br === "indirect" ? " selected" : "") + '>About banks\u2019 partners and clients</option><option value="context"' + (DS.br === "context" ? " selected" : "") + '>Background only</option></select></label>' +
       '<label>Sort<select id="f-sort"><option value="new"' + (DS.sort === "new" ? " selected" : "") + '>Newest first</option><option value="old"' + (DS.sort === "old" ? " selected" : "") + '>Oldest first</option><option value="title"' + (DS.sort === "title" ? " selected" : "") + ">Title A–Z</option></select></label></div></details>" +
-      '<label class="check wide"><input id="f-rt" type="checkbox"' + (DS.hideRoutine ? " checked" : "") + '> Hide routine notices (fraud warnings, FATF list updates)</label>' +
+      '<label class="check wide"><input id="f-rt" type="checkbox"' + (DS.hideRoutine ? " checked" : "") + '> Hide routine notices (fraud warnings and lists of high-risk countries)</label>' +
       '</form><div id="focusnote"></div><div class="count"><span id="dcount"></span><button type="button" class="btn" id="f-reset" style="min-height:36px;padding:.3rem .8rem">Reset filters</button></div><ul class="docs" id="dlist"></ul><button type="button" class="btn more" id="dmore">Show more</button>';
     return h + footer();
   }
@@ -491,7 +506,7 @@
     document.querySelectorAll(".tabbar a").forEach(function (a) { if (a.getAttribute("href") === "#more" && more[tab]) a.setAttribute("aria-current", "page"); });
     document.querySelectorAll(".nav a.m").forEach(function (a) { if (more[tab] && tab !== "business") a.setAttribute("aria-current", "page"); });
   }
-  var TITLES = { business: "Business and opportunities", compare: "Hong Kong, Singapore and the UAE", home: "Home", learn: "Learn", projects: "Projects", docs: "Documents", glossary: "Glossary", obligations: "Obligations", briefings: "Briefings", timeline: "Timeline", more: "More" };
+  var TITLES = { help: "How to read this site", business: "Business and opportunities", compare: "Hong Kong, Singapore and the UAE", home: "Home", learn: "Learn", projects: "Projects", docs: "Documents", glossary: "Glossary", obligations: "Obligations", briefings: "Briefings", timeline: "Timeline", more: "More" };
   var stack = [], pos = {};
   function pageTitle(h) {
     if (/^m-/.test(h) && S.byCode[h.slice(2)]) return h.slice(2) + " " + S.byCode[h.slice(2)].title;
@@ -523,6 +538,7 @@
     else if (h === "briefings") { tab = "briefings"; html = vBriefings(); after = afterBr; }
     else if (h === "timeline") { tab = "timeline"; html = vTimeline(); after = afterTl; }
     else if (h === "more") { tab = "more"; html = vMore(); }
+    else if (h === "help") { tab = "more"; html = vHelp(); }
     else html = notFound();
     view.innerHTML = html; setNav(tab);
     document.title = pageTitle(h) + " · HKDA Brief";

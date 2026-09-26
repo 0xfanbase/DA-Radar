@@ -20,11 +20,11 @@ TYPE_LABEL = {"press_release": "Press release", "circular": "Circular", "consult
               "page": "Web page", "discussion_paper": "Discussion paper", "register": "Register",
               "subsidiary_legislation": "Subsidiary legislation", "policy_address": "Policy Address",
               "enforcement": "Enforcement", "bill": "Bill", "ordinance": "Ordinance"}
-STATUS_LABEL = {"in_force": "In force", "issued_future_effective": "Issued, not yet effective",
+STATUS_LABEL = {"in_force": "In force", "issued_future_effective": "Issued, not yet in force",
                 "consultation": "Consultation", "conclusions": "Conclusions published", "bill": "Bill",
                 "enacted_pending": "Enacted, not yet in force", "pilot": "Pilot",
                 "announced_target": "Stated target", "exploratory": "Exploratory", "superseded": "Superseded",
-                "historical": "Historical", "informational": "Information"}
+                "historical": "Past event", "informational": "For information"}
 TOPIC_LABEL = {"capital_prudential": "Capital and prudential", "vatp_regime": "Trading platforms (VATPs)",
                "policy_strategy": "Policy and strategy", "stablecoins": "Stablecoins",
                "aml_cft_sanctions": "AML/CFT and sanctions", "custody_key_management": "Custody and keys",
@@ -177,7 +177,7 @@ def sort_key(d):
 
 AUD = {"To the CEO": "CEO", "To the CCO": "CCO", "To business heads": "Business", "To Risk / CRO": "Risk"}
 CAT = {"Obligations": "Obligations", "Controls & monitoring": "Controls and monitoring",
-       "Notify / consult HKMA or SFC": "Notify or consult", "Counterparty due diligence": "Counterparty due diligence"}
+       "Notify / consult HKMA or SFC": "Tell or consult the regulator", "Counterparty due diligence": "Checks on partners"}
 
 
 PAUD = {"CEO": "CEO", "CCO": "CCO", "business heads": "Business", "Risk": "Risk", "Risk / CRO": "Risk", "CRO": "Risk"}
