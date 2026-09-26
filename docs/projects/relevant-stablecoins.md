@@ -1,6 +1,6 @@
 # Relevant Stablecoins: dealing, advice and trading
 
-The May 2026 HKMA and SFC package that eases how virtual-asset conduct rules apply to stablecoins from HKMA-licensed issuers, plus the stated plan for trading on licensed platforms.
+The May 2026 Hong Kong Monetary Authority (HKMA) and Securities and Futures Commission (SFC) package that eases how virtual-asset conduct rules apply to stablecoins from HKMA-licensed issuers, plus the stated plan for trading on licensed platforms.
 
 ## At a glance
 

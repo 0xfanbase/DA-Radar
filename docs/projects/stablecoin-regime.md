@@ -10,7 +10,7 @@ Hong Kong's licensing law for issuers of fiat-referenced stablecoins, from the 2
 | Status as of 25 Sep 2026 | In force (since 1 Aug 2025) [S:0df2de5234dc, para 1] |
 | Started | HKMA discussion paper, 12 Jan 2022 [S:2b888e600616, cover page and Section 6] |
 | Next official date | None fixed. Launch of licensed coins was expected between mid-2026 and the second half of 2026, based on the issuers' business plans [S:c6df52e680de, Reply, first paragraph] |
-| Covered in | C4, B2, C3, D3, E3 |
+| Covered in | C4, B2, C3, D1, D3, E3 |
 
 ## What it is
 

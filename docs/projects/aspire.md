@@ -21,7 +21,7 @@ ASPIRe stands for five pillars: Access, Safeguards, Products, Infrastructure and
 | Date | Milestone | Status | Source |
 |---|---|---|---|
 | 19 Feb 2025 | ASPIRe roadmap published | Exploratory | [S:cfe8a53186c3, para 1] |
-| 7 Apr 2025 | Staking guidance for VA trading platforms (VATPs) and VA funds, framed under Pillar P | In force | [S:36753b22e10a, para 2] |
+| 7 Apr 2025 | Staking guidance for VA trading platforms (VATPs) and VA funds, framed under Pillar P | In force | [S:36753b22e10a, para 2, Note 2] |
 | 27 Jun 2025 | VA dealing and custodian consultations (Pillar A); conclusions published 24 Dec 2025 | Conclusions published | [S:7395a53cc85a, para 1]; [S:6186c01c6649, Introduction, p.3 and fn 2] |
 | 15 Aug 2025 | SFC custody circular to VATPs cites Pillar S, Initiative 3 | In force | [S:562c0f8addce, 'Importance of resilient custody controls and expected standards' section, p.1] |
 | 3 Nov 2025 | Shared order book and product-expansion circulars (Pillars A and P) | In force | [S:f09e57feb89b, paras 2, 4] |
@@ -35,7 +35,7 @@ ASPIRe stands for five pillars: Access, Safeguards, Products, Infrastructure and
 - VA financing now reaches banks too. Registered institutions (RIs) providing VA dealing services may offer financing for VA dealing to their securities margin clients, following standards similar to the SFC's. [S:e64b7b0267b2, p.2, 'HKMA's guidance for RIs', items (1)-(2)]
 - Intermediaries, including RIs, may offer staking to clients they deal in VAs for, but should use only segregated accounts held at an SFC-licensed platform or at an authorized financial institution. [S:d5ebca32c92b, paras 4-5]
 - Under the SFC's framework, VATP perpetual contracts should be offered only to professional investors. Margin collateral should be fiat money, or Hong Kong Monetary Authority (HKMA)-regulated stablecoins or tokenised deposits. [S:49f642bdee28, 'Eligible investors and reference assets'; 'Margin arrangements and loss allocation management']
-- Pillar A's OTC and custody plans became proposed VA dealing and custodian regimes. Banks would register rather than be licensed, with the HKMA as frontline regulator. [S:d461c2db6af2, Pillar A, Initiative 1]; [S:7395a53cc85a, paras 3-4] Two further proposed regimes, for VA advisory and VA management, would also let only banks register. [S:6186c01c6649, paras 52, 58 and fns 9-10]
+- Pillar A's OTC and custody plans became proposed VA dealing and custodian regimes. Banks would register rather than be licensed, with the HKMA as frontline regulator. [S:d461c2db6af2, Pillar A, Initiative 1]; [S:7395a53cc85a, para 4] Two further proposed regimes, for VA advisory and VA management, would also let only banks register. [S:6186c01c6649, paras 52, 58 and fns 9-10]
 
 ## Talking points
 

@@ -31,7 +31,7 @@ The Incubator is a supervisory arrangement to help banks manage the risks of ado
 - Access is voluntary: AIs that want to use the Incubator contact the HKMA. [S:fae36c380174, p.2] Its purpose is to reconfirm risk controls before a full launch. [S:1b1a0de5de5a, para 3]
 - The HKMA is prepared to give AIs in the Incubator some supervisory flexibility, assessed case by case. One factor is whether the bank can meet operating principles similar to those for Fintech Supervisory Sandbox (FSS) trials. [S:fae36c380174, p.1 and footnote 2]
 - That flexibility rests on the bank managing trial risks in line with the trial's scale, scope and nature. [S:fae36c380174, p.1]
-- Where a legal or regulatory construct is inadvertently incompatible with DLT, the HKMA says it will consider whether regulatory adaptations or flexibility are needed. [S:fae36c380174, p.2]
+- Where an existing rule does not fit DLT well and that mismatch is inadvertent, or runs against the "same activity, same risk, same regulation" principle, the HKMA says it will consider whether regulatory adaptations or flexibility are needed. [S:fae36c380174, p.2]
 - The HKMA's non-binding DLT considerations remain a reference: board responsibility, network choice, smart contracts, legal risks such as settlement finality, and private key security. [S:1884530ff235, Annex, Introduction; items 1-4, 8]
 - AIs planning new digital-asset activities are expected to discuss them with the HKMA before launch. [S:3ec5b269b5dc, letter body, para 5]
 

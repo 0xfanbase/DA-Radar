@@ -27,7 +27,7 @@ The 2022 Policy Statement adopted the principle of treating the same activity an
 | 16 Sep 2026 | 2026 Policy Address: tokenised Exchange Fund Bills tests by year-end; CMU OmniClear digital asset platform this year | Stated target | [S:ef3648ff1610, para 35(ii), (iv)] |
 | 16 Sep 2026 | 2026 Policy Address: SFC to widen VA licensing, tokenised gold, stablecoin trading | Stated target | [S:ef3648ff1610, para 49(i)-(iii)] |
 | Around end-2026 | EnsembleTX: settlement in central bank digital currency (CBDC) and round-the-clock operation | Stated target | [S:ef3648ff1610, para 50] |
-| By 2029 | Customs and Excise Department analytics systems for digital-asset transactions (DATAS) and anti-money laundering (AMLAS) | Stated target | [S:ef3648ff1610, Part II item 209] |
+| By 2029 | Customs and Excise Department analytics systems for digital-asset transactions (DATAS) and anti-money laundering (AMLAS) | Stated target | [S:ef3648ff1610, Annex (I) New Indicators, item 209] |
 
 ## What it means for your bank
 
@@ -41,7 +41,7 @@ The 2022 Policy Statement adopted the principle of treating the same activity an
 - **To the CCO:** Government now says *digital assets*, but *virtual asset* is still the defined term in AMLO. [S:a29b51bffc6b, footnote 1]; [S:7395a53cc85a, Note]
 - **To business heads:** The 2026 Policy Address says the SFC will promote trading of regulated stablecoins on licensed platforms and their use to settle tokenised money market funds. [S:ef3648ff1610, para 49(iii)]
 - **To the CEO:** The Government's stated 2026 target is one bill for VA dealing, custody, advisory and management licensing. [S:c6df52e680de, Reply part (3)]
-- **To Risk:** Customs plans a digital-asset transaction analytics system by 2029, as part of its anti-money laundering big-data platform. [S:ef3648ff1610, Part II item 209]
+- **To Risk:** Customs plans a digital-asset transaction analytics system by 2029, as part of its anti-money laundering big-data platform. [S:ef3648ff1610, Annex (I) New Indicators, item 209]
 
 ## Key documents
 
