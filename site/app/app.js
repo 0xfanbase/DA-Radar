@@ -356,6 +356,7 @@
     return '<a class="card" href="#case-' + c.slug + '"><div class="meta"><span class="code">Case ' + (i + 1) + "</span><span>" + c.minutes + ' min</span><span class="chip">Fictional</span></div><h3>' + esc(c.title.replace(/^Case \d+:\s*/, "")) + "</h3><p>" + esc(c.teaser) + "</p></a>";
   }
   function vBusiness() {
+    if (!S.biz.lines.length) return '<div class="read"><p class="kicker">Business and opportunities</p><h1 class="page-title">Where the money is, and what it takes</h1><p class="lede">This section is being written and checked. It will cover each digital-asset business line open to a Hong Kong bank, case studies, and a factual comparison with Singapore and the UAE.</p><p><a href="#learn">Go to the course \u2192</a></p></div>' + footer();
     var segs = {};
     S.biz.lines.forEach(function (l) { l.segments.split(/[,;/]\s*/).forEach(function (x) { x = x.trim(); if (x) segs[x.charAt(0).toUpperCase() + x.slice(1)] = 1; }); });
     var h = '<div class="read"><p class="kicker">Business and opportunities</p><h1 class="page-title">Where the money is, and what it takes</h1><p class="lede">Every digital-asset business line open to a Hong Kong bank: the bank\u2019s role, who pays, what drives cost and capital, the regulatory gate, and the official signals. For thinking like a COO.</p>' +
@@ -372,6 +373,7 @@
     document.getElementById("bz-list").innerHTML = list.length ? '<div class="grid">' + list.map(lineCard).join("") + "</div>" : '<div class="empty">No business line matches. Try another filter.</div>';
   }
   function afterBz() {
+    if (!document.getElementById("bz-list")) return;
     view.querySelectorAll("[data-chain]").forEach(function (b) { b.addEventListener("click", function () { BZ.chain = b.dataset.chain; view.querySelectorAll("[data-chain]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); }); paintBz(); }); });
     document.getElementById("bz-seg").addEventListener("change", function (e) { BZ.seg = e.target.value; paintBz(); });
     paintBz();
