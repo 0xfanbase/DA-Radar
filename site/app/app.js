@@ -1,7 +1,7 @@
 /* HKDA Brief — single-page app. Data: data/sources.json, modules.json, projects.json */
 (function () {
   "use strict";
-  var S = { sources: [], byId: {}, modules: [], byCode: {}, projects: [], bySlug: {} };
+  var S = { sources: [], byId: {}, modules: [], byCode: {}, projects: [], bySlug: {}, x: { obligations: [], talking: [], timeline: [], glossary: [], coming: [] } };
   var view = document.getElementById("view");
   var DISCLAIMER = "For general information only. Not legal or regulatory advice. Always check the official source.";
   var ASOF = "25 Sep 2026";
@@ -84,6 +84,14 @@
     h += '<h2 class="sec-h">Start here · about 90 minutes</h2><ol class="path">' + start.map(function (m) {
       return '<li><a href="#m-' + m.code + '"><div><b>' + esc(m.title) + '</b><br><span>' + m.code + " · " + m.minutes + " min" + (read[m.code] ? " · read" : "") + "</span></div><span>→</span></a></li>";
     }).join("") + "</ol>";
+    if (S.x.changes && S.x.changes.length) {
+      var c = S.x.changes[0];
+      h += '<div class="box"><h3>What changed · ' + esc(c.d) + "</h3>" + renderMD(c.md) + "</div>";
+    }
+    h += '<h2 class="sec-h">Before a meeting</h2><div class="mcards">' +
+      '<a class="card" href="#briefings"><h3>Briefings</h3><p>Talking points for the CEO, CCO, business heads and Risk.</p></a>' +
+      '<a class="card" href="#obligations"><h3>Obligations</h3><p>' + S.x.obligations.length + ' obligations as a checklist.</p></a>' +
+      '<a class="card" href="#timeline"><h3>Timeline</h3><p>What is coming next, and every milestone since 2017.</p></a></div>';
     if (S.projects.length) {
       h += '<h2 class="sec-h">Projects and initiatives</h2><div class="grid">' + S.projects.slice(0, 6).map(projCard).join("") + '</div><p><a href="#projects">All projects and initiatives →</a></p>';
     }
@@ -155,9 +163,143 @@
     var p = S.bySlug[slug]; if (!p) return notFound();
     return '<article class="article"><p class="kicker">Project or initiative</p><h1 class="page-title">' + esc(p.title) + "</h1>" + renderMD(p.md) + '</article><p style="margin-top:2rem"><a href="#projects">← All projects and initiatives</a></p>' + footer();
   }
-  function vGlossary() {
-    var m = S.byCode.E3; if (!m) return notFound();
-    return '<article class="article"><p class="kicker">Reference</p><h1 class="page-title">' + esc(m.title) + "</h1>" + renderMD(m.md) + "</article>" + footer();
+  /* ---------- obligations, briefings, timeline, glossary ---------- */
+  function inl(md) { return marked.parseInline(linkCitations(md.replace(/\]\s*;\s*\[S:/g, "] [S:"))); }
+  function hashStr(t) { var h = 0; for (var i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) | 0; return (h >>> 0).toString(36); }
+  function segBtns(list, cur, attr) { return '<div class="seg" role="group">' + list.map(function (v) { return '<button type="button" data-' + attr + '="' + esc(v) + '" aria-pressed="' + (v === cur) + '">' + esc(v) + "</button>"; }).join("") + "</div>"; }
+  function modOpts(cur) { return '<option value="">All modules</option>' + S.modules.filter(function (m) { return m.code !== "E3"; }).map(function (m) { return '<option value="' + m.code + '"' + (m.code === cur ? " selected" : "") + ">" + m.code + " " + esc(m.title) + "</option>"; }).join(""); }
+  function byModule(items, render) {
+    var h = "", last = "";
+    items.forEach(function (it) {
+      if (it.code !== last) {
+        if (last) h += "</ul>"; last = it.code;
+        var pj = /^p-/.test(it.code) ? S.bySlug[it.code.slice(2)] : null, m = S.byCode[it.code];
+        h += '<h2 class="grp">' + esc(pj ? pj.title : m ? m.title : it.code) + ' <a href="#' + (pj ? it.code : "m-" + it.code) + '">' + (pj ? "Project" : it.code) + " →</a></h2><ul class=\"items\">";
+      }
+      h += render(it);
+    });
+    return h ? h + "</ul>" : '<div class="empty">Nothing matches. Try another filter.</div>';
+  }
+
+  var CATS = ["All", "Obligations", "Controls and monitoring", "Notify or consult", "Counterparty due diligence"];
+  var OB = { cat: "All", mod: "", q: "" };
+  function vObligations() {
+    var h = '<div class="read"><p class="kicker">Obligations</p><h1 class="page-title">What the bank must do</h1><p class="lede">Every obligation from the 20 topic modules, sorted into four kinds. Tick what your bank has covered. Ticks stay on this device only.</p></div>';
+    h += '<div class="tools"><label>Module<select id="ob-mod">' + modOpts(OB.mod) + '</select></label><label>Search<input id="ob-q" type="search" placeholder="e.g. cold storage, travel rule" value="' + esc(OB.q) + '"></label></div>';
+    h += segBtns(CATS, OB.cat, "cat") + '<div class="count"><span id="ob-count"></span></div><div class="progress"><i id="ob-bar" style="width:0"></i></div><div id="ob-list"></div>';
+    return h + footer();
+  }
+  function paintOb() {
+    var ticks = store("ticks") || {}, q = OB.q.toLowerCase();
+    var list = S.x.obligations.filter(function (o) { return (OB.cat === "All" || o.cat === OB.cat) && (!OB.mod || o.code === OB.mod) && (!q || o.md.toLowerCase().indexOf(q) >= 0); });
+    var done = list.filter(function (o) { return ticks[hashStr(o.code + o.md)]; }).length;
+    document.getElementById("ob-count").textContent = list.length + " items · " + done + " ticked";
+    document.getElementById("ob-bar").style.width = (list.length ? Math.round(100 * done / list.length) : 0) + "%";
+    document.getElementById("ob-list").innerHTML = byModule(list, function (o) {
+      var k = hashStr(o.code + o.md), on = !!ticks[k];
+      return '<li class="item' + (on ? " ticked" : "") + '"><input type="checkbox" data-tick="' + k + '"' + (on ? " checked" : "") + ' aria-label="Covered"><div class="txt"><span class="tag">' + esc(o.cat) + "</span>" + inl(o.md) + "</div></li>";
+    });
+  }
+  function afterOb() {
+    document.getElementById("ob-mod").addEventListener("change", function (e) { OB.mod = e.target.value; paintOb(); });
+    document.getElementById("ob-q").addEventListener("input", function (e) { OB.q = e.target.value; paintOb(); });
+    view.querySelectorAll("[data-cat]").forEach(function (b) { b.addEventListener("click", function () { OB.cat = b.dataset.cat; view.querySelectorAll("[data-cat]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); }); paintOb(); }); });
+    document.getElementById("ob-list").addEventListener("change", function (e) {
+      var k = e.target.dataset && e.target.dataset.tick; if (!k) return;
+      var t = store("ticks") || {}; if (e.target.checked) t[k] = 1; else delete t[k]; store("ticks", t); paintOb();
+    });
+    paintOb();
+  }
+
+  var AUDS = ["CEO", "CCO", "Business", "Risk"];
+  var AUDNAME = { CEO: "the CEO", CCO: "the Chief Compliance Officer", Business: "business heads", Risk: "Risk and the CRO" };
+  var BR = { aud: "CEO", mod: "" };
+  function vBriefings() {
+    var h = '<div class="read"><p class="kicker">Briefings</p><h1 class="page-title">What to say, and to whom</h1><p class="lede">Short talking points for each audience, drawn from every module. Each one names its source. Copy a line, or copy the whole set before a meeting.</p></div>';
+    h += segBtns(AUDS, BR.aud, "aud") + '<div class="tools"><label>Module<select id="br-mod">' + modOpts(BR.mod) + '</select></label><button type="button" class="btn" id="br-all">Copy all shown</button></div><p class="small muted" id="br-who"></p><div id="br-list"></div>';
+    return h + footer();
+  }
+  function paintBr() {
+    var list = S.x.talking.filter(function (t) { return t.aud === BR.aud && (!BR.mod || t.code === BR.mod); });
+    document.getElementById("br-who").textContent = list.length + " points for " + AUDNAME[BR.aud] + ".";
+    document.getElementById("br-list").innerHTML = byModule(list, function (t) {
+      return '<li class="item noc"><div class="txt">' + inl(t.md) + '</div><div class="acts2"><button type="button" class="tp-copy" data-copy>Copy</button></div></li>';
+    });
+  }
+  function copyText(text, btn, node) {
+    var ok = function () { btn.textContent = "Copied"; setTimeout(function () { btn.textContent = btn.dataset.label || "Copy"; }, 1500); };
+    var sel = function () { var r = document.createRange(); r.selectNodeContents(node); var g = getSelection(); g.removeAllRanges(); g.addRange(r); btn.textContent = "Selected"; };
+    try { navigator.clipboard.writeText(text).then(ok, sel); } catch (e) { sel(); }
+  }
+  function afterBr() {
+    view.querySelectorAll("[data-aud]").forEach(function (b) { b.addEventListener("click", function () { BR.aud = b.dataset.aud; view.querySelectorAll("[data-aud]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); }); paintBr(); }); });
+    document.getElementById("br-mod").addEventListener("change", function (e) { BR.mod = e.target.value; paintBr(); });
+    document.getElementById("br-list").addEventListener("click", function (e) {
+      var b = e.target.closest("[data-copy]"); if (!b) return; var li = b.closest("li"); copyText(li.querySelector(".txt").innerText.trim(), b, li.querySelector(".txt"));
+    });
+    var all = document.getElementById("br-all"); all.dataset.label = "Copy all shown";
+    all.addEventListener("click", function () {
+      var txt = Array.prototype.map.call(view.querySelectorAll("#br-list .txt"), function (n) { return "• " + n.innerText.trim(); }).join("\n");
+      copyText("For " + AUDNAME[BR.aud] + ":\n" + txt, all, document.getElementById("br-list"));
+    });
+    paintBr();
+  }
+
+  var TLP = ["All", "HKMA", "SFC", "FSTB", "Government", "Other"];
+  var TL = { by: "All", q: "" };
+  function tlMatch(by) {
+    if (TL.by === "All") return true;
+    if (TL.by === "Other") return !/HKMA|SFC|FSTB|Government|LegCo|IRD/.test(by);
+    if (TL.by === "Government") return /Government|LegCo|IRD/.test(by);
+    return by.indexOf(TL.by) >= 0;
+  }
+  function vTimeline() {
+    var h = '<div class="read"><p class="kicker">Timeline</p><h1 class="page-title">What happened, and what is next</h1><p class="lede">Upcoming items first, as the government or regulator has stated them (these are their targets, not forecasts). Then every milestone since 2017, newest first.</p></div>';
+    h += segBtns(TLP, TL.by, "by") + '<div class="tools"><label>Search<input id="tl-q" type="search" placeholder="e.g. Ensemble, custody, CARF" value="' + esc(TL.q) + '"></label></div><div id="tl-body"></div>';
+    return h + footer();
+  }
+  function paintTl() {
+    var q = TL.q.toLowerCase();
+    var co = S.x.coming.filter(function (c) { return tlMatch(c.by) && (!q || (c.what + " " + c.who).toLowerCase().indexOf(q) >= 0); });
+    var h = '<h2 class="sec-h">Coming next <span class="small muted">(as of ' + ASOF + ")</span></h2>";
+    h += co.length ? '<ul class="items">' + co.map(function (c) {
+      return '<li class="item noc"><div class="txt"><span class="tag">' + esc(c.when) + " · " + esc(c.by) + "</span><b>" + inl(c.what) + "</b> " + chip(c.st.replace(/,.*$/, "")) + '<div class="small muted">Applies to: ' + esc(c.who) + "</div><div>" + inl(c.src) + "</div></div></li>";
+    }).join("") + "</ul>" : '<div class="empty">Nothing upcoming matches.</div>';
+    var ev = S.x.timeline.filter(function (t) { return tlMatch(t.by) && (!q || t.ev.toLowerCase().indexOf(q) >= 0); }).slice().sort(function (a, b) { return b.k.localeCompare(a.k); });
+    h += '<h2 class="sec-h">Milestones, 2017 to 2026</h2>';
+    var yr = "";
+    ev.forEach(function (t) {
+      var y = t.k.slice(0, 4);
+      if (y !== yr) { if (yr) h += "</ul>"; yr = y; h += '<div class="year">' + y + '</div><ul class="tl">'; }
+      h += '<li><div class="when">' + esc(t.d) + " · " + esc(t.by) + '</div><div class="ev">' + inl(t.ev) + "</div><div>" + inl(t.src) + "</div></li>";
+    });
+    h += yr ? "</ul>" : '<div class="empty">No milestones match.</div>';
+    document.getElementById("tl-body").innerHTML = h;
+  }
+  function afterTl() {
+    view.querySelectorAll("[data-by]").forEach(function (b) { b.addEventListener("click", function () { TL.by = b.dataset.by; view.querySelectorAll("[data-by]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); }); paintTl(); }); });
+    document.getElementById("tl-q").addEventListener("input", function (e) { TL.q = e.target.value; paintTl(); });
+    paintTl();
+  }
+
+  function vGloss() {
+    var h = '<div class="read"><p class="kicker">Glossary</p><h1 class="page-title">Terms in plain English</h1><p class="lede">About 80 terms, each with the official document and paragraph that sets it out. For the full reference page, see <a href="#m-E3">module E3</a>.</p></div>';
+    h += '<div class="tools"><label>Search<input id="gl-q" type="search" placeholder="e.g. RI, Group 1a, travel rule"></label></div><div id="gl-body"></div>';
+    return h + footer();
+  }
+  function paintGl(q) {
+    q = (q || "").toLowerCase(); var h = "", g = "";
+    S.x.glossary.filter(function (t) { return !q || (t.term + " " + t.def).toLowerCase().indexOf(q) >= 0; }).forEach(function (t) {
+      if (t.g !== g) { if (g) h += "</dl>"; g = t.g; h += '<h2 class="grp">' + esc(g) + '</h2><dl class="gl">'; }
+      h += "<dt>" + esc(t.term) + "</dt><dd>" + inl(t.def) + " " + inl(t.src) + "</dd>";
+    });
+    document.getElementById("gl-body").innerHTML = g ? h + "</dl>" : '<div class="empty">No term matches.</div>';
+  }
+  function afterGl() { document.getElementById("gl-q").addEventListener("input", function (e) { paintGl(e.target.value); }); paintGl(""); }
+
+  function vMore() {
+    var items = [["obligations", "Obligations", "Every obligation, as a checklist you can tick."], ["briefings", "Briefings", "Talking points for the CEO, CCO, business and Risk."], ["timeline", "Timeline", "What is coming next, and every milestone since 2017."], ["glossary", "Glossary", "About 80 terms in plain English, with sources."]];
+    return '<div class="read"><p class="kicker">More</p><h1 class="page-title">Reference tools</h1></div><div class="mcards">' + items.map(function (i) { return '<a class="card" href="#' + i[0] + '"><h3>' + i[1] + "</h3><p>" + i[2] + "</p></a>"; }).join("") + "</div>" + footer();
   }
   function notFound() { return '<div class="empty">That page does not exist. <a href="#home">Go home</a></div>'; }
 
@@ -246,7 +388,9 @@
 
   /* ---------- router ---------- */
   function setNav(tab) {
+    var more = { obligations: 1, briefings: 1, timeline: 1, glossary: 1 };
     document.querySelectorAll(".nav a, .tabbar a").forEach(function (a) { if (a.getAttribute("href") === "#" + tab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+    document.querySelectorAll(".tabbar a").forEach(function (a) { if (a.getAttribute("href") === "#more" && more[tab]) a.setAttribute("aria-current", "page"); });
   }
   function route() {
     var h = (location.hash || "#home").slice(1), tab = "home", html, after;
@@ -257,7 +401,11 @@
     else if (/^p-[a-z0-9-]+$/.test(h)) { tab = "projects"; html = vProject(h.slice(2)); }
     else if (h === "docs") { tab = "docs"; html = vDocs(); after = function () { afterDocs(); }; }
     else if (/^doc-[0-9a-f]{12}$/.test(h)) { tab = "docs"; html = vDocs(); var id = h.slice(4); after = function () { afterDocs(id); }; }
-    else if (h === "glossary") { tab = "glossary"; html = vGlossary(); }
+    else if (h === "glossary") { tab = "glossary"; html = vGloss(); after = afterGl; }
+    else if (h === "obligations") { tab = "obligations"; html = vObligations(); after = afterOb; }
+    else if (h === "briefings") { tab = "briefings"; html = vBriefings(); after = afterBr; }
+    else if (h === "timeline") { tab = "timeline"; html = vTimeline(); after = afterTl; }
+    else if (h === "more") { tab = "more"; html = vMore(); }
     else html = notFound();
     view.innerHTML = html; setNav(tab);
     if (after) after(); else window.scrollTo(0, 0);
@@ -266,10 +414,11 @@
   window.addEventListener("hashchange", route);
 
   /* ---------- load ---------- */
-  Promise.all(["sources", "modules", "projects"].map(function (n) { return fetch("data/" + n + ".json").then(function (r) { return r.json(); }); }))
+  Promise.all(["sources", "modules", "projects", "extras"].map(function (n) { return fetch("data/" + n + ".json").then(function (r) { return r.json(); }); }))
     .then(function (d) {
       S.sources = d[0]; S.sources.forEach(function (s) { S.byId[s.id] = s; });
       S.modules = d[1]; S.modules.forEach(function (m) { S.byCode[m.code] = m; });
+      S.x = d[3];
       S.projects = d[2]; S.projects.forEach(function (p) { S.bySlug[p.slug] = p; });
       route();
     })

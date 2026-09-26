@@ -104,6 +104,17 @@ def build_modules():
     return mods
 
 
+def short_by(v):
+    """'Hong Kong Monetary Authority (HKMA) with the Bank of Thailand (BoT), ...' -> 'HKMA and partners'."""
+    acr = []
+    for t in re.findall(r"\b(?:[A-Z]{2,}[A-Za-z]*|CMU OmniClear)\b", v):
+        if t not in acr and t not in ("HKSAR",):
+            acr.append(t)
+    if not acr:
+        return re.split(r"[;,(]", v)[0].strip()[:40]
+    return acr[0] if len(acr) == 1 else (" + ".join(acr) if len(acr) == 2 else acr[0] + " and partners")
+
+
 def build_projects():
     d = DOCS / "projects"
     out = []
@@ -111,9 +122,94 @@ def build_projects():
         for f in sorted(d.glob("*.md")):
             md = f.read_text()
             m = re.match(r"#\s+(.+)", md)
-            out.append({"slug": f.stem, "title": m.group(1).strip() if m else f.stem,
-                        "md": md.split("\n", 1)[1].strip()})
+            body = md.split("\n", 1)[1].strip()
+            glance = {r[0]: r[1] for r in table_rows(section(md, "At a glance")) if len(r) >= 2}
+            plain = lambda v: re.sub(r"\s*\[S:[^\]]*\]", "", v or "").strip()
+            status = plain(next((v for k, v in glance.items() if k.startswith("Status")), ""))
+            out.append({"slug": f.stem, "title": m.group(1).strip() if m else f.stem, "md": body,
+                        "oneLine": body.split("\n\n", 1)[0].strip(),
+                        "runBy": short_by(plain(glance.get("Run by", ""))),
+                        "status": re.split(r"\s*[(;]", status)[0].strip(),
+                        "coveredIn": plain(glance.get("Covered in", ""))})
     return out
+
+
+def section(md, name):
+    m = re.search(r"^## " + re.escape(name) + r"[^\n]*\n(.*?)(?=^## |\Z)", md, re.S | re.M)
+    return m.group(1) if m else ""
+
+
+def table_rows(text):
+    rows = [l for l in text.splitlines() if l.startswith("|")]
+    out = []
+    for l in rows[2:]:
+        cells = [c.strip() for c in re.split(r"(?<!\\)\|", l.strip()[1:-1])]
+        out.append(cells)
+    return out
+
+
+def bullets_by_label(text):
+    """Yield (label, bullet_markdown) for '**Label**' groups followed by '- ' bullets."""
+    label = None
+    for line in text.splitlines():
+        m = re.match(r"^\*\*(.+?)\*\*\s*$", line.strip())
+        if m:
+            label = m.group(1)
+        elif line.startswith("- ") and label:
+            yield label, line[2:].strip()
+
+
+MONTHS = {m: i + 1 for i, m in enumerate("Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split())}
+
+
+def sort_key(d):
+    m = re.match(r"(?:(\d{1,2}) )?(?:([A-Z][a-z]{2})\w* )?(\d{4})", d)
+    if not m:
+        return "0000"
+    day, mon, yr = m.groups()
+    return f"{yr}-{MONTHS.get(mon, 0):02d}-{int(day or 0):02d}"
+
+
+AUD = {"To the CEO": "CEO", "To the CCO": "CCO", "To business heads": "Business", "To Risk / CRO": "Risk"}
+CAT = {"Obligations": "Obligations", "Controls & monitoring": "Controls and monitoring",
+       "Notify / consult HKMA or SFC": "Notify or consult", "Counterparty due diligence": "Counterparty due diligence"}
+
+
+PAUD = {"CEO": "CEO", "CCO": "CCO", "business heads": "Business", "Risk": "Risk", "Risk / CRO": "Risk", "CRO": "Risk"}
+
+
+def build_extras(mods, projs=()):
+    obligations, talking = [], []
+    for m in mods:
+        if m["code"] == "E3":
+            continue
+        for lab, b in bullets_by_label(section(m["md"], "What your bank must do")):
+            obligations.append({"code": m["code"], "cat": CAT.get(lab, lab), "md": re.sub(r"^\[[ xX]?\]\s*", "", b)})
+        for lab, b in bullets_by_label(section(m["md"], "Talking points")):
+            talking.append({"code": m["code"], "aud": AUD.get(lab, lab), "md": b})
+    for p in projs:
+        for line in section(p["md"], "Talking points").splitlines():
+            t = re.match(r"^- \*\*To (?:the )?(.+?):\*\*\s*(.+)$", line.strip())
+            if t and t.group(1) in PAUD:
+                talking.append({"code": "p-" + p["slug"], "aud": PAUD[t.group(1)], "md": t.group(2)})
+    e3 = next(m["md"] for m in mods if m["code"] == "E3")
+    timeline = [{"d": r[0], "k": sort_key(r[0]), "ev": r[1], "by": r[2], "src": r[3]}
+                for r in table_rows(section(e3, "Part B")) if len(r) >= 4]
+    glossary, group = [], ""
+    for line in section(e3, "Part A").splitlines():
+        g = re.match(r"^\*\*(.+?)\*\*\s*$", line.strip())
+        if g:
+            group = g.group(1)
+        elif line.startswith("|") and not re.match(r"^\|\s*(Term|---)", line):
+            c = [x.strip() for x in line.strip()[1:-1].split("|")]
+            if len(c) >= 3:
+                glossary.append({"term": c[0], "def": c[1], "src": c[2], "g": group})
+    e1 = next(m["md"] for m in mods if m["code"] == "E1")
+    coming = [{"what": r[0], "by": r[1], "when": r[2], "st": r[3], "who": r[4], "src": r[5]}
+              for r in table_rows(section(e1, "Status board")) if len(r) >= 6 and not re.match(r"Superseded", r[3])]
+    log = (DOCS / "CHANGELOG.md").read_text() if (DOCS / "CHANGELOG.md").exists() else ""
+    changes = [{"d": m.group(1), "md": m.group(2).strip()} for m in re.finditer(r"^## (.+?)\n(.*?)(?=^## |\Z)", log, re.S | re.M)]
+    return {"changes": changes[:6], "obligations": obligations, "talking": talking, "timeline": timeline, "glossary": glossary, "coming": coming}
 
 
 if __name__ == "__main__":
@@ -124,6 +220,8 @@ if __name__ == "__main__":
     missing = sorted({i for m in mods + projs for i in re.findall(r"\[S:([0-9a-f]{12})", m["md"]) if i not in ids})
     if missing:
         raise SystemExit(f"Unknown citation ids: {missing[:10]}")
-    for name, data in (("sources", src), ("modules", mods), ("projects", projs)):
+    extras = build_extras(mods, projs)
+    for name, data in (("sources", src), ("modules", mods), ("projects", projs), ("extras", extras)):
         (OUT / f"{name}.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
-    print(f"sources={len(src)} modules={len(mods)} projects={len(projs)}")
+    print(f"sources={len(src)} modules={len(mods)} projects={len(projs)} " +
+          " ".join(f"{k}={len(v)}" for k, v in extras.items()))
