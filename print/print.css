@@ -70,3 +70,5 @@ section.answers ol > li { margin-bottom: 6pt; break-inside: avoid; }
 section.answers .q { font-weight: 600; margin-bottom: 2pt; }
 .front h1 { font-size: 24pt; }
 .cover .blurb { font-size: 13pt; }
+blockquote.benefits { border: 1pt solid #1E6B52; border-left: 5pt solid #1E6B52; background: #E3F2EC; }
+blockquote.benefits > p:first-child strong { font-family: "Source Sans 3", Arial, sans-serif; text-transform: uppercase; font-size: 10.5pt; letter-spacing: .06em; color: #1E6B52; }

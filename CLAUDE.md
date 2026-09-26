@@ -37,6 +37,9 @@ The rules above still apply, with these additions (full detail: `docs/research/t
   ("should", "recommend", "best"), no uncited percentages; round made-up numbers are tagged
   "(illustrative)". "Should" stays reserved for regulatory expectations.
 - Scenarios carry no probabilities and no "base case". Case studies use obviously fictional names.
+- Project profiles and technology modules (C1–C7, E2) carry one green "Commercial and customer benefits" box
+  (grammar in business_spec.md): benefits only as official sources state them (often as aims) or as labelled
+  industry estimates, plus the evidence so far and its limits. No forecasts, advice or praise of named firms.
 
 ## Engineering rules
 - AI-authored content is data (Markdown/Markdoc/JSON), never executable code (no MDX).

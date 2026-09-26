@@ -70,6 +70,7 @@ function renderMD(md) {
   html = html.replace(/\s?\(concept\)/g, ' <span class="tag">concept</span>');
   html = html.replace(/<h2>([^<]+)<\/h2>/g, (m, t) => "<h2>" + (HEAD[t.trim()] || t) + "</h2>");
   html = html.replace(/<blockquote>\s*<p>\s*<strong>Analysis/g, '<blockquote class="analysis"><p><strong>Analysis');
+  html = html.replace(/<blockquote>\s*<p>\s*<strong>Commercial and customer benefits/g, '<blockquote class="benefits"><p><strong>Commercial and customer benefits');
   return html;
 }
 
@@ -143,6 +144,7 @@ const HOWTO = `<h1>How to read this book</h1>
 <tr><th><span class="tag">concept</span></th><td>A plain explanation of how a business works in general. It is not a fact about Hong Kong.</td></tr>
 <tr><th>(illustrative)</th><td>A round, made-up number used to show how something works. It is not an estimate.</td></tr>
 <tr><th>Analysis — not official</th><td>A shaded box that gives a way to think about a question. It asks one question, explains how to think about it, lists what the answer depends on and the official signposts to watch, and says what it is not. It is not a forecast and not advice.</td></tr>
+<tr><th>Commercial and customer benefits</th><td>A green box on each project and on the technology modules: what customers and the bank gain, the evidence so far and its limits. Benefits come from official sources (often stated as aims) or labelled industry estimates.</td></tr>
 <tr><th>Check yourself</th><td>Five recall questions at the end of each module. Answer from memory, then check the answer key at the back.</td></tr></tbody></table>
 <p class="disc">${DISCLAIMER}</p>`;
 
