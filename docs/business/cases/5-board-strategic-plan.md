@@ -11,10 +11,10 @@ Lanternfield Bank is a fictional, mid-sized Hong Kong bank. It is also a registe
 ## Cast
 
 - **You**: head of digital assets, formerly head of compliance for digital assets.
-- **Ada Quillon**: chief executive (CEO). She wants a plan the board can act on.
-- **Ravi Tessel**: chief financial officer (CFO). He owns the budget and the profit and loss account (P&L), the record of income and costs.
-- **Mona Brackwater**: chief risk officer (CRO). She owns the risk appetite, the amount of risk the bank is willing to accept.
-- **Leo Fenwick**: head of wealth and markets. He wants new products this year.
+- **Ada Quillhaven**: chief executive (CEO). She wants a plan the board can act on.
+- **Ravi Ledgerfen**: chief financial officer (CFO). He owns the budget and the profit and loss account (P&L), the record of income and costs.
+- **Mona Brackenquay**: chief risk officer (CRO). She owns the risk appetite, the amount of risk the bank is willing to accept.
+- **Leo Tidequill**: head of wealth and markets. He wants new products this year.
 - **Tidewell Ledger Systems**: a fictional vendor selling a ready-made token platform.
 - **The supervisor**: the bank's HKMA case team. It acts only as the HKMA's published expectations describe.
 

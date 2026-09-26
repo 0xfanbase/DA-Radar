@@ -13,10 +13,10 @@ The staking service has lost money for four quarters. Rewards have fallen, and t
 ## Cast
 
 - **You**: head of compliance, digital assets.
-- **Oona Varga**: chief executive (CEO). She wants a decision within one quarter.
-- **Felix Ashdown**: chief financial officer (CFO). He owns the profit and loss account (P&L), the record of income and costs.
-- **Ruth Calloway**: chief risk officer (CRO). She owns the bank's risk appetite.
-- **Sanjay Merriweather**: head of private banking. Many of his clients use the service.
+- **Oona Pebblemoor**: chief executive (CEO). She wants a decision within one quarter.
+- **Felix Ferrywhistle**: chief financial officer (CFO). He owns the profit and loss account (P&L), the record of income and costs.
+- **Ruth Harbourlane**: chief risk officer (CRO). She owns the bank's risk appetite.
+- **Sanjay Gullsby**: head of private banking. Many of his clients use the service.
 - **Pebblecrest Validators**: a fictional outside firm that runs validators for Kittiwake.
 - **The supervisor**: the bank's Hong Kong Monetary Authority (HKMA) case team. It acts only as the HKMA's published expectations describe.
 

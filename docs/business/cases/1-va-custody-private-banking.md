@@ -11,10 +11,10 @@ You lead digital-asset compliance. The chief executive asks you to bring three d
 ## Cast
 
 - **You**: head of compliance, digital assets.
-- **Ines Marlow**: chief executive (CEO). She wants a clear yes or no by year end.
-- **Tobias Wren**: chief financial officer (CFO). He owns the profit and loss account (P&L), the record of income and costs.
-- **Priya Holloway**: chief risk officer (CRO). She owns the bank's risk appetite.
-- **Declan Fairweather**: head of private banking. His clients are asking for the service.
+- **Ines Quaymark**: chief executive (CEO). She wants a clear yes or no by year end.
+- **Tobias Lanternwick**: chief financial officer (CFO). He owns the profit and loss account (P&L), the record of income and costs.
+- **Priya Harbourfen**: chief risk officer (CRO). She owns the bank's risk appetite.
+- **Declan Tidemere**: head of private banking. His clients are asking for the service.
 - **Kestrel Custody Tech**: a fictional vendor selling key-management systems.
 - **The supervisor**: the bank's Hong Kong Monetary Authority (HKMA) case team. It acts only as the HKMA's published expectations describe.
 
