@@ -62,13 +62,13 @@ No reliable industry benchmark was found for Hong Kong.
 
 ## Read next
 
-- Module E2: Wholesale money, CBDC (central bank digital currency) and cross-border projects.
-- Module C5: Tokenisation: tokenised products, deposits and bonds.
-- Module C4: Stablecoins.
-- Module B2: Engaging the HKMA and SFC (Securities and Futures Commission).
-- Project profile: Project Ensemble.
-- Project profile: Project mBridge.
-- Project profile: Government policy statements and Policy Address items.
-- Business line: Tokenised deposits and payments.
+- Module [E2 Wholesale money, CBDC and cross-border projects](#m-E2) (CBDC: central bank digital currency)
+- Module [C5 Tokenisation: tokenised products, deposits and bonds](#m-C5)
+- Module [C4 Stablecoins](#m-C4)
+- Module [B2 Engaging the HKMA and SFC](#m-B2) (SFC: Securities and Futures Commission)
+- Project profile: [Project Ensemble](#p-ensemble)
+- Project profile: [Project mBridge](#p-mbridge)
+- Project profile: [Government policy statements and Policy Address items](#p-policy-statements)
+- Business line: [Tokenised deposits and payments](#b-tokenised-deposits)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

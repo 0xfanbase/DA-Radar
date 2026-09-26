@@ -43,7 +43,7 @@ At the first working meeting, views split. Leo wants a digital-assets product pl
 - **Trade-offs.** Option A spreads ownership across many business heads, which is slower to write. Option B is faster and deeper, but covers fewer technologies than the circular names. Option C saves effort now and leaves the detail open.
 - **What the rules require.** The HKMA expects a formal plan, endorsed by the board within six months. [S:3ec5b269b5dc, letter body, p.2] The circular frames the plan around products, revenue models, customer engagement, risk management and operations. [S:3ec5b269b5dc, letter body, p.2] The circular also describes banks as a potential link between traditional finance and digital-asset markets. [S:3ec5b269b5dc, letter body, pp.1-2]
 - **What a strong answer covers.** It shows how each option maps to the five areas. It says who owns each chapter and how the board tracks progress. It explains how a principles paper would meet the word "formal".
-- **Traps.** Treating endorsement as a one-off signature. Treating the plan as product approval: pre-launch discussion with the HKMA is still expected. [S:3ec5b269b5dc, letter body, p.2] Assuming the six-month timetable waits for new laws. The circular counts six months from its own date. [S:3ec5b269b5dc, letter body, p.2] Separately, the Government said in June 2026 that a VA bill would go to the Legislative Council (LegCo) this year. [S:c6df52e680de, Reply (3)]
+- **Traps.** Treating endorsement as a one-off signature. Treating the plan as product approval: pre-launch discussion with the HKMA is still expected. [S:3ec5b269b5dc, letter body, p.2] Assuming the six-month timetable waits for new laws. The circular counts six months from its own date. [S:3ec5b269b5dc, letter body, p.2] Separately, the Government said in June 2026 that a VA bill would go to the Legislative Council (LegCo) this year. [S:c6df52e680de, Reply (3), 'In addition' para]
 
 ## Act 2: Which lines lead?
 
@@ -58,7 +58,7 @@ Ravi asks for no more than three priority lines. Tidewell offers a platform disc
 ### Discussion notes
 
 - **Trade-offs.** Option A builds on existing fund sales and the deposit base. Option B earns issuer fees and suits corporate clients. Option C is closest to wealth clients but depends on laws not yet passed.
-- **What official sources say (A).** The SFC expects sellers of tokenised SFC-authorised products to be regulated firms that check each client's suitability. [S:58ea8520974d, para 18] By March 2026 the public could buy 13 tokenised products, whose tokenised classes held about HK$10.7 billion. [S:bbd10edd41cf, para 3] EnsembleTX (the HKMA's live pilot for tokenised deposits) first targets tokenised money market fund trades. [S:8b67e8dc510f, para 2]
+- **What official sources say (A).** The SFC expects sellers of tokenised SFC-authorised products to be regulated firms that check each client's suitability. [S:58ea8520974d, para 18] In March 2026 the public in Hong Kong could buy 13 tokenised products. [S:bbd10edd41cf, para 3] Their tokenised classes held about HK$10.7 billion. [S:bbd10edd41cf, para 3] EnsembleTX (the HKMA's live pilot for tokenised deposits) first targets tokenised money market fund trades. [S:8b67e8dc510f, para 2]
 - **What official sources say (B).** The 2026 Policy Address says Hong Kong-issued digital bonds made up nearly 50% of the global market. [S:ef3648ff1610, para 35] That share covers the period from January 2025 to June 2026. [S:ef3648ff1610, para 35] The Digital Bond Grant Scheme offers up to HK$2.5 million per eligible issue. [S:5a0563de8142, introduction, p.1] The SFC reminds intermediaries to check the issuer and its tokenisation vendors. [S:a9aa06fbcc12, para 17]
 - **What official sources say (C).** Under the December 2025 proposals, VA advisers would need an SFC licence or registration, and only banks could register. [S:6186c01c6649, para 52 and fn 9] In May 2026, the Government and the SFC said they would still consider the start date for the advisory and management regimes. [S:01c5c5c4045f, para 64]
 - **What a strong answer covers.** It links each line to a named client need. It separates confirmed rules from proposals. It shows which line the bank could start under rules in force today. It tests the vendor deadline against the board timetable.
@@ -105,12 +105,13 @@ Year-three view of each Act 2 option, in HK$ millions. The numbers are invented 
 
 ## Modules to revisit
 
-- B2 Engaging the HKMA and SFC
-- B3 Governance, risk and technology expectations
-- C5 Tokenisation: tokenised products, deposits and bonds
-- E1 What's coming: the pipeline
-- F2 How regulation writes the P&L
-- Business lines: Tokenised funds and money market fund settlement; Digital bonds: arranging and custody
-- Project profile: Supervisory Incubator for DLT
+- Module [B2 Engaging the HKMA and SFC](#m-B2)
+- Module [B3 Governance, risk and technology expectations](#m-B3)
+- Module [C5 Tokenisation: tokenised products, deposits and bonds](#m-C5)
+- Module [E1 What's coming: the pipeline](#m-E1)
+- Module [F2 How regulation writes the P&L](#m-F2)
+- Business line: [Tokenised funds and money market fund settlement](#b-tokenised-funds)
+- Business line: [Digital bonds: arranging and custody](#b-digital-bonds)
+- Project profile: [Supervisory Incubator for DLT](#p-supervisory-incubator-dlt)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

@@ -119,11 +119,11 @@ Lanternway's year, in HK$ million. All numbers are invented to show the shape. (
 
 ## Modules to revisit
 
-- C7 VATP counterparties and the SFC platform regime
-- D4 Cyber, fraud and technology risk
-- C6 Financing, shared order books and client withdrawals
-- C1 Selling, dealing and advising on virtual assets
-- Business line: Virtual-asset dealing
-- Business line: Banking the digital-asset industry
+- Module [C7 VATP counterparties and the SFC platform regime](#m-C7)
+- Module [D4 Cyber, fraud and technology risk](#m-D4)
+- Module [C6 Financing, shared order books and client withdrawals](#m-C6)
+- Module [C1 Selling, dealing and advising on virtual assets](#m-C1)
+- Business line: [Virtual-asset dealing](#b-va-dealing)
+- Business line: [Banking the digital-asset industry](#b-banking-da-industry)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

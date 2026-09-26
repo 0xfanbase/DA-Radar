@@ -36,7 +36,7 @@ In this line a bank serves exchange-traded funds (ETFs) that hold virtual assets
 - Custody controls: custodians should keep most fund VAs in cold wallets (keys held offline) [S:c79c4686c5e0, para 21(b)]. Seeds and private keys (the secrets that control the assets) should be stored securely in Hong Kong [S:c79c4686c5e0, para 21(c)].
 - Anti-money laundering (AML): firms handling in-kind VA subscriptions should hold the VAs only at licensed platforms or banks [S:b79266f3da51, para 7(b)]. They should follow Chapter 12 of the SFC AML guideline on those transfers [S:b79266f3da51, para 7(c)].
 - Notice: firms should tell the regulators before first letting clients subscribe or redeem with VAs [S:b79266f3da51, para 10(d)].
-- Capital: a bank's own spot bitcoin position is a cryptoasset exposure. A bank taking its first position in a new type of cryptoasset must notify the HKMA [S:b7d630146e6c, para 2.1.2 and fn 7]. Group 2b cryptoassets get the HKMA's conservative treatment, a 1,250% risk weight [S:5d845665ba83, para 4.3.2]. In effect, the bank holds capital equal to the whole exposure. (concept)
+- Capital: a bank's own spot bitcoin position is a cryptoasset exposure. A bank taking its first position in a new type of cryptoasset must notify the HKMA [S:b7d630146e6c, para 2.1.2 and fn 7]. Group 2b cryptoassets take a 1,250% risk weight [S:9e8d84c87168, Part XII CAE1 explanatory note, column (c), p.215]. The minimum total capital ratio is 8% [S:5d0c13e09312, para 2.1.2]. So 1,250% × 8% = 100%: at the minimum, the bank holds capital equal to the whole exposure.
 - Product limits: eligible VAs are only those the Hong Kong public can trade on licensed platforms [S:c79c4686c5e0, para 11]. Funds should not take leveraged VA exposure at fund level [S:c79c4686c5e0, para 15].
 
 ## Official signals
@@ -60,19 +60,19 @@ In this line a bank serves exchange-traded funds (ETFs) that hold virtual assets
 > **How to think about it:**
 > - List each role: PD, custodian, trading counterparty and distributor. Each has a different income source and cost base.
 > - Custody income grows with fund size, while PD income grows with creation and redemption activity.
-> - In-kind dealing means holding VAs, which brings the Group 2b capital charge [S:5d845665ba83, para 4.3.2]. Cash-only dealing avoids VA inventory but gives up in-kind flow.
+> - In-kind dealing means holding VAs, which brings the Group 2b capital charge [S:9e8d84c87168, Part XII CAE1 explanatory note, column (c), p.215]. Cash-only dealing avoids VA inventory but gives up in-kind flow.
 > **What it depends on:** fund flows; fee pressure from fund managers; the capital cost of VA inventory; custody readiness under HKMA standards.
 > **Official signposts:** SFC rules on who may act as PD [S:c79c4686c5e0, para 19]; the staking approval route for funds [S:c79c4686c5e0, paras 28, 31]; the product code revision planned for late 2026 [S:ef3648ff1610, para 40(ii)].
 > **What this is not:** Not a forecast, not advice, and not the regulator's view.
 
 ## Read next
 
-- Module C2: VA funds and ETFs.
-- Module C1: Selling, dealing and advising on virtual assets.
-- Module C3: Custody of digital assets and key management.
-- Module D1: Capital and prudential treatment of cryptoassets.
-- Module B1: Your bank's legal status for digital assets.
-- Project profile: ASPIRe: the SFC's virtual-asset roadmap.
-- Business line: Virtual-asset custody.
+- Module [C2 VA funds and ETFs](#m-C2)
+- Module [C1 Selling, dealing and advising on virtual assets](#m-C1)
+- Module [C3 Custody of digital assets and key management](#m-C3)
+- Module [D1 Capital and prudential treatment of cryptoassets](#m-D1)
+- Module [B1 Your bank's legal status for digital assets](#m-B1)
+- Project profile: [ASPIRe: the SFC's virtual-asset roadmap](#p-aspire)
+- Business line: [Virtual-asset custody](#b-custody)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

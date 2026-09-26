@@ -39,11 +39,11 @@ In this line a bank provides accounts, payments and safekeeping to firms that wo
 ## Official signals
 
 - The SFC listed 13 licensed trading platforms at its 29 May 2026 update [S:b14be2203d39, Licensed platforms table; Last update line].
-- The HKMA licensed two stablecoin issuers from a first batch of 36 applicants [S:193316443831, paras 1, 3].
+- The HKMA licensed two stablecoin issuers from a first batch of 36 applicants [S:193316443831, Assessment of licence applications, paras 1-2].
 - The Government told the Legislative Council in February 2024 that VA-related crime cases rose from 1,397 in 2021 to 3,415 in 2023 [S:4bd22ccf481d, Reply (1)-(2)]. Money involved rose from HK$824 million to HK$4,398 million [S:4bd22ccf481d, Reply (1)-(2)].
 - The HKMA warned in November 2024 that some overseas crypto firms called themselves banks without a Hong Kong licence [S:19c8611c621a, paras 1-2].
 - The SFC plans to switch on the AML surveillance part of its crypto data initiative (CrypTech) in 2027 [S:ef3648ff1610, para 51(iii)].
-- The Customs and Excise Department plans a Digital Asset Transaction Analytics System by 2029 [S:ef3648ff1610, Annex, item 209].
+- The Customs and Excise Department plans a Digital Asset Transaction Analytics System by 2029 [S:ef3648ff1610, Annex (I) New Indicators, item 209].
 
 ## Industry benchmarks
 
@@ -66,10 +66,10 @@ In this line a bank provides accounts, payments and safekeeping to firms that wo
 
 ## Read next
 
-- Module D3: AML/CFT (anti-money laundering and counter-terrorist financing) for digital assets at a bank.
-- Module C7: VATP counterparties and the SFC platform regime.
-- Module C4: Stablecoins.
-- Module B2: Engaging the HKMA and SFC.
-- Project profile: Stablecoin issuer regime (Stablecoins Ordinance, Cap. 656).
-- Case 3: Stablecoin reserve bank and distributor (3-stablecoin-reserve-distributor).
-- Case 4: A trading-platform incident (4-vatp-incident).
+- Module [D3 AML/CFT for digital assets at a bank](#m-D3) (AML/CFT: anti-money laundering and counter-terrorist financing)
+- Module [C7 VATP counterparties and the SFC platform regime](#m-C7)
+- Module [C4 Stablecoins](#m-C4)
+- Module [B2 Engaging the HKMA and SFC](#m-B2)
+- Project profile: [Stablecoin issuer regime (Stablecoins Ordinance, Cap. 656)](#p-stablecoin-regime)
+- [Case 3: The reserve bank that also sells the coin](#case-3-stablecoin-reserve-distributor)
+- [Case 4: The night the hot wallet emptied](#case-4-vatp-incident)

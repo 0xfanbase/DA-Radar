@@ -110,13 +110,15 @@ Year-three view of each Act 3 option, in HK$ millions. The numbers are invented 
 
 Some of these pages also cover the Securities and Futures Commission (SFC) and foreign exchange (FX).
 
-- B2 Engaging the HKMA and SFC
-- B3 Governance, risk and technology expectations
-- C5 Tokenisation: tokenised products, deposits and bonds
-- D1 Capital and prudential treatment of cryptoassets
-- E2 Wholesale money, CBDC and cross-border projects
-- F2 How regulation writes the P&L
-- Business lines: Tokenised deposits and payments; Cross-border payments, FX and mBridge
-- Project profiles: Project Ensemble; Supervisory Incubator for DLT
+- Module [B2 Engaging the HKMA and SFC](#m-B2)
+- Module [B3 Governance, risk and technology expectations](#m-B3)
+- Module [C5 Tokenisation: tokenised products, deposits and bonds](#m-C5)
+- Module [D1 Capital and prudential treatment of cryptoassets](#m-D1)
+- Module [E2 Wholesale money, CBDC and cross-border projects](#m-E2)
+- Module [F2 How regulation writes the P&L](#m-F2)
+- Business line: [Tokenised deposits and payments](#b-tokenised-deposits)
+- Business line: [Cross-border payments, FX and mBridge](#b-cross-border-payments)
+- Project profile: [Project Ensemble](#p-ensemble)
+- Project profile: [Supervisory Incubator for DLT](#p-supervisory-incubator-dlt)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

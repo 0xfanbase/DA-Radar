@@ -10,7 +10,7 @@ A bank can run, or sell access to, the technology behind digital assets: shared 
 | Client segments | Corporate, institutional, fintechs |
 | Value chain | Issue, Hold, Settle and pay |
 | Regulatory gate | Hong Kong Monetary Authority (HKMA) expectations on distributed ledger technology (DLT) and custody. The HKMA also expects banks to discuss new digital-asset activities with it before launch [S:1884530ff235, Annex, items 1-4 and 8; S:3ec5b269b5dc, letter body, p.2] |
-| Status as of 25 Sep 2026 | Pilot [S:7f81c39c9a89, para 3] |
+| Status as of 25 Sep 2026 | Pilot [S:8b67e8dc510f, para 3] |
 | Related modules | B3, C3, C5, D4, E2 |
 | Related cases | 4-vatp-incident |
 
@@ -40,12 +40,12 @@ A bank can run, or sell access to, the technology behind digital assets: shared 
 
 ## Official signals
 
-- EnsembleTX (the live pilot of the HKMA's Project Ensemble) is to run throughout 2026. [S:7f81c39c9a89, para 3] It is to move step by step to round-the-clock settlement in tokenised central bank money. [S:7f81c39c9a89, para 3]
+- EnsembleTX (the live pilot of the HKMA's Project Ensemble) is to run throughout 2026. [S:8b67e8dc510f, para 3] It is to move step by step to round-the-clock settlement in tokenised central bank money. [S:8b67e8dc510f, para 3]
 - EnsembleTX named 13 other industry pioneers besides its banks, including asset managers, technology firms and Hong Kong Exchanges and Clearing (HKEX). [S:d193f12a5f78, Annex B, p.2]
 - In November 2025 the HKMA announced that HKEX would take a 20% stake in the holding company of CMU OmniClear (the CMU's operator). [S:9c8855ec55a1, para 2] The Exchange Fund would hold 80%. [S:9c8855ec55a1, para 2] Assets held in the CMU were about HK$5 trillion at end-September 2025. [S:9c8855ec55a1, About CMU OmniClear section]
 - CMU OmniClear is to set up a digital asset platform in 2026 for issuing and settling digital bonds. [S:654fa5eba8cf, para 114] It is to be widened to other digital assets and linked to other platforms in the region. [S:654fa5eba8cf, para 114]
 - HKEX is building a blockchain-based tokenisation platform for many asset types, which already holds carbon credits. [S:ef3648ff1610, para 46(v)]
-- In an HKMA stock-take of banks in January 2025, 45% of respondents had adopted DLT, up from 30% in 2022. [S:738405ae090d, p.11]
+- In an HKMA stock-take run in January 2025 and published in July 2025, 45% of respondents had adopted DLT, up from 30% in 2022. [S:738405ae090d, p.11]
 
 ## Industry benchmarks
 
@@ -65,18 +65,21 @@ A bank can run, or sell access to, the technology behind digital assets: shared 
 > **What it depends on:** the number of client firms; standards that let platforms connect; vendor and audit costs; how liability for failures is shared.
 > **Official signposts:**
 > - The CMU OmniClear digital asset platform. [S:654fa5eba8cf, para 114]
-> - Round-the-clock settlement in EnsembleTX. [S:7f81c39c9a89, para 3]
+> - Round-the-clock settlement in EnsembleTX. [S:8b67e8dc510f, para 3]
 > - Interoperability standards from the Ensemble Architecture Community. [S:3f0fcc104e61, Reply (3)]
 > **What this is not:** not a forecast, not advice and not the regulator's view.
 
 ## Read next
 
-- Module B3, Governance, risk and technology expectations.
-- Module C3, Custody of digital assets and key management.
-- Module C5, Tokenisation: tokenised products, deposits and bonds.
-- Module D4, Cyber, fraud and technology risk.
-- Module E2, Wholesale money, CBDC and cross-border projects.
-- Project profiles: Project Ensemble; CMU OmniClear digital asset platform and tokenised Exchange Fund Bills; Supervisory Incubator for DLT; Digital Bond Grant Scheme (DBGS).
-- Case 4: The night the hot wallet emptied.
+- Module [B3 Governance, risk and technology expectations](#m-B3)
+- Module [C3 Custody of digital assets and key management](#m-C3)
+- Module [C5 Tokenisation: tokenised products, deposits and bonds](#m-C5)
+- Module [D4 Cyber, fraud and technology risk](#m-D4)
+- Module [E2 Wholesale money, CBDC and cross-border projects](#m-E2)
+- Project profile: [Project Ensemble](#p-ensemble)
+- Project profile: [CMU OmniClear digital asset platform and tokenised Exchange Fund Bills](#p-cmu-omniclear)
+- Project profile: [Supervisory Incubator for DLT](#p-supervisory-incubator-dlt)
+- Project profile: [Digital Bond Grant Scheme (DBGS)](#p-digital-bond-grant-scheme)
+- [Case 4: The night the hot wallet emptied](#case-4-vatp-incident)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

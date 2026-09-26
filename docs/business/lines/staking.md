@@ -47,11 +47,11 @@ A bank that holds virtual assets (VAs) for clients may commit them to a blockcha
 - In September 2025 the SFC and HKMA said they are now prepared to let intermediaries offer staking. [S:b79266f3da51, para 4]
 - Intermediaries should tell the regulators before they offer staking for the first time. [S:b79266f3da51, para 10(c)]
 - The HKMA's May 2026 custody guidance asks banks to take account of the SFC's staking terms for platforms. [S:ce05e67bcdce, para 26]
-- In April 2025 the SFC said the virtual-asset funds it authorises are required to stake only through licensed platforms and banks. It added that a cap applies, to manage liquidity risk. [S:36753b22e10a, para 4] [S:36753b22e10a, para 4]
+- In April 2025 the SFC said the virtual-asset funds it authorises are required to stake only through licensed platforms and banks. It added that a cap applies, to manage liquidity risk. [S:36753b22e10a, para 4]
 
 ## Industry benchmarks
 
-- HashKey Holdings (HashKey), a Hong Kong-listed platform group, reported group-wide figures in its 2025 annual results. It gave its own measure, a staking monetisation rate, of 0.2%, down from 0.3% in 2024. [I:786f45f6ea11, PDF p.4] The same report gave average staked assets of about HK$22.4 billion. [I:786f45f6ea11, PDF p.4]
+- HashKey Holdings (HashKey), a Hong Kong-listed platform group, reported group-wide figures in its 2025 annual results. It gave its own measure, a staking "monetization rate", of 0.2%, down from 0.3% in 2024. [I:786f45f6ea11, PDF p.4] The results do not give its formula. The same report gave average staked assets of about HK$22.4 billion. [I:786f45f6ea11, PDF p.4]
 - HashKey's 2026 interim results, also a company filing, reported average staked assets of HK$14.8 billion in the first half. [I:9ca15dca711d, PDF p.11] The same report gave HK$20.2 billion a year earlier. [I:9ca15dca711d, PDF p.11]
 - Coinbase Global's 2025 annual report, global in scope, reported US$677.4 million of blockchain rewards revenue for 2025. [I:6fc50821b9ab, PDF p.94] The same report showed US$427.5 million of blockchain rewards fees as a cost. [I:6fc50821b9ab, PDF p.95]
 - China Asset Management (Hong Kong) published a key facts statement for its Hong Kong-listed ether exchange-traded fund (ETF) in April 2026. It said the fund intends to stake up to 30% of its ether. [I:ee50e4efff6f, PDF p.2]
@@ -73,12 +73,12 @@ A bank that holds virtual assets (VAs) for clients may commit them to a blockcha
 
 ## Read next
 
-- Module C3, Custody of digital assets and key management.
-- Module C1, Selling, dealing and advising on virtual assets.
-- Module C2, on funds and exchange-traded funds that hold virtual assets.
-- Module B2, Engaging the HKMA and SFC.
-- Module B3, Governance, risk and technology expectations.
-- Project profile: ASPIRe, the SFC's virtual-asset roadmap.
-- Case 6: Stopping a product.
+- Module [C3 Custody of digital assets and key management](#m-C3)
+- Module [C1 Selling, dealing and advising on virtual assets](#m-C1)
+- Module [C2 VA funds and ETFs](#m-C2) (VA: virtual asset; ETFs: exchange-traded funds)
+- Module [B2 Engaging the HKMA and SFC](#m-B2)
+- Module [B3 Governance, risk and technology expectations](#m-B3)
+- Project profile: [ASPIRe: the SFC's virtual-asset roadmap](#p-aspire)
+- [Case 6: Stopping a product](#case-6-stopping-a-product)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

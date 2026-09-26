@@ -28,7 +28,7 @@ A bank can record customer deposits as tokens on a shared digital ledger and use
 - Deposits fund a bank's lending and investing. The gap between what the bank earns on that money and what it pays depositors is its net interest margin. (concept)
 - Corporate clients can pay fees for services built on tokens, such as automatic sweeps and payments that run at set times. (concept)
 - Tokenised deposits can pay for tokenised fund trades, which is an initial EnsembleTX focus. [S:8b67e8dc510f, para 2]
-- The Securities and Futures Commission (SFC) has set out a pilot for round-the-clock trading of tokenised products. [S:bbd10edd41cf, para 4] The SFC said trading could use regulated stablecoins and tokenised deposits. [S:bbd10edd41cf, para 4]
+- The Securities and Futures Commission (SFC) has set out a pilot for 24/7 (round-the-clock) secondary trading of tokenised products. [S:bbd10edd41cf, para 4] The SFC said trading could use regulated stablecoins and tokenised deposits. [S:bbd10edd41cf, para 4]
 - In February 2026 the SFC set out a high-level framework for platforms to offer perpetual contracts (futures with no expiry date). [S:49f642bdee28, Margin arrangements section] It says margin should be cash, or stablecoins or tokenised deposits regulated by the HKMA. [S:49f642bdee28, Margin arrangements section]
 
 ## Cost and capital drivers
@@ -44,10 +44,10 @@ A bank can record customer deposits as tokens on a shared digital ledger and use
 
 ## Official signals
 
-- The HKMA named seven Tokenised Deposit Banks and 13 other industry participants for EnsembleTX. [S:d193f12a5f78, Annexes A-B]
+- The HKMA named seven Tokenised Deposit Banks and 13 other industry pioneers for EnsembleTX. [S:d193f12a5f78, Annexes A-B]
 - In October 2025 the HKMA Chief Executive said six banks had launched tokenised deposit services through the Supervisory Incubator. [S:418769c01edc, Supervisory Incubator for DLT section]
-- EnsembleTX is to run throughout 2026. [S:7f81c39c9a89, para 3] Banks settle with each other first through the Hong Kong dollar Real Time Gross Settlement (RTGS) system. [S:7f81c39c9a89, para 3]
-- The HKMA plans a step-by-step upgrade to round-the-clock settlement in tokenised central bank money. [S:7f81c39c9a89, para 3]
+- EnsembleTX is to run throughout 2026. [S:8b67e8dc510f, para 3] Banks settle with each other first through the Hong Kong dollar Real Time Gross Settlement (RTGS) system. [S:8b67e8dc510f, para 3]
+- The HKMA plans a step-by-step upgrade to round-the-clock settlement in tokenised central bank money. [S:8b67e8dc510f, para 3]
 - The 2026 Policy Address says the HKMA plans to add settlement in central bank digital currency (CBDC) by around end-2026. [S:ef3648ff1610, para 50] It also plans to run EnsembleTX 24/7 by then. [S:ef3648ff1610, para 50]
 - The HKMA is to study trade-finance uses of tokenised deposits with the Mainland, with pilot deals to be done by end-2026. [S:ef3648ff1610, para 99]
 - In June 2026 an HKMA seminar for corporate treasurers drew over 150 people, including staff of about 50 corporates and 30 financial institutions. [S:05369e6084ea, para 1]
@@ -75,11 +75,13 @@ A bank can record customer deposits as tokens on a shared digital ledger and use
 
 ## Read next
 
-- Module C5, Tokenisation: tokenised products, deposits and bonds.
-- Module E2, Wholesale money, CBDC and cross-border projects.
-- Module D1, Capital and prudential treatment of cryptoassets.
-- Module B2, Engaging the HKMA and SFC.
-- Project profiles: Project Ensemble; Supervisory Incubator for DLT; e-HKD (digital Hong Kong dollar).
-- Case 2: Tokenised deposits for treasury.
+- Module [C5 Tokenisation: tokenised products, deposits and bonds](#m-C5)
+- Module [E2 Wholesale money, CBDC and cross-border projects](#m-E2)
+- Module [D1 Capital and prudential treatment of cryptoassets](#m-D1)
+- Module [B2 Engaging the HKMA and SFC](#m-B2)
+- Project profile: [Project Ensemble](#p-ensemble)
+- Project profile: [Supervisory Incubator for DLT](#p-supervisory-incubator-dlt)
+- Project profile: [e-HKD (digital Hong Kong dollar)](#p-e-hkd)
+- [Case 2: Tokenised deposits for corporate treasury](#case-2-tokenised-deposits-treasury)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

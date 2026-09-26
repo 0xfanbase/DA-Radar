@@ -26,8 +26,8 @@ You lead digital-asset compliance. The chief executive asks you to bring three d
 - The bank should generate, store and back up private keys (the secret codes that move assets) in Hong Kong [S:ce05e67bcdce, para 11(b)].
 - The bank is expected to be liable for client losses from incidents it causes. It should hold adequate financial resources, which may include insurance [S:ce05e67bcdce, para 11(n)].
 - The bank should disclose its fees, and any insurance or compensation cover, clearly to clients [S:ce05e67bcdce, para 20].
-- The bank may delegate VA custody only to another bank, an SFC-licensed platform, or a licensed stablecoin issuer for its own coins [S:ce05e67bcdce, para 14]. Final responsibility stays with the bank [S:ce05e67bcdce, para 19].
-- Under a planned law, banks that safekeep client VA keys would need a custody licence or registration [S:f41a543388bc, para 35(b)]. Existing providers would get no automatic right to keep operating. The regime would apply in full from its start date [S:f41a543388bc, para 48].
+- As a general principle, the bank may delegate VA custody only to three kinds of firm [S:ce05e67bcdce, para 14]. They are another bank or a local bank's subsidiary, an SFC-licensed platform, or an HKMA-licensed stablecoin issuer for its own coins with HKMA consent [S:ce05e67bcdce, para 14]. Final responsibility stays with the bank [S:ce05e67bcdce, para 19].
+- Under a planned law, banks that safekeep client VA keys would need a custody licence or registration [S:f41a543388bc, para 35(b)]. The Government and the SFC do not plan to treat existing VA custodians as licensed while they apply [S:f41a543388bc, para 48]. The regime takes full effect on its start date [S:f41a543388bc, para 48].
 
 ## Act 1: Build, delegate or wait?
 
@@ -44,7 +44,7 @@ Kestrel offers a full key-management system with hardware in Hong Kong. Declan p
 - **Trade-offs.** Option A gives control of the client experience and the key controls, at a high fixed cost. Option B is faster and uses less capital spending, but adds a dependency on another firm. Option C avoids new custody risk and leaves client demand unmet.
 - **What the rules require.** Delegation of VA custody is limited to three kinds of firm [S:ce05e67bcdce, para 14]. The bank keeps ultimate responsibility for anything it delegates [S:ce05e67bcdce, para 19]. Before choosing a delegate, the bank is expected to check its finances, skills, technology and ability to meet the standards [S:ce05e67bcdce, para 15]. Under the planned licence, faster approval is to go to banks that the HKMA has already assessed for custody and that already provide it [S:f41a543388bc, para 51].
 - **What a strong answer covers.** It compares the fixed cost of Option A with the fee paid to a delegate in Option B. It asks who holds the keys in each option, since the planned licence turns on key safekeeping. It sets out the timing risk for Option C if the licence starts before the bank is ready.
-- **Traps.** Treating delegation as handing over the risk. Assuming existing providers get an automatic right to carry on once the regime starts. The conclusions rule out such automatic permission [S:f41a543388bc, para 48]. Forgetting that providers who skip the pre-application step may face business disruption [S:f41a543388bc, para 52].
+- **Traps.** Treating delegation as handing over the risk. Assuming existing custodians are treated as licensed while they apply. The Government and the SFC do not plan to treat them that way [S:f41a543388bc, para 48]. Forgetting that providers who skip the pre-application step may face business disruption [S:f41a543388bc, para 52].
 
 ## Act 2: What to charge
 
@@ -106,12 +106,12 @@ Year-three view of Harbourlight's custody service under each Act 1 option, in HK
 
 ## Modules to revisit
 
-- Business line: Virtual-asset custody.
-- Business line: Virtual-asset distribution and brokerage.
-- Module C3: Custody of digital assets and key management.
-- Module C1: Selling, dealing and advising on virtual assets.
-- Module D1: Capital and prudential treatment of cryptoassets.
-- Module F2: How regulation writes the P&L.
-- Module F5b: Running the business: operations and control.
+- Business line: [Virtual-asset custody](#b-custody)
+- Business line: [Virtual-asset distribution and brokerage](#b-va-distribution)
+- Module [C3 Custody of digital assets and key management](#m-C3)
+- Module [C1 Selling, dealing and advising on virtual assets](#m-C1)
+- Module [D1 Capital and prudential treatment of cryptoassets](#m-D1)
+- Module [F2 How regulation writes the P&L](#m-F2)
+- Module [F5b Running the business: operations and control](#m-F5b)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

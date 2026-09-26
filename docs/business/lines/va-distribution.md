@@ -45,9 +45,9 @@ In this line a bank sells clients products linked to virtual assets (VAs), such 
 ## Official signals
 
 - Hong Kong had 11 VA spot exchange-traded funds (ETFs) at end-2025, worth over HK$5.4 billion [S:c28638fc5ccc, para 4].
-- In March 2026, 13 tokenised products were available to the public, with about HK$10.7 billion in their tokenised classes [S:bbd10edd41cf, para 3].
+- In March 2026 the public in Hong Kong could buy 13 tokenised products [S:bbd10edd41cf, para 3]. Their tokenised classes held about HK$10.7 billion [S:bbd10edd41cf, para 3].
 - The SFC listed 13 licensed VA trading platforms at its 29 May 2026 update [S:b14be2203d39, Licensed platforms table; Last update line].
-- In June 2026 the Government said regulated stablecoins were expected to launch between mid-2026 and the second half of 2026 [S:c6df52e680de, Reply, opening para 2]. It based this on the two licensed issuers' business plans [S:c6df52e680de, Reply, opening para 2].
+- In June 2026 the Government said regulated stablecoins were expected to launch between mid-2026 and the second half of 2026 [S:c6df52e680de, Reply, opening para]. It based this on the two licensed issuers' business plans [S:c6df52e680de, Reply, opening para].
 - The 2026 Policy Address says the SFC will improve its rules so tokenised gold can trade on licensed platforms [S:ef3648ff1610, para 49(ii)].
 - Banks already dealing in VAs are to get faster approval under the planned dealing regime [S:6186c01c6649, paras 35-36].
 
@@ -66,13 +66,13 @@ In this line a bank sells clients products linked to virtual assets (VAs), such 
 > - Brokerage earns per trade. It needs a platform link, pre-funding, per-client limits and VA custody.
 > - Both need VA knowledge checks for most clients other than institutional investors [S:8a016a912528, para 6.2].
 > **What it depends on:** client mix; how often clients trade; platform charges; the size of the product shelf.
-> **Official signposts:** the launch of regulated stablecoins [S:c6df52e680de, Reply, opening para 2]; the tokenised product framework [S:ef3648ff1610, para 49(ii)]; faster approval under the dealing regime [S:6186c01c6649, paras 35-36].
+> **Official signposts:** the launch of regulated stablecoins [S:c6df52e680de, Reply, opening para]; the tokenised product framework [S:ef3648ff1610, para 49(ii)]; faster approval under the dealing regime [S:6186c01c6649, paras 35-36].
 > **What this is not:** Not a forecast, not advice, and not the regulator's view.
 
 ## Read next
 
-- Module C1: Selling, dealing and advising on virtual assets.
-- Module C2: VA funds and ETFs.
-- Module C7: VATP (virtual asset trading platform) counterparties and the SFC platform regime.
-- Project profile: Relevant Stablecoins: dealing, advice and trading.
-- Case 1: VA custody for private banking (1-va-custody-private-banking).
+- Module [C1 Selling, dealing and advising on virtual assets](#m-C1)
+- Module [C2 VA funds and ETFs](#m-C2)
+- Module [C7 VATP counterparties and the SFC platform regime](#m-C7) (VATP: virtual asset trading platform)
+- Project profile: [Relevant Stablecoins: dealing, advice and trading](#p-relevant-stablecoins)
+- [Case 1: Virtual-asset custody for private banking](#case-1-va-custody-private-banking)

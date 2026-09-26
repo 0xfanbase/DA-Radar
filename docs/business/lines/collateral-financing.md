@@ -32,7 +32,7 @@ In this line a bank lends against digital or tokenised assets, or helps clients 
 ## Cost and capital drivers
 
 - Capital: the Banking (Capital) Rules do not recognise VA collateral. So a loan secured only by VAs must be treated as a clean (unsecured) loan [S:e64b7b0267b2, item (9), p.5].
-- Capital: Group 2b cryptoassets get the HKMA's conservative treatment, a 1,250% risk weight [S:5d845665ba83, para 4.3.2]. In effect, the bank holds capital equal to the whole exposure. (concept)
+- Capital: Group 2b cryptoassets take a 1,250% risk weight [S:9e8d84c87168, Part XII CAE1 explanatory note, column (c), p.215]. The minimum total capital ratio is 8% [S:5d0c13e09312, para 2.1.2]. So 1,250% × 8% = 100%: at the minimum, the bank holds capital equal to the whole exposure.
 - Classification: a bank taking on a new type of cryptoasset must notify the HKMA [S:b7d630146e6c, para 2.1.2]. It must treat the asset as Group 2b until the HKMA agrees its class [S:b7d630146e6c, para 2.1.2].
 - Liquidity: the HKMA says fiat loans secured on cryptoassets should be treated like similar deals under the liquidity rules [S:69600121310a, Annex 3, para 10].
 - Liquidity: a category 1 bank must keep a minimum liquidity coverage ratio, a short-term liquidity test [S:69600121310a, para 3.1.2]. It may count a tokenised asset as a high-quality liquid asset only if it is an eligible Group 1a token [S:69600121310a, Annex 3, para 1].
@@ -67,13 +67,13 @@ In this line a bank lends against digital or tokenised assets, or helps clients 
 
 ## Read next
 
-- Module C6: Financing, shared order books and client withdrawals.
-- Module D1: Capital and prudential treatment of cryptoassets.
-- Module C5: Tokenisation: tokenised products, deposits and bonds.
-- Module C3: Custody of digital assets and key management.
-- Module E2: Wholesale money, CBDC (central bank digital currency) and cross-border projects.
-- Project profile: CMU OmniClear digital asset platform and tokenised Exchange Fund Bills.
-- Project profile: Project Ensemble.
-- Business line: Virtual-asset financing and margin.
+- Module [C6 Financing, shared order books and client withdrawals](#m-C6)
+- Module [D1 Capital and prudential treatment of cryptoassets](#m-D1)
+- Module [C5 Tokenisation: tokenised products, deposits and bonds](#m-C5)
+- Module [C3 Custody of digital assets and key management](#m-C3)
+- Module [E2 Wholesale money, CBDC and cross-border projects](#m-E2) (CBDC: central bank digital currency)
+- Project profile: [CMU OmniClear digital asset platform and tokenised Exchange Fund Bills](#p-cmu-omniclear)
+- Project profile: [Project Ensemble](#p-ensemble)
+- Business line: [Virtual-asset financing and margin](#b-va-financing)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

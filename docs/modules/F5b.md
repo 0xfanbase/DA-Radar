@@ -6,7 +6,7 @@ This module is about the engine room: people, vendors, systems, incidents and ex
 
 Accountability comes first. A registered institution (RI) is a bank the SFC has registered for securities business. It needs at least two executive officers (EOs) for each regulated activity, each with HKMA consent. [S:8934af8cc884, para 2.2.4] At least one must be available at all times. [S:8934af8cc884, para 4.3.9]
 
-Vendors do not take the risk away. As a general rule, a bank may outsource VA custody only to certain regulated firms. [S:ce05e67bcdce, para 14] Ultimate responsibility for outsourced custody stays with the bank. [S:ce05e67bcdce, para 19]
+Vendors do not take the risk away. As a general principle, a bank may outsource VA custody only to certain regulated firms. [S:ce05e67bcdce, para 14] Ultimate responsibility for outsourced custody stays with the bank. [S:ce05e67bcdce, para 19]
 
 Custody runs around the clock. The HKMA expects security monitoring 24/7, including holidays. [S:ce05e67bcdce, para 23] It also expects drills for emergency and business continuity scenarios. [S:ce05e67bcdce, para 5]
 
@@ -25,7 +25,7 @@ Exits need planning. An RI must give at least seven business days' notice before
 - Under the planned custodian regime, staff with direct access to private keys or authority to approve transfers are expected to need a licence, or to be registered as relevant individuals in a bank. [S:f41a543388bc, para 25] Private keys are the secret codes that move digital assets.
 
 **Vendors and outsourcing**
-- As a general rule, a bank may outsource VA custody only to three kinds of firm. [S:ce05e67bcdce, para 14] They are another bank, an SFC-licensed trading platform, or a licensed stablecoin issuer holding its own coins with HKMA consent. [S:ce05e67bcdce, para 14]
+- As a general principle, a bank may outsource VA custody only to three kinds of firm. [S:ce05e67bcdce, para 14] They are another bank or a local bank's subsidiary, an SFC-licensed platform, or an HKMA-licensed stablecoin issuer for its own coins with HKMA consent. [S:ce05e67bcdce, para 14]
 - Due diligence on a custody provider includes independent code review and the provider's software release process. [S:ce05e67bcdce, para 15] Ongoing reviews test its security, incident reporting and disaster recovery. [S:ce05e67bcdce, para 15]
 - The bank should have the technical skill to judge a provider's solution and spot any single point of failure. [S:ce05e67bcdce, para 16] A single point of failure is one part whose loss stops everything.
 - Continuity plans should cover disruption at the custody provider, with regular end-to-end rehearsals. [S:ce05e67bcdce, para 17] The usual controls for traditional outsourcing still apply. [S:ce05e67bcdce, para 18]
@@ -98,7 +98,7 @@ Exits need planning. An RI must give at least seven business days' notice before
 > **Question:** For a 24/7 custody service, which parts could a bank run in-house and which could a partner run?
 > **How to think about it:**
 > - Which functions are critical? Examples: key management, transaction signing, monitoring, reconciliation and client service.
-> - For each, who holds the keys and who can move assets? Outsourcing of VA custody is, as a general rule, limited to certain regulated firms [S:ce05e67bcdce, para 14].
+> - For each, who holds the keys and who can move assets? Outsourcing of VA custody is, as a general principle, limited to certain regulated firms [S:ce05e67bcdce, para 14].
 > - What does oversight cost? It includes provider reviews, rehearsals and skilled monitoring staff [S:ce05e67bcdce, paras 15, 17].
 > - What does exit cost? That covers moving client assets if the provider fails or the contract ends.
 > - A round example: if shift cover needs six people per role (illustrative), fixed cost dominates at low volume.
@@ -138,7 +138,7 @@ Exits need planning. An RI must give at least seven business days' notice before
 ## Common mix-ups
 
 - **Myth:** A vendor can be named as responsible for an outsourced function. **Fact:** The HKMA expects a member of the RI's management to be named instead. [S:17871e6ed4e0, Q9/A9]
-- **Myth:** Any reputable custody provider will do. **Fact:** As a general rule, VA custody can go only to another bank, an SFC-licensed platform or a licensed issuer for its own coins. [S:ce05e67bcdce, para 14]
+- **Myth:** Any reputable custody provider will do. **Fact:** As a general principle, VA custody can go only to three kinds of firm. [S:ce05e67bcdce, para 14] They are another bank or a local bank's subsidiary, an SFC-licensed platform, or an HKMA-licensed stablecoin issuer for its own coins with HKMA consent. [S:ce05e67bcdce, para 14]
 - **Myth:** Continuity plans can ignore the provider. **Fact:** The HKMA expects plans to cover provider disruption, with end-to-end rehearsals. [S:ce05e67bcdce, para 17]
 - **Myth:** Only cyber incidents need reporting. **Fact:** An RI also notifies regulators of material failures of systems and controls, even at overseas group entities. [S:8934af8cc884, para 5.6]
 - **Myth:** Profit is the main test of a good manager. **Fact:** The HKMA says appraisals should also weigh compliance. [S:7e7494d80711, para 4.1.7]
@@ -160,6 +160,6 @@ Exits need planning. An RI must give at least seven business days' notice before
 
 ## Related modules
 
-B2, B3, C3, D2, D4, F2, F5a, F6. Business lines: Virtual-asset custody; Infrastructure as a service; Staking services. Project: Project Ensemble. Cases: 1-va-custody-private-banking; 4-vatp-incident; 6-stopping-a-product.
+B2, B3, C3, D2, D4, F2, F5a, F6. Business lines: [Virtual-asset custody](#b-custody); [Infrastructure as a service](#b-infrastructure-service); [Staking services](#b-staking). Project: [Project Ensemble](#p-ensemble). Cases: [Case 1: Virtual-asset custody for private banking](#case-1-va-custody-private-banking); [Case 4: The night the hot wallet emptied](#case-4-vatp-incident); [Case 6: Stopping a product](#case-6-stopping-a-product).
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

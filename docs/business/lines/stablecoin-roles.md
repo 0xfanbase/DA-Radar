@@ -42,11 +42,11 @@ A stablecoin is a token meant to keep a steady value against a currency (concept
 
 ## Official signals
 
-- The HKMA received 36 first-batch applications by 30 September 2025. It licensed two issuers on 10 April 2026. [S:193316443831, paras 1, 3]
+- The HKMA received 36 first-batch applications by 30 September 2025. It licensed two issuers on 10 April 2026. [S:193316443831, Assessment of licence applications, paras 1-2]
 - The register lists two licensees from 10 April 2026: Anchorpoint Financial Limited (FRS01) and The Hongkong and Shanghai Banking Corporation Limited (FRS02). [S:270f1f7324ab, Register table]
 - Both issuers plan Hong Kong dollar coins first. [S:193316443831, Use cases and strategic priorities section]
 - On 28 April 2026 both licensees confirmed they had not yet issued regulated stablecoins. [S:275e7319a841, paras 2-3]
-- The HKMA expected launch in mid-to-late 2026, based on the issuers' plans. [S:193316443831, Follow-up work, para 1]
+- The HKMA expected launch between mid-2026 and the second half of 2026, based on the issuers' plans. [S:193316443831, Follow-up work, para 1]
 - The Government said any further licences will stay very limited in number. [S:3f0fcc104e61, Reply (2)]
 
 ## Industry benchmarks
@@ -67,13 +67,13 @@ A stablecoin is a token meant to keep a steady value against a currency (concept
 
 ## Read next
 
-- Module C4 Stablecoins
-- Module C1 Selling, dealing and advising on virtual assets
-- Module C6 Financing, shared order books and client withdrawals
-- Module D1 Capital and prudential treatment of cryptoassets
-- Module D3 on anti-money laundering for digital assets at a bank
-- Project profile: Stablecoin issuer regime (Stablecoins Ordinance, Cap. 656)
-- Project profile: Relevant Stablecoins: dealing, advice and trading
-- Case 3: Stablecoin reserve bank and distributor
+- Module [C4 Stablecoins](#m-C4)
+- Module [C1 Selling, dealing and advising on virtual assets](#m-C1)
+- Module [C6 Financing, shared order books and client withdrawals](#m-C6)
+- Module [D1 Capital and prudential treatment of cryptoassets](#m-D1)
+- Module [D3 AML/CFT for digital assets at a bank](#m-D3) (AML/CFT: anti-money laundering and counter-terrorist financing)
+- Project profile: [Stablecoin issuer regime (Stablecoins Ordinance, Cap. 656)](#p-stablecoin-regime)
+- Project profile: [Relevant Stablecoins: dealing, advice and trading](#p-relevant-stablecoins)
+- [Case 3: The reserve bank that also sells the coin](#case-3-stablecoin-reserve-distributor)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

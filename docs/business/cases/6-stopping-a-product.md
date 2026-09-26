@@ -106,12 +106,12 @@ Yearly view of the staking service, in HK$ millions. The numbers are invented to
 
 ## Modules to revisit
 
-- Business line: Staking services.
-- Business line: Virtual-asset financing and margin.
-- Module C3: Custody of digital assets and key management.
-- Module C6: Financing, shared order books and client withdrawals.
-- Module B2: Engaging the HKMA and SFC.
-- Module F5a: Running the business: strategy and P&L.
-- Module F5b: Running the business: operations and control.
+- Business line: [Staking services](#b-staking)
+- Business line: [Virtual-asset financing and margin](#b-va-financing)
+- Module [C3 Custody of digital assets and key management](#m-C3)
+- Module [C6 Financing, shared order books and client withdrawals](#m-C6)
+- Module [B2 Engaging the HKMA and SFC](#m-B2)
+- Module [F5a Running the business: strategy and P&L](#m-F5a)
+- Module [F5b Running the business: operations and control](#m-F5b)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

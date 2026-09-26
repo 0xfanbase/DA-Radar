@@ -66,11 +66,11 @@ In this line a bank arranges, sells, holds or invests in bonds recorded on distr
 
 ## Read next
 
-- Module C5: Tokenisation: tokenised products, deposits and bonds.
-- Module B2: Engaging the HKMA and SFC.
-- Module E2: Wholesale money, CBDC (central bank digital currency) and cross-border projects.
-- Project profile: Digital bonds: Genesis, Evergreen and the public-sector issues.
-- Project profile: Digital Bond Grant Scheme (DBGS).
-- Project profile: CMU OmniClear digital asset platform and tokenised Exchange Fund Bills.
-- Project profile: Tokenised Bond Expert Group and the DLT fixed-income law review.
-- Case 5: The board's strategic plan (5-board-strategic-plan).
+- Module [C5 Tokenisation: tokenised products, deposits and bonds](#m-C5)
+- Module [B2 Engaging the HKMA and SFC](#m-B2)
+- Module [E2 Wholesale money, CBDC and cross-border projects](#m-E2) (CBDC: central bank digital currency)
+- Project profile: [Digital bonds: Genesis, Evergreen and the public-sector issues](#p-digital-bonds)
+- Project profile: [Digital Bond Grant Scheme (DBGS)](#p-digital-bond-grant-scheme)
+- Project profile: [CMU OmniClear digital asset platform and tokenised Exchange Fund Bills](#p-cmu-omniclear)
+- Project profile: [Tokenised Bond Expert Group and the DLT fixed-income law review](#p-tokenised-bond-expert-group)
+- [Case 5: The board's strategic plan](#case-5-board-strategic-plan)

@@ -53,10 +53,10 @@ The regulator relationship is also an asset. The Supervisory Incubator for DLT g
 - Where current rules clash with DLT by accident, the HKMA says it will consider adapting them. [S:fae36c380174, p.2]
 - The Financial Services and the Treasury Bureau (FSTB) names the Insurance Authority, the HKMA and the SFC among regulators that run sandboxes. [S:16feb657aaec, Reply (1), para 4] These let firms test tokenisation and other uses and get feedback. [S:16feb657aaec, Reply (1), para 4]
 - Taking part in the HKMA's stablecoin issuer sandbox was neither needed for a licence nor a promise of one. [S:e0b249a7eb8c, Licensing regime section]
-- EnsembleTX (the HKMA's pilot for real-value tokenised deposit settlement) runs throughout 2026. [S:7f81c39c9a89, para 4] Its first uses are tokenised money market fund deals and real-time treasury management. [S:7f81c39c9a89, para 3]
+- EnsembleTX (the HKMA's pilot for real-value tokenised deposit settlement) runs throughout 2026. [S:8b67e8dc510f, para 3] Its first uses are tokenised money market fund deals and real-time treasury management. [S:8b67e8dc510f, para 2]
 - The HKMA plans settlement in central bank digital currency and 24/7 operation for EnsembleTX by around end-2026. [S:ef3648ff1610, para 50]
 - Under the planned VA dealing regime, licensed platforms, licensed corporations and registered institutions already dealing in virtual assets are to get a faster approval process. [S:6186c01c6649, paras 35-36] Banks already assessed for VA custody are to get the same under the custodian regime. [S:f41a543388bc, para 51]
-- Neither planned regime is to let existing providers carry on while they apply. [S:6186c01c6649, para 31; S:f41a543388bc, para 48] The Government and the SFC encourage early contact with the SFC or the HKMA before applying. [S:6186c01c6649, para 33]
+- The Government and the SFC do not plan to treat existing VA dealers, custodians, advisers or managers as licensed while they apply. [S:6186c01c6649, para 31; S:f41a543388bc, para 48; S:01c5c5c4045f, para 63] Each regime takes full effect on its start date. [S:6186c01c6649, para 31; S:f41a543388bc, para 48; S:01c5c5c4045f, para 63] The Government and the SFC encourage early contact with the SFC or the HKMA before applying. [S:6186c01c6649, para 33]
 
 ## Industry view
 
@@ -79,7 +79,7 @@ The regulator relationship is also an asset. The Supervisory Incubator for DLT g
 > **Question:** For VA custody, when does building in-house, partnering or buying make commercial sense for a bank?
 > **How to think about it:**
 > - Build: the bank owns the keys, controls and client relationship. It carries the full fixed cost of 24/7 monitoring and cold storage [S:ce05e67bcdce, paras 11(l), 23].
-> - Partner: the bank may outsource VA custody only to another bank, an SFC-licensed platform, or a licensed stablecoin issuer for its own coins [S:ce05e67bcdce, para 14]. Responsibility stays with the bank [S:ce05e67bcdce, para 19].
+> - Partner: as a general principle, the bank may outsource VA custody only to three kinds of firm [S:ce05e67bcdce, para 14]. They are another bank or a local bank's subsidiary, an SFC-licensed platform, or an HKMA-licensed stablecoin issuer for its own coins with HKMA consent [S:ce05e67bcdce, para 14]. Responsibility stays with the bank [S:ce05e67bcdce, para 19].
 > - Buy: a stake worth 5% or more of Tier 1 capital needs HKMA consent [S:13365a31e794, para 1.1]. Buying into an SFC-licensed firm above 10% needs SFC approval [S:13f2903631f6, para 8.2.1].
 > - The routes differ on time to launch, fixed cost, margin kept and control.
 > **What it depends on:** expected client balances; launch timing; in-house key skills; partner quality; the approval burden of a stake.
@@ -129,7 +129,7 @@ The regulator relationship is also an asset. The Supervisory Incubator for DLT g
 ## Common mix-ups
 
 - **Myth:** The Incubator is a licence shortcut. **Fact:** It gives supervisory feedback and optional live trials before full launch. [S:1b1a0de5de5a, para 3] Any flexibility is decided case by case. [S:fae36c380174, p.1 and fn 2]
-- **Myth:** Existing VA businesses can keep running while they apply under the planned dealing and custodian regimes. **Fact:** No such arrangement is planned. [S:6186c01c6649, para 31; S:f41a543388bc, para 48] Some firms are to get a faster approval process instead. [S:6186c01c6649, paras 35-36]
+- **Myth:** Existing VA firms count as licensed while they apply under the planned regimes. **Fact:** The Government and the SFC do not plan this for dealers or custodians. [S:6186c01c6649, para 31; S:f41a543388bc, para 48] Some firms are to get a faster approval process instead. [S:6186c01c6649, paras 35-36]
 - **Myth:** Only buying a bank needs HKMA consent. **Fact:** A Hong Kong-incorporated bank needs consent to buy a stake in a company worth 5% or more of its Tier 1 capital. [S:13365a31e794, para 1.1]
 - **Myth:** The March 2026 circular replaced the discuss-first expectation. **Fact:** The circular repeats it: banks should discuss new digital-asset activities before launch. [S:3ec5b269b5dc, letter body, p.2]
 - **Myth:** Stopping a product is a purely internal decision. **Fact:** An RI must give advance notice before it stops a regulated activity. [S:8934af8cc884, para 5.1]
@@ -152,6 +152,6 @@ The regulator relationship is also an asset. The Supervisory Incubator for DLT g
 
 ## Related modules
 
-B2, B3, D1, C3, E2, F2, F3, F5b, F6. Business lines: Virtual-asset custody; Staking services; Tokenised deposits and payments. Projects: Supervisory Incubator for DLT; Project Ensemble. Cases: 5-board-strategic-plan; 6-stopping-a-product.
+B2, B3, D1, C3, E2, F2, F3, F5b, F6. Business lines: [Virtual-asset custody](#b-custody); [Staking services](#b-staking); [Tokenised deposits and payments](#b-tokenised-deposits). Projects: [Supervisory Incubator for DLT](#p-supervisory-incubator-dlt); [Project Ensemble](#p-ensemble). Cases: [Case 5: The board's strategic plan](#case-5-board-strategic-plan); [Case 6: Stopping a product](#case-6-stopping-a-product).
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

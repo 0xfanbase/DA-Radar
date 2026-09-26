@@ -41,7 +41,7 @@ In this line a bank sells, trades, settles or holds fund units kept as tokens on
 ## Official signals
 
 - SFC-authorised tokenised retail money market funds (MMFs) held HK$8.66 billion at end-2025, up 14% on the quarter [S:c28638fc5ccc, para 4 and Note 3].
-- By March 2026, 13 tokenised products were on public sale [S:bbd10edd41cf, para 3]. Assets in their tokenised classes grew about seven-fold in a year to HK$10.7 billion [S:bbd10edd41cf, para 3].
+- In March 2026 the public in Hong Kong could buy 13 tokenised products [S:bbd10edd41cf, para 3]. Their tokenised classes held about HK$10.7 billion [S:bbd10edd41cf, para 3]. That was about seven times the level a year earlier [S:bbd10edd41cf, para 3].
 - The SFC authorised three retail tokenised MMFs in early 2025 [S:16feb657aaec, Reply (2), para 3]. The Government called them the first in Asia-Pacific [S:16feb657aaec, Reply (2), para 3].
 - The SFC stated that the first products under its April 2026 trading framework are expected to be tokenised MMFs [S:bbd10edd41cf, para 6]. It will review how they operate before it considers a wider product range [S:bbd10edd41cf, para 6].
 - The 2026 Policy Address says the SFC will promote regulated stablecoins for settling tokenised MMFs [S:ef3648ff1610, para 49(iii)].
@@ -68,9 +68,9 @@ In this line a bank sells, trades, settles or holds fund units kept as tokens on
 
 ## Read next
 
-- Module C5: Tokenisation: tokenised products, deposits and bonds.
-- Module C2: VA funds and exchange-traded funds (ETFs).
-- Module C7: VA trading platform (VATP) counterparties and the SFC platform regime.
-- Module E2: Wholesale money, CBDC (central bank digital currency) and cross-border projects.
-- Project profile: Project Ensemble.
-- Case 5: The board's strategic plan (5-board-strategic-plan).
+- Module [C5 Tokenisation: tokenised products, deposits and bonds](#m-C5)
+- Module [C2 VA funds and ETFs](#m-C2) (ETFs: exchange-traded funds)
+- Module [C7 VATP counterparties and the SFC platform regime](#m-C7) (VATP: virtual asset trading platform)
+- Module [E2 Wholesale money, CBDC and cross-border projects](#m-E2) (CBDC: central bank digital currency)
+- Project profile: [Project Ensemble](#p-ensemble)
+- [Case 5: The board's strategic plan](#case-5-board-strategic-plan)

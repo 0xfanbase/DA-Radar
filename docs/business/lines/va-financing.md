@@ -64,11 +64,11 @@ No reliable industry benchmark was found for Hong Kong.
 
 ## Read next
 
-- Module C6: Financing, shared order books and client withdrawals
-- Module D1: Capital and prudential treatment of cryptoassets
-- Module C1: Selling, dealing and advising on virtual assets
-- Project profile: ASPIRe, the SFC's virtual-asset roadmap
-- Case 6: stopping a product (6-stopping-a-product)
-- Business line: Virtual-asset dealing
+- Module [C6 Financing, shared order books and client withdrawals](#m-C6)
+- Module [D1 Capital and prudential treatment of cryptoassets](#m-D1)
+- Module [C1 Selling, dealing and advising on virtual assets](#m-C1)
+- Project profile: [ASPIRe: the SFC's virtual-asset roadmap](#p-aspire)
+- [Case 6: Stopping a product](#case-6-stopping-a-product)
+- Business line: [Virtual-asset dealing](#b-va-dealing)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

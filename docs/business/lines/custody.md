@@ -34,8 +34,8 @@ In this line a bank safekeeps clients' digital assets, such as virtual assets (V
 
 - Liability: the HKMA expects the bank to be liable for losses from incidents it causes [S:ce05e67bcdce, para 11(n)]. It should hold adequate financial resources, which may include insurance [S:ce05e67bcdce, para 11(n)].
 - Operations: security monitoring should run around the clock [S:ce05e67bcdce, para 23]. Holdings should be checked client by client against records on the blockchain and in the bank's own books [S:ce05e67bcdce, para 21].
-- Outsourcing: as a general principle, a bank may delegate VA custody only to three kinds of firm [S:ce05e67bcdce, para 14]. They are another bank, an SFC-licensed platform, or a licensed stablecoin issuer for its own coins [S:ce05e67bcdce, para 14]. Final responsibility stays with the bank [S:ce05e67bcdce, para 19].
-- New licence: banks that safekeep client VA keys would need a licence or registration under the planned regime [S:f41a543388bc, para 35(b)]. The plan does not let existing custodians carry on while they apply; the regime takes full effect on its start date [S:f41a543388bc, para 48].
+- Outsourcing: as a general principle, a bank may delegate VA custody only to three kinds of firm [S:ce05e67bcdce, para 14]. They are another bank or a local bank's subsidiary, an SFC-licensed platform, or an HKMA-licensed stablecoin issuer for its own coins with HKMA consent [S:ce05e67bcdce, para 14]. Final responsibility stays with the bank [S:ce05e67bcdce, para 19].
+- New licence: banks that safekeep client VA keys would need a licence or registration under the planned regime [S:f41a543388bc, para 35(b)]. The Government and the SFC do not plan to treat existing VA custodians as licensed while they apply [S:f41a543388bc, para 48]. The regime takes full effect on its start date [S:f41a543388bc, para 48].
 - Capital: banks are left out of the planned HK$10 million paid-up capital baseline, because HKMA capital rules already apply [S:f41a543388bc, paras 41-42].
 - Technology: the SFC says its August 2025 platform custody standards will be core expectations for future custodians [S:562c0f8addce, p.2].
 
@@ -68,8 +68,8 @@ In this line a bank safekeeps clients' digital assets, such as virtual assets (V
 
 ## Read next
 
-- Module C3: Custody of digital assets and key management.
-- Module C2: VA funds and ETFs.
-- Module D1: Capital and prudential treatment of cryptoassets.
-- Project profile: New VA licensing regimes: dealing, custody, advisory and management.
-- Case 1: VA custody for private banking (1-va-custody-private-banking).
+- Module [C3 Custody of digital assets and key management](#m-C3)
+- Module [C2 VA funds and ETFs](#m-C2)
+- Module [D1 Capital and prudential treatment of cryptoassets](#m-D1)
+- Project profile: [New VA licensing regimes: dealing, custody, advisory and management](#p-va-licensing-regimes)
+- [Case 1: Virtual-asset custody for private banking](#case-1-va-custody-private-banking)

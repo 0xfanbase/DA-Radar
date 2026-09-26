@@ -47,7 +47,8 @@ A bank can advise clients on virtual assets (VAs) and manage funds or client acc
 - The SFC survey cites a study commissioned by Invest Hong Kong, the Government's investment promotion agency. [S:6d9deb07299d, para 30] It counts over 3,380 single-family offices (firms that manage one family's wealth) in Hong Kong at end-2025. [S:6d9deb07299d, para 30] It notes strong interest in digital assets among their alternative investments. [S:6d9deb07299d, para 31]
 - The consultation on the VA advisory and management regimes drew 51 responses. [S:4a0342268bf2, Note 2, p.1]
 - SFC-licensed firms and registered banks that already give VA advice or management are to get a faster approval process. [S:01c5c5c4045f, para 67] The start date is not set yet. [S:01c5c5c4045f, para 64]
-- The Government said one bill covering VA dealing, custody, advisory and management would go to the Legislative Council (LegCo) in 2026. [S:c6df52e680de, Reply (3)]
+- The Government and the SFC do not plan to treat existing VA advisers or managers as licensed while they apply. [S:01c5c5c4045f, para 63] The regimes take full effect on their start date. [S:01c5c5c4045f, para 63]
+- The Government said one bill covering VA dealing, custody, advisory and management would go to the Legislative Council (LegCo) in 2026. [S:c6df52e680de, Reply (3), 'In addition' para]
 
 ## Industry benchmarks
 
@@ -68,16 +69,17 @@ A bank can advise clients on virtual assets (VAs) and manage funds or client acc
 > **Official signposts:**
 > - Faster approval for firms already in the business. [S:01c5c5c4045f, para 67]
 > - No small-amount exception for VA management. [S:01c5c5c4045f, para 32]
-> - The bill planned for 2026. [S:c6df52e680de, Reply (3)]
+> - The bill planned for 2026. [S:c6df52e680de, Reply (3), 'In addition' para]
 > **What this is not:** not a forecast, not advice and not the regulator's view.
 
 ## Read next
 
-- Module C1, Selling, dealing and advising on virtual assets.
-- Module C2, VA funds and ETFs (exchange-traded funds).
-- Module B1, Your bank's legal status for digital assets.
-- Module E1, What's coming: the pipeline.
-- Project profiles: New VA licensing regimes: dealing, custody, advisory and management; Relevant Stablecoins: dealing, advice and trading.
-- Case 5: The board's strategic plan.
+- Module [C1 Selling, dealing and advising on virtual assets](#m-C1)
+- Module [C2 VA funds and ETFs](#m-C2) (ETFs: exchange-traded funds)
+- Module [B1 Your bank's legal status for digital assets](#m-B1)
+- Module [E1 What's coming: the pipeline](#m-E1)
+- Project profile: [New VA licensing regimes: dealing, custody, advisory and management](#p-va-licensing-regimes)
+- Project profile: [Relevant Stablecoins: dealing, advice and trading](#p-relevant-stablecoins)
+- [Case 5: The board's strategic plan](#case-5-board-strategic-plan)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

@@ -119,11 +119,11 @@ Figures in HK$ million a year. All numbers are invented to show the shape, not r
 
 Module D3 covers anti-money laundering (AML) and counter-financing of terrorism (CFT) rules.
 
-- C4 Stablecoins
-- C1 Selling, dealing and advising on virtual assets
-- D3 AML/CFT for digital assets at a bank
-- D1 Capital and prudential treatment of cryptoassets
-- Business line: Stablecoin roles for banks
-- Business line: Banking the digital-asset industry
+- Module [C4 Stablecoins](#m-C4)
+- Module [C1 Selling, dealing and advising on virtual assets](#m-C1)
+- Module [D3 AML/CFT for digital assets at a bank](#m-D3)
+- Module [D1 Capital and prudential treatment of cryptoassets](#m-D1)
+- Business line: [Stablecoin roles for banks](#b-stablecoin-roles)
+- Business line: [Banking the digital-asset industry](#b-banking-da-industry)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*

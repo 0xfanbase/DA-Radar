@@ -44,7 +44,7 @@ A bank can do foreign exchange (FX) and send money abroad on new rails, such as 
 - In the 2022 mBridge pilot, 20 banks from four places made over 160 payment and FX deals worth over US$22 million. [S:947fa49606ab, s.1 Executive summary, p.4]
 - By end-January 2026, about 80,000 e-CNY wallets had been set up with Hong Kong mobile numbers. [S:062b0a1547b9, Reply (1)] About 5,200 local shops accepted e-CNY. [S:062b0a1547b9, Reply (1)]
 - In June 2025 the HKMA and the People's Bank of China (PBoC) launched Payment Connect. [S:efc2e3e27f62, p.136, Faster Payment System section] It links the FPS with a Mainland online banking payment system for real-time remittances. [S:efc2e3e27f62, p.136, Faster Payment System section]
-- The Government's November 2025 digital green bond offered settlement in tokenised central bank money (e-CNY and e-HKD). [S:ac6cd085a325, Integration of digital money item] This option sat alongside traditional settlement. [S:ac6cd085a325, Integration of digital money item] The HKMA called it the world's first digital bond to do so. [S:ac6cd085a325, Integration of digital money item]
+- The Government's November 2025 digital green bond offered settlement in tokenised central bank money (e-CNY and e-HKD). [S:ac6cd085a325, Integration of digital money item] This option sat alongside traditional settlement. [S:ac6cd085a325, Integration of digital money item] The Government said it was the world's first digital bond offering to do so. [S:ac6cd085a325, Integration of digital money item]
 - Hong Kong Exchanges and Clearing (HKEX) and the HKMA are working together on an e-HKD payment tool for after-hours derivatives trading. [S:ef3648ff1610, para 36(v)] Real-value deals are targeted for 2026. [S:ef3648ff1610, para 36(v)]
 - The HKMA is testing CBDC networks, tokenised deposits and links between fast payment systems. [S:c6df52e680de, Reply (2)] Both licensed stablecoin issuers take part. [S:c6df52e680de, Reply (2)]
 
@@ -72,11 +72,13 @@ A bank can do foreign exchange (FX) and send money abroad on new rails, such as 
 
 ## Read next
 
-- Module E2, Wholesale money, CBDC and cross-border projects.
-- Module C4, Stablecoins.
-- Module C5, Tokenisation: tokenised products, deposits and bonds.
-- Module D3, AML/CFT for digital assets at a bank.
-- Project profiles: Project mBridge; e-HKD (digital Hong Kong dollar); CBDC research and cross-border digital money pilots.
-- Case 2: Tokenised deposits for corporate treasury.
+- Module [E2 Wholesale money, CBDC and cross-border projects](#m-E2)
+- Module [C4 Stablecoins](#m-C4)
+- Module [C5 Tokenisation: tokenised products, deposits and bonds](#m-C5)
+- Module [D3 AML/CFT for digital assets at a bank](#m-D3)
+- Project profile: [Project mBridge](#p-mbridge)
+- Project profile: [e-HKD (digital Hong Kong dollar)](#p-e-hkd)
+- Project profile: [CBDC research and cross-border digital money pilots](#p-cbdc-research)
+- [Case 2: Tokenised deposits for corporate treasury](#case-2-tokenised-deposits-treasury)
 
 *For general information only. Not legal or regulatory advice. Always check the official source.*
