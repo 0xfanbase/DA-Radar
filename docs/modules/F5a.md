@@ -1,16 +1,16 @@
 # F5a Running the business: strategy and P&L
 
-This module is about the top of the house: where to play, how to price, where to put capital and when to stop. A P&L (profit and loss statement) shows what a business earns and spends. After reading, you can build a business case that a Chief Financial Officer (CFO) will test and a supervisor will recognise. You can also name the approvals on the path of a launch, a partnership or an acquisition. Two regulators matter most: the Securities and Futures Commission (SFC) and the Hong Kong Monetary Authority (HKMA).
+This module is about the top-level choices: which businesses to be in, how to price, where to put capital and when to stop. A P&L (profit and loss statement) shows what a business earns and spends. After reading, you can build a business case that a Chief Financial Officer (CFO) can test and a supervisor can follow. You can also name the approvals on the path of a launch, a partnership or an acquisition. Two regulators matter most: the Securities and Futures Commission (SFC) and the Hong Kong Monetary Authority (HKMA).
 
 ## In 60 seconds
 
-Strategy now has an official prompt. On 9 March 2026 the HKMA asked every bank's board to oversee and endorse a formal strategic business plan within six months. [S:3ec5b269b5dc, letter body, p.2] The plan responds to distributed ledger technology (DLT), the shared-database technology behind tokens, and other technology change. [S:3ec5b269b5dc, letter body, p.2]
+Strategy is now on the HKMA's agenda. On 9 March 2026 the HKMA asked every bank's board to oversee and endorse a formal strategic business plan within six months. [S:3ec5b269b5dc, letter body, p.2] The plan responds to distributed ledger technology (DLT), the shared-database technology behind tokens, and other technology change. [S:3ec5b269b5dc, letter body, p.2]
 
-Capital sets the price of owning crypto. Cryptoassets in Group 2b, the most conservative capital group, take a 1,250% risk weight on the bank's own books. [S:9e8d84c87168, Part XII CAE1 explanatory note, column (c), p.215] The HKMA brought these global crypto capital rules, set by the Basel Committee on Banking Supervision, into force on 1 January 2026. [S:100b982aadca, p.90] Holding assets for clients is treated differently. Client assets sit in separate accounts, and the HKMA expects the bank to be liable for losses from incidents it causes. [S:ce05e67bcdce, paras 6, 11(n)]
+Capital rules make it costly for a bank to own crypto itself. Cryptoassets in Group 2b, the group with the strictest capital treatment, take a 1,250% risk weight on the bank's own books. [S:9e8d84c87168, Part XII CAE1 explanatory note, column (c), p.215] The HKMA brought these global crypto capital rules, set by the Basel Committee on Banking Supervision, into force on 1 January 2026. [S:100b982aadca, p.90] Holding assets for clients is treated differently. Client assets sit in separate accounts, and the HKMA expects the bank to be liable for losses from incidents it causes. [S:ce05e67bcdce, paras 6, 11(n)]
 
-Launches need a conversation first. The HKMA has expected banks to discuss a planned virtual-asset (VA) activity before launch since January 2022. [S:642680fa4467, AIs' VA-related proposals section, p.5] Buying a firm can need consent too. [S:13365a31e794, para 1.1] A new controller of a Hong Kong-incorporated bank needs the Monetary Authority's approval. [S:2baef0f142a0, para 29]
+A launch starts with a talk with the HKMA. The HKMA has expected banks to discuss a planned virtual-asset (VA) activity before launch since January 2022. [S:642680fa4467, AIs' VA-related proposals section, p.5] Buying a firm can need consent too. [S:13365a31e794, para 1.1] A new controller of a Hong Kong-incorporated bank needs the Monetary Authority's approval. [S:2baef0f142a0, para 29]
 
-The regulator relationship is also an asset. The Supervisory Incubator for DLT gives banks a dedicated HKMA team and optional live trials. [S:1b1a0de5de5a, para 3] Banks already assessed for VA custody are to get a faster licensing path under the planned custodian regime. [S:f41a543388bc, para 51]
+The working relationship with regulators also matters. The Supervisory Incubator for DLT gives banks a dedicated HKMA team and optional live trials. [S:1b1a0de5de5a, para 3] Banks already assessed for VA custody are to get a faster licensing path under the planned custodian regime. [S:f41a543388bc, para 51]
 
 ## Key facts
 
@@ -30,16 +30,16 @@ The regulator relationship is also an asset. The Supervisory Incubator for DLT g
 **Stopping a product**
 - Under section 135 of the Securities and Futures Ordinance (SFO), an RI must give the SFC and the HKMA at least seven business days' notice before it stops a regulated activity. [S:8934af8cc884, para 5.1]
 - A licensed stablecoin issuer must have systems to wind down in an orderly way and honour redemptions. [S:240be6833157, para 6.8.17] Its business exit plan should cover how to sell reserve assets and pay holders. [S:240be6833157, para 6.8.17]
-- Anyone applying for a digital bank licence must give the HKMA an exit plan, for use if the business model fails. [S:5422156398b3, para 20] The plan covers triggers, who can pull them and how depositors get repaid. [S:5422156398b3, para 20]
+- Anyone applying for a digital bank licence must give the HKMA an exit plan, for use if the business model fails. [S:5422156398b3, para 20] The plan covers the triggers (events that start the exit), who can set them off and how depositors get repaid. [S:5422156398b3, para 20]
 
 **Growth and profitability**
 - The HKMA says it does not interfere with a digital bank's commercial decisions. [S:5422156398b3, para 19] It would be concerned by heavy early losses taken to win market share without a credible path to profit. [S:5422156398b3, para 19]
-- An HKMA study suggests that DLT plans go to the board with business cases, early budgets and milestones. [S:e0fd558b3dbc, Section 4.2.1, p.44] The study is research, not a rule. [S:e0fd558b3dbc, Section 4.2.1, p.44]
+- An HKMA study suggests taking DLT plans to the board with business cases, early budgets and milestones. [S:e0fd558b3dbc, Section 4.2.1, p.44] The study is research, not a rule. [S:e0fd558b3dbc, Section 4.2.1, p.44]
 - The same study says return calculations should count indirect costs, such as training. [S:e0fd558b3dbc, Section 4.2.1, pp.44-45]
 
 **Buying, partnering and owners**
-- The 5% rule comes from Rule 23 of the Banking (Exposure Limits) Rules. [S:13365a31e794, para 1.1] A Hong Kong-incorporated bank should not buy shares in a company worth 5% or more of its Tier 1 (core) capital without the Monetary Authority's written consent. [S:13365a31e794, para 1.1] The same applies to setting up a company. [S:13365a31e794, para 1.1]
-- Tokens that give the economic substance of owning equity count as shares for this test. [S:13365a31e794, fn 1]
+- A Hong Kong-incorporated bank should not buy shares in a company worth 5% or more of its Tier 1 (core) capital without the Monetary Authority's written consent. [S:13365a31e794, para 1.1] This 5% rule comes from Rule 23 of the Banking (Exposure Limits) Rules. [S:13365a31e794, para 1.1] The same applies to setting up a company. [S:13365a31e794, para 1.1]
+- Tokens that in substance give the economic benefits of owning shares count as shares for this test. [S:13365a31e794, fn 1]
 - For deals caught by that 5% rule, the HKMA expects banks to make contact early and send written notice with details of the deal. [S:13365a31e794, para 2.5.1]
 - It also expects at least one month's notice of other acquisitions with a significant effect. [S:13365a31e794, para 2.9.1] Examples include a significant move into a new line of business, or a fall in the capital ratio of about 0.5% or more. [S:13365a31e794, para 2.9.2]
 - A controller includes anyone who controls 10% or more of a bank's voting power. [S:2baef0f142a0, para 9] Under section 70 of the Banking Ordinance, the Monetary Authority approves controllers of a Hong Kong-incorporated bank. [S:2baef0f142a0, para 29]
@@ -50,7 +50,7 @@ The regulator relationship is also an asset. The Supervisory Incubator for DLT g
 **The regulator relationship**
 - The Supervisory Incubator launched on 8 January 2025. [S:1b1a0de5de5a, para 1] It offers one supervisory contact point, a dedicated HKMA team and optional live trials before full launch. [S:1b1a0de5de5a, para 3]
 - The HKMA may give some supervisory flexibility to banks in the Incubator, judged case by case. [S:fae36c380174, p.1 and fn 2] The bank must manage trial risks in line with the trial's scale and nature. [S:fae36c380174, p.1 and fn 2]
-- Where current rules clash with DLT by accident, the HKMA says it will consider adapting them. [S:fae36c380174, p.2]
+- Where current rules get in the way of DLT without meaning to, the HKMA says it will consider adapting them. [S:fae36c380174, p.2]
 - The Financial Services and the Treasury Bureau (FSTB) names the Insurance Authority, the HKMA and the SFC among regulators that run sandboxes. [S:16feb657aaec, Reply (1), para 4] These let firms test tokenisation and other uses and get feedback. [S:16feb657aaec, Reply (1), para 4]
 - Taking part in the HKMA's stablecoin issuer sandbox was neither needed for a licence nor a promise of one. [S:e0b249a7eb8c, Licensing regime section]
 - EnsembleTX (the HKMA's pilot for real-value tokenised deposit settlement) runs throughout 2026. [S:8b67e8dc510f, para 3] Its first uses are tokenised money market fund deals and real-time treasury management. [S:8b67e8dc510f, para 2]
@@ -62,18 +62,18 @@ The regulator relationship is also an asset. The Supervisory Incubator for DLT g
 
 - KPMG (an accounting and advisory firm) published its Hong Kong Banking Report in 2026. It reported that the average cost-to-income ratio of the Hong Kong banks it surveyed was 41.9% in 2025, down from 42.1% in 2024, based on their published results. [I:1dfc7a0205ff, Performance section, p.8] A cost-to-income ratio is operating costs divided by operating income.
 - In the same report's commentary (opinion, not a measured figure), KPMG said many local and regional banks remain in wait-and-see mode on digital assets. [I:1dfc7a0205ff, p.42] It said capability spending can look like cost before it shows value. [I:1dfc7a0205ff, p.42]
-- The same commentary says many banks start digital-asset projects bottom-up, in innovation or product teams. [I:1dfc7a0205ff, p.43] KPMG sells advisory services to banks.
+- The same commentary says many banks start digital-asset projects from the ground up, in innovation or product teams, not from the top. [I:1dfc7a0205ff, p.43] KPMG sells advisory services to banks.
 - KPMG LLP (US), another KPMG firm, published a qualitative case study on bitcoin custodians in 2024 (global, US focus). It gives no figures. It says custodian pricing varies widely. Models include set-up, transaction and maintenance fees, and fixed or asset-based annual fees. [I:b490e53826fb, p.9]
-- OSL Group Limited (OSL), a Hong Kong-listed platform group, explains its fee bases in its 2025 annual report. It says its white-label platform fees are typically based on a base fee plus the client platform's trading volume. [I:e2df03a8c8a6, PDF p.91, Note 2.2.3] It earns custody and account maintenance fees, accrued monthly. [I:e2df03a8c8a6, PDF p.91, Note 2.2.3]
+- OSL Group Limited (OSL), a Hong Kong-listed platform group, explains its fee bases in its 2025 annual report. It says its white-label platform fees are typically a base fee plus a charge based on the client platform's trading volume. [I:e2df03a8c8a6, PDF p.91, Note 2.2.3] A white-label platform is one that OSL runs and another firm offers under its own brand. OSL also earns custody and account maintenance fees, recorded month by month. [I:e2df03a8c8a6, PDF p.91, Note 2.2.3]
 
 ## How it works commercially
 
 - **Business case.** A business case compares expected income with the full cost of running a line. That cost includes the capital and funding the line uses. It names the risks and the conditions for stopping. (concept)
-- **Pricing.** Banks charge a fee on assets held, a spread on trades, a flat subscription, or a bundle. An asset-based fee grows with client balances. A flat fee is steady but may lag rising volume. (concept)
+- **Pricing.** Banks charge a fee on assets held, a spread on trades, a flat subscription, or a bundle. An asset-based fee grows with client balances. A flat fee is steady but may not keep up with rising volume. (concept)
 - **Capital allocation.** Capital is scarce, so each line competes for it. A hurdle rate is the minimum return on capital a project must beat to get funded. Lines that use more capital must earn more to clear the same hurdle. (concept)
 - **Contribution.** Contribution is income minus the costs that rise with volume. It pays for fixed costs such as key management, 24/7 monitoring and named managers. A line breaks even only when total contribution covers those fixed costs. (concept)
 - **Stopping.** Money already spent (a sunk cost) cannot be recovered. So the standard finance test compares only future income with future costs, including the cost of an orderly exit. (concept)
-- **Build, partner or buy.** Building gives control but takes time and fixed cost. Partnering is faster but adds vendor risk and shared margin. Buying can add scale quickly but needs approvals and brings integration risk. (concept)
+- **Build, partner or buy.** Building gives control but takes time and fixed cost. Partnering is faster but adds vendor risk, and the bank shares the margin. Buying can add scale quickly but needs approvals and brings integration risk. (concept)
 
 > **Analysis — not official**
 > **Question:** For VA custody, when does building in-house, partnering or buying make commercial sense for a bank?
@@ -82,7 +82,7 @@ The regulator relationship is also an asset. The Supervisory Incubator for DLT g
 > - Partner: as a general principle, the bank may outsource VA custody only to three kinds of firm [S:ce05e67bcdce, para 14]. They are another bank or a local bank's subsidiary, an SFC-licensed platform, or an HKMA-licensed stablecoin issuer for its own coins with HKMA consent [S:ce05e67bcdce, para 14]. Responsibility stays with the bank [S:ce05e67bcdce, para 19].
 > - Buy: a stake worth 5% or more of Tier 1 capital needs HKMA consent [S:13365a31e794, para 1.1]. Buying into an SFC-licensed firm above 10% needs SFC approval [S:13f2903631f6, para 8.2.1].
 > - The routes differ on time to launch, fixed cost, margin kept and control.
-> **What it depends on:** expected client balances; launch timing; in-house key skills; partner quality; the approval burden of a stake.
+> **What it depends on:** expected client balances; launch timing; in-house key skills; partner quality; the approvals a stake needs.
 > **Official signposts:** the planned custodian legislation and its faster path for assessed banks [S:f41a543388bc, para 51]; HKMA outsourcing limits for custody [S:ce05e67bcdce, para 14]; board plans under the March 2026 circular [S:3ec5b269b5dc, letter body, p.2].
 > **What this is not:** Not a forecast, not advice, and not the regulator's view.
 
@@ -102,7 +102,7 @@ The regulator relationship is also an asset. The Supervisory Incubator for DLT g
 > **How to think about it:**
 > - Early contact is already an expectation: the HKMA expects discussion before any VA launch [S:642680fa4467, AIs' VA-related proposals section, p.5].
 > - The Incubator lets a bank test controls in a live trial before scaling [S:1b1a0de5de5a, para 3]. Any flexibility is case by case [S:fae36c380174, p.1 and fn 2].
-> - Sandbox participation is not a licence promise [S:e0b249a7eb8c, Licensing regime section].
+> - Taking part in a sandbox is not a promise of a licence [S:e0b249a7eb8c, Licensing regime section].
 > - The planned regimes offer faster approval to firms already assessed for custody or already dealing [S:f41a543388bc, para 51; S:6186c01c6649, paras 35-36].
 > **What it depends on:** the quality of risk controls; how clearly the bank explains its model; final laws.
 > **Official signposts:** start dates of the planned VA regimes [S:6186c01c6649, para 32; S:f41a543388bc, para 49]; EnsembleTX's move to 24/7 [S:ef3648ff1610, para 50].

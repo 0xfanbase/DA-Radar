@@ -26,13 +26,13 @@ A bank can run, or sell access to, the technology behind digital assets: shared 
 
 - Software as a service (SaaS) means a client rents a platform instead of building its own, often for a base fee plus a usage fee. (concept)
 - Other banks can outsource VA custody to a bank, which makes custody a service one bank can sell to another. [S:ce05e67bcdce, para 14]
-- DBGS grants can repay issuers' fees to DLT platform providers that are not the issuer's associates. [S:5a0563de8142, s.4(a), p.5] The full grant, up to HK$2.5 million per issue, needs such an outside platform, among other conditions. [S:5a0563de8142, s.3(a), p.4]
+- DBGS grants can repay issuers' fees to DLT platform providers that are not the issuer's associates (firms linked to the issuer). [S:5a0563de8142, s.4(a), p.5] The full grant, up to HK$2.5 million per issue, needs such an outside platform, among other conditions. [S:5a0563de8142, s.3(a), p.4]
 - A settlement bank can charge for moving tokenised money between parties, or keep the balances that clients hold with it. (concept)
 
 ## Cost and capital drivers
 
 - The HKMA's DLT note puts responsibility on the board and senior management. [S:1884530ff235, Annex, items 1-4 and 8] It covers network choice, smart contracts, settlement finality and key security. [S:1884530ff235, Annex, items 1-4 and 8]
-- A hardware security module (HSM) is a tamper-resistant device that stores keys. (concept) Banks should check HSM vendors before onboarding and review them regularly. [S:ce05e67bcdce, para 11(a)] Bank custody monitoring should reach vendors, blockchain protocols, encryption methods and shared code libraries. [S:ce05e67bcdce, para 24]
+- A hardware security module (HSM) is a tamper-resistant device that stores keys. (concept) Banks should check HSM vendors before onboarding and review them regularly. [S:ce05e67bcdce, para 11(a)] A bank's custody monitoring should cover vendors, blockchain protocols, encryption methods and shared code libraries. [S:ce05e67bcdce, para 24]
 - For tokenised products, banks should check issuers' technology, including smart-contract audits, key management and plans for ledger failure. [S:b2719f3dcb37, Section A, pp.3-4]
 - For SFC-authorised tokenised products, the product provider stays responsible for the token set-up even if it outsources it. [S:58ea8520974d, para 10] On SFC request, it should get an outside audit of the set-up and its smart contracts. [S:58ea8520974d, para 15]
 - The HKMA has launched a Quantum Preparedness Index to guide the industry on upgrading encryption. [S:ef3648ff1610, para 51(ii)]
@@ -58,15 +58,15 @@ A bank can run, or sell access to, the technology behind digital assets: shared 
 > **Analysis — not official**
 > **Question:** When does running shared digital-asset infrastructure pay back for a bank, compared with renting it?
 > **How to think about it:**
-> - Building a platform has a high fixed cost and a low cost per extra client. Scale drives the answer.
-> - Public platforms, such as the planned CMU OmniClear platform, can compete with a bank platform or plug into it.
+> - Building a platform has a high fixed cost and a low cost per extra client. So the number of clients decides whether it pays back.
+> - Public platforms, such as the planned CMU OmniClear platform, can compete with a bank platform or connect to it.
 > - Clients that rent the platform stay answerable to their own regulators. How much due diligence and audit work then comes with each sale?
 > - Renting avoids the build cost but leaves the bank reliant on a vendor that then needs close monitoring.
 > **What it depends on:** the number of client firms; standards that let platforms connect; vendor and audit costs; how liability for failures is shared.
 > **Official signposts:**
 > - The CMU OmniClear digital asset platform. [S:654fa5eba8cf, para 114]
 > - Round-the-clock settlement in EnsembleTX. [S:8b67e8dc510f, para 3]
-> - Interoperability standards from the Ensemble Architecture Community. [S:3f0fcc104e61, Reply (3)]
+> - Standards from the Ensemble Architecture Community that let platforms connect (interoperability). [S:3f0fcc104e61, Reply (3)]
 > **What this is not:** not a forecast, not advice and not the regulator's view.
 
 ## Read next

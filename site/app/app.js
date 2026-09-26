@@ -29,7 +29,7 @@
     var short = s ? s.p.join("/") + (s.d ? " " + s.d.slice(0, 4) : "") : "Source";
     var full = (s ? s.t : id) + (loc ? ", " + loc : "");
     var cls = s && s.cls ? " ind " + s.cls : "";
-    var pre = s && s.cls ? (s.cls === "industry" ? "Estimate · " : s.cls === "intl" ? "Intl · " : s.cls === "foreign" ? "Foreign · " : "Filing · ") : "";
+    var pre = s && s.cls ? (s.cls === "industry" ? "Estimate · " : s.cls === "intl" ? "International · " : s.cls === "foreign" ? "Foreign · " : "Filing · ") : "";
     return '<button type="button" class="cite' + cls + '" data-id="' + esc(id) + '" data-loc="' + esc(loc || "") + '" title="' + esc(full) + '" aria-label="' + (s && s.cls ? esc(CLS[s.cls]) : "Source") + ": " + esc(full) + '">' + esc(pre + short) + (loc ? " · " + esc(loc) : "") + "</button>";
   }
   function linkCitations(md) {
@@ -77,7 +77,7 @@
       '<div class="meta">' + esc(s.p.join(" + ")) + " · " + esc(fmtDate(s.d)) + " · " + esc(s.ty) + (s.cls ? "" : " " + chip(s.st)) + "</div>" +
       '<h3 id="sheet-h">' + esc(s.t) + "</h3>" +
       (loc ? '<div class="locbig">' + esc(loc) + "</div>" : "") +
-      (s.cls ? '<p class="note"><b>' + esc(CLS[s.cls]) + ".</b> Not an official Hong Kong source" + (s.cls === "industry" ? "; figures are the publisher's estimates" : "") + (s.geo ? ". Scope: " + esc(s.geo) : "") + (s.sponsor && !/none/i.test(s.sponsor) ? ". Sponsor: " + esc(s.sponsor) : "") + (s.conflict ? ". The publisher sells products in this market" : "") + ".</p>" : "") +
+      (s.cls ? '<p class="note"><b>' + esc(CLS[s.cls]) + ".</b> " + (s.cls === "foreign" ? "Official in its own country, but not a Hong Kong source" : s.cls === "filing" ? "The company\u2019s own reported figures, not an official Hong Kong source" : s.cls === "intl" ? "An international body, not a Hong Kong source" : "Not an official Hong Kong source; figures are the publisher's estimates") + (s.geo ? ". Scope: " + esc(s.geo) : "") + (s.sponsor && !/none/i.test(s.sponsor) ? ". Paid for by: " + esc(s.sponsor) : "") + (s.conflict ? ". The publisher sells services in this market, so it may have an interest in the figures" : "") + ".</p>" : "") +
       (s.s ? "<p>" + esc(s.s) + "</p>" : "") +
       (s.cls && s.k.length ? '<ul class="small">' + s.k.slice(0, 6).map(function (k) { return "<li>" + esc(k[0]) + (k[1] ? ' <span class="loc">(' + esc(k[1]) + ")</span>" : "") + "</li>"; }).join("") + "</ul>" : "") +
       (s.rg ? '<p class="small muted"><b>' + (s.cls ? "How it was measured, and limits:" : "Where to look:") + "</b> " + rgHtml(s.rg) + "</p>" : "") +
@@ -350,7 +350,7 @@
   var CHAIN = ["All", "Issue", "Distribute", "Trade", "Hold", "Settle and pay", "Finance", "Advise and manage"];
   var BZ = { chain: "All", seg: "" };
   function lineCard(l) {
-    return '<a class="card" href="#b-' + l.slug + '"><div class="meta">' + (l.status ? chip(l.status) : "") + "<span>" + esc(l.chain.join(" · ")) + "</span></div><h3>" + esc(l.title) + '</h3><p class="small"><b>Bank role:</b> ' + esc(l.role) + '</p><p class="small muted">' + l.nS + " official " + (l.nS === 1 ? "fact" : "facts") + " · " + l.nI + " industry " + (l.nI === 1 ? "estimate" : "estimates") + "</p></a>";
+    return '<a class="card" href="#b-' + l.slug + '"><div class="meta">' + (l.status ? chip(l.status) : "") + "<span>" + esc(l.chain.join(" · ")) + "</span></div><h3>" + esc(l.title) + '</h3><p class="small"><b>Bank role:</b> ' + esc(l.role) + '</p><p class="small muted">' + l.nS + " official " + (l.nS === 1 ? "fact" : "facts") + " · " + l.nI + " non-official " + (l.nI === 1 ? "figure" : "figures") + "</p></a>";
   }
   function caseCard(c, i) {
     return '<a class="card" href="#case-' + c.slug + '"><div class="meta"><span class="code">Case ' + (i + 1) + "</span><span>" + c.minutes + ' min</span><span class="chip">Fictional</span></div><h3>' + esc(c.title.replace(/^Case \d+:\s*/, "")) + "</h3><p>" + esc(c.teaser) + "</p></a>";
@@ -359,13 +359,13 @@
     if (!S.biz.lines.length) return '<div class="read"><p class="kicker">Business and opportunities</p><h1 class="page-title">Where the money is, and what it takes</h1><p class="lede">This section is being written and checked. It will cover each digital-asset business line open to a Hong Kong bank, case studies, and a factual comparison with Singapore and the UAE.</p><p><a href="#learn">Go to the course \u2192</a></p></div>' + footer();
     var segs = {};
     S.biz.lines.forEach(function (l) { l.segments.split(/[,;/]\s*/).forEach(function (x) { x = x.trim(); if (x) segs[x.charAt(0).toUpperCase() + x.slice(1)] = 1; }); });
-    var h = '<div class="read"><p class="kicker">Business and opportunities</p><h1 class="page-title">Where the money is, and what it takes</h1><p class="lede">Every digital-asset business line open to a Hong Kong bank: the bank\u2019s role, who pays, what drives cost and capital, the regulatory gate, and the official signals. For thinking like a COO.</p>' +
-      '<p class="note">Facts are official and cited. Figures marked <b>Estimate</b>, <b>Filing</b> or <b>Intl</b> come from named non-official sources. Boxes marked <b>Analysis \u2014 not official</b> are frameworks for thinking, not forecasts or advice.</p></div>';
+    var h = '<div class="read"><p class="kicker">Business and opportunities</p><h1 class="page-title">Where the money is, and what it takes</h1><p class="lede">Each digital-asset business a Hong Kong bank can run: its role, who pays, what drives cost and capital, the permission it needs, and what regulators have said. Written to help you think like a chief operating officer (COO).</p>' +
+      '<p class="note">Facts are official and cited. Source buttons marked <b>Estimate</b>, <b>Filing</b>, <b>International</b> or <b>Foreign</b> point to named sources that are not official Hong Kong sources. Boxes marked <b>Analysis \u2014 not official</b> give a way to think about a question. They are not forecasts or advice.</p></div>';
     h += '<h2 class="sec-h">Business lines</h2>' + segBtns(CHAIN, BZ.chain, "chain") +
       '<div class="tools"><label>Client segment<select id="bz-seg"><option value="">All segments</option>' + Object.keys(segs).sort().map(function (x) { return '<option' + (x === BZ.seg ? " selected" : "") + ">" + esc(x) + "</option>"; }).join("") + '</select></label></div><div id="bz-list"></div>';
-    if (S.biz.cases.length) h += '<h2 class="sec-h">Case studies</h2><p class="small muted">Read-throughs with invented people and firms. The Hong Kong rules in them are real and cited.</p><div class="grid">' + S.biz.cases.map(caseCard).join("") + "</div>";
+    if (S.biz.cases.length) h += '<h2 class="sec-h">Case studies</h2><p class="small muted">Short stories with invented people and firms, each with decisions to make. The Hong Kong rules in them are real and cited.</p><div class="grid">' + S.biz.cases.map(caseCard).join("") + "</div>";
     h += '<h2 class="sec-h">Go deeper</h2><div class="mcards">' + S.modules.filter(function (m) { return m.part === "F"; }).map(function (m) { return '<a class="card" href="#m-' + m.code + '"><div class="meta"><span class="code">' + m.code + "</span><span>" + m.minutes + " min</span></div><h3>" + esc(m.title) + "</h3></a>"; }).join("") +
-      (S.biz.compare ? '<a class="card" href="#compare"><div class="meta"><span class="code">Compare</span></div><h3>' + esc(S.biz.compare.title) + "</h3><p>Factual side-by-side from each regulator\u2019s own sources.</p></a>" : "") + "</div>";
+      (S.biz.compare ? '<a class="card" href="#compare"><div class="meta"><span class="code">Compare</span></div><h3>' + esc(S.biz.compare.title) + "</h3><p>Hong Kong, Singapore and Dubai rules side by side, from each regulator\u2019s own documents. No ranking.</p></a>" : "") + "</div>";
     return h + footer();
   }
   function paintBz() {
@@ -392,17 +392,17 @@
   }
   function vCompare() {
     var c = S.biz.compare; if (!c) return notFound();
-    return '<article class="article"><p class="kicker">Comparison · factual, no ranking</p><h1 class="page-title">' + esc(c.title) + "</h1>" + renderMD(c.md) + '</article><p style="margin-top:1.5rem"><a href="#business">\u2190 Business and opportunities</a></p>' + footer();
+    return '<article class="article"><p class="kicker">Comparison · facts only, no ranking</p><h1 class="page-title">' + esc(c.title) + "</h1>" + renderMD(c.md) + '</article><p style="margin-top:1.5rem"><a href="#business">\u2190 Business and opportunities</a></p>' + footer();
   }
 
   function vHelp() {
     var rows = function (list) { return '<div class="tblwrap" tabindex="0" role="region" aria-label="Table (scrolls sideways)"><table><tbody>' + list.map(function (r) { return "<tr><th scope=\"row\">" + r[0] + "</th><td>" + r[1] + "</td></tr>"; }).join("") + "</tbody></table></div>"; };
     return '<article class="article"><p class="kicker">Help</p><h1 class="page-title">How to read this site</h1>' +
-      '<p class="lede">Every fact on this site comes from an official document and shows exactly where it comes from. The Business section also uses clearly marked estimates from named non-official sources. This page explains the labels.</p>' +
+      '<p class="lede">Every fact on this site comes from an official document and shows exactly where it comes from. The Business section also uses clearly marked figures from named non-official sources: industry estimates, company filings, international bodies and foreign regulators. This page explains the labels.</p>' +
       "<h2>The words that carry legal weight</h2>" + rows([["<b>must</b> / <b>required</b>", "The law or a binding rule requires it."], ["<b>should</b> / <b>expects</b>", "The regulator expects it. It is guidance rather than law."], ["<b>may</b>", "It is allowed, not required."], ["<b>proposes</b> / <b>would</b>", "A proposal. It is not law yet."], ["<b>stated target</b>", "A plan or date the government or a regulator has announced. It is not a forecast by this site."]]) +
-      "<h2>Status labels</h2>" + rows([[chip("In force"), "The rule applies now."], [chip("Issued, not yet in force"), "Published, but it starts later."], [chip("Consultation"), "The regulator is asking for views. Nothing is final."], [chip("Conclusions published"), "The consultation is finished and the final policy is set, but the law may not be made yet."], [chip("Bill"), "A draft law is before the Legislative Council (LegCo)."], [chip("Pilot"), "A trial with selected firms."], [chip("Stated target"), "An announced plan or date."], [chip("Superseded"), "Replaced by a newer document. Kept for history."], [chip("Past event"), "A past event or announcement, kept for background."]]) +
-      "<h2>Source buttons</h2>" + rows([['<span class="cite">HKMA 2026 \u00b7 para 11(n)</span>', "Tap to see the source: who published it, when, the exact paragraph, and a link to the official document."], ['<span class="cite ind industry">Estimate \u00b7 Citi 2025</span>', "A figure from a named non-official source, such as a bank or consultancy. Treat it as an estimate, not a fact. Used only in the Business section."], ['<span class="cite ind intl">Intl \u00b7 BIS 2025</span>', "An international official body, such as the Bank for International Settlements (BIS)."], ['<span class="cite ind filing">Filing \u00b7 OSL 2025</span>', "A company\u2019s own published results. Numbers only, with no comment on the company."], ['<span class="concept">concept</span>', "A plain explanation of how a business works in general. It is not a fact about Hong Kong."]]) +
-      "<h2>Analysis boxes</h2><p>In the Business section, a shaded box marked <b>Analysis \u2014 not official</b> gives a way to think about a question. It is not a forecast and not advice.</p>" +
+      "<h2>Status labels</h2>" + rows([[chip("In force"), "The rule applies now."], [chip("Issued, not yet in force"), "Published, but it starts later."], [chip("Consultation"), "The regulator is asking for views. Nothing is final."], [chip("Conclusions published"), "The consultation is finished and the final policy is set, but the law may not be made yet."], [chip("Bill"), "A draft law is before the Legislative Council (LegCo)."], [chip("Pilot"), "A trial with selected firms."], [chip("Exploratory"), "Regulators are studying the idea. No rule or live service yet."], [chip("Stated target"), "An announced plan or date."], [chip("Superseded"), "Replaced by a newer document. Kept for history."], [chip("Past event"), "A past event or announcement, kept for background."]]) +
+      "<h2>Source buttons</h2>" + rows([['<span class="cite">HKMA 2026 \u00b7 para 11(n)</span>', "Solid blue buttons are official Hong Kong sources. Tap one to see who published it, when, the exact paragraph, and a link to the official document."], ['<span class="cite ind industry">Estimate \u00b7 Citi 2025</span>', "A figure from a named non-official source, such as a bank or consultancy. Treat it as an estimate, not a fact. Used only in the Business section."], ['<span class="cite ind intl">Intl \u00b7 BIS 2025</span>', "A report from an international official body, such as the Bank for International Settlements (BIS). Not a Hong Kong source."], ['<span class="cite ind foreign">Foreign \u00b7 MAS 2024</span>', "A document from a regulator outside Hong Kong, such as Singapore\u2019s MAS or Dubai\u2019s VARA. Official where it was issued, but not a Hong Kong source. Used only in the Business section."], ['<span class="cite ind filing">Filing \u00b7 OSL 2025</span>', "Figures from a company\u2019s own published results. We quote the numbers only and do not comment on the company."], ['<span class="concept">concept</span>', "A plain explanation of how a business works in general. It is not a fact about Hong Kong."], ['<span class="concept">illustrative</span>', "A round, made-up number used to show how something works. It is not an estimate."]]) +
+      "<h2>Analysis boxes</h2><p>In the Business section, a shaded box marked <b>Analysis \u2014 not official</b> gives a way to think about a question. It is not a forecast and not advice. Each box asks one question, gives a way to think about it, lists what the answer depends on and the official signposts to watch, and ends by saying what it is not.</p>" +
       "<h2>Dates</h2><p>Everything reflects official publications up to " + ASOF + ". A scheduled update checks for new documents every weekday.</p></article>" + footer();
   }
 
@@ -424,7 +424,7 @@
       (s.w ? '<p><b>Why it matters to a bank:</b> ' + esc(s.w) + "</p>" : "") +
       (s.k.length ? "<ul>" + s.k.map(function (k) { return "<li>" + esc(k[0]) + (k[1] ? ' <span class="loc">(' + esc(k[1]) + ")</span>" : "") + "</li>"; }).join("") + "</ul>" : "") +
       (s.rg ? '<p class="small muted"><b>Where to look:</b> ' + rgHtml(s.rg) + "</p>" : "") +
-      (s.u ? '<a class="btn primary" href="' + esc(s.u) + '" target="_blank" rel="noopener">Open official document ↗</a>' : "") + "</div></details>";
+      (s.u ? '<a class="btn primary" href="' + esc(s.u) + '" target="_blank" rel="noopener">' + (s.cls ? "Open the source ↗" : "Open official document ↗") + '</a>' : "") + "</div></details>";
     return '<li class="doc" id="doc-' + s.id + '"><div class="row1"><span>' + esc(fmtDate(s.d)) + "</span><span>·</span><span>" + esc(s.p.join(" + ")) + '</span><span class="chip src">' + esc(s.ty) + "</span>" + chip(s.st) +
       (s.br === "direct" ? (/^In force/.test(s.st) ? '<span class="chip live">Binds banks</span>' : '<span class="chip src">About banks</span>') : "") + "</div>" +
       (s.u ? '<a class="ttl" href="' + esc(s.u) + '" target="_blank" rel="noopener">' + esc(s.t) + '<span class="ext">↗</span></a>' : '<span class="ttl">' + esc(s.t) + "</span>") + det + "</li>";
@@ -459,10 +459,10 @@
   }
   function vDocs() {
     DS = docState();
-    var h = '<div class="read"><p class="kicker">Documents</p><h1 class="page-title">All official documents</h1><p class="lede">Every HKMA, SFC and government document used to build this guide, newest first. Tap a title to open the official page or PDF. Tap \u201cSummary and key points\u201d for a plain-English summary.</p></div>';
+    var h = '<div class="read"><p class="kicker">Documents</p><h1 class="page-title">All official documents</h1><p class="lede">Every HKMA, SFC and government document used to build this guide, newest first. Tap a title to open the official page or PDF. Tap \u201cSummary and key points\u201d for a plain-English summary. Industry, company and foreign documents used in the Business section are hidden unless you tap \u201cNon-official sources\u201d.</p></div>';
     h += '<form class="filters" id="docf" onsubmit="return false">' +
       '<label class="wide">Search<input id="f-q" type="search" placeholder="Title, summary or topic" value="' + esc(DS.q) + '"></label>' +
-      '<div class="pubs" role="group" aria-label="Publisher">' + PUBS.map(function (p) { return '<button type="button" data-pub="' + p + '" aria-pressed="' + (DS.pubs.indexOf(p) >= 0) + '">' + (p === "Industry" ? "Industry &amp; foreign" : p) + "</button>"; }).join("") + "</div>" +
+      '<div class="pubs" role="group" aria-label="Publisher">' + PUBS.map(function (p) { return '<button type="button" data-pub="' + p + '" aria-pressed="' + (DS.pubs.indexOf(p) >= 0) + '">' + (p === "Industry" ? "Non-official sources" : p) + "</button>"; }).join("") + "</div>" +
       '<details class="fx" id="fx"' + (advCount() || window.innerWidth >= 760 ? " open" : "") + '><summary>More filters' + (advCount() ? " (" + advCount() + " on)" : "") + '</summary><div class="fgrid">' +
       '<label>From<input id="f-from" type="date" value="' + esc(DS.from) + '"></label>' +
       '<label>To<input id="f-to" type="date" value="' + esc(DS.to) + '"></label>' +

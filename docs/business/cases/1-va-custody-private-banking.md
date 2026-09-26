@@ -13,7 +13,7 @@ You lead digital-asset compliance. The chief executive asks you to bring three d
 - **You**: head of compliance, digital assets.
 - **Ines Quaymark**: chief executive (CEO). She wants a clear yes or no by year end.
 - **Tobias Lanternwick**: chief financial officer (CFO). He owns the profit and loss account (P&L), the record of income and costs.
-- **Priya Harbourfen**: chief risk officer (CRO). She owns the bank's risk appetite.
+- **Priya Harbourfen**: chief risk officer (CRO). She sets how much risk the bank is willing to take (its risk appetite).
 - **Declan Tidemere**: head of private banking. His clients are asking for the service.
 - **Kestrel Custody Tech**: a fictional vendor selling key-management systems.
 - **The supervisor**: the bank's Hong Kong Monetary Authority (HKMA) case team. It acts only as the HKMA's published expectations describe.
@@ -41,10 +41,10 @@ Kestrel offers a full key-management system with hardware in Hong Kong. Declan p
 
 ### Discussion notes
 
-- **Trade-offs.** Option A gives control of the client experience and the key controls, at a high fixed cost. Option B is faster and uses less capital spending, but adds a dependency on another firm. Option C avoids new custody risk and leaves client demand unmet.
+- **Trade-offs.** Option A gives control of the client experience and the key controls, at a high fixed cost. Option B is faster and needs less upfront spending, but makes the bank depend on another firm. Option C avoids new custody risk and leaves client demand unmet.
 - **What the rules require.** Delegation of VA custody is limited to three kinds of firm [S:ce05e67bcdce, para 14]. The bank keeps ultimate responsibility for anything it delegates [S:ce05e67bcdce, para 19]. Before choosing a delegate, the bank is expected to check its finances, skills, technology and ability to meet the standards [S:ce05e67bcdce, para 15]. Under the planned licence, faster approval is to go to banks that the HKMA has already assessed for custody and that already provide it [S:f41a543388bc, para 51].
-- **What a strong answer covers.** It compares the fixed cost of Option A with the fee paid to a delegate in Option B. It asks who holds the keys in each option, since the planned licence turns on key safekeeping. It sets out the timing risk for Option C if the licence starts before the bank is ready.
-- **Traps.** Treating delegation as handing over the risk. Assuming existing custodians are treated as licensed while they apply. The Government and the SFC do not plan to treat them that way [S:f41a543388bc, para 48]. Forgetting that providers who skip the pre-application step may face business disruption [S:f41a543388bc, para 52].
+- **What a strong answer covers.** It compares the fixed cost of Option A with the fee paid to a delegate in Option B. It asks who holds the keys in each option, because the planned licence depends on who safekeeps client keys. It sets out the timing risk for Option C if the licence starts before the bank is ready.
+- **Traps.** Treating delegation as handing over the risk. Assuming existing custodians are treated as licensed while they apply. The Government and the SFC do not plan to treat them that way [S:f41a543388bc, para 48]. Forgetting that providers who do not contact the regulators before applying may face business disruption [S:f41a543388bc, para 52].
 
 ## Act 2: What to charge
 
@@ -58,8 +58,8 @@ Tobias asks for a pricing model before any spending. Declan fears that a visible
 
 ### Discussion notes
 
-- **Trade-offs.** Option A matches income to the value held and to the cost of safekeeping. Option B makes custody a feature, not a profit line, and depends on other income from the same clients. Option C keeps the headline fee low and charges for the costliest actions.
-- **What the rules require.** Fees and costs of custody belong in the client disclosure [S:ce05e67bcdce, para 20]. Before a client buys VA-related products, such as VA funds, the bank should check the client's knowledge of virtual assets [S:8a016a912528, para 6.2]. Institutional and qualified corporate professional investors are exempt from this test [S:8a016a912528, para 6.2]. Each regulated activity needs at least two executive officers approved in writing by the HKMA [S:8934af8cc884, para 2.2.4].
+- **Trade-offs.** Option A matches income to the value held and to the cost of safekeeping. Option B makes custody a feature, not a profit line, and depends on other income from the same clients. Option C keeps the advertised fee low and charges for the actions that cost the bank most.
+- **What the rules require.** Fees and costs of custody belong in the client disclosure [S:ce05e67bcdce, para 20]. Before a client buys VA-related products, such as VA funds, the bank should check the client's knowledge of virtual assets [S:8a016a912528, para 6.2]. Institutional and qualified corporate professional investors are exempt from this test [S:8a016a912528, para 6.2]. Each regulated activity needs at least two executive officers (senior staff who supervise the activity), approved in writing by the HKMA [S:8934af8cc884, para 2.2.4].
 - **What a strong answer covers.** It sets the fee against a full cost base: keys, monitoring, audit and insurance. It tests Option B by listing the other income that custody makes possible. It checks whether charges in Option C are clear enough for clients to compare.
 - **Traps.** Pricing only against fund fees. China Asset Management (Hong Kong) published a key facts statement in April 2026 for its Hong Kong ether fund [I:ee50e4efff6f, PDF p.11]. It reported that the fund pays up to 1% of fund value a year for custody and administration together [I:ee50e4efff6f, PDF p.11]. That fee covers fund services as well, so it is not a private-bank price [I:ee50e4efff6f, PDF p.11]. Another trap is ignoring the round-the-clock security monitoring the HKMA expects [S:ce05e67bcdce, para 23].
 
@@ -76,19 +76,19 @@ Priya asks what happens if a hacker drains a wallet. Tobias asks how much capita
 ### Discussion notes
 
 - **Trade-offs.** Option A moves part of the loss to an insurer, for a yearly premium. Option B avoids premiums but keeps the whole loss with the bank. Option C spends premiums where the risk of theft is higher.
-- **What the rules require.** The bank is expected to be liable for losses it causes and to have adequate financial resources, which may include insurance [S:ce05e67bcdce, para 11(n)]. That paragraph sets no fixed share of cover [S:ce05e67bcdce, para 11(n)]. Planned capital floors for new custodians leave banks out, because HKMA capital rules already apply [S:f41a543388bc, paras 41-42]. Rules applying the Basel standard for banks' cryptoasset exposures have been in force in Hong Kong since 1 January 2026 [S:100b982aadca, p.90]. They amended the banking capital, disclosure and exposure-limits rules [S:100b982aadca, p.90].
-- **What a strong answer covers.** It separates client assets from the bank's own positions, because custody standards cover assets held for clients, not the bank's own [S:ed61d7c335e7, fn 1, p.1]. It checks whether any bank-owned VA position arises, such as for settlement. It explains the cover levels to clients, as the disclosure standard expects [S:ce05e67bcdce, para 20].
+- **What the rules require.** The bank is expected to be liable for losses it causes and to have adequate financial resources, which may include insurance [S:ce05e67bcdce, para 11(n)]. That paragraph sets no fixed share of cover [S:ce05e67bcdce, para 11(n)]. The planned minimum capital for new custodians does not apply to banks, because HKMA capital rules already apply [S:f41a543388bc, paras 41-42]. Rules applying the Basel standard (the global bank capital standard) for banks' cryptoasset exposures have been in force in Hong Kong since 1 January 2026 [S:100b982aadca, p.90]. They amended the banking capital, disclosure and exposure-limits rules [S:100b982aadca, p.90].
+- **What a strong answer covers.** It separates client assets from the bank's own positions, because custody standards cover assets held for clients, not the bank's own [S:ed61d7c335e7, fn 1, p.1]. It checks whether the bank ends up holding VAs of its own, for example while settling trades. It explains the cover levels to clients, as the disclosure standard expects [S:ce05e67bcdce, para 20].
 - **Traps.** Copying a fund's cover level without checking the source. A Bosera Asset Management (International) prospectus for two Hong Kong funds, from March 2026, reported the cover its sub-custodian must keep [I:d81073907a14, PDF p.118]. The cover is 50% of client virtual assets kept offline (cold) and 100% of those held online or elsewhere [I:d81073907a14, PDF p.118]. That is one firm's contract, not an HKMA standard.
 
 ## Exhibit B: illustrative P&L
 
-Year-three view of Harbourlight's custody service under each Act 1 option, in HK$ millions. The numbers are invented to show the shape of each P&L. They are not estimates of any market or firm.
+Harbourlight's custody service in its third year, under each Act 1 option, in HK$ millions. The numbers are invented to show the shape of each P&L. They are not estimates of any market or firm. Net contribution is income minus the costs of running the service.
 
 | Line (HK$ million, year 3) | A: Build | B: Delegate | C: Wait (ETFs only) |
 |---|---|---|---|
 | Custody fees from clients | 10 | 10 | 0 |
 | Other income from the same clients | 5 | 5 | 2 |
-| Fee paid to delegate custodian | 0 | -5 | 0 |
+| Fee paid to the delegated custodian | 0 | -5 | 0 |
 | Technology, keys and monitoring | -6 | -1 | 0 |
 | Insurance and loss provisions | -2 | -1 | 0 |
 | Compliance and control staff | -3 | -2 | -1 |
@@ -98,11 +98,11 @@ Year-three view of Harbourlight's custody service under each Act 1 option, in HK
 
 ## What this case teaches
 
-- Custody is a control business first. In Exhibit B, most costs come from key safety, monitoring and loss cover.
+- Custody is mainly about controls. In Exhibit B, most costs come from key safety, monitoring and loss cover.
 - Delegation changes costs, not responsibility. The bank still answers for the delegate [S:ce05e67bcdce, para 19].
-- Pricing either covers the full cost base or rests on other income from the same clients.
+- A custody fee either covers the full cost of the service, or the bank relies on other income from the same clients.
 - Loss cover is a choice about who bears a hack: the insurer, the bank or both.
-- The planned custody licence shapes timing for every option [S:f41a543388bc, paras 35(b), 48].
+- The timing of the planned custody licence affects every option [S:f41a543388bc, paras 35(b), 48].
 
 ## Modules to revisit
 

@@ -21,7 +21,7 @@ In this line a bank lends against digital or tokenised assets, or helps clients 
 - Values VA collateral at prices on the platform that executes the client's orders, as the HKMA generally expects [S:e64b7b0267b2, item (6), p.4].
 - Keeps pledged virtual assets (VAs) untouched. The bank should not reuse or repledge VA collateral, except to enforce it on default [S:e64b7b0267b2, item (7)(c), p.5].
 - Holds or lends against tokenised traditional assets, such as tokenised bonds. (concept) In the banking book, these Group 1a (tokenised traditional) exposures generally follow the capital rules for the underlying asset [S:5d0c13e09312, para 8.7.1].
-- Meets tokens used as margin in the market. The SFC's February 2026 high-level framework covers perpetual contracts (futures with no expiry date) on trading platforms. It says their margin should be fiat money, or stablecoins or tokenised deposits regulated by the HKMA [S:49f642bdee28, Margin arrangements section].
+- Handles tokens used as margin (collateral for trading positions). The SFC's February 2026 high-level framework covers perpetual contracts (futures with no expiry date) on trading platforms. It says their margin should be fiat money, or stablecoins or tokenised deposits regulated by the HKMA [S:49f642bdee28, Margin arrangements section].
 
 ## Revenue levers
 
@@ -59,9 +59,9 @@ In this line a bank lends against digital or tokenised assets, or helps clients 
 > **Question:** Where does tokenised collateral create value for a bank: in new lending, or in cheaper use of assets it already holds?
 > **How to think about it:**
 > - Lending view: VA-backed loans carry no capital relief for the collateral [S:e64b7b0267b2, item (9), p.5]. The income then has to cover the full capital charge on an unsecured loan.
-> - Balance-sheet view: tokenised high-quality assets could move faster between desks and counterparties. In this view, value would come from smaller idle buffers, not from new fees.
+> - Balance-sheet view: tokenised high-quality assets could move faster between the bank's own teams and its counterparties. In this view, value would come from holding less spare collateral, not from new fees.
 > - Service view: holding and valuing collateral for others earns fees without the bank lending its own money.
-> **What it depends on:** test design; counterparty acceptance of tokens; legal certainty on pledges; capital treatment.
+> **What it depends on:** how the tokenised bill tests are designed; whether counterparties accept tokens; legal certainty on pledges; capital treatment.
 > **Official signposts:** tokenised Exchange Fund Bill tests [S:ef3648ff1610, para 35(ii)]; the HKEX warehouse-receipt pilot [S:ef3648ff1610, para 46(iv)]; the April 2026 capital-rule proposal on cryptoassets and cash items [S:1e9b351e81e7, Item 45].
 > **What this is not:** Not a forecast, not advice, and not the regulator's view.
 

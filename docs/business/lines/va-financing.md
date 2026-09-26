@@ -35,7 +35,7 @@ A bank lends to its margin clients so they can buy virtual assets, and may accep
 - The haircut on bitcoin and ether collateral should be 60% or more. A haircut is a cut to the collateral's value for lending. [S:e64b7b0267b2, item (4) and fn 5, p.4] So HK$100 of bitcoin counts as no more than HK$40 of collateral value. [S:e64b7b0267b2, fn 5, p.4]
 - Loans backed only by virtual assets must be treated as clean (unsecured) loans. This is because the Banking (Capital) Rules do not recognise VA collateral. [S:e64b7b0267b2, item (9), p.5]
 - The bank should not repledge or reuse VA collateral, except to enforce it when a client defaults. [S:e64b7b0267b2, item (7)(c), p.5] Repledging means a lender reuses collateral to raise its own funding. (concept)
-- If the bank counts a client's VA holdings as wealth, its review should cover seven risk factors. These include price gaps and close links with share prices under stress. [S:e64b7b0267b2, item (3)(a)-(g), p.3]
+- If the bank counts a client's VA holdings as wealth, its review should cover seven risk factors. These include sudden price gaps, and prices moving closely with share prices in stressed markets. [S:e64b7b0267b2, item (3)(a)-(g), p.3]
 - The bank should track VA collateral prices in real time. It should also keep a plan for a platform outage. [S:e64b7b0267b2, items (5)(b) and (6), p.4]
 - HKMA liquidity rules treat cash loans secured on cryptoassets in line with similar transactions. [S:69600121310a, Annex 3, para 10(b)]
 

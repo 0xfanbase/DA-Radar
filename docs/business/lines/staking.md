@@ -1,6 +1,6 @@
 # Staking services
 
-A bank that holds virtual assets (VAs) for clients may commit them to a blockchain's validation process and pass the returns to those clients. [S:4641e6c404d2, p.1]
+A bank that holds virtual assets (VAs) for clients may lock them up to help confirm transactions on a blockchain, and pass the rewards to those clients. [S:4641e6c404d2, p.1]
 
 ## At a glance
 
@@ -43,7 +43,7 @@ A bank that holds virtual assets (VAs) for clients may commit them to a blockcha
 ## Official signals
 
 - In April 2025 the SFC set out staking guidance for platforms and funds under the Products pillar of its roadmap. [S:36753b22e10a, para 2]
-- That roadmap (ASPIRe) listed staking as something to consider under clear custody and operating rules. [S:d461c2db6af2, Pillar P, Initiative 8]
+- That SFC roadmap, called ASPIRe, listed staking as something to consider under clear custody and operating rules. [S:d461c2db6af2, Pillar P, Initiative 8]
 - In September 2025 the SFC and HKMA said they are now prepared to let intermediaries offer staking. [S:b79266f3da51, para 4]
 - Intermediaries should tell the regulators before they offer staking for the first time. [S:b79266f3da51, para 10(c)]
 - The HKMA's May 2026 custody guidance asks banks to take account of the SFC's staking terms for platforms. [S:ce05e67bcdce, para 26]
@@ -62,9 +62,9 @@ A bank that holds virtual assets (VAs) for clients may commit them to a blockcha
 > **Question:** Is staking a profit line in its own right, or a feature that keeps custody clients?
 > **How to think about it:**
 > - Staking income is roughly staked assets times the network reward rate times the bank's share. (concept)
-> - Against that sit validator fees, key-control systems, disclosure work and loss handling.
-> - A thin share on a large custody book can matter more than a wide share on a small one.
-> **What it depends on:** network reward rates; token prices; client appetite; the share the bank keeps; who bears slashing losses; vendor costs.
+> - Costs include validator fees, key-control systems, disclosure work and handling losses.
+> - A small share of rewards on a large pool of custody assets can earn more than a large share on a small pool.
+> **What it depends on:** network reward rates; token prices; client interest; the share the bank keeps; who bears slashing losses; vendor costs.
 > **Official signposts:**
 > - The SFC staking terms that banks take account of. [S:ce05e67bcdce, para 26]
 > - Notice to regulators before a firm first offers staking. [S:b79266f3da51, para 10(c)]

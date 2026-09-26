@@ -17,17 +17,17 @@ A bank can advise clients on virtual assets (VAs) and manage funds or client acc
 ## What the bank does
 
 - Intermediaries, including banks, should give VA advice only to clients of their securities dealing (Type 1) or securities advice (Type 4) business. [S:8a016a912528, para 26] This limit does not apply to a bank that advises only on stablecoins licensed by the Hong Kong Monetary Authority (HKMA). [S:a0bd48559762, para (7), p.6]
-- Before recommending a VA to a retail client, the adviser should check that it is a large, liquid token. [S:8a016a912528, para 28(a)] That means it sits in at least two acceptable indices from two different index providers. [S:8a016a912528, para 28(a)]
+- Before recommending a VA to a retail client, the adviser should check that it is a large, liquid token. [S:8a016a912528, para 28(a)] That means it is in at least two acceptable indices (published lists that track major tokens) from two different index providers. [S:8a016a912528, para 28(a)]
 - SFC terms for VA fund managers apply in two cases. A fund states a VA aim, or it plans to hold at least 10% of its total assets in VAs. Total assets here means gross asset value (GAV). [S:40148cf96f41, Part I, de minimis threshold, p.3]
-- For retail discretionary accounts, the manager should trade only large-cap VAs. [S:40148cf96f41, Schedule 2, para 2] Stablecoins issued by HKMA licensees are exempt from that liquidity test. [S:40148cf96f41, Schedule 2, para 2]
-- A registered institution (RI) is a bank registered with the SFC. An RI whose portfolios hold no VAs other than HKMA-licensed stablecoins needs no asset management registration for that reason. [S:a0bd48559762, para (6), p.5] If it meets the 10% test, the SFC's VA manager terms still apply. [S:a0bd48559762, para (6), p.5]
+- For retail discretionary accounts (where the manager decides the trades), the manager should trade only large-cap VAs (tokens with a large total market value). [S:40148cf96f41, Schedule 2, para 2] Stablecoins issued by HKMA licensees are exempt from that liquidity test. [S:40148cf96f41, Schedule 2, para 2]
+- A registered institution (RI) is a bank registered with the SFC. Holding HKMA-licensed stablecoins, and no other VAs, in the portfolios it manages does not on its own make an RI need an asset management registration. [S:a0bd48559762, para (6), p.5] If a portfolio meets the 10% test above, the SFC's VA manager terms still apply. [S:a0bd48559762, para (6), p.5]
 - Under the proposed new regimes, only banks could register with the SFC instead of taking a licence. [S:6186c01c6649, fns 9-10]
 
 ## Revenue levers
 
 - A management fee is a yearly charge on the value of assets under management (AUM). (concept)
 - A performance fee is a share of gains above an agreed level. (concept)
-- An advice fee is paid by the client. A commission or rebate is paid by the product provider, and can create a conflict. (concept)
+- An advice fee is paid by the client. A commission or rebate is paid by the product provider, and can create a conflict of interest. (concept)
 - For HKMA-licensed stablecoins, a bank should base advice on thorough analysis. [S:a0bd48559762, para (8), p.6] It should not use commission rebates as the main reason to recommend one. [S:a0bd48559762, para (8), p.6]
 - A licensed VA manager that deals in VAs only to run its portfolios would not need a separate VA dealing licence. [S:01c5c5c4045f, para 38] For example, it could accept VAs as fund subscriptions and convert them. [S:01c5c5c4045f, para 38]
 
@@ -62,8 +62,8 @@ A bank can advise clients on virtual assets (VAs) and manage funds or client acc
 > **Question:** Is VA advice and management a new fee line, or a way to keep private-banking wealth inside the bank?
 > **How to think about it:**
 > - Fee income is roughly AUM times the fee rate. AUM moves with VA prices, so income moves too.
-> - Against that sit registration, independent custody, staff with VA skills and extra suitability checks.
-> - Once the new regime applies, even a small VA part of a mixed portfolio brings the VA rules into play.
+> - Costs include registration, independent custody, staff with VA skills and extra suitability checks.
+> - Once the new regime applies, the VA rules cover even a small VA part of a mixed portfolio.
 > - A question to test: do clients who want VA exposure move assets elsewhere when the bank offers none?
 > **What it depends on:** client demand; VA prices; the start date; the speed of approval; custody costs.
 > **Official signposts:**

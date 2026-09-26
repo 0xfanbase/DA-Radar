@@ -6,7 +6,7 @@ In this line a bank arranges, sells, holds or invests in bonds recorded on distr
 
 | Item | Detail |
 |---|---|
-| Bank role | Arranger; distributor; investor custodian; investor |
+| Bank role | Arranger; distributor; custodian for investors; investor |
 | Client segments | Corporate, institutional, private banking |
 | Value chain | Issue, Distribute, Hold, Settle and pay |
 | Regulatory gate | Existing securities licences and offering rules apply to digital bonds [S:a0b44be27c40, para 23, p.11]. A bank should notify the Securities and Futures Commission (SFC) and the Hong Kong Monetary Authority (HKMA) in advance [S:a9aa06fbcc12, para 35 and fn 8] |
@@ -18,7 +18,7 @@ In this line a bank arranges, sells, holds or invests in bonds recorded on distr
 
 - Arranges issues. For the HKMA's Digital Bond Grant Scheme (DBGS), at least half the lead arrangers need to be recognised arrangers [S:5a0563de8142, s.2, p.3]. These are generally arrangers with substantial Hong Kong bond operations [S:5a0563de8142, fn 4, p.3].
 - Sells to investors. The Government's first tokenised green bond was sold by a group of four banks [S:a0841967c871, para 2]. Two of them also acted as custodians for investors [S:a0841967c871, para 2].
-- Holds bonds for clients. In Project Evergreen, the Government's 2023 tokenised bond, only custodians that were members of the Central Moneymarkets Unit (CMU), the HKMA's bond settlement system, could open token accounts [S:a0b44be27c40, para 45, p.16]. Other investors held through those custodians [S:a0b44be27c40, para 45, p.16].
+- Holds bonds for clients. Project Evergreen was the Government's 2023 tokenised bond. In it, only custodians that were members of the Central Moneymarkets Unit (CMU), the HKMA's bond settlement system, could open token accounts [S:a0b44be27c40, para 45, p.16]. Other investors held through those custodians [S:a0b44be27c40, para 45, p.16].
 - Checks the product. The SFC reminds intermediaries to do due diligence on the issuer and on the vendors that run the token set-up [S:a9aa06fbcc12, para 17].
 - Judges complexity. The SFC expects an intermediary to judge whether a tokenised bond is complex by looking at the plain bond underneath [S:a9aa06fbcc12, para 24].
 - Sells beyond professional investors. The SFC sees no need for a blanket professional-investor-only limit on tokenised securities [S:a9aa06fbcc12, para 26]. Public offering rules still apply [S:a9aa06fbcc12, para 27].
@@ -31,7 +31,7 @@ In this line a bank arranges, sells, holds or invests in bonds recorded on distr
 
 ## Cost and capital drivers
 
-- Settlement finality: trades settled through the CMU are final by law, so a participant's insolvency cannot reverse them [S:a0b44be27c40, para 36, p.14]. Another ledger platform gets this only if the HKMA designates it [S:a0b44be27c40, para 37, p.15]. Otherwise parties rely on contract [S:a0b44be27c40, para 38, p.15].
+- Settlement finality: trades settled through the CMU are final by law, so a participant's insolvency cannot reverse them [S:a0b44be27c40, para 36, p.14]. Another ledger platform gets this only if the HKMA designates it [S:a0b44be27c40, para 37, p.15]. Otherwise the parties rely on their contracts [S:a0b44be27c40, para 38, p.15].
 - Grant conditions: among other things, the full grant needs an issue of at least HK$1 billion and five or more unrelated investors [S:5a0563de8142, s.3, p.4]. It also needs a listing on the Hong Kong stock exchange or an SFC-licensed virtual asset trading platform [S:5a0563de8142, s.3, p.4].
 - Technology: the bank builds its own ledger links or pays a platform provider (concept).
 - Risk controls: the SFC expects intermediaries to manage ownership and technology risks on top of normal bond rules [S:a9aa06fbcc12, para 8].
@@ -54,13 +54,13 @@ In this line a bank arranges, sells, holds or invests in bonds recorded on distr
 ## Analysis
 
 > **Analysis — not official**
-> **Question:** Is a digital bond desk a new fee pool, or the same arranging and custody fees on new rails?
+> **Question:** Is a digital bond desk a new source of fees, or the same arranging and custody fees earned through new technology?
 > **How to think about it:**
-> - Same-fee view: the issuer pays for arranging, selling and custody as with a plain bond; the ledger changes the plumbing, not the price.
-> - Share view: the grant's Hong Kong test counts recognised arrangers [S:5a0563de8142, s.2, p.3]. Do mandates then go mainly to banks already on that list and already CMU custodians?
+> - Same-fee view: the issuer pays for arranging, selling and custody as with a plain bond. The ledger changes how the bond is recorded and settled, not the price.
+> - Share view: the grant's Hong Kong test counts recognised arrangers [S:5a0563de8142, s.2, p.3]. Do arranging jobs then go mainly to banks already on that list that are also CMU custodians?
 > - Cost view: faster settlement and fewer manual steps can lower the bank's own running cost per issue.
 > - Example (illustrative): if a desk arranges 4 issues a year at an unchanged fee rate, any gain comes from less staff time per deal.
-> **What it depends on:** the number of issuers beyond the public sector; grant take-up; investor demand to trade after issue; platform and custody fees.
+> **What it depends on:** the number of issuers beyond the public sector; how many issuers use the grant; investor demand to trade after issue; platform and custody fees.
 > **Official signposts:** regular Government issuance [S:654fa5eba8cf, para 97]; the CMU OmniClear platform [S:ef3648ff1610, para 35(iv)]; the second-phase legal review [S:279f10054c6e, Next phase section].
 > **What this is not:** Not a forecast, not advice, and not the regulator's view.
 

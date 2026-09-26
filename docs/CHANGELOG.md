@@ -2,6 +2,12 @@
 
 Newest first. Each entry is written by the update routine or by hand when the content changes.
 
+## 26 Sep 2026 (reader test)
+- A reader test of the Business section, done as a busy compliance head reading on a phone. Metaphors and vague lines were replaced, and about 20 more terms are explained on first use. No fact changed.
+- Clearer labels: the "Intl" button now reads "International", and the Documents toggle is now "Non-official sources". Each non-official source now says what kind it is: a foreign regulator, a company filing, an international body or an industry estimate. The help page now also explains Foreign, (illustrative) and Exploratory.
+- Timeline, 9 Jul 2026: the SFC's phishing-resistant login measures are now described as a 12-month deadline, citing both the press release and the circular. Module D1 and the glossary now show the arithmetic behind "capital equal to the whole exposure": 1,250% × the 8% minimum ratio = 100%.
+- Analysis boxes: each labelled part now starts on its own line.
+
 ## 26 Sep 2026 (Business and opportunities)
 - New **Business** tab and **Part F: Business and opportunities**, to help you think commercially and prepare for a COO role:
   - 16 business lines open to a Hong Kong bank (custody, distribution, dealing, financing, staking, tokenised deposits, stablecoin roles, banking the industry, digital bonds, tokenised funds, ETF roles, collateral, trade finance, cross-border payments, advice and management, infrastructure). Each shows the bank's role, who pays, cost and capital drivers, the regulatory gate and its status, official signals and industry benchmarks. Filter by value-chain stage and client segment.

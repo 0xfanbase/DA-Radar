@@ -1,6 +1,6 @@
 # F5b Running the business: operations and control
 
-This module is about the engine room: people, vendors, systems, incidents and exits. After reading, you can sketch a target operating model for a digital-asset line. A target operating model is the planned mix of teams, processes, systems and partners that delivers a service. You can also tie each part of it to the official rule that shapes it. The Hong Kong Monetary Authority (HKMA) supervises banks. The Securities and Futures Commission (SFC) sets conduct rules for securities and virtual-asset (VA) business.
+This module is about day-to-day running: people, vendors, systems, incidents and exits. After reading, you can sketch a target operating model for a digital-asset line. A target operating model is the planned mix of teams, processes, systems and partners that delivers a service. You can also tie each part of it to the official rule that shapes it. The Hong Kong Monetary Authority (HKMA) supervises banks. The Securities and Futures Commission (SFC) sets conduct rules for securities and virtual-asset (VA) business.
 
 ## In 60 seconds
 
@@ -33,7 +33,7 @@ Exits need planning. An RI must give at least seven business days' notice before
 - The HKMA has an outsourcing module in its Supervisory Policy Manual (SPM). It expects digital banks to discuss material outsourcing in advance and show they meet that module. [S:5422156398b3, para 23]
 - For outsourced distributed ledger technology (DLT) work, an HKMA study suggests vetting vendors at every stage and lining up backup vendors. [S:e0fd558b3dbc, Section 4.2.4, item 1, p.48] The study is research, not a rule.
 - A licensed stablecoin issuer should notify the HKMA promptly before starting a material third-party arrangement. [S:240be6833157, para 6.6.11] Examples include reserve custody, coin distribution and critical technology services. [S:240be6833157, para 6.6.11]
-- The SFC expects its licensed firms to strengthen oversight of third-party providers against cyberattacks that use artificial intelligence. [S:a4929c8f9f3e, para 13] This reaches banks through any SFC-licensed firm in their group.
+- The SFC expects its licensed firms to strengthen oversight of third-party providers against cyberattacks that use artificial intelligence. [S:a4929c8f9f3e, para 13] This affects a bank if its group includes an SFC-licensed firm.
 
 **24/7 resilience**
 - A custody bank should test system changes before deployment. [S:ce05e67bcdce, para 23] Its monitoring should cover vendors, blockchain protocols, encryption and common software libraries. [S:ce05e67bcdce, para 24]
@@ -101,19 +101,19 @@ Exits need planning. An RI must give at least seven business days' notice before
 > - For each, who holds the keys and who can move assets? Outsourcing of VA custody is, as a general principle, limited to certain regulated firms [S:ce05e67bcdce, para 14].
 > - What does oversight cost? It includes provider reviews, rehearsals and skilled monitoring staff [S:ce05e67bcdce, paras 15, 17].
 > - What does exit cost? That covers moving client assets if the provider fails or the contract ends.
-> - A round example: if shift cover needs six people per role (illustrative), fixed cost dominates at low volume.
-> **What it depends on:** client balances; hours clients trade; available talent; provider quality and concentration; final custodian rules.
-> **Official signposts:** custodian regime staff licensing [S:f41a543388bc, para 25]; EnsembleTX 24/7 operation [S:ef3648ff1610, para 50]; HKMA expectations for 24/7 security monitoring [S:ce05e67bcdce, para 23].
+> - A round example: if shift cover needs six people per role (illustrative), fixed cost is most of the total at low volume.
+> **What it depends on:** client balances; the hours when clients trade; available talent; provider quality and concentration; final custodian rules.
+> **Official signposts:** licensing of key staff under the custodian regime [S:f41a543388bc, para 25]; EnsembleTX 24/7 operation [S:ef3648ff1610, para 50]; HKMA expectations for 24/7 security monitoring [S:ce05e67bcdce, para 23].
 > **What this is not:** Not a forecast, not advice, and not the regulator's view.
 
 > **Analysis — not official**
 > **Question:** What could a one-page board report for a digital-asset line show?
 > **How to think about it:**
 > - Results: client balances, revenue, contribution and capital used.
-> - Risk: incidents by severity [S:ce05e67bcdce, para 10], reconciliation breaks, open audit points, vendor issues.
+> - Risk: incidents by severity [S:ce05e67bcdce, para 10], reconciliation breaks (records that do not match), open audit points, vendor issues.
 > - Readiness: continuity drill results [S:ce05e67bcdce, para 5], staff training [S:ce05e67bcdce, para 3], regulatory notices due.
 > - Balance: pair each profit measure with a control measure, in line with HKMA views on appraisals [S:7e7494d80711, para 4.1.7].
-> **What it depends on:** the line's size; the board's risk appetite; data quality; how often the board meets.
+> **What it depends on:** the line's size; how much risk the board accepts; data quality; how often the board meets.
 > **Official signposts:** the board plan circular of 9 March 2026 [S:3ec5b269b5dc, letter body, p.2]; board understanding of crypto risk [S:349a543ae2f0, para 4.2.8].
 > **What this is not:** Not a forecast, not advice, and not the regulator's view.
 

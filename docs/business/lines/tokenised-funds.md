@@ -36,7 +36,7 @@ In this line a bank sells, trades, settles or holds fund units kept as tokens on
 - Risk disclosure: they should explain liquidity and price-gap risks and get client confirmation [S:a64e364fd912, para 20(c)].
 - Notifications: a bank planning over-the-counter (off-platform) secondary trading should notify and discuss its plan with the SFC before it starts [S:a64e364fd912, para 27]. It should also notify the HKMA [S:a64e364fd912, fn 13].
 - Product oversight: the fund manager stays responsible for the token set-up, even if it outsources parts [S:58ea8520974d, para 10]. It should not use public blockchains that anyone can join without extra controls [S:58ea8520974d, para 13].
-- Systems: linking token wallets to fund records, payment rails and client reports is a fixed build cost (concept).
+- Systems: linking token wallets to fund records, payment systems and client reports is a fixed build cost (concept).
 
 ## Official signals
 
@@ -58,9 +58,9 @@ In this line a bank sells, trades, settles or holds fund units kept as tokens on
 > **Analysis — not official**
 > **Question:** Is tokenised MMF work a distribution business, or a way to win settlement cash and deposits?
 > **How to think about it:**
-> - Distribution view: fee share on the fund, as with ordinary units, plus brokerage on platform trades.
+> - Distribution view: the bank gets a share of the fund's fees, as with ordinary units, plus brokerage on platform trades.
 > - Settlement view: each subscription and redemption moves cash; tokenised deposits can keep that cash inside the bank.
-> - Cost view: NAV feeds, price-gap warnings and client confirmations are fixed costs spread over trading volume.
+> - Cost view: NAV price feeds, price-gap warnings and client confirmations are fixed costs spread over trading volume.
 > - Example (illustrative): if the same client moves HK$10 million a month through the fund, the settlement cash can matter more than the fee share.
 > **What it depends on:** growth of tokenised fund assets; whether stablecoins or tokenised deposits settle the trades; secondary trading volumes; fee sharing with fund managers.
 > **Official signposts:** the SFC's review before widening the product range [S:bbd10edd41cf, para 6]; stablecoin settlement of tokenised MMFs [S:ef3648ff1610, para 49(iii)]; EnsembleTX round-the-clock operation [S:ef3648ff1610, para 50].

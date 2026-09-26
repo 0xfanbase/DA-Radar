@@ -26,7 +26,7 @@ A bank can record customer deposits as tokens on a shared digital ledger and use
 ## Revenue levers
 
 - Deposits fund a bank's lending and investing. The gap between what the bank earns on that money and what it pays depositors is its net interest margin. (concept)
-- Corporate clients can pay fees for services built on tokens, such as automatic sweeps and payments that run at set times. (concept)
+- Corporate clients can pay fees for services built on tokens, such as automatic sweeps (moving cash between accounts by set rules) and payments that run at set times. (concept)
 - Tokenised deposits can pay for tokenised fund trades, which is an initial EnsembleTX focus. [S:8b67e8dc510f, para 2]
 - The Securities and Futures Commission (SFC) has set out a pilot for 24/7 (round-the-clock) secondary trading of tokenised products. [S:bbd10edd41cf, para 4] The SFC said trading could use regulated stablecoins and tokenised deposits. [S:bbd10edd41cf, para 4]
 - In February 2026 the SFC set out a high-level framework for platforms to offer perpetual contracts (futures with no expiry date). [S:49f642bdee28, Margin arrangements section] It says margin should be cash, or stablecoins or tokenised deposits regulated by the HKMA. [S:49f642bdee28, Margin arrangements section]
@@ -34,7 +34,7 @@ A bank can record customer deposits as tokens on a shared digital ledger and use
 ## Cost and capital drivers
 
 - The HKMA's liquidity guidance lets a bank that must meet the liquidity coverage ratio (LCR) treat qualifying tokens it issues as deposits or unsecured funding. [S:69600121310a, Annex 3, para 4]
-- The LCR checks that a bank holds enough easy-to-sell assets to meet cash outflows in a short stress. (concept)
+- The LCR checks that a bank holds enough easy-to-sell assets to meet cash outflows during a short period of stress. (concept)
 - The same guidance says these tokens cannot count as stable retail or small business deposits. [S:69600121310a, Annex 3, para 4]
 - If the bank cannot always identify the holders, it must treat the tokens as other unsecured wholesale funding. [S:69600121310a, Annex 3, para 4]
 - If tokens mainly serve payments for wholesale clients with an operational relationship, the guidance says the rules for operational deposits should be followed. [S:69600121310a, Annex 3, para 4] Operational deposits are cash that clients keep with a bank for day-to-day clearing and cash management. (concept)
@@ -54,7 +54,7 @@ A bank can record customer deposits as tokens on a shared digital ledger and use
 
 ## Industry benchmarks
 
-- KPMG China (KPMG), an accounting and advisory firm that sells services to banks, published its Hong Kong Banking Report in 2026. In that commentary (not a measured figure), it said most digital-asset work is still small beside traditional banking. [I:1dfc7a0205ff, p.38]
+- KPMG China (KPMG), an accounting and advisory firm that sells services to banks, published its Hong Kong Banking Report in 2026. In the report's commentary (an opinion, not a measured figure), it said most digital-asset work is still small beside traditional banking. [I:1dfc7a0205ff, p.38]
 - The same 2026 KPMG commentary says many local and regional Hong Kong banks are waiting to see how the market develops. [I:1dfc7a0205ff, p.42] It notes that spending on technology, talent and compliance can look like cost, not value, in the short term. [I:1dfc7a0205ff, p.42]
 - No reliable industry figure for tokenised-deposit volumes or fees in Hong Kong was found.
 
@@ -65,7 +65,7 @@ A bank can record customer deposits as tokens on a shared digital ledger and use
 > **How to think about it:**
 > - Split the value into three parts: deposit balances kept or won, fees for treasury services, and a role in settling tokenised assets.
 > - Set that against build costs, links to other banks, and the liquidity treatment of the tokens.
-> - Ask how much of the value is defence: balances the bank keeps, even if the product's own fee income is small.
+> - Ask how much of the value is defensive: balances the bank keeps that might otherwise leave, even if the product's own fee income is small.
 > **What it depends on:** corporate demand for round-the-clock payments; how many banks connect; whether holders can be identified; the pace of stablecoin use.
 > **Official signposts:**
 > - Plans for CBDC settlement and 24/7 running of EnsembleTX. [S:ef3648ff1610, para 50]

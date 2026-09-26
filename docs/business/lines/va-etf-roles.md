@@ -16,11 +16,11 @@ In this line a bank serves exchange-traded funds (ETFs) that hold virtual assets
 
 ## What the bank does
 
-- Acts as a participating dealer (PD), the firm that creates and redeems units of an exchange-traded fund (ETF). The SFC says PDs (participating dealers) of a spot virtual asset (VA) ETF should be SFC-licensed corporations or registered institutions (banks registered with the SFC) [S:c79c4686c5e0, para 19].
-- Moves VAs into the fund for in-kind creations. PDs are expected to transfer spot VAs, held in Hong Kong or overseas, to the fund's custody account [S:c79c4686c5e0, para 17(b)].
+- Acts as a participating dealer (PD), the firm that creates and redeems units of an exchange-traded fund (ETF). The SFC says PDs of a spot virtual asset (VA) ETF should be SFC-licensed corporations or registered institutions (banks registered with the SFC) [S:c79c4686c5e0, para 19].
+- Moves VAs into the fund for in-kind creations (new units issued in return for VAs rather than cash). PDs are expected to transfer spot VAs, held in Hong Kong or overseas, to the fund's custody account [S:c79c4686c5e0, para 17(b)].
 - Handles cash creations too: spot VA ETFs may create and redeem units in cash or in kind [S:c79c4686c5e0, para 18].
 - Trades spot VAs with the fund. VA funds should buy and sell through SFC-licensed trading platforms or through banks that follow HKMA rules [S:c79c4686c5e0, para 17].
-- Holds the fund's VAs as a custody delegate. A fund trustee may delegate VA custody to a bank that meets HKMA custody standards [S:c79c4686c5e0, para 20].
+- Holds the fund's VAs as the custodian the trustee appoints. A fund trustee may delegate VA custody to a bank that meets HKMA custody standards [S:c79c4686c5e0, para 20].
 - Sells ETF units. For listed VA funds traded on exchange with no solicitation or recommendation, the bank need not run a suitability check [S:8a016a912528, para 9.1]. The bank should still test the client's VA knowledge [S:8a016a912528, para 9.1 and para 6.2].
 
 ## Revenue levers
@@ -28,7 +28,7 @@ In this line a bank serves exchange-traded funds (ETFs) that hold virtual assets
 - A PD earns fees from clients who create or redeem through it, and may earn a spread on the VAs it delivers. (concept)
 - A custodian earns a yearly fee on the fund's net asset value (NAV), the value of its assets minus its liabilities. (concept)
 - A distributor earns brokerage on ETF trades and may share in fund fees. (concept)
-- Staking may add a revenue pool. The SFC may let VA funds stake through licensed platforms or banks, with its prior approval [S:c79c4686c5e0, paras 28, 31].
+- Staking may add a further source of revenue. The SFC may let VA funds stake through licensed platforms or banks, with its prior approval [S:c79c4686c5e0, paras 28, 31].
 - Fund reports should disclose staking revenue and the direct and indirect costs of staking [S:c79c4686c5e0, para 28(f)].
 
 ## Cost and capital drivers
@@ -56,12 +56,12 @@ In this line a bank serves exchange-traded funds (ETFs) that hold virtual assets
 ## Analysis
 
 > **Analysis — not official**
-> **Question:** Which ETF role gives a bank the most durable income for the capital and controls it needs?
+> **Question:** Which ETF role gives a bank the steadiest income for the capital and controls it needs?
 > **How to think about it:**
 > - List each role: PD, custodian, trading counterparty and distributor. Each has a different income source and cost base.
 > - Custody income grows with fund size, while PD income grows with creation and redemption activity.
-> - In-kind dealing means holding VAs, which brings the Group 2b capital charge [S:9e8d84c87168, Part XII CAE1 explanatory note, column (c), p.215]. Cash-only dealing avoids VA inventory but gives up in-kind flow.
-> **What it depends on:** fund flows; fee pressure from fund managers; the capital cost of VA inventory; custody readiness under HKMA standards.
+> - In-kind dealing means holding VAs, which brings the Group 2b capital charge [S:9e8d84c87168, Part XII CAE1 explanatory note, column (c), p.215]. Dealing only in cash avoids holding VAs, but the bank then misses in-kind business.
+> **What it depends on:** fund flows; fee pressure from fund managers; the capital cost of holding VAs; custody readiness under HKMA standards.
 > **Official signposts:** SFC rules on who may act as PD [S:c79c4686c5e0, para 19]; the staking approval route for funds [S:c79c4686c5e0, paras 28, 31]; the product code revision planned for late 2026 [S:ef3648ff1610, para 40(ii)].
 > **What this is not:** Not a forecast, not advice, and not the regulator's view.
 

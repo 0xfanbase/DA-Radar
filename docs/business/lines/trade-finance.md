@@ -54,8 +54,8 @@ No reliable industry benchmark was found for Hong Kong.
 > **Question:** Does digital trade finance mainly cut a bank's cost per deal, or does it open lending to firms the bank could not serve before?
 > **How to think about it:**
 > - Cost view: data and digital documents replace manual checks. Savings depend on how many deals move off paper.
-> - Reach view: trusted cargo data may make small firms creditworthy on evidence the bank never had.
-> - Settlement view: tokenised deposits and conditional payments tie money to shipment events. In this view, the bank earns on payment flow as well as on credit.
+> - Reach view: trusted cargo data may let the bank judge small firms creditworthy, using evidence it did not have before.
+> - Settlement view: tokenised deposits and conditional payments can release money when a shipment reaches an agreed point. In this view, the bank earns on payment flow as well as on credit.
 > **What it depends on:** legal recognition of electronic documents; how many shippers and banks join shared data systems; links with Mainland and overseas platforms.
 > **Official signposts:** the trade-documents bill [S:ef3648ff1610, para 98]; tokenised-deposit trade pilots [S:ef3648ff1610, para 99]; the Trade Single Window link to the CDI [S:ef3648ff1610, para 97].
 > **What this is not:** Not a forecast, not advice, and not the regulator's view.

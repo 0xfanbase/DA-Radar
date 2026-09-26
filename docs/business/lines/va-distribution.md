@@ -19,7 +19,7 @@ In this line a bank sells clients products linked to virtual assets (VAs), such 
 - Sells SFC-authorised VA funds to retail clients as well as to professional investors (PIs) [S:8a016a912528, para 9].
 - Offers other complex VA products to PIs only, as the regulators expect, apart from a small set of listed funds and derivatives [S:8a016a912528, para 6.1].
 - Deals in VAs through a licensed platform, either by introducing clients or through an omnibus account (one pooled account in the bank's name) [S:8a016a912528, para 17].
-- Since May 2026, may serve retail omnibus clients through platforms otherwise limited to PIs, for tokens admitted for retail trading [S:a0bd48559762, para (1)].
+- Since May 2026, may serve retail clients through its omnibus account on a platform licensed only for PIs, if they trade only tokens admitted for retail trading [S:a0bd48559762, para (1)].
 - May execute client trades through a licensed platform's over-the-counter (off-exchange) service [S:b79266f3da51, para 6].
 - May offer stablecoins from issuers licensed by the Hong Kong Monetary Authority (HKMA) to retail clients and PIs. Banks are one of five kinds of permitted offeror [S:7b6c8dc63140, Reply (1), para 1].
 - Distributes tokenised SFC-authorised investment products, a role the SFC expects regulated firms such as banks to fill [S:58ea8520974d, para 18]. It can also route client trades in them to a licensed platform as a "Connecting Broker" [S:a64e364fd912, para 13].
@@ -65,7 +65,7 @@ In this line a bank sells clients products linked to virtual assets (VAs), such 
 > - Fund sales earn a share of recurring fees. They reuse existing sales, suitability and custody set-ups.
 > - Brokerage earns per trade. It needs a platform link, pre-funding, per-client limits and VA custody.
 > - Both need VA knowledge checks for most clients other than institutional investors [S:8a016a912528, para 6.2].
-> **What it depends on:** client mix; how often clients trade; platform charges; the size of the product shelf.
+> **What it depends on:** client mix; how often clients trade; platform charges; the number of products the bank offers.
 > **Official signposts:** the launch of regulated stablecoins [S:c6df52e680de, Reply, opening para]; the tokenised product framework [S:ef3648ff1610, para 49(ii)]; faster approval under the dealing regime [S:6186c01c6649, paras 35-36].
 > **What this is not:** Not a forecast, not advice, and not the regulator's view.
 

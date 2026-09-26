@@ -1,6 +1,6 @@
 # Cross-border payments, FX and mBridge
 
-A bank can do foreign exchange (FX) and send money abroad on new rails, such as shared digital-currency platforms, tokenised deposits and licensed stablecoins. (concept)
+A bank can do foreign exchange (FX) and send money abroad through new systems, such as shared digital-currency platforms, tokenised deposits and licensed stablecoins. (concept)
 
 ## At a glance
 
@@ -16,7 +16,7 @@ A bank can do foreign exchange (FX) and send money abroad on new rails, such as 
 
 ## What the bank does
 
-- Project mBridge studies how central bank digital currency (CBDC) can fix pain points in cross-border payments. [S:db56d97e2206, para 2]
+- Project mBridge studies how central bank digital currency (CBDC) can solve problems in cross-border payments. [S:db56d97e2206, para 2]
 - mBridge reached its minimum viable product (MVP) stage in June 2024. [S:2ffb8727bb2f, Reply (4)] The Government says it now forms part of Hong Kong's financial market infrastructure. [S:2ffb8727bb2f, Reply (4)] On mBridge, the payer's bank and the payee's bank settle with each other directly. [S:2ffb8727bb2f, Reply (4)]
 - In the 2022 pilot, foreign banks could hold and use another place's CBDC. [S:947fa49606ab, s.7.1.1, p.32] Only that place's own banks could get it issued, or swap it back for central bank reserves. [S:947fa49606ab, s.7.1.1, p.32]
 - The 2022 pilot report says each bank on mBridge stays bound by its own anti-money laundering (AML), counter-terrorist financing (CFT) and sanctions laws. [S:947fa49606ab, s.7.2(d), p.35] The bank checks each payment off the platform and attaches a pass or fail result. [S:947fa49606ab, s.7.2(d), p.35]
@@ -29,11 +29,11 @@ A bank can do foreign exchange (FX) and send money abroad on new rails, such as 
 - An FX spread is the gap between the rate a bank gets in the market and the rate it gives the client. (concept)
 - Money waiting to be paid out sits with the bank as a balance it can earn on. (concept)
 - The HKMA lists cross-border payments for companies and individuals among the key use cases of both licensed stablecoin issuers. [S:193316443831, Use cases and strategic priorities section] A bank serving stablecoin users can charge for converting, holding and paying out coins. (concept)
-- The HKMA now puts wholesale uses of the e-HKD (a digital Hong Kong dollar) first. [S:6bd9e65817c4, para 4] Those uses include cross-border payments such as settling international trade. [S:6bd9e65817c4, para 4]
+- The HKMA now puts wholesale uses of the e-HKD (a digital Hong Kong dollar) first. Wholesale uses are those between banks and other large institutions. [S:6bd9e65817c4, para 4] Those uses include cross-border payments such as settling international trade. [S:6bd9e65817c4, para 4]
 
 ## Cost and capital drivers
 
-- A bank should complete customer due diligence (CDD) before an occasional wire or virtual-asset transfer of HK$8,000 or more. [S:7bfdad704174, para 4.2.1(b)(ii)-(iii)] It should also watch for linked smaller transfers that reach that level together. [S:7bfdad704174, para 4.2.4]
+- A bank should complete customer due diligence (CDD) before a one-off (occasional) wire or virtual-asset transfer of HK$8,000 or more. [S:7bfdad704174, para 4.2.1(b)(ii)-(iii)] It should also watch for linked smaller transfers that reach that level together. [S:7bfdad704174, para 4.2.4]
 - The "travel rule" means sending payer and payee details along with a transfer. (concept) The HKMA has an AML guideline for licensed stablecoin issuers. [S:4d98c6a80b4d, para 6.5] Under it, a sending issuer must record payer and payee details before a stablecoin transfer of HK$8,000 or more. [S:4d98c6a80b4d, para 6.5]
 - The HKMA's liquidity guidance keeps CBDC out of its cryptoasset annex. [S:69600121310a, para 5.9.3] CBDC may generally be treated like the issuing place's notes and coins, subject to each CBDC's features and legal status. [S:69600121310a, para 5.9.3]
 - The mBridge team is helping banks link their systems to the platform's application programming interface (API). [S:2ffb8727bb2f, Reply (4)] Each link is a build and running cost for the bank. (concept)
@@ -57,10 +57,10 @@ A bank can do foreign exchange (FX) and send money abroad on new rails, such as 
 ## Analysis
 
 > **Analysis — not official**
-> **Question:** If new rails make each cross-border payment faster and cheaper, where does a bank still earn?
+> **Question:** If new systems make each cross-border payment faster and cheaper, where does a bank still earn?
 > **How to think about it:**
 > - Split income into three parts: the fee per payment, the FX spread, and balances held along the way.
-> - Faster rails can cut the fee per payment but can raise the number of payments.
+> - Faster systems can cut the fee per payment but can raise the number of payments.
 > - A bank can join as a direct participant, or serve smaller banks and fintechs that connect through it.
 > - Compliance cost per payment stays, because each bank runs its own checks.
 > **What it depends on:** which currency routes clients use; how many central banks and banks connect; when stablecoins launch; the cost of AML checks per payment.

@@ -7,7 +7,7 @@ In this line a bank provides accounts, payments and safekeeping to firms that wo
 | Item | Detail |
 |---|---|
 | Bank role | Account bank; client-money bank; reserve bank and custodian; payment provider |
-| Client segments | Institutional, fintechs (trading platforms, stablecoin issuers, other digital-asset firms) |
+| Client segments | Institutional, fintechs |
 | Value chain | Hold, Settle and pay |
 | Regulatory gate | The bank's existing authorisation plus adequate risk controls [S:642680fa4467, Prudential supervision section, p.3]. The Hong Kong Monetary Authority (HKMA) expects banks to discuss virtual-asset (VA) plans with it, and get its feedback, before launch [S:642680fa4467, AIs' VA-related proposals section, p.5] |
 | Status as of 25 Sep 2026 | In force [S:642680fa4467, Prudential supervision section, p.3] |
@@ -33,7 +33,7 @@ In this line a bank provides accounts, payments and safekeeping to firms that wo
 - Customer due diligence (CDD): the HKMA expects a risk assessment of each client that is a VA service provider (VASP) [S:642680fa4467, AML/CFT section (b), p.4]. Checks may cover its business model, its licence status and its AML controls [S:642680fa4467, AML/CFT section (b), p.4].
 - Overseas clients: for a VASP outside Hong Kong, the bank should apply its correspondent-banking checks (extra checks used for banks that serve other banks) [S:7bfdad704174, para 11.23]. It should find out whether the account serves the VASP itself or the VASP's own customers [S:7bfdad704174, para 11.24]. It could consider asking for separate accounts for the two [S:7bfdad704174, para 11.25].
 - Monitoring: the HKMA expects banks to watch for frequent transfers to or from VA platforms [S:642680fa4467, AML/CFT section (a), pp.3-4]. Where there are grounds for suspicion, banks should file a report [S:642680fa4467, AML/CFT section (a), pp.3-4].
-- Fraud flows: the SFC cites police intelligence on scam money moved by bank transfer to licensed firms [S:be46918f8aa2, para 8]. Some is turned into VAs and withdrawn to unhosted wallets (wallets not held by a regulated firm) [S:be46918f8aa2, para 8].
+- Scam money: the SFC cites police intelligence on scam money moved by bank transfer to licensed firms [S:be46918f8aa2, para 8]. Some is turned into VAs and withdrawn to unhosted wallets (wallets not held by a regulated firm) [S:be46918f8aa2, para 8].
 - Direct debits: the SFC has flagged risks in simplified electronic Direct Debit Authorisation (eDDA) set-ups used by licensed firms to collect client deposits [S:cfc4a0d9f1be, para 1].
 
 ## Official signals
@@ -60,7 +60,7 @@ In this line a bank provides accounts, payments and safekeeping to firms that wo
 > - Cost side: enhanced due diligence, transaction monitoring and reporting for every client, much of it fixed.
 > - Concentration: a few clients can bring most of the balances, so losing one client moves the whole result.
 > - Example (illustrative): if 2 of 10 platform clients hold most of the deposits, one exit changes the whole result.
-> **What it depends on:** the number of licensed platforms and issuers; how much client money and reserve each keeps at banks; fraud and scam trends; monitoring tools.
+> **What it depends on:** the number of licensed platforms and issuers; how much client money and reserves each keeps at banks; fraud and scam trends; monitoring tools.
 > **Official signposts:** the SFC platform list [S:b14be2203d39, Licensed platforms table]; the HKMA's stance on further stablecoin licences [S:193316443831, Follow-up work section, third paragraph]; SFC AML surveillance plans [S:ef3648ff1610, para 51(iii)].
 > **What this is not:** Not a forecast, not advice, and not the regulator's view.
 
