@@ -37,14 +37,26 @@ If there are none, skip to step 6 and report "no new publications".
 - Edit the affected module(s) in `docs/modules/`, project profile(s) in `docs/projects/`, and E3's timeline table
   and E1's status board. Keep the section structure and table formats (the build parses them). Cite `[S:<id>, <locator>]`.
 - Fact-check every changed line against the source text (`final_check_spec.md` rules). Run `python3 qa_modules.py <files>`.
+- Business lens (Part F): if a change moves a business line's regulatory gate or status (e.g. a bill passes, a licence
+  regime starts, a pilot goes live), update the "Status as of" row and date in `docs/business/lines/<slug>.md`, and any
+  place F1, F3, F4 or a case repeats that status. Follow `docs/research/tools/business_spec.md`. Run
+  `python3 qa_analysis.py` and `python3 qa_plain.py` on changed Part F files.
+- Write every new or changed sentence in plain English (`docs/research/tools/plain_language_spec.md`).
 - Update the "as of" date in `site/app/app.js` (`ASOF`) and in the modules' status-board lines only if you checked the whole
   status board for that date.
+
+## 4b. Quarterly: industry sources (first run of Jan, Apr, Jul, Oct)
+- Industry entries live in `docs/research/industry-registry.jsonl` (spec: `industry_reader_spec.md`). For every entry past
+  its `review_by` date, fetch the publisher's latest edition from an allowed domain. If a newer edition exists, write a new
+  entry (own words, figures with locators), mark the old one in its caveats, and update the `[I:]` citations in Part F.
+- Run `python3 qa_industry.py docs/research/industry-registry.jsonl` (from the scratch folder with `industry/text/`).
+- Industry figures are estimates, never facts; forecasts stay inside F4's forecasts box.
 
 ## 5. Rebuild and republish
 - `python3 site/build.py` must print no errors (it fails on unknown citation ids).
 - Republish the private artifact with the Artifact tool: `url` = https://claude.ai/artifact/5qZ2jZ78frrNL8LL67ZzDM,
   `file_path` = `site/app/index.html`, `files` = {"app.js", "data/sources.json", "data/modules.json", "data/projects.json",
-  "data/extras.json"} mapped to the files under `site/app/`. Read the artifact first if the tool asks you to.
+  "data/extras.json", "data/business.json"} mapped to the files under `site/app/`. Read the artifact first if the tool asks you to.
 
 ## 6. Commit and report
 - Commit with the bot identity (env vars in CLAUDE.md) and push to the branch above.
