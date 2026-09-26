@@ -150,6 +150,19 @@ The working relationship with regulators also matters. The Supervisory Incubator
 - Start dates for the planned VA dealing and custodian regimes are not set. [S:6186c01c6649, para 32; S:f41a543388bc, para 49]
 - No HKMA form or response time for pre-launch discussions was found.
 
+## Check yourself
+
+1. Which two regulators does a registered institution notify before starting or changing any VA activity?
+   **Answer:** The SFC and the HKMA. [S:8934af8cc884, para 5.6]
+2. What stake in a company needs the Monetary Authority's written consent before a Hong Kong bank buys it?
+   **Answer:** A stake worth 5% or more of the bank's Tier 1 capital, under Rule 23 of the Banking (Exposure Limits) Rules. [S:13365a31e794, para 1.1]
+3. What force does the HKMA's 9 March 2026 board-plan instruction carry?
+   **Answer:** It is an expectation, not a binding rule. The HKMA expected each board to oversee and endorse a formal strategic business plan within six months. [S:3ec5b269b5dc, letter body, p.2]
+4. What must a bank do before acquiring a new type of cryptoasset?
+   **Answer:** Notify the HKMA first, and treat the asset as Group 2b (1,250% risk weight) until the HKMA agrees another classification. [S:b7d630146e6c, para 2.1.2]
+5. Does joining the Supervisory Incubator or applying under a planned regime count as already being licensed?
+   **Answer:** No. The Incubator gives feedback and optional trials, not a shortcut. [S:1b1a0de5de5a, para 3] The Government and the SFC do not plan to treat existing VA dealers as licensed while they apply. [S:6186c01c6649, para 31]
+
 ## Related modules
 
 B2, B3, D1, C3, E2, F2, F3, F5b, F6. Business lines: [Virtual-asset custody](#b-custody); [Staking services](#b-staking); [Tokenised deposits and payments](#b-tokenised-deposits). Projects: [Supervisory Incubator for DLT](#p-supervisory-incubator-dlt); [Project Ensemble](#p-ensemble). Cases: [Case 5: The board's strategic plan](#case-5-board-strategic-plan); [Case 6: Stopping a product](#case-6-stopping-a-product).

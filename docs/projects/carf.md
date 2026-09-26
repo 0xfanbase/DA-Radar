@@ -7,7 +7,7 @@ A Hong Kong bill would update the Common Reporting Standard (CRS) and bring in t
 | Item | Detail |
 |---|---|
 | Run by | Financial Services and the Treasury Bureau (FSTB) and Inland Revenue Department (IRD) [S:275d5cc93a88, Foreword, para 1] |
-| Status as of 25 Sep 2026 | Bill before LegCo (the Legislative Council, Hong Kong's law-making body). Gazetted (published in the official Gazette) 22 May 2026. First Reading (formal introduction) 3 Jun 2026. [S:d70ae2cbc9d1, Overview] |
+| Status as of 25 Sep 2026 | Bill before LegCo (the Legislative Council, Hong Kong's law-making body). Gazetted (published in the official Gazette) 22 May 2026. First and Second Readings (formal introduction) set for 3 Jun 2026, with the Second Reading debate adjourned. [S:d70ae2cbc9d1, Overview] |
 | Started | Commitment to the OECD Global Forum, 13 Dec 2024 [S:ea81f92ea327, para 1] |
 | Next official date | 1 Jan 2027: CARF duties start, if the bill passes [S:e8c0a71f0cc5, Clause 1(3)] |
 | Covered in | D5, A3, E1, E3 |
@@ -35,7 +35,7 @@ Central bank digital currencies (CBDCs) and specified e-money products are outsi
 | 9 Dec 2025 | FSTB and IRD public consultation (open until 6 Feb 2026) | Superseded | [S:252a7f86684e, paras 1, 7]; [S:275d5cc93a88, Foreword, para 1] |
 | 25 Feb 2026 | Budget: amendment bill in the first half of 2026 | Stated target | [S:654fa5eba8cf, para 108] |
 | 22 May 2026 | Bill gazetted | Bill before LegCo | [S:d70ae2cbc9d1, Overview] |
-| 3 Jun 2026 | First Reading; Second Reading debate (on the bill's main principles) adjourned | Bill before LegCo | [S:d5097f447cf9, para 1]; [S:d70ae2cbc9d1, Overview] |
+| 3 Jun 2026 | First and Second Readings; Second Reading debate (on the bill's main principles) adjourned | Bill before LegCo | [S:d5097f447cf9, para 1]; [S:d70ae2cbc9d1, Overview] |
 | 1 Jan 2027 | Part 2 (CARF) starts, if passed | Bill before LegCo | [S:e8c0a71f0cc5, Clause 1(3)] |
 | 1 Jan 2028 | Part 3 (amended CRS) starts, if passed | Bill before LegCo | [S:e8c0a71f0cc5, Clause 1(4)] |
 

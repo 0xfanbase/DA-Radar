@@ -158,6 +158,19 @@ Exits need planning. An RI must give at least seven business days' notice before
 - No official source gives staffing levels or costs for a 24/7 digital-asset operation.
 - The custodian regime's staff licensing rules are conclusions, not yet law. [S:f41a543388bc, para 25]
 
+## Check yourself
+
+1. Which two regulators should a registered institution tell about a material failure of systems and controls?
+   **Answer:** The SFC and the HKMA, even if the failure happened at an overseas group entity. [S:8934af8cc884, para 5.6]
+2. How many executive officers does a registered institution need for each regulated activity?
+   **Answer:** At least two EOs, each with HKMA consent, with at least one available at all times. [S:8934af8cc884, paras 2.2.4, 4.3.9]
+3. Is 24/7 custody security monitoring an HKMA expectation or a stated legal requirement?
+   **Answer:** An expectation: the HKMA expects security monitoring 24/7, including holidays. [S:ce05e67bcdce, para 23]
+4. Who stays responsible if a bank outsources VA custody to a regulated provider?
+   **Answer:** The bank. Ultimate responsibility for outsourced custody stays with the bank, even though only certain regulated firms may be used. [S:ce05e67bcdce, para 19]
+5. Can a vendor be named as the person responsible for an outsourced function?
+   **Answer:** No. The HKMA expects a member of the RI's own management to be named as responsible, not the outside provider. [S:17871e6ed4e0, Q9/A9]
+
 ## Related modules
 
 B2, B3, C3, D2, D4, F2, F5a, F6. Business lines: [Virtual-asset custody](#b-custody); [Infrastructure as a service](#b-infrastructure-service); [Staking services](#b-staking). Project: [Project Ensemble](#p-ensemble). Cases: [Case 1: Virtual-asset custody for private banking](#case-1-va-custody-private-banking); [Case 4: The night the hot wallet emptied](#case-4-vatp-incident); [Case 6: Stopping a product](#case-6-stopping-a-product).

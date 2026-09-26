@@ -72,6 +72,7 @@
       });
     });
     tmp.querySelectorAll("table").forEach(function (t) { var w = document.createElement("div"); w.className = "tblwrap"; w.tabIndex = 0; w.setAttribute("role", "region"); w.setAttribute("aria-label", "Table (scrolls sideways)"); t.parentNode.insertBefore(w, t); w.appendChild(t); });
+    tmp.querySelectorAll("li > input[type=checkbox]").forEach(function (i) { i.setAttribute("aria-label", "Checklist item: " + i.parentNode.textContent.trim().slice(0, 80)); });
     tmp.querySelectorAll("a[href^='http']").forEach(function (a) { a.target = "_blank"; a.rel = "noopener"; });
     return tmp.innerHTML;
   }
