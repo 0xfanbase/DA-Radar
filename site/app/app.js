@@ -55,7 +55,7 @@
       var st = b.querySelector("strong");
       if (st && /^Analysis/.test(st.textContent)) { b.className = "analysis"; b.setAttribute("aria-label", "Analysis, not official"); }
     });
-    tmp.querySelectorAll("table").forEach(function (t) { var w = document.createElement("div"); w.className = "tblwrap"; t.parentNode.insertBefore(w, t); w.appendChild(t); });
+    tmp.querySelectorAll("table").forEach(function (t) { var w = document.createElement("div"); w.className = "tblwrap"; w.tabIndex = 0; w.setAttribute("role", "region"); w.setAttribute("aria-label", "Table (scrolls sideways)"); t.parentNode.insertBefore(w, t); w.appendChild(t); });
     tmp.querySelectorAll("a[href^='http']").forEach(function (a) { a.target = "_blank"; a.rel = "noopener"; });
     return tmp.innerHTML;
   }
@@ -396,7 +396,7 @@
   }
 
   function vHelp() {
-    var rows = function (list) { return '<div class="tblwrap"><table><tbody>' + list.map(function (r) { return "<tr><th scope=\"row\">" + r[0] + "</th><td>" + r[1] + "</td></tr>"; }).join("") + "</tbody></table></div>"; };
+    var rows = function (list) { return '<div class="tblwrap" tabindex="0" role="region" aria-label="Table (scrolls sideways)"><table><tbody>' + list.map(function (r) { return "<tr><th scope=\"row\">" + r[0] + "</th><td>" + r[1] + "</td></tr>"; }).join("") + "</tbody></table></div>"; };
     return '<article class="article"><p class="kicker">Help</p><h1 class="page-title">How to read this site</h1>' +
       '<p class="lede">Every fact on this site comes from an official document and shows exactly where it comes from. The Business section also uses clearly marked estimates from named non-official sources. This page explains the labels.</p>' +
       "<h2>The words that carry legal weight</h2>" + rows([["<b>must</b> / <b>required</b>", "The law or a binding rule requires it."], ["<b>should</b> / <b>expects</b>", "The regulator expects it. It is guidance rather than law."], ["<b>may</b>", "It is allowed, not required."], ["<b>proposes</b> / <b>would</b>", "A proposal. It is not law yet."], ["<b>stated target</b>", "A plan or date the government or a regulator has announced. It is not a forecast by this site."]]) +
