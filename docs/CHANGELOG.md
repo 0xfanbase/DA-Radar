@@ -2,6 +2,9 @@
 
 Newest first. Each entry is written by the update routine or by hand when the content changes.
 
+## 26 Sep 2026 (later)
+- Usability fixes: shorter citation chips; the source panel now closes when you change page, keeps keyboard focus and returns you to where you were; "See in Documents" works for every citation; your document filters are no longer reset by following a citation; the Back button returns you to the same place in a list; clearer status colours (conclusions and targets are amber, not green); a tidier filter panel on phones; a "More" menu on tablets; page titles for bookmarks.
+
 ## 26 Sep 2026
 - HKDA Brief launched: 21 modules, 15 project profiles and 737 official documents, reflecting publications up to 25 Sep 2026.
 - Every line was fact-checked a second time against the official text. This covered all 21 modules (about 1,750 claims, about 800 of them tightened), all 15 project profiles (each checked twice) and all 737 document summaries.
