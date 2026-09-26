@@ -42,7 +42,7 @@
   }
   function joinCites(md) { return md.replace(/\]\s*;\s*\[(S|I):/g, "] [$1:"); }
   function renderMD(md) {
-    md = md.replace(/^(>\s*\*\*[^\n]*)$/gm, "$1\n>");   // each labelled slot of an analysis box on its own line
+    md = md.replace(/^(>\s*\*\*[^\n]*)$/gm, ">\n$1\n>");   // blank line before too, so a slot never joins a list above it   // each labelled slot of an analysis box on its own line
     var html = marked.parse(linkCitations(joinCites(md)), { mangle: false, headerIds: false })
       .replace(/\s?\(concept\)/g, ' <span class="concept" title="A general explanation of how the business works, not a sourced fact about Hong Kong">concept</span>');
     var tmp = document.createElement("div");
