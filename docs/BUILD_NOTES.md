@@ -23,3 +23,8 @@
 
 ## Rules to keep
 Official sources only; own words (no 8+ word copying; ≤15-word quotes); keep modal force; status chips with as-of date; no advice/predictions; named entities only as regulator states; footer disclaimer on every page; bot commit identity via env vars.
+
+## Status (26 Sep 2026)
+- Site v2 published (same URL). Tabs: Home, Learn (21 modules), Projects (15), Documents (737), Obligations, Briefings, Timeline, Glossary.
+- Final fact-check done: modules (second full pass), project profiles (two passes), all 737 registry entries (25 batches, 304 fixes), own-words cleanup (245 entries), status consistency sweep. Logs were kept in the session scratchpad.
+- Update routine: trigger `trig_01Di96XRRLBcjHedmbYeiE6w` ("HKDA Brief daily update"), weekdays 08:51 Hong Kong time, fresh session per run, follows `docs/ROUTINE.md`.
