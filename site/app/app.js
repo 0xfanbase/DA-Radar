@@ -55,6 +55,22 @@
       var st = b.querySelector("strong");
       if (st && /^Analysis/.test(st.textContent)) { b.className = "analysis"; b.setAttribute("aria-label", "Analysis, not official"); }
     });
+    tmp.querySelectorAll("h2").forEach(function (h) {   // "Check yourself": hide each answer behind a toggle
+      if (h.textContent.trim() !== "Check yourself") return;
+      var ol = h.nextElementSibling; while (ol && ol.tagName !== "OL" && ol.tagName !== "H2") ol = ol.nextElementSibling;
+      if (!ol || ol.tagName !== "OL") return;
+      ol.classList.add("quiz");
+      ol.querySelectorAll(":scope > li").forEach(function (li) {
+        var st = [].slice.call(li.querySelectorAll("strong")).filter(function (x) { return /^Answer:?$/.test(x.textContent.trim()); })[0];
+        if (!st) return;
+        var d = document.createElement("details"), sm = document.createElement("summary"), box = document.createElement("div");
+        sm.textContent = "Show answer"; d.appendChild(sm); d.appendChild(box);
+        var n = st.nextSibling; st.parentNode.removeChild(st);
+        while (n) { var nx = n.nextSibling; box.appendChild(n); n = nx; }
+        var br = box.firstChild; if (br && br.nodeType === 3) br.textContent = br.textContent.replace(/^\s+/, "");
+        li.appendChild(d);
+      });
+    });
     tmp.querySelectorAll("table").forEach(function (t) { var w = document.createElement("div"); w.className = "tblwrap"; w.tabIndex = 0; w.setAttribute("role", "region"); w.setAttribute("aria-label", "Table (scrolls sideways)"); t.parentNode.insertBefore(w, t); w.appendChild(t); });
     tmp.querySelectorAll("a[href^='http']").forEach(function (a) { a.target = "_blank"; a.rel = "noopener"; });
     return tmp.innerHTML;
@@ -117,12 +133,13 @@
   /* ---------- views ---------- */
   function vHome() {
     var read = readSet();
-    var start = S.modules.filter(function (m) { return m.start; });
+    var start = S.modules.filter(function (m) { return m.start; }).sort(function (a, b) { return a.order - b.order; });
     var recent = S.sources.filter(function (s) { return !s.hid && s.imp !== "routine" && s.br !== "context"; }).slice(0, 6);
     var h = '<div class="read"><p class="kicker">Hong Kong · digital assets · bank compliance</p>' +
       '<h1 class="page-title">Know the rules, the projects and the moving pieces.</h1>' +
       '<p class="lede">' + S.modules.length + ' short modules built from ' + S.sources.filter(function (x) { return !x.cls; }).length + ' official HKMA, SFC and government documents. Every fact names its paragraph and links to the source.</p></div>';
     var mins = start.reduce(function (a, m) { return a + m.minutes; }, 0);
+    if (S.x.map) h += '<a class="card mapcard" href="#map"><h3>Start here: the map and reading order</h3><p>One page: who regulates each activity, the legal basis and its status today, and the order to read the modules.</p></a>';
     h += '<h2 class="sec-h">Start here · about ' + Math.round(mins / 5) * 5 + ' minutes</h2><ol class="path">' + start.map(function (m) {
       return '<li><a href="#m-' + m.code + '"><div><b>' + esc(m.title) + '</b><br><span>' + m.code + " · " + m.minutes + " min" + (read[m.code] ? " · read" : "") + "</span></div><span>→</span></a></li>";
     }).join("") + "</ol>";
@@ -399,7 +416,7 @@
     var rows = function (list) { return '<div class="tblwrap" tabindex="0" role="region" aria-label="Table (scrolls sideways)"><table><tbody>' + list.map(function (r) { return "<tr><th scope=\"row\">" + r[0] + "</th><td>" + r[1] + "</td></tr>"; }).join("") + "</tbody></table></div>"; };
     return '<article class="article"><p class="kicker">Help</p><h1 class="page-title">How to read this site</h1>' +
       '<p class="lede">Every fact on this site comes from an official document and shows exactly where it comes from. The Business section also uses clearly marked figures from named non-official sources: industry estimates, company filings, international bodies and foreign regulators. This page explains the labels.</p>' +
-      "<h2>The words that carry legal weight</h2>" + rows([["<b>must</b> / <b>required</b>", "The law or a binding rule requires it."], ["<b>should</b> / <b>expects</b>", "The regulator expects it. It is guidance rather than law."], ["<b>may</b>", "It is allowed, not required."], ["<b>proposes</b> / <b>would</b>", "A proposal. It is not law yet."], ["<b>stated target</b>", "A plan or date the government or a regulator has announced. It is not a forecast by this site."]]) +
+      "<h2>The words that carry legal weight</h2>" + rows([["<b>must</b> / <b>required</b>", "The law or a binding rule requires it."], ["<b>should</b> / <b>expects</b>", "The regulator expects it. It is usually guidance rather than law. <b>Exception:</b> in the HKMA\u2019s anti-money laundering (AML) Guideline, <i>should</i> is mandatory, just like <i>must</i> (para 1.6 of that Guideline)."], ["<b>may</b>", "It is allowed, not required."], ["<b>proposes</b> / <b>would</b>", "A proposal. It is not law yet."], ["<b>stated target</b>", "A plan or date the government or a regulator has announced. It is not a forecast by this site."]]) +
       "<h2>Status labels</h2>" + rows([[chip("In force"), "The rule applies now."], [chip("Issued, not yet in force"), "Published, but it starts later."], [chip("Consultation"), "The regulator is asking for views. Nothing is final."], [chip("Conclusions published"), "The consultation is finished and the final policy is set, but the law may not be made yet."], [chip("Bill"), "A draft law is before the Legislative Council (LegCo)."], [chip("Pilot"), "A trial with selected firms."], [chip("Exploratory"), "Regulators are studying the idea. No rule or live service yet."], [chip("Stated target"), "An announced plan or date."], [chip("Superseded"), "Replaced by a newer document. Kept for history."], [chip("Past event"), "A past event or announcement, kept for background."]]) +
       "<h2>Source buttons</h2>" + rows([['<span class="cite">HKMA 2026 \u00b7 para 11(n)</span>', "Solid blue buttons are official Hong Kong sources. Tap one to see who published it, when, the exact paragraph, and a link to the official document."], ['<span class="cite ind industry">Estimate \u00b7 Citi 2025</span>', "A figure from a named non-official source, such as a bank or consultancy. Treat it as an estimate, not a fact. Used only in the Business section."], ['<span class="cite ind intl">Intl \u00b7 BIS 2025</span>', "A report from an international official body, such as the Bank for International Settlements (BIS). Not a Hong Kong source."], ['<span class="cite ind foreign">Foreign \u00b7 MAS 2024</span>', "A document from a regulator outside Hong Kong, such as Singapore\u2019s MAS or Dubai\u2019s VARA. Official where it was issued, but not a Hong Kong source. Used only in the Business section."], ['<span class="cite ind filing">Filing \u00b7 OSL 2025</span>', "Figures from a company\u2019s own published results. We quote the numbers only and do not comment on the company."], ['<span class="concept">concept</span>', "A plain explanation of how a business works in general. It is not a fact about Hong Kong."], ['<span class="concept">illustrative</span>', "A round, made-up number used to show how something works. It is not an estimate."]]) +
       "<h2>Analysis boxes</h2><p>In the Business section, a shaded box marked <b>Analysis \u2014 not official</b> gives a way to think about a question. It is not a forecast and not advice. Each box asks one question, gives a way to think about it, lists what the answer depends on and the official signposts to watch, and ends by saying what it is not.</p>" +
@@ -541,6 +558,7 @@
     else if (h === "timeline") { tab = "timeline"; html = vTimeline(); after = afterTl; }
     else if (h === "more") { tab = "more"; html = vMore(); }
     else if (h === "help") { tab = "more"; html = vHelp(); }
+    else if (h === "map") { tab = "learn"; html = '<article class="article"><p class="kicker">Start here</p><h1 class="page-title">The map and reading order</h1>' + renderMD(S.x.map || "") + "</article>" + footer(); }
     else html = notFound();
     view.innerHTML = html; setNav(tab);
     document.title = pageTitle(h) + " · HKDA Brief";

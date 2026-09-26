@@ -88,7 +88,7 @@ def build_sources():
 
 PARTS = {"F": "Business and opportunities", "A": "Orientation", "B": "Your bank as a regulated entity", "C": "Activities",
          "D": "Risk and control", "E": "Horizon and reference"}
-START = {"A1", "B1", "B2", "C3", "C4", "D3", "E1"}
+START = ["A1", "B1", "C1", "C4", "D3", "D6", "D7", "C3", "D1"]   # reading order for the core path
 
 
 def build_modules():
@@ -102,7 +102,7 @@ def build_modules():
                       lambda m: m.group(1) + re.sub(r"\b([A-F]\d[a-z]?)\b(?![^\[]*\])", r"[\1](#m-\1)", m.group(2)), body, flags=re.S)
         words = len(re.findall(r"\w+", re.sub(r"\[S:[^\]]*\]", "", body)))
         mods.append({"code": code, "title": title, "part": code[0], "partTitle": PARTS[code[0]],
-                     "start": code in START, "minutes": max(5, round(words / 200)), "md": body})
+                     "start": code in START, "order": START.index(code) if code in START else 99, "minutes": max(5, round(words / 200)), "md": body})
     return mods
 
 
@@ -302,14 +302,17 @@ if __name__ == "__main__":
     biz = build_business()
     ids = {s["id"] for s in src}
     iids = {s["id"] for s in ind}
-    texts = [m["md"] for m in mods + projs + biz["lines"] + biz["cases"]] + ([biz["compare"]["md"]] if biz["compare"] else [])
+    mp = DOCS / "study" / "map.md"
+    study_map = mp.read_text() if mp.exists() else ""
+    texts = [m["md"] for m in mods + projs + biz["lines"] + biz["cases"]] + ([biz["compare"]["md"]] if biz["compare"] else []) + [study_map]
     missing = sorted({i for t in texts for i in re.findall(r"(?:\[|;\s*)S:([0-9a-f]{12})", t) if i not in ids})
     imissing = sorted({i for t in texts for i in re.findall(r"(?:\[|;\s*)I:([0-9a-f]{12})", t) if i not in iids})
     if missing or imissing:
         raise SystemExit(f"Unknown citation ids: official {missing[:10]} industry {imissing[:10]}")
     src = src + ind
     extras = build_extras(mods, projs)
+    extras["map"] = re.sub(r"^# .*\n", "", study_map).strip()
     for name, data in (("sources", src), ("modules", mods), ("projects", projs), ("extras", extras), ("business", biz)):
         (OUT / f"{name}.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
     print(f"sources={len(src)} (industry {len(ind)}) modules={len(mods)} projects={len(projs)} lines={len(biz['lines'])} cases={len(biz['cases'])} " +
-          " ".join(f"{k}={len(v)}" for k, v in extras.items()))
+          " ".join(f"{k}={len(v)}" for k, v in extras.items() if k != "map"))
