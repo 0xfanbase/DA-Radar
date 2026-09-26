@@ -1,6 +1,6 @@
 # Digital Bond Grant Scheme (DBGS)
 
-An HKMA subsidy that refunds part of the cost of issuing a digital bond in Hong Kong. [S:5a0563de8142, p.1; s.1, p.2]
+The Digital Bond Grant Scheme (DBGS) is a subsidy from the Hong Kong Monetary Authority (HKMA). It refunds part of the cost of issuing a digital bond in Hong Kong. [S:5a0563de8142, p.1; s.1, p.2] A digital bond is a bond whose ownership is recorded on a shared digital ledger. For a bank that arranges or issues digital bonds, the scheme's conditions affect whether a deal can qualify for a grant.
 
 ## At a glance
 
@@ -8,13 +8,13 @@ An HKMA subsidy that refunds part of the cost of issuing a digital bond in Hong 
 |---|---|
 | Run by | Hong Kong Monetary Authority (HKMA) [S:5a0563de8142, p.1] |
 | Status as of 25 Sep 2026 | In force (initial three-year period) [S:5a0563de8142, p.1] |
-| Started | Applications opened 28 Nov 2024; bonds issued on or after 16 Oct 2024 can apply [S:633ce27d4f9b, paras 1, 3]; [S:5a0563de8142, p.1 fn 1] |
-| Next official date | End of the initial three years from 28 Nov 2024 (no renewal decision in the sources reviewed) [S:633ce27d4f9b, para 3] |
+| Started | Applications opened 28 Nov 2024. Bonds issued on or after 16 Oct 2024 can apply. [S:633ce27d4f9b, paras 1, 3]; [S:5a0563de8142, p.1 fn 1] |
+| Next official date | End of the initial three years from 28 Nov 2024. The sources reviewed show no decision on renewal. [S:633ce27d4f9b, para 3] |
 | Covered in | C5, E3 |
 
 ## What it is
 
-The DBGS refunds half of eligible issuance costs for a digital bond. [S:5a0563de8142, s.1, p.2] The cap is HK$1.25 million for a Half Grant, where only the Basic Requirements are met. It rises to HK$2.5 million for a Full Grant, where all Additional Requirements are also met. [S:5a0563de8142, s.1, p.2] Each issuer, counted together with its associates, can receive grants for no more than two issues. [S:5a0563de8142, s.1, p.2] To qualify at all, half or more of the lead arrangers must be recognised arrangers. The bond also needs either a distributed ledger technology (DLT) team with substantial Hong Kong presence, or issuance on a DLT platform operated by the Central Moneymarkets Unit (CMU). [S:5a0563de8142, s.2, p.3] The HKMA reserves the absolute right to decide whether requirements are met and how much to grant, and may adjust the scheme. [S:5a0563de8142, p.1]
+The DBGS refunds half of the eligible costs of issuing a digital bond. [S:5a0563de8142, s.1, p.2] A Half Grant pays up to HK$1.25 million. It applies when the bond meets only the Basic Requirements (the entry conditions). [S:5a0563de8142, s.1, p.2] A Full Grant pays up to HK$2.5 million. It applies when the bond also meets all the Additional Requirements. [S:5a0563de8142, s.1, p.2] Each issuer, counted together with its associates, can get grants for two issues at most. [S:5a0563de8142, s.1, p.2] Associates are, broadly, firms that control the issuer, firms the issuer controls, and firms under the same control as the issuer. [S:5a0563de8142, s.1, p.2] To qualify at all, half or more of the lead arrangers (the firms that organise and sell the issue) must be recognised arrangers. [S:5a0563de8142, s.2, p.3] Recognised arrangers are, in general, arrangers with substantial bond market operations in Hong Kong. [S:5a0563de8142, s.2, p.3] The bond also needs one of two things. [S:5a0563de8142, s.2, p.3] One is a distributed ledger technology (DLT) team with a substantial Hong Kong presence. [S:5a0563de8142, s.2, p.3] The other is issuance on a DLT platform run by the Central Moneymarkets Unit (CMU), the HKMA's bond settlement system. [S:5a0563de8142, s.2, p.3] DLT is a shared digital record kept in step across many computers. The HKMA reserves the absolute right to decide whether a bond meets the requirements and how much to grant. [S:5a0563de8142, p.1] The HKMA may also adjust the scheme. [S:5a0563de8142, p.1]
 
 ## Timeline
 
@@ -29,19 +29,24 @@ The DBGS refunds half of eligible issuance costs for a digital bond. [S:5a0563de
 
 ## What it means for your bank
 
-- If the bank arranges bonds, arranger roles matter: half or more of the lead arrangers must be recognised arrangers for the issue to qualify. [S:5a0563de8142, s.2, p.3]
-- The Full Grant needs a DLT platform provider outside the issuer's circle of associates. A bank issuing on its own group's platform would not meet that test. [S:5a0563de8142, s.3, p.4; s.1 fn 3, p.2]
-- The Full Grant also needs at least HK$1 billion in size, five or more investors not associated with the issuer or platform provider, and a listing on the Stock Exchange of Hong Kong (SEHK) or on a virtual asset trading platform that holds a Securities and Futures Commission (SFC) licence. [S:5a0563de8142, s.3, p.4]
-- Fees paid to DLT platform providers or arrangers that are associates of the issuer are not eligible expenses, nor are costs covered by other grant schemes. [S:5a0563de8142, s.4 and fn 7, p.5]
-- A green digital bond can claim general issuance costs under the DBGS or Track I of the Green and Sustainable Finance Grant Scheme, not both. [S:5a0563de8142, s.4, p.5]
-- A formal application may be made within three months after issue. An optional pre-application consultation with the HKMA is available before or after issue. [S:5a0563de8142, s.5, p.6]
+- Arranger roles matter if the bank arranges bonds. Half or more of the lead arrangers must be recognised arrangers for the issue to qualify. [S:5a0563de8142, s.2, p.3]
+- The Full Grant needs a DLT platform provider that is not one of the issuer's associates. [S:5a0563de8142, s.3, p.4; s.1 fn 3, p.2] So a bank issuing on its own group's platform would not meet that test. [S:5a0563de8142, s.3, p.4; s.1 fn 3, p.2]
+- The Full Grant has three more conditions: [S:5a0563de8142, s.3, p.4]
+  - an issue size of at least HK$1 billion; [S:5a0563de8142, s.3, p.4]
+  - five or more investors not associated with the issuer or the platform provider; and [S:5a0563de8142, s.3, p.4]
+  - a listing on the Stock Exchange of Hong Kong, or on a virtual asset (crypto) trading platform licensed by the Securities and Futures Commission. [S:5a0563de8142, s.3, p.4]
+- Two kinds of cost are not eligible expenses: [S:5a0563de8142, s.4 and fn 7, p.5]
+  - fees paid to DLT platform providers or arrangers that are associates of the issuer; and [S:5a0563de8142, s.4 and fn 7, p.5]
+  - costs covered by other grant schemes. [S:5a0563de8142, s.4 and fn 7, p.5]
+- A green digital bond (one that funds environmental projects) can claim general issuance costs under only one scheme. [S:5a0563de8142, s.4, p.5] The choice is the DBGS or Track I of the Green and Sustainable Finance Grant Scheme. [S:5a0563de8142, s.4, p.5]
+- The issuer, a lead arranger or the DLT platform provider may apply formally within three months after issue. [S:5a0563de8142, s.5, p.6] An optional consultation with the HKMA is available before applying, either before or after issue. [S:5a0563de8142, s.5, p.6]
 
 ## Talking points
 
 - **To the CCO:** The grant is a subsidy. The HKMA reserves the absolute right to decide eligibility and the amount. [S:5a0563de8142, p.1]
-- **To business heads:** Clients can recover half of eligible expenses, up to HK$2.5 million per issue, for at most two issues per issuer and its associates. [S:5a0563de8142, s.1, p.2]
+- **To business heads:** Clients can recover half of eligible expenses, up to HK$2.5 million per issue. Each issuer, with its associates, can do this for two issues at most. [S:5a0563de8142, s.1, p.2]
 - **To the CEO:** The 2026-27 Budget says the HKMA will use the scheme to encourage more digital bond issues in Hong Kong. [S:654fa5eba8cf, para 97]
-- **To Risk:** Using a DLT platform provided by an associate of the issuer rules out the Full Grant, leaving the Half Grant at most. [S:5a0563de8142, s.3, p.4]
+- **To Risk:** An issuer that uses a DLT platform provided by its own associate cannot get the Full Grant. The Half Grant is then the most it can get. [S:5a0563de8142, s.3, p.4]
 
 ## Key documents
 

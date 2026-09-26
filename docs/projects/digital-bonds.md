@@ -1,20 +1,20 @@
 # Digital bonds: Genesis, Evergreen and the public-sector issues
 
-Hong Kong's run of bond tokenisation work, from the 2021 Project Genesis test to three Government green bond deals and the Hong Kong Mortgage Corporation's (HKMC's) 2026 digital bond. [S:fc3eb72031c6, para 5]; [S:4290ec1111e3, para 7]; [S:6aa27ee8b400, para 1]
+Digital bonds (also called tokenised bonds) are bonds whose ownership is recorded as digital tokens on a shared ledger. Hong Kong's work on them began with a 2021 test called Project Genesis. [S:fc3eb72031c6, para 5]; [S:4290ec1111e3, para 7] Since then, the Government has issued three green bonds in digital form, and the Hong Kong Mortgage Corporation (HKMC) issued its own digital bond in 2026. [S:fc3eb72031c6, para 5]; [S:4290ec1111e3, para 7]; [S:6aa27ee8b400, para 1] For banks, the section below on what it means for your bank covers the custody, settlement and licensing points.
 
 ## At a glance
 
 | Item | Detail |
 |---|---|
-| Run by | Hong Kong Monetary Authority (HKMA) as the HKSAR Government's representative for its bonds; HKMC for its own issue [S:a0841967c871, para 5]; [S:6aa27ee8b400, para 1] |
-| Status as of 25 Sep 2026 | Issued (latest issue dated 15 Jun 2026); the Policy Address says digital bond issuance will be regularised [S:6aa27ee8b400, Annex]; [S:ef3648ff1610, para 35(i)] |
-| Started | 2021 (Project Genesis proof of concept) [S:fc3eb72031c6, para 5]; [S:4290ec1111e3, para 7] |
-| Next official date | No date given; the Budget says tokenised bonds will keep being issued on a regular basis [S:654fa5eba8cf, para 97] |
+| Run by | Hong Kong Monetary Authority (HKMA), acting for the Hong Kong Government on its bonds; HKMC for its own issue [S:a0841967c871, para 5]; [S:6aa27ee8b400, para 1]. Official titles say HKSAR (Hong Kong Special Administrative Region) Government. |
+| Status as of 25 Sep 2026 | Issued (latest issue dated 15 Jun 2026). The Policy Address says digital bond issuance will be made regular. [S:6aa27ee8b400, Annex]; [S:ef3648ff1610, para 35(i)] |
+| Started | 2021 (Project Genesis proof of concept, a small test of whether the idea works) [S:fc3eb72031c6, para 5]; [S:4290ec1111e3, para 7] |
+| Next official date | No date given. The Budget says tokenised bonds will keep being issued on a regular basis. [S:654fa5eba8cf, para 97] |
 | Covered in | C5, E2, A3, E3 |
 
 ## What it is
 
-The HKMA began bond tokenisation in 2021 with a proof of concept run jointly with the Bank for International Settlements (BIS) Innovation Hub Hong Kong Centre. [S:fc3eb72031c6, para 5] Under Project Evergreen, the HKMA then helped the Government issue tokenised green bonds. [S:64cf94cf2036, para 2] The first, a HK$800 million bond in February 2023, was described as the first tokenised green bond issued by any government. [S:a0841967c871, para 1] It settled on a T+1 basis through the Central Moneymarkets Unit (CMU), which carries statutory settlement finality. [S:a0841967c871, paras 3-4] The HKMA's August 2023 report found that no Hong Kong statute it reviewed prescribes the form debt securities must take at issuance. [S:a0b44be27c40, para 28, p.12] A multi-currency issue of about HK$6 billion followed in February 2024. [S:4290ec1111e3, para 1] In November 2025 a HK$10 billion issue became the first digital bond to offer settlement in tokenised central bank money (e-HKD and e-CNY). [S:ac6cd085a325, paras 1, 8] In June 2026 the HKMC priced about HK$12 billion of digital bonds, created on a CMU-operated distributed ledger technology (DLT) platform. [S:6aa27ee8b400, paras 1, 4]
+The HKMA started work on bond tokenisation in 2021. [S:fc3eb72031c6, para 5] That first step was a proof of concept run with the Bank for International Settlements (BIS) Innovation Hub Hong Kong Centre. [S:fc3eb72031c6, para 5] Under Project Evergreen, the HKMA then helped the Government issue tokenised green bonds (bonds that raise money for environmental projects). [S:64cf94cf2036, para 2] The first was a HK$800 million bond in February 2023. [S:a0841967c871, para 1] It was described as the first tokenised green bond issued by any government. [S:a0841967c871, para 1] It settled on a T+1 basis, meaning one business day after the trade date. [S:a0841967c871, paras 3-4] Settlement ran through the Central Moneymarkets Unit (CMU), the HKMA's bond settlement system. [S:a0841967c871, paras 3-4] Settlements in the CMU carry statutory settlement finality: the law treats them as final. [S:a0841967c871, paras 3-4] The HKMA's August 2023 report reviewed Hong Kong statutes. [S:a0b44be27c40, para 28, p.12] It found none that sets the form debt securities (such as bonds) must take when issued. [S:a0b44be27c40, para 28, p.12] A multi-currency issue (one sold in several currencies) of about HK$6 billion followed in February 2024. [S:4290ec1111e3, para 1] In November 2025, a HK$10 billion issue became the first digital bond to offer settlement in tokenised central bank money. [S:ac6cd085a325, paras 1, 8] The two options were e-HKD (a digital form of the Hong Kong dollar) and e-CNY (a digital form of China's renminbi). [S:ac6cd085a325, paras 1, 8] In June 2026, the HKMC priced about HK$12 billion of digital bonds. [S:6aa27ee8b400, paras 1, 4] The bonds were created on a distributed ledger technology (DLT) platform run by the CMU. [S:6aa27ee8b400, paras 1, 4] DLT is a shared digital record kept in step across many computers.
 
 ## Timeline
 
@@ -25,25 +25,25 @@ The HKMA began bond tokenisation in 2021 with a proof of concept run jointly wit
 | 16 Feb 2023 | HK$800m tokenised Government green bond settles | Issued | [S:a0841967c871, para 1; summary terms, 'Settlement'] |
 | 24 Aug 2023 | HKMA report "Bond Tokenisation in Hong Kong" released | Research | [S:b7e1bb6b44ae, para 1] |
 | 7 Feb 2024 | About HK$6bn multi-currency digital green bonds offered | Issued | [S:4290ec1111e3, para 1] |
-| By 28 Nov 2024 | EvergreenHub knowledge repository launched | Launched | [S:64cf94cf2036, para 8] |
-| 10 Nov 2025 | HK$10bn digital green bonds priced, with e-HKD/e-CNY settlement option | Issued | [S:ac6cd085a325, paras 2, 8] |
+| By 28 Nov 2024 | EvergreenHub (HKMA digital bond knowledge library) launched | Launched | [S:64cf94cf2036, para 8] |
+| 10 Nov 2025 | HK$10bn digital green bonds priced, with an option to settle in e-HKD or e-CNY | Issued | [S:ac6cd085a325, paras 2, 8] |
 | 10 Jun 2026 | HKMC prices about HK$12bn digital bonds (issue date 15 Jun 2026) | Issued | [S:6aa27ee8b400, para 1; Annex] |
-| 16 Sep 2026 | Policy Address: digital bond issuance to be regularised | Stated target | [S:ef3648ff1610, para 35(i)] |
+| 16 Sep 2026 | Policy Address: digital bond issuance to be made regular | Stated target | [S:ef3648ff1610, para 35(i)] |
 
 ## What it means for your bank
 
-- In Evergreen, only custodians that were CMU participants and onboarded to the platform could open token accounts. Other investors held through those custodians, with their interests recorded in the custodians' own books. [S:a0b44be27c40, para 45, p.16]
-- Where investors are onboarded to a platform, the report says the starting point is for the operator (and custodians, as appropriate) to run know-your-customer (KYC) checks and support anti-money laundering and counter-terrorist financing (AML/CFT) compliance. [S:a0b44be27c40, para 44, p.16]
-- The CMU is deemed a designated clearing and settlement system, so its settlements have statutory finality. Another DLT platform gets that only if the HKMA designates it; otherwise parties can agree finality by contract. [S:a0b44be27c40, paras 36-38, pp.14-15]
-- The report says the existing securities licensing and offering regimes under the Securities and Futures Ordinance (SFO) also apply to issuing or distributing digital bonds. [S:a0b44be27c40, para 23, p.11]
-- The HKMA's February 2024 tokenised-products circular does not cover products regulated under the SFO; those follow the relevant SFC and HKMA requirements, such as the SFC's November 2023 tokenised securities circular. [S:b2719f3dcb37, 'Coverage' and fn 2, p.1]
+- In Evergreen, only custodians (firms that hold securities for clients) could open token accounts on the platform. [S:a0b44be27c40, para 45, p.16] Each custodian had to be a CMU participant and be onboarded (signed up and approved) to the platform. [S:a0b44be27c40, para 45, p.16] Other investors held the bonds through those custodians. The custodians recorded those investors' interests in their own books. [S:a0b44be27c40, para 45, p.16]
+- The report also covers platforms where investors are onboarded themselves. [S:a0b44be27c40, para 44, p.16] There, the report's starting point is for the platform operator to run know-your-customer checks (confirming who each client is). Custodians share this role, as appropriate. [S:a0b44be27c40, para 44, p.16] The same starting point applies to the steps that help clients meet anti-money laundering and counter-terrorist financing rules. [S:a0b44be27c40, para 44, p.16]
+- By law, the CMU is treated as a designated clearing and settlement system (a system the HKMA formally oversees). [S:a0b44be27c40, paras 36-38, pp.14-15] So its settlements have statutory finality. [S:a0b44be27c40, paras 36-38, pp.14-15] Another DLT platform gets that legal finality only if the HKMA designates it. Otherwise, the parties can agree finality in their contracts. [S:a0b44be27c40, paras 36-38, pp.14-15]
+- The report says existing securities licensing and offering rules also apply to issuing or distributing digital bonds. [S:a0b44be27c40, para 23, p.11] These rules sit in the Securities and Futures Ordinance (SFO), Hong Kong's main securities law. [S:a0b44be27c40, para 23, p.11]
+- The HKMA's February 2024 circular (formal notice to banks) on tokenised products does not cover products regulated under the SFO. [S:b2719f3dcb37, 'Coverage' and fn 2, p.1] Those products follow the relevant requirements of the Securities and Futures Commission (SFC) and the HKMA. [S:b2719f3dcb37, 'Coverage' and fn 2, p.1] One example is the SFC's November 2023 circular on tokenised securities. [S:b2719f3dcb37, 'Coverage' and fn 2, p.1]
 
 ## Talking points
 
 - **To the CCO:** The Evergreen report says existing SFO licensing and offering rules also apply to digital bonds. [S:a0b44be27c40, para 23, p.11]
-- **To business heads:** Sixteen financial institutions arranged the HKMC deal. Investors could use existing CMU links to Euroclear and Clearstream, and settlement fell from T+5 to T+3. [S:6aa27ee8b400, paras 5, 8]
+- **To business heads:** Sixteen financial institutions arranged the HKMC deal, and settlement fell from T+5 to T+3 (five business days to three). Investors could use existing CMU links to Euroclear and Clearstream, two international settlement systems. [S:6aa27ee8b400, paras 5, 8]
 - **To the CEO:** The Policy Address says Hong Kong-issued digital bonds took nearly half the global market from 2025 to mid-2026. [S:ef3648ff1610, para 35]
-- **To Risk:** The Evergreen report notes that DLT platform capabilities are largely untested in financial markets and suggests continuity plans, including for migrating to another platform. [S:a0b44be27c40, para 47, p.17]
+- **To Risk:** The Evergreen report notes that the new capabilities of DLT platforms are largely untested in financial markets. It suggests continuity plans, including for a move to another platform. [S:a0b44be27c40, para 47, p.17]
 
 ## Key documents
 
