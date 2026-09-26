@@ -1,0 +1,60 @@
+/* Print styles for the HKDA Brief printed edition (A4, black-and-white friendly). */
+@page { size: A4; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: "Source Serif 4", "Liberation Serif", Georgia, serif; font-size: 10.5pt; line-height: 1.5; color: #1a1a1a; margin: 0; }
+h1, h2, h3, .kicker, th, .chip, .tag, .toc, .notes, .meta { font-family: "Source Sans 3", "Liberation Sans", Arial, sans-serif; }
+h1 { font-size: 20pt; line-height: 1.2; margin: 0 0 8pt; font-weight: 600; }
+h2 { font-size: 13pt; margin: 16pt 0 5pt; font-weight: 600; break-after: avoid; }
+h3 { font-size: 11pt; margin: 12pt 0 4pt; font-weight: 600; break-after: avoid; }
+p { margin: 0 0 6pt; orphans: 3; widows: 3; }
+ul, ol { margin: 0 0 6pt; padding-left: 16pt; }
+li { margin: 2pt 0; }
+a { color: inherit; text-decoration: none; }
+strong, b { font-weight: 600; }
+.kicker { font-size: 8pt; letter-spacing: .08em; text-transform: uppercase; color: #555; margin: 0 0 4pt; }
+.meta { font-size: 9pt; color: #444; margin: -2pt 0 10pt; }
+.mk { font-size: 1pt; color: #fff; position: absolute; }
+.chapter { break-before: page; position: relative; }
+.part { break-before: page; position: relative; padding-top: 70mm; }
+.part h1 { font-size: 28pt; }
+.part p { font-size: 12pt; color: #333; max-width: 120mm; }
+sup.fn { font-family: "Source Sans 3", Arial, sans-serif; font-size: 6.5pt; color: #444; line-height: 0; margin-left: .5pt; }
+.chip { display: inline-block; font-size: 7.5pt; font-weight: 600; border: .6pt solid #555; border-radius: 3pt; padding: 0 4pt; margin-right: 4pt; text-transform: uppercase; letter-spacing: .04em; }
+.tag { font-size: 6.5pt; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; border: .5pt solid #888; border-radius: 2pt; padding: 0 2pt; color: #555; }
+table { border-collapse: collapse; width: 100%; margin: 6pt 0 10pt; font-size: 9pt; line-height: 1.4; }
+th, td { border: .5pt solid #bbb; padding: 3pt 5pt; text-align: left; vertical-align: top; }
+thead th, tbody th { background: #eeeeea; font-weight: 600; }
+tr { break-inside: avoid; }
+blockquote { margin: 8pt 0; padding: 6pt 10pt; border-left: 2.5pt solid #555; background: #f2f0ec; break-inside: auto; }
+blockquote.analysis { border: .8pt solid #555; border-left-width: 3pt; background: #eeecf2; }
+blockquote.analysis > p:first-child strong { font-family: "Source Sans 3", Arial, sans-serif; text-transform: uppercase; font-size: 8.5pt; letter-spacing: .06em; }
+blockquote p { margin: 0 0 4pt; }
+.notes { margin-top: 14pt; padding-top: 6pt; border-top: .6pt solid #999; font-size: 7.5pt; line-height: 1.35; color: #333; }
+.notes h3 { font-size: 9pt; margin: 0 0 4pt; }
+.notes ol { padding-left: 18pt; columns: 1; }
+.notes li { margin: 1.5pt 0; break-inside: avoid; }
+.notes .url { color: #555; word-break: break-all; font-size: 6.8pt; }
+.toc { break-before: page; }
+.toc ol { list-style: none; padding: 0; margin: 0; font-size: 9.5pt; }
+.toc li { display: flex; align-items: baseline; margin: 1.5pt 0; }
+.toc li.l1 { font-weight: 600; margin-top: 7pt; }
+.toc li.l2 { padding-left: 12pt; }
+.toc .dots { flex: 1; border-bottom: .5pt dotted #999; margin: 0 4pt; transform: translateY(-3pt); }
+.toc .pg { min-width: 18pt; text-align: right; }
+.howto table th { width: 38mm; }
+.disc { font-style: italic; color: #444; margin-top: 12pt; }
+.tl th { width: 26mm; white-space: nowrap; }
+.tl .by { font-size: 8pt; color: #555; }
+.gl dt { font-weight: 600; margin-top: 6pt; font-family: "Source Sans 3", Arial, sans-serif; }
+.gl dd { margin: 1pt 0 0 0; }
+.cover { height: 297mm; box-sizing: border-box; padding: 55mm 26mm 20mm 30mm; background: #FAF9F5; position: relative; }
+.cover h1 { font-family: "Source Serif 4", Georgia, serif; font-size: 44pt; margin: 6pt 0 6pt; }
+.cover .sub { font-size: 14pt; color: #333; }
+.cover .rule { width: 40mm; border-top: 1.5pt solid #1a1a1a; margin: 18mm 0 10mm; }
+.cover h2 { font-size: 18pt; margin: 0; }
+.cover .vt { font-size: 16pt; margin: 2pt 0 8mm; }
+.cover .blurb { font-size: 11pt; color: #333; max-width: 130mm; }
+.cover .disc { position: absolute; bottom: 22mm; left: 30mm; right: 26mm; font-size: 8.5pt; }
+.cover.plain { height: auto; padding: 0; background: none; }
+.gl dt, p:has(> strong:only-child), p:has(> b:only-child) { break-after: avoid; }
+.notes { font-size: 8pt; }
