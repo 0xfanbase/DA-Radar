@@ -98,6 +98,8 @@ def build_modules():
         m = re.match(r"#\s+([A-E]\d)\s+(.+)", md)
         code, title = m.group(1), m.group(2).strip()
         body = md.split("\n", 1)[1].strip()
+        body = re.sub(r"(## Related modules\s*\n)(.*?)(?=\n## |\Z)",
+                      lambda m: m.group(1) + re.sub(r"\b([A-E]\d)\b(?![^\[]*\])", r"[\1](#m-\1)", m.group(2)), body, flags=re.S)
         words = len(re.findall(r"\w+", re.sub(r"\[S:[^\]]*\]", "", body)))
         mods.append({"code": code, "title": title, "part": code[0], "partTitle": PARTS[code[0]],
                      "start": code in START, "minutes": max(5, round(words / 200)), "md": body})
@@ -123,14 +125,17 @@ def build_projects():
             md = f.read_text()
             m = re.match(r"#\s+(.+)", md)
             body = md.split("\n", 1)[1].strip()
+            body = re.sub(r"^(\| Covered in \|)(.*?)\|\s*$",
+                          lambda m: m.group(1) + " " + re.sub(r"\b([A-E]\d)\b", r"[\1](#m-\1)", m.group(2).strip()) + " |",
+                          body, flags=re.M)
             glance = {r[0]: r[1] for r in table_rows(section(md, "At a glance")) if len(r) >= 2}
             plain = lambda v: re.sub(r"\s*\[S:[^\]]*\]", "", v or "").strip()
             status = plain(next((v for k, v in glance.items() if k.startswith("Status")), ""))
             out.append({"slug": f.stem, "title": m.group(1).strip() if m else f.stem, "md": body,
-                        "oneLine": body.split("\n\n", 1)[0].strip(),
+                        "oneLine": re.sub(r"\s*\[S:[^\]]*\][;,]?", "", body.split("\n\n", 1)[0]).strip(),
                         "runBy": short_by(plain(glance.get("Run by", ""))),
                         "status": re.split(r"\s*[(;:—]", status)[0].strip(),
-                        "coveredIn": plain(glance.get("Covered in", ""))})
+                        "coveredIn": re.sub(r"\[([A-E]\d)\]\(#m-[A-E]\d\)", r"\1", plain(glance.get("Covered in", "")))})
     return out
 
 

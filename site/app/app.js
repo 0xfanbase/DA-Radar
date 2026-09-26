@@ -37,7 +37,7 @@
     });
   }
   function renderMD(md) {
-    var html = marked.parse(linkCitations(md), { mangle: false, headerIds: false });
+    var html = marked.parse(linkCitations(md.replace(/\]\s*;\s*\[S:/g, "] [S:")), { mangle: false, headerIds: false });
     var tmp = document.createElement("div");
     tmp.innerHTML = html;
     tmp.querySelectorAll("table").forEach(function (t) { var w = document.createElement("div"); w.className = "tblwrap"; t.parentNode.insertBefore(w, t); w.appendChild(t); });
