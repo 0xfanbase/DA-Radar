@@ -16,6 +16,23 @@ Digital bonds (also called tokenised bonds) are bonds whose ownership is recorde
 
 The HKMA started work on bond tokenisation in 2021. [S:fc3eb72031c6, para 5] That first step was a proof of concept run with the Bank for International Settlements (BIS) Innovation Hub Hong Kong Centre. [S:fc3eb72031c6, para 5] Under Project Evergreen, the HKMA then helped the Government issue tokenised green bonds (bonds that raise money for environmental projects). [S:64cf94cf2036, para 2] The first was a HK$800 million bond in February 2023. [S:a0841967c871, para 1] It was described as the first tokenised green bond issued by any government. [S:a0841967c871, para 1] It settled on a T+1 basis, meaning one business day after the trade date. [S:a0841967c871, paras 3-4] Settlement ran through the Central Moneymarkets Unit (CMU), the HKMA's bond settlement system. [S:a0841967c871, paras 3-4] Settlements in the CMU carry statutory settlement finality: the law treats them as final. [S:a0841967c871, paras 3-4] The HKMA's August 2023 report reviewed Hong Kong statutes. [S:a0b44be27c40, para 28, p.12] It found none that sets the form debt securities (such as bonds) must take when issued. [S:a0b44be27c40, para 28, p.12] A multi-currency issue (one sold in several currencies) of about HK$6 billion followed in February 2024. [S:4290ec1111e3, para 1] In November 2025, a HK$10 billion issue became the first digital bond to offer settlement in tokenised central bank money. [S:ac6cd085a325, paras 1, 8] The two options were e-HKD (a digital form of the Hong Kong dollar) and e-CNY (a digital form of China's renminbi). [S:ac6cd085a325, paras 1, 8] In June 2026, the HKMC priced about HK$12 billion of digital bonds. [S:6aa27ee8b400, paras 1, 4] The bonds were created on a distributed ledger technology (DLT) platform run by the CMU. [S:6aa27ee8b400, paras 1, 4] DLT is a shared digital record kept in step across many computers.
 
+> **Commercial and customer benefits**
+> **For customers:**
+> - International investors could reach the February 2024 bonds through existing Euroclear or Clearstream accounts, which the Government said widens the investor base. [S:4290ec1111e3, para 8]
+> - The HKMA reports that settling bond and cash together on one ledger cut settlement delay and risk in its Project Evergreen pilot. [S:a0b44be27c40, para 8, Table 1, p.7]
+> - For the November 2025 issue, the Government said optional settlement in tokenised central bank money helped cut settlement time, cost and counterparty risk. [S:ac6cd085a325, para 8]
+> **For the bank:**
+> - The HKMA's report says paperless creation in the pilot saved staff hours and removed manual-error risk. [S:a0b44be27c40, para 8, Table 1, p.7]
+> - Using the ledger for a bond's whole life can lower servicing time and cost, the report says. [S:a0b44be27c40, para 8, Table 1, p.7]
+> **Evidence so far:**
+> - The November 2025 Government issue raised about HK$10 billion from over HK$130 billion of orders. [S:ac6cd085a325, para 9]
+> - The HKMC's June 2026 issue cut settlement from five business days to three. [S:6aa27ee8b400, para 5]
+> - A 2025 Bank for International Settlements staff bulletin (global, reported estimate) found, in early data, average bid-ask spreads of about 19 basis points (hundredths of a percentage point) for tokenised bonds, against 30 for matched plain bonds. [I:44ec1038876d, PDF p.5]
+> **Limits:**
+> - The HKMA says such gains could apply more widely, depending on each bond's design and how far market systems adapt. [S:a0b44be27c40, para 9, p.7]
+> - New DLT platform features remain largely untested in financial markets, the report notes. [S:a0b44be27c40, para 47, p.17]
+> **Business lines:** [Digital bonds: arranging and custody](#b-digital-bonds); [Tokenised deposits and payments](#b-tokenised-deposits)
+
 ## Timeline
 
 | Date | Milestone | Status | Source |

@@ -58,6 +58,11 @@ If there are none, skip to step 6 and report "no new publications".
   `file_path` = `site/app/index.html`, `files` = {"app.js", "data/sources.json", "data/modules.json", "data/projects.json",
   "data/extras.json", "data/business.json"} mapped to the files under `site/app/`. Read the artifact first if the tool asks you to.
 
+## 5b. Printed edition (when content changed)
+- Rebuild `print/HKDA-Brief.pdf` and `.docx` (see `print/README.md`). The "Since the last edition" page is printed from the top of CHANGELOG.md.
+- New or changed modules keep their "Check yourself" section (5 questions with answers from the module's own cited facts).
+- New project profiles or technology modules get a "Commercial and customer benefits" box (business_spec.md); run qa_benefits.py.
+
 ## 6. Commit and report
 - Commit with the bot identity (env vars in CLAUDE.md) and push to the branch above.
 - Add a dated entry at the top of `docs/CHANGELOG.md`: new documents (title, issuer, date, one line on why it matters),

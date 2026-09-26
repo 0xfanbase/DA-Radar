@@ -25,6 +25,25 @@ The four regimes cover different services:
 
 An earlier proposal had the Commissioner of Customs and Excise license VA OTC spot trading. OTC means deals agreed directly between two parties, not on an exchange. The SFC dealing proposal replaced that approach. [S:efcdb0ae3849, para 2.6]; [S:27d27650e820, paras 1.1, 1.9-1.10]
 
+> **Commercial and customer benefits**
+> **For customers:**
+> - The FSTB and SFC say the custodian regime is to focus on safekeeping private keys, to protect client assets and investors. [S:ff3df4326e0f, para 3]
+> - Under the proposed dealing regime, the SFC will require dealers to keep client VAs with custodians it regulates. [S:6186c01c6649, para 26]
+> - The SFC's chief executive said the advisory and management regimes will strengthen investor protection. [S:4a0342268bf2, para 5]
+> **For the bank:**
+> - A bank would register with the SFC, with the HKMA as its day-to-day regulator. [S:7395a53cc85a, para 4]
+> - Registered institutions already dealing in VAs, and banks already giving VA custody, are to get faster approval. [S:6186c01c6649, paras 35-36]; [S:f41a543388bc, para 51]
+> - The custodian proposal leaves banks out of its minimum capital rule, since HKMA capital rules already apply. [S:f41a543388bc, para 41]
+> - Custody fees are charged on the value held (concept).
+> **Evidence so far:**
+> - The FSTB and SFC say the four regimes will increase participation in Hong Kong's digital asset market. [S:4a0342268bf2, para 4]
+> - The consultations drew over 190 responses on dealing and custody, and 51 on advice and management. [S:ff3df4326e0f, Note 2]; [S:4a0342268bf2, Note 2]
+> - Private banking and private wealth management assets (not only VAs) rose 24% to HK$12,945 billion at end-2025. [S:6d9deb07299d, para 5]
+> **Limits:**
+> - The FSTB and SFC aim to put a bill to the Legislative Council in 2026; start dates are not set. [S:4a0342268bf2, para 3]; [S:6186c01c6649, para 32]
+> - Dealers that skip pre-application talks would have to stop operating when the regime starts. [S:6186c01c6649, paras 31, 34]
+> **Business lines:** [Virtual-asset dealing](#b-va-dealing); [Virtual-asset custody](#b-custody); [Advice and asset management under the new regimes](#b-advisory-management)
+
 ## Timeline
 
 | Date | Milestone | Status | Source |

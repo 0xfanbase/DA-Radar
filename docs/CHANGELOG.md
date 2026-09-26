@@ -2,6 +2,23 @@
 
 Newest first. Each entry is written by the update routine or by hand when the content changes.
 
+## 26 Sep 2026 (review, study layer and benefits)
+- **Stablecoins:** the first regulated stablecoin in Hong Kong launched in August 2026. A Government spokesman said so on 16 September 2026, without naming the issuer. The site no longer implies that no coin is live.
+- **mBridge:** the Bank for International Settlements (BIS) handed the project to the partner central banks in October 2024. Its General Manager said mBridge is not a "BRICS bridge" and that BIS products cannot be used by sanctioned countries. The FSTB's December 2025 list of members no longer includes the BIS.
+- **New modules:** D6 covers the Travel Rule, counterparty VASP checks and unhosted wallets. D7 covers sanctions, wallet screening, blockchain analytics and fraud and money mules at the bank–platform interface.
+- **New case study:** Case 7, "The single admin key", on stablecoin token-contract controls.
+- **Commercial and customer benefits:** a green box on every project profile and on modules C1–C7 and E2. Each box shows what customers and the bank gain, the evidence so far and its limits, with sources.
+- **Study aids:**
+  - a one-page map of regulator by activity by status, with a core reading order;
+  - five "Check yourself" recall questions per module, with the answers hidden behind a toggle (answer key at the back of the printed book).
+- **Corrections from an external review:**
+  - The legend now explains that "should" is mandatory in the HKMA AML Guideline.
+  - CARF bill: the stages now match LegCo's notice (First and Second Readings on 3 June 2026; Second Reading debate adjourned).
+  - A1 now gives the 1,250% risk weight for Group 2b.
+  - The C1 retail omnibus point is clearer.
+- **Seven new official sources from July to September 2026:** the Five-Year Plan, the SFC's strategic action plan, the HKEX–HKMA e-HKD after-hours margin pilot, e-HKD scam warnings and the HKMA Chief Executive's 23 September keynote.
+- **Printed edition:** one book instead of two volumes. Body text is 13 pt for 2-up printing. All notes are collected at the back, and the book has PDF bookmarks.
+
 ## 26 Sep 2026 (reader test)
 - A reader test of the Business section, done as a busy compliance head reading on a phone. Metaphors and vague lines were replaced, and about 20 more terms are explained on first use. No fact changed.
 - Clearer labels: the "Intl" button now reads "International", and the Documents toggle is now "Non-official sources". Each non-official source now says what kind it is: a foreign regulator, a company filing, an international body or an industry estimate. The help page now also explains Foreign, (illustrative) and Exploratory.

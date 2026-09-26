@@ -20,6 +20,25 @@ For each bank, the Incubator offers a single contact point at the HKMA. [S:1b1a0
 
 For the industry as a whole, the Incubator is to share good practice through guidance, sharing sessions and research. [S:1b1a0de5de5a, para 4] In an HKMA inSight article on 24 October 2025, the HKMA said six banks had launched tokenised deposit services through the Incubator. [S:418769c01edc, 'Supervisory Incubator for DLT – where traditional finance and tokenisation meets' section]
 
+> **Commercial and customer benefits**
+> **For customers:**
+> - The HKMA says the Incubator aims to foster DLT banking services that are safe, efficient and useful to the wider community. [S:1b1a0de5de5a, para 5]
+> - When setting trial flexibility, the HKMA considers whether a bank can follow sandbox operating principles, including customer protection measures. [S:fae36c380174, p.1 and footnote 2]
+> - Tokenised deposits were a core focus when the Incubator started. [S:1b1a0de5de5a, para 2]
+> **For the bank:**
+> - A dedicated HKMA team gives supervisory feedback on a bank's DLT proposals before full launch. [S:fae36c380174, p.1]
+> - The HKMA is prepared to give some supervisory flexibility during trials, decided case by case. [S:fae36c380174, p.1]
+> - The HKMA's March 2026 circular says a bank's strategic plan may use small real-world Incubator trials to test new business models. [S:3ec5b269b5dc, letter body, para 4, p.2]
+> - Feedback from a supervisor before launch can lower the risk of costly redesign later. (concept)
+> **Evidence so far:**
+> - In October 2025 the HKMA said six banks had launched tokenised deposit services through the Incubator. [S:418769c01edc, 'Supervisory Incubator for DLT – where traditional finance and tokenisation meets' section]
+> - The same HKMA article says DLT adoption rose 50% in recent years. [S:418769c01edc, 'Supervisory Incubator for DLT – where traditional finance and tokenisation meets' section]
+> - Around 60 banks attended a March 2026 HKMA event on the Incubator and Project Ensemble. [S:38e1f67c38df, para 3 and closing note]
+> **Limits:**
+> - The flexibility depends on the bank managing trial risks in line with the trial's scale, scope and nature. [S:fae36c380174, p.1]
+> - The HKMA article gives the number of banks, but no client numbers, volumes or cost savings. [S:418769c01edc, 'Supervisory Incubator for DLT – where traditional finance and tokenisation meets' section]
+> **Business lines:** [Tokenised deposits and payments](#b-tokenised-deposits); [Infrastructure as a service](#b-infrastructure-service)
+
 ## Timeline
 
 | Date | Milestone | Status | Source |

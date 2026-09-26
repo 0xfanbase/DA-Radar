@@ -29,6 +29,24 @@ Policy Statement 2.0 (June 2025) set out the LEAP framework. LEAP stands for fou
 
 Policy Statement 2.0 proposed the Securities and Futures Commission (SFC) as lead authority to license and register digital-asset dealers and custodians. [S:a29b51bffc6b, paras 5-6] It proposed the HKMA as frontline regulator for banks. [S:a29b51bffc6b, paras 5-6] Policy Statement 2.0 also switched the Government's term to *digital assets*. [S:a29b51bffc6b, footnote 1] *Virtual asset* is still the term defined in the Anti-Money Laundering and Counter-Terrorist Financing Ordinance (AMLO). [S:7395a53cc85a, Note] The 2026 Policy Address adds targets for the HKMA and SFC, some with dates. [S:ef3648ff1610, paras 35, 49-50]
 
+> **Commercial and customer benefits**
+> **For customers:**
+> - Policy Statement 2.0 says tokenisation could bring efficiency gains, lower costs, more transparency and wider investor participation. [S:a29b51bffc6b, para 9]
+> - The Government hopes regular tokenised bond issues can widen access and draw more investors. [S:a29b51bffc6b, para 10]
+> **For the bank:**
+> - The unified licensing approach aims to give firms clarity and support large deals. [S:a29b51bffc6b, para 7]
+> - The planned dealing and custody regimes seek to meet investor needs for liquidity, block trades and safekeeping. [S:a29b51bffc6b, para 5]
+> - The 2025 Policy Address said the HKMA would encourage banks to offer tokenised deposits and promote live deals using them. [S:cc2fa9fc0772, para 103, p.40]
+> - The HKMA is exploring interbank settlement of tokenised deposits, to simplify processes and improve liquidity. [S:a29b51bffc6b, para 11]
+> **Evidence so far:**
+> - Two tokenised Government green bond issues totalled around HK$6.8 billion. [S:a29b51bffc6b, para 10]
+> - At end-2025, 11 VA spot exchange-traded funds (ETFs) were listed in Hong Kong, worth over HK$5.4 billion. [S:c28638fc5ccc, para 4]
+> - By March 2026, the public could buy 13 tokenised products, whose tokenised classes held about HK$10.7 billion. [S:bbd10edd41cf, para 3]
+> **Limits:**
+> - Most items above are aims: in June 2026 the VA dealing and custody bill was still due to go to the Legislative Council that year. [S:c6df52e680de, Reply part (3)]
+> - Policy Statement 2.0 says these gains need a clear, certain legal regime, and announced a legal review. [S:a29b51bffc6b, para 9]
+> **Business lines:** [Digital bonds: arranging and custody](#b-digital-bonds); [Tokenised deposits and payments](#b-tokenised-deposits); [Virtual-asset dealing](#b-va-dealing); [Virtual-asset custody](#b-custody)
+
 ## Timeline
 
 | Date | Milestone | Status | Source |
@@ -39,6 +57,8 @@ Policy Statement 2.0 proposed the Securities and Futures Commission (SFC) as lea
 | 25 Feb 2026 | 2026-27 Budget repeats the 2026 bill target. It plans a bill to amend the law for the Crypto-Asset Reporting Framework (global crypto tax reporting rules) | Stated target | [S:654fa5eba8cf, paras 104, 108] |
 | 16 Sep 2026 | 2026 Policy Address: HKMA tests of tokenised Exchange Fund Bills (short-term debt the HKMA issues) by year-end. A digital asset platform this year from CMU OmniClear, the company that runs the Central Moneymarkets Unit (CMU) for the HKMA | Stated target | [S:ef3648ff1610, para 35(ii), (iv)] |
 | 16 Sep 2026 | 2026 Policy Address: SFC to widen VA licensing, tokenised gold, trading of stablecoins (tokens meant to keep a steady value against a currency) | Stated target | [S:ef3648ff1610, para 49(i)-(iii)] |
+| 16 Sep 2026 | First Five-Year Plan (2026-2030): a world-leading regime to license and regulate digital assets; tokenisation of finance as one of four fintech pillars | Stated target | [S:e20f75cc97c2, para 2.14, printed p.19; Table 3 Finance+, item 1, printed p.20] |
+| 23 Sep 2026 | SFC strategic action plan for the Five-Year Plan and 2026 Policy Address: new digital-asset licensing regimes in the short term | Stated target | [S:6f0a77fd18b1, row 'Promoting Finance+', Short Term column, p.3] |
 | Around end-2026 | EnsembleTX (the HKMA's pilot for settling tokenised money between banks): settlement in central bank digital currency and round-the-clock operation | Stated target | [S:ef3648ff1610, para 50] |
 | By 2029 | Customs and Excise Department systems to analyse digital-asset transactions and anti-money laundering data | Stated target | [S:ef3648ff1610, Annex (I) New Indicators, item 209] |
 

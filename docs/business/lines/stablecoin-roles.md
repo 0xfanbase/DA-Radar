@@ -46,7 +46,8 @@ A stablecoin is a token meant to keep a steady value against a currency (concept
 - The register lists two licensees from 10 April 2026: Anchorpoint Financial Limited (FRS01) and The Hongkong and Shanghai Banking Corporation Limited (FRS02). [S:270f1f7324ab, Register table]
 - Both issuers plan Hong Kong dollar coins first. [S:193316443831, Use cases and strategic priorities section]
 - On 28 April 2026 both licensees confirmed they had not yet issued regulated stablecoins. [S:275e7319a841, paras 2-3]
-- The HKMA expected launch between mid-2026 and the second half of 2026, based on the issuers' plans. [S:193316443831, Follow-up work, para 1]
+- In April 2026 the HKMA expected launch between mid-2026 and the second half of 2026, based on the issuers' plans. [S:193316443831, Follow-up work, para 1]
+- On 16 September 2026 a Government spokesman said the first regulated stablecoin in Hong Kong had launched in August 2026. [S:8be6d15c6641, para 10] The official sources reviewed do not name the issuer.
 - The Government said any further licences will stay very limited in number. [S:3f0fcc104e61, Reply (2)]
 
 ## Industry benchmarks
@@ -61,8 +62,8 @@ A stablecoin is a token meant to keep a steady value against a currency (concept
 > **Analysis — not official**
 > **Question:** Which stablecoin role could suit a bank that does not issue a coin?
 > **How to think about it:** List each role by what it earns and what it uses up. Reserve banking earns a deposit margin, but the money can leave fast when holders redeem. Selling and dealing earn fees per trade. They need conduct controls (fair treatment of clients) and AML controls. Lending earns interest and uses capital.
-> **What it depends on:** Whether licensed coins launch and circulate. How reserve deposit terms fit liquidity limits. Client demand for payment uses. The cost of monitoring transfers.
-> **Official signposts:** Launch news, which the HKMA tied to the issuers' plans. [S:193316443831, Follow-up work, para 1] Any further licences. [S:3f0fcc104e61, Reply (2)] SFC steps to promote trading of licensed coins on licensed platforms and their use to settle tokenised money market funds. [S:ef3648ff1610, para 49(iii)]
+> **What it depends on:** How widely licensed coins circulate after the first launch. How reserve deposit terms fit liquidity limits. Client demand for payment uses. The cost of monitoring transfers.
+> **Official signposts:** News of further launches, which the HKMA tied to the issuers' plans. [S:193316443831, Follow-up work, para 1] Any further licences. [S:3f0fcc104e61, Reply (2)] SFC steps to promote trading of licensed coins on licensed platforms and their use to settle tokenised money market funds. [S:ef3648ff1610, para 49(iii)]
 > **What this is not:** Not a forecast, not advice, and not the HKMA's or SFC's view.
 
 ## Read next

@@ -22,7 +22,25 @@ The 2026-27 Budget said CMU OmniClear would set up a digital asset platform in 2
 
 The 2026 Policy Address repeats the platform target. [S:ef3648ff1610, para 35(ii), (iv)] It also says the HKMA will test tokenising Exchange Fund Bills by year-end. [S:ef3648ff1610, para 35(ii), (iv)] The purpose is to let banks use more than HK$1.3 trillion of these bills at any hour. [S:ef3648ff1610, para 35(ii), (iv)]
 
+On 23 September 2026 the HKMA Chief Executive said CMU OmniClear is building the platform for round-the-clock settlement on a blockchain. [S:216e6890db8f, 'Digital-native' section, para 4] He described the aim as atomic settlement, where both sides of a deal settle together or not at all. [S:216e6890db8f, 'Digital-native' section, para 4] He said deals on the platform will be able to settle against central bank digital currencies (CBDCs). [S:216e6890db8f, 'Digital-native' section, para 4] It will also explore links with tokenised deposits and regulated stablecoins. [S:216e6890db8f, 'Digital-native' section, para 4] He said the HKMA will test how tokenised Exchange Fund Bills operate, to help banks explore better asset and liability management. [S:216e6890db8f, 'Digital-native' section, para 4]
+
 The Hong Kong Mortgage Corporation (HKMC) issued digital bonds in June 2026. [S:6aa27ee8b400, para 4] The bonds were created on a distributed ledger technology (DLT) platform run by the CMU. DLT is a shared digital record kept in step across many computers. [S:6aa27ee8b400, para 4] The CMU acted as the clearing and settlement system for these bonds. [S:6aa27ee8b400, para 4]
+
+> **Commercial and customer benefits**
+> **For customers:**
+> - The 2026 Policy Address says the platform is to offer a one-stop service for issuing and settling digital bonds. [S:ef3648ff1610, para 35(iv)] The 2026-27 Budget says it is to extend gradually to other digital assets and regional platforms. [S:654fa5eba8cf, para 114]
+> - Investors in HKMC's June 2026 digital bonds could access them through the CMU and its links to Euroclear and Clearstream. [S:6aa27ee8b400, para 5]
+> **For the bank:**
+> - The HKMA's bill tests aim to help banks use over HK$1.3 trillion of Exchange Fund Bills around the clock. [S:ef3648ff1610, para 35(ii)] The aim is better asset and liability management, meaning matching funding with assets. [S:ef3648ff1610, para 35(ii)]
+> - The HKMA and HKEX plan to grow CMU services such as collateral management. [S:9c8855ec55a1, para 3]
+> - CMU settlements have statutory finality, so a participant's insolvency does not reverse them. [S:a0b44be27c40, para 36, p.14]
+> **Evidence so far:**
+> - HKMC's June 2026 digital bonds shortened settlement from five business days to three. [S:6aa27ee8b400, para 5] Orders peaked at about HK$24 billion. [S:6aa27ee8b400, para 3]
+> - An August 2025 Global Financial Markets Association (GFMA) report relays a 2025 Ripple and Boston Consulting Group (BCG) study. [I:7f93581e44fe, PDF p.10] That study models that tokenising an investment-grade bond could cut operating costs by 40–60%. [I:7f93581e44fe, PDF p.10] This is a global modelled estimate by those firms. [I:7f93581e44fe, PDF p.10] A BCG partner co-signed the GFMA report's foreword. [I:7f93581e44fe, PDF p.3]
+> **Limits:**
+> - The platform and the bill tests are stated targets for 2026. [S:ef3648ff1610, para 35(ii), (iv)]
+> - Another DLT platform gets statutory settlement finality only if the HKMA designates it. [S:a0b44be27c40, para 37, p.15]
+> **Business lines:** [Digital bonds: arranging and custody](#b-digital-bonds); [Collateral and tokenised financing](#b-collateral-financing); [Infrastructure as a service](#b-infrastructure-service)
 
 ## Timeline
 
@@ -35,6 +53,7 @@ The Hong Kong Mortgage Corporation (HKMC) issued digital bonds in June 2026. [S:
 | 25 Feb 2026 | Budget: digital asset platform to be set up in 2026 | Stated target | [S:654fa5eba8cf, para 114] |
 | 10 Jun 2026 | HKMC digital bonds priced; created on a DLT platform run by the CMU | Issued | [S:6aa27ee8b400, paras 1, 4] |
 | 16 Sep 2026 | Policy Address: platform this year; tokenised Exchange Fund Bills tests by year-end | Stated target | [S:ef3648ff1610, para 35(ii), (iv)] |
+| 23 Sep 2026 | HKMA Chief Executive: platform being built for 24-hour on-chain settlement against CBDCs; tokenised Exchange Fund Bills tests | Stated target | [S:216e6890db8f, 'Digital-native' section, para 4] |
 
 ## What it means for your bank
 

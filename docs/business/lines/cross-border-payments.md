@@ -63,7 +63,7 @@ A bank can do foreign exchange (FX) and send money abroad through new systems, s
 > - Faster systems can cut the fee per payment but can raise the number of payments.
 > - A bank can join as a direct participant, or serve smaller banks and fintechs that connect through it.
 > - Compliance cost per payment stays, because each bank runs its own checks.
-> **What it depends on:** which currency routes clients use; how many central banks and banks connect; when stablecoins launch; the cost of AML checks per payment.
+> **What it depends on:** which currency routes clients use; how many central banks and banks connect; stablecoin use; the cost of AML checks per payment.
 > **Official signposts:**
 > - Fees on mBridge are set by each bank. [S:2ffb8727bb2f, Reply (4)]
 > - The e-HKD tool for after-hours derivatives. [S:ef3648ff1610, para 36(v)]

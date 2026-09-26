@@ -23,6 +23,23 @@ Policy Statement 2.0 said the FSTB and HKMA would lead a review of law and regul
 
 The group's discussions in May 2026 gave input to the joint review. [S:fc3eb72031c6, para 3] Phase 1 of the review found that current law and regulation are already flexible enough for tokenised bond issues. [S:279f10054c6e, para 1] On 29 June 2026, when the phase 1 findings came out, the Companies Registry published answers to frequently asked questions (FAQs). [S:279f10054c6e, para 6] The FAQs confirm that a register of debenture holders kept on DLT can meet the record-keeping rules in the Companies Ordinance (Cap. 622). [S:279f10054c6e, para 6]
 
+> **Commercial and customer benefits**
+> **For customers:**
+> - In June 2026 the FSTB and the HKMA said phase 1 findings suggest current rules are already flexible enough for tokenised bonds. [S:279f10054c6e, para 1]
+> - Companies Registry FAQs say a bondholder register kept on DLT can be treated as meeting company-law record rules. [S:279f10054c6e, para 6]
+> - Phase 2 is to explore electronic signing of issue documents, for more efficient, automated issuance. [S:279f10054c6e, paras 8-11]
+> **For the bank:**
+> - The HKMA set up the group to drive wider adoption of tokenised bonds. [S:fc3eb72031c6, para 1]
+> - Arranging and custody fees grow with bond issuance. (concept)
+> - The Digital Bond Grant Scheme covers 50% of an issuer's eligible costs, up to HK$2.5 million per issue if all requirements are met. [S:5a0563de8142, s.1, p.2] Eligible costs include fees to Hong Kong-based arrangers. [S:5a0563de8142, s.4, p.5]
+> **Evidence so far:**
+> - The 2026 Policy Address says Hong Kong-issued digital bonds took nearly 50% of the global market in 2025 and the first half of 2026. [S:ef3648ff1610, para 35]
+> - A July 2025 Bank for International Settlements (BIS) staff bulletin found a mean bid-ask spread of about 19 basis points on tokenised bonds. [I:44ec1038876d, PDF p.5] Conventional bonds from the same issuers had about 30. [I:44ec1038876d, PDF p.5] This is early global evidence. [I:44ec1038876d, PDF p.5] A bid-ask spread is the gap between buying and selling prices. (concept)
+> **Limits:**
+> - The same bulletin found no systematic gap in issuance costs. [I:44ec1038876d, PDF p.5]
+> - The review found a few legal issues still needing clarification. [S:279f10054c6e, para 4] Phase 2 starts in the second half of 2026. [S:279f10054c6e, para 8]
+> **Business lines:** [Digital bonds: arranging and custody](#b-digital-bonds); [Infrastructure as a service](#b-infrastructure-service)
+
 ## Timeline
 
 | Date | Milestone | Status | Source |

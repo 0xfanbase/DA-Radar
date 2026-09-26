@@ -6,7 +6,7 @@ Project mBridge is a shared platform where several central banks each issue thei
 
 | Item | Detail |
 |---|---|
-| Run by | The mBridge project team. Its members are the Hong Kong Monetary Authority (HKMA), the Bank of Thailand (BoT), the Central Bank of the United Arab Emirates (CBUAE), the Digital Currency Institute of the People's Bank of China (PBC), and the Bank for International Settlements Innovation Hub (BISIH) Hong Kong Centre. In June 2024 the Saudi Central Bank was welcomed as the next full participant. [S:db56d97e2206, footnote 1, para 3] |
+| Run by | Central banks. The December 2025 fintech page of the Financial Services and the Treasury Bureau names the Hong Kong Monetary Authority (HKMA), the Digital Currency Institute of the People's Bank of China (PBC), the Bank of Thailand (BoT), the Central Bank of the United Arab Emirates (CBUAE) and the Saudi Central Bank. [S:5b4fb46ce83e, 'mBridge' paragraph] In June 2024 the project team also included the Bank for International Settlements Innovation Hub (BISIH) Hong Kong Centre. That month the Saudi Central Bank was welcomed as the next full participant. [S:db56d97e2206, footnote 1, para 3] In October 2024 the Bank for International Settlements (BIS) said it was handing the project over to the partner central banks. [I:3ca847631aa3, project page, para 6] |
 | Status as of 25 Sep 2026 | Pilot (at the minimum viable product stage, meaning a first working version). The Government calls it part of Hong Kong's financial market infrastructure. [S:2ffb8727bb2f, Reply (4)] |
 | Started | Q4 2019 as Inthanon-LionRock (a joint study by the HKMA and the BoT); renamed in Feb 2021 [S:6b0fae230518, para 1 and footnote 1] |
 | Next official date | None stated. The Government says wider public and private participation will come gradually. [S:2ffb8727bb2f, Reply (4)] |
@@ -22,6 +22,27 @@ In the 2022 pilot, 20 banks in four jurisdictions made more than 160 payment and
 
 The platform reached minimum viable product (MVP) stage in June 2024. [S:db56d97e2206, paras 1-2] Each founding central bank's jurisdiction hosts a validating node, meaning a computer that checks and records platform transactions. [S:db56d97e2206, paras 1-2] In October 2025 the Government told the Legislative Council that participating Hong Kong banks set their own fees for mBridge payments. [S:2ffb8727bb2f, Reply (4)]
 
+The BIS said in October 2024 that it would hand the project over to the partner central banks. [I:3ca847631aa3, project page, para 6] Its then General Manager said on 31 October 2024 that the BIS was leaving. [I:96a1a8113c3f, answer to the mBridge question, para 3] He said this was because the partners could now run the project themselves. [I:96a1a8113c3f, answer to the mBridge question, para 3] He said mBridge was not built for the BRICS countries. [I:96a1a8113c3f, answer to the mBridge question, para 5] BRICS means a group of large emerging economies whose name comes from Brazil, Russia, India, China and South Africa. He also said that countries under sanctions cannot use BIS products. [I:96a1a8113c3f, answer to the mBridge question, para 6] The December 2025 fintech page of the Financial Services and the Treasury Bureau lists the central banks conducting mBridge. It does not list the BIS. [S:5b4fb46ce83e, 'mBridge' paragraph]
+
+See also [D7 Sanctions, wallet screening, blockchain analytics and fraud](#m-D7).
+
+> **Commercial and customer benefits**
+> **For customers:**
+> - The October 2022 pilot report says mBridge offers potential gains in speed, transparency, access and cost over correspondent banking. [S:947fa49606ab, s.3, p.8] Correspondent banking sends money abroad through a chain of banks. (concept)
+> - In October 2025 the Government said payer and payee banks settle directly on mBridge, significantly reducing cross-boundary payment costs. [S:2ffb8727bb2f, Reply (4)]
+> **For the bank:**
+> - The Government said Hong Kong banks on mBridge set their own fees, based on operating costs and commercial needs. [S:2ffb8727bb2f, Reply (4)]
+> - The 2022 report says settling in central bank money reduces, or even removes, a key risk of correspondent banking. [S:947fa49606ab, s.5, p.21]
+> - Direct settlement can reduce the cash a bank parks in advance at banks abroad. (concept)
+> **Evidence so far:**
+> - In the August–September 2022 pilot, 20 banks in four jurisdictions made over 160 payment and FX trades worth over US$22 million. [S:947fa49606ab, s.1 Executive summary, p.4] The report says the pilot showed faster, more efficient payments with lower settlement risk. [S:947fa49606ab, s.5, p.15]
+> - The platform reached minimum viable product stage in June 2024. [S:2ffb8727bb2f, Reply (4)]
+> - In October 2025 the Financial Stability Board (FSB) put the global average cost of sending a US$200 remittance at 6.5%. [I:0c779bbbb00d, printed p.27 (PDF p.31), section 3.3] This is a reported global figure, not an mBridge result. [I:0c779bbbb00d, printed p.27 (PDF p.31), section 3.3]
+> **Limits:**
+> - The 2022 report says policy, legal and privacy questions remain, and some may need rule changes. [S:947fa49606ab, s.1 Executive summary, p.4]
+> - In October 2025 the Government said participation is to widen gradually. [S:2ffb8727bb2f, Reply (4)]
+> **Business lines:** [Cross-border payments, FX and mBridge](#b-cross-border-payments); [Trade finance and electronic bills of lading](#b-trade-finance)
+
 ## Timeline
 
 | Date | Milestone | Status | Source |
@@ -34,7 +55,9 @@ The platform reached minimum viable product (MVP) stage in June 2024. [S:db56d97
 | 26 Oct 2022 | Pilot results published | Pilot | [S:2c7f151156dc, paras 1-2] |
 | Oct 2023 | mBridge update brochure | Pilot | [S:89b8fcadfaa8, p.1] |
 | 5 Jun 2024 | MVP reached; Saudi Central Bank welcomed as next full participant | Pilot | [S:db56d97e2206, paras 1, 3] |
+| Oct 2024 | BIS (international) says it is handing the project over to the partner central banks | Pilot | [I:3ca847631aa3, project page, para 6]; [I:96a1a8113c3f, answer to the mBridge question, para 3] |
 | 8 Oct 2025 | Government says mBridge is part of Hong Kong's financial market infrastructure | Pilot | [S:2ffb8727bb2f, Reply (4)] |
+| Dec 2025 | Financial Services and the Treasury Bureau fintech page lists five central banks conducting mBridge, without the BIS | Pilot | [S:5b4fb46ce83e, 'mBridge' paragraph] |
 
 ## What it means for your bank
 
@@ -60,6 +83,6 @@ The platform reached minimum viable product (MVP) stage in June 2024. [S:db56d97
 
 ## Related
 
-Projects: e-hkd, cbdc-research, ensemble. Modules: E2, E3.
+Projects: e-hkd, cbdc-research, ensemble. Modules: E2, E3. See also: D7 (sanctions).
 
 For general information only. Not legal or regulatory advice. Always check the official source.

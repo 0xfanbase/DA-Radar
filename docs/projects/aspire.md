@@ -28,6 +28,23 @@ ASPIRe stands for five pillars: Access, Safeguards, Products, Infrastructure and
 
 The SFC frames many initiatives as things it will explore or consider. [S:d461c2db6af2, Initiatives 3, 6-9, 11]
 
+> **Commercial and customer benefits**
+> **For customers:**
+> - The SFC says shared order books with affiliated overseas platforms could give Hong Kong investors better liquidity and keener prices. [S:f09e57feb89b, para 2]
+> - The SFC says VA financing would let margin clients with strong credit and collateral trade more in virtual assets. [S:73dac3a5a832, para 3]
+> - Registered institutions (RIs) may offer staking to their VA dealing clients, only through segregated accounts with a licensed platform or a bank. [S:d5ebca32c92b, paras 4-5] Staking earns a reward for locking tokens to help run a blockchain (concept).
+> **For the bank:**
+> - RIs that provide VA dealing may lend to securities margin clients for VA dealing. [S:e64b7b0267b2, p.2, 'HKMA's guidance for RIs', items (1)-(2)] Such loans earn interest above funding cost (concept).
+> - The SFC's perpetual contract framework lets platforms take HKMA-regulated tokenised deposits as margin. [S:49f642bdee28, 'Margin arrangements and loss allocation management']
+> **Evidence so far:**
+> - Hong Kong had 11 VA spot exchange-traded funds at end-2025, with market value over HK$5.4 billion. [S:c28638fc5ccc, para 4]
+> - The SFC listed 13 licensed VA trading platforms on 29 May 2026. [S:b14be2203d39, Licensed platforms table; Last update line]
+> - HashKey Holdings Limited (HashKey), a Hong Kong-listed platform group, reported average staked assets of HK$14.8 billion in the first half of 2026, down from HK$20.2 billion (2026 interim results, group-wide, reported). [I:9ca15dca711d, PDF p.11]
+> **Limits:**
+> - The February 2025 roadmap framed many initiatives as things to explore or consider. [S:d461c2db6af2, Initiatives 3, 6-9, 11] An SFC executive director called it a living blueprint. [S:cfe8a53186c3, para 5]
+> - For capital purposes, a bank must treat loans backed only by virtual assets as unsecured. [S:e64b7b0267b2, item (9), p.5]
+> **Business lines:** [Virtual-asset financing and margin](#b-va-financing); [Staking services](#b-staking); [Virtual-asset dealing](#b-va-dealing)
+
 ## Timeline
 
 | Date | Milestone | Status | Source |

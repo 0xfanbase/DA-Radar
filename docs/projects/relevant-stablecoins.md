@@ -26,6 +26,24 @@ The SFC's circular 26EC26 covers virtual asset trading platforms (VATPs) and lic
 
 The HKMA letter says its guidance should not be read as treating these coins as investment products. [S:1babdb609fc8, p.1]
 
+> **Commercial and customer benefits**
+> **For customers:**
+> - For a coin-only client account, a registered institution (RI) need not test the client's virtual asset (VA) knowledge or set a VA exposure limit. [S:a0bd48559762, para (3)(a)-(b) and fn 4, pp.4-5]
+> - The RI should disclose how each coin keeps its value and how redemption works. [S:a0bd48559762, para (5), p.5; para (10), p.7]
+> - The Policy Address says the SFC will promote trading these coins on licensed platforms and using them to settle tokenised money market funds. [S:ef3648ff1610, para 49(iii)]
+> **For the bank:**
+> - RIs may deal in these coins through the licensed issuer or a licensed trading platform. [S:a0bd48559762, para (1), p.3]
+> - An RI dealing only in these coins need not be registered for Type 1 (dealing in securities). [S:a0bd48559762, para (2), p.3]
+> - An RI that judges it prudent to take virtual assets as loan collateral may include these coins, after a haircut (a cut to their value). [S:e64b7b0267b2, item (4), pp.3-4]
+> **Evidence so far:**
+> - Two issuer licences took effect on 10 April 2026. [S:270f1f7324ab, Register table] On 28 April 2026 both licensees confirmed they had not yet issued any regulated stablecoin. [S:275e7319a841, para 3]
+> - On 16 September 2026 a Government spokesman said the first regulated stablecoin in Hong Kong had launched in August 2026. [S:8be6d15c6641, para 10] The official sources reviewed do not name the issuer. [S:8be6d15c6641, para 10]
+> - A Bank for International Settlements 2026 report (global, reported estimate) put the market value of all stablecoins at about US$320 billion at end-May 2026. [I:efa37f6d77e9, p. 88]
+> **Limits:**
+> - In April 2026 the HKMA based its expected launch timing on the issuers' business plans. [S:193316443831, 'Follow-up work', para 1]
+> - The easing covers only HKMA-licensed coins; offering any other VA to that client brings back the full rules. [S:a0bd48559762, para (3)(a) and fn 4, p.4]
+> **Business lines:** [Stablecoin roles for banks](#b-stablecoin-roles); [Virtual-asset dealing](#b-va-dealing); [Tokenised funds and money market fund settlement](#b-tokenised-funds)
+
 ## Timeline
 
 | Date | Milestone | Status | Source |
@@ -35,6 +53,7 @@ The HKMA letter says its guidance should not be read as treating these coins as 
 | 27 May 2026 | HKMA circular to RIs, with Appendices A1/A2 | In force | [S:a0bd48559762, p.1] |
 | 27 May 2026 | HKMA letter to all AIs | In force | [S:1babdb609fc8, p.1] |
 | 27 May 2026 | SFC circular 26EC26 to VATPs and LCs | In force | [S:19d52ade6849, p.1, opening paragraph] |
+| Aug 2026 | First regulated stablecoin in Hong Kong launched, a Government spokesman said on 16 Sep 2026 (issuer not named) | In force | [S:8be6d15c6641, para 10] |
 | 16 Sep 2026 | Policy Address: SFC to promote stablecoin trading on licensed platforms, and their use to settle tokenised money market funds (cash-like funds in token form) | Stated target | [S:ef3648ff1610, para 49(iii)] |
 
 ## What it means for your bank

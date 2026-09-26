@@ -23,6 +23,23 @@ The HKMA set up the Architecture Community in May 2024 to develop shared industr
 
 In November 2025 the project moved to EnsembleTX, a pilot that uses real value. [S:8b67e8dc510f, paras 1-2] It starts with trades in tokenised money market funds and with real-time treasury and liquidity uses. [S:8b67e8dc510f, paras 1-2] At first, banks settle with each other through the Hong Kong dollar real-time gross settlement system. [S:8b67e8dc510f, para 3] That system settles each interbank payment in full, one by one, as it happens. The HKMA plans a gradual move to round-the-clock settlement in tokenised central bank money. [S:8b67e8dc510f, para 3]
 
+> **Commercial and customer benefits**
+> **For customers:**
+> - In the EnsembleTX pilot, the HKMA, banks and other participants aim to make settlement of real-value tokenised deals faster, more transparent and more efficient. [S:8b67e8dc510f, para 2]
+> - One first focus is letting firms use tokenised deposits to handle cash and treasury needs in real time. [S:8b67e8dc510f, para 2]
+> **For the bank:**
+> - The other first focus is paying for tokenised money market fund trades with tokenised deposits. [S:8b67e8dc510f, para 2]
+> - When clients settle in a bank's own tokenised deposits, the cash stays with that bank as funding. (concept)
+> - In March 2024 the HKMA said Ensemble could potentially create new infrastructure linking tokenised assets with money. [S:5a9cad53f2be, para 3]
+> **Evidence so far:**
+> - The HKMA named seven Tokenised Deposit Banks and 13 other industry pioneers for EnsembleTX. [S:d193f12a5f78, Annexes A-B]
+> - In October 2025 the HKMA said six banks had launched tokenised deposit services through its Supervisory Incubator. [S:418769c01edc, 'Supervisory Incubator for DLT' section]
+> - A November 2025 Bank for International Settlements (BIS) staff bulletin put tokenised money market funds at almost US$9 billion by end-October 2025. [I:c1c1a36b00a2, PDF p.6] This is a reported global market figure. [I:c1c1a36b00a2, PDF p.6]
+> **Limits:**
+> - EnsembleTX is a pilot set to run throughout 2026. [S:8b67e8dc510f, para 3] Banks first settle with each other through the existing Hong Kong dollar real-time gross settlement system. [S:8b67e8dc510f, para 3]
+> - Round-the-clock running and settlement in central bank digital currency are stated targets for around end-2026. [S:ef3648ff1610, para 50]
+> **Business lines:** [Tokenised deposits and payments](#b-tokenised-deposits); [Tokenised funds and money market fund settlement](#b-tokenised-funds); [Trade finance and electronic bills of lading](#b-trade-finance)
+
 ## Timeline
 
 | Date | Milestone | Status | Source |

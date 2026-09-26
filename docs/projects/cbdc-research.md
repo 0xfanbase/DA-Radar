@@ -24,6 +24,23 @@ Inthanon-LionRock studied CBDC for cross-border payments with the Bank of Thaila
 
 The cross-boundary e-CNY pilot lets Hong Kong residents open personal e-CNY wallets with a Hong Kong mobile number. [S:08caafe0cfe7, paras 1-2; Annex 1] They top up the wallets through the Faster Payment System (FPS), Hong Kong's instant payment system. [S:08caafe0cfe7, paras 1-2; Annex 1]
 
+> **Commercial and customer benefits**
+> **For customers:**
+> - The Government says e-CNY gives residents on both sides of the boundary an extra safe and convenient way to pay. [S:2ffb8727bb2f, Reply, 2nd paragraph]
+> - Since May 2024, Hong Kong residents can open a pilot wallet with a local mobile number and top it up through FPS. [S:08caafe0cfe7, paras 1-2; Annex 1]
+> - The HKMA says its 2023 Sela test showed that direct ledger access for private payment firms could feasibly promote competition. [S:d51dc8884c8a, 'Collaborative Projects']
+> **For the bank:**
+> - By March 2026, 18 local banks supported e-CNY top-ups, up from 17 at the start. [S:062b0a1547b9, Reply (1)] A top-up service keeps the bank in its customer's payment flow. (concept)
+> - Some banks let users top up from Hong Kong dollar accounts, converting to renminbi. [S:08caafe0cfe7, Annex 2, p.1] This is a foreign exchange (FX) service. (concept)
+> - The HKMA chief executive said the 2023 tokenised green bond built on Project Genesis. [S:a0841967c871, quote from Eddie Yue] Two of its four selling banks also acted as investor custodians. [S:a0841967c871, para 2]
+> **Evidence so far:**
+> - Citing Mainland central bank data, the Government said about 80,000 wallets were registered by end-January 2026. [S:062b0a1547b9, Reply (1)] Local shops accepting e-CNY grew from about 300 to about 5,200. [S:062b0a1547b9, Reply (1)]
+> - The 2023 bond's primary issue settled one business day after the trade (T+1). [S:a0841967c871, para 3]
+> **Limits:**
+> - Pilot wallets have limits, such as 2,000 renminbi per transaction. [S:08caafe0cfe7, Annex 2, p.1] Plans to raise them have no final timetable. [S:062b0a1547b9, Reply (2)]
+> - Direct ledger access for non-bank firms means more payment competition for banks. (concept)
+> **Business lines:** [Cross-border payments, FX and mBridge](#b-cross-border-payments); [Digital bonds: arranging and custody](#b-digital-bonds)
+
 ## Timeline
 
 | Date | Milestone | Status | Source |

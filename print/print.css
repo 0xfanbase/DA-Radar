@@ -70,5 +70,8 @@ section.answers ol > li { margin-bottom: 6pt; break-inside: avoid; }
 section.answers .q { font-weight: 600; margin-bottom: 2pt; }
 .front h1 { font-size: 24pt; }
 .cover .blurb { font-size: 13pt; }
-blockquote.benefits { border: 1pt solid #1E6B52; border-left: 5pt solid #1E6B52; background: #E3F2EC; }
-blockquote.benefits > p:first-child strong { font-family: "Source Sans 3", Arial, sans-serif; text-transform: uppercase; font-size: 10.5pt; letter-spacing: .06em; color: #1E6B52; }
+blockquote.benefits { border: 1.5pt solid #127A55; border-left: 7pt solid #127A55; background: #D3EEDF; padding: 0 12pt 8pt; }
+blockquote.benefits > p:first-child { margin: 0 -12pt 6pt; padding: 5pt 12pt; background: #127A55; }
+blockquote.benefits > p:first-child strong { font-family: "Source Sans 3", Arial, sans-serif; text-transform: uppercase; font-size: 11pt; letter-spacing: .07em; color: #fff; }
+blockquote.benefits > p:first-child strong::before { content: "\2197\00a0"; }
+blockquote.benefits strong { color: #0B4F37; }

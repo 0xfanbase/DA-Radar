@@ -27,6 +27,23 @@ An RCASP with a Hong Kong nexus (a close link to Hong Kong) would have to: [S:e8
 
 Central bank digital currencies (CBDCs) and specified e-money products are outside CARF. [S:275d5cc93a88, paras 1.5, 4.3] The amended CRS brings them in instead. [S:275d5cc93a88, paras 1.5, 4.3] If the bill passes, CARF starts on 1 January 2027. The amended CRS starts on 1 January 2028. [S:e8c0a71f0cc5, Clause 1(3)-(4)]
 
+> **Commercial and customer benefits**
+> **For customers:**
+> - The Government says CARF serves tax transparency and the fight against cross-border tax evasion: system aims, not direct customer gains. [S:ea81f92ea327, para 1]
+> - The Government plans to exchange CARF data with partners that protect data confidentiality and security. [S:ea81f92ea327, para 4]
+> **For the bank:**
+> - The consultation paper says the amended CRS covers digital money products, for a level playing field with bank accounts. [S:275d5cc93a88, para 4.3]
+> - The paper says CARF's ranked nexus rules stop a provider linked to several places from reporting twice. [S:275d5cc93a88, para 1.10]
+> - The paper proposes a clear legal basis to run the same checks on all customers, which some providers may prefer to cut compliance costs. [S:275d5cc93a88, para 2.3]
+> - The paper says a poor OECD peer-review rating on the CRS may increase Hong Kong institutions' reporting burdens abroad. [S:275d5cc93a88, para 5.1]
+> **Evidence so far:**
+> - Hong Kong has exchanged CRS data with partner jurisdictions each year since 2018. [S:252a7f86684e, para 2]
+> - The paper says the OECD named Hong Kong "immediately relevant" to CARF, given its growing crypto-asset sector. [S:275d5cc93a88, Introduction, para 4]
+> **Limits:**
+> - The bill is not yet law: it went into LegCo on 3 June 2026, and CARF duties start on 1 January 2027 only if it passes. [S:d70ae2cbc9d1, Overview]
+> - The paper proposes reporting sale proceeds under both CRS and CARF, saying one report may not ease the burden for firms with separate systems. [S:275d5cc93a88, paras 4.16-4.17]
+> **Business lines:** [Virtual-asset dealing](#b-va-dealing); [Virtual-asset distribution and brokerage](#b-va-distribution)
+
 ## Timeline
 
 | Date | Milestone | Status | Source |

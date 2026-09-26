@@ -9,7 +9,7 @@ e-HKD is the Hong Kong Monetary Authority (HKMA) study of a possible Hong Kong c
 | Run by | HKMA [S:d51dc8884c8a, 'e-HKD for financial institutions' section] |
 | Status as of 25 Sep 2026 | Research (for retail use by the public, groundwork is done but there is no launch decision); wholesale use between financial institutions is the stated priority [S:6bd9e65817c4, para 4]; [S:d51dc8884c8a, 'e-HKD for individuals and corporates'; 'Policy Stance and Three-Rail Approach'] |
 | Started | 2017, with Project LionRock (an early wholesale test) [S:d51dc8884c8a, 'e-HKD for financial institutions' section] |
-| Next official date | 2026: real-value e-HKD payments for after-hours derivatives trading with Hong Kong Exchanges and Clearing (HKEX) (stated target) [S:ef3648ff1610, para 36(v)] |
+| Next official date | 2026: real-value e-HKD payments for after-hours derivatives trading with Hong Kong Exchanges and Clearing (HKEX) (stated target) [S:ef3648ff1610, para 36(v)]. HKEX and the HKMA announced the pilot on 18 June 2026. [S:be724ce5a57f, paras 1-2] |
 | Covered in | E2, A3, E1, E3 |
 
 ## What it is
@@ -21,6 +21,25 @@ The HKMA then consulted on a retail e-HKD, meaning one for the public. It did so
 In September 2022 the HKMA set out a three-rail approach (three parallel tracks of work). [S:35cb94c89a11, Rail 1 section, p.10] Its early legal research suggested existing law may not give enough certainty to issue a digital form of legal tender. [S:35cb94c89a11, Rail 1 section, p.10] Legal tender is money that the law recognises for paying debts.
 
 Industry pilots ran in two phases. [S:2f93aa2b9560, paras 1-2] In September 2024 the HKMA renamed the project e-HKD+ so that it also covers tokenised deposits (digital versions of bank deposits). [S:2f93aa2b9560, paras 1-2] In October 2025 the HKMA said the near-term priority is wholesale payments rather than retail use. [S:6bd9e65817c4, para 4] The HKMA has not decided whether, or when, it will introduce an e-HKD. [S:d51dc8884c8a, 'Policy Stance and Three-Rail Approach']
+
+On 18 June 2026 HKEX and the HKMA announced a joint pilot. It tests paying advance margin (money posted ahead to cover trades) in e-HKD for the after-hours derivatives session. [S:be724ce5a57f, paras 1-2] Here e-HKD means a wholesale CBDC that runs 24/7. [S:be724ce5a57f, paras 1-2] Today, clearing participants (firms that clear trades through the futures clearing house) must ask to deposit advance margin by 3:00 p.m. Only then does it count for that evening's session. [S:be724ce5a57f, para 3] Clearing participants may choose to join real-value trial transactions. [S:be724ce5a57f, para 4] The trials, and any wider use, depend on regulatory approval and market readiness. [S:be724ce5a57f, para 4]
+
+> **Commercial and customer benefits**
+> **For customers:**
+> - The HKMA says the Phase 2 pilots showed that e-HKD and tokenised deposits can enable cost-efficient, programmable and resilient transactions. [S:6bd9e65817c4, para 3]
+> - Programmable money moves by itself when set conditions are met. (concept)
+> - The 2023 Phase 1 report said an e-HKD has the potential to make transactions faster, more cost-efficient and more inclusive. [S:9f8886b0fb21, Executive Summary, p.6]
+> **For the bank:**
+> - The HKMA says an e-HKD is free from credit risk because the HKMA issues it, so it suits large-value payments. [S:6bd9e65817c4, para 4]
+> - The HKMA now puts wholesale uses first, such as settling international trade. [S:6bd9e65817c4, para 4] Such trade often needs foreign exchange (FX), meaning swapping one currency for another. (concept)
+> - HKEX and the HKMA are working on an e-HKD payment tool for after-hours derivatives trading, with real-value deals targeted for 2026. [S:ef3648ff1610, para 36(v)]
+> **Evidence so far:**
+> - The Government's November 2025 digital green bonds offered settlement in e-HKD or e-CNY (the Mainland's digital renminbi) in two tranches. [S:ac6cd085a325, 'Integration of digital money' paragraph]
+> - The HKMA said this option helped lower counterparty credit risk, settlement time and costs in the primary issue. [S:ac6cd085a325, 'Integration of digital money' paragraph]
+> **Limits:**
+> - The Phase 1 report said many inefficiencies come from long-standing business norms, not technology, so an e-HKD may not cure them all. [S:9f8886b0fb21, Executive Summary, p.6]
+> - In Phase 2, a privacy tool tested on public blockchains made transactions up to 320 times more expensive in network fees. [S:bdefe7fc69d4, Section 4 'Privacy', PDF p.34]
+> **Business lines:** [Tokenised deposits and payments](#b-tokenised-deposits); [Cross-border payments, FX and mBridge](#b-cross-border-payments); [Digital bonds: arranging and custody](#b-digital-bonds)
 
 ## Timeline
 
@@ -35,6 +54,9 @@ Industry pilots ran in two phases. [S:2f93aa2b9560, paras 1-2] In September 2024
 | 23 Sep 2024 | Phase 2 starts; project renamed e-HKD+ | Research | [S:2f93aa2b9560, paras 1-2] |
 | 28 Oct 2025 | Phase 2 report; wholesale uses become the priority | Research | [S:6bd9e65817c4, para 4] |
 | 11 Nov 2025 | Government digital green bonds offer an option to settle in e-HKD | Issued | [S:ac6cd085a325, 'Integration of digital money' paragraph] |
+| 3 Jun 2026 | HKMA warns of a fake HKMA website pushing a fake 'e-HKD' app and e-HKD bonds | Issued | [S:3f9bded7712c, para 2, first bullet] |
+| 18 Jun 2026 | HKEX and HKMA announce a pilot of e-HKD advance margin payments for after-hours derivatives trading | Pilot | [S:be724ce5a57f, paras 1-2, 4] |
+| 20 Aug 2026 | HKMA warns of a forged HKMA document offering a fake Exchange Fund Bills tender paid in e-HKD | Issued | [S:2709dee0be56, paras 1-2] |
 | H1 2026 | Target to finish groundwork for possible retail use. The HKMA's CBDC web page now says this work is done. | Research | [S:6bd9e65817c4, para 5]; [S:d51dc8884c8a, 'e-HKD for individuals and corporates'] |
 | 2026 | Real-value e-HKD payments for after-hours derivatives trading with HKEX | Stated target | [S:ef3648ff1610, para 36(v)] |
 
@@ -45,6 +67,7 @@ Industry pilots ran in two phases. [S:2f93aa2b9560, paras 1-2] In September 2024
 - The same paper looked at a two-tier model. [S:3b42966a786e, Section 5.4, p.35] It said customer-facing institutions could be given the job of customer due diligence (checking who customers are) and record-keeping. [S:3b42966a786e, Section 5.4, p.35]
 - Phase 2 found that the public sees e-HKD and tokenised deposits in a similar light, because people trust banks highly. [S:6bd9e65817c4, para 3]
 - The HKMA says it will publish common token standards (shared technical rules for digital tokens) from the e-HKD Industry Forum. [S:6bd9e65817c4, para 6]
+- Scammers use the e-HKD name. In June 2026 the HKMA warned of a fake HKMA website. It pushed a fake app named e-HKD and so-called e-HKD bonds. [S:3f9bded7712c, para 2, first bullet] In August 2026 it warned of a forged HKMA document. The document offered a fake Exchange Fund Bills tender, with proceeds paid in e-HKD. [S:2709dee0be56, para 1] The HKMA said firms in its e-HKD Pilot Programme do not raise money from the public or sell related investment products. [S:3f9bded7712c, para 4; S:2709dee0be56, para 3] See also D7 (fraud).
 
 ## Talking points
 
