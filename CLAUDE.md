@@ -41,6 +41,11 @@ The rules above still apply, with these additions (full detail: `docs/research/t
   (grammar in business_spec.md): benefits only as official sources state them (often as aims) or as labelled
   industry estimates, plus the evidence so far and its limits. No forecasts, advice or praise of named firms.
 
+## Narrow exception: international official sources outside Part F
+Where Hong Kong official sources are silent on a material fact about a Hong Kong project (e.g. the BIS leaving
+Project mBridge), the fact may cite the international body's own statement from the industry registry
+(publisher_type "international_official", `[I:]`, shown as "International"). State only what that body says, dated.
+
 ## Engineering rules
 - AI-authored content is data (Markdown/Markdoc/JSON), never executable code (no MDX).
 - CI gates must pass before publish: schema validation, citation resolution, official-domain
