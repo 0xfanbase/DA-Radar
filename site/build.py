@@ -129,7 +129,7 @@ def build_projects():
             out.append({"slug": f.stem, "title": m.group(1).strip() if m else f.stem, "md": body,
                         "oneLine": body.split("\n\n", 1)[0].strip(),
                         "runBy": short_by(plain(glance.get("Run by", ""))),
-                        "status": re.split(r"\s*[(;]", status)[0].strip(),
+                        "status": re.split(r"\s*[(;:—]", status)[0].strip(),
                         "coveredIn": plain(glance.get("Covered in", ""))})
     return out
 
